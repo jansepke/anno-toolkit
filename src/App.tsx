@@ -2,6 +2,7 @@ import Box from "@material-ui/core/Box";
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 import React from "react";
+import ItemTable from "./components/Table";
 
 const App = ({ data }: any) => {
   return (
@@ -12,12 +13,9 @@ const App = ({ data }: any) => {
       <Box m={2}>
         <Typography align="justify">Lorem ipsum.</Typography>
       </Box>
-      {data.map((item: any) => (
-        <p key={item.Values.Standard.GUID}>
-          {item.Values.Text.LocaText.English.Text}
-        </p>
-      ))}
-      {JSON.stringify(data[0], null, 2)}
+      <ItemTable data={data}></ItemTable>
+      <p>{JSON.stringify(data[0])}</p>
+      <p>{JSON.stringify(data[data.length - 1])}</p>
     </Container>
   );
 };
