@@ -7,7 +7,15 @@ const ItemTableRow = ({ item }: any) => {
 
   return (
     <TableRow hover={true}>
-      <TableCell>{values.Standard.IconFilename}</TableCell>
+      <TableCell>
+        <img
+          src={values.Standard.IconFilename.replace(
+            "data/ui/2kimages",
+            "/img"
+          ).replace(".png", "_0.png")}
+          width="20px"
+        />
+      </TableCell>
       <TableCell>{values.Text.LocaText.English.Text}</TableCell>
       <TableCell>{values.Item.ItemType}</TableCell>
       <TableCell>{values.Item.Rarity}</TableCell>
