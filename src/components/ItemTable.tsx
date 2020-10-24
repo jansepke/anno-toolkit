@@ -24,7 +24,10 @@ const ItemTable = ({ data }: any) => {
         </TableHead>
         <TableBody>
           {data.map((item: any) => (
-            <ItemTableRow key={item.Values.Standard.GUID} item={item} />
+            <ItemTableRow
+              key={item.Template + item.Values.Standard.GUID}
+              item={item}
+            />
           ))}
         </TableBody>
       </Table>
