@@ -31,7 +31,11 @@ const App = ({ data }: any) => {
         centered
       >
         {tabs.map((tab) => (
-          <Tab key={tab} label={tab} />
+          <Tab
+            key={tab}
+            label={tab}
+            icon={<img src={`/img/${tab.toLowerCase()}.png`} width="20px" />}
+          />
         ))}
       </Tabs>
       <ItemTable data={data[`${tabs[activeTab]}Item`]}></ItemTable>
