@@ -2,6 +2,7 @@ import parser from "fast-xml-parser";
 import fs from "fs";
 
 const items: { [key: string]: any[] } = {};
+const guids: { [key: number]: any } = {};
 
 export async function getData() {
   const xml = await fs.promises.readFile("./data/assets.xml", "utf8");
@@ -17,9 +18,9 @@ export async function getData() {
   // console.log(items.CultureItem.length); // 162
 
   return {
-    HarborOfficeItem: items.HarborOfficeItem,
-    GuildhouseItem: items.GuildhouseItem,
-    TownhallItem: items.TownhallItem,
+    HarborOfficeItem: items.HarborOfficeItem.map(resolveEffectTarget),
+    GuildhouseItem: items.GuildhouseItem.map(resolveEffectTarget),
+    TownhallItem: items.TownhallItem.map(resolveEffectTarget),
   };
 
   // items.HarborOfficeItem.map((x) =>
@@ -58,6 +59,7 @@ function processGroup(groups: any) {
         }
 
         items[asset.Template].push(asset);
+        guids[asset.Values.Standard.GUID] = asset;
       }
     }
 
@@ -65,6 +67,16 @@ function processGroup(groups: any) {
       processGroup(group.Groups.Group);
     }
   }
+}
+
+function resolveEffectTarget(item: any) {
+  const guid = item.Values.ItemEffect.EffectTargets.Item.GUID;
+  const effectTarget = guids[guid];
+  if (effectTarget && effectTarget.Values.Text.LocaText.English.Text) {
+    item.Values.ItemEffect.EffectTargets.Item.Text =
+      effectTarget.Values.Text.LocaText.English.Text;
+  }
+  return item;
 }
 
 function logJSON(data: any) {
