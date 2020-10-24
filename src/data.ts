@@ -9,16 +9,20 @@ export async function getData() {
 
   processGroup(json.AssetList.Groups.Group);
 
-  // console.log(items["GuildhouseItem"].length); // 472
-  // console.log(items["HarborOfficeItem"].length); // 55
-  // console.log(items["TownhallItem"].length); // 237
-  // console.log(items["VehicleItem"].length); // 51
-  // console.log(items["ShipSpecialist"].length); // 48
-  // console.log(items["CultureItem"].length); // 162
+  // console.log(items.GuildhouseItem.length); // 472
+  // console.log(items.HarborOfficeItem.length); // 55
+  // console.log(items.TownhallItem.length); // 237
+  // console.log(items.VehicleItem.length); // 51
+  // console.log(items.ShipSpecialist.length); // 48
+  // console.log(items.CultureItem.length); // 162
 
-  return items["HarborOfficeItem"];
+  return {
+    HarborOfficeItem: items.HarborOfficeItem,
+    GuildhouseItem: items.GuildhouseItem,
+    TownhallItem: items.TownhallItem,
+  };
 
-  // items["HarborOfficeItem"].map((x) =>
+  // items.HarborOfficeItem.map((x) =>
   //   console.log(x.Values.Text.LocaText.English.Text)
   // );
 }
@@ -45,6 +49,12 @@ function processGroup(groups: any) {
 
         if (!items[asset.Template]) {
           items[asset.Template] = [];
+        }
+
+        for (var propName in asset.Values) {
+          if (asset.Values[propName] === "") {
+            delete asset.Values[propName];
+          }
         }
 
         items[asset.Template].push(asset);
