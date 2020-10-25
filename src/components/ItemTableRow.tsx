@@ -18,7 +18,7 @@ const ItemTableRow = ({ item }: any) => {
       </TableCell>
       <TableCell>{values.Text.LocaText.English.Text}</TableCell>
       <TableCell>{values.Item.ItemType}</TableCell>
-      <TableCell>{values.Item.Rarity}</TableCell>
+      <TableCell>{values.Item.Rarity || "Common"}</TableCell>
       <TableCell>{values.ItemEffect.EffectTargets.Text}</TableCell>
       <TableCell>
         {Object.entries(values)
