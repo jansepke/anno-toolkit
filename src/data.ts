@@ -21,7 +21,7 @@ export async function getData() {
   const xml = await fs.readFile("./data/assets.xml", "utf8");
   const json = parseXML(xml);
 
-  processGroup(json.AssetList.Groups.Group);
+  processGroups(json.AssetList.Groups.Group);
 
   items.HarborOfficeItem.forEach(resolveEffectTarget);
   items.GuildhouseItem.forEach(resolveEffectTarget);
@@ -63,36 +63,37 @@ function parseXML(xml: string) {
   }
 }
 
-function processGroup(groups: any) {
-  for (let i = 0; i < groups.length; i++) {
-    const group = groups[i];
-
+function processGroups(groups: any) {
+  for (const group of Array.from<any>(groups)) {
     if (group.Assets) {
-      for (let j = 0; j < group.Assets.Asset.length; j++) {
-        const asset = group.Assets.Asset[j];
-
-        if (!asset.Template) {
-          continue;
-        }
-
-        if (!items[asset.Template]) {
-          items[asset.Template] = [];
-        }
-
-        for (var propName in asset.Values) {
-          if (asset.Values[propName] === "") {
-            delete asset.Values[propName];
-          }
-        }
-
-        items[asset.Template].push(asset);
-        guids[asset.Values.Standard.GUID] = asset;
-      }
+      processAssets(group.Assets.Asset);
     }
 
     if (group.Groups) {
-      processGroup(group.Groups.Group);
+      processGroups(group.Groups.Group);
     }
+  }
+}
+
+function processAssets(assets: any) {
+  for (const asset of Array.from<any>(assets)) {
+    if (!asset.Template) {
+      continue;
+    }
+
+    if (!items[asset.Template]) {
+      items[asset.Template] = [];
+    }
+
+    // remove empty properties
+    for (var propName in asset.Values) {
+      if (asset.Values[propName] === "") {
+        delete asset.Values[propName];
+      }
+    }
+
+    items[asset.Template].push(asset);
+    guids[asset.Values.Standard.GUID] = asset;
   }
 }
 
