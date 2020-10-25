@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "rimraf ./cached-data && next dev",
+    "build": "rimraf ./cached-data && next build",
     "start": "next start",
     "run": "ts-node index.ts",
     "lint": "prettier --check ./src",
@@ -38,6 +38,7 @@
     "@types/node": "^14.14.2",
     "@types/react": "^16.9.53",
     "husky": "^4.3.0",
-    "prettier": "^2.1.2"
+    "prettier": "^2.1.2",
+    "rimraf": "^3.0.2"
   }
 }
