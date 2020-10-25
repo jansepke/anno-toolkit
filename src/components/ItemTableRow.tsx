@@ -19,7 +19,7 @@ const ItemTableRow = ({ item }: any) => {
       <TableCell>{values.Text.LocaText.English.Text}</TableCell>
       <TableCell>{values.Item.ItemType}</TableCell>
       <TableCell>{values.Item.Rarity}</TableCell>
-      <TableCell>{values.ItemEffect.EffectTargets.Item.Text}</TableCell>
+      <TableCell>{values.ItemEffect.EffectTargets.Text}</TableCell>
       <TableCell>
         {Object.entries(values)
           .filter(([key, value]) => key.includes("Upgrade") && value !== "")

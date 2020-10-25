@@ -97,11 +97,15 @@ function processGroup(groups: any) {
 }
 
 function resolveEffectTarget(item: any) {
-  const guid = item.Values.ItemEffect.EffectTargets.Item.GUID;
-  const effectTarget = guids[guid];
+  let effectTargets = item.Values.ItemEffect.EffectTargets.Item;
 
-  if (effectTarget && effectTarget.Values.Text.LocaText.English.Text) {
-    item.Values.ItemEffect.EffectTargets.Item.Text =
-      effectTarget.Values.Text.LocaText.English.Text;
+  if (!Array.isArray(effectTargets)) {
+    effectTargets = [effectTargets];
   }
+
+  item.Values.ItemEffect.EffectTargets.Text = effectTargets
+    .map((target: any) => guids[target.GUID])
+    .filter((target: any) => target)
+    .map((target: any) => target.Values.Text.LocaText.English.Text)
+    .join(", ");
 }
