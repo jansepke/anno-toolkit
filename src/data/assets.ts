@@ -49,11 +49,11 @@ function processAssets(assets: any) {
   }
 }
 
-export function getItems(assetType: string) {
+export async function getItems(assetType: string) {
   const assets: AnnoItem[] = [];
 
   for (const asset of assetsByType[assetType]) {
-    assets.push(newAnnoItem(asset));
+    assets.push(await newAnnoItem(asset));
   }
 
   return assets;

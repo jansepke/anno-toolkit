@@ -14,11 +14,10 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import ItemTable from "./components/ItemTable";
-import { AnnoItem } from "./data/AnnoItem";
+import { PageData } from "./data/data";
 
-const tabs = ["HarborOffice", "Guildhouse", "Townhall"];
-
-const App = ({ data }: { data: { items: AnnoItem[] } }) => {
+const App = ({ data }: { data: PageData }) => {
+  const tabs = Object.keys(data.tabs);
   const router = useRouter();
   const { assetType = "HarborOffice" } = router.query;
   const activeTab = tabs.indexOf(assetType as string);
@@ -55,7 +54,7 @@ const App = ({ data }: { data: { items: AnnoItem[] } }) => {
           <Link key={tab} href={`/de/${tab}`}>
             <Tab
               label={tab}
-              icon={<img src={`/img/${tab.toLowerCase()}.png`} width="20px" />}
+              icon={<img src={data.tabs[tab].icon} width="20px" />}
             />
           </Link>
         ))}

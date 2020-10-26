@@ -12,16 +12,19 @@ export interface AnnoItem {
   Upgrades: string[];
 }
 
-export function newAnnoItem(asset: any): AnnoItem {
+export async function newAnnoItem(asset: any): Promise<AnnoItem> {
   const values = asset.Values;
+
+  const iconPath = values.Standard.IconFilename.replace(
+    "data/ui/2kimages/",
+    ""
+  ).replace(".png", "_0.png");
+  const icon = await import(`../../static/img/${iconPath}?resize&size=20`);
 
   return {
     GUID: values.Standard.GUID,
     Name: translations[values.Standard.GUID],
-    Icon: values.Standard.IconFilename.replace(
-      "data/ui/2kimages",
-      "/img"
-    ).replace(".png", "_0.png"),
+    Icon: icon.default.src,
     EffectTargets: resolveEffectTarget(values),
     Type: values.Item.ItemType || "",
     Rarity: values.Item.Rarity || "Common",
