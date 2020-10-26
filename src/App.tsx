@@ -54,7 +54,7 @@ const App = ({ data }: { data: PageData }) => {
           <Link key={tab} href={`/de/${tab}`}>
             <Tab
               label={tab}
-              icon={<img src={data.tabs[tab].icon} width="20px" />}
+              icon={<img src={data.tabs[tab].icon} width="20" height="20" />}
             />
           </Link>
         ))}

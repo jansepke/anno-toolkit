@@ -7,7 +7,7 @@ const ItemTableRow = ({ item }: { item: AnnoItem }) => {
   return (
     <TableRow hover={true}>
       <TableCell>
-        <img src={item.Icon} />
+        <img src={item.Icon} width="20" height="20" />
       </TableCell>
       <TableCell>{item.Name}</TableCell>
       <TableCell>{item.Type}</TableCell>
