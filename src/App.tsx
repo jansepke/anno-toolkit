@@ -1,5 +1,12 @@
 import Box from "@material-ui/core/Box";
+import Card from "@material-ui/core/Card";
+import CardContent from "@material-ui/core/CardContent";
 import Container from "@material-ui/core/Container";
+import FormControl from "@material-ui/core/FormControl";
+import Grid from "@material-ui/core/Grid";
+import InputLabel from "@material-ui/core/InputLabel";
+import MenuItem from "@material-ui/core/MenuItem";
+import Select from "@material-ui/core/Select";
 import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
 import Typography from "@material-ui/core/Typography";
@@ -14,6 +21,10 @@ const App = ({ data }: any) => {
   const router = useRouter();
   const { assetType = "HarborOffice" } = router.query;
   const activeTab = tabs.indexOf(assetType as string);
+
+  const effectTargets = data.items
+    .flatMap((asset: any) => asset.Values.ItemEffect.EffectTargets.Text)
+    .filter((v: any, i: any, a: any) => a.indexOf(v) === i);
 
   return (
     <Container maxWidth="lg">
@@ -38,6 +49,24 @@ const App = ({ data }: any) => {
           </Link>
         ))}
       </Tabs>
+      <Card>
+        <CardContent>
+          <Grid container spacing={3}>
+            <Grid item xs={4} md={2}>
+              <FormControl fullWidth={true}>
+                <InputLabel>EffectTarget (TBD)</InputLabel>
+                <Select value="1">
+                  {effectTargets.map((target: any) => (
+                    <MenuItem key={target} value={target}>
+                      {target}
+                    </MenuItem>
+                  ))}
+                </Select>
+              </FormControl>
+            </Grid>
+          </Grid>
+        </CardContent>
+      </Card>
       <ItemTable data={data.items}></ItemTable>
     </Container>
   );
