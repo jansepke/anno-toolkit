@@ -42,7 +42,7 @@ export async function getData(
 
 async function importIcon(fileName: string) {
   const icon = await import(
-    `../../static/img/${fileName.toLowerCase()}.png?resize&size=20`
+    `../../data/img/${fileName.toLowerCase()}.png?resize&size=20`
   );
   return icon.default.src;
 }

@@ -19,7 +19,7 @@ export async function newAnnoItem(asset: any): Promise<AnnoItem> {
     "data/ui/2kimages/",
     ""
   ).replace(".png", "_0.png");
-  const icon = await import(`../../static/img/${iconPath}?resize&size=20`);
+  const icon = await import(`../../data/img/${iconPath}?resize&size=20`);
 
   return {
     GUID: values.Standard.GUID,
