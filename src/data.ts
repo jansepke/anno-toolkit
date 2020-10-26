@@ -7,25 +7,21 @@ const assetsByType: { [key: string]: any[] } = {};
 const guids: { [key: number]: any } = {};
 const translations: { [key: number]: string } = {};
 
-export async function getData() {
-  const cachedDir = await fs.mkdir(cacheFolder, { recursive: true });
+export async function getData(language: string, assetType: string) {
+  await fs.mkdir(cacheFolder, { recursive: true });
 
   // return cached data
-  if (cachedDir === undefined) {
+  if (await fileExists(cachedFile(assetType))) {
     return {
-      HarborOfficeItem: await readCachedData("HarborOfficeItem"),
-      GuildhouseItem: await readCachedData("GuildhouseItem"),
-      TownhallItem: await readCachedData("TownhallItem"),
+      items: await readCachedData(assetType),
     };
   }
 
-  await parseLanguage("german");
+  await parseLanguage(language);
   await parseAssets();
 
   return {
-    HarborOfficeItem: assetsByType.HarborOfficeItem,
-    GuildhouseItem: assetsByType.GuildhouseItem,
-    TownhallItem: assetsByType.TownhallItem,
+    items: assetsByType[assetType],
   };
 }
 
@@ -139,5 +135,14 @@ function removeEmptyProperties(asset: any) {
     if (asset.Values[propName] === "") {
       delete asset.Values[propName];
     }
+  }
+}
+
+async function fileExists(path: string) {
+  try {
+    await fs.access(path);
+    return true;
+  } catch (error) {
+    return false;
   }
 }

@@ -3,17 +3,17 @@ import Container from "@material-ui/core/Container";
 import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
 import Typography from "@material-ui/core/Typography";
-import React, { useState } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import React from "react";
 import ItemTable from "./components/ItemTable";
 
 const tabs = ["HarborOffice", "Guildhouse", "Townhall"];
 
 const App = ({ data }: any) => {
-  const [activeTab, setActiveTab] = useState<number>(0);
-
-  const changeTab = (event: any, newTab: number) => {
-    setActiveTab(newTab);
-  };
+  const router = useRouter();
+  const { assetType = "HarborOffice" } = router.query;
+  const activeTab = tabs.indexOf(assetType as string);
 
   return (
     <Container maxWidth="lg">
@@ -25,20 +25,20 @@ const App = ({ data }: any) => {
       </Box>
       <Tabs
         value={activeTab}
-        onChange={changeTab}
         indicatorColor="primary"
         textColor="primary"
         centered
       >
         {tabs.map((tab) => (
-          <Tab
-            key={tab}
-            label={tab}
-            icon={<img src={`/img/${tab.toLowerCase()}.png`} width="20px" />}
-          />
+          <Link key={tab} href={`/de/${tab}`}>
+            <Tab
+              label={tab}
+              icon={<img src={`/img/${tab.toLowerCase()}.png`} width="20px" />}
+            />
+          </Link>
         ))}
       </Tabs>
-      <ItemTable data={data[`${tabs[activeTab]}Item`]}></ItemTable>
+      <ItemTable data={data.items}></ItemTable>
     </Container>
   );
 };
