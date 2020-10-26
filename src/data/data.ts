@@ -1,21 +1,17 @@
-import { assetsByType, loadAssets } from "./assets";
-import { cacheFileExists, ensureCacheFolder, readCachedJSONFile } from "./file";
+import { assetsByType, getAssets, loadAssets } from "./assets";
+import { ensureCacheFolder } from "./file";
 import { loadTranslations } from "./translations";
 
 export async function getData(language: string, assetType: string) {
   await ensureCacheFolder();
 
-  // return cached data
-  if (await cacheFileExists(assetType)) {
-    return {
-      items: await readCachedJSONFile(assetType),
-    };
+  // load from disk if not cached
+  if (!assetsByType[assetType]) {
+    await loadTranslations(language);
+    await loadAssets();
   }
 
-  await loadTranslations(language);
-  await loadAssets();
-
   return {
-    items: assetsByType[assetType],
+    items: getAssets(assetType),
   };
 }

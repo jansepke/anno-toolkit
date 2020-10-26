@@ -9,10 +9,6 @@ export async function loadAssets() {
 
   processGroups(json.AssetList.Groups.Group);
 
-  assetsByType.HarborOfficeItem.forEach(enhanceAsset);
-  assetsByType.GuildhouseItem.forEach(enhanceAsset);
-  assetsByType.TownhallItem.forEach(enhanceAsset);
-
   // write cached data
   for (const [assetType, assets] of Object.entries(assetsByType)) {
     await saveToCache(assetType, assets);
@@ -53,10 +49,14 @@ function processAssets(assets: any) {
   }
 }
 
-function enhanceAsset(asset: any) {
-  resolveEffectTarget(asset);
-  addTranslations(asset);
-  removeEmptyProperties(asset);
+export function getAssets(assetType: string) {
+  for (const asset of assetsByType[assetType]) {
+    resolveEffectTarget(asset);
+    addTranslations(asset);
+    removeEmptyProperties(asset);
+  }
+
+  return assetsByType[assetType];
 }
 
 function resolveEffectTarget(asset: any) {
