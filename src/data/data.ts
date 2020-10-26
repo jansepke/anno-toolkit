@@ -1,4 +1,4 @@
-import { assetsByType, getAssets, loadAssets } from "./assets";
+import { assetsByType, getItems, loadAssets } from "./assets";
 import { ensureCacheFolder } from "./file";
 import { loadTranslations } from "./translations";
 
@@ -12,6 +12,6 @@ export async function getData(language: string, assetType: string) {
   }
 
   return {
-    items: getAssets(assetType),
+    items: getItems(assetType),
   };
 }

@@ -1,5 +1,5 @@
+import { AnnoItem, newAnnoItem } from "./AnnoItem";
 import { parseXMLDataFile, saveToCache } from "./file";
-import { translations } from "./translations";
 
 export const assetsByType: { [key: string]: any[] } = {};
 const guids: { [key: number]: any } = {};
@@ -49,38 +49,12 @@ function processAssets(assets: any) {
   }
 }
 
-export function getAssets(assetType: string) {
+export function getItems(assetType: string) {
+  const assets: AnnoItem[] = [];
+
   for (const asset of assetsByType[assetType]) {
-    resolveEffectTarget(asset);
-    addTranslations(asset);
-    removeEmptyProperties(asset);
+    assets.push(newAnnoItem(asset));
   }
 
-  return assetsByType[assetType];
-}
-
-function resolveEffectTarget(asset: any) {
-  let effectTargets = asset.Values.ItemEffect.EffectTargets.Item;
-
-  if (!Array.isArray(effectTargets)) {
-    effectTargets = [effectTargets];
-  }
-
-  asset.Values.ItemEffect.EffectTargets.Text = effectTargets
-    .map((target: any) => translations[target.GUID])
-    .filter((target: any) => target)
-    .join(", ");
-}
-
-function addTranslations(asset: any) {
-  const translation = translations[asset.Values.Standard.GUID];
-  asset.Values.Text.Translated = translation;
-}
-
-function removeEmptyProperties(asset: any) {
-  for (var propName in asset.Values) {
-    if (asset.Values[propName] === "") {
-      delete asset.Values[propName];
-    }
-  }
+  return assets;
 }

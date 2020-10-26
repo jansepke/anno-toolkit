@@ -6,9 +6,10 @@ import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import React from "react";
+import { AnnoItem } from "../data/AnnoItem";
 import ItemTableRow from "./ItemTableRow";
 
-const ItemTable = ({ data }: any) => {
+const ItemTable = ({ data }: { data: AnnoItem[] }) => {
   return (
     <TableContainer component={Paper}>
       <Table>
@@ -23,11 +24,8 @@ const ItemTable = ({ data }: any) => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {data.map((item: any) => (
-            <ItemTableRow
-              key={item.Template + item.Values.Standard.GUID}
-              item={item}
-            />
+          {data.map((item) => (
+            <ItemTableRow key={item.GUID} item={item} />
           ))}
         </TableBody>
       </Table>

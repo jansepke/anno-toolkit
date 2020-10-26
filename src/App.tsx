@@ -14,17 +14,18 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 import ItemTable from "./components/ItemTable";
+import { AnnoItem } from "./data/AnnoItem";
 
 const tabs = ["HarborOffice", "Guildhouse", "Townhall"];
 
-const App = ({ data }: any) => {
+const App = ({ data }: { data: { items: AnnoItem[] } }) => {
   const router = useRouter();
   const { assetType = "HarborOffice" } = router.query;
   const activeTab = tabs.indexOf(assetType as string);
 
   const effectTargets = data.items
-    .flatMap((asset: any) => asset.Values.ItemEffect.EffectTargets.Text)
-    .filter((v: any, i: any, a: any) => a.indexOf(v) === i);
+    .flatMap((asset) => asset.EffectTargets)
+    .filter((v, i, a) => a.indexOf(v) === i);
 
   return (
     <Container maxWidth="lg">
