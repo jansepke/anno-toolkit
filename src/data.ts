@@ -3,8 +3,9 @@ import { promises as fs } from "fs";
 
 const cacheFolder = "./cached-data";
 
-const items: { [key: string]: any[] } = {};
+const assetsByType: { [key: string]: any[] } = {};
 const guids: { [key: number]: any } = {};
+const translations: { [key: number]: string } = {};
 
 export async function getData() {
   const cachedDir = await fs.mkdir(cacheFolder, { recursive: true });
@@ -18,17 +19,40 @@ export async function getData() {
     };
   }
 
-  const xml = await fs.readFile("./data/assets.xml", "utf8");
-  const json = parseXML(xml);
+  await parseLanguage("german");
+  await parseAssets();
+
+  return {
+    HarborOfficeItem: assetsByType.HarborOfficeItem,
+    GuildhouseItem: assetsByType.GuildhouseItem,
+    TownhallItem: assetsByType.TownhallItem,
+  };
+}
+
+async function parseLanguage(language: string) {
+  const json = await parseXMLFile(`./data/texts_${language}.xml`);
+
+  for (const item of json.TextExport.Texts.Text) {
+    translations[item.GUID] = item.Text;
+  }
+
+  await fs.writeFile(
+    cachedFile(`texts_${language}`),
+    JSON.stringify(translations, null, 2)
+  );
+}
+
+async function parseAssets() {
+  const json = await parseXMLFile("./data/assets.xml");
 
   processGroups(json.AssetList.Groups.Group);
 
-  items.HarborOfficeItem.forEach(resolveEffectTarget);
-  items.GuildhouseItem.forEach(resolveEffectTarget);
-  items.TownhallItem.forEach(resolveEffectTarget);
+  assetsByType.HarborOfficeItem.forEach(enhanceAsset);
+  assetsByType.GuildhouseItem.forEach(enhanceAsset);
+  assetsByType.TownhallItem.forEach(enhanceAsset);
 
   // write cached data
-  for (const [assetType, assets] of Object.entries(items)) {
+  for (const [assetType, assets] of Object.entries(assetsByType)) {
     await fs.writeFile(cachedFile(assetType), JSON.stringify(assets, null, 2));
   }
 
@@ -38,12 +62,16 @@ export async function getData() {
   // console.log(items.VehicleItem.length); // 51
   // console.log(items.ShipSpecialist.length); // 48
   // console.log(items.CultureItem.length); // 162
+}
 
-  return {
-    HarborOfficeItem: items.HarborOfficeItem,
-    GuildhouseItem: items.GuildhouseItem,
-    TownhallItem: items.TownhallItem,
-  };
+async function parseXMLFile(filePath: string) {
+  const xml = await fs.readFile(filePath, "utf8");
+
+  try {
+    return parser.parse(xml, {}, true);
+  } catch (error) {
+    throw new Error("Invalid XML");
+  }
 }
 
 function cachedFile(assetType: string) {
@@ -53,14 +81,6 @@ function cachedFile(assetType: string) {
 async function readCachedData(assetType: string) {
   const rawData = await fs.readFile(cachedFile(assetType), "utf-8");
   return JSON.parse(rawData);
-}
-
-function parseXML(xml: string) {
-  try {
-    return parser.parse(xml, {}, true);
-  } catch (error) {
-    throw new Error("Invalid XML");
-  }
 }
 
 function processGroups(groups: any) {
@@ -81,32 +101,43 @@ function processAssets(assets: any) {
       continue;
     }
 
-    if (!items[asset.Template]) {
-      items[asset.Template] = [];
+    if (!assetsByType[asset.Template]) {
+      assetsByType[asset.Template] = [];
     }
 
-    // remove empty properties
-    for (var propName in asset.Values) {
-      if (asset.Values[propName] === "") {
-        delete asset.Values[propName];
-      }
-    }
-
-    items[asset.Template].push(asset);
+    assetsByType[asset.Template].push(asset);
     guids[asset.Values.Standard.GUID] = asset;
   }
 }
 
-function resolveEffectTarget(item: any) {
-  let effectTargets = item.Values.ItemEffect.EffectTargets.Item;
+function enhanceAsset(asset: any) {
+  resolveEffectTarget(asset);
+  addTranslations(asset);
+  removeEmptyProperties(asset);
+}
+
+function resolveEffectTarget(asset: any) {
+  let effectTargets = asset.Values.ItemEffect.EffectTargets.Item;
 
   if (!Array.isArray(effectTargets)) {
     effectTargets = [effectTargets];
   }
 
-  item.Values.ItemEffect.EffectTargets.Text = effectTargets
-    .map((target: any) => guids[target.GUID])
+  asset.Values.ItemEffect.EffectTargets.Text = effectTargets
+    .map((target: any) => translations[target.GUID])
     .filter((target: any) => target)
-    .map((target: any) => target.Values.Text.LocaText.English.Text)
     .join(", ");
+}
+
+function addTranslations(asset: any) {
+  const translation = translations[asset.Values.Standard.GUID];
+  asset.Values.Text.Translated = translation;
+}
+
+function removeEmptyProperties(asset: any) {
+  for (var propName in asset.Values) {
+    if (asset.Values[propName] === "") {
+      delete asset.Values[propName];
+    }
+  }
 }

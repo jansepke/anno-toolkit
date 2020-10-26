@@ -16,7 +16,7 @@ const ItemTableRow = ({ item }: any) => {
           width="20px"
         />
       </TableCell>
-      <TableCell>{values.Text.LocaText.English.Text}</TableCell>
+      <TableCell>{values.Text.Translated}</TableCell>
       <TableCell>{values.Item.ItemType}</TableCell>
       <TableCell>{values.Item.Rarity || "Common"}</TableCell>
       <TableCell>{values.ItemEffect.EffectTargets.Text}</TableCell>
