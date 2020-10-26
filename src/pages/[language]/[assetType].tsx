@@ -2,7 +2,7 @@ import { GetStaticProps } from "next";
 import Head from "next/head";
 import React from "react";
 import App from "../../App";
-import { getData } from "../../data";
+import { getData } from "../../data/data";
 
 const languages: { [key: string]: string } = {
   de: "german",
