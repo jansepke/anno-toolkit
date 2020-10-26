@@ -12,7 +12,7 @@ import Tabs from "@material-ui/core/Tabs";
 import Typography from "@material-ui/core/Typography";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useState } from "react";
 import ItemTable from "./components/ItemTable";
 import { AnnoItem } from "./data/AnnoItem";
 
@@ -26,6 +26,16 @@ const App = ({ data }: { data: { items: AnnoItem[] } }) => {
   const effectTargets = data.items
     .flatMap((asset) => asset.EffectTargets)
     .filter((v, i, a) => a.indexOf(v) === i);
+
+  const [effectTarget, setEffectTarget] = useState("all");
+  const handleEffectTargetChange = (event: any) => {
+    setEffectTarget(event.target.value);
+  };
+
+  const filteredItems = data.items.filter(
+    (item) =>
+      effectTarget === "all" || item.EffectTargets.includes(effectTarget)
+  );
 
   return (
     <Container maxWidth="lg">
@@ -55,8 +65,12 @@ const App = ({ data }: { data: { items: AnnoItem[] } }) => {
           <Grid container spacing={3}>
             <Grid item xs={4} md={2}>
               <FormControl fullWidth={true}>
-                <InputLabel>EffectTarget (TBD)</InputLabel>
-                <Select value="1">
+                <InputLabel>EffectTarget</InputLabel>
+                <Select
+                  value={effectTarget}
+                  onChange={handleEffectTargetChange}
+                >
+                  <MenuItem value={"all"}>All</MenuItem>
                   {effectTargets.map((target: any) => (
                     <MenuItem key={target} value={target}>
                       {target}
@@ -68,7 +82,7 @@ const App = ({ data }: { data: { items: AnnoItem[] } }) => {
           </Grid>
         </CardContent>
       </Card>
-      <ItemTable data={data.items}></ItemTable>
+      <ItemTable data={filteredItems}></ItemTable>
     </Container>
   );
 };
