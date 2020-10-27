@@ -10,6 +10,7 @@
 - card layout
 - support all effects
 - use default font?
+- Loading indicator
 
 ## License
 

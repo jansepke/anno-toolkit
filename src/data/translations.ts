@@ -9,5 +9,5 @@ export async function loadTranslations(language: string) {
     translations[item.GUID] = item.Text;
   }
 
-  await saveToCache(`texts_${language}`, language);
+  await saveToCache(`texts_${language}`, json);
 }

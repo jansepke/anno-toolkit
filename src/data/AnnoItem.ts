@@ -9,7 +9,7 @@ export interface AnnoItem {
   EffectTargets: string[];
   // TODO: ItemAction
   // TODO: ExpeditionAttribute
-  Upgrades: string[];
+  Upgrades: { [key: string]: any }[];
 }
 
 export async function newAnnoItem(asset: any): Promise<AnnoItem> {
@@ -47,10 +47,23 @@ function resolveEffectTarget(values: any) {
 function getUpgrades(values: any) {
   return Object.entries(values)
     .filter(([key, value]) => key.includes("Upgrade") && value !== "")
-    .map(
-      ([key, value]: any[]) =>
-        `${key}: ${Object.entries(value)
-          .map(([vk, v]: any[]) => `${vk}: ${v.Value ? v.Value : "TBD"}`)
-          .join(" ")}`
+    .flatMap(([key, value]: any[]) =>
+      Object.entries(value).map(([vk, v]: any[]) => ({
+        key: vk,
+        value: translateValue(v),
+      }))
     );
+}
+function translateValue(v: any): any {
+  if (typeof v === "number" && translations[v]) {
+    return translations[v];
+  }
+  if (typeof v === "object" && typeof v.Item === "object") {
+    for (const property in v.Item) {
+      if (translations[v.Item[property]]) {
+        v.Item[property] = translations[v.Item[property]];
+      }
+    }
+  }
+  return v;
 }
