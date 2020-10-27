@@ -36,10 +36,17 @@ const App = ({ t, data }: { t: any; data: PageData }) => {
     setEffectTarget(event.target.value);
   };
 
-  const filteredItems = data.items.filter(
-    (item) =>
-      effectTarget === "all" || item.EffectTargets.includes(effectTarget)
-  );
+  const [rarity, setRarity] = useState("all");
+  const handleRarityChange = (event: any) => {
+    setRarity(event.target.value);
+  };
+
+  const filteredItems = data.items
+    .filter(
+      (item) =>
+        effectTarget === "all" || item.EffectTargets.includes(effectTarget)
+    )
+    .filter((item) => rarity === "all" || item.Rarity === rarity);
 
   return (
     <Container maxWidth="lg">
@@ -80,6 +87,19 @@ const App = ({ t, data }: { t: any; data: PageData }) => {
                       {target}
                     </MenuItem>
                   ))}
+                </Select>
+              </FormControl>
+            </Grid>
+            <Grid item xs={4} md={2}>
+              <FormControl fullWidth={true}>
+                <InputLabel>Rarity</InputLabel>
+                <Select value={rarity} onChange={handleRarityChange}>
+                  <MenuItem value={"all"}>All</MenuItem>
+                  <MenuItem value={"Common"}>Common</MenuItem>
+                  <MenuItem value={"Uncommon"}>Uncommon</MenuItem>
+                  <MenuItem value={"Rare"}>Rare</MenuItem>
+                  <MenuItem value={"Epic"}>Epic</MenuItem>
+                  <MenuItem value={"Legendary"}>Legendary</MenuItem>
                 </Select>
               </FormControl>
             </Grid>
