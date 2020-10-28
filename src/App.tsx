@@ -68,8 +68,10 @@ const App = ({ data }: { data: PageData }) => {
               icon={
                 <Image
                   src={`/img/${tab.toLowerCase()}.png`}
-                  width="20"
-                  height="20"
+                  width={20}
+                  height={20}
+                  priority={true}
+                  loading="eager"
                 />
               }
             />
