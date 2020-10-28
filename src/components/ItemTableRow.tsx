@@ -1,5 +1,6 @@
 import TableCell from "@material-ui/core/TableCell";
 import TableRow from "@material-ui/core/TableRow";
+import Image from "next/image";
 import React from "react";
 import { AnnoItem } from "../data/AnnoItem";
 
@@ -52,7 +53,7 @@ const ItemTableRow = ({ item }: { item: AnnoItem }) => {
   return (
     <TableRow hover={true}>
       <TableCell>
-        <img src={item.Icon} width="20" height="20" />
+        <Image src={item.Icon} width="20" height="20" />
       </TableCell>
       <TableCell>{item.Name}</TableCell>
       <TableCell>{item.Type}</TableCell>

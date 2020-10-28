@@ -6,9 +6,7 @@ import { loadTranslations } from "./translations";
 export interface PageData {
   items: AnnoItem[];
   tabs: {
-    [key: string]: {
-      icon: string;
-    };
+    [key: string]: {};
   };
 }
 
@@ -27,22 +25,9 @@ export async function getData(
   return {
     items: await getItems(assetType),
     tabs: {
-      HarborOffice: {
-        icon: await importIcon("HarborOffice"),
-      },
-      Guildhouse: {
-        icon: await importIcon("Guildhouse"),
-      },
-      Townhall: {
-        icon: await importIcon("Townhall"),
-      },
+      HarborOffice: {},
+      Guildhouse: {},
+      Townhall: {},
     },
   };
-}
-
-async function importIcon(fileName: string) {
-  const icon = await import(
-    `../../data/img/${fileName.toLowerCase()}.png?resize&size=20`
-  );
-  return icon.default.src;
 }

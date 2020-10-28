@@ -10,6 +10,7 @@ import Select from "@material-ui/core/Select";
 import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
 import Typography from "@material-ui/core/Typography";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
@@ -64,7 +65,13 @@ const App = ({ data }: { data: PageData }) => {
           <Link key={tab} href={`/de/${tab}`}>
             <Tab
               label={tab}
-              icon={<img src={data.tabs[tab].icon} width="20" height="20" />}
+              icon={
+                <Image
+                  src={`/img/${tab.toLowerCase()}.png`}
+                  width="20"
+                  height="20"
+                />
+              }
             />
           </Link>
         ))}

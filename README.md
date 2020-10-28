@@ -11,6 +11,9 @@
 - support all effects
 - use default font?
 - Loading indicator
+- Upload save game
+- Favorite items
+- Ignore active item
 
 ## License
 

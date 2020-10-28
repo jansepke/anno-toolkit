@@ -17,14 +17,13 @@ export async function newAnnoItem(asset: any): Promise<AnnoItem> {
 
   const iconPath = values.Standard.IconFilename.replace(
     "data/ui/2kimages/",
-    ""
+    "/img/"
   ).replace(".png", "_0.png");
-  const icon = await import(`../../data/img/${iconPath}?resize&size=20`);
 
   return {
     GUID: values.Standard.GUID,
     Name: translations[values.Standard.GUID],
-    Icon: icon.default.src,
+    Icon: iconPath,
     EffectTargets: resolveEffectTarget(values),
     Type: values.Item.ItemType || "",
     Rarity: values.Item.Rarity || "Common",
