@@ -15,8 +15,11 @@ import { useRouter } from "next/router";
 import React, { useState } from "react";
 import ItemTable from "./components/ItemTable";
 import { PageData } from "./data/data";
+import i18n from "./i18n";
 
 const App = ({ data }: { data: PageData }) => {
+  const [t] = i18n.useTranslation("common");
+
   const tabs = Object.keys(data.tabs);
   const router = useRouter();
   const { assetType = "HarborOffice" } = router.query;
@@ -46,7 +49,7 @@ const App = ({ data }: { data: PageData }) => {
   return (
     <Container maxWidth="lg">
       <Typography variant="h2" align="center">
-        Anno 1800 items
+        {t("title")}
       </Typography>
       <Box m={2}>
         <Typography align="justify">Lorem ipsum.</Typography>
