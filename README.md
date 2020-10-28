@@ -13,6 +13,7 @@
 - Loading indicator
 - Upload save game
 - Favorite items
+- image size
 - Ignore active item
 
 ## License

@@ -17,6 +17,7 @@ const renderBoolean = [
   "BlockHostileTakeover",
   "BlockBuyShare",
   "HappinessIgnoresMorale",
+  "ProvideIndustrialization",
 ];
 
 const renderUpgrade = (upgrade: any) => {
@@ -43,7 +44,15 @@ const renderUpgrade = (upgrade: any) => {
   }
 
   if (upgrade.key === "ReplaceInputs") {
-    return `${upgrade.key}: ${upgrade.value.Item.OldInput} -> ${upgrade.value.Item.NewInput}`;
+    return `${upgrade.key}: ${upgrade.value.Item.map(
+      (item: any) => `${item.OldInput} -> ${item.NewInput}`
+    ).join(", ")}`;
+  }
+
+  if (upgrade.key === "AdditionalOutput") {
+    return `${upgrade.key}: ${upgrade.value.Item.map(
+      (item: any) => `1/${item.AdditionalOutputCycle} ${item.Product}`
+    ).join(", ")}`;
   }
 
   return JSON.stringify(upgrade);

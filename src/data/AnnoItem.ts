@@ -53,16 +53,35 @@ function getUpgrades(values: any) {
       }))
     );
 }
+
 function translateValue(v: any): any {
-  if (typeof v === "number" && translations[v]) {
+  if (typeof v === "number" && v >= 10000 && translations[v]) {
     return translations[v];
   }
-  if (typeof v === "object" && typeof v.Item === "object") {
-    for (const property in v.Item) {
-      if (translations[v.Item[property]]) {
-        v.Item[property] = translations[v.Item[property]];
+
+  if (
+    typeof v === "object" &&
+    typeof v.Item === "object" &&
+    !Array.isArray(v.Item)
+  ) {
+    v.Item = [v.Item];
+  }
+
+  if (typeof v === "object" && Array.isArray(v.Item)) {
+    for (const item of v.Item) {
+      for (const property in item) {
+        const value = item[property];
+
+        if (
+          typeof value === "number" &&
+          value >= 10000 &&
+          translations[value]
+        ) {
+          item[property] = translations[value];
+        }
       }
     }
   }
+
   return v;
 }
