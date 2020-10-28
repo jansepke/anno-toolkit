@@ -12,16 +12,11 @@ import Tabs from "@material-ui/core/Tabs";
 import Typography from "@material-ui/core/Typography";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import ItemTable from "./components/ItemTable";
 import { PageData } from "./data/data";
-import { TFunction } from "next-i18next";
-import { withTranslation } from "./i18n";
-import { I18nContext } from "next-i18next";
 
-const App = ({ t, data }: { t: any; data: PageData }) => {
-  const { i18n } = useContext(I18nContext);
-  debugger;
+const App = ({ data }: { data: PageData }) => {
   const tabs = Object.keys(data.tabs);
   const router = useRouter();
   const { assetType = "HarborOffice" } = router.query;
@@ -51,7 +46,7 @@ const App = ({ t, data }: { t: any; data: PageData }) => {
   return (
     <Container maxWidth="lg">
       <Typography variant="h2" align="center">
-        {t("apptitle")}
+        Anno 1800 items
       </Typography>
       <Box m={2}>
         <Typography align="justify">Lorem ipsum.</Typography>

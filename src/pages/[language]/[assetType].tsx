@@ -3,7 +3,6 @@ import Head from "next/head";
 import React from "react";
 import App from "../../App";
 import { getData, PageData } from "../../data/data";
-import { withTranslation } from "../../i18n";
 
 const languages: { [key: string]: string } = {
   de: "german",
@@ -14,18 +13,17 @@ const f = (a: any, b: any) =>
 const cartesian = (a: any, b: any = undefined, ...c: any[]): any =>
   b ? cartesian(f(a, b), ...c) : a;
 
-const Index = ({ t, data }: { t: any; data: PageData }) => (
+const Index = ({ data }: { data: PageData }) => (
   <>
     <Head>
       <title>Anno 1800 Items</title>
       <meta name="description" content="Anno 1800 items." />
     </Head>
-    <p>Hallo {t("apptitle")}</p>
-    <App data={data} t={t} />
+    <App data={data} />
   </>
 );
 
-export default withTranslation("common")(Index);
+export default Index;
 
 export const getStaticProps: GetStaticProps = async ({
   params = { language: "de", assetType: "HarborOffice" },
@@ -36,7 +34,7 @@ export const getStaticProps: GetStaticProps = async ({
   );
 
   return {
-    props: { data: data, namespacesRequired: ["common"] },
+    props: { data: data },
   };
 };
 
