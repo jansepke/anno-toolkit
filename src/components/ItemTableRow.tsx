@@ -20,6 +20,20 @@ const renderBoolean = [
   "ProvideIndustrialization",
 ];
 
+const renderUpgradeItem = (key: string, item: any) => {
+  switch (key) {
+    case "ReplaceInputs":
+      return `${item.OldInput} -> ${item.NewInput}`;
+    case "AdditionalOutput":
+      return `1/${item.AdditionalOutputCycle} ${item.Product}`;
+    case "InputAmountUpgrade":
+      return `${item.Amount} ${item.Product}`;
+
+    default:
+      return JSON.stringify(item);
+  }
+};
+
 const renderUpgrade = (upgrade: any) => {
   if (upgrade.value.Value) {
     return `${upgrade.key}: ${upgrade.value.Value}${
@@ -43,15 +57,9 @@ const renderUpgrade = (upgrade: any) => {
     return `${upgrade.key}: ${upgrade.value}`;
   }
 
-  if (upgrade.key === "ReplaceInputs") {
-    return `${upgrade.key}: ${upgrade.value.Item.map(
-      (item: any) => `${item.OldInput} -> ${item.NewInput}`
-    ).join(", ")}`;
-  }
-
-  if (upgrade.key === "AdditionalOutput") {
-    return `${upgrade.key}: ${upgrade.value.Item.map(
-      (item: any) => `1/${item.AdditionalOutputCycle} ${item.Product}`
+  if (upgrade.value.Item) {
+    return `${upgrade.key}: ${upgrade.value.Item.map((item: any) =>
+      renderUpgradeItem(upgrade.key, item)
     ).join(", ")}`;
   }
 
