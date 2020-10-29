@@ -1,19 +1,34 @@
 import { AnnoItem, newAnnoItem } from "./AnnoItem";
-import { parseXMLDataFile, saveToCache } from "./file";
+import {
+  cacheFileExists,
+  parseXMLDataFile,
+  readFromCache,
+  saveToCache,
+} from "./file";
 
-export const assetsByType: { [key: string]: any[] } = {};
+const assetsByType: { [key: string]: any[] } = {};
 const guids: { [key: number]: any } = {};
 
-export async function loadAssets() {
+export async function loadAssets(assetType: string) {
+  if (assetsByType[assetType]) {
+    return;
+  }
+
   console.log("Loading Assets...");
 
-  const json = await parseXMLDataFile("assets");
+  const cached = await cacheFileExists(assetType);
 
-  processGroups(json.AssetList.Groups.Group);
+  if (cached) {
+    assetsByType[assetType] = await readFromCache(assetType);
+  } else {
+    const json = await parseXMLDataFile("assets");
 
-  // write cached data
-  for (const [assetType, assets] of Object.entries(assetsByType)) {
-    await saveToCache(assetType, assets);
+    processGroups(json.AssetList.Groups.Group);
+
+    // write cached data
+    for (const [assetType, assets] of Object.entries(assetsByType)) {
+      await saveToCache(assetType, assets);
+    }
   }
 
   // console.log(items.GuildhouseItem.length); // 472

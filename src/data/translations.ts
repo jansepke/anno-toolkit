@@ -1,15 +1,31 @@
-import { parseXMLDataFile, saveToCache } from "./file";
+import {
+  cacheFileExists,
+  parseXMLDataFile,
+  readFromCache,
+  saveToCache,
+} from "./file";
 
 export const translations: { [key: number]: string } = {};
 
 export async function loadTranslations(language: string) {
+  if (Object.keys(translations).length > 0) {
+    return;
+  }
+
   console.log("Loading Translations...");
 
-  const json = await parseXMLDataFile(`texts_${language}`);
+  const fileName = `texts_${language}`;
+
+  const cached = await cacheFileExists(fileName);
+  const json = cached
+    ? await readFromCache(fileName)
+    : await parseXMLDataFile(fileName);
 
   for (const item of json.TextExport.Texts.Text) {
     translations[item.GUID] = item.Text;
   }
 
-  await saveToCache(`texts_${language}`, json);
+  if (!cached) {
+    await saveToCache(fileName, json);
+  }
 }

@@ -3,7 +3,6 @@
 ## TODO
 
 - README
-- skip json file deletion+creation if already existing
 - more filters
 - multi language support
 - more item types

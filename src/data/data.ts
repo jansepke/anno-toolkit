@@ -1,5 +1,5 @@
 import { AnnoItem } from "./AnnoItem";
-import { assetsByType, getItems, loadAssets } from "./assets";
+import { getItems, loadAssets } from "./assets";
 import { ensureCacheFolder } from "./file";
 import { loadTranslations, translations } from "./translations";
 
@@ -14,11 +14,8 @@ export async function getData(
 ): Promise<PageData> {
   await ensureCacheFolder();
 
-  // load from disk if not cached
-  if (!assetsByType[assetType]) {
-    await loadTranslations(language);
-    await loadAssets();
-  }
+  await loadTranslations(language);
+  await loadAssets(assetType);
 
   return {
     items: await getItems(assetType),
