@@ -11,7 +11,7 @@ import i18n from "../i18n";
 
 const useStyles = makeStyles((theme) => ({
   card: {
-    height: "20vw",
+    height: "25rem",
   },
   content: {
     paddingTop: "0",
