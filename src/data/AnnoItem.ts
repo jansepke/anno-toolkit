@@ -48,7 +48,7 @@ function getUpgrades(values: any) {
     .filter(([key, value]) => key.includes("Upgrade") && value !== "")
     .flatMap(([key, value]: any[]) =>
       Object.entries(value).map(([vk, v]: any[]) => ({
-        key: vk,
+        key: vk.replace("Upgrade", ""),
         value: translateValue(v),
       }))
     );
