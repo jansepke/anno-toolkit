@@ -24,8 +24,9 @@ npm run start # run production build
 - Upload save game
 - Favorite items
 - image size
-- Ignore active item
+- support active items
 - filter by world
+- filter by DLC
 
 ## License
 

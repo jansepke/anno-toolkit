@@ -75,6 +75,10 @@ export async function getItems(assetType: string) {
   const assets: AnnoItem[] = [];
 
   for (const asset of assetsByType[assetType]) {
+    if (asset.Values.ItemAction) {
+      continue;
+    }
+
     assets.push(await newAnnoItem(asset));
   }
 
