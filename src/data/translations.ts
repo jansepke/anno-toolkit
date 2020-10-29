@@ -22,7 +22,9 @@ export async function loadTranslations(language: string) {
     : await parseXMLDataFile(fileName);
 
   for (const item of json.TextExport.Texts.Text) {
-    translations[item.GUID] = item.Text;
+    translations[item.GUID] = item.Text.replace
+      ? item.Text.replace(/\[.*\]\s/g, "")
+      : item.Text;
   }
 
   if (!cached) {

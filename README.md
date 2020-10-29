@@ -18,15 +18,15 @@ npm run start # run production build
 - more filters
 - multi language support
 - more item types
-- card layout
 - support all effects
-- use default font?
+- improve font loading performance
 - Upload save game
 - Favorite items
 - image size
 - support active items
 - filter by world
 - filter by DLC
+- PWA
 
 ## License
 

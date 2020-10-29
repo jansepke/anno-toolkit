@@ -104,10 +104,30 @@ const upgradeIds: { [key: string]: number } = {
   ProvideIndustrialization: 12485,
   IncidentExplosionIncreaseUpgrade: 22143,
   IncidentRiotIncreaseUpgrade: 14292,
-  PipeCapacityUpgrade: 2320,
+  PipeCapacityUpgrade: 127395,
+  RiotInfluenceUpgrade: 14290,
+  AdditionalHappiness: 12314,
+  ResolverUnitDecreaseUpgrade: 21508,
+  ResolverUnitMovementSpeedUpgrade: 12012,
+  ResolverUnitCountUpgrade: 3897,
   AddedFertility: 23371,
   AttractivenessPositive: 145011,
-  Residents: 2322,
-  AreaHappiness: 2323,
+  PublicServiceFullSatisfactionDistance: 12014,
+  InputBenefitModifier: 12690,
+  ResidentsUpgrade: 2322,
+  TaxModifierInPercent: 12677,
+  IncidentIllnessIncreaseUpgrade: 12226,
+  NeedProvideNeedUpgrade: 12315,
+  StressUpgrade: 2323,
+  GoodConsumptionUpgrade: 21386, // noch nicht perfekt bestimmt
+  WorkforceModifierInPercent: 12676,
+  InputAmountUpgrade: 23509,
+  SpecialUnitHappinessThresholdUpgrade: 21593,
+  BlockHostileTakeover: 15801, // Nicht optimal.
+  SpawnProbabilityFactor: 20084, // Besondere Gäste
+  ConstructionCostInPercent: 12723,
+  AddAssemblyOptions: 21494, // noch zu definieren
+  BaseDamageUpgrade: 2334, // Schaden pro Schuss
+  AttackSpeedUpgrade: 2336,
   Hitpoints: 2333,
 };
