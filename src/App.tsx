@@ -1,17 +1,15 @@
-import Box from "@material-ui/core/Box";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Container from "@material-ui/core/Container";
 import FormControl from "@material-ui/core/FormControl";
 import Grid from "@material-ui/core/Grid";
-import InputLabel from "@material-ui/core/InputLabel";
-import MenuItem from "@material-ui/core/MenuItem";
-import Select from "@material-ui/core/Select";
 import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
 import TextField from "@material-ui/core/TextField";
 import Typography from "@material-ui/core/Typography";
-import Autocomplete from "@material-ui/lab/Autocomplete";
+import Autocomplete, {
+  AutocompleteInputChangeReason,
+} from "@material-ui/lab/Autocomplete";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -19,6 +17,14 @@ import React, { useState } from "react";
 import ItemTable from "./components/ItemTable";
 import { PageData } from "./data/data";
 import i18n from "./i18n";
+
+const autocompleteChangeHandler = (setState: (value: string) => any) => (
+  event: React.ChangeEvent<{}>,
+  value: string,
+  reason: AutocompleteInputChangeReason
+) => {
+  reason === "clear" ? setState("all") : setState(value);
+};
 
 const App = ({ data }: { data: PageData }) => {
   const [t] = i18n.useTranslation("common");
@@ -32,25 +38,11 @@ const App = ({ data }: { data: PageData }) => {
     .flatMap((asset) => asset.effectTargets)
     .filter((v, i, a) => a.indexOf(v) === i);
   const [effectTarget, setEffectTarget] = useState("all");
-  const handleEffectTargetChange = (
-    event: object,
-    value: string,
-    reason: string
-  ) => {
-    reason === "clear" ? setEffectTarget("all") : setEffectTarget(value);
-  };
 
   const upgrades = data.items
     .flatMap((asset) => asset.upgrades.map((upgrade) => upgrade.key))
     .filter((v, i, a) => a.indexOf(v) === i);
   const [upgrade, setUpgrade] = useState("all");
-  const handleUpgradeChange = (
-    event: object,
-    value: string,
-    reason: string
-  ) => {
-    reason === "clear" ? setUpgrade("all") : setUpgrade(value);
-  };
 
   const raritySet = [
     { value: "Common" },
@@ -60,9 +52,6 @@ const App = ({ data }: { data: PageData }) => {
     { value: "Legendary" },
   ];
   const [rarity, setRarity] = useState("all");
-  const handleRarityChange = (event: object, value: string, reason: string) => {
-    reason === "clear" ? setRarity("all") : setRarity(value);
-  };
 
   const filteredItems = data.items
     .filter(
@@ -112,7 +101,7 @@ const App = ({ data }: { data: PageData }) => {
                   options={effectTargets}
                   autoComplete={true}
                   getOptionLabel={(option) => option}
-                  onInputChange={handleEffectTargetChange}
+                  onInputChange={autocompleteChangeHandler(setEffectTarget)}
                   renderInput={(params) => (
                     <TextField
                       {...params}
@@ -128,7 +117,7 @@ const App = ({ data }: { data: PageData }) => {
                 <Autocomplete
                   options={upgrades}
                   autoComplete={true}
-                  onInputChange={handleUpgradeChange}
+                  onInputChange={autocompleteChangeHandler(setUpgrade)}
                   renderInput={(params) => (
                     <TextField
                       {...params}
@@ -145,7 +134,7 @@ const App = ({ data }: { data: PageData }) => {
                   options={raritySet}
                   autoComplete={true}
                   getOptionLabel={(option) => option.value}
-                  onInputChange={handleRarityChange}
+                  onInputChange={autocompleteChangeHandler(setRarity)}
                   renderInput={(params) => (
                     <TextField
                       {...params}
