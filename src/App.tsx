@@ -17,6 +17,8 @@ import React, { useState } from "react";
 import ItemTable from "./components/ItemTable";
 import { PageData } from "./data/data";
 import i18n from "./i18n";
+import Autocomplete from "@material-ui/lab/Autocomplete";
+import TextField from "@material-ui/core/TextField";
 
 const App = ({ data }: { data: PageData }) => {
   const [t] = i18n.useTranslation("common");
@@ -31,13 +33,26 @@ const App = ({ data }: { data: PageData }) => {
     .filter((v, i, a) => a.indexOf(v) === i);
 
   const [effectTarget, setEffectTarget] = useState("all");
-  const handleEffectTargetChange = (event: any) => {
-    setEffectTarget(event.target.value);
+  const handleEffectTargetChange = (
+    event: object,
+    value: string,
+    reason: string
+  ) => {
+    reason === "clear" ? setEffectTarget("all") : setEffectTarget(value);
   };
 
+  const raritySet = [
+    { value: "all" },
+    { value: "Common" },
+    { value: "Uncommon" },
+    { value: "Rare" },
+    { value: "Epic" },
+    { value: "Legendary" },
+  ];
+
   const [rarity, setRarity] = useState("all");
-  const handleRarityChange = (event: any) => {
-    setRarity(event.target.value);
+  const handleRarityChange = (event: object, value: string, reason: string) => {
+    reason === "clear" ? setRarity("all") : setRarity(value);
   };
 
   const filteredItems = data.items
@@ -83,31 +98,36 @@ const App = ({ data }: { data: PageData }) => {
           <Grid container spacing={3}>
             <Grid item xs={4} md={2}>
               <FormControl fullWidth={true}>
-                <InputLabel>EffectTarget</InputLabel>
-                <Select
-                  value={effectTarget}
-                  onChange={handleEffectTargetChange}
-                >
-                  <MenuItem value={"all"}>All</MenuItem>
-                  {effectTargets.map((target: any) => (
-                    <MenuItem key={target} value={target}>
-                      {target}
-                    </MenuItem>
-                  ))}
-                </Select>
+                <Autocomplete
+                  options={effectTargets}
+                  autoComplete={true}
+                  getOptionLabel={(option) => option}
+                  onInputChange={handleEffectTargetChange}
+                  renderInput={(params) => (
+                    <TextField
+                      {...params}
+                      label={t("effectTarget")}
+                      variant="outlined"
+                    />
+                  )}
+                />
               </FormControl>
             </Grid>
             <Grid item xs={4} md={2}>
               <FormControl fullWidth={true}>
-                <InputLabel>Rarity</InputLabel>
-                <Select value={rarity} onChange={handleRarityChange}>
-                  <MenuItem value={"all"}>All</MenuItem>
-                  <MenuItem value={"Common"}>Common</MenuItem>
-                  <MenuItem value={"Uncommon"}>Uncommon</MenuItem>
-                  <MenuItem value={"Rare"}>Rare</MenuItem>
-                  <MenuItem value={"Epic"}>Epic</MenuItem>
-                  <MenuItem value={"Legendary"}>Legendary</MenuItem>
-                </Select>
+                <Autocomplete
+                  options={raritySet}
+                  autoComplete={true}
+                  getOptionLabel={(option) => option.value}
+                  onInputChange={handleRarityChange}
+                  renderInput={(params) => (
+                    <TextField
+                      {...params}
+                      label={t("rarity")}
+                      variant="outlined"
+                    />
+                  )}
+                />
               </FormControl>
             </Grid>
           </Grid>
