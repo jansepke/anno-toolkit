@@ -23,7 +23,7 @@ const autocompleteChangeHandler = (setState: (value: string) => any) => (
   value: string,
   reason: AutocompleteInputChangeReason
 ) => {
-  reason === "clear" ? setState("all") : setState(value);
+  reason === "clear" || value === "" ? setState("all") : setState(value);
 };
 
 const App = ({ data }: { data: PageData }) => {
@@ -100,7 +100,6 @@ const App = ({ data }: { data: PageData }) => {
                 <Autocomplete
                   options={effectTargets}
                   autoComplete={true}
-                  getOptionLabel={(option) => option}
                   onInputChange={autocompleteChangeHandler(setEffectTarget)}
                   renderInput={(params) => (
                     <TextField
