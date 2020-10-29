@@ -52,7 +52,8 @@ function getUpgrades(values: any) {
         label: translations[upgradeIds[vk]] || vk,
         value: translateValue(v),
       }))
-    );
+    )
+    .filter((upgrade) => upgrade.key !== "PublicServiceNoSatisfactionDistance");
 }
 
 function translateValue(v: any): any {
