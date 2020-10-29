@@ -10,7 +10,6 @@
 - card layout
 - support all effects
 - use default font?
-- Loading indicator
 - Upload save game
 - Favorite items
 - image size
