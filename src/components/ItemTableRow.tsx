@@ -70,14 +70,14 @@ const ItemTableRow = ({ item }: { item: AnnoItem }) => {
   return (
     <TableRow hover={true}>
       <TableCell>
-        <Image src={item.Icon} width={20} height={20} />
+        <Image src={item.icon} width={20} height={20} />
       </TableCell>
-      <TableCell>{item.Name}</TableCell>
-      <TableCell>{item.Type}</TableCell>
-      <TableCell>{item.Rarity}</TableCell>
-      <TableCell>{item.EffectTargets.join(", ")}</TableCell>
+      <TableCell>{item.name}</TableCell>
+      <TableCell>{item.type}</TableCell>
+      <TableCell>{item.rarity}</TableCell>
+      <TableCell>{item.effectTargets.join(", ")}</TableCell>
       <TableCell>
-        {item.Upgrades.map((upgrade) => (
+        {item.upgrades.map((upgrade) => (
           <span key={upgrade.key}>
             {renderUpgrade(upgrade)}
             <br />

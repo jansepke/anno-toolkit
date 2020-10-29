@@ -1,15 +1,15 @@
 import { translations } from "./translations";
 
 export interface AnnoItem {
-  GUID: number;
-  Name: string;
-  Icon: string;
-  Type: string;
-  Rarity: string;
-  EffectTargets: string[];
+  id: number;
+  name: string;
+  icon: string;
+  type: string;
+  rarity: string;
+  effectTargets: string[];
   // TODO: ItemAction
   // TODO: ExpeditionAttribute
-  Upgrades: { [key: string]: any }[];
+  upgrades: { [key: string]: any }[];
 }
 
 export async function newAnnoItem(asset: any): Promise<AnnoItem> {
@@ -21,13 +21,13 @@ export async function newAnnoItem(asset: any): Promise<AnnoItem> {
   ).replace(".png", "_0.png");
 
   return {
-    GUID: values.Standard.GUID,
-    Name: translations[values.Standard.GUID],
-    Icon: iconPath,
-    EffectTargets: resolveEffectTarget(values),
-    Type: values.Item.ItemType || "",
-    Rarity: values.Item.Rarity || "Common",
-    Upgrades: getUpgrades(values),
+    id: values.Standard.GUID,
+    name: translations[values.Standard.GUID],
+    icon: iconPath,
+    effectTargets: resolveEffectTarget(values),
+    type: values.Item.ItemType || "",
+    rarity: values.Item.Rarity || "Common",
+    upgrades: getUpgrades(values),
   };
 }
 

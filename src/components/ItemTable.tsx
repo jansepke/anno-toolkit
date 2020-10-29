@@ -25,7 +25,7 @@ const ItemTable = ({ data }: { data: AnnoItem[] }) => {
         </TableHead>
         <TableBody>
           {data.map((item) => (
-            <ItemTableRow key={item.GUID} item={item} />
+            <ItemTableRow key={item.id} item={item} />
           ))}
         </TableBody>
       </Table>

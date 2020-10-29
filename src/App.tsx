@@ -29,7 +29,7 @@ const App = ({ data }: { data: PageData }) => {
   const activeTab = tabs.indexOf(assetType as string);
 
   const effectTargets = data.items
-    .flatMap((asset) => asset.EffectTargets)
+    .flatMap((asset) => asset.effectTargets)
     .filter((v, i, a) => a.indexOf(v) === i);
 
   const [effectTarget, setEffectTarget] = useState("all");
@@ -58,9 +58,9 @@ const App = ({ data }: { data: PageData }) => {
   const filteredItems = data.items
     .filter(
       (item) =>
-        effectTarget === "all" || item.EffectTargets.includes(effectTarget)
+        effectTarget === "all" || item.effectTargets.includes(effectTarget)
     )
-    .filter((item) => rarity === "all" || item.Rarity === rarity);
+    .filter((item) => rarity === "all" || item.rarity === rarity);
 
   return (
     <Container maxWidth="lg">
