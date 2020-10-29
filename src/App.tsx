@@ -23,9 +23,9 @@ import TextField from "@material-ui/core/TextField";
 const App = ({ data }: { data: PageData }) => {
   const [t] = i18n.useTranslation("common");
 
-  const tabs = Object.keys(data.tabs);
   const router = useRouter();
   const { assetType = "HarborOffice" } = router.query;
+  const tabs = data.tabs.map((tab) => tab.key);
   const activeTab = tabs.indexOf(assetType as string);
 
   const effectTargets = data.items
@@ -76,13 +76,13 @@ const App = ({ data }: { data: PageData }) => {
         textColor="primary"
         centered
       >
-        {tabs.map((tab) => (
-          <Link key={tab} href={`/de/${tab}`}>
+        {data.tabs.map((tab) => (
+          <Link key={tab.key} href={`/de/${tab.key}`}>
             <Tab
-              label={tab}
+              label={tab.label}
               icon={
                 <Image
-                  src={`/img/${tab.toLowerCase()}.png`}
+                  src={`/img/${tab.key}.png`}
                   width={20}
                   height={20}
                   priority={true}
@@ -129,6 +129,14 @@ const App = ({ data }: { data: PageData }) => {
                   )}
                 />
               </FormControl>
+            </Grid>
+            <Grid item xs={4} md={2}>
+              <Typography align="right">
+                {filteredItems.length !== data.items.length
+                  ? `${filteredItems.length}/`
+                  : ""}
+                {data.items.length} Items
+              </Typography>
             </Grid>
           </Grid>
         </CardContent>

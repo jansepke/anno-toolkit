@@ -1,13 +1,11 @@
 import { AnnoItem } from "./AnnoItem";
 import { assetsByType, getItems, loadAssets } from "./assets";
 import { ensureCacheFolder } from "./file";
-import { loadTranslations } from "./translations";
+import { loadTranslations, translations } from "./translations";
 
 export interface PageData {
   items: AnnoItem[];
-  tabs: {
-    [key: string]: {};
-  };
+  tabs: { key: string; label: string }[];
 }
 
 export async function getData(
@@ -24,10 +22,10 @@ export async function getData(
 
   return {
     items: await getItems(assetType),
-    tabs: {
-      HarborOffice: {},
-      Guildhouse: {},
-      Townhall: {},
-    },
+    tabs: [
+      { key: "harboroffice", label: translations[4065] },
+      { key: "guildhouse", label: translations[2346] },
+      { key: "townhall", label: translations[2347] },
+    ],
   };
 }

@@ -15,6 +15,7 @@
 - Favorite items
 - image size
 - Ignore active item
+- filter by world
 
 ## License
 

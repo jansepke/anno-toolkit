@@ -26,11 +26,11 @@ const Index = ({ data }: { data: PageData }) => (
 export default Index;
 
 export const getStaticProps: GetStaticProps = async ({
-  params = { language: "de", assetType: "HarborOffice" },
+  params = { language: "de", assetType: "harboroffice" },
 } = {}) => {
   const data = await getData(
     languages[params.language as string],
-    (params.assetType as string) + "Item"
+    (params.assetType as string) + "item"
   );
 
   return {
@@ -39,7 +39,7 @@ export const getStaticProps: GetStaticProps = async ({
 };
 
 export const getStaticPaths = async () => ({
-  paths: cartesian(["de"], ["HarborOffice", "Guildhouse", "Townhall"]).map(
+  paths: cartesian(["de"], ["harboroffice", "guildhouse", "townhall"]).map(
     (params: any) => ({
       params: {
         language: params[0],

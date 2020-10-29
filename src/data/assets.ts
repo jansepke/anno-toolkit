@@ -5,6 +5,8 @@ export const assetsByType: { [key: string]: any[] } = {};
 const guids: { [key: number]: any } = {};
 
 export async function loadAssets() {
+  console.log("Loading Assets...");
+
   const json = await parseXMLDataFile("assets");
 
   processGroups(json.AssetList.Groups.Group);
@@ -40,11 +42,16 @@ function processAssets(assets: any) {
       continue;
     }
 
-    if (!assetsByType[asset.Template]) {
-      assetsByType[asset.Template] = [];
+    const assetType = (asset.Values.Item?.Allocation
+      ? asset.Values.Item.Allocation + "item"
+      : asset.Template
+    ).toLowerCase();
+
+    if (!assetsByType[assetType]) {
+      assetsByType[assetType] = [];
     }
 
-    assetsByType[asset.Template].push(asset);
+    assetsByType[assetType].push(asset);
     guids[asset.Values.Standard.GUID] = asset;
   }
 }
