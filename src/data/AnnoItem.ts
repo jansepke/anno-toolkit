@@ -9,7 +9,7 @@ export interface AnnoItem {
   effectTargets: string[];
   // TODO: ItemAction
   // TODO: ExpeditionAttribute
-  upgrades: { [key: string]: any }[];
+  upgrades: { key: string; label: string; value: any }[];
 }
 
 export async function newAnnoItem(asset: any): Promise<AnnoItem> {
@@ -47,8 +47,9 @@ function getUpgrades(values: any) {
   return Object.entries(values)
     .filter(([key, value]) => key.includes("Upgrade") && value !== "")
     .flatMap(([key, value]: any[]) =>
-      Object.entries(value).map(([vk, v]: any[]) => ({
-        key: vk.replace("Upgrade", ""),
+      Object.entries(value).map(([vk, v]: [string, any]) => ({
+        key: vk,
+        label: translations[upgradeIds[vk]] || vk,
         value: translateValue(v),
       }))
     );
@@ -85,3 +86,27 @@ function translateValue(v: any): any {
 
   return v;
 }
+
+// GUIDs für Objekte
+const upgradeIds: { [key: string]: number } = {
+  ProductivityUpgrade: 118000,
+  MaintenanceUpgrade: 2320,
+  ReplaceInputs: 20081,
+  AttractivenessUpgrade: 12691,
+  PublicServiceDistance: 2321,
+  AdditionalOutput: 20074,
+  ReplacingWorkforce: 12480,
+  WorkforceAmountUpgrade: 12337,
+  ModuleLimitPercent: 12075,
+  NeededAreaPercentUpgrade: 15319,
+  IncidentFireIncreaseUpgrade: 12225,
+  ProvideIndustrialization: 12485,
+  IncidentExplosionIncreaseUpgrade: 22143,
+  IncidentRiotIncreaseUpgrade: 14292,
+  PipeCapacityUpgrade: 2320,
+  AddedFertility: 23371,
+  AttractivenessPositive: 145011,
+  Residents: 2322,
+  AreaHappiness: 2323,
+  Hitpoints: 2333,
+};

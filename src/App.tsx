@@ -40,7 +40,7 @@ const App = ({ data }: { data: PageData }) => {
   const [effectTarget, setEffectTarget] = useState("all");
 
   const upgrades = data.items
-    .flatMap((asset) => asset.upgrades.map((upgrade) => upgrade.key))
+    .flatMap((asset) => asset.upgrades.map((upgrade) => upgrade.label))
     .filter((v, i, a) => a.indexOf(v) === i);
   const [upgrade, setUpgrade] = useState("all");
 
@@ -60,7 +60,7 @@ const App = ({ data }: { data: PageData }) => {
     )
     .filter(
       (item) =>
-        upgrade === "all" || item.upgrades.some((u) => u.key === upgrade)
+        upgrade === "all" || item.upgrades.some((u) => u.label === upgrade)
     )
     .filter((item) => rarity === "all" || item.rarity === rarity);
 
