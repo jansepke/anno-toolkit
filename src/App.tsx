@@ -9,7 +9,9 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
 import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
+import TextField from "@material-ui/core/TextField";
 import Typography from "@material-ui/core/Typography";
+import Autocomplete from "@material-ui/lab/Autocomplete";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -17,8 +19,6 @@ import React, { useState } from "react";
 import ItemTable from "./components/ItemTable";
 import { PageData } from "./data/data";
 import i18n from "./i18n";
-import Autocomplete from "@material-ui/lab/Autocomplete";
-import TextField from "@material-ui/core/TextField";
 
 const App = ({ data }: { data: PageData }) => {
   const [t] = i18n.useTranslation("common");
@@ -31,7 +31,6 @@ const App = ({ data }: { data: PageData }) => {
   const effectTargets = data.items
     .flatMap((asset) => asset.effectTargets)
     .filter((v, i, a) => a.indexOf(v) === i);
-
   const [effectTarget, setEffectTarget] = useState("all");
   const handleEffectTargetChange = (
     event: object,
@@ -39,6 +38,14 @@ const App = ({ data }: { data: PageData }) => {
     reason: string
   ) => {
     reason === "clear" ? setEffectTarget("all") : setEffectTarget(value);
+  };
+
+  const upgrades = data.items
+    .flatMap((asset) => asset.upgrades.map((upgrade) => upgrade.key))
+    .filter((v, i, a) => a.indexOf(v) === i);
+  const [upgrade, setUpgrade] = useState("all");
+  const handleUpgradeChange = (event: any) => {
+    setUpgrade(event.target.value);
   };
 
   const raritySet = [
@@ -49,7 +56,6 @@ const App = ({ data }: { data: PageData }) => {
     { value: "Epic" },
     { value: "Legendary" },
   ];
-
   const [rarity, setRarity] = useState("all");
   const handleRarityChange = (event: object, value: string, reason: string) => {
     reason === "clear" ? setRarity("all") : setRarity(value);
@@ -59,6 +65,10 @@ const App = ({ data }: { data: PageData }) => {
     .filter(
       (item) =>
         effectTarget === "all" || item.effectTargets.includes(effectTarget)
+    )
+    .filter(
+      (item) =>
+        upgrade === "all" || item.upgrades.some((u) => u.key === upgrade)
     )
     .filter((item) => rarity === "all" || item.rarity === rarity);
 
@@ -96,7 +106,7 @@ const App = ({ data }: { data: PageData }) => {
       <Card>
         <CardContent>
           <Grid container spacing={3}>
-            <Grid item xs={4} md={2}>
+            <Grid item xs={12} md={3}>
               <FormControl fullWidth={true}>
                 <Autocomplete
                   options={effectTargets}
@@ -113,7 +123,20 @@ const App = ({ data }: { data: PageData }) => {
                 />
               </FormControl>
             </Grid>
-            <Grid item xs={4} md={2}>
+            <Grid item xs={12} md={3}>
+              <FormControl fullWidth={true}>
+                <InputLabel>Upgrade</InputLabel>
+                <Select value={upgrade} onChange={handleUpgradeChange}>
+                  <MenuItem value={"all"}>All</MenuItem>
+                  {upgrades.map((e: any) => (
+                    <MenuItem key={e} value={e}>
+                      {e}
+                    </MenuItem>
+                  ))}
+                </Select>
+              </FormControl>
+            </Grid>
+            <Grid item xs={12} md={3}>
               <FormControl fullWidth={true}>
                 <Autocomplete
                   options={raritySet}
@@ -130,7 +153,7 @@ const App = ({ data }: { data: PageData }) => {
                 />
               </FormControl>
             </Grid>
-            <Grid item xs={4} md={2}>
+            <Grid item xs={12} md={3}>
               <Typography align="right">
                 {filteredItems.length !== data.items.length
                   ? `${filteredItems.length}/`
