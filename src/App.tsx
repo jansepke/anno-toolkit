@@ -44,12 +44,15 @@ const App = ({ data }: { data: PageData }) => {
     .flatMap((asset) => asset.upgrades.map((upgrade) => upgrade.key))
     .filter((v, i, a) => a.indexOf(v) === i);
   const [upgrade, setUpgrade] = useState("all");
-  const handleUpgradeChange = (event: any) => {
-    setUpgrade(event.target.value);
+  const handleUpgradeChange = (
+    event: object,
+    value: string,
+    reason: string
+  ) => {
+    reason === "clear" ? setUpgrade("all") : setUpgrade(value);
   };
 
   const raritySet = [
-    { value: "all" },
     { value: "Common" },
     { value: "Uncommon" },
     { value: "Rare" },
@@ -77,9 +80,6 @@ const App = ({ data }: { data: PageData }) => {
       <Typography variant="h2" align="center">
         {t("title")}
       </Typography>
-      <Box m={2}>
-        <Typography align="justify">Lorem ipsum.</Typography>
-      </Box>
       <Tabs
         value={activeTab}
         indicatorColor="primary"
@@ -106,7 +106,7 @@ const App = ({ data }: { data: PageData }) => {
       <Card>
         <CardContent>
           <Grid container spacing={3}>
-            <Grid item xs={12} md={3}>
+            <Grid item xs={12} sm={6} md={3}>
               <FormControl fullWidth={true}>
                 <Autocomplete
                   options={effectTargets}
@@ -123,20 +123,23 @@ const App = ({ data }: { data: PageData }) => {
                 />
               </FormControl>
             </Grid>
-            <Grid item xs={12} md={3}>
+            <Grid item xs={12} sm={6} md={3}>
               <FormControl fullWidth={true}>
-                <InputLabel>Upgrade</InputLabel>
-                <Select value={upgrade} onChange={handleUpgradeChange}>
-                  <MenuItem value={"all"}>All</MenuItem>
-                  {upgrades.map((e: any) => (
-                    <MenuItem key={e} value={e}>
-                      {e}
-                    </MenuItem>
-                  ))}
-                </Select>
+                <Autocomplete
+                  options={upgrades}
+                  autoComplete={true}
+                  onInputChange={handleUpgradeChange}
+                  renderInput={(params) => (
+                    <TextField
+                      {...params}
+                      label={t("upgrades")}
+                      variant="outlined"
+                    />
+                  )}
+                />
               </FormControl>
             </Grid>
-            <Grid item xs={12} md={3}>
+            <Grid item xs={12} sm={6} md={3}>
               <FormControl fullWidth={true}>
                 <Autocomplete
                   options={raritySet}
