@@ -1,8 +1,21 @@
-import TableCell from "@material-ui/core/TableCell";
-import TableRow from "@material-ui/core/TableRow";
+import Card from "@material-ui/core/Card";
+import CardContent from "@material-ui/core/CardContent";
+import CardHeader from "@material-ui/core/CardHeader";
+import Grid from "@material-ui/core/Grid";
+import { makeStyles } from "@material-ui/core/styles";
+import Typography from "@material-ui/core/Typography";
 import Image from "next/image";
 import React from "react";
 import { AnnoItem } from "../data/AnnoItem";
+
+const useStyles = makeStyles((theme) => ({
+  card: {
+    height: "20vw",
+  },
+  content: {
+    paddingTop: "0",
+  },
+}));
 
 const renderPercentage = [
   "ConstructionCostInPercent",
@@ -66,26 +79,33 @@ const renderUpgrade = (upgrade: any) => {
   return JSON.stringify(upgrade);
 };
 
-const ItemTableRow = ({ item }: { item: AnnoItem }) => {
+const ItemCard = ({ item }: { item: AnnoItem }) => {
+  const classes = useStyles();
+
   return (
-    <TableRow hover={true}>
-      <TableCell>
-        <Image src={item.icon} width={20} height={20} />
-      </TableCell>
-      <TableCell>{item.name}</TableCell>
-      <TableCell>{item.type}</TableCell>
-      <TableCell>{item.rarity}</TableCell>
-      <TableCell>{item.effectTargets.join(", ")}</TableCell>
-      <TableCell>
-        {item.upgrades.map((upgrade) => (
-          <span key={upgrade.key}>
-            {renderUpgrade(upgrade)}
-            <br />
-          </span>
-        ))}
-      </TableCell>
-    </TableRow>
+    <Grid item xs={12} sm={6} md={4} lg={3}>
+      <Card elevation={3} className={classes.card}>
+        <CardHeader
+          avatar={<Image src={item.icon} width={30} height={30} />}
+          title={item.name}
+          subheader={`${item.rarity} ${item.type}`}
+        />
+        <CardContent className={classes.content}>
+          <Typography variant="body2" component="p" gutterBottom>
+            Target: {item.effectTargets.join(", ")}
+          </Typography>
+          <Typography variant="body2" component="p">
+            {item.upgrades.map((upgrade) => (
+              <span key={upgrade.key}>
+                {renderUpgrade(upgrade)}
+                <br />
+              </span>
+            ))}
+          </Typography>
+        </CardContent>
+      </Card>
+    </Grid>
   );
 };
 
-export default ItemTableRow;
+export default ItemCard;

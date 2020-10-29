@@ -14,7 +14,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import ItemTable from "./components/ItemTable";
+import ItemCard from "./components/ItemCard";
 import { PageData } from "./data/data";
 import i18n from "./i18n";
 
@@ -92,7 +92,7 @@ const App = ({ data }: { data: PageData }) => {
           </Link>
         ))}
       </Tabs>
-      <Card>
+      <Card elevation={3}>
         <CardContent>
           <Grid container spacing={3}>
             <Grid item xs={12} sm={6} md={3}>
@@ -156,7 +156,12 @@ const App = ({ data }: { data: PageData }) => {
           </Grid>
         </CardContent>
       </Card>
-      <ItemTable data={filteredItems}></ItemTable>
+      <br />
+      <Grid container spacing={3}>
+        {filteredItems.map((item) => (
+          <ItemCard key={item.id} item={item} />
+        ))}
+      </Grid>
     </Container>
   );
 };
