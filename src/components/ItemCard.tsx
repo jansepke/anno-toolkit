@@ -103,12 +103,14 @@ const ItemCard = ({ item }: { item: AnnoItem }) => {
       <Card elevation={3} className={classes.card}>
         <CardHeader
           avatar={<Image src={item.icon} width={30} height={30} />}
-          title={item.name}
+          title={<strong>{item.name}</strong>}
+          titleTypographyProps={{ variant: "body1" }}
           subheader={`${item.rarity} ${item.type} (${item.id})`}
         />
         <CardContent className={classes.content}>
           <Typography variant="body2" component="p" gutterBottom>
-            {t("target")}: {item.effectTargets.join(", ")}
+            <strong>{t("target")}: </strong>
+            {item.effectTargets.join(", ")}
           </Typography>
           <Typography variant="body2" component="p">
             {item.upgrades.map((upgrade) => (
