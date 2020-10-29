@@ -24,7 +24,7 @@ const App = ({ data }: { data: PageData }) => {
   const [t] = i18n.useTranslation("common");
 
   const router = useRouter();
-  const { assetType = "HarborOffice" } = router.query;
+  const { assetType = data.tabs[0].key } = router.query;
   const tabs = data.tabs.map((tab) => tab.key);
   const activeTab = tabs.indexOf(assetType as string);
 
