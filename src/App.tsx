@@ -44,7 +44,13 @@ const App = ({ data }: { data: PageData }) => {
     .filter((v, i, a) => a.indexOf(v) === i);
   const [upgrade, setUpgrade] = useState("all");
 
-  const raritySet = ["Common", "Uncommon", "Rare", "Epic", "Legendary"];
+  const raritySet = [
+    t("Common"),
+    t("Uncommon"),
+    t("Rare"),
+    t("Epic"),
+    t("Legendary"),
+  ];
 
   const [rarity, setRarity] = useState("all");
 

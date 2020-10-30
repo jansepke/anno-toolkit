@@ -1,4 +1,5 @@
 import { translations } from "./translations";
+import i18n from "../i18n";
 
 export interface AnnoItem {
   id: number;
@@ -26,7 +27,9 @@ export async function newAnnoItem(asset: any): Promise<AnnoItem> {
     icon: iconPath,
     effectTargets: resolveEffectTarget(values),
     type: values.Item.ItemType || "",
-    rarity: values.Item.Rarity || "Common",
+    rarity:
+      translations[rarityIds[values.Item.Rarity]] ||
+      translations[rarityIds["Common"]],
     upgrades: getUpgrades(values),
   };
 }
@@ -89,6 +92,14 @@ function translateValue(v: any): any {
 }
 
 // GUIDs für Objekte
+const rarityIds: { [key: string]: number } = {
+  Common: 118002,
+  Uncommon: 118003,
+  Rare: 118004,
+  Epic: 118005,
+  Legendary: 118006,
+};
+
 const upgradeIds: { [key: string]: number } = {
   ProductivityUpgrade: 118000,
   MaintenanceUpgrade: 2320,

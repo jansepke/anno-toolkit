@@ -105,7 +105,7 @@ const ItemCard = ({ item }: { item: AnnoItem }) => {
           avatar={<Image src={item.icon} width={30} height={30} />}
           title={<strong>{item.name}</strong>}
           titleTypographyProps={{ variant: "body1" }}
-          subheader={`${item.rarity} ${item.type} (${item.id})`}
+          subheader={`${item.rarity} (${item.id})`}
         />
         <CardContent className={classes.content}>
           <Typography variant="body2" component="p" gutterBottom>
