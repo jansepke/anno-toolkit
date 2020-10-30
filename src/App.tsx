@@ -8,7 +8,7 @@ import Tabs from "@material-ui/core/Tabs";
 import TextField from "@material-ui/core/TextField";
 import Typography from "@material-ui/core/Typography";
 import Autocomplete, {
-  AutocompleteInputChangeReason,
+  AutocompleteChangeReason,
 } from "@material-ui/lab/Autocomplete";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,8 +20,8 @@ import i18n from "./i18n";
 
 const autocompleteChangeHandler = (setState: (value: string) => any) => (
   event: React.ChangeEvent<{}>,
-  value: string,
-  reason: AutocompleteInputChangeReason
+  value: any,
+  reason: AutocompleteChangeReason
 ) => {
   reason === "clear" || value === "" ? setState("all") : setState(value);
 };
@@ -100,7 +100,8 @@ const App = ({ data }: { data: PageData }) => {
                 <Autocomplete
                   options={effectTargets}
                   autoComplete={true}
-                  onInputChange={autocompleteChangeHandler(setEffectTarget)}
+                  clearOnEscape={true}
+                  onChange={autocompleteChangeHandler(setEffectTarget)}
                   renderInput={(params) => (
                     <TextField
                       {...params}
@@ -116,7 +117,8 @@ const App = ({ data }: { data: PageData }) => {
                 <Autocomplete
                   options={upgrades}
                   autoComplete={true}
-                  onInputChange={autocompleteChangeHandler(setUpgrade)}
+                  clearOnEscape={true}
+                  onChange={autocompleteChangeHandler(setUpgrade)}
                   renderInput={(params) => (
                     <TextField
                       {...params}
@@ -132,8 +134,8 @@ const App = ({ data }: { data: PageData }) => {
                 <Autocomplete
                   options={raritySet}
                   autoComplete={true}
-                  getOptionLabel={(option) => option.value}
-                  onInputChange={autocompleteChangeHandler(setRarity)}
+                  clearOnEscape={true}
+                  onChange={autocompleteChangeHandler(setRarity)}
                   renderInput={(params) => (
                     <TextField
                       {...params}
