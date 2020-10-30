@@ -1,11 +1,12 @@
-import { GetStaticProps } from "next";
+import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import React from "react";
-import App from "../../App";
-import { getData, PageData } from "../../data/data";
+import App from "../App";
+import { getData, PageData } from "../data/data";
 
 const languages: { [key: string]: string } = {
   de: "german",
+  en: "english",
 };
 
 const f = (a: any, b: any) =>
@@ -26,10 +27,11 @@ const Index = ({ data }: { data: PageData }) => (
 export default Index;
 
 export const getStaticProps: GetStaticProps = async ({
-  params = { language: "de", assetType: "harboroffice" },
+  locale = "de",
+  params = { assetType: "harboroffice" },
 } = {}) => {
   const data = await getData(
-    languages[params.language as string],
+    languages[locale],
     (params.assetType as string) + "item"
   );
 
@@ -38,11 +40,11 @@ export const getStaticProps: GetStaticProps = async ({
   };
 };
 
-export const getStaticPaths = async () => ({
-  paths: cartesian(["de"], ["harboroffice", "guildhouse", "townhall"]).map(
+export const getStaticPaths: GetStaticPaths = async ({ locales }) => ({
+  paths: cartesian(locales, ["harboroffice", "guildhouse", "townhall"]).map(
     (params: any) => ({
+      locale: params[0],
       params: {
-        language: params[0],
         assetType: params[1],
       },
     })

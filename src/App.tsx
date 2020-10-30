@@ -102,7 +102,7 @@ const App = ({ data }: { data: PageData }) => {
         centered
       >
         {data.tabs.map((tab) => (
-          <Link key={tab.key} href={`/de/${tab.key}`}>
+          <Link key={tab.key} href={`/${tab.key}`}>
             <Tab
               label={tab.label}
               icon={
