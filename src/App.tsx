@@ -44,13 +44,8 @@ const App = ({ data }: { data: PageData }) => {
     .filter((v, i, a) => a.indexOf(v) === i);
   const [upgrade, setUpgrade] = useState("all");
 
-  const raritySet = [
-    { value: "Common" },
-    { value: "Uncommon" },
-    { value: "Rare" },
-    { value: "Epic" },
-    { value: "Legendary" },
-  ];
+  const raritySet = ["Common", "Uncommon", "Rare", "Epic", "Legendary"];
+
   const [rarity, setRarity] = useState("all");
 
   const filteredItems = data.items
@@ -93,6 +88,9 @@ const App = ({ data }: { data: PageData }) => {
         ))}
       </Tabs>
       <Card elevation={3}>
+        <CardContent></CardContent>
+      </Card>
+      <Card elevation={3}>
         <CardContent>
           <Grid container spacing={3}>
             <Grid item xs={12} sm={6} md={3}>
@@ -134,7 +132,6 @@ const App = ({ data }: { data: PageData }) => {
                 <Autocomplete
                   options={raritySet}
                   autoComplete={true}
-                  clearOnEscape={true}
                   onChange={autocompleteChangeHandler(setRarity)}
                   renderInput={(params) => (
                     <TextField
