@@ -4,6 +4,10 @@ import Container from "@material-ui/core/Container";
 import FormControl from "@material-ui/core/FormControl";
 import Grid from "@material-ui/core/Grid";
 import Tab from "@material-ui/core/Tab";
+import Chip from "@material-ui/core/Chip";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 import Tabs from "@material-ui/core/Tabs";
 import TextField from "@material-ui/core/TextField";
 import Typography from "@material-ui/core/Typography";
@@ -17,6 +21,20 @@ import React, { useState } from "react";
 import ItemCard from "./components/ItemCard";
 import { PageData } from "./data/data";
 import i18n from "./i18n";
+
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    root: {
+      flexGrow: 1,
+    },
+    menuButton: {
+      marginRight: theme.spacing(2),
+    },
+    title: {
+      flexGrow: 1,
+    },
+  })
+);
 
 const autocompleteChangeHandler = (setState: (value: string) => any) => (
   event: React.ChangeEvent<{}>,
@@ -65,11 +83,18 @@ const App = ({ data }: { data: PageData }) => {
     )
     .filter((item) => rarity === "all" || item.rarity === rarity);
 
+  const classes = useStyles();
+
   return (
     <Container maxWidth="lg">
-      <Typography variant="h2" align="center">
-        {t("title")}
-      </Typography>
+      <AppBar position="sticky">
+        <Toolbar>
+          <Typography variant="h4" className={classes.title}>
+            {t("title")}
+          </Typography>
+          <Chip label="Anno Version 9.0" color="primary" />
+        </Toolbar>
+      </AppBar>
       <Tabs
         value={activeTab}
         indicatorColor="primary"
@@ -93,9 +118,6 @@ const App = ({ data }: { data: PageData }) => {
           </Link>
         ))}
       </Tabs>
-      <Card elevation={3}>
-        <CardContent></CardContent>
-      </Card>
       <Card elevation={3}>
         <CardContent>
           <Grid container spacing={3}>
