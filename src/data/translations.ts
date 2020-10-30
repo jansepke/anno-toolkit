@@ -23,7 +23,9 @@ export async function loadTranslations(language: string) {
 
   for (const item of json.TextExport.Texts.Text) {
     translations[item.GUID] = item.Text.replace
-      ? item.Text.replace(/\[.*\]\s/g, "")
+      ? item.Text.replace(/\[.*\]/g, "")
+          .replace(/\s\s/g, " ")
+          .replace(": .", "")
       : item.Text;
   }
 
