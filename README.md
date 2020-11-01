@@ -26,6 +26,7 @@ npm run start # run production build
 - filter by world
 - filter by DLC
 - PWA
+- sort list
 
 ## License
 

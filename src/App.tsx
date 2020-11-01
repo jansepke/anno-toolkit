@@ -6,7 +6,7 @@ import Container from "@material-ui/core/Container";
 import FormControl from "@material-ui/core/FormControl";
 import Grid from "@material-ui/core/Grid";
 import IconButton from "@material-ui/core/IconButton";
-import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
+import { makeStyles, Theme } from "@material-ui/core/styles";
 import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
 import TextField from "@material-ui/core/TextField";
@@ -24,19 +24,11 @@ import ItemCard from "./components/ItemCard";
 import { PageData } from "./data/data";
 import i18n from "./i18n";
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    root: {
-      flexGrow: 1,
-    },
-    menuButton: {
-      marginRight: theme.spacing(2),
-    },
-    title: {
-      flexGrow: 1,
-    },
-  })
-);
+const useStyles = makeStyles((theme: Theme) => ({
+  title: {
+    flexGrow: 1,
+  },
+}));
 
 const autocompleteChangeHandler = (setState: (value: string) => any) => (
   event: React.ChangeEvent<{}>,
@@ -56,12 +48,14 @@ const App = ({ data }: { data: PageData }) => {
 
   const effectTargets = data.items
     .flatMap((asset) => asset.effectTargets)
-    .filter((v, i, a) => a.indexOf(v) === i);
+    .filter((v, i, a) => a.indexOf(v) === i)
+    .sort();
   const [effectTarget, setEffectTarget] = useState("all");
 
   const upgrades = data.items
     .flatMap((asset) => asset.upgrades.map((upgrade) => upgrade.label))
-    .filter((v, i, a) => a.indexOf(v) === i);
+    .filter((v, i, a) => a.indexOf(v) === i)
+    .sort();
   const [upgrade, setUpgrade] = useState("all");
 
   const raritySet = [
