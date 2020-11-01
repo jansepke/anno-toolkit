@@ -15,7 +15,6 @@ npm run start # run production build
 
 ## TODO
 
-- more filters
 - multi language support
 - more item types
 - support all effects

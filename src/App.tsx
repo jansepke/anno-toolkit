@@ -5,12 +5,14 @@ import Chip from "@material-ui/core/Chip";
 import Container from "@material-ui/core/Container";
 import FormControl from "@material-ui/core/FormControl";
 import Grid from "@material-ui/core/Grid";
+import IconButton from "@material-ui/core/IconButton";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
 import TextField from "@material-ui/core/TextField";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
+import GitHubIcon from "@material-ui/icons/GitHub";
 import Autocomplete, {
   AutocompleteChangeReason,
 } from "@material-ui/lab/Autocomplete";
@@ -86,109 +88,120 @@ const App = ({ data }: { data: PageData }) => {
   const classes = useStyles();
 
   return (
-    <Container maxWidth="lg">
+    <>
       <AppBar position="sticky">
         <Toolbar>
           <Typography variant="h4" className={classes.title}>
             {t("title")}
           </Typography>
           <Chip label="Anno Version 9.0" color="primary" />
+          <IconButton
+            color="inherit"
+            href="https://github.com/jansepke/anno1800-items"
+            target="_blank"
+            rel="noopener"
+          >
+            <GitHubIcon />
+          </IconButton>
         </Toolbar>
       </AppBar>
-      <Tabs
-        value={activeTab}
-        indicatorColor="primary"
-        textColor="primary"
-        centered
-      >
-        {data.tabs.map((tab) => (
-          <Link key={tab.key} href={`/${tab.key}`}>
-            <Tab
-              label={tab.label}
-              icon={
-                <Image
-                  src={`/img/${tab.key}.png`}
-                  width={20}
-                  height={20}
-                  priority={true}
-                  loading="eager"
-                />
-              }
-            />
-          </Link>
-        ))}
-      </Tabs>
-      <Card elevation={3}>
-        <CardContent>
-          <Grid container spacing={3}>
-            <Grid item xs={12} sm={6} md={3}>
-              <FormControl fullWidth={true}>
-                <Autocomplete
-                  options={effectTargets}
-                  autoComplete={true}
-                  clearOnEscape={true}
-                  onChange={autocompleteChangeHandler(setEffectTarget)}
-                  renderInput={(params) => (
-                    <TextField
-                      {...params}
-                      label={t("effectTarget")}
-                      variant="outlined"
-                    />
-                  )}
-                />
-              </FormControl>
+
+      <Container maxWidth="lg">
+        <Tabs
+          value={activeTab}
+          indicatorColor="primary"
+          textColor="primary"
+          centered
+        >
+          {data.tabs.map((tab) => (
+            <Link key={tab.key} href={`/${tab.key}`}>
+              <Tab
+                label={tab.label}
+                icon={
+                  <Image
+                    src={`/img/${tab.key}.png`}
+                    width={20}
+                    height={20}
+                    priority={true}
+                    loading="eager"
+                  />
+                }
+              />
+            </Link>
+          ))}
+        </Tabs>
+        <Card elevation={3}>
+          <CardContent>
+            <Grid container spacing={3}>
+              <Grid item xs={12} sm={6} md={3}>
+                <FormControl fullWidth={true}>
+                  <Autocomplete
+                    options={effectTargets}
+                    autoComplete={true}
+                    clearOnEscape={true}
+                    onChange={autocompleteChangeHandler(setEffectTarget)}
+                    renderInput={(params) => (
+                      <TextField
+                        {...params}
+                        label={t("effectTarget")}
+                        variant="outlined"
+                      />
+                    )}
+                  />
+                </FormControl>
+              </Grid>
+              <Grid item xs={12} sm={6} md={3}>
+                <FormControl fullWidth={true}>
+                  <Autocomplete
+                    options={upgrades}
+                    autoComplete={true}
+                    clearOnEscape={true}
+                    onChange={autocompleteChangeHandler(setUpgrade)}
+                    renderInput={(params) => (
+                      <TextField
+                        {...params}
+                        label={t("upgrades")}
+                        variant="outlined"
+                      />
+                    )}
+                  />
+                </FormControl>
+              </Grid>
+              <Grid item xs={12} sm={6} md={3}>
+                <FormControl fullWidth={true}>
+                  <Autocomplete
+                    options={raritySet}
+                    autoComplete={true}
+                    onChange={autocompleteChangeHandler(setRarity)}
+                    renderInput={(params) => (
+                      <TextField
+                        {...params}
+                        label={t("rarity")}
+                        variant="outlined"
+                      />
+                    )}
+                  />
+                </FormControl>
+              </Grid>
+              <Grid item xs={12} md={3}>
+                <Typography align="right">
+                  {filteredItems.length !== data.items.length
+                    ? `${filteredItems.length}/`
+                    : ""}
+                  {data.items.length} Items
+                </Typography>
+              </Grid>
             </Grid>
-            <Grid item xs={12} sm={6} md={3}>
-              <FormControl fullWidth={true}>
-                <Autocomplete
-                  options={upgrades}
-                  autoComplete={true}
-                  clearOnEscape={true}
-                  onChange={autocompleteChangeHandler(setUpgrade)}
-                  renderInput={(params) => (
-                    <TextField
-                      {...params}
-                      label={t("upgrades")}
-                      variant="outlined"
-                    />
-                  )}
-                />
-              </FormControl>
-            </Grid>
-            <Grid item xs={12} sm={6} md={3}>
-              <FormControl fullWidth={true}>
-                <Autocomplete
-                  options={raritySet}
-                  autoComplete={true}
-                  onChange={autocompleteChangeHandler(setRarity)}
-                  renderInput={(params) => (
-                    <TextField
-                      {...params}
-                      label={t("rarity")}
-                      variant="outlined"
-                    />
-                  )}
-                />
-              </FormControl>
-            </Grid>
-            <Grid item xs={12} md={3}>
-              <Typography align="right">
-                {filteredItems.length !== data.items.length
-                  ? `${filteredItems.length}/`
-                  : ""}
-                {data.items.length} Items
-              </Typography>
-            </Grid>
-          </Grid>
-        </CardContent>
-      </Card>
-      <br />
-      <Grid container spacing={3}>
-        {filteredItems.map((item) => (
-          <ItemCard key={item.id} item={item} />
-        ))}
-      </Grid>
-    </Container>
+          </CardContent>
+        </Card>
+        <br />
+        <Grid container spacing={3}>
+          {filteredItems.map((item) => (
+            <ItemCard key={item.id} item={item} />
+          ))}
+        </Grid>
+      </Container>
+    </>
   );
 };
 
