@@ -7,8 +7,6 @@ import FormControl from "@material-ui/core/FormControl";
 import Grid from "@material-ui/core/Grid";
 import IconButton from "@material-ui/core/IconButton";
 import { makeStyles, Theme } from "@material-ui/core/styles";
-import Tab from "@material-ui/core/Tab";
-import Tabs from "@material-ui/core/Tabs";
 import TextField from "@material-ui/core/TextField";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
@@ -16,11 +14,9 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import Autocomplete, {
   AutocompleteChangeReason,
 } from "@material-ui/lab/Autocomplete";
-import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from "next/router";
 import React, { useState } from "react";
 import ItemCard from "./components/ItemCard";
+import TabBar from "./components/TabBar";
 import { PageData } from "./data/data";
 import i18n from "./i18n";
 
@@ -40,11 +36,6 @@ const autocompleteChangeHandler = (setState: (value: string) => any) => (
 
 const App = ({ data }: { data: PageData }) => {
   const [t] = i18n.useTranslation("common");
-
-  const router = useRouter();
-  const { assetType = data.tabs[0].key } = router.query;
-  const tabs = data.tabs.map((tab) => tab.key);
-  const activeTab = tabs.indexOf(assetType as string);
 
   const effectTargets = data.items
     .flatMap((asset) => asset.effectTargets)
@@ -101,29 +92,7 @@ const App = ({ data }: { data: PageData }) => {
       </AppBar>
 
       <Container maxWidth="lg">
-        <Tabs
-          value={activeTab}
-          indicatorColor="primary"
-          textColor="primary"
-          centered
-        >
-          {data.tabs.map((tab) => (
-            <Link key={tab.key} href={`/${tab.key}`}>
-              <Tab
-                label={tab.label}
-                icon={
-                  <Image
-                    src={`/img/${tab.key}.png`}
-                    width={20}
-                    height={20}
-                    priority={true}
-                    loading="eager"
-                  />
-                }
-              />
-            </Link>
-          ))}
-        </Tabs>
+        <TabBar tabs={data.tabs} />
         <Card elevation={3}>
           <CardContent>
             <Grid container spacing={3}>

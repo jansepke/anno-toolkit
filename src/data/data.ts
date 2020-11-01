@@ -3,9 +3,14 @@ import { getItems, loadAssets } from "./assets";
 import { ensureCacheFolder } from "./file";
 import { loadTranslations, translations } from "./translations";
 
+export interface TabData {
+  key: string;
+  label: string;
+}
+
 export interface PageData {
   items: AnnoItem[];
-  tabs: { key: string; label: string }[];
+  tabs: TabData[];
 }
 
 export async function getData(
