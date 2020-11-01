@@ -1,63 +1,33 @@
-import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
 import Container from "@material-ui/core/Container";
-import FormControl from "@material-ui/core/FormControl";
 import Grid from "@material-ui/core/Grid";
-import TextField from "@material-ui/core/TextField";
-import Typography from "@material-ui/core/Typography";
-import Autocomplete, {
-  AutocompleteChangeReason,
-} from "@material-ui/lab/Autocomplete";
 import React, { useState } from "react";
+import Filters from "./components/Filters";
 import ItemCard from "./components/ItemCard";
 import TabBar from "./components/TabBar";
 import TopBar from "./components/TopBar";
 import { PageData } from "./data/data";
-import i18n from "./i18n";
-
-const autocompleteChangeHandler = (setState: (value: string) => any) => (
-  event: React.ChangeEvent<{}>,
-  value: any,
-  reason: AutocompleteChangeReason
-) => {
-  reason === "clear" || value === "" ? setState("all") : setState(value);
-};
 
 const App = ({ data }: { data: PageData }) => {
-  const [t] = i18n.useTranslation("common");
-
-  const effectTargets = data.items
-    .flatMap((asset) => asset.effectTargets)
-    .filter((v, i, a) => a.indexOf(v) === i)
-    .sort();
-  const [effectTarget, setEffectTarget] = useState("all");
-
-  const upgrades = data.items
-    .flatMap((asset) => asset.upgrades.map((upgrade) => upgrade.label))
-    .filter((v, i, a) => a.indexOf(v) === i)
-    .sort();
-  const [upgrade, setUpgrade] = useState("all");
-
-  const raritySet = [
-    t("Common"),
-    t("Uncommon"),
-    t("Rare"),
-    t("Epic"),
-    t("Legendary"),
-  ];
-
-  const [rarity, setRarity] = useState("all");
+  const [filters, setFilters] = useState({
+    effectTarget: "all",
+    upgrade: "all",
+    rarity: "all",
+  });
 
   const filteredItems = data.items
     .filter(
       (item) =>
-        effectTarget === "all" || item.effectTargets.includes(effectTarget)
+        filters.effectTarget === "all" ||
+        item.effectTargets.includes(filters.effectTarget)
     )
     .filter(
       (item) =>
-        upgrade === "all" || item.upgrades.some((u) => u.label === upgrade)
+        filters.upgrade === "all" ||
+        item.upgrades.some((u) => u.label === filters.upgrade)
     )
-    .filter((item) => rarity === "all" || item.rarity === rarity);
+    .filter(
+      (item) => filters.rarity === "all" || item.rarity === filters.rarity
+    );
 
   return (
     <>
@@ -65,70 +35,12 @@ const App = ({ data }: { data: PageData }) => {
 
       <Container maxWidth="lg">
         <TabBar tabs={data.tabs} />
-        <Card elevation={3}>
-          <CardContent>
-            <Grid container spacing={3}>
-              <Grid item xs={12} sm={6} md={3}>
-                <FormControl fullWidth={true}>
-                  <Autocomplete
-                    options={effectTargets}
-                    autoComplete={true}
-                    clearOnEscape={true}
-                    onChange={autocompleteChangeHandler(setEffectTarget)}
-                    renderInput={(params) => (
-                      <TextField
-                        {...params}
-                        label={t("effectTarget")}
-                        variant="outlined"
-                      />
-                    )}
-                  />
-                </FormControl>
-              </Grid>
-              <Grid item xs={12} sm={6} md={3}>
-                <FormControl fullWidth={true}>
-                  <Autocomplete
-                    options={upgrades}
-                    autoComplete={true}
-                    clearOnEscape={true}
-                    onChange={autocompleteChangeHandler(setUpgrade)}
-                    renderInput={(params) => (
-                      <TextField
-                        {...params}
-                        label={t("upgrades")}
-                        variant="outlined"
-                      />
-                    )}
-                  />
-                </FormControl>
-              </Grid>
-              <Grid item xs={12} sm={6} md={3}>
-                <FormControl fullWidth={true}>
-                  <Autocomplete
-                    options={raritySet}
-                    autoComplete={true}
-                    onChange={autocompleteChangeHandler(setRarity)}
-                    renderInput={(params) => (
-                      <TextField
-                        {...params}
-                        label={t("rarity")}
-                        variant="outlined"
-                      />
-                    )}
-                  />
-                </FormControl>
-              </Grid>
-              <Grid item xs={12} md={3}>
-                <Typography align="right">
-                  {filteredItems.length !== data.items.length
-                    ? `${filteredItems.length}/`
-                    : ""}
-                  {data.items.length} Items
-                </Typography>
-              </Grid>
-            </Grid>
-          </CardContent>
-        </Card>
+        <Filters
+          items={data.items}
+          filteredItems={filteredItems}
+          filters={filters}
+          setFilters={setFilters}
+        />
         <br />
         <Grid container spacing={3}>
           {filteredItems.map((item) => (
