@@ -10,11 +10,19 @@ import { AnnoItem } from "../data/AnnoItem";
 import i18n from "../i18n";
 
 const useStyles = makeStyles((theme) => ({
+  gridItem: {
+    display: "flex",
+  },
   card: {
-    height: "25rem",
+    width: "100%",
+    display: "flex",
+    flexDirection: "column",
   },
   content: {
+    maxHeight: "12rem",
+    overflow: "auto",
     paddingTop: "0",
+    marginBottom: "auto",
   },
 }));
 
@@ -103,13 +111,13 @@ const ItemCard = ({ item }: { item: AnnoItem }) => {
   const [t] = i18n.useTranslation("common");
 
   return (
-    <Grid item xs={12} sm={6} md={4} lg={3}>
+    <Grid item xs={12} sm={6} md={4} lg={3} xl={2} className={classes.gridItem}>
       <Card elevation={3} className={classes.card}>
         <CardHeader
-          avatar={<Image src={item.icon} width={30} height={30} />}
+          avatar={<Image src={item.icon} width={35} height={35} />}
           title={<strong>{item.name}</strong>}
           titleTypographyProps={{ variant: "body1" }}
-          subheader={`${item.rarity} (${item.id})`}
+          subheader={`${item.rarity} (ID: ${item.id})`}
         />
         <CardContent className={classes.content}>
           <Typography variant="body2" component="p" gutterBottom>

@@ -27,6 +27,8 @@ npm run start # run production build
 - filter by DLC
 - PWA
 - sort list
+- search by item name
+- share item button
 
 ## License
 

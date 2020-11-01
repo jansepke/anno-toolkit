@@ -33,7 +33,7 @@ const App = ({ data }: { data: PageData }) => {
     <>
       <TopBar />
 
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
         <TabBar tabs={data.tabs} />
         <Filters
           items={data.items}
