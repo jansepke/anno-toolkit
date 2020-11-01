@@ -7,12 +7,14 @@ import {
 
 export const translations: { [key: number]: string } = {};
 
+let cachedLanguage: string;
+
 export async function loadTranslations(language: string) {
-  if (Object.keys(translations).length > 0) {
+  if (Object.keys(translations).length > 0 && cachedLanguage === language) {
     return;
   }
 
-  console.log("Loading Translations...");
+  console.log(`Loading ${language} Translations...`);
 
   const fileName = `texts_${language}`;
 
@@ -28,6 +30,8 @@ export async function loadTranslations(language: string) {
           .replace(": .", "")
       : item.Text;
   }
+
+  cachedLanguage = language;
 
   if (!cached) {
     await saveToCache(fileName, json);
