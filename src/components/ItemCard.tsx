@@ -81,6 +81,10 @@ const renderUpgrade = (upgrade: any) => {
     return `${upgrade.label}: ${(1 - upgrade.value.Normal.Factor) * 100}%`;
   }
 
+  if (upgrade.key === "GenPool") {
+    return `${upgrade.label}: ${upgrade.value.join(", ")}`;
+  }
+
   if (typeof upgrade.value === "string" || typeof upgrade.value === "number") {
     return `${upgrade.label}: ${upgrade.value}`;
   }

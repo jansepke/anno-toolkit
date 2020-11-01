@@ -7,19 +7,17 @@ import {
 } from "./file";
 
 const assetsByType: { [key: string]: any[] } = {};
-const guids: { [key: number]: any } = {};
+export const rewardPoolIDs: { [key: number]: any } = {};
 
 export async function loadAssets(assetType: string) {
-  if (assetsByType[assetType]) {
-    return;
-  }
-
   console.log("Loading Assets...");
 
-  const cached = await cacheFileExists(assetType);
+  const cachedAsset = await cacheFileExists(assetType);
+  const cachedRewarpool = await cacheFileExists("rewardpool");
 
-  if (cached) {
+  if (cachedAsset && cachedRewarpool) {
     assetsByType[assetType] = await readFromCache(assetType);
+    assetsByType.rewardpool = await readFromCache("rewardpool");
   } else {
     const json = await parseXMLDataFile("assets");
 
@@ -29,6 +27,10 @@ export async function loadAssets(assetType: string) {
     for (const [assetType, assets] of Object.entries(assetsByType)) {
       await saveToCache(assetType, assets);
     }
+  }
+
+  for (const rewardpool of assetsByType.rewardpool) {
+    rewardPoolIDs[rewardpool.Values.Standard.GUID] = rewardpool;
   }
 
   // console.log(items.GuildhouseItem.length); // 472
@@ -67,7 +69,6 @@ function processAssets(assets: any) {
     }
 
     assetsByType[assetType].push(asset);
-    guids[asset.Values.Standard.GUID] = asset;
   }
 }
 

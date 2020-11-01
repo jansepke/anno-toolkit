@@ -1,5 +1,5 @@
+import { rewardPoolIDs } from "./assets";
 import { translations } from "./translations";
-import i18n from "../i18n";
 
 export interface AnnoItem {
   id: number;
@@ -49,31 +49,44 @@ function resolveEffectTarget(values: any) {
 function getUpgrades(values: any) {
   return Object.entries(values)
     .filter(([key, value]) => key.includes("Upgrade") && value !== "")
-    .flatMap(([key, value]: any[]) =>
-      Object.entries(value).map(([vk, v]: [string, any]) => ({
-        key: vk,
-        label: translations[upgradeIds[vk]] || vk,
-        value: translateValue(v),
+    .flatMap(([upgradeGroup, value]: any[]) =>
+      Object.entries(value).map(([upgradeKey, v]: [string, any]) => ({
+        key: upgradeKey,
+        label: translations[upgradeIds[upgradeKey]] || upgradeKey,
+        value: translateValue(upgradeKey, v),
       }))
     )
     .filter((upgrade) => upgrade.key !== "PublicServiceNoSatisfactionDistance");
 }
 
-function translateValue(v: any): any {
-  if (typeof v === "number" && v >= 10000 && translations[v]) {
-    return translations[v];
+function translateValue(upgradeKey: string, value: any): any {
+  if (upgradeKey === "GenPool") {
+    const genPool = rewardPoolIDs[value];
+    if (!genPool) {
+      return [value];
+    }
+    let products = genPool.Values.RewardPool.ItemsPool.Item;
+    if (!Array.isArray(products)) {
+      products = [products];
+    }
+
+    return products.map((p: any) => translations[p.ItemLink]);
+  }
+
+  if (typeof value === "number" && value >= 10000 && translations[value]) {
+    return translations[value];
   }
 
   if (
-    typeof v === "object" &&
-    typeof v.Item === "object" &&
-    !Array.isArray(v.Item)
+    typeof value === "object" &&
+    typeof value.Item === "object" &&
+    !Array.isArray(value.Item)
   ) {
-    v.Item = [v.Item];
+    value.Item = [value.Item];
   }
 
-  if (typeof v === "object" && Array.isArray(v.Item)) {
-    for (const item of v.Item) {
+  if (typeof value === "object" && Array.isArray(value.Item)) {
+    for (const item of value.Item) {
       for (const property in item) {
         const value = item[property];
 
@@ -88,7 +101,7 @@ function translateValue(v: any): any {
     }
   }
 
-  return v;
+  return value;
 }
 
 // GUIDs für Objekte
