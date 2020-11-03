@@ -29,6 +29,8 @@ npm run start # run production build
 - sort list
 - search by item name
 - share item button
+- resolve EffectTargetGroups
+- interpolate anno translations with variables
 
 ## License
 

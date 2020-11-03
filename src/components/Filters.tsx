@@ -7,9 +7,9 @@ import Typography from "@material-ui/core/Typography";
 import Autocomplete, {
   AutocompleteChangeReason,
 } from "@material-ui/lab/Autocomplete";
+import useTranslation from "next-translate/useTranslation";
 import React from "react";
 import { AnnoItem } from "../data/AnnoItem";
-import i18n from "../i18n";
 
 export interface FilterData {
   effectTarget: string;
@@ -28,7 +28,7 @@ const Filters = ({
   filters: FilterData;
   setFilters: (filters: FilterData) => void;
 }) => {
-  const [t] = i18n.useTranslation("common");
+  const { t } = useTranslation();
 
   const effectTargets = items
     .flatMap((asset) => asset.effectTargets)
@@ -41,11 +41,11 @@ const Filters = ({
     .sort();
 
   const raritySet = [
-    t("Common"),
-    t("Uncommon"),
-    t("Rare"),
-    t("Epic"),
-    t("Legendary"),
+    t("common:Common"),
+    t("common:Uncommon"),
+    t("common:Rare"),
+    t("common:Epic"),
+    t("common:Legendary"),
   ];
 
   const autocompleteChangeHandler = (filter: string) => (
@@ -72,7 +72,7 @@ const Filters = ({
                 renderInput={(params) => (
                   <TextField
                     {...params}
-                    label={t("effectTarget")}
+                    label={t("common:effectTarget")}
                     variant="outlined"
                   />
                 )}
@@ -89,7 +89,7 @@ const Filters = ({
                 renderInput={(params) => (
                   <TextField
                     {...params}
-                    label={t("upgrades")}
+                    label={t("common:upgrades")}
                     variant="outlined"
                   />
                 )}
@@ -105,7 +105,7 @@ const Filters = ({
                 renderInput={(params) => (
                   <TextField
                     {...params}
-                    label={t("rarity")}
+                    label={t("common:rarity")}
                     variant="outlined"
                   />
                 )}

@@ -4,10 +4,10 @@ import CardHeader from "@material-ui/core/CardHeader";
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
+import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import React from "react";
 import { AnnoItem } from "../data/AnnoItem";
-import i18n from "../i18n";
 
 const useStyles = makeStyles((theme) => ({
   gridItem: {
@@ -108,7 +108,7 @@ const renderUpgrade = (upgrade: any) => {
 
 const ItemCard = ({ item }: { item: AnnoItem }) => {
   const classes = useStyles();
-  const [t] = i18n.useTranslation("common");
+  const { t } = useTranslation();
 
   return (
     <Grid item xs={12} sm={6} md={4} lg={3} xl={2} className={classes.gridItem}>
@@ -121,7 +121,7 @@ const ItemCard = ({ item }: { item: AnnoItem }) => {
         />
         <CardContent className={classes.content}>
           <Typography variant="body2" component="p" gutterBottom>
-            <strong>{t("target")}: </strong>
+            <strong>{t("common:target")}: </strong>
             {item.effectTargets.join(", ")}
           </Typography>
           <Typography variant="body2" component="p">

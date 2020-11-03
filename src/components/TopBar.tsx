@@ -5,8 +5,8 @@ import { makeStyles, Theme } from "@material-ui/core/styles";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import useTranslation from "next-translate/useTranslation";
 import React from "react";
-import i18n from "../i18n";
 
 const useStyles = makeStyles((theme: Theme) => ({
   title: {
@@ -15,14 +15,14 @@ const useStyles = makeStyles((theme: Theme) => ({
 }));
 
 const TopBar = () => {
-  const [t] = i18n.useTranslation("common");
+  const { t } = useTranslation();
   const classes = useStyles();
 
   return (
     <AppBar position="sticky">
       <Toolbar>
         <Typography variant="h4" className={classes.title}>
-          {t("title")}
+          {t("common:title")}
         </Typography>
         <Chip label="Anno Version 9.0" color="primary" />
         <IconButton

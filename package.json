@@ -1,8 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "dev": "rimraf ./cached-data && next dev",
-    "build": "rimraf ./cached-data && next build",
+    "dev": "rimraf ./cached-data && next-translate && next dev",
+    "build": "rimraf ./cached-data && next-translate && next build",
     "start": "next start",
     "lint": "prettier --check ./src",
     "lint:fix": "prettier --write ./src"
@@ -23,7 +23,7 @@
     "@material-ui/lab": "^4.0.0-alpha.56",
     "fast-xml-parser": "^3.17.4",
     "next": "^10.0.0",
-    "next-i18next": "^7.0.1",
+    "next-translate": "^0.19.2",
     "nprogress": "^0.2.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
