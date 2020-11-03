@@ -15,7 +15,6 @@ npm run start # run production build
 
 ## TODO
 
-- multi language support
 - more item types
 - support all effects
 - improve font loading performance
