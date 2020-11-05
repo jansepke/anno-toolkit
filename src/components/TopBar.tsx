@@ -1,4 +1,5 @@
 import AppBar from "@material-ui/core/AppBar";
+import Box from "@material-ui/core/Box";
 import Button from "@material-ui/core/Button";
 import Chip from "@material-ui/core/Chip";
 import IconButton from "@material-ui/core/IconButton";
@@ -72,15 +73,17 @@ const TopBar = () => {
             ))}
           </Menu>
         </div>
-        <Chip label="Anno Version 9.0" color="primary" />
-        <IconButton
-          color="inherit"
-          href="https://github.com/jansepke/anno1800-items"
-          target="_blank"
-          rel="noopener"
-        >
-          <GitHubIcon />
-        </IconButton>
+        <Box display={{ xs: "none", sm: "block" }}>
+          <Chip label="Anno Version 9.0" color="primary" />
+          <IconButton
+            color="inherit"
+            href="https://github.com/jansepke/anno1800-items"
+            target="_blank"
+            rel="noopener"
+          >
+            <GitHubIcon />
+          </IconButton>
+        </Box>
       </Toolbar>
     </AppBar>
   );
