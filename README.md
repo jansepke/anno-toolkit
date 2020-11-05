@@ -30,6 +30,8 @@ npm run start # run production build
 - share item button
 - resolve EffectTargetGroups
 - interpolate anno translations with variables
+- favicon
+- theme
 
 ## License
 
