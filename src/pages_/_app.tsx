@@ -1,3 +1,4 @@
+import { ThemeProvider } from "@material-ui/core";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { AppProps } from "next/app";
 import Head from "next/head";
@@ -6,6 +7,7 @@ import NProgress from "nprogress";
 import "nprogress/nprogress.css";
 import React, { useEffect } from "react";
 import "../styles.css";
+import theme from "../theme";
 
 // loading indicator
 NProgress.configure({
@@ -31,8 +33,11 @@ const App = ({ Component, pageProps }: AppProps) => {
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
       </Head>
-      <CssBaseline />
-      <Component {...pageProps} />
+
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   );
 };
