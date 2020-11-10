@@ -77,7 +77,7 @@ const TopBar = () => {
           <Chip label="Anno Version 9.0" color="primary" />
           <IconButton
             color="inherit"
-            href="https://github.com/jansepke/anno1800-items"
+            href="https://github.com/jansepke/anno-toolkit"
             target="_blank"
             rel="noopener"
           >

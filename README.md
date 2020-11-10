@@ -1,6 +1,6 @@
 # Anno 1800 items
 
-View and filter all Items of Anno 1800. Access it here: [anno1800-items.vercel.app](https://anno1800-items.vercel.app/)
+View and filter all Items of Anno 1800. Access it here: [anno-toolkit.one](https://anno-toolkit.one/)
 
 ## Contributing
 
