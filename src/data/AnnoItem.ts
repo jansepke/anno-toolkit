@@ -154,4 +154,19 @@ const upgradeIds: { [key: string]: number } = {
   BaseDamageUpgrade: 2334, // Schaden pro Schuss
   AttackSpeedUpgrade: 2336,
   Hitpoints: 2333,
+  GenProbability: 12920,
+  GenPool: 12315, // Nicht perfekt
+  BlockByShare: 15802,
+  HappinessIgnoresMorale: 15811,
+  MaxHitpointsUpgrade: 1154,
+  AttackRangeUpgrade: 12021,
+  HitpointDamage: 2334,
+  LineOfSightRangeUpgrade: 15266,
+  SelfHealUpgrade: 15195,
+  SelfHealPausedTimeIfAttackedUpgrade: 15196,
+  HealRadiusUpgrade: 15264,
+  HealPerMinuteUpgrade: 15265,
+  HealBuildingsPerMinuteUpgrade: 15265,
+  AccuracyUpgrade: 12062,
+  PierSpeedUpgrade: 15197,
 };
