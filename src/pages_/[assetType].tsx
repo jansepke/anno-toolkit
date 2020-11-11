@@ -17,8 +17,11 @@ const cartesian = (a: any, b: any = undefined, ...c: any[]): any =>
 const Index = ({ data }: { data: PageData }) => (
   <>
     <Head>
-      <title>Anno 1800 Items</title>
-      <meta name="description" content="Anno 1800 items." />
+      <title>Anno toolkit</title>
+      <meta
+        name="description"
+        content="Finding the best fitting specialists."
+      />
     </Head>
     <App data={data} />
   </>
