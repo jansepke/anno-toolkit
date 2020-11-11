@@ -156,7 +156,7 @@ const upgradeIds: { [key: string]: number } = {
   Hitpoints: 2333,
   GenProbability: 12920,
   GenPool: 12315, // Nicht perfekt
-  BlockByShare: 15802,
+  BlockBuyShare: 15802,
   HappinessIgnoresMorale: 15811,
   MaxHitpointsUpgrade: 1154,
   AttackRangeUpgrade: 12021,
@@ -169,4 +169,6 @@ const upgradeIds: { [key: string]: number } = {
   HealBuildingsPerMinuteUpgrade: 15265,
   AccuracyUpgrade: 12062,
   PierSpeedUpgrade: 15197,
+  DamageReceiveFactor: 19136,
+  MoraleDamage: 9499,
 };
