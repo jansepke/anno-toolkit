@@ -3,7 +3,6 @@ import CardContent from "@material-ui/core/CardContent";
 import FormControl from "@material-ui/core/FormControl";
 import Grid from "@material-ui/core/Grid";
 import TextField from "@material-ui/core/TextField";
-import Typography from "@material-ui/core/Typography";
 import Autocomplete, {
   AutocompleteChangeReason,
 } from "@material-ui/lab/Autocomplete";
@@ -12,6 +11,7 @@ import React from "react";
 import { AnnoItem } from "../data/AnnoItem";
 
 export interface FilterData {
+  itemName: string;
   effectTarget: string;
   upgrade: string;
   rarity: string;
@@ -19,12 +19,10 @@ export interface FilterData {
 
 const Filters = ({
   items,
-  filteredItems,
   filters,
   setFilters,
 }: {
   items: AnnoItem[];
-  filteredItems: AnnoItem[];
   filters: FilterData;
   setFilters: (filters: FilterData) => void;
 }) => {
@@ -48,6 +46,10 @@ const Filters = ({
     t("common:Legendary"),
   ];
 
+  const onItemNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setFilters({ ...filters, itemName: event.target.value });
+  };
+
   const autocompleteChangeHandler = (filter: string) => (
     event: React.ChangeEvent<{}>,
     value: any,
@@ -62,6 +64,16 @@ const Filters = ({
     <Card elevation={3}>
       <CardContent>
         <Grid container spacing={3}>
+          <Grid item xs={12} sm={6} md={3}>
+            <FormControl fullWidth={true}>
+              <TextField
+                label={t("common:itemName")}
+                variant="outlined"
+                value={filters.itemName}
+                onChange={onItemNameChange}
+              />
+            </FormControl>
+          </Grid>
           <Grid item xs={12} sm={6} md={3}>
             <FormControl fullWidth={true}>
               <Autocomplete
@@ -111,14 +123,6 @@ const Filters = ({
                 )}
               />
             </FormControl>
-          </Grid>
-          <Grid item xs={12} md={3}>
-            <Typography align="right">
-              {filteredItems.length !== items.length
-                ? `${filteredItems.length}/`
-                : ""}
-              {items.length} Items
-            </Typography>
           </Grid>
         </Grid>
       </CardContent>

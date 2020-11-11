@@ -16,22 +16,19 @@ npm run start # run production build
 ## TODO
 
 - more item types
-- support all effects
 - improve font loading performance
 - Upload save game
 - Favorite items
-- image size
 - support active items
 - filter by world
 - filter by DLC
 - PWA
 - sort list
-- search by item name
 - share item button
 - resolve EffectTargetGroups
 - interpolate anno translations with variables
 - favicon
-- theme
+- different card color per rarity
 
 ## License
 
