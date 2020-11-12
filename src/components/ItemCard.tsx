@@ -143,7 +143,10 @@ const ItemCard = ({ item }: { item: AnnoItem }) => {
         <CardContent className={classes.content}>
           <Typography variant="body2" component="p" gutterBottom>
             <strong>{t("common:target")}: </strong>
-            {item.effectTargets.join(", ")}
+            {item.effectTargets
+              .filter((et) => et.visible)
+              .map((et) => et.label)
+              .join(", ")}
           </Typography>
           <Typography variant="body2" component="p">
             {item.upgrades.map((upgrade) => (

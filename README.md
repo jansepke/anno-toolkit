@@ -25,7 +25,6 @@ npm run start # run production build
 - PWA
 - sort list
 - share item button
-- resolve EffectTargetGroups
 - interpolate anno translations with variables
 - favicon
 - do not show negative effects when filtering by effect type

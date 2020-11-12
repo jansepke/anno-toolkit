@@ -30,6 +30,7 @@ const Filters = ({
 
   const effectTargets = items
     .flatMap((asset) => asset.effectTargets)
+    .map((et) => et.label)
     .filter((v, i, a) => a.indexOf(v) === i)
     .sort();
 

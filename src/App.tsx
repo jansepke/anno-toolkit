@@ -25,7 +25,7 @@ const App = ({ data }: { data: PageData }) => {
     .filter(
       (item) =>
         filters.effectTarget === "all" ||
-        item.effectTargets.includes(filters.effectTarget)
+        item.effectTargets.some((et) => et.label === filters.effectTarget)
     )
     .filter(
       (item) =>

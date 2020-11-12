@@ -1,13 +1,17 @@
-import { rewardPoolIDs, translations } from "./data";
+import { effectTargetPoolById, rewardPoolById, translations } from "./data";
+
+export interface EffectTarget {
+  label: string;
+  visible: boolean;
+}
 
 export interface AnnoItem {
   id: number;
   name: string;
   icon: string;
-  type: string;
   rarity: "Common" | "Uncommon" | "Rare" | "Epic" | "Legendary" | "Narrative";
   rarityLabel: string;
-  effectTargets: string[];
+  effectTargets: EffectTarget[];
   // TODO: ItemAction
   // TODO: ExpeditionAttribute
   upgrades: { key: string; label: string; value: any }[];
@@ -27,14 +31,13 @@ export function newAnnoItem(asset: any): AnnoItem {
     name: translations[values.Standard.GUID],
     icon: iconPath,
     effectTargets: resolveEffectTarget(values),
-    type: values.Item.ItemType || "",
     rarity: rarity,
     rarityLabel: translations[rarityIds[rarity]],
     upgrades: getUpgrades(values),
   };
 }
 
-function resolveEffectTarget(values: any) {
+function resolveEffectTarget(values: any): EffectTarget[] {
   let effectTargets = values.ItemEffect.EffectTargets.Item;
 
   if (!Array.isArray(effectTargets)) {
@@ -42,14 +45,41 @@ function resolveEffectTarget(values: any) {
   }
 
   return effectTargets
-    .map((target: any) => translations[target.GUID])
-    .filter((target: any) => target);
+    .flatMap((target: any) => {
+      const effectTargetPool = effectTargetPoolById[target.GUID];
+      if (!effectTargetPool) {
+        return [
+          {
+            label: translations[target.GUID],
+            visible: true,
+          },
+        ];
+      }
+
+      let effectTargets =
+        effectTargetPool.Values.ItemEffectTargetPool.EffectTargetGUIDs.Item;
+      if (!Array.isArray(effectTargets)) {
+        effectTargets = [effectTargets];
+      }
+
+      return [
+        {
+          label: translations[target.GUID],
+          visible: true,
+        },
+        ...effectTargets.map((et: any) => ({
+          label: translations[et.GUID],
+          visible: false,
+        })),
+      ];
+    })
+    .filter((target: EffectTarget) => target.label);
 }
 
 function getUpgrades(values: any) {
   return Object.entries(values)
     .filter(([key, value]) => key.includes("Upgrade") && value !== "")
-    .flatMap(([upgradeGroup, value]: any[]) =>
+    .flatMap(([, value]: any[]) =>
       Object.entries(value).map(([upgradeKey, v]: [string, any]) => ({
         key: upgradeKey,
         label: translations[upgradeIds[upgradeKey]] || upgradeKey,
@@ -61,7 +91,7 @@ function getUpgrades(values: any) {
 
 function translateValue(upgradeKey: string, value: any): any {
   if (upgradeKey === "GenPool") {
-    const genPool = rewardPoolIDs[value];
+    const genPool = rewardPoolById[value];
     if (!genPool) {
       return [value];
     }

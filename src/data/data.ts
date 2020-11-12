@@ -12,14 +12,16 @@ export interface PageData {
 }
 
 export const translations: { [key: number]: string } = {};
-export const rewardPoolIDs: { [key: number]: any } = {};
+export const rewardPoolById: { [key: number]: any } = {};
+export const effectTargetPoolById: { [key: number]: any } = {};
 
 export async function getData(
   language: string,
   assetType: string
 ): Promise<PageData> {
   await loadTranslations(language);
-  await loadRewardPool();
+  await loadRewardPools();
+  await loadEffectTargetPools();
   const assets = await readFromCache(assetType);
 
   const items: AnnoItem[] = assets
@@ -48,11 +50,19 @@ async function loadTranslations(language: string) {
   }
 }
 
-async function loadRewardPool() {
-  const rewardpools = await readFromCache("rewardpool");
+async function loadRewardPools() {
+  const rewardPools = await readFromCache("rewardpool");
 
-  for (const rewardpool of rewardpools) {
-    rewardPoolIDs[rewardpool.Values.Standard.GUID] = rewardpool;
+  for (const rewardPool of rewardPools) {
+    rewardPoolById[rewardPool.Values.Standard.GUID] = rewardPool;
+  }
+}
+
+async function loadEffectTargetPools() {
+  const effectTargetPools = await readFromCache("itemeffecttargetpool");
+
+  for (const effectPool of effectTargetPools) {
+    effectTargetPoolById[effectPool.Values.Standard.GUID] = effectPool;
   }
 }
 
