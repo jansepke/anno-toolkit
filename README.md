@@ -28,7 +28,7 @@ npm run start # run production build
 - resolve EffectTargetGroups
 - interpolate anno translations with variables
 - favicon
-- different card color per rarity
+- do not show negative effects when filtering by effect type
 
 ## License
 
