@@ -8,10 +8,11 @@ main();
 async function main() {
   await ensureCacheFolder();
 
-  await loadTranslations("german");
-  await loadTranslations("english");
-
-  await loadAssets();
+  await Promise.all([
+    loadAssets(),
+    loadTranslations("german"),
+    loadTranslations("english"),
+  ]);
 }
 
 async function loadTranslations(language) {
