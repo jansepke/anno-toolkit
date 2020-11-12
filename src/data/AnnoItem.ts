@@ -6,7 +6,7 @@ export interface AnnoItem {
   name: string;
   icon: string;
   type: string;
-  rarity: "Common" | "Uncommon" | "Rare" | "Epic" | "Legendary";
+  rarity: "Common" | "Uncommon" | "Rare" | "Epic" | "Legendary" | "Narrative";
   rarityLabel: string;
   effectTargets: string[];
   // TODO: ItemAction
@@ -112,6 +112,7 @@ const rarityIds: { [key: string]: number } = {
   Rare: 118004,
   Epic: 118005,
   Legendary: 118006,
+  Narrative: 19850,
 };
 
 const upgradeIds: { [key: string]: number } = {

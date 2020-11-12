@@ -35,6 +35,9 @@ const useStyles = makeStyles((theme) => ({
   Legendary: {
     borderColor: "#C76936",
   },
+  Narrative: {
+    borderColor: "#4A385F",
+  },
   content: {
     maxHeight: "12rem",
     overflow: "auto",
