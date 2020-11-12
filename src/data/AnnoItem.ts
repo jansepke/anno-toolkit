@@ -117,7 +117,7 @@ const upgradeIds: { [key: string]: number } = {
   ProductivityUpgrade: 118000,
   MaintenanceUpgrade: 2320,
   ReplaceInputs: 20081,
-  AttractivenessUpgrade: 12691,
+  AttractivenessUpgrade: 145011,
   PublicServiceDistance: 2321,
   AdditionalOutput: 20074,
   ReplacingWorkforce: 12480,
