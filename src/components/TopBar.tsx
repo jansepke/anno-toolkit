@@ -14,6 +14,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { locales } from "../../i18n.json";
+import { itemTypes } from "../config.json";
 
 const useStyles = makeStyles((theme: Theme) => ({
   title: {
@@ -26,7 +27,7 @@ const TopBar = () => {
   const { t, lang } = useTranslation();
   const classes = useStyles();
 
-  const path = asPath === "/" ? "/harboroffice" : asPath;
+  const path = asPath === "/" ? "/" + itemTypes[0].key : asPath;
 
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);

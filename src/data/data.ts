@@ -1,4 +1,5 @@
 import { promises as fs } from "fs";
+import { itemTypes } from "../config.json";
 import { AnnoItem, newAnnoItem } from "./AnnoItem";
 
 export interface TabData {
@@ -30,11 +31,10 @@ export async function getData(
 
   return {
     items: items,
-    tabs: [
-      { key: "harboroffice", label: translations[4065] },
-      { key: "guildhouse", label: translations[2346] },
-      { key: "townhall", label: translations[2347] },
-    ],
+    tabs: itemTypes.map((t) => ({
+      key: t.key,
+      label: translations[t.labelId],
+    })),
   };
 }
 

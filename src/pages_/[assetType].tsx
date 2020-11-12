@@ -1,7 +1,9 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import React from "react";
+import { defaultLocale } from "../../i18n.json";
 import App from "../App";
+import { itemTypes } from "../config.json";
 import { getData, PageData } from "../data/data";
 
 const languages: { [key: string]: string } = {
@@ -30,8 +32,8 @@ const Index = ({ data }: { data: PageData }) => (
 export default Index;
 
 export const getStaticProps: GetStaticProps = async ({
-  locale = "de",
-  params = { assetType: "harboroffice" },
+  locale = defaultLocale,
+  params = { assetType: itemTypes[0].key },
 } = {}) => {
   const data = await getData(
     languages[locale],
@@ -46,14 +48,16 @@ export const getStaticProps: GetStaticProps = async ({
   };
 };
 
+// generate every possible language + itemType combination
 export const getStaticPaths: GetStaticPaths = async ({ locales }) => ({
-  paths: cartesian(locales, ["harboroffice", "guildhouse", "townhall"]).map(
-    (params: any) => ({
-      locale: params[0],
-      params: {
-        assetType: params[1],
-      },
-    })
-  ),
+  paths: cartesian(
+    locales,
+    itemTypes.map((t) => t.key)
+  ).map((params: any) => ({
+    locale: params[0],
+    params: {
+      assetType: params[1],
+    },
+  })),
   fallback: false,
 });
