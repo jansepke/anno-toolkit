@@ -23,11 +23,14 @@ npm run start # run production build
 - filter by world
 - filter by DLC
 - PWA
-- sort list
+- sort list (e.g. select effect values)
 - share item button
 - interpolate anno translations with variables
 - favicon
 - do not show negative effects when filtering by effect type
+- narrow filters depending on other selected filters
+- expedition attribute view
+- color code rarity text
 
 ## License
 

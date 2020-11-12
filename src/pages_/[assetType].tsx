@@ -39,7 +39,10 @@ export const getStaticProps: GetStaticProps = async ({
   );
 
   return {
-    props: { data: data },
+    props: {
+      data: data,
+      key: Number(new Date()), // solves https://github.com/vercel/next.js/issues/9992
+    },
   };
 };
 
