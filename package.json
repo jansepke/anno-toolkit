@@ -1,9 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "dev": "rimraf ./cached-data && next-translate && next dev",
-    "build": "rimraf ./cached-data && next-translate && next build",
+    "dev": "npm run xml-to-json && next-translate && next dev",
+    "build": "npm run xml-to-json && next-translate && next build",
     "start": "next start",
+    "xml-to-json": "node ./src/data/xml-to-json.mjs",
     "lint": "prettier --check ./src",
     "lint:fix": "prettier --write ./src"
   },
@@ -34,7 +35,6 @@
     "@types/nprogress": "^0.2.0",
     "@types/react": "^16.9.56",
     "husky": "^4.3.0",
-    "prettier": "^2.1.2",
-    "rimraf": "^3.0.2"
+    "prettier": "^2.1.2"
   }
 }

@@ -1,5 +1,4 @@
-import { rewardPoolIDs } from "./assets";
-import { translations } from "./translations";
+import { rewardPoolIDs, translations } from "./data";
 
 export interface AnnoItem {
   id: number;
@@ -14,7 +13,7 @@ export interface AnnoItem {
   upgrades: { key: string; label: string; value: any }[];
 }
 
-export async function newAnnoItem(asset: any): Promise<AnnoItem> {
+export function newAnnoItem(asset: any): AnnoItem {
   const values = asset.Values;
 
   const rarity = values.Item.Rarity || "Common";
