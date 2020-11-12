@@ -33,7 +33,7 @@ const App = ({ data }: { data: PageData }) => {
         item.upgrades.some((u) => u.label === filters.upgrade)
     )
     .filter(
-      (item) => filters.rarity === "all" || item.rarity === filters.rarity
+      (item) => filters.rarity === "all" || item.rarityLabel === filters.rarity
     );
 
   return (

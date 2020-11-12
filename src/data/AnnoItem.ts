@@ -6,7 +6,8 @@ export interface AnnoItem {
   name: string;
   icon: string;
   type: string;
-  rarity: string;
+  rarity: "Common" | "Uncommon" | "Rare" | "Epic" | "Legendary";
+  rarityLabel: string;
   effectTargets: string[];
   // TODO: ItemAction
   // TODO: ExpeditionAttribute
@@ -16,6 +17,7 @@ export interface AnnoItem {
 export async function newAnnoItem(asset: any): Promise<AnnoItem> {
   const values = asset.Values;
 
+  const rarity = values.Item.Rarity || "Common";
   const iconPath = values.Standard.IconFilename.replace(
     "data/ui/2kimages/",
     "/img/"
@@ -27,9 +29,8 @@ export async function newAnnoItem(asset: any): Promise<AnnoItem> {
     icon: iconPath,
     effectTargets: resolveEffectTarget(values),
     type: values.Item.ItemType || "",
-    rarity:
-      translations[rarityIds[values.Item.Rarity]] ||
-      translations[rarityIds["Common"]],
+    rarity: rarity,
+    rarityLabel: translations[rarityIds[rarity]],
     upgrades: getUpgrades(values),
   };
 }
