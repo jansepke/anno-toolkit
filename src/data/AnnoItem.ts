@@ -127,7 +127,7 @@ const upgradeIds: { [key: string]: number } = {
   IncidentFireIncreaseUpgrade: 12225,
   ProvideIndustrialization: 12485,
   IncidentExplosionIncreaseUpgrade: 22143,
-  IncidentRiotIncreaseUpgrade: 14292,
+  IncidentRiotIncreaseUpgrade: 14513,
   PipeCapacityUpgrade: 127395,
   RiotInfluenceUpgrade: 14290,
   AdditionalHappiness: 12314,
