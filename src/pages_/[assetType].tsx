@@ -2,19 +2,9 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import React from "react";
 import { defaultLocale } from "../../i18n.json";
-import { itemTypes } from "../anno-config.json";
+import { itemTypes, languages } from "../anno-config.json";
 import App from "../App";
 import { getData, PageData } from "../data/data";
-
-const languages: { [key: string]: string } = {
-  de: "german",
-  en: "english",
-};
-
-const f = (a: any, b: any) =>
-  [].concat(...a.map((d: any) => b.map((e: any) => [].concat(d, e))));
-const cartesian = (a: any, b: any = undefined, ...c: any[]): any =>
-  b ? cartesian(f(a, b), ...c) : a;
 
 const Index = ({ data }: { data: PageData }) => (
   <>
@@ -36,7 +26,7 @@ export const getStaticProps: GetStaticProps = async ({
   params = { assetType: itemTypes[0].key },
 } = {}) => {
   const data = await getData(
-    languages[locale],
+    languages.find((l) => l.key === locale)?.fileName || languages[0].fileName,
     (params.assetType as string) + "item"
   );
 
@@ -47,6 +37,11 @@ export const getStaticProps: GetStaticProps = async ({
     },
   };
 };
+
+const f = (a: any, b: any) =>
+  [].concat(...a.map((d: any) => b.map((e: any) => [].concat(d, e))));
+const cartesian = (a: any, b: any = undefined, ...c: any[]): any =>
+  b ? cartesian(f(a, b), ...c) : a;
 
 // generate every possible language + itemType combination
 export const getStaticPaths: GetStaticPaths = async ({ locales }) => ({

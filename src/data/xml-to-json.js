@@ -1,5 +1,6 @@
-import parser from "fast-xml-parser";
-import { promises as fs } from "fs";
+const parser = require("fast-xml-parser");
+const fs = require("fs").promises;
+const { languages } = require("../anno-config.json");
 
 const cacheFolder = "./cached-data";
 
@@ -10,8 +11,7 @@ async function main() {
 
   await Promise.all([
     loadAssets(),
-    loadTranslations("german"),
-    loadTranslations("english"),
+    ...languages.map((l) => loadTranslations(l.fileName)),
   ]);
 }
 
