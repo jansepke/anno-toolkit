@@ -1,6 +1,7 @@
 import { promises as fs } from "fs";
 import { itemTypes, rarities } from "../anno-config.json";
-import { AnnoItem, newAnnoItem } from "./AnnoItem";
+import { AnnoItem } from "./AnnoItem";
+import AnnoItemFactory from "./AnnoItemFactory";
 
 export interface TabData {
   key: string;
@@ -19,22 +20,24 @@ export interface PageData {
   rarities: Rarity[];
 }
 
-export const translations: { [key: number]: string } = {};
-export const rewardPoolById: { [key: number]: any } = {};
-export const effectTargetPoolById: { [key: number]: any } = {};
-
 export async function getData(
   language: string,
   assetType: string
 ): Promise<PageData> {
-  await loadTranslations(language);
-  await loadRewardPools();
-  await loadEffectTargetPools();
+  const translations = await loadTranslations(language);
+  const rewardPoolById = await loadRewardPools();
+  const effectTargetPoolById = await loadEffectTargetPools();
   const assets = await readFromCache(assetType);
 
+  const factory = new AnnoItemFactory(
+    translations,
+    effectTargetPoolById,
+    rewardPoolById
+  );
+
   const items: AnnoItem[] = assets
-    .filter((asset: any) => asset.Values.ItemAction === "")
-    .map((asset: any) => newAnnoItem(asset));
+    .filter((asset: any) => asset.Values.ItemAction === "") // remove active items
+    .map((asset: any) => factory.newAnnoItem(asset));
 
   return {
     items: items,
@@ -53,6 +56,8 @@ export async function getData(
 async function loadTranslations(language: string) {
   const json = await readFromCache(`texts_${language}`);
 
+  const translations: { [key: number]: string } = {};
+
   for (const item of json.TextExport.Texts.Text) {
     translations[item.GUID] = item.Text.replace
       ? item.Text.replace(/\[.*\]/g, "")
@@ -60,22 +65,32 @@ async function loadTranslations(language: string) {
           .replace(": .", "")
       : item.Text;
   }
+
+  return translations;
 }
 
 async function loadRewardPools() {
   const rewardPools = await readFromCache("rewardpool");
 
+  const rewardPoolById: { [key: number]: any } = {};
+
   for (const rewardPool of rewardPools) {
     rewardPoolById[rewardPool.Values.Standard.GUID] = rewardPool;
   }
+
+  return rewardPoolById;
 }
 
 async function loadEffectTargetPools() {
   const effectTargetPools = await readFromCache("itemeffecttargetpool");
 
+  const effectTargetPoolById: { [key: number]: any } = {};
+
   for (const effectPool of effectTargetPools) {
     effectTargetPoolById[effectPool.Values.Standard.GUID] = effectPool;
   }
+
+  return effectTargetPoolById;
 }
 
 const cacheFolder = "./cached-data";
