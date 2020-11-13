@@ -7,7 +7,7 @@ import Typography from "@material-ui/core/Typography";
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import React from "react";
-import { rarities } from "../config.json";
+import { rarities } from "../anno-config.json";
 import { AnnoItem } from "../data/AnnoItem";
 
 const useStyles: (props?: any) => Record<string, string> = makeStyles(

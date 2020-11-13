@@ -1,5 +1,5 @@
 import { promises as fs } from "fs";
-import { itemTypes, rarities } from "../config.json";
+import { itemTypes, rarities } from "../anno-config.json";
 import { AnnoItem, newAnnoItem } from "./AnnoItem";
 
 export interface TabData {

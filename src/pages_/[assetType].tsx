@@ -2,8 +2,8 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import React from "react";
 import { defaultLocale } from "../../i18n.json";
+import { itemTypes } from "../anno-config.json";
 import App from "../App";
-import { itemTypes } from "../config.json";
 import { getData, PageData } from "../data/data";
 
 const languages: { [key: string]: string } = {

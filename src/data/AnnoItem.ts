@@ -1,4 +1,4 @@
-import { rarities } from "../config.json";
+import { rarities } from "../anno-config.json";
 import { effectTargetPoolById, rewardPoolById, translations } from "./data";
 
 export interface EffectTarget {

@@ -14,7 +14,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { locales } from "../../i18n.json";
-import { itemTypes } from "../config.json";
+import { itemTypes } from "../anno-config.json";
 
 const useStyles = makeStyles((theme: Theme) => ({
   title: {
