@@ -1,4 +1,4 @@
-import { rarities } from "../anno-config.json";
+import { rarities, upgrades } from "../anno-config.json";
 import { effectTargetPoolById, rewardPoolById, translations } from "./data";
 
 export interface EffectTarget {
@@ -84,7 +84,10 @@ function getUpgrades(values: any) {
     .flatMap(([, value]: any[]) =>
       Object.entries(value).map(([upgradeKey, v]: [string, any]) => ({
         key: upgradeKey,
-        label: translations[upgradeIds[upgradeKey]] || upgradeKey,
+        label:
+          translations[
+            upgrades.find((u) => u.key === upgradeKey)?.labelId || 0
+          ] || upgradeKey,
         value: translateValue(upgradeKey, v),
       }))
     )
@@ -135,63 +138,3 @@ function translateValue(upgradeKey: string, value: any): any {
 
   return value;
 }
-
-const upgradeIds: { [key: string]: number } = {
-  ProductivityUpgrade: 118000,
-  MaintenanceUpgrade: 2320,
-  ReplaceInputs: 20081,
-  AttractivenessUpgrade: 145011,
-  PublicServiceDistance: 2321,
-  AdditionalOutput: 20074,
-  ReplacingWorkforce: 12480,
-  WorkforceAmountUpgrade: 12337,
-  ModuleLimitPercent: 12075,
-  NeededAreaPercentUpgrade: 15319,
-  IncidentFireIncreaseUpgrade: 12225,
-  ProvideIndustrialization: 12485,
-  IncidentExplosionIncreaseUpgrade: 22143,
-  IncidentRiotIncreaseUpgrade: 14290,
-  PipeCapacityUpgrade: 127395,
-  RiotInfluenceUpgrade: 14513,
-  AdditionalHappiness: 12314,
-  ResolverUnitDecreaseUpgrade: 21508,
-  ResolverUnitMovementSpeedUpgrade: 12012,
-  ResolverUnitCountUpgrade: 3897,
-  AddedFertility: 23371,
-  AttractivenessPositive: 145011,
-  PublicServiceFullSatisfactionDistance: 12014,
-  InputBenefitModifier: 12690,
-  ResidentsUpgrade: 2322,
-  TaxModifierInPercent: 12677,
-  IncidentIllnessIncreaseUpgrade: 12226,
-  NeedProvideNeedUpgrade: 12315,
-  StressUpgrade: 2323,
-  GoodConsumptionUpgrade: 21386, // noch nicht perfekt bestimmt
-  WorkforceModifierInPercent: 12676,
-  InputAmountUpgrade: 23509,
-  SpecialUnitHappinessThresholdUpgrade: 21593,
-  BlockHostileTakeover: 15801, // Nicht optimal.
-  SpawnProbabilityFactor: 20084, // Besondere Gäste
-  ConstructionCostInPercent: 12723,
-  AddAssemblyOptions: 21494, // noch zu definieren
-  BaseDamageUpgrade: 2334, // Schaden pro Schuss
-  AttackSpeedUpgrade: 2336,
-  Hitpoints: 2333,
-  GenProbability: 12920,
-  GenPool: 12315, // Nicht perfekt
-  BlockBuyShare: 15802,
-  HappinessIgnoresMorale: 15811,
-  MaxHitpointsUpgrade: 1154,
-  AttackRangeUpgrade: 12021,
-  HitpointDamage: 2334,
-  LineOfSightRangeUpgrade: 15266,
-  SelfHealUpgrade: 15195,
-  SelfHealPausedTimeIfAttackedUpgrade: 15196,
-  HealRadiusUpgrade: 15264,
-  HealPerMinuteUpgrade: 15265,
-  HealBuildingsPerMinuteUpgrade: 15265,
-  AccuracyUpgrade: 12062,
-  PierSpeedUpgrade: 15197,
-  DamageReceiveFactor: 19136,
-  MoraleDamage: 9499,
-};
