@@ -7,44 +7,33 @@ import Typography from "@material-ui/core/Typography";
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import React from "react";
+import { rarities } from "../config.json";
 import { AnnoItem } from "../data/AnnoItem";
 
-const useStyles = makeStyles((theme) => ({
-  gridItem: {
-    display: "flex",
-  },
-  card: {
-    width: "100%",
-    display: "flex",
-    flexDirection: "column",
-    borderWidth: 2,
-    borderStyle: "solid",
-  },
-  Common: {
-    borderColor: "#FFFFFE",
-  },
-  Uncommon: {
-    borderColor: "#659E2C",
-  },
-  Rare: {
-    borderColor: "#3E5495",
-  },
-  Epic: {
-    borderColor: "#A563A6",
-  },
-  Legendary: {
-    borderColor: "#C76936",
-  },
-  Narrative: {
-    borderColor: "#4A385F",
-  },
-  content: {
-    maxHeight: "12rem",
-    overflow: "auto",
-    paddingTop: "0",
-    marginBottom: "auto",
-  },
-}));
+const useStyles: (props?: any) => Record<string, string> = makeStyles(
+  (theme) => ({
+    gridItem: {
+      display: "flex",
+    },
+    card: {
+      width: "100%",
+      display: "flex",
+      flexDirection: "column",
+      borderWidth: 2,
+      borderStyle: "solid",
+    },
+    content: {
+      maxHeight: "12rem",
+      overflow: "auto",
+      paddingTop: "0",
+      marginBottom: "auto",
+    },
+    ...rarities.reduce(
+      (all, r) => ({ ...all, [r.key]: { borderColor: r.color } }),
+      {}
+    ),
+  })
+);
 
 const renderPercentage = [
   "ConstructionCostInPercent",

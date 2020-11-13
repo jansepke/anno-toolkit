@@ -1,3 +1,4 @@
+import { rarities } from "../config.json";
 import { effectTargetPoolById, rewardPoolById, translations } from "./data";
 
 export interface EffectTarget {
@@ -9,7 +10,7 @@ export interface AnnoItem {
   id: number;
   name: string;
   icon: string;
-  rarity: "Common" | "Uncommon" | "Rare" | "Epic" | "Legendary" | "Narrative";
+  rarity: string;
   rarityLabel: string;
   effectTargets: EffectTarget[];
   // TODO: ItemAction
@@ -20,7 +21,7 @@ export interface AnnoItem {
 export function newAnnoItem(asset: any): AnnoItem {
   const values = asset.Values;
 
-  const rarity = values.Item.Rarity || "Common";
+  const rarity = values.Item.Rarity?.toLowerCase() || rarities[0].key;
   const iconPath = values.Standard.IconFilename.replace(
     "data/ui/2kimages/",
     "/img/"
@@ -32,7 +33,8 @@ export function newAnnoItem(asset: any): AnnoItem {
     icon: iconPath,
     effectTargets: resolveEffectTarget(values),
     rarity: rarity,
-    rarityLabel: translations[rarityIds[rarity]],
+    rarityLabel:
+      translations[rarities.find((r) => r.key === rarity)?.labelId as number],
     upgrades: getUpgrades(values),
   };
 }
@@ -133,16 +135,6 @@ function translateValue(upgradeKey: string, value: any): any {
 
   return value;
 }
-
-// GUIDs für Objekte
-const rarityIds: { [key: string]: number } = {
-  Common: 118002,
-  Uncommon: 118003,
-  Rare: 118004,
-  Epic: 118005,
-  Legendary: 118006,
-  Narrative: 19850,
-};
 
 const upgradeIds: { [key: string]: number } = {
   ProductivityUpgrade: 118000,

@@ -42,7 +42,12 @@ const App = ({ data }: { data: PageData }) => {
 
       <Container maxWidth="xl">
         <TabBar tabs={data.tabs} />
-        <Filters items={data.items} filters={filters} setFilters={setFilters} />
+        <Filters
+          items={data.items}
+          rarities={data.rarities}
+          filters={filters}
+          setFilters={setFilters}
+        />
         <br />
         <Typography align="right">
           {filteredItems.length !== data.items.length

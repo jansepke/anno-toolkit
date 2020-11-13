@@ -1,5 +1,5 @@
 import { promises as fs } from "fs";
-import { itemTypes } from "../config.json";
+import { itemTypes, rarities } from "../config.json";
 import { AnnoItem, newAnnoItem } from "./AnnoItem";
 
 export interface TabData {
@@ -7,9 +7,16 @@ export interface TabData {
   label: string;
 }
 
+export interface Rarity {
+  key: string;
+  label: string;
+  color: string;
+}
+
 export interface PageData {
   items: AnnoItem[];
   tabs: TabData[];
+  rarities: Rarity[];
 }
 
 export const translations: { [key: number]: string } = {};
@@ -34,6 +41,11 @@ export async function getData(
     tabs: itemTypes.map((t) => ({
       key: t.key,
       label: translations[t.labelId],
+    })),
+    rarities: rarities.map((r) => ({
+      key: r.key,
+      label: translations[r.labelId],
+      color: r.color,
     })),
   };
 }

@@ -9,6 +9,7 @@ import Autocomplete, {
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
 import { AnnoItem } from "../data/AnnoItem";
+import { Rarity } from "../data/data";
 
 export interface FilterData {
   itemName: string;
@@ -19,10 +20,12 @@ export interface FilterData {
 
 const Filters = ({
   items,
+  rarities,
   filters,
   setFilters,
 }: {
   items: AnnoItem[];
+  rarities: Rarity[];
   filters: FilterData;
   setFilters: (filters: FilterData) => void;
 }) => {
@@ -38,14 +41,6 @@ const Filters = ({
     .flatMap((asset) => asset.upgrades.map((upgrade) => upgrade.label))
     .filter((v, i, a) => a.indexOf(v) === i)
     .sort();
-
-  const raritySet = [
-    t("common:Common"),
-    t("common:Uncommon"),
-    t("common:Rare"),
-    t("common:Epic"),
-    t("common:Legendary"),
-  ];
 
   const onItemNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setFilters({ ...filters, itemName: event.target.value });
@@ -112,7 +107,7 @@ const Filters = ({
           <Grid item xs={12} sm={6} md={3}>
             <FormControl fullWidth={true}>
               <Autocomplete
-                options={raritySet}
+                options={rarities.map((r) => r.label)}
                 autoComplete={true}
                 onChange={autocompleteChangeHandler("rarity")}
                 renderInput={(params) => (
