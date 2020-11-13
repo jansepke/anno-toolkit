@@ -6,4 +6,13 @@ export default createMuiTheme({
       main: "rgb(214, 180, 127)",
     },
   },
+  overrides: {
+    MuiCardContent: {
+      root: {
+        "&:last-child": {
+          paddingBottom: -1,
+        },
+      },
+    },
+  },
 });
