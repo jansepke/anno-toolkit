@@ -27,7 +27,7 @@ export const getStaticProps: GetStaticProps = async ({
 } = {}) => {
   const data = await getData(
     languages.find((l) => l.key === locale)?.fileName || languages[0].fileName,
-    (params.assetType as string) + "item"
+    params.assetType as string
   );
 
   return {

@@ -24,10 +24,13 @@ export async function getData(
   language: string,
   assetType: string
 ): Promise<PageData> {
+  const fileName = itemTypes.find((it) => it.key === assetType)
+    ?.fileName as string;
+
   const translations = await loadTranslations(language);
   const rewardPoolById = await loadRewardPools();
   const effectTargetPoolById = await loadEffectTargetPools();
-  const assets = await readFromCache("assets", assetType);
+  const assets = await readFromCache("assets", fileName);
 
   const factory = new AnnoItemFactory(
     translations,
@@ -41,10 +44,12 @@ export async function getData(
 
   return {
     items: items,
-    tabs: itemTypes.map((t) => ({
-      key: t.key,
-      label: translations[t.labelId],
-    })),
+    tabs: itemTypes
+      .filter((t) => !t.hidden)
+      .map((t) => ({
+        key: t.key,
+        label: translations[t.labelId],
+      })),
     rarities: rarities.map((r) => ({
       key: r.key,
       label: translations[r.labelId],

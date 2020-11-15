@@ -101,7 +101,9 @@ const renderUpgrade = (upgrade: any) => {
   }
 
   if (upgrade.key === "DamageReceiveFactor") {
-    return `${upgrade.label}: ${(1 - upgrade.value.Normal.Factor) * 100}%`;
+    return `${upgrade.label}: ${Math.round(
+      (1 - Object.values<any>(upgrade.value)[0].Factor) * 100
+    )}%`;
   }
 
   if (upgrade.key === "GenPool") {

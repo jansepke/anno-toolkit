@@ -39,6 +39,10 @@ export default class AnnoItemFactory {
   }
 
   private resolveEffectTarget(values: any): EffectTarget[] {
+    if (!values.ItemEffect) {
+      return [];
+    }
+
     let effectTargets = values.ItemEffect.EffectTargets.Item;
 
     if (!Array.isArray(effectTargets)) {
