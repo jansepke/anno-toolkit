@@ -24,13 +24,17 @@ export async function getData(
   language: string,
   assetType: string
 ): Promise<PageData> {
-  const fileName = itemTypes.find((it) => it.key === assetType)
-    ?.fileName as string;
+  const fileNames = itemTypes.find((it) => it.key === assetType)
+    ?.fileNames as string[];
 
   const translations = await loadTranslations(language);
   const rewardPoolById = await loadRewardPools();
   const effectTargetPoolById = await loadEffectTargetPools();
-  const assets = await readFromCache("assets", fileName);
+  const assets = (
+    await Promise.all(
+      fileNames.map((fileName) => readFromCache("assets", fileName))
+    )
+  ).flat();
 
   const factory = new AnnoItemFactory(
     translations,
@@ -39,7 +43,12 @@ export async function getData(
   );
 
   const items: AnnoItem[] = assets
-    .filter((asset: any) => asset.Values.ItemAction === "") // remove active items
+    .filter(
+      (asset: any) =>
+        asset.Values.ItemAction?.ActiveBuff === undefined &&
+        asset.Values.ItemAction?.ItemAction === undefined &&
+        asset.Values.ItemAction?.ActionTarget === undefined
+    ) // remove active items
     .map((asset: any) => factory.newAnnoItem(asset));
 
   return {
