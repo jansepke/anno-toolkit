@@ -1,0 +1,3055 @@
+[
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 112251,
+        "Name": "SL114_ScanningTheSeas1"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": {
+                "Profile": 75
+              },
+              "BaseNotification": {
+                "NotificationText": 112408,
+                "RestrictToSessionOrRegion": 1,
+                "RestrictedToSessionOrRegions": {
+                  "Item": {
+                    "SessionOrRegion": 110934
+                  }
+                }
+              },
+              "NotificationSubtitle": {
+                "Subtitle": 112212
+              }
+            }
+          }
+        },
+        "SuccessMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": {
+                "Profile": 226
+              },
+              "BaseNotification": {
+                "NotificationText": 112456,
+                "RestrictToSessionOrRegion": 1,
+                "RestrictedToSessionOrRegions": {
+                  "Item": {
+                    "SessionOrRegion": 110934
+                  }
+                }
+              },
+              "NotificationSubtitle": {
+                "Subtitle": 110867
+              }
+            }
+          }
+        },
+        "OnQuestStart": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": [
+                  {
+                    "Action": {
+                      "Template": "ActionRegisterTrigger",
+                      "Values": {
+                        "Action": "",
+                        "ActionRegisterTrigger": {
+                          "TriggerAsset": 113659
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionRegisterTrigger",
+                      "Values": {
+                        "Action": "",
+                        "ActionRegisterTrigger": {
+                          "TriggerAsset": 113735
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "OnQuestSucceeded": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionRegisterTrigger",
+                    "Values": {
+                      "Action": "",
+                      "ActionRegisterTrigger": {
+                        "TriggerAsset": 113659,
+                        "UnregisterTrigger": 1
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "QuestGiver": 75,
+        "StoryText": 112430,
+        "MaxCallOut": 1,
+        "MaxSolveCount": 1,
+        "QuestTimeLimit": 0,
+        "QuestTrackerVisibility": "Session",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 110934
+          }
+        },
+        "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_questbook_sunken_treasures_02.png",
+        "QuestHints": {
+          "Item": [
+            {
+              "Text": 113673
+            },
+            {
+              "Text": 113748
+            }
+          ]
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "The Sound of the Sea",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32285
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113657,
+                  "QuestTrackerIcon": "data/ui/2kimages/main/icons/icon_wifi.png",
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  },
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 112857,
+                  "SpawnedTreasureGround": 113416,
+                  "SpawnAdditionalObjects": 1,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 113694,
+                                    "Amount": 10,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 80
+                  }
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Object",
+                  "ContextGUID": 113722,
+                  "DistanceToContext": 10,
+                  "MinObjectDistance": 1,
+                  "MaxObjectDistance": 2
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  },
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        },
+        "WinConditionCompletionOrder": "Linear"
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 113695,
+        "Name": "Hidden Diving Old World Scrap 1"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 0,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 180023
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 112857,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 113964,
+        "Name": "Hidden Diving Old World Scrap + Goods 1"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 0,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 180023
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 113963,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 113965,
+        "Name": "Hidden Diving Old World Scrap + Items 1"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 0,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 180023
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 600673,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 113784,
+        "Name": "Hidden Diving New World Scrap 1"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 0,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 180025
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 112857,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 113785,
+        "Name": "Hidden Diving New World Scrap + Goods 1"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 0,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 180025
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 113963,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 113786,
+        "Name": "Hidden Diving New World Scrap + Items 1"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 0,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 180025
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 600673,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 113787,
+        "Name": "Hidden Diving Sunk Treas Scrap 1"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 110934
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 112857,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 113788,
+        "Name": "Hidden Diving Sunk Treas Scrap + Goods 1"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 110934
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 113963,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 113789,
+        "Name": "Hidden Diving Sunk Treas Scrap + Items 1"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 110934
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 600673,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 116713,
+        "Name": "Hidden Diving Cold World Scrap 1"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 180045
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 116717,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 116714,
+        "Name": "Hidden Diving Cold World Scrap + Goods 1"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 180045
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 116718,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 116717,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 116715,
+        "Name": "Hidden Diving Cold World Scrap + Items 1"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 180045
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 116716,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 116717,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 128473,
+        "Name": "Hidden Diving Africa Scrap 1"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 128501,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 128477,
+        "Name": "Hidden Diving Africa Scrap 2"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 128501,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 128478,
+        "Name": "Hidden Diving Africa Scrap 3"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 128501,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 128576,
+        "Name": "Hidden Diving Africa Scrap 4"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 128501,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 128577,
+        "Name": "Hidden Diving Africa Scrap 5"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 128501,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 128578,
+        "Name": "Hidden Diving Africa Scrap 6"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 128501,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 128579,
+        "Name": "Hidden Diving Africa Scrap 7"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 128501,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 128580,
+        "Name": "Hidden Diving Africa Scrap 8"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 128501,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 128581,
+        "Name": "Hidden Diving Africa Scrap 9"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 128501,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 128582,
+        "Name": "Hidden Diving Africa Scrap 10"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 128501,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 128583,
+        "Name": "Hidden Diving Africa Scrap 11"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 128501,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 128584,
+        "Name": "Hidden Diving Africa Scrap 12"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 128501,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 128585,
+        "Name": "Hidden Diving Africa Scrap 13"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 128501,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 128479,
+        "Name": "Hidden Diving Africa Goods + scrap 1"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 128502,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 128586,
+        "Name": "Hidden Diving Africa Goods + scrap 2"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 128502,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 128587,
+        "Name": "Hidden Diving Africa Goods + scrap 3"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 128502,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 128588,
+        "Name": "Hidden Diving Africa Goods + scrap 4"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 128502,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 128480,
+        "Name": "Hidden Diving Africa Goods + scrap 5"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 128502,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 128575,
+        "Name": "Hidden Diving Africa Treasure 1"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 128574,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 128589,
+        "Name": "Hidden Diving Africa Treasure 2"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hidden Sonar Quest"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellSonar",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 128574,
+                  "AdditionalScrapItem": 112857,
+                  "SpawnedTreasureGround": 113692
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  }
+]

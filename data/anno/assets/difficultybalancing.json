@@ -1,0 +1,929 @@
+[
+  {
+    "Template": "DifficultyBalancing",
+    "Values": {
+      "Standard": {
+        "GUID": 2002450,
+        "Name": "DifficultySettings",
+        "ID": "DifficultySettings"
+      },
+      "DifficultySettings": {
+        "ConstructionCostRefund": {
+          "Full": {
+            "ValueName": 11037,
+            "RefundPercent": 100
+          },
+          "Half": {
+            "ValueName": 11038,
+            "Points": 5,
+            "RefundPercent": 50
+          },
+          "None": {
+            "ValueName": 11039,
+            "Points": 10
+          },
+          "PayCredits": {
+            "ValueName": 11040,
+            "Points": 15,
+            "FlatValue": 500,
+            "CostPercent": 10
+          }
+        },
+        "DistributionWorkforce": {
+          "Plenty": {
+            "ValueName": 11036
+          },
+          "Medium": {
+            "ValueName": 11035
+          },
+          "Spare": {
+            "ValueName": 11034
+          }
+        },
+        "Fertility": {
+          "Low": {
+            "ValueName": 11034,
+            "Points": 20
+          },
+          "Medium": {
+            "ValueName": 11035,
+            "Points": 10
+          },
+          "High": {
+            "ValueName": 11036
+          }
+        },
+        "HostileTakeover": {
+          "On": {
+            "ValueName": 11054
+          },
+          "Off": {
+            "ValueName": 11055
+          }
+        },
+        "InactiveCosts": {
+          "Off": {
+            "ValueName": 11055
+          },
+          "On": {
+            "ValueName": 11054,
+            "Points": 5
+          }
+        },
+        "Incidents": {
+          "Easy": {
+            "ValueName": 11031
+          },
+          "Hard": {
+            "Points": 20,
+            "ValueName": 11033
+          },
+          "Medium": {
+            "Points": 15,
+            "ValueName": 11032
+          }
+        },
+        "LossCondition": {
+          "BailoutWithSlowLiquidation": {
+            "BailoutLiquidationPercent": 5
+          },
+          "BailoutWithFastLiquidation": {
+            "BailoutLiquidationPercent": 10
+          }
+        },
+        "OptionalQuestFrequency": {
+          "Often": {
+            "ValueName": 11045,
+            "CooldownFactor": 1
+          },
+          "Normal": {
+            "ValueName": 11046,
+            "Points": 5,
+            "CooldownFactor": 2
+          },
+          "Rare": {
+            "ValueName": 11047,
+            "Points": 10,
+            "CooldownFactor": 3
+          }
+        },
+        "OptionalQuestRewards": {
+          "Plenty": {
+            "ValueName": 11036,
+            "RewardFactor": 1
+          },
+          "Medium": {
+            "ValueName": 11035,
+            "RewardFactor": 0.8
+          },
+          "Spare": {
+            "ValueName": 11034,
+            "RewardFactor": 0.5
+          },
+          "PennyPinching": {
+            "ValueName": 11042,
+            "RewardFactor": 0.25
+          }
+        },
+        "OptionalQuestTimeout": {
+          "NotLimited": {
+            "ValueName": 11048
+          },
+          "Long": {
+            "ValueName": 11049,
+            "TimeFactor": 1
+          },
+          "Medium": {
+            "ValueName": 11050,
+            "TimeFactor": 1
+          },
+          "Short": {
+            "ValueName": 11051,
+            "TimeFactor": 1
+          }
+        },
+        "RawMaterial": {
+          "Low": {
+            "ValueName": 11034,
+            "Points": 20
+          },
+          "Medium": {
+            "ValueName": 11035,
+            "Points": 10
+          },
+          "High": {
+            "ValueName": 11036
+          }
+        },
+        "RelocateBuildings": {
+          "On": {
+            "ValueName": 11054,
+            "Interval": 3,
+            "FlatValue": 50,
+            "MaxSteps": 15,
+            "Percentage": 100
+          },
+          "Off": {
+            "ValueName": 11055,
+            "Points": 20
+          },
+          "PayCredits": {
+            "ValueName": 11043,
+            "Points": 10,
+            "Interval": 3,
+            "FlatValue": 250,
+            "MaxSteps": 20,
+            "Percentage": 5
+          }
+        },
+        "RevealedMap": {
+          "On": {
+            "ValueName": 11054
+          },
+          "Off": {
+            "ValueName": 11055,
+            "Points": 10
+          }
+        },
+        "Revenue": {
+          "Plenty": {
+            "ValueName": 16119,
+            "TaxBonusPercent": 25
+          },
+          "Medium": {
+            "ValueName": 11035,
+            "Points": 10,
+            "TaxBonusPercent": 12.5
+          },
+          "Spare": {
+            "ValueName": 16120,
+            "Points": 20
+          }
+        },
+        "StartCredits": {
+          "Plenty": {
+            "ValueName": 16121,
+            "StartProducts": {
+              "Item": {
+                "MetaProduct": 1010017,
+                "amount": 75000
+              }
+            }
+          },
+          "Medium": {
+            "ValueName": 11035,
+            "Points": 5,
+            "StartProducts": {
+              "Item": {
+                "MetaProduct": 1010017,
+                "amount": 50000
+              }
+            }
+          },
+          "Spare": {
+            "ValueName": 16122,
+            "Points": 10,
+            "StartProducts": {
+              "Item": {
+                "MetaProduct": 1010017,
+                "amount": 25000
+              }
+            }
+          }
+        },
+        "StartSession": {
+          "Large": {
+            "ValueName": 11063
+          },
+          "Medium": {
+            "ValueName": 11064,
+            "Points": 10
+          },
+          "Small": {
+            "ValueName": 11065,
+            "Points": 15
+          }
+        },
+        "StartSessionIslandDifficulty": {
+          "Normal": {
+            "ValueName": 11066
+          },
+          "Hard": {
+            "ValueName": 11067,
+            "Points": 10
+          }
+        },
+        "StartSessionIslandSize": {
+          "Small": {
+            "ValueName": 11071,
+            "Points": 15
+          },
+          "Medium": {
+            "ValueName": 11070,
+            "Points": 10
+          },
+          "Large": {
+            "ValueName": 11069
+          }
+        },
+        "StartShips": {
+          "None": {
+            "ValueName": 11073
+          },
+          "OneShip": {
+            "ValueName": 11074,
+            "Ships": {
+              "Item": {
+                "Ship": 101121,
+                "ShipLoad": {
+                  "Item": [
+                    {
+                      "Product": 1010196,
+                      "Amount": 50
+                    },
+                    {
+                      "Product": 1010218,
+                      "Amount": 10
+                    },
+                    {
+                      "Product": 1010221,
+                      "Amount": 10
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "TradeFleet": {
+            "ValueName": 11075,
+            "Ships": {
+              "Item": [
+                {
+                  "Ship": 101121,
+                  "ShipLoad": {
+                    "Item": [
+                      {
+                        "Product": 1010196,
+                        "Amount": 50
+                      },
+                      {
+                        "Product": 1010218,
+                        "Amount": 10
+                      },
+                      {
+                        "Product": 1010221,
+                        "Amount": 10
+                      }
+                    ]
+                  }
+                },
+                {
+                  "Ship": 100438
+                },
+                {
+                  "Ship": 100438
+                }
+              ]
+            }
+          },
+          "WarFleet": {
+            "ValueName": 11076,
+            "Ships": {
+              "Item": [
+                {
+                  "Ship": 101121,
+                  "ShipLoad": {
+                    "Item": [
+                      {
+                        "Product": 1010196,
+                        "Amount": 50
+                      },
+                      {
+                        "Product": 1010218,
+                        "Amount": 10
+                      },
+                      {
+                        "Product": 1010221,
+                        "Amount": 10
+                      }
+                    ]
+                  }
+                },
+                {
+                  "Ship": 100437
+                },
+                {
+                  "Ship": 100437
+                }
+              ]
+            }
+          }
+        },
+        "StartWithKontor": {
+          "Off": {
+            "ValueName": 11055
+          },
+          "Standard": {
+            "ValueName": 11078,
+            "StartGoods": {
+              "Item": [
+                {
+                  "Product": 1010196,
+                  "Amount": 40
+                },
+                {
+                  "Product": 1010200,
+                  "Amount": 10
+                }
+              ]
+            }
+          },
+          "Full": {
+            "ValueName": 11079,
+            "StartGoods": {
+              "Item": [
+                {
+                  "Product": 1010196,
+                  "Amount": 60
+                },
+                {
+                  "Product": 1010200,
+                  "Amount": 20
+                }
+              ]
+            }
+          }
+        },
+        "ThirdParty": {
+          "Normal": {
+            "ValueName": 11798
+          },
+          "Hard": {
+            "ValueName": 11799
+          },
+          "Off": {
+            "ValueName": 11055
+          }
+        },
+        "TraderRefillRate": {
+          "Plenty": {
+            "ValueName": 11045,
+            "RefillRatePercent": 100
+          },
+          "Medium": {
+            "ValueName": 11046,
+            "Points": 5,
+            "RefillRatePercent": 75
+          },
+          "Sparse": {
+            "ValueName": 11047,
+            "Points": 10,
+            "RefillRatePercent": 50
+          }
+        },
+        "InfluenceDifficulty": {
+          "Plenty": {
+            "ValueName": 16119,
+            "InfluenceForInvestors": 3,
+            "InfluenceForCompanyLevels": 20
+          },
+          "Medium": {
+            "ValueName": 11035,
+            "Points": 10
+          },
+          "Sparse": {
+            "ValueName": 16120,
+            "Points": 20,
+            "InfluenceForInvestors": 1,
+            "InfluenceForCompanyLevels": 12
+          },
+          "Unspecified": {
+            "Points": 10
+          }
+        },
+        "AvailableSecondParties": {
+          "Item": [
+            {
+              "Profile": 47,
+              "Points": 10
+            },
+            {
+              "Profile": 79,
+              "Points": 10
+            },
+            {
+              "Profile": 80,
+              "Points": 10
+            },
+            {
+              "Profile": 220,
+              "Points": 15
+            },
+            {
+              "Profile": 81,
+              "Points": 15
+            },
+            {
+              "Profile": 82,
+              "Points": 15
+            },
+            {
+              "Profile": 83,
+              "Points": 15
+            },
+            {
+              "Profile": 11,
+              "Points": 20
+            },
+            {
+              "Profile": 48,
+              "Points": 20
+            },
+            {
+              "Profile": 84,
+              "Points": 20
+            },
+            {
+              "Profile": 85,
+              "Points": 20
+            }
+          ]
+        },
+        "AvailableThirdParties": {
+          "Item": [
+            {
+              "Profile": 73,
+              "HasDifficulty": 1,
+              "Points": {
+                "Normal": {
+                  "Points": 15
+                },
+                "Hard": {
+                  "Points": 25
+                }
+              }
+            },
+            {
+              "Profile": 76,
+              "HasDifficulty": 1,
+              "Points": {
+                "Normal": {
+                  "Points": 10
+                },
+                "Hard": {
+                  "Points": 15
+                }
+              }
+            },
+            {
+              "Profile": 29,
+              "Points": {
+                "Off": {
+                  "Points": 5
+                }
+              }
+            },
+            {
+              "Profile": 46,
+              "Points": {
+                "Off": {
+                  "Points": 5
+                }
+              }
+            },
+            {
+              "Profile": 78,
+              "Points": {
+                "Off": {
+                  "Points": 5
+                }
+              }
+            }
+          ]
+        },
+        "CampaignAutoParticipants": {
+          "Item": [
+            {
+              "Profile": 75
+            },
+            {
+              "Profile": 45
+            },
+            {
+              "Profile": 29
+            },
+            {
+              "Profile": 46
+            },
+            {
+              "Profile": 78
+            }
+          ]
+        },
+        "NormalAutoParticipants": {
+          "Item": {
+            "Profile": 45
+          }
+        },
+        "Presets": {
+          "Normal": {
+            "DefaultSetting": 141149
+          },
+          "Hard": {
+            "DefaultSetting": 141150
+          },
+          "Classic": {
+            "DefaultSetting": 141151
+          },
+          "Easy": {
+            "DefaultSetting": 141148
+          },
+          "EasyMultiplayer": {
+            "DefaultSetting": 142754
+          },
+          "NormalMultiplayer": {
+            "DefaultSetting": 142755
+          },
+          "HardMultiplayer": {
+            "DefaultSetting": 142756
+          },
+          "Anarchist": {
+            "DefaultSetting": 142654
+          },
+          "EasyQuickMP": {
+            "DefaultSetting": 141470
+          },
+          "NormalQuickMP": {
+            "DefaultSetting": 141471
+          },
+          "HardQuickMP": {
+            "DefaultSetting": 141472
+          }
+        },
+        "Descriptions": {
+          "LossCondition": {
+            "Description": 11020,
+            "InfoTip": 500783
+          },
+          "Revenue": {
+            "Description": 11025,
+            "InfoTip": 500791
+          },
+          "StartCredits": {
+            "Description": 11026,
+            "InfoTip": 500792
+          },
+          "ConstructionCostRefund": {
+            "Description": 11016,
+            "InfoTip": 500777
+          },
+          "DistributionWorkforce": {
+            "Description": 11017,
+            "InfoTip": 500778
+          },
+          "OptionalQuestFrequency": {
+            "Description": 11021,
+            "InfoTip": 500784
+          },
+          "OptionalQuestRewards": {
+            "Description": 11022,
+            "InfoTip": 500785
+          },
+          "RelocateBuildings": {
+            "Description": 11024,
+            "InfoTip": 500789
+          },
+          "TraderRefillRate": {
+            "Description": 11028,
+            "InfoTip": 500798
+          },
+          "InactiveCosts": {
+            "Description": 11018,
+            "InfoTip": 500781
+          },
+          "OptionalQuestTimeout": {
+            "Description": 11023,
+            "InfoTip": 500786
+          },
+          "Incidents": {
+            "Description": 11019,
+            "InfoTip": 500782
+          },
+          "StartShips": {
+            "Description": 11141,
+            "InfoTip": 500796
+          },
+          "HostileTakeover": {
+            "Description": 11056,
+            "InfoTip": 500780
+          },
+          "RevealedMap": {
+            "Description": 11057,
+            "InfoTip": 500790
+          },
+          "Fertility": {
+            "Description": 11061,
+            "InfoTip": 500779
+          },
+          "StartSessionIslandDifficulty": {
+            "Description": 11059,
+            "InfoTip": 500794
+          },
+          "StartSessionIslandSize": {
+            "Description": 11060,
+            "InfoTip": 500795
+          },
+          "RawMaterial": {
+            "Description": 11062,
+            "InfoTip": 500788
+          },
+          "StartSession": {
+            "Description": 11058,
+            "InfoTip": 500793
+          },
+          "StartWithKontor": {
+            "Description": 11027,
+            "InfoTip": 500797
+          },
+          "VictoryConditionMonuments": {
+            "Description": 15702,
+            "InfoTip": 501274
+          },
+          "VictoryConditionInvestors": {
+            "Description": 15703,
+            "InfoTip": 501275
+          },
+          "VictoryConditionPopulation": {
+            "Description": 15704,
+            "InfoTip": 501276
+          },
+          "VictoryConditionWealth": {
+            "Description": 15705,
+            "InfoTip": 501277
+          },
+          "VictoryConditionIncome": {
+            "Description": 15706,
+            "InfoTip": 501278
+          },
+          "VictoryConditionAllOrOne": {
+            "Description": 15812,
+            "InfoTip": 501279
+          },
+          "VictoryConditionDiplomacy": {
+            "Description": 16145,
+            "InfoTip": 501298
+          },
+          "MapType": {
+            "Description": 17077,
+            "InfoTip": 501383
+          },
+          "DifficultyPreset": {
+            "Description": 19827
+          },
+          "Influence": {
+            "Description": 1010190,
+            "InfoTip": 502089
+          }
+        },
+        "PointsNeeded": {
+          "Normal": {
+            "Points": 130
+          },
+          "Hard": {
+            "Points": 260
+          },
+          "Classic": {
+            "Points": 999
+          },
+          "NormalMultiplayer": {
+            "Points": 110
+          },
+          "HardMultiplayer": {
+            "Points": 215
+          },
+          "NormalQuickMP": {
+            "Points": 110
+          },
+          "HardQuickMP": {
+            "Points": 215
+          }
+        },
+        "OptionOrder": {
+          "Fertility": {
+            "HasInvertedOptions": 1
+          },
+          "RawMaterial": {
+            "HasInvertedOptions": 1
+          },
+          "StartSession": {
+            "HasInvertedOptions": 1
+          },
+          "StartSessionIslandSize": {
+            "HasInvertedOptions": 1
+          }
+        },
+        "VictoryConditionMonuments": {
+          "None": {
+            "ValueName": 11055
+          },
+          "Easy": {
+            "Amount": 1,
+            "ValueName": 11034
+          },
+          "Medium": {
+            "Amount": 2,
+            "ValueName": 11035
+          },
+          "Hard": {
+            "Amount": 3,
+            "ValueName": 11036
+          }
+        },
+        "VictoryConditionInvestors": {
+          "None": {
+            "ValueName": 11055
+          },
+          "Easy": {
+            "Amount": 1,
+            "ValueName": 11034
+          },
+          "Medium": {
+            "Amount": 2500,
+            "ValueName": 11035
+          },
+          "Hard": {
+            "Amount": 5000,
+            "ValueName": 11036
+          }
+        },
+        "VictoryConditionPopulation": {
+          "None": {
+            "ValueName": 11055
+          },
+          "Easy": {
+            "Amount": 5000,
+            "ValueName": 11034
+          },
+          "Medium": {
+            "Amount": 10000,
+            "ValueName": 11035
+          },
+          "Hard": {
+            "Amount": 25000,
+            "ValueName": 11036
+          }
+        },
+        "VictoryConditionWealth": {
+          "None": {
+            "ValueName": 11055
+          },
+          "Easy": {
+            "Amount": 250000,
+            "ValueName": 11034
+          },
+          "Medium": {
+            "Amount": 500000,
+            "ValueName": 11035
+          },
+          "Hard": {
+            "Amount": 1000000,
+            "ValueName": 11036
+          }
+        },
+        "VictoryConditionIncome": {
+          "None": {
+            "ValueName": 11055
+          },
+          "Easy": {
+            "Amount": 5000,
+            "ValueName": 11034
+          },
+          "Medium": {
+            "Amount": 10000,
+            "ValueName": 11035
+          },
+          "Hard": {
+            "Amount": 25000,
+            "ValueName": 11036
+          }
+        },
+        "VictoryConditionAllOrOne": {
+          "One": {
+            "ValueName": 15775
+          },
+          "All": {
+            "ValueName": 15776,
+            "NeedAll": 1
+          },
+          "Off": {
+            "ValueName": 11055
+          }
+        },
+        "VictoryConditionDiplomacy": {
+          "Off": {
+            "ValueName": 11055
+          },
+          "On": {
+            "ValueName": 11054,
+            "IsOn": 1
+          }
+        },
+        "MapType": {
+          "Random": {
+            "ValueName": 16102
+          },
+          "Archipelago": {
+            "ValueName": 17079
+          },
+          "Atoll": {
+            "ValueName": 17080
+          },
+          "Arc": {
+            "ValueName": 17081
+          },
+          "Corners": {
+            "ValueName": 17082
+          },
+          "Snowflake": {
+            "ValueName": 17083
+          }
+        },
+        "FixedForCampaign": {
+          "StartSession": {
+            "Fixed": 1
+          },
+          "StartShips": {
+            "Fixed": 1
+          },
+          "StartWithKontor": {
+            "Fixed": 1
+          },
+          "VictoryConditionMonuments": {
+            "Fixed": 1
+          },
+          "VictoryConditionInvestors": {
+            "Fixed": 1
+          },
+          "VictoryConditionPopulation": {
+            "Fixed": 1
+          },
+          "VictoryConditionWealth": {
+            "Fixed": 1
+          },
+          "VictoryConditionIncome": {
+            "Fixed": 1
+          },
+          "VictoryConditionAllOrOne": {
+            "Fixed": 1
+          },
+          "VictoryConditionDiplomacy": {
+            "Fixed": 1
+          },
+          "MapType": {
+            "Fixed": 1
+          }
+        }
+      }
+    }
+  }
+]

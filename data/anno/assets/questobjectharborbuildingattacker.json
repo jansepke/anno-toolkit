@@ -1,0 +1,231 @@
+[
+  {
+    "Template": "QuestObjectHarborBuildingAttacker",
+    "Values": {
+      "Standard": {
+        "GUID": 120986,
+        "Name": "Canon",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_defense_tower_cannon.png"
+      },
+      "Building": {
+        "BuildingCategoryName": 11150,
+        "BuildModeRandomRotation": 90,
+        "AssociatedRegions": "Moderate"
+      },
+      "Blocking": {
+        "HidePropsRadius": -20,
+        "DeletePropsRadius": -20,
+        "HasBuildingBaseTiles": 1,
+        "RemoveGrass": 0
+      },
+      "Mesh": {
+        "ConstructionEffectDuration": 0
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/buildings/special/harbor_05/harbor_05_nodecal.cfg"
+          }
+        }
+      },
+      "AmbientMoodProvider": "",
+      "Constructable": "",
+      "Selection": {
+        "Colors": {
+          "SelectionColorType": "PropertySelectionColor",
+          "SelectionColor": -337045,
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Cannon Tower",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 45396
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 4000
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 10
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 10
+            },
+            {
+              "Ingredient": 1010218,
+              "Amount": 8
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "QuestObjectHarborBuildingAttacker",
+                    "Index": 4
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "QuestObjectHarborBuildingAttacker",
+                    "Index": 5
+                  }
+                }
+              }
+            },
+            {
+              "Ingredient": 1010221,
+              "Amount": 5
+            }
+          ]
+        },
+        "InfluenceCostType": "DefenseBuilding",
+        "InfluenceCostPoints": 7
+      },
+      "Attackable": {
+        "MaximumHitPoints": 4800,
+        "SelfHealPerHealTick": 5,
+        "DefenseByAIFactor": 9991,
+        "TakeOverEffect": "OnDeath",
+        "MoralePower": 50,
+        "IslandWarFlag": 102307,
+        "ExplosionEffects": {
+          "Item": {
+            "ExplosionEffectFilePath": "data/graphics/effects/military/explosions/harbor_generic_xpl_02.cfg"
+          }
+        },
+        "ExplosionEffectsMin": 1,
+        "ExplosionEffectsMax": 1,
+        "MilitaryDefensePoints": 3.5
+      },
+      "Attacker": {
+        "AttackRange": 92,
+        "LineOfSightRange": 92,
+        "ReloadTime": 50,
+        "ProjectileAsset": 101974,
+        "WeaponActivationTime": 2000,
+        "ProjectileCount": 1,
+        "BaseDamage": 150,
+        "Turrets": {
+          "Item": {
+            "TurnSpan": 360,
+            "TurretCfg": "data/graphics/buildings/special/harbor_05/harbor_05_turret.cfg"
+          }
+        },
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 100,
+        "MuzzleEffectAssets": {
+          "Item": {
+            "MuzzleEffectAsset": 102220
+          }
+        },
+        "EmitProjectileTimeAfterStartAnimation": 0.3,
+        "AccuracyByDistance": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "HarborBuildingAttacker",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "QuestObjectHarborBuildingAttacker",
+                      "Index": 0
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "HarborBuildingAttacker",
+                    "Index": 1
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": {
+            "Product": 1010017,
+            "Amount": 30,
+            "InactiveAmount": 15
+          }
+        },
+        "ConsumerPriority": 1
+      },
+      "Locked": "",
+      "DelayedConstruction": {
+        "ConstructionDelay": 0
+      },
+      "Pausable": "",
+      "Infolayer": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 206544
+            }
+          },
+          "BuildFailed": {
+            "Item": {
+              "Sound": 9818387
+            }
+          },
+          "BuildMoveStart": {
+            "Item": {
+              "Sound": 9818755
+            }
+          },
+          "BuildMoveEnd": {
+            "Item": {
+              "Sound": 200141
+            }
+          }
+        },
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        },
+        "BuildingRuined": {
+          "Item": {
+            "Sound": 203848
+          }
+        }
+      },
+      "CommandQueue": "",
+      "Culture": "",
+      "UpgradeList": "",
+      "QuestObject": ""
+    }
+  }
+]

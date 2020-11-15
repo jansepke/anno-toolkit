@@ -1,0 +1,1184 @@
+[
+  {
+    "Template": "PlacementScore",
+    "Values": {
+      "Standard": {
+        "GUID": 141030,
+        "Name": "HarborCoastDefenseScore"
+      },
+      "PlacementScore": {
+        "SubScores": {
+          "Item": [
+            {
+              "Rating": {
+                "Template": "RatingHarborConnected",
+                "Values": {
+                  "RatingHarborConnected": ""
+                }
+              },
+              "RelativeWeight": 0,
+              "DiscardThresholdScore": 0.5
+            },
+            {
+              "Rating": {
+                "Template": "RatingHarborDefense",
+                "Values": {
+                  "RatingHarborDefense": ""
+                }
+              },
+              "RelativeWeight": 0.5,
+              "DiscardThresholdScore": 0
+            },
+            {
+              "Rating": {
+                "Template": "RatingSubRect",
+                "Values": {
+                  "RatingSubRect": {
+                    "SubRect": "This",
+                    "PlacementScore": 141027
+                  }
+                }
+              },
+              "RelativeWeight": 0.5
+            },
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "DistanceTo": "HarborDefense",
+                    "OneFrom": 10,
+                    "DisableUpperBorders": 1
+                  }
+                }
+              },
+              "RelativeWeight": 0.2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "PlacementScore",
+    "Values": {
+      "Standard": {
+        "GUID": 141028,
+        "Name": "HarborOfficeScore"
+      },
+      "PlacementScore": {
+        "SubScores": {
+          "Item": [
+            {
+              "Rating": {
+                "Template": "RatingHarborConnected",
+                "Values": {
+                  "RatingHarborConnected": ""
+                }
+              },
+              "RelativeWeight": 0,
+              "DiscardThresholdScore": 0.5
+            },
+            {
+              "Rating": {
+                "Template": "RatingHarborOffice",
+                "Values": {
+                  "RatingHarborOffice": ""
+                }
+              },
+              "RelativeWeight": 0.5
+            },
+            {
+              "Rating": {
+                "Template": "RatingSubRect",
+                "Values": {
+                  "RatingSubRect": {
+                    "SubRect": "This",
+                    "PlacementScore": 141025
+                  }
+                }
+              },
+              "RelativeWeight": 0.5
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "PlacementScore",
+    "Values": {
+      "Standard": {
+        "GUID": 141029,
+        "Name": "HarborWaterDefenseScore"
+      },
+      "PlacementScore": {
+        "SubScores": {
+          "Item": [
+            {
+              "Rating": {
+                "Template": "RatingHarborConnected",
+                "Values": {
+                  "RatingHarborConnected": ""
+                }
+              },
+              "RelativeWeight": 0,
+              "DiscardThresholdScore": 0.5
+            },
+            {
+              "Rating": {
+                "Template": "RatingHarborDefense",
+                "Values": {
+                  "RatingHarborDefense": ""
+                }
+              },
+              "RelativeWeight": 0.5,
+              "DiscardThresholdScore": 0
+            },
+            {
+              "Rating": {
+                "Template": "RatingSubRect",
+                "Values": {
+                  "RatingSubRect": {
+                    "SubRect": "This",
+                    "PlacementScore": 141025
+                  }
+                }
+              },
+              "RelativeWeight": 0.4
+            },
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "DistanceTo": "HarborDefense",
+                    "OneFrom": 10,
+                    "DisableUpperBorders": 1
+                  }
+                }
+              },
+              "RelativeWeight": 0.2
+            },
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "DistanceTo": "Coast",
+                    "OneFrom": 21,
+                    "OneTo": 25,
+                    "DisableUpperBorders": 1
+                  }
+                }
+              },
+              "RelativeWeight": 0.06
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "PlacementScore",
+    "Values": {
+      "Standard": {
+        "GUID": 141025,
+        "Name": "WaterBuildingScore"
+      },
+      "PlacementScore": {
+        "SubScores": {
+          "Item": [
+            {
+              "Rating": {
+                "Template": "RatingHarborConnected",
+                "Values": {
+                  "RatingHarborConnected": ""
+                }
+              },
+              "RelativeWeight": 0,
+              "DiscardThresholdScore": 0.5
+            },
+            {
+              "Rating": {
+                "Template": "RatingSubRect",
+                "Values": {
+                  "RatingSubRect": {
+                    "SubRect": "Basin",
+                    "PlacementScore": 141026
+                  }
+                }
+              },
+              "RelativeWeight": 0.225
+            },
+            {
+              "Rating": {
+                "Template": "RatingInsideTiles",
+                "Values": {
+                  "RatingInsideTiles": {
+                    "StateCategories": {
+                      "Quay": {
+                        "Score": 1
+                      }
+                    }
+                  }
+                }
+              },
+              "RelativeWeight": 0.1125
+            },
+            {
+              "Rating": {
+                "Template": "RatingNeighborTiles",
+                "Values": {
+                  "RatingNeighborTiles": {
+                    "NeighborCategories": {
+                      "Buildings": {
+                        "Score": 1
+                      },
+                      "Quay": {
+                        "Score": 1
+                      },
+                      "Shippath": {
+                        "Score": 0.8
+                      },
+                      "Basin": {
+                        "Score": 0.8
+                      }
+                    }
+                  }
+                }
+              },
+              "RelativeWeight": 0.1125
+            },
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "DistanceTo": "Coast",
+                    "ZeroTo": 5,
+                    "OneFrom": 17,
+                    "OneTo": 22,
+                    "ZeroFrom": 40,
+                    "ManhattenDistance": 1
+                  }
+                }
+              },
+              "RelativeWeight": 0.1125
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "PlacementScore",
+    "Values": {
+      "Standard": {
+        "GUID": 141027,
+        "Name": "CoastBuildingScore"
+      },
+      "PlacementScore": {
+        "SubScores": {
+          "Item": [
+            {
+              "Rating": {
+                "Template": "RatingHarborConnected",
+                "Values": {
+                  "RatingHarborConnected": ""
+                }
+              },
+              "RelativeWeight": 0,
+              "DiscardThresholdScore": 0.5
+            },
+            {
+              "Rating": {
+                "Template": "RatingSubRect",
+                "Values": {
+                  "RatingSubRect": {
+                    "SubRect": "Basin",
+                    "PlacementScore": 141026
+                  }
+                }
+              },
+              "RelativeWeight": 0.2
+            },
+            {
+              "Rating": {
+                "Template": "RatingNeighborTiles",
+                "Values": {
+                  "RatingNeighborTiles": {
+                    "NeighborCategories": {
+                      "Buildings": {
+                        "Score": 1
+                      },
+                      "StaticBlockedLand": {
+                        "Score": 0.05
+                      }
+                    }
+                  }
+                }
+              },
+              "RelativeWeight": 0.25
+            },
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "DistanceTo": "ReferencePos",
+                    "ZeroFrom": 40,
+                    "ManhattenDistance": 1
+                  }
+                }
+              },
+              "RelativeWeight": 0.05
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "PlacementScore",
+    "Values": {
+      "Standard": {
+        "GUID": 141079,
+        "Name": "CityBuildingScoreBase"
+      },
+      "PlacementScore": {
+        "SubScores": {
+          "Item": [
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "ZeroFrom": 200
+                  }
+                }
+              },
+              "RelativeWeight": 5
+            },
+            {
+              "Rating": {
+                "Template": "RatingFragmentation",
+                "Values": {
+                  "RatingFragmentation": ""
+                }
+              },
+              "RelativeWeight": 30
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "PlacementScore",
+    "Values": {
+      "Standard": {
+        "GUID": 142792,
+        "Name": "CityBuildingResidenceUpgradeScore"
+      },
+      "PlacementScore": {
+        "SubScores": {
+          "Item": [
+            {
+              "Rating": {
+                "Template": "RatingPublicCoverage",
+                "Values": {
+                  "RatingPublicCoverage": ""
+                }
+              },
+              "RelativeWeight": 1000
+            },
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "DistanceTo": "UpgradeCenter",
+                    "ZeroFrom": 200
+                  }
+                }
+              },
+              "RelativeWeight": 10
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "PlacementScore",
+    "Values": {
+      "Standard": {
+        "GUID": 141010,
+        "Name": "FarmFieldScore"
+      },
+      "PlacementScore": {
+        "SubScores": {
+          "Item": [
+            {
+              "Rating": {
+                "Template": "RatingNeighborTiles",
+                "Values": {
+                  "RatingNeighborTiles": {
+                    "NeighborCategories": {
+                      "Streets": {
+                        "Score": 0.2
+                      },
+                      "Buildings": {
+                        "Score": 0.9
+                      },
+                      "Preview": {
+                        "Score": 1
+                      }
+                    },
+                    "RequiredNeighborCategories": "Preview"
+                  }
+                }
+              },
+              "RelativeWeight": 0.85
+            },
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "DistanceTo": "ReferencePos",
+                    "ZeroFrom": 20
+                  }
+                }
+              },
+              "RelativeWeight": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "PlacementScore",
+    "Values": {
+      "Standard": {
+        "GUID": 141013,
+        "Name": "ProductionSimpleScore"
+      },
+      "PlacementScore": {
+        "SubScores": {
+          "Item": [
+            {
+              "Rating": {
+                "Template": "RatingProductionChainProximity",
+                "Values": {
+                  "RatingProductionChainProximity": ""
+                }
+              },
+              "RelativeWeight": 21,
+              "DiscardThresholdScore": 0.1
+            },
+            {
+              "Rating": {
+                "Template": "RatingNeighborTiles",
+                "Values": {
+                  "RatingNeighborTiles": {
+                    "NeighborCategories": {
+                      "Streets": {
+                        "Score": 0.8
+                      },
+                      "Buildings": {
+                        "Score": 1
+                      }
+                    }
+                  }
+                }
+              },
+              "RelativeWeight": 20
+            },
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "DistanceTo": "Kontor",
+                    "ZeroFrom": 200
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "PlacementScore",
+    "Values": {
+      "Standard": {
+        "GUID": 141037,
+        "Name": "ProductionFreeformScore"
+      },
+      "PlacementScore": {
+        "SubScores": {
+          "Item": [
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "DistanceTo": "Kontor",
+                    "ZeroFrom": 300
+                  }
+                }
+              },
+              "RelativeWeight": 0.5
+            },
+            {
+              "Rating": {
+                "Template": "RatingFreeStanding",
+                "Values": {
+                  "RatingFreeStanding": ""
+                }
+              },
+              "RelativeWeight": 10
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "PlacementScore",
+    "Values": {
+      "Standard": {
+        "GUID": 141016,
+        "Name": "FarmCompoundScore"
+      },
+      "PlacementScore": {
+        "SubScores": {
+          "Item": [
+            {
+              "Rating": {
+                "Template": "RatingCompactness",
+                "Values": {
+                  "RatingCompactness": ""
+                }
+              },
+              "RelativeWeight": 0.45
+            },
+            {
+              "Rating": {
+                "Template": "RatingNeighborTiles",
+                "Values": {
+                  "RatingNeighborTiles": {
+                    "NeighborCategories": {
+                      "Streets": {
+                        "Score": 0.5
+                      },
+                      "Buildings": {
+                        "Score": 1
+                      }
+                    }
+                  }
+                }
+              },
+              "RelativeWeight": 0.45
+            },
+            {
+              "Rating": {
+                "Template": "RatingProductionChainProximity",
+                "Values": {
+                  "RatingProductionChainProximity": ""
+                }
+              },
+              "RelativeWeight": 0.1,
+              "DiscardThresholdScore": 0.1
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "PlacementScore",
+    "Values": {
+      "Standard": {
+        "GUID": 141021,
+        "Name": "GuildhouseScore"
+      },
+      "PlacementScore": {
+        "SubScores": {
+          "Item": [
+            {
+              "Rating": {
+                "Template": "RatingProvideBoosterCoverage",
+                "Values": {
+                  "RatingProvideBoosterCoverage": ""
+                }
+              },
+              "RelativeWeight": 0.5
+            },
+            {
+              "Rating": {
+                "Template": "RatingNeighborTiles",
+                "Values": {
+                  "RatingNeighborTiles": {
+                    "NeighborCategories": {
+                      "Streets": {
+                        "Score": 0.8
+                      },
+                      "Buildings": {
+                        "Score": 1
+                      }
+                    },
+                    "RequiredNeighborCategories": "Streets"
+                  }
+                }
+              },
+              "RelativeWeight": 0.5
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "PlacementScore",
+    "Values": {
+      "Standard": {
+        "GUID": 141073,
+        "Name": "ProductionFreeAreaProductivityScore"
+      },
+      "PlacementScore": {
+        "SubScores": {
+          "Item": [
+            {
+              "Rating": {
+                "Template": "RatingProductionChainProximity",
+                "Values": {
+                  "RatingProductionChainProximity": ""
+                }
+              },
+              "RelativeWeight": 0.5,
+              "DiscardThresholdScore": 0.1
+            },
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "DistanceTo": "Kontor",
+                    "ZeroFrom": 300
+                  }
+                }
+              }
+            },
+            {
+              "Rating": {
+                "Template": "RatingStreetPointsToWarehouse",
+                "Values": {
+                  "RatingStreetPointsToWarehouse": ""
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "PlacementScore",
+    "Values": {
+      "Standard": {
+        "GUID": 141031,
+        "Name": "CultureCompoundScore"
+      },
+      "PlacementScore": {
+        "SubScores": {
+          "Item": [
+            {
+              "Rating": {
+                "Template": "RatingCompactness",
+                "Values": {
+                  "RatingCompactness": ""
+                }
+              },
+              "RelativeWeight": 0.5
+            },
+            {
+              "Rating": {
+                "Template": "RatingSubRect",
+                "Values": {
+                  "RatingSubRect": {
+                    "SubRect": "CompoundMain",
+                    "PlacementScore": 141023
+                  }
+                }
+              },
+              "RelativeWeight": 0.5
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "PlacementScore",
+    "Values": {
+      "Standard": {
+        "GUID": 141076,
+        "Name": "BlockCityBaseScore"
+      },
+      "PlacementScore": {
+        "SubScores": {
+          "Item": [
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "DistanceTo": "City",
+                    "ZeroFrom": 70
+                  }
+                }
+              },
+              "RelativeWeight": 20
+            },
+            {
+              "Rating": {
+                "Template": "RatingAdjacentBlocks",
+                "Values": {
+                  "RatingAdjacentBlocks": {
+                    "BlockLayoutTypes": "City;Culture"
+                  }
+                }
+              },
+              "RelativeWeight": 15
+            },
+            {
+              "Rating": {
+                "Template": "RatingBlockRegularity",
+                "Values": {
+                  "RatingBlockRegularity": ""
+                }
+              },
+              "RelativeWeight": 5
+            },
+            {
+              "Rating": {
+                "Template": "RatingNeighborTiles",
+                "Values": {
+                  "RatingNeighborTiles": {
+                    "NeighborCategories": {
+                      "StaticBlockedLand": {
+                        "Score": 1
+                      },
+                      "Railway": {
+                        "Score": 1
+                      },
+                      "Pipe": {
+                        "Score": 1
+                      }
+                    }
+                  }
+                }
+              },
+              "RelativeWeight": 4
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "PlacementScore",
+    "Values": {
+      "Standard": {
+        "GUID": 141206,
+        "Name": "BlockCityFirstScore"
+      },
+      "PlacementScore": {
+        "SubScores": {
+          "Item": [
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "ZeroFrom": 80
+                  }
+                }
+              },
+              "RelativeWeight": 100
+            },
+            {
+              "Rating": {
+                "Template": "RatingNeighborTiles",
+                "Values": {
+                  "RatingNeighborTiles": {
+                    "NeighborCategories": {
+                      "StaticBlockedLand": {
+                        "Score": 1
+                      },
+                      "Railway": {
+                        "Score": 1
+                      },
+                      "Pipe": {
+                        "Score": 1
+                      }
+                    }
+                  }
+                }
+              },
+              "RelativeWeight": 30
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "PlacementScore",
+    "Values": {
+      "Standard": {
+        "GUID": 141082,
+        "Name": "BlockProductionBaseScore"
+      },
+      "PlacementScore": {
+        "SubScores": {
+          "Item": [
+            {
+              "Rating": {
+                "Template": "RatingNeighborTiles",
+                "Values": {
+                  "RatingNeighborTiles": {
+                    "NeighborCategories": {
+                      "Quay": {
+                        "Score": 1
+                      },
+                      "Buildings": {
+                        "Score": 1
+                      },
+                      "StaticBlockedLand": {
+                        "Score": 1
+                      },
+                      "UnusedWithinBlock": {
+                        "Score": 1
+                      },
+                      "Railway": {
+                        "Score": 1
+                      },
+                      "Pipe": {
+                        "Score": 1
+                      }
+                    }
+                  }
+                }
+              },
+              "RelativeWeight": 10
+            },
+            {
+              "Rating": {
+                "Template": "RatingAdjacentBlocks",
+                "Values": {
+                  "RatingAdjacentBlocks": {
+                    "BlockLayoutTypes": "Production"
+                  }
+                }
+              },
+              "RelativeWeight": 20
+            },
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "DistanceTo": "Warehouse",
+                    "OneTo": 20,
+                    "ZeroFrom": 30
+                  }
+                }
+              },
+              "RelativeWeight": 20
+            },
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "DistanceTo": "City",
+                    "ZeroTo": 50,
+                    "OneFrom": 50,
+                    "DisableUpperBorders": 1
+                  }
+                }
+              },
+              "RelativeWeight": 25
+            },
+            {
+              "Rating": {
+                "Template": "RatingBlockRegularity",
+                "Values": {
+                  "RatingBlockRegularity": ""
+                }
+              },
+              "RelativeWeight": 5
+            },
+            {
+              "Rating": {
+                "Template": "RatingHindersBlockExpansions",
+                "Values": {
+                  "RatingHindersBlockExpansions": ""
+                }
+              },
+              "RelativeWeight": 26
+            },
+            {
+              "Rating": {
+                "Template": "RatingNotIrrigatedTiles",
+                "Values": {
+                  "RatingNotIrrigatedTiles": ""
+                }
+              },
+              "RelativeWeight": 40
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "PlacementScore",
+    "Values": {
+      "Standard": {
+        "GUID": 141036,
+        "Name": "BlockProductionFreeformScore"
+      },
+      "PlacementScore": {
+        "SubScores": {
+          "Item": [
+            {
+              "Rating": {
+                "Template": "RatingFreeformInnerRatio",
+                "Values": {
+                  "RatingFreeformInnerRatio": {
+                    "OneFrom_": 0.2,
+                    "OneTo_": 1,
+                    "ZeroFrom_": 1
+                  }
+                }
+              },
+              "RelativeWeight": 10
+            },
+            {
+              "Rating": {
+                "Template": "RatingAdjacentBlocks",
+                "Values": {
+                  "RatingAdjacentBlocks": {
+                    "BlockLayoutTypes": "Production"
+                  }
+                }
+              },
+              "RelativeWeight": 20
+            },
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "DistanceTo": "Warehouse",
+                    "OneFrom": 20,
+                    "OneTo": 30,
+                    "ZeroFrom": 200
+                  }
+                }
+              },
+              "RelativeWeight": 10
+            },
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "DistanceTo": "City",
+                    "ZeroTo": 50,
+                    "OneFrom": 50,
+                    "DisableUpperBorders": 1
+                  }
+                }
+              },
+              "RelativeWeight": 25
+            },
+            {
+              "Rating": {
+                "Template": "RatingFreeformInnerRatio",
+                "Values": {
+                  "RatingFreeformInnerRatio": {
+                    "RatioType": "Unused",
+                    "OneTo_": 0.05,
+                    "ZeroFrom_": 0.3
+                  }
+                }
+              },
+              "RelativeWeight": 20,
+              "DiscardThresholdScore": 0,
+              "Comment": "Don't allow more than 30% unused"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "PlacementScore",
+    "Values": {
+      "Standard": {
+        "GUID": 142781,
+        "Name": "BlockAirshipHangarScore"
+      },
+      "PlacementScore": {
+        "SubScores": {
+          "Item": [
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "OneFrom": 60,
+                    "OneTo": 60,
+                    "ZeroFrom": 100,
+                    "DisableUpperBorders": 1
+                  }
+                }
+              },
+              "RelativeWeight": 40,
+              "Comment": "Not to far but also not too close to the city"
+            },
+            {
+              "Rating": {
+                "Template": "RatingNeighborTiles",
+                "Values": {
+                  "RatingNeighborTiles": {
+                    "NeighborCategories": {
+                      "Buildings": {
+                        "Score": 1
+                      },
+                      "StaticBlockedLand": {
+                        "Score": 1
+                      },
+                      "UnusedWithinBlock": {
+                        "Score": 1
+                      }
+                    }
+                  }
+                }
+              },
+              "RelativeWeight": 25,
+              "Comment": "If possible try to align to adjacent blocks / bocking"
+            },
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "DistanceTo": "StaticBlocker_Coarse",
+                    "OneTo": 7,
+                    "ZeroFrom": 23
+                  }
+                }
+              },
+              "RelativeWeight": 15,
+              "Comment": "We prefer to fill some gap near a blocking"
+            },
+            {
+              "Rating": {
+                "Template": "RatingOverwrittenBlocks",
+                "Values": {
+                  "RatingOverwrittenBlocks": ""
+                }
+              },
+              "RelativeWeight": 15,
+              "Comment": "Don't overwrite existing blocks if possible"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "PlacementScore",
+    "Values": {
+      "Standard": {
+        "GUID": 142905,
+        "Name": "BlockResearchCenterScore"
+      },
+      "PlacementScore": {
+        "SubScores": {
+          "Item": [
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "OneFrom": 45,
+                    "OneTo": 60,
+                    "ZeroFrom": 160
+                  }
+                }
+              },
+              "RelativeWeight": 40,
+              "Comment": "Not too close to the City"
+            },
+            {
+              "Rating": {
+                "Template": "RatingNeighborTiles",
+                "Values": {
+                  "RatingNeighborTiles": {
+                    "NeighborCategories": {
+                      "Railway": {
+                        "Score": 1
+                      },
+                      "Pipe": {
+                        "Score": 1
+                      }
+                    }
+                  }
+                }
+              },
+              "RelativeWeight": 25,
+              "Comment": "We like railway close by"
+            },
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "DistanceTo": "StaticBlocker_Coarse",
+                    "OneFrom": 23,
+                    "OneTo": 7,
+                    "ZeroFrom": 23,
+                    "DisableUpperBorders": 1
+                  }
+                }
+              },
+              "RelativeWeight": 20,
+              "Comment": "We prefer having some space around our block"
+            },
+            {
+              "Rating": {
+                "Template": "RatingOverwrittenBlocks",
+                "Values": {
+                  "RatingOverwrittenBlocks": ""
+                }
+              },
+              "RelativeWeight": 15,
+              "Comment": "Don't overwrite existing blocks if possible"
+            }
+          ]
+        }
+      }
+    }
+  }
+]

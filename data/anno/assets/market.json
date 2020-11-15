@@ -1,0 +1,568 @@
+[
+  {
+    "Template": "Market",
+    "Values": {
+      "Standard": {
+        "GUID": 1010372,
+        "Name": "logistic_01 (Marketplace)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_market.png",
+        "ID": "MarketplaceModerate",
+        "InfoDescription": 2976
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Marketplace",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 5296
+      },
+      "Blocking": {
+        "HasBuildingBaseTiles": 1
+      },
+      "Building": {
+        "BuildingType": "Logistic",
+        "BuildingCategoryName": 100003,
+        "SkipUnlockMessage": 1,
+        "BuildModeRandomRotation": 180,
+        "AssociatedRegions": "Moderate"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 500
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 10
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "PublicServiceBuilding",
+                      "Index": 2
+                    },
+                    {
+                      "TemplateName": "Market",
+                      "Index": 2
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "PublicServiceBuilding",
+                      "Index": 3
+                    },
+                    {
+                      "TemplateName": "Market",
+                      "Index": 3
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "PublicServiceBuilding",
+                      "Index": 4
+                    },
+                    {
+                      "TemplateName": "Market",
+                      "Index": 4
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "PublicServiceBuilding",
+                      "Index": 5
+                    },
+                    {
+                      "TemplateName": "Market",
+                      "Index": 5
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Selection": {
+        "GUIType": "Market"
+      },
+      "Object": {
+        "Variations": {
+          "Item": [
+            {
+              "Filename": "data/graphics/buildings/public/logistic_01/logistic_01.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/public/logistic_01_christmas/logistic_01_christmas.cfg"
+            }
+          ]
+        }
+      },
+      "Constructable": "",
+      "Mesh": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 200836
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        }
+      },
+      "Locked": "",
+      "Infolayer": "",
+      "FeedbackController": {
+        "NightBehavior": "HideAll"
+      },
+      "UpgradeList": "",
+      "AmbientMoodProvider": {
+        "AmbientMood": "ResidenceTier1",
+        "Murmur": "Market"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": {
+            "Product": 1010017,
+            "Amount": 20,
+            "InactiveAmount": 20
+          }
+        }
+      },
+      "Market": {
+        "FullSupplyDistance": 35,
+        "NoSupplyDistance": 70
+      },
+      "StorageBase": {
+        "ProductStorageList": 120057
+      },
+      "Attackable": {
+        "MaximumHitPoints": 2500,
+        "SelfHealPerHealTick": 4
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Fire": {
+            "Base": 1
+          }
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "DensityDistance": 15
+          }
+        },
+        "PerIncidentProximityEffect": {
+          "Riot": {
+            "ProximityEffect": {
+              "Item": {
+                "Distance": 10,
+                "InfectionChanceDebuff": 15
+              }
+            }
+          }
+        }
+      },
+      "LogisticNode": "",
+      "PublicService": {
+        "FullSatisfactionDistance": 35,
+        "NoSatisfactionDistance": 70,
+        "PublicServiceOutputs": {
+          "Item": {
+            "Product": 120020
+          }
+        }
+      },
+      "Culture": "",
+      "StreetActivation": ""
+    }
+  },
+  {
+    "Template": "Market",
+    "Values": {
+      "Standard": {
+        "GUID": 114889,
+        "Name": "service_arctic_01 (Canteen)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_canteen.png",
+        "InfoDescription": 11144
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Canteen",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35091
+      },
+      "Blocking": "",
+      "Building": {
+        "BuildingType": "Logistic",
+        "BuildingCategoryName": 100003,
+        "AssociatedRegions": "Arctic"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "Market",
+                    "Index": 0
+                  }
+                }
+              },
+              "Amount": 1000
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "Market",
+                    "Index": 1
+                  }
+                }
+              },
+              "Amount": 5
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "Market",
+                    "Index": 2
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "Market",
+                    "Index": 3
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "Market",
+                    "Index": 4
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "Market",
+                    "Index": 5
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Selection": {
+        "GUIType": "Market"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc03/graphics/buildings/public/service_colony03_02/service_colony03_02.cfg"
+          }
+        }
+      },
+      "Constructable": "",
+      "Mesh": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 242781
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "Infolayer": "",
+      "FeedbackController": "",
+      "UpgradeList": "",
+      "AmbientMoodProvider": "",
+      "Maintenance": {
+        "Maintenances": {
+          "Item": {
+            "Product": 1010017,
+            "Amount": 100,
+            "InactiveAmount": 100
+          }
+        }
+      },
+      "Market": "",
+      "StorageBase": {
+        "ProductStorageList": 120059
+      },
+      "Attackable": {
+        "MaximumHitPoints": 3000
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Fire": {
+            "Base": 1
+          },
+          "Riot": {
+            "Escalated": 0
+          },
+          "Illness": {
+            "Escalated": 0
+          },
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        }
+      },
+      "LogisticNode": "",
+      "PublicService": {
+        "FullSatisfactionDistance": 20,
+        "NoSatisfactionDistance": 40,
+        "PublicServiceOutputs": {
+          "Item": {
+            "Product": 114890
+          }
+        },
+        "FunctionDescription": 100364
+      },
+      "Culture": "",
+      "StreetActivation": ""
+    }
+  },
+  {
+    "Template": "Market",
+    "Values": {
+      "Standard": {
+        "GUID": 114518,
+        "Name": "service_colony02_01 (Bazaar)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_bazaar.png",
+        "InfoDescription": 2976
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Marketplace",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 44459
+      },
+      "Blocking": "",
+      "Building": {
+        "BuildingCategoryName": 100003,
+        "AssociatedRegions": "Africa"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PublicServiceBuilding",
+                    "Index": 0
+                  }
+                }
+              },
+              "Ingredient": 1010017,
+              "Amount": 500
+            },
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PublicServiceBuilding",
+                    "Index": 1
+                  }
+                }
+              },
+              "Ingredient": 114356,
+              "Amount": 8
+            },
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PublicServiceBuilding",
+                    "Index": 2
+                  }
+                }
+              },
+              "Ingredient": 114402
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "PublicServiceBuilding",
+                      "Index": 3
+                    },
+                    {
+                      "TemplateName": "Market",
+                      "Index": 3
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "PublicServiceBuilding",
+                      "Index": 4
+                    },
+                    {
+                      "TemplateName": "Market",
+                      "Index": 4
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "PublicServiceBuilding",
+                      "Index": 5
+                    },
+                    {
+                      "TemplateName": "Market",
+                      "Index": 5
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Selection": {
+        "GUIType": "Market"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc06/graphics/buildings/public/service_colony02_01/service_colony02_01.cfg"
+          }
+        }
+      },
+      "Constructable": "",
+      "Mesh": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 270302
+          }
+        }
+      },
+      "Locked": "",
+      "Infolayer": "",
+      "FeedbackController": "",
+      "UpgradeList": "",
+      "AmbientMoodProvider": "",
+      "Maintenance": {
+        "Maintenances": {
+          "Item": {
+            "Product": 1010017,
+            "Amount": 20,
+            "InactiveAmount": 10
+          }
+        }
+      },
+      "Market": "",
+      "StorageBase": {
+        "ProductStorageList": 122362
+      },
+      "Attackable": {
+        "MaximumHitPoints": 1500
+      },
+      "Pausable": "",
+      "IncidentInfectable": "",
+      "LogisticNode": "",
+      "PublicService": {
+        "FullSatisfactionDistance": 25,
+        "NoSatisfactionDistance": 50,
+        "PublicServiceOutputs": {
+          "Item": {
+            "Product": 120020
+          }
+        }
+      },
+      "Culture": "",
+      "StreetActivation": ""
+    }
+  }
+]

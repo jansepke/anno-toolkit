@@ -1,0 +1,643 @@
+[
+  {
+    "Template": "FeedbackDescription",
+    "Values": {
+      "Standard": {
+        "GUID": 2001096,
+        "Name": "FeedbackBalancingModerate",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png"
+      },
+      "FeedbackSessionDescription": {
+        "NightPopulationFactorVehicles": 0.55,
+        "IncidentSpawnGroups": {
+          "DemagogueSpawnGroup": {
+            "DemagogueClass": 2001084,
+            "ListenersPerDemagogueIncreaseRate": 3
+          }
+        },
+        "CulturalBuildingSpawnGroup": {
+          "VisitorSpawnClass": 2001014,
+          "MinLooks": 6,
+          "MaxLooks": 10,
+          "MinLookDuration": 10,
+          "MaxLookDuration": 30,
+          "MinVisitorsCultural": 15,
+          "MaxVisitorsCultural": 200,
+          "VisitorsMonument_NoEvent": 50,
+          "MinVisitorsMonument_EventRunning": 200,
+          "MaxVisitorsMonument_EventRunning": 500,
+          "BaseSpawnRange": 20,
+          "MaxSpawnRange": 50,
+          "MinSpawnBuildingsToExpand": 10,
+          "MaxSpawnBuildingsToShrink": 30,
+          "SpawnRangeIncreaseRate": 2,
+          "MaxAttractiveness": 100,
+          "SpawnResidenceEntranceRatio": 0.4,
+          "SpawnTouristsResidenceRatio": 0.75,
+          "TouristSpawnClass": 2001166,
+          "TourismPierBuildings": 2001201
+        },
+        "InteractionConfig": {
+          "ReactionsPerMood": {
+            "Neutral": {
+              "MinHappiness": -5
+            },
+            "Good": {
+              "MinHappiness": 6
+            },
+            "Bad": {
+              "MinHappiness": -1000
+            }
+          },
+          "ReactionPairs": {
+            "Item": [
+              {
+                "Source": "Protest",
+                "SourceSequences": "protest01",
+                "Target": "Protest",
+                "TargetSequences": "protest01",
+                "Mood": "Bad"
+              },
+              {
+                "Source": "Talk",
+                "SourceSequences": "talk01;talk02",
+                "Target": "Talk",
+                "TargetSequences": "talk01;talk02",
+                "Mood": "Neutral"
+              },
+              {
+                "Source": "Cheer",
+                "SourceSequences": "cheer01;cheer02;cheer03",
+                "Target": "Cheer",
+                "TargetSequences": "cheer01;cheer02;cheer03",
+                "Mood": "Good"
+              },
+              {
+                "Source": "Greet",
+                "SourceSequences": "greet01",
+                "Target": "Greet",
+                "TargetSequences": "greet01"
+              }
+            ]
+          }
+        },
+        "HarborConfig": {
+          "MinWorkPlaces": 5,
+          "MaxWorkPlaces": 10,
+          "MinWorkDuration": 8,
+          "MaxWorkDuration": 12,
+          "WorkPlaceAssets": {
+            "Item": [
+              {
+                "WorkPlace": 1000100
+              },
+              {
+                "WorkPlace": 1000103
+              },
+              {
+                "WorkPlace": 1000110
+              },
+              {
+                "WorkPlace": 1000222
+              },
+              {
+                "WorkPlace": 1000226
+              },
+              {
+                "WorkPlace": 1000228
+              },
+              {
+                "WorkPlace": 1010520
+              },
+              {
+                "WorkPlace": 1010278
+              },
+              {
+                "WorkPlace": 1010310
+              },
+              {
+                "WorkPlace": 1010560
+              },
+              {
+                "WorkPlace": 1010521
+              },
+              {
+                "WorkPlace": 1010522
+              },
+              {
+                "WorkPlace": 1010523
+              },
+              {
+                "WorkPlace": 1010524
+              },
+              {
+                "WorkPlace": 1010525
+              },
+              {
+                "WorkPlace": 100519
+              },
+              {
+                "WorkPlace": 100781
+              },
+              {
+                "WorkPlace": 100782
+              },
+              {
+                "WorkPlace": 100783
+              },
+              {
+                "WorkPlace": 100784
+              }
+            ]
+          },
+          "MaxSearchRadius": 40,
+          "SpawnBuildings": {
+            "Item": [
+              {
+                "BuildingAsset": 1010517,
+                "WorkerAmount": 15
+              },
+              {
+                "BuildingAsset": 100510,
+                "WorkerAmount": 15
+              },
+              {
+                "BuildingAsset": 100511,
+                "WorkerAmount": 15
+              },
+              {
+                "BuildingAsset": 1010540,
+                "WorkerAmount": 15
+              },
+              {
+                "BuildingAsset": 100514,
+                "WorkerAmount": 15
+              },
+              {
+                "BuildingAsset": 100515,
+                "WorkerAmount": 15
+              },
+              {
+                "BuildingAsset": 101290,
+                "WorkerAmount": 15
+              },
+              {
+                "BuildingAsset": 101291,
+                "WorkerAmount": 15
+              },
+              {
+                "BuildingAsset": 101292,
+                "WorkerAmount": 15
+              },
+              {
+                "BuildingAsset": 101293,
+                "WorkerAmount": 15
+              },
+              {
+                "BuildingAsset": 101294,
+                "WorkerAmount": 15
+              },
+              {
+                "BuildingAsset": 101295,
+                "WorkerAmount": 15
+              },
+              {
+                "BuildingAsset": 1000100,
+                "WorkerAmount": 5
+              },
+              {
+                "BuildingAsset": 1010520,
+                "WorkerAmount": 5
+              },
+              {
+                "BuildingAsset": 1010278,
+                "WorkerAmount": 5
+              },
+              {
+                "BuildingAsset": 1010310,
+                "WorkerAmount": 5
+              },
+              {
+                "BuildingAsset": 1010560,
+                "WorkerAmount": 5
+              },
+              {
+                "BuildingAsset": 1010521,
+                "WorkerAmount": 5
+              },
+              {
+                "BuildingAsset": 1010522,
+                "WorkerAmount": 5
+              },
+              {
+                "BuildingAsset": 1010523,
+                "WorkerAmount": 5
+              },
+              {
+                "BuildingAsset": 1010524,
+                "WorkerAmount": 5
+              },
+              {
+                "BuildingAsset": 1010525,
+                "WorkerAmount": 5
+              },
+              {
+                "BuildingAsset": 100519,
+                "WorkerAmount": 5
+              },
+              {
+                "BuildingAsset": 100781,
+                "WorkerAmount": 5
+              },
+              {
+                "BuildingAsset": 100782,
+                "WorkerAmount": 5
+              },
+              {
+                "BuildingAsset": 100783,
+                "WorkerAmount": 5
+              },
+              {
+                "BuildingAsset": 100784,
+                "WorkerAmount": 5
+              },
+              {
+                "BuildingAsset": 1010278,
+                "WorkerAmount": 5
+              },
+              {
+                "BuildingAsset": 1010310,
+                "WorkerAmount": 5
+              },
+              {
+                "BuildingAsset": 1010560
+              }
+            ]
+          },
+          "SpawnClasses": {
+            "Item": [
+              {
+                "ClassAsset": 2001179
+              },
+              {
+                "ClassAsset": 141809
+              }
+            ]
+          },
+          "SpawnInterval": 2,
+          "SpawnIntervalDerivation": 0.75,
+          "HarborPropDistribution": {
+            "usesPerlingNoise": 1,
+            "PerlingFrequency": 10.1,
+            "PerlingThreshold": 1
+          }
+        },
+        "LogisticConfig": {
+          "TransporterClasses": {
+            "FactoryTransporter": {
+              "TransporterClass": 140890
+            },
+            "WarehouseTransporter": {
+              "TransporterClass": 2001289
+            },
+            "ResidenceTransporter": {
+              "TransporterClass": 2001054
+            },
+            "TrainTransporter": {
+              "TransporterClass": 2001175
+            },
+            "ElectricWarehouseTransporter": {
+              "TransporterClass": 141474
+            },
+            "ElectricFactoryTransporter": {
+              "TransporterClass": 141482
+            },
+            "FuelTransporter": {
+              "TransporterClass": 270081
+            }
+          }
+        },
+        "TourismConfig": {
+          "TourismPierBuildings": 2001201,
+          "TourismFeedbackClass": 2001166,
+          "TourismPalaceFactor": 0.8
+        },
+        "MineLorryConfig": {
+          "LorryVariants": {
+            "Item": [
+              {
+                "MineToSpawnAt": 1010542,
+                "LorryEmpty": 141429,
+                "LorryFull": 140413
+              },
+              {
+                "MineToSpawnAt": 1010543,
+                "LorryEmpty": 141430,
+                "LorryFull": 141432
+              },
+              {
+                "MineToSpawnAt": 1010545,
+                "LorryEmpty": 141431,
+                "LorryFull": 141433
+              },
+              {
+                "MineToSpawnAt": 1010546,
+                "LorryEmpty": 140412,
+                "LorryFull": 141434
+              },
+              {
+                "MineToSpawnAt": 1010549,
+                "LorryEmpty": 141574,
+                "LorryFull": 141575
+              },
+              {
+                "MineToSpawnAt": 116031,
+                "LorryEmpty": 141574,
+                "LorryFull": 141575
+              }
+            ]
+          }
+        },
+        "FisheryConfig": {
+          "BuildingSetup": {
+            "Item": {
+              "Building": 1010278,
+              "FisherFeedbackClass": 141657
+            }
+          }
+        },
+        "WoodcutterConfig": {
+          "WoodcutterBuildings": {
+            "Item": [
+              {
+                "Building": 1010266,
+                "WoodcutterFeedbackClass": 142769
+              },
+              {
+                "Building": 1010298,
+                "WoodcutterFeedbackClass": 142769
+              }
+            ]
+          }
+        },
+        "HunterConfig": {
+          "HunterFeedbackData": {
+            "Item": {
+              "HunterBuilding": 1010558,
+              "AnimalFeedbackClass": 142763,
+              "HunterFeedbackClass": 142762
+            }
+          },
+          "HunterPerBuilding": 2
+        },
+        "FarmFieldConfig": {
+          "FarmFieldBuildings": {
+            "Item": [
+              {
+                "Building": 1010262,
+                "PersonSpawners": {
+                  "Item": {
+                    "UnitClass": 141674
+                  }
+                },
+                "VehicleSpawners": {
+                  "Item": {
+                    "UnitClass": 269771,
+                    "ShrinksFieldsOnTouch": 1
+                  }
+                }
+              },
+              {
+                "Building": 1010264,
+                "PersonSpawners": {
+                  "Item": {
+                    "UnitClass": 141674,
+                    "Amount_Motorized": 4
+                  }
+                },
+                "VehicleSpawners": {
+                  "Item": {
+                    "UnitClass": 269770
+                  }
+                }
+              },
+              {
+                "Building": 100654,
+                "PersonSpawners": {
+                  "Item": {
+                    "UnitClass": 141674,
+                    "Amount_Motorized": 4
+                  }
+                },
+                "VehicleSpawners": {
+                  "Item": {
+                    "UnitClass": 269769
+                  }
+                }
+              },
+              {
+                "Building": 1010265,
+                "PersonSpawners": {
+                  "Item": {
+                    "UnitClass": 141674,
+                    "Amount_Motorized": 4
+                  }
+                },
+                "VehicleSpawners": {
+                  "Item": {
+                    "UnitClass": 270095
+                  }
+                }
+              },
+              {
+                "Building": 100655,
+                "PersonSpawners": {
+                  "Item": {
+                    "UnitClass": 141674,
+                    "Amount_Motorized": 4
+                  }
+                },
+                "VehicleSpawners": {
+                  "Item": {
+                    "UnitClass": 270096
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "ParadeTrainConfig": {
+          "ParadeTrainClass": 141900
+        },
+        "TrailerStyleToCfgs": {
+          "Oil": {
+            "TrailerCfgs": {
+              "Item": [
+                {
+                  "RelativeProbability": 200,
+                  "TrailerCfg": "data/graphics/vehicle/railway_oil_01/railway_oil_01.cfg"
+                },
+                {
+                  "RelativeProbability": 100,
+                  "TrailerCfg": "data/graphics/vehicle/railway_oil_02/railway_oil_02.cfg"
+                }
+              ]
+            }
+          },
+          "ParadeDrums": {
+            "TrailerCfgs": {
+              "Item": [
+                {
+                  "RelativeProbability": 100,
+                  "TrailerCfg": "data/graphics/effects/city_incidents/party/marching_band_drummer_quad_2.cfg"
+                },
+                {
+                  "RelativeProbability": 100,
+                  "TrailerCfg": "data/graphics/effects/city_incidents/party/marching_band_drummer_quad.cfg"
+                }
+              ]
+            }
+          },
+          "ParadeTrumpets": {
+            "TrailerCfgs": {
+              "Item": [
+                {
+                  "RelativeProbability": 100,
+                  "TrailerCfg": "data/graphics/effects/city_incidents/party/marching_band_tubanist_quad_v1.cfg"
+                },
+                {
+                  "RelativeProbability": 100,
+                  "TrailerCfg": "data/graphics/effects/city_incidents/party/marching_band_tubanist_quad_v2.cfg"
+                }
+              ]
+            }
+          },
+          "ParadeBeerWagon": {
+            "TrailerCfgs": {
+              "Item": [
+                {
+                  "RelativeProbability": 100,
+                  "TrailerCfg": "data/graphics/effects/city_incidents/party/beer_wagon_01.cfg"
+                },
+                {
+                  "RelativeProbability": 100,
+                  "TrailerCfg": "data/graphics/effects/city_incidents/party/beer_wagon_02.cfg"
+                },
+                {
+                  "RelativeProbability": 50,
+                  "TrailerCfg": "data/graphics/effects/city_incidents/party/mounted_police_01.cfg"
+                },
+                {
+                  "RelativeProbability": 50,
+                  "TrailerCfg": "data/graphics/effects/city_incidents/party/mounted_police_02.cfg"
+                }
+              ]
+            }
+          },
+          "ParadeDancer": {
+            "TrailerCfgs": {
+              "Item": [
+                {
+                  "RelativeProbability": 100,
+                  "TrailerCfg": "data/graphics/effects/city_incidents/party/man_on_stilts_01.cfg"
+                },
+                {
+                  "RelativeProbability": 100,
+                  "TrailerCfg": "data/graphics/effects/city_incidents/party/marching_band_pennantist_group.cfg"
+                }
+              ]
+            }
+          },
+          "AnarchyParadeWalker": {
+            "TrailerCfgs": {
+              "Item": [
+                {
+                  "RelativeProbability": 100,
+                  "TrailerCfg": "data/dm/graphics/parade/dm_parade_workers_01.cfg"
+                },
+                {
+                  "RelativeProbability": 100,
+                  "TrailerCfg": "data/dm/graphics/parade/dm_parade_workers_02.cfg"
+                },
+                {
+                  "RelativeProbability": 100,
+                  "TrailerCfg": "data/dm/graphics/parade/dm_parade_workers_03.cfg"
+                }
+              ]
+            }
+          },
+          "AnarchyParadeDrums": {
+            "TrailerCfgs": {
+              "Item": {
+                "RelativeProbability": 100,
+                "TrailerCfg": "data/dm/graphics/parade/dm_marching_band_drummer_quad.cfg"
+              }
+            }
+          },
+          "AnarchyParadeTrumpets": {
+            "TrailerCfgs": {
+              "Item": {
+                "RelativeProbability": 100,
+                "TrailerCfg": "data/dm/graphics/parade/dm_marching_band_tubanist_quad_v1.cfg"
+              }
+            }
+          },
+          "AnarchyParadeWagon": {
+            "TrailerCfgs": {
+              "Item": [
+                {
+                  "RelativeProbability": 100,
+                  "TrailerCfg": "data/dm/graphics/parade/dm_parade_waggon_01.cfg"
+                },
+                {
+                  "RelativeProbability": 100,
+                  "TrailerCfg": "data/dm/graphics/parade/dm_parade_waggon_02.cfg"
+                }
+              ]
+            }
+          }
+        },
+        "ParadeSpectatorConfig": {
+          "PercentageBeforeParade": 1.5,
+          "PercentageAfterParade": 1,
+          "MinParadeDistance": 0.25,
+          "RequiredSpace": 0.25,
+          "SpawnChunkLength": 1,
+          "PercentageSpawnOffset": 0.75,
+          "DensityRows": {
+            "Item": [
+              {
+                "Density": 0.5
+              },
+              {
+                "Density": 0.25
+              },
+              {
+                "Density": 0.1
+              }
+            ]
+          }
+        },
+        "Test": {
+          "PersonAsset": 2001014,
+          "VehicleAsset": 2001019,
+          "TrainAsset": 141997
+        },
+        "WorkforceTransferConfig": {
+          "MaxPierWorkers": 50,
+          "WorkerPierFeedbackFactor": 1,
+          "WorkerPierSpawnBuilding": 101642,
+          "WorkerFeedbackClass": 142326
+        },
+        "OverwritablePart": {
+          "Default_NoOverwrite": {
+            "OverwritableBalancing": 142613
+          },
+          "Mercier": {
+            "OverwritableBalancing": 142616
+          }
+        }
+      }
+    }
+  }
+]

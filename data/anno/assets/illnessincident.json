@@ -1,0 +1,259 @@
+[
+  {
+    "Template": "IllnessIncident",
+    "Values": {
+      "Standard": {
+        "GUID": 140585,
+        "Name": "IllnessIncident",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_incident_diseases.png"
+      },
+      "Incident": {
+        "IncidentType": "Illness",
+        "IncidentMurmur_DEPRECATED": "IncidentIllness",
+        "IncidentInfolayerIcon": 500309,
+        "ResolveInfolayerIcon": 500310,
+        "InfectionData": {
+          "InfectionBaseIntervalMax": 30000
+        },
+        "IncidentAttractiveness": {
+          "BasePerBuilding": 0,
+          "EscalatedPerBuilding": -50
+        },
+        "ShipIncidentSpreadRadius": 50,
+        "ShipIncidentDefaultDebuff": 192986,
+        "ShipIncidentDefaultDuration": 600000,
+        "ShipIncidentSpreadChance": 1,
+        "ShipIncidentSpreadCooldown": 30000,
+        "InfectionChanceSourceNameMapping": {
+          "Base": {
+            "Name": 14431,
+            "Icon": 14431,
+            "NotificationText": 14551
+          },
+          "Damage": {
+            "Name": 14432,
+            "Icon": 14432,
+            "NotificationText": 14553
+          },
+          "Density": {
+            "Name": 14433,
+            "Icon": 14433,
+            "NotificationText": 14555
+          },
+          "HappinessResidence": {
+            "Name": 14434,
+            "Icon": 14434,
+            "NotificationText": 14556
+          },
+          "Satisfaction": {
+            "Name": 14435,
+            "Icon": 14435,
+            "NotificationText": 14557
+          },
+          "WorkingConditionFactory": {
+            "Name": 14436,
+            "Icon": 14436,
+            "NotificationText": 14558
+          },
+          "Productivity": {
+            "Name": 14437,
+            "Icon": 14437,
+            "NotificationText": 14559
+          },
+          "Proximity": {
+            "Name": 14438,
+            "Icon": 14438,
+            "NotificationText": 14560
+          },
+          "HappinessFactory": {
+            "Name": 14439,
+            "Icon": 14439,
+            "NotificationText": 14561
+          },
+          "Newspaper": {
+            "Name": 14496,
+            "Icon": 14496,
+            "NotificationText": 14562
+          },
+          "Upgrades": {
+            "Name": 14495,
+            "Icon": 14495,
+            "NotificationText": 14563
+          },
+          "InfluencerPositive": {
+            "Name": 14497,
+            "Icon": 14497,
+            "NotificationText": 14564
+          },
+          "InfluencerNegative": {
+            "Name": 14500,
+            "Icon": 14500,
+            "NotificationText": 14551
+          },
+          "WorkingConditionResidence": {
+            "Name": 14436,
+            "Icon": 14436,
+            "NotificationText": 14558
+          }
+        },
+        "ResolverConfigurationPerRegion": {
+          "Moderate": {
+            "ResolverConfigs": {
+              "Item": {
+                "FileName": "data/graphics/effects/city_incidents/illness/stories/ci_illness_story_01.cfg"
+              }
+            },
+            "ResolverNextToCarSpawnRight": "data/graphics/effects/city_incidents/illness/stories/ci_illness_story_04.cfg",
+            "ResolverNextToCarSpawnLeft": "data/graphics/effects/city_incidents/illness/stories/ci_illness_story_03.cfg"
+          },
+          "Colony01": {
+            "ResolverConfigs": {
+              "Item": {
+                "FileName": "data/graphics/effects/city_incidents/illness/stories/ci_illness_story_01.cfg"
+              }
+            },
+            "ResolverNextToCarSpawnRight": "data/graphics/effects/city_incidents/illness/stories/ci_illness_story_04.cfg",
+            "ResolverNextToCarSpawnLeft": "data/graphics/effects/city_incidents/illness/stories/ci_illness_story_03.cfg"
+          },
+          "Arctic": {
+            "ResolverConfigs": {
+              "Item": {
+                "FileName": "data/graphics/effects/city_incidents/illness/stories/ci_illness_story_01.cfg"
+              }
+            },
+            "ResolverNextToCarSpawnRight": "data/graphics/effects/city_incidents/illness/stories/ci_illness_story_04.cfg",
+            "ResolverNextToCarSpawnLeft": "data/graphics/effects/city_incidents/illness/stories/ci_illness_story_03.cfg"
+          },
+          "Africa": {
+            "ResolverConfigs": {
+              "Item": {
+                "FileName": "data/dlc06/graphics/effects/city_incidents/illness/stories/ci_illness_story_01.cfg"
+              }
+            },
+            "ResolverNextToCarSpawnRight": "data/dlc06/graphics/effects/city_incidents/illness/stories/ci_illness_story_04.cfg",
+            "ResolverNextToCarSpawnLeft": "data/dlc06/graphics/effects/city_incidents/illness/stories/ci_illness_story_03.cfg"
+          }
+        },
+        "FeedbackDangerReaction": "WALK_AWAY",
+        "DangerUnsafeExtents": 2,
+        "DangerSafeExtents": 4,
+        "IncidentEscalationPerProgress": {
+          "EarlyGame": {
+            "RequiredActiveInfections": 10
+          },
+          "EarlyMidGame": {
+            "RequiredActiveInfections": 13
+          },
+          "MidGame": {
+            "RequiredActiveInfections": 18
+          },
+          "LateMidGame": {
+            "RequiredActiveInfections": 25
+          },
+          "LateGame": {
+            "RequiredActiveInfections": 36
+          },
+          "EndGame": {
+            "RequiredActiveInfections": 50
+          }
+        },
+        "InfectableCountDependentConfig": {
+          "Item": [
+            "",
+            {
+              "MinInfectableCount": 100
+            },
+            {
+              "MinInfectableCount": 250,
+              "TargetInfectionFactor": 0.9,
+              "InitialInfectionFactor": 0.28
+            },
+            {
+              "MinInfectableCount": 500,
+              "TargetInfectionFactor": 0.7,
+              "InitialInfectionFactor": 0.21
+            },
+            {
+              "MinInfectableCount": 850,
+              "TargetInfectionFactor": 0.5,
+              "InitialInfectionFactor": 0.14
+            },
+            {
+              "MinInfectableCount": 1300,
+              "TargetInfectionFactor": 0.4,
+              "InitialInfectionFactor": 0.1
+            },
+            {
+              "MinInfectableCount": 1900,
+              "TargetInfectionFactor": 0.35,
+              "InitialInfectionFactor": 0.08
+            },
+            {
+              "MinInfectableCount": 2700,
+              "TargetInfectionFactor": 0.3,
+              "InitialInfectionFactor": 0.06
+            },
+            {
+              "MinInfectableCount": 4000,
+              "TargetInfectionFactor": 0.25,
+              "InitialInfectionFactor": 0.05
+            }
+          ]
+        },
+        "IncidentMurmur": {
+          "Moderate": {
+            "Murmur": "IncidentIllness"
+          },
+          "Colony01": {
+            "Murmur": "IncidentIllness"
+          },
+          "Arctic": {
+            "Murmur": "Arctic_IncidentIllness"
+          },
+          "Africa": {
+            "Murmur": "IncidentIllness"
+          }
+        }
+      },
+      "IncidentIllness": {
+        "MoveOutInterval": 60
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Illness",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 25922
+      },
+      "IncidentEffectConfiguration": {
+        "DummyEffectInformation": {
+          "DummyEffects": {
+            "Horizontal": {
+              "ConfigFiles": {
+                "Item": {
+                  "Path": "data/graphics/effects/city_incidents/illness/ci_plague_green_01.cfg"
+                }
+              }
+            },
+            "General": {
+              "ConfigFiles": {
+                "Item": {
+                  "Path": "data/graphics/effects/city_incidents/illness/ci_plague_green_01.cfg"
+                }
+              }
+            }
+          },
+          "UnusedDummyPercentage": 0.9,
+          "FallbackConfig": {
+            "SpawnBlockSize": 4,
+            "Scale": 1
+          },
+          "DummyFallbackUsage": "DUMMY_AND_FALLBACK"
+        }
+      }
+    }
+  }
+]

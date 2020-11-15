@@ -1,0 +1,147 @@
+[
+  {
+    "Template": "Achievement",
+    "Values": {
+      "Standard": {
+        "GUID": 400014,
+        "Name": "Achievement_There is no Business like Ship Business"
+      },
+      "Achievement": {
+        "AchievementTitle": 10136,
+        "AchievementDescription": 10137,
+        "AchievementUPlayID": 35,
+        "AchievementPoints": 0
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "TradeProductSold",
+              "Context": 100438,
+              "CounterAmount": 5
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "Achievement",
+    "Values": {
+      "Standard": {
+        "GUID": 400002,
+        "Name": "Achievement_Winter Is Coming"
+      },
+      "Achievement": {
+        "AchievementTitle": 10074,
+        "AchievementDescription": 10075,
+        "AchievementUPlayID": 39,
+        "AchievementPoints": 0,
+        "AchievementDifficulty": "Common"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "GoodsInStock",
+              "Context": 1010213,
+              "CounterAmount": 10
+            }
+          }
+        },
+        "SubTriggers": {
+          "Item": [
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "GoodsInStock",
+                          "Context": 1010214,
+                          "CounterAmount": 10
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "GoodsInStock",
+                          "Context": 1010200,
+                          "CounterAmount": 10
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "GoodsInStock",
+                          "Context": 1010216,
+                          "CounterAmount": 10
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "GoodsInStock",
+                          "Context": 1010217,
+                          "CounterAmount": 10
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Locked": "",
+      "TriggerSetup": ""
+    }
+  }
+]

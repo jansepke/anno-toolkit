@@ -1,0 +1,132 @@
+[
+  {
+    "Template": "TradeRouteFeature",
+    "Values": {
+      "Standard": {
+        "GUID": 140011,
+        "Name": "TradeRouteBalancing",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_traderoutes.png",
+        "ID": "TradeRouteBalancing"
+      },
+      "TradeRouteFeature": {
+        "CheckBestCoastDistance": 120,
+        "ShipToRent": 100660,
+        "TransportationTypes": {
+          "Normal": {
+            "ExcludingGoods": {
+              "Item": [
+                {
+                  "Good": 120021
+                },
+                {
+                  "Good": 1010566
+                }
+              ]
+            },
+            "MinGoodTransferAmount": 1,
+            "MaxGoodTransferAmount": 50,
+            "DefaultGoodTransferAmount": 50,
+            "MaxTradeActionsPerStation": 8
+          },
+          "Charter": {
+            "ExcludingGoods": {
+              "Item": [
+                {
+                  "Good": 120021
+                },
+                {
+                  "Good": 1010566
+                }
+              ]
+            },
+            "MinGoodTransferAmount": 1,
+            "MaxGoodTransferAmount": 40,
+            "DefaultGoodTransferAmount": 40,
+            "MaxTradeActionsPerStation": 1,
+            "Unlock": 141414
+          },
+          "Oil": {
+            "RestrictedGood": {
+              "Item": {
+                "Good": 1010566
+              }
+            },
+            "MinGoodTransferAmount": 1,
+            "MaxGoodTransferAmount": 400,
+            "DefaultGoodTransferAmount": 400,
+            "MaxTradeActionsPerStation": 1,
+            "Unlock": 141416
+          }
+        },
+        "SessionLines": {
+          "Color": -1516088,
+          "Thickness": 0.6,
+          "Tiling": 0.08,
+          "ScrollSpeed": 2,
+          "Texture": "data/graphics/ui/region_view/traderoute.png"
+        },
+        "HarborQueueDataPerLayer": {
+          "Air": {
+            "QueueToConstructionAreaDistance": 25,
+            "EllipsisAngle": 90,
+            "DistanceBetweenWaitingRows": 20
+          }
+        },
+        "LongWaitingTimeError": 120000,
+        "MaxSecondThirdPartyQueueWaitingTime": 120000,
+        "Warnings": {
+          "NotEnoughSlots": {
+            "WarningType": "Notification"
+          },
+          "NotEnoughStations": {
+            "WarningType": "Warning"
+          },
+          "IslandUnderSiege": {
+            "WarningType": "Warning"
+          },
+          "NoValidPier": {
+            "WarningType": "Warning"
+          },
+          "NoTradeRights": {
+            "WarningType": "Warning"
+          },
+          "ConfiguredGoodNotTraded": {
+            "WarningType": "Warning"
+          },
+          "LoadedGoodNeverUnloaded": {
+            "WarningType": "Warning"
+          },
+          "UnloadedGoodNeverLoaded": {
+            "WarningType": "Warning"
+          },
+          "GoodsDontMatch": {
+            "WarningType": "Warning"
+          },
+          "StorageFull": {
+            "WarningType": "Notification"
+          },
+          "StorageEmpty": {
+            "WarningType": "Notification"
+          },
+          "NoGoods": {
+            "WarningType": "Warning"
+          },
+          "NoShips": {
+            "WarningType": "Warning"
+          },
+          "AllShipsPaused": {
+            "WarningType": "Notification"
+          },
+          "LongWaitingTime": {
+            "WarningType": "Notification"
+          }
+        },
+        "TradeRouteNotification": 501203,
+        "TradeRouteWarning": 501204,
+        "TravelTimeMultiplier": 1.2,
+        "EstimatedTimeForNpcTrades": 20000,
+        "EstimatedTimeForDocking": 5000
+      }
+    }
+  }
+]

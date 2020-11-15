@@ -1,0 +1,47 @@
+[
+  {
+    "Template": "PassiveTradeFeature",
+    "Values": {
+      "Standard": {
+        "GUID": 140115,
+        "Name": "TradeBalancing",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_traderoutes.png",
+        "ID": "TradeBalancing"
+      },
+      "PassiveTradeFeature": {
+        "BalanceCalculationDuration": 900000,
+        "HistoryTrackTime": 7200000,
+        "PriceFactors": {
+          "Human": {
+            "GlobalProductSellPriceFactor": 0.8,
+            "GlobalProductBuyPriceFactor": 2,
+            "GlobalItemSellPriceFactor": 0.25,
+            "GlobalItemBuyPriceFactor": 1
+          },
+          "SecondParty": {
+            "GlobalProductSellPriceFactor": 0.8,
+            "GlobalProductBuyPriceFactor": 2,
+            "GlobalItemSellPriceFactor": 1,
+            "GlobalItemBuyPriceFactor": 0.25
+          },
+          "ThirdParty": {
+            "GlobalProductSellPriceFactor": 2,
+            "GlobalProductBuyPriceFactor": 0.8,
+            "GlobalItemSellPriceFactor": 1,
+            "GlobalItemBuyPriceFactor": 0.25
+          },
+          "VirtualParticipant_NeverOwnsGameObjects": {
+            "GlobalProductSellPriceFactor": 2,
+            "GlobalProductBuyPriceFactor": 0.8,
+            "GlobalItemSellPriceFactor": 1,
+            "GlobalItemBuyPriceFactor": 0.25
+          }
+        }
+      },
+      "ActiveTradeFeature": {
+        "SlotsForBuy": 4,
+        "SlotsForSell": 4
+      }
+    }
+  }
+]

@@ -1,0 +1,1051 @@
+[
+  {
+    "Template": "GenericPopup",
+    "Values": {
+      "Standard": {
+        "GUID": 500115,
+        "Name": "GenericPopupConfig",
+        "ID": "GenericPopupConfig"
+      },
+      "GenericPopup": {
+        "Popups": {
+          "Quit": {
+            "HeaderText": 145007,
+            "MainText": 145000,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 145003,
+                  "Command": "game.fastQuit(2)",
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145004,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "DestroyItem": {
+            "HeaderText": 2426,
+            "MainText": 2425,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 145003,
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145004,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "CloseOnSelectionChange": 1,
+            "IsModal": 1
+          },
+          "NotImplemented": {
+            "HeaderText": 2629,
+            "MainText": 2630,
+            "Buttons": {
+              "Item": {
+                "Text": 145006,
+                "ShortcutIdentifier": "ConfirmPopup;CancelPopup"
+              }
+            },
+            "IsModal": 1
+          },
+          "DiscardExpedition": {
+            "HeaderText": 2988,
+            "MainText": 2987,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 2988,
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145002,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "ForceTakeoverIsland": {
+            "HeaderText": 3585,
+            "MainText": 3585,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 145001,
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145002,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "CloseOnSelectionChange": 1,
+            "IsModal": 1
+          },
+          "CancelMonumentEvent": {
+            "HeaderText": 2988,
+            "MainText": 6762,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 2988,
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145002,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "DestroyConfirmation": {
+            "HeaderText": 6763,
+            "MainText": 6764,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 4127,
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145002,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "DeleteSavegame": {
+            "HeaderText": 20461,
+            "MainText": 17372,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 4127,
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145002,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "CampaignReadLetter": {
+            "HeaderText": 11882,
+            "MainText": 10567,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 145003,
+                  "Actions": {
+                    "Template": "Actions",
+                    "Values": {
+                      "ActionList": {
+                        "Actions": {
+                          "Item": [
+                            {
+                              "Action": {
+                                "Template": "ActionTriggerTextPopup",
+                                "Values": {
+                                  "ActionTriggerTextPopup": {
+                                    "PopupText": 10521
+                                  },
+                                  "Action": ""
+                                }
+                              }
+                            },
+                            {
+                              "Action": {
+                                "Template": "ActionEndQuest",
+                                "Values": {
+                                  "Action": "",
+                                  "ActionEndQuest": {
+                                    "Quest": 150621,
+                                    "WinQuest": 1
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145004,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "IsModal": 1,
+            "PauseGame": 1
+          },
+          "SendToSessionSingle": {
+            "HeaderText": 10582,
+            "MainText": 10583,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 4127,
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145002,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "SendToSessionMulti": {
+            "HeaderText": 10584,
+            "MainText": 10585,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 4127,
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145002,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "OverrideShortcut": {
+            "HeaderText": 11589,
+            "MainText": 11590,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 4127,
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145002,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "AutoSave": {
+            "HeaderText": 11592,
+            "MainText": 11593,
+            "IsModal": 1
+          },
+          "UnloadCorporation": {
+            "HeaderText": 12279,
+            "MainText": 12280,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 145003,
+                  "Command": "onlineManager.LeaveSession()",
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145004,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "ResetExpeditionPreparation": {
+            "HeaderText": 12483,
+            "MainText": 12484,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 4127,
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145002,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "MultiplayerGenericError": {
+            "HeaderText": 12794,
+            "MainText": 12793,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 145006,
+                  "ShortcutIdentifier": "CancelPopup"
+                },
+                {
+                  "Text": 16189,
+                  "Command": "onlineManager.OpenHelpPage()"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "TutorialHappiness": {
+            "HeaderText": 13431,
+            "MainText": 13430,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 13433,
+                  "Actions": {
+                    "Template": "Actions",
+                    "Values": {
+                      "ActionList": {
+                        "Actions": {
+                          "Item": [
+                            {
+                              "Action": {
+                                "Template": "ActionNotification",
+                                "Values": {
+                                  "Action": "",
+                                  "ActionNotification": {
+                                    "Notification": {
+                                      "Template": "CharacterNotification",
+                                      "Values": {
+                                        "CharacterNotification": {
+                                          "Profile": 7
+                                        },
+                                        "BaseNotification": {
+                                          "NotificationText": 13436,
+                                          "NotificationMinDisplayTime": 8000
+                                        },
+                                        "NotificationSubtitle": {
+                                          "Subtitle": 265015
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "Action": {
+                                "Template": "ActionDelayedActions",
+                                "Values": {
+                                  "Action": "",
+                                  "ActionDelayedActions": {
+                                    "ExecutionDelay": 8000,
+                                    "DelayedActions": {
+                                      "IsBaseAutoCreateAsset": 1,
+                                      "Values": {
+                                        "ActionList": {
+                                          "Actions": {
+                                            "Item": {
+                                              "Action": {
+                                                "Template": "ActionStartQuest",
+                                                "Values": {
+                                                  "Action": "",
+                                                  "ActionStartQuest": {
+                                                    "Quest": 150977
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 13432,
+                  "Actions": {
+                    "Template": "Actions",
+                    "Values": {
+                      "ActionList": {
+                        "Actions": {
+                          "Item": [
+                            {
+                              "Action": {
+                                "Template": "ActionNotification",
+                                "Values": {
+                                  "Action": "",
+                                  "ActionNotification": {
+                                    "Notification": {
+                                      "Template": "CharacterNotification",
+                                      "Values": {
+                                        "CharacterNotification": {
+                                          "Profile": 7
+                                        },
+                                        "BaseNotification": {
+                                          "NotificationText": 13434,
+                                          "NotificationMinDisplayTime": 8000
+                                        },
+                                        "NotificationSubtitle": {
+                                          "Subtitle": 265013
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "Action": {
+                                "Template": "ActionDelayedActions",
+                                "Values": {
+                                  "Action": "",
+                                  "ActionDelayedActions": {
+                                    "ExecutionDelay": 8000,
+                                    "DelayedActions": {
+                                      "IsBaseAutoCreateAsset": 1,
+                                      "Values": {
+                                        "ActionList": {
+                                          "Actions": {
+                                            "Item": {
+                                              "Action": {
+                                                "Template": "ActionNotification",
+                                                "Values": {
+                                                  "Action": "",
+                                                  "ActionNotification": {
+                                                    "Notification": {
+                                                      "Template": "CharacterNotification",
+                                                      "Values": {
+                                                        "CharacterNotification": {
+                                                          "Profile": 31
+                                                        },
+                                                        "BaseNotification": {
+                                                          "NotificationText": 13435,
+                                                          "NotificationMinDisplayTime": 8000
+                                                        },
+                                                        "NotificationSubtitle": {
+                                                          "Subtitle": 265014
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            }
+          },
+          "RemoveTradeRoute": {
+            "HeaderText": 14051,
+            "MainText": 14049,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 4127,
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145002,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "CloseOnSelectionChange": 1,
+            "IsModal": 1
+          },
+          "UplayInviteFailed": {
+            "HeaderText": 14869,
+            "MainText": 14868,
+            "Buttons": {
+              "Item": {
+                "Text": 145006,
+                "ShortcutIdentifier": "ConfirmPopup;CancelPopup"
+              }
+            },
+            "IsModal": 1
+          },
+          "UplayError": {
+            "HeaderText": 14871,
+            "MainText": 14870,
+            "Buttons": {
+              "Item": {
+                "Text": 145006,
+                "ShortcutIdentifier": "ConfirmPopup;CancelPopup"
+              }
+            },
+            "IsModal": 1
+          },
+          "UplayConnectionError": {
+            "HeaderText": 14871,
+            "MainText": 15119,
+            "Buttons": {
+              "Item": {
+                "Text": 145001,
+                "Command": "game.fastQuit(2)",
+                "ShortcutIdentifier": "ConfirmPopup;CancelPopup"
+              }
+            },
+            "IsModal": 1
+          },
+          "PlayerLeft": {
+            "HeaderText": 12794,
+            "MainText": 20065,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 154001,
+                  "ShortcutIdentifier": "ConfirmPopup;CancelPopup"
+                },
+                {
+                  "Text": 16111,
+                  "Command": "onlineManager.LeaveSession()"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "ConnectToLobby": {
+            "HeaderText": 12794,
+            "MainText": 15214,
+            "Buttons": {
+              "Item": {
+                "Text": 145002,
+                "Command": "net.cancelConnect()",
+                "ShortcutIdentifier": "ConfirmPopup;CancelPopup"
+              }
+            },
+            "IsModal": 1
+          },
+          "InviteReceived": {
+            "HeaderText": 12794,
+            "MainText": 15216,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 13433,
+                  "Command": "TextSources.TextSourceRoots.Online.AcceptInvite()",
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 13432,
+                  "Command": "TextSources.TextSourceRoots.Online.DeclineInvite()",
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "GameVersionMismatch": {
+            "HeaderText": 12794,
+            "MainText": 15957,
+            "Buttons": {
+              "Item": {
+                "Text": 145006,
+                "ShortcutIdentifier": "ConfirmPopup;CancelPopup"
+              }
+            },
+            "IsModal": 1
+          },
+          "NATError": {
+            "HeaderText": 12794,
+            "MainText": 16187,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 145006,
+                  "ShortcutIdentifier": "CancelPopup"
+                },
+                {
+                  "Text": 16189,
+                  "Command": "onlineManager.OpenHelpPage()"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "Kicked": {
+            "HeaderText": 12794,
+            "MainText": 16188,
+            "Buttons": {
+              "Item": {
+                "Text": 145006,
+                "ShortcutIdentifier": "ConfirmPopup;CancelPopup"
+              }
+            },
+            "IsModal": 1
+          },
+          "FileNotFound": {
+            "HeaderText": 16514,
+            "MainText": 16515,
+            "Buttons": {
+              "Item": {
+                "Text": 145006,
+                "ShortcutIdentifier": "ConfirmPopup;CancelPopup"
+              }
+            },
+            "IsModal": 1
+          },
+          "RestartRequired": {
+            "HeaderText": 16776,
+            "MainText": 16777,
+            "Buttons": {
+              "Item": {
+                "Text": 145006,
+                "ShortcutIdentifier": "ConfirmPopup;CancelPopup"
+              }
+            },
+            "IsModal": 1
+          },
+          "ConfirmOptions": {
+            "HeaderText": 16847,
+            "MainText": 16846,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 145001,
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 13432,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "IslandDestroyConfirmation": {
+            "HeaderText": 17075,
+            "MainText": 17076,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 4127,
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145002,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "ShipDestroyConfirmation": {
+            "HeaderText": 6763,
+            "MainText": 17143,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 4127,
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145002,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "SettingsSaved": {
+            "HeaderText": 17419,
+            "MainText": 17420,
+            "Buttons": {
+              "Item": {
+                "Text": 145006,
+                "ShortcutIdentifier": "ConfirmPopup;CancelPopup"
+              }
+            },
+            "IsModal": 1
+          },
+          "FileLoadedSuccessfully": {
+            "HeaderText": 17421,
+            "MainText": 17422,
+            "Buttons": {
+              "Item": {
+                "Text": 145006,
+                "ShortcutIdentifier": "ConfirmPopup;CancelPopup"
+              }
+            },
+            "IsModal": 1
+          },
+          "ResetCustomDifficulty": {
+            "HeaderText": 21487,
+            "MainText": 21488,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 4127,
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145002,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "PlayerDisconnected": {
+            "HeaderText": 12794,
+            "MainText": 20066,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 154001,
+                  "ShortcutIdentifier": "ConfirmPopup;CancelPopup"
+                },
+                {
+                  "Text": 16111,
+                  "Command": "onlineManager.LeaveSession()"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "ConnectionLost": {
+            "HeaderText": 12794,
+            "MainText": 265143,
+            "Buttons": {
+              "Item": {
+                "Text": 145006,
+                "ShortcutIdentifier": "ConfirmPopup;CancelPopup"
+              }
+            }
+          },
+          "LeaveLobbyToTitle": {
+            "HeaderText": 12279,
+            "MainText": 12280,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 145003,
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145004,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "LoadGameAndLeaveMatch": {
+            "HeaderText": 12279,
+            "MainText": 145000,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 145003,
+                  "Command": "onlineManager.LoadSavegameAndLeaveSession()",
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145004,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "FailedToLoadSavegame": {
+            "HeaderText": 22185,
+            "MainText": 22186,
+            "Buttons": {
+              "Item": {
+                "Text": 145006,
+                "ShortcutIdentifier": "ConfirmPopup;CancelPopup"
+              }
+            },
+            "IsModal": 1
+          },
+          "DLCBreadcrumbsNote": {
+            "HeaderText": 11626,
+            "MainText": 112161,
+            "Buttons": {
+              "Item": {
+                "Text": 154001
+              }
+            },
+            "IsModal": 1
+          },
+          "UpgradeSavegame": {
+            "HeaderText": 22270,
+            "MainText": 22271,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 145003
+                },
+                {
+                  "Text": 145004
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "HostLeftLobby": {
+            "HeaderText": 12794,
+            "MainText": 22279,
+            "Buttons": {
+              "Item": {
+                "Text": 145006,
+                "ShortcutIdentifier": "ConfirmPopup;CancelPopup"
+              }
+            }
+          },
+          "UpgradeSavegameMP": {
+            "HeaderText": 22270,
+            "MainText": 22278,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 145003
+                },
+                {
+                  "Text": 145004
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "ContinentalIslandDestroyConfirmation": {
+            "HeaderText": 17075,
+            "MainText": 114091,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 4127,
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145002,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "LobbyFull": {
+            "HeaderText": 12794,
+            "MainText": 22418,
+            "Buttons": {
+              "Item": {
+                "Text": 145006,
+                "ShortcutIdentifier": "ConfirmPopup;CancelPopup"
+              }
+            },
+            "IsModal": 1
+          },
+          "LobbyFull_Mercier": {
+            "HeaderText": 12794,
+            "MainText": 22662,
+            "Buttons": {
+              "Item": {
+                "Text": 145006,
+                "ShortcutIdentifier": "ConfirmPopup;CancelPopup"
+              }
+            },
+            "IsModal": 1
+          },
+          "GameAlreadyStarted": {
+            "HeaderText": 12794,
+            "MainText": 22684,
+            "Buttons": {
+              "Item": {
+                "Text": 145006,
+                "ShortcutIdentifier": "ConfirmPopup;CancelPopup"
+              }
+            },
+            "IsModal": 1
+          },
+          "InviteTimedOut": {
+            "HeaderText": 12794,
+            "MainText": 22693,
+            "Buttons": {
+              "Item": {
+                "Text": 145006,
+                "ShortcutIdentifier": "ConfirmPopup;CancelPopup"
+              }
+            }
+          },
+          "MPSingleGameStart": {
+            "HeaderText": 12794,
+            "MainText": 22978,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 145003,
+                  "Command": "TextSources.TextSourceRoots.Online.SetLoadMPSession()",
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145004,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "LeaveLobbyToLastScene": {
+            "HeaderText": 12279,
+            "MainText": 23184,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 145003,
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145004,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "IslandDestroyCampaignWarning": {
+            "HeaderText": 17075,
+            "MainText": 23208,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 4127,
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145002,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "SessionStorytellingSpear": {
+            "HeaderText": 124221,
+            "MainText": 124223,
+            "Buttons": {
+              "Item": {
+                "Text": 145006,
+                "ShortcutIdentifier": "CancelPopup"
+              }
+            }
+          },
+          "MoveConfirmation": {
+            "HeaderText": 127681,
+            "MainText": 127529,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 4127,
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145002,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "DontMissStoryQuest": {
+            "HeaderText": 128390,
+            "MainText": 128391,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 4127,
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145002,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "IsModal": 1,
+            "PauseGame": 1
+          },
+          "NewShortcuts": {
+            "HeaderText": 129462,
+            "MainText": 129463,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 4127,
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145006,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "UnificationPrompt": {
+            "HeaderText": 130829,
+            "MainText": 130830,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 4127,
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145002,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "IsModal": 1,
+            "PauseGame": 1
+          },
+          "FatalError": {
+            "HeaderText": 12794,
+            "MainText": 23655,
+            "Buttons": {
+              "Item": {
+                "Text": 145006,
+                "Command": "game.fastQuit(3)",
+                "ShortcutIdentifier": "ConfirmPopup;CancelPopup"
+              }
+            },
+            "IsModal": 1
+          }
+        }
+      }
+    }
+  }
+]

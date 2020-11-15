@@ -1,0 +1,334 @@
+[
+  {
+    "Template": "InfluenceFeature",
+    "Values": {
+      "Standard": {
+        "GUID": 140797,
+        "Name": "InfluenceFeature",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_influence.png",
+        "ID": "InfluenceBalancing"
+      },
+      "InfluenceFeature": {
+        "InfluenceConfig": {
+          "GuildHouse": {
+            "FreeAmount": 1,
+            "InfluenceCosts": 20,
+            "SubCategoryName": 12001,
+            "SubCategoryInfotip": 501675
+          },
+          "Townhall": {
+            "FreeAmount": 1,
+            "InfluenceCosts": 20,
+            "SubCategoryName": 12002,
+            "SubCategoryInfotip": 501676
+          },
+          "HarborOffice": {
+            "FreeAmount": 1,
+            "InfluenceCosts": 20,
+            "SubCategoryName": 12003,
+            "SubCategoryInfotip": 501677
+          },
+          "WarShip": {
+            "FreeAmount": 40,
+            "InfluenceCosts": 0.5,
+            "SubCategoryName": 12812,
+            "SubCategoryInfotip": 501667
+          },
+          "DefenseBuilding": {
+            "FreeAmount": 35,
+            "InfluenceCosts": 1,
+            "SubCategoryName": 12005,
+            "SubCategoryInfotip": 501668
+          },
+          "TradeShip": {
+            "FreeAmount": 16,
+            "InfluenceCosts": 0.5,
+            "SubCategoryName": 12006,
+            "SubCategoryInfotip": 501669
+          },
+          "ZooModule": {
+            "FreeAmount": 10,
+            "InfluenceCosts": 10,
+            "SubCategoryName": 12008,
+            "SubCategoryInfotip": 501673
+          },
+          "MuseumModule": {
+            "FreeAmount": 10,
+            "InfluenceCosts": 10,
+            "SubCategoryName": 12072,
+            "SubCategoryInfotip": 501674
+          },
+          "Propaganda": {
+            "InfluenceCosts": 1,
+            "SubCategoryName": 12007
+          },
+          "Kontor": {
+            "FreeAmount": 60000,
+            "InfluenceCosts": 0.001,
+            "SubCategoryName": 14797,
+            "SubCategoryInfotip": 501671
+          },
+          "WorkforceTransfer": {
+            "FreeAmount": 2,
+            "InfluenceCosts": 15,
+            "SubCategoryName": 14798,
+            "SubCategoryInfotip": 501672
+          },
+          "CharterRoutes": {
+            "FreeAmount": 3,
+            "InfluenceCosts": 5,
+            "SubCategoryName": 21724,
+            "SubCategoryInfotip": 501670
+          },
+          "Shares": {
+            "InfluenceCosts": 1,
+            "SubCategoryName": 21984,
+            "SubCategoryInfotip": 501690
+          },
+          "BotanicModule": {
+            "FreeAmount": 20,
+            "InfluenceCosts": 10,
+            "SubCategoryName": 114324,
+            "SubCategoryInfotip": 114325
+          },
+          "AirShip": {
+            "FreeAmount": 2,
+            "InfluenceCosts": 4,
+            "SubCategoryName": 115182,
+            "SubCategoryInfotip": 115183
+          }
+        },
+        "InfluenceCategories": {
+          "Propaganda": {
+            "CategoryName": 11999,
+            "UsageTypes": {
+              "Item": {
+                "Type": "Propaganda"
+              }
+            },
+            "CategoryBuffs": {
+              "Item": [
+                {
+                  "Buff": 191358,
+                  "MinSpentInfluence": 300
+                },
+                {
+                  "Buff": 191357,
+                  "MinSpentInfluence": 150,
+                  "MaxSpentInfluence": 299
+                },
+                {
+                  "Buff": 190605,
+                  "MinSpentInfluence": 50,
+                  "MaxSpentInfluence": 149
+                }
+              ]
+            },
+            "CategoryIcon": "data/ui/2kimages/main/3dicons/influence/icon_buff_propaganda_placeholder.png"
+          },
+          "Military": {
+            "CategoryName": 11997,
+            "UsageTypes": {
+              "Item": [
+                {
+                  "Type": "WarShip"
+                },
+                {
+                  "Type": "DefenseBuilding"
+                }
+              ]
+            },
+            "CategoryBuffs": {
+              "Item": [
+                {
+                  "Buff": 193989,
+                  "MinSpentInfluence": 300
+                },
+                {
+                  "Buff": 193988,
+                  "MinSpentInfluence": 150,
+                  "MaxSpentInfluence": 299
+                },
+                {
+                  "Buff": 193987,
+                  "MinSpentInfluence": 50,
+                  "MaxSpentInfluence": 149
+                }
+              ]
+            },
+            "CategoryIcon": "data/ui/2kimages/main/3dicons/influence/icon_buff_military_placeholder.png"
+          },
+          "Trade": {
+            "CategoryName": 11998,
+            "UsageTypes": {
+              "Item": [
+                {
+                  "Type": "TradeShip"
+                },
+                {
+                  "Type": "CharterRoutes"
+                },
+                {
+                  "Type": "AirShip"
+                }
+              ]
+            },
+            "CategoryBuffs": {
+              "Item": [
+                {
+                  "Buff": 193985,
+                  "MinSpentInfluence": 300
+                },
+                {
+                  "Buff": 193984,
+                  "MinSpentInfluence": 150,
+                  "MaxSpentInfluence": 299
+                },
+                {
+                  "Buff": 193983,
+                  "MinSpentInfluence": 50,
+                  "MaxSpentInfluence": 149
+                }
+              ]
+            },
+            "CategoryIcon": "data/ui/2kimages/main/3dicons/influence/icon_buff_trade_placeholder.png"
+          },
+          "Culture": {
+            "CategoryName": 12000,
+            "UsageTypes": {
+              "Item": [
+                {
+                  "Type": "ZooModule"
+                },
+                {
+                  "Type": "MuseumModule"
+                },
+                {
+                  "Type": "BotanicModule"
+                }
+              ]
+            },
+            "CategoryBuffs": {
+              "Item": [
+                {
+                  "Buff": 191364,
+                  "MinSpentInfluence": 300
+                },
+                {
+                  "Buff": 191363,
+                  "MinSpentInfluence": 150,
+                  "MaxSpentInfluence": 299
+                },
+                {
+                  "Buff": 190607,
+                  "MinSpentInfluence": 50,
+                  "MaxSpentInfluence": 149
+                }
+              ]
+            },
+            "CategoryIcon": "data/ui/2kimages/main/3dicons/influence/icon_buff_culture_placeholder.png"
+          },
+          "Optimisation": {
+            "CategoryName": 11996,
+            "UsageTypes": {
+              "Item": [
+                {
+                  "Type": "GuildHouse"
+                },
+                {
+                  "Type": "Townhall"
+                },
+                {
+                  "Type": "HarborOffice"
+                }
+              ]
+            },
+            "CategoryBuffs": {
+              "Item": [
+                {
+                  "Buff": 193878,
+                  "MinSpentInfluence": 300
+                },
+                {
+                  "Buff": 193877,
+                  "MinSpentInfluence": 150,
+                  "MaxSpentInfluence": 299
+                },
+                {
+                  "Buff": 193876,
+                  "MinSpentInfluence": 50,
+                  "MaxSpentInfluence": 149
+                }
+              ]
+            },
+            "CategoryIcon": "data/ui/2kimages/main/3dicons/influence/icon_buff_optimisation_placeholder.png"
+          },
+          "Expansion": {
+            "CategoryName": 14794,
+            "UsageTypes": {
+              "Item": [
+                {
+                  "Type": "Kontor"
+                },
+                {
+                  "Type": "WorkforceTransfer"
+                },
+                {
+                  "Type": "Shares"
+                }
+              ]
+            },
+            "CategoryBuffs": {
+              "Item": [
+                {
+                  "Buff": 192935,
+                  "MinSpentInfluence": 300
+                },
+                {
+                  "Buff": 191302,
+                  "MinSpentInfluence": 300
+                },
+                {
+                  "Buff": 191303,
+                  "MinSpentInfluence": 300
+                },
+                {
+                  "Buff": 192934,
+                  "MinSpentInfluence": 150,
+                  "MaxSpentInfluence": 299
+                },
+                {
+                  "Buff": 191301,
+                  "MinSpentInfluence": 150,
+                  "MaxSpentInfluence": 299
+                },
+                {
+                  "Buff": 191300,
+                  "MinSpentInfluence": 150,
+                  "MaxSpentInfluence": 299
+                },
+                {
+                  "Buff": 192933,
+                  "MinSpentInfluence": 50,
+                  "MaxSpentInfluence": 149
+                },
+                {
+                  "Buff": 191296,
+                  "MinSpentInfluence": 50,
+                  "MaxSpentInfluence": 149
+                },
+                {
+                  "Buff": 191299,
+                  "MinSpentInfluence": 50,
+                  "MaxSpentInfluence": 149
+                }
+              ]
+            },
+            "CategoryIcon": "data/ui/2kimages/main/3dicons/influence/icon_buff_expansion_placeholder.png"
+          }
+        },
+        "BaseSharePrice": 10
+      }
+    }
+  }
+]

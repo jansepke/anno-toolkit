@@ -1,0 +1,1236 @@
+[
+  {
+    "Template": "Profile_2ndParty",
+    "Values": {
+      "Standard": {
+        "GUID": 167,
+        "Name": "Profile_MASTER_Template_2ndParty"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Profile_MASTER_Template_2ndParty"
+          }
+        }
+      },
+      "Profile": {
+        "ParticipantID": "[NONE]"
+      },
+      "Diplomacy": {
+        "DiplomacyActionBalancing": {
+          "RequestNonAttack": {
+            "ActionWeight": 200
+          }
+        },
+        "ReputationChangeCalculation": {
+          "Treaties": {
+            "ReputationValues": {
+              "CeaseFire": {
+                "RemovingTreaty": 0
+              }
+            }
+          }
+        },
+        "GiftBalancing": {
+          "giveGenerous": {
+            "IncreasePerLevel": 7
+          },
+          "giveOrdinary": {
+            "IncreasePerLevel": 7
+          },
+          "giveSmall": {
+            "IncreasePerLevel": 7
+          },
+          "receiveGenerous": {
+            "IncreasePerLevel": 7
+          },
+          "receiveOrdinary": {
+            "IncreasePerLevel": 7
+          },
+          "receiveSmall": {
+            "IncreasePerLevel": 7
+          },
+          "receivePayment": {
+            "IncreasePerLevel": 7
+          },
+          "givePayment": {
+            "IncreasePerLevel": 7
+          }
+        },
+        "RepeatableActionBalancing": {
+          "Actions": {
+            "Flatter": {
+              "ForgettingTime": 1800000
+            },
+            "Gift": {
+              "ForgettingTime": 1800000
+            },
+            "Insult": {
+              "ForgettingTime": 1800000
+            }
+          }
+        },
+        "InitialRelation": {
+          "Exceptions": {
+            "Item": [
+              {
+                "Participant": "Second_ai_01_Jorgensen",
+                "Reputation": 50,
+                "Memory": 50,
+                "Treaties": "Peace"
+              },
+              {
+                "Participant": "Second_ai_02_Qing",
+                "Reputation": 50,
+                "Memory": 50,
+                "Treaties": "Peace"
+              },
+              {
+                "Participant": "Second_ai_03_Wibblesock",
+                "Reputation": 50,
+                "Memory": 50,
+                "Treaties": "Peace"
+              },
+              {
+                "Participant": "Second_ai_04_Smith",
+                "Reputation": 50,
+                "Memory": 50,
+                "Treaties": "Peace"
+              },
+              {
+                "Participant": "Second_ai_05_OMara",
+                "Reputation": 50,
+                "Memory": 50,
+                "Treaties": "Peace"
+              },
+              {
+                "Participant": "Second_ai_06_Gasparov",
+                "Reputation": 50,
+                "Memory": 50,
+                "Treaties": "Peace"
+              },
+              {
+                "Participant": "Second_ai_07_von_Malching",
+                "Reputation": 50,
+                "Memory": 50,
+                "Treaties": "Peace"
+              },
+              {
+                "Participant": "Second_ai_08_Gravez",
+                "Reputation": 50,
+                "Memory": 50,
+                "Treaties": "Peace"
+              },
+              {
+                "Participant": "Second_ai_09_Silva",
+                "Reputation": 50,
+                "Memory": 50,
+                "Treaties": "Peace"
+              },
+              {
+                "Participant": "Second_ai_10_Hunt",
+                "Reputation": 50,
+                "Memory": 50,
+                "Treaties": "Peace"
+              },
+              {
+                "Participant": "Third_party_03_Pirate_Harlow",
+                "Reputation": 50,
+                "Memory": 50,
+                "Treaties": "Peace"
+              },
+              {
+                "Participant": "Third_party_04_Pirate_LaFortune",
+                "Reputation": 50,
+                "Memory": 50,
+                "Treaties": "Peace"
+              },
+              {
+                "Participant": "Second_ai_11_Mercier",
+                "Reputation": 50,
+                "Memory": 50,
+                "Treaties": "Peace"
+              }
+            ]
+          }
+        },
+        "DiplomacyAI": {
+          "ReputationTrigger": {
+            "Item": [
+              {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "2ndParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_2ndParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "TriggerAction": "RequestAlliance",
+                "TriggerType": "ReputationIncreased",
+                "MinTriggerReputation": 999,
+                "MaxTriggerReputation": 999
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 1,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "2ndParty",
+                        "Index": 1
+                      },
+                      {
+                        "TemplateName": "Profile_2ndParty",
+                        "Index": 1
+                      }
+                    ]
+                  }
+                },
+                "TriggerAction": "ThreatCancelAlliance",
+                "TriggerType": "ReputationDecreased",
+                "MinTriggerReputation": -999,
+                "MaxTriggerReputation": -999,
+                "CheckMilitaryStrength": 0,
+                "CheckEconomyStrength": 0
+              },
+              {
+                "TriggerAction": "ThreatCancelAlliance",
+                "TriggerType": "ReputationDecreased",
+                "MinTriggerReputation": -999,
+                "MaxTriggerReputation": -999,
+                "CheckMilitaryStrength": 0,
+                "CheckEconomyStrength": 0
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 2,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "2ndParty",
+                        "Index": 2
+                      },
+                      {
+                        "TemplateName": "Profile_2ndParty",
+                        "Index": 2
+                      }
+                    ]
+                  }
+                },
+                "TriggerAction": "CancelAlliance",
+                "MinTriggerReputation": -999,
+                "MaxTriggerReputation": -999,
+                "CheckMilitaryStrength": 0,
+                "CheckEconomyStrength": 0
+              },
+              {
+                "TriggerAction": "CancelAlliance",
+                "TriggerType": "ReputationDecreased",
+                "MinTriggerReputation": -999,
+                "MaxTriggerReputation": -999,
+                "CheckMilitaryStrength": 0,
+                "CheckEconomyStrength": 0
+              },
+              {
+                "TriggerAction": "CancelAlliance",
+                "TriggerType": "ReputationDecreased",
+                "MinTriggerReputation": -999,
+                "MaxTriggerReputation": -999,
+                "CheckMilitaryStrength": 0,
+                "CheckEconomyStrength": 0
+              },
+              {
+                "TriggerAction": "RequestTraderights",
+                "MinTriggerReputation": 999,
+                "MaxTriggerReputation": 999,
+                "CheckMilitaryStrength": 0,
+                "CheckEconomyStrength": 0
+              },
+              {
+                "TriggerAction": "ThreatCancelTrade",
+                "TriggerType": "ReputationDecreased",
+                "MinTriggerReputation": -999,
+                "MaxTriggerReputation": -999,
+                "CheckMilitaryStrength": 0,
+                "CheckEconomyStrength": 0
+              },
+              {
+                "TriggerAction": "ThreatCancelTrade",
+                "TriggerType": "ReputationDecreased",
+                "MinTriggerReputation": -999,
+                "MaxTriggerReputation": -999,
+                "CheckMilitaryStrength": 0,
+                "CheckEconomyStrength": 0
+              },
+              {
+                "TriggerAction": "CancelTraderights",
+                "TriggerType": "ReputationDecreased",
+                "MinTriggerReputation": -999,
+                "MaxTriggerReputation": -999,
+                "CheckMilitaryStrength": 0,
+                "CheckEconomyStrength": 0
+              },
+              {
+                "TriggerAction": "CancelTraderights",
+                "TriggerType": "ReputationDecreased",
+                "MinTriggerReputation": -999,
+                "MaxTriggerReputation": -999,
+                "CheckMilitaryStrength": 0,
+                "CheckEconomyStrength": 0
+              },
+              {
+                "TriggerAction": "CancelTraderights",
+                "TriggerType": "ReputationDecreased",
+                "MinTriggerReputation": -999,
+                "MaxTriggerReputation": -999,
+                "CheckMilitaryStrength": 0,
+                "CheckEconomyStrength": 0
+              },
+              {
+                "TriggerAction": "RequestPeace",
+                "MinTriggerReputation": 999,
+                "MaxTriggerReputation": 999,
+                "CheckMilitaryStrength": 0,
+                "CheckEconomyStrength": 0
+              },
+              {
+                "TriggerAction": "ThreatWar",
+                "TriggerType": "ReputationDecreased",
+                "MinTriggerReputation": -999,
+                "MaxTriggerReputation": -999,
+                "CheckMilitaryStrength": 0,
+                "CheckEconomyStrength": 0
+              },
+              {
+                "TriggerAction": "ThreatWar",
+                "TriggerType": "ReputationDecreased",
+                "MinTriggerReputation": -999,
+                "MaxTriggerReputation": -999,
+                "CheckMilitaryStrength": 0,
+                "CheckEconomyStrength": 0
+              },
+              {
+                "TriggerType": "ReputationDecreased",
+                "MinTriggerReputation": -999,
+                "MaxTriggerReputation": -999,
+                "CheckMilitaryStrength": 0,
+                "CheckEconomyStrength": 0
+              },
+              {
+                "TriggerType": "ReputationDecreased",
+                "MinTriggerReputation": -999,
+                "MaxTriggerReputation": -999,
+                "CheckMilitaryStrength": 0,
+                "CheckEconomyStrength": 0
+              },
+              {
+                "TriggerType": "ReputationDecreased",
+                "MinTriggerReputation": -999,
+                "MaxTriggerReputation": -999,
+                "CheckMilitaryStrength": 0,
+                "CheckEconomyStrength": 0
+              },
+              {
+                "TriggerAction": "RequestCeaseFire",
+                "MinTriggerReputation": 999,
+                "MaxTriggerReputation": 999,
+                "CheckMilitaryStrength": 0,
+                "CheckEconomyStrength": 0
+              },
+              {
+                "TriggerAction": "RequestNonAttack",
+                "MinTriggerReputation": 999,
+                "MaxTriggerReputation": 999,
+                "CheckMilitaryStrength": 0,
+                "CheckEconomyStrength": 0
+              },
+              {
+                "TriggerAction": "RequestNonAttack",
+                "TriggerType": "ReputationDecreased",
+                "MinTriggerReputation": -999,
+                "MaxTriggerReputation": -999,
+                "CheckMilitaryStrength": 0,
+                "CheckEconomyStrength": 0
+              }
+            ]
+          },
+          "SpecialTrigger": {
+            "Item": [
+              {
+                "TriggerAction": "GiftMoneyOneTimeSmall",
+                "TriggerType": "GenericTimer",
+                "TriggerChance": 0,
+                "AddMoney": 1
+              },
+              {
+                "TriggerAction": "GiftMoneyOneTimeOrdinary",
+                "TriggerType": "GenericTimer",
+                "TriggerChance": 0,
+                "TriggerPriority": 1,
+                "AddMoney": 1
+              },
+              {
+                "TriggerAction": "GiftMoneyOneTimeGenerous",
+                "TriggerType": "GenericTimer",
+                "TriggerChance": 0,
+                "TriggerPriority": 2,
+                "AddMoney": 1
+              },
+              {
+                "TriggerAction": "RequestCeaseFire",
+                "TriggerPriority": 1,
+                "AddMoney": 1
+              },
+              {
+                "TriggerAction": "RequestCeaseFire",
+                "TriggerType": "ShipDestroyedByEnemy",
+                "TriggerPriority": 1,
+                "AddMoney": 1
+              },
+              {
+                "TriggerAction": "RequestPeace",
+                "AddMoney": 1
+              },
+              {
+                "TriggerAction": "RequestPeace",
+                "TriggerType": "ShipDestroyedByEnemy",
+                "AddMoney": 1
+              },
+              {
+                "TriggerAction": "RequestCeaseFire",
+                "TriggerType": "TraderouteEndangeredByEnemy",
+                "TriggerPriority": 1
+              }
+            ]
+          },
+          "GenericTimerStartDelay": 3600000
+        },
+        "AutomaticDiscovery": {
+          "ProgressCheckEnabled": 1,
+          "DesiredProgress": "MidGame",
+          "Time": 10800000
+        }
+      },
+      "ConstructionAI": {
+        "IslandSettlement": {
+          "PreventFirstSettleIslands": {
+            "Item": [
+              {
+                "Island": 112140
+              },
+              {
+                "Island": 119848
+              },
+              {
+                "Island": 119847
+              }
+            ]
+          }
+        },
+        "EconomyRules": {
+          "ConstructionMaterials": {
+            "MainMaterialInfos": {
+              "Item": [
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 0,
+                    "InheritanceMapV2": {
+                      "Entry": {
+                        "TemplateName": "Profile_2ndParty",
+                        "Index": 0
+                      }
+                    }
+                  }
+                },
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 1,
+                    "InheritanceMapV2": {
+                      "Entry": {
+                        "TemplateName": "Profile_2ndParty",
+                        "Index": 1
+                      }
+                    }
+                  },
+                  "SmallIslandFactor": 1,
+                  "SmallFertilitiesFactor": 0.75
+                },
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 2,
+                    "InheritanceMapV2": {
+                      "Entry": {
+                        "TemplateName": "Profile_2ndParty",
+                        "Index": 2
+                      }
+                    }
+                  },
+                  "SmallIslandFactor": 1,
+                  "SmallFertilitiesFactor": 0.75
+                },
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 3,
+                    "InheritanceMapV2": {
+                      "Entry": {
+                        "TemplateName": "Profile_2ndParty",
+                        "Index": 3
+                      }
+                    }
+                  },
+                  "SmallIslandFactor": 1,
+                  "SmallFertilitiesFactor": 0.75
+                },
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 4,
+                    "InheritanceMapV2": {
+                      "Entry": {
+                        "TemplateName": "Profile_2ndParty",
+                        "Index": 4
+                      }
+                    }
+                  },
+                  "SmallIslandFactor": 1,
+                  "SmallFertilitiesFactor": 0.75
+                },
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 5,
+                    "InheritanceMapV2": {
+                      "Entry": {
+                        "TemplateName": "Profile_2ndParty",
+                        "Index": 5
+                      }
+                    }
+                  },
+                  "SmallIslandFactor": 1,
+                  "SmallFertilitiesFactor": 0.75
+                },
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 6,
+                    "InheritanceMapV2": {
+                      "Entry": {
+                        "TemplateName": "Profile_2ndParty",
+                        "Index": 6
+                      }
+                    }
+                  },
+                  "SmallIslandFactor": 1,
+                  "SmallFertilitiesFactor": 0.75
+                },
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 7,
+                    "InheritanceMapV2": {
+                      "Entry": {
+                        "TemplateName": "Profile_2ndParty",
+                        "Index": 7
+                      }
+                    }
+                  },
+                  "SmallIslandFactor": 1
+                },
+                {
+                  "Product": 1010224,
+                  "PerProgressLevelInfos": {
+                    "EarlyGame": {
+                      "ProducerBuildingCountMain": 0
+                    },
+                    "EarlyMidGame": {
+                      "ProducerBuildingCountMain": 0
+                    },
+                    "MidGame": {
+                      "ProducerBuildingCountMain": 0
+                    }
+                  }
+                },
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 8,
+                    "InheritanceMapV2": {
+                      "Entry": {
+                        "TemplateName": "Profile_2ndParty",
+                        "Index": 8
+                      }
+                    }
+                  }
+                },
+                {
+                  "Product": 114356,
+                  "PerProgressLevelInfos": {
+                    "MidGame": {
+                      "ProducerBuildingCountMain": 2
+                    },
+                    "LateMidGame": {
+                      "ProducerBuildingCountMain": 3
+                    },
+                    "LateGame": {
+                      "ProducerBuildingCountMain": 3
+                    },
+                    "EndGame": {
+                      "ProducerBuildingCountMain": 3
+                    },
+                    "EarlyMidGame": {
+                      "ProducerBuildingCountMain": 2
+                    }
+                  },
+                  "SmallIslandFactor": 1
+                },
+                {
+                  "Product": 114402,
+                  "PerProgressLevelInfos": {
+                    "LateMidGame": {
+                      "ProducerBuildingCountMain": 2
+                    },
+                    "LateGame": {
+                      "ProducerBuildingCountMain": 2
+                    },
+                    "EndGame": {
+                      "ProducerBuildingCountMain": 2
+                    }
+                  },
+                  "SmallIslandFactor": 1
+                }
+              ]
+            }
+          },
+          "NoOptionalGoodsOnSecondaryIslands": 1,
+          "ConsumptionConfiguration": {
+            "Item": [
+              {
+                "PopulationGuid": 15000000
+              },
+              {
+                "PopulationGuid": 15000001
+              },
+              {
+                "PopulationGuid": 15000002
+              },
+              {
+                "PopulationGuid": 15000003
+              },
+              {
+                "PopulationGuid": 15000004
+              },
+              {
+                "PopulationGuid": 15000005
+              },
+              {
+                "PopulationGuid": 15000006
+              }
+            ]
+          }
+        },
+        "LookAndFeel": {
+          "Ornaments": {
+            "PerRegion": {
+              "Moderate": {
+                "PerRegionEntry": {
+                  "PerUsage": {
+                    "Production": {
+                      "RegularOrnamentals": {
+                        "Item": [
+                          {
+                            "Ornamental": 102083,
+                            "RelativeProbabilityWithinSameSizeGroup": 50
+                          },
+                          {
+                            "Ornamental": 102087,
+                            "RelativeProbabilityWithinSameSizeGroup": 17
+                          },
+                          {
+                            "Ornamental": 102086,
+                            "RelativeProbabilityWithinSameSizeGroup": 16
+                          },
+                          {
+                            "Ornamental": 102085,
+                            "RelativeProbabilityWithinSameSizeGroup": 17
+                          }
+                        ]
+                      },
+                      "FillBlockGapsWithOrnamentalBlocks": 0,
+                      "AvenueOrnamentals1x1Middle": {
+                        "Item": {
+                          "Ornamental": 102085
+                        }
+                      }
+                    },
+                    "City": {
+                      "RegularOrnamentals": {
+                        "Item": [
+                          {
+                            "Ornamental": 102083,
+                            "RelativeProbabilityWithinSameSizeGroup": 50
+                          },
+                          {
+                            "Ornamental": 102087,
+                            "RelativeProbabilityWithinSameSizeGroup": 14
+                          },
+                          {
+                            "Ornamental": 102086,
+                            "RelativeProbabilityWithinSameSizeGroup": 7
+                          },
+                          {
+                            "Ornamental": 102112,
+                            "RelativeProbabilityWithinSameSizeGroup": 7
+                          },
+                          {
+                            "Ornamental": 102113,
+                            "RelativeProbabilityWithinSameSizeGroup": 7
+                          },
+                          {
+                            "Ornamental": 102085,
+                            "RelativeProbabilityWithinSameSizeGroup": 7
+                          },
+                          {
+                            "Ornamental": 102104,
+                            "RelativeProbabilityWithinSameSizeGroup": 7
+                          },
+                          {
+                            "Ornamental": 102105,
+                            "RelativeProbabilityWithinSameSizeGroup": 7
+                          },
+                          {
+                            "Ornamental": 103052
+                          },
+                          {
+                            "Ornamental": 103053
+                          },
+                          {
+                            "Ornamental": 103055
+                          },
+                          {
+                            "Ornamental": 103056
+                          },
+                          {
+                            "Ornamental": 103057
+                          },
+                          {
+                            "Ornamental": 103058
+                          }
+                        ]
+                      },
+                      "AvenueOrnamental1x1End": {
+                        "Ornamental": 101515,
+                        "Rotation": "_180"
+                      },
+                      "AvenueOrnamentals1x1Middle": {
+                        "Item": {
+                          "Ornamental": 101513,
+                          "Rotation": "_0_Or_180"
+                        }
+                      }
+                    },
+                    "Cultural": {
+                      "RegularOrnamentals": {
+                        "Item": [
+                          {
+                            "Ornamental": 102083,
+                            "RelativeProbabilityWithinSameSizeGroup": 35
+                          },
+                          {
+                            "Ornamental": 102085,
+                            "RelativeProbabilityWithinSameSizeGroup": 10
+                          },
+                          {
+                            "Ornamental": 102086,
+                            "RelativeProbabilityWithinSameSizeGroup": 5
+                          },
+                          {
+                            "Ornamental": 102104,
+                            "RelativeProbabilityWithinSameSizeGroup": 5
+                          },
+                          {
+                            "Ornamental": 102481,
+                            "RelativeProbabilityWithinSameSizeGroup": 1
+                          }
+                        ]
+                      },
+                      "AvenueOrnamental1x1End": {
+                        "Ornamental": 101515,
+                        "Rotation": "_180"
+                      },
+                      "AvenueOrnamentals1x1Middle": {
+                        "Item": {
+                          "Ornamental": 101513,
+                          "Rotation": "_0_Or_180"
+                        }
+                      },
+                      "AvenueOrnamentals1x1Corner": {
+                        "Ornamental": 101514,
+                        "Rotation": "_90"
+                      }
+                    },
+                    "RailroadHiding": {
+                      "RegularOrnamentals": {
+                        "Item": [
+                          {
+                            "Ornamental": 102083,
+                            "RelativeProbabilityWithinSameSizeGroup": 2
+                          },
+                          {
+                            "Ornamental": 102087,
+                            "RelativeProbabilityWithinSameSizeGroup": 1
+                          },
+                          {
+                            "Ornamental": 102086,
+                            "RelativeProbabilityWithinSameSizeGroup": 1
+                          },
+                          {
+                            "Ornamental": 102085,
+                            "RelativeProbabilityWithinSameSizeGroup": 1
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "Colony01": {
+                "PerRegionEntry": {
+                  "PerUsage": {
+                    "Production": {
+                      "RegularOrnamentals": {
+                        "Item": [
+                          {
+                            "Ornamental": 102812,
+                            "RelativeProbabilityWithinSameSizeGroup": 50
+                          },
+                          {
+                            "Ornamental": 102814,
+                            "RelativeProbabilityWithinSameSizeGroup": 5
+                          },
+                          {
+                            "Ornamental": 102863,
+                            "RelativeProbabilityWithinSameSizeGroup": 5
+                          },
+                          {
+                            "Ornamental": 102817,
+                            "RelativeProbabilityWithinSameSizeGroup": 10
+                          },
+                          {
+                            "Ornamental": 102818,
+                            "RelativeProbabilityWithinSameSizeGroup": 20
+                          },
+                          {
+                            "Ornamental": 103125,
+                            "RelativeProbabilityWithinSameSizeGroup": 10
+                          }
+                        ]
+                      },
+                      "FillBlockGapsWithOrnamentalBlocks": 0
+                    },
+                    "City": {
+                      "RegularOrnamentals": {
+                        "Item": [
+                          {
+                            "Ornamental": 102812,
+                            "RelativeProbabilityWithinSameSizeGroup": 50
+                          },
+                          {
+                            "Ornamental": 102816,
+                            "RelativeProbabilityWithinSameSizeGroup": 20
+                          },
+                          {
+                            "Ornamental": 102815,
+                            "RelativeProbabilityWithinSameSizeGroup": 20
+                          },
+                          {
+                            "Ornamental": 102844
+                          }
+                        ]
+                      },
+                      "AvenueOrnamental1x1End": {
+                        "Ornamental": 102820,
+                        "Rotation": "_180"
+                      },
+                      "AvenueOrnamentals1x1Middle": {
+                        "Item": {
+                          "Ornamental": 102819,
+                          "Rotation": "_0_Or_180"
+                        }
+                      }
+                    },
+                    "Cultural": {
+                      "RegularOrnamentals": {
+                        "Item": [
+                          {
+                            "Ornamental": 102812
+                          },
+                          {
+                            "Ornamental": 102818,
+                            "RelativeProbabilityWithinSameSizeGroup": 20
+                          }
+                        ]
+                      },
+                      "AvenueOrnamental1x1End": {
+                        "Ornamental": 102850,
+                        "Rotation": "_180"
+                      },
+                      "AvenueOrnamentals1x1Middle": {
+                        "Item": {
+                          "Ornamental": 102849,
+                          "Rotation": "_0_Or_180"
+                        }
+                      }
+                    },
+                    "RailroadHiding": {
+                      "RegularOrnamentals": {
+                        "Item": [
+                          {
+                            "Ornamental": 102812
+                          },
+                          {
+                            "Ornamental": 103125,
+                            "RelativeProbabilityWithinSameSizeGroup": 50
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "Africa": {
+                "PerRegionEntry": {
+                  "PerUsage": {
+                    "Production": {
+                      "RegularOrnamentals": {
+                        "Item": [
+                          {
+                            "Ornamental": 130715,
+                            "RelativeProbabilityWithinSameSizeGroup": 10
+                          },
+                          {
+                            "Ornamental": 130716,
+                            "RelativeProbabilityWithinSameSizeGroup": 10
+                          },
+                          {
+                            "Ornamental": 130717,
+                            "RelativeProbabilityWithinSameSizeGroup": 10
+                          },
+                          {
+                            "Ornamental": 130718,
+                            "RelativeProbabilityWithinSameSizeGroup": 10
+                          },
+                          {
+                            "Ornamental": 131423,
+                            "RelativeProbabilityWithinSameSizeGroup": 50
+                          }
+                        ]
+                      },
+                      "AvenueOrnamental1x1End": {
+                        "Ornamental": 130711,
+                        "Rotation": "_180"
+                      },
+                      "AvenueOrnamentals1x1Middle": {
+                        "Item": [
+                          {
+                            "Ornamental": 131388,
+                            "Rotation": "_0_Or_180"
+                          },
+                          {
+                            "Ornamental": 130709,
+                            "Rotation": "_0_Or_180"
+                          }
+                        ]
+                      },
+                      "AvenueOrnamentals1x1Corner": {
+                        "Ornamental": 130710,
+                        "Rotation": "_0"
+                      }
+                    },
+                    "City": {
+                      "RegularOrnamentals": {
+                        "Item": [
+                          {
+                            "Ornamental": 130715,
+                            "RelativeProbabilityWithinSameSizeGroup": 10
+                          },
+                          {
+                            "Ornamental": 130716,
+                            "RelativeProbabilityWithinSameSizeGroup": 10
+                          },
+                          {
+                            "Ornamental": 130717,
+                            "RelativeProbabilityWithinSameSizeGroup": 10
+                          },
+                          {
+                            "Ornamental": 130718,
+                            "RelativeProbabilityWithinSameSizeGroup": 10
+                          },
+                          {
+                            "Ornamental": 131423,
+                            "RelativeProbabilityWithinSameSizeGroup": 60
+                          }
+                        ]
+                      },
+                      "AvenueOrnamental1x1End": {
+                        "Ornamental": 130711,
+                        "Rotation": "_180"
+                      },
+                      "AvenueOrnamentals1x1Middle": {
+                        "Item": [
+                          {
+                            "Ornamental": 131388,
+                            "Rotation": "_0_Or_180"
+                          },
+                          {
+                            "Ornamental": 130709,
+                            "Rotation": "_0_Or_180"
+                          }
+                        ]
+                      },
+                      "AvenueOrnamentals1x1Corner": {
+                        "Ornamental": 130710,
+                        "Rotation": "_0_Or_180"
+                      }
+                    },
+                    "RailroadHiding": {
+                      "RegularOrnamentals": {
+                        "Item": [
+                          {
+                            "Ornamental": 130715,
+                            "RelativeProbabilityWithinSameSizeGroup": 10
+                          },
+                          {
+                            "Ornamental": 130716,
+                            "RelativeProbabilityWithinSameSizeGroup": 10
+                          },
+                          {
+                            "Ornamental": 130717,
+                            "RelativeProbabilityWithinSameSizeGroup": 15
+                          },
+                          {
+                            "Ornamental": 130718,
+                            "RelativeProbabilityWithinSameSizeGroup": 15
+                          },
+                          {
+                            "Ornamental": 131423,
+                            "RelativeProbabilityWithinSameSizeGroup": 50
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "TradeRules": {
+          "Overproduction": {
+            "Item": [
+              {
+                "Factor": 1.1
+              },
+              {
+                "Factor": 1.05
+              },
+              {
+                "Factor": 1.05
+              }
+            ]
+          },
+          "PassiveTrade": {
+            "MaxBuyGoods": 8,
+            "TargetStorageAmount": 50,
+            "MaxSellGoods": 8,
+            "MinStorageToSell": 20
+          },
+          "ActiveTrade": {
+            "EarlyMidGame": {
+              "BuyBudget": 3000,
+              "SellBudget": 3000
+            },
+            "EndGame": {
+              "BuyBudget": 10000,
+              "SellBudget": 10000
+            },
+            "LateGame": {
+              "BuyBudget": 7500,
+              "SellBudget": 7500
+            },
+            "LateMidGame": {
+              "BuyBudget": 5000,
+              "SellBudget": 5000
+            },
+            "MidGame": {
+              "BuyBudget": 4000,
+              "SellBudget": 4000
+            }
+          }
+        },
+        "Cultural": {
+          "CulturalsItemPoolMapping": {
+            "Item": [
+              {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "2ndParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_2ndParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "ItemPool": 191487
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 1,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "2ndParty",
+                        "Index": 1
+                      },
+                      {
+                        "TemplateName": "Profile_2ndParty",
+                        "Index": 1
+                      }
+                    ]
+                  }
+                },
+                "ItemPool": 191490
+              }
+            ]
+          },
+          "ItemCheatInterval": 900000,
+          "PlanFence": 1
+        },
+        "ScholarConfiguration": {
+          "TargetScholarBuildingCount": 20
+        },
+        "MonumentConfiguration": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "Profile_2ndParty",
+                    "Index": 0
+                  }
+                }
+              }
+            },
+            {
+              "MonumentBuilding": 118940,
+              "Region": "Moderate",
+              "BlockScore": "BlockResearchCenter"
+            }
+          ]
+        },
+        "Budgets": {
+          "Construction": {
+            "WeightUnthreatened": 60,
+            "WeightsThreatened": 10,
+            "Limit": 750000
+          },
+          "Military": {
+            "WeightUnthreatened": 30,
+            "WeightsThreatened": 88
+          },
+          "ActiveTrade": {
+            "Limit": 100000
+          },
+          "Shares": {
+            "Limit": 200000
+          }
+        },
+        "DefenseStructures": {
+          "Moderate": {
+            "HarborDefenses": {
+              "Item": [
+                {
+                  "Building": 1010522,
+                  "Weight": 30
+                },
+                {
+                  "Building": 1010523,
+                  "Weight": 70
+                }
+              ]
+            }
+          },
+          "Colony01": {
+            "HarborDefenses": {
+              "Item": [
+                {
+                  "Building": 101563,
+                  "Weight": 30
+                },
+                {
+                  "Building": 101570,
+                  "Weight": 70
+                }
+              ]
+            },
+            "HighProtectIslandSecurityFactor": 1
+          },
+          "Africa": {
+            "HarborDefenses": {
+              "Item": [
+                {
+                  "Building": 117861,
+                  "Weight": 30
+                },
+                {
+                  "Building": 117863,
+                  "Weight": 70
+                }
+              ]
+            },
+            "HighProtectIslandSecurityFactor": 1
+          }
+        },
+        "SeamineConfig": {
+          "SeamineAsset": 112130,
+          "MineSpawning": {
+            "TimeBetweenMineSpawning": 10000,
+            "SpawnDelayAfterMineExploded": 600000
+          }
+        },
+        "UnlockReferenceAssets": {
+          "Item": {
+            "Asset": 114437,
+            "ReferenceAsset": 100655,
+            "Comment": "The Elders in Africa require some already quite \"high tier\" moderate and sa goods and can be unlocked quite early (independently of moderate progress) which results in a lot of overhead for an optional session."
+          }
+        }
+      },
+      "ParticipantMessages": "",
+      "Object": "",
+      "MetaInfluence": {
+        "BaseInfluenceCapacity": 100
+      },
+      "KontorOwner": "",
+      "MilitaryAI": "",
+      "ProfileCounter": "",
+      "ParticipantMessageObject": "",
+      "Interaction": "",
+      "Locked": "",
+      "BuyShares": {
+        "UnlockForBuyingOtherShares": 140504
+      },
+      "UniqueBuildingHandler": "",
+      "MetaBuffHandler": ""
+    }
+  }
+]

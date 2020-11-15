@@ -1,0 +1,2652 @@
+[
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501128,
+        "Name": "IncidentNewExplosion"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 500323,
+              "NotificationSideTitle": 14271,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 14271,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentFire"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265208
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501133,
+        "Name": "IncidentNewExplosionIndustry"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 500323,
+              "NotificationSideTitle": 14280,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 14280,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentFire"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265208
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501134,
+        "Name": "IncidentNewExplosionMob"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 500323,
+              "NotificationSideTitle": 14281,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 14281,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentFire"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265190
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500312,
+        "Name": "SellShipRequestNotification_ArchibaldBlake"
+      },
+      "Notification": {
+        "NotificationType": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "CharacterNotification": {
+              "ThirdpartyNotificationButtons": {
+                "Item": [
+                  {
+                    "Icon": 500109,
+                    "Command": "[NotificationContext Value(Ship) Object Sellable BuyNet([NotificationContext Value(TraderIndex) Int])]"
+                  },
+                  {
+                    "Icon": 500108,
+                    "Command": "[NotificationContext Value(Trader) Object Trader ShipTradeFailed([NotificationContext Value(PlayerIndex) Int])]"
+                  }
+                ]
+              }
+            },
+            "BaseNotification": {
+              "NotificationText": 10817,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 700,
+              "NotificationMinDisplayTime": 30000,
+              "NotificationGroup": "PlayerClick",
+              "IsUnique": 1
+            },
+            "NotificationSubtitle": {
+              "SubtitleGroup": 1180219215
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500311,
+        "Name": "BuyShipRequestNotification_ArchibaldBlake"
+      },
+      "Notification": {
+        "NotificationType": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "CharacterNotification": {
+              "ThirdpartyNotificationButtons": {
+                "Item": [
+                  {
+                    "Infotip": 500658,
+                    "Icon": 500109,
+                    "Command": "[NotificationContext Value(Ship) Object Sellable BuyNet([NotificationContext Value(PlayerIndex) Int])]",
+                    "ActiveCallback": "[NotificationContext Value(Ship) Object Sellable AffordableByCurrentParticipant]"
+                  },
+                  {
+                    "Infotip": 500663,
+                    "Icon": 500108,
+                    "Command": "[NotificationContext Value(Trader) Object Trader ShipTradeFailed([NotificationContext Value(PlayerIndex) Int])]"
+                  }
+                ]
+              }
+            },
+            "BaseNotification": {
+              "NotificationText": 10816,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 700,
+              "NotificationMinDisplayTime": 30000,
+              "NotificationGroup": "PlayerClick",
+              "IsUnique": 1
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 268886
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500685,
+        "Name": "SellShipRequestNotification_IsabelSarmento"
+      },
+      "Notification": {
+        "NotificationType": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "CharacterNotification": {
+              "ThirdpartyNotificationButtons": {
+                "Item": [
+                  {
+                    "Icon": 500109,
+                    "Command": "[NotificationContext Value(Ship) Object Sellable BuyNet([NotificationContext Value(TraderIndex) Int])]"
+                  },
+                  {
+                    "Icon": 500108,
+                    "Command": "[NotificationContext Value(Trader) Object Trader ShipTradeFailed([NotificationContext Value(PlayerIndex) Int])]"
+                  }
+                ]
+              }
+            },
+            "BaseNotification": {
+              "NotificationText": 10817,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 700,
+              "NotificationMinDisplayTime": 30000,
+              "NotificationGroup": "PlayerClick",
+              "IsUnique": 1
+            },
+            "NotificationSubtitle": {
+              "SubtitleGroup": 91574379
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500686,
+        "Name": "BuyShipRequestNotification_IsabelSarmento"
+      },
+      "Notification": {
+        "NotificationType": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "CharacterNotification": {
+              "ThirdpartyNotificationButtons": {
+                "Item": [
+                  {
+                    "Infotip": 500658,
+                    "Icon": 500109,
+                    "Command": "[NotificationContext Value(Ship) Object Sellable BuyNet([NotificationContext Value(PlayerIndex) Int])]",
+                    "ActiveCallback": "[NotificationContext Value(Ship) Object Sellable AffordableByCurrentParticipant]"
+                  },
+                  {
+                    "Infotip": 500663,
+                    "Icon": 500108,
+                    "Command": "[NotificationContext Value(Trader) Object Trader ShipTradeFailed([NotificationContext Value(PlayerIndex) Int])]"
+                  }
+                ]
+              }
+            },
+            "BaseNotification": {
+              "NotificationText": 10816,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 700,
+              "NotificationMinDisplayTime": 30000,
+              "NotificationGroup": "PlayerClick",
+              "IsUnique": 1
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 268889
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500687,
+        "Name": "SellShipRequestNotification_LaFortune"
+      },
+      "Notification": {
+        "NotificationType": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "CharacterNotification": {
+              "ThirdpartyNotificationButtons": {
+                "Item": [
+                  {
+                    "Icon": 500109,
+                    "Command": "[NotificationContext Value(Ship) Object Sellable BuyNet([NotificationContext Value(TraderIndex) Int])]"
+                  },
+                  {
+                    "Icon": 500108,
+                    "Command": "[NotificationContext Value(Trader) Object Trader ShipTradeFailed([NotificationContext Value(PlayerIndex) Int])]"
+                  }
+                ]
+              }
+            },
+            "BaseNotification": {
+              "NotificationText": 10817,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 700,
+              "NotificationMinDisplayTime": 30000,
+              "NotificationGroup": "PlayerClick",
+              "IsUnique": 1
+            },
+            "NotificationSubtitle": {
+              "SubtitleGroup": 1123797128
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500688,
+        "Name": "BuyShipRequestNotification_LaFortune"
+      },
+      "Notification": {
+        "NotificationType": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "CharacterNotification": {
+              "ThirdpartyNotificationButtons": {
+                "Item": [
+                  {
+                    "Infotip": 500658,
+                    "Icon": 500109,
+                    "Command": "[NotificationContext Value(Ship) Object Sellable BuyNet([NotificationContext Value(PlayerIndex) Int])]",
+                    "ActiveCallback": "[NotificationContext Value(Ship) Object Sellable AffordableByCurrentParticipant]"
+                  },
+                  {
+                    "Infotip": 500663,
+                    "Icon": 500108,
+                    "Command": "[NotificationContext Value(Trader) Object Trader ShipTradeFailed([NotificationContext Value(PlayerIndex) Int])]"
+                  }
+                ]
+              }
+            },
+            "BaseNotification": {
+              "NotificationText": 10816,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 700,
+              "NotificationMinDisplayTime": 30000,
+              "NotificationGroup": "PlayerClick",
+              "IsUnique": 1
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 268888
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500689,
+        "Name": "SellShipRequestNotification_AnneHarlow"
+      },
+      "Notification": {
+        "NotificationType": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "CharacterNotification": {
+              "ThirdpartyNotificationButtons": {
+                "Item": [
+                  {
+                    "Icon": 500109,
+                    "Command": "[NotificationContext Value(Ship) Object Sellable BuyNet([NotificationContext Value(TraderIndex) Int])]"
+                  },
+                  {
+                    "Icon": 500108,
+                    "Command": "[NotificationContext Value(Trader) Object Trader ShipTradeFailed([NotificationContext Value(PlayerIndex) Int])]"
+                  }
+                ]
+              }
+            },
+            "BaseNotification": {
+              "NotificationText": 10817,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 700,
+              "NotificationMinDisplayTime": 30000,
+              "NotificationGroup": "PlayerClick",
+              "IsUnique": 1
+            },
+            "NotificationSubtitle": {
+              "SubtitleGroup": 715913372
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500690,
+        "Name": "BuyShipRequestNotification_AnneHarlow"
+      },
+      "Notification": {
+        "NotificationType": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "CharacterNotification": {
+              "ThirdpartyNotificationButtons": {
+                "Item": [
+                  {
+                    "Infotip": 500658,
+                    "Icon": 500109,
+                    "Command": "[NotificationContext Value(Ship) Object Sellable BuyNet([NotificationContext Value(PlayerIndex) Int])]",
+                    "ActiveCallback": "[NotificationContext Value(Ship) Object Sellable AffordableByCurrentParticipant]"
+                  },
+                  {
+                    "Infotip": 500663,
+                    "Icon": 500108,
+                    "Command": "[NotificationContext Value(Trader) Object Trader ShipTradeFailed([NotificationContext Value(PlayerIndex) Int])]"
+                  }
+                ]
+              }
+            },
+            "BaseNotification": {
+              "NotificationText": 10816,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 700,
+              "NotificationMinDisplayTime": 30000,
+              "NotificationGroup": "PlayerClick",
+              "IsUnique": 1
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 268887,
+              "SubtitleGroup": 715913372
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500997,
+        "Name": "SellShipRequestNotification_Kahina"
+      },
+      "Notification": {
+        "NotificationType": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "CharacterNotification": {
+              "ThirdpartyNotificationButtons": {
+                "Item": [
+                  {
+                    "Icon": 500109,
+                    "Command": "[NotificationContext Value(Ship) Object Sellable BuyNet([NotificationContext Value(TraderIndex) Int])]"
+                  },
+                  {
+                    "Icon": 500108,
+                    "Command": "[NotificationContext Value(Trader) Object Trader ShipTradeFailed([NotificationContext Value(PlayerIndex) Int])]"
+                  }
+                ]
+              }
+            },
+            "BaseNotification": {
+              "NotificationText": 10817,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 700,
+              "NotificationMinDisplayTime": 30000,
+              "NotificationGroup": "PlayerClick",
+              "IsUnique": 1
+            },
+            "NotificationSubtitle": {
+              "SubtitleGroup": -268877076
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500998,
+        "Name": "BuyShipRequestNotification_Kahina"
+      },
+      "Notification": {
+        "NotificationType": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "CharacterNotification": {
+              "ThirdpartyNotificationButtons": {
+                "Item": [
+                  {
+                    "Infotip": 500658,
+                    "Icon": 500109,
+                    "Command": "[NotificationContext Value(Ship) Object Sellable BuyNet([NotificationContext Value(PlayerIndex) Int])]",
+                    "ActiveCallback": "[NotificationContext Value(Ship) Object Sellable AffordableByCurrentParticipant]"
+                  },
+                  {
+                    "Infotip": 500663,
+                    "Icon": 500108,
+                    "Command": "[NotificationContext Value(Trader) Object Trader ShipTradeFailed([NotificationContext Value(PlayerIndex) Int])]"
+                  }
+                ]
+              }
+            },
+            "BaseNotification": {
+              "NotificationText": 10816,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 700,
+              "NotificationMinDisplayTime": 30000,
+              "NotificationGroup": "PlayerClick",
+              "IsUnique": 1
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 268890
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 502151,
+        "Name": "SellShipRequestNotification_Ketema"
+      },
+      "Notification": {
+        "NotificationType": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "CharacterNotification": {
+              "ThirdpartyNotificationButtons": {
+                "Item": [
+                  {
+                    "Icon": 500109,
+                    "Command": "[NotificationContext Value(Ship) Object Sellable BuyNet([NotificationContext Value(TraderIndex) Int])]"
+                  },
+                  {
+                    "Icon": 500108,
+                    "Command": "[NotificationContext Value(Trader) Object Trader ShipTradeFailed([NotificationContext Value(PlayerIndex) Int])]"
+                  }
+                ]
+              }
+            },
+            "BaseNotification": {
+              "NotificationText": 10817,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 700,
+              "NotificationMinDisplayTime": 30000,
+              "NotificationGroup": "PlayerClick",
+              "IsUnique": 1
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 129820
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 502152,
+        "Name": "BuyShipRequestNotification_Ketema"
+      },
+      "Notification": {
+        "NotificationType": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "CharacterNotification": {
+              "ThirdpartyNotificationButtons": {
+                "Item": [
+                  {
+                    "Infotip": 500658,
+                    "Icon": 500109,
+                    "Command": "[NotificationContext Value(Ship) Object Sellable BuyNet([NotificationContext Value(PlayerIndex) Int])]",
+                    "ActiveCallback": "[NotificationContext Value(Ship) Object Sellable AffordableByCurrentParticipant]"
+                  },
+                  {
+                    "Infotip": 500663,
+                    "Icon": 500108,
+                    "Command": "[NotificationContext Value(Trader) Object Trader ShipTradeFailed([NotificationContext Value(PlayerIndex) Int])]"
+                  }
+                ]
+              }
+            },
+            "BaseNotification": {
+              "NotificationText": 10816,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 700,
+              "NotificationMinDisplayTime": 30000,
+              "NotificationGroup": "PlayerClick",
+              "IsUnique": 1
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 129820
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 502153,
+        "Name": "SellShipRequestNotification_Angereb"
+      },
+      "Notification": {
+        "NotificationType": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "CharacterNotification": {
+              "ThirdpartyNotificationButtons": {
+                "Item": [
+                  {
+                    "Icon": 500109,
+                    "Command": "[NotificationContext Value(Ship) Object Sellable BuyNet([NotificationContext Value(TraderIndex) Int])]"
+                  },
+                  {
+                    "Icon": 500108,
+                    "Command": "[NotificationContext Value(Trader) Object Trader ShipTradeFailed([NotificationContext Value(PlayerIndex) Int])]"
+                  }
+                ]
+              }
+            },
+            "BaseNotification": {
+              "NotificationText": 10817,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 700,
+              "NotificationMinDisplayTime": 30000,
+              "NotificationGroup": "PlayerClick",
+              "IsUnique": 1
+            },
+            "NotificationSubtitle": {
+              "SubtitleGroup": 24148568
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 502154,
+        "Name": "BuyShipRequestNotification_Angereb"
+      },
+      "Notification": {
+        "NotificationType": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "CharacterNotification": {
+              "ThirdpartyNotificationButtons": {
+                "Item": [
+                  {
+                    "Infotip": 500658,
+                    "Icon": 500109,
+                    "Command": "[NotificationContext Value(Ship) Object Sellable BuyNet([NotificationContext Value(PlayerIndex) Int])]",
+                    "ActiveCallback": "[NotificationContext Value(Ship) Object Sellable AffordableByCurrentParticipant]"
+                  },
+                  {
+                    "Infotip": 500663,
+                    "Icon": 500108,
+                    "Command": "[NotificationContext Value(Trader) Object Trader ShipTradeFailed([NotificationContext Value(PlayerIndex) Int])]"
+                  }
+                ]
+              }
+            },
+            "BaseNotification": {
+              "NotificationText": 10816,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 700,
+              "NotificationMinDisplayTime": 30000,
+              "NotificationGroup": "PlayerClick",
+              "IsUnique": 1
+            },
+            "NotificationSubtitle": {
+              "SubtitleGroup": 24148568
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 502182,
+        "Name": "SellShipRequestNotification_Waha"
+      },
+      "Notification": {
+        "NotificationType": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "CharacterNotification": {
+              "ThirdpartyNotificationButtons": {
+                "Item": [
+                  {
+                    "Icon": 500109,
+                    "Command": "[NotificationContext Value(Ship) Object Sellable BuyNet([NotificationContext Value(TraderIndex) Int])]"
+                  },
+                  {
+                    "Icon": 500108,
+                    "Command": "[NotificationContext Value(Trader) Object Trader ShipTradeFailed([NotificationContext Value(PlayerIndex) Int])]"
+                  }
+                ]
+              }
+            },
+            "BaseNotification": {
+              "NotificationText": 10817,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 700,
+              "NotificationMinDisplayTime": 30000,
+              "NotificationGroup": "PlayerClick",
+              "IsUnique": 1
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 122065
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500591,
+        "Name": "PassiveTrade",
+        "ID": "NotificationPassiveTrade"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501363,
+              "NotificationSideTitle": 10840,
+              "FilterType": "Trade"
+            },
+            "BaseNotification": {
+              "NotificationText": 10819,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501203,
+        "Name": "TradeRouteMinorIssue"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501363,
+              "FilterType": "TradeRouteWarning"
+            },
+            "BaseNotification": {
+              "NotificationText": 15167,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501204,
+        "Name": "TradeRouteError"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501363,
+              "FilterType": "TradeRouteError"
+            },
+            "BaseNotification": {
+              "NotificationText": 15169,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 25000015,
+        "Name": "VisitorSpecialistNotification"
+      },
+      "Notification": {
+        "NotificationType": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "CharacterNotification": {
+              "Profile": 90,
+              "ThirdpartyNotificationButtons": {
+                "Item": [
+                  {
+                    "Icon": 500109,
+                    "Command": "[NotificationContext Value(Area) Area Visitors AcceptSpecialistNet]",
+                    "ActiveCallback": "[NotificationContext Value(Area) Area Visitors HasSpecialist]"
+                  },
+                  {
+                    "Icon": 500108,
+                    "Command": "[NotificationContext Value(Area) Area Visitors DenySpecialistNet]",
+                    "ActiveCallback": "[NotificationContext Value(Area) Area Visitors HasSpecialist]"
+                  }
+                ]
+              }
+            },
+            "BaseNotification": {
+              "NotificationText": 2435,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 400,
+              "NotificationMinDisplayTime": 30000,
+              "IsUnique": 1
+            },
+            "NotificationSubtitle": {
+              "SubtitleGroup": 769424791
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 502145,
+        "Name": "VisitorSpecialistNotificationNoButtons"
+      },
+      "Notification": {
+        "NotificationType": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "CharacterNotification": {
+              "Profile": 90
+            },
+            "BaseNotification": {
+              "NotificationText": 23466,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 400,
+              "NotificationMinDisplayTime": 12000
+            },
+            "NotificationSubtitle": {
+              "SubtitleGroup": 769424791
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500125,
+        "Name": "FirstVisitorsArrivalNotification"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501357,
+              "NotificationSideTitle": 2442,
+              "FilterType": "VisitorsAndCulture"
+            },
+            "BaseNotification": {
+              "NotificationText": 2441,
+              "NotificationAudioAsset": 239732,
+              "NotificationGroup": "Visitors"
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 25000014,
+        "Name": "VisitorIncreaseSignificantNotification"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501357,
+              "NotificationSideTitle": 2434,
+              "FilterType": "VisitorsAndCulture"
+            },
+            "BaseNotification": {
+              "NotificationText": 2433,
+              "NotificationAudioAsset": 239732,
+              "NotificationGroup": "Visitors"
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500133,
+        "Name": "VisitorHarborMissingNotification",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_visitor_habour_2d.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501357,
+              "NotificationSideTitle": 2449,
+              "FilterType": "VisitorsAndCulture"
+            },
+            "BaseNotification": {
+              "NotificationText": 2448,
+              "NotificationBlockingTime": 7200000,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 300,
+              "NotificationGroup": "Visitors",
+              "DisplayTimeout": 5000,
+              "IsUnique": 1
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500126,
+        "Name": "VisitorLeavingNotification",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_visitor_habour_2d.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501357,
+              "NotificationSideTitle": 2444,
+              "FilterType": "VisitorsAndCulture",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 2443,
+              "NotificationBlockingTime": 1800000,
+              "NotificationAudioAsset": 239732,
+              "NotificationGroup": "Visitors"
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500692,
+        "Name": "Attractiveness level decreased",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_company_level.png",
+        "ID": "NotificationCityLevelDecreased"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501355,
+              "NotificationSideTitle": 11869,
+              "FilterType": "VisitorsAndCulture"
+            },
+            "BaseNotification": {
+              "NotificationText": 11870,
+              "NotificationBlockingTime": 10800000,
+              "NotificationAudioAsset": 239732,
+              "NotificationGroup": "Visitors"
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 9899006,
+        "Name": "Attractiveness level reached",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_company_level.png",
+        "ID": "NotificationCityLevelIncreased"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501355,
+              "NotificationSideTitle": 10681,
+              "FilterType": "VisitorsAndCulture"
+            },
+            "BaseNotification": {
+              "NotificationText": 10682,
+              "NotificationBlockingTime": 10800000,
+              "NotificationAudioAsset": 239732,
+              "NotificationGroup": "Visitors",
+              "DisplayTimeout": 6000
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265370
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501306,
+        "Name": "ShipEnteredSession"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501372
+            },
+            "BaseNotification": {
+              "NotificationText": 23473,
+              "NotificationBlockingTime": 60000,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265369
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 502158,
+        "Name": "FleetEnteredSession"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 502165
+            },
+            "BaseNotification": {
+              "NotificationText": 23474,
+              "NotificationBlockingTime": 60000,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265369
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501340,
+        "Name": "ShipConstructionFinished",
+        "ID": "NotificationShipConstructionFinished"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501372
+            },
+            "BaseNotification": {
+              "NotificationText": 16922,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265366
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501371,
+        "Name": "ShipLeftSession"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501372
+            },
+            "BaseNotification": {
+              "NotificationText": 16574,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265368
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501307,
+        "Name": "ParticipantLostGameAnnihilation"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501373,
+              "ForceOpenArchive": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 16575,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265434
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501308,
+        "Name": "ParticipantLostGameBankrupt"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501373,
+              "ForceOpenArchive": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 16576,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265435
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501310,
+        "Name": "MissingWorkforceOnArea"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501374,
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 16578,
+              "NotificationAudioAsset": 239733
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265281
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501311,
+        "Name": "WorkforceTransferInterrupted"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501375,
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 16577,
+              "NotificationAudioAsset": 239733
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265298
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501321,
+        "Name": "NotificationInfluenceSpecializationGained",
+        "ID": "NotificationInfluenceSpecializationGained"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501376
+            },
+            "BaseNotification": {
+              "NotificationText": 16790,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265296
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501322,
+        "Name": "NotificationInfluenceSpecializationLost",
+        "ID": "NotificationInfluenceSpecializationLost"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501376
+            },
+            "BaseNotification": {
+              "NotificationText": 16791,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501399,
+        "Name": "NewCityState_Settlement_Notification"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "MainNotification",
+          "Values": {
+            "MainNotification": {
+              "Title": 16981,
+              "NotificationMainIconAsset": 1010343,
+              "Icon01": 1000178,
+              "Icon02": 1010372,
+              "BackgroundAnimation": "data\\ui\\video\\ui_alpha\\main_banner\\mainbanner_farmers_a.bk2"
+            },
+            "BaseNotification": {
+              "NotificationText": 16982,
+              "NotificationAudioAsset": 201843
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501400,
+        "Name": "NewCityState_Village_Notification"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "MainNotification",
+          "Values": {
+            "MainNotification": {
+              "Title": 16981,
+              "NotificationMainIconAsset": 1010315,
+              "Icon01": 1010294,
+              "Icon02": 1010267,
+              "BackgroundAnimation": "data\\ui\\video\\ui_alpha\\main_banner\\mainbanner_city_luxuryneed_a.bk2"
+            },
+            "BaseNotification": {
+              "NotificationText": 16983,
+              "NotificationAudioAsset": 201837
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501401,
+        "Name": "NewCityState_Town_Notification"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "MainNotification",
+          "Values": {
+            "MainNotification": {
+              "Title": 16981,
+              "NotificationMainIconAsset": 1010520,
+              "Icon01": 100586,
+              "Icon02": 1010288,
+              "Icon03": 1010519,
+              "Icon04": 1010522,
+              "BackgroundAnimation": "data\\ui\\video\\ui_alpha\\main_banner\\mainbanner_city_shipyard_a.bk2"
+            },
+            "BaseNotification": {
+              "NotificationText": 16984,
+              "NotificationAudioAsset": 201837
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501402,
+        "Name": "NewCityState_City_Notification"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "MainNotification",
+          "Values": {
+            "MainNotification": {
+              "Title": 16981,
+              "NotificationMainIconAsset": 1010470,
+              "Icon01": 101516,
+              "Icon02": 101510,
+              "Icon03": 101511,
+              "Icon04": 101513,
+              "BackgroundAnimation": "data\\ui\\video\\ui_alpha\\main_banner\\mainbanner_city_culture_a.bk2"
+            },
+            "BaseNotification": {
+              "NotificationText": 16985,
+              "NotificationAudioAsset": 201837
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501403,
+        "Name": "NewCityState_CapitalCity_Notification"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "MainNotification",
+          "Values": {
+            "MainNotification": {
+              "Title": 16981,
+              "NotificationMainIconAsset": 1010521,
+              "Icon01": 1010302,
+              "Icon02": 1010323,
+              "BackgroundAnimation": "data\\ui\\video\\ui_alpha\\main_banner\\mainbanner_city_culture_a.bk2"
+            },
+            "BaseNotification": {
+              "NotificationText": 16986,
+              "NotificationAudioAsset": 201837
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501404,
+        "Name": "NewCityState_Metropolis_Notification"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "MainNotification",
+          "Values": {
+            "MainNotification": {
+              "Title": 16981,
+              "NotificationMainIconAsset": 1010492,
+              "Icon01": 1010327,
+              "Icon02": 1010328,
+              "BackgroundAnimation": "data\\ui\\video\\ui_alpha\\main_banner\\mainbanner_city_steamships_a.bk2"
+            },
+            "BaseNotification": {
+              "NotificationText": 16987,
+              "NotificationAudioAsset": 201842
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501422,
+        "Name": "NewCityState_Settlement_Notification"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "MainNotification",
+          "Values": {
+            "MainNotification": {
+              "Title": 16981,
+              "NotificationMainIconAsset": 101254,
+              "Icon01": 1000178,
+              "Icon02": 1010372,
+              "BackgroundAnimation": "data\\ui\\video\\ui_alpha\\main_banner\\mainbanner_farmers_a.bk2"
+            },
+            "BaseNotification": {
+              "NotificationText": 16988,
+              "NotificationAudioAsset": 201843
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501423,
+        "Name": "NewCityState_Town_Notification"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "MainNotification",
+          "Values": {
+            "MainNotification": {
+              "Title": 16981,
+              "NotificationMainIconAsset": 101266,
+              "Icon01": 101275,
+              "Icon02": 1010333,
+              "BackgroundAnimation": "data\\ui\\video\\ui_alpha\\main_banner\\mainbanner_jornalero_a.bk2"
+            },
+            "BaseNotification": {
+              "NotificationText": 16989,
+              "NotificationAudioAsset": 201843
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501424,
+        "Name": "NewCityState_Colony_Notification"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "MainNotification",
+          "Values": {
+            "MainNotification": {
+              "Title": 16981,
+              "NotificationMainIconAsset": 101273,
+              "Icon01": 101415,
+              "Icon02": 1010561,
+              "Icon03": 1010318,
+              "Icon04": 101276,
+              "BackgroundAnimation": "data\\ui\\video\\ui_alpha\\main_banner\\mainbanner_obrero_a.bk2"
+            },
+            "BaseNotification": {
+              "NotificationText": 16990,
+              "NotificationAudioAsset": 201847
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501952,
+        "Name": "NewCityState_Camp_Notification"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "MainNotification",
+          "Values": {
+            "MainNotification": {
+              "Title": 16981,
+              "NotificationMainIconAsset": 114751,
+              "Icon01": 112669,
+              "Icon02": 112675,
+              "BackgroundAnimation": "data\\ui\\video\\ui_alpha\\main_banner\\mainbanner_camp_a.bk2"
+            },
+            "BaseNotification": {
+              "NotificationText": 117086,
+              "NotificationAudioAsset": 202372
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501953,
+        "Name": "NewCityState_Outpost_Notification"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "MainNotification",
+          "Values": {
+            "MainNotification": {
+              "Title": 16981,
+              "NotificationMainIconAsset": 114166,
+              "Icon01": 112690,
+              "Icon02": 116029,
+              "BackgroundAnimation": "data\\ui\\video\\ui_alpha\\main_banner\\mainbanner_posts_a.bk2"
+            },
+            "BaseNotification": {
+              "NotificationText": 117087,
+              "NotificationAudioAsset": 202372
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501462,
+        "Name": "Attractiveness_05_old(Do not delete!)"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "AttractivenessNotification",
+          "Values": {
+            "BaseNotification": {
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 600
+            },
+            "AttractivenessNotification": {
+              "Value": 450
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501463,
+        "Name": "Attractiveness_06_old(Do not delete!)"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "AttractivenessNotification",
+          "Values": {
+            "BaseNotification": {
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 600
+            },
+            "AttractivenessNotification": {
+              "Value": 700
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501464,
+        "Name": "Attractiveness_07_old(Do not delete!)"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "AttractivenessNotification",
+          "Values": {
+            "BaseNotification": {
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 600
+            },
+            "AttractivenessNotification": {
+              "Value": 1000
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501465,
+        "Name": "Attractiveness_08_old(Do not delete!)"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "AttractivenessNotification",
+          "Values": {
+            "BaseNotification": {
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 600
+            },
+            "AttractivenessNotification": {
+              "Value": 1350
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501466,
+        "Name": "Attractiveness_09_old(Do not delete!)"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "AttractivenessNotification",
+          "Values": {
+            "BaseNotification": {
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 600
+            },
+            "AttractivenessNotification": {
+              "Value": 1750
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501467,
+        "Name": "Attractiveness_10_old(Do not delete!)"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "AttractivenessNotification",
+          "Values": {
+            "BaseNotification": {
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 600
+            },
+            "AttractivenessNotification": {
+              "Value": 2200
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501468,
+        "Name": "Attractiveness_11_old(Do not delete!)"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "AttractivenessNotification",
+          "Values": {
+            "BaseNotification": {
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 600
+            },
+            "AttractivenessNotification": {
+              "Value": 2700
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501469,
+        "Name": "Attractiveness_12_old(Do not delete!)"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "AttractivenessNotification",
+          "Values": {
+            "BaseNotification": {
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 600
+            },
+            "AttractivenessNotification": {
+              "Value": 3250
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501470,
+        "Name": "Attractiveness_13_old(Do not delete!)"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "AttractivenessNotification",
+          "Values": {
+            "BaseNotification": {
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 600
+            },
+            "AttractivenessNotification": {
+              "Value": 3850
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501471,
+        "Name": "Attractiveness_14_old(Do not delete!)"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "AttractivenessNotification",
+          "Values": {
+            "BaseNotification": {
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 600
+            },
+            "AttractivenessNotification": {
+              "Value": 4500
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501472,
+        "Name": "Attractiveness_15_old(Do not delete!)"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "AttractivenessNotification",
+          "Values": {
+            "BaseNotification": {
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 600
+            },
+            "AttractivenessNotification": {
+              "Value": 5200
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501473,
+        "Name": "Attractiveness_16_old(Do not delete!)"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "AttractivenessNotification",
+          "Values": {
+            "BaseNotification": {
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 600
+            },
+            "AttractivenessNotification": {
+              "Value": 5950
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501474,
+        "Name": "Attractiveness_17_old(Do not delete!)"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "AttractivenessNotification",
+          "Values": {
+            "BaseNotification": {
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 600
+            },
+            "AttractivenessNotification": {
+              "Value": 6500
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501475,
+        "Name": "Attractiveness_18_old(Do not delete!)"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "AttractivenessNotification",
+          "Values": {
+            "BaseNotification": {
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 600
+            },
+            "AttractivenessNotification": {
+              "Value": 7600
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 502094,
+        "Name": "Attractiveness_New"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "AttractivenessNotification",
+          "Values": {
+            "BaseNotification": {
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 600
+            },
+            "AttractivenessNotification": "",
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 115004,
+        "Name": "Heating CoalTendencyNegative Notification",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_heating_center.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 115005,
+              "FilterType": "Heating",
+              "IsWarning": 1,
+              "Infotip": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 115006,
+              "NotificationBlockingTime": 900000,
+              "NotificationAudioAsset": 239732,
+              "IsUnique": 1
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265310
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 115008,
+        "Name": "Heating HeaterNotWorking Notification",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_heating_center.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 115005,
+              "FilterType": "Heating",
+              "IsWarning": 1,
+              "Infotip": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 115007,
+              "NotificationBlockingTime": 900000,
+              "NotificationAudioAsset": 239732,
+              "IsUnique": 1
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265311
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 116128,
+        "Name": "Incident_NewArcticIllness_NoNearbyInstitution"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 116129,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 116131,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentIllness"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265196
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 116134,
+        "Name": "Incident_OngoingArcticIllness_ConsumedBuilding"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 116129,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 116236,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentIllness"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265197
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 116135,
+        "Name": "Incident_EscalatedArcticIllness"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 116129,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 116237,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentIllness"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265197
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 116136,
+        "Name": "Incident_EndArcticIllness"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 116129,
+              "FilterType": "Incidents"
+            },
+            "BaseNotification": {
+              "NotificationText": 116238,
+              "NotificationAudioAsset": 239732,
+              "NotificationGroup": "IncidentIllness"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265182
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 116137,
+        "Name": "Incident_EndArcticIllness_Destruction"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 116129,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 116239,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentIllness"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265198
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 116750,
+        "Name": "Incident_NewArcticFire_NoNearbyInstitution"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 116755,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 116756,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentFire"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265190
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 116751,
+        "Name": "Incident_OngoingArcticFire_ConsumedBuilding"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 116755,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 116757,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentFire"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265191
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 116752,
+        "Name": "Incident_EscalatedArcticFire"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 116755,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 116758,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentFire"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265191
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 116753,
+        "Name": "Incident_EndArcticFire"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 116755,
+              "FilterType": "Incidents"
+            },
+            "BaseNotification": {
+              "NotificationText": 116759,
+              "NotificationAudioAsset": 239732,
+              "NotificationGroup": "IncidentFire"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265180
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 116754,
+        "Name": "Incident_EndArcticFire_Destruction"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 116755,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 116760,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentFire"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265192
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 269292,
+        "Name": "Noti Main Palace Unlocks"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "MainNotification",
+          "Values": {
+            "MainNotification": {
+              "Title": 17137
+            },
+            "BaseNotification": {
+              "NotificationText": 269074
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 269309,
+        "Name": "Noti Main Palace Overdrive Reached",
+        "ID": "NotificationParagonBanner"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "MainNotification",
+          "Values": {
+            "MainNotification": {
+              "Title": 17137,
+              "NotificationMainIconAsset": 269230
+            },
+            "BaseNotification": {
+              "NotificationText": 269310
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 269583,
+        "Name": "Palace Unlock Banner"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "PalaceNotification",
+          "Values": {
+            "BaseNotification": {
+              "NotificationText": 269074,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 600
+            },
+            "PalaceNotification": "",
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            },
+            "MainNotification": {
+              "Title": 17137
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 269224,
+        "Name": "Noti Lost Palace Effects",
+        "ID": "NotificationLostPalaceEffects"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 269230,
+              "FilterType": "VisitorsAndCulture"
+            },
+            "BaseNotification": {
+              "NotificationText": 269077,
+              "NotificationBlockingTime": 300000,
+              "NotificationAudioAsset": 9818769
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 269227,
+        "Name": "Noti Regained Palace Effects",
+        "ID": "NotificationUnlockedPalaceEffects"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 269230,
+              "FilterType": "VisitorsAndCulture"
+            },
+            "BaseNotification": {
+              "NotificationText": 269080,
+              "NotificationBlockingTime": 300000,
+              "DisplayTimeout": 6000
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 269329,
+        "Name": "Noti Lost Overdrive",
+        "ID": "NotificationParagonLost"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 269230,
+              "FilterType": "VisitorsAndCulture"
+            },
+            "BaseNotification": {
+              "NotificationText": 269331,
+              "NotificationBlockingTime": 300000
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 269330,
+        "Name": "Noti Regained Overdrive",
+        "ID": "NotificationParagonGained"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 269230,
+              "FilterType": "VisitorsAndCulture"
+            },
+            "BaseNotification": {
+              "NotificationText": 269332,
+              "NotificationBlockingTime": 300000
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 125533,
+        "Name": "NewCityState_AfricaSettlement_Notification"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "MainNotification",
+          "Values": {
+            "MainNotification": {
+              "Title": 16981,
+              "NotificationMainIconAsset": 114466,
+              "Icon01": 114519,
+              "Icon02": 119892,
+              "BackgroundAnimation": "data\\ui\\video\\ui_alpha\\main_banner\\africa_tier1_a.bk2"
+            },
+            "BaseNotification": {
+              "NotificationText": 125536,
+              "NotificationAudioAsset": 202372
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 125534,
+        "Name": "NewCityState_AfricaTown_Notification"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "MainNotification",
+          "Values": {
+            "MainNotification": {
+              "Title": 16981,
+              "NotificationMainIconAsset": 114470,
+              "Icon01": 101250,
+              "Icon02": 117668,
+              "BackgroundAnimation": "data\\ui\\video\\ui_alpha\\main_banner\\africa_tier2_a.bk2"
+            },
+            "BaseNotification": {
+              "NotificationText": 125537,
+              "NotificationAudioAsset": 202372
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265159
+            }
+          }
+        }
+      }
+    }
+  }
+]

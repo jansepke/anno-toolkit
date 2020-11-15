@@ -1,0 +1,97 @@
+[
+  {
+    "Template": "DiplomacyBalancing",
+    "Values": {
+      "Standard": {
+        "GUID": 140054,
+        "Name": "DiplomacyBalancing",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_diplomacy_options_alliance.png",
+        "ID": "DiplomacyBalancing"
+      },
+      "DiplomacyConfig": {
+        "Basic": {
+          "MaxReputation": 100,
+          "CounterProposalMinIncreasePercentage": 10
+        },
+        "Debuffs": {
+          "ActionDebuffs": {
+            "ThreatWar": {
+              "AssociatedDebuff": "ThreatWar"
+            },
+            "RequestPeace": {
+              "AssociatedDebuff": "Peace"
+            },
+            "RequestTraderights": {
+              "AssociatedDebuff": "Trade"
+            },
+            "DeclareWar": {
+              "AssociatedDebuff": "Peace",
+              "RemoveDebuff": 1
+            },
+            "CancelTraderights": {
+              "AssociatedDebuff": "Trade",
+              "RemoveDebuff": 1
+            },
+            "CancelAlliance": {
+              "AssociatedDebuff": "Alliance",
+              "RemoveDebuff": 1
+            },
+            "RequestAlliance": {
+              "AssociatedDebuff": "Alliance"
+            },
+            "RequestCeaseFire": {
+              "AssociatedDebuff": "CeaseFire"
+            },
+            "ThreatCancelTrade": {
+              "AssociatedDebuff": "Trade"
+            },
+            "ThreatCancelAlliance": {
+              "AssociatedDebuff": "Alliance"
+            },
+            "RequestNonAttack": {
+              "AssociatedDebuff": "NonAttack"
+            }
+          }
+        },
+        "MaxNegativeCredits": 1000,
+        "MaxAIPayment": 99999999,
+        "CeaseFire": {
+          "TimeLength": {
+            "Default": {
+              "Length": 7200000
+            }
+          }
+        },
+        "ActionWithoutConfirmation": "DeclareWar;GiftMoneyOneTimeSmall;GiftMoneyOneTimeOrdinary;GiftMoneyOneTimeGenerous;CancelTraderights;Flatter;CancelAlliance;Insult",
+        "ActionThreats": "ThreatWar;ThreatCancelTrade;ThreatCancelAlliance",
+        "NonAttack": {
+          "TimeLength": {
+            "Default": {
+              "Length": 18000000
+            }
+          }
+        },
+        "CooldownAfterAction": {
+          "GiftMoneyOneTimeSmall": {
+            "Cooldown": 2000
+          },
+          "GiftMoneyOneTimeOrdinary": {
+            "Cooldown": 2000
+          },
+          "GiftMoneyOneTimeGenerous": {
+            "Cooldown": 2000
+          },
+          "Flatter": {
+            "Cooldown": 2000
+          },
+          "DemandQuest": {
+            "Cooldown": 2000
+          },
+          "Insult": {
+            "Cooldown": 2000
+          }
+        }
+      }
+    }
+  }
+]

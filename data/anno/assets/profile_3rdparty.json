@@ -1,0 +1,5824 @@
+[
+  {
+    "Template": "Profile_3rdParty",
+    "Values": {
+      "Standard": {
+        "GUID": 51,
+        "Name": "Third_enemy_01 (Edvard Goode)",
+        "IconFilename": "data/ui/2kimages/main/profiles/enemy_01.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Edvard Goode",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 3768
+      },
+      "Profile": {
+        "ProfilePicture": "data/ui/2kimages/main/profiles/enemy_01.png",
+        "Portrait": 100588,
+        "CompanyIcon": 501261,
+        "InfoCornerInfoTip": 25000162,
+        "InfoCornerDescription": 4073,
+        "ParticipantID": "Third_enemy_01_Grant",
+        "NotificationBackground": "data/ui/2kimages/main/assets/character_bg/bgr_character_01.png",
+        "QuestStarterObject": 100630,
+        "DefaultColor": "Color10",
+        "MoodImage": "data/ui/2kimages/main/assets/thirdparty_islandbar/bg_islandbar_edvard.png",
+        "TakeoverBehaviour": "RuinState",
+        "CreateModeMeta": "AutoCreate_OnlyCampaign",
+        "CreateModeSession": "AutoCreate_OnlyCampaign"
+      },
+      "Diplomacy": {
+        "DiplomacyActionBalancing": {
+          "CancelTraderights": {
+            "AgreementThreshold": -999,
+            "PartialAgreementThreshold": -999
+          },
+          "RequestAlliance": {
+            "AgreementThreshold": 80,
+            "PartialAgreementThreshold": 50
+          },
+          "RequestPeace": {
+            "AgreementThreshold": 45,
+            "PartialAgreementThreshold": 15
+          },
+          "RequestTraderights": {
+            "AgreementThreshold": 90,
+            "PartialAgreementThreshold": 60
+          },
+          "ThreatWar": {
+            "AgreementThreshold": -20,
+            "PartialAgreementThreshold": -20
+          },
+          "RequestCeaseFire": {
+            "ActionWeight": 120,
+            "AgreementThreshold": 80
+          }
+        },
+        "ReputationChangeCalculation": {
+          "PaymentGivingMoney": {
+            "MaxPossibleReputation": 100
+          },
+          "PaymentReceivingMoney": {
+            "ReputationAddedLimit": 40
+          },
+          "Treaties": {
+            "ReputationValues": {
+              "Alliance": {
+                "AddingTreaty": 20,
+                "RemovingTreaty": -30
+              },
+              "CeaseFire": {
+                "AddingTreaty": 5,
+                "RemovingTreaty": -10
+              },
+              "Peace": {
+                "AddingTreaty": 20
+              },
+              "TradeRights": {
+                "AddingTreaty": 10,
+                "RemovingTreaty": -25
+              }
+            }
+          }
+        },
+        "GiftBalancing": {
+          "giveGenerous": {
+            "BaseValue": 2000
+          },
+          "giveOrdinary": {
+            "BaseValue": 1000
+          },
+          "giveSmall": {
+            "BaseValue": 500
+          },
+          "receiveGenerous": {
+            "BaseValue": 10000
+          },
+          "receiveOrdinary": {
+            "BaseValue": 4000
+          }
+        },
+        "RepeatableActionBalancing": {
+          "Actions": {
+            "Flatter": {
+              "Subdivisions": {
+                "Item": [
+                  {
+                    "VectorElement": {
+                      "InheritedIndex": 0,
+                      "InheritanceMapV2": {
+                        "Entry": [
+                          {
+                            "TemplateName": "3rdParty_Male",
+                            "Index": 0
+                          },
+                          {
+                            "TemplateName": "3rdParty",
+                            "Index": 0
+                          },
+                          {
+                            "TemplateName": "Profile_3rdParty",
+                            "Index": 0
+                          }
+                        ]
+                      }
+                    },
+                    "SuccessChance": 30
+                  },
+                  {
+                    "ReputationLoss": -3
+                  },
+                  ""
+                ]
+              }
+            },
+            "Insult": {
+              "Subdivisions": {
+                "Item": [
+                  {
+                    "VectorElement": {
+                      "InheritedIndex": 0,
+                      "InheritanceMapV2": {
+                        "Entry": [
+                          {
+                            "TemplateName": "3rdParty_Male",
+                            "Index": 0
+                          },
+                          {
+                            "TemplateName": "3rdParty",
+                            "Index": 0
+                          },
+                          {
+                            "TemplateName": "Profile_3rdParty",
+                            "Index": 0
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  ""
+                ]
+              }
+            }
+          }
+        },
+        "ActionDebuffs": {
+          "DebuffSettings": {
+            "ThreatWar": {
+              "DiceDebuff": 50,
+              "DebuffTime": 3600000,
+              "DiminishingDebuff": 1
+            },
+            "Peace": {
+              "DiceDebuff": 50,
+              "DebuffTime": 3600000
+            },
+            "Trade": {
+              "DiceDebuff": 50,
+              "DebuffTime": 4500000
+            }
+          }
+        },
+        "CounterProposal": {
+          "DiceRollCounterMax": 10,
+          "CounterProposalAgree": 65,
+          "CounterProposalPartial": 33,
+          "CounterProposalDeclineStart": 50,
+          "CounterProposalIncreaseModifierPercentage": 1000
+        },
+        "InitialRelation": {
+          "DefaultTreaties": "Peace",
+          "Exceptions": {
+            "Item": {
+              "Reputation": 50,
+              "Memory": 50,
+              "Treaties": "Peace"
+            }
+          }
+        }
+      },
+      "ParticipantMessages": {
+        "MessageTriggers": {
+          "QuestResolveConfirmation": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationText": 10550
+                    },
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 862807000
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ParticipantDiscovered": {
+            "Reactions": ""
+          },
+          "QuestStarted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationPriority": 699
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Object": {
+        "DefaultParticipant": "Third_enemy_01_Grant"
+      },
+      "Trader": {
+        "Progression": {
+          "EarlyGame": {
+            "TradeFleet": {
+              "Item": {
+                "ShipAsset": 100438,
+                "Amount": 1
+              }
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010196,
+                  "ProductionPerMinute": 2
+                },
+                {
+                  "Good": 1010218,
+                  "ProductionPerMinute": 2
+                },
+                {
+                  "Good": 1010195,
+                  "ProductionPerMinute": 2
+                },
+                {
+                  "Good": 1010216,
+                  "ProductionPerMinute": 2
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010196
+                    },
+                    {
+                      "Good": 1010218
+                    },
+                    {
+                      "Good": 1010195
+                    },
+                    {
+                      "Good": 1010216
+                    }
+                  ]
+                }
+              }
+            },
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 100437,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 100438,
+                  "Weight": 1
+                }
+              ]
+            }
+          },
+          "EarlyMidGame": {
+            "TradeFleet": {
+              "Item": {
+                "ShipAsset": 100438,
+                "Amount": 2
+              }
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010196,
+                  "ProductionPerMinute": 3
+                },
+                {
+                  "Good": 1010205,
+                  "ProductionPerMinute": 3
+                },
+                {
+                  "Good": 1010218,
+                  "ProductionPerMinute": 3
+                },
+                {
+                  "Good": 1010210,
+                  "ProductionPerMinute": 3
+                },
+                {
+                  "Good": 1010216,
+                  "ProductionPerMinute": 3
+                },
+                {
+                  "Good": 1010214,
+                  "ProductionPerMinute": 3
+                },
+                {
+                  "Good": 1010215,
+                  "ProductionPerMinute": 3
+                },
+                {
+                  "Good": 1010200,
+                  "ProductionPerMinute": 3
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": [
+                {
+                  "GoodSets": {
+                    "Item": [
+                      {
+                        "Good": 1010196
+                      },
+                      {
+                        "Good": 1010205
+                      },
+                      {
+                        "Good": 1010218
+                      },
+                      {
+                        "Good": 1010210
+                      }
+                    ]
+                  }
+                },
+                {
+                  "GoodSets": {
+                    "Item": [
+                      {
+                        "Good": 1010216
+                      },
+                      {
+                        "Good": 1010214
+                      },
+                      {
+                        "Good": 1010215
+                      },
+                      {
+                        "Good": 1010200
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 100437,
+                  "Weight": 2
+                },
+                {
+                  "ShipAsset": 100438,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 100439,
+                  "Weight": 1
+                }
+              ]
+            }
+          },
+          "MidGame": {
+            "TradeFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 100438,
+                  "Amount": 2
+                },
+                {
+                  "ShipAsset": 100441,
+                  "Amount": 1
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010196,
+                  "ProductionPerMinute": 4
+                },
+                {
+                  "Good": 1010205,
+                  "ProductionPerMinute": 4
+                },
+                {
+                  "Good": 1010218,
+                  "ProductionPerMinute": 4
+                },
+                {
+                  "Good": 1010210,
+                  "ProductionPerMinute": 4
+                },
+                {
+                  "Good": 1010257,
+                  "ProductionPerMinute": 4
+                },
+                {
+                  "Good": 1010251,
+                  "ProductionPerMinute": 4
+                },
+                {
+                  "Good": 1010255,
+                  "ProductionPerMinute": 4
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": [
+                {
+                  "GoodSets": {
+                    "Item": [
+                      {
+                        "Good": 1010196
+                      },
+                      {
+                        "Good": 1010205
+                      },
+                      {
+                        "Good": 1010218
+                      },
+                      {
+                        "Good": 1010210
+                      }
+                    ]
+                  }
+                },
+                {
+                  "GoodSets": {
+                    "Item": [
+                      {
+                        "Good": 1010257
+                      },
+                      {
+                        "Good": 1010251
+                      },
+                      {
+                        "Good": 1010255
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 100441,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 100439,
+                  "Weight": 1
+                }
+              ]
+            }
+          },
+          "LateMidGame": {
+            "TradeFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 100438,
+                  "Amount": 3
+                },
+                {
+                  "ShipAsset": 100441,
+                  "Amount": 1
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010196,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010205,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010218,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010210,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010257,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010251,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010255,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010254,
+                  "ProductionPerMinute": 5
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": [
+                {
+                  "GoodSets": {
+                    "Item": [
+                      {
+                        "Good": 1010196
+                      },
+                      {
+                        "Good": 1010205
+                      },
+                      {
+                        "Good": 1010218
+                      },
+                      {
+                        "Good": 1010210
+                      }
+                    ]
+                  }
+                },
+                {
+                  "GoodSets": {
+                    "Item": [
+                      {
+                        "Good": 1010257
+                      },
+                      {
+                        "Good": 1010251
+                      },
+                      {
+                        "Good": 1010255
+                      },
+                      {
+                        "Good": 1010254
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 100441,
+                  "Weight": 2
+                },
+                {
+                  "ShipAsset": 100439,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 100440,
+                  "Weight": 1
+                }
+              ]
+            }
+          },
+          "LateGame": {
+            "TradeFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 100438,
+                  "Amount": 3
+                },
+                {
+                  "ShipAsset": 100441,
+                  "Amount": 1
+                },
+                {
+                  "ShipAsset": 1010062,
+                  "Amount": 1
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010196,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010205,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010218,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010210,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010224,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010257,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010251,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010255,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010254,
+                  "ProductionPerMinute": 6
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": [
+                {
+                  "GoodSets": {
+                    "Item": [
+                      {
+                        "Good": 1010196
+                      },
+                      {
+                        "Good": 1010205
+                      },
+                      {
+                        "Good": 1010218
+                      },
+                      {
+                        "Good": 1010210
+                      },
+                      {
+                        "Good": 1010224
+                      }
+                    ]
+                  }
+                },
+                {
+                  "GoodSets": {
+                    "Item": [
+                      {
+                        "Good": 1010257
+                      },
+                      {
+                        "Good": 1010251
+                      },
+                      {
+                        "Good": 1010255
+                      },
+                      {
+                        "Good": 1010254
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 1010062,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 100443,
+                  "Weight": 1
+                }
+              ]
+            }
+          },
+          "EndGame": {
+            "TradeFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 100438,
+                  "Amount": 3
+                },
+                {
+                  "ShipAsset": 100441,
+                  "Amount": 2
+                },
+                {
+                  "ShipAsset": 1010062,
+                  "Amount": 1
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010196,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010205,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010218,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010210,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010224,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010257,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010251,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010255,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010254,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010253,
+                  "ProductionPerMinute": 7
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": [
+                {
+                  "GoodSets": {
+                    "Item": [
+                      {
+                        "Good": 1010196
+                      },
+                      {
+                        "Good": 1010205
+                      },
+                      {
+                        "Good": 1010218
+                      },
+                      {
+                        "Good": 1010210
+                      },
+                      {
+                        "Good": 1010224
+                      }
+                    ]
+                  }
+                },
+                {
+                  "GoodSets": {
+                    "Item": [
+                      {
+                        "Good": 1010257
+                      },
+                      {
+                        "Good": 1010251
+                      },
+                      {
+                        "Good": 1010255
+                      },
+                      {
+                        "Good": 1010254
+                      },
+                      {
+                        "Good": 1010253
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 1010062,
+                  "Weight": 2
+                },
+                {
+                  "ShipAsset": 100443,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 100442,
+                  "Weight": 1
+                }
+              ]
+            }
+          }
+        }
+      },
+      "ThirdParty": "",
+      "ParticipantMessageObject": {
+        "ParticipantMessages": 142
+      },
+      "Interaction": "",
+      "Locked": ""
+    }
+  },
+  {
+    "Template": "Profile_3rdParty",
+    "Values": {
+      "Standard": {
+        "GUID": 45,
+        "Name": "Third_party_02 (Archibald Blake)",
+        "IconFilename": "data/ui/2kimages/main/profiles/3rd_party_02.png",
+        "ID": "ProfileBlake"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Sir Archibald Blake",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 3770
+      },
+      "Profile": {
+        "ProfilePicture": "data/ui/2kimages/main/profiles/3rd_party_02.png",
+        "Portrait": 100589,
+        "CompanyIcon": 501260,
+        "InfoCornerInfoTip": 25000162,
+        "InfoCornerDescription": 3099,
+        "ParticipantID": "Third_party_02_Blake",
+        "NotificationBackground": "data/ui/2kimages/main/assets/character_bg/bgr_character_03.png",
+        "QuestStarterObject": 100551,
+        "QuestPoolList": {
+          "Item": [
+            {
+              "QuestPool": 151107
+            },
+            {
+              "QuestPool": 150099
+            }
+          ]
+        },
+        "DefaultColor": "Color11",
+        "MoodImage": "data/ui/2kimages/main/assets/thirdparty_islandbar/bg_islandbar_blake.png",
+        "CreateModeMeta": "AutoCreate_Always"
+      },
+      "Diplomacy": {
+        "DiplomacyActionBalancing": {
+          "CancelTraderights": {
+            "AgreementThreshold": -999,
+            "PartialAgreementThreshold": -999
+          },
+          "RequestAlliance": {
+            "AgreementThreshold": 80,
+            "PartialAgreementThreshold": 50
+          },
+          "RequestPeace": {
+            "AgreementThreshold": 45,
+            "PartialAgreementThreshold": 15
+          },
+          "RequestTraderights": {
+            "AgreementThreshold": 55,
+            "PartialAgreementThreshold": 25
+          },
+          "ThreatWar": {
+            "AgreementThreshold": -30
+          },
+          "RequestCeaseFire": {
+            "ActionWeight": 120,
+            "AgreementThreshold": 80
+          }
+        },
+        "ReputationChangeCalculation": {
+          "PaymentGivingMoney": {
+            "MaxPossibleReputation": 100
+          },
+          "PaymentReceivingMoney": {
+            "ReputationAddedLimit": 10,
+            "ReputationAddedSteepness": 0.05
+          },
+          "Treaties": {
+            "ReputationValues": {
+              "Alliance": {
+                "RemovingTreaty": -10
+              },
+              "CeaseFire": {
+                "AddingTreaty": 10,
+                "RemovingTreaty": -5
+              },
+              "Peace": {
+                "AddingTreaty": 40,
+                "RemovingTreaty": -30
+              },
+              "TradeRights": {
+                "RemovingTreaty": -10
+              }
+            }
+          }
+        },
+        "GiftBalancing": {
+          "giveGenerous": {
+            "BaseValue": 4000
+          },
+          "giveOrdinary": {
+            "BaseValue": 2000
+          },
+          "giveSmall": {
+            "BaseValue": 1000
+          },
+          "receivePayment": {
+            "BaseValue": 200
+          },
+          "receiveGenerous": {
+            "BaseValue": 2000
+          },
+          "receiveOrdinary": {
+            "BaseValue": 1000
+          },
+          "receiveSmall": {
+            "BaseValue": 500
+          },
+          "givePayment": {
+            "BaseValue": 500
+          }
+        },
+        "RepeatableActionBalancing": {
+          "Actions": {
+            "Flatter": {
+              "Subdivisions": {
+                "Item": [
+                  {
+                    "VectorElement": {
+                      "InheritedIndex": 0,
+                      "InheritanceMapV2": {
+                        "Entry": [
+                          {
+                            "TemplateName": "3rdParty_Male",
+                            "Index": 0
+                          },
+                          {
+                            "TemplateName": "3rdParty",
+                            "Index": 0
+                          },
+                          {
+                            "TemplateName": "Profile_3rdParty",
+                            "Index": 0
+                          }
+                        ]
+                      }
+                    },
+                    "SuccessChance": 90,
+                    "ReputationLoss": -1
+                  },
+                  {
+                    "SuccessChance": 65,
+                    "ReputationGain": 3,
+                    "ReputationLoss": -2
+                  },
+                  {
+                    "ReputationLoss": -2
+                  },
+                  ""
+                ]
+              },
+              "ForgettingTime": 3600000
+            },
+            "Insult": {
+              "Subdivisions": {
+                "Item": [
+                  {
+                    "VectorElement": {
+                      "InheritedIndex": 0,
+                      "InheritanceMapV2": {
+                        "Entry": [
+                          {
+                            "TemplateName": "3rdParty_Male",
+                            "Index": 0
+                          },
+                          {
+                            "TemplateName": "3rdParty",
+                            "Index": 0
+                          },
+                          {
+                            "TemplateName": "Profile_3rdParty",
+                            "Index": 0
+                          }
+                        ]
+                      }
+                    },
+                    "SuccessChance": 33
+                  },
+                  ""
+                ]
+              },
+              "ForgettingTime": 3600000
+            },
+            "Gift": {
+              "Subdivisions": {
+                "Item": [
+                  {
+                    "VectorElement": {
+                      "InheritedIndex": 0,
+                      "InheritanceMapV2": {
+                        "Entry": [
+                          {
+                            "TemplateName": "3rdParty_Male",
+                            "Index": 0
+                          },
+                          {
+                            "TemplateName": "3rdParty",
+                            "Index": 0
+                          },
+                          {
+                            "TemplateName": "Profile_3rdParty",
+                            "Index": 0
+                          }
+                        ]
+                      }
+                    },
+                    "SuccessChance": 100,
+                    "ReputationGain": 3
+                  },
+                  {
+                    "SuccessChance": 90,
+                    "ReputationGain": 2
+                  },
+                  ""
+                ]
+              },
+              "ForgettingTime": 3600000
+            }
+          }
+        },
+        "Memory": {
+          "UpdateTable": {
+            "Item": [
+              {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Change": 6
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 1,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 1
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 1
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 1
+                      }
+                    ]
+                  }
+                },
+                "Change": 15
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 2,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 2
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 2
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 2
+                      }
+                    ]
+                  }
+                },
+                "Change": 35
+              }
+            ]
+          }
+        },
+        "DiplomacyAI": {
+          "SpecialTrigger": {
+            "Item": [
+              {
+                "TriggerAction": "GiftMoneyOneTimeSmall",
+                "TriggerType": "GenericTimer",
+                "TriggerChance": 0,
+                "AddMoney": 1
+              },
+              {
+                "TriggerAction": "GiftMoneyOneTimeOrdinary",
+                "TriggerType": "GenericTimer",
+                "TriggerChance": 0,
+                "TriggerPriority": 1,
+                "AddMoney": 1
+              },
+              {
+                "TriggerAction": "GiftMoneyOneTimeGenerous",
+                "TriggerType": "GenericTimer",
+                "TriggerChance": 0,
+                "TriggerPriority": 2,
+                "AddMoney": 1
+              }
+            ]
+          },
+          "GenericTimerStartDelay": 1800000,
+          "GenericTimerRepeat": 14400000
+        }
+      },
+      "ParticipantMessages": {
+        "MessageTriggers": {
+          "QuestAborted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 1573982550
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "QuestInvitation": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 93739329
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "QuestFailed": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 1385343115
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "QuestStarted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationPriority": 699
+                    },
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": -1409364408
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "QuestSuccessful": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": -12517544
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ClickKontor": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 1180219215
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ParticipantDiscovered": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": -1849682550
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "QuestReminder": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": 1408602301
+                    },
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 635705887
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "QuestResolveConfirmation": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationText": 10550
+                    },
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 1499159207
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyAcceptInsult": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 159623797
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ShipTradeConfirmation": {
+            "Reactions": {
+              "Item": [
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 0,
+                    "InheritanceMapV2": {
+                      "Entry": [
+                        {
+                          "TemplateName": "3rdParty_Male",
+                          "Index": 0
+                        },
+                        {
+                          "TemplateName": "3rdParty",
+                          "Index": 0
+                        },
+                        {
+                          "TemplateName": "Profile_3rdParty",
+                          "Index": 0
+                        }
+                      ]
+                    }
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": {
+                        "SubtitleGroup": -671734725
+                      }
+                    }
+                  }
+                },
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 1,
+                    "InheritanceMapV2": {
+                      "Entry": [
+                        {
+                          "TemplateName": "3rdParty_Male",
+                          "Index": 1
+                        },
+                        {
+                          "TemplateName": "3rdParty",
+                          "Index": 1
+                        },
+                        {
+                          "TemplateName": "Profile_3rdParty",
+                          "Index": 1
+                        }
+                      ]
+                    }
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": {
+                        "SubtitleGroup": -671734725
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "SettlePermissionAccepted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": -1877192718
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "SettlePermissionDeclined": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": -979660499
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "SettlementRightsSeizeIsland": {
+            "Reactions": {
+              "Item": [
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 0,
+                    "InheritanceMapV2": {
+                      "Entry": [
+                        {
+                          "TemplateName": "3rdParty_Male",
+                          "Index": 0
+                        },
+                        {
+                          "TemplateName": "3rdParty",
+                          "Index": 0
+                        },
+                        {
+                          "TemplateName": "Profile_3rdParty",
+                          "Index": 0
+                        }
+                      ]
+                    }
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": {
+                        "SubtitleGroup": -472044955
+                      }
+                    }
+                  }
+                },
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 1,
+                    "InheritanceMapV2": {
+                      "Entry": [
+                        {
+                          "TemplateName": "3rdParty_Male",
+                          "Index": 1
+                        },
+                        {
+                          "TemplateName": "3rdParty",
+                          "Index": 1
+                        },
+                        {
+                          "TemplateName": "Profile_3rdParty",
+                          "Index": 1
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "DiplomacyOffer": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": -382822462
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyOfferThreat": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": -1606003381
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyOfferAccept": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 1542068111
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyOfferRejected": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": -1737508124
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyOfferThreatAccepted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": -1367381668
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyOfferThreatRejected": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 1759439937
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyDeclareWar": {
+            "Reactions": {
+              "Item": [
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 0,
+                    "InheritanceMapV2": {
+                      "Entry": [
+                        {
+                          "TemplateName": "3rdParty_Male",
+                          "Index": 0
+                        },
+                        {
+                          "TemplateName": "3rdParty",
+                          "Index": 0
+                        },
+                        {
+                          "TemplateName": "Profile_3rdParty",
+                          "Index": 0
+                        }
+                      ]
+                    }
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": {
+                        "SubtitleGroup": 1817498216
+                      }
+                    }
+                  }
+                },
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 1,
+                    "InheritanceMapV2": {
+                      "Entry": [
+                        {
+                          "TemplateName": "3rdParty_Male",
+                          "Index": 1
+                        },
+                        {
+                          "TemplateName": "3rdParty",
+                          "Index": 1
+                        },
+                        {
+                          "TemplateName": "Profile_3rdParty",
+                          "Index": 1
+                        }
+                      ]
+                    }
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": {
+                        "SubtitleGroup": -724523532
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "DiplomacyOfferPeaceAccepted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 468659371
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyOfferTraderightsAccepted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 1834560112
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyCancelTraderights": {
+            "Reactions": {
+              "Item": [
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 0,
+                    "InheritanceMapV2": {
+                      "Entry": [
+                        {
+                          "TemplateName": "3rdParty_Male",
+                          "Index": 0
+                        },
+                        {
+                          "TemplateName": "3rdParty",
+                          "Index": 0
+                        },
+                        {
+                          "TemplateName": "Profile_3rdParty",
+                          "Index": 0
+                        }
+                      ]
+                    }
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": {
+                        "SubtitleGroup": -997795499
+                      }
+                    }
+                  }
+                },
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 1,
+                    "InheritanceMapV2": {
+                      "Entry": [
+                        {
+                          "TemplateName": "3rdParty_Male",
+                          "Index": 1
+                        },
+                        {
+                          "TemplateName": "3rdParty",
+                          "Index": 1
+                        },
+                        {
+                          "TemplateName": "Profile_3rdParty",
+                          "Index": 1
+                        }
+                      ]
+                    }
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": {
+                        "SubtitleGroup": 1295682713
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "DiplomacyOfferAllianceAccepted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 798803266
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyCancelAlliance": {
+            "Reactions": {
+              "Item": [
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 0,
+                    "InheritanceMapV2": {
+                      "Entry": [
+                        {
+                          "TemplateName": "3rdParty_Male",
+                          "Index": 0
+                        },
+                        {
+                          "TemplateName": "3rdParty",
+                          "Index": 0
+                        },
+                        {
+                          "TemplateName": "Profile_3rdParty",
+                          "Index": 0
+                        }
+                      ]
+                    }
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": {
+                        "SubtitleGroup": 1797976226
+                      }
+                    }
+                  }
+                },
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 1,
+                    "InheritanceMapV2": {
+                      "Entry": [
+                        {
+                          "TemplateName": "3rdParty_Male",
+                          "Index": 1
+                        },
+                        {
+                          "TemplateName": "3rdParty",
+                          "Index": 1
+                        },
+                        {
+                          "TemplateName": "Profile_3rdParty",
+                          "Index": 1
+                        }
+                      ]
+                    }
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": {
+                        "SubtitleGroup": -886468478
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "DiplomacyOfferGiftAccepted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 1001423866
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyOfferGiftRejected": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": -979660499
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyAskForQuestRejected": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": -979660499
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyRequestSupportFleetAccepted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 311623838
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyRequestSupportFleetRejected": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": -979660499
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyAcceptFlatter": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 2037185093
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyDeclineFlatter": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 2076274853
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyDeclineInsult": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": -2083496547
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "FlagshipReplacementOffered": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "ObserverToInitiator",
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationText": 3265,
+                      "NotificationBlockingTime": 600000
+                    },
+                    "NotificationSubtitle": {
+                      "Subtitle": 250731,
+                      "SubtitleGroup": 1180219215
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyMemoryCorrectionPositive": {
+            "Reactions": {
+              "Item": {
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": -1700092476
+                    },
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": -1962208440
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyMemoryCorrectionNegative": {
+            "Reactions": {
+              "Item": {
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": -630778938
+                    },
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 1278493127
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "GreatEasternReplacementOffered": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "ObserverToInitiator",
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationText": 23426
+                    },
+                    "NotificationSubtitle": {
+                      "Subtitle": 250687,
+                      "SubtitleGroup": 1180219215
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Object": {
+        "DefaultParticipant": "Third_party_02_Blake"
+      },
+      "Trader": {
+        "ShipTrader": 1,
+        "SellShipCooldown": 300000,
+        "SellShipRequestNotification": 500312,
+        "BuyShipRequestNotification": 500311,
+        "Progression": {
+          "EarlyGame": {
+            "TradeFleet": {
+              "Item": {
+                "ShipAsset": 100438,
+                "Amount": 1
+              }
+            },
+            "GoodsProduction": {
+              "Item": {
+                "Good": 1010196,
+                "ProductionPerMinute": 2
+              }
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": {
+                    "Good": 1010196
+                  }
+                }
+              }
+            },
+            "OfferingItems": 190162,
+            "MaxItemsToOffer": 3,
+            "ShipsForSale": {
+              "Item": {
+                "ShipAsset": 100438,
+                "Weight": 1
+              }
+            }
+          },
+          "EarlyMidGame": {
+            "TradeFleet": {
+              "Item": {
+                "ShipAsset": 100438,
+                "Amount": 1
+              }
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010196,
+                  "ProductionPerMinute": 3
+                },
+                {
+                  "Good": 1010218,
+                  "ProductionPerMinute": 1
+                },
+                {
+                  "Good": 1010205,
+                  "ProductionPerMinute": 3
+                },
+                {
+                  "Good": 1010206,
+                  "ProductionPerMinute": 3
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010196
+                    },
+                    {
+                      "Good": 1010218
+                    },
+                    {
+                      "Good": 1010205
+                    },
+                    {
+                      "Good": 1010206
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": {
+                "Product": 1010226,
+                "PriceMultiplier": 4,
+                "ReputationMultiplier": 2
+              }
+            },
+            "OfferingItems": 190163,
+            "MaxItemsToOffer": 4,
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 100438,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 100437,
+                  "Weight": 1
+                }
+              ]
+            }
+          },
+          "MidGame": {
+            "TradeFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 100438,
+                  "Amount": 1
+                },
+                {
+                  "ShipAsset": 100441,
+                  "Amount": 1
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010196,
+                  "ProductionPerMinute": 4
+                },
+                {
+                  "Good": 1010218,
+                  "ProductionPerMinute": 2
+                },
+                {
+                  "Good": 1010205,
+                  "ProductionPerMinute": 4
+                },
+                {
+                  "Good": 1010206,
+                  "ProductionPerMinute": 4
+                },
+                {
+                  "Good": 1010246,
+                  "ProductionPerMinute": 4
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010196
+                    },
+                    {
+                      "Good": 1010218
+                    },
+                    {
+                      "Good": 1010205
+                    },
+                    {
+                      "Good": 1010206
+                    },
+                    {
+                      "Good": 1010246
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": {
+                "Product": 1010226,
+                "PriceMultiplier": 4,
+                "ReputationMultiplier": 2
+              }
+            },
+            "OfferingItems": 190164,
+            "MaxItemsToOffer": 5,
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 100441,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 100439,
+                  "Weight": 1
+                }
+              ]
+            },
+            "ShipsForSaleAmount": 2
+          },
+          "LateMidGame": {
+            "TradeFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 100438,
+                  "Amount": 1
+                },
+                {
+                  "ShipAsset": 100441,
+                  "Amount": 1
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010196,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010218,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010205,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010206,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010246,
+                  "ProductionPerMinute": 5
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010196
+                    },
+                    {
+                      "Good": 1010218
+                    },
+                    {
+                      "Good": 1010205
+                    },
+                    {
+                      "Good": 1010206
+                    },
+                    {
+                      "Good": 1010246
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": {
+                "Product": 1010226,
+                "PriceMultiplier": 4,
+                "ReputationMultiplier": 2
+              }
+            },
+            "OfferingItems": 190165,
+            "MaxItemsToOffer": 6,
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 100441,
+                  "Weight": 2
+                },
+                {
+                  "ShipAsset": 100439,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 100440,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 100853,
+                  "Weight": 3
+                }
+              ]
+            },
+            "ShipsForSaleAmount": 2
+          },
+          "LateGame": {
+            "TradeFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 100438,
+                  "Amount": 1
+                },
+                {
+                  "ShipAsset": 100441,
+                  "Amount": 1
+                },
+                {
+                  "ShipAsset": 1010062,
+                  "Amount": 1
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010196,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010218,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010205,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010206,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010246,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010248,
+                  "ProductionPerMinute": 6
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010196
+                    },
+                    {
+                      "Good": 1010218
+                    },
+                    {
+                      "Good": 1010205
+                    },
+                    {
+                      "Good": 1010206
+                    },
+                    {
+                      "Good": 1010246
+                    },
+                    {
+                      "Good": 1010248
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": {
+                "Product": 1010226,
+                "PriceMultiplier": 4,
+                "ReputationMultiplier": 2
+              }
+            },
+            "OfferingItems": 190166,
+            "MaxItemsToOffer": 8,
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 1010062,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 100443,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 100853,
+                  "Weight": 2
+                }
+              ]
+            },
+            "ShipsForSaleAmount": 3
+          },
+          "EndGame": {
+            "TradeFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 100438,
+                  "Amount": 1
+                },
+                {
+                  "ShipAsset": 100441,
+                  "Amount": 1
+                },
+                {
+                  "ShipAsset": 1010062,
+                  "Amount": 1
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010196,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010218,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010205,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010206,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010246,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010248,
+                  "ProductionPerMinute": 7
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010196
+                    },
+                    {
+                      "Good": 1010218
+                    },
+                    {
+                      "Good": 1010205
+                    },
+                    {
+                      "Good": 1010206
+                    },
+                    {
+                      "Good": 1010246
+                    },
+                    {
+                      "Good": 1010248
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": {
+                "Product": 1010226,
+                "PriceMultiplier": 4,
+                "ReputationMultiplier": 2
+              }
+            },
+            "OfferingItems": 192069,
+            "MaxItemsToOffer": 12,
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 1010062,
+                  "Weight": 2
+                },
+                {
+                  "ShipAsset": 100443,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 100442,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 100853,
+                  "Weight": 1
+                }
+              ]
+            },
+            "ShipsForSaleAmount": 3
+          }
+        },
+        "ProvidesShipReplacements": "Flagship;GreatEastern"
+      },
+      "ThirdParty": {
+        "AllowedRegions": "Moderate",
+        "IslandPlacement": "InFirstSessionUnique"
+      },
+      "ParticipantMessageObject": {
+        "ParticipantMessages": 144
+      },
+      "Interaction": "",
+      "Locked": ""
+    }
+  },
+  {
+    "Template": "Profile_3rdParty",
+    "Values": {
+      "Standard": {
+        "GUID": 29,
+        "Name": "Third_party_05 (Isabel Sarmento)",
+        "IconFilename": "data/ui/2kimages/main/profiles/3rd_party_05.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Isabel Sarmento",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 4280
+      },
+      "Profile": {
+        "ProfilePicture": "data/ui/2kimages/main/profiles/3rd_party_05.png",
+        "Portrait": 100671,
+        "CompanyIcon": 501259,
+        "InfoCornerInfoTip": 25000162,
+        "InfoCornerDescription": 4078,
+        "ParticipantID": "Third_party_05_Sarmento",
+        "NotificationBackground": "data/ui/2kimages/main/assets/character_bg/bgr_character_07.png",
+        "QuestStarterObject": 100709,
+        "QuestPoolList": {
+          "Item": [
+            {
+              "QuestPool": 150308
+            },
+            {
+              "QuestPool": 151110
+            }
+          ]
+        },
+        "DefaultColor": "Color11",
+        "BackgroundText": 18113,
+        "MoodImage": "data/ui/2kimages/main/assets/thirdparty_islandbar/bg_islandbar_isabel.png"
+      },
+      "Diplomacy": {
+        "DiplomacyActionBalancing": {
+          "CancelTraderights": {
+            "AgreementThreshold": -999,
+            "PartialAgreementThreshold": -999
+          },
+          "RequestAlliance": {
+            "AgreementThreshold": 80,
+            "PartialAgreementThreshold": 50
+          },
+          "RequestPeace": {
+            "AgreementThreshold": 45,
+            "PartialAgreementThreshold": 15
+          },
+          "RequestTraderights": {
+            "AgreementThreshold": 90,
+            "PartialAgreementThreshold": 60
+          },
+          "ThreatWar": {
+            "AgreementThreshold": -20,
+            "PartialAgreementThreshold": -20
+          },
+          "RequestCeaseFire": {
+            "ActionWeight": 120,
+            "AgreementThreshold": 80
+          }
+        },
+        "ReputationChangeCalculation": {
+          "PaymentGivingMoney": {
+            "MaxPossibleReputation": 100
+          },
+          "PaymentReceivingMoney": {
+            "ReputationAddedLimit": 40
+          },
+          "Treaties": {
+            "ReputationValues": {
+              "Alliance": {
+                "AddingTreaty": 20,
+                "RemovingTreaty": -30
+              },
+              "CeaseFire": {
+                "AddingTreaty": 7,
+                "RemovingTreaty": -10
+              },
+              "Peace": {
+                "AddingTreaty": 20
+              },
+              "TradeRights": {
+                "AddingTreaty": 10,
+                "RemovingTreaty": -25
+              }
+            }
+          }
+        },
+        "GiftBalancing": {
+          "giveGenerous": {
+            "BaseValue": 2000
+          },
+          "giveOrdinary": {
+            "BaseValue": 1000
+          },
+          "giveSmall": {
+            "BaseValue": 500
+          },
+          "receiveGenerous": {
+            "BaseValue": 10000
+          },
+          "receiveOrdinary": {
+            "BaseValue": 5500
+          },
+          "receiveSmall": {
+            "BaseValue": 3000
+          }
+        },
+        "RepeatableActionBalancing": {
+          "Actions": {
+            "Flatter": {
+              "Subdivisions": {
+                "Item": [
+                  {
+                    "VectorElement": {
+                      "InheritanceMapV2": {
+                        "Entry": {
+                          "TemplateName": "3rdParty_Female",
+                          "Index": 0
+                        }
+                      }
+                    },
+                    "SuccessChance": 60
+                  },
+                  {
+                    "ReputationLoss": -3
+                  },
+                  ""
+                ]
+              }
+            },
+            "Insult": {
+              "Subdivisions": {
+                "Item": [
+                  {
+                    "VectorElement": {
+                      "InheritedIndex": 0,
+                      "InheritanceMapV2": {
+                        "Entry": [
+                          {
+                            "TemplateName": "3rdParty_Female",
+                            "Index": 0
+                          },
+                          {
+                            "TemplateName": "3rdParty_Male",
+                            "Index": 0
+                          },
+                          {
+                            "TemplateName": "3rdParty",
+                            "Index": 0
+                          },
+                          {
+                            "TemplateName": "Profile_3rdParty",
+                            "Index": 0
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  ""
+                ]
+              }
+            }
+          }
+        },
+        "InitialRelation": {
+          "Exceptions": {
+            "Item": [
+              {
+                "Participant": "Campaign_character_02_pyrophorian_red_blinded",
+                "Treaties": "War"
+              },
+              {
+                "Participant": "Second_ai_09_Silva",
+                "Treaties": "Peace"
+              }
+            ]
+          }
+        }
+      },
+      "ParticipantMessages": {
+        "MessageTriggers": {
+          "ClickKontor": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "3rdParty_Female",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 91574379
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ParticipantDiscovered": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "3rdParty_Female",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 2050856370
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "QuestResolveConfirmation": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationText": 10549
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "QuestStarted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "3rdParty_Female",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationPriority": 699
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Object": {
+        "DefaultParticipant": "Third_party_05_Sarmento"
+      },
+      "Trader": {
+        "ShipTrader": 1,
+        "SellShipRequestNotification": 500685,
+        "BuyShipRequestNotification": 500686,
+        "Progression": {
+          "EarlyGame": {
+            "TradeFleet": {
+              "Item": {
+                "ShipAsset": 100438,
+                "Amount": 1
+              }
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010251,
+                  "ProductionPerMinute": 1
+                },
+                {
+                  "Good": 1010254,
+                  "ProductionPerMinute": 1
+                },
+                {
+                  "Good": 1010239,
+                  "ProductionPerMinute": 1
+                },
+                {
+                  "Good": 1010221,
+                  "ProductionPerMinute": 1
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010251
+                    },
+                    {
+                      "Good": 1010254
+                    },
+                    {
+                      "Good": 1010239
+                    },
+                    {
+                      "Good": 1010221
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": {
+                "Product": 120033,
+                "PriceMultiplier": 4,
+                "ReputationMultiplier": 2
+              }
+            },
+            "OfferingItems": 190362,
+            "MaxItemsToOffer": 6,
+            "ShipsForSale": {
+              "Item": {
+                "ShipAsset": 100438,
+                "Weight": 1
+              }
+            },
+            "ShipsForSaleAmount": 1
+          },
+          "EarlyMidGame": {
+            "TradeFleet": {
+              "Item": {
+                "ShipAsset": 100438,
+                "Amount": 1
+              }
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010251,
+                  "ProductionPerMinute": 1
+                },
+                {
+                  "Good": 1010254,
+                  "ProductionPerMinute": 1
+                },
+                {
+                  "Good": 1010239,
+                  "ProductionPerMinute": 1
+                },
+                {
+                  "Good": 1010221,
+                  "ProductionPerMinute": 1
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010251
+                    },
+                    {
+                      "Good": 1010254
+                    },
+                    {
+                      "Good": 1010239
+                    },
+                    {
+                      "Good": 1010221
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010221,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 120033,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "OfferingItems": 190362,
+            "MaxItemsToOffer": 4,
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 100438,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 100437,
+                  "Weight": 1
+                }
+              ]
+            },
+            "ShipsForSaleAmount": 1
+          },
+          "MidGame": {
+            "TradeFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 100438,
+                  "Amount": 1
+                },
+                {
+                  "ShipAsset": 100441,
+                  "Amount": 1
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010251,
+                  "ProductionPerMinute": 1
+                },
+                {
+                  "Good": 1010254,
+                  "ProductionPerMinute": 1
+                },
+                {
+                  "Good": 1010239,
+                  "ProductionPerMinute": 1
+                },
+                {
+                  "Good": 1010221,
+                  "ProductionPerMinute": 1
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010251
+                    },
+                    {
+                      "Good": 1010254
+                    },
+                    {
+                      "Good": 1010239
+                    },
+                    {
+                      "Good": 1010221
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010221,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 120033,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "OfferingItems": 190362,
+            "MaxItemsToOffer": 5,
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 100441,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 100439,
+                  "Weight": 1
+                }
+              ]
+            },
+            "ShipsForSaleAmount": 2
+          },
+          "LateMidGame": {
+            "TradeFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 100438,
+                  "Amount": 1
+                },
+                {
+                  "ShipAsset": 100441,
+                  "Amount": 1
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010251,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010254,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010239,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010221,
+                  "ProductionPerMinute": 5
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010251
+                    },
+                    {
+                      "Good": 1010254
+                    },
+                    {
+                      "Good": 1010239
+                    },
+                    {
+                      "Good": 1010221
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010221,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 120033,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "OfferingItems": 190363,
+            "MaxItemsToOffer": 6,
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 100441,
+                  "Weight": 2
+                },
+                {
+                  "ShipAsset": 100439,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 100440,
+                  "Weight": 1
+                }
+              ]
+            },
+            "ShipsForSaleAmount": 2
+          },
+          "LateGame": {
+            "TradeFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 100438,
+                  "Amount": 1
+                },
+                {
+                  "ShipAsset": 100441,
+                  "Amount": 1
+                },
+                {
+                  "ShipAsset": 1010062,
+                  "Amount": 1
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010251,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010254,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010239,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010240,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010252,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010256,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010221,
+                  "ProductionPerMinute": 6
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010251
+                    },
+                    {
+                      "Good": 1010254
+                    },
+                    {
+                      "Good": 1010239
+                    },
+                    {
+                      "Good": 1010240
+                    },
+                    {
+                      "Good": 1010252
+                    },
+                    {
+                      "Good": 1010256
+                    },
+                    {
+                      "Good": 1010221
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010221,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 120033,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "OfferingItems": 192072,
+            "MaxItemsToOffer": 8,
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 1010062,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 100443,
+                  "Weight": 1
+                }
+              ]
+            },
+            "ShipsForSaleAmount": 3
+          },
+          "EndGame": {
+            "TradeFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 100438,
+                  "Amount": 1
+                },
+                {
+                  "ShipAsset": 100441,
+                  "Amount": 1
+                },
+                {
+                  "ShipAsset": 1010062,
+                  "Amount": 1
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010251,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010254,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010239,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010240,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010252,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010256,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010221,
+                  "ProductionPerMinute": 7
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010251
+                    },
+                    {
+                      "Good": 1010254
+                    },
+                    {
+                      "Good": 1010239
+                    },
+                    {
+                      "Good": 1010240
+                    },
+                    {
+                      "Good": 1010252
+                    },
+                    {
+                      "Good": 1010256
+                    },
+                    {
+                      "Good": 1010221
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010221,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 120033,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "OfferingItems": 192073,
+            "MaxItemsToOffer": 12,
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 1010062,
+                  "Weight": 2
+                },
+                {
+                  "ShipAsset": 100443,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 100442,
+                  "Weight": 1
+                }
+              ]
+            },
+            "ShipsForSaleAmount": 3
+          }
+        },
+        "ProvidesShipReplacements": "Flagship"
+      },
+      "ThirdParty": {
+        "AllowedRegions": "Colony01",
+        "IslandPlacement": "Optional"
+      },
+      "ParticipantMessageObject": {
+        "ParticipantMessages": 145
+      },
+      "Interaction": "",
+      "Locked": ""
+    }
+  },
+  {
+    "Template": "Profile_3rdParty",
+    "Values": {
+      "Standard": {
+        "GUID": 46,
+        "Name": "Third_party_07 (Eli Bleakworth)",
+        "IconFilename": "data/ui/2kimages/main/profiles/3rd_party_07.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Eli Bleakworth",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 3772
+      },
+      "Profile": {
+        "ProfilePicture": "data/ui/2kimages/main/profiles/3rd_party_07.png",
+        "Portrait": 100631,
+        "CompanyIcon": 501295,
+        "InfoCornerInfoTip": 25000162,
+        "InfoCornerDescription": 3100,
+        "ParticipantID": "Third_party_07_Jailor_Bleakworth",
+        "NotificationBackground": "data/ui/2kimages/main/assets/character_bg/bgr_character_03.png",
+        "QuestStarterObject": 100552,
+        "QuestPoolList": {
+          "Item": [
+            {
+              "QuestPool": 151112
+            },
+            {
+              "QuestPool": 150100
+            }
+          ]
+        },
+        "DefaultColor": "Color11",
+        "BackgroundText": 18114,
+        "MoodImage": "data/ui/2kimages/main/assets/thirdparty_islandbar/bg_islandbar_prison.png"
+      },
+      "Diplomacy": {
+        "DiplomacyActionBalancing": {
+          "CancelTraderights": {
+            "AgreementThreshold": -999,
+            "PartialAgreementThreshold": -999
+          },
+          "RequestCeaseFire": {
+            "ActionWeight": 120,
+            "AgreementThreshold": 80
+          }
+        }
+      },
+      "ParticipantMessages": {
+        "MessageTriggers": {
+          "ClickKontor": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": -198684181
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "QuestResolveConfirmation": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationText": 10550
+                    },
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 851574077
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ParticipantDiscovered": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": -1952244106
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "QuestStarted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationPriority": 699
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Object": {
+        "DefaultParticipant": "Third_party_07_Jailor_Bleakworth"
+      },
+      "Trader": {
+        "SellShipCooldown": 300000,
+        "SellShipRequestNotification": 500312,
+        "BuyShipRequestNotification": 500311,
+        "Progression": {
+          "EarlyGame": {
+            "PreferedGoods": {
+              "Item": {
+                "Product": 1010195,
+                "PriceMultiplier": 4,
+                "ReputationMultiplier": 2
+              }
+            },
+            "OfferingItems": 190167,
+            "MaxItemsToOffer": 3
+          },
+          "EarlyMidGame": {
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010227,
+                  "ProductionPerMinute": 3
+                },
+                {
+                  "Good": 1010226,
+                  "ProductionPerMinute": 3
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010227
+                    },
+                    {
+                      "Good": 1010226
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010195,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010203,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "OfferingItems": 190168,
+            "MaxItemsToOffer": 4
+          },
+          "MidGame": {
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010227,
+                  "ProductionPerMinute": 4
+                },
+                {
+                  "Good": 1010226,
+                  "ProductionPerMinute": 4
+                },
+                {
+                  "Good": 1010229,
+                  "ProductionPerMinute": 4
+                },
+                {
+                  "Good": 1010230,
+                  "ProductionPerMinute": 4
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010227
+                    },
+                    {
+                      "Good": 1010226
+                    },
+                    {
+                      "Good": 1010229
+                    },
+                    {
+                      "Good": 1010230
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010195,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010203,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "OfferingItems": 190304,
+            "MaxItemsToOffer": 5
+          },
+          "LateMidGame": {
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010227,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010226,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010229,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010230,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010231,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010233,
+                  "ProductionPerMinute": 5
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010227
+                    },
+                    {
+                      "Good": 1010226
+                    },
+                    {
+                      "Good": 1010229
+                    },
+                    {
+                      "Good": 1010230
+                    },
+                    {
+                      "Good": 1010231
+                    },
+                    {
+                      "Good": 1010233
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010195,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010203,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "OfferingItems": 190305,
+            "MaxItemsToOffer": 6
+          },
+          "LateGame": {
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010227,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010226,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010229,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010230,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010231,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010233,
+                  "ProductionPerMinute": 6
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010227
+                    },
+                    {
+                      "Good": 1010226
+                    },
+                    {
+                      "Good": 1010229
+                    },
+                    {
+                      "Good": 1010230
+                    },
+                    {
+                      "Good": 1010231
+                    },
+                    {
+                      "Good": 1010233
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010195,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010203,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "OfferingItems": 190306,
+            "MaxItemsToOffer": 8
+          },
+          "EndGame": {
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010227,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010226,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010229,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010230,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010231,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010233,
+                  "ProductionPerMinute": 7
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010227
+                    },
+                    {
+                      "Good": 1010226
+                    },
+                    {
+                      "Good": 1010229
+                    },
+                    {
+                      "Good": 1010230
+                    },
+                    {
+                      "Good": 1010231
+                    },
+                    {
+                      "Good": 1010233
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010195,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010203,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "OfferingItems": 190774,
+            "MaxItemsToOffer": 12
+          }
+        }
+      },
+      "ThirdParty": {
+        "AllowedRegions": "Moderate",
+        "IslandPlacement": "Optional"
+      },
+      "ParticipantMessageObject": {
+        "ParticipantMessages": 146
+      },
+      "Interaction": "",
+      "Locked": ""
+    }
+  },
+  {
+    "Template": "Profile_3rdParty",
+    "Values": {
+      "Standard": {
+        "GUID": 78,
+        "Name": "Third_party_08 (Madame Kahina)",
+        "IconFilename": "data/ui/2kimages/main/profiles/3rd_party_08.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Madame Kahina",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 7070
+      },
+      "Profile": {
+        "ProfilePicture": "data/ui/2kimages/main/profiles/3rd_party_08.png",
+        "Portrait": 100673,
+        "CompanyIcon": 501296,
+        "InfoCornerInfoTip": 25000162,
+        "InfoCornerDescription": 4080,
+        "ParticipantID": "Third_party_08_Kahina",
+        "NotificationBackground": "data/ui/2kimages/main/assets/character_bg/bgr_character_06.png",
+        "QuestStarterObject": 100711,
+        "QuestPoolList": {
+          "Item": [
+            {
+              "QuestPool": 150309
+            },
+            {
+              "QuestPool": 151113
+            }
+          ]
+        },
+        "DefaultColor": "Color11",
+        "BackgroundText": 18115,
+        "MoodImage": "data/ui/2kimages/main/assets/thirdparty_islandbar/bg_islandbar_kahina.png"
+      },
+      "Diplomacy": {
+        "DiplomacyActionBalancing": {
+          "CancelTraderights": {
+            "AgreementThreshold": -999,
+            "PartialAgreementThreshold": -999
+          },
+          "RequestCeaseFire": {
+            "ActionWeight": 120,
+            "AgreementThreshold": 80
+          }
+        }
+      },
+      "ParticipantMessages": {
+        "MessageTriggers": {
+          "ClickKontor": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "3rdParty_Female",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": -268877076
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ParticipantDiscovered": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "3rdParty_Female",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 570073247
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "QuestResolveConfirmation": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationText": 10549
+                    },
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 2073443041
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "QuestStarted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "3rdParty_Female",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationPriority": 699
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Object": {
+        "DefaultParticipant": "Third_party_08_Kahina"
+      },
+      "Trader": {
+        "ShipTrader": 1,
+        "SellShipCooldown": 300000,
+        "SellShipRequestNotification": 500997,
+        "BuyShipRequestNotification": 500998,
+        "Progression": {
+          "EarlyGame": {
+            "TradeFleet": {
+              "Item": {
+                "ShipAsset": 100438,
+                "Amount": 1
+              }
+            },
+            "OfferingItems": 190554,
+            "MaxItemsToOffer": 3
+          },
+          "EarlyMidGame": {
+            "TradeFleet": {
+              "Item": {
+                "ShipAsset": 100438,
+                "Amount": 2
+              }
+            },
+            "OfferingItems": 190555,
+            "MaxItemsToOffer": 4
+          },
+          "MidGame": {
+            "TradeFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 100438,
+                  "Amount": 2
+                },
+                {
+                  "ShipAsset": 100441,
+                  "Amount": 1
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010257,
+                  "ProductionPerMinute": 4
+                },
+                {
+                  "Good": 1010258,
+                  "ProductionPerMinute": 4
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010257
+                    },
+                    {
+                      "Good": 1010258
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": {
+                "Product": 1010247,
+                "PriceMultiplier": 4,
+                "ReputationMultiplier": 2
+              }
+            },
+            "OfferingItems": 190556,
+            "MaxItemsToOffer": 5
+          },
+          "LateMidGame": {
+            "TradeFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 100438,
+                  "Amount": 3
+                },
+                {
+                  "ShipAsset": 100441,
+                  "Amount": 1
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010257,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010258,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 120032,
+                  "ProductionPerMinute": 5
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010257
+                    },
+                    {
+                      "Good": 1010258
+                    },
+                    {
+                      "Good": 120032
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": {
+                "Product": 1010247,
+                "PriceMultiplier": 4,
+                "ReputationMultiplier": 2
+              }
+            },
+            "OfferingItems": 190367,
+            "MaxItemsToOffer": 6
+          },
+          "LateGame": {
+            "TradeFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 100438,
+                  "Amount": 3
+                },
+                {
+                  "ShipAsset": 100441,
+                  "Amount": 1
+                },
+                {
+                  "ShipAsset": 1010062,
+                  "Amount": 1
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010257,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010258,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 120032,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010259,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010256,
+                  "ProductionPerMinute": 6
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010257
+                    },
+                    {
+                      "Good": 1010258
+                    },
+                    {
+                      "Good": 120032
+                    },
+                    {
+                      "Good": 1010259
+                    },
+                    {
+                      "Good": 1010256
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": {
+                "Product": 1010247,
+                "PriceMultiplier": 4,
+                "ReputationMultiplier": 2
+              }
+            },
+            "OfferingItems": 190387,
+            "MaxItemsToOffer": 8
+          },
+          "EndGame": {
+            "TradeFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 100438,
+                  "Amount": 3
+                },
+                {
+                  "ShipAsset": 100441,
+                  "Amount": 2
+                },
+                {
+                  "ShipAsset": 1010062,
+                  "Amount": 1
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010257,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010258,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 120032,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010259,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010256,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010566,
+                  "ProductionPerMinute": 7
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010257
+                    },
+                    {
+                      "Good": 1010258
+                    },
+                    {
+                      "Good": 120032
+                    },
+                    {
+                      "Good": 1010259
+                    },
+                    {
+                      "Good": 1010256
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": {
+                "Product": 1010247,
+                "PriceMultiplier": 4,
+                "ReputationMultiplier": 2
+              }
+            },
+            "OfferingItems": 192068,
+            "MaxItemsToOffer": 12
+          }
+        }
+      },
+      "ThirdParty": {
+        "AllowedRegions": "Moderate",
+        "IslandPlacement": "Optional"
+      },
+      "ParticipantMessageObject": {
+        "ParticipantMessages": 147
+      },
+      "Interaction": "",
+      "Locked": ""
+    }
+  },
+  {
+    "Template": "Profile_3rdParty",
+    "Values": {
+      "Standard": {
+        "GUID": 237,
+        "Name": "Third_party_11 (Inuit)",
+        "IconFilename": "data/ui/2kimages/main/profiles/inuit_trader.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Qumaq",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 34495
+      },
+      "Profile": {
+        "ProfilePicture": "data/ui/2kimages/main/profiles/inuit_trader.png",
+        "Portrait": 101019,
+        "CompanyIcon": 114206,
+        "ParticipantID": "Arctic_Inuit",
+        "NotificationBackground": "data/ui/2kimages/main/assets/character_bg/bgr_character_02.png",
+        "QuestStarterObject": 115311,
+        "DefaultColor": "Color11",
+        "MoodImage": "data/ui/2kimages/main/assets/thirdparty_islandbar/bg_islandbar_inuit.png"
+      },
+      "Diplomacy": "",
+      "ParticipantMessages": "",
+      "Object": {
+        "DefaultParticipant": "Arctic_Inuit"
+      },
+      "Trader": {
+        "Progression": {
+          "EarlyGame": {
+            "OfferingItems": 193830,
+            "MaxItemsToOffer": 3
+          },
+          "EarlyMidGame": {
+            "OfferingItems": 193831,
+            "MaxItemsToOffer": 4
+          },
+          "MidGame": {
+            "OfferingItems": 193832,
+            "MaxItemsToOffer": 5
+          },
+          "LateMidGame": {
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 112695,
+                  "ProductionPerMinute": 1
+                },
+                {
+                  "Good": 112705,
+                  "ProductionPerMinute": 3
+                },
+                {
+                  "Good": 112696,
+                  "ProductionPerMinute": 3
+                },
+                {
+                  "Good": 112699,
+                  "ProductionPerMinute": 3
+                },
+                {
+                  "Good": 112694,
+                  "ProductionPerMinute": 2
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 112695
+                    },
+                    {
+                      "Good": 112705
+                    },
+                    {
+                      "Good": 112696
+                    },
+                    {
+                      "Good": 112699
+                    },
+                    {
+                      "Good": 112694
+                    }
+                  ]
+                }
+              }
+            },
+            "OfferingItems": 193833,
+            "MaxItemsToOffer": 6
+          },
+          "LateGame": {
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 112698,
+                  "ProductionPerMinute": 3
+                },
+                {
+                  "Good": 112695,
+                  "ProductionPerMinute": 2
+                },
+                {
+                  "Good": 112705,
+                  "ProductionPerMinute": 4
+                },
+                {
+                  "Good": 112696,
+                  "ProductionPerMinute": 4
+                },
+                {
+                  "Good": 112699,
+                  "ProductionPerMinute": 4
+                },
+                {
+                  "Good": 112694,
+                  "ProductionPerMinute": 3
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 112698
+                    },
+                    {
+                      "Good": 112695
+                    },
+                    {
+                      "Good": 112705
+                    },
+                    {
+                      "Good": 112696
+                    },
+                    {
+                      "Good": 112699
+                    },
+                    {
+                      "Good": 112694
+                    }
+                  ]
+                }
+              }
+            },
+            "OfferingItems": 193834,
+            "MaxItemsToOffer": 8
+          },
+          "EndGame": {
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 112698,
+                  "ProductionPerMinute": 4
+                },
+                {
+                  "Good": 112695,
+                  "ProductionPerMinute": 3
+                },
+                {
+                  "Good": 112705,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 112696,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 112699,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 112694,
+                  "ProductionPerMinute": 4
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 112698
+                    },
+                    {
+                      "Good": 112695
+                    },
+                    {
+                      "Good": 112705
+                    },
+                    {
+                      "Good": 112696
+                    },
+                    {
+                      "Good": 112699
+                    },
+                    {
+                      "Good": 112694
+                    }
+                  ]
+                }
+              }
+            },
+            "OfferingItems": 193835,
+            "MaxItemsToOffer": 12
+          }
+        },
+        "ProvidesShipReplacements": "None"
+      },
+      "ThirdParty": {
+        "AllowedRegions": "Arctic"
+      },
+      "ParticipantMessageObject": {
+        "ParticipantMessages": 239
+      },
+      "Interaction": "",
+      "Locked": {
+        "DLCDependency": 410042
+      }
+    }
+  },
+  {
+    "Template": "Profile_3rdParty",
+    "Values": {
+      "Standard": {
+        "GUID": 119051,
+        "Name": "Third_party_13 (Emperor Ketema)",
+        "IconFilename": "data/ui/2kimages/main/profiles/3rd_party_13.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Emperor Ketema",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 44144
+      },
+      "Profile": {
+        "ProfilePicture": "data/ui/2kimages/main/profiles/3rd_party_13.png",
+        "Portrait": 120250,
+        "CompanyIcon": 130925,
+        "ParticipantID": "Africa_Ketema",
+        "NotificationBackground": "data/ui/2kimages/main/assets/character_bg/bgr_character_07.png",
+        "QuestStarterObject": 119410,
+        "DefaultColor": "Color11",
+        "MoodImage": "data/ui/2kimages/main/assets/thirdparty_islandbar/bg_islandbar_porley.png"
+      },
+      "Diplomacy": "",
+      "ParticipantMessages": "",
+      "Object": {
+        "DefaultParticipant": "Africa_Ketema"
+      },
+      "Trader": {
+        "ShipTrader": 1,
+        "SellShipCooldown": 300000,
+        "SellShipRequestNotification": 502151,
+        "BuyShipRequestNotification": 502152,
+        "Progression": {
+          "EarlyGame": {
+            "TradeFleet": {
+              "Item": {
+                "ShipAsset": 100438,
+                "Amount": 1
+              }
+            },
+            "GoodsProduction": {
+              "Item": {
+                "Good": 114356,
+                "ProductionPerMinute": 1
+              }
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": {
+                    "Good": 114356
+                  }
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": {
+                "Product": 1010246,
+                "PriceMultiplier": 4,
+                "ReputationMultiplier": 2
+              }
+            },
+            "OfferingItems": 127466,
+            "MaxItemsToOffer": 3,
+            "ShipsForSale": {
+              "Item": {
+                "ShipAsset": 100438,
+                "Weight": 1
+              }
+            },
+            "ShipsForSaleAmount": 1
+          },
+          "EarlyMidGame": {
+            "TradeFleet": {
+              "Item": {
+                "ShipAsset": 100438,
+                "Amount": 1
+              }
+            },
+            "GoodsProduction": {
+              "Item": {
+                "Good": 114356,
+                "ProductionPerMinute": 1
+              }
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": {
+                    "Good": 114356
+                  }
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": {
+                "Product": 1010246,
+                "PriceMultiplier": 4,
+                "ReputationMultiplier": 2
+              }
+            },
+            "OfferingItems": 127476,
+            "MaxItemsToOffer": 4,
+            "ShipsForSale": {
+              "Item": {
+                "ShipAsset": 100438,
+                "Weight": 1
+              }
+            },
+            "ShipsForSaleAmount": 1
+          },
+          "MidGame": {
+            "TradeFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 100438,
+                  "Amount": 1
+                },
+                {
+                  "ShipAsset": 100441,
+                  "Amount": 1
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 114356,
+                  "ProductionPerMinute": 1
+                },
+                {
+                  "Good": 114364,
+                  "ProductionPerMinute": 1
+                },
+                {
+                  "Good": 114391,
+                  "ProductionPerMinute": 1
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 114356
+                    },
+                    {
+                      "Good": 114364
+                    },
+                    {
+                      "Good": 114391
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010246,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010245,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "OfferingItems": 127477,
+            "MaxItemsToOffer": 5,
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 100438,
+                  "Weight": 3
+                },
+                {
+                  "ShipAsset": 100439,
+                  "Weight": 1
+                }
+              ]
+            },
+            "ShipsForSaleAmount": 1
+          },
+          "LateMidGame": {
+            "TradeFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 100438,
+                  "Amount": 1
+                },
+                {
+                  "ShipAsset": 100441,
+                  "Amount": 1
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 114356,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 114364,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 114391,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 114402,
+                  "ProductionPerMinute": 5
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 114356
+                    },
+                    {
+                      "Good": 114364
+                    },
+                    {
+                      "Good": 114391
+                    },
+                    {
+                      "Good": 114402
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010246,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010245,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010248,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "OfferingItems": 127478,
+            "MaxItemsToOffer": 6,
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 100441,
+                  "Weight": 3
+                },
+                {
+                  "ShipAsset": 100439,
+                  "Weight": 1
+                }
+              ]
+            },
+            "ShipsForSaleAmount": 1
+          },
+          "LateGame": {
+            "TradeFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 100438,
+                  "Amount": 1
+                },
+                {
+                  "ShipAsset": 100441,
+                  "Amount": 1
+                },
+                {
+                  "ShipAsset": 1010062,
+                  "Amount": 1
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 114356,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 114364,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 114391,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 114402,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 114357,
+                  "ProductionPerMinute": 6
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 114356
+                    },
+                    {
+                      "Good": 114364
+                    },
+                    {
+                      "Good": 114391
+                    },
+                    {
+                      "Good": 114402
+                    },
+                    {
+                      "Good": 114357
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010246,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010245,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010248,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010225,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "OfferingItems": 127479,
+            "MaxItemsToOffer": 8,
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 100441,
+                  "Weight": 3
+                },
+                {
+                  "ShipAsset": 100439,
+                  "Weight": 1
+                }
+              ]
+            },
+            "ShipsForSaleAmount": 2
+          },
+          "EndGame": {
+            "TradeFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 100438,
+                  "Amount": 1
+                },
+                {
+                  "ShipAsset": 100441,
+                  "Amount": 1
+                },
+                {
+                  "ShipAsset": 1010062,
+                  "Amount": 1
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 114356,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 114364,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 114391,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 114402,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 114357,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 114408,
+                  "ProductionPerMinute": 7
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 114356
+                    },
+                    {
+                      "Good": 114364
+                    },
+                    {
+                      "Good": 114391
+                    },
+                    {
+                      "Good": 114402
+                    },
+                    {
+                      "Good": 114357
+                    },
+                    {
+                      "Good": 114408
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010246,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010245,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010248,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010225,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "OfferingItems": 127480,
+            "MaxItemsToOffer": 12,
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 100439,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 100441,
+                  "Weight": 3
+                }
+              ]
+            },
+            "ShipsForSaleAmount": 2
+          }
+        },
+        "ProvidesShipReplacements": "None",
+        "UseSessionSpecificProgressLevel": 1
+      },
+      "ThirdParty": {
+        "AllowedRegions": "Africa",
+        "IslandPlacement": "Optional"
+      },
+      "ParticipantMessageObject": {
+        "ParticipantMessages": 119058
+      },
+      "Interaction": "",
+      "Locked": {
+        "DLCDependency": 410071
+      }
+    }
+  },
+  {
+    "Template": "Profile_3rdParty",
+    "Values": {
+      "Standard": {
+        "GUID": 120282,
+        "Name": "Third_party_SI01 (Monastery Islander)",
+        "IconFilename": "data/ui/2kimages/main/profiles/storry_island_portrait_01.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Head Priestess of Kidusi",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 44145
+      },
+      "Profile": {
+        "ProfilePicture": "data/ui/2kimages/main/profiles/storry_island_portrait_01.png",
+        "Portrait": 122415,
+        "CompanyIcon": 131233,
+        "ParticipantID": "Africa_Kidusi",
+        "NotificationBackground": "data/ui/2kimages/main/assets/character_bg/bgr_character_07.png",
+        "DefaultColor": "Color11",
+        "MoodImage": "data/ui/2kimages/main/assets/thirdparty_islandbar/bg_islandbar_gourden.png",
+        "HideOnStrategicMap": 1
+      },
+      "Diplomacy": "",
+      "ParticipantMessages": "",
+      "Object": {
+        "AssignDefaultParticipant": 1,
+        "DefaultParticipant": "Africa_Kidusi"
+      },
+      "Trader": {
+        "GoodsTrader": 0
+      },
+      "ThirdParty": "",
+      "ParticipantMessageObject": {
+        "ParticipantMessages": 291
+      },
+      "Interaction": "",
+      "Locked": {
+        "DLCDependency": 410071
+      }
+    }
+  },
+  {
+    "Template": "Profile_3rdParty",
+    "Values": {
+      "Standard": {
+        "GUID": 120283,
+        "Name": "Third_party_SI02 (Military Islander)",
+        "IconFilename": "data/ui/2kimages/main/profiles/storry_island_portrait_02.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Prince Caleb",
+            "Status": "Edit",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 44146
+      },
+      "Profile": {
+        "ProfilePicture": "data/ui/2kimages/main/profiles/storry_island_portrait_02.png",
+        "Portrait": 122414,
+        "CompanyIcon": 131234,
+        "ParticipantID": "Africa_Angereb",
+        "NotificationBackground": "data/ui/2kimages/main/assets/character_bg/bgr_character_07.png",
+        "DefaultColor": "Color11",
+        "MoodImage": "data/ui/2kimages/main/assets/thirdparty_islandbar/bg_islandbar_esskoping.png",
+        "AvoidIslandsOnEnterSession": 1,
+        "HideOnStrategicMap": 1
+      },
+      "Diplomacy": {
+        "InitialRelation": {
+          "DefaultTreaties": "War",
+          "Exceptions": {
+            "Item": [
+              {
+                "Participant": "Neutral",
+                "Treaties": "Peace;TradeRights"
+              },
+              {
+                "Participant": "General_Enemy",
+                "Treaties": "War"
+              },
+              {
+                "Participant": "Africa_Ketema",
+                "Treaties": "Peace"
+              }
+            ]
+          }
+        }
+      },
+      "ParticipantMessages": "",
+      "Object": {
+        "AssignDefaultParticipant": 1,
+        "DefaultParticipant": "Africa_Angereb"
+      },
+      "Trader": {
+        "GoodsTrader": 0,
+        "ShipTrader": 1,
+        "SellShipCooldown": 0,
+        "SellShipRequestNotification": 502153
+      },
+      "ThirdParty": "",
+      "ParticipantMessageObject": {
+        "ParticipantMessages": 292
+      },
+      "Interaction": "",
+      "Locked": {
+        "DLCDependency": 410071
+      }
+    }
+  },
+  {
+    "Template": "Profile_3rdParty",
+    "Values": {
+      "Standard": {
+        "GUID": 120284,
+        "Name": "Third_party_SI03 (Economy Islander)",
+        "IconFilename": "data/ui/2kimages/main/profiles/storry_island_portrait_03.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Chieftain of Waha Desher",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 44147
+      },
+      "Profile": {
+        "ProfilePicture": "data/ui/2kimages/main/profiles/storry_island_portrait_03.png",
+        "Portrait": 122416,
+        "CompanyIcon": 131235,
+        "ParticipantID": "Africa_Waha",
+        "NotificationBackground": "data/ui/2kimages/main/assets/character_bg/bgr_character_07.png",
+        "DefaultColor": "Color11",
+        "MoodImage": "data/ui/2kimages/main/assets/thirdparty_islandbar/bg_islandbar_remiedai.png",
+        "HideOnStrategicMap": 1,
+        "HideLodesAndFertilities": 1
+      },
+      "Diplomacy": "",
+      "ParticipantMessages": "",
+      "Object": {
+        "AssignDefaultParticipant": 1,
+        "DefaultParticipant": "Africa_Waha"
+      },
+      "Trader": {
+        "GoodsTrader": 0,
+        "ShipTrader": 1,
+        "SellShipCooldown": 0,
+        "SellShipRequestNotification": 502182
+      },
+      "ThirdParty": "",
+      "ParticipantMessageObject": {
+        "ParticipantMessages": 293
+      },
+      "Interaction": "",
+      "Locked": {
+        "DLCDependency": 410071
+      }
+    }
+  }
+]

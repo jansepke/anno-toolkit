@@ -1,0 +1,487 @@
+[
+  {
+    "Template": "QuestVehicle",
+    "Values": {
+      "Standard": {
+        "GUID": 100825,
+        "Name": "CQO_FlagShip (Intro Movie)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_ship.png",
+        "InfoDescription": 1085
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/command_ship/command_ship.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "LeaningMaxAngle": 27,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Flagship",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 13085
+      },
+      "CommandQueue": {
+        "FollowRadius": 4,
+        "FormationPriority": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 3.5,
+        "Width": 0.8
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 600,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "Attacker": {
+        "AttackRange": 36,
+        "AttackRangeApproachPercentage": 0.2,
+        "LineOfSightRange": 70,
+        "ReloadTime": 50,
+        "ProjectileCount": 18,
+        "BaseDamage": 80,
+        "AccuracyBase": 4,
+        "TurretExplosionEffectAsset": 101994
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 9818371
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 2,
+        "SlotCount": 3
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 25
+            },
+            {
+              "Ingredient": 1010221,
+              "Amount": 25
+            }
+          ]
+        }
+      },
+      "Craftable": {
+        "CraftingTime": 150000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might",
+              "Amount": 3
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 2
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 0
+      },
+      "Sellable": "",
+      "Stance": "",
+      "Rentable": ""
+    }
+  },
+  {
+    "Template": "QuestVehicle",
+    "Values": {
+      "Standard": {
+        "GUID": 101432,
+        "Name": "CQO_FlagShip (Campaign - Initially Invisible) - Player Ship",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_commandship.png",
+        "InfoDescription": 11466
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/command_ship/command_ship.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope",
+        "InitialVisibility": 0,
+        "SetCompanyLogo": 1
+      },
+      "Selection": {
+        "MultiSelectable": 1,
+        "Colors": {
+          "SelectionColorType": "ParticipantColor",
+          "SelectionColor": 0,
+          "SelectionBorderColor": 2030043136,
+          "PickingColorType": "ParticipantColor",
+          "PickingColor": 0,
+          "PickingBorderColor": 503316480
+        }
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1.5,
+        "Deceleration": 2,
+        "TurnRadius": 6,
+        "TurnSpeed": 60,
+        "TurnSpeedInPlace": 20,
+        "TurnDeceleration": 0,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 27,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Flagship",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 20115
+      },
+      "CommandQueue": {
+        "IsFlagship": 1,
+        "FollowRadius": 4,
+        "FormationPriority": 1,
+        "ShipUniqueType": "Flagship"
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 3.5,
+        "Width": 0.8
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2000,
+        "HPBarOffset": 7.5,
+        "AccuracyWidth": 3,
+        "SelfHealPerHealTick": 5,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "Attacker": {
+        "AttackRange": 55,
+        "AttackRangeApproachPercentage": 0.85,
+        "LineOfSightRange": 100,
+        "ReloadTime": 40,
+        "ProjectileAsset": 101974,
+        "ProjectileCount": 6,
+        "BaseDamage": 175,
+        "AccuracyBase": 2,
+        "AccuracyIncreaseOverDistance": 60,
+        "AccuracySpeedDecay": 20,
+        "TargetAngleVariation": 50,
+        "FullVolleyTimeMin": 0.2,
+        "TurretExplosionEffectAsset": 101994,
+        "FullVolleyTimeMax": 0.8,
+        "VolleyMaxPerBulletRandomOffset": 0.2
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 9818371
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 2,
+        "SocketAllocation": "Ship;SailShip;Warship",
+        "SlotCount": 3
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 25
+            },
+            {
+              "Ingredient": 1010221,
+              "Amount": 25
+            }
+          ]
+        }
+      },
+      "Craftable": {
+        "CraftingTime": 150000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might",
+              "Amount": 3
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 2
+            },
+            {
+              "Attribute": "PerkSailingShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSteamShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 0
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "QuestVehicle",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 5000
+          }
+        },
+        "SellPriceFactor": 0.5
+      },
+      "Stance": "",
+      "Rentable": ""
+    }
+  },
+  {
+    "Template": "QuestVehicle",
+    "Values": {
+      "Standard": {
+        "GUID": 100591,
+        "Name": "CQO_FlagShip (Campaign) - NPC Ship",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_ship.png",
+        "InfoDescription": 11466
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/command_ship/command_ship.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope",
+        "SetCompanyLogo": 1
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1.5,
+        "Deceleration": 2,
+        "TurnRadius": 6,
+        "TurnSpeed": 60,
+        "TurnSpeedInPlace": 20,
+        "TurnDeceleration": 0,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 27,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Flagship",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 20116
+      },
+      "CommandQueue": {
+        "IsFlagship": 1,
+        "FollowRadius": 4,
+        "FormationPriority": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 3.5,
+        "Width": 0.8
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2000,
+        "HPBarOffset": 7.5,
+        "AlertRange": 150,
+        "AccuracyWidth": 3,
+        "SelfHealPerHealTick": 5,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "Attacker": {
+        "AttackRange": 55,
+        "AttackRangeApproachPercentage": 0.85,
+        "LineOfSightRange": 100,
+        "ReloadTime": 40,
+        "ProjectileAsset": 101974,
+        "ProjectileCount": 6,
+        "BaseDamage": 175,
+        "AccuracyBase": 2,
+        "AccuracyIncreaseOverDistance": 60,
+        "AccuracySpeedDecay": 20,
+        "TargetAngleVariation": 50,
+        "FullVolleyTimeMin": 0.2,
+        "TurretExplosionEffectAsset": 101994,
+        "FullVolleyTimeMax": 0.8,
+        "VolleyMaxPerBulletRandomOffset": 0.2
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 9818371
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 2,
+        "SlotCount": 3
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 25
+            },
+            {
+              "Ingredient": 1010221,
+              "Amount": 25
+            }
+          ]
+        }
+      },
+      "Craftable": {
+        "CraftingTime": 150000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might",
+              "Amount": 3
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 2
+            },
+            {
+              "Attribute": "PerkSailingShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSteamShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 0
+      },
+      "Sellable": "",
+      "Stance": "",
+      "Rentable": ""
+    }
+  }
+]

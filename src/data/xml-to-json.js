@@ -2,13 +2,9 @@ const parser = require("fast-xml-parser");
 const fs = require("fs").promises;
 const { languages } = require("../anno-config.json");
 
-const cacheFolder = "./cached-data";
-
 main();
 
 async function main() {
-  await ensureCacheFolder();
-
   await Promise.all([
     loadAssets(),
     ...languages.map((l) => loadTranslations(l.fileName)),
@@ -22,7 +18,7 @@ async function loadTranslations(language) {
 
   const json = await parseXMLDataFile(fileName);
 
-  await saveToCache(fileName, json);
+  await saveToCache("texts", fileName, json);
 }
 
 const assetsByType = {};
@@ -35,7 +31,7 @@ async function loadAssets() {
 
   // write cached data
   for (const [assetType, assets] of Object.entries(assetsByType)) {
-    await saveToCache(assetType, assets);
+    await saveToCache("assets", assetType, assets);
   }
 }
 
@@ -70,10 +66,6 @@ function processAssets(assets) {
   }
 }
 
-function cachedFile(assetType) {
-  return `${cacheFolder}/${assetType.replace("/", "-")}.json`;
-}
-
 async function parseXMLDataFile(file) {
   const xml = await fs.readFile(`./data/${file}.xml`, "utf8");
 
@@ -84,10 +76,8 @@ async function parseXMLDataFile(file) {
   }
 }
 
-async function saveToCache(file, data) {
-  await fs.writeFile(cachedFile(file), JSON.stringify(data, null, 2));
-}
+async function saveToCache(folder, file, data) {
+  const fileName = `./data/anno/${folder}/${file.replace("/", "-")}.json`;
 
-async function ensureCacheFolder() {
-  await fs.mkdir(cacheFolder, { recursive: true });
+  await fs.writeFile(fileName, JSON.stringify(data, null, 2));
 }

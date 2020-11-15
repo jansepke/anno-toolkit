@@ -1,0 +1,130 @@
+[
+  {
+    "Template": "ExplosionIncident",
+    "Values": {
+      "Standard": {
+        "GUID": 141655,
+        "Name": "ExplosionIncident",
+        "ID": "IndicentExplosion"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Explosion",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 25923
+      },
+      "Incident": {
+        "IncidentType": "Explosion",
+        "IncidentAttractiveness": {
+          "BasePerBuilding": 0,
+          "EscalatedPerBuilding": -50
+        },
+        "ShipIncidentSpreadRadius": 0,
+        "ShipIncidentSpreadChance": 0,
+        "ShipIncidentSpreadCooldown": 36000000,
+        "InfectionChanceSourceNameMapping": {
+          "Base": {
+            "Name": 14431,
+            "Icon": 14431,
+            "NotificationText": 14551
+          },
+          "Damage": {
+            "Name": 14432,
+            "Icon": 14432,
+            "NotificationText": 14553
+          },
+          "Density": {
+            "Name": 14433,
+            "Icon": 14433,
+            "NotificationText": 14555
+          },
+          "HappinessResidence": {
+            "Name": 14434,
+            "Icon": 14434,
+            "NotificationText": 14556
+          },
+          "Satisfaction": {
+            "Name": 14435,
+            "Icon": 14435,
+            "NotificationText": 14557
+          },
+          "WorkingConditionFactory": {
+            "Name": 14436,
+            "Icon": 14436,
+            "NotificationText": 14558
+          },
+          "Productivity": {
+            "Name": 14437,
+            "Icon": 14437,
+            "NotificationText": 14559
+          },
+          "Proximity": {
+            "Name": 14438,
+            "Icon": 14438,
+            "NotificationText": 14560
+          },
+          "HappinessFactory": {
+            "Name": 14439,
+            "Icon": 14439,
+            "NotificationText": 14561
+          },
+          "Newspaper": {
+            "Name": 14496,
+            "Icon": 14496,
+            "NotificationText": 14562
+          },
+          "Upgrades": {
+            "Name": 14495,
+            "Icon": 14495,
+            "NotificationText": 14563
+          },
+          "InfluencerPositive": {
+            "Name": 14497,
+            "Icon": 14497,
+            "NotificationText": 14564
+          },
+          "InfluencerNegative": {
+            "Name": 14807,
+            "Icon": 14807,
+            "NotificationText": 14551
+          },
+          "WorkingConditionResidence": {
+            "Name": 14436,
+            "Icon": 14436,
+            "NotificationText": 14558
+          }
+        },
+        "FeedbackDangerReaction": "IGNORE",
+        "InfectableCountDependentConfig": {
+          "Item": ""
+        }
+      },
+      "IncidentExplosion": {
+        "DamageAndFireSpreadDelay": 2800
+      },
+      "IncidentEffectConfiguration": {
+        "DummyEffectInformation": {
+          "DummyEffects": {
+            "Horizontal": {
+              "ConfigFiles": {
+                "Item": {
+                  "Path": "data/graphics/effects/city_incidents/explosion/ci_explosion_01.cfg"
+                }
+              }
+            }
+          },
+          "FallbackConfig": {
+            "SpawnBlockSize": 4,
+            "RandomBoundsPercentage": 50,
+            "Scale": 1
+          },
+          "DummyFallbackUsage": "DUMMY_AND_FALLBACK"
+        }
+      }
+    }
+  }
+]

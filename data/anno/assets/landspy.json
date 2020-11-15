@@ -1,0 +1,693 @@
+[
+  {
+    "Template": "LandSpy",
+    "Values": {
+      "Standard": {
+        "GUID": 118780,
+        "Name": "Council member",
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/africa/icon_politician.png",
+        "InfoDescription": 11466
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc06/graphics/quest/quest_unit_groups/council_member_with_prostitutes/councilmember.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnTerrainSlope"
+      },
+      "Selection": {
+        "GUIType": "Quest"
+      },
+      "Walking": {
+        "DiscoverRadius": 0,
+        "ReservationLength": 0,
+        "ReservationWidth": 0,
+        "ForcePrimitiveMovement": 1,
+        "TurnAroundRadius": 0,
+        "Acceleration": 6,
+        "TurnRadius": 0.5,
+        "TurnSpeed": 240,
+        "TurnDeceleration": 0,
+        "TurnMovement": 80,
+        "LeaningSpeed": 0.01,
+        "LeaningDamping": 0.01,
+        "ForwardSpeed": 1,
+        "WindMinSlowdownFactor": 1,
+        "WindMaxSpeedupFactor": 1,
+        "MinSlowdownFactor": 1,
+        "DisableSmoothing": 1,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Elder Selassy'e",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 44541
+      },
+      "CommandQueue": {
+        "FollowRadius": 5,
+        "CommandChainLength": 0,
+        "FormationPriority": 4,
+        "InsecurityAttractiveness": 0
+      },
+      "SoundEmitter": "",
+      "UpgradeList": "",
+      "Infolayer": "",
+      "Locked": {
+        "DefaultLockedState": 0
+      },
+      "MetaPersistent": "",
+      "QuestObject": ""
+    }
+  },
+  {
+    "Template": "LandSpy",
+    "Values": {
+      "Standard": {
+        "GUID": 118902,
+        "Name": "Shepherd walking with goats",
+        "IconFilename": "data/ui/2kimages/main/3dicons/animals/icon_sheep.png",
+        "InfoDescription": 11466
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc06/graphics/quest/quest_unit_groups/shepherd_walking_with_goats/shepherd_walking_with_goats_front.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnTerrainSlope",
+        "DefaultSequence": "default"
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionMoveObject",
+                    "Values": {
+                      "Action": "",
+                      "ObjectFilter": {
+                        "ObjectGUID": 117739,
+                        "ObjectSession": 180023
+                      },
+                      "ObjectTargetFilter": {
+                        "TargetGUID": 1010371,
+                        "TargetCheckParticipantID": 1,
+                        "TargetCheckProcessingParticipantID": 1,
+                        "TargetObjectSession": 180023
+                      },
+                      "ActionMoveObject": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Walking": {
+        "DiscoverRadius": 0,
+        "ReservationLength": 0,
+        "ReservationWidth": 0,
+        "ForcePrimitiveMovement": 1,
+        "TurnAroundRadius": 0,
+        "Acceleration": 6,
+        "TurnRadius": 0.5,
+        "TurnSpeed": 240,
+        "TurnDeceleration": 0,
+        "TurnMovement": 80,
+        "LeaningSpeed": 0.01,
+        "LeaningDamping": 0.01,
+        "ForwardSpeed": 1,
+        "WindMinSlowdownFactor": 1,
+        "WindMaxSpeedupFactor": 1,
+        "MinSlowdownFactor": 1,
+        "DisableSmoothing": 1,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "shepherd and sheep",
+            "ExportCount": 1
+          }
+        }
+      },
+      "CommandQueue": {
+        "FollowRadius": 5,
+        "CommandChainLength": 0,
+        "FormationPriority": 4,
+        "InsecurityAttractiveness": 0
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 235614
+          }
+        },
+        "SelectionSounds": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "LandSpy",
+                  "Index": 0
+                }
+              }
+            },
+            "Sound": 235614
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 235614
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "Infolayer": "",
+      "Locked": {
+        "DefaultLockedState": 0
+      },
+      "MetaPersistent": "",
+      "QuestObject": ""
+    }
+  },
+  {
+    "Template": "LandSpy",
+    "Values": {
+      "Standard": {
+        "GUID": 124970,
+        "Name": "QO WalkingBiniam",
+        "IconFilename": "data/ui/2kimages/main/profiles/3rd_party_11.png"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/campaign/units/pyrphorian_arsonist/pyrphorian_arsonist_01.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnTerrainSlope"
+      },
+      "Selection": {
+        "GUIType": "Quest"
+      },
+      "Walking": {
+        "DiscoverRadius": 0,
+        "ReservationLength": 0,
+        "ReservationWidth": 0,
+        "ForcePrimitiveMovement": 1,
+        "TurnAroundRadius": 0,
+        "Acceleration": 6,
+        "TurnRadius": 0.5,
+        "TurnSpeed": 240,
+        "TurnDeceleration": 0,
+        "TurnMovement": 80,
+        "LeaningSpeed": 0.01,
+        "LeaningDamping": 0.01,
+        "ForwardSpeed": 1,
+        "WindMinSlowdownFactor": 1,
+        "WindMaxSpeedupFactor": 1,
+        "MinSlowdownFactor": 1,
+        "DisableSmoothing": 1,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "-",
+            "ExportCount": 1
+          }
+        }
+      },
+      "CommandQueue": {
+        "FollowRadius": 5,
+        "CommandChainLength": 0,
+        "FormationPriority": 4,
+        "InsecurityAttractiveness": 0
+      },
+      "SoundEmitter": "",
+      "UpgradeList": "",
+      "Infolayer": "",
+      "Locked": {
+        "DefaultLockedState": 0
+      },
+      "MetaPersistent": "",
+      "QuestObject": ""
+    }
+  },
+  {
+    "Template": "LandSpy",
+    "Values": {
+      "Standard": {
+        "GUID": 123775,
+        "Name": "Thief",
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_zoologist_700.png"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc06/graphics/units/inhabitants/residents/residence_colony_02_tier_02_normal_m_02/residence_colony_02_tier02_normal_m_02.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnTerrain",
+        "InitialVisibility": 0,
+        "ConstructionEffectDuration": 0
+      },
+      "Selection": {
+        "GUIType": "Quest"
+      },
+      "Walking": {
+        "DiscoverRadius": 0,
+        "ReservationLength": 0,
+        "ReservationWidth": 0,
+        "PathPlannerLayer": "Air",
+        "ForcePrimitiveMovement": 1,
+        "TurnAroundRadius": 0,
+        "Acceleration": 6,
+        "TurnRadius": 0.5,
+        "TurnSpeed": 240,
+        "TurnDeceleration": 0,
+        "TurnMovement": 80,
+        "LeaningSpeed": 0.01,
+        "LeaningDamping": 0.01,
+        "ForwardSpeed": 1,
+        "WindMinSlowdownFactor": 1,
+        "WindMaxSpeedupFactor": 1,
+        "MinSlowdownFactor": 1,
+        "DisableSmoothing": 1,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Thief",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 45448
+      },
+      "CommandQueue": {
+        "FollowRadius": 5,
+        "CommandChainLength": 0,
+        "FormationPriority": 4,
+        "InsecurityAttractiveness": 0
+      },
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "UpgradeList": "",
+      "Infolayer": "",
+      "Locked": {
+        "DefaultLockedState": 0
+      },
+      "MetaPersistent": "",
+      "QuestObject": ""
+    }
+  },
+  {
+    "Template": "LandSpy",
+    "Values": {
+      "Standard": {
+        "GUID": 124847,
+        "Name": "Thief",
+        "IconFilename": "data/ui/2kimages/main/3dicons/resident/icon_resident_sheperd.png"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc06/graphics/quest/quest_units/walking_units/thief.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnTerrain",
+        "ConstructionEffectDuration": 0
+      },
+      "Selection": {
+        "GUIType": "Quest"
+      },
+      "Walking": {
+        "DiscoverRadius": 0,
+        "ReservationLength": 0,
+        "ReservationWidth": 0,
+        "PathPlannerLayer": "Air",
+        "ForcePrimitiveMovement": 1,
+        "TurnAroundRadius": 0,
+        "Acceleration": 6,
+        "TurnRadius": 0.5,
+        "TurnSpeed": 240,
+        "TurnDeceleration": 0,
+        "TurnMovement": 80,
+        "LeaningSpeed": 0.01,
+        "LeaningDamping": 0.01,
+        "ForwardSpeed": 1,
+        "WindMinSlowdownFactor": 1,
+        "WindMaxSpeedupFactor": 1,
+        "MinSlowdownFactor": 1,
+        "DisableSmoothing": 1,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Angerebian in Disguise",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 45619
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FollowRadius": 5,
+        "CommandChainLength": 0,
+        "FormationPriority": 4,
+        "InsecurityAttractiveness": 0
+      },
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "UpgradeList": "",
+      "Infolayer": "",
+      "Locked": {
+        "DefaultLockedState": 0
+      },
+      "MetaPersistent": "",
+      "QuestObject": ""
+    }
+  },
+  {
+    "Template": "LandSpy",
+    "Values": {
+      "Standard": {
+        "GUID": 127674,
+        "Name": "OldLady2",
+        "IconFilename": "data/ui/2kimages/main/3dicons/resident/icon_resident_elder.png"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc06/graphics/quest/quest_units/walking_units/yara.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnTerrain",
+        "ConstructionEffectDuration": 0
+      },
+      "Selection": {
+        "GUIType": "Quest"
+      },
+      "Walking": {
+        "DiscoverRadius": 0,
+        "ReservationLength": 0,
+        "ReservationWidth": 0,
+        "PathPlannerLayer": "Air",
+        "ForcePrimitiveMovement": 1,
+        "TurnSpeed": 240,
+        "LeaningSpeed": 0.01,
+        "LeaningDamping": 0.01,
+        "ForwardSpeed": 1,
+        "WindMinSlowdownFactor": 1,
+        "WindMaxSpeedupFactor": 1,
+        "MinSlowdownFactor": 1,
+        "DisableSmoothing": 1,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Matriarch Yara",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 45621
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FollowRadius": 5,
+        "CommandChainLength": 0,
+        "FormationPriority": 4,
+        "InsecurityAttractiveness": 0
+      },
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "UpgradeList": "",
+      "Infolayer": "",
+      "Locked": {
+        "DefaultLockedState": 0
+      },
+      "MetaPersistent": "",
+      "QuestObject": ""
+    }
+  },
+  {
+    "Template": "LandSpy",
+    "Values": {
+      "Standard": {
+        "GUID": 129962,
+        "Name": "OldLady3",
+        "IconFilename": "data/ui/2kimages/main/3dicons/resident/icon_resident_elder.png"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc06/graphics/quest/quest_units/walking_units/yara.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnTerrain",
+        "ConstructionEffectDuration": 0
+      },
+      "Selection": {
+        "GUIType": "Quest"
+      },
+      "Walking": {
+        "DiscoverRadius": 0,
+        "ReservationLength": 0,
+        "ReservationWidth": 0,
+        "PathPlannerLayer": "Air",
+        "ForcePrimitiveMovement": 1,
+        "TurnSpeed": 240,
+        "LeaningSpeed": 0.01,
+        "LeaningDamping": 0.01,
+        "ForwardSpeed": 1,
+        "WindMinSlowdownFactor": 1,
+        "WindMaxSpeedupFactor": 1,
+        "MinSlowdownFactor": 1,
+        "DisableSmoothing": 1,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Matriarch Yara",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 45622
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FollowRadius": 5,
+        "CommandChainLength": 0,
+        "FormationPriority": 4,
+        "InsecurityAttractiveness": 0
+      },
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "UpgradeList": "",
+      "Infolayer": "",
+      "Locked": {
+        "DefaultLockedState": 0
+      },
+      "MetaPersistent": "",
+      "QuestObject": ""
+    }
+  },
+  {
+    "Template": "LandSpy",
+    "Values": {
+      "Standard": {
+        "GUID": 129963,
+        "Name": "Abel2",
+        "IconFilename": "data/ui/2kimages/main/profiles/icon_resident_sheperd.png"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc06/graphics/quest/quest_units/walking_units/abel.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnTerrain",
+        "ConstructionEffectDuration": 0
+      },
+      "Selection": {
+        "GUIType": "Quest"
+      },
+      "Walking": {
+        "SpecialMovementType": "",
+        "DiscoverRadius": 0,
+        "ReservationLength": 0,
+        "ReservationWidth": 0,
+        "PathPlannerLayer": "Air",
+        "ForcePrimitiveMovement": 1,
+        "TurnSpeed": 240,
+        "LeaningSpeed": 0.01,
+        "LeaningDamping": 0.01,
+        "ForwardSpeed": 1,
+        "WindMinSlowdownFactor": 1,
+        "WindMaxSpeedupFactor": 1,
+        "MinSlowdownFactor": 1,
+        "DisableSmoothing": 1,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Abel, the Overseer",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 45623
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FollowRadius": 5,
+        "CommandChainLength": 0,
+        "FormationPriority": 4,
+        "InsecurityAttractiveness": 0
+      },
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "UpgradeList": "",
+      "Infolayer": "",
+      "Locked": {
+        "DefaultLockedState": 0
+      },
+      "MetaPersistent": "",
+      "QuestObject": ""
+    }
+  },
+  {
+    "Template": "LandSpy",
+    "Values": {
+      "Standard": {
+        "GUID": 129708,
+        "Name": "Elephant cemetery Baby elephant",
+        "IconFilename": "data/ui/2kimages/main/3dicons/animals/icon_elephant.png",
+        "InfoDescription": 11466
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc06/graphics/units/wildlife/elephant_african/elephant_african_small_01.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnTerrainSlope",
+        "DefaultSequence": "default"
+      },
+      "Selection": {
+        "GUIType": "Quest"
+      },
+      "Walking": {
+        "SpecialMovementType": "",
+        "DiscoverRadius": 0,
+        "ReservationLength": 0,
+        "ReservationWidth": 0,
+        "ForcePrimitiveMovement": 1,
+        "TurnAroundRadius": 0,
+        "Acceleration": 6,
+        "TurnRadius": 0.5,
+        "TurnSpeed": 240,
+        "TurnDeceleration": 0,
+        "TurnMovement": 80,
+        "LeaningSpeed": 0.01,
+        "LeaningDamping": 0.01,
+        "ForwardSpeed": 1,
+        "WindMinSlowdownFactor": 1,
+        "WindMaxSpeedupFactor": 1,
+        "MinSlowdownFactor": 1,
+        "DisableSmoothing": 1,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Baby Elephant",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 44579
+      },
+      "CommandQueue": {
+        "FollowRadius": 5,
+        "CommandChainLength": 0,
+        "FormationPriority": 4,
+        "InsecurityAttractiveness": 0
+      },
+      "SoundEmitter": "",
+      "UpgradeList": "",
+      "Infolayer": "",
+      "Locked": {
+        "DefaultLockedState": 0
+      },
+      "MetaPersistent": "",
+      "QuestObject": ""
+    }
+  }
+]

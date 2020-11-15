@@ -27,7 +27,7 @@ export async function getData(
   const translations = await loadTranslations(language);
   const rewardPoolById = await loadRewardPools();
   const effectTargetPoolById = await loadEffectTargetPools();
-  const assets = await readFromCache(assetType);
+  const assets = await readFromCache("assets", assetType);
 
   const factory = new AnnoItemFactory(
     translations,
@@ -54,7 +54,7 @@ export async function getData(
 }
 
 async function loadTranslations(language: string) {
-  const json = await readFromCache(`texts_${language}`);
+  const json = await readFromCache("texts", `texts_${language}`);
 
   const translations: { [key: number]: string } = {};
 
@@ -70,7 +70,7 @@ async function loadTranslations(language: string) {
 }
 
 async function loadRewardPools() {
-  const rewardPools = await readFromCache("rewardpool");
+  const rewardPools = await readFromCache("assets", "rewardpool");
 
   const rewardPoolById: { [key: number]: any } = {};
 
@@ -82,7 +82,10 @@ async function loadRewardPools() {
 }
 
 async function loadEffectTargetPools() {
-  const effectTargetPools = await readFromCache("itemeffecttargetpool");
+  const effectTargetPools = await readFromCache(
+    "assets",
+    "itemeffecttargetpool"
+  );
 
   const effectTargetPoolById: { [key: number]: any } = {};
 
@@ -93,13 +96,9 @@ async function loadEffectTargetPools() {
   return effectTargetPoolById;
 }
 
-const cacheFolder = "./cached-data";
+async function readFromCache(folder: string, file: string) {
+  const fileName = `./data/anno/${folder}/${file.replace("/", "-")}.json`;
 
-function cachedFile(assetType: string) {
-  return `${cacheFolder}/${assetType.replace("/", "-")}.json`;
-}
-
-async function readFromCache(file: string) {
-  const data = await fs.readFile(cachedFile(file), "utf-8");
+  const data = await fs.readFile(fileName, "utf-8");
   return JSON.parse(data);
 }

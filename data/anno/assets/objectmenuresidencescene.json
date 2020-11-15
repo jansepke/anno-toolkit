@@ -1,0 +1,198 @@
+[
+  {
+    "Template": "ObjectmenuResidenceScene",
+    "Values": {
+      "Standard": {
+        "GUID": 25000118,
+        "Name": "ObjectmenuResidenceScene",
+        "ID": "ObjectmenuResidenceScene"
+      },
+      "ObjectmenuResidenceScene": {
+        "ResidenceEmpty": 100353,
+        "ResidenceSettling": 100354,
+        "ResidenceRuin": 100355,
+        "FeedbackBubbles": {
+          "IncidentBubbles": {
+            "Fire": {
+              "Icon": 500323,
+              "Infotip": 501077,
+              "ProximityIcon": 500323,
+              "ProximityInfotip": 501077
+            },
+            "Riot": {
+              "Icon": 500322,
+              "Infotip": 501078,
+              "ProximityIcon": 500322,
+              "ProximityInfotip": 501078
+            },
+            "Illness": {
+              "Icon": 500324,
+              "Infotip": 501079,
+              "ProximityIcon": 500324,
+              "ProximityInfotip": 501079
+            },
+            "ArcticIllness": {
+              "Icon": 116229,
+              "Infotip": 116241,
+              "ProximityIcon": 116229,
+              "ProximityInfotip": 116241
+            }
+          },
+          "DisabledStateInfotip": 25000145,
+          "SatisfactionMissingInfotip": 25000142,
+          "NeedLockedInfotip": 25000144,
+          "OccupancyMissingInfotip": 25000143,
+          "OccupancyMissingIcon": 1010151,
+          "UpgradeInfotip": 500142,
+          "UpgradeIcon": 500139,
+          "NewspaperInfotip": 501040,
+          "NewspaperIcon": 500894,
+          "WorkforceStressInfotip": 501038,
+          "WorkforceStressIcon": 501037,
+          "PollutionIcon": 501036,
+          "PollutionInfotip": 501039
+        },
+        "HappinessText": 11701,
+        "MoneyText": 11832,
+        "WorkforceText": 11833,
+        "HappinessConfig": {
+          "Angry": {
+            "Icon": 500161,
+            "PaMSyContext": 500606
+          },
+          "Unhappy": {
+            "Icon": 500161,
+            "PaMSyContext": 500570
+          },
+          "Neutral": {
+            "PortraitMood": "Normal",
+            "Icon": 501089,
+            "PaMSyContext": 500605
+          },
+          "Happy": {
+            "PortraitMood": "Happy",
+            "Icon": 500162,
+            "PaMSyContext": 500569
+          },
+          "Euphoric": {
+            "PortraitMood": "Happy",
+            "Icon": 500162,
+            "PaMSyContext": 500607
+          }
+        },
+        "PopulationText": 163017,
+        "ResidenceInfluence": 14913,
+        "TemperatureText": {
+          "Angry": {
+            "HeatText": 116976
+          },
+          "Unhappy": {
+            "HeatText": 116976
+          },
+          "Neutral": {
+            "HeatText": 116977
+          },
+          "Happy": {
+            "HeatText": 116978
+          },
+          "Euphoric": {
+            "HeatText": 116979
+          }
+        },
+        "HeatTabText": 116349,
+        "HappinessTabText": 12314,
+        "ResearchText": 124566
+      },
+      "ObjectmenuHeader": {
+        "BuffDisplayList": {
+          "Item": [
+            {
+              "Buffgroup": {
+                "Item": [
+                  {
+                    "DataSource": "[Newspaper HappinessImpactByPropaganda([Selection Object Residence PopulationLevel Guid])]",
+                    "MinThreshold": -10000,
+                    "MaxThreshold": -0.0001
+                  },
+                  {
+                    "DataSource": "[Newspaper RiotImpactByPropaganda([Selection Object Residence PopulationLevel Guid])]",
+                    "MinThreshold": -10000,
+                    "MaxThreshold": -0.0001
+                  }
+                ]
+              },
+              "Icon": 501093,
+              "InfoTip": 501098
+            },
+            {
+              "Buffgroup": {
+                "Item": {
+                  "DataSource": "[Newspaper ActiveEffectValuePropagandaSensitive(7, true, 0)]",
+                  "MinThreshold": -10000,
+                  "MaxThreshold": -0.0001
+                }
+              },
+              "Icon": 500636,
+              "InfoTip": 501123
+            },
+            {
+              "Buffgroup": {
+                "Item": {
+                  "DataSource": "[Newspaper ActiveEffectValuePropagandaSensitive(7, false, 0)]",
+                  "MinThreshold": -10000,
+                  "MaxThreshold": -0.0001
+                }
+              },
+              "Icon": 500636,
+              "InfoTip": 501714
+            },
+            {
+              "Buffgroup": {
+                "Item": {
+                  "DataSource": "[Newspaper ActiveEffectValuePropagandaSensitive(4, true, 0)]",
+                  "MinThreshold": -10000,
+                  "MaxThreshold": -0.0001
+                }
+              },
+              "Icon": 500626,
+              "InfoTip": 501124
+            },
+            {
+              "Buffgroup": {
+                "Item": {
+                  "DataSource": "[Newspaper ActiveEffectValuePropagandaSensitive(4, false, 0)]",
+                  "MinThreshold": -10000,
+                  "MaxThreshold": -0.0001
+                }
+              },
+              "Icon": 500626,
+              "InfoTip": 501124
+            },
+            {
+              "Buffgroup": {
+                "Item": {
+                  "DataSource": "[Newspaper ActiveEffectValuePropagandaSensitive(3, true, 0)]",
+                  "MinThreshold": 0.0001,
+                  "MaxThreshold": 10000
+                }
+              },
+              "Icon": 501109,
+              "InfoTip": 501125
+            },
+            {
+              "Buffgroup": {
+                "Item": {
+                  "DataSource": "[Newspaper ActiveEffectValuePropagandaSensitive(3, false, 0)]",
+                  "MinThreshold": 0.0001,
+                  "MaxThreshold": 10000
+                }
+              },
+              "Icon": 501109,
+              "InfoTip": 501125
+            }
+          ]
+        }
+      }
+    }
+  }
+]

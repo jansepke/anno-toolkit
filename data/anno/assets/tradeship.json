@@ -1,0 +1,6217 @@
+[
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 101321,
+        "Name": "Tourism Ship (attackable)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_ship.png"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/tourism_ship_02/tourism_ship_02.cfg"
+          }
+        },
+        "DefaultParticipant": "Human0"
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": "",
+      "Walking": {
+        "SpecialMovementType": "",
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "Acceleration": 0.7,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 4.4,
+        "WindMinSlowdownFactor": 0.6,
+        "WindMaxSpeedupFactor": 1.6
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Tourism Ship"
+          }
+        }
+      },
+      "CommandQueue": {
+        "FollowRadius": 4,
+        "FormationPriority": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 2.7,
+        "Width": 0.8,
+        "FactorRotation": 0.5,
+        "UseSlowDownTactic": 0
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 9818383
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": "",
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": "",
+      "Craftable": "",
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": "",
+      "ShipMaintenance": "",
+      "Sellable": "",
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": ""
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 100438,
+        "Name": "Schooner (Trade)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_schooner.png",
+        "InfoDescription": 1083
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/schooner/schooner.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 4,
+        "Acceleration": 2,
+        "Deceleration": 4,
+        "TurnRadius": 4,
+        "TurnSpeed": 75,
+        "TurnDeceleration": 0,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": -35,
+        "ForwardSpeed": 4.4,
+        "WindMinSlowdownFactor": 0.5,
+        "WindSlowdownEffectOnTurningSpeed": 0.35,
+        "WindMaxSpeedupFactor": 1.8,
+        "WindSpeedupEffectOnTurningSpeed": 0.85,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Schooner",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 14850
+      },
+      "CommandQueue": {
+        "FormationPriority": 1,
+        "TradeShipPoints": 1,
+        "PriorityShipList": 2
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 4.2
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 1000,
+        "HPBarOffset": 4.5,
+        "AlertRange": 150,
+        "SelfHealPerHealTick": 0.833,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 238319
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 236630
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 2
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 10
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 2
+      },
+      "Craftable": {
+        "CraftingTime": 180000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 10,
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might"
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSailingShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 15
+      },
+      "Sellable": "",
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700090
+          },
+          "MoveCommand": {
+            "AudioPool": 700091
+          },
+          "EscortCommand": {
+            "AudioPool": 700121
+          },
+          "PatrolCommand": {
+            "AudioPool": 700120
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700119
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 100441,
+        "Name": "Clipper (Trade)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+        "InfoDescription": 1084
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/clipper/clipper.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1,
+        "Deceleration": 2,
+        "TurnRadius": 6,
+        "TurnSpeed": 60,
+        "TurnDeceleration": 0,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": -20,
+        "ForwardSpeed": 5.5,
+        "WindMinSlowdownFactor": 0.5,
+        "WindSlowdownEffectOnTurningSpeed": 0.35,
+        "WindMaxSpeedupFactor": 1.8,
+        "WindSpeedupEffectOnTurningSpeed": 0.85,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Clipper",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 14854
+      },
+      "CommandQueue": {
+        "FormationPriority": 1,
+        "TradeShipPoints": 2,
+        "PriorityShipList": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 9,
+        "Width": 1.75,
+        "FactorRotation": 0.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2500,
+        "HPBarOffset": 7.5,
+        "AlertRange": 150,
+        "SelfHealPerHealTick": 1.389,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 238315
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 247099
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 4
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 30
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 4
+      },
+      "Craftable": {
+        "CraftingTime": 360000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 50,
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might"
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSailingShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 175
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 15000
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700092
+          },
+          "MoveCommand": {
+            "AudioPool": 700093
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700122
+          },
+          "EscortCommand": {
+            "AudioPool": 700124
+          },
+          "PatrolCommand": {
+            "AudioPool": 700123
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 1010062,
+        "Name": "Collier (Trade)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png",
+        "InfoDescription": 1089
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/collier/collier.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ShortenSailsAfter": 0,
+        "ReservationLength": 16,
+        "ReservationWidth": 6,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 8,
+        "Acceleration": 1.5,
+        "Deceleration": 2,
+        "TurnRadius": 8,
+        "TurnSpeedInPlace": 20,
+        "TurnDeceleration": 0,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": -10,
+        "ForwardSpeed": 5.2,
+        "WindMinSlowdownFactor": 1,
+        "WindMaxSpeedupFactor": 1,
+        "CargoFullFactor": 0.8,
+        "MinSlowdownFactor": 0.5,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Cargo Ship",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 14859
+      },
+      "CommandQueue": {
+        "FormationPriority": 1,
+        "TradeShipPoints": 4,
+        "PriorityShipList": 2
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 7,
+        "Width": 1.5,
+        "FactorMovement": 0.7,
+        "FactorRotation": 0.65
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 4000,
+        "HPBarOffset": 4,
+        "AlertRange": 150,
+        "SelfHealPerHealTick": 1.667,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 501018
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 201827
+          }
+        },
+        "DestroySounds": {
+          "Item": {
+            "Sound": 238314
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 2,
+        "SocketAllocation": "Ship;SteamShip;Tradeship",
+        "SlotCount": 6
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010218,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 1010224,
+              "Amount": 20
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 6
+      },
+      "Craftable": {
+        "CraftingTime": 540000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 70,
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might"
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSteamShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 500
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 300000
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700094
+          },
+          "MoveCommand": {
+            "AudioPool": 700095
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700125
+          },
+          "EscortCommand": {
+            "AudioPool": 700127
+          },
+          "PatrolCommand": {
+            "AudioPool": 700126
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 100853,
+        "Name": "Oil Tanker (Trade - Special)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_oil_tanker.png",
+        "InfoDescription": 11425
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/steam_ship_oil_01/steam_ship_oil_01.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ShortenSailsAfter": 0,
+        "ReservationLength": 16,
+        "ReservationWidth": 6,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 8,
+        "Acceleration": 0.5,
+        "Deceleration": 1,
+        "TurnRadius": 8,
+        "TurnSpeedInPlace": 20,
+        "TurnDeceleration": 0,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": -10,
+        "ForwardSpeed": 4.5,
+        "WindMinSlowdownFactor": 1,
+        "WindMaxSpeedupFactor": 1,
+        "CargoFullFactor": 0.8,
+        "MinSlowdownFactor": 0.5,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Oil Tanker",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 14861
+      },
+      "CommandQueue": {
+        "FormationPriority": 1,
+        "TradeShipPoints": 4,
+        "PriorityShipList": 2
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 10,
+        "Width": 2,
+        "FactorMovement": 0.7,
+        "FactorRotation": 0.65
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 5000,
+        "HPBarOffset": 4,
+        "AlertRange": 150,
+        "SelfHealPerHealTick": 1.667,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 501018
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 201830
+          }
+        },
+        "DestroySounds": {
+          "Item": {
+            "Sound": 238314
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketAllocation": "Ship;SteamShip;Tradeship",
+        "SlotCount": 1,
+        "StackLimit": 400,
+        "FixedSlotContent": 1010566
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010218,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 1010224,
+              "Amount": 20
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 10
+      },
+      "Craftable": {
+        "CraftingTime": 540000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might"
+            },
+            {
+              "Attribute": "Navigation"
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSteamShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 500
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 300000
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700078
+          },
+          "MoveCommand": {
+            "AudioPool": 700080
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700109
+          },
+          "EscortCommand": {
+            "AudioPool": 700107
+          },
+          "PatrolCommand": {
+            "AudioPool": 700106
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 102455,
+        "Name": "Anno Union Ship - For Sale",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_anno_union.png",
+        "InfoDescription": 22028
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/anno_union_ship/anno_union_ship.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ShortenSailsAfter": 0,
+        "ReservationLength": 16,
+        "ReservationWidth": 6,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 8,
+        "Acceleration": 0.5,
+        "Deceleration": 1,
+        "TurnRadius": 8,
+        "TurnSpeedInPlace": 20,
+        "TurnDeceleration": 0,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": -10,
+        "ForwardSpeed": 5.2,
+        "WindMinSlowdownFactor": 1,
+        "WindMaxSpeedupFactor": 1,
+        "CargoFullFactor": 0.8,
+        "MinSlowdownFactor": 0.5,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Extravaganza Steamer",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 25837
+      },
+      "CommandQueue": {
+        "FormationPriority": 1,
+        "TradeShipPoints": 4,
+        "PriorityShipList": 2
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 7,
+        "Width": 1.5,
+        "FactorMovement": 0.7,
+        "FactorRotation": 0.65
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 5000,
+        "HPBarOffset": 4,
+        "AlertRange": 150,
+        "SelfHealPerHealTick": 5,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 501018
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 216019
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 3,
+        "SocketAllocation": "Ship;SteamShip;Tradeship",
+        "SlotCount": 6
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010218,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 1010224,
+              "Amount": 20
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 12
+      },
+      "Craftable": {
+        "CraftingTime": 540000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": {
+        "DefaultLockedState": 0
+      },
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 70,
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might"
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSteamShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 100
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 500000
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700094
+          },
+          "MoveCommand": {
+            "AudioPool": 700095
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700125
+          },
+          "EscortCommand": {
+            "AudioPool": 700127
+          },
+          "PatrolCommand": {
+            "AudioPool": 700126
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 101198,
+        "Name": "Fisher (Trade - Campaign Prologue Only)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_lateen_sails.png"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/campaign/vehicle/fishing_boat_campaign.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1,
+        "InteractionDistance": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 2,
+        "TurnSpeed": 150,
+        "TurnMovement": 75,
+        "LeaningMaxAngle": 10,
+        "ForwardSpeed": 4.4,
+        "WindMinSlowdownFactor": 1,
+        "WindMaxSpeedupFactor": 1,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Old Fishing Boat",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 14851
+      },
+      "CommandQueue": {
+        "FollowRadius": 4,
+        "FormationPriority": 1,
+        "PriorityShipList": 2,
+        "IsDestructable": 0
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 4.2
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2000,
+        "SelfHealPerHealTick": 10,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 215870
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 9818371
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 2,
+        "InitSlotItems": {
+          "Item": {
+            "Item": 102328,
+            "StackSize": 1
+          }
+        }
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 10
+            }
+          ]
+        }
+      },
+      "Craftable": {
+        "CraftingTime": 180000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might"
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 0,
+        "DisableShipDestructionTracking": 1
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 3750
+          }
+        },
+        "CanBeSoldToTrader": 0
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 0
+          },
+          "AttackCommand": {
+            "AudioPool": 0
+          },
+          "MoveCommand": {
+            "AudioPool": 0
+          },
+          "EscortCommand": {
+            "AudioPool": 0
+          },
+          "PatrolCommand": {
+            "AudioPool": 0
+          },
+          "SelectionDamaged": {
+            "AudioPool": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 101387,
+        "Name": "CQO_Schooner01 (Edvard)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_ship.png",
+        "InfoDescription": 1083
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/schooner/schooner.cfg"
+          }
+        },
+        "DefaultParticipant": "Third_enemy_01_Grant"
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "SelectionPriority": 1,
+        "InteractionDistance": 120
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 4.5,
+        "WindMinSlowdownFactor": 0.5,
+        "WindMaxSpeedupFactor": 1.4,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Schooner",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 20117
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FollowRadius": 4,
+        "FormationPriority": 1,
+        "TradeShipPoints": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 3.5,
+        "Width": 0.8
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 200,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 9818371
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 2
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 10
+            }
+          ]
+        }
+      },
+      "Craftable": {
+        "CraftingTime": 180000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might",
+              "Amount": 5
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 0
+      },
+      "Sellable": "",
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": ""
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 102237,
+        "Name": "CQO_Schooner02 (Edvard)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_ship.png",
+        "InfoDescription": 1083
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/schooner/schooner.cfg"
+          }
+        },
+        "DefaultParticipant": "Third_enemy_01_Grant"
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "SelectionPriority": 1,
+        "InteractionDistance": 120
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 4.5,
+        "WindMinSlowdownFactor": 0.5,
+        "WindMaxSpeedupFactor": 1.4,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Schooner",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 20118
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FollowRadius": 4,
+        "FormationPriority": 1,
+        "TradeShipPoints": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 3.5,
+        "Width": 0.8
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 200,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 9818371
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 2
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 10
+            }
+          ]
+        }
+      },
+      "Craftable": {
+        "CraftingTime": 180000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might",
+              "Amount": 5
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 0
+      },
+      "Sellable": "",
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": ""
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 102238,
+        "Name": "CQO_Schooner03 (Edvard)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_ship.png",
+        "InfoDescription": 1083
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/schooner/schooner.cfg"
+          }
+        },
+        "DefaultParticipant": "Third_enemy_01_Grant"
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "SelectionPriority": 1,
+        "InteractionDistance": 120
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 4.5,
+        "WindMinSlowdownFactor": 0.5,
+        "WindMaxSpeedupFactor": 1.4,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Schooner",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 20119
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FollowRadius": 4,
+        "FormationPriority": 1,
+        "TradeShipPoints": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 3.5,
+        "Width": 0.8
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 200,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 9818371
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 2
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 10
+            }
+          ]
+        }
+      },
+      "Craftable": {
+        "CraftingTime": 180000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might",
+              "Amount": 5
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 0
+      },
+      "Sellable": "",
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": ""
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 101153,
+        "Name": "CQO_Clipper (Edvard)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_tradeship_clipper.png",
+        "InfoDescription": 1084
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/clipper/clipper.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1,
+        "InteractionDistance": 120
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 5,
+        "Acceleration": 0.4,
+        "TurnSpeed": 30,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 5.5,
+        "WindMinSlowdownFactor": 0.6,
+        "WindMaxSpeedupFactor": 1.6,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Clipper",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 20120
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FollowRadius": 4,
+        "FormationPriority": 1,
+        "TradeShipPoints": 2,
+        "PriorityShipList": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 3.5,
+        "Width": 0.8,
+        "FactorRotation": 0.4
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 4000,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 215870
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 247099
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 4
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 30
+            }
+          ]
+        }
+      },
+      "Craftable": {
+        "CraftingTime": 360000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might",
+              "Amount": 5
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 10
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 10
+      },
+      "Sellable": "",
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": ""
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 101199,
+        "Name": "CQO_Tradeship (Archibald)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_ship.png",
+        "InfoDescription": 1083
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/campaign/vehicle/ambassador_ship/ambassador_ship.cfg"
+          }
+        },
+        "DefaultParticipant": "Third_party_02_Blake"
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "SelectionPriority": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 4,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Her Majesty II",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 20121
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FollowRadius": 4,
+        "FormationPriority": 1,
+        "TradeShipPoints": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 3.5,
+        "Width": 0.8
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 3500,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 9818371
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 2
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 10
+            }
+          ]
+        }
+      },
+      "Craftable": {
+        "CraftingTime": 180000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might",
+              "Amount": 5
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 0
+      },
+      "Sellable": "",
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": ""
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 101151,
+        "Name": "CQO_Tradeship (Jailor)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_ship.png",
+        "InfoDescription": 1083
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/campaign/vehicle/jailor_ship/jailor_ship.cfg"
+          }
+        },
+        "DefaultParticipant": "Third_party_07_Jailor_Bleakworth"
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "SelectionPriority": 1,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionNotification",
+                    "Values": {
+                      "Action": "",
+                      "ActionNotification": {
+                        "Notification": {
+                          "Template": "CharacterNotification",
+                          "Values": {
+                            "CharacterNotification": {
+                              "Profile": 31
+                            },
+                            "BaseNotification": {
+                              "NotificationBlockingTime": 2000
+                            },
+                            "NotificationSubtitle": ""
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "LeaningMaxAngle": 27,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Iron Drake",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 20122
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FollowRadius": 4,
+        "FormationPriority": 1,
+        "TradeShipPoints": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 3.5,
+        "Width": 0.8
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 200,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 9818371
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 2
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 10
+            }
+          ]
+        }
+      },
+      "Craftable": {
+        "CraftingTime": 180000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might",
+              "Amount": 5
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 0
+      },
+      "Sellable": "",
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": ""
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 100679,
+        "Name": "CQO_Schooner (Smuggler Ship)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_ship.png",
+        "InfoDescription": 1083
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/schooner/schooner.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "SelectionPriority": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 4,
+        "WindMinSlowdownFactor": 0.5,
+        "WindMaxSpeedupFactor": 1.4,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Schooner",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 20123
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FollowRadius": 4,
+        "FormationPriority": 1,
+        "TradeShipPoints": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 3.5,
+        "Width": 0.8
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 200,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 9818371
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 2
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 10
+            }
+          ]
+        }
+      },
+      "Craftable": {
+        "CraftingTime": 180000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might",
+              "Amount": 5
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 0
+      },
+      "Sellable": "",
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": ""
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 102577,
+        "Name": "Clipper (Bente Jorgensen)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+        "InfoDescription": 1084
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/clipper/clipper.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1,
+        "Deceleration": 1,
+        "TurnRadius": 6,
+        "TurnSpeed": 50,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 5.5,
+        "WindMinSlowdownFactor": 0.5,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Jorgensen's Jolly Clipper",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 29462
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FormationPriority": 1,
+        "TradeShipPoints": 2,
+        "PriorityShipList": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 9,
+        "Width": 1.75,
+        "FactorRotation": 0.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2500,
+        "HPBarOffset": 7.5,
+        "DisableGettingAutoAttacked": 1,
+        "IsInvulnerable": 1,
+        "SelfHealPerHealTick": 1.389,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 247099
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 4
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 30
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 4
+      },
+      "Craftable": {
+        "CraftingTime": 360000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 50,
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might"
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSailingShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 175,
+        "DisableEscort": 1
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 8500
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          },
+          "Fire": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700092
+          },
+          "MoveCommand": {
+            "AudioPool": 700093
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700122
+          },
+          "EscortCommand": {
+            "AudioPool": 700124
+          },
+          "PatrolCommand": {
+            "AudioPool": 700123
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 102578,
+        "Name": "Clipper (Princess Qing)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+        "InfoDescription": 1084
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/clipper/clipper.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1,
+        "Deceleration": 1,
+        "TurnRadius": 6,
+        "TurnSpeed": 50,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 5.5,
+        "WindMinSlowdownFactor": 0.5,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Qing's Ornate Clipper",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 29463
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FormationPriority": 1,
+        "TradeShipPoints": 2,
+        "PriorityShipList": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 9,
+        "Width": 1.75,
+        "FactorRotation": 0.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2500,
+        "HPBarOffset": 7.5,
+        "DisableGettingAutoAttacked": 1,
+        "IsInvulnerable": 1,
+        "SelfHealPerHealTick": 1.389,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 247099
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 4
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 30
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 4
+      },
+      "Craftable": {
+        "CraftingTime": 360000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 50,
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might"
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSailingShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 175,
+        "DisableEscort": 1
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 8500
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          },
+          "Fire": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700092
+          },
+          "MoveCommand": {
+            "AudioPool": 700093
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700122
+          },
+          "EscortCommand": {
+            "AudioPool": 700124
+          },
+          "PatrolCommand": {
+            "AudioPool": 700123
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 102579,
+        "Name": "Clipper (Willie Wibblesock)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+        "InfoDescription": 1084
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/clipper/clipper.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1,
+        "Deceleration": 1,
+        "TurnRadius": 6,
+        "TurnSpeed": 50,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 5.5,
+        "WindMinSlowdownFactor": 0.5,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Wibblesock's Weedy Clipper",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 29464
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FormationPriority": 1,
+        "TradeShipPoints": 2,
+        "PriorityShipList": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 9,
+        "Width": 1.75,
+        "FactorRotation": 0.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2500,
+        "HPBarOffset": 7.5,
+        "DisableGettingAutoAttacked": 1,
+        "IsInvulnerable": 1,
+        "SelfHealPerHealTick": 1.389,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 247099
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 4
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 30
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 4
+      },
+      "Craftable": {
+        "CraftingTime": 360000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 50,
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might"
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSailingShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 175,
+        "DisableEscort": 1
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 8500
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          },
+          "Fire": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700092
+          },
+          "MoveCommand": {
+            "AudioPool": 700093
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700122
+          },
+          "EscortCommand": {
+            "AudioPool": 700124
+          },
+          "PatrolCommand": {
+            "AudioPool": 700123
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 102580,
+        "Name": "Clipper (George Smith)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+        "InfoDescription": 1084
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/clipper/clipper.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1,
+        "Deceleration": 1,
+        "TurnRadius": 6,
+        "TurnSpeed": 50,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 5.5,
+        "WindMinSlowdownFactor": 0.5,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Smith's Geriatric Clipper",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 29465
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FormationPriority": 1,
+        "TradeShipPoints": 2,
+        "PriorityShipList": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 9,
+        "Width": 1.75,
+        "FactorRotation": 0.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2500,
+        "HPBarOffset": 7.5,
+        "DisableGettingAutoAttacked": 1,
+        "IsInvulnerable": 1,
+        "SelfHealPerHealTick": 1.389,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 247099
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 4
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 30
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 4
+      },
+      "Craftable": {
+        "CraftingTime": 360000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 50,
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might"
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSailingShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 175,
+        "DisableEscort": 1
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 8500
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          },
+          "Fire": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700092
+          },
+          "MoveCommand": {
+            "AudioPool": 700093
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700122
+          },
+          "EscortCommand": {
+            "AudioPool": 700124
+          },
+          "PatrolCommand": {
+            "AudioPool": 700123
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 102581,
+        "Name": "Clipper (Beryl OMara)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+        "InfoDescription": 1084
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/clipper/clipper.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1,
+        "Deceleration": 1,
+        "TurnRadius": 6,
+        "TurnSpeed": 50,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 5.5,
+        "WindMinSlowdownFactor": 0.5,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "O'Mara's Shady Clipper",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 29466
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FormationPriority": 1,
+        "TradeShipPoints": 2,
+        "PriorityShipList": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 9,
+        "Width": 1.75,
+        "FactorRotation": 0.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2500,
+        "HPBarOffset": 7.5,
+        "DisableGettingAutoAttacked": 1,
+        "IsInvulnerable": 1,
+        "SelfHealPerHealTick": 1.389,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 247099
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 4
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 30
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 4
+      },
+      "Craftable": {
+        "CraftingTime": 360000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 50,
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might"
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSailingShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 175,
+        "DisableEscort": 1
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 8500
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          },
+          "Fire": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700092
+          },
+          "MoveCommand": {
+            "AudioPool": 700093
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700122
+          },
+          "EscortCommand": {
+            "AudioPool": 700124
+          },
+          "PatrolCommand": {
+            "AudioPool": 700123
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 102582,
+        "Name": "Clipper (Artur Gasparov)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+        "InfoDescription": 1084
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/clipper/clipper.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1,
+        "Deceleration": 1,
+        "TurnRadius": 6,
+        "TurnSpeed": 50,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 5.5,
+        "WindMinSlowdownFactor": 0.5,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Gasparov's Faddish Clipper",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 29467
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FormationPriority": 1,
+        "TradeShipPoints": 2,
+        "PriorityShipList": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 9,
+        "Width": 1.75,
+        "FactorRotation": 0.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2500,
+        "HPBarOffset": 7.5,
+        "DisableGettingAutoAttacked": 1,
+        "IsInvulnerable": 1,
+        "SelfHealPerHealTick": 1.389,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 247099
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 4
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 30
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 4
+      },
+      "Craftable": {
+        "CraftingTime": 360000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 50,
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might"
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSailingShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 175,
+        "DisableEscort": 1
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 8500
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          },
+          "Fire": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700092
+          },
+          "MoveCommand": {
+            "AudioPool": 700093
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700122
+          },
+          "EscortCommand": {
+            "AudioPool": 700124
+          },
+          "PatrolCommand": {
+            "AudioPool": 700123
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 102583,
+        "Name": "Clipper (Carl von Malching)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+        "InfoDescription": 1084
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/clipper/clipper.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1,
+        "Deceleration": 1,
+        "TurnRadius": 6,
+        "TurnSpeed": 50,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 5.5,
+        "WindMinSlowdownFactor": 0.5,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Von Malching's Greasy Clipper",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 29468
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FormationPriority": 1,
+        "TradeShipPoints": 2,
+        "PriorityShipList": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 9,
+        "Width": 1.75,
+        "FactorRotation": 0.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2500,
+        "HPBarOffset": 7.5,
+        "DisableGettingAutoAttacked": 1,
+        "IsInvulnerable": 1,
+        "SelfHealPerHealTick": 1.389,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 247099
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 4
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 30
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 4
+      },
+      "Craftable": {
+        "CraftingTime": 360000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 50,
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might"
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSailingShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 175,
+        "DisableEscort": 1
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 8500
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          },
+          "Fire": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700092
+          },
+          "MoveCommand": {
+            "AudioPool": 700093
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700122
+          },
+          "EscortCommand": {
+            "AudioPool": 700124
+          },
+          "PatrolCommand": {
+            "AudioPool": 700123
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 102584,
+        "Name": "Clipper (Alonso Gravez)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+        "InfoDescription": 1084
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/clipper/clipper.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1,
+        "Deceleration": 1,
+        "TurnRadius": 6,
+        "TurnSpeed": 50,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 5.5,
+        "WindMinSlowdownFactor": 0.5,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Graves' Gory Clipper",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 29469
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FormationPriority": 1,
+        "TradeShipPoints": 2,
+        "PriorityShipList": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 9,
+        "Width": 1.75,
+        "FactorRotation": 0.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2500,
+        "HPBarOffset": 7.5,
+        "DisableGettingAutoAttacked": 1,
+        "IsInvulnerable": 1,
+        "SelfHealPerHealTick": 1.389,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 247099
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 4
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 30
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 4
+      },
+      "Craftable": {
+        "CraftingTime": 360000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 50,
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might"
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSailingShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 175,
+        "DisableEscort": 1
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 8500
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          },
+          "Fire": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700092
+          },
+          "MoveCommand": {
+            "AudioPool": 700093
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700122
+          },
+          "EscortCommand": {
+            "AudioPool": 700124
+          },
+          "PatrolCommand": {
+            "AudioPool": 700123
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 102585,
+        "Name": "Clipper (Vicente Silva)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+        "InfoDescription": 1084
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/clipper/clipper.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1,
+        "Deceleration": 1,
+        "TurnRadius": 6,
+        "TurnSpeed": 50,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 5.5,
+        "WindMinSlowdownFactor": 0.5,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Silva's Strategic Clipper",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 29470
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FormationPriority": 1,
+        "TradeShipPoints": 2,
+        "PriorityShipList": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 9,
+        "Width": 1.75,
+        "FactorRotation": 0.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2500,
+        "HPBarOffset": 7.5,
+        "DisableGettingAutoAttacked": 1,
+        "IsInvulnerable": 1,
+        "SelfHealPerHealTick": 1.389,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 247099
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 4
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 30
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 4
+      },
+      "Craftable": {
+        "CraftingTime": 360000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 50,
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might"
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSailingShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 175,
+        "DisableEscort": 1
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 8500
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          },
+          "Fire": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700092
+          },
+          "MoveCommand": {
+            "AudioPool": 700093
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700122
+          },
+          "EscortCommand": {
+            "AudioPool": 700124
+          },
+          "PatrolCommand": {
+            "AudioPool": 700123
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 102586,
+        "Name": "Clipper (Margaret Hunt)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+        "InfoDescription": 1084
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/clipper/clipper.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1,
+        "Deceleration": 1,
+        "TurnRadius": 6,
+        "TurnSpeed": 50,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 5.5,
+        "WindMinSlowdownFactor": 0.5,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hunt's Dignified Clipper",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 29471
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FormationPriority": 1,
+        "TradeShipPoints": 2,
+        "PriorityShipList": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 9,
+        "Width": 1.75,
+        "FactorRotation": 0.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2500,
+        "HPBarOffset": 7.5,
+        "DisableGettingAutoAttacked": 1,
+        "IsInvulnerable": 1,
+        "SelfHealPerHealTick": 1.389,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 247099
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 4
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 30
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 4
+      },
+      "Craftable": {
+        "CraftingTime": 360000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 50,
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might"
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSailingShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 175,
+        "DisableEscort": 1
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 8500
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          },
+          "Fire": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700092
+          },
+          "MoveCommand": {
+            "AudioPool": 700093
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700122
+          },
+          "EscortCommand": {
+            "AudioPool": 700124
+          },
+          "PatrolCommand": {
+            "AudioPool": 700123
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 102587,
+        "Name": "Clipper (Queen)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+        "InfoDescription": 1084
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/clipper/clipper.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1,
+        "Deceleration": 1,
+        "TurnRadius": 6,
+        "TurnSpeed": 50,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 5.5,
+        "WindMinSlowdownFactor": 0.5,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Her Majesty's Clipper",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 29472
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FormationPriority": 1,
+        "TradeShipPoints": 2,
+        "PriorityShipList": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 9,
+        "Width": 1.75,
+        "FactorRotation": 0.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2500,
+        "HPBarOffset": 7.5,
+        "DisableGettingAutoAttacked": 1,
+        "IsInvulnerable": 1,
+        "SelfHealPerHealTick": 1.389,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 247099
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 4
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 30
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 4
+      },
+      "Craftable": {
+        "CraftingTime": 360000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 50,
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might"
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSailingShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 175,
+        "DisableEscort": 1
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 8500
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          },
+          "Fire": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700092
+          },
+          "MoveCommand": {
+            "AudioPool": 700093
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700122
+          },
+          "EscortCommand": {
+            "AudioPool": 700124
+          },
+          "PatrolCommand": {
+            "AudioPool": 700123
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 102588,
+        "Name": "Clipper (Archibald Blake)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+        "InfoDescription": 1084
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/clipper/clipper.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1,
+        "Deceleration": 1,
+        "TurnRadius": 6,
+        "TurnSpeed": 50,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 5.5,
+        "WindMinSlowdownFactor": 0.5,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Blake's Diplomatic Clipper",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 29473
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FormationPriority": 1,
+        "TradeShipPoints": 2,
+        "PriorityShipList": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 9,
+        "Width": 1.75,
+        "FactorRotation": 0.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2500,
+        "HPBarOffset": 7.5,
+        "DisableGettingAutoAttacked": 1,
+        "IsInvulnerable": 1,
+        "SelfHealPerHealTick": 1.389,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 247099
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 4
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 30
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 4
+      },
+      "Craftable": {
+        "CraftingTime": 360000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 50,
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might"
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSailingShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 175,
+        "DisableEscort": 1
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 8500
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          },
+          "Fire": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700092
+          },
+          "MoveCommand": {
+            "AudioPool": 700093
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700122
+          },
+          "EscortCommand": {
+            "AudioPool": 700124
+          },
+          "PatrolCommand": {
+            "AudioPool": 700123
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 102589,
+        "Name": "Clipper (Anne Harlow)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+        "InfoDescription": 1084
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/clipper/clipper.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1,
+        "Deceleration": 1,
+        "TurnRadius": 6,
+        "TurnSpeed": 50,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 5.5,
+        "WindMinSlowdownFactor": 0.5,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Harlow's Prickly Clipper",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 29474
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FormationPriority": 1,
+        "TradeShipPoints": 2,
+        "PriorityShipList": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 9,
+        "Width": 1.75,
+        "FactorRotation": 0.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2500,
+        "HPBarOffset": 7.5,
+        "DisableGettingAutoAttacked": 1,
+        "IsInvulnerable": 1,
+        "SelfHealPerHealTick": 1.389,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 247099
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 4
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 30
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 4
+      },
+      "Craftable": {
+        "CraftingTime": 360000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 50,
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might"
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSailingShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 175,
+        "DisableEscort": 1
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 8500
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          },
+          "Fire": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700092
+          },
+          "MoveCommand": {
+            "AudioPool": 700093
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700122
+          },
+          "EscortCommand": {
+            "AudioPool": 700124
+          },
+          "PatrolCommand": {
+            "AudioPool": 700123
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 102590,
+        "Name": "Clipper (Jean La Fortune)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+        "InfoDescription": 1084
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/clipper/clipper.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1,
+        "Deceleration": 1,
+        "TurnRadius": 6,
+        "TurnSpeed": 50,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 5.5,
+        "WindMinSlowdownFactor": 0.5,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "La Fortune's Defiant Clipper",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 29475
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FormationPriority": 1,
+        "TradeShipPoints": 2,
+        "PriorityShipList": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 9,
+        "Width": 1.75,
+        "FactorRotation": 0.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2500,
+        "HPBarOffset": 7.5,
+        "DisableGettingAutoAttacked": 1,
+        "IsInvulnerable": 1,
+        "SelfHealPerHealTick": 1.389,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 247099
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 4
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 30
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 4
+      },
+      "Craftable": {
+        "CraftingTime": 360000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 50,
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might"
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSailingShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 175,
+        "DisableEscort": 1
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 8500
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          },
+          "Fire": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700092
+          },
+          "MoveCommand": {
+            "AudioPool": 700093
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700122
+          },
+          "EscortCommand": {
+            "AudioPool": 700124
+          },
+          "PatrolCommand": {
+            "AudioPool": 700123
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 102591,
+        "Name": "Clipper (Isabel Sarmento)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+        "InfoDescription": 1084
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/clipper/clipper.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1,
+        "Deceleration": 1,
+        "TurnRadius": 6,
+        "TurnSpeed": 50,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 5.5,
+        "WindMinSlowdownFactor": 0.5,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Sarmento's Bold Clipper",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 29476
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FormationPriority": 1,
+        "TradeShipPoints": 2,
+        "PriorityShipList": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 9,
+        "Width": 1.75,
+        "FactorRotation": 0.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2500,
+        "HPBarOffset": 7.5,
+        "DisableGettingAutoAttacked": 1,
+        "IsInvulnerable": 1,
+        "SelfHealPerHealTick": 1.389,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 247099
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 4
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 30
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 4
+      },
+      "Craftable": {
+        "CraftingTime": 360000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 50,
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might"
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSailingShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 175,
+        "DisableEscort": 1
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 8500
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          },
+          "Fire": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700092
+          },
+          "MoveCommand": {
+            "AudioPool": 700093
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700122
+          },
+          "EscortCommand": {
+            "AudioPool": 700124
+          },
+          "PatrolCommand": {
+            "AudioPool": 700123
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 102592,
+        "Name": "Clipper (Old Nate)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+        "InfoDescription": 1084
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/clipper/clipper.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1,
+        "Deceleration": 1,
+        "TurnRadius": 6,
+        "TurnSpeed": 50,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 5.5,
+        "WindMinSlowdownFactor": 0.5,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Old Nate's Patchwork Clipper",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 29477
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FormationPriority": 1,
+        "TradeShipPoints": 2,
+        "PriorityShipList": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 9,
+        "Width": 1.75,
+        "FactorRotation": 0.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2500,
+        "HPBarOffset": 7.5,
+        "DisableGettingAutoAttacked": 1,
+        "IsInvulnerable": 1,
+        "SelfHealPerHealTick": 1.389,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 247099
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 4
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 30
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 4
+      },
+      "Craftable": {
+        "CraftingTime": 360000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 50,
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might"
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSailingShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 175,
+        "DisableEscort": 1
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 8500
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          },
+          "Fire": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700092
+          },
+          "MoveCommand": {
+            "AudioPool": 700093
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700122
+          },
+          "EscortCommand": {
+            "AudioPool": 700124
+          },
+          "PatrolCommand": {
+            "AudioPool": 700123
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 102593,
+        "Name": "Clipper (Eli Bleakworth)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+        "InfoDescription": 1084
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/clipper/clipper.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1,
+        "Deceleration": 1,
+        "TurnRadius": 6,
+        "TurnSpeed": 50,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 5.5,
+        "WindMinSlowdownFactor": 0.5,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Bleakworth's Dreary Clipper",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 29478
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FormationPriority": 1,
+        "TradeShipPoints": 2,
+        "PriorityShipList": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 9,
+        "Width": 1.75,
+        "FactorRotation": 0.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2500,
+        "HPBarOffset": 7.5,
+        "DisableGettingAutoAttacked": 1,
+        "IsInvulnerable": 1,
+        "SelfHealPerHealTick": 1.389,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 247099
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 4
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 30
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 4
+      },
+      "Craftable": {
+        "CraftingTime": 360000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 50,
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might"
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSailingShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 175,
+        "DisableEscort": 1
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 8500
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          },
+          "Fire": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700092
+          },
+          "MoveCommand": {
+            "AudioPool": 700093
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700122
+          },
+          "EscortCommand": {
+            "AudioPool": 700124
+          },
+          "PatrolCommand": {
+            "AudioPool": 700123
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 102594,
+        "Name": "Clipper (Madame Kahina)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+        "InfoDescription": 1084
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/clipper/clipper.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1,
+        "Deceleration": 1,
+        "TurnRadius": 6,
+        "TurnSpeed": 50,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 5.5,
+        "WindMinSlowdownFactor": 0.5,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Kahina's Bounteous Clipper",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 29479
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FormationPriority": 1,
+        "TradeShipPoints": 2,
+        "PriorityShipList": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 9,
+        "Width": 1.75,
+        "FactorRotation": 0.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2500,
+        "HPBarOffset": 7.5,
+        "DisableGettingAutoAttacked": 1,
+        "IsInvulnerable": 1,
+        "SelfHealPerHealTick": 1.389,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 247099
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 4
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 30
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 4
+      },
+      "Craftable": {
+        "CraftingTime": 360000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 50,
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might"
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSailingShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 175,
+        "DisableEscort": 1
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 8500
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          },
+          "Fire": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700092
+          },
+          "MoveCommand": {
+            "AudioPool": 700093
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700122
+          },
+          "EscortCommand": {
+            "AudioPool": 700124
+          },
+          "PatrolCommand": {
+            "AudioPool": 700123
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 110688,
+        "Name": "Clipper (Hugo Mercier)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+        "InfoDescription": 1084
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/clipper/clipper.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1,
+        "Deceleration": 1,
+        "TurnRadius": 6,
+        "TurnSpeed": 50,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 5.5,
+        "WindMinSlowdownFactor": 0.5,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Mercier's Revolutionary Clipper",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 31487
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FormationPriority": 1,
+        "TradeShipPoints": 2,
+        "PriorityShipList": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 9,
+        "Width": 1.75,
+        "FactorRotation": 0.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2500,
+        "HPBarOffset": 7.5,
+        "DisableGettingAutoAttacked": 1,
+        "IsInvulnerable": 1,
+        "SelfHealPerHealTick": 1.389,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 247099
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 4
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 30
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 4
+      },
+      "Craftable": {
+        "CraftingTime": 360000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 50,
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might"
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSailingShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 175,
+        "DisableEscort": 1
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 8500
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          },
+          "Fire": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700092
+          },
+          "MoveCommand": {
+            "AudioPool": 700093
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700122
+          },
+          "EscortCommand": {
+            "AudioPool": 700124
+          },
+          "PatrolCommand": {
+            "AudioPool": 700123
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 111877,
+        "Name": "Collier Old Nate Starter ship",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png",
+        "InfoDescription": 1089
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/collier/collier.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ShortenSailsAfter": 0,
+        "ReservationLength": 16,
+        "ReservationWidth": 6,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 8,
+        "Acceleration": 1.5,
+        "Deceleration": 2,
+        "TurnRadius": 8,
+        "TurnSpeedInPlace": 20,
+        "TurnDeceleration": 0,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": -10,
+        "ForwardSpeed": 5.2,
+        "WindMinSlowdownFactor": 1,
+        "WindMaxSpeedupFactor": 1,
+        "CargoFullFactor": 0.8,
+        "MinSlowdownFactor": 0.5,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Nate's Patchwork Ship",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 31501
+      },
+      "CommandQueue": {
+        "FormationPriority": 1,
+        "TradeShipPoints": 4,
+        "PriorityShipList": 2
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 7,
+        "Width": 1.5,
+        "FactorMovement": 0.7,
+        "FactorRotation": 0.65
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 3500,
+        "HPBarOffset": 4,
+        "AlertRange": 150,
+        "SelfHealPerHealTick": 1.667,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 501018
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 201827
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 2,
+        "SocketAllocation": "Ship;SteamShip;Tradeship",
+        "SlotCount": 6
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010218,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 1010224,
+              "Amount": 20
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 6
+      },
+      "Craftable": {
+        "CraftingTime": 540000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 70,
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might"
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSteamShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 500
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 27000
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          },
+          "Fire": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700094
+          },
+          "MoveCommand": {
+            "AudioPool": 700095
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700125
+          },
+          "EscortCommand": {
+            "AudioPool": 700127
+          },
+          "PatrolCommand": {
+            "AudioPool": 700126
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 102398,
+        "Name": "Wreckage 03 - Trade Ship Behaviour",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_ship.png",
+        "InfoDescription": 1082
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/wreckage/wreckage_03.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": "",
+      "Walking": {
+        "TurnSpeed": 0.01,
+        "TurnSpeedInPlace": 0.01,
+        "TurnDeceleration": 0,
+        "TurnMovement": 0,
+        "ForwardSpeed": 0.05,
+        "WindMinSlowdownFactor": 0.01,
+        "WindMaxSpeedupFactor": 1,
+        "CargoThreshold": 0
+      },
+      "Text": "",
+      "CommandQueue": "",
+      "Drifting": "",
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 10000
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 9818371
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": "",
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": "",
+      "Craftable": "",
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": "",
+      "ShipMaintenance": "",
+      "Sellable": "",
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": ""
+    }
+  },
+  {
+    "Template": "TradeShip",
+    "Values": {
+      "Standard": {
+        "GUID": 101206,
+        "Name": "DynamiteFishShip",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_dynamite.png",
+        "InfoDescription": 1083
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/units/wildlife/fish/fish_quest_object.cfg"
+          }
+        },
+        "DefaultParticipant": "General_Enemy"
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope",
+        "ConstructionEffectDuration": 0
+      },
+      "Selection": {
+        "Selectable": 0,
+        "DestructSelectable": 0
+      },
+      "Walking": {
+        "WalkSequence": "default",
+        "IdleSequence2": "default",
+        "ShortenSailsAfter": 1000,
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "Acceleration": 0.7,
+        "TurnSpeed": 360,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 2,
+        "WindMinSlowdownFactor": 1,
+        "WindMaxSpeedupFactor": 1,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Fish Swarm",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 21451
+      },
+      "CommandQueue": {
+        "FollowRadius": 4,
+        "FormationPriority": 1,
+        "TradeShipPoints": 1,
+        "PriorityShipList": 2
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 3.5,
+        "Width": 0.8,
+        "FactorMovement": 0,
+        "FactorRotation": 0,
+        "AffectedByDriftingWhileIdle": 0,
+        "AffectedByDriftingWhileMoving": 0,
+        "CausesDrifting": 0,
+        "UseSlowDownTactic": 0
+      },
+      "Collector": "",
+      "Attackable": "",
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": "",
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketAllocation": "",
+        "SlotCount": 3,
+        "StackLimit": 1,
+        "FlotsamNoRadius": 1
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 10
+            }
+          ]
+        }
+      },
+      "Craftable": {
+        "CraftingTime": 180000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": "",
+      "ShipMaintenance": {
+        "DisableShipDestructionTracking": 1,
+        "DisableEscort": 1
+      },
+      "Sellable": "",
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": ""
+    }
+  }
+]

@@ -1,0 +1,220 @@
+[
+  {
+    "Template": "ArcticIllnessIncident",
+    "Values": {
+      "Standard": {
+        "GUID": 142753,
+        "Name": "ArcticIllnessIncident"
+      },
+      "Incident": {
+        "IncidentType": "ArcticIllness",
+        "IncidentMurmur_DEPRECATED": "IncidentIllness",
+        "IncidentInfolayerIcon": 116111,
+        "ResolveInfolayerIcon": 116112,
+        "BuildingData": {
+          "IntensityIncreaseRate": 2.5,
+          "IntensitySelfHealRate": 0.01,
+          "ProtectedTime": 120000,
+          "IntensitySelfHealBaseChance": 3
+        },
+        "InfectionData": {
+          "InfectionBaseIntervalMin": 30000,
+          "InfectionBaseIntervalMax": 60000
+        },
+        "ShipIncidentSpreadRadius": 0,
+        "ShipIncidentSpreadChance": 0,
+        "InfectionChanceSourceNameMapping": {
+          "Base": {
+            "Name": 14431,
+            "Icon": 14431,
+            "NotificationText": 14551
+          },
+          "Heat": {
+            "Name": 116364,
+            "Icon": 116364,
+            "NotificationText": 116240
+          },
+          "Damage": {
+            "Name": 14432,
+            "Icon": 14432,
+            "NotificationText": 14553
+          },
+          "Density": {
+            "Name": 14433,
+            "Icon": 14433,
+            "NotificationText": 14555
+          },
+          "HappinessResidence": {
+            "Name": 14434,
+            "Icon": 14434,
+            "NotificationText": 14556
+          },
+          "Satisfaction": {
+            "Name": 14435,
+            "Icon": 14435,
+            "NotificationText": 14557
+          },
+          "WorkingConditionFactory": {
+            "Name": 14436,
+            "Icon": 14436,
+            "NotificationText": 14558
+          },
+          "Productivity": {
+            "Name": 14437,
+            "Icon": 14437,
+            "NotificationText": 14559
+          },
+          "Proximity": {
+            "Name": 14438,
+            "Icon": 14438,
+            "NotificationText": 14560
+          },
+          "HappinessFactory": {
+            "Name": 14439,
+            "Icon": 14439,
+            "NotificationText": 14561
+          },
+          "Newspaper": {
+            "Name": 14496,
+            "Icon": 14496,
+            "NotificationText": 14562
+          },
+          "Upgrades": {
+            "Name": 14495,
+            "Icon": 14495,
+            "NotificationText": 14563
+          },
+          "InfluencerPositive": {
+            "Name": 14497,
+            "Icon": 14497,
+            "NotificationText": 14564
+          },
+          "InfluencerNegative": {
+            "Name": 112669,
+            "Icon": 14500,
+            "NotificationText": 14551
+          },
+          "WorkingConditionResidence": {
+            "Name": 14436,
+            "Icon": 14436,
+            "NotificationText": 14558
+          }
+        },
+        "ResolverConfigurationPerRegion": {
+          "Arctic": {
+            "ResolverConfigs": {
+              "Item": {
+                "FileName": "data/graphics/effects/city_incidents/illness/stories/ci_arctic_illness_story_01.cfg"
+              }
+            }
+          }
+        },
+        "FeedbackDangerReaction": "WALK_AWAY",
+        "DangerUnsafeExtents": 2,
+        "DangerSafeExtents": 4,
+        "IncidentEscalationPerProgress": {
+          "EarlyGame": {
+            "RequiredActiveInfections": 25
+          },
+          "EarlyMidGame": {
+            "RequiredActiveInfections": 25
+          },
+          "MidGame": {
+            "RequiredActiveInfections": 25
+          },
+          "LateMidGame": {
+            "RequiredActiveInfections": 25
+          },
+          "LateGame": {
+            "RequiredActiveInfections": 25
+          },
+          "EndGame": {
+            "RequiredActiveInfections": 25
+          }
+        },
+        "InfectableCountDependentConfig": {
+          "Item": [
+            {
+              "InitialInfectionFactor": 0.4
+            },
+            {
+              "MinInfectableCount": 10,
+              "InitialInfectionFactor": 0.5
+            },
+            {
+              "MinInfectableCount": 25,
+              "InitialInfectionFactor": 0.48
+            },
+            {
+              "MinInfectableCount": 50,
+              "InitialInfectionFactor": 0.43
+            },
+            {
+              "MinInfectableCount": 85,
+              "InitialInfectionFactor": 0.37
+            },
+            {
+              "MinInfectableCount": 130,
+              "InitialInfectionFactor": 0.32
+            },
+            {
+              "MinInfectableCount": 190,
+              "InitialInfectionFactor": 0.27
+            },
+            {
+              "MinInfectableCount": 270,
+              "TargetInfectionFactor": 0.93,
+              "InitialInfectionFactor": 0.21
+            },
+            {
+              "MinInfectableCount": 400,
+              "TargetInfectionFactor": 0.86,
+              "InitialInfectionFactor": 0.16
+            }
+          ]
+        },
+        "HasOwnSessionTimer": 1,
+        "SessionTimerCooldown": 180000,
+        "SessionTimerIntervalMin": 60000,
+        "SessionTimerIntervalMax": 120000,
+        "IncidentMurmur": {
+          "Arctic": {
+            "Murmur": "Arctic_IncidentIllness"
+          }
+        }
+      },
+      "IncidentArcticIllness": {
+        "ArcticMoveOutInterval": 120
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Arctic Flu Incident",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35218
+      },
+      "IncidentEffectConfiguration": {
+        "DummyEffectInformation": {
+          "DummyEffects": {
+            "Horizontal": {
+              "ConfigFiles": {
+                "Item": {
+                  "Path": "data/graphics/effects/city_incidents/illness/ci_plague_purple_01.cfg"
+                }
+              }
+            }
+          },
+          "UnusedDummyPercentage": 0.9,
+          "FallbackConfig": {
+            "SpawnBlockSize": 4,
+            "Scale": 1
+          },
+          "DummyFallbackUsage": "DUMMY_AND_FALLBACK"
+        }
+      }
+    }
+  }
+]

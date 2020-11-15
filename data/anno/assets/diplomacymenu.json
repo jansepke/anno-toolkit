@@ -1,0 +1,441 @@
+[
+  {
+    "Template": "DiplomacyMenu",
+    "Values": {
+      "Standard": {
+        "GUID": 500343,
+        "Name": "DiplomacyScene",
+        "ID": "DiplomacySceneConfig"
+      },
+      "DiplomacyScene": {
+        "RadialMenuButton": {
+          "Item": [
+            {
+              "Icon": 3876,
+              "DiplomacyAction": "RequestAlliance",
+              "Tooltip": 500392,
+              "TooltipHuman": 501221,
+              "ActionType": 1,
+              "FaceIcon": 501162
+            },
+            {
+              "Icon": 3882,
+              "DiplomacyAction": "CancelAlliance",
+              "Tooltip": 500394,
+              "ActionType": 1,
+              "FaceIcon": 501160
+            },
+            {
+              "Icon": 3825,
+              "DiplomacyAction": "RequestTraderights",
+              "Tooltip": 500389,
+              "TooltipHuman": 501222,
+              "ActionType": 1,
+              "FaceIcon": 501162
+            },
+            {
+              "Icon": 3839,
+              "DiplomacyAction": "CancelTraderights",
+              "Tooltip": 500390,
+              "ActionType": 1,
+              "FaceIcon": 501160
+            },
+            {
+              "Icon": 3819,
+              "DiplomacyAction": "RequestPeace",
+              "Tooltip": 500387,
+              "TooltipHuman": 501223,
+              "ActionType": 1,
+              "FaceIcon": 501162
+            },
+            {
+              "Icon": 14920,
+              "DiplomacyAction": "RequestNonAttack",
+              "Tooltip": 501186,
+              "TooltipHuman": 501225,
+              "ActionType": 1,
+              "FaceIcon": 501162
+            },
+            {
+              "Icon": 3605,
+              "DiplomacyAction": "RequestCeaseFire",
+              "Tooltip": 501168,
+              "TooltipHuman": 501224,
+              "ActionType": 1,
+              "FaceIcon": 501162
+            },
+            {
+              "Icon": 3822,
+              "Tooltip": 500388,
+              "ActionType": 1,
+              "FaceIcon": 501160
+            },
+            {
+              "Icon": 3849,
+              "DiplomacyAction": "Flatter",
+              "Tooltip": 500393,
+              "FaceIcon": 501162
+            },
+            {
+              "Icon": 3883,
+              "DiplomacyAction": "Insult",
+              "Tooltip": 500395,
+              "FaceIcon": 501160
+            },
+            {
+              "Icon": 3840,
+              "DiplomacyAction": "GiftMoneyOneTimeSmall",
+              "Tooltip": 500391,
+              "FaceIcon": 501162
+            },
+            {
+              "Icon": 4058,
+              "DiplomacyAction": "DemandQuest",
+              "Tooltip": 500431,
+              "FaceIcon": 501162
+            }
+          ]
+        },
+        "DiplomacyMessageTrigger": {
+          "DeclareWar": {
+            "TriggerTypes": {
+              "OfferAction": {
+                "Disable": 1
+              },
+              "AcceptOfferAction": {
+                "Message": "DiplomacyDeclareWar",
+                "Initiator": "FirstActorInitiator"
+              }
+            }
+          },
+          "RequestPeace": {
+            "TriggerTypes": {
+              "OfferAction": {
+                "Message": "DiplomacyOfferPeace",
+                "TriggeredInCompound": 1
+              },
+              "AcceptOfferAction": {
+                "Message": "DiplomacyOfferPeaceAccepted",
+                "TriggeredInCompound": 1
+              },
+              "DeclineOfferAction": {
+                "Message": "DiplomacyOfferRejected"
+              }
+            }
+          },
+          "GiftMoneyOneTimeSmall": {
+            "TriggerTypes": {
+              "OfferAction": {
+                "Disable": 1
+              },
+              "AcceptOfferAction": {
+                "Message": "DiplomacyOfferGiftAccepted",
+                "Initiator": "FirstActorInitiator"
+              },
+              "DeclineOfferAction": {
+                "Message": "DiplomacyOfferGiftRejected"
+              }
+            }
+          },
+          "GiftMoneyOneTimeOrdinary": {
+            "TriggerTypes": {
+              "OfferAction": {
+                "Disable": 1
+              },
+              "AcceptOfferAction": {
+                "Message": "DiplomacyOfferGiftAccepted",
+                "Initiator": "FirstActorInitiator"
+              },
+              "DeclineOfferAction": {
+                "Message": "DiplomacyOfferGiftRejected"
+              }
+            }
+          },
+          "GiftMoneyOneTimeGenerous": {
+            "TriggerTypes": {
+              "OfferAction": {
+                "Disable": 1
+              },
+              "AcceptOfferAction": {
+                "Message": "DiplomacyOfferGiftAccepted",
+                "Initiator": "FirstActorInitiator"
+              },
+              "DeclineOfferAction": {
+                "Message": "DiplomacyOfferGiftRejected"
+              }
+            }
+          },
+          "CancelTraderights": {
+            "TriggerTypes": {
+              "OfferAction": {
+                "Disable": 1
+              },
+              "AcceptOfferAction": {
+                "Message": "DiplomacyCancelTraderights",
+                "Initiator": "FirstActorInitiator"
+              }
+            }
+          },
+          "RequestTraderights": {
+            "TriggerTypes": {
+              "OfferAction": {
+                "Message": "DiplomacyOfferTraderights",
+                "TriggeredInCompound": 1
+              },
+              "AcceptOfferAction": {
+                "Message": "DiplomacyOfferTraderightsAccepted",
+                "TriggeredInCompound": 1
+              },
+              "DeclineOfferAction": {
+                "Message": "DiplomacyOfferRejected"
+              }
+            }
+          },
+          "DemandQuest": {
+            "TriggerTypes": {
+              "AcceptOfferAction": {
+                "Disable": 1
+              },
+              "DeclineOfferAction": {
+                "Disable": 1
+              },
+              "OfferAction": {
+                "Disable": 1
+              }
+            }
+          },
+          "CancelAlliance": {
+            "TriggerTypes": {
+              "OfferAction": {
+                "Disable": 1
+              },
+              "AcceptOfferAction": {
+                "Message": "DiplomacyCancelAlliance",
+                "Initiator": "FirstActorInitiator"
+              }
+            }
+          },
+          "RequestAlliance": {
+            "TriggerTypes": {
+              "OfferAction": {
+                "Message": "DiplomacyOfferAlliance",
+                "TriggeredInCompound": 1
+              },
+              "AcceptOfferAction": {
+                "Message": "DiplomacyOfferAllianceAccepted",
+                "TriggeredInCompound": 1
+              },
+              "DeclineOfferAction": {
+                "Message": "DiplomacyOfferRejected"
+              }
+            }
+          },
+          "Flatter": {
+            "TriggerTypes": {
+              "AcceptOfferAction": {
+                "Message": "DiplomacyAcceptFlatter"
+              },
+              "DeclineOfferAction": {
+                "Message": "DiplomacyDeclineFlatter"
+              }
+            }
+          },
+          "Insult": {
+            "TriggerTypes": {
+              "AcceptOfferAction": {
+                "Message": "DiplomacyAcceptInsult"
+              },
+              "DeclineOfferAction": {
+                "Message": "DiplomacyDeclineInsult"
+              }
+            }
+          },
+          "ThreatWar": {
+            "TriggerTypes": {
+              "ThreatAction": {
+                "Message": "DiplomacyOfferThreat",
+                "TriggeredInCompound": 1
+              },
+              "ThreatAcceptAction": {
+                "Message": "DiplomacyOfferThreatAccepted"
+              },
+              "ThreatIgnoreAction": {
+                "Message": "DiplomacyOfferThreatRejected"
+              }
+            }
+          },
+          "RequestCeaseFire": {
+            "TriggerTypes": {
+              "OfferAction": {
+                "Message": "DiplomacyOfferCeasefire",
+                "TriggeredInCompound": 1
+              },
+              "AcceptOfferAction": {
+                "Message": "DiplomacyOfferCeasefireAccepted",
+                "TriggeredInCompound": 1
+              },
+              "DeclineOfferAction": {
+                "Message": "DiplomacyOfferRejected"
+              }
+            }
+          },
+          "ThreatCancelTrade": {
+            "TriggerTypes": {
+              "ThreatAction": {
+                "Message": "DiplomacyOfferThreat",
+                "TriggeredInCompound": 1
+              },
+              "ThreatAcceptAction": {
+                "Message": "DiplomacyOfferThreatAccepted"
+              },
+              "ThreatIgnoreAction": {
+                "Message": "DiplomacyOfferThreatRejected"
+              }
+            }
+          },
+          "ThreatCancelAlliance": {
+            "TriggerTypes": {
+              "ThreatAction": {
+                "Message": "DiplomacyOfferThreat",
+                "TriggeredInCompound": 1
+              },
+              "ThreatAcceptAction": {
+                "Message": "DiplomacyOfferThreatAccepted"
+              },
+              "ThreatIgnoreAction": {
+                "Message": "DiplomacyOfferThreatRejected"
+              }
+            }
+          },
+          "RequestNonAttack": {
+            "TriggerTypes": {
+              "OfferAction": {
+                "Message": "DiplomacyOfferNonAggressionPact",
+                "TriggeredInCompound": 1
+              },
+              "AcceptOfferAction": {
+                "Message": "DiplomacyOfferNonAggressionPactAccepted",
+                "TriggeredInCompound": 1
+              },
+              "DeclineOfferAction": {
+                "Message": "DiplomacyOfferRejected"
+              }
+            }
+          }
+        },
+        "GiftButtons": {
+          "Item": [
+            {
+              "Text": 9798,
+              "DiplomacyAction": "GiftMoneyOneTimeSmall",
+              "Tooltip": 500454
+            },
+            {
+              "Text": 9799,
+              "DiplomacyAction": "GiftMoneyOneTimeOrdinary",
+              "Tooltip": 500455
+            },
+            {
+              "Text": 9800,
+              "DiplomacyAction": "GiftMoneyOneTimeGenerous",
+              "Tooltip": 500456
+            }
+          ]
+        },
+        "NegotiationButton": {
+          "PeaceTooltip": 500396,
+          "WarTootlip": 500396,
+          "QueenState": "Disabled",
+          "QueenKnighthoodTooltip": 500396,
+          "QueenIndependenceState": "Disabled"
+        },
+        "ThreatButton": {
+          "PeaceTooltip": 500397,
+          "WarState": "Disabled",
+          "WarTooltip": 500759
+        },
+        "DiplomacyButtonPrecheck": {
+          "DeclareWar": {
+            "PossibleStates": "Alliance;Trade;Peace",
+            "VisibleWithHumans": 1
+          },
+          "ThreatWar": {
+            "PossibleStates": "Alliance;Trade;Peace"
+          },
+          "RequestPeace": {
+            "PossibleStates": "War",
+            "VisibleWithHumans": 1
+          },
+          "GiftMoneyOneTimeSmall": {
+            "PossibleStates": "Alliance;Trade;Peace;War"
+          },
+          "GiftMoneyOneTimeOrdinary": {
+            "PossibleStates": "Alliance;Trade;Peace;War"
+          },
+          "GiftMoneyOneTimeGenerous": {
+            "PossibleStates": "Alliance;Trade;Peace;War"
+          },
+          "CancelTraderights": {
+            "PossibleStates": "Trade",
+            "VisibleWithHumans": 1
+          },
+          "RequestTraderights": {
+            "PossibleStates": "Peace",
+            "VisibleWithHumans": 1
+          },
+          "PaymentIncreaseReputation": {
+            "PossibleStates": "Alliance;Trade;Peace;War"
+          },
+          "PaymentDecreaseReputation": {
+            "PossibleStates": "Alliance;Trade;Peace;War"
+          },
+          "Flatter": {
+            "PossibleStates": "Alliance;Trade;Peace;War"
+          },
+          "DemandQuest": {
+            "PossibleStates": "Alliance;Trade;Peace"
+          },
+          "CancelAlliance": {
+            "PossibleStates": "Alliance",
+            "VisibleWithHumans": 1
+          },
+          "RequestAlliance": {
+            "PossibleStates": "Trade",
+            "VisibleWithHumans": 1
+          },
+          "Insult": {
+            "PossibleStates": "Alliance;Trade;Peace;War"
+          },
+          "RequestCeaseFire": {
+            "PossibleStates": "War",
+            "VisibleWithHumans": 1
+          },
+          "ThreatCancelTrade": {
+            "PossibleStates": "Trade"
+          },
+          "ThreatCancelAlliance": {
+            "PossibleStates": "Alliance"
+          },
+          "RequestNonAttack": {
+            "PossibleStates": "Alliance;Trade;Peace",
+            "VisibleWithHumans": 1
+          }
+        },
+        "TimeIcons": {
+          "CeaseFire": {
+            "Icons": 14924
+          },
+          "NonAttack": {
+            "Icons": 14918
+          }
+        },
+        "PlayerResources": {
+          "Credits": 14532,
+          "Balance": 14533
+        },
+        "IdleMessageMinPause": 40000,
+        "IdleMessageMaxPause": 60000
+      }
+    }
+  }
+]

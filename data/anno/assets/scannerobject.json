@@ -1,0 +1,1757 @@
+[
+  {
+    "Template": "ScannerObject",
+    "Values": {
+      "Standard": {
+        "GUID": 102079,
+        "Name": "CQO_Pyro_ScannerShip (Monitor high HP)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_pyrophorian_ship.png"
+      },
+      "Scanner": {
+        "ScanRadius": 25,
+        "FlyRadius": 60,
+        "ScanEffect": 500886,
+        "AlarmTime": 15000,
+        "AlarmEffect": 500888
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/campaign/vehicle/pyro_ship_01/pyro_ship_01.cfg"
+          }
+        },
+        "AssignDefaultParticipant": 1,
+        "DefaultParticipant": "Campaign_character_02_pyrophorian_red"
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope",
+        "SetCompanyLogo": 1
+      },
+      "Selection": {
+        "GUIType": "Vehicle",
+        "MultiSelectable": 1,
+        "SelectionPriority": 5,
+        "InteractionDistance": 2
+      },
+      "Walking": {
+        "ReservationLength": 16,
+        "ReservationWidth": 6,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1,
+        "Deceleration": 2,
+        "TurnRadius": 6,
+        "TurnSpeed": 60,
+        "TurnSpeedInPlace": 20,
+        "TurnDeceleration": 0,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 10,
+        "ForwardSpeed": 3.5,
+        "DamageFullFactor": 0.5,
+        "MinSlowdownFactor": 0.5,
+        "CurveSegmentDensity": "High"
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 9818371
+            }
+          }
+        }
+      },
+      "QuestObject": "",
+      "CommandQueue": {
+        "FollowRadius": 4,
+        "FormationPriority": 3,
+        "MilitaryShipPoints": 3,
+        "PriorityShipList": 1,
+        "InsecurityAttractiveness": -10
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Pyrphorian Patrol Ship",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 20125
+      },
+      "Attacker": {
+        "AttackRange": 30,
+        "AttackRangeApproachPercentage": 0.9,
+        "LineOfSightRange": 70,
+        "ReloadTime": 30,
+        "ProjectileAsset": 102405,
+        "ProjectileCount": 2,
+        "BaseDamage": 80,
+        "Turrets": {
+          "Item": {
+            "TurnSpan": 320,
+            "TurretCfg": "data/graphics/campaign/vehicle/pyro_ship_01/pyro_ship_01_turret.cfg"
+          }
+        },
+        "AccuracyBase": 1.5,
+        "AccuracyIncreaseOverDistance": 60,
+        "AccuracySpeedDecay": 20,
+        "TargetAngleVariation": 30,
+        "ShootingTracking": "TurretFixed",
+        "TurretExplosionEffectAsset": 101994,
+        "MuzzleEffectAssets": {
+          "Item": {
+            "MuzzleEffectAsset": 102404
+          }
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 1500,
+        "AccuracyWidth": 2.5,
+        "SelfHealPerHealTick": 10,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "ItemContainer": "",
+      "UpgradeList": "",
+      "Stance": ""
+    }
+  },
+  {
+    "Template": "ScannerObject",
+    "Values": {
+      "Standard": {
+        "GUID": 102081,
+        "Name": "CQO_Pyro_ScannerShip (Monitor)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_pyrophorian_ship.png",
+        "InfoDescription": 1088
+      },
+      "Scanner": {
+        "ScanRadius": 30,
+        "FlyRadius": 60,
+        "ScanEffect": 500886,
+        "AlarmTime": 15000,
+        "AlarmEffect": 500888
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/campaign/vehicle/pyro_ship_01/pyro_ship_01.cfg"
+          }
+        },
+        "AssignDefaultParticipant": 1,
+        "DefaultParticipant": "Campaign_character_02_pyrophorian_red"
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope",
+        "SetCompanyLogo": 1
+      },
+      "Selection": {
+        "GUIType": "Vehicle",
+        "MultiSelectable": 1,
+        "SelectionPriority": 5,
+        "InteractionDistance": 2
+      },
+      "Walking": {
+        "ReservationLength": 16,
+        "ReservationWidth": 6,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1,
+        "Deceleration": 2,
+        "TurnRadius": 6,
+        "TurnSpeed": 60,
+        "TurnSpeedInPlace": 20,
+        "TurnDeceleration": 0,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 10,
+        "ForwardSpeed": 3.5,
+        "DamageFullFactor": 0.5,
+        "MinSlowdownFactor": 0.5,
+        "CurveSegmentDensity": "High"
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 9818371
+            }
+          }
+        }
+      },
+      "QuestObject": "",
+      "CommandQueue": {
+        "FollowRadius": 4,
+        "FormationPriority": 3,
+        "MilitaryShipPoints": 3,
+        "PriorityShipList": 1,
+        "InsecurityAttractiveness": -10
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Pyrphorian Patrol Ship",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 20126
+      },
+      "Attacker": {
+        "AttackRange": 30,
+        "AttackRangeApproachPercentage": 0.9,
+        "LineOfSightRange": 70,
+        "ReloadTime": 30,
+        "ProjectileAsset": 102405,
+        "ProjectileCount": 2,
+        "BaseDamage": 80,
+        "Turrets": {
+          "Item": {
+            "TurnSpan": 320,
+            "TurretCfg": "data/graphics/campaign/vehicle/pyro_ship_01/pyro_ship_01_turret.cfg"
+          }
+        },
+        "AccuracyBase": 1.5,
+        "AccuracyIncreaseOverDistance": 60,
+        "AccuracySpeedDecay": 20,
+        "TargetAngleVariation": 30,
+        "ShootingTracking": "TurretFixed",
+        "TurretExplosionEffectAsset": 101994,
+        "MuzzleEffectAssets": {
+          "Item": {
+            "MuzzleEffectAsset": 102404
+          }
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 1500,
+        "AccuracyWidth": 2.5,
+        "SelfHealPerHealTick": 10
+      },
+      "ItemContainer": "",
+      "UpgradeList": "",
+      "Stance": ""
+    }
+  },
+  {
+    "Template": "ScannerObject",
+    "Values": {
+      "Standard": {
+        "GUID": 102569,
+        "Name": "QO Gunboat (Military) ScannerShip DONT USE",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png"
+      },
+      "Scanner": {
+        "ScanRadius": 30,
+        "FlyRadius": 60,
+        "ScanEffect": 500886,
+        "AlarmTime": 15000,
+        "AlarmEffect": 500888
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/gunboat/gunboat.cfg"
+          }
+        },
+        "AssignDefaultParticipant": 1,
+        "DefaultParticipant": "General_Enemy",
+        "IgnoreForMinimapGeneration": 1
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope",
+        "SetCompanyLogo": 1
+      },
+      "Selection": {
+        "GUIType": "Vehicle",
+        "MultiSelectable": 1,
+        "SelectionPriority": 5,
+        "InteractionDistance": 2,
+        "AllowedDragType": "ItemSocket;CargoProductStack;CargoItemStack;StorageProductStack;StorageItemStack"
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 4,
+        "Acceleration": 2,
+        "Deceleration": 4,
+        "TurnRadius": 4,
+        "TurnSpeed": 75,
+        "TurnSpeedInPlace": 20,
+        "TurnDeceleration": 0,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 45,
+        "ForwardSpeed": 4.5,
+        "WindMinSlowdownFactor": 0.4,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 238316
+          }
+        }
+      },
+      "QuestObject": "",
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 1,
+        "FollowRadius": 10,
+        "FormationPriority": 4,
+        "MilitaryShipPoints": 0.8,
+        "PriorityShipList": 1,
+        "InsecurityAttractiveness": -10
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Gunboat",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 28579
+      },
+      "Attacker": {
+        "AttackRange": 40,
+        "AttackRangeApproachPercentage": 0.85,
+        "LineOfSightRange": 100,
+        "ReloadTime": 50,
+        "ProjectileAsset": 102277,
+        "ProjectileCount": 2,
+        "BaseDamage": 80,
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 80,
+        "AccuracySpeedDecay": 20,
+        "TargetAngleVariation": 30,
+        "ShootingTracking": "Front",
+        "TurretExplosionEffectAsset": 101994,
+        "MuzzleEffectAssets": {
+          "Item": {
+            "MuzzleEffectAsset": 100563
+          }
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 750,
+        "HPBarOffset": 4.5,
+        "AccuracyWidth": 2,
+        "SelfHealPerHealTick": 0.708,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "ItemContainer": "",
+      "UpgradeList": "",
+      "Stance": ""
+    }
+  },
+  {
+    "Template": "ScannerObject",
+    "Values": {
+      "Standard": {
+        "GUID": 102631,
+        "Name": "QO Gunboat Small Scanner Radius (Military)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png",
+        "InfoDescription": 1082
+      },
+      "Scanner": {
+        "ScanRadius": 20,
+        "FlyRadius": 40,
+        "ScanEffect": 500886,
+        "AlarmTime": 15000,
+        "AlarmEffect": 500888
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/gunboat/gunboat.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 4,
+        "Acceleration": 2,
+        "Deceleration": 4,
+        "TurnRadius": 4,
+        "TurnSpeed": 75,
+        "TurnDeceleration": 0,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 45,
+        "ForwardSpeed": 2.5,
+        "WindMinSlowdownFactor": 0.4,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 238316
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 216013
+            }
+          }
+        }
+      },
+      "QuestObject": "",
+      "CommandQueue": {
+        "FormationPriority": 4,
+        "MilitaryShipPoints": 0.8,
+        "PriorityShipList": 1
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Gunboat",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 29446
+      },
+      "Attacker": {
+        "AttackRange": 40,
+        "LineOfSightRange": 100,
+        "ReloadTime": 50,
+        "ProjectileAsset": 102277,
+        "ProjectileCount": 2,
+        "BaseDamage": 105,
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 80,
+        "AccuracySpeedDecay": 20,
+        "ShootingTracking": "Front",
+        "MuzzleEffectAssets": {
+          "Item": {
+            "VectorElement": {
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "WarShip",
+                  "Index": 0
+                }
+              }
+            },
+            "MuzzleEffectAsset": 102278
+          }
+        },
+        "AccuracyByDistance": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "WarShip",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "ScannerObject",
+                      "Index": 0
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "WarShip",
+                    "Index": 1
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 850,
+        "HPBarOffset": 4.5,
+        "AccuracyWidth": 2,
+        "SelfHealPerHealTick": 0.708,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "ItemContainer": {
+        "SocketCount": 2,
+        "SlotCount": 1
+      },
+      "UpgradeList": "",
+      "Stance": ""
+    }
+  },
+  {
+    "Template": "ScannerObject",
+    "Values": {
+      "Standard": {
+        "GUID": 102635,
+        "Name": "QO Frigate Small Scanner Radius (Military)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png",
+        "InfoDescription": 1085
+      },
+      "Scanner": {
+        "ScanRadius": 20,
+        "FlyRadius": 40,
+        "ScanEffect": 500886,
+        "AlarmTime": 15000,
+        "AlarmEffect": 500888
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/frigate/frigate.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1,
+        "Deceleration": 1,
+        "TurnRadius": 6,
+        "TurnSpeed": 50,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 2.5,
+        "WindMinSlowdownFactor": 0.4,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 238315
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 236628
+            }
+          }
+        }
+      },
+      "QuestObject": "",
+      "CommandQueue": {
+        "FormationPriority": 4,
+        "MilitaryShipPoints": 1.5,
+        "PriorityShipList": 1
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Frigate",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 29449
+      },
+      "Attacker": {
+        "AttackRange": 55,
+        "LineOfSightRange": 100,
+        "ReloadTime": 50,
+        "ProjectileAsset": 102032,
+        "ProjectileCount": 14,
+        "BaseDamage": 140,
+        "AccuracyBase": 3,
+        "AccuracyIncreaseOverDistance": 90,
+        "AccuracySpeedDecay": 20,
+        "TargetAngleVariation": 50,
+        "FullVolleyTimeMin": 0.4,
+        "MuzzleEffectAssets": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "WarShip",
+                    "Index": 0
+                  }
+                }
+              }
+            },
+            {
+              "MuzzleEffectAsset": 102183
+            },
+            {
+              "MuzzleEffectAsset": 102184
+            }
+          ]
+        },
+        "FullVolleyTimeMax": 1.2,
+        "VolleyMaxPerBulletRandomOffset": 0.2,
+        "AccuracyByDistance": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "WarShip",
+                    "Index": 0
+                  }
+                }
+              },
+              "AccuracyByDistancePair": {
+                "CorrespondingAccuracy": 50
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "WarShip",
+                    "Index": 1
+                  }
+                }
+              },
+              "AccuracyByDistancePair": {
+                "EnemyDistanceRelToAttackRange": 20
+              }
+            },
+            {
+              "AccuracyByDistancePair": {
+                "EnemyDistanceRelToAttackRange": 40,
+                "CorrespondingAccuracy": 70
+              }
+            },
+            {
+              "AccuracyByDistancePair": {
+                "EnemyDistanceRelToAttackRange": 70,
+                "CorrespondingAccuracy": 85
+              }
+            },
+            {
+              "AccuracyByDistancePair": {
+                "EnemyDistanceRelToAttackRange": 100,
+                "CorrespondingAccuracy": 100
+              }
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 2000,
+        "HPBarOffset": 9,
+        "AccuracyWidth": 3.75,
+        "SelfHealPerHealTick": 1.389,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "ItemContainer": {
+        "SocketCount": 2,
+        "SlotCount": 3
+      },
+      "UpgradeList": "",
+      "Stance": ""
+    }
+  },
+  {
+    "Template": "ScannerObject",
+    "Values": {
+      "Standard": {
+        "GUID": 102638,
+        "Name": "QO Liner Small Scanner Radius (Military)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png",
+        "InfoDescription": 1086
+      },
+      "Scanner": {
+        "ScanRadius": 20,
+        "FlyRadius": 40,
+        "ScanEffect": 500886,
+        "AlarmTime": 15000,
+        "AlarmEffect": 500888
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/man_of_war/man_of_war.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 8,
+        "Acceleration": 0.6,
+        "Deceleration": 0.5,
+        "TurnRadius": 8,
+        "TurnSpeed": 50,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 10,
+        "ForwardSpeed": 2.5,
+        "WindMinSlowdownFactor": 0.4,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 238317
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 216015
+            }
+          }
+        }
+      },
+      "QuestObject": "",
+      "CommandQueue": {
+        "FormationPriority": 3,
+        "MilitaryShipPoints": 3.2,
+        "PriorityShipList": 1
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Ship-of-the-line",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 29452
+      },
+      "Attacker": {
+        "AttackRange": 68,
+        "LineOfSightRange": 100,
+        "ReloadTime": 100,
+        "ProjectileAsset": 102285,
+        "ProjectileCount": 32,
+        "BaseDamage": 525,
+        "AccuracyIncreaseOverDistance": 100,
+        "AccuracySpeedDecay": 20,
+        "TargetAngleVariation": 50,
+        "FullVolleyTimeMin": 0.8,
+        "MuzzleEffectAssets": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "WarShip",
+                    "Index": 0
+                  }
+                }
+              },
+              "MuzzleEffectAsset": 102286
+            },
+            {
+              "MuzzleEffectAsset": 102287
+            },
+            {
+              "MuzzleEffectAsset": 102300
+            }
+          ]
+        },
+        "FullVolleyTimeMax": 1.8,
+        "VolleyMaxPerBulletRandomOffset": 0.2,
+        "AccuracyByDistance": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "WarShip",
+                    "Index": 0
+                  }
+                }
+              },
+              "AccuracyByDistancePair": {
+                "CorrespondingAccuracy": 50
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "WarShip",
+                    "Index": 1
+                  }
+                }
+              },
+              "AccuracyByDistancePair": {
+                "EnemyDistanceRelToAttackRange": 20
+              }
+            },
+            {
+              "AccuracyByDistancePair": {
+                "EnemyDistanceRelToAttackRange": 40,
+                "CorrespondingAccuracy": 70
+              }
+            },
+            {
+              "AccuracyByDistancePair": {
+                "EnemyDistanceRelToAttackRange": 70,
+                "CorrespondingAccuracy": 85
+              }
+            },
+            {
+              "AccuracyByDistancePair": {
+                "EnemyDistanceRelToAttackRange": 100,
+                "CorrespondingAccuracy": 100
+              }
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 4000,
+        "HPBarOffset": 9.5,
+        "AccuracyWidth": 4,
+        "SelfHealPerHealTick": 1.667,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "ItemContainer": {
+        "SocketCount": 3,
+        "SlotCount": 3
+      },
+      "UpgradeList": "",
+      "Stance": ""
+    }
+  },
+  {
+    "Template": "ScannerObject",
+    "Values": {
+      "Standard": {
+        "GUID": 102641,
+        "Name": "QO Monitor Small Scanner Radius (Military)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_monitor.png",
+        "InfoDescription": 1088
+      },
+      "Scanner": {
+        "ScanRadius": 20,
+        "FlyRadius": 40,
+        "ScanEffect": 500886,
+        "AlarmTime": 15000,
+        "AlarmEffect": 500888
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/monitor/monitor.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ShortenSailsAfter": 0,
+        "ReservationLength": 16,
+        "ReservationWidth": 6,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1,
+        "Deceleration": 2,
+        "TurnRadius": 6,
+        "TurnSpeed": 60,
+        "TurnDeceleration": 0,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 10,
+        "ForwardSpeed": 2.5,
+        "CargoFullFactor": 0.7,
+        "DamageFullFactor": 0.5,
+        "MinSlowdownFactor": 0.5,
+        "CurveSegmentDensity": "High"
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 238318
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 216019
+            }
+          }
+        }
+      },
+      "QuestObject": "",
+      "CommandQueue": {
+        "FormationPriority": 3,
+        "MilitaryShipPoints": 3,
+        "PriorityShipList": 1
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Monitor",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 29455
+      },
+      "Attacker": {
+        "AttackRange": 48,
+        "LineOfSightRange": 100,
+        "ReloadTime": 30,
+        "ProjectileAsset": 102267,
+        "ProjectileCount": 2,
+        "BaseDamage": 93,
+        "Turrets": {
+          "Item": {
+            "TurnSpan": 320,
+            "TurretCfg": "data/graphics/vehicle/monitor/monitor_turret.cfg"
+          }
+        },
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 60,
+        "AccuracySpeedDecay": 20,
+        "ShootingTracking": "TurretFixed",
+        "MuzzleEffectAssets": {
+          "Item": {
+            "VectorElement": {
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "WarShip",
+                  "Index": 0
+                }
+              }
+            },
+            "MuzzleEffectAsset": 101971
+          }
+        },
+        "AccuracyByDistance": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "WarShip",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "ScannerObject",
+                      "Index": 0
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "WarShip",
+                    "Index": 1
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 2500,
+        "HPBarOffset": 3.5,
+        "AccuracyWidth": 2.5,
+        "SelfHealPerHealTick": 1.389,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "ItemContainer": {
+        "SocketCount": 2,
+        "SocketAllocation": "Ship;SteamShip;Warship",
+        "SlotCount": 2
+      },
+      "UpgradeList": "",
+      "Stance": ""
+    }
+  },
+  {
+    "Template": "ScannerObject",
+    "Values": {
+      "Standard": {
+        "GUID": 102644,
+        "Name": "QO Battle Cruiser Small Scanner Radius (Military)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png",
+        "InfoDescription": 1087
+      },
+      "Scanner": {
+        "ScanRadius": 20,
+        "FlyRadius": 40,
+        "ScanEffect": 500886,
+        "AlarmTime": 15000,
+        "AlarmEffect": 500888
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/battle_cruiser/battle_cruiser.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ShortenSailsAfter": 0,
+        "ReservationLength": 16,
+        "ReservationWidth": 6,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 8,
+        "Acceleration": 0.6,
+        "Deceleration": 0.5,
+        "TurnRadius": 8,
+        "TurnSpeed": 50,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 10,
+        "ForwardSpeed": 2.5,
+        "CargoFullFactor": 0.7,
+        "DamageFullFactor": 0.5,
+        "MinSlowdownFactor": 0.5,
+        "CurveSegmentDensity": "High"
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 238314
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 216009
+            }
+          }
+        }
+      },
+      "QuestObject": "",
+      "CommandQueue": {
+        "FormationPriority": 2,
+        "MilitaryShipPoints": 6,
+        "PriorityShipList": 1
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Battle Cruiser",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 29458
+      },
+      "Attacker": {
+        "AttackRange": 84,
+        "LineOfSightRange": 100,
+        "ReloadTime": 70,
+        "ProjectileAsset": 102033,
+        "ProjectileCount": 6,
+        "BaseDamage": 245,
+        "Turrets": {
+          "Item": [
+            {
+              "TurnSpan": 300,
+              "TurretCfg": "data/graphics/vehicle/battle_cruiser/battle_cruiser_turret_01.cfg"
+            },
+            {
+              "TurnSpan": 300,
+              "TurretCfg": "data/graphics/vehicle/battle_cruiser/battle_cruiser_turret_01.cfg"
+            },
+            {
+              "TurnSpan": 300,
+              "TurretCfg": "data/graphics/vehicle/battle_cruiser/battle_cruiser_turret_01.cfg"
+            }
+          ]
+        },
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 60,
+        "AccuracySpeedDecay": 20,
+        "ShootingTracking": "TurretFixed",
+        "FullVolleyTimeMin": 1,
+        "MuzzleEffectAssets": {
+          "Item": [
+            {
+              "MuzzleEffectAsset": 102228
+            },
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "WarShip",
+                    "Index": 0
+                  }
+                }
+              },
+              "MuzzleEffectAsset": 102228
+            }
+          ]
+        },
+        "FullVolleyTimeMax": 2,
+        "AccuracyByDistance": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "WarShip",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "ScannerObject",
+                      "Index": 0
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "WarShip",
+                    "Index": 1
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 5000,
+        "HPBarOffset": 6.5,
+        "AccuracyWidth": 8,
+        "SelfHealPerHealTick": 1.667,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "ItemContainer": {
+        "SocketCount": 4,
+        "SocketAllocation": "Ship;SteamShip;Warship",
+        "SlotCount": 3
+      },
+      "UpgradeList": "",
+      "Stance": ""
+    }
+  },
+  {
+    "Template": "ScannerObject",
+    "Values": {
+      "Standard": {
+        "GUID": 102689,
+        "Name": "QO Gunboat Small Scanner Radius (Military) - no timer",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png",
+        "InfoDescription": 1082
+      },
+      "Scanner": {
+        "ScanRadius": 20,
+        "FlyRadius": 40,
+        "ScanEffect": 500886,
+        "AlarmTime": 1000,
+        "AlarmEffect": 500888
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/gunboat/gunboat.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 4,
+        "Acceleration": 2,
+        "Deceleration": 4,
+        "TurnRadius": 4,
+        "TurnSpeed": 75,
+        "TurnDeceleration": 0,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 45,
+        "ForwardSpeed": 2.5,
+        "WindMinSlowdownFactor": 0.4,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 238316
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 216013
+            }
+          }
+        }
+      },
+      "QuestObject": "",
+      "CommandQueue": {
+        "FormationPriority": 4,
+        "MilitaryShipPoints": 0.8,
+        "PriorityShipList": 1
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Gunboat",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 29461
+      },
+      "Attacker": {
+        "AttackRange": 40,
+        "LineOfSightRange": 100,
+        "ReloadTime": 50,
+        "ProjectileAsset": 102277,
+        "ProjectileCount": 2,
+        "BaseDamage": 105,
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 80,
+        "AccuracySpeedDecay": 20,
+        "ShootingTracking": "Front",
+        "MuzzleEffectAssets": {
+          "Item": {
+            "VectorElement": {
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "WarShip",
+                  "Index": 0
+                }
+              }
+            },
+            "MuzzleEffectAsset": 102278
+          }
+        },
+        "AccuracyByDistance": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "WarShip",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "ScannerObject",
+                      "Index": 0
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "WarShip",
+                    "Index": 1
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 850,
+        "HPBarOffset": 4.5,
+        "AccuracyWidth": 2,
+        "SelfHealPerHealTick": 0.708,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "ItemContainer": {
+        "SocketCount": 2,
+        "SlotCount": 1
+      },
+      "UpgradeList": "",
+      "Stance": ""
+    }
+  },
+  {
+    "Template": "ScannerObject",
+    "Values": {
+      "Standard": {
+        "GUID": 103071,
+        "Name": "QO Scanner Ship (Queen01Flagship) - 100 Flyradius",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_military_ship_liner.png",
+        "InfoDescription": 1088
+      },
+      "Scanner": {
+        "ScanRadius": 30,
+        "FlyRadius": 75,
+        "ScanEffect": 500886,
+        "AlarmTime": 15000,
+        "AlarmEffect": 500888
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/campaign/vehicle/queen_ship/queen_ship.cfg"
+          }
+        },
+        "AssignDefaultParticipant": 1,
+        "DefaultParticipant": "Third_party_01_Queen",
+        "IgnoreForMinimapGeneration": 1
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope",
+        "SetCompanyLogo": 1
+      },
+      "Selection": {
+        "GUIType": "Vehicle",
+        "MultiSelectable": 1,
+        "SelectionPriority": 5,
+        "InteractionDistance": 2,
+        "AllowedDragType": "ItemSocket;CargoProductStack;CargoItemStack;StorageProductStack;StorageItemStack"
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 8,
+        "Acceleration": 0.6,
+        "Deceleration": 0.5,
+        "TurnRadius": 8,
+        "TurnSpeed": 50,
+        "TurnSpeedInPlace": 20,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 10,
+        "ForwardSpeed": 2.5,
+        "WindMinSlowdownFactor": 0.4,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 238317
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 216015
+            }
+          }
+        }
+      },
+      "QuestObject": "",
+      "CommandQueue": {
+        "FormationPriority": 3,
+        "MilitaryShipPoints": 3.2,
+        "PriorityShipList": 1,
+        "InsecurityAttractiveness": -10
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Her Majesty's Flagship",
+            "Status": "Exported",
+            "ExportCount": 4
+          }
+        },
+        "LineID": 29866
+      },
+      "Attacker": "",
+      "Attackable": "",
+      "ItemContainer": "",
+      "UpgradeList": "",
+      "Stance": ""
+    }
+  },
+  {
+    "Template": "ScannerObject",
+    "Values": {
+      "Standard": {
+        "GUID": 102400,
+        "Name": "QO Scanner Ship 2 (Queen01Flagship) - 150 Flyradius",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_military_ship_liner.png",
+        "InfoDescription": 1088
+      },
+      "Scanner": {
+        "ScanRadius": 30,
+        "FlyRadius": 100,
+        "ScanEffect": 500886,
+        "AlarmTime": 15000,
+        "AlarmEffect": 500888
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/campaign/vehicle/queen_ship/queen_ship.cfg"
+          }
+        },
+        "AssignDefaultParticipant": 1,
+        "DefaultParticipant": "Third_party_01_Queen",
+        "IgnoreForMinimapGeneration": 1
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope",
+        "SetCompanyLogo": 1
+      },
+      "Selection": {
+        "GUIType": "Vehicle",
+        "MultiSelectable": 1,
+        "SelectionPriority": 5,
+        "InteractionDistance": 2,
+        "AllowedDragType": "ItemSocket;CargoProductStack;CargoItemStack;StorageProductStack;StorageItemStack"
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 8,
+        "Acceleration": 0.6,
+        "Deceleration": 0.5,
+        "TurnRadius": 8,
+        "TurnSpeed": 50,
+        "TurnSpeedInPlace": 20,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 10,
+        "ForwardSpeed": 2.5,
+        "WindMinSlowdownFactor": 0.4,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 238317
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 216015
+            }
+          }
+        }
+      },
+      "QuestObject": "",
+      "CommandQueue": {
+        "FormationPriority": 3,
+        "MilitaryShipPoints": 3.2,
+        "PriorityShipList": 1,
+        "InsecurityAttractiveness": -10
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Her Majesty's Flagship",
+            "Status": "Exported",
+            "ExportCount": 4
+          }
+        },
+        "LineID": 21914
+      },
+      "Attacker": "",
+      "Attackable": "",
+      "ItemContainer": "",
+      "UpgradeList": "",
+      "Stance": ""
+    }
+  },
+  {
+    "Template": "ScannerObject",
+    "Values": {
+      "Standard": {
+        "GUID": 103072,
+        "Name": "QO Scanner Ship 3 (Queen01Flagship) - 250 Flyradius",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_military_ship_liner.png",
+        "InfoDescription": 1088
+      },
+      "Scanner": {
+        "ScanRadius": 30,
+        "FlyRadius": 140,
+        "ScanEffect": 500886,
+        "AlarmTime": 15000,
+        "AlarmEffect": 500888
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/campaign/vehicle/queen_ship/queen_ship.cfg"
+          }
+        },
+        "AssignDefaultParticipant": 1,
+        "DefaultParticipant": "Third_party_01_Queen",
+        "IgnoreForMinimapGeneration": 1
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope",
+        "SetCompanyLogo": 1
+      },
+      "Selection": {
+        "GUIType": "Vehicle",
+        "MultiSelectable": 1,
+        "SelectionPriority": 5,
+        "InteractionDistance": 2,
+        "AllowedDragType": "ItemSocket;CargoProductStack;CargoItemStack;StorageProductStack;StorageItemStack"
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 8,
+        "Acceleration": 0.6,
+        "Deceleration": 0.5,
+        "TurnRadius": 8,
+        "TurnSpeed": 50,
+        "TurnSpeedInPlace": 20,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 10,
+        "ForwardSpeed": 2.5,
+        "WindMinSlowdownFactor": 0.4,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 238317
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 216015
+            }
+          }
+        }
+      },
+      "QuestObject": "",
+      "CommandQueue": {
+        "FormationPriority": 3,
+        "MilitaryShipPoints": 3.2,
+        "PriorityShipList": 1,
+        "InsecurityAttractiveness": -10
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Her Majesty's Flagship",
+            "Status": "Exported",
+            "ExportCount": 4
+          }
+        },
+        "LineID": 29867
+      },
+      "Attacker": "",
+      "Attackable": "",
+      "ItemContainer": "",
+      "UpgradeList": "",
+      "Stance": ""
+    }
+  },
+  {
+    "Template": "ScannerObject",
+    "Values": {
+      "Standard": {
+        "GUID": 103073,
+        "Name": "QO Scanner Ship 4 (Queen01Flagship) - 300 Flyradius",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_military_ship_liner.png",
+        "InfoDescription": 1088
+      },
+      "Scanner": {
+        "ScanRadius": 30,
+        "FlyRadius": 180,
+        "ScanEffect": 500886,
+        "AlarmTime": 15000,
+        "AlarmEffect": 500888
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/campaign/vehicle/queen_ship/queen_ship.cfg"
+          }
+        },
+        "AssignDefaultParticipant": 1,
+        "DefaultParticipant": "Third_party_01_Queen",
+        "IgnoreForMinimapGeneration": 1
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope",
+        "SetCompanyLogo": 1
+      },
+      "Selection": {
+        "GUIType": "Vehicle",
+        "MultiSelectable": 1,
+        "SelectionPriority": 5,
+        "InteractionDistance": 2,
+        "AllowedDragType": "ItemSocket;CargoProductStack;CargoItemStack;StorageProductStack;StorageItemStack"
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 8,
+        "Acceleration": 0.6,
+        "Deceleration": 0.5,
+        "TurnRadius": 8,
+        "TurnSpeed": 50,
+        "TurnSpeedInPlace": 20,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 10,
+        "ForwardSpeed": 2.5,
+        "WindMinSlowdownFactor": 0.4,
+        "WindMaxSpeedupFactor": 1.8,
+        "CurveSegmentDensity": "High"
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 238317
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 216015
+            }
+          }
+        }
+      },
+      "QuestObject": "",
+      "CommandQueue": {
+        "FormationPriority": 3,
+        "MilitaryShipPoints": 3.2,
+        "PriorityShipList": 1,
+        "InsecurityAttractiveness": -10
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Her Majesty's Flagship",
+            "Status": "Exported",
+            "ExportCount": 4
+          }
+        },
+        "LineID": 29868
+      },
+      "Attacker": "",
+      "Attackable": "",
+      "ItemContainer": "",
+      "UpgradeList": "",
+      "Stance": ""
+    }
+  },
+  {
+    "Template": "ScannerObject",
+    "Values": {
+      "Standard": {
+        "GUID": 100715,
+        "Name": "Wreckage 03",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_ship.png",
+        "InfoDescription": 1082
+      },
+      "Scanner": {
+        "ScanRadius": 10,
+        "ScanEffect": 140088,
+        "AlarmEffect": 1000219
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/wreckage/wreckage_03.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnSpeed": 60,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 4
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 9818371
+            }
+          }
+        }
+      },
+      "QuestObject": "",
+      "CommandQueue": "",
+      "Text": "",
+      "Attacker": "",
+      "Attackable": "",
+      "ItemContainer": "",
+      "UpgradeList": "",
+      "Stance": ""
+    }
+  }
+]

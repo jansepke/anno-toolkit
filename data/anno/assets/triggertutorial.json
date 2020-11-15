@@ -1,0 +1,260 @@
+[
+  {
+    "Template": "TriggerTutorial",
+    "Values": {
+      "Standard": {
+        "GUID": 151123,
+        "Name": "TQ_011_Introduction_Hannah",
+        "IconFilename": "data/ui/2kimages/main/profiles/advisor_01.png"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Linear"
+            },
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "TriggerActions": {
+          "Item": {
+            "TriggerAction": {
+              "Template": "ActionDelayedActions",
+              "Values": {
+                "Action": "",
+                "ActionDelayedActions": {
+                  "ExecutionDelay": 1000,
+                  "DelayedActions": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ActionList": {
+                        "Actions": {
+                          "Item": {
+                            "Action": {
+                              "Template": "ActionNotification",
+                              "Values": {
+                                "Action": "",
+                                "ActionNotification": {
+                                  "Notification": {
+                                    "Template": "CharacterNotification",
+                                    "Values": {
+                                      "CharacterNotification": {
+                                        "Profile": 7
+                                      },
+                                      "BaseNotification": {
+                                        "NotificationText": 13747,
+                                        "NotificationPriority": 600,
+                                        "NotificationMinDisplayTime": 8000
+                                      },
+                                      "NotificationSubtitle": {
+                                        "Subtitle": 268093
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "SubTriggers": {
+          "Item": [
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionIsTutorial",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionIsTutorial": "",
+                        "ConditionPropsNegatable": ""
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionIsCampaign",
+                      "Values": {
+                        "ConditionPropsNegatable": {
+                          "NegateCondition": 1
+                        },
+                        "ConditionIsCampaign": "",
+                        "Condition": ""
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionActiveSession",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionActiveSession": {
+                          "ActiveSession": 180039,
+                          "SessionBlacklist": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "TriggerTutorial",
+    "Values": {
+      "Standard": {
+        "GUID": 151118,
+        "Name": "TQ_012_Introduction_Aarhant",
+        "IconFilename": "data/ui/2kimages/main/profiles/advisor_02.png"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Linear"
+            },
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "TriggerActions": {
+          "Item": {
+            "TriggerAction": {
+              "Template": "ActionDelayedActions",
+              "Values": {
+                "Action": "",
+                "ActionDelayedActions": {
+                  "ExecutionDelay": 3000,
+                  "DelayedActions": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ActionList": {
+                        "Actions": {
+                          "Item": {
+                            "Action": {
+                              "Template": "ActionNotification",
+                              "Values": {
+                                "Action": "",
+                                "ActionNotification": {
+                                  "Notification": {
+                                    "Template": "CharacterNotification",
+                                    "Values": {
+                                      "CharacterNotification": {
+                                        "Profile": 31
+                                      },
+                                      "BaseNotification": {
+                                        "NotificationText": 14751,
+                                        "NotificationPriority": 600,
+                                        "NotificationMinDisplayTime": 8000
+                                      },
+                                      "NotificationSubtitle": {
+                                        "Subtitle": 268094
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "SubTriggers": {
+          "Item": [
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionIsTutorial",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionIsTutorial": "",
+                        "ConditionPropsNegatable": ""
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionIsCampaign",
+                      "Values": {
+                        "ConditionPropsNegatable": {
+                          "NegateCondition": 1
+                        },
+                        "ConditionIsCampaign": "",
+                        "Condition": ""
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionActiveSession",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionActiveSession": {
+                          "ActiveSession": 180039,
+                          "SessionBlacklist": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TriggerSetup": ""
+    }
+  }
+]

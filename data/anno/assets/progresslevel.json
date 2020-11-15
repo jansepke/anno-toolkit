@@ -1,0 +1,322 @@
+[
+  {
+    "Template": "ProgressLevel",
+    "Values": {
+      "Standard": {
+        "GUID": 140500,
+        "Name": "EarlyMidGame"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "PopulationByLevel",
+              "Context": 15000001,
+              "CounterAmount": 35
+            }
+          }
+        }
+      },
+      "ProgressLevel": {
+        "Level": "EarlyMidGame"
+      },
+      "Locked": "",
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "ProgressLevel",
+    "Values": {
+      "Standard": {
+        "GUID": 140503,
+        "Name": "MidGame"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "PopulationByLevel",
+              "Context": 15000002,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "ProgressLevel": {
+        "Level": "MidGame"
+      },
+      "Locked": "",
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "ProgressLevel",
+    "Values": {
+      "Standard": {
+        "GUID": 140504,
+        "Name": "LateMidGame"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "PopulationByLevel",
+              "Context": 15000003,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "ProgressLevel": {
+        "Level": "LateMidGame"
+      },
+      "Locked": "",
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "ProgressLevel",
+    "Values": {
+      "Standard": {
+        "GUID": 140505,
+        "Name": "LateGame"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "PopulationByLevel",
+              "Context": 15000004,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "ProgressLevel": {
+        "Level": "LateGame"
+      },
+      "Locked": "",
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "ProgressLevel",
+    "Values": {
+      "Standard": {
+        "GUID": 140506,
+        "Name": "EndGame"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "PopulationTotal",
+              "CounterAmount": 20000
+            }
+          }
+        }
+      },
+      "ProgressLevel": "",
+      "Locked": "",
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "ProgressLevel",
+    "Values": {
+      "Standard": {
+        "GUID": 142932,
+        "Name": "EndGame"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "PopulationTotal",
+              "CounterAmount": 25000
+            }
+          }
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Template": "ConditionPlayerCounter",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionPlayerCounter": {
+                        "PlayerCounter": "PopulationByLevel",
+                        "Context": 15000004,
+                        "CounterAmount": 1000
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "ProgressLevel": {
+        "Level": "EndGame"
+      },
+      "Locked": "",
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "ProgressLevel",
+    "Values": {
+      "Standard": {
+        "GUID": 119419,
+        "Name": "EarlyMidGame"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "PopulationByLevel",
+              "Context": 114329,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "ProgressLevel": {
+        "Level": "EarlyMidGame",
+        "SessionContext": 112132
+      },
+      "Locked": "",
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "ProgressLevel",
+    "Values": {
+      "Standard": {
+        "GUID": 119420,
+        "Name": "MidGame"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "PopulationByLevel",
+              "Context": 114329,
+              "CounterAmount": 300
+            }
+          }
+        }
+      },
+      "ProgressLevel": {
+        "Level": "MidGame",
+        "SessionContext": 112132
+      },
+      "Locked": "",
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "ProgressLevel",
+    "Values": {
+      "Standard": {
+        "GUID": 119421,
+        "Name": "LateMidGame"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "PopulationByLevel",
+              "Context": 114330,
+              "CounterAmount": 300
+            }
+          }
+        }
+      },
+      "ProgressLevel": {
+        "Level": "LateMidGame",
+        "SessionContext": 112132
+      },
+      "Locked": "",
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "ProgressLevel",
+    "Values": {
+      "Standard": {
+        "GUID": 119422,
+        "Name": "LateGame"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "PopulationByLevel",
+              "Context": 118745,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "ProgressLevel": {
+        "Level": "LateGame",
+        "SessionContext": 112132
+      },
+      "Locked": "",
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "ProgressLevel",
+    "Values": {
+      "Standard": {
+        "GUID": 119423,
+        "Name": "EndGame"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "PopulationByLevel",
+              "Context": 118745,
+              "CounterAmount": 2500
+            }
+          }
+        }
+      },
+      "ProgressLevel": {
+        "Level": "EndGame",
+        "SessionContext": 112132
+      },
+      "Locked": "",
+      "TriggerSetup": ""
+    }
+  }
+]

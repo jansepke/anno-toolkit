@@ -1,0 +1,134 @@
+[
+  {
+    "Template": "FeedbackVehicleWithTrailer",
+    "Values": {
+      "Standard": {
+        "GUID": 1010180,
+        "Name": "Small Feedback Ship Trailer"
+      },
+      "Object": {
+        "Variations": {
+          "Item": [
+            {
+              "Filename": "data/graphics/vehicle/small_feedback_ship_01/small_feedback_ship_01_a.cfg"
+            },
+            {
+              "Filename": "data/graphics/vehicle/small_feedback_ship_01/small_feedback_ship_01_b.cfg"
+            }
+          ]
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "Selectable": 0,
+        "DestructSelectable": 0
+      },
+      "Walking": {
+        "ReservationLength": 5,
+        "PathPlannerLayer": "Water",
+        "Acceleration": 2,
+        "TurnSpeed": 10,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 1.5
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "small_feedback_ship01"
+          }
+        }
+      },
+      "CommandQueue": {
+        "FollowRadius": 4
+      },
+      "Attackable": "",
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 0.7,
+        "Width": 0.5
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 9818384
+          }
+        }
+      },
+      "Trailer": {
+        "TrailerCount": 1,
+        "TrailerEndPartCfgVariations": {
+          "Item": [
+            {
+              "CfgVariation": "data/graphics/vehicle/small_feedback_ship_01/small_feedback_ship_01_c.cfg"
+            },
+            {
+              "CfgVariation": "data/graphics/vehicle/small_feedback_ship_01/small_feedback_ship_01_d.cfg"
+            }
+          ]
+        },
+        "Stiffness": 0.1
+      }
+    }
+  },
+  {
+    "Template": "FeedbackVehicleWithTrailer",
+    "Values": {
+      "Standard": {
+        "GUID": 1010186,
+        "Name": "Railway with Trailer"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/railway_01/railway_01.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnTerrainSlope"
+      },
+      "Selection": "",
+      "Walking": {
+        "ReservationLength": 5,
+        "Acceleration": 2,
+        "TurnSpeed": 50,
+        "TurnMovement": 50,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 2,
+        "WindMinSlowdownFactor": 0.7273,
+        "WindMaxSpeedupFactor": 1.6
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "small_feedback_ship01"
+          }
+        }
+      },
+      "CommandQueue": {
+        "FollowRadius": 4
+      },
+      "Attackable": "",
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 0.7,
+        "Width": 0.5,
+        "AffectedByDriftingWhileIdle": 0,
+        "AffectedByDriftingWhileMoving": 0,
+        "CausesDrifting": 0,
+        "UseSlowDownTactic": 0
+      },
+      "SoundEmitter": "",
+      "Trailer": {
+        "TrailerCount": 7,
+        "TrailerEndPartCfgVariations": {
+          "Item": {
+            "CfgVariation": "data/graphics/vehicle/railway_cargo_01/railway_cargo_01.cfg"
+          }
+        }
+      }
+    }
+  }
+]

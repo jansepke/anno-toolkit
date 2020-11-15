@@ -1,0 +1,175 @@
+[
+  {
+    "Template": "Profile_3rdParty_Queen",
+    "Values": {
+      "Standard": {
+        "GUID": 75,
+        "Name": "Third_party_01 (Queen)",
+        "IconFilename": "data/ui/2kimages/main/profiles/3rd_party_01.png",
+        "ID": "ProfileQueen"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "The Queen",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 7067
+      },
+      "Profile": {
+        "ProfilePicture": "data/ui/2kimages/main/profiles/3rd_party_01.png",
+        "Portrait": 100668,
+        "CompanyIcon": 501260,
+        "InfoCornerInfoTip": 25000162,
+        "InfoCornerDescription": 4075,
+        "ParticipantID": "Third_party_01_Queen",
+        "NotificationBackground": "data/ui/2kimages/main/assets/character_bg/bgr_character_02.png",
+        "QuestStarterObject": 0,
+        "DefaultColor": "Color11"
+      },
+      "ParticipantMessages": {
+        "MessageTriggers": {
+          "ClickKontor": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "3rdParty_Female",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 1807089449
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "SellIslandShare": {
+            "Reactions": {
+              "Item": {
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": -2046378713
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "BuyIslandShare": {
+            "Reactions": {
+              "Item": {
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": 1563060854
+                    },
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": -456791422
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "QuestResolveConfirmation": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationText": 10549
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "QuestStarted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "Profile_Queen",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Queen",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationPriority": 699
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Object": {
+        "DefaultParticipant": "Third_party_01_Queen"
+      },
+      "ThirdParty": "",
+      "ParticipantMessageObject": {
+        "ParticipantMessages": 150
+      },
+      "Interaction": "",
+      "Diplomacy": {
+        "InitialRelation": {
+          "DefaultMemory": 50,
+          "Exceptions": {
+            "Item": [
+              {
+                "Participant": "Campaign_character_02_pyrophorian_red",
+                "Treaties": "War"
+              },
+              {
+                "Participant": "Campaign_character_02_pyrophorian_red_blinded",
+                "Treaties": "War"
+              },
+              {
+                "Treaties": "Alliance"
+              }
+            ]
+          },
+          "DefaultTreatiesUndiscovered": "Peace"
+        },
+        "IsDiscoveredOnStart": 1
+      },
+      "Locked": ""
+    }
+  }
+]

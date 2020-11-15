@@ -1,0 +1,158 @@
+[
+  {
+    "Template": "WeatherFeature",
+    "Values": {
+      "Standard": {
+        "GUID": 140832,
+        "Name": "WeatherFeature",
+        "ID": "WeatherFeature"
+      },
+      "WeatherFeature": {
+        "WeatherPresets": {
+          "Default": {
+            "WeatherConfigs": {
+              "Snow": {
+                "MinDensity": 0.9,
+                "MaxDensity": 0.9,
+                "MinTimeUntilNextDensityUpdate": 10000,
+                "MaxTimeUntilNextDensityUpdate": 15000
+              },
+              "Rain": {
+                "MinDensityChange": 0.03,
+                "MaxDensityChange": 0.07,
+                "MaxDensity": 0.3,
+                "MinTimeUntilNextDensityUpdate": 150000,
+                "MaxTimeUntilNextDensityUpdate": 300000
+              },
+              "SnowRain": {
+                "MinDensityChange": 0.05,
+                "MaxDensityChange": 0.1,
+                "MaxDensity": 0.3,
+                "MinTimeUntilNextDensityUpdate": 45000,
+                "MaxTimeUntilNextDensityUpdate": 75000
+              }
+            },
+            "Wind": {
+              "ChangeInterval": 900000,
+              "ChangeIntervalRandomDeviation": 300000,
+              "BlendInterval": 120000,
+              "MaxDirectionChange": 90
+            }
+          },
+          "Storm": {
+            "WeatherConfigs": {
+              "Snow": {
+                "MinDensityChange": -0.05,
+                "MaxDensityChange": 0.05,
+                "MinDensity": 0.3,
+                "MaxDensity": 0.5,
+                "MinTimeUntilNextDensityUpdate": 10000,
+                "MaxTimeUntilNextDensityUpdate": 15000
+              },
+              "Rain": {
+                "MinDensityChange": 0.06,
+                "MaxDensityChange": 0.09,
+                "MinDensity": 0.3,
+                "MaxDensity": 0.5,
+                "MinTimeUntilNextDensityUpdate": 50000,
+                "MaxTimeUntilNextDensityUpdate": 70000
+              },
+              "SnowRain": {
+                "MinDensityChange": 0.06,
+                "MaxDensityChange": 0.125,
+                "MinDensity": 0.15,
+                "MaxDensity": 0.5,
+                "MinTimeUntilNextDensityUpdate": 45000,
+                "MaxTimeUntilNextDensityUpdate": 75000
+              }
+            }
+          },
+          "Apocalyptic": {
+            "WeatherConfigs": {
+              "Snow": {
+                "MinDensityChange": -0.05,
+                "MaxDensityChange": 0.05,
+                "MinDensity": 0.8,
+                "MaxDensity": 1,
+                "MinTimeUntilNextDensityUpdate": 10000,
+                "MaxTimeUntilNextDensityUpdate": 15000
+              },
+              "Rain": {
+                "MinDensityChange": 0.03,
+                "MaxDensityChange": 0.07,
+                "MinDensity": 0.8,
+                "MaxDensity": 1,
+                "MinTimeUntilNextDensityUpdate": 50000,
+                "MaxTimeUntilNextDensityUpdate": 70000
+              },
+              "SnowRain": {
+                "MinDensityChange": 0.1,
+                "MaxDensityChange": 0.2,
+                "MinDensity": 0.4,
+                "MaxDensity": 0.85,
+                "MinTimeUntilNextDensityUpdate": 45000,
+                "MaxTimeUntilNextDensityUpdate": 75000
+              }
+            }
+          },
+          "ChristmasModerate_ForceAllowSnow": {
+            "WeatherConfigs": {
+              "Snow": {
+                "MinDensityChange": 0.03,
+                "MaxDensityChange": 0.07,
+                "MaxDensity": 0.3,
+                "MinTimeUntilNextDensityUpdate": 150000,
+                "MaxTimeUntilNextDensityUpdate": 300000
+              }
+            },
+            "Wind": {
+              "ChangeInterval": 900000,
+              "ChangeIntervalRandomDeviation": 300000,
+              "BlendInterval": 120000,
+              "MaxDirectionChange": 90
+            }
+          },
+          "FirstPersonNonsense_Rain": {
+            "WeatherConfigs": {
+              "Snow": {
+                "MinTimeUntilNextDensityUpdate": 60000,
+                "MaxTimeUntilNextDensityUpdate": 60000
+              },
+              "Rain": {
+                "MinDensityChange": 0.2,
+                "MaxDensityChange": 0.2,
+                "MinDensity": 0.6,
+                "MaxDensity": 1,
+                "MinTimeUntilNextDensityUpdate": 20000,
+                "MaxTimeUntilNextDensityUpdate": 20000
+              },
+              "SnowRain": {
+                "MinDensityChange": 0.1,
+                "MaxDensityChange": 0.2,
+                "MinDensity": 0.4,
+                "MaxDensity": 0.85,
+                "MinTimeUntilNextDensityUpdate": 60000,
+                "MaxTimeUntilNextDensityUpdate": 60000
+              }
+            }
+          },
+          "FirstPersonNonsense_Snow": {
+            "WeatherConfigs": {
+              "Snow": {
+                "MinDensityChange": 0.2,
+                "MaxDensityChange": 0.2,
+                "MinDensity": 0.6,
+                "MaxDensity": 1,
+                "MinTimeUntilNextDensityUpdate": 20000,
+                "MaxTimeUntilNextDensityUpdate": 20000
+              }
+            }
+          }
+        },
+        "RainFadeOutDenominator": 35,
+        "RainFadeInDenominator": 35,
+        "WindIndicatorDecalCfg": "data/graphics/effects/feedback/wind_direction_decal.cfg"
+      }
+    }
+  }
+]

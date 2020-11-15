@@ -1,0 +1,283 @@
+[
+  {
+    "Template": "Heater_Arctic",
+    "Values": {
+      "Standard": {
+        "GUID": 114751,
+        "Name": "heater_arctic",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_heating_center.png",
+        "InfoDescription": 114290
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Heater",
+            "Status": "Exported",
+            "ExportCount": 5
+          }
+        },
+        "LineID": 35097
+      },
+      "Blocking": {
+        "HasBuildingBaseTiles": 1
+      },
+      "Building": {
+        "BuildingType": "Logistic",
+        "BuildingCategoryName": 100000,
+        "SkipUnlockMessage": 1,
+        "BuildModeRandomRotation": 180,
+        "AssociatedRegions": "Arctic"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "Market",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "Market_Arctic",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "Heater_Arctic",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "Amount": 1000
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "Market",
+                      "Index": 1
+                    },
+                    {
+                      "TemplateName": "Market_Arctic",
+                      "Index": 1
+                    },
+                    {
+                      "TemplateName": "Heater_Arctic",
+                      "Index": 1
+                    }
+                  ]
+                }
+              },
+              "Amount": 5
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "PublicServiceBuilding",
+                      "Index": 2
+                    },
+                    {
+                      "TemplateName": "Market",
+                      "Index": 2
+                    },
+                    {
+                      "TemplateName": "Market_Arctic",
+                      "Index": 2
+                    },
+                    {
+                      "TemplateName": "Heater_Arctic",
+                      "Index": 2
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "PublicServiceBuilding",
+                      "Index": 3
+                    },
+                    {
+                      "TemplateName": "Market",
+                      "Index": 3
+                    },
+                    {
+                      "TemplateName": "Market_Arctic",
+                      "Index": 3
+                    },
+                    {
+                      "TemplateName": "Heater_Arctic",
+                      "Index": 3
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "PublicServiceBuilding",
+                      "Index": 4
+                    },
+                    {
+                      "TemplateName": "Market",
+                      "Index": 4
+                    },
+                    {
+                      "TemplateName": "Market_Arctic",
+                      "Index": 4
+                    },
+                    {
+                      "TemplateName": "Heater_Arctic",
+                      "Index": 4
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "PublicServiceBuilding",
+                      "Index": 5
+                    },
+                    {
+                      "TemplateName": "Market",
+                      "Index": 5
+                    },
+                    {
+                      "TemplateName": "Market_Arctic",
+                      "Index": 5
+                    },
+                    {
+                      "TemplateName": "Heater_Arctic",
+                      "Index": 5
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Selection": {
+        "GUIType": "Production",
+        "ParticipantMessageArcheType": "[NONE]"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc03/graphics/buildings/special/heat_building/heating_building_01.cfg"
+          }
+        }
+      },
+      "Constructable": "",
+      "Mesh": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 243906
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        }
+      },
+      "Locked": "",
+      "Infolayer": "",
+      "FeedbackController": {
+        "NightBehavior": "HideAll"
+      },
+      "UpgradeList": "",
+      "AmbientMoodProvider": {
+        "AmbientMood": "ResidenceTier1"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": {
+            "Product": 1010017,
+            "Amount": 50
+          }
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 2500,
+        "SelfHealPerHealTick": 4
+      },
+      "Pausable": {
+        "CanPauseManually": 1
+      },
+      "IncidentInfectable": {
+        "Infectable": {
+          "Fire": {
+            "Escalated": 0
+          }
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "DensityDistance": 15
+          }
+        },
+        "PerIncidentProximityEffect": {
+          "Riot": {
+            "ProximityEffect": {
+              "Item": {
+                "Distance": 10,
+                "InfectionChanceDebuff": 15
+              }
+            }
+          }
+        }
+      },
+      "LogisticNode": {
+        "TransporterCountMax": 1,
+        "NeedsTransporterQueue": 1
+      },
+      "StreetActivation": "",
+      "HeatProvider": {
+        "MinProductivityPercentToProvideHeat": 1,
+        "MissingHeatNotification": 115008
+      },
+      "FactoryBase": {
+        "FactoryInputs": {
+          "Item": {
+            "Product": 1010226,
+            "Amount": 1,
+            "StorageAmount": 20
+          }
+        },
+        "ClampedMaxTransporterLogisticCost": 18
+      },
+      "StorageBase": {
+        "ProductStorageList": 120059
+      }
+    }
+  }
+]

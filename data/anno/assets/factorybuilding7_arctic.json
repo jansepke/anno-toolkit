@@ -1,0 +1,2263 @@
+[
+  {
+    "Template": "FactoryBuilding7_Arctic",
+    "Values": {
+      "Standard": {
+        "GUID": 112666,
+        "Name": "coastal_arctic_01 (Whale Coast Building)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_whale_oil_2.png"
+      },
+      "Building": {
+        "TerrainType": "Coast"
+      },
+      "Blocking": {
+        "GroundDecalAsset": 114826,
+        "GroundDecalInvisible": 113478,
+        "HasBuildingBaseTiles": 1
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "Amount": 200
+            },
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "FactoryBuilding7",
+                    "Index": 1
+                  }
+                }
+              },
+              "Ingredient": 1010196,
+              "Amount": 5
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 2
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 2
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 3
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 3
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 4
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 4
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 5
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 5
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc03/graphics/buildings/production/production_colony03_16/production_colony03_16.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "ParticipantMessageArcheType": "Arctic_Resident_tier01_atWork"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Whale Hunter",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35077
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 242761
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        }
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": {
+        "NeededFertility": 115264
+      },
+      "FactoryBase": {
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 112699,
+            "Amount": 1,
+            "StorageAmount": 2
+          }
+        },
+        "CycleTime": 60
+      },
+      "LogisticNode": "",
+      "AmbientMoodProvider": {
+        "Murmur": "Arctic_Factory",
+        "DynamicEnvironmentType": "Harbor"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 75,
+              "InactiveAmount": 38
+            },
+            {
+              "Product": 112653,
+              "Amount": 30,
+              "ShutdownThreshold": 0.2
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 2500,
+        "CanBeAttackedByPlayer": 1,
+        "TakeOverEffect": "OnDeath",
+        "MoralePower": 25,
+        "IslandWarFlag": 102303,
+        "RuinSmokeParticles": {
+          "Item": {
+            "SmokeParticleFilePath": "data/graphics/effects/military/explosions/damage_smoke_01.bfg"
+          }
+        },
+        "RuinSmokeParticlesMin": 1,
+        "RuinSmokeParticlesMax": 3,
+        "RuinSmokeParticleRectBorderPercent": 0.2,
+        "ExplosionEffects": {
+          "Item": {
+            "ExplosionEffectFilePath": "data/graphics/effects/military/explosions/harbor_generic_xpl_02.cfg"
+          }
+        },
+        "ExplosionEffectsMin": 2,
+        "ExplosionEffectsMax": 3
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Riot": {
+            "Base": 0,
+            "Escalated": 0
+          },
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "IncidentInfectionChanceFactors": {
+          "Explosion": {
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Riot": {
+            "FactoryOvertimeFactor": 0,
+            "FactoryUndertimeFactor": 0,
+            "FactoryHappinessFactor": 0,
+            "ResidenceHappinessFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0
+          },
+          "Illness": {
+            "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          }
+        }
+      },
+      "Culture": "",
+      "QuestObject": "",
+      "Heated": ""
+    }
+  },
+  {
+    "Template": "FactoryBuilding7_Arctic",
+    "Values": {
+      "Standard": {
+        "GUID": 112674,
+        "Name": "coastal_arctic_02 (Seal Hunter)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_seal_skin.png"
+      },
+      "Building": {
+        "TerrainType": "Coast"
+      },
+      "Blocking": {
+        "GroundDecalAsset": 114826,
+        "GroundDecalInvisible": 113478,
+        "HasBuildingBaseTiles": 1
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "Amount": 200
+            },
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "FactoryBuilding7",
+                    "Index": 1
+                  }
+                }
+              },
+              "Ingredient": 1010196,
+              "Amount": 5
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 2
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 2
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 3
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 3
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 4
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 4
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 5
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 5
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc03/graphics/buildings/production/production_colony03_01/production_colony03_01.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "ParticipantMessageArcheType": "Arctic_Resident_tier01_atWork"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Seal Hunter",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35078
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 242765
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        }
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": {
+        "NeededFertility": 112860
+      },
+      "FactoryBase": {
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 112696,
+            "Amount": 1,
+            "StorageAmount": 2
+          }
+        }
+      },
+      "LogisticNode": "",
+      "AmbientMoodProvider": {
+        "Murmur": "Arctic_Factory",
+        "DynamicEnvironmentType": "Harbor"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 50,
+              "InactiveAmount": 25
+            },
+            {
+              "Product": 112653,
+              "Amount": 20,
+              "ShutdownThreshold": 0.2
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 1500,
+        "CanBeAttackedByPlayer": 1,
+        "TakeOverEffect": "OnDeath",
+        "MoralePower": 25,
+        "IslandWarFlag": 102303,
+        "RuinSmokeParticles": {
+          "Item": {
+            "SmokeParticleFilePath": "data/graphics/effects/military/explosions/damage_smoke_01.bfg"
+          }
+        },
+        "RuinSmokeParticlesMin": 1,
+        "RuinSmokeParticlesMax": 3,
+        "RuinSmokeParticleRectBorderPercent": 0.2,
+        "ExplosionEffects": {
+          "Item": {
+            "ExplosionEffectFilePath": "data/graphics/effects/military/explosions/harbor_generic_xpl_03.cfg"
+          }
+        },
+        "ExplosionEffectsMin": 1,
+        "ExplosionEffectsMax": 2
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Riot": {
+            "Base": 0,
+            "Escalated": 0
+          },
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "IncidentInfectionChanceFactors": {
+          "Explosion": {
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Riot": {
+            "FactoryOvertimeFactor": 0,
+            "FactoryUndertimeFactor": 0,
+            "FactoryHappinessFactor": 0,
+            "ResidenceHappinessFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0
+          },
+          "Illness": {
+            "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          }
+        }
+      },
+      "Culture": "",
+      "QuestObject": "",
+      "Heated": ""
+    }
+  },
+  {
+    "Template": "FactoryBuilding7_Arctic",
+    "Values": {
+      "Standard": {
+        "GUID": 114704,
+        "Name": "factory_arctic_01 (Timber Factory)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_wooden_planks.png"
+      },
+      "Building": {
+        "SkipUnlockMessage": 1,
+        "BuildModeRandomRotation": 180
+      },
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "Amount": 100
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 1
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 1
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 2
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 2
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 3
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 3
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 4
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 4
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "FactoryBuilding7_Arctic",
+                    "Index": 5
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc03/graphics/buildings/production/production_colony03_13/production_colony03_13.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "ParticipantMessageArcheType": "Arctic_Resident_tier01_atWork",
+        "Colors": {
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Sawmill",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 35491
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": [
+            {
+              "Sound": 247110
+            },
+            {
+              "Sound": 240557
+            }
+          ]
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "MaterialType": "Wood"
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryInputs": {
+          "Item": {
+            "Product": 120008,
+            "Amount": 1,
+            "StorageAmount": 8
+          }
+        },
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 1010196,
+            "Amount": 1,
+            "StorageAmount": 8
+          }
+        },
+        "CycleTime": 15
+      },
+      "LogisticNode": "",
+      "AmbientMoodProvider": {
+        "Murmur": "Arctic_Farm",
+        "GlacierMurmur": "Arctic_Farm",
+        "DynamicEnvironmentType": "None"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 20,
+              "InactiveAmount": 10
+            },
+            {
+              "Product": 112653,
+              "Amount": 10,
+              "ShutdownThreshold": 0.2
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 1500,
+        "SelfHealPerHealTick": 6
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          },
+          "Riot": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 1000
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "DensityFactor": 0.1,
+            "DensityDistance": 20,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          },
+          "Riot": {
+            "FactoryOvertimeFactor": 0,
+            "FactoryUndertimeFactor": 0,
+            "FactoryHappinessFactor": 0,
+            "ResidenceHappinessFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "HappinessThreshold": 20
+          },
+          "Illness": {
+            "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Explosion": {
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          }
+        }
+      },
+      "Culture": {
+        "CultureType": "Culture"
+      },
+      "QuestObject": "",
+      "Heated": ""
+    }
+  },
+  {
+    "Template": "FactoryBuilding7_Arctic",
+    "Values": {
+      "Standard": {
+        "GUID": 112675,
+        "Name": "factory_arctic_02 (Sleeping Bags Factory)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_sleeping_bags.png"
+      },
+      "Building": "",
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "Amount": 1500
+            },
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "FactoryBuilding7",
+                    "Index": 1
+                  }
+                }
+              },
+              "Ingredient": 1010196,
+              "Amount": 15
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 2
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 2
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 3
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 3
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 4
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 4
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 5
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 5
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc03/graphics/buildings/production/production_colony03_03/production_colony03_03.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "ParticipantMessageArcheType": "Arctic_Resident_tier01_atWork"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Sleeping Bag Factory",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 35079
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": [
+            {
+              "Sound": 247110
+            },
+            {
+              "Sound": 240561
+            }
+          ]
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        }
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryInputs": {
+          "Item": [
+            {
+              "Product": 112696,
+              "Amount": 1,
+              "StorageAmount": 4
+            },
+            {
+              "Product": 112697,
+              "Amount": 1,
+              "StorageAmount": 4
+            }
+          ]
+        },
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 112701,
+            "Amount": 1,
+            "StorageAmount": 4
+          }
+        },
+        "CycleTime": 60
+      },
+      "LogisticNode": "",
+      "AmbientMoodProvider": {
+        "Murmur": "Arctic_Farm",
+        "GlacierMurmur": "Arctic_Farm"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 120,
+              "InactiveAmount": 60
+            },
+            {
+              "Product": 112653,
+              "Amount": 50,
+              "ShutdownThreshold": 0.2
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 2000
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Riot": {
+            "Base": 0,
+            "Escalated": 0
+          },
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "FactoryProductivityFactor": 0.1
+          },
+          "Explosion": {
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Riot": {
+            "FactoryOvertimeFactor": 0,
+            "FactoryUndertimeFactor": 0,
+            "FactoryHappinessFactor": 0,
+            "ResidenceHappinessFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0
+          },
+          "Illness": {
+            "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          }
+        }
+      },
+      "Culture": "",
+      "QuestObject": "",
+      "Heated": ""
+    }
+  },
+  {
+    "Template": "FactoryBuilding7_Arctic",
+    "Values": {
+      "Standard": {
+        "GUID": 112679,
+        "Name": "factory_arctic_03 (Oil Lamp Factory)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_oil_lamps.png"
+      },
+      "Building": "",
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "Amount": 2000
+            },
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "FactoryBuilding7",
+                    "Index": 1
+                  }
+                }
+              },
+              "Ingredient": 1010196,
+              "Amount": 15
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 2
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 2
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 3
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 3
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 4
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 4
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 5
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 5
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc03/graphics/buildings/production/production_colony03_08/production_colony03_08.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "ParticipantMessageArcheType": "Arctic_Resident_tier01_atWork"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Oil Lamp Factory",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35080
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": [
+            {
+              "Sound": 247110
+            },
+            {
+              "Sound": 240565
+            }
+          ]
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        }
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryInputs": {
+          "Item": [
+            {
+              "Product": 112699,
+              "Amount": 1,
+              "StorageAmount": 4
+            },
+            {
+              "Product": 1010204,
+              "Amount": 1,
+              "StorageAmount": 4
+            }
+          ]
+        },
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 112702,
+            "Amount": 1,
+            "StorageAmount": 2
+          }
+        },
+        "CycleTime": 60
+      },
+      "LogisticNode": "",
+      "AmbientMoodProvider": {
+        "Murmur": "Arctic_Farm",
+        "GlacierMurmur": "Arctic_Farm"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 200,
+              "InactiveAmount": 100
+            },
+            {
+              "Product": 112653,
+              "Amount": 70,
+              "ShutdownThreshold": 0.2
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 2500
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Riot": {
+            "Base": 0,
+            "Escalated": 0
+          },
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "IncidentInfectionChanceFactors": {
+          "Explosion": {
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Riot": {
+            "FactoryOvertimeFactor": 0,
+            "FactoryUndertimeFactor": 0,
+            "FactoryHappinessFactor": 0,
+            "ResidenceHappinessFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0
+          },
+          "Illness": {
+            "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          }
+        }
+      },
+      "Culture": "",
+      "QuestObject": "",
+      "Heated": ""
+    }
+  },
+  {
+    "Template": "FactoryBuilding7_Arctic",
+    "Values": {
+      "Standard": {
+        "GUID": 112672,
+        "Name": "factory_arctic_04 (Parka Factory)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_fur_parka.png"
+      },
+      "Building": "",
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "Amount": 2000
+            },
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "FactoryBuilding7",
+                    "Index": 1
+                  }
+                }
+              },
+              "Ingredient": 1010196,
+              "Amount": 10
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 2
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 2
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 3
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 3
+                    }
+                  ]
+                }
+              },
+              "Amount": 4
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 4
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 4
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 5
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 5
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc03/graphics/buildings/production/production_colony03_04/production_colony03_04.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "ParticipantMessageArcheType": "Arctic_Resident_tier02_atWork"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Parka Factory",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35081
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": [
+            {
+              "Sound": 247110
+            },
+            {
+              "Sound": 240569
+            }
+          ]
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        }
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryInputs": {
+          "Item": [
+            {
+              "Product": 112695,
+              "Amount": 1,
+              "StorageAmount": 4
+            },
+            {
+              "Product": 112696,
+              "Amount": 1,
+              "StorageAmount": 4
+            }
+          ]
+        },
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 112700,
+            "Amount": 1,
+            "StorageAmount": 1
+          }
+        },
+        "CycleTime": 90
+      },
+      "LogisticNode": "",
+      "AmbientMoodProvider": {
+        "Murmur": "Arctic_Farm",
+        "GlacierMurmur": "Arctic_Farm"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 350,
+              "InactiveAmount": 175
+            },
+            {
+              "Product": 112654,
+              "Amount": 80,
+              "ShutdownThreshold": 0.2
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 3000
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Riot": {
+            "Base": 0,
+            "Escalated": 0
+          },
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "IncidentInfectionChanceFactors": {
+          "Explosion": {
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Riot": {
+            "FactoryOvertimeFactor": 0,
+            "FactoryUndertimeFactor": 0,
+            "FactoryHappinessFactor": 0,
+            "ResidenceHappinessFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0
+          },
+          "Illness": {
+            "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          }
+        }
+      },
+      "Culture": "",
+      "QuestObject": "",
+      "Heated": ""
+    }
+  },
+  {
+    "Template": "FactoryBuilding7_Arctic",
+    "Values": {
+      "Standard": {
+        "GUID": 112681,
+        "Name": "factory_arctic_05 (Sled Frame Factory)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_sled_frame.png"
+      },
+      "Building": "",
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "Amount": 3000
+            },
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "FactoryBuilding7",
+                    "Index": 1
+                  }
+                }
+              },
+              "Ingredient": 1010196,
+              "Amount": 20
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 2
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 2
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 3
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 3
+                    }
+                  ]
+                }
+              },
+              "Amount": 5
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 4
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 4
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 5
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 5
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc03/graphics/buildings/production/production_colony03_10/production_colony03_10.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "ParticipantMessageArcheType": "Arctic_Resident_tier02_atWork"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Sled Frame Factory",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 35082
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": [
+            {
+              "Sound": 247110
+            },
+            {
+              "Sound": 240573
+            }
+          ]
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        }
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryInputs": {
+          "Item": [
+            {
+              "Product": 112696,
+              "Amount": 1,
+              "StorageAmount": 4
+            },
+            {
+              "Product": 120008,
+              "Amount": 1,
+              "StorageAmount": 4
+            }
+          ]
+        },
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 112704,
+            "Amount": 1,
+            "StorageAmount": 2
+          }
+        },
+        "CycleTime": 60
+      },
+      "LogisticNode": "",
+      "AmbientMoodProvider": {
+        "Murmur": "Arctic_Farm",
+        "GlacierMurmur": "Arctic_Farm"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 450,
+              "InactiveAmount": 225
+            },
+            {
+              "Product": 112654,
+              "Amount": 80,
+              "ShutdownThreshold": 0.2
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 3500
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Riot": {
+            "Base": 0,
+            "Escalated": 0
+          },
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "DensityFactor": 0.1,
+            "DensityDistance": 20
+          },
+          "Explosion": {
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Riot": {
+            "FactoryOvertimeFactor": 0,
+            "FactoryUndertimeFactor": 0,
+            "FactoryHappinessFactor": 0,
+            "ResidenceHappinessFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0
+          },
+          "Illness": {
+            "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          }
+        }
+      },
+      "Culture": "",
+      "QuestObject": "",
+      "Heated": ""
+    }
+  },
+  {
+    "Template": "FactoryBuilding7_Arctic",
+    "Values": {
+      "Standard": {
+        "GUID": 112680,
+        "Name": "factory_arctic_06 (Husky Sled Factory)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_sled.png"
+      },
+      "Building": "",
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "Amount": 5000
+            },
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "FactoryBuilding7",
+                    "Index": 1
+                  }
+                }
+              },
+              "Ingredient": 1010196,
+              "Amount": 20
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 2
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 2
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 3
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 3
+                    }
+                  ]
+                }
+              },
+              "Amount": 6
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 4
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 4
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 5
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 5
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc03/graphics/buildings/production/production_colony03_11/production_colony03_11.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "ParticipantMessageArcheType": "Arctic_Resident_tier02_atWork"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Husky Sled Factory",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35083
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": [
+            {
+              "Sound": 247110
+            },
+            {
+              "Sound": 240577
+            }
+          ]
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        }
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryInputs": {
+          "Item": [
+            {
+              "Product": 112698,
+              "Amount": 1,
+              "StorageAmount": 4
+            },
+            {
+              "Product": 112704,
+              "Amount": 1,
+              "StorageAmount": 4
+            }
+          ]
+        },
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 112703,
+            "Amount": 1,
+            "StorageAmount": 2
+          }
+        },
+        "CycleTime": 60
+      },
+      "LogisticNode": "",
+      "AmbientMoodProvider": {
+        "Murmur": "Arctic_Farm",
+        "GlacierMurmur": "Arctic_Farm"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 650,
+              "InactiveAmount": 325
+            },
+            {
+              "Product": 112654,
+              "Amount": 100,
+              "ShutdownThreshold": 0.2
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 3500
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Riot": {
+            "Base": 0,
+            "Escalated": 0
+          },
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "IncidentInfectionChanceFactors": {
+          "Explosion": {
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Riot": {
+            "FactoryOvertimeFactor": 0,
+            "FactoryUndertimeFactor": 0,
+            "FactoryHappinessFactor": 0,
+            "ResidenceHappinessFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0
+          },
+          "Illness": {
+            "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          }
+        }
+      },
+      "Culture": "",
+      "QuestObject": "",
+      "Heated": ""
+    }
+  },
+  {
+    "Template": "FactoryBuilding7_Arctic",
+    "Values": {
+      "Standard": {
+        "GUID": 112668,
+        "Name": "food_arctic_01 (Pemmican)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_pemmican.png"
+      },
+      "Building": "",
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "Amount": 1000
+            },
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "FactoryBuilding7",
+                    "Index": 1
+                  }
+                }
+              },
+              "Ingredient": 1010196,
+              "Amount": 5
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 2
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 2
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 3
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 3
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 4
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 4
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FactoryBuilding7",
+                      "Index": 5
+                    },
+                    {
+                      "TemplateName": "FactoryBuilding7_Arctic",
+                      "Index": 5
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc03/graphics/buildings/production/production_colony03_05/production_colony03_05.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "ParticipantMessageArcheType": "Arctic_Resident_tier01_atWork"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Pemmican Factory",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 35084
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": [
+            {
+              "Sound": 247110
+            },
+            {
+              "Sound": 240581
+            }
+          ]
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        }
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryInputs": {
+          "Item": [
+            {
+              "Product": 112699,
+              "Amount": 1,
+              "StorageAmount": 4
+            },
+            {
+              "Product": 112694,
+              "Amount": 1,
+              "StorageAmount": 4
+            }
+          ]
+        },
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 112705,
+            "Amount": 1,
+            "StorageAmount": 2
+          }
+        },
+        "CycleTime": 60
+      },
+      "LogisticNode": "",
+      "AmbientMoodProvider": {
+        "Murmur": "Arctic_Farm",
+        "GlacierMurmur": "Arctic_Farm"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 60,
+              "InactiveAmount": 30
+            },
+            {
+              "Product": 112653,
+              "Amount": 30,
+              "ShutdownThreshold": 0.2
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 2000
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Riot": {
+            "Base": 0,
+            "Escalated": 0
+          },
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "IncidentInfectionChanceFactors": {
+          "Explosion": {
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Riot": {
+            "FactoryOvertimeFactor": 0,
+            "FactoryUndertimeFactor": 0,
+            "FactoryHappinessFactor": 0,
+            "ResidenceHappinessFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0
+          },
+          "Illness": {
+            "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          }
+        }
+      },
+      "Culture": "",
+      "QuestObject": "",
+      "Heated": ""
+    }
+  }
+]

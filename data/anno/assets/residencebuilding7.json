@@ -1,0 +1,1389 @@
+[
+  {
+    "Template": "ResidenceBuilding7",
+    "Values": {
+      "Standard": {
+        "GUID": 1010343,
+        "Name": "residence_tier01",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_resident.png",
+        "InfoDescription": 163059
+      },
+      "Blocking": "",
+      "Building": {
+        "BuildingType": "Residence",
+        "SkipUnlockMessage": 1,
+        "BuildModeRandomRotation": 90,
+        "AssociatedRegions": "Moderate"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 2
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": [
+            {
+              "Filename": "data/graphics/buildings/residence/residence_tier01_estate01/residence_tier01_estate01.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/residence/residence_tier01_estate02/residence_tier01_estate02.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/residence/residence_tier01_estate03/residence_tier01_estate03.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/residence/residence_tier01_estate04/residence_tier01_estate04.cfg"
+            }
+          ]
+        }
+      },
+      "Selection": {
+        "ParticipantMessageArcheType": "Resident_tier01"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Farmer Residence",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 5227
+      },
+      "Constructable": "",
+      "Locked": {
+        "DefaultLockedState": 1
+      },
+      "Upgradable": {
+        "NextGUID": 1010344,
+        "UpgradeCost": {
+          "Item": [
+            {
+              "Ingredient": 1010017
+            },
+            {
+              "Amount": 4,
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "SoundEmitter": {
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7",
+                    "Index": 0
+                  }
+                }
+              },
+              "Sound": 200776
+            }
+          },
+          "BuildUpgradeFailed": {
+            "Item": {
+              "Sound": 9818387
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          },
+          "InfectedIllness": {
+            "Item": {
+              "Sound": 214756
+            }
+          },
+          "InfectedRiot": {
+            "Item": {
+              "Sound": 222229
+            }
+          },
+          "ExplosionOneShots": {
+            "Item": {
+              "Sound": 203849
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        },
+        "MaterialType": "Wood"
+      },
+      "Infolayer": "",
+      "FeedbackController": "",
+      "Residence7": {
+        "ResidenceStorage": {
+          "InputStorageMax": 1
+        },
+        "PopulationLevel7": 15000000,
+        "ResidentMax": 10
+      },
+      "LogisticNode": "",
+      "AmbientMoodProvider": {
+        "DynamicEnvironmentType": "ResidenceT1",
+        "HappinessDependentMurmur": {
+          "Angry": {
+            "Murmur": "FarmerUnhappy"
+          },
+          "Unhappy": {
+            "Murmur": "FarmerContent"
+          },
+          "Neutral": {
+            "Murmur": "FarmerContent"
+          },
+          "Happy": {
+            "Murmur": "FarmerHappy"
+          },
+          "Euphoric": {
+            "Murmur": "FarmerHappy"
+          }
+        }
+      },
+      "UpgradeList": "",
+      "Attackable": {
+        "MaximumHitPoints": 1500
+      },
+      "IncidentInfectable": {
+        "Infectable": {
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 1000
+        },
+        "IncidentInfectionChanceFactors": {
+          "Illness": {
+            "BaseChance": 4,
+            "HitpointFactor": 0.1,
+            "DensityFactor": 0.025,
+            "DensityDistance": 15,
+            "DilapidatedFactor": 10,
+            "FactoryOvertimeFactor": 0.3,
+            "FactoryUndertimeFactor": 0.15,
+            "ResidenceFullOvertimeChance": 20,
+            "ResidenceFullUndertimeChance": -15
+          },
+          "Fire": {
+            "DensityFactor": 0.025,
+            "DensityDistance": 15
+          },
+          "Riot": {
+            "ResidenceHappinessFactor": 0.4,
+            "HappinessThreshold": 10
+          },
+          "Explosion": {
+            "ResidenceFullOvertimeChance": 20,
+            "ResidenceFullUndertimeChance": -15
+          }
+        }
+      },
+      "Pausable": "",
+      "Culture": "",
+      "StreetActivation": "",
+      "InfluenceSource": ""
+    }
+  },
+  {
+    "Template": "ResidenceBuilding7",
+    "Values": {
+      "Standard": {
+        "GUID": 1010344,
+        "Name": "residence_tier02",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_resident.png",
+        "InfoDescription": 163059
+      },
+      "Blocking": "",
+      "Building": {
+        "BuildingType": "Residence",
+        "PickingAsset": 1010343,
+        "AssociatedRegions": "Moderate"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 6
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": [
+            {
+              "Filename": "data/graphics/buildings/residence/residence_tier02_estate01/residence_tier02_estate01.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/residence/residence_tier02_estate02/residence_tier02_estate02.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/residence/residence_tier02_estate03/residence_tier02_estate03.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/residence/residence_tier02_estate04/residence_tier02_estate04.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/residence/residence_tier02_estate05/residence_tier02_estate05.cfg"
+            }
+          ]
+        }
+      },
+      "Selection": {
+        "ParticipantMessageArcheType": "Resident_tier02"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Worker Residence",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 5228
+      },
+      "Constructable": "",
+      "Locked": {
+        "DefaultLockedState": 1
+      },
+      "Upgradable": {
+        "NextGUID": 1010345,
+        "UpgradeCost": {
+          "Item": [
+            {
+              "Ingredient": 1010017
+            },
+            {
+              "Amount": 6,
+              "Ingredient": 1010196
+            },
+            {
+              "Amount": 2,
+              "Ingredient": 1010205
+            },
+            {
+              "Amount": 2,
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "SoundEmitter": {
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7",
+                    "Index": 0
+                  }
+                }
+              },
+              "Sound": 200776
+            }
+          },
+          "BuildUpgradeFailed": {
+            "Item": {
+              "Sound": 9818387
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          },
+          "InfectedIllness": {
+            "Item": {
+              "Sound": 214756
+            }
+          },
+          "InfectedRiot": {
+            "Item": {
+              "Sound": 222229
+            }
+          },
+          "ExplosionOneShots": {
+            "Item": {
+              "Sound": 203849
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        },
+        "MaterialType": "Wood"
+      },
+      "Infolayer": "",
+      "FeedbackController": "",
+      "Residence7": {
+        "ResidenceStorage": {
+          "InputStorageMax": 1
+        },
+        "PopulationLevel7": 15000001,
+        "ResidentMax": 20
+      },
+      "LogisticNode": {
+        "REMOVE_THIS_LATER_FeedbackUnitTier": "Level2"
+      },
+      "AmbientMoodProvider": {
+        "DynamicEnvironmentType": "ResidenceT1",
+        "HappinessDependentMurmur": {
+          "Angry": {
+            "Murmur": "WorkerUnhappy"
+          },
+          "Unhappy": {
+            "Murmur": "WorkerContent"
+          },
+          "Neutral": {
+            "Murmur": "WorkerContent"
+          },
+          "Happy": {
+            "Murmur": "WorkerHappy"
+          },
+          "Euphoric": {
+            "Murmur": "WorkerHappy"
+          }
+        }
+      },
+      "UpgradeList": "",
+      "Attackable": {
+        "MaximumHitPoints": 2000
+      },
+      "IncidentInfectable": {
+        "Infectable": {
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 1000
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "BaseChance": 4.5,
+            "DensityFactor": 0.025,
+            "DensityDistance": 15
+          },
+          "Illness": {
+            "BaseChance": 4.5,
+            "HitpointFactor": 0.1,
+            "DensityFactor": 0.025,
+            "DensityDistance": 15,
+            "DilapidatedFactor": 10,
+            "FactoryOvertimeFactor": 0.3,
+            "FactoryUndertimeFactor": 0.15,
+            "ResidenceFullOvertimeChance": 20,
+            "ResidenceFullUndertimeChance": -15
+          },
+          "Riot": {
+            "ResidenceHappinessFactor": 0.4,
+            "HappinessThreshold": 10
+          },
+          "Explosion": {
+            "ResidenceFullOvertimeChance": 20,
+            "ResidenceFullUndertimeChance": -15
+          }
+        }
+      },
+      "Pausable": "",
+      "Culture": "",
+      "StreetActivation": "",
+      "InfluenceSource": ""
+    }
+  },
+  {
+    "Template": "ResidenceBuilding7",
+    "Values": {
+      "Standard": {
+        "GUID": 1010345,
+        "Name": "residence_tier03",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_resident.png",
+        "InfoDescription": 163059
+      },
+      "Blocking": "",
+      "Building": {
+        "BuildingType": "Residence",
+        "PickingAsset": 1010343,
+        "AssociatedRegions": "Moderate"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 12
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 2
+            },
+            {
+              "Ingredient": 1010218,
+              "Amount": 2
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": [
+            {
+              "Filename": "data/graphics/buildings/residence/residence_tier03_estate01/residence_tier03_estate01.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/residence/residence_tier03_estate02/residence_tier03_estate02.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/residence/residence_tier03_estate03/residence_tier03_estate03.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/residence/residence_tier03_estate04/residence_tier03_estate04.cfg"
+            }
+          ]
+        }
+      },
+      "Selection": {
+        "ParticipantMessageArcheType": "Resident_tier03"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Artisan Residence",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 5229
+      },
+      "Constructable": "",
+      "Locked": {
+        "DefaultLockedState": 1
+      },
+      "Upgradable": {
+        "NextGUID": 1010346,
+        "UpgradeCost": {
+          "Item": [
+            {
+              "Ingredient": 1010017
+            },
+            {
+              "Amount": 8,
+              "Ingredient": 1010196
+            },
+            {
+              "Amount": 3,
+              "Ingredient": 1010205
+            },
+            {
+              "Amount": 2,
+              "Ingredient": 1010218
+            },
+            {
+              "Amount": 2,
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "SoundEmitter": {
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7",
+                    "Index": 0
+                  }
+                }
+              },
+              "Sound": 200776
+            }
+          },
+          "BuildUpgradeFailed": {
+            "Item": {
+              "Sound": 9818387
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          },
+          "InfectedIllness": {
+            "Item": {
+              "Sound": 214756
+            }
+          },
+          "InfectedRiot": {
+            "Item": {
+              "Sound": 222229
+            }
+          },
+          "ExplosionOneShots": {
+            "Item": {
+              "Sound": 203849
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        },
+        "MaterialType": "Stone"
+      },
+      "Infolayer": "",
+      "FeedbackController": "",
+      "Residence7": {
+        "ResidenceStorage": {
+          "InputStorageMax": 1
+        },
+        "PopulationLevel7": 15000002,
+        "ResidentMax": 30
+      },
+      "LogisticNode": {
+        "REMOVE_THIS_LATER_FeedbackUnitTier": "Level3"
+      },
+      "AmbientMoodProvider": {
+        "AmbientMood": "ResidenceTier3",
+        "DynamicEnvironmentType": "ResidenceT5",
+        "HappinessDependentMurmur": {
+          "Angry": {
+            "Murmur": "ArtisanUnhappy"
+          },
+          "Unhappy": {
+            "Murmur": "ArtisanContent"
+          },
+          "Neutral": {
+            "Murmur": "ArtisanContent"
+          },
+          "Happy": {
+            "Murmur": "ArtisanHappy"
+          },
+          "Euphoric": {
+            "Murmur": "ArtisanHappy"
+          }
+        }
+      },
+      "UpgradeList": "",
+      "Attackable": {
+        "MaximumHitPoints": 2500
+      },
+      "IncidentInfectable": {
+        "Infectable": {
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 1000
+        },
+        "IncidentInfectionChanceFactors": {
+          "Illness": {
+            "BaseChance": 5,
+            "HitpointFactor": 0.1,
+            "DensityFactor": 0.025,
+            "DensityDistance": 15,
+            "DilapidatedFactor": 10,
+            "FactoryOvertimeFactor": 0.3,
+            "FactoryUndertimeFactor": 0.15,
+            "ResidenceFullOvertimeChance": 20,
+            "ResidenceFullUndertimeChance": -15
+          },
+          "Fire": {
+            "BaseChance": 4,
+            "DensityFactor": 0.025,
+            "DensityDistance": 15
+          },
+          "Riot": {
+            "ResidenceHappinessFactor": 0.4,
+            "HappinessThreshold": 10
+          },
+          "Explosion": {
+            "ResidenceFullOvertimeChance": 20,
+            "ResidenceFullUndertimeChance": -15
+          }
+        }
+      },
+      "Pausable": "",
+      "Culture": "",
+      "StreetActivation": "",
+      "InfluenceSource": ""
+    }
+  },
+  {
+    "Template": "ResidenceBuilding7",
+    "Values": {
+      "Standard": {
+        "GUID": 1010346,
+        "Name": "residence_tier04",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_resident.png",
+        "InfoDescription": 163059
+      },
+      "Blocking": "",
+      "Building": {
+        "BuildingType": "Residence",
+        "PickingAsset": 1010343,
+        "InfluencedByNeighbors": {
+          "Item": [
+            {
+              "Building": 1010345
+            },
+            {
+              "Building": 1010346
+            },
+            {
+              "Building": 1010347
+            },
+            {
+              "Building": 1010344
+            },
+            {
+              "Building": 1010343
+            }
+          ]
+        },
+        "AssociatedRegions": "Moderate",
+        "BuildingBlockPool": {
+          "DontCare": {
+            "Pool": {
+              "Item": [
+                {
+                  "Variation": 4
+                },
+                {
+                  "DirectionOffet": 1,
+                  "Variation": 5
+                },
+                {
+                  "DirectionOffet": 2,
+                  "Variation": 6
+                },
+                {
+                  "DirectionOffet": 3,
+                  "Variation": 7
+                },
+                {
+                  "DirectionOffet": 1,
+                  "Variation": 1
+                },
+                {
+                  "DirectionOffet": 2,
+                  "Variation": 2
+                },
+                {
+                  "DirectionOffet": 3,
+                  "Variation": 3
+                }
+              ]
+            }
+          },
+          "Corner": {
+            "Pool": {
+              "Item": [
+                "",
+                {
+                  "DirectionOffet": 2,
+                  "Variation": 1
+                },
+                {
+                  "Variation": 2
+                }
+              ]
+            }
+          },
+          "Mid": {
+            "Pool": {
+              "Item": [
+                {
+                  "Variation": 3
+                },
+                {
+                  "Variation": 4
+                },
+                {
+                  "Variation": 5
+                },
+                {
+                  "Variation": 6
+                },
+                {
+                  "DirectionOffet": 2,
+                  "Variation": 3
+                },
+                {
+                  "DirectionOffet": 2,
+                  "Variation": 4
+                },
+                {
+                  "DirectionOffet": 2,
+                  "Variation": 5
+                },
+                {
+                  "DirectionOffet": 2,
+                  "Variation": 6
+                },
+                {
+                  "DirectionOffet": 1,
+                  "Variation": 7
+                }
+              ]
+            }
+          }
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 5
+            },
+            {
+              "Ingredient": 1010218,
+              "Amount": 4
+            },
+            {
+              "Ingredient": 1010207,
+              "Amount": 2
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": [
+            {
+              "Filename": "data/graphics/buildings/residence/residence_tier04_01/residence_tier04_01.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/residence/residence_tier04_02/residence_tier04_02.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/residence/residence_tier04_03/residence_tier04_03.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/residence/residence_tier04_04/residence_tier04_04.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/residence/residence_tier04_05/residence_tier04_05.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/residence/residence_tier04_06/residence_tier04_06.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/residence/residence_tier04_07/residence_tier04_07.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/residence/residence_tier04_08/residence_tier04_08.cfg"
+            }
+          ]
+        }
+      },
+      "Selection": {
+        "ParticipantMessageArcheType": "Resident_tier04"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Engineer Residence",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 5230
+      },
+      "Constructable": "",
+      "Locked": {
+        "DefaultLockedState": 1
+      },
+      "Upgradable": {
+        "NextGUID": 1010347,
+        "UpgradeCost": {
+          "Item": [
+            {
+              "Ingredient": 1010017
+            },
+            {
+              "Amount": 10,
+              "Ingredient": 1010196
+            },
+            {
+              "Amount": 4,
+              "Ingredient": 1010205
+            },
+            {
+              "Amount": 3,
+              "Ingredient": 1010218
+            },
+            {
+              "Amount": 3,
+              "Ingredient": 1010207
+            },
+            {
+              "Amount": 3,
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "SoundEmitter": {
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7",
+                    "Index": 0
+                  }
+                }
+              },
+              "Sound": 200776
+            }
+          },
+          "BuildUpgradeFailed": {
+            "Item": {
+              "Sound": 9818387
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          },
+          "InfectedIllness": {
+            "Item": {
+              "Sound": 214756
+            }
+          },
+          "InfectedRiot": {
+            "Item": {
+              "Sound": 222229
+            }
+          },
+          "ExplosionOneShots": {
+            "Item": {
+              "Sound": 203849
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        },
+        "MaterialType": "Stone"
+      },
+      "Infolayer": "",
+      "FeedbackController": "",
+      "Residence7": {
+        "ResidenceStorage": {
+          "InputStorageMax": 1
+        },
+        "PopulationLevel7": 15000003,
+        "ResidentMax": 40
+      },
+      "LogisticNode": {
+        "REMOVE_THIS_LATER_FeedbackUnitTier": "Level4"
+      },
+      "AmbientMoodProvider": {
+        "AmbientMood": "ResidenceTier5",
+        "DynamicEnvironmentType": "ResidenceT5",
+        "HappinessDependentMurmur": {
+          "Angry": {
+            "Murmur": "EngineerUnhappy"
+          },
+          "Unhappy": {
+            "Murmur": "EngineerContent"
+          },
+          "Neutral": {
+            "Murmur": "EngineerContent"
+          },
+          "Happy": {
+            "Murmur": "EngineerHappy"
+          },
+          "Euphoric": {
+            "Murmur": "EngineerHappy"
+          }
+        }
+      },
+      "UpgradeList": "",
+      "Attackable": {
+        "MaximumHitPoints": 3000
+      },
+      "IncidentInfectable": {
+        "Infectable": {
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 1000
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "BaseChance": 3.5,
+            "DensityFactor": 0.025,
+            "DensityDistance": 15
+          },
+          "Illness": {
+            "BaseChance": 3.5,
+            "HitpointFactor": 0.1,
+            "DensityFactor": 0.025,
+            "DensityDistance": 15,
+            "DilapidatedFactor": 10,
+            "FactoryOvertimeFactor": 0.3,
+            "FactoryUndertimeFactor": 0.15,
+            "ResidenceFullOvertimeChance": 20,
+            "ResidenceFullUndertimeChance": -15
+          },
+          "Riot": {
+            "ResidenceHappinessFactor": 0.4,
+            "HappinessThreshold": 10
+          },
+          "Explosion": {
+            "ResidenceFullOvertimeChance": 20,
+            "ResidenceFullUndertimeChance": -15
+          }
+        }
+      },
+      "Pausable": "",
+      "Culture": "",
+      "StreetActivation": "",
+      "InfluenceSource": {
+        "InfluenceSource": "Engineers"
+      }
+    }
+  },
+  {
+    "Template": "ResidenceBuilding7",
+    "Values": {
+      "Standard": {
+        "GUID": 1010347,
+        "Name": "residence_tier05",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_resident.png",
+        "InfoDescription": 163059
+      },
+      "Blocking": "",
+      "Building": {
+        "BuildingType": "Residence",
+        "PickingAsset": 1010343,
+        "InfluencedByNeighbors": {
+          "Item": [
+            {
+              "Building": 1010346
+            },
+            {
+              "Building": 1010347
+            },
+            {
+              "Building": 1010343
+            },
+            {
+              "Building": 1010344
+            },
+            {
+              "Building": 1010345
+            }
+          ]
+        },
+        "AssociatedRegions": "Moderate",
+        "BuildingBlockPool": {
+          "DontCare": {
+            "Pool": {
+              "Item": [
+                "",
+                {
+                  "DirectionOffet": 1,
+                  "Variation": 1
+                },
+                {
+                  "DirectionOffet": 2,
+                  "Variation": 2
+                },
+                {
+                  "DirectionOffet": 1,
+                  "Variation": 3
+                },
+                {
+                  "DirectionOffet": 3,
+                  "Variation": 4
+                },
+                {
+                  "DirectionOffet": 1,
+                  "Variation": 5
+                },
+                {
+                  "DirectionOffet": 3,
+                  "Variation": 6
+                }
+              ]
+            }
+          },
+          "Corner": {
+            "Pool": {
+              "Item": [
+                {
+                  "Variation": 1
+                },
+                {
+                  "DirectionOffet": 3
+                },
+                {
+                  "DirectionOffet": 3,
+                  "Variation": 2
+                }
+              ]
+            }
+          },
+          "Mid": {
+            "Pool": {
+              "Item": [
+                {
+                  "Variation": 4
+                },
+                {
+                  "DirectionOffet": 1,
+                  "Variation": 3
+                },
+                {
+                  "DirectionOffet": 1,
+                  "Variation": 5
+                },
+                {
+                  "DirectionOffet": 3,
+                  "Variation": 3
+                },
+                {
+                  "DirectionOffet": 2,
+                  "Variation": 4
+                },
+                {
+                  "DirectionOffet": 3,
+                  "Variation": 5
+                }
+              ]
+            }
+          }
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 30
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 9
+            },
+            {
+              "Ingredient": 1010218,
+              "Amount": 7
+            },
+            {
+              "Ingredient": 1010207,
+              "Amount": 5
+            },
+            {
+              "Ingredient": 1010202,
+              "Amount": 3
+            }
+          ]
+        }
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": [
+            {
+              "Filename": "data/graphics/buildings/residence/residence_tier05_01/residence_tier05_01.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/residence/residence_tier05_02/residence_tier05_02.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/residence/residence_tier05_03/residence_tier05_03.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/residence/residence_tier05_04/residence_tier05_04.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/residence/residence_tier05_05/residence_tier05_05.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/residence/residence_tier05_06/residence_tier05_06.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/residence/residence_tier05_07/residence_tier05_07.cfg"
+            }
+          ]
+        }
+      },
+      "Selection": {
+        "ParticipantMessageArcheType": "Resident_tier05"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Investor Residence",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 5231
+      },
+      "Constructable": "",
+      "Locked": {
+        "DefaultLockedState": 1
+      },
+      "Upgradable": "",
+      "SoundEmitter": {
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7",
+                    "Index": 0
+                  }
+                }
+              },
+              "Sound": 200776
+            }
+          },
+          "BuildUpgradeFailed": {
+            "Item": {
+              "Sound": 9818387
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          },
+          "InfectedIllness": {
+            "Item": {
+              "Sound": 214756
+            }
+          },
+          "InfectedRiot": {
+            "Item": {
+              "Sound": 222229
+            }
+          },
+          "ExplosionOneShots": {
+            "Item": {
+              "Sound": 203849
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        },
+        "MaterialType": "Stone"
+      },
+      "Infolayer": "",
+      "FeedbackController": "",
+      "Residence7": {
+        "ResidenceStorage": {
+          "InputStorageMax": 1
+        },
+        "PopulationLevel7": 15000004,
+        "ResidentMax": 50,
+        "ProvidesInfluence": 1
+      },
+      "LogisticNode": {
+        "REMOVE_THIS_LATER_FeedbackUnitTier": "Level4"
+      },
+      "AmbientMoodProvider": {
+        "AmbientMood": "ResidenceTier5",
+        "DynamicEnvironmentType": "ResidenceT5",
+        "HappinessDependentMurmur": {
+          "Angry": {
+            "Murmur": "InvestorUnhappy"
+          },
+          "Unhappy": {
+            "Murmur": "InvestorContent"
+          },
+          "Neutral": {
+            "Murmur": "InvestorContent"
+          },
+          "Happy": {
+            "Murmur": "InvestorHappy"
+          },
+          "Euphoric": {
+            "Murmur": "InvestorHappy"
+          }
+        }
+      },
+      "UpgradeList": "",
+      "Attackable": {
+        "MaximumHitPoints": 3500
+      },
+      "IncidentInfectable": {
+        "Infectable": {
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 1000
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "BaseChance": 3,
+            "DensityFactor": 0.025,
+            "DensityDistance": 15
+          },
+          "Illness": {
+            "BaseChance": 3,
+            "HitpointFactor": 0.1,
+            "DensityFactor": 0.025,
+            "DensityDistance": 15,
+            "DilapidatedFactor": 10,
+            "FactoryOvertimeFactor": 0.3,
+            "FactoryUndertimeFactor": 0.15,
+            "ResidenceFullOvertimeChance": 20,
+            "ResidenceFullUndertimeChance": -15
+          },
+          "Riot": {
+            "ResidenceHappinessFactor": 0.4,
+            "HappinessThreshold": 10
+          },
+          "Explosion": {
+            "ResidenceFullOvertimeChance": 20,
+            "ResidenceFullUndertimeChance": -15
+          }
+        }
+      },
+      "Pausable": "",
+      "Culture": "",
+      "StreetActivation": "",
+      "InfluenceSource": {
+        "InfluenceSource": "Investors",
+        "ProvidesInvestorInfluence": 1
+      }
+    }
+  }
+]

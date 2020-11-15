@@ -1,0 +1,4521 @@
+[
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 102328,
+        "Name": "CQI HannahsLetter",
+        "IconFilename": "data/ui/2kimages/main/3dicons/campaign/icon_letter_open.png",
+        "InfoDescription": 16782
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Your Sister's Letter",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 25860
+      },
+      "Item": "",
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionNotification",
+                    "Values": {
+                      "Action": "",
+                      "ActionNotification": {
+                        "Notification": {
+                          "Template": "CharacterNotification",
+                          "Values": {
+                            "CharacterNotification": {
+                              "Profile": 31
+                            },
+                            "BaseNotification": {
+                              "NotificationText": 16781,
+                              "IsUnique": 1
+                            },
+                            "NotificationSubtitle": {
+                              "Subtitle": 266391
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "ItemAction": "",
+      "ExpeditionAttribute": ""
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 190443,
+        "Name": "CQI_Sealed_Document",
+        "IconFilename": "data/ui/2kimages/main/3dicons/campaign/icon_letter_closed.png",
+        "InfoDescription": 13240
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Sealed Document",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 25866
+      },
+      "Item": {
+        "Flotsam": 101493,
+        "TradePriceOnlineCurrency": 50
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": [
+                  {
+                    "Action": {
+                      "Template": "ActionTriggerTextPopup",
+                      "Values": {
+                        "ActionTriggerTextPopup": {
+                          "PopupText": 10521
+                        },
+                        "Action": ""
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionReplaceItem",
+                      "Values": {
+                        "Action": "",
+                        "ActionReplaceItem": {
+                          "ReplaceItemList": {
+                            "Item": {
+                              "OldItem": 190443,
+                              "NewItem": 101638
+                            }
+                          },
+                          "ItemContainerFilter": {
+                            "IsBaseAutoCreateAsset": 1,
+                            "Values": {
+                              "ObjectFilter": {
+                                "ObjectGUID": 270174,
+                                "CheckParticipantID": 1
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "ItemAction": "",
+      "ExpeditionAttribute": ""
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 101638,
+        "Name": "CQI_Prisoner_Conviction_Letter",
+        "IconFilename": "data/ui/2kimages/main/3dicons/campaign/icon_letter_open.png",
+        "InfoDescription": 13241
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Edvard's Judicial Sentencing",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 25867
+      },
+      "Item": {
+        "Flotsam": 101493,
+        "TradePriceOnlineCurrency": 50
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionTriggerTextPopup",
+                    "Values": {
+                      "ActionTriggerTextPopup": {
+                        "PopupText": 10521
+                      },
+                      "Action": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "ItemAction": "",
+      "ExpeditionAttribute": ""
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 101137,
+        "Name": "Fathers_Diary_UI",
+        "IconFilename": "data/ui/2kimages/main/3dicons/campaign/icon_samuel_diary.png",
+        "InfoDescription": 14356
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Your Father's Diary",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 13079
+      },
+      "Item": {
+        "Flotsam": 101194
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionTriggerTextPopup",
+                    "Values": {
+                      "ActionTriggerTextPopup": {
+                        "TextPopupLayout": "DiaryPage1"
+                      },
+                      "Action": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "ItemAction": "",
+      "ExpeditionAttribute": ""
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 192424,
+        "Name": "Letter for Isabel pop up",
+        "IconFilename": "data/ui/2kimages/main/3dicons/campaign/icon_letter_open.png",
+        "InfoDescription": 20463
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Confession Letter for Isabel",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 28500
+      },
+      "Item": {
+        "Flotsam": 101493,
+        "TradePriceOnlineCurrency": 50
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionTriggerTextPopup",
+                    "Values": {
+                      "ActionTriggerTextPopup": {
+                        "PopupText": 18494,
+                        "TextPopupLayout": "LetterQuest"
+                      },
+                      "Action": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "ItemAction": "",
+      "ExpeditionAttribute": ""
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 112241,
+        "Name": "QI Nadasky journal Pages 1",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_nadasky_journal.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Nadasky's Journal (Incomplete)",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 32382
+      },
+      "Item": {
+        "Flotsam": 103060
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionTriggerTextPopup",
+                    "Values": {
+                      "ActionTriggerTextPopup": {
+                        "PopupText": 112543,
+                        "TextPopupLayout": "NadaskyJournal1"
+                      },
+                      "Action": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "ItemAction": "",
+      "ExpeditionAttribute": ""
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 112242,
+        "Name": "QI Nadasky journal Pages 2",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_nadasky_journal.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Nadasky's Journal (Near Complete)",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 32383
+      },
+      "Item": {
+        "Flotsam": 103060
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionTriggerTextPopup",
+                    "Values": {
+                      "ActionTriggerTextPopup": {
+                        "PopupText": 112544,
+                        "TextPopupLayout": "NadaskyJournal2"
+                      },
+                      "Action": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "ItemAction": "",
+      "ExpeditionAttribute": ""
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 112243,
+        "Name": "QI Nadasky journal Pages 3",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_nadasky_journal.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Nadasky's Journal",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 32384
+      },
+      "Item": {
+        "Flotsam": 103060
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": [
+                  {
+                    "Action": {
+                      "Template": "ActionRegisterTrigger",
+                      "Values": {
+                        "Action": "",
+                        "ActionRegisterTrigger": {
+                          "TriggerAsset": 113320
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionTriggerTextPopup",
+                      "Values": {
+                        "ActionTriggerTextPopup": {
+                          "PopupText": 112545,
+                          "TextPopupLayout": "NadaskyJournal3"
+                        },
+                        "Action": ""
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "ItemAction": "",
+      "ExpeditionAttribute": ""
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 112255,
+        "Name": "QI Richardson account",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_richardsons_log.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Richardson's Log",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32388
+      },
+      "Item": {
+        "Flotsam": 103060
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionTriggerTextPopup",
+                    "Values": {
+                      "ActionTriggerTextPopup": {
+                        "PopupText": 112546,
+                        "TextPopupLayout": "RichardsonLog"
+                      },
+                      "Action": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "ItemAction": "",
+      "ExpeditionAttribute": ""
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 112280,
+        "Name": "QI Vasco deal proposal",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_vascos_contract.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Vasco's Honorable Agreement",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32390
+      },
+      "Item": {
+        "Flotsam": 103060
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionTriggerTextPopup",
+                    "Values": {
+                      "ActionTriggerTextPopup": {
+                        "PopupText": 112547,
+                        "TextPopupLayout": "VascoContract"
+                      },
+                      "Action": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "ItemAction": "",
+      "ExpeditionAttribute": ""
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 113678,
+        "Name": "Old Nate Trust your dealer good",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_01.png",
+        "InfoDescription": 113640
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "DubiousTreasure Map",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32725
+      },
+      "Item": {
+        "HasAction": 1,
+        "TradePrice": 20000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 113675,
+                        "TreasureSessionOrRegion": 110934
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113387,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ItemDifficulties": "Easy;Average"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 113679,
+        "Name": "Old Nate Trust your dealer bad",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_01.png",
+        "InfoDescription": 113640
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "DubiousTreasure Map",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 48063
+      },
+      "Item": {
+        "HasAction": 1,
+        "TradePrice": 20000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 113676,
+                        "TreasureSessionOrRegion": 110934
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113387,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ItemDifficulties": "Easy;Average"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 112933,
+        "Name": "Ancient Trade Route Map (Old World)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_01.png",
+        "InfoDescription": 113228
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of Ancient Ruins",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32726
+      },
+      "Item": {
+        "Rarity": "Rare",
+        "HasAction": 1,
+        "TradePrice": 20000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 112942,
+                        "TreasureSessionOrRegion": 180023
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113315,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 20
+          }
+        },
+        "ItemDifficulties": "Easy;Average"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 112936,
+        "Name": "Ancient Trade Route Map (New World)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_01.png",
+        "InfoDescription": 113229
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Remote Trading Post",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32727
+      },
+      "Item": {
+        "Rarity": "Rare",
+        "HasAction": 1,
+        "TradePrice": 20000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 113180,
+                        "TreasureSessionOrRegion": 180025
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113386,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 20
+          }
+        },
+        "ItemDifficulties": "Easy;Average"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 112937,
+        "Name": "Ancient Trade Route Map (Sunken World)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_01.png",
+        "InfoDescription": 113230
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Forgotten Wreck",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32728
+      },
+      "Item": {
+        "Rarity": "Rare",
+        "HasAction": 1,
+        "TradePrice": 20000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 113181,
+                        "TreasureSessionOrRegion": 110934
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113387,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 20
+          }
+        },
+        "ItemDifficulties": "Easy;Average"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 112934,
+        "Name": "Lost City Map (Old World)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_02.png",
+        "InfoDescription": 113231
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Lost Temple",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32729
+      },
+      "Item": {
+        "Rarity": "Epic",
+        "HasAction": 1,
+        "TradePrice": 50000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 113182,
+                        "TreasureSessionOrRegion": 180023
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113315,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 30
+          }
+        },
+        "ItemDifficulties": "Average;Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 112938,
+        "Name": "Lost City Map (New World)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_02.png",
+        "InfoDescription": 113232
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of an Underwater Pyramid",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32730
+      },
+      "Item": {
+        "Rarity": "Epic",
+        "HasAction": 1,
+        "TradePrice": 50000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 113183,
+                        "TreasureSessionOrRegion": 180025
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113386,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 30
+          }
+        },
+        "ItemDifficulties": "Average;Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 112939,
+        "Name": "Lost City Map (Sunken World)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_02.png",
+        "InfoDescription": 113233
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Sunken City",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32731
+      },
+      "Item": {
+        "Rarity": "Epic",
+        "HasAction": 1,
+        "TradePrice": 50000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 113184,
+                        "TreasureSessionOrRegion": 110934
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113387,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 30
+          }
+        },
+        "ItemDifficulties": "Average;Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 112935,
+        "Name": "Legendary Site Map (Old World)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_03.png",
+        "InfoDescription": 113234
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "The Palaces of Baiea",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32732
+      },
+      "Item": {
+        "Rarity": "Legendary",
+        "HasAction": 1,
+        "TradePrice": 100000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 113185,
+                        "TreasureSessionOrRegion": 180023
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113315,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 40
+          }
+        },
+        "ItemDifficulties": "Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 112940,
+        "Name": "Legendary Site Map (New World)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_03.png",
+        "InfoDescription": 113235
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "The Gates to Paititi",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32733
+      },
+      "Item": {
+        "Rarity": "Legendary",
+        "HasAction": 1,
+        "TradePrice": 100000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 113186,
+                        "TreasureSessionOrRegion": 180025
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113386,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 40
+          }
+        },
+        "ItemDifficulties": "Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 112941,
+        "Name": "Legendary Site Map (Sunken World)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_03.png",
+        "InfoDescription": 113236
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "The Herdsman's Journal",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32734
+      },
+      "Item": {
+        "Rarity": "Legendary",
+        "HasAction": 1,
+        "TradePrice": 100000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 113187,
+                        "TreasureSessionOrRegion": 110934
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113387,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 40
+          }
+        },
+        "ItemDifficulties": "Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 113188,
+        "Name": "Rare Fishes Distribution Map (Old World)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_01.png",
+        "InfoDescription": 113237
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Kelp Forest",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32735
+      },
+      "Item": {
+        "Rarity": "Rare",
+        "HasAction": 1,
+        "TradePrice": 20000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 113206,
+                        "TreasureSessionOrRegion": 180023
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113388,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 20
+          }
+        },
+        "ItemDifficulties": "Easy;Average"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 113189,
+        "Name": "Rare Fishes Distribution Map (New World)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_01.png",
+        "InfoDescription": 113238
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Seagrass Meadow",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32736
+      },
+      "Item": {
+        "Rarity": "Rare",
+        "HasAction": 1,
+        "TradePrice": 20000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 113207,
+                        "TreasureSessionOrRegion": 180025
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113389,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 20
+          }
+        },
+        "ItemDifficulties": "Easy;Average"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 113190,
+        "Name": "Rare Fishes Distribution Map (Sunken World)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_01.png",
+        "InfoDescription": 113239
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Coral Garden",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32737
+      },
+      "Item": {
+        "Rarity": "Rare",
+        "HasAction": 1,
+        "TradePrice": 20000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 113208,
+                        "TreasureSessionOrRegion": 110934
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113390,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 20
+          }
+        },
+        "ItemDifficulties": "Easy;Average"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 113191,
+        "Name": "Threatened Animals Sanctuary Map (Old World)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_02.png",
+        "InfoDescription": 113240
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of an Oceanic Trench",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32738
+      },
+      "Item": {
+        "Rarity": "Epic",
+        "HasAction": 1,
+        "TradePrice": 50000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 113209,
+                        "TreasureSessionOrRegion": 180023
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113388,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 30
+          }
+        },
+        "ItemDifficulties": "Average;Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 113192,
+        "Name": "Threatened Animals Sanctuary Map (New World)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_02.png",
+        "InfoDescription": 113241
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Barrier Reef",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32739
+      },
+      "Item": {
+        "Rarity": "Epic",
+        "HasAction": 1,
+        "TradePrice": 50000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 113210,
+                        "TreasureSessionOrRegion": 180025
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113389,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 30
+          }
+        },
+        "ItemDifficulties": "Average;Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 113193,
+        "Name": "Threatened Animals Sanctuary Map (Sunken World)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_02.png",
+        "InfoDescription": 113242
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of an Abyssal Zone",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32740
+      },
+      "Item": {
+        "Rarity": "Epic",
+        "HasAction": 1,
+        "TradePrice": 50000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 113211,
+                        "TreasureSessionOrRegion": 110934
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113390,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 30
+          }
+        },
+        "ItemDifficulties": "Average;Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 113194,
+        "Name": "Mythological Animal Hideout Map (Old World)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_03.png",
+        "InfoDescription": 113243
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Jörmungandr's Lair",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32741
+      },
+      "Item": {
+        "Rarity": "Legendary",
+        "HasAction": 1,
+        "TradePrice": 100000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 113212,
+                        "TreasureSessionOrRegion": 180023
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113388,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 40
+          }
+        },
+        "ItemDifficulties": "Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 113195,
+        "Name": "Mythological Animal Hideout Map (New World)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_03.png",
+        "InfoDescription": 113244
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "The Nest of Gukulmatz",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32742
+      },
+      "Item": {
+        "Rarity": "Legendary",
+        "HasAction": 1,
+        "TradePrice": 100000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 113213,
+                        "TreasureSessionOrRegion": 180025
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113389,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 40
+          }
+        },
+        "ItemDifficulties": "Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 113196,
+        "Name": "Mythological Animal Hideout Map (Sunken World)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_03.png",
+        "InfoDescription": 113245
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "The Kraken's Pit",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32743
+      },
+      "Item": {
+        "Rarity": "Legendary",
+        "HasAction": 1,
+        "TradePrice": 100000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 113214,
+                        "TreasureSessionOrRegion": 110934
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113390,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 40
+          }
+        },
+        "ItemDifficulties": "Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 113197,
+        "Name": "Naval Battles Map (Old World)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_01.png",
+        "InfoDescription": 113246
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Domestic Skirmish",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32744
+      },
+      "Item": {
+        "Rarity": "Rare",
+        "HasAction": 1,
+        "TradePrice": 20000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 113215,
+                        "TreasureSessionOrRegion": 180023
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113391,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 20
+          }
+        },
+        "ItemDifficulties": "Easy;Average"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 113198,
+        "Name": "Naval Battles Map (New World)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_01.png",
+        "InfoDescription": 113247
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Rebel Incursion",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32745
+      },
+      "Item": {
+        "Rarity": "Rare",
+        "HasAction": 1,
+        "TradePrice": 20000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 113216,
+                        "TreasureSessionOrRegion": 180025
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113392,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 20
+          }
+        },
+        "ItemDifficulties": "Easy;Average"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 113199,
+        "Name": "Naval Battles Map (Sunken World)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_01.png",
+        "InfoDescription": 113248
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Trelawney Skirmish",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32746
+      },
+      "Item": {
+        "Rarity": "Rare",
+        "HasAction": 1,
+        "TradePrice": 20000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 113217,
+                        "TreasureSessionOrRegion": 110934
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113393,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 20
+          }
+        },
+        "ItemDifficulties": "Easy;Average"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 113200,
+        "Name": "Merchant Sinking Sports Map (Old World)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_02.png",
+        "InfoDescription": 113249
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Sunken Royal Clipper",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32747
+      },
+      "Item": {
+        "Rarity": "Epic",
+        "HasAction": 1,
+        "TradePrice": 50000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 113218,
+                        "TreasureSessionOrRegion": 180023
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113391,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 30
+          }
+        },
+        "ItemDifficulties": "Average;Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 113201,
+        "Name": "Merchant Sinking Sports Map (New World)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_02.png",
+        "InfoDescription": 113250
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Sunken Rebel Supply Ship",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32748
+      },
+      "Item": {
+        "Rarity": "Epic",
+        "HasAction": 1,
+        "TradePrice": 50000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 113219,
+                        "TreasureSessionOrRegion": 180025
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113392,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 30
+          }
+        },
+        "ItemDifficulties": "Average;Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 113202,
+        "Name": "Merchant Sinking Sports Map (Sunken World)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_02.png",
+        "InfoDescription": 113251
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Sunken La Corona Clipper",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32749
+      },
+      "Item": {
+        "Rarity": "Epic",
+        "HasAction": 1,
+        "TradePrice": 50000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 113220,
+                        "TreasureSessionOrRegion": 110934
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113393,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 30
+          }
+        },
+        "ItemDifficulties": "Average;Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 113203,
+        "Name": "Royal Shipwreck Map (Old World)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_03.png",
+        "InfoDescription": 113253
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of Willie Wibblesock's Wondrous Stash",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32750
+      },
+      "Item": {
+        "Rarity": "Legendary",
+        "HasAction": 1,
+        "TradePrice": 100000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 113221,
+                        "TreasureSessionOrRegion": 180023
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113391,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 40
+          }
+        },
+        "ItemDifficulties": "Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 113204,
+        "Name": "Royal Shipwreck Map (New World)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_03.png",
+        "InfoDescription": 113254
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of Isabel Sarmento's Emergency Vault",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32751
+      },
+      "Item": {
+        "Rarity": "Legendary",
+        "HasAction": 1,
+        "TradePrice": 100000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 113222,
+                        "TreasureSessionOrRegion": 180025
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113392,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 40
+          }
+        },
+        "ItemDifficulties": "Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 113205,
+        "Name": "Royal Shipwreck Map (Sunken World)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_03.png",
+        "InfoDescription": 113255
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of Vicente Silva's Sunken Ship-of-the-line",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32752
+      },
+      "Item": {
+        "Rarity": "Legendary",
+        "HasAction": 1,
+        "TradePrice": 100000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 113223,
+                        "TreasureSessionOrRegion": 110934
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 113393,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 40
+          }
+        },
+        "ItemDifficulties": "Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 116882,
+        "Name": "TheThing_CairnLetter",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_ship_construction_plan.png",
+        "InfoDescription": 117517
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Ragged Research Journal",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35189
+      },
+      "Item": {
+        "Flotsam": 114600
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionTriggerTextPopup",
+                    "Values": {
+                      "ActionTriggerTextPopup": {
+                        "PopupText": 116883,
+                        "TextPopupLayout": "LetterQuest"
+                      },
+                      "Action": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "ItemAction": "",
+      "ExpeditionAttribute": ""
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 114376,
+        "Name": "ArcticQ102_SirJohnLastLogbook",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_sir_john_logbook.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Sir John's Logbook",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 34517
+      },
+      "Item": {
+        "Flotsam": 103060
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionTriggerTextPopup",
+                    "Values": {
+                      "ActionTriggerTextPopup": {
+                        "PopupText": 114382,
+                        "TextPopupLayout": "JohnsLogbook"
+                      },
+                      "Action": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "ItemAction": "",
+      "ExpeditionAttribute": ""
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 114424,
+        "Name": "ArcticQ105_ExplorerTeam",
+        "IconFilename": "data/ui/2kimages/main/3dicons/resident/icon_explorers.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Ice-Breaching Brigade",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 34518
+      },
+      "Item": {
+        "Flotsam": 103060
+      },
+      "ItemWithUI": "",
+      "Locked": "",
+      "ItemAction": "",
+      "ExpeditionAttribute": ""
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 114605,
+        "Name": "ArcticQ111_IntoTheUnknown_CairnLetter",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_sir_john_stacked_notes.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Sir John's Log Entries",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 34519
+      },
+      "Item": {
+        "Flotsam": 103060
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionTriggerTextPopup",
+                    "Values": {
+                      "ActionTriggerTextPopup": {
+                        "PopupText": 114596,
+                        "TextPopupLayout": "JohnsNotes1"
+                      },
+                      "Action": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "ItemAction": "",
+      "ExpeditionAttribute": ""
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 115475,
+        "Name": "Ancient Trade Route Map (Arctic)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_passage_01.png",
+        "InfoDescription": 116057
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of an Abandoned Inuit Village",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35920
+      },
+      "Item": {
+        "Rarity": "Rare",
+        "HasAction": 1,
+        "TradePrice": 20000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 116302,
+                        "TreasureSessionOrRegion": 180045
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 115484,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 20
+          }
+        },
+        "ItemDifficulties": "Easy;Average"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 115476,
+        "Name": "Lost City Map (Arctic)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_passage_02.png",
+        "InfoDescription": 116058
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Huddlesome Bay Trading Post",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35921
+      },
+      "Item": {
+        "Rarity": "Epic",
+        "HasAction": 1,
+        "TradePrice": 50000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 116303,
+                        "TreasureSessionOrRegion": 180045
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 115484,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 30
+          }
+        },
+        "ItemDifficulties": "Average;Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 115477,
+        "Name": "Legendary Site Map (Arctic)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_passage_03.png",
+        "InfoDescription": 116059
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "The Portal to Hyperborea",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35922
+      },
+      "Item": {
+        "Rarity": "Legendary",
+        "HasAction": 1,
+        "TradePrice": 100000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 116304,
+                        "TreasureSessionOrRegion": 180045
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 115484,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 40
+          }
+        },
+        "ItemDifficulties": "Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 115478,
+        "Name": "Rare Fishes Distribution Map (Arctic)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_passage_01.png",
+        "InfoDescription": 116060
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Seals Feeding Ground",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35923
+      },
+      "Item": {
+        "Rarity": "Rare",
+        "HasAction": 1,
+        "TradePrice": 20000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 116306,
+                        "TreasureSessionOrRegion": 180045
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 115485,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 20
+          }
+        },
+        "ItemDifficulties": "Easy;Average"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 115479,
+        "Name": "Threatened Animals Sanctuary Map (Arctic)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_passage_02.png",
+        "InfoDescription": 116061
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of an Arctic Basin",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35924
+      },
+      "Item": {
+        "Rarity": "Epic",
+        "HasAction": 1,
+        "TradePrice": 50000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 116307,
+                        "TreasureSessionOrRegion": 180045
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 115485,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 30
+          }
+        },
+        "ItemDifficulties": "Average;Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 115480,
+        "Name": "Mythological Animal Hideout Map (Arctic)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_passage_03.png",
+        "InfoDescription": 116062
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Megalodon's Abyss",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35925
+      },
+      "Item": {
+        "Rarity": "Legendary",
+        "HasAction": 1,
+        "TradePrice": 100000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 116308,
+                        "TreasureSessionOrRegion": 180045
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 115485,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 40
+          }
+        },
+        "ItemDifficulties": "Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 115481,
+        "Name": "Naval Battles Map (Arctic)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_passage_01.png",
+        "InfoDescription": 116063
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of an Inuit Dispute",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35926
+      },
+      "Item": {
+        "Rarity": "Rare",
+        "HasAction": 1,
+        "TradePrice": 20000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 116309,
+                        "TreasureSessionOrRegion": 180045
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 115486,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 20
+          }
+        },
+        "ItemDifficulties": "Easy;Average"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 115482,
+        "Name": "Merchant Sinking Sports Map (Arctic)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_passage_02.png",
+        "InfoDescription": 116064
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Ghost Ship Sighting",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35927
+      },
+      "Item": {
+        "Rarity": "Epic",
+        "HasAction": 1,
+        "TradePrice": 50000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 116310,
+                        "TreasureSessionOrRegion": 180045
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 115486,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 30
+          }
+        },
+        "ItemDifficulties": "Average;Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 115483,
+        "Name": "Royal Shipwreck Map (Arctic)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_passage_03.png",
+        "InfoDescription": 116065
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of Old Nate's Prototype Airship Crash Site",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35928
+      },
+      "Item": {
+        "Rarity": "Legendary",
+        "HasAction": 1,
+        "TradePrice": 100000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 116311,
+                        "TreasureSessionOrRegion": 180045
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 115486,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 40
+          }
+        },
+        "ItemDifficulties": "Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 119987,
+        "Name": "QI Kyrias Journal",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_kyrias_notebook.png",
+        "InfoDescription": 127952
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Kyria's Old Diary",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 45649
+      },
+      "Item": {
+        "Flotsam": 103060
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionTriggerTextPopup",
+                    "Values": {
+                      "ActionTriggerTextPopup": {
+                        "TextPopupLayout": "KiryasJournal1"
+                      },
+                      "Action": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "ItemAction": "",
+      "ExpeditionAttribute": ""
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 119989,
+        "Name": "QI Military Accounts",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_military_list_lol.png",
+        "InfoDescription": 127960
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Register of the IXth Regiment",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 45650
+      },
+      "Item": {
+        "Flotsam": 103060
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionTriggerTextPopup",
+                    "Values": {
+                      "ActionTriggerTextPopup": {
+                        "TextPopupLayout": "MilitaryLogs"
+                      },
+                      "Action": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "ItemAction": "",
+      "ExpeditionAttribute": ""
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 129663,
+        "Name": "QI Cartography drawings",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_kyrias_notebook.png",
+        "InfoDescription": 129698
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Cartographic Sketchbook",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 45651
+      },
+      "Item": {
+        "Flotsam": 103060
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionTriggerTextPopup",
+                    "Values": {
+                      "ActionTriggerTextPopup": {
+                        "TextPopupLayout": "CartographyArch"
+                      },
+                      "Action": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "ItemAction": "",
+      "ExpeditionAttribute": ""
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 119215,
+        "Name": "QI Letter of intention 1 - Choose Wisely your Advisors - Noble Advisor",
+        "IconFilename": "data/ui/2kimages/main/3dicons/campaign/icon_letter_closed.png",
+        "InfoDescription": 127969
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "CV and Cover Letter from 'Noble' Tutor",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 45657
+      },
+      "Item": {
+        "Flotsam": 103060
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionTriggerTextPopup",
+                    "Values": {
+                      "ActionTriggerTextPopup": {
+                        "PopupText": 131055,
+                        "TextPopupLayout": "LetterQuest"
+                      },
+                      "Action": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "ItemAction": "",
+      "ExpeditionAttribute": ""
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 119216,
+        "Name": "QI Letter of intention 2 - Choose Wisely your Advisors - Craftsman Advisor",
+        "IconFilename": "data/ui/2kimages/main/3dicons/campaign/icon_letter_closed.png",
+        "InfoDescription": 127970
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "CV and Cover Letter from 'Master Craftsman' Tutor",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 45658
+      },
+      "Item": {
+        "Flotsam": 103060
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionTriggerTextPopup",
+                    "Values": {
+                      "ActionTriggerTextPopup": {
+                        "PopupText": 131057,
+                        "TextPopupLayout": "LetterQuest"
+                      },
+                      "Action": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "ItemAction": "",
+      "ExpeditionAttribute": ""
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 119217,
+        "Name": "QI Letter of intention 3 - Choose Wisely your Advisors - Military Advisor",
+        "IconFilename": "data/ui/2kimages/main/3dicons/campaign/icon_letter_closed.png",
+        "InfoDescription": 127971
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "CV and Cover Letter from 'Decorated General' Tutor",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 45659
+      },
+      "Item": {
+        "Flotsam": 103060
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionTriggerTextPopup",
+                    "Values": {
+                      "ActionTriggerTextPopup": {
+                        "PopupText": 131056,
+                        "TextPopupLayout": "LetterQuest"
+                      },
+                      "Action": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "ItemAction": "",
+      "ExpeditionAttribute": ""
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 124372,
+        "Name": "QI Kidusi Anitoni Port Registry",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_sir_john_stacked_notes.png",
+        "InfoDescription": 127982
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Kidusi Anitoni Port Registry",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 45672
+      },
+      "Item": {
+        "Flotsam": 103060
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionTriggerTextPopup",
+                    "Values": {
+                      "ActionTriggerTextPopup": {
+                        "PopupText": 124371,
+                        "TextPopupLayout": "LetterQuest"
+                      },
+                      "Action": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "ItemAction": "",
+      "ExpeditionAttribute": ""
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 124374,
+        "Name": "QI Akdamot Port Registry",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_sir_john_stacked_notes.png",
+        "InfoDescription": 127983
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Akdamot Port Registry",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 45673
+      },
+      "Item": {
+        "Flotsam": 103060
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionTriggerTextPopup",
+                    "Values": {
+                      "ActionTriggerTextPopup": {
+                        "PopupText": 124373,
+                        "TextPopupLayout": "LetterQuest"
+                      },
+                      "Action": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "ItemAction": "",
+      "ExpeditionAttribute": ""
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 124464,
+        "Name": "QI Mekdem's Guard's Diary",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_sir_john_stacked_notes.png",
+        "InfoDescription": 127984
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Diary of Mekdem's Guard",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 45674
+      },
+      "Item": {
+        "Flotsam": 103060
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionTriggerTextPopup",
+                    "Values": {
+                      "ActionTriggerTextPopup": {
+                        "PopupText": 124463,
+                        "TextPopupLayout": "LetterQuest"
+                      },
+                      "Action": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "ItemAction": "",
+      "ExpeditionAttribute": ""
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 124624,
+        "Name": "QI Wag's Personal Notes",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_sir_john_stacked_notes.png",
+        "InfoDescription": 127985
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "King Wag's Last Testament",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 45675
+      },
+      "Item": {
+        "Flotsam": 103060
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionTriggerTextPopup",
+                    "Values": {
+                      "ActionTriggerTextPopup": {
+                        "PopupText": 124623,
+                        "TextPopupLayout": "LetterQuest"
+                      },
+                      "Action": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "ItemAction": "",
+      "ExpeditionAttribute": ""
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 129239,
+        "Name": "Destroyed settlement modern Shepherds (Africa)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_enbesa.png",
+        "InfoDescription": 129288
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map To A Lost Shepherds' Camp",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 45704
+      },
+      "Item": {
+        "Rarity": "Rare",
+        "HasAction": 1,
+        "TradePrice": 20000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 129464,
+                        "TreasureSessionOrRegion": 112132
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 129513,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 20
+          }
+        },
+        "ItemDifficulties": "Easy;Average"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 129243,
+        "Name": "Destroyed settlement modern Elders (Africa)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_enbesa_02.png",
+        "InfoDescription": 129289
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map To A Sunken Estate",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 45705
+      },
+      "Item": {
+        "Rarity": "Epic",
+        "HasAction": 1,
+        "TradePrice": 50000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 129465,
+                        "TreasureSessionOrRegion": 112132
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 129513,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 30
+          }
+        },
+        "ItemDifficulties": "Average;Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 129240,
+        "Name": "Destroyed settlement Ancient (Africa)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_enbesa_03.png",
+        "InfoDescription": 129290
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of an Ancient Outpost",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 45706
+      },
+      "Item": {
+        "Rarity": "Legendary",
+        "HasAction": 1,
+        "TradePrice": 100000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 129466,
+                        "TreasureSessionOrRegion": 112132
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 129513,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "BaseMorale": 40,
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 20
+          }
+        },
+        "ItemDifficulties": "Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 129237,
+        "Name": "Naval Battles Angereb Map (Africa)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_enbesa.png",
+        "InfoDescription": 129296
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map Provided By Imperial Sailors",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 45707
+      },
+      "Item": {
+        "Rarity": "Rare",
+        "HasAction": 1,
+        "TradePrice": 20000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 129224,
+                        "TreasureSessionOrRegion": 112132
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 129513,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 20
+          }
+        },
+        "ItemDifficulties": "Easy;Average"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 129222,
+        "Name": "Naval Battles Ancient Map (Africa)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_enbesa_02.png",
+        "InfoDescription": 129299
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of Ancient Naval Battlesite",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 45708
+      },
+      "Item": {
+        "Rarity": "Epic",
+        "HasAction": 1,
+        "TradePrice": 50000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 129326,
+                        "TreasureSessionOrRegion": 112132
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 129513,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 30
+          }
+        },
+        "ItemDifficulties": "Average;Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 129238,
+        "Name": "Shipwreck Ancient Map (Africa)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_enbesa_03.png",
+        "InfoDescription": 129300
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Cliffside Map",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 45709
+      },
+      "Item": {
+        "Rarity": "Legendary",
+        "HasAction": 1,
+        "TradePrice": 100000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 129327,
+                        "TreasureSessionOrRegion": 112132
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 129513,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "BaseMorale": 40,
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 20
+          }
+        },
+        "ItemDifficulties": "Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 129236,
+        "Name": "Shipwreck Modern Map (Africa) Scrap",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_enbesa.png",
+        "InfoDescription": 129304
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Court-Sealed Map",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 45710
+      },
+      "Item": {
+        "Rarity": "Rare",
+        "HasAction": 1,
+        "TradePrice": 20000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 129467,
+                        "TreasureSessionOrRegion": 112132
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 129513,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 20
+          }
+        },
+        "ItemDifficulties": "Easy;Average"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 129249,
+        "Name": "Shipwreck Modern Map (Africa) Goods",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_enbesa.png",
+        "InfoDescription": 129305
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map Taken From An Insurance Report",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 45711
+      },
+      "Item": {
+        "Rarity": "Rare",
+        "HasAction": 1,
+        "TradePrice": 20000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 129468,
+                        "TreasureSessionOrRegion": 112132
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 129513,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 20
+          }
+        },
+        "ItemDifficulties": "Easy;Average"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 129248,
+        "Name": "Shipwreck Modern Map (Africa) Machines Rare",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_enbesa_02.png",
+        "InfoDescription": 129306
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map From A Recent Shipwreck",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 45712
+      },
+      "Item": {
+        "Rarity": "Epic",
+        "HasAction": 1,
+        "TradePrice": 50000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 129469,
+                        "TreasureSessionOrRegion": 112132
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 129223,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 30
+          }
+        },
+        "ItemDifficulties": "Average;Hard"
+      }
+    }
+  },
+  {
+    "Template": "ItemWithUI",
+    "Values": {
+      "Standard": {
+        "GUID": 129251,
+        "Name": "Shipwreck Modern Map (Africa) Machines Legendary",
+        "IconFilename": "data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_enbesa_03.png",
+        "InfoDescription": 129307
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Shipwrecked Captain's Map",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 45713
+      },
+      "Item": {
+        "Rarity": "Legendary",
+        "HasAction": 1,
+        "TradePrice": 100000
+      },
+      "ItemWithUI": {
+        "ItemActions": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartTreasureMapQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartTreasureMapQuest": {
+                        "TreasureMapQuest": 129470,
+                        "TreasureSessionOrRegion": 112132
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DestroyOnClick": 1
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410040
+      },
+      "ItemAction": {
+        "ActiveBuff": 129223,
+        "ActionDescription": 22097,
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "ExpeditionAttribute": {
+        "BaseMorale": 40,
+        "ExpeditionAttributes": {
+          "Item": {
+            "Attribute": "Navigation",
+            "Amount": 20
+          }
+        },
+        "ItemDifficulties": "Hard"
+      }
+    }
+  }
+]

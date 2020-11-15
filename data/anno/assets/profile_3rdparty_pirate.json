@@ -1,0 +1,3951 @@
+[
+  {
+    "Template": "Profile_3rdParty_Pirate",
+    "Values": {
+      "Standard": {
+        "GUID": 73,
+        "Name": "Third_party_03 (Anne Harlow)",
+        "IconFilename": "data/ui/2kimages/main/profiles/3rd_party_03.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Anne Harlow",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 3771
+      },
+      "Profile": {
+        "ProfilePicture": "data/ui/2kimages/main/profiles/3rd_party_03.png",
+        "Portrait": 100669,
+        "CompanyIcon": 501263,
+        "InfoCornerInfoTip": 25000162,
+        "InfoCornerDescription": 4076,
+        "ParticipantID": "Third_party_03_Pirate_Harlow",
+        "NotificationBackground": "data/ui/2kimages/main/assets/character_bg/bgr_character_04.png",
+        "QuestStarterObject": 100707,
+        "QuestPoolList": {
+          "Item": [
+            {
+              "QuestPool": 150310
+            },
+            {
+              "QuestPool": 151108
+            }
+          ]
+        },
+        "DefaultColor": "Color9",
+        "VisibleInDiplomacy": 1,
+        "AICanActUponProfile": 1,
+        "BackgroundText": 14374,
+        "MoodImage": "data/ui/2kimages/main/assets/thirdparty_islandbar/bg_islandbar_pirates.png",
+        "ShipDropRewardPool": 193205,
+        "AvoidIslandsOnEnterSession": 1
+      },
+      "Diplomacy": {
+        "DiceRollThreatMin": 0,
+        "DiceRollThreatMax": 10,
+        "DiplomacyActionBalancing": {
+          "RequestAlliance": {
+            "AgreementThreshold": 110,
+            "PartialAgreementThreshold": 80
+          },
+          "RequestPeace": {
+            "AgreementThreshold": 60,
+            "PartialAgreementThreshold": 30
+          },
+          "RequestTraderights": {
+            "AgreementThreshold": 90,
+            "PartialAgreementThreshold": 60
+          },
+          "ThreatWar": {
+            "AgreementThreshold": 25
+          },
+          "RequestCeaseFire": {
+            "ActionWeight": 120,
+            "AgreementThreshold": 50,
+            "PartialAgreementThreshold": -100
+          },
+          "RequestNonAttack": {
+            "AgreementThreshold": 120,
+            "PartialAgreementThreshold": 80
+          },
+          "ThreatCancelTrade": {
+            "AgreementThreshold": 10
+          },
+          "ThreatCancelAlliance": {
+            "AgreementThreshold": 16
+          }
+        },
+        "ReputationChangeCalculation": {
+          "PaymentGivingMoney": {
+            "MaxPossibleReputation": 100
+          },
+          "PaymentReceivingMoney": {
+            "ReputationAddedLimit": 30,
+            "ReputationAddedSteepness": 0.01
+          },
+          "Treaties": {
+            "ReputationValues": {
+              "CeaseFire": {
+                "AddingTreaty": 8
+              }
+            }
+          },
+          "EconomyPowerTempReputation": {
+            "NegBorderMin": 0,
+            "NegBorderMax": 0,
+            "PosBorderMin": 0,
+            "PosBorderMax": 0,
+            "NegativeReputationChanged": 0,
+            "PositiveReputationChanged": 0
+          },
+          "MilitaryPowerTempReputation": {
+            "NegBorderMin": -6,
+            "NegBorderMax": -30,
+            "PosBorderMin": 6,
+            "PosBorderMax": 100,
+            "NegativeReputationChanged": 2,
+            "PositiveReputationChanged": 2
+          }
+        },
+        "GiftBalancing": {
+          "receivePayment": {
+            "BaseValue": 250,
+            "IncreasePerLevel": 7
+          },
+          "receiveSmall": {
+            "BaseValue": 7500,
+            "IncreasePerLevel": 7
+          },
+          "receiveOrdinary": {
+            "BaseValue": 15000,
+            "IncreasePerLevel": 7
+          },
+          "receiveGenerous": {
+            "BaseValue": 22000,
+            "IncreasePerLevel": 7
+          },
+          "counterProposal": {
+            "BaseValue": 300,
+            "IncreasePerLevel": 7
+          },
+          "giveSmall": {
+            "IncreasePerLevel": 7
+          },
+          "giveOrdinary": {
+            "IncreasePerLevel": 7
+          },
+          "giveGenerous": {
+            "IncreasePerLevel": 7
+          },
+          "givePayment": {
+            "IncreasePerLevel": 7
+          }
+        },
+        "RepeatableActionBalancing": {
+          "Actions": {
+            "Flatter": {
+              "Subdivisions": {
+                "Item": [
+                  {
+                    "VectorElement": {
+                      "InheritanceMapV2": {
+                        "Entry": {
+                          "TemplateName": "3rdParty_Pirate_Female",
+                          "Index": 0
+                        }
+                      }
+                    },
+                    "SuccessChance": 55,
+                    "ReputationGain": 2,
+                    "ReputationLoss": -1
+                  },
+                  {
+                    "SuccessChance": 30,
+                    "ReputationGain": 1,
+                    "ReputationLoss": -3
+                  },
+                  ""
+                ]
+              },
+              "ForgettingTime": 1800000
+            },
+            "Insult": {
+              "Subdivisions": {
+                "Item": [
+                  {
+                    "VectorElement": {
+                      "InheritanceMapV2": {
+                        "Entry": {
+                          "TemplateName": "3rdParty_Pirate_Female",
+                          "Index": 0
+                        }
+                      }
+                    },
+                    "SuccessChance": 90,
+                    "ReputationGain": -5
+                  },
+                  ""
+                ]
+              },
+              "ForgettingTime": 1800000
+            },
+            "Gift": {
+              "Subdivisions": {
+                "Item": [
+                  {
+                    "VectorElement": {
+                      "InheritanceMapV2": {
+                        "Entry": {
+                          "TemplateName": "3rdParty_Pirate_Female",
+                          "Index": 0
+                        }
+                      }
+                    },
+                    "SuccessChance": 90,
+                    "ReputationGain": 2
+                  },
+                  {
+                    "SuccessChance": 60,
+                    "ReputationGain": 1
+                  },
+                  ""
+                ]
+              },
+              "ForgettingTime": 1800000
+            }
+          }
+        },
+        "Memory": {
+          "LongTimeCheck": 7800000,
+          "ReputationUpdateTimer": 7860000
+        },
+        "ActionDebuffs": {
+          "DebuffSettings": {
+            "ThreatWar": {
+              "DiceDebuff": 200,
+              "DebuffTime": 10800000,
+              "DiminishingDebuff": 1
+            },
+            "Peace": {
+              "DiceDebuff": 100,
+              "DebuffTime": 3600000
+            },
+            "Trade": {
+              "DiceDebuff": 200,
+              "DebuffTime": 10800000
+            },
+            "CeaseFire": {
+              "DiceDebuff": 0
+            }
+          }
+        },
+        "CounterProposal": {
+          "CounterProposalPartial": 33,
+          "CounterProposalDeclineStart": 30,
+          "CounterProposalDeclineIncrease": 30,
+          "CounterProposalIncreaseModifierPercentage": 1000
+        },
+        "InitialRelation": {
+          "DefaultReputation": 0,
+          "DefaultMemory": 5,
+          "DefaultTreaties": "War",
+          "Exceptions": {
+            "Item": [
+              {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Reputation": 40,
+                "Memory": 10,
+                "Treaties": "Peace"
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 1,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 1
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 1
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 2,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 2
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 2
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 3,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 3
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 3
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 4,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 4
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 4
+                      }
+                    ]
+                  }
+                },
+                "Memory": 20
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 5,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 5
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 5
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 6,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 6
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 6
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 7,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 7
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 7
+                      }
+                    ]
+                  }
+                },
+                "Memory": 50,
+                "Treaties": "Peace"
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 8,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 8
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 8
+                      }
+                    ]
+                  }
+                },
+                "Reputation": 90,
+                "Treaties": "Peace;TradeRights"
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 9,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 9
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 9
+                      }
+                    ]
+                  }
+                },
+                "Reputation": 70,
+                "Memory": 70,
+                "Treaties": "Peace"
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 11,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 11
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 11
+                      }
+                    ]
+                  }
+                },
+                "Treaties": "CeaseFire"
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 12,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 12
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 12
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 13,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 13
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 13
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 14,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 14
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 14
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 15,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 15
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 15
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "Participant": "Third_party_07_Jailor_Bleakworth",
+                "Reputation": 100,
+                "Memory": 100,
+                "Treaties": "Peace"
+              },
+              {
+                "Participant": "Third_party_08_Kahina",
+                "Reputation": 100,
+                "Memory": 100,
+                "Treaties": "Peace"
+              },
+              {
+                "Participant": "Third_enemy_01_Grant",
+                "Reputation": 100,
+                "Memory": 100,
+                "Treaties": "Peace"
+              },
+              {
+                "Participant": "Third_party_02_Blake",
+                "Reputation": 100,
+                "Memory": 100,
+                "Treaties": "Peace"
+              },
+              {
+                "Participant": "Campaign_character_04_pyrophorian_gold",
+                "Treaties": "Peace"
+              },
+              {
+                "Participant": "Second_ai_11_Mercier",
+                "Reputation": 70,
+                "Memory": 70,
+                "Treaties": "Peace"
+              }
+            ]
+          }
+        },
+        "DiplomacyAI": {
+          "ReputationTrigger": {
+            "Item": [
+              {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 95,
+                "MaxTriggerReputation": 100,
+                "TriggerChance": 0,
+                "TriggerPriority": 10
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 1,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 1
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 1
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 80,
+                "MaxTriggerReputation": 90
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 2,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 2
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 2
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 80,
+                "MaxTriggerReputation": 85,
+                "TriggerPriority": 10
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 3,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 3
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 3
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 80,
+                "MaxTriggerReputation": 85,
+                "TriggerPriority": 10
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 4,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 4
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 4
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 60,
+                "MaxTriggerReputation": 70
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 5,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 5
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 5
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 60,
+                "MaxTriggerReputation": 65,
+                "TriggerPriority": 10
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 6,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 6
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 6
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 60,
+                "MaxTriggerReputation": 70,
+                "CheckMilitaryStrength": -0.8,
+                "TriggerPriority": 10
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 7,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 7
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 7
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 25,
+                "MaxTriggerReputation": 35,
+                "TriggerPriority": 10
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 8,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 8
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 8
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 50,
+                "MaxTriggerReputation": 60
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 9,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 9
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 9
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 999,
+                "MaxTriggerReputation": 999,
+                "TriggerChance": 0
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 10,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 10
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 10
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 999,
+                "MaxTriggerReputation": 999,
+                "TriggerChance": 0
+              }
+            ]
+          },
+          "MaxMoneyRequest": 40,
+          "SpecialTrigger": {
+            "Item": [
+              {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 50,
+                "TriggerChance": 50
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 1,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 1
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 1
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 80,
+                "TriggerChance": 30
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 2,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 2
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 2
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 90,
+                "TriggerChance": 15
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 3,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 3
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 3
+                      }
+                    ]
+                  }
+                },
+                "TriggerChance": 15
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 4,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 4
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 4
+                      }
+                    ]
+                  }
+                },
+                "TriggerChance": 15
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 5,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 5
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 5
+                      }
+                    ]
+                  }
+                },
+                "CheckMilitaryStrength": -0.1,
+                "TriggerChance": 20
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 6,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 6
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 6
+                      }
+                    ]
+                  }
+                },
+                "CheckMilitaryStrength": -0.1,
+                "TriggerChance": 20
+              }
+            ]
+          },
+          "GenericTimerStartDelay": 3600000,
+          "GenericTimerRepeat": 7200000,
+          "ActionCooldown": {
+            "RequestCeaseFire": {
+              "Cooldown": 3600000
+            }
+          }
+        },
+        "AutomaticDiscovery": {
+          "ProgressCheckEnabled": 1,
+          "DesiredProgress": "MidGame",
+          "Time": 14400000
+        }
+      },
+      "ParticipantMessages": {
+        "MessageTriggers": {
+          "QuestAborted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "3rdParty_Pirate_Female",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": -170407149
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "QuestInvitation": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "3rdParty_Pirate_Female",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 1548675746
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "QuestFailed": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "3rdParty_Pirate_Female",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 1681280696
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "QuestStarted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "3rdParty_Pirate_Female",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationPriority": 699
+                    },
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": -127377601
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "QuestSuccessful": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "3rdParty_Pirate_Female",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": -536019083
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ClickKontor": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "3rdParty_Pirate_Female",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 981143564
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ParticipantDiscovered": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "3rdParty_Pirate_Female",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 866717955
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "QuestResolveConfirmation": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationText": 10549
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyMemoryCorrectionPositive": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "3rdParty_Pirate_Female",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 534093439
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyMemoryCorrectionNegative": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "3rdParty_Pirate_Female",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": -105227898
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Object": {
+        "DefaultParticipant": "Third_party_03_Pirate_Harlow"
+      },
+      "Trader": {
+        "ShipTrader": 1,
+        "SellShipRequestNotification": 500689,
+        "BuyShipRequestNotification": 500690,
+        "Progression": {
+          "EarlyGame": {
+            "OfferingItems": 190354,
+            "MaxItemsToOffer": 3,
+            "ShipProductionCooldown": 300000
+          },
+          "EarlyMidGame": {
+            "WarFleet": {
+              "Item": {
+                "ShipAsset": 102429,
+                "Amount": 4
+              }
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010210,
+                  "ProductionPerMinute": 3
+                },
+                {
+                  "Good": 1010221,
+                  "ProductionPerMinute": 1
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010210
+                    },
+                    {
+                      "Good": 1010221
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010216,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010214,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "OfferingItems": 190355,
+            "MaxItemsToOffer": 4,
+            "ShipsForSale": {
+              "Item": {
+                "ShipAsset": 102420,
+                "Weight": 1
+              }
+            },
+            "ShipsForSaleAmount": 1,
+            "ShipProductionCooldown": 240000
+          },
+          "MidGame": {
+            "WarFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 102429,
+                  "Amount": 6
+                },
+                {
+                  "ShipAsset": 102430,
+                  "Amount": 2
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010210,
+                  "ProductionPerMinute": 4
+                },
+                {
+                  "Good": 1010221,
+                  "ProductionPerMinute": 1.5
+                },
+                {
+                  "Good": 1010257,
+                  "ProductionPerMinute": 2
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010210
+                    },
+                    {
+                      "Good": 1010221
+                    },
+                    {
+                      "Good": 1010257
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010216,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010214,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010257,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "OfferingItems": 190356,
+            "MaxItemsToOffer": 5,
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 102420,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102421,
+                  "Weight": 1
+                }
+              ]
+            },
+            "ShipsForSaleAmount": 1,
+            "ShipProductionCooldown": 180000
+          },
+          "LateMidGame": {
+            "WarFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 102429,
+                  "Amount": 8
+                },
+                {
+                  "ShipAsset": 102430,
+                  "Amount": 4
+                },
+                {
+                  "ShipAsset": 102431,
+                  "Amount": 2
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010210,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010221,
+                  "ProductionPerMinute": 2
+                },
+                {
+                  "Good": 1010257,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010249,
+                  "ProductionPerMinute": 3
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010210
+                    },
+                    {
+                      "Good": 1010221
+                    },
+                    {
+                      "Good": 1010257
+                    },
+                    {
+                      "Good": 1010249
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010216,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010214,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010257,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "OfferingItems": 190357,
+            "MaxItemsToOffer": 6,
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 102420,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102421,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102419,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102427,
+                  "Weight": 1
+                }
+              ]
+            },
+            "ShipsForSaleAmount": 1,
+            "ShipProductionCooldown": 120000
+          },
+          "LateGame": {
+            "WarFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 102429,
+                  "Amount": 10
+                },
+                {
+                  "ShipAsset": 102430,
+                  "Amount": 5
+                },
+                {
+                  "ShipAsset": 102431,
+                  "Amount": 2
+                },
+                {
+                  "ShipAsset": 102432,
+                  "Amount": 2
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010210,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010221,
+                  "ProductionPerMinute": 3
+                },
+                {
+                  "Good": 1010257,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010249,
+                  "ProductionPerMinute": 4
+                },
+                {
+                  "Good": 1010223,
+                  "ProductionPerMinute": 1
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010210
+                    },
+                    {
+                      "Good": 1010221
+                    },
+                    {
+                      "Good": 1010257
+                    },
+                    {
+                      "Good": 1010249
+                    },
+                    {
+                      "Good": 1010223
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010216,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010214,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010257,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "OfferingItems": 190358,
+            "MaxItemsToOffer": 8,
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 102420,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102421,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102419,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102422,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102423,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102455,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102428,
+                  "Weight": 1
+                }
+              ]
+            },
+            "ShipsForSaleAmount": 1,
+            "ShipProductionCooldown": 60000
+          },
+          "EndGame": {
+            "WarFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 102429,
+                  "Amount": 12
+                },
+                {
+                  "ShipAsset": 102430,
+                  "Amount": 7
+                },
+                {
+                  "ShipAsset": 102431,
+                  "Amount": 4
+                },
+                {
+                  "ShipAsset": 102432,
+                  "Amount": 4
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010210,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010221,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010257,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010249,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010223,
+                  "ProductionPerMinute": 3
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010210
+                    },
+                    {
+                      "Good": 1010221
+                    },
+                    {
+                      "Good": 1010257
+                    },
+                    {
+                      "Good": 1010249
+                    },
+                    {
+                      "Good": 1010223
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010216,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010214,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010257,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "OfferingItems": 192070,
+            "MaxItemsToOffer": 12,
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 102420,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102421,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102419,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102422,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102423,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102455,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102428,
+                  "Weight": 1
+                }
+              ]
+            },
+            "ShipsForSaleAmount": 2
+          }
+        }
+      },
+      "ThirdParty": {
+        "AllowedRegions": "Moderate",
+        "IslandPlacement": "InEverySession",
+        "ReservationPause": 60000
+      },
+      "MilitaryAI": {
+        "StrengthLevels": {
+          "Levels": {
+            "Equal": {
+              "MaxAttackRatio": 100,
+              "MaxEscortRatio": 0,
+              "MaxPatrolRatio": 0,
+              "MaxDefendAllyRatio": 50
+            },
+            "Inferior": {
+              "Flee": 1,
+              "MaxAttackRatio": 100,
+              "MaxEscortRatio": 0,
+              "MaxPatrolRatio": 0,
+              "MaxDefendAllyRatio": 50
+            },
+            "Superior": {
+              "Flee": 1,
+              "MaxEscortRatio": 0,
+              "MaxDefendRatio": 100,
+              "MaxPatrolRatio": 0,
+              "MaxDefendAllyRatio": 50
+            }
+          }
+        },
+        "Attack": {
+          "MilitaryStrengthRatio": 90,
+          "AttackInterval": 1500000,
+          "AttackTargetPrio": {
+            "Item": [
+              {
+                "Targets": "TradeShip",
+                "Conditions": {
+                  "Item": {
+                    "Condition": "IsWeaker"
+                  }
+                },
+                "SkipTargetWhenInHarbourArea": 1
+              },
+              {
+                "Targets": "TradeShip",
+                "Conditions": {
+                  "Item": {
+                    "Condition": "IsNearer"
+                  }
+                },
+                "SkipTargetWhenInHarbourArea": 1
+              },
+              {
+                "Targets": "TradeShip",
+                "Conditions": {
+                  "Item": {
+                    "Condition": "IsFarther"
+                  }
+                },
+                "SkipTargetWhenInHarbourArea": 1
+              },
+              {
+                "Targets": "WarShip",
+                "Conditions": {
+                  "Item": {
+                    "Condition": "IsWeaker"
+                  }
+                },
+                "SkipProbability": 50,
+                "SkipTargetWhenInHarbourArea": 1
+              },
+              {
+                "Targets": "WarShip",
+                "Conditions": {
+                  "Item": {
+                    "Condition": "IsNearer"
+                  }
+                },
+                "SkipProbability": 50,
+                "SkipTargetWhenInHarbourArea": 1
+              }
+            ]
+          },
+          "IsBlinded": "IgnoreBuildings",
+          "OverkillAttackThreshold": 100
+        },
+        "Defend": {
+          "MinStrengthRatio": 100,
+          "DefendInterval": 1000,
+          "AttackStrongestTargetFirst": 1
+        },
+        "SquadLogic": {
+          "FleeStrengthRatio": 60,
+          "TargetPriorities": {
+            "Item": {
+              "Targets": "TradeShip",
+              "Range": 100,
+              "MinStrengthRatio": 90,
+              "Conditions": {
+                "Item": {
+                  "Condition": "LowHitpoints"
+                }
+              },
+              "SkipTargetWhenInHarbourArea": 1
+            }
+          },
+          "CommandsToSupport": "Defend",
+          "CommandsToAbandon": "Attack",
+          "ObservationRange": 110
+        },
+        "SquadPriorities": {
+          "Commands": {
+            "Attack": {
+              "Priority": 10
+            },
+            "Defend": {
+              "Priority": 11
+            },
+            "Patrol": {
+              "Priority": 0
+            },
+            "Escort": {
+              "Priority": 0
+            },
+            "DefendAlly": {
+              "Priority": 10
+            }
+          }
+        }
+      },
+      "Pirate": {
+        "AreaOfActivity": {
+          "Normal": {
+            "StartAreaRadius": 300,
+            "ChaseRange": 50,
+            "GrowPerProgress": {
+              "LateMidGame": {
+                "GrowAreaPerMinute": 3
+              },
+              "LateGame": {
+                "GrowAreaPerMinute": 8
+              },
+              "EndGame": {
+                "GrowAreaPerMinute": 25
+              },
+              "EarlyMidGame": {
+                "GrowAreaPerMinute": 1
+              }
+            }
+          },
+          "Hard": {
+            "StartAreaRadius": 500,
+            "ChaseRange": 100,
+            "GrowPerProgress": {
+              "EarlyMidGame": {
+                "GrowAreaPerMinute": 1.5
+              },
+              "MidGame": {
+                "GrowAreaPerMinute": 4
+              },
+              "LateMidGame": {
+                "GrowAreaPerMinute": 8
+              },
+              "LateGame": {
+                "GrowAreaPerMinute": 25
+              },
+              "EarlyGame": {
+                "GrowAreaPerMinute": 0
+              }
+            }
+          }
+        },
+        "ComebackAfterKontorDestruction": 9000000,
+        "RequestCeaseFireTributeIntervalMin": 0,
+        "RequestCeaseFireTributeIntervalMax": 0,
+        "ComebackQuests": {
+          "EarlyGame": {
+            "PossibleQuests": {
+              "Item": [
+                {
+                  "GUID": 153266
+                },
+                {
+                  "GUID": 153262
+                }
+              ]
+            }
+          },
+          "EarlyMidGame": {
+            "PossibleQuests": {
+              "Item": [
+                {
+                  "GUID": 153266
+                },
+                {
+                  "GUID": 153262
+                }
+              ]
+            }
+          },
+          "MidGame": {
+            "PossibleQuests": {
+              "Item": [
+                {
+                  "GUID": 153269
+                },
+                {
+                  "GUID": 153262
+                }
+              ]
+            }
+          },
+          "LateMidGame": {
+            "PossibleQuests": {
+              "Item": [
+                {
+                  "GUID": 153270
+                },
+                {
+                  "GUID": 153262
+                }
+              ]
+            }
+          },
+          "LateGame": {
+            "PossibleQuests": {
+              "Item": [
+                {
+                  "GUID": 153270
+                },
+                {
+                  "GUID": 153262
+                }
+              ]
+            }
+          },
+          "EndGame": {
+            "PossibleQuests": {
+              "Item": [
+                {
+                  "GUID": 153271
+                },
+                {
+                  "GUID": 153262
+                }
+              ]
+            }
+          }
+        },
+        "RebuildAfterIslandWarTimer": 1500000
+      },
+      "ParticipantMessageObject": {
+        "ParticipantMessages": 148
+      },
+      "Interaction": {
+        "PaMSyTrade": {
+          "ActiveTrade": {
+            "TradeAmount": 5000,
+            "TradeAmountFactor": 15000
+          },
+          "PassiveTrade": {
+            "TradeAmount": 20000,
+            "TradeAmountFactor": 45000
+          }
+        },
+        "PaMSyMilitaryStrength": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "3rdParty_Pirate",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "Profile_3rdParty_Pirate",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "Range": 30
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "3rdParty_Pirate",
+                      "Index": 1
+                    },
+                    {
+                      "TemplateName": "Profile_3rdParty_Pirate",
+                      "Index": 1
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "3rdParty_Pirate",
+                      "Index": 2
+                    },
+                    {
+                      "TemplateName": "Profile_3rdParty_Pirate",
+                      "Index": 2
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "3rdParty_Pirate",
+                      "Index": 3
+                    },
+                    {
+                      "TemplateName": "Profile_3rdParty_Pirate",
+                      "Index": 3
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "WorkingConditionsEvaluationTime": 60000,
+        "PositiveWorkingConditionsPopulationFactor": 0,
+        "NegativeWorkingConditionsPopulationFactor": 0
+      },
+      "ProfileCounter": "",
+      "Locked": ""
+    }
+  },
+  {
+    "Template": "Profile_3rdParty_Pirate",
+    "Values": {
+      "Standard": {
+        "GUID": 76,
+        "Name": "Third_party_04 (La Fortune)",
+        "IconFilename": "data/ui/2kimages/main/profiles/3rd_party_04.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Jean La Fortune",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 7068
+      },
+      "Profile": {
+        "ProfilePicture": "data/ui/2kimages/main/profiles/3rd_party_04.png",
+        "Portrait": 100670,
+        "CompanyIcon": 501294,
+        "InfoCornerInfoTip": 25000162,
+        "InfoCornerDescription": 4077,
+        "ParticipantID": "Third_party_04_Pirate_LaFortune",
+        "NotificationBackground": "data/ui/2kimages/main/assets/character_bg/bgr_character_07.png",
+        "QuestStarterObject": 100708,
+        "QuestPoolList": {
+          "Item": [
+            {
+              "QuestPool": 151109
+            },
+            {
+              "QuestPool": 150313
+            }
+          ]
+        },
+        "DefaultColor": "Color9",
+        "VisibleInDiplomacy": 1,
+        "AICanActUponProfile": 1,
+        "BackgroundText": 14375,
+        "MoodImage": "data/ui/2kimages/main/assets/thirdparty_islandbar/bg_islandbar_pirates.png",
+        "ShipDropRewardPool": 193206,
+        "AvoidIslandsOnEnterSession": 1
+      },
+      "Diplomacy": {
+        "DiceRollThreatMin": 0,
+        "DiceRollThreatMax": 10,
+        "DiplomacyActionBalancing": {
+          "RequestAlliance": {
+            "AgreementThreshold": 100,
+            "PartialAgreementThreshold": 70
+          },
+          "RequestPeace": {
+            "PartialAgreementThreshold": 30
+          },
+          "RequestTraderights": {
+            "AgreementThreshold": 85,
+            "PartialAgreementThreshold": 50
+          },
+          "ThreatWar": {
+            "AgreementThreshold": 25
+          },
+          "RequestCeaseFire": {
+            "ActionWeight": 120,
+            "AgreementThreshold": 55,
+            "PartialAgreementThreshold": -100
+          },
+          "RequestNonAttack": {
+            "AgreementThreshold": 120,
+            "PartialAgreementThreshold": 80
+          },
+          "ThreatCancelTrade": {
+            "AgreementThreshold": 10
+          },
+          "ThreatCancelAlliance": {
+            "AgreementThreshold": 16
+          }
+        },
+        "ReputationChangeCalculation": {
+          "PaymentGivingMoney": {
+            "MaxPossibleReputation": 100
+          },
+          "PaymentReceivingMoney": {
+            "ReputationAddedLimit": 30,
+            "ReputationAddedSteepness": 0.01
+          },
+          "Treaties": {
+            "ReputationValues": {
+              "CeaseFire": {
+                "AddingTreaty": 8
+              }
+            }
+          },
+          "EconomyPowerTempReputation": {
+            "NegBorderMin": 0,
+            "NegBorderMax": 0,
+            "PosBorderMin": 0,
+            "PosBorderMax": 0,
+            "NegativeReputationChanged": 0,
+            "PositiveReputationChanged": 0
+          },
+          "MilitaryPowerTempReputation": {
+            "NegBorderMin": -6,
+            "NegBorderMax": -30,
+            "PosBorderMin": 6,
+            "PosBorderMax": 100,
+            "NegativeReputationChanged": 2,
+            "PositiveReputationChanged": 2
+          }
+        },
+        "GiftBalancing": {
+          "receivePayment": {
+            "BaseValue": 250,
+            "IncreasePerLevel": 7
+          },
+          "receiveSmall": {
+            "BaseValue": 6400,
+            "IncreasePerLevel": 7
+          },
+          "counterProposal": {
+            "BaseValue": 300,
+            "IncreasePerLevel": 7
+          },
+          "receiveOrdinary": {
+            "BaseValue": 13500,
+            "IncreasePerLevel": 7
+          },
+          "receiveGenerous": {
+            "BaseValue": 18500,
+            "IncreasePerLevel": 7
+          },
+          "giveSmall": {
+            "IncreasePerLevel": 7
+          },
+          "giveOrdinary": {
+            "IncreasePerLevel": 7
+          },
+          "giveGenerous": {
+            "IncreasePerLevel": 7
+          },
+          "givePayment": {
+            "IncreasePerLevel": 7
+          }
+        },
+        "RepeatableActionBalancing": {
+          "Actions": {
+            "Flatter": {
+              "Subdivisions": {
+                "Item": [
+                  {
+                    "VectorElement": {
+                      "InheritedIndex": 0,
+                      "InheritanceMapV2": {
+                        "Entry": [
+                          {
+                            "TemplateName": "3rdParty_Pirate_Male",
+                            "Index": 0
+                          },
+                          {
+                            "TemplateName": "3rdParty_Pirate",
+                            "Index": 0
+                          },
+                          {
+                            "TemplateName": "Profile_3rdParty_Pirate",
+                            "Index": 0
+                          }
+                        ]
+                      }
+                    },
+                    "SuccessChance": 75,
+                    "ReputationGain": 2,
+                    "ReputationLoss": -1
+                  },
+                  {
+                    "SuccessChance": 50,
+                    "ReputationGain": 1,
+                    "ReputationLoss": -2
+                  },
+                  {
+                    "SuccessChance": 22,
+                    "ReputationGain": 1,
+                    "ReputationLoss": -2
+                  },
+                  ""
+                ]
+              },
+              "ForgettingTime": 1800000
+            },
+            "Insult": {
+              "Subdivisions": {
+                "Item": [
+                  {
+                    "VectorElement": {
+                      "InheritedIndex": 0,
+                      "InheritanceMapV2": {
+                        "Entry": [
+                          {
+                            "TemplateName": "3rdParty_Pirate_Male",
+                            "Index": 0
+                          },
+                          {
+                            "TemplateName": "3rdParty_Pirate",
+                            "Index": 0
+                          },
+                          {
+                            "TemplateName": "Profile_3rdParty_Pirate",
+                            "Index": 0
+                          }
+                        ]
+                      }
+                    },
+                    "SuccessChance": 100
+                  },
+                  {
+                    "SuccessChance": 90,
+                    "ReputationGain": -3
+                  },
+                  ""
+                ]
+              },
+              "ForgettingTime": 1800000
+            },
+            "Gift": {
+              "Subdivisions": {
+                "Item": [
+                  {
+                    "VectorElement": {
+                      "InheritedIndex": 0,
+                      "InheritanceMapV2": {
+                        "Entry": [
+                          {
+                            "TemplateName": "3rdParty_Pirate_Male",
+                            "Index": 0
+                          },
+                          {
+                            "TemplateName": "3rdParty_Pirate",
+                            "Index": 0
+                          },
+                          {
+                            "TemplateName": "Profile_3rdParty_Pirate",
+                            "Index": 0
+                          }
+                        ]
+                      }
+                    },
+                    "SuccessChance": 90,
+                    "ReputationGain": 3
+                  },
+                  {
+                    "SuccessChance": 70,
+                    "ReputationGain": 2
+                  },
+                  ""
+                ]
+              },
+              "ForgettingTime": 1800000
+            }
+          }
+        },
+        "Memory": {
+          "LongTimeCheck": 8400000,
+          "ReputationUpdateTimer": 8460000,
+          "NegReputationCorrectionMax": 2
+        },
+        "ActionDebuffs": {
+          "DebuffSettings": {
+            "ThreatWar": {
+              "DiceDebuff": 200,
+              "DebuffTime": 10800000,
+              "DiminishingDebuff": 1
+            },
+            "Peace": {
+              "DiceDebuff": 100,
+              "DebuffTime": 3600000
+            },
+            "Trade": {
+              "DiceDebuff": 200,
+              "DebuffTime": 10800000
+            },
+            "CeaseFire": {
+              "DiceDebuff": 0
+            }
+          }
+        },
+        "InitialRelation": {
+          "DefaultReputation": 30,
+          "DefaultMemory": 10,
+          "Exceptions": {
+            "Item": [
+              {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Reputation": 50,
+                "Memory": 20,
+                "Treaties": "Peace"
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 1,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 1
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 1
+                      }
+                    ]
+                  }
+                },
+                "Reputation": 20,
+                "Memory": 20
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 2,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 2
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 2
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 3,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 3
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 3
+                      }
+                    ]
+                  }
+                },
+                "Reputation": 20,
+                "Memory": 40
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 4,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 4
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 4
+                      }
+                    ]
+                  }
+                },
+                "Reputation": 30,
+                "Memory": 20,
+                "Treaties": "Peace"
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 5,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 5
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 5
+                      }
+                    ]
+                  }
+                },
+                "Reputation": 20
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 6,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 6
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 6
+                      }
+                    ]
+                  }
+                },
+                "Reputation": 15
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 7,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 7
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 7
+                      }
+                    ]
+                  }
+                },
+                "Reputation": 50,
+                "Memory": 20,
+                "Treaties": "Peace"
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 8,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 8
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 8
+                      }
+                    ]
+                  }
+                },
+                "Reputation": 30
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 9,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 9
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 9
+                      }
+                    ]
+                  }
+                },
+                "Reputation": 50,
+                "Memory": 20
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 10,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 10
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 10
+                      }
+                    ]
+                  }
+                },
+                "Reputation": 70,
+                "Memory": 70,
+                "Treaties": "CeaseFire"
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 12,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 12
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 12
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 13,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 13
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 13
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 14,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 14
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 14
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 15,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 15
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 15
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "Participant": "Second_ai_11_Mercier",
+                "Reputation": 80,
+                "Memory": 80,
+                "Treaties": "Peace"
+              }
+            ]
+          }
+        },
+        "DiplomacyAI": {
+          "ReputationTrigger": {
+            "Item": [
+              {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 90,
+                "MaxTriggerReputation": 100,
+                "TriggerChance": 0
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 1,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 1
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 1
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 80,
+                "MaxTriggerReputation": 85
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 2,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 2
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 2
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 75,
+                "MaxTriggerReputation": 80
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 3,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 3
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 3
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 75,
+                "MaxTriggerReputation": 85,
+                "TriggerPriority": 10
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 4,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 4
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 4
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 60,
+                "MaxTriggerReputation": 74
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 5,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 5
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 5
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 55,
+                "MaxTriggerReputation": 65,
+                "TriggerPriority": 10
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 6,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 6
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 6
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 60,
+                "MaxTriggerReputation": 70,
+                "CheckMilitaryStrength": -0.8,
+                "TriggerPriority": 10
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 7,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 7
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 7
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 10,
+                "MaxTriggerReputation": 20,
+                "TriggerPriority": 10
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 8,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 8
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 8
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 50,
+                "MaxTriggerReputation": 60
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 9,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 9
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 9
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 999,
+                "MaxTriggerReputation": 999,
+                "TriggerChance": 0
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 10,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 10
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 10
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 999,
+                "MaxTriggerReputation": 999,
+                "TriggerChance": 0
+              }
+            ]
+          },
+          "MaxMoneyRequest": 40,
+          "SpecialTrigger": {
+            "Item": [
+              {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 70,
+                "TriggerChance": 50
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 1,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 1
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 1
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 80,
+                "TriggerChance": 30
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 2,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 2
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 2
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 90,
+                "TriggerChance": 15
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 3,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 3
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 3
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": -100,
+                "TriggerChance": 15,
+                "TriggerPriority": 0
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 4,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 4
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 4
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": -100,
+                "TriggerChance": 15,
+                "TriggerPriority": 0
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 5,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 5
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 5
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 30,
+                "CheckMilitaryStrength": -0.2,
+                "TriggerChance": 20,
+                "TriggerPriority": 1
+              },
+              {
+                "VectorElement": {
+                  "InheritedIndex": 6,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 6
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 6
+                      }
+                    ]
+                  }
+                },
+                "MinTriggerReputation": 30,
+                "CheckMilitaryStrength": -0.2,
+                "TriggerChance": 20,
+                "TriggerPriority": 1
+              }
+            ]
+          },
+          "GenericTimerStartDelay": 3600000,
+          "GenericTimerRepeat": 14400000,
+          "ActionCooldown": {
+            "RequestCeaseFire": {
+              "Cooldown": 3600000
+            }
+          }
+        },
+        "AutomaticDiscovery": {
+          "ProgressCheckEnabled": 1,
+          "DesiredProgress": "LateMidGame",
+          "Time": 72000000
+        }
+      },
+      "ParticipantMessages": {
+        "MessageTriggers": {
+          "ClickKontor": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 298463984
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ParticipantDiscovered": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": -1336360563
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "QuestResolveConfirmation": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationText": 10550
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "QuestStarted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_Pirate_Male",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "3rdParty_Pirate",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_Pirate",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationPriority": 699
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Object": {
+        "DefaultParticipant": "Third_party_04_Pirate_LaFortune"
+      },
+      "Trader": {
+        "ShipTrader": 1,
+        "SellShipRequestNotification": 500687,
+        "BuyShipRequestNotification": 500688,
+        "Progression": {
+          "EarlyGame": {
+            "ShipProductionCooldown": 300000
+          },
+          "EarlyMidGame": {
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010210,
+                  "ProductionPerMinute": 3
+                },
+                {
+                  "Good": 1010221,
+                  "ProductionPerMinute": 1
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010210
+                    },
+                    {
+                      "Good": 1010221
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010216,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010214,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "ShipsForSale": {
+              "Item": {
+                "ShipAsset": 102420,
+                "Weight": 1
+              }
+            },
+            "ShipsForSaleAmount": 1,
+            "ShipProductionCooldown": 240000
+          },
+          "MidGame": {
+            "WarFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 102429,
+                  "Amount": 4
+                },
+                {
+                  "ShipAsset": 102430,
+                  "Amount": 2
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010210,
+                  "ProductionPerMinute": 4
+                },
+                {
+                  "Good": 1010221,
+                  "ProductionPerMinute": 1.5
+                },
+                {
+                  "Good": 1010257,
+                  "ProductionPerMinute": 2
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010210
+                    },
+                    {
+                      "Good": 1010221
+                    },
+                    {
+                      "Good": 1010257
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010216,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010214,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010257,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "OfferingItems": 192065,
+            "MaxItemsToOffer": 5,
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 102420,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102421,
+                  "Weight": 1
+                }
+              ]
+            },
+            "ShipsForSaleAmount": 1,
+            "ShipProductionCooldown": 180000
+          },
+          "LateMidGame": {
+            "WarFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 102429,
+                  "Amount": 6
+                },
+                {
+                  "ShipAsset": 102430,
+                  "Amount": 3
+                },
+                {
+                  "ShipAsset": 102431,
+                  "Amount": 2
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010210,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010221,
+                  "ProductionPerMinute": 2
+                },
+                {
+                  "Good": 1010257,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010249,
+                  "ProductionPerMinute": 3
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010210
+                    },
+                    {
+                      "Good": 1010221
+                    },
+                    {
+                      "Good": 1010257
+                    },
+                    {
+                      "Good": 1010249
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010216,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010214,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010257,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "OfferingItems": 192066,
+            "MaxItemsToOffer": 6,
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 102420,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102421,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102419,
+                  "Weight": 1
+                }
+              ]
+            },
+            "ShipsForSaleAmount": 1,
+            "ShipProductionCooldown": 120000
+          },
+          "LateGame": {
+            "WarFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 102429,
+                  "Amount": 8
+                },
+                {
+                  "ShipAsset": 102430,
+                  "Amount": 4
+                },
+                {
+                  "ShipAsset": 102431,
+                  "Amount": 2
+                },
+                {
+                  "ShipAsset": 102432,
+                  "Amount": 2
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010210,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010221,
+                  "ProductionPerMinute": 3
+                },
+                {
+                  "Good": 1010257,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010249,
+                  "ProductionPerMinute": 4
+                },
+                {
+                  "Good": 1010223,
+                  "ProductionPerMinute": 1
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010210
+                    },
+                    {
+                      "Good": 1010221
+                    },
+                    {
+                      "Good": 1010257
+                    },
+                    {
+                      "Good": 1010249
+                    },
+                    {
+                      "Good": 1010223
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010216,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010214,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010257,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "OfferingItems": 192067,
+            "MaxItemsToOffer": 8,
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 102420,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102421,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102419,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102422,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102423,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102425,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102428,
+                  "Weight": 1
+                }
+              ]
+            },
+            "ShipsForSaleAmount": 1,
+            "ShipProductionCooldown": 60000
+          },
+          "EndGame": {
+            "WarFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 102429,
+                  "Amount": 10
+                },
+                {
+                  "ShipAsset": 102430,
+                  "Amount": 6
+                },
+                {
+                  "ShipAsset": 102431,
+                  "Amount": 3
+                },
+                {
+                  "ShipAsset": 102432,
+                  "Amount": 3
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010210,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010221,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010257,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010249,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010223,
+                  "ProductionPerMinute": 3
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010210
+                    },
+                    {
+                      "Good": 1010221
+                    },
+                    {
+                      "Good": 1010257
+                    },
+                    {
+                      "Good": 1010249
+                    },
+                    {
+                      "Good": 1010223
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010216,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010214,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 1010257,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "OfferingItems": 192071,
+            "MaxItemsToOffer": 12,
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 102420,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102421,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102419,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102422,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102423,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102425,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 102428,
+                  "Weight": 1
+                }
+              ]
+            },
+            "ShipsForSaleAmount": 2
+          }
+        }
+      },
+      "ThirdParty": {
+        "AllowedRegions": "Colony01",
+        "IslandPlacement": "InEverySession"
+      },
+      "MilitaryAI": {
+        "StrengthLevels": {
+          "Levels": {
+            "Equal": {
+              "MaxAttackRatio": 100,
+              "MaxEscortRatio": 0,
+              "MaxPatrolRatio": 0,
+              "MaxDefendAllyRatio": 50
+            },
+            "Inferior": {
+              "Flee": 1,
+              "MaxAttackRatio": 100,
+              "MaxEscortRatio": 0,
+              "MaxPatrolRatio": 0,
+              "MaxDefendAllyRatio": 50
+            },
+            "Superior": {
+              "Flee": 1,
+              "MaxEscortRatio": 0,
+              "MaxDefendRatio": 100,
+              "MaxPatrolRatio": 0,
+              "MaxDefendAllyRatio": 50
+            }
+          }
+        },
+        "Attack": {
+          "MilitaryStrengthRatio": 90,
+          "AttackInterval": 1500000,
+          "AttackTargetPrio": {
+            "Item": [
+              {
+                "Targets": "TradeShip",
+                "Conditions": {
+                  "Item": {
+                    "Condition": "IsWeaker"
+                  }
+                },
+                "SkipTargetWhenInHarbourArea": 1
+              },
+              {
+                "Targets": "TradeShip",
+                "Conditions": {
+                  "Item": {
+                    "Condition": "IsNearer"
+                  }
+                },
+                "SkipTargetWhenInHarbourArea": 1
+              },
+              {
+                "Targets": "TradeShip",
+                "Conditions": {
+                  "Item": {
+                    "Condition": "IsFarther"
+                  }
+                },
+                "SkipTargetWhenInHarbourArea": 1
+              },
+              {
+                "Targets": "WarShip",
+                "Conditions": {
+                  "Item": {
+                    "Condition": "IsWeaker"
+                  }
+                },
+                "SkipProbability": 50,
+                "SkipTargetWhenInHarbourArea": 1
+              },
+              {
+                "Targets": "WarShip",
+                "Conditions": {
+                  "Item": {
+                    "Condition": "IsNearer"
+                  }
+                },
+                "SkipProbability": 50,
+                "SkipTargetWhenInHarbourArea": 1
+              }
+            ]
+          },
+          "IsBlinded": "IgnoreBuildings",
+          "OverkillAttackThreshold": 100
+        },
+        "Defend": {
+          "MinStrengthRatio": 100,
+          "DefendInterval": 1000,
+          "AttackStrongestTargetFirst": 1
+        },
+        "SquadLogic": {
+          "FleeStrengthRatio": 60,
+          "TargetPriorities": {
+            "Item": {
+              "Targets": "TradeShip",
+              "Range": 100,
+              "MinStrengthRatio": 90,
+              "Conditions": {
+                "Item": {
+                  "Condition": "LowHitpoints"
+                }
+              },
+              "SkipTargetWhenInHarbourArea": 1
+            }
+          },
+          "CommandsToSupport": "Defend",
+          "CommandsToAbandon": "Attack",
+          "ObservationRange": 110
+        },
+        "SquadPriorities": {
+          "Commands": {
+            "Attack": {
+              "Priority": 10
+            },
+            "Defend": {
+              "Priority": 11
+            },
+            "Patrol": {
+              "Priority": 0
+            },
+            "Escort": {
+              "Priority": 0
+            },
+            "DefendAlly": {
+              "Priority": 10
+            }
+          }
+        }
+      },
+      "Pirate": {
+        "AreaOfActivity": {
+          "Normal": {
+            "StartAreaRadius": 9999,
+            "ChaseRange": 0,
+            "GrowPerProgress": {
+              "EarlyMidGame": {
+                "GrowAreaPerMinute": 0
+              },
+              "MidGame": {
+                "GrowAreaPerMinute": 0
+              },
+              "LateMidGame": {
+                "GrowAreaPerMinute": 0
+              },
+              "LateGame": {
+                "GrowAreaPerMinute": 0
+              },
+              "EndGame": {
+                "GrowAreaPerMinute": 0
+              }
+            }
+          },
+          "Hard": {
+            "StartAreaRadius": 9999,
+            "GrowPerProgress": {
+              "EarlyMidGame": {
+                "GrowAreaPerMinute": 0
+              },
+              "MidGame": {
+                "GrowAreaPerMinute": 0
+              },
+              "LateMidGame": {
+                "GrowAreaPerMinute": 0
+              },
+              "LateGame": {
+                "GrowAreaPerMinute": 0
+              },
+              "EarlyGame": {
+                "GrowAreaPerMinute": 0
+              },
+              "EndGame": {
+                "GrowAreaPerMinute": 0
+              }
+            }
+          }
+        },
+        "ComebackAfterKontorDestruction": 9000000,
+        "RequestCeaseFireTributeIntervalMin": 0,
+        "RequestCeaseFireTributeIntervalMax": 0,
+        "ComebackQuests": {
+          "EarlyGame": {
+            "PossibleQuests": {
+              "Item": [
+                {
+                  "GUID": 153274
+                },
+                {
+                  "GUID": 153272
+                }
+              ]
+            }
+          },
+          "EarlyMidGame": {
+            "PossibleQuests": {
+              "Item": [
+                {
+                  "GUID": 153274
+                },
+                {
+                  "GUID": 153272
+                }
+              ]
+            }
+          },
+          "MidGame": {
+            "PossibleQuests": {
+              "Item": [
+                {
+                  "GUID": 153275
+                },
+                {
+                  "GUID": 153272
+                }
+              ]
+            }
+          },
+          "LateMidGame": {
+            "PossibleQuests": {
+              "Item": [
+                {
+                  "GUID": 153276
+                },
+                {
+                  "GUID": 153272
+                }
+              ]
+            }
+          },
+          "LateGame": {
+            "PossibleQuests": {
+              "Item": [
+                {
+                  "GUID": 153276
+                },
+                {
+                  "GUID": 153272
+                }
+              ]
+            }
+          },
+          "EndGame": {
+            "PossibleQuests": {
+              "Item": [
+                {
+                  "GUID": 153277
+                },
+                {
+                  "GUID": 153272
+                }
+              ]
+            }
+          }
+        },
+        "RebuildAfterIslandWarTimer": 1500000
+      },
+      "ParticipantMessageObject": {
+        "ParticipantMessages": 149
+      },
+      "Interaction": {
+        "PaMSyTrade": {
+          "ActiveTrade": {
+            "TradeAmount": 5000,
+            "TradeAmountFactor": 10000,
+            "ReputationGain": 4
+          },
+          "PassiveTrade": {
+            "TradeAmount": 20000,
+            "TradeAmountFactor": 30000,
+            "ReputationGain": 4
+          }
+        },
+        "PaMSyMilitaryStrength": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "3rdParty_Pirate",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "Profile_3rdParty_Pirate",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "Range": 30
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "3rdParty_Pirate",
+                      "Index": 1
+                    },
+                    {
+                      "TemplateName": "Profile_3rdParty_Pirate",
+                      "Index": 1
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "3rdParty_Pirate",
+                      "Index": 2
+                    },
+                    {
+                      "TemplateName": "Profile_3rdParty_Pirate",
+                      "Index": 2
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "3rdParty_Pirate",
+                      "Index": 3
+                    },
+                    {
+                      "TemplateName": "Profile_3rdParty_Pirate",
+                      "Index": 3
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "WorkingConditionsEvaluationTime": 75000,
+        "PositiveWorkingConditionsPopulationFactor": 0,
+        "PositiveThresholdBase": 8000,
+        "PositiveThresholdFactor": 80,
+        "NegativeThresholdBase": 8000,
+        "NegativeThresholdFactor": 80
+      },
+      "ProfileCounter": "",
+      "Locked": ""
+    }
+  }
+]

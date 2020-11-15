@@ -1,0 +1,5613 @@
+[
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113680,
+        "Name": "VQ Old Nate - Diving Bell and Treasure Map - Trust your Dealer - Bad"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": {
+                "Profile": 77
+              },
+              "BaseNotification": {
+                "NotificationText": 3551
+              },
+              "NotificationSubtitle": {
+                "SubtitleGroup": -33178074
+              }
+            }
+          }
+        },
+        "AbortedManuallyMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": {
+                "Profile": 0
+              },
+              "BaseNotification": {
+                "NotificationText": 0
+              },
+              "NotificationSubtitle": ""
+            }
+          },
+          "SuppressMessage": 1
+        },
+        "AbortedAutomaticallyMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": {
+                "Profile": 0
+              },
+              "BaseNotification": {
+                "NotificationText": 0
+              },
+              "NotificationSubtitle": ""
+            }
+          },
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": {
+                "Profile": 77
+              },
+              "BaseNotification": {
+                "NotificationText": 112969
+              },
+              "NotificationSubtitle": {
+                "SubtitleGroup": 1818559632
+              }
+            }
+          },
+          "SuppressMessage": 0
+        },
+        "StartInvitationGiveItemMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": {
+                "Profile": 77
+              },
+              "BaseNotification": {
+                "NotificationText": 16101
+              },
+              "NotificationSubtitle": {
+                "Subtitle": 259961
+              }
+            }
+          },
+          "SuppressMessage": 0
+        },
+        "QuestGiver": 77,
+        "StoryText": 113505,
+        "PreActivationTimer": 1800000,
+        "QuestCategory": "RandomQuest",
+        "QuestActivation": "ManualActivation",
+        "QuestTrackerVisibility": "Session",
+        "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_questbook_sunken_treasures_02.png",
+        "QuestHints": {
+          "Item": [
+            {
+              "Text": 17688
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "A7_QuestDivingBellTreasureMap",
+                    "Index": 0
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "HasStarterSpeechBubble": 1,
+        "StarterSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": {
+              "HintType": "Object",
+              "HintAnchor": "BottomRight",
+              "HintText": 113560,
+              "ObjectFilter": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "ObjectFilter": {
+                    "ObjectGUID": 111877
+                  }
+                }
+              },
+              "UseSpecificPortrait": 1,
+              "SpecificPortraitProfile": 77
+            }
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map Trap",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 32219
+      },
+      "Reward": {
+        "RewardAssets": {
+          "Item": {
+            "VectorElement": {
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellGeneric",
+                  "Index": 0
+                }
+              }
+            },
+            "Reward": 113679,
+            "Amount": 1
+          }
+        },
+        "GenerateIgnoreUnlocks": 1
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "BringVehicleToObjectObjective",
+              "Values": {
+                "ConditionQuestBringVehicleToObject": {
+                  "BringToObject": {
+                    "Template": "ConditionObjectStarterObject",
+                    "Values": {
+                      "ConditionScanner": "",
+                      "ConditionObjectStarterObject": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  }
+                },
+                "ConditionQuestObjective": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": {
+        "HasStarterObject": "Specific",
+        "StarterObject": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionStarterObject": {
+              "StarterObjectObject": {
+                "Template": "ConditionObjectSpawnedObject",
+                "Values": {
+                  "ConditionObjectSpawnedObject": {
+                    "ExecutionObject": 111877,
+                    "ObjectSpawnArea": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "SpawnArea": {
+                          "SpawnContext": "Object",
+                          "ContextGUID": 100710,
+                          "DistanceToContext": 20
+                        }
+                      }
+                    },
+                    "DoSetVisualObjectOwner": 1,
+                    "VisualObjectOwner": "Third_party_06_Nate"
+                  },
+                  "ConditionScanner": "",
+                  "ConditionObjectiveSignsAndFeedback": ""
+                }
+              }
+            },
+            "ConditionQuestObjective": "",
+            "ConditionPropsSessionSettings": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113674,
+        "Name": "VQ Old Nate - Diving Bell and Treasure Map - Trust your Dealer - Good"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": {
+                "Profile": 77
+              },
+              "BaseNotification": {
+                "NotificationText": 3551
+              },
+              "NotificationSubtitle": {
+                "SubtitleGroup": -33178074
+              }
+            }
+          }
+        },
+        "AbortedManuallyMessage": {
+          "SuppressMessage": 1
+        },
+        "AbortedAutomaticallyMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": {
+                "Profile": 77
+              },
+              "BaseNotification": {
+                "NotificationText": 112969
+              },
+              "NotificationSubtitle": {
+                "SubtitleGroup": 1818559632
+              }
+            }
+          },
+          "SuppressMessage": 0
+        },
+        "StartInvitationGiveItemMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": {
+                "Profile": 77
+              },
+              "BaseNotification": {
+                "NotificationText": 16101
+              },
+              "NotificationSubtitle": {
+                "Subtitle": 259961
+              }
+            }
+          },
+          "SuppressMessage": 0
+        },
+        "QuestGiver": 77,
+        "StoryText": 113505,
+        "PreActivationTimer": 1800000,
+        "QuestCategory": "RandomQuest",
+        "QuestActivation": "ManualActivation",
+        "QuestTrackerVisibility": "Session",
+        "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_questbook_sunken_treasures_02.png",
+        "QuestHints": {
+          "Item": [
+            {
+              "Text": 17688
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "A7_QuestDivingBellTreasureMap",
+                    "Index": 0
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "HasStarterSpeechBubble": 1,
+        "StarterSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": {
+              "HintType": "Object",
+              "HintAnchor": "BottomRight",
+              "HintText": 113560,
+              "ObjectFilter": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "ObjectFilter": {
+                    "ObjectGUID": 111877
+                  }
+                }
+              },
+              "UseSpecificPortrait": 1,
+              "SpecificPortraitProfile": 77
+            }
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map Trap",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32496
+      },
+      "Reward": {
+        "RewardAssets": {
+          "Item": {
+            "VectorElement": {
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellGeneric",
+                  "Index": 0
+                }
+              }
+            },
+            "Reward": 113678,
+            "Amount": 1
+          }
+        },
+        "GenerateIgnoreUnlocks": 1
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "BringVehicleToObjectObjective",
+              "Values": {
+                "ConditionQuestBringVehicleToObject": {
+                  "BringToObject": {
+                    "Template": "ConditionObjectStarterObject",
+                    "Values": {
+                      "ConditionScanner": "",
+                      "ConditionObjectStarterObject": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  }
+                },
+                "ConditionQuestObjective": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": {
+        "HasStarterObject": "Specific",
+        "StarterObject": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionStarterObject": {
+              "StarterObjectObject": {
+                "Template": "ConditionObjectSpawnedObject",
+                "Values": {
+                  "ConditionObjectSpawnedObject": {
+                    "ExecutionObject": 111877,
+                    "ObjectSpawnArea": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "SpawnArea": {
+                          "SpawnContext": "Object",
+                          "ContextGUID": 100710,
+                          "DistanceToContext": 20
+                        }
+                      }
+                    },
+                    "DoSetVisualObjectOwner": 1,
+                    "VisualObjectOwner": "Third_party_06_Nate"
+                  },
+                  "ConditionScanner": "",
+                  "ConditionObjectiveSignsAndFeedback": ""
+                }
+              }
+            },
+            "ConditionQuestObjective": "",
+            "ConditionPropsSessionSettings": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 112942,
+        "Name": "Ancient Trade Route Map (Old World)",
+        "ID": "QUEST_DLC1_4"
+      },
+      "Quest": {
+        "StoryText": 113228,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of Ancient Ruins",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 112946,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113180,
+        "Name": "Ancient Trade Route Map (New World)"
+      },
+      "Quest": {
+        "StoryText": 113229,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Remote Trading Post",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 112951,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113181,
+        "Name": "Ancient Trade Route Map (Sunken World)"
+      },
+      "Quest": {
+        "StoryText": 113230,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Forgotten Wreck",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 112952,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113182,
+        "Name": "Lost City Map (Old World)"
+      },
+      "Quest": {
+        "StoryText": 113231,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Lost Temple",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 112954,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113183,
+        "Name": "Lost City Map (New World)"
+      },
+      "Quest": {
+        "StoryText": 113232,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of an Underwater Pyramid",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 112955,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113184,
+        "Name": "Lost City Map (Sunken World)"
+      },
+      "Quest": {
+        "StoryText": 113233,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Sunken City",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 112956,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113185,
+        "Name": "Legendary Site Map (Old World)"
+      },
+      "Quest": {
+        "StoryText": 113234,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "The Palaces of Baiea",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 112957,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113186,
+        "Name": "Legendary Site Map (New World)"
+      },
+      "Quest": {
+        "StoryText": 113235,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "The Gates to Paititi",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 112958,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113187,
+        "Name": "Legendary Site Map (Sunken World)"
+      },
+      "Quest": {
+        "StoryText": 113236,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "The Herdsman's Journal",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 112959,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113206,
+        "Name": "Rare Fishes Distribution Map (Old World)",
+        "ID": "QUEST_DLC1_5"
+      },
+      "Quest": {
+        "StoryText": 113237,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Kelp Forest",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 113097,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113207,
+        "Name": "Rare Fishes Distribution Map (New World)"
+      },
+      "Quest": {
+        "StoryText": 113238,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Seagrass Meadow",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 113098,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113208,
+        "Name": "Rare Fishes Distribution Map (Sunken World)"
+      },
+      "Quest": {
+        "StoryText": 113239,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Coral Garden",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 113099,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113209,
+        "Name": "Threatened Animals Sanctuary Map (Old World)"
+      },
+      "Quest": {
+        "StoryText": 113240,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of an Oceanic Trench",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 113100,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113210,
+        "Name": "Threatened Animals Sanctuary Map (New World)"
+      },
+      "Quest": {
+        "StoryText": 113241,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Barrier Reef",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 113101,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113211,
+        "Name": "Threatened Animals Sanctuary Map (Sunken World)"
+      },
+      "Quest": {
+        "StoryText": 113242,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of an Abyssal Zone",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 113102,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113212,
+        "Name": "Mythological Animal Hideout Map (Old World)"
+      },
+      "Quest": {
+        "StoryText": 113243,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Jörmungandr's Lair",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 113103,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113213,
+        "Name": "Mythological Animal Hideout Map (New World)"
+      },
+      "Quest": {
+        "StoryText": 113244,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "The Nest of Gukulmatz",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 113104,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113214,
+        "Name": "Mythological Animal Hideout Map (Sunken World)"
+      },
+      "Quest": {
+        "StoryText": 113245,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "The Kraken's Pit",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 113105,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113215,
+        "Name": "Naval Battles Map (Old World)",
+        "ID": "QUEST_DLC1_6"
+      },
+      "Quest": {
+        "StoryText": 113246,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Domestic Skirmish",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 113106,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113216,
+        "Name": "Naval Battles Map (New World)"
+      },
+      "Quest": {
+        "StoryText": 113247,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Rebel Incursion",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 113106,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113217,
+        "Name": "Naval Battles Map (Sunken World)"
+      },
+      "Quest": {
+        "StoryText": 113248,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Trelawney Skirmish",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 113106,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113218,
+        "Name": "Merchant Ships Sinking Spots Map (Old World)"
+      },
+      "Quest": {
+        "StoryText": 113249,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Sunken Royal Clipper",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 113109,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113219,
+        "Name": "Merchant Ships Sinking Spots Map (New World)"
+      },
+      "Quest": {
+        "StoryText": 113250,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Sunken Rebel Supply Ship",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 113109,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113220,
+        "Name": "Merchant Ships Sinking Spots Map (Sunken World)"
+      },
+      "Quest": {
+        "StoryText": 113251,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Sunken La Corona Clipper",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 113109,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113221,
+        "Name": "Royal Shipwreck Map (Old World)"
+      },
+      "Quest": {
+        "StoryText": 113253,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of Willie Wibblesock's Wondrous Stash",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 113112,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113222,
+        "Name": "Royal Shipwreck Map (New World)"
+      },
+      "Quest": {
+        "StoryText": 113254,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of Isabel Sarmento's Emergency Vault",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 113112,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113223,
+        "Name": "Royal Shipwreck Map (Sunken World)"
+      },
+      "Quest": {
+        "StoryText": 113255,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of Vicente Silva's Sunken Ship-of-the-line",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 113112,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113675,
+        "Name": "Trust your dealer good (Sunken World)"
+      },
+      "Quest": {
+        "ResolveConfirmationMessage": {
+          "SuppressMessage": 0
+        },
+        "QuestGiver": 77,
+        "StoryText": 113505,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Session",
+        "ConfirmOnReached": 1,
+        "HasSuccessSpeechBubble": 1,
+        "SuccessSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": {
+              "HintType": "Object",
+              "HintEndCondition": "Time",
+              "HintDisplayTime": 30000,
+              "HintAnchor": "BottomRight",
+              "HintText": 113561,
+              "ObjectFilter": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "ObjectFilter": {
+                    "ObjectGUID": 100710
+                  }
+                }
+              },
+              "UseSpecificPortrait": 1,
+              "SpecificPortraitProfile": 77,
+              "SpecifyHintColorType": 1,
+              "HintColorType": "Quest"
+            }
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map Trap",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 48064
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 112952,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  },
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 113676,
+        "Name": "Trust your dealer bad (Sunken World)"
+      },
+      "Quest": {
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "ResolveConfirmationMessage": {
+          "SuppressMessage": 0
+        },
+        "QuestGiver": 77,
+        "StoryText": 113505,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Session",
+        "ConfirmOnReached": 1,
+        "HasSuccessSpeechBubble": 1,
+        "SuccessSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": {
+              "HintType": "Object",
+              "HintEndCondition": "Time",
+              "HintDisplayTime": 30000,
+              "HintAnchor": "BottomRight",
+              "HintText": 113562,
+              "ObjectFilter": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "ObjectFilter": {
+                    "ObjectGUID": 100710
+                  }
+                }
+              },
+              "UseSpecificPortrait": 1,
+              "SpecificPortraitProfile": 77,
+              "SpecifyHintColorType": 1,
+              "HintColorType": "Quest"
+            }
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map Trap",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 48065
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": [
+            {
+              "Objective": {
+                "Template": "DivingBellObjective",
+                "Values": {
+                  "ConditionQuestObjective": {
+                    "TextCombinedContextValue": 113270,
+                    "ObjectiveSignsAndFeedback": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionObjectiveSignsAndFeedback": {
+                          "Infolayer": 0,
+                          "MinimapToken": 0,
+                          "ShowMinimapToken": 0
+                        }
+                      }
+                    }
+                  },
+                  "ConditionQuestDivingBell": {
+                    "TreasureItem": 113715,
+                    "AdditionalScrapItem": 112857,
+                    "SpawnedTreasureGround": 112527,
+                    "AdditionalObjectData": {
+                      "AdditionalObjectList": {
+                        "IsBaseAutoCreateAsset": 1,
+                        "Values": {
+                          "ConditionScanner": {
+                            "ScannerPoolAdvanced": {
+                              "Item": {
+                                "Scanner": {
+                                  "Template": "QuestObjectList",
+                                  "Values": {
+                                    "ObjectList": {
+                                      "Object": 102375,
+                                      "MinAmount": 2,
+                                      "MaxAmount": 5,
+                                      "DoSetOwner": 1,
+                                      "Owner": "General_Enemy"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "DistanceToTreasure": 30
+                    },
+                    "ShowTreasureMapButton": 1
+                  },
+                  "SpawnArea": {
+                    "SpawnContext": "Area",
+                    "SpawnAreaType": "Underwater_01",
+                    "SpreadObjects": 1
+                  },
+                  "ConditionPropsExecutionPlaceSettings": {
+                    "ExecutionPlace": {
+                      "Template": "ConditionObjectAnywhere",
+                      "Values": {
+                        "ConditionObjectAnywhere": ""
+                      }
+                    },
+                    "ExecutionPlaceConfirmOnReached": 0
+                  }
+                }
+              }
+            },
+            {
+              "Objective": {
+                "Template": "DestroyObjective",
+                "Values": {
+                  "ConditionQuestObjective": "",
+                  "ConditionQuestDestroy": {
+                    "DestroyObjects": {
+                      "Item": {
+                        "DestroyObject": {
+                          "Template": "QuestObjectList",
+                          "Values": {
+                            "ObjectList": {
+                              "Object": 102381,
+                              "Amount": 2,
+                              "DoSetOwner": 1,
+                              "Owner": "General_Enemy"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DestroyFinishObjects": {
+                      "Item": {
+                        "DestroyFinishObject": {
+                          "Template": "QuestObjectList",
+                          "Values": {
+                            "ObjectList": {
+                              "Object": 191015,
+                              "Amount": 1
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "SpawnArea": {
+                    "SpawnContext": "Object",
+                    "MatcherGUID": 114030,
+                    "DistanceToContext": 50
+                  },
+                  "ConditionPropsSessionSettings": "",
+                  "ConditionPropsExecutionPlaceSettings": ""
+                }
+              }
+            }
+          ]
+        },
+        "WinConditionCompletionOrder": "Linear"
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 116302,
+        "Name": "Ancient Trade Route Map (Arctic)"
+      },
+      "Quest": {
+        "StoryText": 116057,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of an Abandoned Inuit Village",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35897
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 116312,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 116303,
+        "Name": "Lost City Map (Arctic)"
+      },
+      "Quest": {
+        "StoryText": 116058,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Huddlesome Bay Trading Post",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35898
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 116313,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 116304,
+        "Name": "Legendary Site Map (Arctic)"
+      },
+      "Quest": {
+        "StoryText": 116059,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "The Portal to Hyperborea",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35899
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 116314,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 116306,
+        "Name": "Rare Fishes Distribution Map (Arctic)"
+      },
+      "Quest": {
+        "StoryText": 116060,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Seals Feeding Ground",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35900
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 116315,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 116307,
+        "Name": "Threatened Animals Sanctuary Map (Arctic)"
+      },
+      "Quest": {
+        "StoryText": 116061,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of an Arctic Basin",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35901
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 116316,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 116308,
+        "Name": "Mythological Animal Hideout Map (Arctic)"
+      },
+      "Quest": {
+        "StoryText": 116062,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Megalodon's Abyss",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35902
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 116317,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 116309,
+        "Name": "Naval Battles Map (Arctic)"
+      },
+      "Quest": {
+        "StoryText": 116063,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of an Inuit Dispute",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35903
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 116318,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 116310,
+        "Name": "Merchant Ships Sinking Spots Map (Arctic)"
+      },
+      "Quest": {
+        "StoryText": 116064,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of a Ghost Ship Sighting",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35904
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 116319,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 116311,
+        "Name": "Royal Shipwreck Map (Arctic)"
+      },
+      "Quest": {
+        "StoryText": 116065,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of Old Nate's Prototype Airship Crash Site",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35905
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 116320,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 129464,
+        "Name": "Destroyed settlement modern Shepherds (Africa)"
+      },
+      "Quest": {
+        "StoryText": 129288,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map To A Lost Shepherds' Camp",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 45886
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 129406,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 129465,
+        "Name": "Destroyed settlement modern Elder (Afrika)"
+      },
+      "Quest": {
+        "StoryText": 129289,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map To A Sunken Estate",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 45887
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 129407,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 129466,
+        "Name": "Destroyed settlement Ancient (Afrika)"
+      },
+      "Quest": {
+        "StoryText": 129290,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of an Ancient Outpost",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 45888
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 129408,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 129224,
+        "Name": "Naval Battles Angereb Map (Africa)"
+      },
+      "Quest": {
+        "StoryText": 129296,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map Provided By Imperial Sailors",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 45889
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 129402,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 129326,
+        "Name": "Naval Battles Ancient Map (Africa)"
+      },
+      "Quest": {
+        "StoryText": 129299,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map of Ancient Naval Battlesite",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 45890
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 129403,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 129327,
+        "Name": "Shipwreck Ancient Map (Africa)"
+      },
+      "Quest": {
+        "StoryText": 129300,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Cliffside Map",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 45891
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 129404,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 129467,
+        "Name": "Shipwreck Modern Map (Africa) Scrap"
+      },
+      "Quest": {
+        "StoryText": 129304,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Court-Sealed Map",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 45892
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 129410,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 129468,
+        "Name": "Shipwreck Modern Map (Africa) Goods"
+      },
+      "Quest": {
+        "StoryText": 129305,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map Taken From An Insurance Report",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 45893
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 129411,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 129469,
+        "Name": "Shipwreck Modern Map (Africa) Machines Rare"
+      },
+      "Quest": {
+        "StoryText": 129306,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Map From A Recent Shipwreck",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 45894
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 129412,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellTreasureMap",
+    "Values": {
+      "Standard": {
+        "GUID": 129470,
+        "Name": "Shipwreck Modern Map (Africa) Machines Legendary"
+      },
+      "Quest": {
+        "StoryText": 129307,
+        "QuestTimeLimit": 3600000,
+        "QuestCategory": "RandomQuest"
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Shipwrecked Captain's Map",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 45895
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113270,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 129413,
+                  "AddScrapToTreasure": 1,
+                  "AdditionalScrapItem": 112857,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 112527,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102375,
+                                    "MinAmount": 2,
+                                    "MaxAmount": 5,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 30
+                  },
+                  "ShowTreasureMapButton": 1
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Underwater_01",
+                  "SpreadObjects": 1
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  }
+]

@@ -1,0 +1,905 @@
+[
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "WALK",
+        "PositionCheck": "Always",
+        "Matches": {
+          "SelectionMatch1": {
+            "Flags": "OwnedByPlayer;CheckProperty",
+            "Property": "Walking"
+          },
+          "TargetMatch1": {
+            "Flags": "Never"
+          },
+          "DisableMatch1": {
+            "Flags": "Never"
+          }
+        },
+        "MouseCursorTarget": 2001038,
+        "MouseCursorDisable": 2001202,
+        "MouseCursorMode": 2001038,
+        "MouseCursorPosition": 501558,
+        "MouseCursorPositionDisable": 2001202
+      },
+      "Standard": {
+        "GUID": 2001000,
+        "Name": "Walk"
+      },
+      "Text": ""
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "SELECT",
+        "Matches": {
+          "SelectionMatch1": {
+            "Flags": "Never"
+          },
+          "TargetMatch1": {
+            "Flags": "Never"
+          },
+          "DisableMatch1": {
+            "Flags": "Never"
+          }
+        },
+        "MouseCursorTarget": 2001034,
+        "MouseCursorDisable": 2001202,
+        "MouseCursorMode": 2001028,
+        "MouseCursorPosition": 2001028,
+        "MouseCursorPositionDisable": 2001202
+      },
+      "Standard": {
+        "GUID": 2001041,
+        "Name": "Select"
+      },
+      "Text": ""
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "MOVE",
+        "Matches": {
+          "SelectionMatch1": {
+            "Flags": "Never",
+            "GameObjectState": "GameLogic;Blueprint"
+          },
+          "TargetMatch1": {
+            "Flags": "OrNextMatch;OwnedByPlayer;CheckProperty;Movable",
+            "Property": "Constructable",
+            "GameObjectState": "GameLogic;Blueprint;Visible"
+          },
+          "DisableMatch1": {
+            "Property": "Blocking"
+          },
+          "TargetMatch2": {
+            "Flags": "CheckProperty;Movable;IsOnPlayerArea",
+            "Property": "Slot",
+            "GameObjectState": "GameLogic;Blueprint;Visible"
+          }
+        },
+        "MouseCursorTarget": 2001035,
+        "MouseCursorDisable": 2001208,
+        "MouseCursorMode": 2001029,
+        "MouseCursorPosition": 2001029,
+        "MouseCursorPositionDisable": 2001208
+      },
+      "Standard": {
+        "GUID": 2001042,
+        "Name": "MoveBuilding",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_move.png",
+        "ID": "TargetMove"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Relocate",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 5317
+      }
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "PIPETTE",
+        "PositionCheck": "CloneableStreet",
+        "Matches": {
+          "SelectionMatch1": {
+            "Flags": "Never",
+            "GameObjectState": "GameLogic;Blueprint"
+          },
+          "TargetMatch1": {
+            "Flags": "OwnedByPlayer;CheckProperty;Buildable",
+            "Property": "Blocking",
+            "GameObjectState": "GameLogic;Blueprint"
+          },
+          "DisableMatch1": {
+            "Property": "Blocking"
+          }
+        },
+        "MouseCursorTarget": 2001037,
+        "MouseCursorDisable": 2001207,
+        "MouseCursorMode": 2001031,
+        "MouseCursorPosition": 2001037,
+        "MouseCursorPositionDisable": 2001207
+      },
+      "Standard": {
+        "GUID": 2001043,
+        "Name": "Pipette",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_eyedrop.png",
+        "ID": "TargetEyedrop"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Copy",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 5318
+      }
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "DELETE",
+        "PositionCheck": "DeletableStreet",
+        "Matches": {
+          "SelectionMatch1": {
+            "Flags": "Never",
+            "GameObjectState": "GameLogic;Blueprint"
+          },
+          "TargetMatch1": {
+            "Flags": "OwnedByPlayer;CheckProperty;Destructable",
+            "Property": "Blocking",
+            "GameObjectState": "GameLogic;Blueprint"
+          },
+          "DisableMatch1": {
+            "Property": "Blocking"
+          }
+        },
+        "MouseCursorTarget": 2001036,
+        "MouseCursorDisable": 2001206,
+        "MouseCursorMode": 2001030,
+        "MouseCursorPosition": 2001036,
+        "MouseCursorPositionDisable": 2001026
+      },
+      "Standard": {
+        "GUID": 2001044,
+        "Name": "Delete",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_demolish.png",
+        "ID": "TargetDelete"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Demolish",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 5319
+      }
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "UPGRADE",
+        "Matches": {
+          "SelectionMatch1": {
+            "Flags": "Never",
+            "GameObjectState": "GameLogic;Blueprint"
+          },
+          "TargetMatch1": {
+            "Flags": "OwnedByPlayer;CheckProperty;Upgradable",
+            "Property": "Blocking",
+            "GameObjectState": "GameLogic;Blueprint"
+          },
+          "DisableMatch1": {
+            "Property": "Blocking"
+          }
+        },
+        "MouseCursorTarget": 2001777,
+        "MouseCursorDisable": 2001778,
+        "MouseCursorMode": 2001776,
+        "MouseCursorPosition": 2001777,
+        "MouseCursorPositionDisable": 2001778
+      },
+      "Standard": {
+        "GUID": 2001775,
+        "Name": "Upgrade",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_upgrade.png",
+        "ID": "TargetUpgrade"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Upgrade",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 5320
+      }
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "Matches": {
+          "SelectionMatch1": {
+            "Property": "Standard"
+          },
+          "TargetMatch1": {
+            "Flags": "Never",
+            "ObjectType": "EditorObject",
+            "Property": "Standard"
+          },
+          "DisableMatch1": {
+            "Flags": "Never"
+          }
+        },
+        "MouseCursorTarget": 2001059,
+        "MouseCursorDisable": 2001059,
+        "MouseCursorMode": 2001059,
+        "MouseCursorPosition": 2001059,
+        "MouseCursorPositionDisable": 2001059
+      },
+      "Standard": {
+        "GUID": 2001085,
+        "Name": "HideCursor",
+        "ID": "TargetHideCursor"
+      },
+      "Text": ""
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "COLLECT",
+        "Matches": {
+          "SelectionMatch1": {
+            "Flags": "OwnedByPlayer;CheckProperty",
+            "Property": "Walking"
+          },
+          "TargetMatch1": {
+            "Flags": "AndNotNextMatch;NotSelf;IsCollectable;IsCollectableBySelection"
+          },
+          "TargetMatch2": {
+            "Flags": "CollectableOnSelection"
+          }
+        },
+        "MouseCursorTarget": 2001385,
+        "MouseCursorDisable": 2001207,
+        "MouseCursorMode": 2001372
+      },
+      "Standard": {
+        "GUID": 2001294,
+        "Name": "Collect"
+      },
+      "Text": ""
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "CANNOT_COLLECT",
+        "Matches": {
+          "SelectionMatch1": {
+            "Flags": "OwnedByPlayer;CheckProperty",
+            "Property": "Walking"
+          },
+          "TargetMatch1": {
+            "Flags": "AndNotNextMatch;CheckProperty;NotSelf",
+            "Property": "Collectable"
+          },
+          "TargetMatch2": {
+            "Flags": "AndNotNextMatch;CollectableOnSelection"
+          },
+          "TargetMatch3": {
+            "Flags": "IsCollectableBySelection;IsCollectable"
+          }
+        },
+        "MouseCursorTarget": 2001207
+      },
+      "Standard": {
+        "GUID": 501679,
+        "Name": "CannotCollect"
+      },
+      "Text": ""
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "ATTACK",
+        "Matches": {
+          "SelectionMatch1": {
+            "Flags": "AndNextMatch;OwnedByPlayer;CheckProperty",
+            "Property": "Attacker"
+          },
+          "TargetMatch1": {
+            "Flags": "CheckProperty;NotSelf;OwnedByEnemy;Attackable",
+            "Property": "Attackable"
+          },
+          "SelectionMatch2": {
+            "Flags": "CheckProperty",
+            "Property": "CommandQueue"
+          }
+        },
+        "MouseCursorTarget": 2001298,
+        "MouseCursorDisable": 2001299,
+        "MouseCursorMode": 2001297,
+        "MouseCursorPosition": 2001297,
+        "MouseCursorPositionDisable": 2001299
+      },
+      "Standard": {
+        "GUID": 2001296,
+        "Name": "Attack",
+        "ID": "TargetAttack"
+      },
+      "Text": ""
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "COLLECT_ON_CLICK",
+        "Matches": {
+          "TargetMatch1": {
+            "Flags": "CollectableOnSelection;IsCollectable"
+          }
+        },
+        "MouseCursorTarget": 2001035,
+        "MouseCursorDisable": 2001208,
+        "MouseCursorMode": 2001029,
+        "MouseCursorPosition": 2001029,
+        "MouseCursorPositionDisable": 2001208
+      },
+      "Standard": {
+        "GUID": 2001303,
+        "Name": "CollectOnClick"
+      },
+      "Text": ""
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "FOLLOW",
+        "Matches": {
+          "SelectionMatch1": {
+            "Flags": "AndNextMatch;OwnedByPlayer;CheckProperty",
+            "Property": "CommandQueue"
+          },
+          "TargetMatch1": {
+            "Flags": "AndNextMatch;CheckProperty;NotSelfIgnoreMultiselection;Guardable",
+            "Property": "Walking"
+          },
+          "SelectionMatch2": {
+            "Flags": "CheckProperty",
+            "Property": "Walking"
+          },
+          "TargetMatch2": {
+            "Flags": "CheckNotProperty",
+            "Property": "Collectable"
+          }
+        },
+        "MouseCursorTarget": 2001383,
+        "MouseCursorDisable": 2001370,
+        "MouseCursorMode": 2001383,
+        "MouseCursorPosition": 2001370,
+        "MouseCursorPositionDisable": 2001212
+      },
+      "Standard": {
+        "GUID": 2001352,
+        "Name": "Follow"
+      },
+      "Text": ""
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "INTERACT",
+        "Matches": {
+          "SelectionMatch1": {
+            "Flags": "AndNextMatch;OwnedByPlayer;CheckProperty",
+            "Property": "CommandQueue"
+          },
+          "TargetMatch1": {
+            "Flags": "NotSelf;IsInteractable"
+          },
+          "DisableMatch1": {
+            "Flags": "Never"
+          },
+          "SelectionMatch2": {
+            "Flags": "CheckProperty",
+            "Property": "Walking"
+          }
+        },
+        "MouseCursorTarget": 2001385
+      },
+      "Standard": {
+        "GUID": 2001781,
+        "Name": "Interact"
+      },
+      "Text": ""
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "SET_RALLY_POINT",
+        "PositionCheck": "Always",
+        "Matches": {
+          "SelectionMatch1": {
+            "Flags": "OwnedByPlayer;CheckProperty",
+            "Property": "Shipyard"
+          },
+          "TargetMatch1": {
+            "Flags": "Never"
+          },
+          "DisableMatch1": {
+            "Flags": "Never"
+          }
+        },
+        "MouseCursorTarget": 501558,
+        "MouseCursorDisable": 2001299,
+        "MouseCursorMode": 501558,
+        "MouseCursorPosition": 501558,
+        "MouseCursorPositionDisable": 2001299
+      },
+      "Standard": {
+        "GUID": 2001244,
+        "Name": "SetRallyPoint",
+        "ID": "TargetRallyPoint"
+      },
+      "Text": ""
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "ITEM",
+        "PositionCheck": "Always",
+        "Matches": {
+          "TargetMatch1": {
+            "Flags": "Never"
+          },
+          "DisableMatch1": {
+            "Flags": "Never"
+          }
+        },
+        "MouseCursorMode": 2001299,
+        "MouseCursorPosition": 2001297
+      },
+      "Standard": {
+        "GUID": 2001744,
+        "Name": "Special Action"
+      },
+      "Text": ""
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "ITEM",
+        "PositionCheck": "Water",
+        "Matches": {
+          "TargetMatch1": {
+            "Flags": "OrNextMatch;IsCoastalBuilding"
+          },
+          "DisableMatch1": {
+            "Flags": "Never"
+          },
+          "TargetMatch2": {
+            "Flags": "OwnedByPirate"
+          }
+        },
+        "MouseCursorTarget": 2001297,
+        "MouseCursorMode": 2001299,
+        "MouseCursorPosition": 2001297
+      },
+      "Standard": {
+        "GUID": 2001747,
+        "Name": "Military Items Water"
+      },
+      "Text": ""
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "ITEM",
+        "Matches": {
+          "SelectionMatch1": {
+            "Flags": "OwnedByPlayer;CheckProperty",
+            "Property": "Collector"
+          },
+          "TargetMatch1": {
+            "Flags": "CheckProperty;NotSelf;IsDraggableBySelection;NotActionBlocked",
+            "Property": "Draggable"
+          }
+        },
+        "MouseCursorTarget": 2001029,
+        "MouseCursorDisable": 2001207,
+        "MouseCursorMode": 2001038
+      },
+      "Standard": {
+        "GUID": 2001893,
+        "Name": "Draggable Drag"
+      },
+      "Text": ""
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "DRAG",
+        "Matches": {
+          "SelectionMatch1": {
+            "Flags": "CheckProperty",
+            "Property": "Collector"
+          },
+          "TargetMatch1": {
+            "Flags": "CheckProperty;IsDroppableDraggable;IsDraggedBySelection",
+            "Property": "Draggable"
+          }
+        },
+        "MouseCursorTarget": 2001879,
+        "MouseCursorDisable": 2001207,
+        "MouseCursorMode": 2001879
+      },
+      "Standard": {
+        "GUID": 2001894,
+        "Name": "Draggable Drop (not used anymore)"
+      },
+      "Text": ""
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "START_PATROL",
+        "PositionCheck": "Always",
+        "Matches": {
+          "SelectionMatch1": {
+            "Flags": "OwnedByPlayer;CheckProperty",
+            "Property": "Walking"
+          },
+          "TargetMatch1": {
+            "Flags": "Never"
+          },
+          "DisableMatch1": {
+            "Flags": "Never"
+          }
+        },
+        "MouseCursorTarget": 501851,
+        "MouseCursorDisable": 501850,
+        "MouseCursorMode": 501851,
+        "MouseCursorPosition": 501851,
+        "MouseCursorPositionDisable": 501850
+      },
+      "Standard": {
+        "GUID": 140561,
+        "Name": "Start Patrol",
+        "ID": "StartPatrol"
+      },
+      "Text": ""
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "ADD_PATROL",
+        "PositionCheck": "Always",
+        "Matches": {
+          "SelectionMatch1": {
+            "Flags": "OwnedByPlayer;CheckProperty",
+            "Property": "Walking"
+          },
+          "TargetMatch1": {
+            "Flags": "Never"
+          },
+          "DisableMatch1": {
+            "Flags": "Never"
+          }
+        },
+        "MouseCursorTarget": 501851,
+        "MouseCursorDisable": 501850,
+        "MouseCursorMode": 501851,
+        "MouseCursorPosition": 501851,
+        "MouseCursorPositionDisable": 501850
+      },
+      "Standard": {
+        "GUID": 140562,
+        "Name": "Add Patrol",
+        "ID": "AddPatrol"
+      },
+      "Text": ""
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "ITEM",
+        "Matches": {
+          "TargetMatch1": {
+            "Flags": "CheckProperty;NotSelf;NotActionBlocked",
+            "Property": "ChannelTarget"
+          },
+          "SelectionMatch1": {
+            "Flags": "OwnedByPlayer"
+          }
+        },
+        "MouseCursorTarget": 2001297,
+        "MouseCursorDisable": 2001202,
+        "MouseCursorMode": 501558
+      },
+      "Standard": {
+        "GUID": 500659,
+        "Name": "Use Item In Area"
+      },
+      "Text": ""
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "ITEM",
+        "Matches": {
+          "TargetMatch1": {
+            "Flags": "CheckProperty;NotSelf;Damaged;NotActionBlocked",
+            "Property": "Walking"
+          },
+          "DisableMatch1": {
+            "Flags": "Damaged"
+          },
+          "SelectionMatch1": {
+            "Flags": "OwnedByPlayer"
+          }
+        },
+        "MouseCursorTarget": 2001867,
+        "MouseCursorDisable": 2001207,
+        "MouseCursorMode": 2001867
+      },
+      "Standard": {
+        "GUID": 2001748,
+        "Name": "Special Action Repair"
+      },
+      "Text": ""
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "ITEM",
+        "Matches": {
+          "SelectionMatch1": {
+            "Flags": "OwnedByPlayer;NotSelf;Guardable"
+          },
+          "TargetMatch1": {
+            "Flags": "CheckProperty;NotSelf;NotActionBlocked",
+            "Property": "Draggable"
+          }
+        },
+        "MouseCursorTarget": 2001298,
+        "MouseCursorDisable": 2001207,
+        "MouseCursorMode": 2001038
+      },
+      "Standard": {
+        "GUID": 500955,
+        "Name": "ExternalBuffAllies"
+      },
+      "Text": ""
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "ITEM",
+        "Matches": {
+          "SelectionMatch1": {
+            "Flags": "OwnedByEnemy"
+          },
+          "TargetMatch1": {
+            "Flags": "CheckProperty;NotSelf;IsDraggableBySelection;NotActionBlocked",
+            "Property": "Draggable"
+          }
+        },
+        "MouseCursorTarget": 2001298,
+        "MouseCursorDisable": 2001207,
+        "MouseCursorMode": 2001038
+      },
+      "Standard": {
+        "GUID": 500956,
+        "Name": "ExternalBuffEnemies"
+      },
+      "Text": ""
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "ITEM",
+        "Matches": {
+          "SelectionMatch1": {
+            "Flags": "OwnedByPlayer;OwnedByEnemy;Guardable"
+          },
+          "TargetMatch1": {
+            "Flags": "CheckProperty;NotSelf;IsDraggableBySelection;NotActionBlocked",
+            "Property": "Draggable"
+          }
+        },
+        "MouseCursorTarget": 2001298,
+        "MouseCursorDisable": 2001207,
+        "MouseCursorMode": 2001038
+      },
+      "Standard": {
+        "GUID": 500957,
+        "Name": "ExternalBuffAny"
+      },
+      "Text": ""
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "HEAL_INCIDENT",
+        "Matches": {
+          "TargetMatch1": {
+            "Flags": "OrNextMatch;NotActionBlocked;IsInfectedByFire"
+          },
+          "DisableMatch1": {
+            "Flags": "CheckProperty",
+            "Property": "IncidentInfectable"
+          },
+          "SelectionMatch1": {
+            "Flags": "OwnedByPlayer"
+          },
+          "TargetMatch2": {
+            "Flags": "OrNextMatch;NotActionBlocked;IsInfectedByIllness"
+          },
+          "TargetMatch3": {
+            "Flags": "OrNextMatch;NotActionBlocked;IsInfectedByRiot"
+          }
+        },
+        "MouseCursorTarget": 2001298,
+        "MouseCursorDisable": 2001207,
+        "MouseCursorMode": 2001038
+      },
+      "Standard": {
+        "GUID": 501232,
+        "Name": "Special Action Heal Incident"
+      },
+      "Text": ""
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "ITEM",
+        "PositionCheck": "Water",
+        "Matches": {
+          "TargetMatch1": {
+            "Flags": "AndNotNextMatch;IsCoastalBuilding"
+          },
+          "DisableMatch1": {
+            "Flags": "Never"
+          },
+          "TargetMatch2": {
+            "Flags": "OwnedByPirate"
+          }
+        },
+        "MouseCursorTarget": 2001298,
+        "MouseCursorMode": 2001299,
+        "MouseCursorPosition": 2001298
+      },
+      "Standard": {
+        "GUID": 501575,
+        "Name": "Torpedo"
+      },
+      "Text": ""
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "FOLLOW",
+        "Matches": {
+          "SelectionMatch1": {
+            "Flags": "AndNextMatch;OwnedByPlayer;CheckProperty",
+            "Property": "Attacker"
+          },
+          "TargetMatch1": {
+            "Flags": "AndNextMatch;CheckProperty;NotSelfIgnoreMultiselection;Guardable",
+            "Property": "Walking"
+          },
+          "SelectionMatch2": {
+            "Flags": "CheckProperty",
+            "Property": "Walking"
+          },
+          "TargetMatch2": {
+            "Flags": "CheckNotProperty",
+            "Property": "Collectable"
+          }
+        },
+        "MouseCursorTarget": 501629,
+        "MouseCursorDisable": 501628,
+        "MouseCursorMode": 501629,
+        "MouseCursorPosition": 501628,
+        "MouseCursorPositionDisable": 2001212
+      },
+      "Standard": {
+        "GUID": 501735,
+        "Name": "Guard"
+      },
+      "Text": ""
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "COOP_PING",
+        "PositionCheck": "Always",
+        "Matches": {
+          "TargetMatch1": {
+            "Flags": "CheckProperty",
+            "Property": "Standard",
+            "GameObjectState": "GameLogic;Blueprint;Visible"
+          }
+        },
+        "MouseCursorTarget": 501927,
+        "MouseCursorDisable": 501926,
+        "MouseCursorMode": 501927,
+        "MouseCursorPosition": 501927,
+        "MouseCursorPositionDisable": 501926
+      },
+      "Standard": {
+        "GUID": 501863,
+        "Name": "CoopPing",
+        "ID": "TargetCoopPing"
+      },
+      "Text": ""
+    }
+  }
+]

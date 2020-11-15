@@ -1,0 +1,2774 @@
+[
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 1000178,
+        "Name": "Dirt Street",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_street01.png",
+        "ID": "EarthStreet",
+        "InfoDescription": 12750
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 10
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        },
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "CfgFileName": "data/graphics/effects/street/earth/earth_street_01/earth_street_01.cfg",
+        "InvalidColor": -50116,
+        "BridgeAsset": 101328,
+        "InternalID": 1,
+        "DecalMapping": "data/config/street/streetdecal.txt.bin",
+        "DecalVariation": "data/config/street/streetdecal_var.txt",
+        "HidePropsAfterBuilding": 1,
+        "HidePropsWhileBuilding": 1,
+        "Quality": 1,
+        "OverbuildRule": "BadStreet",
+        "CanBuildOnShore": 1,
+        "HasFeedbackPathPlanningPenalty": 0,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "Street;StreetLowQuality",
+          "NeighborsThatMakeUsAdapt": "StreetHighQuality;Crossing_Rail_Street;Crossing_Rail_StreetLowQuality;Quay_And_QuayBase_And_HiddenFences;Bridge_StreetLowQuality"
+        }
+      },
+      "Constructable": {
+        "DestructionCategory": "StreetsAndBridges"
+      },
+      "Locked": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 200777
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 200140
+            }
+          }
+        },
+        "ConstructionStreetSounds": {
+          "BuildAddWaypoint": {
+            "Item": {
+              "Sound": 215919
+            }
+          }
+        },
+        "MaterialType": "Street_Dirt"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Dirt Road",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 4223
+      },
+      "Building": {
+        "SkipUnlockMessage": 1,
+        "AssociatedRegions": "Moderate"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 1010035,
+        "Name": "Stone Street",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_brick_road.png",
+        "ID": "EarthStreetStone",
+        "InfoDescription": 12751
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 50
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 1
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        },
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "CfgFileName": "data/graphics/effects/street/earth/earth_street_02/earth_street_02.cfg",
+        "BridgeAsset": 101587,
+        "InternalID": 2,
+        "DecalMapping": "data/config/street/streetdecal.txt.bin",
+        "DecalVariation": "data/config/street/streetdecal_var.txt",
+        "HidePropsAfterBuilding": 1,
+        "HidePropsWhileBuilding": 1,
+        "StyleRows": 12,
+        "Quality": 2,
+        "OverbuildRule": "GoodStreet",
+        "SpeedFactor": 1.5,
+        "CanBuildOnShore": 1,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "Street;StreetHighQuality",
+          "NeighborsThatMakeUsAdapt": "Crossing_Rail_Street;Crossing_Rail_StreetHighQuality;Quay_And_QuayBase_And_HiddenFences;Bridge_StreetHighQuality"
+        }
+      },
+      "Constructable": {
+        "DestructionCategory": "StreetsAndBridges"
+      },
+      "Locked": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 200777
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 215917
+            }
+          }
+        },
+        "ConstructionStreetSounds": {
+          "BuildAddWaypoint": {
+            "Item": {
+              "Sound": 215920
+            }
+          }
+        },
+        "MaterialType": "Street_Brick"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Paved Street",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 4224
+      },
+      "Building": {
+        "AssociatedRegions": "Moderate"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 1010136,
+        "Name": "Rails",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_railway.png",
+        "ID": "Railway_ModerateAndSA",
+        "InfoDescription": 10947
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 200
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 1
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218,
+              "Amount": 1
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        },
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "AutoCreateStyle": 0,
+        "CfgFileName": "data/graphics/effects/street/earth/earth_street_03/earth_street_03.cfg",
+        "BridgeAsset": 101384,
+        "InternalID": 3,
+        "DecalMapping": "data/config/street/railwaydecal.txt.bin",
+        "DecalVariation": "data/config/street/railwaydecal_var.txt",
+        "HidePropsAfterBuilding": 1,
+        "HidePropsWhileBuilding": 1,
+        "OverbuildRule": "Rail",
+        "IsLogicRoad": 0,
+        "IsRailway": 1,
+        "CanBuildOnShore": 1,
+        "IsRenderedExternally": 1,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "Rail_And_RailUnderBuilding",
+          "NeighborsThatMakeUsAdapt": "Crossing_Rail_Street;Rail_And_RailUnderBuilding;Bridge_Rail"
+        }
+      },
+      "Constructable": {
+        "ConstructionMode": "Railway"
+      },
+      "Locked": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 200777
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 214787
+            }
+          }
+        },
+        "ConstructionStreetSounds": {
+          "BuildAddWaypoint": {
+            "Item": {
+              "Sound": 216000
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Railway",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 4225
+      },
+      "Building": {
+        "BuildingCategoryName": 11154,
+        "PickingAsset": 1010136,
+        "AssociatedRegions": "Moderate;Colony01"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 1010165,
+        "Name": "Crossing Rails-Street",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_railway.png",
+        "ID": "RailCrossing_ModerateAndSA",
+        "InfoDescription": 10947
+      },
+      "Cost": {
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "CfgFileName": "data/graphics/effects/street/earth/earth_street_03/earth_street_03.cfg",
+        "InternalID": 4,
+        "HidePropsAfterBuilding": 1,
+        "HidePropsWhileBuilding": 1,
+        "Quality": 1,
+        "OverbuildRule": "Railcrossing",
+        "IsRailway": 1,
+        "CanBuildOnShore": 1,
+        "IsRenderedExternally": 1,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "Crossing_Rail_Street;Crossing_Rail_StreetLowQuality",
+          "NeighborsThatMakeUsAdapt": "StreetLowQuality"
+        }
+      },
+      "Constructable": "",
+      "Locked": {
+        "DefaultLockedState": 0
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 200777
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 214787
+            }
+          }
+        },
+        "ConstructionStreetSounds": {
+          "BuildAddWaypoint": {
+            "Item": {
+              "Sound": 216000
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Railway Crossing",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 7030
+      },
+      "Building": {
+        "BuildingCategoryName": 11154,
+        "PickingAsset": 1010136,
+        "AssociatedRegions": "Moderate;Colony01"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 1010183,
+        "Name": "Crossing Rails-FastStreet",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_railway.png",
+        "ID": "RailCrossingFast_ModerateAndSA",
+        "InfoDescription": 10947
+      },
+      "Cost": {
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "CfgFileName": "data/graphics/effects/street/earth/earth_street_03/earth_street_03.cfg",
+        "InternalID": 6,
+        "HidePropsAfterBuilding": 1,
+        "HidePropsWhileBuilding": 1,
+        "Quality": 2,
+        "OverbuildRule": "Railcrossing",
+        "SpeedFactor": 1.5,
+        "IsRailway": 1,
+        "CanBuildOnShore": 1,
+        "IsRenderedExternally": 1,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "Crossing_Rail_Street;Crossing_Rail_StreetHighQuality",
+          "NeighborsThatMakeUsAdapt": "StreetHighQuality"
+        }
+      },
+      "Constructable": "",
+      "Locked": {
+        "DefaultLockedState": 0
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 200777
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 214787
+            }
+          }
+        },
+        "ConstructionStreetSounds": {
+          "BuildAddWaypoint": {
+            "Item": {
+              "Sound": 216000
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Railway Crossing",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 21448
+      },
+      "Building": {
+        "BuildingCategoryName": 11154,
+        "PickingAsset": 1010136,
+        "AssociatedRegions": "Moderate;Colony01"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 1010584,
+        "Name": "RailsUnderBuilding",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_railway.png",
+        "InfoDescription": 10947
+      },
+      "Cost": {
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "InternalID": 7,
+        "HidePropsAfterBuilding": 1,
+        "HidePropsWhileBuilding": 1,
+        "IsLogicRoad": 0,
+        "IsRailway": 1,
+        "IsGroundDecal": 1,
+        "CanBuildOnShore": 1,
+        "IsRenderedExternally": 1,
+        "IsDeletable": 0,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "Rail_And_RailUnderBuilding",
+          "NeighborsThatMakeUsAdapt": "Crossing_Rail_Street;Rail_And_RailUnderBuilding"
+        }
+      },
+      "Constructable": "",
+      "Locked": {
+        "DefaultLockedState": 0
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 200777
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "Street",
+                    "Index": 0
+                  }
+                }
+              },
+              "Sound": 214787
+            }
+          }
+        },
+        "ConstructionStreetSounds": {
+          "BuildAddWaypoint": {
+            "Item": {
+              "Sound": 216000
+            }
+          }
+        }
+      },
+      "Text": {
+        "LineID": 3740
+      },
+      "Building": {
+        "BuildingCategoryName": 11154,
+        "AssociatedRegions": "Moderate;Colony01"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 101409,
+        "Name": "RailsNonblockingDeko",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_railway.png",
+        "ID": "RailNonBlockingDeco_AllRegions"
+      },
+      "Cost": {
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "CfgFileName": "data/graphics/effects/street/earth/earth_street_03/earth_street_03.cfg",
+        "InternalID": 8,
+        "HidePropsAfterBuilding": 1,
+        "HidePropsWhileBuilding": 1,
+        "IsLogicRoad": 0,
+        "IsRenderedExternally": 1
+      },
+      "Constructable": "",
+      "Locked": {
+        "DefaultLockedState": 0
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 200777
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "Street",
+                    "Index": 0
+                  }
+                }
+              },
+              "Sound": 214787
+            }
+          }
+        },
+        "ConstructionStreetSounds": {
+          "BuildAddWaypoint": {
+            "Item": {
+              "Sound": 216000
+            }
+          }
+        }
+      },
+      "Text": "",
+      "Building": {
+        "BuildingCategoryName": 11154,
+        "AssociatedRegions": "Moderate;Colony01;Africa"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 101064,
+        "Name": "BasePlateFenceHidden",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_farmfield_module.png"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 100
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        },
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "InvalidColor": -50116,
+        "InternalID": 20,
+        "DecalMapping": "data/config/street/simpledecal.txt.bin",
+        "DecalVariation": "data/config/street/no_var.txt",
+        "StyleRows": 0,
+        "StyleCols": 0,
+        "IsLogicRoad": 0,
+        "IsGroundDecal": 1,
+        "IsPlazza": 1,
+        "IsDeletable": 0,
+        "CheckComplexID": 1,
+        "HasFeedbackPathPlanningPenalty": 0,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "Quay_And_QuayBase_And_HiddenFences;FenceBasePlate_And_HiddenFences",
+          "NeighborsThatMakeUsAdapt": "FenceBasePlate_And_HiddenFences"
+        }
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 200140
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Dirt Road",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 28518
+      },
+      "Building": {
+        "AssociatedRegions": "Moderate"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 101058,
+        "Name": "BasePlateFenceAgriculture04",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_farmfield_module.png"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 100
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        },
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "CfgFileName": "data/graphics/buildings/production/agriculture_04/props/agriculture_04_fence_system.cfg",
+        "InvalidColor": -50116,
+        "InternalID": 21,
+        "DecalMapping": "data/config/street/fencesdecal.txt.bin",
+        "DecalVariation": "data/config/street/fencesdecal_var.txt",
+        "IsLogicRoad": 0,
+        "IsGroundDecal": 1,
+        "IsPlazza": 1,
+        "IsDeletable": 0,
+        "HasFeedbackPathPlanningPenalty": 0,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "FenceBasePlate_And_HiddenFences"
+        }
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 200140
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Fenced Road",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 28519
+      },
+      "Building": {
+        "AssociatedRegions": "Moderate"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 101200,
+        "Name": "BasePlateFenceAgriculture01",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_farmfield_module.png"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 100
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        },
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "CfgFileName": "data/graphics/buildings/production/agriculture_01/props/agriculture_01_fence_system.cfg",
+        "InvalidColor": -50116,
+        "InternalID": 22,
+        "DecalMapping": "data/config/street/fencesdecal.txt.bin",
+        "DecalVariation": "data/config/street/fencesdecal_var.txt",
+        "IsLogicRoad": 0,
+        "IsGroundDecal": 1,
+        "IsPlazza": 1,
+        "IsDeletable": 0,
+        "HasFeedbackPathPlanningPenalty": 0,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "FenceBasePlate_And_HiddenFences"
+        }
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 200140
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Fenced Road",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 28520
+      },
+      "Building": {
+        "AssociatedRegions": "Moderate"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 101201,
+        "Name": "BasePlateFenceAgriculture03",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_farmfield_module.png"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 100
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        },
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "CfgFileName": "data/graphics/buildings/production/agriculture_03/props/agriculture_03_fence_system.cfg",
+        "InvalidColor": -50116,
+        "InternalID": 23,
+        "DecalMapping": "data/config/street/fencesdecal.txt.bin",
+        "DecalVariation": "data/config/street/fencesdecal_var.txt",
+        "IsLogicRoad": 0,
+        "IsGroundDecal": 1,
+        "IsPlazza": 1,
+        "IsDeletable": 0,
+        "HasFeedbackPathPlanningPenalty": 0,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "FenceBasePlate_And_HiddenFences"
+        }
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 200140
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Fenced Road",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 28521
+      },
+      "Building": {
+        "AssociatedRegions": "Moderate"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 101202,
+        "Name": "BasePlateFenceAgricultureTest3",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_farmfield_module.png"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 100
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        },
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "CfgFileName": "data/graphics/buildings/production/agriculture_04/props/agriculture_04_fence_system.cfg",
+        "InvalidColor": -50116,
+        "InternalID": 24,
+        "DecalMapping": "data/config/street/fencesdecal.txt.bin",
+        "DecalVariation": "data/config/street/fencesdecal_var.txt",
+        "IsLogicRoad": 0,
+        "IsGroundDecal": 1,
+        "IsPlazza": 1,
+        "IsDeletable": 0,
+        "HasFeedbackPathPlanningPenalty": 0,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "FenceBasePlate_And_HiddenFences"
+        }
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 200140
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Fenced Road",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 28522
+      },
+      "Building": {
+        "AssociatedRegions": "Moderate"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 102507,
+        "Name": "BasePlateFenceAgriculture05",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_farmfield_module.png"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 100
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        },
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "CfgFileName": "data/graphics/buildings/production/agriculture_04/props/agriculture_04_fence_system.cfg",
+        "InvalidColor": -50116,
+        "InternalID": 28,
+        "DecalMapping": "data/config/street/fencesdecal.txt.bin",
+        "DecalVariation": "data/config/street/fencesdecal_var.txt",
+        "IsLogicRoad": 0,
+        "IsGroundDecal": 1,
+        "IsPlazza": 1,
+        "IsDeletable": 0,
+        "HasFeedbackPathPlanningPenalty": 0,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "FenceBasePlate_And_HiddenFences"
+        }
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 200140
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Fenced Road",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 28524
+      },
+      "Building": {
+        "AssociatedRegions": "Moderate"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 102508,
+        "Name": "BasePlateFenceAgriculture06",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_farmfield_module.png"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 100
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        },
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "CfgFileName": "data/graphics/buildings/production/agriculture_04/props/agriculture_04_fence_system.cfg",
+        "InvalidColor": -50116,
+        "InternalID": 33,
+        "DecalMapping": "data/config/street/fencesdecal.txt.bin",
+        "DecalVariation": "data/config/street/fencesdecal_var.txt",
+        "IsLogicRoad": 0,
+        "IsGroundDecal": 1,
+        "IsPlazza": 1,
+        "IsDeletable": 0,
+        "HasFeedbackPathPlanningPenalty": 0,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "FenceBasePlate_And_HiddenFences"
+        }
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 200140
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Fenced Road",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 28525
+      },
+      "Building": {
+        "AssociatedRegions": "Moderate"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 102509,
+        "Name": "BasePlateFenceAgriculture07",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_farmfield_module.png"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 100
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        },
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "CfgFileName": "data/graphics/buildings/production/agriculture_04/props/agriculture_04_fence_system.cfg",
+        "InvalidColor": -50116,
+        "InternalID": 34,
+        "DecalMapping": "data/config/street/fencesdecal.txt.bin",
+        "DecalVariation": "data/config/street/fencesdecal_var.txt",
+        "IsLogicRoad": 0,
+        "IsGroundDecal": 1,
+        "IsPlazza": 1,
+        "IsDeletable": 0,
+        "HasFeedbackPathPlanningPenalty": 0,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "FenceBasePlate_And_HiddenFences"
+        }
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 200140
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Fenced Road",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 28526
+      },
+      "Building": {
+        "AssociatedRegions": "Moderate"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 102510,
+        "Name": "BasePlateFenceAgriculture08",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_farmfield_module.png"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 100
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        },
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "CfgFileName": "data/graphics/buildings/production/agriculture_04/props/agriculture_04_fence_system.cfg",
+        "InvalidColor": -50116,
+        "InternalID": 35,
+        "DecalMapping": "data/config/street/fencesdecal.txt.bin",
+        "DecalVariation": "data/config/street/fencesdecal_var.txt",
+        "IsLogicRoad": 0,
+        "IsGroundDecal": 1,
+        "IsPlazza": 1,
+        "IsDeletable": 0,
+        "HasFeedbackPathPlanningPenalty": 0,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "FenceBasePlate_And_HiddenFences"
+        }
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 200140
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Fenced Road",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 28527
+      },
+      "Building": {
+        "AssociatedRegions": "Moderate"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 102511,
+        "Name": "BasePlateFenceAgriculture09",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_farmfield_module.png"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 100
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        },
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "CfgFileName": "data/graphics/buildings/production/agriculture_04/props/agriculture_04_fence_system.cfg",
+        "InvalidColor": -50116,
+        "InternalID": 36,
+        "DecalMapping": "data/config/street/fencesdecal.txt.bin",
+        "DecalVariation": "data/config/street/fencesdecal_var.txt",
+        "IsLogicRoad": 0,
+        "IsGroundDecal": 1,
+        "IsPlazza": 1,
+        "IsDeletable": 0,
+        "HasFeedbackPathPlanningPenalty": 0,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "FenceBasePlate_And_HiddenFences"
+        }
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 200140
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Fenced Road",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 28528
+      },
+      "Building": {
+        "AssociatedRegions": "Moderate"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 102512,
+        "Name": "BasePlateFenceAgriculture10",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_farmfield_module.png"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 100
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        },
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "CfgFileName": "data/graphics/buildings/production/agriculture_04/props/agriculture_04_fence_system.cfg",
+        "InvalidColor": -50116,
+        "InternalID": 37,
+        "DecalMapping": "data/config/street/fencesdecal.txt.bin",
+        "DecalVariation": "data/config/street/fencesdecal_var.txt",
+        "IsLogicRoad": 0,
+        "IsGroundDecal": 1,
+        "IsPlazza": 1,
+        "IsDeletable": 0,
+        "HasFeedbackPathPlanningPenalty": 0,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "FenceBasePlate_And_HiddenFences"
+        }
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 200140
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Fenced Road",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 28529
+      },
+      "Building": {
+        "AssociatedRegions": "Moderate"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 101383,
+        "Name": "Dirt Bridge Groundplate",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ornament_placeholders/porte.png"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 100
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        },
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "InvalidColor": -50116,
+        "InternalID": 10,
+        "DecalMapping": "data/config/street/streetdecal.txt.bin",
+        "DecalVariation": "data/config/street/streetdecal_var.txt",
+        "StyleRows": 0,
+        "StyleCols": 0,
+        "Quality": 1,
+        "IsGroundDecal": 1,
+        "CanBuildOnShore": 1,
+        "IsDeletable": 0,
+        "HasFeedbackPathPlanningPenalty": 0,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "Bridge_StreetLowQuality",
+          "NeighborsThatMakeUsAdapt": "StreetHighQuality;Crossing_Rail_StreetLowQuality"
+        }
+      },
+      "Constructable": {
+        "DestructionCategory": "StreetsAndBridges"
+      },
+      "Locked": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 200777
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": [
+              {
+                "Sound": 200140
+              },
+              {
+                "Sound": 200901
+              }
+            ]
+          }
+        },
+        "ConstructionStreetSounds": {
+          "BuildAddWaypoint": {
+            "Item": {
+              "Sound": 215919
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Basic Bridge",
+            "Status": "Exported",
+            "ExportCount": 4
+          }
+        },
+        "LineID": 11649
+      },
+      "Building": {
+        "AssociatedRegions": "Moderate;Colony01"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 101385,
+        "Name": "Rails Bridge Groundplate",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ornament_placeholders/porte.png"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 100
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        },
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "InvalidColor": -50116,
+        "InternalID": 9,
+        "DecalMapping": "data/config/street/streetdecal.txt.bin",
+        "DecalVariation": "data/config/street/streetdecal_var.txt",
+        "StyleRows": 0,
+        "StyleCols": 0,
+        "IsLogicRoad": 0,
+        "IsGroundDecal": 1,
+        "CanBuildOnShore": 1,
+        "IsDeletable": 0,
+        "HasFeedbackPathPlanningPenalty": 0,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "Bridge_Rail",
+          "NeighborsThatMakeUsAdapt": "StreetHighQuality;Crossing_Rail_StreetLowQuality"
+        }
+      },
+      "Constructable": {
+        "DestructionCategory": "StreetsAndBridges"
+      },
+      "Locked": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 200777
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": [
+              {
+                "Sound": 200140
+              },
+              {
+                "Sound": 200901
+              }
+            ]
+          }
+        },
+        "ConstructionStreetSounds": {
+          "BuildAddWaypoint": {
+            "Item": {
+              "Sound": 215919
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Railway Bridge",
+            "Status": "Exported",
+            "ExportCount": 4
+          }
+        },
+        "LineID": 11650
+      },
+      "Building": {
+        "AssociatedRegions": "Moderate;Colony01"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 101588,
+        "Name": "Stone Bridge Groundplate",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ornament_placeholders/porte.png",
+        "ID": "StoneBridgeGroundplate"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 100
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        },
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "InvalidColor": -50116,
+        "InternalID": 19,
+        "DecalMapping": "data/config/street/streetdecal.txt.bin",
+        "DecalVariation": "data/config/street/streetdecal_var.txt",
+        "StyleRows": 0,
+        "StyleCols": 0,
+        "Quality": 2,
+        "SpeedFactor": 1.5,
+        "IsGroundDecal": 1,
+        "CanBuildOnShore": 1,
+        "IsDeletable": 0,
+        "HasFeedbackPathPlanningPenalty": 0,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "Bridge_StreetHighQuality",
+          "NeighborsThatMakeUsAdapt": "StreetHighQuality;Crossing_Rail_StreetLowQuality"
+        }
+      },
+      "Constructable": {
+        "DestructionCategory": "StreetsAndBridges"
+      },
+      "Locked": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 200777
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": [
+              {
+                "Sound": 200140
+              },
+              {
+                "Sound": 200901
+              }
+            ]
+          }
+        },
+        "ConstructionStreetSounds": {
+          "BuildAddWaypoint": {
+            "Item": {
+              "Sound": 215919
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Stone Bridge",
+            "Status": "Exported",
+            "ExportCount": 4
+          }
+        },
+        "LineID": 14134
+      },
+      "Building": {
+        "AssociatedRegions": "Moderate;Colony01"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 119035,
+        "Name": "AF | Rails",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_railway.png",
+        "InfoDescription": 10947
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 200
+            },
+            {
+              "Ingredient": 114356,
+              "Amount": 1
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218,
+              "Amount": 1
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        },
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "AutoCreateStyle": 0,
+        "CfgFileName": "data/dlc06/graphics/effects/street/africa_street_03/africa_street_03.cfg",
+        "BridgeAsset": 101384,
+        "InternalID": 5,
+        "DecalMapping": "data/config/street/railwaydecal.txt.bin",
+        "DecalVariation": "data/config/street/railwaydecal_var.txt",
+        "HidePropsAfterBuilding": 1,
+        "HidePropsWhileBuilding": 1,
+        "StyleRows": 10,
+        "OverbuildRule": "Rail",
+        "IsLogicRoad": 0,
+        "IsRailway": 1,
+        "CanBuildOnShore": 1,
+        "IsRenderedExternally": 1,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "Rail_And_RailUnderBuilding",
+          "NeighborsThatMakeUsAdapt": "Crossing_Rail_Street;Rail_And_RailUnderBuilding;Bridge_Rail"
+        }
+      },
+      "Constructable": {
+        "ConstructionMode": "Railway"
+      },
+      "Locked": {
+        "DLCDependency": 410070
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 200777
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 214787
+            }
+          }
+        },
+        "ConstructionStreetSounds": {
+          "BuildAddWaypoint": {
+            "Item": {
+              "Sound": 216000
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Railway",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 36815
+      },
+      "Building": {
+        "BuildingCategoryName": 11154,
+        "PickingAsset": 119035,
+        "AssociatedRegions": "Africa"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 273697,
+        "Name": "AF | Crossing Rails-Street",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_railway.png",
+        "InfoDescription": 10947
+      },
+      "Cost": {
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "CfgFileName": "data/dlc06/graphics/effects/street/africa_street_03/africa_street_03.cfg",
+        "InternalID": 45,
+        "HidePropsAfterBuilding": 1,
+        "HidePropsWhileBuilding": 1,
+        "StyleRows": 10,
+        "Quality": 1,
+        "OverbuildRule": "Railcrossing",
+        "IsRailway": 1,
+        "CanBuildOnShore": 1,
+        "IsRenderedExternally": 1,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "Crossing_Rail_Street;Crossing_Rail_StreetLowQuality",
+          "NeighborsThatMakeUsAdapt": "Street"
+        }
+      },
+      "Constructable": "",
+      "Locked": {
+        "DefaultLockedState": 0
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 200777
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 214787
+            }
+          }
+        },
+        "ConstructionStreetSounds": {
+          "BuildAddWaypoint": {
+            "Item": {
+              "Sound": 216000
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Railway Crossing",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Building": {
+        "BuildingCategoryName": 11154,
+        "PickingAsset": 119035,
+        "AssociatedRegions": "Africa"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 273698,
+        "Name": "AF | Crossing Rails-FastStreet",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_railway.png",
+        "InfoDescription": 10947
+      },
+      "Cost": {
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "CfgFileName": "data/dlc06/graphics/effects/street/africa_street_03/africa_street_03.cfg",
+        "InternalID": 46,
+        "HidePropsAfterBuilding": 1,
+        "HidePropsWhileBuilding": 1,
+        "StyleRows": 10,
+        "Quality": 2,
+        "OverbuildRule": "Railcrossing",
+        "SpeedFactor": 1.5,
+        "IsRailway": 1,
+        "CanBuildOnShore": 1,
+        "IsRenderedExternally": 1,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "Crossing_Rail_Street;Crossing_Rail_StreetHighQuality",
+          "NeighborsThatMakeUsAdapt": "Street"
+        }
+      },
+      "Constructable": "",
+      "Locked": {
+        "DefaultLockedState": 0
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 200777
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 214787
+            }
+          }
+        },
+        "ConstructionStreetSounds": {
+          "BuildAddWaypoint": {
+            "Item": {
+              "Sound": 216000
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Railway Crossing",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Building": {
+        "BuildingCategoryName": 11154,
+        "PickingAsset": 119035,
+        "AssociatedRegions": "Africa"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 273699,
+        "Name": "AF | Crossing Rails-Pipe",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_railway.png",
+        "InfoDescription": 10947
+      },
+      "Cost": {
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "CfgFileName": "data/dlc06/graphics/effects/street/africa_street_03/africa_street_03.cfg",
+        "InternalID": 47,
+        "HidePropsAfterBuilding": 1,
+        "HidePropsWhileBuilding": 1,
+        "StyleRows": 10,
+        "Quality": 2,
+        "OverbuildRule": "Railcrossing",
+        "IsLogicRoad": 0,
+        "IsRailway": 1,
+        "CanBuildOnShore": 1,
+        "IsRenderedExternally": 1,
+        "IsIrrigationPipe": 1,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "Rail_And_RailUnderBuilding;Canal",
+          "NeighborsThatMakeUsAdapt": "Canal"
+        }
+      },
+      "Constructable": "",
+      "Locked": {
+        "DefaultLockedState": 0
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 200777
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 214787
+            }
+          }
+        },
+        "ConstructionStreetSounds": {
+          "BuildAddWaypoint": {
+            "Item": {
+              "Sound": 216000
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Railway Crossing",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "Building": {
+        "BuildingCategoryName": 11154,
+        "PickingAsset": 119035,
+        "AssociatedRegions": "Africa"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 112842,
+        "Name": "Canal",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_canal.png",
+        "InfoDescription": 124829
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        },
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "InvalidColor": -50116,
+        "InternalID": 51,
+        "DecalMapping": "data/config/street/streetdecal.txt.bin",
+        "DecalVariation": "data/config/street/canaldecal_var.txt",
+        "HidePropsAfterBuilding": 1,
+        "HidePropsWhileBuilding": 1,
+        "OverbuildRule": "IrrigationPipe",
+        "IsLogicRoad": 0,
+        "CanBuildOnShore": 1,
+        "HasFeedbackPathPlanningPenalty": 0,
+        "IsIrrigationPipe": 1,
+        "RenderCfgAdditionInsteadOfDecal": 1,
+        "CfgAdditionAtlas": {
+          "Item": [
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_single_01.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_end_01.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_short_01.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_curv_01.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_3way_01.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_cross_01.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_curv_bassin_01.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_3way_bassin_03.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_3way_bassin_02.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_tripple_corner_bassin_01.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_short_bassin_01.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_3way_bassin_01.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_double_corner_bassin_01.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_curv_bassin_02.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_place_bassin_01.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_unsupported_01.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_unsupported_01.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_unsupported_01.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_unsupported_01.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_unsupported_01.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_unsupported_01.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_unsupported_01.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_unsupported_01.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_unsupported_01.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_long_01_01.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_long_01_02.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_long_01_03.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_long_01_04.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_long_02_01.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_long_02_02.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_long_02_03.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_long_02_04.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_short_02.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_short_03.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_short_04.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_short_05.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_short_05_duck.cfg"
+            }
+          ]
+        },
+        "AdaptToNeighbors": {
+          "AdaptGroups": "Canal",
+          "NeighborsThatMakeUsAdapt": "Canal"
+        }
+      },
+      "Constructable": {
+        "DestructionCategory": "StreetsAndBridges"
+      },
+      "Locked": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 200777
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 200140
+            }
+          }
+        },
+        "ConstructionStreetSounds": {
+          "BuildAddWaypoint": {
+            "Item": {
+              "Sound": 215919
+            }
+          }
+        },
+        "MaterialType": "Street_Dirt"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Canal",
+            "Status": "Exported",
+            "ExportCount": 4
+          }
+        },
+        "LineID": 44420
+      },
+      "Building": {
+        "SkipUnlockMessage": 1,
+        "AssociatedRegions": "Africa"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 117786,
+        "Name": "Crossing Canal-Street",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ornaments/christmas_park_props_system_02_cross.png"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        },
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "InvalidColor": -50116,
+        "InternalID": 54,
+        "DecalMapping": "data/config/street/crossingdecal_irrigation_pipe.txt.bin",
+        "DecalVariation": "data/config/street/streetdecal_var.txt",
+        "HidePropsAfterBuilding": 1,
+        "HidePropsWhileBuilding": 1,
+        "Quality": 1,
+        "OverbuildRule": "IrrigationPipeStreetCrossing",
+        "IsPlazza": 1,
+        "CanBuildOnShore": 1,
+        "HasFeedbackPathPlanningPenalty": 0,
+        "IsIrrigationPipe": 1,
+        "RenderCfgAdditionInsteadOfDecal": 1,
+        "CfgAdditionAtlas": {
+          "Item": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_crossing_01.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_crossing_01_closed_open.cfg"
+            },
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "AdaptToNeighbors": {
+          "AdaptGroups": "StreetLowQuality;Canal",
+          "NeighborsThatMakeUsAdapt": "Canal"
+        }
+      },
+      "Constructable": {
+        "DestructionCategory": "StreetsAndBridges"
+      },
+      "Locked": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 200777
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 200140
+            }
+          }
+        },
+        "ConstructionStreetSounds": {
+          "BuildAddWaypoint": {
+            "Item": {
+              "Sound": 215919
+            }
+          }
+        },
+        "MaterialType": "Street_Dirt"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Canal Crossing",
+            "Status": "Exported",
+            "ExportCount": 4
+          }
+        },
+        "LineID": 44421
+      },
+      "Building": {
+        "SkipUnlockMessage": 1,
+        "PickingAsset": 114523,
+        "AssociatedRegions": "Africa"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 127913,
+        "Name": "Crossing Canal-FastStreet",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ornaments/christmas_park_props_system_02_cross.png"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        },
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "InvalidColor": -50116,
+        "InternalID": 53,
+        "DecalMapping": "data/config/street/crossingdecal_irrigation_pipe.txt.bin",
+        "DecalVariation": "data/config/street/streetdecal_var.txt",
+        "HidePropsAfterBuilding": 1,
+        "HidePropsWhileBuilding": 1,
+        "Quality": 2,
+        "OverbuildRule": "IrrigationPipeStreetCrossing",
+        "SpeedFactor": 1.5,
+        "IsPlazza": 1,
+        "CanBuildOnShore": 1,
+        "HasFeedbackPathPlanningPenalty": 0,
+        "IsIrrigationPipe": 1,
+        "RenderCfgAdditionInsteadOfDecal": 1,
+        "CfgAdditionAtlas": {
+          "Item": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_crossing_02.cfg"
+            },
+            {
+              "Cfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_channel_crossing_02_closed_open.cfg"
+            },
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "AdaptToNeighbors": {
+          "AdaptGroups": "StreetHighQuality;Canal",
+          "NeighborsThatMakeUsAdapt": "Canal"
+        }
+      },
+      "Constructable": {
+        "DestructionCategory": "StreetsAndBridges"
+      },
+      "Locked": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 200777
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 200140
+            }
+          }
+        },
+        "ConstructionStreetSounds": {
+          "BuildAddWaypoint": {
+            "Item": {
+              "Sound": 215919
+            }
+          }
+        },
+        "MaterialType": "Street_Dirt"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Canal Crossing",
+            "Status": "Exported",
+            "ExportCount": 4
+          }
+        },
+        "LineID": 44422
+      },
+      "Building": {
+        "SkipUnlockMessage": 1,
+        "PickingAsset": 119029,
+        "AssociatedRegions": "Africa"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 117650,
+        "Name": "BasePlateFenceAgricultureAfrica1",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_farmfield_module.png"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 100
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        },
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "CfgFileName": "data/dlc06/graphics/props/fences/farm_field_fences/farm_field_fence_01_low_01/addon_01_farm_fence_low_01.cfg",
+        "InvalidColor": -50116,
+        "InternalID": 60,
+        "DecalMapping": "data/config/street/fencesdecal.txt.bin",
+        "DecalVariation": "data/config/street/fencesdecal_var.txt",
+        "IsLogicRoad": 0,
+        "IsGroundDecal": 1,
+        "IsPlazza": 1,
+        "IsDeletable": 0,
+        "HasFeedbackPathPlanningPenalty": 0,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "FenceBasePlate_And_HiddenFences"
+        }
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 200140
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "LOLOLOLOL",
+            "ExportCount": 5
+          }
+        }
+      },
+      "Building": {
+        "AssociatedRegions": "Moderate"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 117680,
+        "Name": "BasePlateFenceAgricultureAfrica2",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_farmfield_module.png"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 100
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        },
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "CfgFileName": "data/dlc06/graphics/props/fences/farm_field_fences/farm_field_fence_01_low_02/addon_01_farm_fence_low_02.cfg",
+        "InvalidColor": -50116,
+        "InternalID": 61,
+        "DecalMapping": "data/config/street/fencesdecal.txt.bin",
+        "DecalVariation": "data/config/street/fencesdecal_var.txt",
+        "IsLogicRoad": 0,
+        "IsGroundDecal": 1,
+        "IsPlazza": 1,
+        "IsDeletable": 0,
+        "HasFeedbackPathPlanningPenalty": 0,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "FenceBasePlate_And_HiddenFences"
+        }
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 200140
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "LOLOLOLOL",
+            "ExportCount": 5
+          }
+        }
+      },
+      "Building": {
+        "AssociatedRegions": "Moderate"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 117681,
+        "Name": "BasePlateFenceAgricultureAfrica3",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_farmfield_module.png"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 100
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        },
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "CfgFileName": "data/dlc06/graphics/props/fences/farm_field_fences/farm_field_fence_01_low_01/addon_01_farm_fence_low_01.cfg",
+        "InvalidColor": -50116,
+        "InternalID": 62,
+        "DecalMapping": "data/config/street/fencesdecal.txt.bin",
+        "DecalVariation": "data/config/street/fencesdecal_var.txt",
+        "IsLogicRoad": 0,
+        "IsGroundDecal": 1,
+        "IsPlazza": 1,
+        "IsDeletable": 0,
+        "HasFeedbackPathPlanningPenalty": 0,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "FenceBasePlate_And_HiddenFences"
+        }
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 200140
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "LOLOLOLOL",
+            "ExportCount": 5
+          }
+        }
+      },
+      "Building": {
+        "AssociatedRegions": "Moderate"
+      }
+    }
+  }
+]

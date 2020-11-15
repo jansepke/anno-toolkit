@@ -1,0 +1,65 @@
+[
+  {
+    "Template": "ResolveActionCost",
+    "Values": {
+      "Standard": {
+        "GUID": 140732,
+        "Name": "FireResolveActionCost"
+      },
+      "Cost": "",
+      "IncidentResolverUpkeep": ""
+    }
+  },
+  {
+    "Template": "ResolveActionCost",
+    "Values": {
+      "Standard": {
+        "GUID": 140733,
+        "Name": "RiotResolveActionCost"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "ResolveActionCost",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 5000
+          }
+        }
+      },
+      "IncidentResolverUpkeep": ""
+    }
+  },
+  {
+    "Template": "ResolveActionCost",
+    "Values": {
+      "Standard": {
+        "GUID": 140734,
+        "Name": "IllnessResolveActionCost"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "ResolveActionCost",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 10000
+          }
+        }
+      },
+      "IncidentResolverUpkeep": ""
+    }
+  }
+]

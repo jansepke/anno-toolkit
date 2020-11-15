@@ -1,0 +1,1178 @@
+[
+  {
+    "Template": "PaMSy_Base",
+    "Values": {
+      "Standard": {
+        "GUID": 121,
+        "Name": "PaMSy_MASTER_Template_Archetype"
+      },
+      "ParticipantMessages": {
+        "MessageTriggers": {
+          "QuestAbortedAutomatically": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "PaMSy_Base",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "SideNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "PaMSy_Base",
+    "Values": {
+      "Standard": {
+        "GUID": 174,
+        "Name": "PaMSy_MASTER_Template_Archetype_Resident"
+      },
+      "ParticipantMessages": {
+        "MessageTriggers": {
+          "ClickOwnResidence": {
+            "Reactions": {
+              "Item": [
+                {
+                  "RequiredContextAsset": 2001088,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 300,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 500606,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 100,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 500570,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 100,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 500605,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 100,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 500569,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 100,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 500607,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 100,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 2001025,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 300,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000,
+                        "IsUnique": 1
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 2001040,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 300,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000,
+                        "IsUnique": 1
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 140585,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 300,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000,
+                        "IsUnique": 1
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "PauseProductionBuilding": {
+            "Reactions": {
+              "Item": {
+                "CooldownTime": 600000,
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationPriority": 200,
+                      "DisplayTimeout": 2000
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "ResumeProductionBuilding": {
+            "Reactions": {
+              "Item": {
+                "CooldownTime": 600000,
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationPriority": 200,
+                      "DisplayTimeout": 2000
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "ClickProductionBuildingWithInfolayer": {
+            "Reactions": {
+              "Item": [
+                {
+                  "RequiredContextAsset": 2001040,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 2001025,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 140585,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 141897,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 141898,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 25000170,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 501502,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 2001576,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 2002088,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 2002087,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 2001920,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 500449,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 500917,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 2001292,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 2001976,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "MenuIdleMessage": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "CooldownTime": 3600000,
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationPriority": 100,
+                      "NotificationGroup": "PaMSyGossip",
+                      "DisplayTimeout": 3000
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "QuestInvitation": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "PaMSy_Base",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": {
+                      "NotificationTextFemale": 0
+                    },
+                    "BaseNotification": {
+                      "NotificationText": 0
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "QuestAbortedAutomatically": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "PaMSy_Base",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "SideNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "PaMSy_Base",
+    "Values": {
+      "Standard": {
+        "GUID": 202,
+        "Name": "PaMSy_Narrative_Character_Pyrphorian_Gold"
+      },
+      "ParticipantMessages": {
+        "MessageTriggers": {
+          "MilitaryShipDestroyed": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "PaMSy_Base",
+                      "Index": 0
+                    }
+                  }
+                },
+                "CooldownTime": 60000,
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "Subtitle": 268199
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ClickKontor": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "PaMSy_Base",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": {
+                      "NotificationTextGroupFemale": -2061041081
+                    },
+                    "BaseNotification": {
+                      "NotificationTextGroup": 1511054548,
+                      "NotificationPriority": 500
+                    },
+                    "NotificationSubtitle": {
+                      "Subtitle": 268723
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "MenuWelcomeMessage": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "CooldownTime": 300000,
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "DisplayTimeout": 1000
+                    },
+                    "NotificationSubtitle": {
+                      "Subtitle": 268723
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "QuestAbortedAutomatically": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "PaMSy_Base",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "SideNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "PaMSy_Base",
+    "Values": {
+      "Standard": {
+        "GUID": 184,
+        "Name": "PaMSy_Narrative_Character_Cousin_Female"
+      },
+      "ParticipantMessages": {
+        "MessageTriggers": {
+          "QuestAbortedAutomatically": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "PaMSy_Base",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "SideNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "PaMSy_Base",
+    "Values": {
+      "Standard": {
+        "GUID": 185,
+        "Name": "PaMSy_Narrative_Character_Cousin_Male"
+      },
+      "ParticipantMessages": {
+        "MessageTriggers": {
+          "QuestAbortedAutomatically": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "PaMSy_Base",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "SideNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "PaMSy_Base",
+    "Values": {
+      "Standard": {
+        "GUID": 117108,
+        "Name": "PaMSy_MASTER_Template_ArcticResident"
+      },
+      "ParticipantMessages": {
+        "MessageTriggers": {
+          "QuestAbortedAutomatically": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "PaMSy_Base",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "SideNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "MenuIdleMessage": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "CooldownTime": 3600000,
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationPriority": 100,
+                      "NotificationGroup": "PaMSyGossip",
+                      "DisplayTimeout": 3000
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "ClickOwnResidence": {
+            "Reactions": {
+              "Item": [
+                {
+                  "RequiredContextAsset": 2001088,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 300,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 117109,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 300,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 117110,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 300,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 117111,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 300,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 117112,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 300,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 2001025,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 300,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 142753,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 300,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "ClickProductionBuildingWithInfolayer": {
+            "Reactions": {
+              "Item": [
+                {
+                  "RequiredContextAsset": 2001025,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 142753,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 116919,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 25000170,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 501502,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 2001576,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 2002088,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 2002087,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 2001920,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 500449,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 2001292,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredContextAsset": 2001976,
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "CooldownTime": 900000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationPriority": 200,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "PauseProductionBuilding": {
+            "Reactions": {
+              "Item": {
+                "CooldownTime": 600000,
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationPriority": 200,
+                      "DisplayTimeout": 2000
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "ResumeProductionBuilding": {
+            "Reactions": {
+              "Item": {
+                "CooldownTime": 600000,
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationPriority": 200,
+                      "DisplayTimeout": 2000
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]

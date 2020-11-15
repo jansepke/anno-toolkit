@@ -1,0 +1,620 @@
+[
+  {
+    "Template": "A7_QuestItemUsage",
+    "Values": {
+      "Standard": {
+        "GUID": 152560,
+        "Name": "Use Item/Smuggle Sunken Poetry 3 - Submarine Archaeology - Pincess Qing DISABLED"
+      },
+      "Quest": {
+        "InvitationMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": {
+                "SubtitleGroup": 447738651
+              }
+            }
+          }
+        },
+        "OnQuestDeclined": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "ExecutionDelay": 60000,
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionDeleteObjects",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionDeleteObjects": "",
+                                      "ObjectFilter": {
+                                        "ObjectGUID": 102578
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "OnQuestEnd": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "ExecutionDelay": 60000,
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionDeleteObjects",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionDeleteObjects": "",
+                                      "ObjectFilter": {
+                                        "ObjectGUID": 102578
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "QuestGiver": 79,
+        "StoryText": 18020,
+        "IsEnabled": 0,
+        "DelayTimer": 90000
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Forgotten Words 3 — Epic Hero",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 26238
+      },
+      "Reward": {
+        "RewardAssets": {
+          "Item": [
+            {
+              "Reward": 150038,
+              "Amount": 3
+            },
+            {
+              "Reward": 190965,
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "ItemUsageObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 500173
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestItemUsed": {
+                  "UseItems": {
+                    "Item": [
+                      {
+                        "Item": 190024,
+                        "Amount": 1,
+                        "TargetObject": 100439
+                      },
+                      {
+                        "Item": 6000031,
+                        "Amount": 5
+                      }
+                    ]
+                  }
+                },
+                "ConditionPropsSessionSettings": "",
+                "ConditionPropsExecutionPlaceSettings": ""
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": {
+        "HasStarterObject": "Specific",
+        "StarterObject": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionStarterObject": {
+              "StarterObjectObject": {
+                "Template": "ConditionObjectSpawnedObject",
+                "Values": {
+                  "ConditionObjectSpawnedObject": {
+                    "ExecutionObject": 102578,
+                    "ObjectSpawnArea": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "SpawnArea": {
+                          "SpawnContext": "ClientObject",
+                          "DistanceToContext": 30
+                        }
+                      }
+                    },
+                    "ObjectDespawnDelay": 60000,
+                    "DoSetVisualObjectOwner": 1,
+                    "VisualObjectOwner": "Second_ai_02_Qing"
+                  },
+                  "ConditionScanner": "",
+                  "ConditionObjectiveSignsAndFeedback": {
+                    "Infolayer": 500173
+                  }
+                }
+              }
+            },
+            "ConditionQuestObjective": "",
+            "ConditionPropsSessionSettings": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "A7_QuestItemUsage",
+    "Values": {
+      "Standard": {
+        "GUID": 120246,
+        "Name": "LoLStory_DiggyDiggyHole_OpenJournal"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "OnQuestStart": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionRegisterTrigger",
+                    "Values": {
+                      "Action": "",
+                      "ActionRegisterTrigger": {
+                        "TriggerAsset": 120247
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "QuestGiver": 120285,
+        "StoryText": 128261,
+        "MaxCallOut": 1,
+        "MaxSolveCount": 1,
+        "QuestTimeLimit": 0,
+        "QuestCategory": "LandOfLionsQuest",
+        "QuestActivation": "QuestStart",
+        "IsAbortable": 0,
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        },
+        "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_questbook_landoflions.png",
+        "ReputationQuestFail": {
+          "ReputationFailList": ""
+        },
+        "QuestHints": {
+          "Item": [
+            {
+              "Text": 113321
+            },
+            {
+              "Text": 113323
+            }
+          ]
+        },
+        "HasStarterSpeechBubble": 0
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Bitter Orange",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 43426
+      },
+      "Reward": {
+        "RewardAssets": "",
+        "RewardReputation": ""
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "A7_QuestItemUsage",
+                    "Index": 0
+                  }
+                }
+              },
+              "Objective": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "ConditionQuestObjective": {
+                    "TextCombinedContextValue": 113319,
+                    "FakeMinimapPings": {
+                      "Objects": {
+                        "Item": {
+                          "FakeMinimapObjects": {
+                            "Template": "ObjectFilter",
+                            "Values": {
+                              "ObjectFilter": {
+                                "ObjectGUID": 119987
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "ConditionQuestItemUsed": {
+                    "UseItems": {
+                      "Item": {
+                        "Item": 119987,
+                        "Amount": 1
+                      }
+                    }
+                  },
+                  "ConditionPropsSessionSettings": "",
+                  "ConditionPropsExecutionPlaceSettings": ""
+                }
+              }
+            },
+            {
+              "Objective": {
+                "Template": "SelectObjectObjective",
+                "Values": {
+                  "ConditionQuestObjective": {
+                    "IsVisibleInQuestTracker": 0
+                  },
+                  "ConditionQuestSelectObject": {
+                    "SelectObjects": {
+                      "Item": {
+                        "Object": {
+                          "Template": "ObjectFilter",
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectGUID": 127026
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "ConditionPropsSessionSettings": "",
+                  "ConditionPropsExecutionPlaceSettings": ""
+                }
+              }
+            }
+          ]
+        }
+      },
+      "QuestOptional": {
+        "HasStarterObject": "None"
+      }
+    }
+  },
+  {
+    "Template": "A7_QuestItemUsage",
+    "Values": {
+      "Standard": {
+        "GUID": 120307,
+        "Name": "LoLStory_MilitaryAccounts_OpenAccounts"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "OnQuestStart": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": [
+                  {
+                    "Action": {
+                      "Template": "ActionRegisterTrigger",
+                      "Values": {
+                        "Action": "",
+                        "ActionRegisterTrigger": {
+                          "TriggerAsset": 120308
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionRegisterTrigger",
+                      "Values": {
+                        "Action": "",
+                        "ActionRegisterTrigger": {
+                          "TriggerAsset": 125319
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "OnQuestSucceeded": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionNotification",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionNotification": {
+                                        "Notification": {
+                                          "Template": "CharacterNotification",
+                                          "Values": {
+                                            "CharacterNotification": {
+                                              "Profile": 120285
+                                            },
+                                            "BaseNotification": {
+                                              "NotificationLabel": "Noti_KyriaOpenAccounts",
+                                              "NotificationText": 119566,
+                                              "DisplayTimeout": 300000
+                                            },
+                                            "NotificationSubtitle": {
+                                              "Subtitle": 119703
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "QuestGiver": 120285,
+        "StoryText": 128262,
+        "MaxCallOut": 1,
+        "MaxSolveCount": 1,
+        "QuestTimeLimit": 0,
+        "QuestCategory": "LandOfLionsQuest",
+        "QuestActivation": "QuestStart",
+        "IsAbortable": 0,
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        },
+        "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_questbook_landoflions.png",
+        "ReputationQuestFail": {
+          "ReputationFailList": ""
+        },
+        "QuestHints": {
+          "Item": [
+            {
+              "Text": 113321
+            },
+            {
+              "Text": 113323
+            }
+          ]
+        },
+        "HasStarterSpeechBubble": 0
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Register of the IXth Regiment",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 43428
+      },
+      "Reward": {
+        "RewardAssets": "",
+        "RewardReputation": ""
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "A7_QuestItemUsage",
+                    "Index": 0
+                  }
+                }
+              },
+              "Objective": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "ConditionQuestObjective": {
+                    "TextCombinedContextValue": 113319,
+                    "FakeMinimapPings": {
+                      "Objects": {
+                        "Item": {
+                          "FakeMinimapObjects": {
+                            "Template": "ObjectFilter",
+                            "Values": {
+                              "ObjectFilter": {
+                                "ObjectGUID": 119989
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "ConditionQuestItemUsed": {
+                    "UseItems": {
+                      "Item": {
+                        "Item": 119989,
+                        "Amount": 1
+                      }
+                    }
+                  },
+                  "ConditionPropsSessionSettings": "",
+                  "ConditionPropsExecutionPlaceSettings": ""
+                }
+              }
+            },
+            {
+              "Objective": {
+                "Template": "SelectObjectObjective",
+                "Values": {
+                  "ConditionQuestObjective": {
+                    "IsVisibleInQuestTracker": 0
+                  },
+                  "ConditionQuestSelectObject": {
+                    "SelectObjects": {
+                      "Item": {
+                        "Object": {
+                          "Template": "ObjectFilter",
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectGUID": 127026
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "ConditionPropsSessionSettings": "",
+                  "ConditionPropsExecutionPlaceSettings": ""
+                }
+              }
+            }
+          ]
+        }
+      },
+      "QuestOptional": {
+        "HasStarterObject": "None"
+      }
+    }
+  }
+]

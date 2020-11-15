@@ -1,0 +1,285 @@
+[
+  {
+    "Template": "FireIncident",
+    "Values": {
+      "IncidentFire": {
+        "BombardmentFireChance": {
+          "Item": [
+            {
+              "MinHitPointPercentage": 50,
+              "MaxHitPointPercentage": 90,
+              "FireChance": 10
+            },
+            {
+              "MinHitPointPercentage": 30,
+              "MaxHitPointPercentage": 50,
+              "FireChance": 25
+            },
+            {
+              "MinHitPointPercentage": 20,
+              "MaxHitPointPercentage": 30,
+              "FireChance": 50
+            },
+            {
+              "MaxHitPointPercentage": 20,
+              "FireChance": 75
+            }
+          ]
+        },
+        "DamagePerFireTick": 20,
+        "FireTickRateMs": 3000
+      },
+      "Standard": {
+        "GUID": 2001025,
+        "Name": "FireIncident",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_incident_fire.png"
+      },
+      "Incident": {
+        "IncidentMurmur_DEPRECATED": "IncidentFire",
+        "IncidentInfolayerIcon": 500307,
+        "ResolveInfolayerIcon": 500308,
+        "InfectionData": {
+          "InfectionBaseIntervalMax": 40000
+        },
+        "IncidentAttractiveness": {
+          "BasePerBuilding": 0,
+          "EscalatedPerBuilding": -50
+        },
+        "ShipIncidentDefaultDebuff": 192004,
+        "ShipIncidentSpreadChance": 0,
+        "InfectionChanceSourceNameMapping": {
+          "Base": {
+            "Name": 14431,
+            "Icon": 14431,
+            "NotificationText": 14551
+          },
+          "Damage": {
+            "Name": 14432,
+            "Icon": 14432,
+            "NotificationText": 14553
+          },
+          "Density": {
+            "Name": 14433,
+            "Icon": 14433,
+            "NotificationText": 14555
+          },
+          "HappinessResidence": {
+            "Name": 14434,
+            "Icon": 14434,
+            "NotificationText": 14556
+          },
+          "Satisfaction": {
+            "Name": 14435,
+            "Icon": 14435,
+            "NotificationText": 14557
+          },
+          "WorkingConditionFactory": {
+            "Name": 14436,
+            "Icon": 14436,
+            "NotificationText": 14558
+          },
+          "Productivity": {
+            "Name": 14437,
+            "Icon": 14437,
+            "NotificationText": 14559
+          },
+          "Proximity": {
+            "Name": 14438,
+            "Icon": 14438,
+            "NotificationText": 14560
+          },
+          "HappinessFactory": {
+            "Name": 14439,
+            "Icon": 14439,
+            "NotificationText": 14561
+          },
+          "Newspaper": {
+            "Name": 14496,
+            "Icon": 14496,
+            "NotificationText": 14562
+          },
+          "Upgrades": {
+            "Name": 14495,
+            "Icon": 14495,
+            "NotificationText": 14563
+          },
+          "InfluencerPositive": {
+            "Name": 14497,
+            "Icon": 14497,
+            "NotificationText": 14564
+          },
+          "InfluencerNegative": {
+            "Name": 14498,
+            "Icon": 14498,
+            "NotificationText": 14551
+          },
+          "WorkingConditionResidence": {
+            "Name": 14436,
+            "Icon": 14436,
+            "NotificationText": 14558
+          }
+        },
+        "ResolverConfigurationPerRegion": {
+          "Moderate": {
+            "ResolverConfigs": {
+              "Item": {
+                "FileName": "data/graphics/effects/city_incidents/fire/stories/ci_fire_story_02.cfg"
+              }
+            },
+            "ResolverNextToCarSpawnRight": "data/graphics/effects/city_incidents/fire/stories/ci_fire_story_01.cfg",
+            "ResolverNextToCarSpawnLeft": "data/graphics/effects/city_incidents/fire/stories/ci_fire_story_03.cfg"
+          },
+          "Colony01": {
+            "ResolverConfigs": {
+              "Item": {
+                "FileName": "data/graphics/effects/city_incidents/fire/stories/ci_fire_story_02.cfg"
+              }
+            },
+            "ResolverNextToCarSpawnRight": "data/graphics/effects/city_incidents/fire/stories/ci_fire_story_01.cfg",
+            "ResolverNextToCarSpawnLeft": "data/graphics/effects/city_incidents/fire/stories/ci_fire_story_03.cfg"
+          },
+          "Arctic": {
+            "ResolverConfigs": {
+              "Item": {
+                "FileName": "data/graphics/effects/city_incidents/fire/stories/ci_arctic_fire_story_02.cfg"
+              }
+            },
+            "ResolverNextToCarSpawnRight": "data/graphics/effects/city_incidents/fire/stories/ci_arctic_fire_story_01.cfg",
+            "ResolverNextToCarSpawnLeft": "data/graphics/effects/city_incidents/fire/stories/ci_arctic_fire_story_03.cfg"
+          },
+          "Africa": {
+            "ResolverConfigs": {
+              "Item": {
+                "FileName": "data/dlc06/graphics/effects/city_incidents/fire/stories/ci_fire_story_02.cfg"
+              }
+            },
+            "ResolverNextToCarSpawnRight": "data/dlc06/graphics/effects/city_incidents/fire/stories/ci_fire_story_01.cfg",
+            "ResolverNextToCarSpawnLeft": "data/dlc06/graphics/effects/city_incidents/fire/stories/ci_fire_story_03.cfg"
+          }
+        },
+        "DangerUnsafeExtents": 1,
+        "DangerSafeExtents": 3,
+        "IncidentEscalationPerProgress": {
+          "EarlyGame": {
+            "RequiredActiveInfections": 10
+          },
+          "EarlyMidGame": {
+            "RequiredActiveInfections": 12
+          },
+          "MidGame": {
+            "RequiredActiveInfections": 16
+          },
+          "LateMidGame": {
+            "RequiredActiveInfections": 22
+          },
+          "LateGame": {
+            "RequiredActiveInfections": 32
+          },
+          "EndGame": {
+            "RequiredActiveInfections": 44
+          }
+        },
+        "InfectableCountDependentConfig": {
+          "Item": [
+            "",
+            {
+              "MinInfectableCount": 100
+            },
+            {
+              "MinInfectableCount": 250,
+              "TargetInfectionFactor": 0.9,
+              "InitialInfectionFactor": 0.28
+            },
+            {
+              "MinInfectableCount": 500,
+              "TargetInfectionFactor": 0.7,
+              "InitialInfectionFactor": 0.21
+            },
+            {
+              "MinInfectableCount": 850,
+              "TargetInfectionFactor": 0.5,
+              "InitialInfectionFactor": 0.14
+            },
+            {
+              "MinInfectableCount": 1300,
+              "TargetInfectionFactor": 0.4,
+              "InitialInfectionFactor": 0.1
+            },
+            {
+              "MinInfectableCount": 1900,
+              "TargetInfectionFactor": 0.35,
+              "InitialInfectionFactor": 0.08
+            },
+            {
+              "MinInfectableCount": 2700,
+              "TargetInfectionFactor": 0.3,
+              "InitialInfectionFactor": 0.06
+            },
+            {
+              "MinInfectableCount": 4000,
+              "TargetInfectionFactor": 0.25,
+              "InitialInfectionFactor": 0.05
+            }
+          ]
+        },
+        "IncidentMurmur": {
+          "Moderate": {
+            "Murmur": "IncidentFire"
+          },
+          "Arctic": {
+            "Murmur": "Arctic_IncidentFire"
+          },
+          "Africa": {
+            "Murmur": "IncidentFire"
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Fire",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 25920
+      },
+      "IncidentEffectConfiguration": {
+        "DummyEffectInformation": {
+          "DummyEffects": {
+            "Vertical": {
+              "ConfigFiles": {
+                "Item": {
+                  "Path": "data/graphics/effects/city_incidents/fire/fire_vert_01.cfg",
+                  "UseDummyScale": 1
+                }
+              }
+            },
+            "Horizontal": {
+              "ConfigFiles": {
+                "Item": {
+                  "Path": "data/graphics/effects/city_incidents/fire/fire_01.cfg",
+                  "UseDummyScale": 1
+                }
+              }
+            },
+            "General": {
+              "ConfigFiles": {
+                "Item": {
+                  "Path": "data/graphics/effects/city_incidents/fire/fire_smoke_01.cfg",
+                  "UseDummyScale": 1
+                }
+              }
+            }
+          },
+          "FallbackConfig": {
+            "SpawnBlockSize": 2,
+            "RandomBoundsPercentage": 75,
+            "Scale": 0.5
+          },
+          "DummyFallbackUsage": "DUMMY_OR_FALLBACK"
+        }
+      }
+    }
+  }
+]

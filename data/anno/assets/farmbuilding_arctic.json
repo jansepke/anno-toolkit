@@ -1,0 +1,781 @@
+[
+  {
+    "Template": "FarmBuilding_Arctic",
+    "Values": {
+      "Standard": {
+        "GUID": 112676,
+        "Name": "agriculture_arctic_03 (Goose Farm)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_goose_feathers.png"
+      },
+      "Building": {
+        "BuildingCategoryName": 11175
+      },
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FarmBuilding",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "FarmBuilding_Arctic",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "Amount": 200
+            },
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "FarmBuilding",
+                    "Index": 1
+                  }
+                }
+              },
+              "Ingredient": 1010196,
+              "Amount": 10
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FarmBuilding",
+                      "Index": 2
+                    },
+                    {
+                      "TemplateName": "FarmBuilding_Arctic",
+                      "Index": 2
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FarmBuilding",
+                      "Index": 3
+                    },
+                    {
+                      "TemplateName": "FarmBuilding_Arctic",
+                      "Index": 3
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FarmBuilding",
+                      "Index": 4
+                    },
+                    {
+                      "TemplateName": "FarmBuilding_Arctic",
+                      "Index": 4
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FarmBuilding",
+                      "Index": 5
+                    },
+                    {
+                      "TemplateName": "FarmBuilding_Arctic",
+                      "Index": 5
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc03/graphics/buildings/production/production_colony03_02/production_colony03_02.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "ParticipantMessageArcheType": "Arctic_Resident_tier01_atWork"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Goose Farm",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35074
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": [
+            {
+              "Sound": 247118
+            },
+            {
+              "Sound": 236982
+            }
+          ]
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        }
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 112697,
+            "Amount": 1,
+            "StorageAmount": 1
+          }
+        },
+        "CycleTime": 120
+      },
+      "LogisticNode": "",
+      "ModuleOwner": {
+        "ModuleLimits": {
+          "Main": {
+            "Limit": 5
+          }
+        },
+        "ConstructionOptions": {
+          "Item": {
+            "ModuleGUID": 112677
+          }
+        },
+        "ModuleBuildRadius": 7,
+        "FarmType": "AnimalFarm"
+      },
+      "AmbientMoodProvider": {
+        "Murmur": "Arctic_Farm",
+        "GlacierMurmur": "Arctic_Farm"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 70,
+              "InactiveAmount": 35
+            },
+            {
+              "Product": 112653,
+              "Amount": 35,
+              "ShutdownThreshold": 0.2
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 1500
+      },
+      "IncidentInfectable": {
+        "Infectable": {
+          "Illness": {
+            "Escalated": 0
+          },
+          "Riot": {
+            "Base": 0,
+            "Escalated": 0
+          },
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "IncidentInfectionChanceFactors": {
+          "Explosion": {
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Riot": {
+            "FactoryOvertimeFactor": 0,
+            "FactoryUndertimeFactor": 0,
+            "FactoryHappinessFactor": 0,
+            "ResidenceHappinessFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0
+          },
+          "Illness": {
+            "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          }
+        }
+      },
+      "Pausable": "",
+      "Culture": "",
+      "QuestObject": "",
+      "Heated": ""
+    }
+  },
+  {
+    "Template": "FarmBuilding_Arctic",
+    "Values": {
+      "Standard": {
+        "GUID": 112682,
+        "Name": "agriculture_arctic_05 (Husky Farm)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/animals/icon_husky.png"
+      },
+      "Building": {
+        "BuildingCategoryName": 11175
+      },
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FarmBuilding",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "FarmBuilding_Arctic",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "Amount": 3000
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FarmBuilding",
+                      "Index": 1
+                    },
+                    {
+                      "TemplateName": "FarmBuilding_Arctic",
+                      "Index": 1
+                    }
+                  ]
+                }
+              },
+              "Amount": 20
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FarmBuilding",
+                      "Index": 2
+                    },
+                    {
+                      "TemplateName": "FarmBuilding_Arctic",
+                      "Index": 2
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FarmBuilding",
+                      "Index": 3
+                    },
+                    {
+                      "TemplateName": "FarmBuilding_Arctic",
+                      "Index": 3
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FarmBuilding",
+                      "Index": 4
+                    },
+                    {
+                      "TemplateName": "FarmBuilding_Arctic",
+                      "Index": 4
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FarmBuilding",
+                      "Index": 5
+                    },
+                    {
+                      "TemplateName": "FarmBuilding_Arctic",
+                      "Index": 5
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc03/graphics/buildings/production/production_colony03_09/production_colony_03_09.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "ParticipantMessageArcheType": "Arctic_Resident_tier02_atWork"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Husky Farm",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35076
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": [
+            {
+              "Sound": 247118
+            },
+            {
+              "Sound": 236990
+            }
+          ]
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        }
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 112698,
+            "Amount": 1,
+            "StorageAmount": 1
+          }
+        },
+        "CycleTime": 120
+      },
+      "LogisticNode": "",
+      "ModuleOwner": {
+        "ModuleLimits": {
+          "Main": {
+            "Limit": 4
+          }
+        },
+        "ConstructionOptions": {
+          "Item": {
+            "ModuleGUID": 112683
+          }
+        },
+        "ModuleBuildRadius": 7,
+        "FarmType": "AnimalFarm"
+      },
+      "AmbientMoodProvider": {
+        "Murmur": "Arctic_Farm",
+        "GlacierMurmur": "Arctic_Farm"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 150,
+              "InactiveAmount": 75
+            },
+            {
+              "Product": 112654,
+              "Amount": 80,
+              "ShutdownThreshold": 0.2
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 1750
+      },
+      "IncidentInfectable": {
+        "Infectable": {
+          "Illness": {
+            "Escalated": 0
+          },
+          "Riot": {
+            "Base": 0,
+            "Escalated": 0
+          },
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "IncidentInfectionChanceFactors": {
+          "Explosion": {
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Riot": {
+            "FactoryOvertimeFactor": 0,
+            "FactoryUndertimeFactor": 0,
+            "FactoryHappinessFactor": 0,
+            "ResidenceHappinessFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0
+          },
+          "Illness": {
+            "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          }
+        }
+      },
+      "Pausable": "",
+      "Culture": "",
+      "QuestObject": "",
+      "Heated": ""
+    }
+  },
+  {
+    "Template": "FarmBuilding_Arctic",
+    "Values": {
+      "Standard": {
+        "GUID": 112690,
+        "Name": "mining_arctic_01 (Gas Mine)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_gas_red.png"
+      },
+      "Building": {
+        "BuildModeRandomRotation": 90
+      },
+      "Blocking": {
+        "HasBuildingBaseTiles": 1
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FarmBuilding",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "FarmBuilding_Arctic",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "Amount": 8000
+            },
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "FarmBuilding",
+                    "Index": 1
+                  }
+                }
+              },
+              "Ingredient": 1010196,
+              "Amount": 20
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FarmBuilding",
+                      "Index": 2
+                    },
+                    {
+                      "TemplateName": "FarmBuilding_Arctic",
+                      "Index": 2
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FarmBuilding",
+                      "Index": 3
+                    },
+                    {
+                      "TemplateName": "FarmBuilding_Arctic",
+                      "Index": 3
+                    }
+                  ]
+                }
+              },
+              "Amount": 5
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FarmBuilding",
+                      "Index": 4
+                    },
+                    {
+                      "TemplateName": "FarmBuilding_Arctic",
+                      "Index": 4
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FarmBuilding",
+                      "Index": 5
+                    },
+                    {
+                      "TemplateName": "FarmBuilding_Arctic",
+                      "Index": 5
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc03/graphics/buildings/production/production_colony03_06/production_colony03_06.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "ParticipantMessageArcheType": "Arctic_Resident_tier02_atWork"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Gas Mine",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35085
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 242757
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "FarmBuilding_Arctic",
+                    "Index": 0
+                  }
+                }
+              },
+              "Sound": 9818759
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        }
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 112706,
+            "Amount": 1,
+            "StorageAmount": 1
+          }
+        },
+        "CycleTime": 270
+      },
+      "LogisticNode": "",
+      "ModuleOwner": {
+        "ModulesRequiredForFullProductivity": 1,
+        "ConstructionOptions": {
+          "Item": {
+            "ModuleGUID": 113751
+          }
+        }
+      },
+      "AmbientMoodProvider": {
+        "AmbientMood": "IndustryHeavy",
+        "Murmur": "Arctic_Mine",
+        "GlacierMurmur": "Arctic_Mine"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 1000,
+              "InactiveAmount": 500
+            },
+            {
+              "Product": 112654,
+              "Amount": 250,
+              "ShutdownThreshold": 0.2
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 2500
+      },
+      "IncidentInfectable": {
+        "Infectable": {
+          "Illness": {
+            "Escalated": 0
+          },
+          "Riot": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 2000,
+          "DamageExplosionChance": 30,
+          "DamageExplosionCheckMax": 40
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "BaseChance": 10,
+            "DensityFactor": 0.1,
+            "DensityDistance": 20
+          },
+          "Explosion": {
+            "BaseChance": 16,
+            "FactoryProductivityFactor": 0.025,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Riot": {
+            "FactoryOvertimeFactor": 0,
+            "FactoryUndertimeFactor": 0,
+            "FactoryHappinessFactor": 0,
+            "ResidenceHappinessFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0
+          },
+          "Illness": {
+            "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          }
+        }
+      },
+      "Pausable": "",
+      "Culture": "",
+      "QuestObject": "",
+      "Heated": ""
+    }
+  }
+]

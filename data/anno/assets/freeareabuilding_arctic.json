@@ -1,0 +1,1003 @@
+[
+  {
+    "Template": "FreeAreaBuilding_Arctic",
+    "Values": {
+      "Standard": {
+        "GUID": 114703,
+        "Name": "agriculture_arctic_01 (Timber Yard)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_wood_log.png"
+      },
+      "Building": {
+        "SkipUnlockMessage": 1,
+        "BuildModeRandomRotation": 90
+      },
+      "Blocking": {
+        "DeletePropsRadius": 1
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 100
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "FreeAreaBuilding_Arctic",
+                    "Index": 1
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "FreeAreaBuilding_Arctic",
+                    "Index": 2
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "FreeAreaBuilding_Arctic",
+                    "Index": 3
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "FreeAreaBuilding_Arctic",
+                    "Index": 4
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "FreeAreaBuilding_Arctic",
+                    "Index": 5
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc03/graphics/buildings/production/production_colony03_14/production_colony03_14.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "ParticipantMessageArcheType": "Arctic_Resident_tier01_atWork",
+        "Colors": {
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Lumberjack's Hut",
+            "Status": "Exported",
+            "ExportCount": 5
+          }
+        },
+        "LineID": 35488
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": [
+            {
+              "Sound": 247118
+            },
+            {
+              "Sound": 235134
+            }
+          ]
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 202404
+            }
+          },
+          "BuildMoveSuccess": {
+            "Item": {
+              "Sound": 202404
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          },
+          "ExplosionOneShots": {
+            "Item": {
+              "Sound": 203849
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        },
+        "MaterialType": "Wood"
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": {
+        "NeededFertility": 114236
+      },
+      "FactoryBase": {
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 120008,
+            "Amount": 1,
+            "StorageAmount": 8
+          }
+        },
+        "CycleTime": 15
+      },
+      "LogisticNode": "",
+      "AmbientMoodProvider": {
+        "AmbientMood": "AgricultureBuildingsEurope",
+        "Murmur": "Arctic_Farm",
+        "GlacierMurmur": "Arctic_Farm",
+        "DynamicEnvironmentType": "None"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 20,
+              "InactiveAmount": 10
+            },
+            {
+              "Product": 112653,
+              "Amount": 10,
+              "ShutdownThreshold": 0.2
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 1500,
+        "SelfHealPerHealTick": 4
+      },
+      "FreeAreaProductivity": {
+        "InfluenceRadius": 9,
+        "NeededAreaPercent": 80,
+        "WorkerUnit": 102433,
+        "MaxWorkerAmount": 3,
+        "WorkerPause": 10000
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Illness": {
+            "Escalated": 0
+          },
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          },
+          "Riot": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 1000
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "DensityFactor": 0.1,
+            "DensityDistance": 20,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          },
+          "Riot": {
+            "FactoryOvertimeFactor": 0,
+            "FactoryUndertimeFactor": 0,
+            "FactoryHappinessFactor": 0,
+            "ResidenceHappinessFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "HappinessThreshold": 20
+          },
+          "Illness": {
+            "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Explosion": {
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          }
+        }
+      },
+      "Culture": {
+        "CultureType": "Landscaping"
+      },
+      "Heated": ""
+    }
+  },
+  {
+    "Template": "FreeAreaBuilding_Arctic",
+    "Values": {
+      "Standard": {
+        "GUID": 112667,
+        "Name": "agriculture_arctic_02 (Caribou Hunter)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_reindeer_meat.png"
+      },
+      "Building": "",
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FreeAreaBuilding",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "FreeAreaBuilding_Arctic",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "Amount": 200
+            },
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "FreeAreaBuilding",
+                    "Index": 1
+                  }
+                }
+              },
+              "Ingredient": 1010196,
+              "Amount": 2
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FreeAreaBuilding",
+                      "Index": 2
+                    },
+                    {
+                      "TemplateName": "FreeAreaBuilding_Arctic",
+                      "Index": 2
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FreeAreaBuilding",
+                      "Index": 3
+                    },
+                    {
+                      "TemplateName": "FreeAreaBuilding_Arctic",
+                      "Index": 3
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FreeAreaBuilding",
+                      "Index": 4
+                    },
+                    {
+                      "TemplateName": "FreeAreaBuilding_Arctic",
+                      "Index": 4
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FreeAreaBuilding",
+                      "Index": 5
+                    },
+                    {
+                      "TemplateName": "FreeAreaBuilding_Arctic",
+                      "Index": 5
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc03/graphics/buildings/production/production_colony03_15/production_colony03_15.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "ParticipantMessageArcheType": "Arctic_Resident_tier01_atWork"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Caribou Hunter",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35073
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": [
+            {
+              "Sound": 247118
+            },
+            {
+              "Sound": 236978
+            }
+          ]
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          },
+          "ExplosionOneShots": {
+            "Item": {
+              "Sound": 203849
+            }
+          }
+        }
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": {
+        "NeededFertility": 112858
+      },
+      "FactoryBase": {
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 112694,
+            "Amount": 1,
+            "StorageAmount": 2
+          }
+        },
+        "CycleTime": 60
+      },
+      "LogisticNode": "",
+      "AmbientMoodProvider": {
+        "Murmur": "Arctic_Farm",
+        "GlacierMurmur": "Arctic_Farm"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 40,
+              "InactiveAmount": 20
+            },
+            {
+              "Product": 112653,
+              "Amount": 25,
+              "ShutdownThreshold": 0.2
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 1500
+      },
+      "FreeAreaProductivity": {
+        "InfluenceRadius": 11,
+        "FreeAreaType": "Hunter",
+        "WorkerUnit": 102433,
+        "MaxWorkerAmount": 2,
+        "WorkerPause": 10000,
+        "CutTree": 0
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Illness": {
+            "Escalated": 0
+          },
+          "Riot": {
+            "Base": 0,
+            "Escalated": 0
+          },
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "IncidentInfectionChanceFactors": {
+          "Explosion": {
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Riot": {
+            "FactoryOvertimeFactor": 0,
+            "FactoryUndertimeFactor": 0,
+            "FactoryHappinessFactor": 0,
+            "ResidenceHappinessFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0
+          },
+          "Illness": {
+            "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          }
+        }
+      },
+      "Culture": "",
+      "Heated": ""
+    }
+  },
+  {
+    "Template": "FreeAreaBuilding_Arctic",
+    "Values": {
+      "Standard": {
+        "GUID": 112673,
+        "Name": "agriculture_arctic_04 (Bear Hunter)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_bear_fur.png"
+      },
+      "Building": "",
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FreeAreaBuilding",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "FreeAreaBuilding_Arctic",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "Amount": 2000
+            },
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "FreeAreaBuilding",
+                    "Index": 1
+                  }
+                }
+              },
+              "Ingredient": 1010196,
+              "Amount": 5
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FreeAreaBuilding",
+                      "Index": 2
+                    },
+                    {
+                      "TemplateName": "FreeAreaBuilding_Arctic",
+                      "Index": 2
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FreeAreaBuilding",
+                      "Index": 3
+                    },
+                    {
+                      "TemplateName": "FreeAreaBuilding_Arctic",
+                      "Index": 3
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FreeAreaBuilding",
+                      "Index": 4
+                    },
+                    {
+                      "TemplateName": "FreeAreaBuilding_Arctic",
+                      "Index": 4
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FreeAreaBuilding",
+                      "Index": 5
+                    },
+                    {
+                      "TemplateName": "FreeAreaBuilding_Arctic",
+                      "Index": 5
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc03/graphics/buildings/production/production_colony03_17/production_colony03_17.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "ParticipantMessageArcheType": "Arctic_Resident_tier01_atWork"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Bear Hunter",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 35075
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": [
+            {
+              "Sound": 247118
+            },
+            {
+              "Sound": 236986
+            }
+          ]
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          },
+          "ExplosionOneShots": {
+            "Item": {
+              "Sound": 203849
+            }
+          }
+        }
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": {
+        "NeededFertility": 112859
+      },
+      "FactoryBase": {
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 112695,
+            "Amount": 1,
+            "StorageAmount": 1
+          }
+        },
+        "CycleTime": 90
+      },
+      "LogisticNode": "",
+      "AmbientMoodProvider": {
+        "Murmur": "Arctic_Farm",
+        "GlacierMurmur": "Arctic_Farm"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 90,
+              "InactiveAmount": 45
+            },
+            {
+              "Product": 112653,
+              "Amount": 40,
+              "ShutdownThreshold": 0.2
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 2000
+      },
+      "FreeAreaProductivity": {
+        "InfluenceRadius": 13,
+        "FreeAreaType": "Hunter2",
+        "WorkerUnit": 102433,
+        "MaxWorkerAmount": 2,
+        "WorkerPause": 10000,
+        "CutTree": 0
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Illness": {
+            "Escalated": 0
+          },
+          "Riot": {
+            "Base": 0,
+            "Escalated": 0
+          },
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "IncidentInfectionChanceFactors": {
+          "Explosion": {
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Riot": {
+            "FactoryOvertimeFactor": 0,
+            "FactoryUndertimeFactor": 0,
+            "FactoryHappinessFactor": 0,
+            "ResidenceHappinessFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0
+          },
+          "Illness": {
+            "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          }
+        }
+      },
+      "Culture": "",
+      "Heated": ""
+    }
+  },
+  {
+    "Template": "FreeAreaBuilding_Arctic",
+    "Values": {
+      "Standard": {
+        "GUID": 116034,
+        "Name": "agriculture_arctic_06 (Normal Fur Hunter)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_fur.png"
+      },
+      "Building": "",
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FreeAreaBuilding",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "FreeAreaBuilding_Arctic",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "Amount": 200
+            },
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "FreeAreaBuilding",
+                    "Index": 1
+                  }
+                }
+              },
+              "Ingredient": 1010196,
+              "Amount": 2
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FreeAreaBuilding",
+                      "Index": 2
+                    },
+                    {
+                      "TemplateName": "FreeAreaBuilding_Arctic",
+                      "Index": 2
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FreeAreaBuilding",
+                      "Index": 3
+                    },
+                    {
+                      "TemplateName": "FreeAreaBuilding_Arctic",
+                      "Index": 3
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FreeAreaBuilding",
+                      "Index": 4
+                    },
+                    {
+                      "TemplateName": "FreeAreaBuilding_Arctic",
+                      "Index": 4
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FreeAreaBuilding",
+                      "Index": 5
+                    },
+                    {
+                      "TemplateName": "FreeAreaBuilding_Arctic",
+                      "Index": 5
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc03/graphics/buildings/production/production_colony03_18/production_colony03_18.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "ParticipantMessageArcheType": "Arctic_Resident_tier01_atWork"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Prime Hunting Cabin",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 35489
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": [
+            {
+              "Sound": 247118
+            },
+            {
+              "Sound": 243099
+            }
+          ]
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          },
+          "ExplosionOneShots": {
+            "Item": {
+              "Sound": 203849
+            }
+          }
+        }
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": {
+        "NeededFertility": 1010581
+      },
+      "FactoryBase": {
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 1010209,
+            "Amount": 1,
+            "StorageAmount": 8
+          }
+        },
+        "CycleTime": 15
+      },
+      "LogisticNode": "",
+      "AmbientMoodProvider": {
+        "Murmur": "Arctic_Farm",
+        "GlacierMurmur": "Arctic_Farm"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 50,
+              "InactiveAmount": 25
+            },
+            {
+              "Product": 112653,
+              "Amount": 40,
+              "ShutdownThreshold": 0.2
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 2000
+      },
+      "FreeAreaProductivity": {
+        "InfluenceRadius": 11,
+        "FreeAreaType": "Hunter",
+        "WorkerUnit": 102433,
+        "MaxWorkerAmount": 2,
+        "WorkerPause": 10000,
+        "CutTree": 0
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Illness": {
+            "Escalated": 0
+          },
+          "Riot": {
+            "Base": 0,
+            "Escalated": 0
+          },
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "IncidentInfectionChanceFactors": {
+          "Explosion": {
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Riot": {
+            "FactoryOvertimeFactor": 0,
+            "FactoryUndertimeFactor": 0,
+            "FactoryHappinessFactor": 0,
+            "ResidenceHappinessFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0
+          },
+          "Illness": {
+            "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          }
+        }
+      },
+      "Culture": "",
+      "Heated": ""
+    }
+  }
+]
