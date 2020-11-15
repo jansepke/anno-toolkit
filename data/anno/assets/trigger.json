@@ -4207,6 +4207,58 @@
     "Template": "Trigger",
     "Values": {
       "Standard": {
+        "GUID": 112189,
+        "Name": "Start Notification Trade Item"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionIsDiscovered",
+          "Values": {
+            "Condition": "",
+            "ParticipantRelation": {
+              "SourceIsOwner": 1,
+              "TargetParticipant": "Second_ai_11_Mercier"
+            },
+            "ConditionIsDiscovered": "",
+            "ConditionPropsNegatable": ""
+          }
+        },
+        "TriggerActions": {
+          "Item": {
+            "TriggerAction": {
+              "Template": "ActionNotification",
+              "Values": {
+                "Action": "",
+                "ActionNotification": {
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "Profile": 220
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 112202
+                      },
+                      "NotificationSubtitle": {
+                        "Subtitle": 110167
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "TriggerSetup": {
+        "UsedBySecondParties": 0
+      }
+    }
+  },
+  {
+    "Template": "Trigger",
+    "Values": {
+      "Standard": {
         "GUID": 113888,
         "Name": "trigger unlock maps 1.0 - SA"
       },

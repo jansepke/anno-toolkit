@@ -27680,7 +27680,9 @@
         "QuestGiver": 220,
         "StoryText": 111594,
         "MaxSolveCount": 1,
+        "QuestTimeLimit": 0,
         "QuestActivation": "ConfirmationDialog",
+        "IsAbortable": 0,
         "NeededProgressLevel": "MidGame;LateMidGame;LateGame;EndGame",
         "QuestSessionDependencies": {
           "Item": {
@@ -28392,6 +28394,41 @@
             }
           }
         },
+        "OnQuestSucceeded": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": [
+                  {
+                    "Action": {
+                      "Template": "ActionRegisterTrigger",
+                      "Values": {
+                        "Action": "",
+                        "ActionRegisterTrigger": {
+                          "TriggerAsset": 131687,
+                          "UnregisterTrigger": 1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionRegisterTrigger",
+                      "Values": {
+                        "Action": "",
+                        "ActionRegisterTrigger": {
+                          "TriggerAsset": 131688,
+                          "UnregisterTrigger": 1
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
         "OnQuestEnd": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
@@ -28473,7 +28510,9 @@
         },
         "QuestGiver": 220,
         "StoryText": 111607,
+        "QuestTimeLimit": 0,
         "QuestActivation": "QuestStart",
+        "IsAbortable": 0,
         "NeededProgressLevel": "MidGame;LateMidGame;LateGame;EndGame",
         "DelayTimer": 30000,
         "QuestSessionDependencies": {
@@ -29133,6 +29172,41 @@
             }
           }
         },
+        "OnQuestSucceeded": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": [
+                  {
+                    "Action": {
+                      "Template": "ActionRegisterTrigger",
+                      "Values": {
+                        "Action": "",
+                        "ActionRegisterTrigger": {
+                          "TriggerAsset": 131687,
+                          "UnregisterTrigger": 1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionRegisterTrigger",
+                      "Values": {
+                        "Action": "",
+                        "ActionRegisterTrigger": {
+                          "TriggerAsset": 131688,
+                          "UnregisterTrigger": 1
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
         "OnQuestEnd": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
@@ -29214,7 +29288,9 @@
         },
         "QuestGiver": 45,
         "StoryText": 111607,
+        "QuestTimeLimit": 0,
         "QuestActivation": "QuestStart",
+        "IsAbortable": 0,
         "NeededProgressLevel": "MidGame;LateMidGame;LateGame;EndGame",
         "DelayTimer": 30000,
         "QuestSessionDependencies": {

@@ -67,7 +67,7 @@ function processAssets(assets) {
 }
 
 async function parseXMLDataFile(file) {
-  const xml = await fs.readFile(`./data/${file}.xml`, "utf8");
+  const xml = await fs.readFile(`./import-data/${file}.xml`, "utf8");
 
   try {
     return parser.parse(xml, {}, true);

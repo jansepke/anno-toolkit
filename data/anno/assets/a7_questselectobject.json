@@ -1091,9 +1091,10 @@
           "English": {
             "Text": "The Big Blue",
             "Status": "Exported",
-            "ExportCount": 2
+            "ExportCount": 3
           }
-        }
+        },
+        "LineID": 48150
       },
       "Reward": {
         "RewardAssets": "",
@@ -4974,7 +4975,8 @@
                         "Template": "ObjectFilter",
                         "Values": {
                           "ObjectFilter": {
-                            "ObjectGUID": 102011
+                            "ObjectGUID": 102011,
+                            "ObjectRestrictToQuestObjects": 1
                           }
                         }
                       }
@@ -20476,7 +20478,7 @@
                           "Template": "ObjectFilter",
                           "Values": {
                             "ObjectFilter": {
-                              "ObjectGUID": 128281,
+                              "ObjectGUID": 128317,
                               "ObjectSession": 112132
                             }
                           }
@@ -36664,6 +36666,577 @@
             }
           }
         }
+      },
+      "QuestOptional": {
+        "HasStarterObject": "None"
+      }
+    }
+  },
+  {
+    "Template": "A7_QuestSelectObject",
+    "Values": {
+      "Standard": {
+        "GUID": 130792,
+        "Name": "Waha_16b_LetTheWatersFlow"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "SelectionReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "ResolveConfirmationMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationSmugglerQuestMessage": {
+          "SuppressMessage": 1
+        },
+        "SmugglerQuestTradingStationReached": {
+          "SuppressMessage": 1
+        },
+        "StartInvitationGiveItemMessage": {
+          "SuppressMessage": 1
+        },
+        "OnQuestStart": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": [
+                  {
+                    "Action": {
+                      "Template": "ActionNotification",
+                      "Values": {
+                        "Action": "",
+                        "ActionNotification": {
+                          "Notification": {
+                            "Template": "CharacterNotification",
+                            "Values": {
+                              "CharacterNotification": {
+                                "Profile": 119051
+                              },
+                              "BaseNotification": {
+                                "NotificationText": 130794
+                              },
+                              "NotificationSubtitle": {
+                                "Subtitle": 128161
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionRegisterTrigger",
+                      "Values": {
+                        "Action": "",
+                        "ActionRegisterTrigger": {
+                          "TriggerAsset": 130791,
+                          "UnregisterTrigger": 1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionDeleteObjects",
+                      "Values": {
+                        "Action": "",
+                        "ActionDeleteObjects": "",
+                        "ObjectFilter": {
+                          "ObjectGUID": 129553,
+                          "ObjectSession": 112132
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "OnQuestSucceeded": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": [
+                  {
+                    "Action": {
+                      "Template": "ActionRegisterTrigger",
+                      "Values": {
+                        "Action": "",
+                        "ActionRegisterTrigger": {
+                          "TriggerAsset": 130430
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionSetObjectVisibility",
+                      "Values": {
+                        "Action": "",
+                        "ActionSetObjectVisibility": {
+                          "Visibility": 1
+                        },
+                        "ObjectFilter": {
+                          "ObjectLabel": "ksar_ketema_production01",
+                          "ObjectSession": 112132
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionSetObjectVisibility",
+                      "Values": {
+                        "Action": "",
+                        "ActionSetObjectVisibility": {
+                          "Visibility": 1
+                        },
+                        "ObjectFilter": {
+                          "ObjectLabel": "ksar_ketema_production02",
+                          "ObjectSession": 112132
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionSetObjectVisibility",
+                      "Values": {
+                        "Action": "",
+                        "ActionSetObjectVisibility": {
+                          "Visibility": 1
+                        },
+                        "ObjectFilter": {
+                          "ObjectLabel": "ksar_ketema_production03",
+                          "ObjectSession": 112132
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionSetObjectVisibility",
+                      "Values": {
+                        "Action": "",
+                        "ActionSetObjectVisibility": {
+                          "Visibility": 1
+                        },
+                        "ObjectFilter": {
+                          "ObjectLabel": "ksar_harbor_warehouse_02",
+                          "ObjectSession": 112132
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionSetObjectVisibility",
+                      "Values": {
+                        "Action": "",
+                        "ActionSetObjectVisibility": "",
+                        "ObjectFilter": {
+                          "ObjectLabel": "ksar_tents01",
+                          "ObjectSession": 112132
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionSetObjectVisibility",
+                      "Values": {
+                        "Action": "",
+                        "ActionSetObjectVisibility": "",
+                        "ObjectFilter": {
+                          "ObjectLabel": "ksar_tents02",
+                          "ObjectSession": 112132
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionSetObjectVisibility",
+                      "Values": {
+                        "Action": "",
+                        "ActionSetObjectVisibility": "",
+                        "ObjectFilter": {
+                          "ObjectLabel": "ksar_tents03",
+                          "ObjectSession": 112132
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionDelayedActions",
+                      "Values": {
+                        "Action": "",
+                        "ActionDelayedActions": {
+                          "ExecutionDelay": 8000,
+                          "DelayedActions": {
+                            "IsBaseAutoCreateAsset": 1,
+                            "Values": {
+                              "ActionList": {
+                                "Actions": {
+                                  "Item": [
+                                    {
+                                      "Action": {
+                                        "Template": "ActionNotification",
+                                        "Values": {
+                                          "Action": "",
+                                          "ActionNotification": {
+                                            "Notification": {
+                                              "Template": "CharacterNotification",
+                                              "Values": {
+                                                "CharacterNotification": {
+                                                  "Profile": 119051
+                                                },
+                                                "BaseNotification": {
+                                                  "NotificationText": 130795
+                                                },
+                                                "NotificationSubtitle": {
+                                                  "Subtitle": 128162
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "Action": {
+                                        "Template": "ActionStartQuest",
+                                        "Values": {
+                                          "Action": "",
+                                          "ActionStartQuest": {
+                                            "Quest": 129937,
+                                            "QuestSession": 112132
+                                          }
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionDelayedActions",
+                      "Values": {
+                        "Action": "",
+                        "ActionDelayedActions": {
+                          "ExecutionDelay": 16000,
+                          "DelayedActions": {
+                            "IsBaseAutoCreateAsset": 1,
+                            "Values": {
+                              "ActionList": {
+                                "Actions": {
+                                  "Item": {
+                                    "Action": {
+                                      "Template": "ActionNotification",
+                                      "Values": {
+                                        "Action": "",
+                                        "ActionNotification": {
+                                          "Notification": {
+                                            "Template": "CharacterNotification",
+                                            "Values": {
+                                              "CharacterNotification": {
+                                                "Profile": 120284
+                                              },
+                                              "BaseNotification": {
+                                                "NotificationText": 130819
+                                              },
+                                              "NotificationSubtitle": {
+                                                "Subtitle": 128170
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionDelayedActions",
+                      "Values": {
+                        "Action": "",
+                        "ActionDelayedActions": {
+                          "ExecutionDelay": 24000,
+                          "DelayedActions": {
+                            "IsBaseAutoCreateAsset": 1,
+                            "Values": {
+                              "ActionList": {
+                                "Actions": {
+                                  "Item": [
+                                    {
+                                      "Action": {
+                                        "Template": "ActionNotification",
+                                        "Values": {
+                                          "Action": "",
+                                          "ActionNotification": {
+                                            "Notification": {
+                                              "Template": "CharacterNotification",
+                                              "Values": {
+                                                "CharacterNotification": {
+                                                  "Profile": 119051
+                                                },
+                                                "BaseNotification": {
+                                                  "NotificationText": 130820
+                                                },
+                                                "NotificationSubtitle": {
+                                                  "Subtitle": 128173
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "Action": {
+                                        "Template": "ActionRegisterTrigger",
+                                        "Values": {
+                                          "Action": "",
+                                          "ActionRegisterTrigger": {
+                                            "TriggerAsset": 130430,
+                                            "UnregisterTrigger": 1
+                                          }
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionEndQuest",
+                      "Values": {
+                        "Action": "",
+                        "ActionEndQuest": {
+                          "Quest": 129929
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionStartQuest",
+                      "Values": {
+                        "Action": "",
+                        "ActionStartQuest": {
+                          "Quest": 129930,
+                          "QuestSession": 112132
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionDelayedActions",
+                      "Values": {
+                        "Action": "",
+                        "ActionDelayedActions": {
+                          "ExecutionDelay": 32000,
+                          "DelayedActions": {
+                            "IsBaseAutoCreateAsset": 1,
+                            "Values": {
+                              "ActionList": {
+                                "Actions": {
+                                  "Item": [
+                                    {
+                                      "Action": {
+                                        "Template": "ActionRegisterTrigger",
+                                        "Values": {
+                                          "Action": "",
+                                          "ActionRegisterTrigger": {
+                                            "TriggerAsset": 130836
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "Action": {
+                                        "Template": "ActionDelayedActions",
+                                        "Values": {
+                                          "Action": "",
+                                          "ActionDelayedActions": {
+                                            "ExecutionDelay": 5000,
+                                            "DelayedActions": {
+                                              "IsBaseAutoCreateAsset": 1,
+                                              "Values": {
+                                                "ActionList": {
+                                                  "Actions": {
+                                                    "Item": {
+                                                      "Action": {
+                                                        "Template": "ActionRegisterTrigger",
+                                                        "Values": {
+                                                          "Action": "",
+                                                          "ActionRegisterTrigger": {
+                                                            "TriggerAsset": 130836,
+                                                            "UnregisterTrigger": 1
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionEndQuest",
+                      "Values": {
+                        "Action": "",
+                        "ActionEndQuest": {
+                          "Quest": 120360,
+                          "WinQuest": 1
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "QuestGiver": 119051,
+        "StoryText": 130793,
+        "MaxCallOut": 1,
+        "MaxSolveCount": 1,
+        "CountForQuestLimit": 0,
+        "QuestTimeLimit": 0,
+        "QuestActivation": "QuestStart",
+        "IsAbortable": 0,
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        },
+        "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_questbook_landoflions.png",
+        "ReputationQuestFail": {
+          "ReputationFailList": ""
+        },
+        "HasStarterSpeechBubble": 0
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Waha Desher:&lt;br/&gt;Let the Waters Flow",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 46281
+      },
+      "Reward": {
+        "RewardAssets": "",
+        "RewardReputation": "",
+        "GenerateIgnoreUnlocks": 1
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "SelectObjectObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 130797,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 131466
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestSelectObject": {
+                  "SelectObjects": {
+                    "Item": {
+                      "Object": {
+                        "Template": "ObjectFilter",
+                        "Values": {
+                          "ObjectFilter": {
+                            "ObjectGUID": 129571,
+                            "ObjectSession": 112132,
+                            "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "ConditionPropsSessionSettings": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        },
+        "WinConditionCompletionOrder": "Linear"
       },
       "QuestOptional": {
         "HasStarterObject": "None"

@@ -13,6 +13,12 @@ npm run build # create production build
 npm run start # run production build
 ```
 
+## Update game data
+
+1. extract `assets.xml`, `texts_english.xml` and `texts_german.xml` from the last `.rda` file
+2. copy files to import-data folder
+3. run `npm run xml-to-json`
+
 ## TODO
 
 - more item types

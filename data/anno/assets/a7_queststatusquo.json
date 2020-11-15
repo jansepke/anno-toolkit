@@ -5272,6 +5272,16 @@
                           "Template": "QuestTradingStation",
                           "Values": {
                             "TradingStation": {
+                              "TradingStationDestination": {
+                                "Template": "ConditionObjectPrebuiltObject",
+                                "Values": {
+                                  "ConditionObjectPrebuiltObject": {
+                                    "PrebuiltObjectLabel": "arctic_player_kontor"
+                                  },
+                                  "ConditionScanner": "",
+                                  "ConditionObjectiveSignsAndFeedback": ""
+                                }
+                              },
                               "TradingStationRetrieveItem": 114424,
                               "TradingStationReachedNotification": {
                                 "IsBaseAutoCreateAsset": 1,
@@ -6787,6 +6797,9 @@
         "SuccessMessage": {
           "SuppressMessage": 1
         },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
         "InvitationMessage": {
           "Notification": {
             "IsBaseAutoCreateAsset": 1,
@@ -6999,6 +7012,9 @@
             }
           }
         },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
         "QuestGiver": 117422,
         "StoryText": 116880,
         "MaxCallOut": 1,
@@ -7166,6 +7182,9 @@
               }
             }
           }
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
         },
         "QuestGiver": 117422,
         "StoryText": 116880,
@@ -9844,6 +9863,7 @@
           }
         },
         "QuestGiver": 119051,
+        "StoryText": 119740,
         "MaxCallOut": 1,
         "MaxSolveCount": 1,
         "QuestTimeLimit": 0,
@@ -9859,6 +9879,20 @@
         "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_questbook_landoflions.png",
         "ReputationQuestFail": {
           "ReputationFailList": ""
+        },
+        "QuestHints": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestStatusQuo",
+                  "Index": 0
+                }
+              }
+            },
+            "Text": 17672
+          }
         },
         "HasStarterSpeechBubble": 0
       },
@@ -10000,6 +10034,7 @@
           }
         },
         "QuestGiver": 119051,
+        "StoryText": 119740,
         "MaxCallOut": 1,
         "MaxSolveCount": 1,
         "QuestTimeLimit": 0,
@@ -10015,6 +10050,20 @@
         "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_questbook_landoflions.png",
         "ReputationQuestFail": {
           "ReputationFailList": ""
+        },
+        "QuestHints": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestStatusQuo",
+                  "Index": 0
+                }
+              }
+            },
+            "Text": 17672
+          }
         },
         "HasStarterSpeechBubble": 0
       },
@@ -10156,6 +10205,7 @@
           }
         },
         "QuestGiver": 119051,
+        "StoryText": 119740,
         "MaxCallOut": 1,
         "MaxSolveCount": 1,
         "QuestTimeLimit": 0,
@@ -10171,6 +10221,20 @@
         "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_questbook_landoflions.png",
         "ReputationQuestFail": {
           "ReputationFailList": ""
+        },
+        "QuestHints": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestStatusQuo",
+                  "Index": 0
+                }
+              }
+            },
+            "Text": 17672
+          }
         },
         "HasStarterSpeechBubble": 0
       },
@@ -10312,6 +10376,7 @@
           }
         },
         "QuestGiver": 119051,
+        "StoryText": 119740,
         "MaxCallOut": 1,
         "MaxSolveCount": 1,
         "QuestTimeLimit": 0,
@@ -10327,6 +10392,20 @@
         "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_questbook_landoflions.png",
         "ReputationQuestFail": {
           "ReputationFailList": ""
+        },
+        "QuestHints": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestStatusQuo",
+                  "Index": 0
+                }
+              }
+            },
+            "Text": 17672
+          }
         },
         "HasStarterSpeechBubble": 0
       },
@@ -16572,7 +16651,16 @@
             "Objective": {
               "Template": "SelectObjectObjective",
               "Values": {
-                "ConditionQuestObjective": "",
+                "ConditionQuestObjective": {
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
                 "ConditionQuestSelectObject": {
                   "SelectObjects": {
                     "Item": {
@@ -16963,7 +17051,16 @@
             "Objective": {
               "Template": "SelectObjectObjective",
               "Values": {
-                "ConditionQuestObjective": "",
+                "ConditionQuestObjective": {
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
                 "ConditionQuestSelectObject": {
                   "SelectObjects": {
                     "Item": {

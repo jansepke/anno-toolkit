@@ -1245,6 +1245,590 @@
     "Template": "TriggerQuest",
     "Values": {
       "Standard": {
+        "GUID": 131686,
+        "Name": "Trigger Mercier MainArc FailedPart4"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionIsParticipantInGame",
+          "Values": {
+            "Condition": "",
+            "ConditionIsParticipantInGame": {
+              "InGameParticipant": "Second_ai_11_Mercier"
+            },
+            "ConditionPropsNegatable": ""
+          }
+        },
+        "TriggerActions": {
+          "Item": {
+            "TriggerAction": {
+              "Template": "ActionDelayedActions",
+              "Values": {
+                "Action": "",
+                "ActionDelayedActions": {
+                  "ExecutionDelay": 60000,
+                  "DelayedActions": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ActionList": {
+                        "Actions": {
+                          "Item": [
+                            {
+                              "Action": {
+                                "Template": "ActionStartQuest",
+                                "Values": {
+                                  "Action": "",
+                                  "ActionStartQuest": {
+                                    "Quest": 110824,
+                                    "QuestSession": 180023
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "Action": {
+                                "Template": "ActionRegisterTrigger",
+                                "Values": {
+                                  "Action": "",
+                                  "ActionRegisterTrigger": {
+                                    "TriggerAsset": 131686
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Template": "ConditionQuestState",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionQuestState": {
+                        "ConditionQuestStateStates": "Reached",
+                        "ConditionQuestStateQuestGUID": 110821
+                      }
+                    }
+                  },
+                  "SubTriggers": {
+                    "Item": {
+                      "SubTrigger": {
+                        "Template": "AutoCreateTrigger",
+                        "Values": {
+                          "Trigger": {
+                            "TriggerCondition": {
+                              "IsBaseAutoCreateAsset": 1,
+                              "Values": {
+                                "Condition": "",
+                                "ConditionAlwaysTrue": ""
+                              }
+                            },
+                            "SubTriggers": {
+                              "Item": [
+                                {
+                                  "SubTrigger": {
+                                    "Template": "AutoCreateTrigger",
+                                    "Values": {
+                                      "Trigger": {
+                                        "TriggerCondition": {
+                                          "Template": "ConditionPlayerCounter",
+                                          "Values": {
+                                            "Condition": "",
+                                            "ConditionPlayerCounter": {
+                                              "PlayerCounter": "QuestEnded",
+                                              "Context": 110824,
+                                              "CounterAmount": 1
+                                            }
+                                          }
+                                        },
+                                        "SubTriggers": {
+                                          "Item": {
+                                            "SubTrigger": {
+                                              "Template": "AutoCreateTrigger",
+                                              "Values": {
+                                                "Trigger": {
+                                                  "TriggerCondition": {
+                                                    "Template": "ConditionPlayerCounter",
+                                                    "Values": {
+                                                      "Condition": "",
+                                                      "ConditionPlayerCounter": {
+                                                        "PlayerCounter": "QuestSolved",
+                                                        "Context": 110824,
+                                                        "ComparisonOp": "AtMost"
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "SubTrigger": {
+                                    "Template": "AutoCreateTrigger",
+                                    "Values": {
+                                      "Trigger": {
+                                        "TriggerCondition": {
+                                          "Template": "ConditionPlayerCounter",
+                                          "Values": {
+                                            "Condition": "",
+                                            "ConditionPlayerCounter": {
+                                              "PlayerCounter": "QuestEnded",
+                                              "Context": 111202,
+                                              "CounterAmount": 1
+                                            }
+                                          }
+                                        },
+                                        "SubTriggers": {
+                                          "Item": {
+                                            "SubTrigger": {
+                                              "Template": "AutoCreateTrigger",
+                                              "Values": {
+                                                "Trigger": {
+                                                  "TriggerCondition": {
+                                                    "Template": "ConditionPlayerCounter",
+                                                    "Values": {
+                                                      "Condition": "",
+                                                      "ConditionPlayerCounter": {
+                                                        "PlayerCounter": "QuestSolved",
+                                                        "Context": 111202,
+                                                        "ComparisonOp": "AtMost"
+                                                      }
+                                                    }
+                                                  },
+                                                  "SubTriggers": {
+                                                    "Item": {
+                                                      "SubTrigger": {
+                                                        "Template": "AutoCreateTrigger",
+                                                        "Values": {
+                                                          "Trigger": {
+                                                            "TriggerCondition": {
+                                                              "Template": "ConditionTimer",
+                                                              "Values": {
+                                                                "Condition": "",
+                                                                "ConditionTimer": {
+                                                                  "TimeLimit": 10000
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "SubTrigger": {
+                                    "Template": "AutoCreateTrigger",
+                                    "Values": {
+                                      "Trigger": {
+                                        "TriggerCondition": {
+                                          "Template": "ConditionPlayerCounter",
+                                          "Values": {
+                                            "Condition": "",
+                                            "ConditionPlayerCounter": {
+                                              "PlayerCounter": "QuestCalled",
+                                              "Context": 111202,
+                                              "CounterAmount": 1
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "TriggerSetup": {
+        "AutoRegisterTrigger": 1
+      }
+    }
+  },
+  {
+    "Template": "TriggerQuest",
+    "Values": {
+      "Standard": {
+        "GUID": 131687,
+        "Name": "Trigger Mercier MainArc FailedPart5a (side with Mercier)"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionIsParticipantInGame",
+          "Values": {
+            "Condition": "",
+            "ConditionIsParticipantInGame": {
+              "InGameParticipant": "Second_ai_11_Mercier"
+            },
+            "ConditionPropsNegatable": ""
+          }
+        },
+        "TriggerActions": {
+          "Item": [
+            {
+              "TriggerAction": {
+                "Template": "ActionSpawnObjects",
+                "Values": {
+                  "Action": "",
+                  "ActionSpawnObjects": {
+                    "SpawnGUID": 110757,
+                    "Amount": 1
+                  },
+                  "SpawnArea": {
+                    "SpawnContext": "Object",
+                    "ContextGUID": 100551,
+                    "DistanceToContext": 200
+                  },
+                  "SessionFilter": {
+                    "Sessions": {
+                      "Item": {
+                        "Session": 180023
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "TriggerAction": {
+                "Template": "ActionDelayedActions",
+                "Values": {
+                  "Action": "",
+                  "ActionDelayedActions": {
+                    "ExecutionDelay": 60000,
+                    "DelayedActions": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ActionList": {
+                          "Actions": {
+                            "Item": [
+                              {
+                                "Action": {
+                                  "Template": "ActionStartQuest",
+                                  "Values": {
+                                    "Action": "",
+                                    "ActionStartQuest": {
+                                      "Quest": 110825,
+                                      "QuestSession": 180023
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "Action": {
+                                  "Template": "ActionRegisterTrigger",
+                                  "Values": {
+                                    "Action": "",
+                                    "ActionRegisterTrigger": {
+                                      "TriggerAsset": 131687
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Template": "ConditionPlayerCounter",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionPlayerCounter": {
+                        "PlayerCounter": "QuestEnded",
+                        "Context": 110825,
+                        "CounterAmount": 1
+                      }
+                    }
+                  },
+                  "SubTriggers": {
+                    "Item": {
+                      "SubTrigger": {
+                        "Template": "AutoCreateTrigger",
+                        "Values": {
+                          "Trigger": {
+                            "TriggerCondition": {
+                              "Template": "ConditionPlayerCounter",
+                              "Values": {
+                                "Condition": "",
+                                "ConditionPlayerCounter": {
+                                  "PlayerCounter": "QuestSolved",
+                                  "Context": 110825,
+                                  "ComparisonOp": "AtMost"
+                                }
+                              }
+                            },
+                            "SubTriggers": {
+                              "Item": {
+                                "SubTrigger": {
+                                  "Template": "AutoCreateTrigger",
+                                  "Values": {
+                                    "Trigger": {
+                                      "TriggerCondition": {
+                                        "Template": "ConditionQuestState",
+                                        "Values": {
+                                          "Condition": "",
+                                          "ConditionQuestState": {
+                                            "ConditionQuestStateStates": "Active",
+                                            "ConditionQuestStateIsBlacklist": 1,
+                                            "ConditionQuestStateQuestGUID": 110825
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "TriggerSetup": {
+        "AutoRegisterTrigger": 1
+      }
+    }
+  },
+  {
+    "Template": "TriggerQuest",
+    "Values": {
+      "Standard": {
+        "GUID": 131688,
+        "Name": "Trigger Mercier MainArc FailedPart5b (side with Blake)"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionIsParticipantInGame",
+          "Values": {
+            "Condition": "",
+            "ConditionIsParticipantInGame": {
+              "InGameParticipant": "Second_ai_11_Mercier"
+            },
+            "ConditionPropsNegatable": ""
+          }
+        },
+        "TriggerActions": {
+          "Item": [
+            {
+              "TriggerAction": {
+                "Template": "ActionSpawnObjects",
+                "Values": {
+                  "Action": "",
+                  "ActionSpawnObjects": {
+                    "SpawnGUID": 110757,
+                    "Amount": 1
+                  },
+                  "SpawnArea": {
+                    "SpawnContext": "Object",
+                    "ContextGUID": 100551,
+                    "DistanceToContext": 200
+                  },
+                  "SessionFilter": {
+                    "Sessions": {
+                      "Item": {
+                        "Session": 180023
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "TriggerAction": {
+                "Template": "ActionDelayedActions",
+                "Values": {
+                  "Action": "",
+                  "ActionDelayedActions": {
+                    "ExecutionDelay": 60000,
+                    "DelayedActions": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ActionList": {
+                          "Actions": {
+                            "Item": [
+                              {
+                                "Action": {
+                                  "Template": "ActionStartQuest",
+                                  "Values": {
+                                    "Action": "",
+                                    "ActionStartQuest": {
+                                      "Quest": 110826,
+                                      "QuestSession": 180023
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "Action": {
+                                  "Template": "ActionRegisterTrigger",
+                                  "Values": {
+                                    "Action": "",
+                                    "ActionRegisterTrigger": {
+                                      "TriggerAsset": 131688
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Template": "ConditionPlayerCounter",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionPlayerCounter": {
+                        "PlayerCounter": "QuestEnded",
+                        "Context": 110826,
+                        "CounterAmount": 1
+                      }
+                    }
+                  },
+                  "SubTriggers": {
+                    "Item": {
+                      "SubTrigger": {
+                        "Template": "AutoCreateTrigger",
+                        "Values": {
+                          "Trigger": {
+                            "TriggerCondition": {
+                              "Template": "ConditionPlayerCounter",
+                              "Values": {
+                                "Condition": "",
+                                "ConditionPlayerCounter": {
+                                  "PlayerCounter": "QuestSolved",
+                                  "Context": 110826,
+                                  "ComparisonOp": "AtMost"
+                                }
+                              }
+                            },
+                            "SubTriggers": {
+                              "Item": {
+                                "SubTrigger": {
+                                  "Template": "AutoCreateTrigger",
+                                  "Values": {
+                                    "Trigger": {
+                                      "TriggerCondition": {
+                                        "Template": "ConditionQuestState",
+                                        "Values": {
+                                          "Condition": "",
+                                          "ConditionQuestState": {
+                                            "ConditionQuestStateStates": "Active",
+                                            "ConditionQuestStateIsBlacklist": 1,
+                                            "ConditionQuestStateQuestGUID": 110826
+                                          }
+                                        }
+                                      },
+                                      "SubTriggers": {
+                                        "Item": {
+                                          "SubTrigger": {
+                                            "Template": "AutoCreateTrigger",
+                                            "Values": {
+                                              "Trigger": {
+                                                "TriggerCondition": {
+                                                  "Template": "ConditionTimer",
+                                                  "Values": {
+                                                    "Condition": "",
+                                                    "ConditionTimer": {
+                                                      "TimeLimit": 10000
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "TriggerSetup": {
+        "AutoRegisterTrigger": 1
+      }
+    }
+  },
+  {
+    "Template": "TriggerQuest",
+    "Values": {
+      "Standard": {
         "GUID": 113654,
         "Name": "SL100_02_EnterSession Trigger"
       },
@@ -12923,13 +13507,18 @@
               "Values": {
                 "Trigger": {
                   "TriggerCondition": {
-                    "Template": "ConditionQuestState",
+                    "Template": "ConditionQuestPoolQuestRunning",
                     "Values": {
                       "Condition": "",
-                      "ConditionQuestState": {
-                        "ConditionQuestStateStates": "Active",
-                        "ConditionQuestStateIsBlacklist": 1,
-                        "ConditionQuestStateQuestGUID": 123831
+                      "ConditionQuestPoolQuestRunning": {
+                        "QuestPoolsToCheck": {
+                          "Item": {
+                            "QuestPool": 128093
+                          }
+                        }
+                      },
+                      "ConditionPropsNegatable": {
+                        "NegateCondition": 1
                       }
                     }
                   }
@@ -20243,6 +20832,86 @@
         }
       },
       "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "TriggerQuest",
+    "Values": {
+      "Standard": {
+        "GUID": 131693,
+        "Name": "Trigger Reenable visibility of pump"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "TriggerActions": {
+          "Item": {
+            "TriggerAction": {
+              "Template": "ActionDelayedActions",
+              "Values": {
+                "Action": "",
+                "ActionDelayedActions": {
+                  "ExecutionDelay": 1000,
+                  "DelayedActions": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ActionList": {
+                        "Actions": {
+                          "Item": {
+                            "Action": {
+                              "Template": "ActionSetObjectVisibility",
+                              "Values": {
+                                "Action": "",
+                                "ActionSetObjectVisibility": {
+                                  "Visibility": 1,
+                                  "ShowEffect": 0
+                                },
+                                "ObjectFilter": {
+                                  "ObjectGUID": 129571,
+                                  "ObjectSession": 112132
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Template": "ConditionQuestState",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionQuestState": {
+                        "ConditionQuestStateStates": "Active",
+                        "ConditionQuestStateQuestGUID": 130792
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "TriggerSetup": {
+        "AutoRegisterTrigger": 1
+      }
     }
   },
   {

@@ -27207,6 +27207,7 @@
                           "Condition": "",
                           "ConditionTutorialInteraction": {
                             "HintType": "Object",
+                            "ShowScrollHintWhenOffscreen": 0,
                             "HintAnchor": "TopLeft",
                             "HintText": 127048,
                             "TutorialUiCategory": "Zoo",
@@ -27307,6 +27308,7 @@
                           "Condition": "",
                           "ConditionTutorialInteraction": {
                             "HintType": "Object",
+                            "ShowScrollHintWhenOffscreen": 0,
                             "HintAnchor": "TopLeft",
                             "HintText": 127049,
                             "TutorialUiCategory": "Zoo",
@@ -27407,6 +27409,7 @@
                           "Condition": "",
                           "ConditionTutorialInteraction": {
                             "HintType": "Object",
+                            "ShowScrollHintWhenOffscreen": 0,
                             "HintAnchor": "TopLeft",
                             "HintText": 127052,
                             "TutorialUiCategory": "Zoo",
@@ -27507,6 +27510,7 @@
                           "Condition": "",
                           "ConditionTutorialInteraction": {
                             "HintType": "Object",
+                            "ShowScrollHintWhenOffscreen": 0,
                             "HintAnchor": "TopLeft",
                             "HintText": 127047,
                             "TutorialUiCategory": "Zoo",
@@ -27607,6 +27611,7 @@
                           "Condition": "",
                           "ConditionTutorialInteraction": {
                             "HintType": "Object",
+                            "ShowScrollHintWhenOffscreen": 0,
                             "HintAnchor": "TopLeft",
                             "HintText": 127046,
                             "TutorialUiCategory": "Zoo",
@@ -32002,6 +32007,176 @@
     "Template": "TutorialQuest",
     "Values": {
       "Standard": {
+        "GUID": 131691,
+        "Name": "Kidusi_IS_01_LibraryAccess_24_GrandPriestess_01"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "OnQuestSucceeded": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartQuest": {
+                        "Quest": 131691,
+                        "QuestSession": 112132
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "QuestGiver": 120282,
+        "CountForQuestLimit": 0,
+        "QuestCategory": "RandomQuest",
+        "LatencyTimer": 0,
+        "QuestTrackerVisibility": "Never",
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Angereb_MarketStalls01"
+          }
+        }
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TutorialQuest",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "Template": "SelectObjectObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "IsVisibleInQuestTracker": 0,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 124402,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  },
+                  "JumpToVisibility": "Hide",
+                  "OnSuccessActions": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ActionList": {
+                        "Actions": {
+                          "Item": {
+                            "Action": {
+                              "Template": "ActionSpeechBubble",
+                              "Values": {
+                                "Action": "",
+                                "ActionSpeechBubble": {
+                                  "SpeechBubbleData": {
+                                    "IsBaseAutoCreateAsset": 1,
+                                    "Values": {
+                                      "Condition": "",
+                                      "ConditionTutorialInteraction": {
+                                        "HintType": "Object",
+                                        "ShowScrollHintWhenOffscreen": 0,
+                                        "HintEndCondition": "Time",
+                                        "HintDisplayTime": 5000,
+                                        "HintAnchor": "BottomRight",
+                                        "HintText": 127618,
+                                        "ObjectFilter": {
+                                          "IsBaseAutoCreateAsset": 1,
+                                          "Values": {
+                                            "ObjectFilter": {
+                                              "ObjectGUID": 124040,
+                                              "ObjectSession": 112132
+                                            }
+                                          }
+                                        },
+                                        "UseSpecificPortrait": 1,
+                                        "SpecificPortraitProfile": 120282,
+                                        "SpecifyHintColorType": 1,
+                                        "HintColorType": "Quest",
+                                        "DeselectObjectOnClose": 1
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestSelectObject": {
+                  "SelectObjects": {
+                    "Item": {
+                      "Object": {
+                        "Template": "ObjectFilter",
+                        "Values": {
+                          "ObjectFilter": {
+                            "ObjectGUID": 124040,
+                            "ObjectSession": 112132
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "ConditionPropsSessionSettings": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": "",
+      "QuestDynamicPriority": ""
+    }
+  },
+  {
+    "Template": "TutorialQuest",
+    "Values": {
+      "Standard": {
         "GUID": 123845,
         "Name": "Kidusi_IS_01_Unique_01_Thief01"
       },
@@ -36018,7 +36193,7 @@
                                         "HintType": "Object",
                                         "ShowScrollHintWhenOffscreen": 0,
                                         "HintEndCondition": "Time",
-                                        "HintDisplayTime": 10000,
+                                        "HintDisplayTime": 7000,
                                         "HintAnchor": "BottomRight",
                                         "HintText": 128509,
                                         "ObjectFilter": {
@@ -54129,7 +54304,8 @@
                                           "Values": {
                                             "ObjectFilter": {
                                               "ObjectGUID": 129571,
-                                              "ObjectSession": 112132
+                                              "ObjectSession": 112132,
+                                              "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
                                             }
                                           }
                                         },
@@ -54157,7 +54333,8 @@
                         "Values": {
                           "ObjectFilter": {
                             "ObjectGUID": 129571,
-                            "ObjectSession": 112132
+                            "ObjectSession": 112132,
+                            "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
                           }
                         }
                       }
