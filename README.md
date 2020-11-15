@@ -37,6 +37,7 @@ npm run start # run production build
 - narrow filters depending on other selected filters
 - expedition attribute view
 - color code rarity text
+- add anno translations to next-translate
 
 ## License
 

@@ -29,7 +29,13 @@ const useStyles: (props?: any) => Record<string, string> = makeStyles(
       marginBottom: "auto",
     },
     ...rarities.reduce(
-      (all, r) => ({ ...all, [r.key]: { borderColor: r.color } }),
+      (all, r, i) => ({
+        ...all,
+        [r.key + "Card"]: { borderColor: r.color },
+        [r.key + "Text"]: {
+          color: i === 0 ? theme.palette.text.secondary : r.color,
+        },
+      }),
       {}
     ),
   })
@@ -118,7 +124,7 @@ const renderUpgrade = (upgrade: any) => {
 const ItemCard = ({ item }: { item: AnnoItem }) => {
   const classes = useStyles();
   const { t } = useTranslation();
-  const cardClasses = [classes.card, classes[item.rarity]];
+  const cardClasses = [classes.card, classes[item.rarity + "Card"]];
 
   return (
     <Grid item xs={12} sm={6} md={4} lg={3} xl={2} className={classes.gridItem}>
@@ -127,7 +133,14 @@ const ItemCard = ({ item }: { item: AnnoItem }) => {
           avatar={<Image src={item.icon} width={35} height={35} />}
           title={<strong>{item.name}</strong>}
           titleTypographyProps={{ variant: "body1" }}
-          subheader={`${item.rarityLabel} (ID: ${item.id})`}
+          subheader={
+            <>
+              <span className={classes[item.rarity + "Text"]}>
+                {item.rarityLabel}&nbsp;
+              </span>
+              (ID: {item.id})
+            </>
+          }
         />
         <CardContent className={classes.content}>
           <Typography variant="body2" component="p" gutterBottom>
