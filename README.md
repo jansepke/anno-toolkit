@@ -37,6 +37,7 @@ npm run start # run production build
 - narrow filters depending on other selected filters
 - expedition attribute view
 - add anno translations to next-translate
+- remove data/texts_english.xml, texts_german.xml, assets.xml from git history
 
 ## License
 

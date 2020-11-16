@@ -76,6 +76,7 @@ const Filters = ({
                 options={effectTargets}
                 autoComplete={true}
                 clearOnEscape={true}
+                blurOnSelect={true}
                 onChange={autocompleteChangeHandler("effectTarget")}
                 renderInput={(params) => (
                   <TextField
@@ -93,6 +94,7 @@ const Filters = ({
                 options={upgrades}
                 autoComplete={true}
                 clearOnEscape={true}
+                blurOnSelect={true}
                 onChange={autocompleteChangeHandler("upgrade")}
                 renderInput={(params) => (
                   <TextField
@@ -109,6 +111,7 @@ const Filters = ({
               <Autocomplete
                 options={rarities.map((r) => r.label)}
                 autoComplete={true}
+                blurOnSelect={true}
                 onChange={autocompleteChangeHandler("rarity")}
                 renderInput={(params) => (
                   <TextField
