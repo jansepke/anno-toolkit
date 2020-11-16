@@ -6,6 +6,7 @@ import Filters, { FilterData } from "./components/Filters";
 import ItemCard from "./components/ItemCard";
 import TabBar from "./components/TabBar";
 import TopBar from "./components/TopBar";
+import { AnnoItem } from "./data/AnnoItem";
 import { PageData } from "./data/data";
 
 const App = ({ data }: { data: PageData }) => {
@@ -17,24 +18,10 @@ const App = ({ data }: { data: PageData }) => {
   });
 
   const filteredItems = data.items
-    .filter(
-      (item) =>
-        filters.itemName === "" ||
-        item.name.toLowerCase().includes(filters.itemName.toLowerCase())
-    )
-    .filter(
-      (item) =>
-        filters.effectTarget === "all" ||
-        item.effectTargets.some((et) => et.label === filters.effectTarget)
-    )
-    .filter(
-      (item) =>
-        filters.upgrade === "all" ||
-        item.upgrades.some((u) => u.label === filters.upgrade)
-    )
-    .filter(
-      (item) => filters.rarity === "all" || item.rarityLabel === filters.rarity
-    );
+    .filter(byItemName(filters.itemName))
+    .filter(byEffectTarget(filters.effectTarget))
+    .filter(byUpgrade(filters.upgrade))
+    .filter(byRarity(filters.rarity));
 
   return (
     <>
@@ -67,3 +54,25 @@ const App = ({ data }: { data: PageData }) => {
 };
 
 export default App;
+
+function byItemName(filterValue: string) {
+  return (item: AnnoItem) =>
+    filterValue === "" ||
+    item.name.toLowerCase().includes(filterValue.toLowerCase());
+}
+
+function byEffectTarget(filterValue: string) {
+  return (item: AnnoItem) =>
+    filterValue === "all" ||
+    item.effectTargets.some((et) => et.label === filterValue);
+}
+
+function byUpgrade(filterValue: string) {
+  return (item: AnnoItem) =>
+    filterValue === "all" || item.upgrades.some((u) => u.label === filterValue);
+}
+
+function byRarity(filterValue: string) {
+  return (item: AnnoItem) =>
+    filterValue === "all" || item.rarityLabel === filterValue;
+}
