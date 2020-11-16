@@ -34,7 +34,6 @@ npm run start # run production build
 - interpolate anno translations with variables
 - favicon
 - do not show negative effects when filtering by effect type
-- narrow filters depending on other selected filters
 - expedition attribute view
 - add anno translations to next-translate
 - remove data/texts_english.xml, texts_german.xml, assets.xml from git history

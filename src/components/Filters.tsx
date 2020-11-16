@@ -7,7 +7,6 @@ import Autocomplete from "@material-ui/lab/Autocomplete";
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
 import { AnnoItem } from "../data/AnnoItem";
-import { Rarity } from "../data/data";
 
 export interface FilterData {
   itemName: string;
@@ -16,25 +15,18 @@ export interface FilterData {
   rarity: string;
 }
 
-interface CustomAutocompleteProps {
-  label: string;
-  items: {
-    label: string;
-  }[];
-  onChange: (value: string) => void;
-}
-
 const CustomAutocomplete = ({
   label,
   items,
   onChange,
-}: CustomAutocompleteProps) => {
+}: {
+  label: string;
+  items: string[];
+  onChange: (value: string) => void;
+}) => {
   const { t } = useTranslation();
 
-  const options = items
-    .map((item) => item.label)
-    .filter((v, i, a) => a.indexOf(v) === i)
-    .sort();
+  const options = items.filter((v, i, a) => a.indexOf(v) === i);
 
   return (
     <Autocomplete
@@ -55,13 +47,15 @@ const CustomAutocomplete = ({
 };
 
 const Filters = ({
-  items,
-  rarities,
+  effectTargetItems,
+  upgradeItems,
+  rarityItems,
   filters,
   setFilters,
 }: {
-  items: AnnoItem[];
-  rarities: Rarity[];
+  effectTargetItems: AnnoItem[];
+  upgradeItems: AnnoItem[];
+  rarityItems: AnnoItem[];
   filters: FilterData;
   setFilters: (filters: FilterData) => void;
 }) => {
@@ -89,7 +83,10 @@ const Filters = ({
             <FormControl fullWidth={true}>
               <CustomAutocomplete
                 label="common:effectTarget"
-                items={items.flatMap((asset) => asset.effectTargets)}
+                items={effectTargetItems
+                  .flatMap((asset) => asset.effectTargets)
+                  .map((item) => item.label)
+                  .sort()}
                 onChange={(value) =>
                   setFilters({ ...filters, effectTarget: value })
                 }
@@ -100,7 +97,10 @@ const Filters = ({
             <FormControl fullWidth={true}>
               <CustomAutocomplete
                 label="common:upgrades"
-                items={items.flatMap((asset) => asset.upgrades)}
+                items={upgradeItems
+                  .flatMap((asset) => asset.upgrades)
+                  .map((item) => item.label)
+                  .sort()}
                 onChange={(value) => setFilters({ ...filters, upgrade: value })}
               />
             </FormControl>
@@ -109,7 +109,7 @@ const Filters = ({
             <FormControl fullWidth={true}>
               <CustomAutocomplete
                 label="common:rarity"
-                items={rarities}
+                items={rarityItems.map((asset) => asset.rarityLabel)}
                 onChange={(value) => setFilters({ ...filters, rarity: value })}
               />
             </FormControl>

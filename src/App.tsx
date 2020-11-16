@@ -23,6 +23,21 @@ const App = ({ data }: { data: PageData }) => {
     .filter(byUpgrade(filters.upgrade))
     .filter(byRarity(filters.rarity));
 
+  const effectTargetItems = data.items
+    .filter(byItemName(filters.itemName))
+    .filter(byUpgrade(filters.upgrade))
+    .filter(byRarity(filters.rarity));
+
+  const upgradeItems = data.items
+    .filter(byItemName(filters.itemName))
+    .filter(byEffectTarget(filters.effectTarget))
+    .filter(byRarity(filters.rarity));
+
+  const rarityItems = data.items
+    .filter(byItemName(filters.itemName))
+    .filter(byEffectTarget(filters.effectTarget))
+    .filter(byUpgrade(filters.upgrade));
+
   return (
     <>
       <TopBar />
@@ -30,8 +45,9 @@ const App = ({ data }: { data: PageData }) => {
       <Container maxWidth="xl">
         <TabBar tabs={data.tabs} />
         <Filters
-          items={data.items}
-          rarities={data.rarities}
+          effectTargetItems={effectTargetItems}
+          upgradeItems={upgradeItems}
+          rarityItems={rarityItems}
           filters={filters}
           setFilters={setFilters}
         />
