@@ -35,8 +35,6 @@ npm run start # run production build
 - favicon
 - do not show negative effects when filtering by effect type
 - expedition attribute view
-- add anno translations to next-translate
-- remove data/texts_english.xml, texts_german.xml, assets.xml from git history
 
 ## License
 

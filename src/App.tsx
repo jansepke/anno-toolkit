@@ -43,7 +43,7 @@ const App = ({ data }: { data: PageData }) => {
       <TopBar />
 
       <Container maxWidth="xl">
-        <TabBar tabs={data.tabs} />
+        <TabBar />
         <Filters
           effectTargetItems={effectTargetItems}
           upgradeItems={upgradeItems}

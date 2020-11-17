@@ -1,23 +1,10 @@
 import { promises as fs } from "fs";
-import { itemTypes, rarities } from "../anno-config.json";
+import { itemTypes } from "../anno-config.json";
 import { AnnoItem } from "./AnnoItem";
 import AnnoItemFactory from "./AnnoItemFactory";
 
-export interface TabData {
-  key: string;
-  label: string;
-}
-
-export interface Rarity {
-  key: string;
-  label: string;
-  color: string;
-}
-
 export interface PageData {
   items: AnnoItem[];
-  tabs: TabData[];
-  rarities: Rarity[];
 }
 
 export async function getData(
@@ -53,17 +40,6 @@ export async function getData(
 
   return {
     items: items,
-    tabs: itemTypes
-      .filter((t) => !t.hidden)
-      .map((t) => ({
-        key: t.key,
-        label: translations[t.labelId],
-      })),
-    rarities: rarities.map((r) => ({
-      key: r.key,
-      label: translations[r.labelId],
-      color: r.color,
-    })),
   };
 }
 
