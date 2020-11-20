@@ -74,7 +74,7 @@ const Filters = ({
       (upgrade, index, self) =>
         self.findIndex((u) => u.key === upgrade.key) === index
     )
-    .sort();
+    .sort((a, b) => (a?.label as string).localeCompare(b?.label as string));
   const rarityOptions = rarityItems
     .map((asset) => asset.rarityLabel)
     .filter((v, i, a) => a.indexOf(v) === i);
@@ -108,7 +108,8 @@ const Filters = ({
             <FormControl fullWidth={true}>
               <Autocomplete
                 options={upgradeOptions}
-                getOptionLabel={(option) => option.label}
+                getOptionLabel={(option) => option.label as string}
+                getOptionSelected={(a, b) => a.key === b.key}
                 autoComplete={true}
                 clearOnEscape={true}
                 blurOnSelect={true}

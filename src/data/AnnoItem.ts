@@ -5,7 +5,7 @@ export interface EffectTarget {
 
 export interface Upgrade {
   key: string;
-  label: string;
+  label?: string;
   value: any;
 }
 

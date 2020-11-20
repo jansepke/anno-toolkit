@@ -1,6 +1,7 @@
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
+import useTranslation from "next-translate/useTranslation";
 import React, { useState } from "react";
 import { upgrades } from "./anno-config.json";
 import Filters, { FilterData } from "./components/Filters";
@@ -11,11 +12,20 @@ import { AnnoItem, Upgrade } from "./data/AnnoItem";
 import { PageData } from "./data/data";
 
 const App = ({ data }: { data: PageData }) => {
+  const { t } = useTranslation();
   const [filters, setFilters] = useState<FilterData>({
     effectTarget: "all",
     upgrade: "all",
     rarity: "all",
     itemName: "",
+  });
+
+  // translate upgrades
+  data.items.forEach((item) => {
+    item.upgrades = item.upgrades.map((upgrade) => ({
+      ...upgrade,
+      label: t("common:upgradeTypes." + upgrade.key),
+    }));
   });
 
   const filteredItems = data.items

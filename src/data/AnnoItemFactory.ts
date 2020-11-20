@@ -1,4 +1,4 @@
-import { rarities, upgrades } from "../anno-config.json";
+import { rarities } from "../anno-config.json";
 import { AnnoItem, EffectTarget } from "./AnnoItem";
 
 export default class AnnoItemFactory {
@@ -87,10 +87,6 @@ export default class AnnoItemFactory {
       .flatMap(([, value]: any[]) =>
         Object.entries(value).map(([upgradeKey, v]: [string, any]) => ({
           key: upgradeKey,
-          label:
-            this.translations[
-              upgrades.find((u) => u.key === upgradeKey)?.labelId || 0
-            ] || upgradeKey,
           value: this.translateValue(upgradeKey, v),
         }))
       )

@@ -1,17 +1,4 @@
-const config = require("../../../src/anno-config.json");
-const translationJson = require("../../anno/texts/texts_german.json");
-
-const translations = translationJson.TextExport.Texts.Text;
-
-function getTranslation(group) {
-  return config[group].reduce(
-    (all, item) => ({
-      ...all,
-      [item.key]: translations.find((t) => t.GUID === item.labelId).Text,
-    }),
-    {}
-  );
-}
+const { getTranslation } = require("../translations");
 
 module.exports = {
   title: "Anno 1800 Items",
@@ -20,5 +7,6 @@ module.exports = {
   rarity: "Seltenheit",
   upgrades: "Upgrades",
   target: "Beeinflusst",
-  itemTypes: getTranslation("itemTypes"),
+  itemTypes: getTranslation("german", "itemTypes"),
+  upgradeTypes: getTranslation("german", "upgrades"),
 };
