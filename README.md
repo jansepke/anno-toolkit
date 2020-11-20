@@ -33,7 +33,6 @@ npm run start # run production build
 - share item button
 - interpolate anno translations with variables
 - favicon
-- do not show negative effects when filtering by effect type
 - expedition attribute view
 
 ## License

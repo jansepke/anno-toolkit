@@ -2,11 +2,12 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import React, { useState } from "react";
+import { upgrades } from "./anno-config.json";
 import Filters, { FilterData } from "./components/Filters";
 import ItemCard from "./components/ItemCard";
 import TabBar from "./components/TabBar";
 import TopBar from "./components/TopBar";
-import { AnnoItem } from "./data/AnnoItem";
+import { AnnoItem, Upgrade } from "./data/AnnoItem";
 import { PageData } from "./data/data";
 
 const App = ({ data }: { data: PageData }) => {
@@ -84,11 +85,25 @@ function byEffectTarget(filterValue: string) {
 }
 
 function byUpgrade(filterValue: string) {
+  const upgrade = upgrades.find((u) => u.key === filterValue);
+  let additionalCheck = (u: Upgrade) => true;
+  if (upgrade?.valueIs === "negative") {
+    additionalCheck = (u) => getValue(u.value) < 0;
+  }
+  if (upgrade?.valueIs === "positive") {
+    additionalCheck = (u) => getValue(u.value) > 0;
+  }
+
   return (item: AnnoItem) =>
-    filterValue === "all" || item.upgrades.some((u) => u.key === filterValue);
+    filterValue === "all" ||
+    item.upgrades.some((u) => u.key === filterValue && additionalCheck(u));
 }
 
 function byRarity(filterValue: string) {
   return (item: AnnoItem) =>
     filterValue === "all" || item.rarityLabel === filterValue;
+}
+
+function getValue(value: number | { Value: number }) {
+  return typeof value === "number" ? value : value.Value;
 }

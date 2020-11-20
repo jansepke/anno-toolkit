@@ -3,6 +3,12 @@ export interface EffectTarget {
   visible: boolean;
 }
 
+export interface Upgrade {
+  key: string;
+  label: string;
+  value: any;
+}
+
 export interface AnnoItem {
   id: number;
   name: string;
@@ -12,5 +18,5 @@ export interface AnnoItem {
   effectTargets: EffectTarget[];
   // TODO: ItemAction
   // TODO: ExpeditionAttribute
-  upgrades: { key: string; label: string; value: any }[];
+  upgrades: Upgrade[];
 }
