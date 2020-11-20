@@ -85,7 +85,7 @@ function byEffectTarget(filterValue: string) {
 
 function byUpgrade(filterValue: string) {
   return (item: AnnoItem) =>
-    filterValue === "all" || item.upgrades.some((u) => u.label === filterValue);
+    filterValue === "all" || item.upgrades.some((u) => u.key === filterValue);
 }
 
 function byRarity(filterValue: string) {

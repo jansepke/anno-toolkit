@@ -24,8 +24,6 @@ const CustomAutocomplete = ({
   items: string[];
   onChange: (value: string) => void;
 }) => {
-  const { t } = useTranslation();
-
   const options = items.filter((v, i, a) => a.indexOf(v) === i);
 
   return (
@@ -40,7 +38,7 @@ const CustomAutocomplete = ({
           : onChange(value);
       }}
       renderInput={(params) => (
-        <TextField {...params} label={t(label)} variant="outlined" />
+        <TextField {...params} label={label} variant="outlined" />
       )}
     />
   );
@@ -65,6 +63,22 @@ const Filters = ({
     setFilters({ ...filters, itemName: event.target.value });
   };
 
+  const effectTargetOptions = effectTargetItems
+    .flatMap((asset) => asset.effectTargets)
+    .map((item) => item.label)
+    .filter((v, i, a) => a.indexOf(v) === i)
+    .sort();
+  const upgradeOptions = upgradeItems
+    .flatMap((asset) => asset.upgrades)
+    .filter(
+      (upgrade, index, self) =>
+        self.findIndex((u) => u.key === upgrade.key) === index
+    )
+    .sort();
+  const rarityOptions = rarityItems
+    .map((asset) => asset.rarityLabel)
+    .filter((v, i, a) => a.indexOf(v) === i);
+
   return (
     <Card elevation={3}>
       <CardContent>
@@ -82,11 +96,8 @@ const Filters = ({
           <Grid item xs={12} sm={6} md={3}>
             <FormControl fullWidth={true}>
               <CustomAutocomplete
-                label="common:effectTarget"
-                items={effectTargetItems
-                  .flatMap((asset) => asset.effectTargets)
-                  .map((item) => item.label)
-                  .sort()}
+                label={t("common:effectTarget")}
+                items={effectTargetOptions}
                 onChange={(value) =>
                   setFilters({ ...filters, effectTarget: value })
                 }
@@ -95,21 +106,32 @@ const Filters = ({
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
             <FormControl fullWidth={true}>
-              <CustomAutocomplete
-                label="common:upgrades"
-                items={upgradeItems
-                  .flatMap((asset) => asset.upgrades)
-                  .map((item) => item.label)
-                  .sort()}
-                onChange={(value) => setFilters({ ...filters, upgrade: value })}
+              <Autocomplete
+                options={upgradeOptions}
+                getOptionLabel={(option) => option.label}
+                autoComplete={true}
+                clearOnEscape={true}
+                blurOnSelect={true}
+                onChange={(event, value, reason) => {
+                  reason === "clear" || value === null
+                    ? setFilters({ ...filters, upgrade: "all" })
+                    : setFilters({ ...filters, upgrade: value.key });
+                }}
+                renderInput={(params) => (
+                  <TextField
+                    {...params}
+                    label={t("common:upgrades")}
+                    variant="outlined"
+                  />
+                )}
               />
             </FormControl>
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
             <FormControl fullWidth={true}>
               <CustomAutocomplete
-                label="common:rarity"
-                items={rarityItems.map((asset) => asset.rarityLabel)}
+                label={t("common:rarity")}
+                items={rarityOptions}
                 onChange={(value) => setFilters({ ...filters, rarity: value })}
               />
             </FormControl>
