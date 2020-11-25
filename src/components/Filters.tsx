@@ -86,7 +86,7 @@ const Filters = ({
           <Grid item xs={12} sm={6} md={3}>
             <FormControl fullWidth={true}>
               <TextField
-                label={t("itemName")}
+                label={t("filter.itemName")}
                 variant="outlined"
                 value={filters.itemName}
                 onChange={onItemNameChange}
@@ -96,7 +96,7 @@ const Filters = ({
           <Grid item xs={12} sm={6} md={3}>
             <FormControl fullWidth={true}>
               <CustomAutocomplete
-                label={t("effectTarget")}
+                label={t("filter.effectTarget")}
                 items={effectTargetOptions}
                 onChange={(value) =>
                   setFilters({ ...filters, effectTarget: value })
@@ -121,7 +121,7 @@ const Filters = ({
                 renderInput={(params) => (
                   <TextField
                     {...params}
-                    label={t("upgrades")}
+                    label={t("filter.upgrades")}
                     variant="outlined"
                   />
                 )}
@@ -131,7 +131,7 @@ const Filters = ({
           <Grid item xs={12} sm={6} md={3}>
             <FormControl fullWidth={true}>
               <CustomAutocomplete
-                label={t("rarity")}
+                label={t("filter.rarity")}
                 items={rarityOptions}
                 onChange={(value) => setFilters({ ...filters, rarity: value })}
               />
