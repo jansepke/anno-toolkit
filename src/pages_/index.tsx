@@ -30,14 +30,14 @@ const useStyles = makeStyles((theme) => ({
 
 const Index = () => {
   const classes = useStyles();
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
 
   return (
-    <Page headline={t("common:title.index")}>
+    <Page headline={t("title.index")}>
       <Container maxWidth="md" className={classes.container}>
         <Grid container spacing={3}>
           <Grid item xs={12}>
-            <Typography variant="h4">{t("common:heading.items")}</Typography>
+            <Typography variant="h4">{t("heading.items")}</Typography>
           </Grid>
           {itemTypes.map((itemType) => (
             <Grid
@@ -61,10 +61,10 @@ const Index = () => {
                         height={64}
                       />
                       <Typography variant="h5">
-                        {t("common:itemTypes." + itemType.key)}
+                        {t("itemTypes." + itemType.key)}
                       </Typography>
                       {itemType.hidden ? (
-                        <Typography>{t("common:comingSoon")}</Typography>
+                        <Typography>{t("comingSoon")}</Typography>
                       ) : null}
                     </CardContent>
                   </CardActionArea>
@@ -73,12 +73,10 @@ const Index = () => {
             </Grid>
           ))}
           <Grid item xs={12}>
-            <Typography variant="h4">
-              {t("common:heading.expedition")}
-            </Typography>
+            <Typography variant="h4">{t("heading.expedition")}</Typography>
           </Grid>
           <Grid item xs={12}>
-            <Typography>{t("common:comingSoon")}</Typography>
+            <Typography>{t("comingSoon")}</Typography>
           </Grid>
         </Grid>
       </Container>

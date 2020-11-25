@@ -9,7 +9,7 @@ import { itemTypes } from "../anno-config.json";
 
 const TabBar = () => {
   const router = useRouter();
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
   const { assetType = itemTypes[0].key } = router.query;
   const tabKeys = itemTypes.map((tab) => tab.key);
   const activeTab = tabKeys.indexOf(assetType as string);
@@ -26,7 +26,7 @@ const TabBar = () => {
         .map((itemType) => (
           <Link key={itemType.key} href={`/items/${itemType.key}`}>
             <Tab
-              label={t("common:itemTypes." + itemType.key)}
+              label={t("itemTypes." + itemType.key)}
               icon={
                 <Image
                   src={`/img/${itemType.key}.png`}

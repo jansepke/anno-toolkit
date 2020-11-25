@@ -125,7 +125,7 @@ const renderUpgrade = (upgrade: any) => {
 
 const ItemCard = ({ item }: { item: AnnoItem }) => {
   const classes = useStyles();
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
   const cardClasses = [classes.card, classes[item.rarity + "Card"]];
 
   return (
@@ -146,7 +146,7 @@ const ItemCard = ({ item }: { item: AnnoItem }) => {
         />
         <CardContent className={classes.content}>
           <Typography variant="body2" component="p" gutterBottom>
-            <strong>{t("common:target")}: </strong>
+            <strong>{t("target")}: </strong>
             {item.effectTargets
               .filter((et) => et.visible)
               .map((et) => et.label)

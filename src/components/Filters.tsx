@@ -57,7 +57,7 @@ const Filters = ({
   filters: FilterData;
   setFilters: (filters: FilterData) => void;
 }) => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
 
   const onItemNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setFilters({ ...filters, itemName: event.target.value });
@@ -86,7 +86,7 @@ const Filters = ({
           <Grid item xs={12} sm={6} md={3}>
             <FormControl fullWidth={true}>
               <TextField
-                label={t("common:itemName")}
+                label={t("itemName")}
                 variant="outlined"
                 value={filters.itemName}
                 onChange={onItemNameChange}
@@ -96,7 +96,7 @@ const Filters = ({
           <Grid item xs={12} sm={6} md={3}>
             <FormControl fullWidth={true}>
               <CustomAutocomplete
-                label={t("common:effectTarget")}
+                label={t("effectTarget")}
                 items={effectTargetOptions}
                 onChange={(value) =>
                   setFilters({ ...filters, effectTarget: value })
@@ -121,7 +121,7 @@ const Filters = ({
                 renderInput={(params) => (
                   <TextField
                     {...params}
-                    label={t("common:upgrades")}
+                    label={t("upgrades")}
                     variant="outlined"
                   />
                 )}
@@ -131,7 +131,7 @@ const Filters = ({
           <Grid item xs={12} sm={6} md={3}>
             <FormControl fullWidth={true}>
               <CustomAutocomplete
-                label={t("common:rarity")}
+                label={t("rarity")}
                 items={rarityOptions}
                 onChange={(value) => setFilters({ ...filters, rarity: value })}
               />

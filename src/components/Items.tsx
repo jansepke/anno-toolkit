@@ -11,7 +11,7 @@ import ItemCard from "./ItemCard";
 import TabBar from "./TabBar";
 
 const Items = ({ data }: { data: PageData }) => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
   const [filters, setFilters] = useState<FilterData>({
     effectTarget: "all",
     upgrade: "all",
@@ -23,7 +23,7 @@ const Items = ({ data }: { data: PageData }) => {
   data.items.forEach((item) => {
     item.upgrades = item.upgrades.map((upgrade) => ({
       ...upgrade,
-      label: t("common:upgradeTypes." + upgrade.key),
+      label: t("upgradeTypes." + upgrade.key),
     }));
   });
 

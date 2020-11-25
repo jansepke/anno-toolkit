@@ -8,10 +8,10 @@ import Page from "../../components/Page";
 import { getData, PageData } from "../../data/data";
 
 const ItemPage = ({ data }: { data: PageData }) => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
 
   return (
-    <Page headline={t("common:title.items")}>
+    <Page headline={t("title.items")}>
       <Items data={data} />
     </Page>
   );
