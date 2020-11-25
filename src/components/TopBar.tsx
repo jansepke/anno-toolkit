@@ -15,7 +15,6 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { locales } from "../../i18n.json";
-import { itemTypes } from "../anno-config.json";
 
 const useStyles = makeStyles((theme: Theme) => ({
   title: {
@@ -27,8 +26,6 @@ const TopBar = ({ headline }: { headline: string }) => {
   const { asPath } = useRouter();
   const { lang } = useTranslation();
   const classes = useStyles();
-
-  const path = asPath === "/" ? "/" + itemTypes[0].key : asPath;
 
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
@@ -67,7 +64,7 @@ const TopBar = ({ headline }: { headline: string }) => {
           >
             {locales.map((lng) => (
               <MenuItem key={lng} disabled={lng === lang}>
-                <Link href={path} locale={lng}>
+                <Link href={asPath} locale={lng}>
                   <Typography
                     variant="button"
                     display="block"
