@@ -3,15 +3,14 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import useTranslation from "next-translate/useTranslation";
 import React, { useState } from "react";
-import { upgrades } from "./anno-config.json";
-import Filters, { FilterData } from "./components/Filters";
-import ItemCard from "./components/ItemCard";
-import TabBar from "./components/TabBar";
-import TopBar from "./components/TopBar";
-import { AnnoItem, Upgrade } from "./data/AnnoItem";
-import { PageData } from "./data/data";
+import { upgrades } from "../anno-config.json";
+import { AnnoItem, Upgrade } from "../data/AnnoItem";
+import { PageData } from "../data/data";
+import Filters, { FilterData } from "./Filters";
+import ItemCard from "./ItemCard";
+import TabBar from "./TabBar";
 
-const App = ({ data }: { data: PageData }) => {
+const Items = ({ data }: { data: PageData }) => {
   const { t } = useTranslation();
   const [filters, setFilters] = useState<FilterData>({
     effectTarget: "all",
@@ -50,37 +49,33 @@ const App = ({ data }: { data: PageData }) => {
     .filter(byUpgrade(filters.upgrade));
 
   return (
-    <>
-      <TopBar />
-
-      <Container maxWidth="xl">
-        <TabBar />
-        <Filters
-          effectTargetItems={effectTargetItems}
-          upgradeItems={upgradeItems}
-          rarityItems={rarityItems}
-          filters={filters}
-          setFilters={setFilters}
-        />
-        <br />
-        <Typography align="right">
-          {filteredItems.length !== data.items.length
-            ? `${filteredItems.length}/`
-            : ""}
-          {data.items.length} Items
-        </Typography>
-        <br />
-        <Grid container spacing={3}>
-          {filteredItems.map((item) => (
-            <ItemCard key={item.id} item={item} />
-          ))}
-        </Grid>
-      </Container>
-    </>
+    <Container maxWidth="xl">
+      <TabBar />
+      <Filters
+        effectTargetItems={effectTargetItems}
+        upgradeItems={upgradeItems}
+        rarityItems={rarityItems}
+        filters={filters}
+        setFilters={setFilters}
+      />
+      <br />
+      <Typography align="right">
+        {filteredItems.length !== data.items.length
+          ? `${filteredItems.length}/`
+          : ""}
+        {data.items.length} Items
+      </Typography>
+      <br />
+      <Grid container spacing={3}>
+        {filteredItems.map((item) => (
+          <ItemCard key={item.id} item={item} />
+        ))}
+      </Grid>
+    </Container>
   );
 };
 
-export default App;
+export default Items;
 
 function byItemName(filterValue: string) {
   return (item: AnnoItem) =>

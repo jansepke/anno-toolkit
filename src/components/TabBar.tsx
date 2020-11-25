@@ -24,7 +24,7 @@ const TabBar = () => {
       {itemTypes
         .filter((itemType) => !itemType.hidden)
         .map((itemType) => (
-          <Link key={itemType.key} href={`/${itemType.key}`}>
+          <Link key={itemType.key} href={`/items/${itemType.key}`}>
             <Tab
               label={t("common:itemTypes." + itemType.key)}
               icon={

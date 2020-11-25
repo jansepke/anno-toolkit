@@ -9,6 +9,7 @@ import { makeStyles, Theme } from "@material-ui/core/styles";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import HomeIcon from "@material-ui/icons/Home";
 import useTranslation from "next-translate/useTranslation";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -22,9 +23,9 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
 }));
 
-const TopBar = () => {
+const TopBar = ({ headline }: { headline: string }) => {
   const { asPath } = useRouter();
-  const { t, lang } = useTranslation();
+  const { lang } = useTranslation();
   const classes = useStyles();
 
   const path = asPath === "/" ? "/" + itemTypes[0].key : asPath;
@@ -43,8 +44,13 @@ const TopBar = () => {
   return (
     <AppBar position="sticky">
       <Toolbar>
+        <Link href="/">
+          <IconButton color="inherit">
+            <HomeIcon />
+          </IconButton>
+        </Link>
         <Typography variant="h4" className={classes.title}>
-          {t("common:title")}
+          {headline}
         </Typography>
         <div>
           <Button color="inherit" onClick={handleMenu}>

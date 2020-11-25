@@ -1,12 +1,21 @@
 const { getTranslation } = require("../translations");
 
 module.exports = {
-  title: "Anno 1800 Items",
+  title: {
+    index: "Anno 1800 toolkit",
+    items: "Anno 1800 Items",
+    expedition: "Anno 1800 Expeditions",
+  },
+  heading: {
+    items: "Items / Specialists Effects",
+    expedition: "Expedition Attributes",
+  },
   itemName: "Item Name",
   effectTarget: "Building",
   rarity: "Rarity",
   upgrades: "Upgrades",
   target: "Targets",
+  comingSoon: "Coming soon...",
   itemTypes: getTranslation("english", "itemTypes"),
   upgradeTypes: getTranslation("english", "upgrades"),
 };

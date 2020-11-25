@@ -31,9 +31,10 @@ npm run start # run production build
 - PWA
 - sort list (e.g. select effect values)
 - share item button
-- interpolate anno translations with variables
 - favicon
 - expedition attribute view
+- use icons directly from main icon folder
+- add about text to index page
 
 ## License
 

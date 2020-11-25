@@ -1,25 +1,23 @@
 import { GetStaticPaths, GetStaticProps } from "next";
-import Head from "next/head";
+import useTranslation from "next-translate/useTranslation";
 import React from "react";
-import { defaultLocale } from "../../i18n.json";
-import { itemTypes, languages } from "../anno-config.json";
-import App from "../App";
-import { getData, PageData } from "../data/data";
+import { defaultLocale } from "../../../i18n.json";
+import { itemTypes, languages } from "../../anno-config.json";
+import Items from "../../components/Items";
+import Page from "../../components/Page";
+import { getData, PageData } from "../../data/data";
 
-const Index = ({ data }: { data: PageData }) => (
-  <>
-    <Head>
-      <title>Anno toolkit</title>
-      <meta
-        name="description"
-        content="Finding the best fitting specialists."
-      />
-    </Head>
-    <App data={data} />
-  </>
-);
+const ItemPage = ({ data }: { data: PageData }) => {
+  const { t } = useTranslation();
 
-export default Index;
+  return (
+    <Page headline={t("common:title.items")}>
+      <Items data={data} />
+    </Page>
+  );
+};
+
+export default ItemPage;
 
 export const getStaticProps: GetStaticProps = async ({
   locale = defaultLocale,
