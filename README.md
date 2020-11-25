@@ -33,7 +33,6 @@ npm run start # run production build
 - share item button
 - favicon
 - expedition attribute view
-- use icons directly from main icon folder
 - add about text to index page
 
 ## License

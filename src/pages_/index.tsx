@@ -56,9 +56,11 @@ const Index = () => {
                   >
                     <CardContent>
                       <Image
-                        src={`/img/${itemType.key}.png`}
-                        width={64}
-                        height={64}
+                        src={`/img/main/3dicons/${itemType.icon}.png`}
+                        width={75}
+                        height={75}
+                        priority={true}
+                        loading="eager"
                       />
                       <Typography variant="h5">
                         {t("itemTypes." + itemType.key)}

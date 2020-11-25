@@ -29,7 +29,7 @@ const TabBar = () => {
               label={t("itemTypes." + itemType.key)}
               icon={
                 <Image
-                  src={`/img/${itemType.key}.png`}
+                  src={`/img/main/3dicons/${itemType.icon}.png`}
                   width={20}
                   height={20}
                   priority={true}
