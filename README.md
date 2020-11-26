@@ -24,7 +24,6 @@ npm run start # run production build
 - more item types
 - improve font loading performance
 - Upload save game
-- Favorite items
 - support active items
 - filter by world
 - filter by DLC
@@ -34,6 +33,8 @@ npm run start # run production build
 - favicon
 - expedition attribute view
 - add about text to index page
+- improve performance by using virtualized lists
+- add renovatebot for automatic npm updates
 
 ## License
 

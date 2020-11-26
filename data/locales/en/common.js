@@ -15,6 +15,7 @@ module.exports = {
     effectTarget: "Building",
     rarity: "Rarity",
     upgrades: "Upgrades",
+    onlyFavourites: "My Favourites",
   },
   target: "Targets",
   comingSoon: "Coming soon...",

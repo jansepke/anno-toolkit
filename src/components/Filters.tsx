@@ -1,7 +1,9 @@
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import FormControl from "@material-ui/core/FormControl";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Grid from "@material-ui/core/Grid";
+import Switch from "@material-ui/core/Switch";
 import TextField from "@material-ui/core/TextField";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 import useTranslation from "next-translate/useTranslation";
@@ -13,6 +15,7 @@ export interface FilterData {
   effectTarget: string;
   upgrade: string;
   rarity: string;
+  onlyFavourites: boolean;
 }
 
 const CustomAutocomplete = ({
@@ -136,6 +139,24 @@ const Filters = ({
                 onChange={(value) => setFilters({ ...filters, rarity: value })}
               />
             </FormControl>
+          </Grid>
+          <Grid item xs={12} sm={6} md={3}>
+            <FormControlLabel
+              label={t("filter.onlyFavourites")}
+              control={
+                <Switch
+                  size="medium"
+                  color="primary"
+                  checked={filters.onlyFavourites}
+                  onChange={() =>
+                    setFilters({
+                      ...filters,
+                      onlyFavourites: !filters.onlyFavourites,
+                    })
+                  }
+                />
+              }
+            />
           </Grid>
         </Grid>
       </CardContent>

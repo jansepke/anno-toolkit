@@ -19,4 +19,5 @@ export interface AnnoItem {
   // TODO: ItemAction
   // TODO: ExpeditionAttribute
   upgrades: Upgrade[];
+  favourite?: boolean;
 }

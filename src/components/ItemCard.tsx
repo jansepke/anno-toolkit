@@ -9,6 +9,7 @@ import Image from "next/image";
 import React from "react";
 import { rarities } from "../anno-config.json";
 import { AnnoItem } from "../data/AnnoItem";
+import FavouriteButton from "./FavouriteButton";
 
 const useStyles: (props?: any) => Record<string, string> = makeStyles(
   (theme) => ({
@@ -123,7 +124,13 @@ const renderUpgrade = (upgrade: any) => {
   return JSON.stringify(upgrade);
 };
 
-const ItemCard = ({ item }: { item: AnnoItem }) => {
+const ItemCard = ({
+  item,
+  handleFavouriteChange,
+}: {
+  item: AnnoItem;
+  handleFavouriteChange: (itemId: number) => void;
+}) => {
   const classes = useStyles();
   const { t } = useTranslation("common");
   const cardClasses = [classes.card, classes[item.rarity + "Card"]];
@@ -133,7 +140,15 @@ const ItemCard = ({ item }: { item: AnnoItem }) => {
       <Card elevation={3} className={cardClasses.join(" ")}>
         <CardHeader
           avatar={<Image src={item.icon} width={35} height={35} />}
-          title={<strong>{item.name}</strong>}
+          title={
+            <>
+              <strong>{item.name}</strong>
+              <FavouriteButton
+                favourite={item.favourite || false}
+                handleFavouriteChange={() => handleFavouriteChange(item.id)}
+              />
+            </>
+          }
           titleTypographyProps={{ variant: "body1" }}
           subheader={
             <>
