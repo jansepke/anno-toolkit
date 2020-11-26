@@ -30,7 +30,6 @@ npm run start # run production build
 - PWA
 - sort list (e.g. select effect values)
 - share item button
-- favicon
 - expedition attribute view
 - add about text to index page
 - improve performance by using virtualized lists
