@@ -14,7 +14,9 @@ function getTranslationFromAsset(translations, asset) {
   return require(`../anno/assets/${asset}.json`).reduce(
     (all, asset) => ({
       ...all,
-      [asset.Values.Standard.GUID]: translations[asset.Values.Standard.GUID],
+      [asset.Values.Standard.Name.toLowerCase()]: translations[
+        asset.Values.Standard.GUID
+      ],
     }),
     {}
   );

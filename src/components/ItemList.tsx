@@ -3,7 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import useTranslation from "next-translate/useTranslation";
 import React, { useState } from "react";
-import { upgrades } from "../anno-config.json";
+import { itemTypes, upgrades } from "../anno-config.json";
 import { AnnoItem, Upgrade } from "../data/AnnoItem";
 import { useStateWithLocalStorage } from "../util/hooks";
 import Filters, { FilterData } from "./Filters";
@@ -67,9 +67,17 @@ const ItemList = ({ items }: { items: AnnoItem[] }) => {
     .filter(byUpgrade(filters.upgrade))
     .filter(byFavourite(filters.onlyFavourites));
 
+  const tabs = itemTypes
+    .filter((itemType) => !itemType.hidden)
+    .map((itemType) => ({
+      key: itemType.key,
+      label: t("itemTypes." + itemType.key),
+      icon: `/img/main/3dicons/${itemType.icon}.png`,
+    }));
+
   return (
     <Container maxWidth="xl">
-      <TabBar />
+      <TabBar type="centered" queryKey="itemType" path="items" tabs={tabs} />
       <Filters
         effectTargetItems={effectTargetItems}
         upgradeItems={upgradeItems}
