@@ -6,6 +6,7 @@ import { itemTypes, languages } from "../../anno-config.json";
 import Items from "../../components/Items";
 import Page from "../../components/Page";
 import { getData, PageData } from "../../data/data";
+import { cartesianProduct } from "../../util/functions";
 
 const ItemPage = ({ data }: { data: PageData }) => {
   const { t } = useTranslation("common");
@@ -36,17 +37,12 @@ export const getStaticProps: GetStaticProps = async ({
   };
 };
 
-const f = (a: any, b: any) =>
-  [].concat(...a.map((d: any) => b.map((e: any) => [].concat(d, e))));
-const cartesian = (a: any, b: any = undefined, ...c: any[]): any =>
-  b ? cartesian(f(a, b), ...c) : a;
-
 // generate every possible language + itemType combination
 export const getStaticPaths: GetStaticPaths = async ({ locales }) => ({
-  paths: cartesian(
-    locales,
+  paths: cartesianProduct(
+    locales as string[],
     itemTypes.map((t) => t.key)
-  ).map((params: any) => ({
+  ).map((params) => ({
     locale: params[0],
     params: {
       assetType: params[1],
