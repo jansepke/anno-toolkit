@@ -36,6 +36,7 @@ npm run start # run production build
 - add renovatebot for automatic npm updates
 - add where to get item
 - tests https://github.com/vercel/next.js/tree/master/examples/with-jest
+- add icons for effects (icon.json)
 
 ## License
 

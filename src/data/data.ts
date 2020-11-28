@@ -3,15 +3,11 @@ import { itemTypes } from "../anno-config.json";
 import { AnnoItem } from "./AnnoItem";
 import AnnoItemFactory from "./AnnoItemFactory";
 
-export interface PageData {
-  items: AnnoItem[];
-}
-
 export async function getData(
   language: string,
-  assetType: string
-): Promise<PageData> {
-  const fileNames = itemTypes.find((it) => it.key === assetType)
+  itemType: string
+): Promise<AnnoItem[]> {
+  const fileNames = itemTypes.find((it) => it.key === itemType)
     ?.fileNames as string[];
 
   const translations = await loadTranslations(language);
@@ -38,9 +34,7 @@ export async function getData(
     ) // remove active items
     .map((asset: any) => factory.newAnnoItem(asset));
 
-  return {
-    items: items,
-  };
+  return items;
 }
 
 async function loadTranslations(language: string) {

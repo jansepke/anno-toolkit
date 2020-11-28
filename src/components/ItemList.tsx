@@ -5,13 +5,12 @@ import useTranslation from "next-translate/useTranslation";
 import React, { useState } from "react";
 import { upgrades } from "../anno-config.json";
 import { AnnoItem, Upgrade } from "../data/AnnoItem";
-import { PageData } from "../data/data";
 import { useStateWithLocalStorage } from "../util/hooks";
 import Filters, { FilterData } from "./Filters";
 import ItemCard from "./ItemCard";
 import TabBar from "./TabBar";
 
-const Items = ({ data }: { data: PageData }) => {
+const ItemList = ({ items }: { items: AnnoItem[] }) => {
   const { t } = useTranslation("common");
   const [filters, setFilters] = useState<FilterData>({
     effectTarget: "all",
@@ -33,7 +32,7 @@ const Items = ({ data }: { data: PageData }) => {
     );
   };
 
-  data.items.forEach((item) => {
+  items.forEach((item) => {
     // set favourite status
     item.favourite = favourites.includes(item.id);
     // translate upgrades
@@ -43,26 +42,26 @@ const Items = ({ data }: { data: PageData }) => {
     }));
   });
 
-  const filteredItems = data.items
+  const filteredItems = items
     .filter(byItemName(filters.itemName))
     .filter(byEffectTarget(filters.effectTarget))
     .filter(byUpgrade(filters.upgrade))
     .filter(byRarity(filters.rarity))
     .filter(byFavourite(filters.onlyFavourites));
 
-  const effectTargetItems = data.items
+  const effectTargetItems = items
     .filter(byItemName(filters.itemName))
     .filter(byUpgrade(filters.upgrade))
     .filter(byRarity(filters.rarity))
     .filter(byFavourite(filters.onlyFavourites));
 
-  const upgradeItems = data.items
+  const upgradeItems = items
     .filter(byItemName(filters.itemName))
     .filter(byEffectTarget(filters.effectTarget))
     .filter(byRarity(filters.rarity))
     .filter(byFavourite(filters.onlyFavourites));
 
-  const rarityItems = data.items
+  const rarityItems = items
     .filter(byItemName(filters.itemName))
     .filter(byEffectTarget(filters.effectTarget))
     .filter(byUpgrade(filters.upgrade))
@@ -80,10 +79,10 @@ const Items = ({ data }: { data: PageData }) => {
       />
       <br />
       <Typography align="right">
-        {filteredItems.length !== data.items.length
+        {filteredItems.length !== items.length
           ? `${filteredItems.length}/`
           : ""}
-        {data.items.length} Items
+        {items.length} Items
       </Typography>
       <br />
       <Grid container spacing={3}>
@@ -99,7 +98,7 @@ const Items = ({ data }: { data: PageData }) => {
   );
 };
 
-export default Items;
+export default ItemList;
 
 function byItemName(filterValue: string) {
   return (item: AnnoItem) =>

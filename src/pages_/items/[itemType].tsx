@@ -1,37 +1,34 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
-import { defaultLocale } from "../../../i18n.json";
 import { itemTypes, languages } from "../../anno-config.json";
-import Items from "../../components/Items";
+import ItemList from "../../components/ItemList";
 import Page from "../../components/Page";
-import { getData, PageData } from "../../data/data";
+import { AnnoItem } from "../../data/AnnoItem";
+import { getData } from "../../data/data";
 import { cartesianProduct } from "../../util/functions";
 
-const ItemPage = ({ data }: { data: PageData }) => {
+const ItemPage = ({ items }: { items: AnnoItem[] }) => {
   const { t } = useTranslation("common");
 
   return (
     <Page headline={t("title.items")}>
-      <Items data={data} />
+      <ItemList items={items} />
     </Page>
   );
 };
 
 export default ItemPage;
 
-export const getStaticProps: GetStaticProps = async ({
-  locale = defaultLocale,
-  params = { assetType: itemTypes[0].key },
-} = {}) => {
-  const data = await getData(
+export const getStaticProps: GetStaticProps = async ({ locale, params }) => {
+  const items = await getData(
     languages.find((l) => l.key === locale)?.fileName || languages[0].fileName,
-    params.assetType as string
+    params!.itemType as string
   );
 
   return {
     props: {
-      data: data,
+      items: items,
       key: Number(new Date()), // solves https://github.com/vercel/next.js/issues/9992
     },
   };
@@ -45,7 +42,7 @@ export const getStaticPaths: GetStaticPaths = async ({ locales }) => ({
   ).map((params) => ({
     locale: params[0],
     params: {
-      assetType: params[1],
+      itemType: params[1],
     },
   })),
   fallback: false,

@@ -10,9 +10,9 @@ import { itemTypes } from "../anno-config.json";
 const TabBar = () => {
   const router = useRouter();
   const { t } = useTranslation("common");
-  const { assetType = itemTypes[0].key } = router.query;
+  const { itemType: selectedItemType } = router.query;
   const tabKeys = itemTypes.map((tab) => tab.key);
-  const activeTab = tabKeys.indexOf(assetType as string);
+  const activeTab = tabKeys.indexOf(selectedItemType as string);
 
   return (
     <Tabs
