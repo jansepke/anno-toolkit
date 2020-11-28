@@ -39,7 +39,7 @@ const Items = ({ data }: { data: PageData }) => {
     // translate upgrades
     item.upgrades = item.upgrades.map((upgrade) => ({
       ...upgrade,
-      label: t("upgradeTypes." + upgrade.key),
+      label: t("upgrades." + upgrade.key),
     }));
   });
 

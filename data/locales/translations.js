@@ -1,6 +1,26 @@
 const config = require("../../src/anno-config.json");
 
-module.exports.getTranslation = function (language, group) {
+function getTranslationFromConfig(translations, group) {
+  return config[group].reduce(
+    (all, item) => ({
+      ...all,
+      [item.key]: translations[item.labelId],
+    }),
+    {}
+  );
+}
+
+function getTranslationFromAsset(translations, asset) {
+  return require(`../anno/assets/${asset}.json`).reduce(
+    (all, asset) => ({
+      ...all,
+      [asset.Values.Standard.GUID]: translations[asset.Values.Standard.GUID],
+    }),
+    {}
+  );
+}
+
+module.exports.getTranslations = function (language) {
   const translationJson = require(`../anno/texts/texts_${language}.json`);
 
   const translations = {};
@@ -12,11 +32,12 @@ module.exports.getTranslation = function (language, group) {
       : item.Text;
   }
 
-  return config[group].reduce(
-    (all, item) => ({
-      ...all,
-      [item.key]: translations[item.labelId],
-    }),
-    {}
-  );
+  return {
+    itemTypes: getTranslationFromConfig(translations, "itemTypes"),
+    upgrades: getTranslationFromConfig(translations, "upgrades"),
+    expeditionthreats: getTranslationFromAsset(
+      translations,
+      "expeditionthreat"
+    ),
+  };
 };

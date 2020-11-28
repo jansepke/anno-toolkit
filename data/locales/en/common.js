@@ -1,4 +1,4 @@
-const { getTranslation } = require("../translations");
+const { getTranslations } = require("../translations");
 
 module.exports = {
   title: {
@@ -19,6 +19,5 @@ module.exports = {
   },
   target: "Targets",
   comingSoon: "Coming soon...",
-  itemTypes: getTranslation("english", "itemTypes"),
-  upgradeTypes: getTranslation("english", "upgrades"),
+  ...getTranslations("english"),
 };
