@@ -37,9 +37,9 @@ module.exports.getTranslations = function (language) {
   return {
     itemTypes: getTranslationFromConfig(translations, "itemTypes"),
     upgrades: getTranslationFromConfig(translations, "upgrades"),
-    expeditionthreats: getTranslationFromAsset(
+    expeditionThreats: getTranslationFromConfig(
       translations,
-      "expeditionthreat"
+      "expeditionThreats"
     ),
   };
 };

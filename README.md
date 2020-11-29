@@ -22,23 +22,21 @@ npm run start # run production build
 ## TODO
 
 - more item types
-- improve font loading performance
-- Upload save game
+- sort list (e.g. select effect values)
+- add about text to index page
+- add renovatebot for automatic npm updates
+- tests https://github.com/vercel/next.js/tree/master/examples/with-jest
+- add where to get item
 - support active items
 - filter by world
 - filter by DLC
-- Progressive Web App https://github.com/vercel/next.js/tree/master/examples/progressive-web-app
-- sort list (e.g. select effect values)
 - share item button
-- add about text to index page
-- improve performance by using virtualized lists
-- add renovatebot for automatic npm updates
-- add where to get item
-- tests https://github.com/vercel/next.js/tree/master/examples/with-jest
 - add icons for effects (icon.json)
-- support all expedition attributes
 - automatically switch between centered and scrollable tabs
+- improve performance by using virtualized lists
 - refactor data loading
+- Progressive Web App https://github.com/vercel/next.js/tree/master/examples/progressive-web-app
+- improve font loading performance
 
 ## License
 

@@ -22,7 +22,7 @@ const ExpeditionList = ({ items }: { items: AnnoItem[] }) => {
 
   const tabs = expeditionThreats.map((threat) => ({
     key: threat.Values.Standard.Name.toLowerCase(),
-    label: t("expeditionthreats." + threat.Values.Standard.Name.toLowerCase()),
+    label: t("expeditionThreats." + threat.Values.Standard.Name.toLowerCase()),
     icon: `/img/${threat.Values.Standard.IconFilename.toLowerCase()
       .replace("data/ui/2kimages/", "")
       .replace(".png", "_0.png")}`,

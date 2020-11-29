@@ -108,7 +108,7 @@ const Index = () => {
                       />
                       <Typography variant="h5">
                         {t(
-                          "expeditionthreats." +
+                          "expeditionThreats." +
                             et.Values.Standard.Name.toLowerCase()
                         )}
                       </Typography>
