@@ -15,6 +15,7 @@ import {
 import { useStateWithLocalStorage } from "../util/hooks";
 import Filters, { FilterData } from "./Filters";
 import ItemCard from "./ItemCard";
+import ItemEffects from "./ItemEffects";
 import TabBar from "./TabBar";
 
 const ItemList = ({ items }: { items: AnnoItem[] }) => {
@@ -82,7 +83,9 @@ const ItemList = ({ items }: { items: AnnoItem[] }) => {
             key={item.id}
             item={item}
             handleFavouriteChange={handleFavouriteChange}
-          />
+          >
+            <ItemEffects item={item} />
+          </ItemCard>
         ))}
       </Grid>
     </Container>
