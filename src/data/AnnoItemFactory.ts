@@ -84,16 +84,16 @@ export default class AnnoItemFactory {
 
   private resolveExpeditionAttributes(values: any) {
     let attributes =
-      values.ExpeditionAttribute.ExpeditionAttributes?.Item || [];
+      values.ExpeditionAttribute?.ExpeditionAttributes?.Item || [];
     if (!Array.isArray(attributes)) {
       attributes = [attributes];
     }
 
     return attributes
-      .filter((attribute: any) => attribute)
+      .filter((attribute: any) => attribute?.Attribute)
       .map((attribute: any) => ({
         key: attribute.Attribute.toLowerCase(),
-        value: attribute.Amount,
+        value: attribute.Amount || 1,
       }));
   }
 

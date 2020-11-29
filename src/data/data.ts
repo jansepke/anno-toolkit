@@ -3,13 +3,34 @@ import { itemTypes } from "../anno-config.json";
 import { AnnoItem } from "./AnnoItem";
 import AnnoItemFactory from "./AnnoItemFactory";
 
-export async function getData(
+export async function getEffectItems(
   language: string,
   itemType: string
 ): Promise<AnnoItem[]> {
   const fileNames = itemTypes.find((it) => it.key === itemType)
     ?.fileNames as string[];
 
+  return await getData(language, fileNames, filterActiveItems);
+}
+
+export async function getExpeditionItems(
+  language: string,
+  threat: string
+): Promise<AnnoItem[]> {
+  const fileNames = itemTypes.flatMap((it) => it.fileNames);
+
+  const items = await getData(language, fileNames, () => true);
+
+  return items.filter((item) =>
+    item.expeditionAttributes.some((attribute) => attribute.key === threat)
+  );
+}
+
+async function getData(
+  language: string,
+  fileNames: string[],
+  filter: (asset: any) => boolean
+): Promise<AnnoItem[]> {
   const translations = await loadTranslations(language);
   const rewardPoolById = await loadRewardPools();
   const effectTargetPoolById = await loadEffectTargetPools();
@@ -25,16 +46,7 @@ export async function getData(
     rewardPoolById
   );
 
-  const items: AnnoItem[] = assets
-    .filter(
-      (asset: any) =>
-        asset.Values.ItemAction?.ActiveBuff === undefined &&
-        asset.Values.ItemAction?.ItemAction === undefined &&
-        asset.Values.ItemAction?.ActionTarget === undefined
-    ) // remove active items
-    .map((asset: any) => factory.newAnnoItem(asset));
-
-  return items;
+  return assets.filter(filter).map((asset: any) => factory.newAnnoItem(asset));
 }
 
 async function loadTranslations(language: string) {
@@ -85,4 +97,12 @@ async function readFromCache(folder: string, file: string) {
 
   const data = await fs.readFile(fileName, "utf-8");
   return JSON.parse(data);
+}
+
+function filterActiveItems(asset: any) {
+  return (
+    asset.Values.ItemAction?.ActiveBuff === undefined &&
+    asset.Values.ItemAction?.ItemAction === undefined &&
+    asset.Values.ItemAction?.ActionTarget === undefined
+  );
 }

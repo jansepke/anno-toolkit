@@ -1,6 +1,7 @@
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
+import Typography from "@material-ui/core/Typography";
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
 import expeditionThreats from "../../data/anno/assets/expeditionthreat.json";
@@ -36,6 +37,8 @@ const ExpeditionList = ({ items }: { items: AnnoItem[] }) => {
         imageClassName={classes.grayscale}
         tabs={tabs}
       />
+      <br />
+      <Typography align="right">{items.length} Items</Typography>
       <br />
       <Grid container spacing={3}>
         {items.map((item) => (

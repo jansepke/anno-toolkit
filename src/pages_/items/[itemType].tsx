@@ -5,7 +5,7 @@ import { itemTypes, languages } from "../../anno-config.json";
 import ItemList from "../../components/ItemList";
 import Page from "../../components/Page";
 import { AnnoItem } from "../../data/AnnoItem";
-import { getData } from "../../data/data";
+import { getEffectItems } from "../../data/data";
 import { cartesianProduct } from "../../util/functions";
 
 const ItemPage = ({ items }: { items: AnnoItem[] }) => {
@@ -21,7 +21,7 @@ const ItemPage = ({ items }: { items: AnnoItem[] }) => {
 export default ItemPage;
 
 export const getStaticProps: GetStaticProps = async ({ locale, params }) => {
-  const items = await getData(
+  const items = await getEffectItems(
     languages.find((l) => l.key === locale)?.fileName || languages[0].fileName,
     params!.itemType as string
   );
