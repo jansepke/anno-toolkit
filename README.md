@@ -30,13 +30,15 @@ npm run start # run production build
 - Progressive Web App https://github.com/vercel/next.js/tree/master/examples/progressive-web-app
 - sort list (e.g. select effect values)
 - share item button
-- expedition attribute view
 - add about text to index page
 - improve performance by using virtualized lists
 - add renovatebot for automatic npm updates
 - add where to get item
 - tests https://github.com/vercel/next.js/tree/master/examples/with-jest
 - add icons for effects (icon.json)
+- support all expedition attributes
+- automatically switch between centered and scrollable tabs
+- refactor data loading
 
 ## License
 

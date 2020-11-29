@@ -94,10 +94,7 @@ const Index = () => {
                 <Link
                   href={`/expedition/${et.Values.Standard.Name.toLowerCase()}`}
                 >
-                  <CardActionArea
-                    className={classes.cardActionArea}
-                    disabled={true}
-                  >
+                  <CardActionArea className={classes.cardActionArea}>
                     <CardContent>
                       <Image
                         src={`/img/${et.Values.Standard.IconFilename.toLowerCase()
@@ -115,7 +112,6 @@ const Index = () => {
                             et.Values.Standard.Name.toLowerCase()
                         )}
                       </Typography>
-                      <Typography>{t("comingSoon")}</Typography>
                     </CardContent>
                   </CardActionArea>
                 </Link>
