@@ -1,5 +1,6 @@
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
+import { makeStyles } from "@material-ui/core/styles";
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
 import expeditionThreats from "../../data/anno/assets/expeditionthreat.json";
@@ -8,7 +9,14 @@ import ExpeditionAttributes from "./ExpeditionAttributes";
 import ItemCard from "./ItemCard";
 import TabBar from "./TabBar";
 
+const useStyles = makeStyles((theme) => ({
+  grayscale: {
+    filter: "saturate(2) brightness(0.7)",
+  },
+}));
+
 const ExpeditionList = ({ items }: { items: AnnoItem[] }) => {
+  const classes = useStyles();
   const { t } = useTranslation("common");
 
   const tabs = expeditionThreats.map((threat) => ({
@@ -25,6 +33,7 @@ const ExpeditionList = ({ items }: { items: AnnoItem[] }) => {
         type="scrollable"
         queryKey="threat"
         path="expedition"
+        imageClassName={classes.grayscale}
         tabs={tabs}
       />
       <br />

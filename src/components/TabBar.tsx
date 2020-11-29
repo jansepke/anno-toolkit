@@ -16,9 +16,16 @@ interface TabBarProps {
   path: string;
   type: "centered" | "scrollable";
   tabs: TabProps[];
+  imageClassName?: string;
 }
 
-const TabBar = ({ queryKey, path, tabs, type }: TabBarProps) => {
+const TabBar = ({
+  queryKey,
+  path,
+  tabs,
+  type,
+  imageClassName,
+}: TabBarProps) => {
   const router = useRouter();
   const queryValue = router.query[queryKey] as string;
   const tabKeys = tabs.map((tab) => tab.key);
@@ -39,10 +46,11 @@ const TabBar = ({ queryKey, path, tabs, type }: TabBarProps) => {
             icon={
               <Image
                 src={tab.icon}
-                width={20}
-                height={20}
+                width={30}
+                height={30}
                 priority={true}
                 loading="eager"
+                className={imageClassName}
               />
             }
           />
