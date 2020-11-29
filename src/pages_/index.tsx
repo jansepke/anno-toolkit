@@ -9,8 +9,7 @@ import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import expeditionThreats from "../../data/anno/assets/expeditionthreat.json";
-import { itemTypes } from "../anno-config.json";
+import { expeditionThreats, itemTypes } from "../anno-config.json";
 import Page from "../components/Page";
 
 const useStyles = makeStyles((theme) => ({
@@ -81,43 +80,38 @@ const Index = () => {
           <Grid item xs={12}>
             <Typography variant="h4">{t("heading.expedition")}</Typography>
           </Grid>
-          {expeditionThreats.map((et) => (
-            <Grid
-              key={et.Values.Standard.GUID}
-              item
-              xs={12}
-              sm={6}
-              md={3}
-              className={classes.gridItem}
-            >
-              <Card className={classes.card}>
-                <Link
-                  href={`/expedition/${et.Values.Standard.Name.toLowerCase()}`}
-                >
-                  <CardActionArea className={classes.cardActionArea}>
-                    <CardContent>
-                      <Image
-                        src={`/img/${et.Values.Standard.IconFilename.toLowerCase()
-                          .replace("data/ui/2kimages/", "")
-                          .replace(".png", "_0.png")}`}
-                        width={75}
-                        height={75}
-                        priority={true}
-                        loading="eager"
-                        className={classes.grayscale}
-                      />
-                      <Typography variant="h5">
-                        {t(
-                          "expeditionThreats." +
-                            et.Values.Standard.Name.toLowerCase()
-                        )}
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                </Link>
-              </Card>
-            </Grid>
-          ))}
+          {expeditionThreats
+            .filter((threat) => threat.icon)
+            .map((threat) => (
+              <Grid
+                key={threat.key}
+                item
+                xs={12}
+                sm={6}
+                md={3}
+                className={classes.gridItem}
+              >
+                <Card className={classes.card}>
+                  <Link href={`/expedition/${threat.key}`}>
+                    <CardActionArea className={classes.cardActionArea}>
+                      <CardContent>
+                        <Image
+                          src={`/img/main/icons/${threat.icon}_0.png`}
+                          width={75}
+                          height={75}
+                          priority={true}
+                          loading="eager"
+                          className={classes.grayscale}
+                        />
+                        <Typography variant="h5">
+                          {t("expeditionThreats." + threat.key)}
+                        </Typography>
+                      </CardContent>
+                    </CardActionArea>
+                  </Link>
+                </Card>
+              </Grid>
+            ))}
         </Grid>
       </Container>
     </Page>

@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
-import expeditionThreats from "../../data/anno/assets/expeditionthreat.json";
+import { expeditionThreats } from "../anno-config.json";
 import { AnnoItem } from "../data/AnnoItem";
 import ExpeditionAttributes from "./ExpeditionAttributes";
 import ItemCard from "./ItemCard";
@@ -20,13 +20,13 @@ const ExpeditionList = ({ items }: { items: AnnoItem[] }) => {
   const classes = useStyles();
   const { t } = useTranslation("common");
 
-  const tabs = expeditionThreats.map((threat) => ({
-    key: threat.Values.Standard.Name.toLowerCase(),
-    label: t("expeditionThreats." + threat.Values.Standard.Name.toLowerCase()),
-    icon: `/img/${threat.Values.Standard.IconFilename.toLowerCase()
-      .replace("data/ui/2kimages/", "")
-      .replace(".png", "_0.png")}`,
-  }));
+  const tabs = expeditionThreats
+    .filter((threat) => threat.icon)
+    .map((threat) => ({
+      key: threat.key,
+      label: t("expeditionThreats." + threat.key),
+      icon: `/img/main/icons/${threat.icon}_0.png`,
+    }));
 
   return (
     <Container maxWidth="xl">

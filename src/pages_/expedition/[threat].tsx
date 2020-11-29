@@ -1,8 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
-import expeditionThreats from "../../../data/anno/assets/expeditionthreat.json";
-import { languages } from "../../anno-config.json";
+import { expeditionThreats, languages } from "../../anno-config.json";
 import ExpeditionList from "../../components/ExpeditionList";
 import Page from "../../components/Page";
 import { AnnoItem } from "../../data/AnnoItem";
@@ -45,7 +44,7 @@ export const getStaticProps: GetStaticProps = async ({ locale, params }) => {
 export const getStaticPaths: GetStaticPaths = async ({ locales }) => ({
   paths: cartesianProduct(
     locales as string[],
-    expeditionThreats.map((et) => et.Values.Standard.Name.toLowerCase())
+    expeditionThreats.filter((et) => et.icon).map((et) => et.key)
   ).map((params) => ({
     locale: params[0],
     params: {
