@@ -1,11 +1,14 @@
 import Container from "@material-ui/core/Container";
-import Typography from "@material-ui/core/Typography";
+import Grid from "@material-ui/core/Grid";
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
 import expeditionThreats from "../../data/anno/assets/expeditionthreat.json";
+import { AnnoItem } from "../data/AnnoItem";
+import ExpeditionAttributes from "./ExpeditionAttributes";
+import ItemCard from "./ItemCard";
 import TabBar from "./TabBar";
 
-const ExpeditionList = ({ threat }: { threat: string }) => {
+const ExpeditionList = ({ items }: { items: AnnoItem[] }) => {
   const { t } = useTranslation("common");
 
   const tabs = expeditionThreats.map((threat) => ({
@@ -24,7 +27,14 @@ const ExpeditionList = ({ threat }: { threat: string }) => {
         path="expedition"
         tabs={tabs}
       />
-      <Typography>{t("expeditionthreats." + threat)}</Typography>
+      <br />
+      <Grid container spacing={3}>
+        {items.map((item) => (
+          <ItemCard key={item.id} item={item}>
+            <ExpeditionAttributes item={item} />
+          </ItemCard>
+        ))}
+      </Grid>
     </Container>
   );
 };

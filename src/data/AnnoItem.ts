@@ -9,6 +9,11 @@ export interface Upgrade {
   value: any;
 }
 
+export interface ExpeditionAttribute {
+  key: string;
+  value: number;
+}
+
 export interface AnnoItem {
   id: number;
   name: string;
@@ -17,7 +22,7 @@ export interface AnnoItem {
   rarityLabel: string;
   effectTargets: EffectTarget[];
   // TODO: ItemAction
-  // TODO: ExpeditionAttribute
+  expeditionAttributes: ExpeditionAttribute[];
   upgrades: Upgrade[];
   favourite?: boolean;
 }

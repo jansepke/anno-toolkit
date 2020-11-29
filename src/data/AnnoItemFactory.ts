@@ -30,6 +30,7 @@ export default class AnnoItemFactory {
       name: this.translations[values.Standard.GUID],
       icon: iconPath,
       effectTargets: this.resolveEffectTarget(values),
+      expeditionAttributes: this.resolveExpeditionAttributes(values),
       rarity: rarity,
       rarityLabel: this.translations[
         rarities.find((r) => r.key === rarity)?.labelId as number
@@ -79,6 +80,21 @@ export default class AnnoItemFactory {
         ];
       })
       .filter((target: EffectTarget) => target.label);
+  }
+
+  private resolveExpeditionAttributes(values: any) {
+    let attributes =
+      values.ExpeditionAttribute.ExpeditionAttributes?.Item || [];
+    if (!Array.isArray(attributes)) {
+      attributes = [attributes];
+    }
+
+    return attributes
+      .filter((attribute: any) => attribute)
+      .map((attribute: any) => ({
+        key: attribute.Attribute.toLowerCase(),
+        value: attribute.Amount,
+      }));
   }
 
   private getUpgrades(values: any) {
