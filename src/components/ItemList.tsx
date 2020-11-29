@@ -3,8 +3,15 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import useTranslation from "next-translate/useTranslation";
 import React, { useState } from "react";
-import { itemTypes, upgrades } from "../anno-config.json";
-import { AnnoItem, Upgrade } from "../data/AnnoItem";
+import { itemTypes } from "../anno-config.json";
+import { AnnoItem } from "../data/AnnoItem";
+import {
+  byEffectTarget,
+  byFavourite,
+  byItemName,
+  byRarity,
+  byUpgrade,
+} from "../util/filters";
 import { useStateWithLocalStorage } from "../util/hooks";
 import Filters, { FilterData } from "./Filters";
 import ItemCard from "./ItemCard";
@@ -49,24 +56,6 @@ const ItemList = ({ items }: { items: AnnoItem[] }) => {
     .filter(byRarity(filters.rarity))
     .filter(byFavourite(filters.onlyFavourites));
 
-  const effectTargetItems = items
-    .filter(byItemName(filters.itemName))
-    .filter(byUpgrade(filters.upgrade))
-    .filter(byRarity(filters.rarity))
-    .filter(byFavourite(filters.onlyFavourites));
-
-  const upgradeItems = items
-    .filter(byItemName(filters.itemName))
-    .filter(byEffectTarget(filters.effectTarget))
-    .filter(byRarity(filters.rarity))
-    .filter(byFavourite(filters.onlyFavourites));
-
-  const rarityItems = items
-    .filter(byItemName(filters.itemName))
-    .filter(byEffectTarget(filters.effectTarget))
-    .filter(byUpgrade(filters.upgrade))
-    .filter(byFavourite(filters.onlyFavourites));
-
   const tabs = itemTypes
     .filter((itemType) => !itemType.hidden)
     .map((itemType) => ({
@@ -78,13 +67,7 @@ const ItemList = ({ items }: { items: AnnoItem[] }) => {
   return (
     <Container maxWidth="xl">
       <TabBar type="centered" queryKey="itemType" path="items" tabs={tabs} />
-      <Filters
-        effectTargetItems={effectTargetItems}
-        upgradeItems={upgradeItems}
-        rarityItems={rarityItems}
-        filters={filters}
-        setFilters={setFilters}
-      />
+      <Filters items={items} filters={filters} setFilters={setFilters} />
       <br />
       <Typography align="right">
         {filteredItems.length !== items.length
@@ -107,43 +90,3 @@ const ItemList = ({ items }: { items: AnnoItem[] }) => {
 };
 
 export default ItemList;
-
-function byItemName(filterValue: string) {
-  return (item: AnnoItem) =>
-    filterValue === "" ||
-    item.name.toLowerCase().includes(filterValue.toLowerCase());
-}
-
-function byEffectTarget(filterValue: string) {
-  return (item: AnnoItem) =>
-    filterValue === "all" ||
-    item.effectTargets.some((et) => et.label === filterValue);
-}
-
-function byUpgrade(filterValue: string) {
-  const upgrade = upgrades.find((u) => u.key === filterValue);
-  let additionalCheck = (u: Upgrade) => true;
-  if (upgrade?.valueIs === "negative") {
-    additionalCheck = (u) => getValue(u.value) < 0;
-  }
-  if (upgrade?.valueIs === "positive") {
-    additionalCheck = (u) => getValue(u.value) > 0;
-  }
-
-  return (item: AnnoItem) =>
-    filterValue === "all" ||
-    item.upgrades.some((u) => u.key === filterValue && additionalCheck(u));
-}
-
-function byRarity(filterValue: string) {
-  return (item: AnnoItem) =>
-    filterValue === "all" || item.rarityLabel === filterValue;
-}
-
-function byFavourite(filterValue: boolean) {
-  return (item: AnnoItem) => filterValue === false || item.favourite;
-}
-
-function getValue(value: number | { Value: number }) {
-  return typeof value === "number" ? value : value.Value;
-}

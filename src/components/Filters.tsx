@@ -9,6 +9,13 @@ import Autocomplete from "@material-ui/lab/Autocomplete";
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
 import { AnnoItem } from "../data/AnnoItem";
+import {
+  byEffectTarget,
+  byFavourite,
+  byItemName,
+  byRarity,
+  byUpgrade,
+} from "../util/filters";
 
 export interface FilterData {
   itemName: string;
@@ -48,37 +55,43 @@ const CustomAutocomplete = ({
 };
 
 const Filters = ({
-  effectTargetItems,
-  upgradeItems,
-  rarityItems,
+  items,
   filters,
   setFilters,
 }: {
-  effectTargetItems: AnnoItem[];
-  upgradeItems: AnnoItem[];
-  rarityItems: AnnoItem[];
+  items: AnnoItem[];
   filters: FilterData;
   setFilters: (filters: FilterData) => void;
 }) => {
   const { t } = useTranslation("common");
 
-  const onItemNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setFilters({ ...filters, itemName: event.target.value });
-  };
-
-  const effectTargetOptions = effectTargetItems
+  const effectTargetOptions = items
+    .filter(byItemName(filters.itemName))
+    .filter(byUpgrade(filters.upgrade))
+    .filter(byRarity(filters.rarity))
+    .filter(byFavourite(filters.onlyFavourites))
     .flatMap((asset) => asset.effectTargets)
     .map((item) => item.label)
     .filter((v, i, a) => a.indexOf(v) === i)
     .sort();
-  const upgradeOptions = upgradeItems
+
+  const upgradeOptions = items
+    .filter(byItemName(filters.itemName))
+    .filter(byEffectTarget(filters.effectTarget))
+    .filter(byRarity(filters.rarity))
+    .filter(byFavourite(filters.onlyFavourites))
     .flatMap((asset) => asset.upgrades)
     .filter(
       (upgrade, index, self) =>
         self.findIndex((u) => u.key === upgrade.key) === index
     )
     .sort((a, b) => (a?.label as string).localeCompare(b?.label as string));
-  const rarityOptions = rarityItems
+
+  const rarityOptions = items
+    .filter(byItemName(filters.itemName))
+    .filter(byEffectTarget(filters.effectTarget))
+    .filter(byUpgrade(filters.upgrade))
+    .filter(byFavourite(filters.onlyFavourites))
     .map((asset) => asset.rarityLabel)
     .filter((v, i, a) => a.indexOf(v) === i);
 
@@ -92,7 +105,9 @@ const Filters = ({
                 label={t("filter.itemName")}
                 variant="outlined"
                 value={filters.itemName}
-                onChange={onItemNameChange}
+                onChange={(event) =>
+                  setFilters({ ...filters, itemName: event.target.value })
+                }
               />
             </FormControl>
           </Grid>
