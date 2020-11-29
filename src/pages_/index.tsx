@@ -91,7 +91,9 @@ const Index = () => {
               className={classes.gridItem}
             >
               <Card className={classes.card}>
-                <Link href={`/items/${et.Values.Standard.Name}`}>
+                <Link
+                  href={`/expedition/${et.Values.Standard.Name.toLowerCase()}`}
+                >
                   <CardActionArea
                     className={classes.cardActionArea}
                     disabled={true}
@@ -108,7 +110,10 @@ const Index = () => {
                         className={classes.grayscale}
                       />
                       <Typography variant="h5">
-                        {t("expeditionthreats." + et.Values.Standard.GUID)}
+                        {t(
+                          "expeditionthreats." +
+                            et.Values.Standard.Name.toLowerCase()
+                        )}
                       </Typography>
                       <Typography>{t("comingSoon")}</Typography>
                     </CardContent>
