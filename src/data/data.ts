@@ -92,11 +92,20 @@ async function loadEffectTargetPools() {
   return effectTargetPoolById;
 }
 
+const fileCache: { [key: string]: Promise<any> } = {};
+
 async function readFromCache(folder: string, file: string) {
   const fileName = `./data/anno/${folder}/${file.replace("/", "-")}.json`;
 
-  const data = await fs.readFile(fileName, "utf-8");
-  return JSON.parse(data);
+  if (!fileCache[fileName]) {
+    console.log(folder, file);
+
+    fileCache[fileName] = new Promise((resolve) => {
+      fs.readFile(fileName, "utf-8").then((data) => resolve(JSON.parse(data)));
+    });
+  }
+
+  return await fileCache[fileName];
 }
 
 function filterActiveItems(asset: any) {
