@@ -20,7 +20,8 @@ export function byUpgrade(filterValue: string) {
     additionalCheck = (u) => getValue(u.value) < 0;
   }
   if (upgrade?.valueIs === "positive") {
-    additionalCheck = (u) => getValue(u.value) > 0;
+    additionalCheck = (u) =>
+      getValue(u.value) > 0 || getValue(u.value) === -100;
   }
 
   return (item: AnnoItem) =>

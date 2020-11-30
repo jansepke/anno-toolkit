@@ -21,12 +21,20 @@ npm run start # run production build
 
 ## TODO
 
-- more item types
+- add ship items
+- add arctic lodge items
 - sort list (e.g. select effect values)
 - add about text to index page
+- select and summarize items in expedition list
+- add ship values to expedition list
+- add resources to expedition list
+- filter for specific traits
+- filter by ship type
+- add ship stats
 - add renovatebot for automatic npm updates
 - tests https://github.com/vercel/next.js/tree/master/examples/with-jest
 - add where to get item
+- ship expedition slot optimizer
 - support active items
 - filter by world
 - filter by DLC
