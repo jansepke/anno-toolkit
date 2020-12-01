@@ -1,5 +1,15 @@
 {
-  "extends": [
-    "config:base"
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "depTypeList": ["devDependencies"],
+      "packagePatterns": ["lint", "prettier", "husky"],
+      "automerge": true,
+      "automergeType": "branch"
+    },
+    {
+      "packagePatterns": ["react"],
+      "groupName": "react"
+    }
   ]
 }
