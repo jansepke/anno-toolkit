@@ -151,7 +151,7 @@ export default class AnnoItemFactory {
             value >= 10000 &&
             this.translations[value]
           ) {
-            item[property] = this.translations[value];
+            item[`${property}_label`] = this.translations[value];
           }
         }
       }

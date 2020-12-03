@@ -22,25 +22,25 @@ const renderBoolean = [
 const renderUpgradeItem = (key: string, item: any) => {
   switch (key) {
     case "ReplaceInputs":
-      return `${item.OldInput} -> ${item.NewInput}`;
+      return `${item.OldInput_label} -> ${item.NewInput_label}`;
     case "AdditionalOutput":
-      return `1/${item.AdditionalOutputCycle} ${item.Product}`;
+      return `1/${item.AdditionalOutputCycle} ${item.Product_label}`;
     case "InputAmountUpgrade":
-      return `${item.Amount} ${item.Product}`;
+      return `${item.Amount} ${item.Product_label}`;
     case "AddAssemblyOptions":
-      return item.NewOption;
+      return item.NewOption_label;
     case "InputBenefitModifier":
       if (item.AdditionalMoney) {
-        return `${item.Product} +${item.AdditionalMoney} Money`;
+        return `${item.Product_label} +${item.AdditionalMoney} Money`;
       } else if (item.AdditionalSupply) {
-        return `${item.Product} +${item.AdditionalSupply} Supply`;
+        return `${item.Product_label} +${item.AdditionalSupply} Supply`;
       } else {
-        return `${item.Product} +${item.AdditionalHappiness} Happiness`;
+        return `${item.Product_label} +${item.AdditionalHappiness} Happiness`;
       }
     case "NeedProvideNeedUpgrade":
-      return `${item.SubstituteNeed} -> ${item.ProvidedNeed}`;
+      return `${item.SubstituteNeed_label} -> ${item.ProvidedNeed_label}`;
     case "GoodConsumptionUpgrade":
-      return `${item.AmountInPercent}% ${item.ProvidedNeed}`;
+      return `${item.AmountInPercent}% ${item.ProvidedNeed_label}`;
 
     default:
       return JSON.stringify(item);
