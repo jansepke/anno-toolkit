@@ -48,7 +48,7 @@ const Index = () => {
               item
               xs={12}
               sm={6}
-              md
+              md={3}
               className={classes.gridItem}
             >
               <Card className={classes.card}>
