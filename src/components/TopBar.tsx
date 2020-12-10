@@ -14,7 +14,7 @@ import useTranslation from "next-translate/useTranslation";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import { locales } from "../../i18n.json";
+import { locales } from "../../i18n";
 
 const useStyles = makeStyles((theme: Theme) => ({
   title: {
