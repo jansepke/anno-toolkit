@@ -23,7 +23,6 @@ npm run start # run production build
 
 - add ship items
 - sort list (e.g. select effect values)
-- add about text to index page
 - select and summarize items in expedition list
 - add ship values to expedition list
 - add resources to expedition list
