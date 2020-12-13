@@ -98,7 +98,7 @@ async function readFromCache(folder: string, file: string) {
   const fileName = `./data/anno/${folder}/${file.replace("/", "-")}.json`;
 
   if (!fileCache[fileName]) {
-    console.log(folder, file);
+    console.log("Loading", folder, file);
 
     fileCache[fileName] = new Promise((resolve) => {
       fs.readFile(fileName, "utf-8").then((data) => resolve(JSON.parse(data)));
