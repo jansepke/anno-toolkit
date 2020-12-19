@@ -17,8 +17,16 @@ async function loadTranslations(language) {
   const fileName = `texts_${language}`;
 
   const json = await parseXMLDataFile(fileName);
+  const translations = {};
+  for (const item of json.TextExport.Texts.Text) {
+    translations[item.GUID] = item.Text.replace
+      ? item.Text.replace(/\[.*\]/g, "")
+          .replace(/\s\s/g, " ")
+          .replace(": .", "")
+      : item.Text;
+  }
 
-  await saveToCache("texts", fileName, json);
+  await saveToCache("texts", fileName, translations);
 }
 
 const assetsByType = {};

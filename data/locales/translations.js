@@ -10,29 +10,8 @@ function getTranslationFromConfig(translations, group) {
   );
 }
 
-function getTranslationFromAsset(translations, asset) {
-  return require(`../anno/assets/${asset}.json`).reduce(
-    (all, asset) => ({
-      ...all,
-      [asset.Values.Standard.Name.toLowerCase()]: translations[
-        asset.Values.Standard.GUID
-      ],
-    }),
-    {}
-  );
-}
-
 module.exports.getTranslations = function (language) {
-  const translationJson = require(`../anno/texts/texts_${language}.json`);
-
-  const translations = {};
-  for (const item of translationJson.TextExport.Texts.Text) {
-    translations[item.GUID] = item.Text.replace
-      ? item.Text.replace(/\[.*\]/g, "")
-          .replace(/\s\s/g, " ")
-          .replace(": .", "")
-      : item.Text;
-  }
+  const translations = require(`../anno/texts/texts_${language}.json`);
 
   return {
     itemTypes: getTranslationFromConfig(translations, "itemTypes"),

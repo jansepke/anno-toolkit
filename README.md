@@ -25,7 +25,7 @@ npm run start # run production build
 - sort list (e.g. select effect values)
 - select and summarize items in expedition list
 - add ship values to expedition list
-- add resources to expedition list
+- add resources to expedition list (product.json)
 - filter for specific traits
 - filter by ship type
 - add ship stats

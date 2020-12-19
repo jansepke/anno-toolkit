@@ -50,19 +50,7 @@ async function getData(
 }
 
 async function loadTranslations(language: string) {
-  const json = await readFromCache("texts", `texts_${language}`);
-
-  const translations: { [key: number]: string } = {};
-
-  for (const item of json.TextExport.Texts.Text) {
-    translations[item.GUID] = item.Text.replace
-      ? item.Text.replace(/\[.*\]/g, "")
-          .replace(/\s\s/g, " ")
-          .replace(": .", "")
-      : item.Text;
-  }
-
-  return translations;
+  return await readFromCache("texts", `texts_${language}`);
 }
 
 async function loadRewardPools() {
