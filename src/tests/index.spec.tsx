@@ -1,8 +1,5 @@
-import "@testing-library/jest-dom";
-import { render } from "@testing-library/react";
+import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { getPage } from "next-page-tester";
-
-jest.setTimeout(10000);
 
 describe("index", () => {
   let page: React.ReactElement;
@@ -13,35 +10,52 @@ describe("index", () => {
     }));
   });
 
-  it("has title", async () => {
-    const { queryByText } = render(page);
+  beforeEach(() => {
+    render(page);
+  });
 
-    expect(queryByText("common:title.index")).not.toBeNull();
+  it("has title", async () => {
+    expect(screen.queryByText("common:title.index")).toBeInTheDocument();
   });
 
   it("has item buttons", async () => {
-    const { queryByText } = render(page);
+    const section = screen.queryByText("common:heading.items");
 
-    const section = queryByText("common:heading.items");
-    expect(section).not.toBeNull();
-
+    expect(section).toBeInTheDocument();
     expect(section?.closest("div")?.querySelectorAll("button")).toHaveLength(5);
   });
 
   it("has ship item button disabled", async () => {
-    const { queryByText } = render(page);
+    const ship = screen.queryByText("common:itemTypes.ship");
 
-    expect(
-      queryByText("common:itemTypes.ship")?.closest("button")
-    ).toBeDisabled();
+    expect(ship?.closest("button")).toBeDisabled();
   });
 
   it("has expedition buttons", async () => {
-    const { queryByText } = render(page);
+    const section = screen.queryByText("common:heading.expedition");
 
-    const section = queryByText("common:heading.expedition");
-    expect(section).not.toBeNull();
-
+    expect(section).toBeInTheDocument();
     expect(section?.closest("div")?.querySelectorAll("button")).toHaveLength(8);
+  });
+
+  test.each([
+    ["harboroffice", "Angler"],
+    ["guildhouse", "Juwelier"],
+    ["townhall", "Richter"],
+    ["arctic-lodge", "Treibholz-​ Walwächter"],
+  ])("goes to %s items page", async (itemType, item) => {
+    const button = screen
+      .queryByText(`common:itemTypes.${itemType}`)
+      ?.closest("button");
+
+    expect(button).toBeInTheDocument();
+
+    fireEvent.click(button!);
+
+    await waitFor(() =>
+      expect(screen.getByText("common:title.items")).toBeInTheDocument()
+    );
+
+    expect(screen.getByText(item)).toBeInTheDocument();
   });
 });
