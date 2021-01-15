@@ -5,7 +5,7 @@
     "build": "next build",
     "start": "next start",
     "test": "jest",
-    "xml-to-json": "node ./src/data/xml-to-json.js",
+    "xml-to-json": "ts-node --script-mode ./src/data/xml-to-json.ts",
     "lint": "prettier --check .",
     "lint:fix": "prettier --write ."
   },
@@ -42,6 +42,7 @@
     "jest": "26.6.3",
     "next-page-tester": "0.17.0",
     "prettier": "2.2.1",
-    "ts-jest": "26.4.4"
+    "ts-jest": "26.4.4",
+    "ts-node": "^9.1.1"
   }
 }

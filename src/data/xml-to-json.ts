@@ -1,6 +1,6 @@
-const parser = require("fast-xml-parser");
-const fs = require("fs").promises;
-const { languages } = require("../anno-config.json");
+import parser from "fast-xml-parser";
+import { promises as fs } from "fs";
+import { languages } from "../anno-config.json";
 
 main();
 
@@ -11,13 +11,13 @@ async function main() {
   ]);
 }
 
-async function loadTranslations(language) {
+async function loadTranslations(language: string) {
   console.log(`Loading ${language} Translations...`);
 
   const fileName = `texts_${language}`;
 
   const json = await parseXMLDataFile(fileName);
-  const translations = {};
+  const translations: { [key: string]: string } = {};
   for (const item of json.TextExport.Texts.Text) {
     translations[item.GUID] = item.Text.replace
       ? item.Text.replace(/\[.*\]/g, "")
@@ -29,7 +29,7 @@ async function loadTranslations(language) {
   await saveToCache("texts", fileName, translations);
 }
 
-const assetsByType = {};
+const assetsByType: { [key: string]: any } = {};
 async function loadAssets() {
   console.log("Loading Assets...");
 
@@ -43,8 +43,8 @@ async function loadAssets() {
   }
 }
 
-function processGroups(groups) {
-  for (const group of Array.from(groups)) {
+function processGroups(groups: any) {
+  for (const group of Array.from<any>(groups)) {
     if (group.Assets) {
       processAssets(group.Assets.Asset);
     }
@@ -55,8 +55,8 @@ function processGroups(groups) {
   }
 }
 
-function processAssets(assets) {
-  for (const asset of Array.from(assets)) {
+function processAssets(assets: any) {
+  for (const asset of Array.from<any>(assets)) {
     if (!asset.Template) {
       continue;
     }
@@ -74,7 +74,7 @@ function processAssets(assets) {
   }
 }
 
-async function parseXMLDataFile(file) {
+async function parseXMLDataFile(file: string) {
   const xml = await fs.readFile(`./import-data/${file}.xml`, "utf8");
 
   try {
@@ -84,7 +84,7 @@ async function parseXMLDataFile(file) {
   }
 }
 
-async function saveToCache(folder, file, data) {
+async function saveToCache(folder: string, file: string, data: any) {
   const fileName = `./data/anno/${folder}/${file.replace("/", "-")}.json`;
 
   await fs.writeFile(fileName, JSON.stringify(data, null, 2));
