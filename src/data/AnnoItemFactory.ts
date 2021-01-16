@@ -27,9 +27,17 @@ export default class AnnoItemFactory {
 
     return {
       id: values.Standard.GUID,
+      type: (asset.Values.Item && asset.Values.Item.Allocation
+        ? asset.Values.Item.Allocation + "item"
+        : asset.Template
+      ).toLowerCase(),
       name: this.translations[values.Standard.GUID],
       icon: iconPath,
       effectTargets: this.resolveEffectTarget(values),
+      activeItem:
+        values.ItemAction?.ActiveBuff !== undefined ||
+        values.ItemAction?.ItemAction !== undefined ||
+        values.ItemAction?.ActionTarget !== undefined,
       expeditionAttributes: this.resolveExpeditionAttributes(values),
       rarity: rarity,
       rarityLabel: this.translations[

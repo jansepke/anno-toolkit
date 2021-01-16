@@ -1,11 +1,12 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "npm run fill-db && next dev",
+    "build": "npm run fill-db && next build",
     "start": "next start",
-    "test": "jest",
+    "test": "npm run fill-db && jest",
     "xml-to-json": "ts-node --script-mode ./src/data/xml-to-json.ts",
+    "fill-db": "ts-node --script-mode ./src/data/fill-db.ts",
     "lint": "prettier --check .",
     "lint:fix": "prettier --write ."
   },

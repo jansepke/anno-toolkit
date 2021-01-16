@@ -17,11 +17,13 @@ export interface ExpeditionAttribute {
 export interface AnnoItem {
   id: number;
   name: string;
+  type: string;
   icon: string;
   rarity: string;
   rarityLabel: string;
   effectTargets: EffectTarget[];
   // TODO: ItemAction
+  activeItem: boolean;
   expeditionAttributes: ExpeditionAttribute[];
   upgrades: Upgrade[];
   favourite?: boolean;
