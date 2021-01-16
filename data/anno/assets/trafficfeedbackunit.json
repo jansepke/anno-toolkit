@@ -4230,6 +4230,30 @@
     "Template": "TrafficFeedbackUnit",
     "Values": {
       "Standard": {
+        "GUID": 141624,
+        "Name": "Horse Cart Steam",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Vehicle",
+        "CfgPath": "data/graphics/vehicle/steam_carriage_01/steam_carriage_01.cfg",
+        "SpeedSource": "TakeFromAsset",
+        "OverwriteSpeed": 0.3,
+        "ResidentCamInteraction": "MountAsCoach"
+      },
+      "Trailer": {
+        "TrailerEndPartCfgVariations": {
+          "Item": {
+            "CfgVariation": "data/graphics/vehicle/horse_drawn_carriage_04/horse_drawn_carriage_04_rear.cfg"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
         "GUID": 140712,
         "Name": "Resolver Unit Fire Normal",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_fire_house.png"
@@ -4570,6 +4594,34 @@
           }
         }
       }
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 141661,
+        "Name": "FishingBoat"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Ship",
+        "CfgPath": "data/graphics/vehicle/fishing_boat/fishing_boat.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 142589,
+        "Name": "SA | FishingBoat"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Ship",
+        "CfgPath": "data/graphics/vehicle/fishing_boat/fishing_boat_colony_01.cfg"
+      },
+      "Trailer": ""
     }
   },
   {
@@ -5165,6 +5217,41 @@
     "Template": "TrafficFeedbackUnit",
     "Values": {
       "Standard": {
+        "GUID": 141899,
+        "Name": "Default Parade",
+        "IconFilename": "data/ui/2kimages/main/3dicons/crown_attacker.png"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "ParadeTrain",
+        "CfgPath": "data/graphics/effects/city_incidents/party/empty_front_waggon.cfg",
+        "SpeedSource": "Managed"
+      },
+      "Trailer": {
+        "TrailerType": "TrainDynamic",
+        "TrailerCount": 7,
+        "TrailerEndPartCfgVariations": {
+          "Item": [
+            {
+              "CfgVariation": "data/graphics/effects/city_incidents/party/marching_band_drummer_pair.cfg"
+            },
+            {
+              "CfgVariation": "data/graphics/effects/city_incidents/party/marching_band_tuba_pair.cfg"
+            },
+            {
+              "CfgVariation": "data/graphics/units/wildlife/gorilla/gorilla.cfg"
+            },
+            {
+              "CfgVariation": "data/graphics/units/wildlife/goat/goat_male.cfg"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
         "GUID": 142940,
         "Name": "QuestGiver Firefighter",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png"
@@ -5356,6 +5443,84 @@
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/residence/residence_colony_03_tier_01_normal_m_02/residence_colony_03_tier_01_normal_m_02_var_01.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 115995,
+        "Name": "Arctic Tier 01 Native Male Muscular 01"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc03/graphics/units/inhabitants/residence/residence_colony_03_tier_01_natives_muscular_m_01/residence_colony_03_tier_01_natives_muscular_m_01.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 115996,
+        "Name": "Arctic Tier 01 Native Male Muscular 02"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc03/graphics/units/inhabitants/residence/residence_colony_03_tier_01_natives_muscular_m_02/residence_colony_03_tier_01_natives_muscular_m_02.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 115997,
+        "Name": "Arctic Tier 01 Native Female Normal 01"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc03/graphics/units/inhabitants/residence/residence_colony_03_tier_01_natives_normal_f_01/residence_colony_03_tier_01_natives_normal_f_01.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 115999,
+        "Name": "Arctic Tier 01 Native Female Normal 02"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc03/graphics/units/inhabitants/residence/residence_colony_03_tier_01_natives_normal_f_02/residence_colony_03_tier_01_natives_normal_f_02.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 115981,
+        "Name": "Arctic Tier 01 Native Child Male 01"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc03/graphics/units/inhabitants/residence/residence_colony_03_tier_01_small_m_01/residence_colony_03_tier_01_small_m_01.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 115982,
+        "Name": "Arctic Tier 01 Native Child Male 02"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc03/graphics/units/inhabitants/residence/residence_colony_03_tier_01_small_m_02/residence_colony_03_tier_01_small_m_02.cfg"
       },
       "Trailer": ""
     }
@@ -5812,6 +5977,29 @@
     "Template": "TrafficFeedbackUnit",
     "Values": {
       "Standard": {
+        "GUID": 116009,
+        "Name": "Arctic Logistic Transporter Warehouse",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Vehicle",
+        "CfgPath": "data/dlc03/graphics/vehicles/economy_carriage_02/economy_carriage_02.cfg",
+        "SpeedSource": "Managed",
+        "ResidentCamInteraction": "MountAsCoach"
+      },
+      "Trailer": {
+        "TrailerEndPartCfgVariations": {
+          "Item": {
+            "CfgVariation": "data/graphics/vehicle/horse_drawn_carriage_warehouse/horse_drawn_carriage_warehouse_rear.cfg"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
         "GUID": 116109,
         "Name": "Arctic Caribou"
       },
@@ -5830,6 +6018,288 @@
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/graphics/units/wildlife/bear_polar/bear_polar.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 269768,
+        "Name": "Harvester",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Vehicle",
+        "CfgPath": "data/dlc05/graphics/vehicle/agricultural_vehicle/harvester_01.cfg",
+        "SpeedSource": "TakeFromAsset",
+        "OverwriteSpeed": 0.25,
+        "ResidentCamInteraction": "MountAsMotorized"
+      },
+      "Trailer": {
+        "TrailerEndPartCfgVariations": {
+          "Item": {
+            "CfgVariation": "data/graphics/vehicle/animal_handler/animal_handler_01_back.cfg"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 269767,
+        "Name": "Tractor (Generic) (no Trailer)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Vehicle",
+        "CfgPath": "data/dlc05/graphics/vehicle/agricultural_vehicle/agriculture_vehicle_02.cfg",
+        "SpeedSource": "TakeFromAsset",
+        "OverwriteSpeed": 0.25,
+        "ResidentCamInteraction": "MountAsMotorized"
+      },
+      "Trailer": {
+        "TrailerEndPartCfgVariations": {
+          "Item": {
+            "CfgVariation": "data/graphics/vehicle/animal_handler/animal_handler_01_back.cfg"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 269766,
+        "Name": "Tractor (Bell Pepper)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Vehicle",
+        "CfgPath": "data/dlc05/graphics/vehicle/agricultural_vehicle/agriculture_vehicle_01_front.cfg",
+        "SpeedSource": "TakeFromAsset",
+        "OverwriteSpeed": 0.25,
+        "ResidentCamInteraction": "MountAsMotorized"
+      },
+      "Trailer": {
+        "TrailerCount": 1,
+        "TrailerEndPartCfgVariations": {
+          "Item": {
+            "CfgVariation": "data/dlc05/graphics/vehicle/agricultural_vehicle/trailer_03_transport_back.cfg"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 270091,
+        "Name": "Tractor (Potatoe)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Vehicle",
+        "CfgPath": "data/dlc05/graphics/vehicle/agricultural_vehicle/agriculture_vehicle_01_front.cfg",
+        "SpeedSource": "TakeFromAsset",
+        "OverwriteSpeed": 0.25,
+        "ResidentCamInteraction": "MountAsMotorized"
+      },
+      "Trailer": {
+        "TrailerCount": 1,
+        "TrailerEndPartCfgVariations": {
+          "Item": {
+            "CfgVariation": "data/dlc05/graphics/vehicle/agricultural_vehicle/trailer_02_transport_back.cfg"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 270092,
+        "Name": "Tractor (Vineyard)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Vehicle",
+        "CfgPath": "data/dlc05/graphics/vehicle/agricultural_vehicle/agriculture_vehicle_01_front.cfg",
+        "SpeedSource": "TakeFromAsset",
+        "OverwriteSpeed": 0.25,
+        "ResidentCamInteraction": "MountAsMotorized"
+      },
+      "Trailer": {
+        "TrailerCount": 1,
+        "TrailerEndPartCfgVariations": {
+          "Item": {
+            "CfgVariation": "data/dlc05/graphics/vehicle/agricultural_vehicle/trailer_05_transport_back.cfg"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 270083,
+        "Name": "Logistic Transporter Fuel Moderate",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Vehicle",
+        "CfgPath": "data/dlc05/graphics/vehicle/fuel_transport/fuel_transport_01.cfg",
+        "SpeedSource": "Managed",
+        "OverwriteSpeed": 0.25,
+        "ResidentCamInteraction": "MountAsMotorized"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 269971,
+        "Name": "SA | Harvester",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Vehicle",
+        "CfgPath": "data/dlc05/graphics/vehicle/agricultural_vehicle/harvester_01_colony_01.cfg",
+        "SpeedSource": "TakeFromAsset",
+        "OverwriteSpeed": 0.25,
+        "ResidentCamInteraction": "MountAsMotorized"
+      },
+      "Trailer": {
+        "TrailerEndPartCfgVariations": {
+          "Item": {
+            "CfgVariation": "data/graphics/vehicle/animal_handler/animal_handler_01_back.cfg"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 269969,
+        "Name": "SA | Tractor (Generic)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Vehicle",
+        "CfgPath": "data/dlc05/graphics/vehicle/agricultural_vehicle/agriculture_vehicle_01_colony_01_front.cfg",
+        "SpeedSource": "TakeFromAsset",
+        "OverwriteSpeed": 0.25,
+        "ResidentCamInteraction": "MountAsMotorized"
+      },
+      "Trailer": {
+        "TrailerCount": 1,
+        "TrailerEndPartCfgVariations": {
+          "Item": {
+            "CfgVariation": "data/dlc05/graphics/vehicle/agricultural_vehicle/trailer_01_transport_colony_01_back.cfg"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 269970,
+        "Name": "SA | Tractor (Generic) (no Trailer)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Vehicle",
+        "CfgPath": "data/dlc05/graphics/vehicle/agricultural_vehicle/agriculture_vehicle_02_colony_01.cfg",
+        "SpeedSource": "TakeFromAsset",
+        "OverwriteSpeed": 0.25,
+        "ResidentCamInteraction": "MountAsMotorized"
+      },
+      "Trailer": {
+        "TrailerEndPartCfgVariations": {
+          "Item": {
+            "CfgVariation": "data/graphics/vehicle/animal_handler/animal_handler_01_back.cfg"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 270093,
+        "Name": "SA | Tractor (Tobacco)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Vehicle",
+        "CfgPath": "data/dlc05/graphics/vehicle/agricultural_vehicle/agriculture_vehicle_01_colony_01_front.cfg",
+        "SpeedSource": "TakeFromAsset",
+        "OverwriteSpeed": 0.25,
+        "ResidentCamInteraction": "MountAsMotorized"
+      },
+      "Trailer": {
+        "TrailerCount": 1,
+        "TrailerEndPartCfgVariations": {
+          "Item": {
+            "CfgVariation": "data/dlc05/graphics/vehicle/agricultural_vehicle/trailer_04_transport_back.cfg"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 270094,
+        "Name": "SA | Tractor (Banana)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Vehicle",
+        "CfgPath": "data/dlc05/graphics/vehicle/agricultural_vehicle/agriculture_vehicle_01_colony_01_front.cfg",
+        "SpeedSource": "TakeFromAsset",
+        "OverwriteSpeed": 0.25,
+        "ResidentCamInteraction": "MountAsMotorized"
+      },
+      "Trailer": {
+        "TrailerCount": 1,
+        "TrailerEndPartCfgVariations": {
+          "Item": {
+            "CfgVariation": "data/dlc05/graphics/vehicle/agricultural_vehicle/trailer_06_transport_back.cfg"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 270085,
+        "Name": "Logistic Transporter Fuel SouthAmerica",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Vehicle",
+        "CfgPath": "data/dlc05/graphics/vehicle/fuel_transport/fuel_transport_01_colony_01.cfg",
+        "SpeedSource": "Managed",
+        "OverwriteSpeed": 0.25,
+        "ResidentCamInteraction": "MountAsMotorized"
       },
       "Trailer": ""
     }
@@ -6138,6 +6608,20 @@
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/residents/residence_colony_02_tier_02_small_m_01/residence_colony_02_tier_02_small_m_01.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 123970,
+        "Name": "AF | Tier 02 Traveling Vendor",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc06/graphics/units/inhabitants/special/traveling_vendor/colony_02_traveling_vendor.cfg"
       },
       "Trailer": ""
     }

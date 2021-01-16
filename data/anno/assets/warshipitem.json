@@ -2626,6 +2626,78 @@
     "Template": "ItemSpecialAction",
     "Values": {
       "Standard": {
+        "GUID": 110955,
+        "Name": "Leader Anarchy Flag",
+        "IconFilename": "data/ui/2kimages/main/3dicons/machine_items/icon_mercier_flag.png",
+        "InfoDescription": 110964
+      },
+      "SpecialAction": {
+        "UseEffectAsset": 1,
+        "MouseEffect": 500992,
+        "ActionRadius": 20
+      },
+      "ItemEffect": {
+        "EffectTargets": {
+          "Item": {
+            "GUID": 191454
+          }
+        }
+      },
+      "ItemAction": {
+        "ItemAction": "BUFF_OTHER",
+        "ActionTarget": 501575,
+        "ActionDistance": 45,
+        "RadiusBuffTargets": "Ally",
+        "ActionCooldown": 60000,
+        "ActionDuration": 30000,
+        "ActiveBuff": 110956,
+        "ActionCompletedEffect": {
+          "EffectAsset": 500992
+        },
+        "CanEndItemAction": 0,
+        "StopMovementOnInteraction": 0
+      },
+      "Item": {
+        "Allocation": "Warship",
+        "MaxStackSize": 1,
+        "Rarity": "Legendary",
+        "HasAction": 1,
+        "TradePrice": 689500
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Dr. Mercier's Feverishly Federating Flag of the Free",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 30909
+      },
+      "ExpeditionAttribute": {
+        "BaseMorale": 0,
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Diplomacy",
+              "Amount": 50
+            },
+            {
+              "Attribute": "Faith",
+              "Amount": 30
+            }
+          ]
+        },
+        "ItemDifficulties": "Hard"
+      },
+      "Locked": "",
+      "CraftableItem": ""
+    }
+  },
+  {
+    "Template": "ItemSpecialAction",
+    "Values": {
+      "Standard": {
         "GUID": 110965,
         "Name": "Anarchist Bomb Pack",
         "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_anarchist_bomb_pack_1.png",

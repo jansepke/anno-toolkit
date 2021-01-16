@@ -1103,6 +1103,187 @@
     "Template": "Slot",
     "Values": {
       "Standard": {
+        "GUID": 113750,
+        "Name": "random slot gas arctic",
+        "IconFilename": "data/level_editor/random_slots_icons/random_slot_oil.png"
+      },
+      "Blocking": {
+        "DeletePropsRadius": 0,
+        "RemovePropsRadius": 3
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc03/graphics/buildings/production/production_colony03_06/production_colony03_06_slot01.cfg"
+          }
+        },
+        "AssignDefaultParticipant": 1
+      },
+      "Mesh": "",
+      "Slot": {
+        "SlotType": "Random",
+        "AutoChangeVariation": 1,
+        "SlotCategoryName": 0
+      },
+      "Selection": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "gas slot"
+          }
+        }
+      },
+      "MinimapToken": "",
+      "RandomMapObject": {
+        "Randomizable": 1,
+        "Replacements": {
+          "Item": {
+            "NewAsset": 112691
+          }
+        },
+        "MapGeneratorSlotCountOverride": {
+          "Low": {
+            "Region": {
+              "Arctic": {
+                "IslandSize": {
+                  "Small": {
+                    "Min": 13,
+                    "Max": 13
+                  },
+                  "Medium": {
+                    "Min": 13,
+                    "Max": 13
+                  },
+                  "Large": {
+                    "Min": 13,
+                    "Max": 13
+                  }
+                }
+              }
+            }
+          },
+          "Medium": {
+            "Region": {
+              "Arctic": {
+                "IslandSize": {
+                  "Small": {
+                    "Min": 13,
+                    "Max": 13
+                  },
+                  "Medium": {
+                    "Min": 13,
+                    "Max": 13
+                  },
+                  "Large": {
+                    "Min": 13,
+                    "Max": 13
+                  }
+                }
+              }
+            }
+          },
+          "High": {
+            "Region": {
+              "Arctic": {
+                "IslandSize": {
+                  "Small": {
+                    "Min": 13,
+                    "Max": 13
+                  },
+                  "Medium": {
+                    "Min": 13,
+                    "Max": 13
+                  },
+                  "Large": {
+                    "Min": 13,
+                    "Max": 13
+                  }
+                }
+              }
+            }
+          }
+        },
+        "UseMapGeneratorSlotCountOverride": 1,
+        "ChoseRandomVariation": 1,
+        "ChoseRandomRotation": 1
+      },
+      "Building": {
+        "AssociatedRegions": "Arctic"
+      },
+      "SoundEmitter": "",
+      "Infolayer": {
+        "DefaultInfoLayer": 500568
+      },
+      "QuestObject": "",
+      "Constructable": ""
+    }
+  },
+  {
+    "Template": "Slot",
+    "Values": {
+      "Standard": {
+        "GUID": 116037,
+        "Name": "random slot mining arctic",
+        "IconFilename": "data/level_editor/random_slots_icons/random_slot_mining.png"
+      },
+      "Blocking": {
+        "HidePropsRadius": 0,
+        "DeletePropsRadius": 0,
+        "RemovePropsRadius": 1
+      },
+      "Object": {
+        "Variations": {
+          "Item": [
+            {
+              "Filename": "data/graphics/buildings/production/mining_01/mining_01_middle.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/production/mining_01/mining_01_left.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/production/mining_01/mining_01_right.cfg"
+            }
+          ]
+        },
+        "AssignDefaultParticipant": 1
+      },
+      "Mesh": "",
+      "Slot": {
+        "SlotType": "Random",
+        "AutoChangeVariation": 1,
+        "SlotCategoryName": 0,
+        "WorkAreaPathSnapDummy": "mining_ground"
+      },
+      "Selection": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "slot mining"
+          }
+        }
+      },
+      "MinimapToken": "",
+      "RandomMapObject": {
+        "Randomizable": 1,
+        "Replacements": {
+          "Item": {
+            "NewAsset": 116038
+          }
+        }
+      },
+      "Building": {
+        "AssociatedRegions": "Arctic"
+      },
+      "SoundEmitter": "",
+      "Infolayer": "",
+      "QuestObject": "",
+      "Constructable": ""
+    }
+  },
+  {
+    "Template": "Slot",
+    "Values": {
+      "Standard": {
         "GUID": 129024,
         "Name": "Oasis_Riverslot",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_riverslot.png",
@@ -1172,6 +1353,81 @@
         }
       },
       "Infolayer": "",
+      "QuestObject": "",
+      "Constructable": ""
+    }
+  },
+  {
+    "Template": "Slot",
+    "Values": {
+      "Standard": {
+        "GUID": 117741,
+        "Name": "Riverslot",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_riverslot.png",
+        "InfoDescription": 12655
+      },
+      "Blocking": "",
+      "Object": {
+        "Variations": {
+          "Item": [
+            {
+              "Filename": "data/dlc06/graphics/landscape/terrain/mining_blockers/mining_blocker_colony02/mining_blocker_colony02_main_left.cfg"
+            },
+            {
+              "Filename": "data/dlc06/graphics/landscape/terrain/mining_blockers/mining_blocker_colony02/mining_blocker_colony02_main_right.cfg"
+            }
+          ]
+        },
+        "AssignDefaultParticipant": 1
+      },
+      "Mesh": "",
+      "Slot": {
+        "SlotType": "River",
+        "AutoChangeVariation": 1,
+        "WorkAreaPathSnapDummy": "slot_main"
+      },
+      "Selection": {
+        "GUIType": "RiverSlot",
+        "DestructSelectable": 0
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "River Slot",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 36597
+      },
+      "MinimapToken": {
+        "TokenAsset": 2002226
+      },
+      "RandomMapObject": "",
+      "Building": {
+        "AssociatedRegions": "Africa"
+      },
+      "SoundEmitter": {
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "Slot",
+                    "Index": 0
+                  }
+                }
+              },
+              "Sound": 202368
+            }
+          }
+        }
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 117781
+      },
       "QuestObject": "",
       "Constructable": ""
     }

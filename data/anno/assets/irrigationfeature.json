@@ -1,0 +1,81 @@
+[
+  {
+    "Template": "IrrigationFeature",
+    "Values": {
+      "Standard": {
+        "GUID": 114759,
+        "Name": "IrrigationConfig 1LevelSimple"
+      },
+      "IrrigationConfig": {
+        "IrrigationTiles": {
+          "IrrigationTileDefinitions": {
+            "Source_River": {
+              "SourceSpreadMin": 4,
+              "SourceSpredMax": 8,
+              "TileItselfIsIrrigated": 1
+            },
+            "Source_Canal": {
+              "SourceSpreadMin": 4,
+              "SourceSpredMax": 4,
+              "TileItselfIsIrrigated": 1
+            },
+            "Source_Lake_Small": {
+              "SourceSpreadMin": 5,
+              "SourceSpredMax": 7,
+              "TileItselfIsIrrigated": 1
+            },
+            "Source_Lake_Medium": {
+              "SourceSpreadMin": 6,
+              "SourceSpredMax": 9,
+              "TileItselfIsIrrigated": 1
+            },
+            "Source_Lake_Large": {
+              "SourceSpreadMin": 9,
+              "SourceSpredMax": 11,
+              "TileItselfIsIrrigated": 1
+            },
+            "Source_LevelArt": {
+              "TileItselfIsIrrigated": 1
+            },
+            "Source_Condition1": {
+              "TileItselfIsIrrigated": 1
+            },
+            "Source_Condition2": {
+              "TileItselfIsIrrigated": 1
+            },
+            "Source_Condition3": {
+              "TileItselfIsIrrigated": 1
+            }
+          }
+        },
+        "VisualsAndEffects": {
+          "WaterFill": {
+            "WaterPlaneCfg": "data/dlc06/graphics/effects/street/irrigation_system_01/irrigation_water_plane_01.cfg",
+            "TimeBetweenFillSpread": 8,
+            "WaterPlaneFadeInDuration": 3000,
+            "WaterPlaneFadeOutDuration": 1000,
+            "ParticleFill": "data/dlc06/graphics/effects/street/irrigation_particle_effect/irrigation_fill_splash/irrigation_fill_splash_01.cfg",
+            "ParticleFillPlaza": "data/dlc06/graphics/effects/street/irrigation_particle_effect/irrigation_fill_splash/irrigation_fill_splash_wide_01.cfg"
+          },
+          "WaterBlockerPlanks": {
+            "PlankCfg_Wall_Wall": "data/dlc06/graphics/effects/street/irrigation_system_01/water_blocker_wood_closed_closed.cfg",
+            "PlankCfg_Wall_Open": "data/dlc06/graphics/effects/street/irrigation_system_01/water_blocker_wood_closed_open.cfg",
+            "PlankCfg_Open_Open": "data/dlc06/graphics/effects/street/irrigation_system_01/water_blocker_wood_open_open.cfg",
+            "PlankMovesIn": 1,
+            "PlankMovesOut": 1
+          },
+          "Vegetation": {
+            "FadingSpeed": 0.01,
+            "BlurRadius": 3
+          }
+        },
+        "IrrigationIslandSeeds": {
+          "Item": {
+            "Island": 120084
+          }
+        },
+        "StaticIrrigationRandomizerFrequency": 9
+      }
+    }
+  }
+]

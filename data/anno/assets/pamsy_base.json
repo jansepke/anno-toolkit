@@ -3,6 +3,1664 @@
     "Template": "PaMSy_Base",
     "Values": {
       "Standard": {
+        "GUID": 119,
+        "Name": "PaMSy_MASTER_Template_2ndParty"
+      },
+      "ParticipantMessages": {
+        "MessageTriggers": {
+          "DiplomacyMemoryCorrectionPositive": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationPriority": 200
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                },
+                "NotificationFilter": "Diplomacy"
+              }
+            }
+          },
+          "DiplomacyMemoryCorrectionNegative": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationPriority": 200
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                },
+                "NotificationFilter": "Diplomacy"
+              }
+            }
+          },
+          "BuyIslandShare": {
+            "Reactions": {
+              "Item": [
+                {
+                  "MyRole": "Initiator",
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextGroupFemale": 1157749302
+                      },
+                      "BaseNotification": {
+                        "NotificationTextGroup": 134888865,
+                        "NotificationPriority": 200
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "SideEffect": "AddReputation",
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextGroupFemale": 1563060854
+                      },
+                      "BaseNotification": {
+                        "NotificationTextGroup": 1049528121
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "TakeOverIsland": {
+            "Reactions": {
+              "Item": [
+                {
+                  "MyRole": "Initiator",
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextGroupFemale": 1563057717
+                      },
+                      "BaseNotification": {
+                        "NotificationTextGroup": 147700475,
+                        "NotificationPriority": 300
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "SideEffect": "AddReputation",
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextGroupFemale": 2126322860
+                      },
+                      "BaseNotification": {
+                        "NotificationTextGroup": -679766558
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "DiplomacyAllianceNeedsHelp": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": {
+                      "NotificationTextGroupFemale": -448355978
+                    },
+                    "BaseNotification": {
+                      "NotificationTextGroup": 1698942117,
+                      "NotificationPriority": 400,
+                      "NotificationMinDisplayTime": 30000,
+                      "DisplayTimeout": 60000
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyAllianceNeedsDecision": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": {
+                      "NotificationTextGroupFemale": 486217162
+                    },
+                    "BaseNotification": {
+                      "NotificationTextGroup": 1481336159,
+                      "NotificationPriority": 400,
+                      "NotificationMinDisplayTime": 30000,
+                      "DisplayTimeout": 60000
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "ClickKontor": {
+            "Reactions": {
+              "Item": [
+                {
+                  "DisabledForGameType": "Campaign",
+                  "RequiredDiplomacyState": "War",
+                  "CooldownTime": 60000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextGroupFemale": -2061041081
+                      },
+                      "BaseNotification": {
+                        "NotificationTextGroup": 1511054548,
+                        "DisplayTimeout": 1000,
+                        "IsUnique": 1
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "DisabledForGameType": "Campaign",
+                  "RequiredDiplomacyState": "Peace;TradeRights;Alliance;CeaseFire;NonAttack",
+                  "CooldownTime": 60000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextGroupFemale": 519975235
+                      },
+                      "BaseNotification": {
+                        "NotificationTextGroup": -1080710421,
+                        "DisplayTimeout": 1000,
+                        "IsUnique": 1
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "DisabledForGameType": "Sandbox",
+                  "RequiredDiplomacyState": "War",
+                  "CooldownTime": 60000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextGroupFemale": -2061041081
+                      },
+                      "BaseNotification": {
+                        "NotificationTextGroup": 1511054548,
+                        "DisplayTimeout": 1000,
+                        "IsUnique": 1
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "DisabledForGameType": "Sandbox",
+                  "RequiredDiplomacyState": "Peace;TradeRights;Alliance;CeaseFire;NonAttack",
+                  "CooldownTime": 60000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextGroupFemale": 519975235
+                      },
+                      "BaseNotification": {
+                        "NotificationTextGroup": -1080710421,
+                        "DisplayTimeout": 1000,
+                        "IsUnique": 1
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "MilitaryBuildingDestroyed": {
+            "Reactions": {
+              "Item": [
+                {
+                  "MyRole": "Initiator",
+                  "ProbabilityIsOneForFirstOccurence": 1,
+                  "CooldownTime": 600000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextGroupFemale": 1577129689
+                      },
+                      "BaseNotification": {
+                        "NotificationTextGroup": 2110128917,
+                        "NotificationPriority": 300
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "ProbabilityIsOneForFirstOccurence": 1,
+                  "CooldownTime": 600000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextGroupFemale": -401063834
+                      },
+                      "BaseNotification": {
+                        "NotificationTextGroup": -1556866454
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "ActiveTradeConfirmation": {
+            "Reactions": {
+              "Item": [
+                {
+                  "MyRole": "Initiator",
+                  "RequiredContextValueThreshold": 1,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextGroupFemale": -2032338570
+                      },
+                      "BaseNotification": {
+                        "NotificationTextGroup": -1807749032
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "MyRole": "Initiator",
+                  "RequiredContextValueThreshold": 0,
+                  "CooldownTime": 7200000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextGroupFemale": 427464897
+                      },
+                      "BaseNotification": {
+                        "NotificationTextGroup": -1221774779
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "PassiveTradeConfirmation": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "SideEffect": "AddReputation",
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": {
+                      "NotificationTextGroupFemale": -2032338570
+                    },
+                    "BaseNotification": {
+                      "NotificationTextGroup": -1807749032,
+                      "NotificationPriority": 200
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyOfferThreatAccepted": {
+            "Reactions": {
+              "Item": [
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 0,
+                    "InheritanceMapV2": {
+                      "Entry": {
+                        "TemplateName": "PaMSy_Base",
+                        "Index": 0
+                      }
+                    }
+                  }
+                },
+                {
+                  "MyRole": "Initiator",
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextGroupFemale": -1047998243
+                      },
+                      "BaseNotification": {
+                        "NotificationTextGroup": 1132769863
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "DiplomacyOfferThreatRejected": {
+            "Reactions": {
+              "Item": [
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 0,
+                    "InheritanceMapV2": {
+                      "Entry": {
+                        "TemplateName": "PaMSy_Base",
+                        "Index": 0
+                      }
+                    }
+                  }
+                },
+                {
+                  "SideEffect": "AddReputation",
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextGroupFemale": -1617365429
+                      },
+                      "BaseNotification": {
+                        "NotificationTextGroup": 305802229
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "MilitaryTakeoverSucceeded": {
+            "Reactions": {
+              "Item": [
+                {
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextGroupFemale": 1932579303
+                      },
+                      "BaseNotification": {
+                        "NotificationTextGroup": -1995792021,
+                        "NotificationPriority": 300
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "MyRole": "Initiator",
+                  "SideEffect": "AddReputation",
+                  "SideEffectValue": -5,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextGroupFemale": 1423656155
+                      },
+                      "BaseNotification": {
+                        "NotificationTextGroup": 319798091
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "MilitaryTakeoverFailed": {
+            "Reactions": {
+              "Item": [
+                {
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextGroupFemale": 1501620581
+                      },
+                      "BaseNotification": {
+                        "NotificationTextGroup": -142536447,
+                        "NotificationPriority": 200
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "MyRole": "Initiator",
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextGroupFemale": -532983503
+                      },
+                      "BaseNotification": {
+                        "NotificationTextGroup": 360511253
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "OpenActiveTradeMenu": {
+            "Reactions": {
+              "Item": {
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": {
+                      "NotificationTextGroupFemale": 519975235
+                    },
+                    "BaseNotification": {
+                      "NotificationTextGroup": -1080710421,
+                      "NotificationPriority": 100,
+                      "DisplayTimeout": 5000
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "ClickNPCBuilding": {
+            "Reactions": {
+              "Item": [
+                {
+                  "RequiredDiplomacyState": "War",
+                  "CooldownTime": 300000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextGroupFemale": 829778929
+                      },
+                      "BaseNotification": {
+                        "NotificationTextGroup": -131593563,
+                        "NotificationPriority": 100,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredDiplomacyState": "Peace;TradeRights;Alliance;CeaseFire;NonAttack",
+                  "CooldownTime": 300000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextGroupFemale": -1108165468
+                      },
+                      "BaseNotification": {
+                        "NotificationTextGroup": 1160714306,
+                        "NotificationPriority": 100,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "ClickNPCShip": {
+            "Reactions": {
+              "Item": [
+                {
+                  "RequiredDiplomacyState": "War",
+                  "CooldownTime": 300000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextGroupFemale": -175578696
+                      },
+                      "BaseNotification": {
+                        "NotificationTextGroup": 2025199676,
+                        "NotificationPriority": 100,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "RequiredDiplomacyState": "Peace;TradeRights;Alliance;CeaseFire;NonAttack",
+                  "CooldownTime": 300000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextGroupFemale": -445853968
+                      },
+                      "BaseNotification": {
+                        "NotificationTextGroup": -1632291246,
+                        "NotificationPriority": 100,
+                        "NotificationGroup": "PlayerClick",
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "DiplomacyOfferNonAggressionPact": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": {
+                      "NotificationTextGroupFemale": 1811038607
+                    },
+                    "BaseNotification": {
+                      "NotificationTextGroup": -2068080729,
+                      "NotificationPriority": 400
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyOfferNonAggressionPactAccepted": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": {
+                      "NotificationTextGroupFemale": 255649240
+                    },
+                    "BaseNotification": {
+                      "NotificationTextGroup": 1643828854
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "TakeOverIslandPossible": {
+            "Reactions": {
+              "Item": [
+                {
+                  "MyRole": "Initiator",
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextGroupFemale": -2092833588
+                      },
+                      "BaseNotification": {
+                        "NotificationTextGroup": -611413425,
+                        "NotificationPriority": 300
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "SideEffect": "AddReputation",
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextGroupFemale": -1088562903
+                      },
+                      "BaseNotification": {
+                        "NotificationTextGroup": 596120356
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "CulturalBuildingAttractivenessHigherThan": {
+            "Reactions": {
+              "Item": [
+                {
+                  "RequiredDiplomacyState": "Peace;TradeRights;Alliance;CeaseFire;NonAttack",
+                  "RequiredContextAsset": 1010470,
+                  "RequiredContextValueThreshold": 1,
+                  "SideEffect": "AddReputation",
+                  "SideEffectValue": 3,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 15123
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 15127,
+                        "NotificationPriority": 200
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  },
+                  "ReputationLogEntry": 15150,
+                  "NotificationFilter": "Diplomacy"
+                },
+                {
+                  "RequiredDiplomacyState": "Peace;TradeRights;Alliance;CeaseFire;NonAttack",
+                  "RequiredContextAsset": 1010470,
+                  "RequiredContextValueThreshold": 2,
+                  "SideEffect": "AddReputation",
+                  "SideEffectValue": 3,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 15123
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 15127,
+                        "NotificationPriority": 200
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  },
+                  "ReputationLogEntry": 15150,
+                  "NotificationFilter": "Diplomacy"
+                },
+                {
+                  "RequiredDiplomacyState": "Peace;TradeRights;Alliance;CeaseFire;NonAttack",
+                  "RequiredContextAsset": 1010470,
+                  "RequiredContextValueThreshold": 3,
+                  "SideEffect": "AddReputation",
+                  "SideEffectValue": 3,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 15123
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 15127,
+                        "NotificationPriority": 200
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  },
+                  "ReputationLogEntry": 15150,
+                  "NotificationFilter": "Diplomacy"
+                },
+                {
+                  "RequiredDiplomacyState": "Peace;TradeRights;Alliance;CeaseFire;NonAttack",
+                  "RequiredContextAsset": 1010471,
+                  "RequiredContextValueThreshold": 1,
+                  "SideEffect": "AddReputation",
+                  "SideEffectValue": 3,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 15125
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 15129,
+                        "NotificationPriority": 200
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  },
+                  "ReputationLogEntry": 15151,
+                  "NotificationFilter": "Diplomacy"
+                },
+                {
+                  "RequiredDiplomacyState": "Peace;TradeRights;Alliance;CeaseFire;NonAttack",
+                  "RequiredContextAsset": 1010471,
+                  "RequiredContextValueThreshold": 2,
+                  "SideEffect": "AddReputation",
+                  "SideEffectValue": 3,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 15125
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 15129,
+                        "NotificationPriority": 200
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  },
+                  "ReputationLogEntry": 15151,
+                  "NotificationFilter": "Diplomacy"
+                },
+                {
+                  "RequiredDiplomacyState": "Peace;TradeRights;Alliance;CeaseFire;NonAttack",
+                  "RequiredContextAsset": 1010471,
+                  "RequiredContextValueThreshold": 3,
+                  "SideEffect": "AddReputation",
+                  "SideEffectValue": 3,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 15125
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 15129,
+                        "NotificationPriority": 200
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  },
+                  "ReputationLogEntry": 15151,
+                  "NotificationFilter": "Diplomacy"
+                },
+                {
+                  "RequiredDiplomacyState": "Peace;TradeRights;Alliance;CeaseFire;NonAttack",
+                  "RequiredContextAsset": 110935,
+                  "RequiredContextValueThreshold": 1,
+                  "SideEffect": "AddReputation",
+                  "SideEffectValue": 3,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 114214
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 114216,
+                        "NotificationPriority": 200
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  },
+                  "ReputationLogEntry": 114218,
+                  "NotificationFilter": "Diplomacy"
+                },
+                {
+                  "RequiredDiplomacyState": "Peace;TradeRights;Alliance;CeaseFire;NonAttack",
+                  "RequiredContextAsset": 110935,
+                  "RequiredContextValueThreshold": 2,
+                  "SideEffect": "AddReputation",
+                  "SideEffectValue": 3,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 114214
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 114216,
+                        "NotificationPriority": 200
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  },
+                  "ReputationLogEntry": 114218,
+                  "NotificationFilter": "Diplomacy"
+                },
+                {
+                  "RequiredDiplomacyState": "Peace;TradeRights;Alliance;CeaseFire;NonAttack",
+                  "RequiredContextAsset": 110935,
+                  "RequiredContextValueThreshold": 3,
+                  "SideEffect": "AddReputation",
+                  "SideEffectValue": 3,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 114214
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 114216,
+                        "NotificationPriority": 200
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  },
+                  "ReputationLogEntry": 114218,
+                  "NotificationFilter": "Diplomacy"
+                }
+              ]
+            }
+          },
+          "IslandPollutionHigherThan": {
+            "Reactions": {
+              "Item": [
+                {
+                  "RequiredContextValueThreshold": 1,
+                  "SideEffect": "AddReputation",
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 15134
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 15136,
+                        "NotificationPriority": 200
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  },
+                  "NotificationFilter": "Diplomacy"
+                },
+                {
+                  "RequiredContextValueThreshold": 2,
+                  "SideEffect": "AddReputation",
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 15134
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 15136,
+                        "NotificationPriority": 200
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  },
+                  "NotificationFilter": "Diplomacy"
+                },
+                {
+                  "RequiredContextValueThreshold": 3,
+                  "SideEffect": "AddReputation",
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 15134
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 15136,
+                        "NotificationPriority": 200
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  },
+                  "NotificationFilter": "Diplomacy"
+                }
+              ]
+            }
+          },
+          "NoQuestAvailable": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "PaMSy_Base",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "IsUnique": 1
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "MilitaryShipDestroyed": {
+            "Reactions": {
+              "Item": [
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 0,
+                    "InheritanceMapV2": {
+                      "Entry": {
+                        "TemplateName": "PaMSy_Base",
+                        "Index": 0
+                      }
+                    }
+                  },
+                  "ProbabilityIsOneForFirstOccurence": 1,
+                  "CooldownTime": 600000
+                },
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 1,
+                    "InheritanceMapV2": {
+                      "Entry": {
+                        "TemplateName": "PaMSy_Base",
+                        "Index": 1
+                      }
+                    }
+                  },
+                  "ProbabilityIsOneForFirstOccurence": 1
+                }
+              ]
+            }
+          },
+          "DiplomacyOfferRejected": {
+            "Reactions": {
+              "Item": [
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 0,
+                    "InheritanceMapV2": {
+                      "Entry": {
+                        "TemplateName": "PaMSy_Base",
+                        "Index": 0
+                      }
+                    }
+                  }
+                },
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 1,
+                    "InheritanceMapV2": {
+                      "Entry": {
+                        "TemplateName": "PaMSy_Base",
+                        "Index": 1
+                      }
+                    }
+                  },
+                  "SideEffect": "AddReputation",
+                  "SideEffectValue": -3
+                }
+              ]
+            }
+          },
+          "MenuIdleMessage": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "RequiredContextMenu": "ActiveTrade;ObjectMenuKontor",
+                "CooldownTime": 3600000,
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationPriority": 100,
+                      "DisplayTimeout": 5000
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyIdleMessage": {
+            "Reactions": {
+              "Item": [
+                {
+                  "MyRole": "Initiator",
+                  "Probability": 0.5,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 17275
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 17279,
+                        "NotificationPriority": 100,
+                        "NotificationGroup": "PaMSyGossip",
+                        "DisplayTimeout": 10000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "MyRole": "Initiator",
+                  "RequiredReputationState": "CompareInitiatorWithRequired",
+                  "RequiredReputationParticipant": "Second_ai_01_Jorgensen",
+                  "Probability": 0.5,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 17276
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 17280,
+                        "NotificationPriority": 100,
+                        "NotificationGroup": "PaMSyGossip",
+                        "DisplayTimeout": 10000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "MyRole": "Initiator",
+                  "RequiredReputationState": "CompareInitiatorWithRequired",
+                  "RequiredReputationParticipant": "Second_ai_02_Qing",
+                  "Probability": 0.5,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 17276
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 17280,
+                        "NotificationPriority": 100,
+                        "NotificationGroup": "PaMSyGossip",
+                        "DisplayTimeout": 10000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "MyRole": "Initiator",
+                  "RequiredReputationState": "CompareInitiatorWithRequired",
+                  "RequiredReputationParticipant": "Second_ai_03_Wibblesock",
+                  "Probability": 0.5,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 17276
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 17280,
+                        "NotificationPriority": 100,
+                        "NotificationGroup": "PaMSyGossip",
+                        "DisplayTimeout": 10000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "MyRole": "Initiator",
+                  "RequiredReputationState": "CompareInitiatorWithRequired",
+                  "RequiredReputationParticipant": "Second_ai_04_Smith",
+                  "Probability": 0.5,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 17276
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 17280,
+                        "NotificationPriority": 100,
+                        "NotificationGroup": "PaMSyGossip",
+                        "DisplayTimeout": 10000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "MyRole": "Initiator",
+                  "RequiredReputationState": "CompareInitiatorWithRequired",
+                  "RequiredReputationParticipant": "Second_ai_05_OMara",
+                  "Probability": 0.5,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 17276
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 17280,
+                        "NotificationPriority": 100,
+                        "NotificationGroup": "PaMSyGossip",
+                        "DisplayTimeout": 10000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "MyRole": "Initiator",
+                  "RequiredReputationState": "CompareInitiatorWithRequired",
+                  "RequiredReputationParticipant": "Second_ai_06_Gasparov",
+                  "Probability": 0.5,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 17276
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 17280,
+                        "NotificationPriority": 100,
+                        "NotificationGroup": "PaMSyGossip",
+                        "DisplayTimeout": 10000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "MyRole": "Initiator",
+                  "RequiredReputationState": "CompareInitiatorWithRequired",
+                  "RequiredReputationParticipant": "Second_ai_07_von_Malching",
+                  "Probability": 0.5,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 17276
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 17280,
+                        "NotificationPriority": 100,
+                        "NotificationGroup": "PaMSyGossip",
+                        "DisplayTimeout": 10000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "MyRole": "Initiator",
+                  "RequiredReputationState": "CompareInitiatorWithRequired",
+                  "RequiredReputationParticipant": "Second_ai_08_Gravez",
+                  "Probability": 0.5,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 17276
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 17280,
+                        "NotificationPriority": 100,
+                        "NotificationGroup": "PaMSyGossip",
+                        "DisplayTimeout": 10000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "MyRole": "Initiator",
+                  "RequiredReputationState": "CompareInitiatorWithRequired",
+                  "RequiredReputationParticipant": "Second_ai_09_Silva",
+                  "Probability": 0.5,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 17276
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 17280,
+                        "NotificationPriority": 100,
+                        "NotificationGroup": "PaMSyGossip",
+                        "DisplayTimeout": 10000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "MyRole": "Initiator",
+                  "RequiredReputationState": "CompareInitiatorWithRequired",
+                  "RequiredReputationParticipant": "Second_ai_10_Hunt",
+                  "Probability": 0.5,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 17276
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 17280,
+                        "NotificationPriority": 100,
+                        "NotificationGroup": "PaMSyGossip",
+                        "DisplayTimeout": 10000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "MyRole": "Initiator",
+                  "RequiredReputationState": "CompareInitiatorWithRequired",
+                  "RequiredReputationParticipant": "Third_party_03_Pirate_Harlow",
+                  "Probability": 0.5,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 17276
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 17280,
+                        "NotificationPriority": 100,
+                        "NotificationGroup": "PaMSyGossip",
+                        "DisplayTimeout": 10000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "MyRole": "Initiator",
+                  "RequiredReputationState": "CompareInitiatorWithRequired",
+                  "RequiredReputationParticipant": "Third_party_04_Pirate_LaFortune",
+                  "Probability": 0.5,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 17276
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 17280,
+                        "NotificationPriority": 100,
+                        "NotificationGroup": "PaMSyGossip",
+                        "DisplayTimeout": 10000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "MyRole": "Initiator",
+                  "RequiredReputationState": "CompareInitiatorWithRequired",
+                  "RequiredReputationParticipant": "Third_party_01_Queen",
+                  "Probability": 0.5,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 17276
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 17280,
+                        "NotificationPriority": 100,
+                        "NotificationGroup": "PaMSyGossip",
+                        "DisplayTimeout": 10000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "MyRole": "Initiator",
+                  "RequiredReputationState": "CompareInitiatorWithRequired",
+                  "RequiredReputationParticipant": "Third_party_02_Blake",
+                  "Probability": 0.5,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 17276
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 17280,
+                        "NotificationPriority": 100,
+                        "NotificationGroup": "PaMSyGossip",
+                        "DisplayTimeout": 10000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "MyRole": "Initiator",
+                  "RequiredReputationState": "CompareInitiatorWithRequired",
+                  "RequiredReputationParticipant": "Third_party_05_Sarmento",
+                  "Probability": 0.5,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 17276
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 17280,
+                        "NotificationPriority": 100,
+                        "NotificationGroup": "PaMSyGossip",
+                        "DisplayTimeout": 10000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "MyRole": "Initiator",
+                  "RequiredReputationState": "CompareInitiatorWithRequired",
+                  "RequiredReputationParticipant": "Third_party_07_Jailor_Bleakworth",
+                  "Probability": 0.5,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 17276
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 17280,
+                        "NotificationPriority": 100,
+                        "NotificationGroup": "PaMSyGossip",
+                        "DisplayTimeout": 10000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "MyRole": "Initiator",
+                  "RequiredReputationState": "CompareInitiatorWithRequired",
+                  "RequiredReputationParticipant": "Third_party_08_Kahina",
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextFemale": 17276
+                      },
+                      "BaseNotification": {
+                        "NotificationText": 17280,
+                        "NotificationPriority": 100,
+                        "NotificationGroup": "PaMSyGossip",
+                        "DisplayTimeout": 10000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "QuestAbortedAutomatically": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "PaMSy_Base",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "SideNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "NewspaperPublishedWithPropaganda": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "PaMSy_Base",
+                      "Index": 0
+                    }
+                  }
+                },
+                "NotificationFilter": "Diplomacy"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "PaMSy_Base",
+    "Values": {
+      "Standard": {
+        "GUID": 120,
+        "Name": "PaMSy_MASTER_Template_3rdParty"
+      },
+      "ParticipantMessages": {
+        "MessageTriggers": {
+          "ClickKontor": {
+            "Reactions": {
+              "Item": [
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 0,
+                    "InheritanceMapV2": {
+                      "Entry": {
+                        "TemplateName": "PaMSy_Base",
+                        "Index": 0
+                      }
+                    }
+                  },
+                  "DisabledForGameType": "Campaign",
+                  "CooldownTime": 60000,
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "DisplayTimeout": 1000
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "DisabledForGameType": "Sandbox",
+                  "CooldownTime": 60000,
+                  "Notification": {
+                    "Template": "CharacterNotification",
+                    "Values": {
+                      "CharacterNotification": {
+                        "NotificationTextGroupFemale": 519975235
+                      },
+                      "BaseNotification": {
+                        "NotificationTextGroup": -1080710421,
+                        "DisplayTimeout": 1000,
+                        "IsUnique": 1
+                      },
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "OpenActiveTradeMenu": {
+            "Reactions": {
+              "Item": {
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": {
+                      "NotificationTextGroupFemale": 519975235
+                    },
+                    "BaseNotification": {
+                      "NotificationTextGroup": -1080710421,
+                      "NotificationPriority": 100
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "ActiveTradeConfirmation": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "RequiredContextValueThreshold": 0,
+                "CooldownTime": 7200000,
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": {
+                      "NotificationTextGroupFemale": 427464897
+                    },
+                    "BaseNotification": {
+                      "NotificationTextGroup": -1221774779
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "QuestStarted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "PaMSy_Base",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationGroup": "PlayerClick"
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "MenuIdleMessage": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "RequiredContextMenu": "ActiveTrade;ObjectMenuKontor",
+                "CooldownTime": 3600000,
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationPriority": 100,
+                      "DisplayTimeout": 5000
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "QuestAbortedAutomatically": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "PaMSy_Base",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "SideNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "MilitaryShipDestroyed": {
+            "Reactions": {
+              "Item": [
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 0,
+                    "InheritanceMapV2": {
+                      "Entry": {
+                        "TemplateName": "PaMSy_Base",
+                        "Index": 0
+                      }
+                    }
+                  },
+                  "CooldownTime": 600000
+                },
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 1,
+                    "InheritanceMapV2": {
+                      "Entry": {
+                        "TemplateName": "PaMSy_Base",
+                        "Index": 1
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "PaMSy_Base",
+    "Values": {
+      "Standard": {
         "GUID": 121,
         "Name": "PaMSy_MASTER_Template_Archetype"
       },
@@ -722,6 +2380,42 @@
       "Standard": {
         "GUID": 185,
         "Name": "PaMSy_Narrative_Character_Cousin_Male"
+      },
+      "ParticipantMessages": {
+        "MessageTriggers": {
+          "QuestAbortedAutomatically": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "PaMSy_Base",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "SideNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "PaMSy_Base",
+    "Values": {
+      "Standard": {
+        "GUID": 152,
+        "Name": "PaMSy_MASTER_Template_Narrative_Character"
       },
       "ParticipantMessages": {
         "MessageTriggers": {

@@ -4961,6 +4961,291 @@
     "Template": "A7_QuestSmugglerWOScanners",
     "Values": {
       "Standard": {
+        "GUID": 124622,
+        "Name": "Angereb_035a_TheLostHeirTrack9_PickUpWagLetter"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "SelectionReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "ResolveConfirmationMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationSmugglerQuestMessage": {
+          "SuppressMessage": 1
+        },
+        "SmugglerQuestTradingStationReached": {
+          "SuppressMessage": 1
+        },
+        "StartInvitationGiveItemMessage": {
+          "SuppressMessage": 1
+        },
+        "OnQuestStart": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": [
+                  {
+                    "Action": {
+                      "Template": "ActionNotification",
+                      "Values": {
+                        "Action": "",
+                        "ActionNotification": {
+                          "Notification": {
+                            "Template": "CharacterNotification",
+                            "Values": {
+                              "CharacterNotification": {
+                                "Profile": 243
+                              },
+                              "BaseNotification": {
+                                "NotificationText": 124627,
+                                "NotificationMinDisplayTime": 8000
+                              },
+                              "NotificationSubtitle": {
+                                "Subtitle": 124631
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionRegisterTrigger",
+                      "Values": {
+                        "Action": "",
+                        "ActionRegisterTrigger": {
+                          "TriggerAsset": 124634,
+                          "UnregisterTrigger": 1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionRegisterTrigger",
+                      "Values": {
+                        "Action": "",
+                        "ActionRegisterTrigger": {
+                          "TriggerAsset": 124715
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "QuestGiver": 120283,
+        "StoryText": 124630,
+        "MaxCallOut": 1,
+        "MaxSolveCount": 1,
+        "CountForQuestLimit": 0,
+        "QuestTimeLimit": 0,
+        "QuestActivation": "QuestStart",
+        "IsAbortable": 0,
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        },
+        "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_questbook_landoflions.png",
+        "ReputationQuestFail": {
+          "ReputationFailList": ""
+        },
+        "HasStarterSpeechBubble": 0
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Angereb:&lt;br/&gt;Unsought for Kindred",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 46142
+      },
+      "Reward": {
+        "RewardAssets": {
+          "Item": {
+            "Reward": 124624,
+            "Amount": 1,
+            "IsHidden": 1
+          }
+        },
+        "RewardReputation": ""
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "SmugglerObjective",
+              "Values": {
+                "ConditionQuestSmuggler": {
+                  "SmugglerStations": {
+                    "Item": [
+                      {
+                        "Station": {
+                          "Template": "QuestTradingStation",
+                          "Values": {
+                            "TradingStation": {
+                              "TradingStationDestination": {
+                                "Template": "ConditionObjectPrebuiltObject",
+                                "Values": {
+                                  "ConditionObjectPrebuiltObject": {
+                                    "PrebuiltObject": 123720
+                                  },
+                                  "ConditionScanner": "",
+                                  "ConditionObjectiveSignsAndFeedback": ""
+                                }
+                              },
+                              "TradingStationBringItemCount": 0,
+                              "TradingStationRetrieveItem": 124624,
+                              "TradingStationReachedNotification": {
+                                "IsBaseAutoCreateAsset": 1,
+                                "Values": {
+                                  "CharacterNotification": {
+                                    "Profile": 243
+                                  },
+                                  "BaseNotification": {
+                                    "NotificationText": 124628
+                                  },
+                                  "NotificationSubtitle": {
+                                    "Subtitle": 127995
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Station": {
+                          "Template": "QuestTradingStation",
+                          "Values": {
+                            "TradingStation": {
+                              "TradingStationDestination": {
+                                "Template": "ConditionObjectPrebuiltObject",
+                                "Values": {
+                                  "ConditionObjectPrebuiltObject": {
+                                    "PrebuiltObject": 131351
+                                  },
+                                  "ConditionScanner": "",
+                                  "ConditionObjectiveSignsAndFeedback": ""
+                                }
+                              },
+                              "TradingStationBringItem": 124624,
+                              "TradingStationRetrieveItemCount": 0,
+                              "OnTradingStationVisited": {
+                                "IsBaseAutoCreateAsset": 1,
+                                "Values": {
+                                  "ActionList": {
+                                    "Actions": {
+                                      "Item": {
+                                        "Action": {
+                                          "Template": "ActionNotification",
+                                          "Values": {
+                                            "Action": "",
+                                            "ActionNotification": {
+                                              "Notification": {
+                                                "Template": "CharacterNotification",
+                                                "Values": {
+                                                  "CharacterNotification": {
+                                                    "Profile": 119051
+                                                  },
+                                                  "BaseNotification": {
+                                                    "NotificationText": 124639
+                                                  },
+                                                  "NotificationSubtitle": {
+                                                    "Subtitle": 124638
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "TradingStationReachedNotification": {
+                                "IsBaseAutoCreateAsset": 1,
+                                "Values": {
+                                  "CharacterNotification": {
+                                    "Profile": 119051
+                                  },
+                                  "BaseNotification": {
+                                    "NotificationText": 124629
+                                  },
+                                  "NotificationSubtitle": {
+                                    "Subtitle": 124633
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "TextTradingStation_NoItem": 124625,
+                  "TextTradingStation": 124626
+                },
+                "ConditionQuestObjective": "",
+                "ConditionPropsSessionSettings": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  },
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        },
+        "WinConditionCompletionOrder": "Linear"
+      },
+      "QuestOptional": {
+        "HasStarterObject": "None"
+      }
+    }
+  },
+  {
+    "Template": "A7_QuestSmugglerWOScanners",
+    "Values": {
+      "Standard": {
         "GUID": 128656,
         "Name": "Kidusi_06_DiggingThePast"
       },
@@ -10183,6 +10468,841 @@
                   },
                   "TextTradingStation_NoItem": 128888,
                   "TextTradingStation": 128887
+                },
+                "ConditionQuestObjective": "",
+                "ConditionPropsSessionSettings": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  },
+                  "ExecutionPlaceText": 0,
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        },
+        "WinConditionCompletionOrder": "Linear"
+      },
+      "QuestOptional": {
+        "HasStarterObject": "None"
+      }
+    }
+  },
+  {
+    "Template": "A7_QuestSmugglerWOScanners",
+    "Values": {
+      "Standard": {
+        "GUID": 129295,
+        "Name": "Kidusi_SQ8_TrackOfWahaDesher_HIDDEN"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "SelectionReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "ResolveConfirmationMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationSmugglerQuestMessage": {
+          "SuppressMessage": 1
+        },
+        "SmugglerQuestTradingStationReached": {
+          "SuppressMessage": 1
+        },
+        "OnQuestStart": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": [
+                  {
+                    "Action": {
+                      "Template": "ActionRegisterTrigger",
+                      "Values": {
+                        "Action": "",
+                        "ActionRegisterTrigger": {
+                          "TriggerAsset": 129294,
+                          "UnregisterTrigger": 1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionBindItemToQuest",
+                      "Values": {
+                        "Action": "",
+                        "ActionBindItemToQuest": {
+                          "ItemToBind": 128985
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "OnQuestSucceeded": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": [
+                  {
+                    "Action": {
+                      "Template": "ActionStartQuest",
+                      "Values": {
+                        "Action": "",
+                        "ActionStartQuest": {
+                          "Quest": 129302,
+                          "QuestSession": 112132
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionEndQuest",
+                      "Values": {
+                        "Action": "",
+                        "ActionEndQuest": {
+                          "Quest": 129322
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "QuestGiver": 118731,
+        "StoryText": 128851,
+        "MaxCallOut": 1,
+        "MaxSolveCount": 1,
+        "CountForQuestLimit": 0,
+        "QuestTimeLimit": 0,
+        "QuestActivation": "QuestStart",
+        "IsAbortable": 0,
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        },
+        "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_questbook_landoflions.png",
+        "ReputationQuestFail": {
+          "ReputationFailList": ""
+        },
+        "QuestHints": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestSmugglerWOScanners",
+                  "Index": 0
+                }
+              }
+            },
+            "Text": 21993
+          }
+        },
+        "HasStarterSpeechBubble": 0
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Ostracatastrophe"
+          }
+        }
+      },
+      "Reward": {
+        "RewardAssets": "",
+        "RewardReputation": "",
+        "GenerateIgnoreUnlocks": 1
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "SmugglerObjective",
+              "Values": {
+                "ConditionQuestSmuggler": {
+                  "SmugglerStations": {
+                    "Item": {
+                      "Station": {
+                        "Template": "QuestTradingStation",
+                        "Values": {
+                          "TradingStation": {
+                            "TradingStationDestination": {
+                              "Template": "ConditionObjectPrebuiltObject",
+                              "Values": {
+                                "ConditionObjectPrebuiltObject": {
+                                  "PrebuiltObject": 129034
+                                },
+                                "ConditionScanner": "",
+                                "ConditionObjectiveSignsAndFeedback": ""
+                              }
+                            },
+                            "TradingStationBringItem": 128985,
+                            "TradingStationRetrieveItemCount": 0,
+                            "TradingStationReachedNotification": {
+                              "IsBaseAutoCreateAsset": 1,
+                              "Values": {
+                                "CharacterNotification": {
+                                  "Profile": 118731
+                                },
+                                "BaseNotification": {
+                                  "NotificationText": 129301
+                                },
+                                "NotificationSubtitle": {
+                                  "Subtitle": 127741
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "TextTradingStation_NoItem": 0,
+                  "TextTradingStation": 0
+                },
+                "ConditionQuestObjective": "",
+                "ConditionPropsSessionSettings": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  },
+                  "ExecutionPlaceText": 0,
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        },
+        "WinConditionCompletionOrder": "Linear"
+      },
+      "QuestOptional": {
+        "HasStarterObject": "None"
+      }
+    }
+  },
+  {
+    "Template": "A7_QuestSmugglerWOScanners",
+    "Values": {
+      "Standard": {
+        "GUID": 129322,
+        "Name": "Kidusi_SQ8_TrackOfWahaDesher_FAKE"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "SelectionReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "ResolveConfirmationMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationSmugglerQuestMessage": {
+          "SuppressMessage": 1
+        },
+        "SmugglerQuestTradingStationReached": {
+          "SuppressMessage": 1
+        },
+        "QuestGiver": 118731,
+        "StoryText": 129328,
+        "MaxCallOut": 1,
+        "MaxSolveCount": 1,
+        "CountForQuestLimit": 0,
+        "QuestTimeLimit": 0,
+        "QuestActivation": "QuestStart",
+        "IsAbortable": 0,
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        },
+        "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_questbook_landoflions.png",
+        "ReputationQuestFail": {
+          "ReputationFailList": ""
+        },
+        "QuestHints": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestSmugglerWOScanners",
+                  "Index": 0
+                }
+              }
+            },
+            "Text": 21993
+          }
+        },
+        "HasStarterSpeechBubble": 0
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Kidusi Anitoni:&lt;br/&gt;The Track of the Oracle",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 46190
+      },
+      "Reward": {
+        "RewardAssets": "",
+        "RewardReputation": "",
+        "GenerateIgnoreUnlocks": 1
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "FakeQuestObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "FakeMinimapPings": {
+                    "Objects": {
+                      "Item": {
+                        "FakeMinimapObjects": {
+                          "Template": "ObjectFilter",
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectGUID": 129210,
+                              "ObjectSession": 112132
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "JumpToVisibility": "ShowOnlyFakePings"
+                },
+                "ConditionQuestFakeObjective": {
+                  "QuestTrackerEntries": {
+                    "Item": {
+                      "CombinedText": 129329,
+                      "QuestTrackerIcon": "data/ui/2kimages/main/3dicons/narative_item/icon_sir_john_stacked_notes.png"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "WinConditionCompletionOrder": "Linear"
+      },
+      "QuestOptional": {
+        "HasStarterObject": "None"
+      }
+    }
+  },
+  {
+    "Template": "A7_QuestSmugglerWOScanners",
+    "Values": {
+      "Standard": {
+        "GUID": 129417,
+        "Name": "Kidusi_29_NewEnbesanReligion"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "SelectionReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "ResolveConfirmationMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationSmugglerQuestMessage": {
+          "SuppressMessage": 1
+        },
+        "SmugglerQuestTradingStationReached": {
+          "SuppressMessage": 1
+        },
+        "OnQuestStart": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": [
+                  {
+                    "Action": {
+                      "Template": "ActionNotification",
+                      "Values": {
+                        "Action": "",
+                        "ActionNotification": {
+                          "Notification": {
+                            "Template": "CharacterNotification",
+                            "Values": {
+                              "CharacterNotification": {
+                                "Profile": 120282
+                              },
+                              "BaseNotification": {
+                                "NotificationText": 129431
+                              },
+                              "NotificationSubtitle": {
+                                "Subtitle": 127770
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionEndQuest",
+                      "Values": {
+                        "Action": "",
+                        "ActionEndQuest": {
+                          "Quest": 131572
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "OnQuestSucceeded": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": [
+                  {
+                    "Action": {
+                      "Template": "ActionDelayedActions",
+                      "Values": {
+                        "Action": "",
+                        "ActionDelayedActions": {
+                          "ExecutionDelay": 60000,
+                          "DelayedActions": {
+                            "IsBaseAutoCreateAsset": 1,
+                            "Values": {
+                              "ActionList": {
+                                "Actions": {
+                                  "Item": {
+                                    "Action": {
+                                      "Template": "ActionStartQuest",
+                                      "Values": {
+                                        "Action": "",
+                                        "ActionStartQuest": {
+                                          "Quest": 129443,
+                                          "QuestSession": 112132
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionNotification",
+                      "Values": {
+                        "Action": "",
+                        "ActionNotification": {
+                          "Notification": {
+                            "Template": "CharacterNotification",
+                            "Values": {
+                              "CharacterNotification": {
+                                "Profile": 119051
+                              },
+                              "BaseNotification": {
+                                "NotificationText": 129434
+                              },
+                              "NotificationSubtitle": {
+                                "Subtitle": 127773
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionDelayedActions",
+                      "Values": {
+                        "Action": "",
+                        "ActionDelayedActions": {
+                          "ExecutionDelay": 8000,
+                          "DelayedActions": {
+                            "IsBaseAutoCreateAsset": 1,
+                            "Values": {
+                              "ActionList": {
+                                "Actions": {
+                                  "Item": {
+                                    "Action": {
+                                      "Template": "ActionNotification",
+                                      "Values": {
+                                        "Action": "",
+                                        "ActionNotification": {
+                                          "Notification": {
+                                            "Template": "CharacterNotification",
+                                            "Values": {
+                                              "CharacterNotification": {
+                                                "Profile": 119051
+                                              },
+                                              "BaseNotification": {
+                                                "NotificationText": 129435
+                                              },
+                                              "NotificationSubtitle": {
+                                                "Subtitle": 127774
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionDelayedActions",
+                      "Values": {
+                        "Action": "",
+                        "ActionDelayedActions": {
+                          "ExecutionDelay": 16000,
+                          "DelayedActions": {
+                            "IsBaseAutoCreateAsset": 1,
+                            "Values": {
+                              "ActionList": {
+                                "Actions": {
+                                  "Item": [
+                                    {
+                                      "Action": {
+                                        "Template": "ActionRegisterTrigger",
+                                        "Values": {
+                                          "Action": "",
+                                          "ActionRegisterTrigger": {
+                                            "TriggerAsset": 130835
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "Action": {
+                                        "Template": "ActionDelayedActions",
+                                        "Values": {
+                                          "Action": "",
+                                          "ActionDelayedActions": {
+                                            "ExecutionDelay": 5000,
+                                            "DelayedActions": {
+                                              "IsBaseAutoCreateAsset": 1,
+                                              "Values": {
+                                                "ActionList": {
+                                                  "Actions": {
+                                                    "Item": {
+                                                      "Action": {
+                                                        "Template": "ActionRegisterTrigger",
+                                                        "Values": {
+                                                          "Action": "",
+                                                          "ActionRegisterTrigger": {
+                                                            "TriggerAsset": 130835,
+                                                            "UnregisterTrigger": 1
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionEndQuest",
+                      "Values": {
+                        "Action": "",
+                        "ActionEndQuest": {
+                          "Quest": 120362,
+                          "WinQuest": 1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionDelayedActions",
+                      "Values": {
+                        "Action": "",
+                        "ActionDelayedActions": {
+                          "ExecutionDelay": 30000,
+                          "DelayedActions": {
+                            "IsBaseAutoCreateAsset": 1,
+                            "Values": {
+                              "ActionList": {
+                                "Actions": {
+                                  "Item": {
+                                    "Action": {
+                                      "Template": "ActionStartQuest",
+                                      "Values": {
+                                        "Action": "",
+                                        "ActionStartQuest": {
+                                          "Quest": 130926,
+                                          "QuestSession": 112132
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "QuestGiver": 120282,
+        "StoryText": 129436,
+        "MaxCallOut": 1,
+        "MaxSolveCount": 1,
+        "CountForQuestLimit": 0,
+        "QuestTimeLimit": 0,
+        "QuestActivation": "QuestStart",
+        "IsAbortable": 0,
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        },
+        "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_questbook_landoflions.png",
+        "ReputationQuestFail": {
+          "ReputationFailList": ""
+        },
+        "QuestHints": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "A7_QuestSmugglerWOScanners",
+                    "Index": 0
+                  }
+                }
+              }
+            },
+            {
+              "Text": 21993
+            }
+          ]
+        },
+        "HasStarterSpeechBubble": 0
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Kidusi Anitoni:&lt;br/&gt;Sweet, Sweet Irony",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 46196
+      },
+      "Reward": {
+        "RewardAssets": "",
+        "RewardReputation": "",
+        "GenerateIgnoreUnlocks": 1
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "SmugglerObjective",
+              "Values": {
+                "ConditionQuestSmuggler": {
+                  "SmugglerStations": {
+                    "Item": [
+                      {
+                        "Station": {
+                          "Template": "QuestTradingStation",
+                          "Values": {
+                            "TradingStation": {
+                              "TradingStationDestination": {
+                                "Template": "ConditionObjectPrebuiltObject",
+                                "Values": {
+                                  "ConditionObjectPrebuiltObject": {
+                                    "PrebuiltObject": 119404
+                                  },
+                                  "ConditionScanner": "",
+                                  "ConditionObjectiveSignsAndFeedback": ""
+                                }
+                              },
+                              "TradingStationBringItemCount": 0,
+                              "TradingStationRetrieveItem": 129418,
+                              "TradingStationReachedNotification": {
+                                "IsBaseAutoCreateAsset": 1,
+                                "Values": {
+                                  "CharacterNotification": {
+                                    "Profile": 120282
+                                  },
+                                  "BaseNotification": {
+                                    "NotificationText": 129432
+                                  },
+                                  "NotificationSubtitle": {
+                                    "Subtitle": 127771
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Station": {
+                          "Template": "QuestTradingStation",
+                          "Values": {
+                            "TradingStation": {
+                              "TradingStationDestination": {
+                                "Template": "ConditionObjectPrebuiltObject",
+                                "Values": {
+                                  "ConditionObjectPrebuiltObject": {
+                                    "PrebuiltObject": 131349
+                                  },
+                                  "ConditionScanner": "",
+                                  "ConditionObjectiveSignsAndFeedback": ""
+                                }
+                              },
+                              "TradingStationBringItem": 129418,
+                              "TradingStationRetrieveItemCount": 0,
+                              "TradingStationReachedNotification": {
+                                "IsBaseAutoCreateAsset": 1,
+                                "Values": {
+                                  "CharacterNotification": {
+                                    "Profile": 119051
+                                  },
+                                  "BaseNotification": {
+                                    "NotificationText": 129433
+                                  },
+                                  "NotificationSubtitle": {
+                                    "Subtitle": 127772
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "TextTradingStation_NoItem": 129429,
+                  "TextTradingStation": 129430
                 },
                 "ConditionQuestObjective": "",
                 "ConditionPropsSessionSettings": "",

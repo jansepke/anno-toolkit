@@ -3,6 +3,1020 @@
     "Template": "Notification",
     "Values": {
       "Standard": {
+        "GUID": 25000160,
+        "Name": "GenericOnScreenNotification",
+        "ID": "GenericOnScreenNotification"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "OnScreenNotification",
+          "Values": {
+            "OnScreenNotification": "",
+            "BaseNotification": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500500,
+        "Name": "AchievementUnlocked",
+        "ID": "NotificationAchievementUnlocked"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "MainNotification",
+          "Values": {
+            "MainNotification": {
+              "Title": 10052,
+              "NotificationMainIconAsset": 500118,
+              "NotificationMainDescription": 10053,
+              "IsAchievementNotification": 1
+            },
+            "BaseNotification": {
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 500
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501688,
+        "Name": "MilitaryResultNotification",
+        "ID": "NotificationMilitaryResult"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "MainNotification",
+          "Values": {
+            "MainNotification": "",
+            "BaseNotification": {
+              "NotificationAudioAsset": 201632,
+              "NotificationPriority": 500
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500515,
+        "Name": "Campaign Chapter Introduction"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "CampaignNotification",
+          "Values": {
+            "BaseNotification": {
+              "NotificationText": 10193,
+              "NotificationAudioAsset": 201239
+            },
+            "CampaignNotification": {
+              "CampaignNotificationTitle": 10194
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501378,
+        "Name": "NewBuildingsUnlocked Notification",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_unlock.png",
+        "ID": "NewBuildingUnlockedNotification"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501379,
+              "FilterType": "System",
+              "Infotip": 0,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 16991,
+              "NotificationAudioAsset": 239732,
+              "IsUnique": 1
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500298,
+        "Name": "IncidentNewFire"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501364,
+              "NotificationSideTitle": 3114,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 3114,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentFire"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265190
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500301,
+        "Name": "IncidentEscalatedFire"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501364,
+              "NotificationSideTitle": 3117,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 3118,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentFire"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265191
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500304,
+        "Name": "IncidentEndFire"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501364,
+              "NotificationSideTitle": 3123,
+              "FilterType": "Incidents"
+            },
+            "BaseNotification": {
+              "NotificationText": 3124,
+              "NotificationAudioAsset": 239732,
+              "NotificationGroup": "IncidentFire"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265180
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500471,
+        "Name": "IncidentEndDestructionFire"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501364,
+              "NotificationSideTitle": 9953,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 9954,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentFire"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265192
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501126,
+        "Name": "IncidentNewFireIndustry"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501364,
+              "NotificationSideTitle": 3111,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 3111,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentFire"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265206
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501127,
+        "Name": "IncidentNewFireMob"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501364,
+              "NotificationSideTitle": 14269,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 14269,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentFire"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265190
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501129,
+        "Name": "IncidentNewFireExplosion"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501364,
+              "NotificationSideTitle": 14272,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 14272,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentFire"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265190
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501130,
+        "Name": "IncidentNewFireBombardment"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501364,
+              "NotificationSideTitle": 14273,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 14273,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentFire"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265190
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501131,
+        "Name": "IncidentNewFireShipped"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501364,
+              "NotificationSideTitle": 14279,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 14279,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentFire"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265210
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501786,
+        "Name": "IncidentNewFireNoNearbyInstitution"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501364,
+              "NotificationSideTitle": 22264,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 22264,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentFire"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265190
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501787,
+        "Name": "IncidentOngoingFireConsumedBuilding"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501364,
+              "NotificationSideTitle": 22267,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 22267,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentFire"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265191
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500299,
+        "Name": "IncidentNewRiot"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501366,
+              "NotificationSideTitle": 3112,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 3115,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentRiot"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265193
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500302,
+        "Name": "IncidentEscalatedRiot"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501366,
+              "NotificationSideTitle": 3119,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 3120,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentRiot"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265194
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500305,
+        "Name": "IncidentEndRiot"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501366,
+              "NotificationSideTitle": 3125,
+              "FilterType": "Incidents"
+            },
+            "BaseNotification": {
+              "NotificationText": 3126,
+              "NotificationAudioAsset": 239732,
+              "NotificationGroup": "IncidentRiot"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265181
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500472,
+        "Name": "IncidentEndDestructionRiot"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501366,
+              "NotificationSideTitle": 9947,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 9948,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentRiot"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265195
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501082,
+        "Name": "IncidentNewRiotIndustry"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501366,
+              "NotificationSideTitle": 3112,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 3112,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentRiot"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265199
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501083,
+        "Name": "IncidentEscalatedRiotIndustry"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501366,
+              "NotificationSideTitle": 3119,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 3119,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentRiot"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265200
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501084,
+        "Name": "IncidentEndRiotIndustry"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501366,
+              "NotificationSideTitle": 3125,
+              "FilterType": "Incidents"
+            },
+            "BaseNotification": {
+              "NotificationText": 3125,
+              "NotificationAudioAsset": 239733,
+              "NotificationGroup": "IncidentRiot"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265189
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501085,
+        "Name": "IncidentEndDestructionRiotIndustry"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501366,
+              "NotificationSideTitle": 9947,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 9947,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentRiot"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265201
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501790,
+        "Name": "IncidentNewRiotNoNearbyInstitution"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501366,
+              "NotificationSideTitle": 3112,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 22265,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentRiot"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265193
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501791,
+        "Name": "IncidentOngoingRiotConsumedBuilding"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501366,
+              "NotificationSideTitle": 3112,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 22268,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentRiot"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265194
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500300,
+        "Name": "IncidentNewIllness"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501365,
+              "NotificationSideTitle": 3116,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 3116,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentIllness"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265196
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501480,
+        "Name": "IncidentNewShippedIllness"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501365,
+              "NotificationSideTitle": 3116,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 17467,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentIllness"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265196
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500303,
+        "Name": "IncidentEscalatedIllness"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501365,
+              "NotificationSideTitle": 3121,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 3122,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentIllness"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265197
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500306,
+        "Name": "IncidentEndIllness"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501365,
+              "NotificationSideTitle": 3127,
+              "FilterType": "Incidents"
+            },
+            "BaseNotification": {
+              "NotificationText": 3128,
+              "NotificationAudioAsset": 239732,
+              "NotificationGroup": "IncidentIllness"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265182
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500473,
+        "Name": "IncidentEndDestructionIllness"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501365,
+              "NotificationSideTitle": 9951,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 9950,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentIllness"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265198
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501132,
+        "Name": "IncidentNewIllnessIndustry"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501365,
+              "NotificationSideTitle": 3113,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 3113,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentIllness"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265207
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501792,
+        "Name": "IncidentNewIllnessNoNearbyInstitution"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501365,
+              "NotificationSideTitle": 3116,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 22266,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentIllness"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265196
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501793,
+        "Name": "IncidentOngoingIllnessConsumedBuilding"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501365,
+              "NotificationSideTitle": 3116,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 22269,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "NotificationGroup": "IncidentIllness"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265197
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
         "GUID": 501128,
         "Name": "IncidentNewExplosion"
       },
@@ -87,6 +1101,35 @@
             "NotificationSubtitle": {
               "Subtitle": 265190
             }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 502141,
+        "Name": "IncidentRuins"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 502142,
+              "NotificationSideTitle": 23460,
+              "FilterType": "Incidents",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 23460,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 300,
+              "IsUnique": 1
+            },
+            "NotificationSubtitle": ""
           }
         }
       }
@@ -810,6 +1853,539 @@
     "Template": "Notification",
     "Values": {
       "Standard": {
+        "GUID": 500547,
+        "Name": "PlayerBuysShareFromOtherPlayer",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_takeover_small.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501358,
+              "NotificationSideTitle": 10422,
+              "FilterType": "HostileTakeover"
+            },
+            "BaseNotification": {
+              "NotificationText": 10413,
+              "NotificationAudioAsset": 9818749,
+              "DisplayTimeout": 0
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500555,
+        "Name": "PlayerCanStartHostileTakeoverOnOtherIsland",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_takeover_small.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501358,
+              "NotificationSideTitle": 10428,
+              "FilterType": "HostileTakeover"
+            },
+            "BaseNotification": {
+              "NotificationText": 10416,
+              "NotificationAudioAsset": 9818749,
+              "DisplayTimeout": 0
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500556,
+        "Name": "OtherPlayerTakeoverIslandFromYou",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_takeover_small.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501358,
+              "NotificationSideTitle": 10429,
+              "FilterType": "HostileTakeover",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 10417,
+              "NotificationAudioAsset": 9818749,
+              "DisplayTimeout": 0
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265244
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500557,
+        "Name": "OtherPlayerTakeoverIslandFromOtherPlayer",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_takeover_small.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501358,
+              "NotificationSideTitle": 10430,
+              "FilterType": "HostileTakeover"
+            },
+            "BaseNotification": {
+              "NotificationText": 10418,
+              "NotificationAudioAsset": 9818749
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 267799
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500558,
+        "Name": "PlayerTakeoverIslandFromOtherPlayer",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_takeover_small.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501358,
+              "NotificationSideTitle": 10431,
+              "FilterType": "HostileTakeover"
+            },
+            "BaseNotification": {
+              "NotificationText": 10419,
+              "NotificationAudioAsset": 9818749,
+              "DisplayTimeout": 0
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500560,
+        "Name": "OtherPlayerSellShare",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_takeover_small.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501358,
+              "NotificationSideTitle": 10432,
+              "FilterType": "HostileTakeover"
+            },
+            "BaseNotification": {
+              "NotificationText": 10420,
+              "NotificationAudioAsset": 9818749
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500561,
+        "Name": "PlayerSellShare",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_takeover_small.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501358,
+              "NotificationSideTitle": 10433,
+              "FilterType": "HostileTakeover"
+            },
+            "BaseNotification": {
+              "NotificationText": 10421,
+              "NotificationAudioAsset": 9818749,
+              "DisplayTimeout": 0
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500553,
+        "Name": "MyShare_MyIsland_CanStartTakeover",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_takeover_small.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501358,
+              "NotificationSideTitle": 10426,
+              "FilterType": "HostileTakeover",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 10414,
+              "NotificationAudioAsset": 9818749
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 267804
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500545,
+        "Name": "MyShare_MyIsland_NoTakeover",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_takeover_small.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501358,
+              "NotificationSideTitle": 10424,
+              "FilterType": "HostileTakeover",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 10411,
+              "NotificationAudioAsset": 9818749
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501798,
+        "Name": "MyShare_OtherIsland_CanStartTakeover",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_takeover_small.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501358,
+              "NotificationSideTitle": 10424,
+              "FilterType": "HostileTakeover",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 22298,
+              "NotificationAudioAsset": 9818749
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501799,
+        "Name": "MyShare_OtherIsland_NoTakeover",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_takeover_small.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501358,
+              "NotificationSideTitle": 10424,
+              "FilterType": "HostileTakeover",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 22299,
+              "NotificationAudioAsset": 9818749
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501800,
+        "Name": "MyShare_IslandOwnedByShareBuyer -m",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_takeover_small.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501358,
+              "NotificationSideTitle": 10424,
+              "FilterType": "HostileTakeover",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 22300,
+              "NotificationAudioAsset": 9818749
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501804,
+        "Name": "MyShare_IslandOwnedByShareBuyer -f",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_takeover_small.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501358,
+              "NotificationSideTitle": 10424,
+              "FilterType": "HostileTakeover",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 22301,
+              "NotificationAudioAsset": 9818749
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501801,
+        "Name": "OtherShare_MyIsland_CanStartTakeover",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_takeover_small.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501358,
+              "NotificationSideTitle": 10425,
+              "FilterType": "HostileTakeover",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 22302,
+              "NotificationAudioAsset": 9818749
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501802,
+        "Name": "OtherShare_MyIsland_NoTakeover",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_takeover_small.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501358,
+              "NotificationSideTitle": 10425,
+              "FilterType": "HostileTakeover",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 22303,
+              "NotificationAudioAsset": 9818749
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500554,
+        "Name": "OtherShare_OtherIsland_CanStartTakeover",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_takeover_small.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501358,
+              "NotificationSideTitle": 10427,
+              "FilterType": "HostileTakeover"
+            },
+            "BaseNotification": {
+              "NotificationText": 10415,
+              "NotificationAudioAsset": 9818749
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500546,
+        "Name": "OtherShare_OtherIsland_NoTakeover",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_takeover_small.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501358,
+              "NotificationSideTitle": 10425,
+              "FilterType": "HostileTakeover"
+            },
+            "BaseNotification": {
+              "NotificationText": 10412,
+              "NotificationAudioAsset": 9818749
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501803,
+        "Name": "OtherShare_IslandOwnedByShareBuyer -m",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_takeover_small.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501358,
+              "NotificationSideTitle": 10425,
+              "FilterType": "HostileTakeover"
+            },
+            "BaseNotification": {
+              "NotificationText": 22304,
+              "NotificationAudioAsset": 9818749
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501805,
+        "Name": "OtherShare_IslandOwnedByShareBuyer -f",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_takeover_small.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501358,
+              "NotificationSideTitle": 10425,
+              "FilterType": "HostileTakeover"
+            },
+            "BaseNotification": {
+              "NotificationText": 22305,
+              "NotificationAudioAsset": 9818749
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
         "GUID": 25000015,
         "Name": "VisitorSpecialistNotification"
       },
@@ -1050,6 +2626,2181 @@
             },
             "NotificationSubtitle": {
               "Subtitle": 265370
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500665,
+        "Name": "Quest - Generic Item Acceptance Notification"
+      },
+      "Notification": {
+        "NotificationType": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "CharacterNotification": {
+              "ThirdpartyNotificationButtons": {
+                "Item": [
+                  {
+                    "Icon": 500109
+                  },
+                  {
+                    "Icon": 500108
+                  }
+                ]
+              }
+            },
+            "BaseNotification": {
+              "NotificationText": 11314,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 400,
+              "NotificationMinDisplayTime": 1000,
+              "NotificationGroup": "PlayerClick",
+              "IsUnique": 1
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501330,
+        "Name": "Photo Quest Confirmation",
+        "ID": "PhotoQuestConfirmationNotification"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501354,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 16965,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500666,
+        "Name": "NotificationSavegameTransferError",
+        "ID": "NotificationSavegameTransferError"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501362,
+              "FilterType": "System",
+              "IsWarning": 1,
+              "Infotip": 0,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 11316,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": -1
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265142
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501312,
+        "Name": "GameSaved",
+        "ID": "GameSavedNotification"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501359,
+              "FilterType": "System",
+              "Infotip": 0,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 16579,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501313,
+        "Name": "ScreenshotTaken",
+        "ID": "ScreenshotTakenNotification"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501354,
+              "FilterType": "System",
+              "Infotip": 0,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 16580,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265127
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500674,
+        "Name": "Play Time 2h",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_timer.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501356,
+              "IsArchived": 0,
+              "FilterType": "System",
+              "Infotip": 0,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 11457,
+              "NotificationBlockingTime": 3600000,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265144
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501332,
+        "Name": "Play Time 4h",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_timer.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501356,
+              "IsArchived": 0,
+              "FilterType": "System",
+              "Infotip": 0,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 16916,
+              "NotificationBlockingTime": 3600000,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265145
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501333,
+        "Name": "Play Time 6h",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_timer.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501356,
+              "IsArchived": 0,
+              "FilterType": "System",
+              "Infotip": 0,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 16917,
+              "NotificationBlockingTime": 3600000,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265146
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501334,
+        "Name": "Play Time 8h",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_timer.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501356,
+              "IsArchived": 0,
+              "FilterType": "System",
+              "Infotip": 0,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 16918,
+              "NotificationBlockingTime": 3600000,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265147
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501335,
+        "Name": "Play Time 10h",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_timer.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501356,
+              "IsArchived": 0,
+              "FilterType": "System",
+              "Infotip": 0,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 16919,
+              "NotificationBlockingTime": 3600000,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265148
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501336,
+        "Name": "Play Time 12h",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_timer.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501356,
+              "IsArchived": 0,
+              "FilterType": "System",
+              "Infotip": 0,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 16920,
+              "NotificationBlockingTime": 3600000,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265149
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501337,
+        "Name": "Play Time 24h",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_timer.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501356,
+              "IsArchived": 0,
+              "FilterType": "System",
+              "Infotip": 0,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 16921,
+              "NotificationBlockingTime": 3600000,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265150
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501341,
+        "Name": "Holiday AnnoDay",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_globe.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501361,
+              "FilterType": "System",
+              "Infotip": 0,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 16931,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265133
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501343,
+        "Name": "Holiday ValentineDay",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_globe.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501361,
+              "FilterType": "System",
+              "Infotip": 0,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 16932,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265134
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501344,
+        "Name": "Holiday Easter",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_globe.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501361,
+              "FilterType": "System",
+              "Infotip": 0,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 16933,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265135
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501345,
+        "Name": "Holiday Generic",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_globe.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501361,
+              "FilterType": "System",
+              "Infotip": 0,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 16934,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265136
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501346,
+        "Name": "Holiday Christmas",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_globe.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501361,
+              "FilterType": "System",
+              "Infotip": 0,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 16935,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265137
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501347,
+        "Name": "Holiday Halloween",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_globe.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501361,
+              "FilterType": "System",
+              "Infotip": 0,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 16936,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265138
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501348,
+        "Name": "Holiday NewYearsEve",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_globe.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501361,
+              "FilterType": "System",
+              "Infotip": 0,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 16937,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265139
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501349,
+        "Name": "Holiday NewYear",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_globe.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501361,
+              "FilterType": "System",
+              "Infotip": 0,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 16938,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265140
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501544,
+        "Name": "Player left",
+        "ID": "NotificationPlayerLeft"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501708,
+              "IsWarning": 1,
+              "Infotip": 0,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 23652,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501545,
+        "Name": "Player disconnected",
+        "ID": "NotificationPlayerDisconnected"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501708,
+              "IsWarning": 1,
+              "Infotip": 0,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 23653,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501745,
+        "Name": "GameSaveFailed",
+        "ID": "GameSaveFailedNotification"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501359,
+              "FilterType": "System",
+              "IsWarning": 1,
+              "Infotip": 0,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 22149,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265142
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500694,
+        "Name": "ShipUnderAttack_Owner",
+        "ID": "ShipUnderAttack_Owner"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501367,
+              "NotificationSideTitle": 11621,
+              "FilterType": "Military",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 11621,
+              "NotificationBlockingTime": 900000,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 403
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265210
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501653,
+        "Name": "BuildingUnderAttack_Owner",
+        "ID": "BuildingUnderAttack_Owner"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501367,
+              "NotificationSideTitle": 11621,
+              "FilterType": "Military",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 21932,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 401
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265211
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501646,
+        "Name": "ShipDestroyed_Owner",
+        "ID": "ShipDestroyed_Owner"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501367,
+              "NotificationSideTitle": 11621,
+              "FilterType": "Military",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 23475,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265213
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 502159,
+        "Name": "ShipDestroyedOnTradeRoute_Owner",
+        "ID": "ShipDestroyedOnTradeRoute_Owner"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501367,
+              "NotificationSideTitle": 11621,
+              "FilterType": "Military",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 23477,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265213
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501050,
+        "Name": "MilitaryTakeoverStarted_Oner"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501103,
+              "NotificationSideTitle": 11621,
+              "FilterType": "Military",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 13128,
+              "NotificationBlockingTime": 30000,
+              "NotificationAudioAsset": 239733,
+              "NotificationPriority": 402,
+              "NotificationMinDisplayTime": 10000
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265218
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501597,
+        "Name": "MilitaryTakeoverStarted_Bystander"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501103,
+              "NotificationSideTitle": 11621,
+              "FilterType": "Military",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 13128,
+              "NotificationBlockingTime": 30000,
+              "NotificationAudioAsset": 239732,
+              "NotificationMinDisplayTime": 10000
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265226
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501647,
+        "Name": "IslandDefended_Bystander"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501103,
+              "NotificationSideTitle": 11621,
+              "FilterType": "Military",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 13130,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265227
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501648,
+        "Name": "MoraleUnderThreshold_Owner"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501103,
+              "NotificationSideTitle": 11621,
+              "FilterType": "Military",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 21934,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265220
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501649,
+        "Name": "MoraleUnderThreshold_Attacker"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501103,
+              "NotificationSideTitle": 11621,
+              "FilterType": "Military",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 21934,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265223
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501650,
+        "Name": "IslandWarEndTimerStarted_Attacker"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501103,
+              "NotificationSideTitle": 11621,
+              "FilterType": "Military",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 21936,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265224
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501651,
+        "Name": "IslandConquered_Owner"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501103,
+              "NotificationSideTitle": 11621,
+              "FilterType": "Military",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 13129,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265244
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501652,
+        "Name": "IslandConquered_Bystander"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501103,
+              "NotificationSideTitle": 11621,
+              "FilterType": "Military",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 13129,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 267799
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500893,
+        "Name": "TrainBlockedNotification",
+        "ID": "TrainBlockedNotification"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501362,
+              "NotificationSideTitle": 12248,
+              "FilterType": "Railway",
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 12248,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 300,
+              "IsUnique": 1
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 500925,
+        "Name": "Session discovered South America",
+        "ID": "NotificationSessionDiscovered"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "MainNotification",
+          "Values": {
+            "MainNotification": {
+              "Title": 12670,
+              "NotificationMainIconAsset": 180025
+            },
+            "BaseNotification": {
+              "NotificationText": 12671,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 500,
+              "NotificationMinDisplayTime": 15000
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265161
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501746,
+        "Name": "Session discovered Polar"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "MainNotification",
+          "Values": {
+            "MainNotification": {
+              "Title": 12670,
+              "NotificationMainIconAsset": 180045
+            },
+            "BaseNotification": {
+              "NotificationText": 12671,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 500,
+              "NotificationMinDisplayTime": 15000
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265161
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501747,
+        "Name": "Session discovered Sunken Treasure"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "MainNotification",
+          "Values": {
+            "MainNotification": {
+              "Title": 12670,
+              "NotificationMainIconAsset": 110934
+            },
+            "BaseNotification": {
+              "NotificationText": 12671,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 500,
+              "NotificationMinDisplayTime": 15000
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265161
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501440,
+        "Name": "NotificationDiplomacy_AlliancePlayerInitiator"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501447,
+              "FilterType": "DiplomaticRelations",
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 17240,
+              "NotificationAudioAsset": 239732,
+              "DisplayTimeout": 0
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501532,
+        "Name": "NotificationDiplomacy_AlliancePlayerTarget"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501447,
+              "FilterType": "DiplomaticRelations",
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 20091,
+              "NotificationAudioAsset": 239732,
+              "DisplayTimeout": 0
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501430,
+        "Name": "NotificationDiplomacy_AllianceOtherParticipant"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501447,
+              "FilterType": "DiplomaticRelations",
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 17234,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265380
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501441,
+        "Name": "NotificationDiplomacy_AlliancePlayerCancelled"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501447,
+              "FilterType": "DiplomaticRelations",
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 17243,
+              "NotificationAudioAsset": 239732,
+              "DisplayTimeout": 0
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501431,
+        "Name": "NotificationDiplomacy_AlliancePlayerCancelledOtherParticipant"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501447,
+              "FilterType": "DiplomaticRelations",
+              "IsWarning": 1,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 17244,
+              "NotificationAudioAsset": 239732,
+              "DisplayTimeout": 0
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501432,
+        "Name": "NotificationDiplomacy_AllianceOtherParticipantCancelled"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501447,
+              "FilterType": "DiplomaticRelations",
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 17235,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265381
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501442,
+        "Name": "NotificationDiplomacy_TradePlayerInitiator"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501448,
+              "FilterType": "DiplomaticRelations",
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 17245,
+              "NotificationAudioAsset": 239732,
+              "DisplayTimeout": 0
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501531,
+        "Name": "NotificationDiplomacy_TradePlayerTarget"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501448,
+              "FilterType": "DiplomaticRelations",
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 20090,
+              "NotificationAudioAsset": 239732,
+              "DisplayTimeout": 0
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501433,
+        "Name": "NotificationDiplomacy_TradeOtherParticipant"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501448,
+              "FilterType": "DiplomaticRelations",
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 17236,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265382
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501443,
+        "Name": "NotificationDiplomacy_TradePlayerCancelled"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501448,
+              "FilterType": "DiplomaticRelations",
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 17247,
+              "NotificationAudioAsset": 239732,
+              "DisplayTimeout": 0
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501434,
+        "Name": "NotificationDiplomacy_TradePlayerCancelledOtherParticipant"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501448,
+              "FilterType": "DiplomaticRelations",
+              "IsWarning": 1,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 17248,
+              "NotificationAudioAsset": 239732,
+              "DisplayTimeout": 0
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501435,
+        "Name": "NotificationDiplomacy_TradeOtherParticipantCancelled"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501448,
+              "FilterType": "DiplomaticRelations",
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 17237,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265383
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501444,
+        "Name": "NotificationDiplomacy_PeacePlayerInitiator"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501368,
+              "FilterType": "DiplomaticRelations",
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 17249,
+              "NotificationAudioAsset": 239732,
+              "DisplayTimeout": 0
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501540,
+        "Name": "NotificationDiplomacy_PeacePlayerTarget"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501368,
+              "FilterType": "DiplomaticRelations",
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 20101,
+              "NotificationAudioAsset": 239732,
+              "DisplayTimeout": 0
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501436,
+        "Name": "NotificationDiplomacy_PeaceOtherParticipant"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501368,
+              "FilterType": "DiplomaticRelations",
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 17238,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265384
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501445,
+        "Name": "NotificationDiplomacy_WarPlayer"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501449,
+              "FilterType": "DiplomaticRelations",
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 17250,
+              "NotificationAudioAsset": 239732,
+              "DisplayTimeout": 0
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501438,
+        "Name": "NotificationDiplomacy_WarOtherParticipant"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501449,
+              "FilterType": "DiplomaticRelations",
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 17239,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265385
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501437,
+        "Name": "NotificationDiplomacy_WarPlayerOtherParticipant"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501449,
+              "FilterType": "DiplomaticRelations",
+              "IsWarning": 1,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 17251,
+              "NotificationAudioAsset": 239732,
+              "DisplayTimeout": 0
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501446,
+        "Name": "NotificationDiplomacy_CeasefirePlayerInitiator"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501450,
+              "FilterType": "DiplomaticRelations",
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 17252,
+              "NotificationAudioAsset": 239732,
+              "DisplayTimeout": 0
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501533,
+        "Name": "NotificationDiplomacy_CeasefirePlayerTarget"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501450,
+              "FilterType": "DiplomaticRelations",
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 20092,
+              "NotificationAudioAsset": 239732,
+              "DisplayTimeout": 0
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501534,
+        "Name": "NotificationDiplomacy_CeasefireOtherParticipant"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501450,
+              "FilterType": "DiplomaticRelations",
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 20093,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501535,
+        "Name": "NotificationDiplomacy_NonAggressionPactPlayerInitiator"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501451,
+              "FilterType": "DiplomaticRelations",
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 20094,
+              "NotificationAudioAsset": 239732,
+              "DisplayTimeout": 0
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501537,
+        "Name": "NotificationDiplomacy_NonAggressionPactOtherParticipant"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501451,
+              "FilterType": "DiplomaticRelations",
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 20096,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501536,
+        "Name": "NotificationDiplomacy_NonAggressionPactPlayerTarget"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501451,
+              "FilterType": "DiplomaticRelations",
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 20095,
+              "NotificationAudioAsset": 239732,
+              "DisplayTimeout": 0
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501439,
+        "Name": "NotificationDiplomacy_PiratesResettled"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501373,
+              "FilterType": "DiplomaticRelations",
+              "IsWarning": 1,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 17241,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265391
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501189,
+        "Name": "NotificationDiplomacy_CeasefireEndedInitiator"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501450,
+              "FilterType": "DiplomaticRelations",
+              "IsWarning": 1,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 14925,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265390
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501541,
+        "Name": "NotificationDiplomacy_CeasefireEndedTarget"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501450,
+              "FilterType": "DiplomaticRelations",
+              "IsWarning": 1,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 20102,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265390
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501538,
+        "Name": "NotificationDiplomacy_CeasefireEndedOtherParticipant"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501450,
+              "FilterType": "DiplomaticRelations",
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 20099,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265390
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501190,
+        "Name": "NotificationDiplomacy_NonAggressionPactEndedInitiator"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501451,
+              "FilterType": "DiplomaticRelations",
+              "IsWarning": 1,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 20103,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265437
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501542,
+        "Name": "NotificationDiplomacy_NonAggressionPactEndedTarget"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501451,
+              "FilterType": "DiplomaticRelations",
+              "IsWarning": 1,
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 14926,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265437
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501539,
+        "Name": "NotificationDiplomacy_NonAggressionPactEndedOtherParticipant"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501451,
+              "FilterType": "DiplomaticRelations",
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 20100,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265437
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501208,
+        "Name": "FestivalStarted",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_kontor3.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501370,
+              "FilterType": "VisitorsAndCulture"
+            },
+            "BaseNotification": {
+              "NotificationText": 15219,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 350,
+              "NotificationGroup": "Festival"
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265204
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501210,
+        "Name": "FestivalEnded",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_kontor3.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501370,
+              "FilterType": "VisitorsAndCulture"
+            },
+            "BaseNotification": {
+              "NotificationText": 15220,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 352,
+              "NotificationGroup": "Festival"
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501211,
+        "Name": "FestivalAboutToEnd",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_kontor3.png"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501370,
+              "FilterType": "VisitorsAndCulture"
+            },
+            "BaseNotification": {
+              "NotificationText": 15221,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 351,
+              "NotificationGroup": "Festival"
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501305,
+        "Name": "IslandEmptyDiscovered"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501360
+            },
+            "BaseNotification": {
+              "NotificationText": 16573,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501729,
+        "Name": "IslandSettledByOtherParticipant"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501360,
+              "FilterType": "DiplomaticRelations"
+            },
+            "BaseNotification": {
+              "NotificationText": 22065,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265248
             }
           }
         }
@@ -1318,6 +5069,87 @@
               "NotificationAudioAsset": 239732
             },
             "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501689,
+        "Name": "NotificationInfluenceSpecializationGainedBanner",
+        "ID": "NotificationInfluenceSpecializationGainedBanner"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "MainNotification",
+          "Values": {
+            "MainNotification": {
+              "IsBuffNotification": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 16790,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 200
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501327,
+        "Name": "PhaseCompleted",
+        "ID": "NotificationMonumentPhaseCompleted"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501377
+            },
+            "BaseNotification": {
+              "NotificationText": 16848,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265125
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501329,
+        "Name": "MonumentConstructionStopped",
+        "ID": "NotificationMonumentConstructionStopped"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501377
+            },
+            "BaseNotification": {
+              "NotificationText": 16849,
+              "NotificationBlockingTime": 300000,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265270
+            }
           }
         }
       }
@@ -2051,6 +5883,157 @@
     "Template": "Notification",
     "Values": {
       "Standard": {
+        "GUID": 501548,
+        "Name": "Bailout"
+      },
+      "Notification": {
+        "NotificationType": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "CharacterNotification": {
+              "Profile": 45
+            },
+            "BaseNotification": {
+              "NotificationText": 9590,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 700,
+              "NotificationMinDisplayTime": 10000
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 268198
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 501843,
+        "Name": "BuildPermit"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501844,
+              "NotificationSideTitle": 22383,
+              "FilterType": "Items"
+            },
+            "BaseNotification": {
+              "NotificationText": 22382,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 111149,
+        "Name": "ArticleUnlocked"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501379,
+              "FilterType": "Progress",
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 111150,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 112114,
+        "Name": "MissingWorkforceInPool"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501374,
+              "IsWarning": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 112115,
+              "NotificationAudioAsset": 239733
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 265281
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 113810,
+        "Name": "BuyShipRequestNotification_OldNate"
+      },
+      "Notification": {
+        "NotificationType": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "CharacterNotification": {
+              "ThirdpartyNotificationButtons": {
+                "Item": [
+                  {
+                    "Infotip": 500658,
+                    "Icon": 500109,
+                    "Command": "[NotificationContext Value(Ship) Object Sellable BuyNet([NotificationContext Value(PlayerIndex) Int])]",
+                    "ActiveCallback": "[NotificationContext Value(Ship) Object Sellable AffordableByCurrentParticipant]"
+                  },
+                  {
+                    "Infotip": 500663,
+                    "Icon": 500108,
+                    "Command": "[NotificationContext Value(Trader) Object Trader ShipTradeFailed([NotificationContext Value(PlayerIndex) Int])]"
+                  }
+                ]
+              }
+            },
+            "BaseNotification": {
+              "NotificationText": 10816,
+              "NotificationAudioAsset": 239732,
+              "NotificationPriority": 700,
+              "NotificationMinDisplayTime": 30000,
+              "NotificationGroup": "PlayerClick",
+              "IsUnique": 1
+            },
+            "NotificationSubtitle": {
+              "Subtitle": 269041
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
         "GUID": 115004,
         "Name": "Heating CoalTendencyNegative Notification",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_heating_center.png"
@@ -2584,6 +6567,29 @@
               "NotificationBlockingTime": 300000
             },
             "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 124218,
+        "Name": "Chapter Introduction"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "CampaignNotification",
+          "Values": {
+            "BaseNotification": {
+              "NotificationText": 124219,
+              "NotificationAudioAsset": 201239
+            },
+            "CampaignNotification": {
+              "CampaignNotificationTitle": 124220
+            }
           }
         }
       }

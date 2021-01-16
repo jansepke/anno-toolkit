@@ -3596,6 +3596,53 @@
     "Template": "Trigger",
     "Values": {
       "Standard": {
+        "GUID": 153201,
+        "Name": "No Lives left for the cat StartTrigger"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "TriggerActions": {
+          "Item": [
+            {
+              "TriggerAction": {
+                "Template": "ActionEnableQuest",
+                "Values": {
+                  "Action": "",
+                  "ActionEnableQuest": {
+                    "QuestGUID": 152973
+                  }
+                }
+              }
+            },
+            {
+              "TriggerAction": {
+                "Template": "ActionEnableQuest",
+                "Values": {
+                  "Action": "",
+                  "ActionEnableQuest": {
+                    "QuestGUID": 152974
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TriggerSetup": {
+        "UsedBySecondParties": 0
+      }
+    }
+  },
+  {
+    "Template": "Trigger",
+    "Values": {
+      "Standard": {
         "GUID": 151828,
         "Name": "HeighOhTriggerMainTo1"
       },
@@ -3721,6 +3768,64 @@
               }
             }
           ]
+        }
+      },
+      "TriggerSetup": {
+        "UsedBySecondParties": 0
+      }
+    }
+  },
+  {
+    "Template": "Trigger",
+    "Values": {
+      "Standard": {
+        "GUID": 269853,
+        "Name": "TheGreatEastern_1_Trigger"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 1010492,
+              "CounterAmount": 1
+            }
+          }
+        },
+        "TriggerActions": {
+          "Item": {
+            "TriggerAction": {
+              "Template": "ActionDelayedActions",
+              "Values": {
+                "Action": "",
+                "ActionDelayedActions": {
+                  "ExecutionDelay": 90000,
+                  "DelayedActions": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ActionList": {
+                        "Actions": {
+                          "Item": {
+                            "Action": {
+                              "Template": "ActionStartQuest",
+                              "Values": {
+                                "Action": "",
+                                "ActionStartQuest": {
+                                  "Quest": 269866,
+                                  "QuestSession": 180023
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       },
       "TriggerSetup": {
@@ -5361,6 +5466,730 @@
       "TriggerSetup": {
         "UsedBySecondParties": 0
       }
+    }
+  },
+  {
+    "Template": "Trigger",
+    "Values": {
+      "Standard": {
+        "GUID": 112644,
+        "Name": "Intermediate Arctic 1.0"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "TriggerActions": {
+          "Item": {
+            "TriggerAction": {
+              "Template": "ActionUnlockAsset",
+              "Values": {
+                "Action": "",
+                "ActionUnlockAsset": {
+                  "UnlockAssets": {
+                    "Item": [
+                      {
+                        "Asset": 112113
+                      },
+                      {
+                        "Asset": 112091
+                      },
+                      {
+                        "Asset": 112716
+                      },
+                      {
+                        "Asset": 112715
+                      },
+                      {
+                        "Asset": 112717
+                      },
+                      {
+                        "Asset": 114889
+                      }
+                    ]
+                  },
+                  "UnhideAssets": {
+                    "Item": {
+                      "Asset": 112718
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "Trigger",
+    "Values": {
+      "Standard": {
+        "GUID": 112645,
+        "Name": "Intermediate Arctic 1.1"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "PopulationByLevel",
+              "Context": 112642,
+              "CounterAmount": 100
+            }
+          }
+        },
+        "TriggerActions": {
+          "Item": {
+            "TriggerAction": {
+              "Template": "ActionUnlockAsset",
+              "Values": {
+                "Action": "",
+                "ActionUnlockAsset": {
+                  "UnlockAssets": {
+                    "Item": {
+                      "Asset": 112718
+                    }
+                  },
+                  "UnhideAssets": {
+                    "Item": [
+                      {
+                        "Asset": 112669
+                      },
+                      {
+                        "Asset": 112720
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "Trigger",
+    "Values": {
+      "Standard": {
+        "GUID": 112646,
+        "Name": "Intermediate Arctic 1.2"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "PopulationByLevel",
+              "Context": 112642,
+              "CounterAmount": 250
+            }
+          }
+        },
+        "TriggerActions": {
+          "Item": {
+            "TriggerAction": {
+              "Template": "ActionUnlockAsset",
+              "Values": {
+                "Action": "",
+                "ActionUnlockAsset": {
+                  "UnlockAssets": {
+                    "Item": [
+                      {
+                        "Asset": 112669
+                      },
+                      {
+                        "Asset": 112720
+                      }
+                    ]
+                  },
+                  "UnhideAssets": {
+                    "Item": [
+                      {
+                        "Asset": 112721
+                      },
+                      {
+                        "Asset": 117078
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "Trigger",
+    "Values": {
+      "Standard": {
+        "GUID": 112647,
+        "Name": "Intermediate Arctic 1.3"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "PopulationByLevel",
+              "Context": 112642,
+              "CounterAmount": 500
+            }
+          }
+        },
+        "TriggerActions": {
+          "Item": {
+            "TriggerAction": {
+              "Template": "ActionUnlockAsset",
+              "Values": {
+                "Action": "",
+                "ActionUnlockAsset": {
+                  "UnlockAssets": {
+                    "Item": [
+                      {
+                        "Asset": 112721
+                      },
+                      {
+                        "Asset": 112652
+                      },
+                      {
+                        "Asset": 112723
+                      },
+                      {
+                        "Asset": 117078
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "Trigger",
+    "Values": {
+      "Standard": {
+        "GUID": 112648,
+        "Name": "Intermediate Arctic 2.0"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "PopulationByLevel",
+              "Context": 112643,
+              "CounterAmount": 1
+            }
+          }
+        },
+        "TriggerActions": {
+          "Item": {
+            "TriggerAction": {
+              "Template": "ActionUnlockAsset",
+              "Values": {
+                "Action": "",
+                "ActionUnlockAsset": {
+                  "UnlockAssets": {
+                    "Item": [
+                      {
+                        "Asset": 112685
+                      },
+                      {
+                        "Asset": 112726
+                      },
+                      {
+                        "Asset": 112670
+                      },
+                      {
+                        "Asset": 112671
+                      },
+                      {
+                        "Asset": 116030
+                      },
+                      {
+                        "Asset": 116286
+                      }
+                    ]
+                  },
+                  "UnhideAssets": {
+                    "Item": [
+                      {
+                        "Asset": 112684
+                      },
+                      {
+                        "Asset": 112678
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "Trigger",
+    "Values": {
+      "Standard": {
+        "GUID": 112649,
+        "Name": "Intermediate Arctic 2.1"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "PopulationByLevel",
+              "Context": 112643,
+              "CounterAmount": 100
+            }
+          }
+        },
+        "TriggerActions": {
+          "Item": {
+            "TriggerAction": {
+              "Template": "ActionUnlockAsset",
+              "Values": {
+                "Action": "",
+                "ActionUnlockAsset": {
+                  "UnlockAssets": {
+                    "Item": [
+                      {
+                        "Asset": 112687
+                      },
+                      {
+                        "Asset": 112684
+                      },
+                      {
+                        "Asset": 112678
+                      },
+                      {
+                        "Asset": 112724
+                      },
+                      {
+                        "Asset": 116285
+                      }
+                    ]
+                  },
+                  "UnhideAssets": {
+                    "Item": [
+                      {
+                        "Asset": 112719
+                      },
+                      {
+                        "Asset": 116034
+                      },
+                      {
+                        "Asset": 117267
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "Trigger",
+    "Values": {
+      "Standard": {
+        "GUID": 116659,
+        "Name": "Intermediate Arctic 2.1.1 Inventions"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "TriggerActions": {
+          "Item": {
+            "TriggerAction": {
+              "Template": "ActionUnlockAsset",
+              "Values": {
+                "Action": "",
+                "ActionUnlockAsset": {
+                  "UnlockAssets": {
+                    "Item": {
+                      "Asset": 116656
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "SubTriggers": {
+          "Item": [
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 114166,
+                          "CounterAmount": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "PopulationByLevel",
+                          "Context": 112643,
+                          "CounterAmount": 50
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "Trigger",
+    "Values": {
+      "Standard": {
+        "GUID": 112650,
+        "Name": "Intermediate Arctic 2.2"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "PopulationByLevel",
+              "Context": 112643,
+              "CounterAmount": 300
+            }
+          }
+        },
+        "TriggerActions": {
+          "Item": {
+            "TriggerAction": {
+              "Template": "ActionUnlockAsset",
+              "Values": {
+                "Action": "",
+                "ActionUnlockAsset": {
+                  "UnlockAssets": {
+                    "Item": [
+                      {
+                        "Asset": 112688
+                      },
+                      {
+                        "Asset": 112719
+                      },
+                      {
+                        "Asset": 116034
+                      },
+                      {
+                        "Asset": 117267
+                      },
+                      {
+                        "Asset": 116287
+                      }
+                    ]
+                  },
+                  "UnhideAssets": {
+                    "Item": [
+                      {
+                        "Asset": 112722
+                      },
+                      {
+                        "Asset": 116029
+                      },
+                      {
+                        "Asset": 114192
+                      },
+                      {
+                        "Asset": 117074
+                      },
+                      {
+                        "Asset": 117561
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "Trigger",
+    "Values": {
+      "Standard": {
+        "GUID": 116660,
+        "Name": "Intermediate Arctic 2.2.1 Inventions"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "TriggerActions": {
+          "Item": {
+            "TriggerAction": {
+              "Template": "ActionUnlockAsset",
+              "Values": {
+                "Action": "",
+                "ActionUnlockAsset": {
+                  "UnlockAssets": {
+                    "Item": {
+                      "Asset": 116657
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "SubTriggers": {
+          "Item": [
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 114166,
+                          "CounterAmount": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "PopulationByLevel",
+                          "Context": 112643,
+                          "CounterAmount": 140
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "Trigger",
+    "Values": {
+      "Standard": {
+        "GUID": 112651,
+        "Name": "Intermediate Arctic 2.3"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "PopulationByLevel",
+              "Context": 112643,
+              "CounterAmount": 750
+            }
+          }
+        },
+        "TriggerActions": {
+          "Item": {
+            "TriggerAction": {
+              "Template": "ActionUnlockAsset",
+              "Values": {
+                "Action": "",
+                "ActionUnlockAsset": {
+                  "UnlockAssets": {
+                    "Item": [
+                      {
+                        "Asset": 112689
+                      },
+                      {
+                        "Asset": 114166
+                      },
+                      {
+                        "Asset": 115980
+                      },
+                      {
+                        "Asset": 112722
+                      },
+                      {
+                        "Asset": 116029
+                      },
+                      {
+                        "Asset": 114192
+                      },
+                      {
+                        "Asset": 117074
+                      },
+                      {
+                        "Asset": 116288
+                      },
+                      {
+                        "Asset": 117561
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "Trigger",
+    "Values": {
+      "Standard": {
+        "GUID": 116661,
+        "Name": "Intermediate Arctic 2.3.1 Inventions"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "TriggerActions": {
+          "Item": {
+            "TriggerAction": {
+              "Template": "ActionUnlockAsset",
+              "Values": {
+                "Action": "",
+                "ActionUnlockAsset": {
+                  "UnlockAssets": {
+                    "Item": {
+                      "Asset": 116658
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "SubTriggers": {
+          "Item": [
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 114166,
+                          "CounterAmount": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "PopulationByLevel",
+                          "Context": 112643,
+                          "CounterAmount": 400
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TriggerSetup": ""
     }
   },
   {

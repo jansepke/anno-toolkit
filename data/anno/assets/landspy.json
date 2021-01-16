@@ -3,6 +3,206 @@
     "Template": "LandSpy",
     "Values": {
       "Standard": {
+        "GUID": 101236,
+        "Name": "Spy",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_ship.png",
+        "InfoDescription": 11466
+      },
+      "Object": {
+        "Variations": {
+          "Item": [
+            {
+              "Filename": "data/graphics/units/inhabitants/special/butcher/m_butcher_01.cfg"
+            },
+            {
+              "Filename": "data/graphics/units/inhabitants/special/butcher/m_butcher_01.cfg"
+            }
+          ]
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnTerrainSlope"
+      },
+      "Selection": "",
+      "Walking": {
+        "DiscoverRadius": 0,
+        "ReservationLength": 0,
+        "ReservationWidth": 0,
+        "ForcePrimitiveMovement": 1,
+        "TurnAroundRadius": 0,
+        "Acceleration": 6,
+        "TurnRadius": 0.5,
+        "TurnSpeed": 240,
+        "TurnDeceleration": 0,
+        "TurnMovement": 80,
+        "LeaningSpeed": 0.01,
+        "LeaningDamping": 0.01,
+        "ForwardSpeed": 1,
+        "WindMinSlowdownFactor": 1,
+        "WindMaxSpeedupFactor": 1,
+        "MinSlowdownFactor": 1,
+        "DisableSmoothing": 1,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Flag ship",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 14862
+      },
+      "CommandQueue": {
+        "FollowRadius": 5,
+        "CommandChainLength": 0,
+        "FormationPriority": 4,
+        "InsecurityAttractiveness": 0
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 9818371
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "Infolayer": "",
+      "Locked": {
+        "DefaultLockedState": 0
+      },
+      "MetaPersistent": "",
+      "QuestObject": ""
+    }
+  },
+  {
+    "Template": "LandSpy",
+    "Values": {
+      "Standard": {
+        "GUID": 117739,
+        "Name": "Spy",
+        "IconFilename": "data/ui/2kimages/main/3dicons/animals/icon_sheep.png",
+        "InfoDescription": 11466
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/units/wildlife/sheep/sheep.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnTerrainSlope"
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionMoveObject",
+                    "Values": {
+                      "Action": "",
+                      "ObjectFilter": {
+                        "ObjectGUID": 117739,
+                        "ObjectSession": 180023
+                      },
+                      "ObjectTargetFilter": {
+                        "TargetGUID": 1010371,
+                        "TargetCheckParticipantID": 1,
+                        "TargetCheckProcessingParticipantID": 1,
+                        "TargetObjectSession": 180023
+                      },
+                      "ActionMoveObject": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Walking": {
+        "DiscoverRadius": 0,
+        "ReservationLength": 0,
+        "ReservationWidth": 0,
+        "ForcePrimitiveMovement": 1,
+        "TurnAroundRadius": 0,
+        "Acceleration": 6,
+        "TurnRadius": 0.5,
+        "TurnSpeed": 240,
+        "TurnDeceleration": 0,
+        "TurnMovement": 80,
+        "LeaningSpeed": 0.01,
+        "LeaningDamping": 0.01,
+        "ForwardSpeed": 1,
+        "WindMinSlowdownFactor": 1,
+        "WindMaxSpeedupFactor": 1,
+        "MinSlowdownFactor": 1,
+        "DisableSmoothing": 1,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Flag ship",
+            "ExportCount": 1
+          }
+        }
+      },
+      "CommandQueue": {
+        "FollowRadius": 5,
+        "CommandChainLength": 0,
+        "FormationPriority": 4,
+        "InsecurityAttractiveness": 0
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 235614
+          }
+        },
+        "SelectionSounds": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "LandSpy",
+                  "Index": 0
+                }
+              }
+            },
+            "Sound": 235614
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 235614
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "Infolayer": "",
+      "Locked": {
+        "DefaultLockedState": 0
+      },
+      "MetaPersistent": "",
+      "QuestObject": ""
+    }
+  },
+  {
+    "Template": "LandSpy",
+    "Values": {
+      "Standard": {
         "GUID": 118780,
         "Name": "Council member",
         "IconFilename": "data/ui/2kimages/main/3dicons/specialists/africa/icon_politician.png",
@@ -382,6 +582,82 @@
           }
         },
         "LineID": 45619
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FollowRadius": 5,
+        "CommandChainLength": 0,
+        "FormationPriority": 4,
+        "InsecurityAttractiveness": 0
+      },
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "UpgradeList": "",
+      "Infolayer": "",
+      "Locked": {
+        "DefaultLockedState": 0
+      },
+      "MetaPersistent": "",
+      "QuestObject": ""
+    }
+  },
+  {
+    "Template": "LandSpy",
+    "Values": {
+      "Standard": {
+        "GUID": 129444,
+        "Name": "HighPriestess",
+        "IconFilename": "data/ui/2kimages/main/profiles/storry_island_portrait_01.png"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc06/graphics/quest/quest_units/walking_units/grand_priestess.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnTerrain",
+        "ConstructionEffectDuration": 0
+      },
+      "Selection": {
+        "GUIType": "Quest"
+      },
+      "Walking": {
+        "DiscoverRadius": 0,
+        "ReservationLength": 0,
+        "ReservationWidth": 0,
+        "PathPlannerLayer": "Air",
+        "ForcePrimitiveMovement": 1,
+        "TurnAroundRadius": 0,
+        "Acceleration": 6,
+        "TurnRadius": 0.5,
+        "TurnSpeed": 240,
+        "TurnDeceleration": 0,
+        "TurnMovement": 80,
+        "LeaningSpeed": 0.01,
+        "LeaningDamping": 0.01,
+        "ForwardSpeed": 1,
+        "WindMinSlowdownFactor": 1,
+        "WindMaxSpeedupFactor": 1,
+        "MinSlowdownFactor": 1,
+        "DisableSmoothing": 1,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Persinna, the High Priestess",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 45620
       },
       "CommandQueue": {
         "IsPlayerControllableVehicle": 0,

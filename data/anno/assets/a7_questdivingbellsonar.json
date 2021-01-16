@@ -227,6 +227,180 @@
     "Template": "A7_QuestDivingBellSonar",
     "Values": {
       "Standard": {
+        "GUID": 112977,
+        "Name": "VQ Old Nate - Diving Bell Sonar - Drunk Talk"
+      },
+      "Quest": {
+        "InvitationMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": {
+                "SubtitleGroup": 1818559632
+              }
+            }
+          }
+        },
+        "QuestGiver": 77,
+        "StoryText": 113506,
+        "PreActivationTimer": 1800000,
+        "QuestCategory": "RandomQuest",
+        "QuestActivation": "ManualActivation",
+        "IsAbortable": 1,
+        "QuestTrackerVisibility": "Session",
+        "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_questbook_sunken_treasures_02.png",
+        "HasStarterSpeechBubble": 1,
+        "StarterSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": {
+              "HintType": "Object",
+              "HintAnchor": "BottomRight",
+              "HintText": 113564,
+              "ObjectFilter": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "ObjectFilter": {
+                    "ObjectGUID": 111877
+                  }
+                }
+              },
+              "UseSpecificPortrait": 1,
+              "SpecificPortraitProfile": 77
+            }
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Nymph Lode",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32220
+      },
+      "Reward": {
+        "RewardAssets": {
+          "Item": [
+            {
+              "Reward": 150038,
+              "Amount": 3
+            },
+            {
+              "Reward": 190978,
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113657,
+                  "QuestTrackerIcon": "data/ui/2kimages/main/icons/icon_wifi.png",
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 113620,
+                  "AmountScrapSpots": 1,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 114039
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Water_01",
+                  "SpreadObjects": 1,
+                  "DistanceToContext": 100,
+                  "MinObjectDistance": 5,
+                  "MaxObjectDistance": 10
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectStarterObject",
+                    "Values": {
+                      "ConditionScanner": "",
+                      "ConditionObjectStarterObject": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
+                  "ExecutionPlaceText": 12972
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": {
+        "HasStarterObject": "Specific",
+        "StarterObject": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionStarterObject": {
+              "StarterObjectObject": {
+                "Template": "ConditionObjectSpawnedObject",
+                "Values": {
+                  "ConditionObjectSpawnedObject": {
+                    "ExecutionObject": 111877,
+                    "ObjectSpawnArea": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "SpawnArea": {
+                          "SpawnContext": "Object",
+                          "ContextGUID": 100710,
+                          "DistanceToContext": 20
+                        }
+                      }
+                    },
+                    "DoSetVisualObjectOwner": 1,
+                    "VisualObjectOwner": "Third_party_06_Nate"
+                  },
+                  "ConditionScanner": "",
+                  "ConditionObjectiveSignsAndFeedback": ""
+                }
+              }
+            },
+            "ConditionQuestObjective": "",
+            "ConditionPropsSessionSettings": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
         "GUID": 113695,
         "Name": "Hidden Diving Old World Scrap 1"
       },
@@ -1019,6 +1193,180 @@
         }
       },
       "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellSonar",
+    "Values": {
+      "Standard": {
+        "GUID": 112978,
+        "Name": "VQ Old Nate - Diving Bell Sonar - Hit and Sunk"
+      },
+      "Quest": {
+        "InvitationMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": {
+                "SubtitleGroup": 1818559632
+              }
+            }
+          }
+        },
+        "QuestGiver": 77,
+        "StoryText": 113507,
+        "PreActivationTimer": 1800000,
+        "QuestCategory": "RandomQuest",
+        "QuestActivation": "ConfirmationDialog",
+        "IsAbortable": 1,
+        "QuestTrackerVisibility": "Session",
+        "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_questbook_sunken_treasures_02.png",
+        "HasStarterSpeechBubble": 1,
+        "StarterSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": {
+              "HintType": "Object",
+              "HintAnchor": "BottomRight",
+              "HintText": 113565,
+              "ObjectFilter": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "ObjectFilter": {
+                    "ObjectGUID": 111877
+                  }
+                }
+              },
+              "UseSpecificPortrait": 1,
+              "SpecificPortraitProfile": 77
+            }
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Vulture Eye View",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32221
+      },
+      "Reward": {
+        "RewardAssets": {
+          "Item": [
+            {
+              "Reward": 150038,
+              "Amount": 3
+            },
+            {
+              "Reward": 192567,
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DivingBellObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113657,
+                  "QuestTrackerIcon": "data/ui/2kimages/main/icons/icon_wifi.png",
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 113621,
+                  "AmountScrapSpots": 2,
+                  "ScrapDummyItem": 112857,
+                  "SpawnedTreasureGround": 114039
+                },
+                "SpawnArea": {
+                  "SpawnContext": "Area",
+                  "SpawnAreaType": "Water_01",
+                  "SpreadObjects": 1,
+                  "DistanceToContext": 100,
+                  "MinObjectDistance": 5,
+                  "MaxObjectDistance": 10
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectStarterObject",
+                    "Values": {
+                      "ConditionScanner": "",
+                      "ConditionObjectStarterObject": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
+                  "ExecutionPlaceText": 12972
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": {
+        "HasStarterObject": "Specific",
+        "StarterObject": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionStarterObject": {
+              "StarterObjectObject": {
+                "Template": "ConditionObjectSpawnedObject",
+                "Values": {
+                  "ConditionObjectSpawnedObject": {
+                    "ExecutionObject": 111877,
+                    "ObjectSpawnArea": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "SpawnArea": {
+                          "SpawnContext": "Object",
+                          "MatcherGUID": 114038,
+                          "DistanceToContext": 30
+                        }
+                      }
+                    },
+                    "DoSetVisualObjectOwner": 1,
+                    "VisualObjectOwner": "Third_party_06_Nate"
+                  },
+                  "ConditionScanner": "",
+                  "ConditionObjectiveSignsAndFeedback": ""
+                }
+              }
+            },
+            "ConditionQuestObjective": "",
+            "ConditionPropsSessionSettings": ""
+          }
+        }
+      }
     }
   },
   {

@@ -8809,6 +8809,740 @@
     "Template": "A7_QuestDecision",
     "Values": {
       "Standard": {
+        "GUID": 121129,
+        "Name": "Angereb_03_Negotiations"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "SelectionReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestGiver": 120283,
+        "StoryText": 121130,
+        "MaxCallOut": 1,
+        "MaxSolveCount": 1,
+        "CountForQuestLimit": 0,
+        "QuestTimeLimit": 0,
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        },
+        "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_questbook_landoflions.png",
+        "ReputationQuestFail": {
+          "ReputationFailList": ""
+        },
+        "HasStarterSpeechBubble": 0
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Angereb:&lt;br/&gt;Meeting the Princes",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 46085
+      },
+      "Reward": {
+        "RewardAssets": "",
+        "RewardReputation": ""
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DecisionObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 121131,
+                  "QuestTrackerIcon": "data/ui/2kimages/main/3dicons/icon_peace_3d.png"
+                },
+                "ConditionQuestDecision": {
+                  "DecisionBG": "data/ui/2kimages/main/assets16/decision_quest/bg_decision_quest_lol_lion.png",
+                  "DecisionList": {
+                    "Item": {
+                      "Decision": {
+                        "Template": "ConditionDecision",
+                        "Values": {
+                          "Condition": "",
+                          "ConditionDecision": {
+                            "DecisionFluffText": 121136,
+                            "DecisionPortrait": 122414,
+                            "DecisionOptionList": {
+                              "Item": [
+                                {
+                                  "DecisionOption": {
+                                    "Template": "ConditionDecisionOption",
+                                    "Values": {
+                                      "Condition": "",
+                                      "ConditionDecisionOption": {
+                                        "DecisionOptionText": 121139,
+                                        "FollowUpDecisionList": {
+                                          "Item": {
+                                            "FollowUpDecision": {
+                                              "Template": "ConditionDecision",
+                                              "Values": {
+                                                "Condition": "",
+                                                "ConditionDecision": {
+                                                  "DecisionFluffText": 122351,
+                                                  "DecisionPortrait": 122414,
+                                                  "DecisionOptionList": {
+                                                    "Item": [
+                                                      {
+                                                        "DecisionOption": {
+                                                          "Template": "ConditionDecisionOption",
+                                                          "Values": {
+                                                            "Condition": "",
+                                                            "ConditionDecisionOption": {
+                                                              "DecisionOptionText": 122352,
+                                                              "FollowUpDecisionList": {
+                                                                "Item": {
+                                                                  "FollowUpDecision": {
+                                                                    "Template": "ConditionDecision",
+                                                                    "Values": {
+                                                                      "Condition": "",
+                                                                      "ConditionDecision": {
+                                                                        "DecisionFluffText": 122355,
+                                                                        "DecisionPortrait": 122414,
+                                                                        "DecisionOptionList": {
+                                                                          "Item": [
+                                                                            {
+                                                                              "DecisionOption": {
+                                                                                "Template": "ConditionDecisionOption",
+                                                                                "Values": {
+                                                                                  "Condition": "",
+                                                                                  "ConditionDecisionOption": {
+                                                                                    "DecisionOptionText": 122356,
+                                                                                    "FollowUpDecisionList": {
+                                                                                      "Item": {
+                                                                                        "FollowUpDecision": {
+                                                                                          "Template": "ConditionDecision",
+                                                                                          "Values": {
+                                                                                            "Condition": "",
+                                                                                            "ConditionDecision": {
+                                                                                              "DecisionFluffText": 124725,
+                                                                                              "DecisionPortrait": 122414,
+                                                                                              "DecisionOptionList": {
+                                                                                                "Item": {
+                                                                                                  "DecisionOption": {
+                                                                                                    "Template": "ConditionDecisionOption",
+                                                                                                    "Values": {
+                                                                                                      "Condition": "",
+                                                                                                      "ConditionDecisionOption": {
+                                                                                                        "DecisionOptionText": 124726,
+                                                                                                        "ActionList": {
+                                                                                                          "IsBaseAutoCreateAsset": 1,
+                                                                                                          "Values": {
+                                                                                                            "ActionList": {
+                                                                                                              "Actions": {
+                                                                                                                "Item": {
+                                                                                                                  "Action": {
+                                                                                                                    "Template": "ActionStartQuest",
+                                                                                                                    "Values": {
+                                                                                                                      "Action": "",
+                                                                                                                      "ActionStartQuest": {
+                                                                                                                        "Quest": 122896,
+                                                                                                                        "QuestSession": 112132
+                                                                                                                      }
+                                                                                                                    }
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        },
+                                                                                                        "HideDecisionPanelAfterChoice": 1
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            },
+                                                                            {
+                                                                              "DecisionOption": {
+                                                                                "Template": "ConditionDecisionOption",
+                                                                                "Values": {
+                                                                                  "Condition": "",
+                                                                                  "ConditionDecisionOption": {
+                                                                                    "DecisionOptionText": 122358,
+                                                                                    "FollowUpDecisionList": {
+                                                                                      "Item": {
+                                                                                        "FollowUpDecision": {
+                                                                                          "Template": "ConditionDecision",
+                                                                                          "Values": {
+                                                                                            "Condition": "",
+                                                                                            "ConditionDecision": {
+                                                                                              "DecisionFluffText": 124725,
+                                                                                              "DecisionPortrait": 122414,
+                                                                                              "DecisionOptionList": {
+                                                                                                "Item": {
+                                                                                                  "DecisionOption": {
+                                                                                                    "Template": "ConditionDecisionOption",
+                                                                                                    "Values": {
+                                                                                                      "Condition": "",
+                                                                                                      "ConditionDecisionOption": {
+                                                                                                        "DecisionOptionText": 124726,
+                                                                                                        "ActionList": {
+                                                                                                          "IsBaseAutoCreateAsset": 1,
+                                                                                                          "Values": {
+                                                                                                            "ActionList": {
+                                                                                                              "Actions": {
+                                                                                                                "Item": {
+                                                                                                                  "Action": {
+                                                                                                                    "Template": "ActionStartQuest",
+                                                                                                                    "Values": {
+                                                                                                                      "Action": "",
+                                                                                                                      "ActionStartQuest": {
+                                                                                                                        "Quest": 122914,
+                                                                                                                        "QuestSession": 112132
+                                                                                                                      }
+                                                                                                                    }
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        },
+                                                                                                        "HideDecisionPanelAfterChoice": 1
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "DecisionOption": {
+                                                          "Template": "ConditionDecisionOption",
+                                                          "Values": {
+                                                            "Condition": "",
+                                                            "ConditionDecisionOption": {
+                                                              "DecisionOptionText": 122354,
+                                                              "FollowUpDecisionList": {
+                                                                "Item": {
+                                                                  "FollowUpDecision": {
+                                                                    "Template": "ConditionDecision",
+                                                                    "Values": {
+                                                                      "Condition": "",
+                                                                      "ConditionDecision": {
+                                                                        "DecisionFluffText": 122361,
+                                                                        "DecisionPortrait": 122414,
+                                                                        "DecisionOptionList": {
+                                                                          "Item": [
+                                                                            {
+                                                                              "DecisionOption": {
+                                                                                "Template": "ConditionDecisionOption",
+                                                                                "Values": {
+                                                                                  "Condition": "",
+                                                                                  "ConditionDecisionOption": {
+                                                                                    "DecisionOptionText": 122356,
+                                                                                    "FollowUpDecisionList": {
+                                                                                      "Item": {
+                                                                                        "FollowUpDecision": {
+                                                                                          "Template": "ConditionDecision",
+                                                                                          "Values": {
+                                                                                            "Condition": "",
+                                                                                            "ConditionDecision": {
+                                                                                              "DecisionFluffText": 124725,
+                                                                                              "DecisionPortrait": 122414,
+                                                                                              "DecisionOptionList": {
+                                                                                                "Item": {
+                                                                                                  "DecisionOption": {
+                                                                                                    "Template": "ConditionDecisionOption",
+                                                                                                    "Values": {
+                                                                                                      "Condition": "",
+                                                                                                      "ConditionDecisionOption": {
+                                                                                                        "DecisionOptionText": 124726,
+                                                                                                        "ActionList": {
+                                                                                                          "IsBaseAutoCreateAsset": 1,
+                                                                                                          "Values": {
+                                                                                                            "ActionList": {
+                                                                                                              "Actions": {
+                                                                                                                "Item": {
+                                                                                                                  "Action": {
+                                                                                                                    "Template": "ActionStartQuest",
+                                                                                                                    "Values": {
+                                                                                                                      "Action": "",
+                                                                                                                      "ActionStartQuest": {
+                                                                                                                        "Quest": 122896,
+                                                                                                                        "QuestSession": 112132
+                                                                                                                      }
+                                                                                                                    }
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        },
+                                                                                                        "HideDecisionPanelAfterChoice": 1
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            },
+                                                                            {
+                                                                              "DecisionOption": {
+                                                                                "Template": "ConditionDecisionOption",
+                                                                                "Values": {
+                                                                                  "Condition": "",
+                                                                                  "ConditionDecisionOption": {
+                                                                                    "DecisionOptionText": 122358,
+                                                                                    "FollowUpDecisionList": {
+                                                                                      "Item": {
+                                                                                        "FollowUpDecision": {
+                                                                                          "Template": "ConditionDecision",
+                                                                                          "Values": {
+                                                                                            "Condition": "",
+                                                                                            "ConditionDecision": {
+                                                                                              "DecisionFluffText": 124725,
+                                                                                              "DecisionPortrait": 122414,
+                                                                                              "DecisionOptionList": {
+                                                                                                "Item": {
+                                                                                                  "DecisionOption": {
+                                                                                                    "Template": "ConditionDecisionOption",
+                                                                                                    "Values": {
+                                                                                                      "Condition": "",
+                                                                                                      "ConditionDecisionOption": {
+                                                                                                        "DecisionOptionText": 124726,
+                                                                                                        "ActionList": {
+                                                                                                          "IsBaseAutoCreateAsset": 1,
+                                                                                                          "Values": {
+                                                                                                            "ActionList": {
+                                                                                                              "Actions": {
+                                                                                                                "Item": {
+                                                                                                                  "Action": {
+                                                                                                                    "Template": "ActionStartQuest",
+                                                                                                                    "Values": {
+                                                                                                                      "Action": "",
+                                                                                                                      "ActionStartQuest": {
+                                                                                                                        "Quest": 122914,
+                                                                                                                        "QuestSession": 112132
+                                                                                                                      }
+                                                                                                                    }
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        },
+                                                                                                        "HideDecisionPanelAfterChoice": 1
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "DecisionOption": {
+                                                          "Template": "ConditionDecisionOption",
+                                                          "Values": {
+                                                            "Condition": "",
+                                                            "ConditionDecisionOption": {
+                                                              "DecisionOptionText": 122353,
+                                                              "UnlockRequirements": {
+                                                                "Item": {
+                                                                  "RequiredUnlock": 122781
+                                                                }
+                                                              },
+                                                              "UnlockInfotipDescription": 131360,
+                                                              "FollowUpDecisionList": {
+                                                                "Item": {
+                                                                  "FollowUpDecision": {
+                                                                    "Template": "ConditionDecision",
+                                                                    "Values": {
+                                                                      "Condition": "",
+                                                                      "ConditionDecision": {
+                                                                        "DecisionFluffText": 122360,
+                                                                        "DecisionPortrait": 122414,
+                                                                        "DecisionOptionList": {
+                                                                          "Item": [
+                                                                            {
+                                                                              "DecisionOption": {
+                                                                                "Template": "ConditionDecisionOption",
+                                                                                "Values": {
+                                                                                  "Condition": "",
+                                                                                  "ConditionDecisionOption": {
+                                                                                    "DecisionOptionText": 122356,
+                                                                                    "FollowUpDecisionList": {
+                                                                                      "Item": {
+                                                                                        "FollowUpDecision": {
+                                                                                          "Template": "ConditionDecision",
+                                                                                          "Values": {
+                                                                                            "Condition": "",
+                                                                                            "ConditionDecision": {
+                                                                                              "DecisionFluffText": 124725,
+                                                                                              "DecisionPortrait": 122414,
+                                                                                              "DecisionOptionList": {
+                                                                                                "Item": {
+                                                                                                  "DecisionOption": {
+                                                                                                    "Template": "ConditionDecisionOption",
+                                                                                                    "Values": {
+                                                                                                      "Condition": "",
+                                                                                                      "ConditionDecisionOption": {
+                                                                                                        "DecisionOptionText": 124726,
+                                                                                                        "ActionList": {
+                                                                                                          "IsBaseAutoCreateAsset": 1,
+                                                                                                          "Values": {
+                                                                                                            "ActionList": {
+                                                                                                              "Actions": {
+                                                                                                                "Item": {
+                                                                                                                  "Action": {
+                                                                                                                    "Template": "ActionStartQuest",
+                                                                                                                    "Values": {
+                                                                                                                      "Action": "",
+                                                                                                                      "ActionStartQuest": {
+                                                                                                                        "Quest": 122896,
+                                                                                                                        "QuestSession": 112132
+                                                                                                                      }
+                                                                                                                    }
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        },
+                                                                                                        "HideDecisionPanelAfterChoice": 1
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            },
+                                                                            {
+                                                                              "DecisionOption": {
+                                                                                "Template": "ConditionDecisionOption",
+                                                                                "Values": {
+                                                                                  "Condition": "",
+                                                                                  "ConditionDecisionOption": {
+                                                                                    "DecisionOptionText": 122358,
+                                                                                    "FollowUpDecisionList": {
+                                                                                      "Item": {
+                                                                                        "FollowUpDecision": {
+                                                                                          "Template": "ConditionDecision",
+                                                                                          "Values": {
+                                                                                            "Condition": "",
+                                                                                            "ConditionDecision": {
+                                                                                              "DecisionFluffText": 124725,
+                                                                                              "DecisionPortrait": 122414,
+                                                                                              "DecisionOptionList": {
+                                                                                                "Item": {
+                                                                                                  "DecisionOption": {
+                                                                                                    "Template": "ConditionDecisionOption",
+                                                                                                    "Values": {
+                                                                                                      "Condition": "",
+                                                                                                      "ConditionDecisionOption": {
+                                                                                                        "DecisionOptionText": 124726,
+                                                                                                        "ActionList": {
+                                                                                                          "IsBaseAutoCreateAsset": 1,
+                                                                                                          "Values": {
+                                                                                                            "ActionList": {
+                                                                                                              "Actions": {
+                                                                                                                "Item": {
+                                                                                                                  "Action": {
+                                                                                                                    "Template": "ActionStartQuest",
+                                                                                                                    "Values": {
+                                                                                                                      "Action": "",
+                                                                                                                      "ActionStartQuest": {
+                                                                                                                        "Quest": 122914,
+                                                                                                                        "QuestSession": 112132
+                                                                                                                      }
+                                                                                                                    }
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        },
+                                                                                                        "HideDecisionPanelAfterChoice": 1
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            },
+                                                                            {
+                                                                              "DecisionOption": {
+                                                                                "Template": "ConditionDecisionOption",
+                                                                                "Values": {
+                                                                                  "Condition": "",
+                                                                                  "ConditionDecisionOption": {
+                                                                                    "DecisionOptionText": 122359,
+                                                                                    "UnlockRequirements": {
+                                                                                      "Item": {
+                                                                                        "RequiredUnlock": 122782
+                                                                                      }
+                                                                                    },
+                                                                                    "UnlockInfotipDescription": 131363,
+                                                                                    "FollowUpDecisionList": {
+                                                                                      "Item": {
+                                                                                        "FollowUpDecision": {
+                                                                                          "Template": "ConditionDecision",
+                                                                                          "Values": {
+                                                                                            "Condition": "",
+                                                                                            "ConditionDecision": {
+                                                                                              "DecisionFluffText": 124725,
+                                                                                              "DecisionPortrait": 122414,
+                                                                                              "DecisionOptionList": {
+                                                                                                "Item": {
+                                                                                                  "DecisionOption": {
+                                                                                                    "Template": "ConditionDecisionOption",
+                                                                                                    "Values": {
+                                                                                                      "Condition": "",
+                                                                                                      "ConditionDecisionOption": {
+                                                                                                        "DecisionOptionText": 124726,
+                                                                                                        "ActionList": {
+                                                                                                          "IsBaseAutoCreateAsset": 1,
+                                                                                                          "Values": {
+                                                                                                            "ActionList": {
+                                                                                                              "Actions": {
+                                                                                                                "Item": {
+                                                                                                                  "Action": {
+                                                                                                                    "Template": "ActionStartQuest",
+                                                                                                                    "Values": {
+                                                                                                                      "Action": "",
+                                                                                                                      "ActionStartQuest": {
+                                                                                                                        "Quest": 122920,
+                                                                                                                        "QuestSession": 112132
+                                                                                                                      }
+                                                                                                                    }
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        },
+                                                                                                        "HideDecisionPanelAfterChoice": 1
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "DecisionOption": {
+                                    "Template": "ConditionDecisionOption",
+                                    "Values": {
+                                      "Condition": "",
+                                      "ConditionDecisionOption": {
+                                        "DecisionOptionText": 121140,
+                                        "ActionList": {
+                                          "IsBaseAutoCreateAsset": 1,
+                                          "Values": {
+                                            "ActionList": {
+                                              "Actions": {
+                                                "Item": [
+                                                  {
+                                                    "Action": {
+                                                      "Template": "ActionNotification",
+                                                      "Values": {
+                                                        "Action": "",
+                                                        "ActionNotification": {
+                                                          "Notification": {
+                                                            "Template": "CharacterNotification",
+                                                            "Values": {
+                                                              "CharacterNotification": {
+                                                                "Profile": 120283
+                                                              },
+                                                              "BaseNotification": {
+                                                                "NotificationText": 120471
+                                                              },
+                                                              "NotificationSubtitle": {
+                                                                "Subtitle": 123557
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  {
+                                                    "Action": {
+                                                      "Template": "ActionDelayedActions",
+                                                      "Values": {
+                                                        "Action": "",
+                                                        "ActionDelayedActions": {
+                                                          "ExecutionDelay": 2000,
+                                                          "DelayedActions": {
+                                                            "IsBaseAutoCreateAsset": 1,
+                                                            "Values": {
+                                                              "ActionList": {
+                                                                "Actions": {
+                                                                  "Item": {
+                                                                    "Action": {
+                                                                      "Template": "ActionStartQuest",
+                                                                      "Values": {
+                                                                        "Action": "",
+                                                                        "ActionStartQuest": {
+                                                                          "Quest": 121129,
+                                                                          "InheritQuestArea": 1,
+                                                                          "InheritQuestSession": 1
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "HideDecisionPanelAfterChoice": 1
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDecision",
+    "Values": {
+      "Standard": {
         "GUID": 123858,
         "Name": "Angereb_09_LibraryEnigma01"
       },
@@ -17718,6 +18452,916 @@
                       }
                     }
                   }
+                }
+              }
+            }
+          }
+        },
+        "WinConditionCompletionOrder": "Linear"
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDecision",
+    "Values": {
+      "Standard": {
+        "GUID": 129302,
+        "Name": "Kidusi_SQ9_TrackOfWahaDesher2Deciphering"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "SelectionReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "ResolveConfirmationMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationSmugglerQuestMessage": {
+          "SuppressMessage": 1
+        },
+        "SmugglerQuestTradingStationReached": {
+          "SuppressMessage": 1
+        },
+        "OnQuestStart": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": [
+                  {
+                    "Action": {
+                      "Template": "ActionRegisterTrigger",
+                      "Values": {
+                        "Action": "",
+                        "ActionRegisterTrigger": {
+                          "TriggerAsset": 129325,
+                          "UnregisterTrigger": 1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionRegisterTrigger",
+                      "Values": {
+                        "Action": "",
+                        "ActionRegisterTrigger": {
+                          "TriggerAsset": 129330,
+                          "UnregisterTrigger": 1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionEndQuest",
+                      "Values": {
+                        "Action": "",
+                        "ActionEndQuest": {
+                          "Quest": 129139
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionEndQuest",
+                      "Values": {
+                        "Action": "",
+                        "ActionEndQuest": {
+                          "Quest": 129216
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionEndQuest",
+                      "Values": {
+                        "Action": "",
+                        "ActionEndQuest": {
+                          "Quest": 129286
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionEndQuest",
+                      "Values": {
+                        "Action": "",
+                        "ActionEndQuest": {
+                          "Quest": 129285
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionEndQuest",
+                      "Values": {
+                        "Action": "",
+                        "ActionEndQuest": {
+                          "Quest": 129140
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionEndQuest",
+                      "Values": {
+                        "Action": "",
+                        "ActionEndQuest": {
+                          "Quest": 129287
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "QuestGiver": 118731,
+        "StoryText": 129357,
+        "MaxCallOut": 1,
+        "MaxSolveCount": 1,
+        "CountForQuestLimit": 0,
+        "QuestTimeLimit": 0,
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        },
+        "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_questbook_landoflions.png",
+        "ReputationQuestFail": {
+          "ReputationFailList": ""
+        },
+        "HasStarterSpeechBubble": 0
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Kidusi Anitoni:&lt;br/&gt;Oracular Scripture",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 46191
+      },
+      "Reward": {
+        "RewardAssets": "",
+        "RewardReputation": "",
+        "GenerateIgnoreUnlocks": 1
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDecision",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 129362,
+                  "QuestTrackerIcon": "data/ui/2kimages/main/3dicons/narative_item/icon_sir_john_stacked_notes.png"
+                },
+                "ConditionQuestDecision": {
+                  "DecisionBG": "data/ui/2kimages/main/assets16/decision_quest/bg_decision_quest_lol_lion.png",
+                  "DecisionList": {
+                    "Item": [
+                      {
+                        "Decision": {
+                          "Template": "ConditionDecision",
+                          "Values": {
+                            "Condition": "",
+                            "ConditionDecision": {
+                              "DecisionFluffText": 129363,
+                              "DecisionPortrait": 118732,
+                              "DecisionOptionList": {
+                                "Item": {
+                                  "DecisionOption": {
+                                    "Template": "ConditionDecisionOption",
+                                    "Values": {
+                                      "Condition": "",
+                                      "ConditionDecisionOption": {
+                                        "DecisionOptionText": 129364
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Decision": {
+                          "Template": "ConditionDecision",
+                          "Values": {
+                            "Condition": "",
+                            "ConditionDecision": {
+                              "DecisionFluffText": 129365,
+                              "DecisionPortrait": 118732,
+                              "DecisionOptionList": {
+                                "Item": {
+                                  "DecisionOption": {
+                                    "Template": "ConditionDecisionOption",
+                                    "Values": {
+                                      "Condition": "",
+                                      "ConditionDecisionOption": {
+                                        "DecisionOptionText": 129364
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Decision": {
+                          "Template": "ConditionDecision",
+                          "Values": {
+                            "Condition": "",
+                            "ConditionDecision": {
+                              "DecisionFluffText": 129366,
+                              "DecisionPortrait": 118732,
+                              "DecisionOptionList": {
+                                "Item": [
+                                  {
+                                    "DecisionOption": {
+                                      "Template": "ConditionDecisionOption",
+                                      "Values": {
+                                        "Condition": "",
+                                        "ConditionDecisionOption": {
+                                          "DecisionOptionText": 129367,
+                                          "FollowUpDecisionList": {
+                                            "Item": {
+                                              "FollowUpDecision": {
+                                                "Template": "ConditionDecision",
+                                                "Values": {
+                                                  "Condition": "",
+                                                  "ConditionDecision": {
+                                                    "DecisionFluffText": 129370,
+                                                    "DecisionPortrait": 118732,
+                                                    "DecisionOptionList": {
+                                                      "Item": {
+                                                        "DecisionOption": {
+                                                          "Template": "ConditionDecisionOption",
+                                                          "Values": {
+                                                            "Condition": "",
+                                                            "ConditionDecisionOption": {
+                                                              "DecisionOptionText": 129371,
+                                                              "ActionList": {
+                                                                "IsBaseAutoCreateAsset": 1,
+                                                                "Values": {
+                                                                  "ActionList": {
+                                                                    "Actions": {
+                                                                      "Item": [
+                                                                        {
+                                                                          "Action": {
+                                                                            "Template": "ActionStartQuest",
+                                                                            "Values": {
+                                                                              "Action": "",
+                                                                              "ActionStartQuest": {
+                                                                                "Quest": 129302,
+                                                                                "QuestSession": 112132
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "Action": {
+                                                                            "Template": "ActionNotification",
+                                                                            "Values": {
+                                                                              "Action": "",
+                                                                              "ActionNotification": {
+                                                                                "Notification": {
+                                                                                  "Template": "CharacterNotification",
+                                                                                  "Values": {
+                                                                                    "CharacterNotification": {
+                                                                                      "Profile": 118731
+                                                                                    },
+                                                                                    "BaseNotification": {
+                                                                                      "NotificationText": 129358
+                                                                                    },
+                                                                                    "NotificationSubtitle": {
+                                                                                      "Subtitle": 127742
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                }
+                                                              },
+                                                              "HideDecisionPanelAfterChoice": 1
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "DecisionOption": {
+                                      "Template": "ConditionDecisionOption",
+                                      "Values": {
+                                        "Condition": "",
+                                        "ConditionDecisionOption": {
+                                          "DecisionOptionText": 129368,
+                                          "FollowUpDecisionList": {
+                                            "Item": {
+                                              "FollowUpDecision": {
+                                                "Template": "ConditionDecision",
+                                                "Values": {
+                                                  "Condition": "",
+                                                  "ConditionDecision": {
+                                                    "DecisionFluffText": 129372,
+                                                    "DecisionPortrait": 118732,
+                                                    "DecisionOptionList": {
+                                                      "Item": {
+                                                        "DecisionOption": {
+                                                          "Template": "ConditionDecisionOption",
+                                                          "Values": {
+                                                            "Condition": "",
+                                                            "ConditionDecisionOption": {
+                                                              "DecisionOptionText": 129373,
+                                                              "ActionList": {
+                                                                "IsBaseAutoCreateAsset": 1,
+                                                                "Values": {
+                                                                  "ActionList": {
+                                                                    "Actions": {
+                                                                      "Item": [
+                                                                        {
+                                                                          "Action": {
+                                                                            "Template": "ActionNotification",
+                                                                            "Values": {
+                                                                              "Action": "",
+                                                                              "ActionNotification": {
+                                                                                "Notification": {
+                                                                                  "Template": "CharacterNotification",
+                                                                                  "Values": {
+                                                                                    "CharacterNotification": {
+                                                                                      "Profile": 118731
+                                                                                    },
+                                                                                    "BaseNotification": {
+                                                                                      "NotificationText": 129359
+                                                                                    },
+                                                                                    "NotificationSubtitle": {
+                                                                                      "Subtitle": 127743
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "Action": {
+                                                                            "Template": "ActionDelayedActions",
+                                                                            "Values": {
+                                                                              "Action": "",
+                                                                              "ActionDelayedActions": {
+                                                                                "ExecutionDelay": 6000,
+                                                                                "DelayedActions": {
+                                                                                  "IsBaseAutoCreateAsset": 1,
+                                                                                  "Values": {
+                                                                                    "ActionList": {
+                                                                                      "Actions": {
+                                                                                        "Item": {
+                                                                                          "Action": {
+                                                                                            "Template": "ActionStartQuest",
+                                                                                            "Values": {
+                                                                                              "Action": "",
+                                                                                              "ActionStartQuest": {
+                                                                                                "Quest": 129310,
+                                                                                                "QuestSession": 112132
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                }
+                                                              },
+                                                              "HideDecisionPanelAfterChoice": 1
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "DecisionOption": {
+                                      "Template": "ConditionDecisionOption",
+                                      "Values": {
+                                        "Condition": "",
+                                        "ConditionDecisionOption": {
+                                          "DecisionOptionText": 129369,
+                                          "FollowUpDecisionList": {
+                                            "Item": {
+                                              "FollowUpDecision": {
+                                                "Template": "ConditionDecision",
+                                                "Values": {
+                                                  "Condition": "",
+                                                  "ConditionDecision": {
+                                                    "DecisionFluffText": 129374,
+                                                    "DecisionPortrait": 118732,
+                                                    "DecisionOptionList": {
+                                                      "Item": {
+                                                        "DecisionOption": {
+                                                          "Template": "ConditionDecisionOption",
+                                                          "Values": {
+                                                            "Condition": "",
+                                                            "ConditionDecisionOption": {
+                                                              "DecisionOptionText": 129371,
+                                                              "ActionList": {
+                                                                "IsBaseAutoCreateAsset": 1,
+                                                                "Values": {
+                                                                  "ActionList": {
+                                                                    "Actions": {
+                                                                      "Item": [
+                                                                        {
+                                                                          "Action": {
+                                                                            "Template": "ActionStartQuest",
+                                                                            "Values": {
+                                                                              "Action": "",
+                                                                              "ActionStartQuest": {
+                                                                                "Quest": 129302,
+                                                                                "QuestSession": 112132
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "Action": {
+                                                                            "Template": "ActionNotification",
+                                                                            "Values": {
+                                                                              "Action": "",
+                                                                              "ActionNotification": {
+                                                                                "Notification": {
+                                                                                  "Template": "CharacterNotification",
+                                                                                  "Values": {
+                                                                                    "CharacterNotification": {
+                                                                                      "Profile": 118731
+                                                                                    },
+                                                                                    "BaseNotification": {
+                                                                                      "NotificationText": 129358
+                                                                                    },
+                                                                                    "NotificationSubtitle": {
+                                                                                      "Subtitle": 127742
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                }
+                                                              },
+                                                              "HideDecisionPanelAfterChoice": 1
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "NarrativeBook": 131427
+                }
+              }
+            }
+          }
+        },
+        "WinConditionCompletionOrder": "Linear"
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestDecision",
+    "Values": {
+      "Standard": {
+        "GUID": 129380,
+        "Name": "Kidusi_SQ12_AncientVase"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "SelectionReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "ResolveConfirmationMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationSmugglerQuestMessage": {
+          "SuppressMessage": 1
+        },
+        "SmugglerQuestTradingStationReached": {
+          "SuppressMessage": 1
+        },
+        "QuestGiver": 118731,
+        "StoryText": 129389,
+        "MaxCallOut": 1,
+        "MaxSolveCount": 1,
+        "CountForQuestLimit": 0,
+        "QuestTimeLimit": 0,
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        },
+        "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_questbook_landoflions.png",
+        "ReputationQuestFail": {
+          "ReputationFailList": ""
+        },
+        "HasStarterSpeechBubble": 0
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Kidusi Anitoni:&lt;br/&gt;An Evasive Inscription",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 46194
+      },
+      "Reward": {
+        "RewardAssets": "",
+        "RewardReputation": "",
+        "GenerateIgnoreUnlocks": 1
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDecision",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 129391,
+                  "QuestTrackerIcon": "data/ui/2kimages/main/3dicons/campaign/africa/icon_africa_kidusi_urn.png"
+                },
+                "ConditionQuestDecision": {
+                  "DecisionBG": "data/ui/2kimages/main/assets16/decision_quest/bg_decision_quest_lol_lion.png",
+                  "DecisionList": {
+                    "Item": [
+                      {
+                        "Decision": {
+                          "Template": "ConditionDecision",
+                          "Values": {
+                            "Condition": "",
+                            "ConditionDecision": {
+                              "DecisionFluffText": 129392,
+                              "DecisionPortrait": 118732,
+                              "DecisionOptionList": {
+                                "Item": {
+                                  "DecisionOption": {
+                                    "Template": "ConditionDecisionOption",
+                                    "Values": {
+                                      "Condition": "",
+                                      "ConditionDecisionOption": {
+                                        "DecisionOptionText": 129364
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Decision": {
+                          "Template": "ConditionDecision",
+                          "Values": {
+                            "Condition": "",
+                            "ConditionDecision": {
+                              "DecisionFluffText": 129393,
+                              "DecisionPortrait": 118732,
+                              "DecisionOptionList": {
+                                "Item": {
+                                  "DecisionOption": {
+                                    "Template": "ConditionDecisionOption",
+                                    "Values": {
+                                      "Condition": "",
+                                      "ConditionDecisionOption": {
+                                        "DecisionOptionText": 129364
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Decision": {
+                          "Template": "ConditionDecision",
+                          "Values": {
+                            "Condition": "",
+                            "ConditionDecision": {
+                              "DecisionFluffText": 129394,
+                              "DecisionPortrait": 118732,
+                              "DecisionOptionList": {
+                                "Item": [
+                                  {
+                                    "DecisionOption": {
+                                      "Template": "ConditionDecisionOption",
+                                      "Values": {
+                                        "Condition": "",
+                                        "ConditionDecisionOption": {
+                                          "DecisionOptionText": 129395,
+                                          "FollowUpDecisionList": {
+                                            "Item": {
+                                              "FollowUpDecision": {
+                                                "Template": "ConditionDecision",
+                                                "Values": {
+                                                  "Condition": "",
+                                                  "ConditionDecision": {
+                                                    "DecisionFluffText": 129396,
+                                                    "DecisionPortrait": 118732,
+                                                    "DecisionOptionList": {
+                                                      "Item": {
+                                                        "DecisionOption": {
+                                                          "Template": "ConditionDecisionOption",
+                                                          "Values": {
+                                                            "Condition": "",
+                                                            "ConditionDecisionOption": {
+                                                              "DecisionOptionText": 129371,
+                                                              "ActionList": {
+                                                                "IsBaseAutoCreateAsset": 1,
+                                                                "Values": {
+                                                                  "ActionList": {
+                                                                    "Actions": {
+                                                                      "Item": [
+                                                                        {
+                                                                          "Action": {
+                                                                            "Template": "ActionNotification",
+                                                                            "Values": {
+                                                                              "Action": "",
+                                                                              "ActionNotification": {
+                                                                                "Notification": {
+                                                                                  "Template": "CharacterNotification",
+                                                                                  "Values": {
+                                                                                    "CharacterNotification": {
+                                                                                      "Profile": 118731
+                                                                                    },
+                                                                                    "BaseNotification": {
+                                                                                      "NotificationText": 129358
+                                                                                    },
+                                                                                    "NotificationSubtitle": {
+                                                                                      "Subtitle": 127742
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "Action": {
+                                                                            "Template": "ActionStartQuest",
+                                                                            "Values": {
+                                                                              "Action": "",
+                                                                              "ActionStartQuest": {
+                                                                                "Quest": 129380,
+                                                                                "QuestSession": 112132
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  }
+                                                                }
+                                                              },
+                                                              "HideDecisionPanelAfterChoice": 1
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "DecisionOption": {
+                                      "Template": "ConditionDecisionOption",
+                                      "Values": {
+                                        "Condition": "",
+                                        "ConditionDecisionOption": {
+                                          "DecisionOptionText": 129397,
+                                          "FollowUpDecisionList": {
+                                            "Item": {
+                                              "FollowUpDecision": {
+                                                "Template": "ConditionDecision",
+                                                "Values": {
+                                                  "Condition": "",
+                                                  "ConditionDecision": {
+                                                    "DecisionFluffText": 129398,
+                                                    "DecisionPortrait": 118732,
+                                                    "DecisionOptionList": {
+                                                      "Item": {
+                                                        "DecisionOption": {
+                                                          "Template": "ConditionDecisionOption",
+                                                          "Values": {
+                                                            "Condition": "",
+                                                            "ConditionDecisionOption": {
+                                                              "DecisionOptionText": 129399,
+                                                              "FollowUpDecisionList": {
+                                                                "Item": {
+                                                                  "FollowUpDecision": {
+                                                                    "Template": "ConditionDecision",
+                                                                    "Values": {
+                                                                      "Condition": "",
+                                                                      "ConditionDecision": {
+                                                                        "DecisionFluffText": 129400,
+                                                                        "DecisionPortrait": 118732,
+                                                                        "DecisionOptionList": {
+                                                                          "Item": {
+                                                                            "DecisionOption": {
+                                                                              "Template": "ConditionDecisionOption",
+                                                                              "Values": {
+                                                                                "Condition": "",
+                                                                                "ConditionDecisionOption": {
+                                                                                  "DecisionOptionText": 129401,
+                                                                                  "ActionList": {
+                                                                                    "IsBaseAutoCreateAsset": 1,
+                                                                                    "Values": {
+                                                                                      "ActionList": {
+                                                                                        "Actions": {
+                                                                                          "Item": {
+                                                                                            "Action": {
+                                                                                              "Template": "ActionStartQuest",
+                                                                                              "Values": {
+                                                                                                "Action": "",
+                                                                                                "ActionStartQuest": {
+                                                                                                  "Quest": 129385,
+                                                                                                  "QuestSession": 112132
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  },
+                                                                                  "HideDecisionPanelAfterChoice": 1
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "NarrativeBook": 131427
                 }
               }
             }

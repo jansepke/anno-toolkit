@@ -7871,6 +7871,157 @@
     "Template": "FactoryBuilding7",
     "Values": {
       "Standard": {
+        "GUID": 1010342,
+        "Name": "workshop_colony01_01 (Cigars Workshop)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_cigars.png"
+      },
+      "Building": {
+        "BuildModeRandomRotation": 90,
+        "AssociatedRegions": "Colony01"
+      },
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 2500
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 10
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/buildings/production/workshop_colony01_01/workshop_colony01_01.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "ParticipantMessageArcheType": "SA_Resident_tier02_atWork",
+        "Colors": {
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Cigar Factory",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 5316
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 200682
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        }
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryInputs": {
+          "Item": [
+            {
+              "Product": 1010252,
+              "Amount": 1,
+              "StorageAmount": 6
+            },
+            {
+              "Product": 1010242,
+              "Amount": 1,
+              "StorageAmount": 6
+            }
+          ]
+        },
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 1010259,
+            "Amount": 1,
+            "StorageAmount": 4
+          }
+        }
+      },
+      "LogisticNode": "",
+      "AmbientMoodProvider": "",
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 250,
+              "InactiveAmount": 125
+            },
+            {
+              "Product": 1010367,
+              "Amount": 175
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 5250,
+        "SelfHealPerHealTick": 4
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Explosion": {
+          "ExplosionCoreDamage": 1000
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "DensityDistance": 20,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          }
+        }
+      },
+      "Industrializable": {
+        "BoostedByIndustrialization": 0
+      },
+      "Culture": {
+        "CultureType": "Culture"
+      },
+      "QuestObject": "",
+      "Electrifiable": ""
+    }
+  },
+  {
+    "Template": "FactoryBuilding7",
+    "Values": {
+      "Standard": {
         "GUID": 101122,
         "Name": "CQO_Dynamite_Shop",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_dynamite.png"
@@ -7920,6 +8071,482 @@
       "Pausable": "",
       "IncidentInfectable": "",
       "Industrializable": "",
+      "Culture": "",
+      "QuestObject": "",
+      "Electrifiable": ""
+    }
+  },
+  {
+    "Template": "FactoryBuilding7",
+    "Values": {
+      "Standard": {
+        "GUID": 118571,
+        "Name": "fuel_station_01 (FuelStation)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_gasoline.png",
+        "InfoDescription": 269752
+      },
+      "Building": {
+        "BuildModeRandomRotation": 90,
+        "AssociatedRegions": "Moderate"
+      },
+      "Blocking": {
+        "HasBuildingBaseTiles": 1
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 25000
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 30
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 50
+            },
+            {
+              "Ingredient": 1010218,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010207,
+              "Amount": 10
+            },
+            {
+              "Ingredient": 1010202,
+              "Amount": 10
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc05/graphics/buildings/special/fuel_station_moderate/fuel_station_moderate.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "ParticipantMessageArcheType": "Resident_tier02_atWork"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Fuel Station",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 36649
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 270111
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        }
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryInputs": {
+          "Item": {
+            "Product": 1010566,
+            "Amount": 1,
+            "StorageAmount": 50
+          }
+        },
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 270042,
+            "Amount": 1,
+            "StorageAmount": 20
+          }
+        },
+        "CycleTime": 15,
+        "ProductivityTimeMultiplier": 30,
+        "ProductivityPoints": 1,
+        "WarehouseTransporterAsset": 120025
+      },
+      "LogisticNode": {
+        "TransporterCountMax": 5,
+        "TransporterAsset": 120062,
+        "PathLayers": "Street;Railway"
+      },
+      "AmbientMoodProvider": "",
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 350,
+              "InactiveAmount": 175
+            },
+            {
+              "Product": 1010115,
+              "Amount": 75,
+              "ShutdownThreshold": 0.5
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 3500,
+        "SelfHealPerHealTick": 4
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": "",
+        "Explosion": {
+          "DamageExplosionChance": 10
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "DensityDistance": 15,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          },
+          "Explosion": {
+            "BaseChance": 4
+          }
+        }
+      },
+      "Industrializable": {
+        "BoostedByIndustrialization": 0
+      },
+      "Culture": "",
+      "QuestObject": "",
+      "Electrifiable": ""
+    }
+  },
+  {
+    "Template": "FactoryBuilding7",
+    "Values": {
+      "Standard": {
+        "GUID": 269840,
+        "Name": "colony01_fuel_station_01 (FuelStation)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_gasoline.png",
+        "InfoDescription": 269752
+      },
+      "Building": {
+        "BuildModeRandomRotation": 90,
+        "AssociatedRegions": "Colony01"
+      },
+      "Blocking": {
+        "HasBuildingBaseTiles": 1
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 25000
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 30
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 50
+            },
+            {
+              "Ingredient": 1010218,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010207,
+              "Amount": 10
+            },
+            {
+              "Ingredient": 1010202,
+              "Amount": 10
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc05/graphics/buildings/special/fuel_station_colony/fuel_station_colony.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "ParticipantMessageArcheType": "SA_Resident_tier02_atWork"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Fuel Station",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 36649
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 270111
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        }
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryInputs": {
+          "Item": {
+            "Product": 1010566,
+            "Amount": 1,
+            "StorageAmount": 50
+          }
+        },
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 270042,
+            "Amount": 1,
+            "StorageAmount": 20
+          }
+        },
+        "CycleTime": 15,
+        "ProductivityTimeMultiplier": 30,
+        "ProductivityPoints": 1,
+        "WarehouseTransporterAsset": 120025
+      },
+      "LogisticNode": {
+        "TransporterCountMax": 5,
+        "TransporterAsset": 120062,
+        "PathLayers": "Street;Railway"
+      },
+      "AmbientMoodProvider": "",
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 350,
+              "InactiveAmount": 175
+            },
+            {
+              "Product": 1010367,
+              "Amount": 75,
+              "ShutdownThreshold": 0.5
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 3500,
+        "SelfHealPerHealTick": 4
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": "",
+        "Explosion": {
+          "DamageExplosionChance": 10
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "DensityDistance": 15,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          },
+          "Explosion": {
+            "BaseChance": 4
+          }
+        }
+      },
+      "Industrializable": {
+        "BoostedByIndustrialization": 0
+      },
+      "Culture": "",
+      "QuestObject": "",
+      "Electrifiable": ""
+    }
+  },
+  {
+    "Template": "FactoryBuilding7",
+    "Values": {
+      "Standard": {
+        "GUID": 119028,
+        "Name": "africa_fuel_station_01 (FuelStation)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_gasoline.png",
+        "InfoDescription": 269752
+      },
+      "Building": {
+        "BuildModeRandomRotation": 90,
+        "AssociatedRegions": "Africa"
+      },
+      "Blocking": {
+        "HasBuildingBaseTiles": 1
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 25000
+            },
+            {
+              "Ingredient": 114356,
+              "Amount": 30
+            },
+            {
+              "Ingredient": 114402,
+              "Amount": 50
+            },
+            {
+              "Ingredient": 1010218,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010207,
+              "Amount": 10
+            },
+            {
+              "Ingredient": 1010202,
+              "Amount": 10
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc06/graphics/buildings/special/fuel_station_colony02/fuel_station_colony02.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "ParticipantMessageArcheType": "Africa_Resident_tier02"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Fuel Station",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 45896
+      },
+      "Constructable": "",
+      "Locked": {
+        "DLCDependency": 410070
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 270111
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        }
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryInputs": {
+          "Item": {
+            "Product": 1010566,
+            "Amount": 1,
+            "StorageAmount": 50
+          }
+        },
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 270042,
+            "Amount": 1,
+            "StorageAmount": 20
+          }
+        },
+        "CycleTime": 15,
+        "ProductivityTimeMultiplier": 30,
+        "ProductivityPoints": 1,
+        "WarehouseTransporterAsset": 120025
+      },
+      "LogisticNode": {
+        "TransporterCountMax": 5,
+        "TransporterAsset": 120062,
+        "PathLayers": "Street;Railway"
+      },
+      "AmbientMoodProvider": "",
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 350,
+              "InactiveAmount": 175
+            },
+            {
+              "Product": 114341,
+              "Amount": 75,
+              "ShutdownThreshold": 0.5
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "MaximumHitPoints": 3500,
+        "SelfHealPerHealTick": 4
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": "",
+        "Explosion": {
+          "DamageExplosionChance": 10
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "DensityDistance": 15,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          },
+          "Explosion": {
+            "BaseChance": 4
+          }
+        }
+      },
+      "Industrializable": {
+        "BoostedByIndustrialization": 0
+      },
       "Culture": "",
       "QuestObject": "",
       "Electrifiable": ""

@@ -44,6 +44,10 @@ async function loadAssets() {
 }
 
 function processGroups(groups: any) {
+  if (!Array.isArray(groups)) {
+    groups = [groups];
+  }
+
   for (const group of Array.from<any>(groups)) {
     if (group.Assets) {
       processAssets(group.Assets.Asset);
@@ -56,6 +60,10 @@ function processGroups(groups: any) {
 }
 
 function processAssets(assets: any) {
+  if (!Array.isArray(assets)) {
+    assets = [assets];
+  }
+
   for (const asset of Array.from<any>(assets)) {
     if (!asset.Template) {
       continue;

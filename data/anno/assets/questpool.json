@@ -156,6 +156,135 @@
     "Template": "QuestPool",
     "Values": {
       "Standard": {
+        "GUID": 153163,
+        "Name": "OP - Quest Pool All",
+        "IconFilename": "data/ui/2kimages/main/assets/bg_om_info.png"
+      },
+      "QuestPool": {
+        "SubPools": {
+          "Item": [
+            {
+              "Pool": 153161
+            },
+            {
+              "Pool": 153162
+            }
+          ]
+        },
+        "IsTopLevel": 1,
+        "QuestLimit": 6,
+        "PoolCooldown": 0
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 153161,
+        "Name": "OQ Optional Quest Pool ALL",
+        "IconFilename": "data/ui/2kimages/main/assets/bg_om_info.png"
+      },
+      "QuestPool": {
+        "SubPools": {
+          "Item": [
+            {
+              "Pool": 150082
+            },
+            {
+              "Pool": 150311
+            },
+            {
+              "Pool": 150314
+            },
+            {
+              "Pool": 150315
+            },
+            {
+              "Pool": 150316
+            },
+            {
+              "Pool": 150317
+            },
+            {
+              "Pool": 150033
+            },
+            {
+              "Pool": 150085
+            },
+            {
+              "Pool": 150318
+            },
+            {
+              "Pool": 150258
+            },
+            {
+              "Pool": 150099
+            },
+            {
+              "Pool": 150310
+            },
+            {
+              "Pool": 150313
+            },
+            {
+              "Pool": 150308
+            },
+            {
+              "Pool": 150312
+            },
+            {
+              "Pool": 150100
+            },
+            {
+              "Pool": 150309
+            },
+            {
+              "Pool": 111237
+            },
+            {
+              "Pool": 112953
+            },
+            {
+              "Pool": 116634
+            },
+            {
+              "Pool": 122780
+            }
+          ]
+        },
+        "QuestLimit": 5,
+        "PoolCooldown": 300000,
+        "CooldownOnQuestStart": 1,
+        "CooldownOnQuestEnd": 1,
+        "QuestCooldown": 7200000
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
         "GUID": 150082,
         "Name": "OQ_B.Jorgensen_Pool",
         "IconFilename": "data/ui/2kimages/main/assets/bg_om_info.png"
@@ -2115,6 +2244,137 @@
             },
             "ConditionIsDiscovered": "",
             "ConditionPropsNegatable": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 153162,
+        "Name": "FOQ Forced Optional Quest Pool ALL",
+        "IconFilename": "data/ui/2kimages/main/assets/bg_om_info.png"
+      },
+      "QuestPool": {
+        "SubPools": {
+          "Item": [
+            {
+              "Pool": 151097,
+              "Priority": 10
+            },
+            {
+              "Pool": 151098,
+              "Priority": 10
+            },
+            {
+              "Pool": 151099,
+              "Priority": 10
+            },
+            {
+              "Pool": 151100,
+              "Priority": 10
+            },
+            {
+              "Pool": 151101,
+              "Priority": 10
+            },
+            {
+              "Pool": 151102,
+              "Priority": 10
+            },
+            {
+              "Pool": 151103,
+              "Priority": 10
+            },
+            {
+              "Pool": 151104,
+              "Priority": 10
+            },
+            {
+              "Pool": 151105,
+              "Priority": 10
+            },
+            {
+              "Pool": 151114,
+              "Priority": 10
+            },
+            {
+              "Pool": 151107,
+              "Priority": 10
+            },
+            {
+              "Pool": 151108,
+              "Priority": 10
+            },
+            {
+              "Pool": 151109,
+              "Priority": 10
+            },
+            {
+              "Pool": 151110,
+              "Priority": 10
+            },
+            {
+              "Pool": 151111,
+              "Priority": 10
+            },
+            {
+              "Pool": 151112,
+              "Priority": 10
+            },
+            {
+              "Pool": 151113,
+              "Priority": 10
+            },
+            {
+              "Pool": 111238,
+              "Priority": 10
+            },
+            {
+              "Pool": 111239,
+              "Priority": 1
+            },
+            {
+              "Pool": 114108,
+              "Priority": 10
+            }
+          ]
+        },
+        "PoolCooldown": 1800000,
+        "CooldownOnQuestStart": 1,
+        "CooldownOnQuestEnd": 1,
+        "QuestCooldown": 7200000
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": {
+            "SubCondition": {
+              "Template": "PreConditionList",
+              "Values": {
+                "PreConditionList": {
+                  "Condition": {
+                    "Template": "ConditionActiveSession",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionActiveSession": {
+                        "ActiveSession": 112132,
+                        "SessionBlacklist": 1
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -4218,6 +4478,501 @@
     "Template": "QuestPool",
     "Values": {
       "Standard": {
+        "GUID": 151057,
+        "Name": "RQ_Farmers_Pool",
+        "IconFilename": "data/ui/2kimages/main/assets/bg_om_info.png"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 1788485736
+          }
+        },
+        "PoolCooldown": 9000000,
+        "CooldownOnQuestStart": 1,
+        "CooldownOnQuestEnd": 1,
+        "QuestCooldown": 90000000
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionMutualAreaInSubconditions",
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Linear"
+            },
+            "ConditionMutualAreaInSubconditions": ""
+          }
+        },
+        "SubConditions": {
+          "Item": {
+            "SubCondition": {
+              "Template": "PreConditionList",
+              "Values": {
+                "PreConditionList": {
+                  "Condition": {
+                    "Template": "ConditionPlayerCounter",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionPlayerCounter": {
+                        "PlayerCounter": "PopulationByLevel",
+                        "Context": 15000000,
+                        "CounterAmount": 300,
+                        "CounterScope": "Area",
+                        "CounterScopeUseCurrentContext": 0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 151528,
+        "Name": "RQ_Workers_Pool",
+        "IconFilename": "data/ui/2kimages/main/assets/bg_om_info.png"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 1030073946
+          }
+        },
+        "PoolCooldown": 9000000,
+        "CooldownOnQuestStart": 1,
+        "CooldownOnQuestEnd": 1,
+        "QuestCooldown": 90000000
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionMutualAreaInSubconditions",
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Linear"
+            },
+            "ConditionMutualAreaInSubconditions": ""
+          }
+        },
+        "SubConditions": {
+          "Item": {
+            "SubCondition": {
+              "Template": "PreConditionList",
+              "Values": {
+                "PreConditionList": {
+                  "Condition": {
+                    "Template": "ConditionPlayerCounter",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionPlayerCounter": {
+                        "PlayerCounter": "PopulationByLevel",
+                        "Context": 15000001,
+                        "CounterAmount": 300,
+                        "CounterScope": "Area",
+                        "CounterScopeUseCurrentContext": 0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 151529,
+        "Name": "RQ_Artisan_Pool",
+        "IconFilename": "data/ui/2kimages/main/assets/bg_om_info.png"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -642728011
+          }
+        },
+        "PoolCooldown": 9000000,
+        "CooldownOnQuestStart": 1,
+        "CooldownOnQuestEnd": 1,
+        "QuestCooldown": 90000000
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionMutualAreaInSubconditions",
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Linear"
+            },
+            "ConditionMutualAreaInSubconditions": ""
+          }
+        },
+        "SubConditions": {
+          "Item": {
+            "SubCondition": {
+              "Template": "PreConditionList",
+              "Values": {
+                "PreConditionList": {
+                  "Condition": {
+                    "Template": "ConditionPlayerCounter",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionPlayerCounter": {
+                        "PlayerCounter": "PopulationByLevel",
+                        "Context": 15000002,
+                        "CounterAmount": 300,
+                        "CounterScope": "Area",
+                        "CounterScopeUseCurrentContext": 0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 151530,
+        "Name": "RQ_Engineers_Pool",
+        "IconFilename": "data/ui/2kimages/main/assets/bg_om_info.png"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 252346483
+          }
+        },
+        "PoolCooldown": 9000000,
+        "CooldownOnQuestStart": 1,
+        "CooldownOnQuestEnd": 1,
+        "QuestCooldown": 90000000
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionMutualAreaInSubconditions",
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Linear"
+            },
+            "ConditionMutualAreaInSubconditions": ""
+          }
+        },
+        "SubConditions": {
+          "Item": {
+            "SubCondition": {
+              "Template": "PreConditionList",
+              "Values": {
+                "PreConditionList": {
+                  "Condition": {
+                    "Template": "ConditionPlayerCounter",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionPlayerCounter": {
+                        "PlayerCounter": "PopulationByLevel",
+                        "Context": 15000003,
+                        "CounterAmount": 300,
+                        "CounterScope": "Area",
+                        "CounterScopeUseCurrentContext": 0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 151563,
+        "Name": "RQ_Investor_Pool",
+        "IconFilename": "data/ui/2kimages/main/assets/bg_om_info.png"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -1375360533
+          }
+        },
+        "PoolCooldown": 9000000,
+        "CooldownOnQuestStart": 1,
+        "CooldownOnQuestEnd": 1,
+        "QuestCooldown": 90000000
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionMutualAreaInSubconditions",
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Linear"
+            },
+            "ConditionMutualAreaInSubconditions": ""
+          }
+        },
+        "SubConditions": {
+          "Item": {
+            "SubCondition": {
+              "Template": "PreConditionList",
+              "Values": {
+                "PreConditionList": {
+                  "Condition": {
+                    "Template": "ConditionPlayerCounter",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionPlayerCounter": {
+                        "PlayerCounter": "PopulationByLevel",
+                        "Context": 15000004,
+                        "CounterAmount": 300,
+                        "CounterScope": "Area",
+                        "CounterScopeUseCurrentContext": 0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 151531,
+        "Name": "RQ_Jornaleros_Pool",
+        "IconFilename": "data/ui/2kimages/main/assets/bg_om_info.png"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 193667806
+          }
+        },
+        "PoolCooldown": 9000000,
+        "CooldownOnQuestStart": 1,
+        "CooldownOnQuestEnd": 1,
+        "QuestCooldown": 90000000
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionMutualAreaInSubconditions",
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Linear"
+            },
+            "ConditionMutualAreaInSubconditions": ""
+          }
+        },
+        "SubConditions": {
+          "Item": {
+            "SubCondition": {
+              "Template": "PreConditionList",
+              "Values": {
+                "PreConditionList": {
+                  "Condition": {
+                    "Template": "ConditionPlayerCounter",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionPlayerCounter": {
+                        "PlayerCounter": "PopulationByLevel",
+                        "Context": 15000005,
+                        "CounterAmount": 300,
+                        "CounterScope": "Area",
+                        "CounterScopeUseCurrentContext": 0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 151806,
+        "Name": "RQ_Obreros_Pool",
+        "IconFilename": "data/ui/2kimages/main/assets/bg_om_info.png"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 613437334
+          }
+        },
+        "PoolCooldown": 9000000,
+        "CooldownOnQuestStart": 1,
+        "CooldownOnQuestEnd": 1,
+        "QuestCooldown": 90000000
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionMutualAreaInSubconditions",
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Linear"
+            },
+            "ConditionMutualAreaInSubconditions": ""
+          }
+        },
+        "SubConditions": {
+          "Item": {
+            "SubCondition": {
+              "Template": "PreConditionList",
+              "Values": {
+                "PreConditionList": {
+                  "Condition": {
+                    "Template": "ConditionPlayerCounter",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionPlayerCounter": {
+                        "PlayerCounter": "PopulationByLevel",
+                        "Context": 15000006,
+                        "CounterAmount": 300,
+                        "CounterScope": "Area",
+                        "CounterScopeUseCurrentContext": 0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 152266,
+        "Name": "PietSmiet_Pool",
+        "IconFilename": "data/ui/2kimages/main/assets/bg_om_info.png"
+      },
+      "QuestPool": {
+        "Quests": {
+          "Item": {
+            "Quest": 152263
+          }
+        },
+        "IsTopLevel": 1,
+        "PoolCooldown": 10000,
+        "CooldownOnQuestStart": 1,
+        "CooldownOnQuestEnd": 1,
+        "QuestCooldown": 10000
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 153133,
+        "Name": "Boris_Pool",
+        "IconFilename": "data/ui/2kimages/main/assets/bg_om_info.png"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -1021763229
+          }
+        },
+        "IsTopLevel": 1,
+        "PoolCooldown": 10000,
+        "CooldownOnQuestStart": 1,
+        "CooldownOnQuestEnd": 1,
+        "QuestCooldown": 10000
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 153180,
+        "Name": "Writers_Pool",
+        "IconFilename": "data/ui/2kimages/main/assets/bg_om_info.png"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -1677137075
+          }
+        },
+        "IsTopLevel": 1,
+        "PoolCooldown": 10000,
+        "CooldownOnQuestStart": 1,
+        "CooldownOnQuestEnd": 1,
+        "QuestCooldown": 10000
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
         "GUID": 150902,
         "Name": "QP Tutorial Elements ALL"
       },
@@ -4482,6 +5237,271 @@
             "Condition": "",
             "ConditionAlwaysTrue": ""
           }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 110932,
+        "Name": "RQ_Anarchist_Pool",
+        "IconFilename": "data/ui/2kimages/main/assets/bg_om_info.png"
+      },
+      "QuestPool": {
+        "DisabledByDefault": 1,
+        "Groups": {
+          "Item": [
+            {
+              "QuestGroup": -418704490,
+              "Weight": 10
+            },
+            {
+              "QuestGroup": -1985671169,
+              "Weight": 7
+            },
+            {
+              "QuestGroup": 1797826170,
+              "Weight": 4
+            }
+          ]
+        },
+        "IsTopLevel": 1,
+        "PoolCooldown": 60000,
+        "CooldownOnQuestStart": 1,
+        "CooldownOnQuestEnd": 1,
+        "QuestCooldown": 90000000,
+        "QuestPoolActionCallbacks": {
+          "OnQuestDeclined": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "ActionList": {
+                "Actions": {
+                  "Item": {
+                    "Action": {
+                      "Template": "ActionModifyVariable",
+                      "Values": {
+                        "Action": "",
+                        "ActionModifyVariable": {
+                          "Variable": "AnarchyFestivalWeight",
+                          "Modifier": "Add",
+                          "ModificationValue": -5,
+                          "ClampVariableValue": 1,
+                          "ClampValueMax": 40
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "OnQuestAborted": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "ActionList": {
+                "Actions": {
+                  "Item": {
+                    "Action": {
+                      "Template": "ActionModifyVariable",
+                      "Values": {
+                        "Action": "",
+                        "ActionModifyVariable": {
+                          "Variable": "AnarchyFestivalWeight",
+                          "Modifier": "Add",
+                          "ModificationValue": -5,
+                          "ClampVariableValue": 1,
+                          "ClampValueMax": 40
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "OnQuestFailed": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "ActionList": {
+                "Actions": {
+                  "Item": {
+                    "Action": {
+                      "Template": "ActionModifyVariable",
+                      "Values": {
+                        "Action": "",
+                        "ActionModifyVariable": {
+                          "Variable": "AnarchyFestivalWeight",
+                          "Modifier": "Add",
+                          "ModificationValue": -5,
+                          "ClampVariableValue": 1,
+                          "ClampValueMax": 40
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "OnQuestSucceeded": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "ActionList": {
+                "Actions": {
+                  "Item": {
+                    "Action": {
+                      "Template": "ActionModifyVariable",
+                      "Values": {
+                        "Action": "",
+                        "ActionModifyVariable": {
+                          "Variable": "AnarchyFestivalWeight",
+                          "Modifier": "Add",
+                          "ModificationValue": 5,
+                          "ClampVariableValue": 1,
+                          "ClampValueMax": 40
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "OnQuestEnd": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "ActionList": {
+                "Actions": {
+                  "Item": [
+                    {
+                      "Action": {
+                        "Template": "ActionSetQuestPoolEnablement",
+                        "Values": {
+                          "Action": "",
+                          "ActionSetQuestPoolEnablement": {
+                            "QuestPoolListToChange": {
+                              "Item": {
+                                "QuestPool": 110932
+                              }
+                            },
+                            "ChangeForProcessingParticipant": 1
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Action": {
+                        "Template": "ActionModifyVariable",
+                        "Values": {
+                          "Action": "",
+                          "ActionModifyVariable": ""
+                        }
+                      }
+                    },
+                    {
+                      "Action": {
+                        "Template": "ActionModifyVariable",
+                        "Values": {
+                          "Action": "",
+                          "ActionModifyVariable": {
+                            "Variable": "Mercier_ARQDelayTimer"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionMutualAreaInSubconditions",
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Linear"
+            },
+            "ConditionMutualAreaInSubconditions": {
+              "AreaFlags": "MostPopulatedArea",
+              "SpecifySession": 1,
+              "SessionAsset": 180023
+            }
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsDiscovered",
+                      "Values": {
+                        "Condition": "",
+                        "ParticipantRelation": {
+                          "SourceIsOwner": 1,
+                          "TargetParticipant": "Second_ai_11_Mercier"
+                        },
+                        "ConditionIsDiscovered": "",
+                        "ConditionPropsNegatable": ""
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 110669,
+                          "CounterAmount": 1,
+                          "CounterScope": "Session",
+                          "CounterScopeKeepFirstFound": 0,
+                          "CheckSpecificParticipant": 1,
+                          "CheckedParticipant": "Second_ai_11_Mercier"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "PopulationByLevel",
+                          "Context": 15000001,
+                          "CounterAmount": 300,
+                          "CounterScope": "Area",
+                          "CounterScopeUseCurrentContext": 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
         }
       }
     }
@@ -6412,6 +7432,87 @@
     "Template": "QuestPool",
     "Values": {
       "Standard": {
+        "GUID": 127069,
+        "Name": "LoLStory_AVisitOfTheCapital_Towers_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -655287510
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Parallel"
+            },
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Reached",
+                          "ConditionQuestStateQuestGUID": 119871
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Triggered;Active",
+                          "ConditionQuestStateQuestGUID": 126968
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
         "GUID": 129680,
         "Name": "LoLStory_Cartography_Select_VictoriaFalls_Pool_SB"
       },
@@ -7205,6 +8306,2668 @@
     "Template": "QuestPool",
     "Values": {
       "Standard": {
+        "GUID": 124011,
+        "Name": "DEBUG_Angereb_IS_All_Pool"
+      },
+      "QuestPool": {
+        "DisabledByDefault": 1,
+        "Quests": {
+          "Item": [
+            {
+              "Quest": 123193
+            },
+            {
+              "Quest": 123194
+            },
+            {
+              "Quest": 123195
+            },
+            {
+              "Quest": 123196
+            },
+            {
+              "Quest": 123243
+            },
+            {
+              "Quest": 123246
+            },
+            {
+              "Quest": 123570
+            },
+            {
+              "Quest": 122395
+            },
+            {
+              "Quest": 123568
+            },
+            {
+              "Quest": 123569
+            },
+            {
+              "Quest": 123571
+            },
+            {
+              "Quest": 122393
+            },
+            {
+              "Quest": 122409
+            },
+            {
+              "Quest": 123760
+            },
+            {
+              "Quest": 122406
+            },
+            {
+              "Quest": 123743
+            },
+            {
+              "Quest": 123744
+            },
+            {
+              "Quest": 122408
+            },
+            {
+              "Quest": 123745
+            },
+            {
+              "Quest": 123746
+            }
+          ]
+        },
+        "Groups": {
+          "Item": [
+            {
+              "QuestGroup": 573086341
+            },
+            {
+              "QuestGroup": 1341995892
+            }
+          ]
+        },
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionAlwaysFalse",
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysFalse": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 122786,
+        "Name": "Angereb_IS_01_Initial_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -1883005297
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Parallel"
+            },
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsDiscovered",
+                      "Values": {
+                        "Condition": "",
+                        "ParticipantRelation": {
+                          "SourceIsOwner": 1,
+                          "TargetParticipant": "Africa_Angereb"
+                        },
+                        "ConditionIsDiscovered": "",
+                        "ConditionPropsNegatable": ""
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Reached",
+                          "ConditionQuestStateIsBlacklist": 1,
+                          "ConditionQuestStateQuestGUID": 120429
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsMultiplayer",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionIsMultiplayer": "",
+                        "ConditionPropsNegatable": {
+                          "NegateCondition": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 122787,
+        "Name": "Angereb_IS_02_PlayerEnteredAngereb_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 573086341
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Parallel"
+            },
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Reached",
+                          "ConditionQuestStateQuestGUID": 120429
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "Condition": "",
+                        "ConditionAlwaysTrue": ""
+                      }
+                    },
+                    "SubConditions": {
+                      "Item": [
+                        {
+                          "SubCondition": {
+                            "Template": "PreConditionList",
+                            "Values": {
+                              "PreConditionList": {
+                                "Condition": {
+                                  "Template": "ConditionQuestState",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionQuestState": {
+                                      "ConditionQuestStateStates": "Reached",
+                                      "ConditionQuestStateIsBlacklist": 1,
+                                      "ConditionQuestStateQuestGUID": 122896
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubCondition": {
+                            "Template": "PreConditionList",
+                            "Values": {
+                              "PreConditionList": {
+                                "Condition": {
+                                  "Template": "ConditionQuestState",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionQuestState": {
+                                      "ConditionQuestStateStates": "Reached",
+                                      "ConditionQuestStateIsBlacklist": 1,
+                                      "ConditionQuestStateQuestGUID": 122914
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubCondition": {
+                            "Template": "PreConditionList",
+                            "Values": {
+                              "PreConditionList": {
+                                "Condition": {
+                                  "Template": "ConditionQuestState",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionQuestState": {
+                                      "ConditionQuestStateStates": "Reached",
+                                      "ConditionQuestStateIsBlacklist": 1,
+                                      "ConditionQuestStateQuestGUID": 123250
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 123046,
+        "Name": "Angereb_IS_02_PlayerEnteredAngereb_Persistent_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 1341995892
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Parallel"
+            },
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Reached",
+                          "ConditionQuestStateQuestGUID": 120429
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Reached",
+                          "ConditionQuestStateIsBlacklist": 1,
+                          "ConditionQuestStateQuestGUID": 124729
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 123747,
+        "Name": "Angereb_IS_02_PlayerEnteredAngereb_2ndUnveil_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 758918415
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Parallel"
+            },
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Reached",
+                          "ConditionQuestStateQuestGUID": 120429
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "Condition": "",
+                        "ConditionAlwaysTrue": ""
+                      }
+                    },
+                    "SubConditions": {
+                      "Item": [
+                        {
+                          "SubCondition": {
+                            "Template": "PreConditionList",
+                            "Values": {
+                              "PreConditionList": {
+                                "Condition": {
+                                  "Template": "ConditionQuestState",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionQuestState": {
+                                      "ConditionQuestStateStates": "Reached",
+                                      "ConditionQuestStateIsBlacklist": 1,
+                                      "ConditionQuestStateQuestGUID": 123390
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubCondition": {
+                            "Template": "PreConditionList",
+                            "Values": {
+                              "PreConditionList": {
+                                "Condition": {
+                                  "Template": "ConditionQuestState",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionQuestState": {
+                                      "ConditionQuestStateStates": "Reached",
+                                      "ConditionQuestStateIsBlacklist": 1,
+                                      "ConditionQuestStateQuestGUID": 123657
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubCondition": {
+                            "Template": "PreConditionList",
+                            "Values": {
+                              "PreConditionList": {
+                                "Condition": {
+                                  "Template": "ConditionQuestState",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionQuestState": {
+                                      "ConditionQuestStateStates": "Reached",
+                                      "ConditionQuestStateIsBlacklist": 1,
+                                      "ConditionQuestStateQuestGUID": 123706
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 124480,
+        "Name": "Angereb_IS_02_PlayerEnteredAngereb_3rdUnveil_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 19746795
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Parallel"
+            },
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Reached",
+                          "ConditionQuestStateQuestGUID": 120429
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Reached",
+                          "ConditionQuestStateIsBlacklist": 1,
+                          "ConditionQuestStateQuestGUID": 124584
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 123247,
+        "Name": "Angereb_IS_03a_EconomyQuestComplete_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -301529318
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Parallel"
+            },
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": {
+            "SubCondition": {
+              "Template": "PreConditionList",
+              "Values": {
+                "PreConditionList": {
+                  "Condition": {
+                    "Template": "ConditionQuestState",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionQuestState": {
+                        "ConditionQuestStateStates": "Reached",
+                        "ConditionQuestStateQuestGUID": 122896
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 123248,
+        "Name": "Angereb_IS_03b_MilitaryQuestComplete_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -580997287
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Parallel"
+            },
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": {
+            "SubCondition": {
+              "Template": "PreConditionList",
+              "Values": {
+                "PreConditionList": {
+                  "Condition": {
+                    "Template": "ConditionQuestState",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionQuestState": {
+                        "ConditionQuestStateStates": "Reached",
+                        "ConditionQuestStateQuestGUID": 122914
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 123249,
+        "Name": "Angereb_IS_03c_PrestigeQuestComplete_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -515071183
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Parallel"
+            },
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": {
+            "SubCondition": {
+              "Template": "PreConditionList",
+              "Values": {
+                "PreConditionList": {
+                  "Condition": {
+                    "Template": "ConditionQuestState",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionQuestState": {
+                        "ConditionQuestStateStates": "Reached",
+                        "ConditionQuestStateQuestGUID": 123250
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 123572,
+        "Name": "Angereb_IS_05_UncoveredMarket_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -1721846699
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Parallel"
+            },
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": {
+            "SubCondition": {
+              "Template": "PreConditionList",
+              "Values": {
+                "PreConditionList": {
+                  "Condition": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "Condition": {
+                        "SubConditionCompletionOrder": "MutuallyExclusive"
+                      },
+                      "ConditionAlwaysTrue": ""
+                    }
+                  },
+                  "SubConditions": {
+                    "Item": [
+                      {
+                        "SubCondition": {
+                          "Template": "PreConditionList",
+                          "Values": {
+                            "PreConditionList": {
+                              "Condition": {
+                                "Template": "ConditionQuestState",
+                                "Values": {
+                                  "Condition": "",
+                                  "ConditionQuestState": {
+                                    "ConditionQuestStateStates": "Reached",
+                                    "ConditionQuestStateQuestGUID": 123340
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "SubCondition": {
+                          "Template": "PreConditionList",
+                          "Values": {
+                            "PreConditionList": {
+                              "Condition": {
+                                "Template": "ConditionQuestState",
+                                "Values": {
+                                  "Condition": "",
+                                  "ConditionQuestState": {
+                                    "ConditionQuestStateStates": "Reached",
+                                    "ConditionQuestStateQuestGUID": 123383
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "SubCondition": {
+                          "Template": "PreConditionList",
+                          "Values": {
+                            "PreConditionList": {
+                              "Condition": {
+                                "Template": "ConditionQuestState",
+                                "Values": {
+                                  "Condition": "",
+                                  "ConditionQuestState": {
+                                    "ConditionQuestStateStates": "Reached",
+                                    "ConditionQuestStateQuestGUID": 123384
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 123759,
+        "Name": "Angereb_IS_08_Thievery_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 2058622052
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Parallel"
+            },
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Reached",
+                          "ConditionQuestStateQuestGUID": 124729
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Active;Reached",
+                          "ConditionQuestStateIsBlacklist": 1,
+                          "ConditionQuestStateQuestGUID": 124216
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 124487,
+        "Name": "Angereb_IS_09_SpearIsFound_Pool_Angereb"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 885674776
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Parallel"
+            },
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Active;Reached",
+                          "ConditionQuestStateQuestGUID": 124216,
+                          "ConditionQuestStateRangeOp": "Any"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Active;Reached",
+                          "ConditionQuestStateIsBlacklist": 1,
+                          "ConditionQuestStateQuestGUID": 124391
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 124497,
+        "Name": "Angereb_IS_10_CeremonyPreparation_Pool_Angereb"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -995174950
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Parallel"
+            },
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Active;Reached",
+                          "ConditionQuestStateQuestGUID": 124391,
+                          "ConditionQuestStateRangeOp": "Any"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Reached",
+                          "ConditionQuestStateIsBlacklist": 1,
+                          "ConditionQuestStateQuestGUID": 124461
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 124507,
+        "Name": "Angereb_IS_11_Ceremony_Pool_Angereb"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -1806981933
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Parallel"
+            },
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Reached",
+                          "ConditionQuestStateQuestGUID": 124461
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "Condition": "",
+                        "ConditionAlwaysTrue": ""
+                      }
+                    },
+                    "SubConditions": {
+                      "Item": [
+                        {
+                          "SubCondition": {
+                            "Template": "PreConditionList",
+                            "Values": {
+                              "PreConditionList": {
+                                "Condition": {
+                                  "Template": "ConditionQuestState",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionQuestState": {
+                                      "ConditionQuestStateStates": "Active;Reached",
+                                      "ConditionQuestStateIsBlacklist": 1,
+                                      "ConditionQuestStateQuestGUID": 124589
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubCondition": {
+                            "Template": "PreConditionList",
+                            "Values": {
+                              "PreConditionList": {
+                                "Condition": {
+                                  "Template": "ConditionQuestState",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionQuestState": {
+                                      "ConditionQuestStateStates": "Active;Reached",
+                                      "ConditionQuestStateIsBlacklist": 1,
+                                      "ConditionQuestStateQuestGUID": 124640
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 124603,
+        "Name": "Angereb_IS_12_Investigation_Pool_Angereb"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -2101329905
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Parallel"
+            },
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Active;Reached",
+                          "ConditionQuestStateQuestGUID": 124589,
+                          "ConditionQuestStateRangeOp": "Any"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "Condition": "",
+                        "ConditionAlwaysTrue": ""
+                      }
+                    },
+                    "SubConditions": {
+                      "Item": {
+                        "SubCondition": {
+                          "Template": "PreConditionList",
+                          "Values": {
+                            "PreConditionList": {
+                              "Condition": {
+                                "Template": "ConditionQuestState",
+                                "Values": {
+                                  "Condition": "",
+                                  "ConditionQuestState": {
+                                    "ConditionQuestStateStates": "Active;Reached",
+                                    "ConditionQuestStateIsBlacklist": 1,
+                                    "ConditionQuestStateQuestGUID": 124640
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 124679,
+        "Name": "Angereb_IS_13_UnderWar_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -390567633
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Parallel"
+            },
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": {
+            "SubCondition": {
+              "Template": "PreConditionList",
+              "Values": {
+                "PreConditionList": {
+                  "Condition": {
+                    "Template": "ConditionQuestState",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionQuestState": {
+                        "ConditionQuestStateStates": "Active;Reached",
+                        "ConditionQuestStateQuestGUID": 124640,
+                        "ConditionQuestStateRangeOp": "Any"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 123803,
+        "Name": "Kidusi_IS_01_Initial_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 377713318
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionIsMultiplayer",
+          "Values": {
+            "Condition": "",
+            "ConditionIsMultiplayer": "",
+            "ConditionPropsNegatable": {
+              "NegateCondition": 1
+            }
+          }
+        },
+        "SubConditions": {
+          "Item": {
+            "SubCondition": {
+              "Template": "PreConditionList",
+              "Values": {
+                "PreConditionList": {
+                  "Condition": {
+                    "Template": "ConditionIsDiscovered",
+                    "Values": {
+                      "Condition": "",
+                      "ParticipantRelation": {
+                        "SourceIsOwner": 1,
+                        "TargetParticipant": "Africa_Kidusi"
+                      },
+                      "ConditionIsDiscovered": "",
+                      "ConditionPropsNegatable": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 128543,
+        "Name": "Kidusi_IS_01_InitialNotPermanent_Pool_EndWithPath1"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -1485991246
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionIsMultiplayer",
+          "Values": {
+            "Condition": "",
+            "ConditionIsMultiplayer": "",
+            "ConditionPropsNegatable": {
+              "NegateCondition": 1
+            }
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsDiscovered",
+                      "Values": {
+                        "Condition": "",
+                        "ParticipantRelation": {
+                          "SourceIsOwner": 1,
+                          "TargetParticipant": "Africa_Kidusi"
+                        },
+                        "ConditionIsDiscovered": "",
+                        "ConditionPropsNegatable": ""
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Triggered;Reached",
+                          "ConditionQuestStateIsBlacklist": 1,
+                          "ConditionQuestStateQuestGUID": 128018,
+                          "ConditionQuestStateRangeOp": "Any"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 128541,
+        "Name": "Kidusi_IS_01_InitialNotPermanent_Pool_EndWithPath2"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 2012794898
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionIsMultiplayer",
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "MutuallyExclusive"
+            },
+            "ConditionIsMultiplayer": "",
+            "ConditionPropsNegatable": {
+              "NegateCondition": 1
+            }
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "Condition": "",
+                        "ConditionAlwaysTrue": ""
+                      }
+                    },
+                    "SubConditions": {
+                      "Item": [
+                        {
+                          "SubCondition": {
+                            "Template": "PreConditionList",
+                            "Values": {
+                              "PreConditionList": {
+                                "Condition": {
+                                  "Template": "ConditionQuestState",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionQuestState": {
+                                      "ConditionQuestStateStates": "Triggered;Reached",
+                                      "ConditionQuestStateIsBlacklist": 1,
+                                      "ConditionQuestStateQuestGUID": 128127,
+                                      "ConditionQuestStateRangeOp": "Any"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubCondition": {
+                            "Template": "PreConditionList",
+                            "Values": {
+                              "PreConditionList": {
+                                "Condition": {
+                                  "Template": "ConditionIsDiscovered",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ParticipantRelation": {
+                                      "SourceIsOwner": 1,
+                                      "TargetParticipant": "Africa_Kidusi"
+                                    },
+                                    "ConditionIsDiscovered": "",
+                                    "ConditionPropsNegatable": ""
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "Condition": "",
+                        "ConditionAlwaysTrue": ""
+                      }
+                    },
+                    "SubConditions": {
+                      "Item": [
+                        {
+                          "SubCondition": {
+                            "Template": "PreConditionList",
+                            "Values": {
+                              "PreConditionList": {
+                                "Condition": {
+                                  "Template": "ConditionQuestState",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionQuestState": {
+                                      "ConditionQuestStateStates": "Triggered;Reached",
+                                      "ConditionQuestStateIsBlacklist": 1,
+                                      "ConditionQuestStateQuestGUID": 128568,
+                                      "ConditionQuestStateRangeOp": "Any"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubCondition": {
+                            "Template": "PreConditionList",
+                            "Values": {
+                              "PreConditionList": {
+                                "Condition": {
+                                  "Template": "ConditionIsDiscovered",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ParticipantRelation": {
+                                      "SourceIsOwner": 1,
+                                      "TargetParticipant": "Africa_Kidusi"
+                                    },
+                                    "ConditionIsDiscovered": "",
+                                    "ConditionPropsNegatable": ""
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 128540,
+        "Name": "Kidusi_IS_01_InitialNotPermanent_Pool_EndWithAlteredFacts"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -975959612
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionIsMultiplayer",
+          "Values": {
+            "Condition": "",
+            "ConditionIsMultiplayer": "",
+            "ConditionPropsNegatable": {
+              "NegateCondition": 1
+            }
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsDiscovered",
+                      "Values": {
+                        "Condition": "",
+                        "ParticipantRelation": {
+                          "SourceIsOwner": 1,
+                          "TargetParticipant": "Africa_Kidusi"
+                        },
+                        "ConditionIsDiscovered": "",
+                        "ConditionPropsNegatable": ""
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Triggered;Reached",
+                          "ConditionQuestStateIsBlacklist": 1,
+                          "ConditionQuestStateQuestGUID": 128746
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 124003,
+        "Name": "Kidusi_IS_01_InitialNotPermanent_Pool_EndWith14a_ByTheRoad1"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -582636745
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsDiscovered",
+                      "Values": {
+                        "Condition": "",
+                        "ParticipantRelation": {
+                          "SourceIsOwner": 1,
+                          "TargetParticipant": "Africa_Kidusi"
+                        },
+                        "ConditionIsDiscovered": "",
+                        "ConditionPropsNegatable": ""
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsMultiplayer",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionIsMultiplayer": "",
+                        "ConditionPropsNegatable": {
+                          "NegateCondition": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 128539,
+        "Name": "Kidusi_IS_01_InitialNotPermanent_Pool_EndWithWDTrees"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -1230197146
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsDiscovered",
+                      "Values": {
+                        "Condition": "",
+                        "ParticipantRelation": {
+                          "SourceIsOwner": 1,
+                          "TargetParticipant": "Africa_Kidusi"
+                        },
+                        "ConditionIsDiscovered": "",
+                        "ConditionPropsNegatable": ""
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsMultiplayer",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionIsMultiplayer": "",
+                        "ConditionPropsNegatable": {
+                          "NegateCondition": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 128094,
+        "Name": "Kidusi_IS_01_InitialNotPermanent_Pool_EndWithLibraryAccess"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -1598539535
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionIsMultiplayer",
+          "Values": {
+            "Condition": "",
+            "ConditionIsMultiplayer": "",
+            "ConditionPropsNegatable": {
+              "NegateCondition": 1
+            }
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsDiscovered",
+                      "Values": {
+                        "Condition": "",
+                        "ParticipantRelation": {
+                          "SourceIsOwner": 1,
+                          "TargetParticipant": "Africa_Kidusi"
+                        },
+                        "ConditionIsDiscovered": "",
+                        "ConditionPropsNegatable": ""
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Reached",
+                          "ConditionQuestStateIsBlacklist": 1,
+                          "ConditionQuestStateQuestGUID": 128563
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 128093,
+        "Name": "Kidusi_IS_02_libraryAccessGranted_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 153910608
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionIsMultiplayer",
+          "Values": {
+            "Condition": "",
+            "ConditionIsMultiplayer": "",
+            "ConditionPropsNegatable": {
+              "NegateCondition": 1
+            }
+          }
+        },
+        "SubConditions": {
+          "Item": {
+            "SubCondition": {
+              "Template": "PreConditionList",
+              "Values": {
+                "PreConditionList": {
+                  "Condition": {
+                    "Template": "ConditionUnlocked",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionUnlocked": {
+                        "UnlockNeeded": 131689
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 129518,
+        "Name": "Kidusi_IS_01_Initial_EndsWithFirstDigging_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 988266866
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionIsMultiplayer",
+          "Values": {
+            "Condition": "",
+            "ConditionIsMultiplayer": "",
+            "ConditionPropsNegatable": {
+              "NegateCondition": 1
+            }
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsDiscovered",
+                      "Values": {
+                        "Condition": "",
+                        "ParticipantRelation": {
+                          "SourceIsOwner": 1,
+                          "TargetParticipant": "Africa_Kidusi"
+                        },
+                        "ConditionIsDiscovered": "",
+                        "ConditionPropsNegatable": ""
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Triggered;Reached",
+                          "ConditionQuestStateIsBlacklist": 1,
+                          "ConditionQuestStateQuestGUID": 128814
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 131236,
+        "Name": "Kidusi_IS_02_libraryAccessGranted_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 874615820
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionIsMultiplayer",
+          "Values": {
+            "Condition": "",
+            "ConditionIsMultiplayer": "",
+            "ConditionPropsNegatable": {
+              "NegateCondition": 1
+            }
+          }
+        },
+        "SubConditions": {
+          "Item": {
+            "SubCondition": {
+              "Template": "PreConditionList",
+              "Values": {
+                "PreConditionList": {
+                  "Condition": {
+                    "Template": "ConditionQuestState",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionQuestState": {
+                        "ConditionQuestStateStates": "Reached",
+                        "ConditionQuestStateQuestGUID": 129443
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 131356,
+        "Name": "Kidusi_IS_01_Initial_EndsWithFirstDigging_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -508102170
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionIsMultiplayer",
+          "Values": {
+            "Condition": "",
+            "ConditionIsMultiplayer": "",
+            "ConditionPropsNegatable": {
+              "NegateCondition": 1
+            }
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsDiscovered",
+                      "Values": {
+                        "Condition": "",
+                        "ParticipantRelation": {
+                          "SourceIsOwner": 1,
+                          "TargetParticipant": "Africa_Kidusi"
+                        },
+                        "ConditionIsDiscovered": "",
+                        "ConditionPropsNegatable": ""
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Triggered;Active;Reached",
+                          "ConditionQuestStateIsBlacklist": 1,
+                          "ConditionQuestStateQuestGUID": 130593,
+                          "ConditionQuestStateRangeOp": "Any"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 131577,
+        "Name": "Kidusi_IS_01_Initial_EndsWithTruth_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -869291701
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionIsMultiplayer",
+          "Values": {
+            "Condition": "",
+            "ConditionIsMultiplayer": "",
+            "ConditionPropsNegatable": {
+              "NegateCondition": 1
+            }
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsDiscovered",
+                      "Values": {
+                        "Condition": "",
+                        "ParticipantRelation": {
+                          "SourceIsOwner": 1,
+                          "TargetParticipant": "Africa_Kidusi"
+                        },
+                        "ConditionIsDiscovered": "",
+                        "ConditionPropsNegatable": ""
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Triggered;Active;Reached",
+                          "ConditionQuestStateIsBlacklist": 1,
+                          "ConditionQuestStateQuestGUID": 129385,
+                          "ConditionQuestStateRangeOp": "Any"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 124329,
+        "Name": "Waha_IS_01_Initial_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 1110363980
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionIsMultiplayer",
+          "Values": {
+            "Condition": "",
+            "ConditionIsMultiplayer": "",
+            "ConditionPropsNegatable": {
+              "NegateCondition": 1
+            }
+          }
+        },
+        "SubConditions": {
+          "Item": {
+            "SubCondition": {
+              "Template": "PreConditionList",
+              "Values": {
+                "PreConditionList": {
+                  "Condition": {
+                    "Template": "ConditionIsDiscovered",
+                    "Values": {
+                      "Condition": "",
+                      "ParticipantRelation": {
+                        "SourceIsOwner": 1,
+                        "TargetParticipant": "Africa_Waha"
+                      },
+                      "ConditionIsDiscovered": "",
+                      "ConditionPropsNegatable": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 124328,
+        "Name": "Waha_IS_01_InitialNotPermanent_Pool_EndwithheirVisitKidusi"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 693147438
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsDiscovered",
+                      "Values": {
+                        "Condition": "",
+                        "ParticipantRelation": {
+                          "SourceIsOwner": 1,
+                          "TargetParticipant": "Africa_Waha"
+                        },
+                        "ConditionIsDiscovered": "",
+                        "ConditionPropsNegatable": ""
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsMultiplayer",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionIsMultiplayer": "",
+                        "ConditionPropsNegatable": {
+                          "NegateCondition": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
         "GUID": 124427,
         "Name": "Waha_IS_01_InitialNotPermanent_Pool_EndwithheirBoat"
       },
@@ -7270,6 +11033,1239 @@
                         "ConditionIsMultiplayer": "",
                         "ConditionPropsNegatable": {
                           "NegateCondition": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 128715,
+        "Name": "Waha_IS_01_InitialUntilOracleInvestigation_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 709278424
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionIsMultiplayer",
+          "Values": {
+            "Condition": "",
+            "ConditionIsMultiplayer": "",
+            "ConditionPropsNegatable": {
+              "NegateCondition": 1
+            }
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsDiscovered",
+                      "Values": {
+                        "Condition": "",
+                        "ParticipantRelation": {
+                          "SourceIsOwner": 1,
+                          "TargetParticipant": "Africa_Waha"
+                        },
+                        "ConditionIsDiscovered": "",
+                        "ConditionPropsNegatable": ""
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Triggered;Active;Reached",
+                          "ConditionQuestStateIsBlacklist": 1,
+                          "ConditionQuestStateQuestGUID": 128927
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 129831,
+        "Name": "Waha_IS_00_Initial_EndsWith01VisitDone_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 395772721
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionIsMultiplayer",
+          "Values": {
+            "Condition": "",
+            "ConditionIsMultiplayer": "",
+            "ConditionPropsNegatable": {
+              "NegateCondition": 1
+            }
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsDiscovered",
+                      "Values": {
+                        "Condition": "",
+                        "ParticipantRelation": {
+                          "SourceIsOwner": 1,
+                          "TargetParticipant": "Africa_Waha"
+                        },
+                        "ConditionIsDiscovered": "",
+                        "ConditionPropsNegatable": ""
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Active;Reached",
+                          "ConditionQuestStateIsBlacklist": 1,
+                          "ConditionQuestStateQuestGUID": 130358,
+                          "ConditionQuestStateRangeOp": "Any"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 129832,
+        "Name": "Waha_IS_00_Initial_EndsWith17_FirstDestr_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 221413049
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsDiscovered",
+                      "Values": {
+                        "Condition": "",
+                        "ParticipantRelation": {
+                          "SourceIsOwner": 1,
+                          "TargetParticipant": "Africa_Waha"
+                        },
+                        "ConditionIsDiscovered": "",
+                        "ConditionPropsNegatable": ""
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsMultiplayer",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionIsMultiplayer": "",
+                        "ConditionPropsNegatable": {
+                          "NegateCondition": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 129833,
+        "Name": "Waha_IS_00_Initial_EndsWith20_SecondDestr_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 1106734063
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsDiscovered",
+                      "Values": {
+                        "Condition": "",
+                        "ParticipantRelation": {
+                          "SourceIsOwner": 1,
+                          "TargetParticipant": "Africa_Waha"
+                        },
+                        "ConditionIsDiscovered": "",
+                        "ConditionPropsNegatable": ""
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsMultiplayer",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionIsMultiplayer": "",
+                        "ConditionPropsNegatable": {
+                          "NegateCondition": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 129834,
+        "Name": "Waha_IS_00_Initial_EndsWith21_TotalDestr_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -915912368
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsDiscovered",
+                      "Values": {
+                        "Condition": "",
+                        "ParticipantRelation": {
+                          "SourceIsOwner": 1,
+                          "TargetParticipant": "Africa_Waha"
+                        },
+                        "ConditionIsDiscovered": "",
+                        "ConditionPropsNegatable": ""
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsMultiplayer",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionIsMultiplayer": "",
+                        "ConditionPropsNegatable": {
+                          "NegateCondition": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 129835,
+        "Name": "Waha_IS_00_Initial_EndsWithVisit"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -1152972947
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsMultiplayer",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionIsMultiplayer": "",
+                        "ConditionPropsNegatable": {
+                          "NegateCondition": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsDiscovered",
+                      "Values": {
+                        "Condition": "",
+                        "ParticipantRelation": {
+                          "SourceIsOwner": 1,
+                          "TargetParticipant": "Africa_Waha"
+                        },
+                        "ConditionIsDiscovered": "",
+                        "ConditionPropsNegatable": ""
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Active;Reached",
+                          "ConditionQuestStateIsBlacklist": 1,
+                          "ConditionQuestStateQuestGUID": 130331,
+                          "ConditionQuestStateRangeOp": "Any"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 129836,
+        "Name": "Waha_IS_00_Initial_EndsWithBeginning_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -89381296
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionIsMultiplayer",
+          "Values": {
+            "Condition": "",
+            "ConditionIsMultiplayer": "",
+            "ConditionPropsNegatable": {
+              "NegateCondition": 1
+            }
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsDiscovered",
+                      "Values": {
+                        "Condition": "",
+                        "ParticipantRelation": {
+                          "SourceIsOwner": 1,
+                          "TargetParticipant": "Africa_Waha"
+                        },
+                        "ConditionIsDiscovered": "",
+                        "ConditionPropsNegatable": ""
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Reached",
+                          "ConditionQuestStateIsBlacklist": 1,
+                          "ConditionQuestStateQuestGUID": 129941
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 129838,
+        "Name": "Waha_IS_00_Initial_EndsWithEndQuestline_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 2025921991
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsDiscovered",
+                      "Values": {
+                        "Condition": "",
+                        "ParticipantRelation": {
+                          "SourceIsOwner": 1,
+                          "TargetParticipant": "Africa_Waha"
+                        },
+                        "ConditionIsDiscovered": "",
+                        "ConditionPropsNegatable": ""
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsMultiplayer",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionIsMultiplayer": "",
+                        "ConditionPropsNegatable": {
+                          "NegateCondition": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 125477,
+        "Name": "DEBUG_KetemaIsland_IS_All_Pool"
+      },
+      "QuestPool": {
+        "DisabledByDefault": 1,
+        "SubPools": {
+          "Item": [
+            {
+              "Pool": 125343
+            },
+            {
+              "Pool": 125344
+            },
+            {
+              "Pool": 125345
+            },
+            {
+              "Pool": 125346
+            },
+            {
+              "Pool": 125347
+            },
+            {
+              "Pool": 125348
+            },
+            {
+              "Pool": 125349
+            },
+            {
+              "Pool": 125350
+            },
+            {
+              "Pool": 125351
+            },
+            {
+              "Pool": 125352
+            },
+            {
+              "Pool": 125353
+            },
+            {
+              "Pool": 127069
+            },
+            {
+              "Pool": 131213
+            }
+          ]
+        },
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionAlwaysFalse",
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysFalse": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 125343,
+        "Name": "KetemaIsland_01_StartCampaign_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": [
+            {
+              "QuestGroup": -1702601203
+            },
+            {
+              "QuestGroup": 371673741
+            }
+          ]
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Parallel"
+            },
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": {
+            "SubCondition": {
+              "Template": "PreConditionList",
+              "Values": {
+                "PreConditionList": {
+                  "Condition": {
+                    "Template": "ConditionQuestState",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionQuestState": {
+                        "ConditionQuestStateStates": "Active;Reached",
+                        "ConditionQuestStateQuestGUID": 119871,
+                        "ConditionQuestStateRangeOp": "Any"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 125344,
+        "Name": "KetemaIsland_02_ArchibaldArrives_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -344961993
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Parallel"
+            },
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Active;Reached",
+                          "ConditionQuestStateQuestGUID": 119871,
+                          "ConditionQuestStateRangeOp": "Any"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Active;Reached",
+                          "ConditionQuestStateQuestGUID": 119893
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 125345,
+        "Name": "KetemaIsland_03_ArchibaldStormsOff_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 25291318
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Parallel"
+            },
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Active;Reached",
+                          "ConditionQuestStateQuestGUID": 119871,
+                          "ConditionQuestStateRangeOp": "Any"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Reached",
+                          "ConditionQuestStateQuestGUID": 119899
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 125346,
+        "Name": "KetemaIsland_04_EnemiesFromWithinDone_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -318925412
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Parallel"
+            },
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Active;Reached",
+                          "ConditionQuestStateQuestGUID": 119871,
+                          "ConditionQuestStateRangeOp": "Any"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Reached",
+                          "ConditionQuestStateQuestGUID": 119946
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 125347,
+        "Name": "KetemaIsland_05_BiniamArrested_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -432398283
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Parallel"
+            },
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Active;Reached",
+                          "ConditionQuestStateQuestGUID": 119871,
+                          "ConditionQuestStateRangeOp": "Any"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Reached",
+                          "ConditionQuestStateQuestGUID": 119957
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 125348,
+        "Name": "KetemaIsland_06_TruthBiniamRevealed_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 1708592904
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Parallel"
+            },
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Active;Reached",
+                          "ConditionQuestStateQuestGUID": 119871,
+                          "ConditionQuestStateRangeOp": "Any"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Active;Reached",
+                          "ConditionQuestStateQuestGUID": 119993
                         }
                       }
                     }
@@ -7431,6 +12427,1059 @@
               }
             }
           }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 125350,
+        "Name": "KetemaIslandProgress_02_Phase1_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 751191236
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionIsMultiplayer",
+          "Values": {
+            "Condition": "",
+            "ConditionIsMultiplayer": "",
+            "ConditionPropsNegatable": {
+              "NegateCondition": 1
+            }
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "PopulationByLevel",
+                          "Context": 114329,
+                          "CounterAmount": 300,
+                          "CounterScope": "Session",
+                          "CounterScopeUseCurrentContext": 0,
+                          "CounterScopeContext": 112132
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "PopulationByLevel",
+                          "Context": 114330,
+                          "ComparisonOp": "AtMost",
+                          "CounterAmount": 299,
+                          "CounterScope": "Session",
+                          "CounterScopeUseCurrentContext": 0,
+                          "CounterScopeContext": 112132
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 125351,
+        "Name": "KetemaIslandProgress_03_Phase2_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 1436913885
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionIsMultiplayer",
+          "Values": {
+            "Condition": "",
+            "ConditionIsMultiplayer": "",
+            "ConditionPropsNegatable": {
+              "NegateCondition": 1
+            }
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "PopulationByLevel",
+                          "Context": 114330,
+                          "CounterAmount": 300,
+                          "CounterScope": "Session",
+                          "CounterScopeUseCurrentContext": 0,
+                          "CounterScopeContext": 112132
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "PopulationByLevel",
+                          "Context": 114330,
+                          "ComparisonOp": "AtMost",
+                          "CounterAmount": 499,
+                          "CounterScope": "Session",
+                          "CounterScopeUseCurrentContext": 0,
+                          "CounterScopeContext": 112132
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 125352,
+        "Name": "KetemaIslandProgress_04_Phase3_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 1696040922
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionIsMultiplayer",
+          "Values": {
+            "Condition": "",
+            "ConditionIsMultiplayer": "",
+            "ConditionPropsNegatable": {
+              "NegateCondition": 1
+            }
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "PopulationByLevel",
+                          "Context": 114330,
+                          "CounterAmount": 500,
+                          "CounterScope": "Session",
+                          "CounterScopeUseCurrentContext": 0,
+                          "CounterScopeContext": 112132
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "PopulationByLevel",
+                          "Context": 114330,
+                          "ComparisonOp": "AtMost",
+                          "CounterAmount": 1499,
+                          "CounterScope": "Session",
+                          "CounterScopeUseCurrentContext": 0,
+                          "CounterScopeContext": 112132
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 125353,
+        "Name": "KetemaIslandProgress_05_Phase4_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -1221599334
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionIsMultiplayer",
+          "Values": {
+            "Condition": "",
+            "ConditionIsMultiplayer": "",
+            "ConditionPropsNegatable": {
+              "NegateCondition": 1
+            }
+          }
+        },
+        "SubConditions": {
+          "Item": {
+            "SubCondition": {
+              "Template": "PreConditionList",
+              "Values": {
+                "PreConditionList": {
+                  "Condition": {
+                    "Template": "ConditionPlayerCounter",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionPlayerCounter": {
+                        "PlayerCounter": "PopulationByLevel",
+                        "Context": 114330,
+                        "CounterAmount": 1500,
+                        "CounterScope": "Session",
+                        "CounterScopeUseCurrentContext": 0,
+                        "CounterScopeContext": 112132
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 131093,
+        "Name": "Taborime_IS_00_Phase0_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 591905615
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionIsMultiplayer",
+          "Values": {
+            "Condition": "",
+            "ConditionIsMultiplayer": "",
+            "ConditionPropsNegatable": {
+              "NegateCondition": 1
+            }
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "PopulationByLevel",
+                          "Context": 114329,
+                          "CounterAmount": 1,
+                          "CounterScope": "Session",
+                          "CounterScopeUseCurrentContext": 0,
+                          "CounterScopeContext": 112132
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "PopulationByLevel",
+                          "Context": 114329,
+                          "ComparisonOp": "AtMost",
+                          "CounterAmount": 299,
+                          "CounterScope": "Session",
+                          "CounterScopeUseCurrentContext": 0,
+                          "CounterScopeContext": 112132
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Active;Reached",
+                          "ConditionQuestStateIsBlacklist": 1,
+                          "ConditionQuestStateQuestGUID": 119871,
+                          "ConditionQuestStateRangeOp": "Any"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 131094,
+        "Name": "Taborime_IS_01_Phase1Reached_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 350092011
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionIsMultiplayer",
+          "Values": {
+            "Condition": "",
+            "ConditionIsMultiplayer": "",
+            "ConditionPropsNegatable": {
+              "NegateCondition": 1
+            }
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "PopulationByLevel",
+                          "Context": 114329,
+                          "CounterAmount": 300,
+                          "CounterScope": "Session",
+                          "CounterScopeUseCurrentContext": 0,
+                          "CounterScopeContext": 112132
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "PopulationByLevel",
+                          "Context": 114330,
+                          "ComparisonOp": "AtMost",
+                          "CounterAmount": 299,
+                          "CounterScope": "Session",
+                          "CounterScopeUseCurrentContext": 0,
+                          "CounterScopeContext": 112132
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Active;Reached",
+                          "ConditionQuestStateIsBlacklist": 1,
+                          "ConditionQuestStateQuestGUID": 119871,
+                          "ConditionQuestStateRangeOp": "Any"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 131095,
+        "Name": "Taborime_IS_02_Phase2Reached_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 308639376
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionIsMultiplayer",
+          "Values": {
+            "Condition": "",
+            "ConditionIsMultiplayer": "",
+            "ConditionPropsNegatable": {
+              "NegateCondition": 1
+            }
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "PopulationByLevel",
+                          "Context": 114330,
+                          "CounterAmount": 300,
+                          "CounterScope": "Session",
+                          "CounterScopeUseCurrentContext": 0,
+                          "CounterScopeContext": 112132
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "PopulationByLevel",
+                          "Context": 114330,
+                          "ComparisonOp": "AtMost",
+                          "CounterAmount": 1499,
+                          "CounterScope": "Session",
+                          "CounterScopeUseCurrentContext": 0,
+                          "CounterScopeContext": 112132
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Active;Reached",
+                          "ConditionQuestStateIsBlacklist": 1,
+                          "ConditionQuestStateQuestGUID": 119871,
+                          "ConditionQuestStateRangeOp": "Any"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 131096,
+        "Name": "Taborime_IS_03_Phase3Reached_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": 1403059509
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionIsMultiplayer",
+          "Values": {
+            "Condition": "",
+            "ConditionIsMultiplayer": "",
+            "ConditionPropsNegatable": {
+              "NegateCondition": 1
+            }
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "PopulationByLevel",
+                          "Context": 114330,
+                          "CounterAmount": 1500,
+                          "CounterScope": "Session",
+                          "CounterScopeUseCurrentContext": 0,
+                          "CounterScopeContext": 112132
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Active;Reached",
+                          "ConditionQuestStateIsBlacklist": 1,
+                          "ConditionQuestStateQuestGUID": 119871,
+                          "ConditionQuestStateRangeOp": "Any"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 131097,
+        "Name": "Taborime_IS_00-1_InitialUntilKidusiJoins_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -991294792
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionIsMultiplayer",
+          "Values": {
+            "Condition": "",
+            "ConditionIsMultiplayer": "",
+            "ConditionPropsNegatable": {
+              "NegateCondition": 1
+            }
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsDiscovered",
+                      "Values": {
+                        "Condition": "",
+                        "ParticipantRelation": {
+                          "TargetParticipant": "Africa_Ketema"
+                        },
+                        "ConditionIsDiscovered": "",
+                        "ConditionPropsNegatable": ""
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "Condition": "",
+                        "ConditionAlwaysTrue": ""
+                      }
+                    },
+                    "SubConditions": {
+                      "Item": [
+                        {
+                          "SubCondition": {
+                            "Template": "PreConditionList",
+                            "Values": {
+                              "PreConditionList": {
+                                "Condition": {
+                                  "Template": "ConditionQuestState",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionQuestState": {
+                                      "ConditionQuestStateStates": "Reachable",
+                                      "ConditionQuestStateIsBlacklist": 1,
+                                      "ConditionQuestStateQuestGUID": 128876
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubCondition": {
+                            "Template": "PreConditionList",
+                            "Values": {
+                              "PreConditionList": {
+                                "Condition": {
+                                  "Template": "ConditionQuestState",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionQuestState": {
+                                      "ConditionQuestStateStates": "Reached",
+                                      "ConditionQuestStateIsBlacklist": 1,
+                                      "ConditionQuestStateQuestGUID": 129285
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubCondition": {
+                            "Template": "PreConditionList",
+                            "Values": {
+                              "PreConditionList": {
+                                "Condition": {
+                                  "Template": "ConditionQuestState",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionQuestState": {
+                                      "ConditionQuestStateStates": "Reached",
+                                      "ConditionQuestStateIsBlacklist": 1,
+                                      "ConditionQuestStateQuestGUID": 129417
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 131098,
+        "Name": "Taborime_IS_00-2_InitialPermanent_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -533713589
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionIsMultiplayer",
+          "Values": {
+            "Condition": "",
+            "ConditionIsMultiplayer": "",
+            "ConditionPropsNegatable": {
+              "NegateCondition": 1
+            }
+          }
+        },
+        "SubConditions": {
+          "Item": {
+            "SubCondition": {
+              "Template": "PreConditionList",
+              "Values": {
+                "PreConditionList": {
+                  "Condition": {
+                    "Template": "ConditionIsDiscovered",
+                    "Values": {
+                      "Condition": "",
+                      "ParticipantRelation": {
+                        "TargetParticipant": "Africa_Ketema"
+                      },
+                      "ConditionIsDiscovered": "",
+                      "ConditionPropsNegatable": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "QuestPool",
+    "Values": {
+      "Standard": {
+        "GUID": 131551,
+        "Name": "Taborime_IS_00-3_InitialUntilDEciphering_Pool"
+      },
+      "QuestPool": {
+        "Groups": {
+          "Item": {
+            "QuestGroup": -1993838065
+          }
+        },
+        "IsMainStoryPool": 1,
+        "IsTopLevel": 1,
+        "QuestLimit": 100,
+        "PoolCooldown": 0,
+        "QuestCooldown": 0,
+        "AffectedByCooldownFactor": 0,
+        "SessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 112132
+          }
+        }
+      },
+      "Locked": "",
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionIsMultiplayer",
+          "Values": {
+            "Condition": "",
+            "ConditionIsMultiplayer": "",
+            "ConditionPropsNegatable": {
+              "NegateCondition": 1
+            }
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionIsDiscovered",
+                      "Values": {
+                        "Condition": "",
+                        "ParticipantRelation": {
+                          "TargetParticipant": "Africa_Ketema"
+                        },
+                        "ConditionIsDiscovered": "",
+                        "ConditionPropsNegatable": ""
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionQuestState",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Triggered;Active;Reached",
+                          "ConditionQuestStateIsBlacklist": 1,
+                          "ConditionQuestStateQuestGUID": 128926,
+                          "ConditionQuestStateRangeOp": "Any"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
         }
       }
     }

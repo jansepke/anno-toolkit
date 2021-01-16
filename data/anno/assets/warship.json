@@ -3,6 +3,194 @@
     "Template": "WarShip",
     "Values": {
       "Standard": {
+        "GUID": 101121,
+        "Name": "Flag Ship",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_commandship.png",
+        "ID": "Flagship",
+        "InfoDescription": 11466
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/command_ship/command_ship.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1.5,
+        "Deceleration": 2,
+        "TurnRadius": 6,
+        "TurnSpeed": 60,
+        "TurnDeceleration": 0,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": -20,
+        "WindSlowdownEffectOnTurningSpeed": 0.35,
+        "WindMaxSpeedupFactor": 1.8,
+        "WindSpeedupEffectOnTurningSpeed": 0.85,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Flagship",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 14848
+      },
+      "CommandQueue": {
+        "IsFlagship": 1,
+        "FormationPriority": 4,
+        "MilitaryShipPoints": 2.1,
+        "TradeShipPoints": 1,
+        "ShipUniqueType": "Flagship"
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 4.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2000,
+        "HPBarOffset": 7.5,
+        "AlertRange": 150,
+        "AccuracyWidth": 3,
+        "SelfHealPerHealTick": 1.111,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "Attacker": {
+        "AttackRange": 55,
+        "LineOfSightRange": 100,
+        "ReloadTime": 40,
+        "ProjectileAsset": 101974,
+        "ProjectileCount": 6,
+        "BaseDamage": 175,
+        "AccuracyBase": 2,
+        "AccuracyIncreaseOverDistance": 60,
+        "AccuracySpeedDecay": 20,
+        "TargetAngleVariation": 50,
+        "FullVolleyTimeMin": 0.2,
+        "FullVolleyTimeMax": 0.8,
+        "VolleyMaxPerBulletRandomOffset": 0.2
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 9818371
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 2,
+        "SlotCount": 3
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 25
+            },
+            {
+              "Ingredient": 1010221,
+              "Amount": 20
+            }
+          ]
+        },
+        "InfluenceCostPoints": 0
+      },
+      "Craftable": {
+        "CraftingTime": 150000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 0,
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might",
+              "Amount": 20
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 15
+            },
+            {
+              "Attribute": "PerkSailingShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 0
+      },
+      "Sellable": {
+        "CanBeSoldToTrader": 0
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700084
+          },
+          "AttackCommand": {
+            "AudioPool": 700085
+          },
+          "MoveCommand": {
+            "AudioPool": 700086
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700113
+          },
+          "EscortCommand": {
+            "AudioPool": 700115
+          },
+          "PatrolCommand": {
+            "AudioPool": 700114
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "WarShip",
+    "Values": {
+      "Standard": {
         "GUID": 100437,
         "Name": "Gunboat (Military)",
         "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png",

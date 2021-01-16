@@ -479,6 +479,71 @@
     "Template": "MainQuest",
     "Values": {
       "Standard": {
+        "GUID": 151308,
+        "Name": "CQ_FireTests"
+      },
+      "Quest": {
+        "StoryText": 10084,
+        "IsEnabled": 0
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionEvent",
+          "Values": {
+            "Condition": "",
+            "ConditionEvent": {
+              "ConditionEvent": "NotificationRemoved",
+              "ContextData": "TownFoundationIntro02"
+            },
+            "ConditionPropsNegatable": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "A Spark Rekindled",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 17956
+      },
+      "Reward": {
+        "RewardAssets": ""
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "StatusQuoObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 12714
+                },
+                "ConditionPlayerCounter": {
+                  "PlayerCounter": "InfectedObjects",
+                  "Context": 2001025,
+                  "ComparisonOp": "Equals",
+                  "CounterScope": "Area",
+                  "CounterScopeContext": 160002
+                },
+                "ConditionQuestStatusQuo": "",
+                "ConditionPropsExecutionPlaceSettings": ""
+              }
+            }
+          }
+        }
+      },
+      "QuestMain": {
+        "CampaignProgress": 0
+      }
+    }
+  },
+  {
+    "Template": "MainQuest",
+    "Values": {
+      "Standard": {
         "GUID": 150530,
         "Name": "Chapter100_Intro",
         "IconFilename": "data/ui/2kimages/main/icons/icon_questmain.png"
@@ -6488,6 +6553,570 @@
         }
       },
       "QuestMain": ""
+    }
+  },
+  {
+    "Template": "MainQuest",
+    "Values": {
+      "Standard": {
+        "GUID": 150601,
+        "Name": "CQ150_TheShipyard"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": {
+                "Profile": 212
+              },
+              "BaseNotification": {
+                "NotificationText": 10274
+              },
+              "NotificationSubtitle": {
+                "Subtitle": 264997
+              }
+            }
+          }
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "OnQuestStart": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionRegisterTrigger",
+                    "Values": {
+                      "Action": "",
+                      "ActionRegisterTrigger": {
+                        "TriggerAsset": 150772,
+                        "UnregisterTrigger": 1
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "OnQuestEnd": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": [
+                  {
+                    "Action": {
+                      "Template": "ActionNotification",
+                      "Values": {
+                        "Action": "",
+                        "ActionNotification": {
+                          "Notification": {
+                            "Template": "CharacterNotification",
+                            "Values": {
+                              "CharacterNotification": {
+                                "Profile": 47
+                              },
+                              "BaseNotification": {
+                                "NotificationText": 13640,
+                                "NotificationPriority": 500
+                              },
+                              "NotificationSubtitle": {
+                                "Subtitle": 251021
+                              }
+                            }
+                          },
+                          "PerformIntegrityCheck": 1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionNotification",
+                      "Values": {
+                        "Action": "",
+                        "ActionNotification": {
+                          "Notification": {
+                            "Template": "CharacterNotification",
+                            "Values": {
+                              "CharacterNotification": {
+                                "Profile": 82
+                              },
+                              "BaseNotification": {
+                                "NotificationText": 13643
+                              },
+                              "NotificationSubtitle": {
+                                "Subtitle": 258267
+                              }
+                            }
+                          },
+                          "PerformIntegrityCheck": 1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionNotification",
+                      "Values": {
+                        "Action": "",
+                        "ActionNotification": {
+                          "Notification": {
+                            "Template": "CharacterNotification",
+                            "Values": {
+                              "CharacterNotification": {
+                                "Profile": 84
+                              },
+                              "BaseNotification": {
+                                "NotificationText": 13644
+                              },
+                              "NotificationSubtitle": {
+                                "Subtitle": 252663
+                              }
+                            }
+                          },
+                          "PerformIntegrityCheck": 1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionNotification",
+                      "Values": {
+                        "Action": "",
+                        "ActionNotification": {
+                          "Notification": {
+                            "Template": "CharacterNotification",
+                            "Values": {
+                              "CharacterNotification": {
+                                "Profile": 220
+                              },
+                              "BaseNotification": {
+                                "NotificationText": 114239
+                              },
+                              "NotificationSubtitle": {
+                                "Subtitle": 109742
+                              }
+                            }
+                          },
+                          "PerformIntegrityCheck": 1
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "QuestGiver": 212,
+        "StoryText": 10273,
+        "DelayTimer": 3000,
+        "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_quest_construction_sustain.png",
+        "QuestGiverIdleMessages": {
+          "Item": [
+            {
+              "Subtitle": 264997
+            },
+            {
+              "Subtitle": 266585
+            },
+            {
+              "Subtitle": 266588
+            },
+            {
+              "Subtitle": 266515
+            },
+            {
+              "Subtitle": 266520
+            },
+            {
+              "Subtitle": 266586
+            }
+          ]
+        },
+        "QuestHints": {
+          "Item": {
+            "Text": 21994
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "MutuallyExclusive"
+            },
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "Condition": "",
+                        "ConditionAlwaysTrue": ""
+                      }
+                    },
+                    "SubConditions": {
+                      "Item": [
+                        {
+                          "SubCondition": {
+                            "Template": "PreConditionList",
+                            "Values": {
+                              "PreConditionList": {
+                                "Condition": {
+                                  "Template": "ConditionQuestState",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionQuestState": {
+                                      "ConditionQuestStateStates": "Reached",
+                                      "ConditionQuestStateQuestGUID": 150600
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubCondition": {
+                            "Template": "PreConditionList",
+                            "Values": {
+                              "PreConditionList": {
+                                "Condition": {
+                                  "Template": "ConditionQuestState",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionQuestState": {
+                                      "ConditionQuestStateStates": "Reached",
+                                      "ConditionQuestStateQuestGUID": 150771
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubCondition": {
+                            "Template": "PreConditionList",
+                            "Values": {
+                              "PreConditionList": {
+                                "Condition": {
+                                  "Template": "ConditionQuestState",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionQuestState": {
+                                      "ConditionQuestStateStates": "Reached",
+                                      "ConditionQuestStateQuestGUID": 150842
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubCondition": {
+                            "Template": "PreConditionList",
+                            "Values": {
+                              "PreConditionList": {
+                                "Condition": {
+                                  "Template": "ConditionEvent",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionEvent": {
+                                      "ConditionEvent": "NotificationRemoved",
+                                      "ContextData": "FreeThem_DialogEnd"
+                                    },
+                                    "ConditionPropsNegatable": ""
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "Condition": "",
+                        "ConditionAlwaysTrue": ""
+                      }
+                    },
+                    "SubConditions": {
+                      "Item": [
+                        {
+                          "SubCondition": {
+                            "Template": "PreConditionList",
+                            "Values": {
+                              "PreConditionList": {
+                                "Condition": {
+                                  "Template": "ConditionQuestState",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionQuestState": {
+                                      "ConditionQuestStateStates": "Reached",
+                                      "ConditionQuestStateQuestGUID": 150600
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubCondition": {
+                            "Template": "PreConditionList",
+                            "Values": {
+                              "PreConditionList": {
+                                "Condition": {
+                                  "Template": "ConditionQuestState",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionQuestState": {
+                                      "ConditionQuestStateStates": "Reached",
+                                      "ConditionQuestStateQuestGUID": 150770
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubCondition": {
+                            "Template": "PreConditionList",
+                            "Values": {
+                              "PreConditionList": {
+                                "Condition": {
+                                  "Template": "ConditionQuestState",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionQuestState": {
+                                      "ConditionQuestStateStates": "Reached",
+                                      "ConditionQuestStateQuestGUID": 150842
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubCondition": {
+                            "Template": "PreConditionList",
+                            "Values": {
+                              "PreConditionList": {
+                                "Condition": {
+                                  "Template": "ConditionEvent",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionEvent": {
+                                      "ConditionEvent": "NotificationRemoved",
+                                      "ContextData": "LockThemUp_DialogEnd"
+                                    },
+                                    "ConditionPropsNegatable": ""
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "Condition": "",
+                        "ConditionAlwaysTrue": ""
+                      }
+                    },
+                    "SubConditions": {
+                      "Item": [
+                        {
+                          "SubCondition": {
+                            "Template": "PreConditionList",
+                            "Values": {
+                              "PreConditionList": {
+                                "Condition": {
+                                  "Template": "ConditionQuestState",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionQuestState": {
+                                      "ConditionQuestStateStates": "Reached",
+                                      "ConditionQuestStateQuestGUID": 150600
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubCondition": {
+                            "Template": "PreConditionList",
+                            "Values": {
+                              "PreConditionList": {
+                                "Condition": {
+                                  "Template": "ConditionQuestState",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionQuestState": {
+                                      "ConditionQuestStateStates": "Reached",
+                                      "ConditionQuestStateQuestGUID": 151017
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubCondition": {
+                            "Template": "PreConditionList",
+                            "Values": {
+                              "PreConditionList": {
+                                "Condition": {
+                                  "Template": "ConditionQuestState",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionQuestState": {
+                                      "ConditionQuestStateStates": "Reached",
+                                      "ConditionQuestStateQuestGUID": 150842
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubCondition": {
+                            "Template": "PreConditionList",
+                            "Values": {
+                              "PreConditionList": {
+                                "Condition": {
+                                  "Template": "ConditionEvent",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionEvent": {
+                                      "ConditionEvent": "NotificationRemoved",
+                                      "ContextData": "LockThemUp_DialogEnd"
+                                    },
+                                    "ConditionPropsNegatable": ""
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "The Shipyard",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 20168
+      },
+      "Reward": {
+        "RewardAssets": ""
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "StatusQuoObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 12714,
+                  "FakeMinimapPings": {
+                    "Objects": {
+                      "Item": {
+                        "FakeMinimapObjects": {
+                          "Template": "ObjectFilter",
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectGUID": 1010540,
+                              "CheckParticipantID": 1,
+                              "ObjectIslands": {
+                                "Item": {
+                                  "Island": 160002
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "SignsAndFeedback": {
+                          "Template": "ConditionObjectiveSignsAndFeedback",
+                          "Values": {
+                            "ConditionObjectiveSignsAndFeedback": {
+                              "Infolayer": 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "ConditionPlayerCounter": {
+                  "Context": 1010520,
+                  "CounterAmount": 1
+                },
+                "ConditionQuestStatusQuo": "",
+                "ConditionPropsExecutionPlaceSettings": ""
+              }
+            }
+          }
+        }
+      },
+      "QuestMain": {
+        "CampaignProgress": 3
+      }
     }
   },
   {

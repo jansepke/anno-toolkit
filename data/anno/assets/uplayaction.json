@@ -975,6 +975,81 @@
     "Template": "UplayAction",
     "Values": {
       "Standard": {
+        "GUID": 400073,
+        "Name": "Action_Achievement_Charter Company"
+      },
+      "Achievement": {
+        "AchievementCategory": "Trade",
+        "AchievementTitle": 15358,
+        "AchievementDescription": 15359,
+        "AchievementUPlayID": 83,
+        "AchievementPoints": 0,
+        "AchievementDifficulty": "Expert"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "PopulationHappinessByLevel",
+              "Context": 15000004,
+              "CounterAmount": 1
+            }
+          }
+        },
+        "TriggerActions": {
+          "Item": {
+            "TriggerAction": {
+              "Template": "ActionUnlockAsset",
+              "Values": {
+                "Action": "",
+                "ActionUnlockAsset": {
+                  "UnlockAssets": {
+                    "Item": {
+                      "Asset": 100509
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Template": "ConditionTradeRouteCount",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionTradeRouteCount": {
+                        "TradeRouteCount": 1
+                      },
+                      "ConditionPropsNegatable": {
+                        "NegateCondition": 1
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "UplayAction": {
+        "UplayActionID": 12
+      },
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "UplayAction",
+    "Values": {
+      "Standard": {
         "GUID": 400088,
         "Name": "Action_Achievement_City Planner"
       },
@@ -1365,6 +1440,103 @@
         "UplayActionID": 9,
         "UplayActionPoints": 20,
         "UplayXP": 500
+      },
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "UplayAction",
+    "Values": {
+      "Standard": {
+        "GUID": 400090,
+        "Name": "Action_Achievement_On a Knife Edge"
+      },
+      "Achievement": {
+        "AchievementCategory": "Exploration",
+        "AchievementTitle": 15574,
+        "AchievementDescription": 15575,
+        "AchievementUPlayID": 41,
+        "AchievementPoints": 0
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionExpeditionFinished",
+          "Values": {
+            "Condition": "",
+            "ConditionExpeditionFinished": {
+              "Morale": 15,
+              "MoraleComparisonOperator": "LessThan"
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "UplayAction": {
+        "UplayActionID": 108,
+        "UplayXP": 250
+      },
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "UplayAction",
+    "Values": {
+      "Standard": {
+        "GUID": 400095,
+        "Name": "Action_Achievement_What's That Smell"
+      },
+      "Achievement": {
+        "AchievementCategory": "Military",
+        "AchievementTitle": 15585,
+        "AchievementDescription": 15586,
+        "AchievementUPlayID": 63,
+        "AchievementPoints": 0
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionBurningObject",
+          "Values": {
+            "Condition": "",
+            "ConditionBurningObject": {
+              "BurningObjects": {
+                "Item": [
+                  {
+                    "BurningObjectGUID": 101121
+                  },
+                  {
+                    "BurningObjectGUID": 100437
+                  },
+                  {
+                    "BurningObjectGUID": 100438
+                  },
+                  {
+                    "BurningObjectGUID": 100439
+                  },
+                  {
+                    "BurningObjectGUID": 100440
+                  },
+                  {
+                    "BurningObjectGUID": 100441
+                  },
+                  {
+                    "BurningObjectGUID": 101373
+                  },
+                  {
+                    "BurningObjectGUID": 100591
+                  },
+                  {
+                    "BurningObjectGUID": 101960
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "Locked": "",
+      "UplayAction": {
+        "UplayActionID": 112,
+        "UplayXP": 100
       },
       "TriggerSetup": ""
     }

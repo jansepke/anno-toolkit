@@ -844,6 +844,176 @@
     "Template": "FeatureUnlock",
     "Values": {
       "Standard": {
+        "GUID": 112094,
+        "Name": "MercierAliveUnlock"
+      },
+      "Locked": "",
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionIsParticipantInGame",
+          "Values": {
+            "Condition": "",
+            "ConditionIsParticipantInGame": {
+              "InGameParticipant": "Second_ai_11_Mercier"
+            },
+            "ConditionPropsNegatable": ""
+          }
+        },
+        "TriggerActions": {
+          "Item": [
+            {
+              "TriggerAction": {
+                "Template": "ActionRegisterTrigger",
+                "Values": {
+                  "Action": "",
+                  "ActionRegisterTrigger": {
+                    "TriggerAsset": 111241
+                  }
+                }
+              }
+            },
+            {
+              "TriggerAction": {
+                "Template": "ActionRegisterTrigger",
+                "Values": {
+                  "Action": "",
+                  "ActionRegisterTrigger": {
+                    "TriggerAsset": 111250
+                  }
+                }
+              }
+            },
+            {
+              "TriggerAction": {
+                "Template": "ActionRegisterTrigger",
+                "Values": {
+                  "Action": "",
+                  "ActionRegisterTrigger": {
+                    "TriggerAsset": 111251
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Template": "ConditionIsDiscovered",
+                    "Values": {
+                      "Condition": "",
+                      "ParticipantRelation": {
+                        "SourceIsOwner": 1,
+                        "TargetParticipant": "Second_ai_11_Mercier"
+                      },
+                      "ConditionIsDiscovered": "",
+                      "ConditionPropsNegatable": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "Template": "AutoCreateTrigger",
+          "Values": {
+            "Trigger": {
+              "TriggerCondition": {
+                "Template": "ConditionIsParticipantInGame",
+                "Values": {
+                  "Condition": "",
+                  "ConditionIsParticipantInGame": {
+                    "InGameParticipant": "Second_ai_11_Mercier"
+                  },
+                  "ConditionPropsNegatable": {
+                    "NegateCondition": 1
+                  }
+                }
+              },
+              "TriggerActions": {
+                "Item": [
+                  {
+                    "TriggerAction": {
+                      "Template": "ActionRegisterTrigger",
+                      "Values": {
+                        "Action": "",
+                        "ActionRegisterTrigger": {
+                          "TriggerAsset": 111241,
+                          "UnregisterTrigger": 1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "TriggerAction": {
+                      "Template": "ActionRegisterTrigger",
+                      "Values": {
+                        "Action": "",
+                        "ActionRegisterTrigger": {
+                          "TriggerAsset": 111250,
+                          "UnregisterTrigger": 1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "TriggerAction": {
+                      "Template": "ActionRegisterTrigger",
+                      "Values": {
+                        "Action": "",
+                        "ActionRegisterTrigger": {
+                          "TriggerAsset": 111251,
+                          "UnregisterTrigger": 1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "TriggerAction": {
+                      "Template": "ActionLockAsset",
+                      "Values": {
+                        "Action": "",
+                        "ActionLockAsset": {
+                          "LockAssets": {
+                            "Item": [
+                              {
+                                "Asset": 112094
+                              },
+                              {
+                                "Asset": 111241
+                              },
+                              {
+                                "Asset": 111250
+                              },
+                              {
+                                "Asset": 111251
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "TriggerSetup": {
+        "UsedBySecondParties": 0
+      }
+    }
+  },
+  {
+    "Template": "FeatureUnlock",
+    "Values": {
+      "Standard": {
         "GUID": 113818,
         "Name": "SunkenTreasures SessionDiscovery Condition"
       },
@@ -1089,6 +1259,178 @@
         }
       },
       "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "FeatureUnlock",
+    "Values": {
+      "Standard": {
+        "GUID": 114654,
+        "Name": "Botanical Expedition Unlock Delay"
+      },
+      "Locked": {
+        "DLCDependency": 410041
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "PopulationByLevel",
+              "Context": 15000003,
+              "CounterAmount": 1000
+            }
+          }
+        },
+        "TriggerActions": {
+          "Item": {
+            "TriggerAction": {
+              "Template": "ActionDelayedActions",
+              "Values": {
+                "Action": "",
+                "ActionDelayedActions": {
+                  "ExecutionDelay": 10000,
+                  "DelayedActions": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ActionList": {
+                        "Actions": {
+                          "Item": {
+                            "Action": {
+                              "Template": "ActionRegisterTrigger",
+                              "Values": {
+                                "Action": "",
+                                "ActionRegisterTrigger": {
+                                  "TriggerAsset": 114655
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "SubTriggers": {
+          "Item": [
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionUnlocked",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionUnlocked": {
+                          "UnlockNeeded": 180025
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionIsDLCActive",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionIsDLCActive": {
+                          "DLCAssetList": {
+                            "Item": {
+                              "DLCAsset": 410041
+                            }
+                          }
+                        },
+                        "ConditionPropsNegatable": ""
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TriggerSetup": {
+        "UsedBySecondParties": 0
+      }
+    }
+  },
+  {
+    "Template": "FeatureUnlock",
+    "Values": {
+      "Standard": {
+        "GUID": 114655,
+        "Name": "Botanical Expedition Unlock"
+      },
+      "Locked": {
+        "DLCDependency": 410041
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "PopulationByLevel",
+              "Context": 15000003,
+              "CounterAmount": 1000
+            }
+          }
+        },
+        "TriggerActions": {
+          "Item": {
+            "TriggerAction": {
+              "Template": "ActionUnlockAsset",
+              "Values": {
+                "Action": "",
+                "ActionUnlockAsset": {
+                  "UnlockAssets": {
+                    "Item": {
+                      "Asset": 803825
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Template": "ConditionUnlocked",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionUnlocked": {
+                        "UnlockNeeded": 180025
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "TriggerSetup": {
+        "AutoRegisterTrigger": 0,
+        "UsedBySecondParties": 0
+      }
     }
   },
   {
@@ -3227,6 +3569,98 @@
       "TriggerSetup": {
         "AutoRegisterTrigger": 0,
         "UsedBySecondParties": 0
+      }
+    }
+  },
+  {
+    "Template": "FeatureUnlock",
+    "Values": {
+      "Standard": {
+        "GUID": 131689,
+        "Name": "LandOfLions SessionStorytelling UnlockLibrary"
+      },
+      "Locked": "",
+      "Trigger": {
+        "TriggerCondition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "TriggerActions": {
+          "Item": [
+            {
+              "TriggerAction": {
+                "Template": "ActionEndQuest",
+                "Values": {
+                  "Action": "",
+                  "ActionEndQuest": {
+                    "Quest": 131178
+                  }
+                }
+              }
+            },
+            {
+              "TriggerAction": {
+                "Template": "ActionRegisterTrigger",
+                "Values": {
+                  "Action": "",
+                  "ActionRegisterTrigger": {
+                    "TriggerAsset": 131183,
+                    "UnregisterTrigger": 1
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Template": "ConditionQuestState",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionQuestState": {
+                        "ConditionQuestStateStates": "Reached",
+                        "ConditionQuestStateQuestGUID": 128563
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "TriggerSetup": {
+        "UsedBySecondParties": 0
+      }
+    }
+  },
+  {
+    "Template": "FeatureUnlock",
+    "Values": {
+      "Standard": {
+        "GUID": 125483,
+        "Name": "LoL MultiplayerUnlock MPQuestPool"
+      },
+      "Locked": "",
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionAlwaysFalse",
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysFalse": ""
+          }
+        }
+      },
+      "TriggerSetup": {
+        "AutoSelfUnlock": 0
       }
     }
   }

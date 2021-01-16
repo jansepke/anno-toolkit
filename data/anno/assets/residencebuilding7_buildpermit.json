@@ -1,0 +1,313 @@
+[
+  {
+    "Template": "ResidenceBuilding7_BuildPermit",
+    "Values": {
+      "Standard": {
+        "GUID": 114445,
+        "Name": "residence_tier05b",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_residence_scholars.png",
+        "ID": "LOL_Scholars",
+        "InfoDescription": 125307
+      },
+      "Blocking": "",
+      "Building": {
+        "BuildingType": "Residence",
+        "PickingAsset": 114445,
+        "InfluencedByNeighbors": {
+          "Item": [
+            {
+              "Building": 1010346
+            },
+            {
+              "Building": 1010347
+            },
+            {
+              "Building": 1010343
+            },
+            {
+              "Building": 1010344
+            },
+            {
+              "Building": 1010345
+            }
+          ]
+        },
+        "AssociatedRegions": "Moderate",
+        "BuildingBlockPool": {
+          "DontCare": {
+            "Pool": {
+              "Item": [
+                "",
+                {
+                  "DirectionOffet": 1,
+                  "Variation": 1
+                },
+                {
+                  "DirectionOffet": 2,
+                  "Variation": 2
+                },
+                {
+                  "DirectionOffet": 1,
+                  "Variation": 3
+                },
+                {
+                  "DirectionOffet": 3,
+                  "Variation": 4
+                },
+                {
+                  "DirectionOffet": 1,
+                  "Variation": 5
+                },
+                {
+                  "DirectionOffet": 3,
+                  "Variation": 6
+                }
+              ]
+            }
+          },
+          "Corner": {
+            "Pool": {
+              "Item": [
+                {
+                  "Variation": 1
+                },
+                {
+                  "DirectionOffet": 3
+                },
+                {
+                  "DirectionOffet": 3,
+                  "Variation": 2
+                }
+              ]
+            }
+          },
+          "Mid": {
+            "Pool": {
+              "Item": [
+                {
+                  "Variation": 4
+                },
+                {
+                  "DirectionOffet": 1,
+                  "Variation": 3
+                },
+                {
+                  "DirectionOffet": 1,
+                  "Variation": 5
+                },
+                {
+                  "DirectionOffet": 3,
+                  "Variation": 3
+                },
+                {
+                  "DirectionOffet": 2,
+                  "Variation": 4
+                },
+                {
+                  "DirectionOffet": 3,
+                  "Variation": 5
+                }
+              ]
+            }
+          }
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_BuildPermit",
+                    "Index": 0
+                  }
+                }
+              }
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 10
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 15
+            },
+            {
+              "Ingredient": 1010218,
+              "Amount": 12
+            },
+            {
+              "Ingredient": 1010207,
+              "Amount": 10
+            }
+          ]
+        }
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": [
+            {
+              "Filename": "data/dlc06/graphics/buildings/residence/residence_tier06_estate01/residence_tier06_estate01.cfg"
+            },
+            {
+              "Filename": "data/dlc06/graphics/buildings/residence/residence_tier06_estate02/residence_tier06_estate02.cfg"
+            },
+            {
+              "Filename": "data/dlc06/graphics/buildings/residence/residence_tier06_estate03/residence_tier06_estate03.cfg"
+            }
+          ]
+        },
+        "DefaultParticipant": "Africa_Resident_tier03"
+      },
+      "Selection": {
+        "ParticipantMessageArcheType": "Africa_Resident_tier03"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Scholar Residence",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 36598
+      },
+      "Constructable": "",
+      "Locked": {
+        "DefaultLockedState": 1
+      },
+      "Upgradable": "",
+      "SoundEmitter": {
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7",
+                    "Index": 0
+                  }
+                }
+              },
+              "Sound": 200776
+            }
+          },
+          "BuildUpgradeFailed": {
+            "Item": {
+              "Sound": 9818387
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          },
+          "InfectedIllness": {
+            "Item": {
+              "Sound": 214756
+            }
+          },
+          "InfectedRiot": {
+            "Item": {
+              "Sound": 222229
+            }
+          },
+          "ExplosionOneShots": {
+            "Item": {
+              "Sound": 203849
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        },
+        "MaterialType": "Stone"
+      },
+      "Infolayer": "",
+      "FeedbackController": "",
+      "Residence7": {
+        "ResidenceStorage": {
+          "InputStorageMax": 1
+        },
+        "PopulationLevel7": 118745,
+        "ResidentMax": 120
+      },
+      "LogisticNode": {
+        "REMOVE_THIS_LATER_FeedbackUnitTier": "Level4"
+      },
+      "AmbientMoodProvider": {
+        "AmbientMood": "ResidenceTierScholars",
+        "DynamicEnvironmentType": "ResidenceScholars",
+        "HappinessDependentMurmur": {
+          "Angry": {
+            "Murmur": "ScholarUnhappy"
+          },
+          "Unhappy": {
+            "Murmur": "ScholarUnhappy"
+          },
+          "Neutral": {
+            "Murmur": "ScholarHappy"
+          },
+          "Happy": {
+            "Murmur": "ScholarHappy"
+          },
+          "Euphoric": {
+            "Murmur": "ScholarHappy"
+          }
+        }
+      },
+      "UpgradeList": "",
+      "Attackable": {
+        "MaximumHitPoints": 3500
+      },
+      "IncidentInfectable": {
+        "Infectable": {
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "BaseChance": 3,
+            "DensityFactor": 0.025,
+            "DensityDistance": 15
+          },
+          "Illness": {
+            "BaseChance": 3,
+            "HitpointFactor": 0.1,
+            "DensityFactor": 0.025,
+            "DensityDistance": 15,
+            "DilapidatedFactor": 10,
+            "FactoryOvertimeFactor": 0.3,
+            "FactoryUndertimeFactor": 0.15,
+            "ResidenceFullOvertimeChance": 20,
+            "ResidenceFullUndertimeChance": -15
+          },
+          "Riot": {
+            "ResidenceHappinessFactor": 0.4,
+            "HappinessThreshold": 10
+          },
+          "Explosion": {
+            "ResidenceFullOvertimeChance": 20,
+            "ResidenceFullUndertimeChance": -15
+          }
+        }
+      },
+      "Pausable": "",
+      "Culture": "",
+      "StreetActivation": "",
+      "InfluenceSource": "",
+      "BuildPermit": {
+        "VisibleWithoutPermits": 1
+      }
+    }
+  }
+]

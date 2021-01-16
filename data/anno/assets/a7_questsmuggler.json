@@ -2472,6 +2472,558 @@
     "Template": "A7_QuestSmuggler",
     "Values": {
       "Standard": {
+        "GUID": 110787,
+        "Name": "Smuggle with scanner - Remember the 5th of November Part 1 - Hugo Mercier"
+      },
+      "Quest": {
+        "InvitationMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": {
+                "NotificationText": 21474
+              },
+              "NotificationSubtitle": {
+                "SubtitleGroup": 2015977804
+              }
+            }
+          }
+        },
+        "OnQuestDeclined": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "ExecutionDelay": 60000,
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionDeleteObjects",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionDeleteObjects": "",
+                                      "ObjectFilter": {
+                                        "ObjectGUID": 110688
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "OnQuestAborted": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "ExecutionDelay": 60000,
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionDeleteObjects",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionDeleteObjects": "",
+                                      "ObjectFilter": {
+                                        "ObjectGUID": 110688
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "OnQuestFailed": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "ExecutionDelay": 60000,
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionDeleteObjects",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionDeleteObjects": "",
+                                      "ObjectFilter": {
+                                        "ObjectGUID": 110688
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "OnQuestSucceeded": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionStartQuest",
+                    "Values": {
+                      "Action": "",
+                      "ActionStartQuest": {
+                        "Quest": 110791,
+                        "UseCurrentSession": 1
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "QuestGiver": 220,
+        "StoryText": 111529,
+        "IsEnabled": 0,
+        "QuestActivation": "ConfirmationDialog",
+        "NeededProgressLevel": "MidGame;LateMidGame;LateGame;EndGame",
+        "DelayTimer": 1200000,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 180023
+          }
+        },
+        "ReputationQuestFail": {
+          "ReputationFailList": {
+            "Item": {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "Quest",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "A7_QuestStatusQuo",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "A7_QuestSmuggler",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "ReputationParticipant": "Second_ai_11_Mercier"
+            }
+          }
+        },
+        "StarterSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": {
+              "HintText": 111506,
+              "ObjectFilter": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "ObjectFilter": {
+                    "ObjectGUID": 110688
+                  }
+                }
+              },
+              "UseSpecificPortrait": 1,
+              "SpecificPortraitProfile": 220
+            }
+          }
+        },
+        "SuccessSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": {
+              "ObjectFilter": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "ObjectFilter": {
+                    "ObjectGUID": 110688
+                  }
+                }
+              },
+              "UseSpecificPortrait": 1,
+              "SpecificPortraitProfile": 220
+            }
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionIsDiscovered",
+          "Values": {
+            "Condition": "",
+            "ParticipantRelation": {
+              "SourceIsOwner": 1,
+              "TargetParticipant": "Third_party_07_Jailor_Bleakworth"
+            },
+            "ConditionIsDiscovered": "",
+            "ConditionPropsNegatable": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Gunpowder and Treason 1 — Remember",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 31378
+      },
+      "Reward": {
+        "RewardAssets": {
+          "Item": {
+            "Reward": 150038,
+            "Amount": 1
+          }
+        },
+        "RewardReputation": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": [
+                  {
+                    "TemplateName": "Quest",
+                    "Index": 0
+                  },
+                  {
+                    "TemplateName": "A7_QuestStatusQuo",
+                    "Index": 0
+                  },
+                  {
+                    "TemplateName": "A7_QuestSmuggler",
+                    "Index": 0
+                  }
+                ]
+              }
+            },
+            "ReputationParticipant": "Second_ai_11_Mercier"
+          }
+        }
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "SmugglerObjective",
+              "Values": {
+                "ConditionQuestSmuggler": {
+                  "SmugglerStations": {
+                    "Item": [
+                      {
+                        "Station": {
+                          "Template": "QuestTradingStation",
+                          "Values": {
+                            "TradingStation": {
+                              "TradingStationDestination": {
+                                "Template": "ConditionObjectStarterObject",
+                                "Values": {
+                                  "ConditionScanner": "",
+                                  "ConditionObjectStarterObject": "",
+                                  "ConditionObjectiveSignsAndFeedback": ""
+                                }
+                              },
+                              "TradingStationRetrieveItem": 110786,
+                              "TradingStationRetrieveItemCount": 3,
+                              "TradingStationReachedNotification": {
+                                "IsBaseAutoCreateAsset": 1,
+                                "Values": {
+                                  "CharacterNotification": {
+                                    "Profile": 220
+                                  },
+                                  "BaseNotification": {
+                                    "NotificationText": 3561
+                                  },
+                                  "NotificationSubtitle": {
+                                    "Subtitle": 110096
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Station": {
+                          "Template": "QuestTradingStation",
+                          "Values": {
+                            "TradingStation": {
+                              "TradingStationDestination": {
+                                "Template": "ConditionObjectSpawnedObject",
+                                "Values": {
+                                  "ConditionObjectSpawnedObject": {
+                                    "ExecutionObject": 110788,
+                                    "ObjectSpawnArea": {
+                                      "IsBaseAutoCreateAsset": 1,
+                                      "Values": {
+                                        "SpawnArea": {
+                                          "SpawnContext": "Object",
+                                          "ContextGUID": 100552,
+                                          "DistanceToContext": 30
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "ConditionScanner": {
+                                    "DEPRECATED_ScannerAmount": 1,
+                                    "DEPRECATED_ScannerPool": {
+                                      "Item": {
+                                        "GUID": 102633
+                                      }
+                                    }
+                                  },
+                                  "ConditionObjectiveSignsAndFeedback": ""
+                                }
+                              },
+                              "TradingStationBringItem": 110786,
+                              "TradingStationReachedNotification": {
+                                "IsBaseAutoCreateAsset": 1,
+                                "Values": {
+                                  "CharacterNotification": {
+                                    "Profile": 220
+                                  },
+                                  "BaseNotification": {
+                                    "NotificationText": 16520
+                                  },
+                                  "NotificationSubtitle": {
+                                    "Subtitle": 110096
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Station": {
+                          "Template": "QuestTradingStation",
+                          "Values": {
+                            "TradingStation": {
+                              "TradingStationDestination": {
+                                "Template": "ConditionObjectSpawnedObject",
+                                "Values": {
+                                  "ConditionObjectSpawnedObject": {
+                                    "ExecutionObject": 110789,
+                                    "ObjectSpawnArea": {
+                                      "IsBaseAutoCreateAsset": 1,
+                                      "Values": {
+                                        "SpawnArea": {
+                                          "SpawnContext": "Object",
+                                          "ContextGUID": 100552,
+                                          "DistanceToContext": 40
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "ConditionScanner": {
+                                    "DEPRECATED_ScannerAmount": 1,
+                                    "DEPRECATED_ScannerPool": {
+                                      "Item": {
+                                        "GUID": 102633
+                                      }
+                                    }
+                                  },
+                                  "ConditionObjectiveSignsAndFeedback": ""
+                                }
+                              },
+                              "TradingStationBringItem": 110786,
+                              "TradingStationReachedNotification": {
+                                "IsBaseAutoCreateAsset": 1,
+                                "Values": {
+                                  "CharacterNotification": {
+                                    "Profile": 220
+                                  },
+                                  "BaseNotification": {
+                                    "NotificationText": 16520
+                                  },
+                                  "NotificationSubtitle": {
+                                    "Subtitle": 110096
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Station": {
+                          "Template": "QuestTradingStation",
+                          "Values": {
+                            "TradingStation": {
+                              "TradingStationDestination": {
+                                "Template": "ConditionObjectSpawnedObject",
+                                "Values": {
+                                  "ConditionObjectSpawnedObject": {
+                                    "ExecutionObject": 110790,
+                                    "ObjectSpawnArea": {
+                                      "IsBaseAutoCreateAsset": 1,
+                                      "Values": {
+                                        "SpawnArea": {
+                                          "SpawnContext": "Object",
+                                          "ContextGUID": 100552,
+                                          "DistanceToContext": 25
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "ConditionScanner": {
+                                    "DEPRECATED_ScannerAmount": 1,
+                                    "DEPRECATED_ScannerPool": {
+                                      "Item": {
+                                        "GUID": 102633
+                                      }
+                                    }
+                                  },
+                                  "ConditionObjectiveSignsAndFeedback": ""
+                                }
+                              },
+                              "TradingStationBringItem": 110786,
+                              "TradingStationReachedNotification": {
+                                "IsBaseAutoCreateAsset": 1,
+                                "Values": {
+                                  "CharacterNotification": {
+                                    "Profile": 220
+                                  },
+                                  "BaseNotification": {
+                                    "NotificationText": 16520
+                                  },
+                                  "NotificationSubtitle": {
+                                    "Subtitle": 110096
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "TextTradingStation_NoItem": 20068
+                },
+                "ConditionQuestObjective": "",
+                "ConditionPropsSessionSettings": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  },
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        },
+        "WinConditionCompletionOrder": "Linear"
+      },
+      "QuestOptional": {
+        "HasStarterObject": "Specific",
+        "StarterObject": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionStarterObject": {
+              "StarterObjectObject": {
+                "Template": "ConditionObjectSpawnedObject",
+                "Values": {
+                  "ConditionObjectSpawnedObject": {
+                    "ExecutionObject": 110688,
+                    "ObjectSpawnArea": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "SpawnArea": {
+                          "SpawnContext": "PlayerKontor",
+                          "DistanceToContext": 30
+                        }
+                      }
+                    },
+                    "ObjectDespawn": "StayOnMap",
+                    "DoSetVisualObjectOwner": 1,
+                    "VisualObjectOwner": "Second_ai_11_Mercier"
+                  },
+                  "ConditionScanner": "",
+                  "ConditionObjectiveSignsAndFeedback": {
+                    "Infolayer": 500173
+                  }
+                }
+              }
+            },
+            "ConditionQuestObjective": "",
+            "ConditionPropsSessionSettings": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "A7_QuestSmuggler",
+    "Values": {
+      "Standard": {
         "GUID": 110810,
         "Name": "Smuggle wo scanner - Main arc Prologue - Hugo Mercier"
       },

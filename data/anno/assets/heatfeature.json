@@ -1,0 +1,67 @@
+[
+  {
+    "Template": "HeatFeature",
+    "Values": {
+      "Standard": {
+        "GUID": 115310,
+        "Name": "HeatFeature",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_heating_center_2d.png",
+        "ID": "HeatBalancing"
+      },
+      "HeatFeature": {
+        "HeatPipeStraight": 115304,
+        "HeatPipeCrossing": 115307,
+        "HeatPipeCorner": 115305,
+        "HeatPipeTCross": 115306,
+        "HeatPipeSingleEnded": 115308,
+        "HeatPipeSinglePiece": 115309,
+        "HeatPipeLongPiece": 115361,
+        "ShowHeatCriticalIconThreshold": -31,
+        "HeatStates": {
+          "Neutral": {
+            "Threshold": -16,
+            "PaMSyContext": 117110,
+            "AmbientSoundSwitch": 247095
+          },
+          "Happy": {
+            "Threshold": 1,
+            "PaMSyContext": 117111,
+            "AmbientSoundSwitch": 247096
+          },
+          "Euphoric": {
+            "Threshold": 17,
+            "PaMSyContext": 117112,
+            "AmbientSoundSwitch": 247097
+          },
+          "Angry": {
+            "Threshold": -30,
+            "PaMSyContext": 117109,
+            "AmbientSoundSwitch": 247093
+          },
+          "Unhappy": {
+            "Threshold": -30,
+            "PaMSyContext": 117109,
+            "AmbientSoundSwitch": 247094
+          }
+        },
+        "HeatPipeEffects": {
+          "Item": [
+            {
+              "Effect": "data/dlc03/graphics/effects/street/arctic/steam_street_effect/steam_street_effect_01.cfg"
+            },
+            {
+              "Effect": "data/dlc03/graphics/effects/street/arctic/steam_street_effect/steam_street_effect_02.cfg"
+            },
+            {
+              "Effect": "data/dlc03/graphics/effects/street/arctic/steam_street_effect/steam_street_effect_03.cfg"
+            }
+          ]
+        },
+        "MenuAmbientSwitchGroup": 247080,
+        "FactoryNoHeatAmbientSwitch": 247085,
+        "FactoryHeatedAmbientSwitch": 247084,
+        "MenuAmbientSwitchDefault": 247081
+      }
+    }
+  }
+]

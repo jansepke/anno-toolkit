@@ -3333,6 +3333,431 @@
     "Template": "A7_QuestDivingBellGeneric",
     "Values": {
       "Standard": {
+        "GUID": 112980,
+        "Name": "VQ Old Nate - Diving Bell Sea Mines - Rival"
+      },
+      "Quest": {
+        "InvitationMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": {
+                "SubtitleGroup": 1818559632
+              }
+            }
+          }
+        },
+        "QuestGiver": 77,
+        "StoryText": 113509,
+        "PreActivationTimer": 1800000,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Session",
+        "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_questbook_sunken_treasures_02.png",
+        "StarterSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": {
+              "HintText": 113567,
+              "ObjectFilter": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "ObjectFilter": {
+                    "ObjectGUID": 111877
+                  }
+                }
+              },
+              "SpecificPortraitProfile": 77
+            }
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "The Elusive Scofield",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32223
+      },
+      "Reward": {
+        "RewardAssets": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "A7_QuestDivingBellGeneric",
+                    "Index": 0
+                  }
+                }
+              },
+              "Amount": 3
+            },
+            {
+              "Reward": 190978,
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellGeneric",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113693,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 113627,
+                  "SpawnedTreasureGround": 114039,
+                  "SpawnAdditionalObjects": 1,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 113694,
+                                    "Amount": 20,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 50
+                  }
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": ""
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": {
+        "HasStarterObject": "Specific",
+        "StarterObject": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionStarterObject": {
+              "StarterObjectObject": {
+                "Template": "ConditionObjectSpawnedObject",
+                "Values": {
+                  "ConditionObjectSpawnedObject": {
+                    "ExecutionObject": 111877,
+                    "ObjectSpawnArea": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "SpawnArea": {
+                          "SpawnContext": "Object",
+                          "ContextGUID": 100710,
+                          "DistanceToContext": 20
+                        }
+                      }
+                    },
+                    "DoSetVisualObjectOwner": 1,
+                    "VisualObjectOwner": "Third_party_06_Nate"
+                  },
+                  "ConditionScanner": "",
+                  "ConditionObjectiveSignsAndFeedback": ""
+                }
+              }
+            },
+            "ConditionQuestObjective": "",
+            "ConditionPropsSessionSettings": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellGeneric",
+    "Values": {
+      "Standard": {
+        "GUID": 112981,
+        "Name": "VQ Old Nate - Diving Bell Sea Mines - Rival II"
+      },
+      "Quest": {
+        "InvitationMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": {
+                "SubtitleGroup": 1818559632
+              }
+            }
+          }
+        },
+        "QuestGiver": 77,
+        "StoryText": 113510,
+        "IsEnabled": 0,
+        "PreActivationTimer": 1800000,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Session",
+        "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_questbook_sunken_treasures_02.png",
+        "StarterSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": {
+              "HintText": 113568,
+              "ObjectFilter": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "ObjectFilter": {
+                    "ObjectGUID": 111877
+                  }
+                }
+              },
+              "SpecificPortraitProfile": 77
+            }
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "The Sponger",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32224
+      },
+      "Reward": {
+        "RewardAssets": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "A7_QuestDivingBellGeneric",
+                    "Index": 0
+                  }
+                }
+              },
+              "Amount": 3
+            },
+            {
+              "Reward": 190978,
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": [
+            {
+              "Objective": {
+                "Template": "BringVehicleToObjectObjective",
+                "Values": {
+                  "ConditionQuestBringVehicleToObject": "",
+                  "ConditionQuestObjective": {
+                    "OnSuccessActions": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ActionList": {
+                          "Actions": {
+                            "Item": {
+                              "Action": {
+                                "Template": "ActionAddGoodsToItemContainer",
+                                "Values": {
+                                  "Action": "",
+                                  "ActionAddGoodsToItemContainer": {
+                                    "Goods": {
+                                      "Item": {
+                                        "Good": 192184,
+                                        "Amount": 5
+                                      }
+                                    },
+                                    "ItemContainerObjects": {
+                                      "IsBaseAutoCreateAsset": 1,
+                                      "Values": {
+                                        "ObjectFilter": {
+                                          "CheckParticipantID": 1,
+                                          "CheckProcessingParticipantID": 1,
+                                          "ObjectSession": 110934
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "ConditionPropsExecutionPlaceSettings": ""
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "A7_QuestDivingBellGeneric",
+                    "Index": 0
+                  }
+                }
+              },
+              "Objective": {
+                "Template": "DestroyObjective",
+                "Values": {
+                  "ConditionQuestObjective": {
+                    "ObjectiveSignsAndFeedback": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionObjectiveSignsAndFeedback": {
+                          "ShowOutline": 1
+                        }
+                      }
+                    }
+                  },
+                  "ConditionQuestDestroy": {
+                    "DestroyObjects": {
+                      "Item": {
+                        "DestroyObject": {
+                          "Template": "QuestObjectList",
+                          "Values": {
+                            "ObjectList": {
+                              "Object": 113694,
+                              "Amount": 5
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "ObjectsBehaviour": "StandStill"
+                  },
+                  "SpawnArea": {
+                    "SpawnContext": "ClientObject",
+                    "DistanceToContext": 200,
+                    "MinObjectDistance": 5,
+                    "MaxObjectDistance": 50
+                  },
+                  "ConditionPropsSessionSettings": "",
+                  "ConditionPropsExecutionPlaceSettings": {
+                    "ExecutionPlace": {
+                      "Template": "ConditionObjectAnywhere",
+                      "Values": {
+                        "ConditionObjectAnywhere": ""
+                      }
+                    },
+                    "ExecutionPlaceConfirmOnReached": 0
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "WinConditionCompletionOrder": "Linear"
+      },
+      "QuestOptional": {
+        "HasStarterObject": "Specific",
+        "StarterObject": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionStarterObject": {
+              "StarterObjectObject": {
+                "Template": "ConditionObjectSpawnedObject",
+                "Values": {
+                  "ConditionObjectSpawnedObject": {
+                    "ExecutionObject": 111877,
+                    "ObjectSpawnArea": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "SpawnArea": {
+                          "SpawnContext": "Object",
+                          "ContextGUID": 100710,
+                          "DistanceToContext": 20
+                        }
+                      }
+                    },
+                    "DoSetVisualObjectOwner": 1,
+                    "VisualObjectOwner": "Third_party_06_Nate"
+                  },
+                  "ConditionScanner": "",
+                  "ConditionObjectiveSignsAndFeedback": ""
+                }
+              }
+            },
+            "ConditionQuestObjective": "",
+            "ConditionPropsSessionSettings": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellGeneric",
+    "Values": {
+      "Standard": {
         "GUID": 112970,
         "Name": "VQ Old Nate - Diving Bell - Blueprints v1"
       },
@@ -3799,6 +4224,377 @@
                   "TreasureItem": 113611,
                   "AmountScrapSpots": 2,
                   "ScrapDummyItem": 112857
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": ""
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": {
+        "HasStarterObject": "Specific",
+        "StarterObject": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionStarterObject": {
+              "StarterObjectObject": {
+                "Template": "ConditionObjectSpawnedObject",
+                "Values": {
+                  "ConditionObjectSpawnedObject": {
+                    "ExecutionObject": 111877,
+                    "ObjectSpawnArea": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "SpawnArea": {
+                          "SpawnContext": "Object",
+                          "MatcherGUID": 114038,
+                          "DistanceToContext": 30
+                        }
+                      }
+                    },
+                    "DoSetVisualObjectOwner": 1,
+                    "VisualObjectOwner": "Third_party_06_Nate"
+                  },
+                  "ConditionScanner": "",
+                  "ConditionObjectiveSignsAndFeedback": ""
+                }
+              }
+            },
+            "ConditionQuestObjective": "",
+            "ConditionPropsSessionSettings": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellGeneric",
+    "Values": {
+      "Standard": {
+        "GUID": 112973,
+        "Name": "VQ Old Nate - Protect Diving Bell - Pirates"
+      },
+      "Quest": {
+        "InvitationMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": {
+                "SubtitleGroup": 1818559632
+              }
+            }
+          }
+        },
+        "QuestGiver": 77,
+        "StoryText": 113503,
+        "PreActivationTimer": 1800000,
+        "QuestCategory": "RandomQuest",
+        "QuestActivation": "ConfirmationDialog",
+        "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_questbook_sunken_treasures_02.png",
+        "StarterSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": {
+              "HintText": 113558,
+              "ObjectFilter": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "ObjectFilter": {
+                    "ObjectGUID": 111877
+                  }
+                }
+              },
+              "SpecificPortraitProfile": 77
+            }
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Talismania",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32216
+      },
+      "Reward": {
+        "RewardAssets": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "A7_QuestDivingBellGeneric",
+                    "Index": 0
+                  }
+                }
+              },
+              "Amount": 3
+            },
+            {
+              "Reward": 192567,
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellGeneric",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113869
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 113616,
+                  "SpawnAdditionalObjects": 1,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 102377,
+                                    "Amount": 2,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 20
+                  }
+                },
+                "SpawnArea": "",
+                "ConditionPropsExecutionPlaceSettings": ""
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": {
+        "HasStarterObject": "Specific",
+        "StarterObject": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionStarterObject": {
+              "StarterObjectObject": {
+                "Template": "ConditionObjectSpawnedObject",
+                "Values": {
+                  "ConditionObjectSpawnedObject": {
+                    "ExecutionObject": 111877,
+                    "ObjectSpawnArea": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "SpawnArea": {
+                          "SpawnContext": "Object",
+                          "MatcherGUID": 114038,
+                          "DistanceToContext": 30
+                        }
+                      }
+                    },
+                    "DoSetVisualObjectOwner": 1,
+                    "VisualObjectOwner": "Third_party_06_Nate"
+                  },
+                  "ConditionScanner": "",
+                  "ConditionObjectiveSignsAndFeedback": ""
+                }
+              }
+            },
+            "ConditionQuestObjective": "",
+            "ConditionPropsSessionSettings": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "A7_QuestDivingBellGeneric",
+    "Values": {
+      "Standard": {
+        "GUID": 112979,
+        "Name": "VQ Old Nate - Diving Bell Sea Mines - Mousetrap"
+      },
+      "Quest": {
+        "InvitationMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": {
+                "SubtitleGroup": 1818559632
+              }
+            }
+          }
+        },
+        "QuestGiver": 77,
+        "StoryText": 113508,
+        "PreActivationTimer": 1800000,
+        "QuestCategory": "RandomQuest",
+        "QuestActivation": "ConfirmationDialog",
+        "QuestTrackerVisibility": "Session",
+        "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_questbook_sunken_treasures_02.png",
+        "StarterSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": {
+              "HintText": 113566,
+              "ObjectFilter": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "ObjectFilter": {
+                    "ObjectGUID": 111877
+                  }
+                }
+              },
+              "SpecificPortraitProfile": 77
+            }
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 112084,
+              "CounterAmount": 1
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "I, Me, Mine",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 32222
+      },
+      "Reward": {
+        "RewardAssets": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "A7_QuestDivingBellGeneric",
+                    "Index": 0
+                  }
+                }
+              },
+              "Amount": 3
+            },
+            {
+              "Reward": 192567,
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestDivingBellGeneric",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 113693,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestDivingBell": {
+                  "TreasureItem": 113625,
+                  "SpawnedTreasureGround": 114039,
+                  "SpawnAdditionalObjects": 1,
+                  "AdditionalObjectData": {
+                    "AdditionalObjectList": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionScanner": {
+                          "ScannerPoolAdvanced": {
+                            "Item": {
+                              "Scanner": {
+                                "Template": "QuestObjectList",
+                                "Values": {
+                                  "ObjectList": {
+                                    "Object": 113694,
+                                    "Amount": 20,
+                                    "DoSetOwner": 1,
+                                    "Owner": "General_Enemy"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DistanceToTreasure": 50
+                  }
                 },
                 "SpawnArea": "",
                 "ConditionPropsExecutionPlaceSettings": ""

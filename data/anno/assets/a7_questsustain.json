@@ -564,6 +564,459 @@
     "Template": "A7_QuestSustain",
     "Values": {
       "Standard": {
+        "GUID": 152477,
+        "Name": "A loved ruler - George Smith"
+      },
+      "Quest": {
+        "InvitationMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": {
+                "SubtitleGroup": -1891188386
+              }
+            }
+          }
+        },
+        "QuestGiver": 81,
+        "StoryText": 18442,
+        "QuestActivation": "ConfirmationDialog",
+        "NeededProgressLevel": "EarlyMidGame;MidGame;LateMidGame;LateGame;EndGame",
+        "DelayTimer": 1200000,
+        "ReputationQuestFail": {
+          "ReputationFailList": {
+            "Item": {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "Quest",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "A7_QuestSustain",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "ReputationParticipant": "Second_ai_04_Smith",
+              "ReputationAmount": -4
+            }
+          }
+        },
+        "ReputationQuestDeclined": {
+          "ReputationDeclinedList": {
+            "Item": {
+              "ReputationParticipant": "Second_ai_04_Smith",
+              "ReputationAmount": -3
+            }
+          }
+        },
+        "StarterSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": {
+              "HintText": 18470,
+              "ObjectFilter": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "ObjectFilter": {
+                    "ObjectGUID": 102580
+                  }
+                }
+              },
+              "UseSpecificPortrait": 1,
+              "SpecificPortraitProfile": 81
+            }
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "PopulationHappinessTotal",
+              "ComparisonOp": "AtMost",
+              "CounterAmount": 24,
+              "CounterScope": "Session",
+              "CounterScopeUseCurrentContext": 0,
+              "CounterScopeContext": 180023
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Happy Clappy",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 28758
+      },
+      "Reward": {
+        "RewardAssets": {
+          "Item": {
+            "Reward": 150038,
+            "Amount": 3
+          }
+        },
+        "RewardReputation": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "Quest",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "A7_QuestSustain",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "ReputationParticipant": "Second_ai_04_Smith",
+              "ReputationAmount": 5
+            },
+            {
+              "ReputationParticipant": "Second_ai_01_Jorgensen",
+              "ReputationAmount": 2
+            },
+            {
+              "ReputationParticipant": "Second_ai_07_von_Malching",
+              "ReputationAmount": -2
+            }
+          ]
+        }
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "SustainObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 20082,
+                  "QuestTrackerIcon": "data/ui/2kimages/main/icons/icon_happy.png"
+                },
+                "ConditionPlayerCounter": {
+                  "PlayerCounter": "PopulationHappinessTotal",
+                  "CounterAmount": 25,
+                  "CounterScope": "Session",
+                  "CounterScopeUseCurrentContext": 0,
+                  "CounterScopeContext": 180023,
+                  "CheckSpecificParticipant": 1
+                },
+                "ConditionQuestSustain": {
+                  "SustainTime": 300000
+                },
+                "ConditionPropsExecutionPlaceSettings": ""
+              }
+            }
+          }
+        },
+        "WinConditionCompletionOrder": "Linear"
+      },
+      "QuestOptional": {
+        "HasStarterObject": "Specific",
+        "StarterObject": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionStarterObject": {
+              "StarterObjectObject": {
+                "Template": "ConditionObjectSpawnedObject",
+                "Values": {
+                  "ConditionObjectSpawnedObject": {
+                    "ExecutionObject": 102580,
+                    "ObjectSpawnArea": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "SpawnArea": {
+                          "SpawnContext": "PlayerKontor",
+                          "DistanceToContext": 30
+                        }
+                      }
+                    },
+                    "DoSetVisualObjectOwner": 1,
+                    "VisualObjectOwner": "Second_ai_04_Smith"
+                  },
+                  "ConditionScanner": "",
+                  "ConditionObjectiveSignsAndFeedback": {
+                    "Infolayer": 500173
+                  }
+                }
+              }
+            },
+            "ConditionQuestObjective": "",
+            "ConditionPropsSessionSettings": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "A7_QuestSustain",
+    "Values": {
+      "Standard": {
+        "GUID": 152411,
+        "Name": "Champaign shower - Gasparov"
+      },
+      "Quest": {
+        "InvitationMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": {
+                "NotificationText": 3554
+              },
+              "NotificationSubtitle": {
+                "SubtitleGroup": -590493010
+              }
+            }
+          }
+        },
+        "QuestGiver": 83,
+        "StoryText": 18198,
+        "QuestActivation": "ConfirmationDialog",
+        "NeededProgressLevel": "LateMidGame;LateGame;EndGame",
+        "DelayTimer": 1200000,
+        "ReputationQuestFail": {
+          "ReputationFailList": {
+            "Item": {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "A7_QuestEscortObject",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "A7_QuestPickupObject",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "A7_QuestSustain",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "ReputationParticipant": "Second_ai_06_Gasparov",
+              "ReputationAmount": -4
+            }
+          }
+        },
+        "ReputationQuestDeclined": {
+          "ReputationDeclinedList": {
+            "Item": {
+              "ReputationParticipant": "Second_ai_06_Gasparov",
+              "ReputationAmount": -3
+            }
+          }
+        },
+        "StarterSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": {
+              "HintText": 18222,
+              "ObjectFilter": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "ObjectFilter": {
+                    "ObjectGUID": 102582
+                  }
+                }
+              },
+              "UseSpecificPortrait": 1,
+              "SpecificPortraitProfile": 83
+            }
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubConditions": {
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionUnlocked",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionUnlocked": {
+                          "UnlockNeeded": 120016
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "GoodsInStock",
+                          "Context": 120016,
+                          "ComparisonOp": "AtMost",
+                          "CounterAmount": 5
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Champagne Socialist",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 28888
+      },
+      "Reward": {
+        "RewardAssets": {
+          "Item": {
+            "VectorElement": {
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestPickupObject",
+                  "Index": 0
+                }
+              }
+            },
+            "Reward": 150038,
+            "Amount": 3
+          }
+        },
+        "RewardReputation": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": [
+                  {
+                    "TemplateName": "A7_QuestEscortObject",
+                    "Index": 0
+                  },
+                  {
+                    "TemplateName": "A7_QuestPickupObject",
+                    "Index": 0
+                  },
+                  {
+                    "TemplateName": "A7_QuestSustain",
+                    "Index": 0
+                  }
+                ]
+              }
+            },
+            "ReputationParticipant": "Second_ai_06_Gasparov",
+            "ReputationAmount": 5
+          }
+        }
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "SustainObjective",
+              "Values": {
+                "ConditionQuestObjective": "",
+                "ConditionPlayerCounter": {
+                  "PlayerCounter": "GoodsInStock",
+                  "Context": 120016,
+                  "CounterAmount": 15
+                },
+                "ConditionQuestSustain": {
+                  "SustainTime": 300000
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": {
+        "HasStarterObject": "Specific",
+        "StarterObject": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionStarterObject": {
+              "StarterObjectObject": {
+                "Template": "ConditionObjectSpawnedObject",
+                "Values": {
+                  "ConditionObjectSpawnedObject": {
+                    "ExecutionObject": 102582,
+                    "ObjectSpawnArea": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "SpawnArea": {
+                          "SpawnContext": "PlayerKontor",
+                          "DistanceToContext": 30
+                        }
+                      }
+                    },
+                    "DoSetVisualObjectOwner": 1,
+                    "VisualObjectOwner": "Second_ai_06_Gasparov"
+                  },
+                  "ConditionScanner": "",
+                  "ConditionObjectiveSignsAndFeedback": {
+                    "Infolayer": 500173
+                  }
+                }
+              }
+            },
+            "ConditionQuestObjective": "",
+            "ConditionPropsSessionSettings": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "A7_QuestSustain",
+    "Values": {
+      "Standard": {
         "GUID": 110689,
         "Name": "Sustain - Idle workers - Hugo Mercier"
       },

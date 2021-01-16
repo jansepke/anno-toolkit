@@ -3,6 +3,84 @@
     "Template": "PlacementScore",
     "Values": {
       "Standard": {
+        "GUID": 141026,
+        "Name": "BasinScore"
+      },
+      "PlacementScore": {
+        "SubScores": {
+          "Item": [
+            {
+              "Rating": {
+                "Template": "RatingInsideTiles",
+                "Values": {
+                  "RatingInsideTiles": {
+                    "StateCategories": {
+                      "Shippath": {
+                        "Score": 0.5
+                      },
+                      "Basin": {
+                        "Score": 1
+                      }
+                    }
+                  }
+                }
+              },
+              "RelativeWeight": 0.8
+            },
+            {
+              "Rating": {
+                "Template": "RatingNeighborTiles",
+                "Values": {
+                  "RatingNeighborTiles": {
+                    "NeighborCategories": {
+                      "Quay": {
+                        "Score": 0.07
+                      },
+                      "Shippath": {
+                        "Score": 0.8
+                      },
+                      "Basin": {
+                        "Score": 1
+                      }
+                    }
+                  }
+                }
+              },
+              "RelativeWeight": 0.2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "PlacementScore",
+    "Values": {
+      "Standard": {
+        "GUID": 141023,
+        "Name": "CulturalMain"
+      },
+      "PlacementScore": {
+        "SubScores": {
+          "Item": {
+            "Rating": {
+              "Template": "RatingDistance",
+              "Values": {
+                "RatingDistance": {
+                  "ZeroFrom": 100,
+                  "ManhattenDistance": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "PlacementScore",
+    "Values": {
+      "Standard": {
         "GUID": 141030,
         "Name": "HarborCoastDefenseScore"
       },
@@ -1035,6 +1113,167 @@
     "Template": "PlacementScore",
     "Values": {
       "Standard": {
+        "GUID": 142194,
+        "Name": "BlockPowerPlantProductionScore"
+      },
+      "PlacementScore": {
+        "SubScores": {
+          "Item": [
+            {
+              "Rating": {
+                "Template": "RatingNeighborTiles",
+                "Values": {
+                  "RatingNeighborTiles": {
+                    "NeighborCategories": {
+                      "Quay": {
+                        "Score": 1
+                      },
+                      "Buildings": {
+                        "Score": 1
+                      },
+                      "StaticBlockedLand": {
+                        "Score": 1
+                      },
+                      "Railway": {
+                        "Score": 1
+                      },
+                      "UnusedWithinBlock": {
+                        "Score": 1
+                      },
+                      "Pipe": {
+                        "Score": 1
+                      }
+                    }
+                  }
+                }
+              },
+              "RelativeWeight": 5
+            },
+            {
+              "Rating": {
+                "Template": "RatingAdjacentBlocks",
+                "Values": {
+                  "RatingAdjacentBlocks": {
+                    "BlockLayoutTypes": "Production"
+                  }
+                }
+              },
+              "RelativeWeight": 10
+            },
+            {
+              "Rating": {
+                "Template": "RatingBuildableWithinRadius",
+                "Values": {
+                  "RatingBuildableWithinRadius": ""
+                }
+              },
+              "RelativeWeight": 40,
+              "DiscardThresholdScore": 0
+            },
+            {
+              "Rating": {
+                "Template": "RatingBuildableWithinRadius",
+                "Values": {
+                  "RatingBuildableWithinRadius": {
+                    "_ZeroTo": 3,
+                    "_OneFrom": 30,
+                    "ValuesArePercentage": 0,
+                    "BuildableType": "CoastPoints"
+                  }
+                }
+              },
+              "RelativeWeight": 40,
+              "DiscardThresholdScore": 0
+            },
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "DistanceTo": "City",
+                    "ZeroTo": 15,
+                    "OneFrom": 70,
+                    "DisableUpperBorders": 1
+                  }
+                }
+              },
+              "RelativeWeight": 40
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "PlacementScore",
+    "Values": {
+      "Standard": {
+        "GUID": 141024,
+        "Name": "BlockCulturalScore"
+      },
+      "PlacementScore": {
+        "SubScores": {
+          "Item": [
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "OneFrom": 20,
+                    "OneTo": 40,
+                    "ZeroFrom": 160
+                  }
+                }
+              },
+              "RelativeWeight": 100
+            },
+            {
+              "Rating": {
+                "Template": "RatingNeighborTiles",
+                "Values": {
+                  "RatingNeighborTiles": {
+                    "NeighborCategories": {
+                      "Buildings": {
+                        "Score": 0.4
+                      },
+                      "StaticBlockedLand": {
+                        "Score": 0.7
+                      },
+                      "UnusedWithinBlock": {
+                        "Score": 0.4
+                      },
+                      "Railway": {
+                        "Score": 1
+                      },
+                      "Pipe": {
+                        "Score": 1
+                      }
+                    }
+                  }
+                }
+              },
+              "RelativeWeight": 20
+            },
+            {
+              "Rating": {
+                "Template": "RatingAdjacentBlocks",
+                "Values": {
+                  "RatingAdjacentBlocks": {
+                    "BlockLayoutTypes": "City;Culture"
+                  }
+                }
+              },
+              "RelativeWeight": 5
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "PlacementScore",
+    "Values": {
+      "Standard": {
         "GUID": 142781,
         "Name": "BlockAirshipHangarScore"
       },
@@ -1175,6 +1414,79 @@
               },
               "RelativeWeight": 15,
               "Comment": "Don't overwrite existing blocks if possible"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "PlacementScore",
+    "Values": {
+      "Standard": {
+        "GUID": 141376,
+        "Name": "ProductionLureScore"
+      },
+      "PlacementScore": {
+        "SubScores": {
+          "Item": [
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "DistanceTo": "City",
+                    "ZeroTo": 40,
+                    "OneFrom": 90,
+                    "DisableUpperBorders": 1
+                  }
+                }
+              },
+              "RelativeWeight": 30,
+              "DiscardThresholdScore": 0
+            },
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "DistanceTo": "Warehouse",
+                    "ZeroTo": 30,
+                    "OneFrom": 80,
+                    "DisableUpperBorders": 1
+                  }
+                }
+              },
+              "RelativeWeight": 5,
+              "DiscardThresholdScore": 0
+            },
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "DistanceTo": "ProductionLure",
+                    "ZeroTo": 30,
+                    "OneFrom": 80,
+                    "DisableUpperBorders": 1
+                  }
+                }
+              },
+              "RelativeWeight": 5,
+              "DiscardThresholdScore": 0
+            },
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "DistanceTo": "StaticBlocker_Coarse",
+                    "OneFrom": 16,
+                    "DisableUpperBorders": 1
+                  }
+                }
+              },
+              "RelativeWeight": 5
             }
           ]
         }

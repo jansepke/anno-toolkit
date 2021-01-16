@@ -604,6 +604,244 @@
     "Template": "A7_QuestExpedition",
     "Values": {
       "Standard": {
+        "GUID": 269866,
+        "Name": "TheGreatEastern_0"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "StartInvitationGiveItemMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": {
+                "Profile": 45
+              },
+              "BaseNotification": {
+                "NotificationText": 269880
+              },
+              "NotificationSubtitle": {
+                "Subtitle": 254725
+              }
+            }
+          }
+        },
+        "OnQuestActive": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionNotification",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionNotification": {
+                                        "Notification": {
+                                          "Template": "CharacterNotification",
+                                          "Values": {
+                                            "CharacterNotification": {
+                                              "Profile": 45
+                                            },
+                                            "BaseNotification": {
+                                              "NotificationText": 269870
+                                            },
+                                            "NotificationSubtitle": {
+                                              "Subtitle": 250673
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "OnQuestSucceeded": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionStartQuest",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionStartQuest": {
+                                        "Quest": 269854,
+                                        "QuestSession": 180023
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "QuestGiver": 45,
+        "StoryText": 269877,
+        "MaxCallOut": 1,
+        "MaxSolveCount": 1,
+        "CountForQuestLimit": 0,
+        "QuestTimeLimit": 0,
+        "QuestActivation": "QuestStart",
+        "IsAbortable": 0,
+        "QuestTrackerVisibility": "Global",
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 180023
+          }
+        },
+        "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_quest_rqinvestor.png",
+        "ReputationQuestFail": {
+          "ReputationFailList": ""
+        },
+        "QuestHints": {
+          "Item": {
+            "Text": 17688
+          }
+        },
+        "HasStarterSpeechBubble": 0
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "The Floating City — A Big Ask",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 36750
+      },
+      "Reward": {
+        "RewardAssets": "",
+        "RewardReputation": ""
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "BringVehicleToObjectObjective",
+              "Values": {
+                "ConditionQuestBringVehicleToObject": "",
+                "ConditionQuestObjective": {
+                  "OnSuccessActions": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ActionList": {
+                        "Actions": {
+                          "Item": {
+                            "Action": {
+                              "Template": "ActionSpeechBubble",
+                              "Values": {
+                                "Action": "",
+                                "ActionSpeechBubble": {
+                                  "SpeechBubbleData": {
+                                    "IsBaseAutoCreateAsset": 1,
+                                    "Values": {
+                                      "Condition": "",
+                                      "ConditionTutorialInteraction": {
+                                        "HintType": "Object",
+                                        "HintEndCondition": "Time",
+                                        "HintDisplayTime": 30000,
+                                        "HintAnchor": "BottomRight",
+                                        "HintText": 269859,
+                                        "ObjectFilter": {
+                                          "IsBaseAutoCreateAsset": 1,
+                                          "Values": {
+                                            "ObjectFilter": {
+                                              "ObjectGUID": 100551
+                                            }
+                                          }
+                                        },
+                                        "UseSpecificPortrait": 1,
+                                        "SpecificPortraitProfile": 45,
+                                        "SpecifyHintColorType": 1,
+                                        "HintColorType": "Quest"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "A7_QuestExpedition",
+    "Values": {
+      "Standard": {
         "GUID": 111842,
         "Name": "SL100_TheQueenIsGone",
         "ID": "QUEST_DLC1_0"

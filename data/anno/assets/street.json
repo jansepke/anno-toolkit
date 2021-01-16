@@ -3,6 +3,299 @@
     "Template": "Street",
     "Values": {
       "Standard": {
+        "GUID": 1010567,
+        "Name": "Quay System",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_quay.png",
+        "ID": "QuaySystemModerate",
+        "InfoDescription": 12752
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 5
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "Street",
+                    "Index": 1
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "Street",
+                    "Index": 2
+                  }
+                }
+              },
+              "Amount": 1
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "Street",
+                    "Index": 3
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "Street",
+                    "Index": 4
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "Street",
+                    "Index": 5
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Street": {
+        "CfgFileName": "data/graphics/buildings/special/quay_system_01/props/quay_system_01.cfg",
+        "InternalID": 11,
+        "DecalMapping": "data/config/street/quay_new.txt.bin",
+        "DecalVariation": "data/config/street/quay_new_var.txt",
+        "StyleRows": 8,
+        "StyleCols": 8,
+        "OverbuildRule": "Harbour",
+        "IsLogicRoad": 0,
+        "IsHarbour": 1,
+        "IsPlazza": 1,
+        "HasFeedbackPathPlanningPenalty": 0,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "Quay_And_QuaySpecial;Quay_And_QuayBase_And_HiddenFences",
+          "NeighborsThatMakeUsAdapt": "Quay_And_QuaySpecial"
+        }
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 215916
+            }
+          },
+          "BuildMoveStart": {
+            "Item": {
+              "Sound": 9818755
+            }
+          },
+          "BuildMoveSuccess": {
+            "Item": {
+              "Sound": 203995
+            }
+          },
+          "BuildMoveEnd": {
+            "Item": {
+              "Sound": 200141
+            }
+          }
+        },
+        "ConstructionStreetSounds": {
+          "BuildAddWaypoint": {
+            "Item": {
+              "Sound": 215918
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Quay",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 7001
+      },
+      "Building": {
+        "BuildingCategoryName": 11150,
+        "PickingAsset": 1010567,
+        "TerrainType": "Water"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 100446,
+        "Name": "Quay System Base",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_quay.png",
+        "InfoDescription": 12752
+      },
+      "Cost": "",
+      "Street": {
+        "CfgFileName": "data/graphics/buildings/special/quay_system_01/props/quay_system_01.cfg",
+        "InternalID": 12,
+        "DecalMapping": "data/config/street/quay_new.txt.bin",
+        "DecalVariation": "data/config/street/quay_new_var.txt",
+        "StyleRows": 8,
+        "StyleCols": 8,
+        "IsLogicRoad": 0,
+        "IsHarbour": 1,
+        "IsPlazza": 1,
+        "IsDeletable": 0,
+        "HasFeedbackPathPlanningPenalty": 0,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "Quay_And_QuaySpecial;Quay_And_QuayBase_And_HiddenFences",
+          "NeighborsThatMakeUsAdapt": "Quay_And_QuaySpecial"
+        }
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 215916
+            }
+          },
+          "BuildMoveStart": {
+            "Item": {
+              "Sound": 9818755
+            }
+          },
+          "BuildMoveSuccess": {
+            "Item": {
+              "Sound": 203995
+            }
+          },
+          "BuildMoveEnd": {
+            "Item": {
+              "Sound": 200141
+            }
+          }
+        },
+        "ConstructionStreetSounds": {
+          "BuildAddWaypoint": {
+            "Item": {
+              "Sound": 215918
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Quay",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 7002
+      },
+      "Building": {
+        "BuildingCategoryName": 11150
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 101008,
+        "Name": "Quay System Base Invisible",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_quay.png",
+        "InfoDescription": 12752
+      },
+      "Cost": "",
+      "Street": {
+        "CfgFileName": "data/graphics/buildings/special/quay_system_01/props_no_fence/quay_system_01_no_fence.cfg",
+        "InternalID": 17,
+        "DecalMapping": "data/config/street/quay_new.txt.bin",
+        "DecalVariation": "data/config/street/no_var.txt",
+        "StyleRows": 8,
+        "StyleCols": 8,
+        "IsLogicRoad": 0,
+        "IsHarbour": 1,
+        "IsPlazza": 1,
+        "IsDeletable": 0,
+        "HasFeedbackPathPlanningPenalty": 0,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "Quay_And_QuaySpecial",
+          "NeighborsThatMakeUsAdapt": "Quay_And_QuaySpecial"
+        }
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 215916
+            }
+          },
+          "BuildMoveStart": {
+            "Item": {
+              "Sound": 9818755
+            }
+          },
+          "BuildMoveSuccess": {
+            "Item": {
+              "Sound": 200133
+            }
+          },
+          "BuildMoveEnd": {
+            "Item": {
+              "Sound": 200141
+            }
+          }
+        },
+        "ConstructionStreetSounds": {
+          "BuildAddWaypoint": {
+            "Item": {
+              "Sound": 215918
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Quay",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 7007
+      },
+      "Building": {
+        "BuildingCategoryName": 11150
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
         "GUID": 1000178,
         "Name": "Dirt Street",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_street01.png",
@@ -1732,6 +2025,301 @@
       },
       "Building": {
         "AssociatedRegions": "Moderate;Colony01"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 102460,
+        "Name": "Quay System Colony01 Base",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_quay.png",
+        "InfoDescription": 12752
+      },
+      "Cost": "",
+      "Street": {
+        "CfgFileName": "data/graphics/buildings/special/quay_system_colony01_01/props/quay_system_colony01_01.cfg",
+        "InternalID": 31,
+        "DecalMapping": "data/config/street/quay_new.txt.bin",
+        "DecalVariation": "data/config/street/quay_new_var.txt",
+        "StyleRows": 8,
+        "StyleCols": 8,
+        "IsLogicRoad": 0,
+        "IsHarbour": 1,
+        "IsPlazza": 1,
+        "IsDeletable": 0,
+        "HasFeedbackPathPlanningPenalty": 0,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "Quay_And_QuaySpecial;Quay_And_QuayBase_And_HiddenFences",
+          "NeighborsThatMakeUsAdapt": "Quay_And_QuaySpecial"
+        }
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 215916
+            }
+          }
+        },
+        "ConstructionStreetSounds": {
+          "BuildAddWaypoint": {
+            "Item": {
+              "Sound": 215918
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Quay",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 22161
+      },
+      "Building": {
+        "BuildingCategoryName": 11150
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 102459,
+        "Name": "Quay System Colony01 Base Invisible",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_quay.png",
+        "InfoDescription": 12752
+      },
+      "Cost": "",
+      "Street": {
+        "CfgFileName": "data/graphics/buildings/special/quay_system_colony01_01/props_no_fence/quay_system_colony01_01_no_fence.cfg",
+        "InternalID": 32,
+        "DecalMapping": "data/config/street/quay_new.txt.bin",
+        "DecalVariation": "data/config/street/no_var.txt",
+        "StyleRows": 8,
+        "StyleCols": 8,
+        "IsLogicRoad": 0,
+        "IsHarbour": 1,
+        "IsPlazza": 1,
+        "IsDeletable": 0,
+        "HasFeedbackPathPlanningPenalty": 0,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "Quay_And_QuaySpecial",
+          "NeighborsThatMakeUsAdapt": "Quay_And_QuaySpecial"
+        }
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 215916
+            }
+          }
+        },
+        "ConstructionStreetSounds": {
+          "BuildAddWaypoint": {
+            "Item": {
+              "Sound": 215918
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Quay",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 22162
+      },
+      "Building": {
+        "BuildingCategoryName": 11150
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 112113,
+        "Name": "Snow Street",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_snow_street.png",
+        "InfoDescription": 12750
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 10
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        },
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "CfgFileName": "data/dlc03/graphics/effects/street/arctic/arctic_street_01/arctic_street_01.cfg",
+        "InvalidColor": -50116,
+        "BridgeAsset": 101328,
+        "InternalID": 41,
+        "DecalMapping": "data/config/street/streetdecal.txt.bin",
+        "DecalVariation": "data/config/street/streetdecal_var.txt",
+        "HidePropsAfterBuilding": 1,
+        "HidePropsWhileBuilding": 1,
+        "Quality": 1,
+        "OverbuildRule": "BadStreet",
+        "CanBuildOnShore": 1,
+        "HasFeedbackPathPlanningPenalty": 0,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "Street;StreetLowQuality",
+          "NeighborsThatMakeUsAdapt": "StreetHighQuality;Crossing_Rail_Street;Crossing_Rail_StreetLowQuality;Quay_And_QuayBase_And_HiddenFences;Bridge_StreetLowQuality"
+        }
+      },
+      "Constructable": {
+        "DestructionCategory": "StreetsAndBridges"
+      },
+      "Locked": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 200777
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 200140
+            }
+          }
+        },
+        "ConstructionStreetSounds": {
+          "BuildAddWaypoint": {
+            "Item": {
+              "Sound": 215919
+            }
+          }
+        },
+        "MaterialType": "Street_Snow"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Road",
+            "Status": "Exported",
+            "ExportCount": 4
+          }
+        },
+        "LineID": 35070
+      },
+      "Building": {
+        "SkipUnlockMessage": 1,
+        "AssociatedRegions": "Arctic"
+      }
+    }
+  },
+  {
+    "Template": "Street",
+    "Values": {
+      "Standard": {
+        "GUID": 116631,
+        "Name": "BasePlateFenceAgriculturePassage",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_farmfield_module.png"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 100
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        },
+        "ItemsPerCost": 4
+      },
+      "Street": {
+        "CfgFileName": "data/dlc03/graphics/props/fence_system/colony03_agriculture_fence_system_01.cfg",
+        "InvalidColor": -50116,
+        "InternalID": 42,
+        "DecalMapping": "data/config/street/fencesdecal.txt.bin",
+        "DecalVariation": "data/config/street/fencesdecal_var.txt",
+        "IsLogicRoad": 0,
+        "IsGroundDecal": 1,
+        "IsPlazza": 1,
+        "IsDeletable": 0,
+        "HasFeedbackPathPlanningPenalty": 0,
+        "AdaptToNeighbors": {
+          "AdaptGroups": "FenceBasePlate_And_HiddenFences"
+        }
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 200140
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Fenced Road",
+            "Status": "Exported",
+            "ExportCount": 4
+          }
+        },
+        "LineID": 35111
+      },
+      "Building": {
+        "AssociatedRegions": "Moderate"
       }
     }
   },

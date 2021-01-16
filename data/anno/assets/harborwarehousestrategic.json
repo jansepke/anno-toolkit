@@ -780,5 +780,186 @@
       },
       "QuestObject": ""
     }
+  },
+  {
+    "Template": "HarborWarehouseStrategic",
+    "Values": {
+      "Standard": {
+        "GUID": 119259,
+        "Name": "harbor_14d (Oil Harbor IV)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_oil_habour_01.png",
+        "InfoDescription": 10951
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Grand Oil Harbour",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 36759
+      },
+      "Blocking": {
+        "GroundDecalAsset": 100446,
+        "GroundDecalInvisible": 101008,
+        "HasBuildingBaseTiles": 1,
+        "HarbourAreaExpand": 1
+      },
+      "Building": {
+        "BuildingCategoryName": 11150,
+        "Destructable": 1,
+        "PickingAsset": 100783,
+        "AssociatedRegions": "Moderate"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 65000
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 220
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 165
+            },
+            {
+              "Ingredient": 1010218,
+              "Amount": 130
+            },
+            {
+              "Ingredient": 1010207,
+              "Amount": 80
+            },
+            {
+              "Ingredient": 1010202,
+              "Amount": 80
+            }
+          ]
+        }
+      },
+      "Selection": {
+        "GUIType": "CoalOilHarbour"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/buildings/special/harbor_14/harbor_14_04.cfg"
+          }
+        }
+      },
+      "Constructable": "",
+      "Mesh": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": [
+            {
+              "Sound": 200896
+            },
+            {
+              "Sound": 200920
+            }
+          ]
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRuined": {
+          "Item": {
+            "Sound": 203848
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        }
+      },
+      "Locked": "",
+      "Infolayer": "",
+      "FeedbackController": "",
+      "Warehouse": {
+        "WarehouseStorage": {
+          "StorageMax": 1500
+        }
+      },
+      "LogisticNode": "",
+      "MinimapToken": "",
+      "AmbientMoodProvider": {
+        "Murmur": "Harbor"
+      },
+      "LoadingPier": {
+        "NumOfPiers": 1,
+        "LoadingSpeed": 100,
+        "MinLoadingTime": 5
+      },
+      "StorageBase": {
+        "ProductStorageList": 120056
+      },
+      "Attackable": {
+        "MaximumHitPoints": 5000,
+        "HasRuinState": 1,
+        "PausedTimeIfAttacked": 0,
+        "SelfHealPerHealTick": 5,
+        "DefenseByAIFactor": 404,
+        "TakeOverEffect": "OnDeath",
+        "MoralePower": 100,
+        "IslandWarFlag": 102303,
+        "ExplosionEffects": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "HarborWarehouseStrategic",
+                    "Index": 0
+                  }
+                }
+              }
+            },
+            {
+              "ExplosionEffectFilePath": "data/graphics/effects/military/explosions/harbor_generic_xpl_02.cfg"
+            }
+          ]
+        },
+        "ExplosionEffectsMin": 3,
+        "ExplosionEffectsMax": 5
+      },
+      "Upgradable": {
+        "CurrentTier": 4
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": {
+            "Product": 1010017,
+            "Amount": 250,
+            "InactiveAmount": 250
+          }
+        }
+      },
+      "Pausable": "",
+      "BuildingUnique": {
+        "Uniques": {
+          "Item": {
+            "UniqueType": "OilHarbor",
+            "UniqueScope": "Area"
+          }
+        }
+      },
+      "UpgradeList": "",
+      "TrainStation": {
+        "MaxTrainCount": 7
+      },
+      "QuestObject": ""
+    }
   }
 ]

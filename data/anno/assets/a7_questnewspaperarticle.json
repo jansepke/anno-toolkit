@@ -1,0 +1,151 @@
+[
+  {
+    "Template": "A7_QuestNewspaperArticle",
+    "Values": {
+      "Standard": {
+        "GUID": 111800,
+        "Name": "Propaganda Quest",
+        "ID": "Quest_DM_0"
+      },
+      "Quest": {
+        "SuccessMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": {
+                "Profile": 220
+              },
+              "BaseNotification": {
+                "NotificationText": 3548
+              },
+              "NotificationSubtitle": {
+                "Subtitle": 111617
+              }
+            }
+          }
+        },
+        "InvitationMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": {
+                "Profile": 220
+              },
+              "BaseNotification": {
+                "NotificationPriority": 900
+              },
+              "NotificationSubtitle": {
+                "Subtitle": 111616
+              }
+            }
+          }
+        },
+        "OnQuestEnd": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": [
+                  {
+                    "Action": {
+                      "Template": "ActionRegisterTrigger",
+                      "Values": {
+                        "Action": "",
+                        "ActionRegisterTrigger": {
+                          "TriggerAsset": 111799
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionModifyVariable",
+                      "Values": {
+                        "Action": "",
+                        "ActionModifyVariable": {
+                          "Variable": "Mercier_PropagandaQuestChance"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "QuestGiver": 220,
+        "StoryText": 111802,
+        "QuestActivation": "ConfirmationDialog",
+        "IsAbortable": 1,
+        "HasExclusiveQuestGiver": 0,
+        "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_quest_anarchist.png",
+        "QuestHints": {
+          "Item": {
+            "Text": 111803
+          }
+        }
+      },
+      "PreConditionList": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "The Anarchist Truth",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 31384
+      },
+      "Reward": "",
+      "Objectives": {
+        "WinConditions": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "A7_QuestNewspaperArticle",
+                    "Index": 0
+                  }
+                }
+              },
+              "Objective": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "ConditionQuestObjective": {
+                    "IsVisibleInQuestTracker": 0,
+                    "QuestTrackerIcon": "data/ui/2kimages/main/3dicons/machine_items/icon_anarchy_flag_2.png"
+                  },
+                  "ConditionPlayerCounter": "",
+                  "ConditionQuestStatusQuo": {
+                    "CheckAnyPoolAsset": 1
+                  },
+                  "ConditionPropsExecutionPlaceSettings": ""
+                }
+              }
+            },
+            {
+              "Objective": {
+                "Template": "FakeQuestObjective",
+                "Values": {
+                  "ConditionQuestObjective": "",
+                  "ConditionQuestFakeObjective": {
+                    "QuestTrackerEntries": {
+                      "Item": {
+                        "CombinedText": 111801,
+                        "QuestTrackerIcon": "data/ui/2kimages/main/3dicons/icon_anarchist.png"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "WinConditionCompletionOrder": "MutuallyExclusive"
+      },
+      "QuestOptional": ""
+    }
+  }
+]
