@@ -1,3 +1,4 @@
+import CircularProgress from "@material-ui/core/CircularProgress";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
@@ -17,6 +18,7 @@ import Filters, { FilterData } from "./Filters";
 import ItemCard from "./ItemCard";
 import ItemEffects from "./ItemEffects";
 import TabBar from "./TabBar";
+import VirtualizedList from "./VirtualizedList";
 
 const ItemList = ({ items }: { items: AnnoItem[] }) => {
   const { t } = useTranslation("common");
@@ -78,15 +80,25 @@ const ItemList = ({ items }: { items: AnnoItem[] }) => {
       </Typography>
       <br />
       <Grid container spacing={3}>
-        {filteredItems.map((item) => (
-          <ItemCard
-            key={item.id}
-            item={item}
-            handleFavouriteChange={handleFavouriteChange}
-          >
-            <ItemEffects item={item} />
-          </ItemCard>
-        ))}
+        <VirtualizedList
+          items={filteredItems}
+          renderItem={(item) => (
+            <ItemCard
+              key={item.id}
+              item={item}
+              handleFavouriteChange={handleFavouriteChange}
+            >
+              <ItemEffects item={item} />
+            </ItemCard>
+          )}
+          loadingIndicator={(ref, visible) => (
+            <Grid item xs={12} ref={ref}>
+              <Grid container justify="center">
+                {visible ? <CircularProgress /> : null}
+              </Grid>
+            </Grid>
+          )}
+        />
       </Grid>
     </Container>
   );

@@ -1,3 +1,4 @@
+import CircularProgress from "@material-ui/core/CircularProgress";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
@@ -9,6 +10,7 @@ import { AnnoItem } from "../data/AnnoItem";
 import ExpeditionAttributes from "./ExpeditionAttributes";
 import ItemCard from "./ItemCard";
 import TabBar from "./TabBar";
+import VirtualizedList from "./VirtualizedList";
 
 const useStyles = makeStyles((theme) => ({
   grayscale: {
@@ -41,11 +43,21 @@ const ExpeditionList = ({ items }: { items: AnnoItem[] }) => {
       <Typography align="right">{items.length} Items</Typography>
       <br />
       <Grid container spacing={3}>
-        {items.map((item) => (
-          <ItemCard key={item.id} item={item}>
-            <ExpeditionAttributes item={item} />
-          </ItemCard>
-        ))}
+        <VirtualizedList
+          items={items}
+          renderItem={(item) => (
+            <ItemCard key={item.id} item={item}>
+              <ExpeditionAttributes item={item} />
+            </ItemCard>
+          )}
+          loadingIndicator={(ref, visible) => (
+            <Grid item xs={12} ref={ref}>
+              <Grid container justify="center">
+                {visible ? <CircularProgress /> : null}
+              </Grid>
+            </Grid>
+          )}
+        />
       </Grid>
     </Container>
   );
