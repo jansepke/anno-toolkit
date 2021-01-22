@@ -5,8 +5,8 @@
     "build": "npm run fill-db && next build",
     "start": "next start",
     "test": "npm run fill-db && jest",
-    "xml-to-json": "ts-node --script-mode ./src/data/xml-to-json.ts",
-    "fill-db": "ts-node --script-mode ./src/data/fill-db.ts",
+    "xml-to-json": "ts-node --transpile-only --script-mode ./src/data/xml-to-json.ts",
+    "fill-db": "ts-node --transpile-only --script-mode ./src/data/fill-db.ts",
     "lint": "prettier --check .",
     "lint:fix": "prettier --write ."
   },
