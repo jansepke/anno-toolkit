@@ -39,11 +39,11 @@ describe("index", () => {
   });
 
   test.each([
-    ["harboroffice", "Angler"],
-    ["guildhouse", "Juwelier"],
-    ["townhall", "Richter"],
-    ["arctic-lodge", "Treibholz-​ Walwächter"],
-  ])("goes to %s items page", async (itemType, item) => {
+    ["harboroffice", 190615],
+    ["guildhouse", 190623],
+    ["townhall", 101240],
+    ["arctic-lodge", 116041],
+  ])("goes to %s items page", async (itemType, itemId) => {
     const button = screen
       .queryByText(`common:itemTypes.${itemType}`)
       ?.closest("button");
@@ -56,6 +56,31 @@ describe("index", () => {
       expect(screen.getByText("common:title.items")).toBeInTheDocument()
     );
 
-    expect(screen.getByText(item)).toBeInTheDocument();
+    expect(screen.getByText(`(ID: ${itemId})`)).toBeInTheDocument();
+  });
+
+  test.each([
+    ["might", 191436],
+    ["faith", 190719],
+    ["diplomacy", 111024],
+    ["hunting", 190622],
+    ["medicine", 190410],
+    ["melee", 191010],
+    ["navigation", 121023],
+    ["crafting", 190829],
+  ])("goes to %s expedition page", async (itemType, itemId) => {
+    const button = screen
+      .queryByText(`common:expeditionThreats.${itemType}`)
+      ?.closest("button");
+
+    expect(button).toBeInTheDocument();
+
+    fireEvent.click(button!);
+
+    await waitFor(() =>
+      expect(screen.getByText("common:title.expedition")).toBeInTheDocument()
+    );
+
+    expect(screen.getByText(`(ID: ${itemId})`)).toBeInTheDocument();
   });
 });
