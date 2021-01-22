@@ -29,7 +29,6 @@ npm run start # run production build
 - filter for specific traits
 - filter by ship type
 - add ship stats
-- tests https://github.com/vercel/next.js/tree/master/examples/with-jest
 - add where to get item
 - ship expedition slot optimizer
 - support active items
@@ -38,10 +37,8 @@ npm run start # run production build
 - share item button
 - add icons for effects (icon.json)
 - automatically switch between centered and scrollable tabs
-- improve performance by using virtualized lists
 - refactor data loading
 - Progressive Web App https://github.com/vercel/next.js/tree/master/examples/progressive-web-app
-- improve font loading performance
 
 ## License
 
