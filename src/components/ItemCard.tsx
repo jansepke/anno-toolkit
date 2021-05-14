@@ -56,7 +56,7 @@ const ItemCard = ({
     <Grid item xs={12} sm={6} md={4} lg={3} xl={2} className={classes.gridItem}>
       <Card elevation={3} className={cardClasses.join(" ")}>
         <CardHeader
-          avatar={<Image src={item.icon} width={35} height={35} />}
+          avatar={<Image src={item.icon} width={35} height={35} unoptimized />}
           title={
             <>
               <strong>{item.name}</strong>
