@@ -69,9 +69,10 @@ function processAssets(assets: any) {
       continue;
     }
 
-    const assetType = (asset.Values.Item && asset.Values.Item.Allocation
-      ? asset.Values.Item.Allocation + "item"
-      : asset.Template
+    const assetType = (
+      asset.Values.Item && asset.Values.Item.Allocation
+        ? asset.Values.Item.Allocation + "item"
+        : asset.Template
     ).toLowerCase();
 
     if (!assetsByType[assetType]) {

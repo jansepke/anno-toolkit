@@ -40,9 +40,10 @@ export default class AnnoItemFactory {
         values.ItemAction?.ActionTarget !== undefined,
       expeditionAttributes: this.resolveExpeditionAttributes(values),
       rarity: rarity,
-      rarityLabel: this.translations[
-        rarities.find((r) => r.key === rarity)?.labelId as number
-      ],
+      rarityLabel:
+        this.translations[
+          rarities.find((r) => r.key === rarity)?.labelId as number
+        ],
       upgrades: this.getUpgrades(values),
     };
   }
