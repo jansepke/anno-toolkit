@@ -15,7 +15,7 @@ module.exports = {
     effectTarget: "Gebäudetyp",
     rarity: "Seltenheit",
     upgrades: "Upgrades",
-    onlyFavourites: "Meine Favouriten",
+    onlyFavourites: "Meine Favoriten",
   },
   target: "Beeinflusst",
   comingSoon: "Demnächst...",
