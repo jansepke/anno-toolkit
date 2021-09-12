@@ -30,24 +30,21 @@
                                     "Text": 114817
                                   },
                                   {
-                                    "Text": 114818
+                                    "Text": 23869
                                   },
                                   {
-                                    "Text": 114819
+                                    "Text": 23868
                                   },
                                   {
-                                    "Text": 114820
+                                    "Text": 23867
                                   },
                                   {
-                                    "Text": 114821
-                                  },
-                                  {
-                                    "Text": 114822
+                                    "Text": 23866
                                   }
                                 ]
                               },
                               "IndexTextsource": "[Options Upscaling]",
-                              "ComboboxHeadline": 114815,
+                              "ComboboxHeadline": 23864,
                               "ComboboxInfotip": 114823,
                               "IsRestartRequired": 1
                             }
@@ -606,6 +603,7 @@
                             "OptionToggle": {
                               "ToggleTextsource": "[Options LargeSubtitlesEnabled]",
                               "ToggleHeadline": 114917,
+                              "ToggleDisabledTextsource": "[Not([Options SubtitlesEnabled])]",
                               "ToggleInfotip": 115171
                             }
                           }
@@ -618,7 +616,7 @@
                             "OptionSlider": {
                               "ValueTextsource": "[Options SubtitleBackgroundOpacity]",
                               "SliderHeadline": 114918,
-                              "SliderDisabledTextsource": "[Options SubtitleBackgroundOpacity &gt;&gt; percentage]",
+                              "SliderDisabledTextsource": "[Options SubtitlesEnabled]",
                               "SliderInfotip": 115172
                             }
                           }
@@ -632,6 +630,58 @@
                               "ToggleTextsource": "[Options FreeCameraEnabled]",
                               "ToggleHeadline": 13632,
                               "ToggleInfotip": 501621
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Controls": {
+                          "Template": "OptionAudioSlider",
+                          "Values": {
+                            "OptionAudioSlider": {
+                              "AudioValueTextsource": "[Options CameraDragSensitivity]",
+                              "AudioHeadline": 430,
+                              "AudioTextTextsource": "[Options CameraDragSensitivityDisplayValue &gt;&gt; float]",
+                              "AudioSliderInfotip": 433
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Controls": {
+                          "Template": "OptionAudioSlider",
+                          "Values": {
+                            "OptionAudioSlider": {
+                              "AudioValueTextsource": "[Options CameraKeyboardSensitivity]",
+                              "AudioHeadline": 461,
+                              "AudioTextTextsource": "[Options CameraKeyboardSensitivityDisplayValue &gt;&gt; float]",
+                              "AudioSliderInfotip": 462
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Controls": {
+                          "Template": "OptionToggle",
+                          "Values": {
+                            "OptionToggle": {
+                              "ToggleTextsource": "[Options EdgeScrollingEnabled]",
+                              "ToggleHeadline": 23450,
+                              "ToggleInfotip": 502139
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Controls": {
+                          "Template": "OptionAudioSlider",
+                          "Values": {
+                            "OptionAudioSlider": {
+                              "AudioValueTextsource": "[Options CameraScrollSensitivity]",
+                              "AudioHeadline": 436,
+                              "AudioTextTextsource": "[Options CameraScrollSensitivityDisplayValue &gt;&gt; float]",
+                              "AudioSliderInfotip": 437,
+                              "AudioDisabledTextsource": "[Not([Options EdgeScrollingEnabled])]"
                             }
                           }
                         }
@@ -843,18 +893,6 @@
                           "Template": "OptionToggle",
                           "Values": {
                             "OptionToggle": {
-                              "ToggleTextsource": "[Options EdgeScrollingEnabled]",
-                              "ToggleHeadline": 23450,
-                              "ToggleInfotip": 502139
-                            }
-                          }
-                        }
-                      },
-                      {
-                        "Controls": {
-                          "Template": "OptionToggle",
-                          "Values": {
-                            "OptionToggle": {
                               "ToggleTextsource": "[Options IrrigationPlacementModeEnabled]",
                               "ToggleHeadline": 23456,
                               "ToggleInfotip": 126942
@@ -871,6 +909,55 @@
                               "ToggleHeadline": 23467,
                               "ToggleDisabledTextsource": "[GameSetup IsMultiPlayerGame]",
                               "ToggleInfotip": 502155
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Controls": {
+                          "Template": "OptionToggle",
+                          "Values": {
+                            "OptionToggle": {
+                              "ToggleTextsource": "[Options RomanLettersOnlyEnabled]",
+                              "ToggleHeadline": 131749,
+                              "ToggleInfotip": 131750
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Controls": {
+                          "Template": "OptionToggle",
+                          "Values": {
+                            "OptionToggle": {
+                              "ToggleTextsource": "[Options SansSerifOnlyEnabled]",
+                              "ToggleHeadline": 131857,
+                              "ToggleDisabledTextsource": "[Options IsAsianLanguageInUse]",
+                              "ToggleInfotip": 131858
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Controls": {
+                          "Template": "OptionToggle",
+                          "Values": {
+                            "OptionToggle": {
+                              "ToggleTextsource": "[Options AlternativeGrassColorMode]",
+                              "ToggleHeadline": 371,
+                              "ToggleInfotip": 373
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Controls": {
+                          "Template": "OptionToggle",
+                          "Values": {
+                            "OptionToggle": {
+                              "ToggleTextsource": "[Options IncidentMusicDisabled]",
+                              "ToggleHeadline": 23916,
+                              "ToggleInfotip": 502401
                             }
                           }
                         }

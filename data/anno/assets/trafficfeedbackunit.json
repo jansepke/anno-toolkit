@@ -2524,7 +2524,33 @@
         "Name": "SA | Woodcutter"
       },
       "TrafficFeedbackUnit": {
-        "CfgPath": "data/graphics/units/inhabitants/special/lumberjack/lumberjack.cfg"
+        "CfgPath": "data/graphics/units/inhabitants/special/lumberjack/colony_01_lumberjack.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 142979,
+        "Name": "SA | CoconutCollector"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/production/worker_tree_planter/coconut_farmer_colony_m_normal_01_01.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 142980,
+        "Name": "SA | OrangeCollector"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/production/worker_tree_planter/orange_farmer_colony_f_normal_01_01.cfg"
       },
       "Trailer": ""
     }
@@ -4041,7 +4067,7 @@
         "UnitType": "Vehicle",
         "CfgPath": "data/graphics/vehicle/horse_drawn_carriage_03/horse_drawn_carriage_03_front.cfg",
         "SpeedSource": "TakeFromAsset",
-        "OverwriteSpeed": 0.25,
+        "OverwriteSpeed": 0.4,
         "ResidentCamInteraction": "MountAsCoach"
       },
       "Trailer": {
@@ -4066,7 +4092,7 @@
         "UnitType": "Vehicle",
         "CfgPath": "data/graphics/vehicle/horse_drawn_carriage_04/horse_drawn_carriage_04_front.cfg",
         "SpeedSource": "TakeFromAsset",
-        "OverwriteSpeed": 0.25,
+        "OverwriteSpeed": 0.4,
         "ResidentCamInteraction": "MountAsCoach"
       },
       "Trailer": {
@@ -4091,7 +4117,7 @@
         "UnitType": "Vehicle",
         "CfgPath": "data/graphics/vehicle/horse_drawn_carriage_05/horse_drawn_carriage_05_front.cfg",
         "SpeedSource": "TakeFromAsset",
-        "OverwriteSpeed": 0.25,
+        "OverwriteSpeed": 0.4,
         "ResidentCamInteraction": "MountAsCoach"
       },
       "Trailer": {
@@ -4238,7 +4264,7 @@
         "UnitType": "Vehicle",
         "CfgPath": "data/graphics/vehicle/steam_carriage_01/steam_carriage_01.cfg",
         "SpeedSource": "TakeFromAsset",
-        "OverwriteSpeed": 0.3,
+        "OverwriteSpeed": 0.4,
         "ResidentCamInteraction": "MountAsCoach"
       },
       "Trailer": {
@@ -4561,7 +4587,8 @@
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
         "CfgPath": "data/graphics/units/inhabitants/special/high_wheeler/high_wheeler_01.cfg",
-        "OverwriteSpeed": 0.25,
+        "SpeedSource": "TakeFromAsset",
+        "OverwriteSpeed": 0.4,
         "ResidentCamInteraction": "MountAsCoach"
       },
       "Trailer": {
@@ -4584,7 +4611,8 @@
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
         "CfgPath": "data/graphics/units/inhabitants/special/high_wheeler/post_high_wheeler_01.cfg",
-        "OverwriteSpeed": 0.25,
+        "SpeedSource": "TakeFromAsset",
+        "OverwriteSpeed": 0.4,
         "ResidentCamInteraction": "MountAsCoach"
       },
       "Trailer": {
@@ -4614,12 +4642,236 @@
     "Template": "TrafficFeedbackUnit",
     "Values": {
       "Standard": {
+        "GUID": 142956,
+        "Name": "SailingBoat 1"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Ship",
+        "CfgPath": "data/dlc07/graphics/vehicle/small_feedback_boat_01/small_feedback_boat_01.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 142957,
+        "Name": "SailingBoat 2"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Ship",
+        "CfgPath": "data/dlc07/graphics/vehicle/small_feedback_boat_01/small_feedback_boat_02.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 142958,
+        "Name": "MotorShip"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "ShipBig",
+        "CfgPath": "data/dlc07/graphics/vehicle/small_feedback_boat_02/small_feedback_boat_02_01.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 142959,
+        "Name": "SailingBoat 3"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Ship",
+        "CfgPath": "data/dlc07/graphics/vehicle/small_feedback_boat_01/small_feedback_boat_03.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 142960,
+        "Name": "SailingBoatSmall 1"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Ship",
+        "CfgPath": "data/dlc07/graphics/vehicle/small_feedback_boat_03/small_feedback_boat_03.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 142961,
+        "Name": "SailingBoatBig 1"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Ship",
+        "CfgPath": "data/dlc07/graphics/vehicle/small_feedback_boat_01/small_feedback_boat_04.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 142962,
+        "Name": "SailingBoatBig 2"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Ship",
+        "CfgPath": "data/dlc07/graphics/vehicle/small_feedback_boat_01/small_feedback_boat_05.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 142963,
+        "Name": "SailingBoatBig 3"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Ship",
+        "CfgPath": "data/dlc07/graphics/vehicle/small_feedback_boat_01/small_feedback_boat_06.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 142964,
+        "Name": "WorkerBoatBig 1"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Ship",
+        "CfgPath": "data/dlc07/graphics/vehicle/small_feedback_boat_02/worker_feedback_boat_01.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 142965,
+        "Name": "WorkerBoatBig 2"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Ship",
+        "CfgPath": "data/dlc07/graphics/vehicle/small_feedback_boat_02/worker_feedback_boat_02.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 142966,
+        "Name": "WorkerBoatBig 3"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Ship",
+        "CfgPath": "data/dlc07/graphics/vehicle/small_feedback_boat_02/worker_feedback_boat_03.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
         "GUID": 142589,
         "Name": "SA | FishingBoat"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Ship",
         "CfgPath": "data/graphics/vehicle/fishing_boat/fishing_boat_colony_01.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 142968,
+        "Name": "SA | SailingBoat 1"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Ship",
+        "CfgPath": "data/dlc07/graphics/vehicle/small_feedback_boat_01/colony_01_small_feedback_boat_01.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 142969,
+        "Name": "SA | SailingBoat 2"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Ship",
+        "CfgPath": "data/dlc07/graphics/vehicle/small_feedback_boat_01/colony_01_small_feedback_boat_02.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 142970,
+        "Name": "SA | SailingBoat 3"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Ship",
+        "CfgPath": "data/dlc07/graphics/vehicle/small_feedback_boat_01/colony_01_small_feedback_boat_03.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 142971,
+        "Name": "SA | WorkerBoat 1"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Ship",
+        "CfgPath": "data/dlc07/graphics/vehicle/small_feedback_boat_02/colony_01_worker_feedback_boat_01.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 142972,
+        "Name": "SA | WorkerBoat 2"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Ship",
+        "CfgPath": "data/dlc07/graphics/vehicle/small_feedback_boat_02/colony_01_worker_feedback_boat_02.cfg"
       },
       "Trailer": ""
     }
@@ -5309,7 +5561,8 @@
     "Values": {
       "Standard": {
         "GUID": 115416,
-        "Name": "Arctic Tier 01 Male Muscular 01"
+        "Name": "Arctic Tier 01 Male Muscular 01",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/residence/residence_colony_03_tier_01_muscular_m_01/residence_colony_03_tier_01_muscular_m_01.cfg"
@@ -5322,7 +5575,8 @@
     "Values": {
       "Standard": {
         "GUID": 115417,
-        "Name": "Arctic Tier 01 Male Muscular 02"
+        "Name": "Arctic Tier 01 Male Muscular 02",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/residence/residence_colony_03_tier_01_muscular_m_02/residence_colony_03_tier_01_muscular_m_02.cfg"
@@ -5335,7 +5589,8 @@
     "Values": {
       "Standard": {
         "GUID": 115418,
-        "Name": "Arctic Tier 01 Male Muscular 02 Var 01"
+        "Name": "Arctic Tier 01 Male Muscular 02 Var 01",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/residence/residence_colony_03_tier_01_muscular_m_02/residence_colony_03_tier_01_muscular_m_02_var01.cfg"
@@ -5348,7 +5603,8 @@
     "Values": {
       "Standard": {
         "GUID": 115419,
-        "Name": "Arctic Tier 01 Female Normal 01"
+        "Name": "Arctic Tier 01 Female Normal 01",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/residence/residence_colony_03_tier_01_normal_f_01/residence_colony_03_tier_01_normal_f_01.cfg"
@@ -5361,7 +5617,8 @@
     "Values": {
       "Standard": {
         "GUID": 115436,
-        "Name": "Arctic Tier 01 Female Normal 01 Var 01"
+        "Name": "Arctic Tier 01 Female Normal 01 Var 01",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/residence/residence_colony_03_tier_01_normal_f_01/residence_colony_03_tier_01_normal_f_01_var01.cfg"
@@ -5374,7 +5631,8 @@
     "Values": {
       "Standard": {
         "GUID": 115420,
-        "Name": "Arctic Tier 01 Female Normal 02"
+        "Name": "Arctic Tier 01 Female Normal 02",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/residence/residence_colony_03_tier_01_normal_f_02/residence_colony_03_tier_01_normal_f_02.cfg"
@@ -5387,7 +5645,8 @@
     "Values": {
       "Standard": {
         "GUID": 115435,
-        "Name": "Arctic Tier 01 Female Normal 02 Var 01"
+        "Name": "Arctic Tier 01 Female Normal 02 Var 01",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/residence/residence_colony_03_tier_01_normal_f_02/residence_colony_03_tier_01_normal_f_02_var01.cfg"
@@ -5400,7 +5659,8 @@
     "Values": {
       "Standard": {
         "GUID": 115431,
-        "Name": "Arctic Tier 01 Male Normal 01"
+        "Name": "Arctic Tier 01 Male Normal 01",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/residence/residence_colony_03_tier_01_normal_m_01/residence_colony_03_tier_01_normal_m_01.cfg"
@@ -5413,7 +5673,8 @@
     "Values": {
       "Standard": {
         "GUID": 115434,
-        "Name": "Arctic Tier 01 Male Normal 01 Var 01"
+        "Name": "Arctic Tier 01 Male Normal 01 Var 01",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/residence/residence_colony_03_tier_01_normal_m_01/residence_colony_03_tier_01_normal_m_01_var_01.cfg"
@@ -5426,7 +5687,8 @@
     "Values": {
       "Standard": {
         "GUID": 115432,
-        "Name": "Arctic Tier 01 Male Normal 02"
+        "Name": "Arctic Tier 01 Male Normal 02",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/residence/residence_colony_03_tier_01_normal_m_02/residence_colony_03_tier_01_normal_m_02.cfg"
@@ -5439,7 +5701,8 @@
     "Values": {
       "Standard": {
         "GUID": 115433,
-        "Name": "Arctic Tier 01 Male Normal 02 Var 01"
+        "Name": "Arctic Tier 01 Male Normal 02 Var 01",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/residence/residence_colony_03_tier_01_normal_m_02/residence_colony_03_tier_01_normal_m_02_var_01.cfg"
@@ -5452,7 +5715,8 @@
     "Values": {
       "Standard": {
         "GUID": 115995,
-        "Name": "Arctic Tier 01 Native Male Muscular 01"
+        "Name": "Arctic Tier 01 Native Male Muscular 01",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/residence/residence_colony_03_tier_01_natives_muscular_m_01/residence_colony_03_tier_01_natives_muscular_m_01.cfg"
@@ -5465,7 +5729,8 @@
     "Values": {
       "Standard": {
         "GUID": 115996,
-        "Name": "Arctic Tier 01 Native Male Muscular 02"
+        "Name": "Arctic Tier 01 Native Male Muscular 02",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/residence/residence_colony_03_tier_01_natives_muscular_m_02/residence_colony_03_tier_01_natives_muscular_m_02.cfg"
@@ -5478,7 +5743,8 @@
     "Values": {
       "Standard": {
         "GUID": 115997,
-        "Name": "Arctic Tier 01 Native Female Normal 01"
+        "Name": "Arctic Tier 01 Native Female Normal 01",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/residence/residence_colony_03_tier_01_natives_normal_f_01/residence_colony_03_tier_01_natives_normal_f_01.cfg"
@@ -5491,7 +5757,8 @@
     "Values": {
       "Standard": {
         "GUID": 115999,
-        "Name": "Arctic Tier 01 Native Female Normal 02"
+        "Name": "Arctic Tier 01 Native Female Normal 02",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/residence/residence_colony_03_tier_01_natives_normal_f_02/residence_colony_03_tier_01_natives_normal_f_02.cfg"
@@ -5504,7 +5771,8 @@
     "Values": {
       "Standard": {
         "GUID": 115981,
-        "Name": "Arctic Tier 01 Native Child Male 01"
+        "Name": "Arctic Tier 01 Native Child Male 01",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/residence/residence_colony_03_tier_01_small_m_01/residence_colony_03_tier_01_small_m_01.cfg"
@@ -5517,7 +5785,8 @@
     "Values": {
       "Standard": {
         "GUID": 115982,
-        "Name": "Arctic Tier 01 Native Child Male 02"
+        "Name": "Arctic Tier 01 Native Child Male 02",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/residence/residence_colony_03_tier_01_small_m_02/residence_colony_03_tier_01_small_m_02.cfg"
@@ -5530,7 +5799,8 @@
     "Values": {
       "Standard": {
         "GUID": 116106,
-        "Name": "Arctic Hunter Bear"
+        "Name": "Arctic Hunter Bear",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/special/huntsman/huntsman_colony03_01.cfg"
@@ -5543,7 +5813,8 @@
     "Values": {
       "Standard": {
         "GUID": 117426,
-        "Name": "Arctic Hunter Deer"
+        "Name": "Arctic Hunter Deer",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/special/huntsman/huntsman_colony03_02.cfg"
@@ -5556,7 +5827,8 @@
     "Values": {
       "Standard": {
         "GUID": 116704,
-        "Name": "Arctic Woodcutter"
+        "Name": "Arctic Woodcutter",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/special/arctic_lumberjack/arctic_lumberjack.cfg"
@@ -5569,7 +5841,8 @@
     "Values": {
       "Standard": {
         "GUID": 115461,
-        "Name": "Arctic Generic Worker Male Normal 01"
+        "Name": "Arctic Generic Worker Male Normal 01",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/general_workers/worker_normal_m_01.cfg"
@@ -5582,7 +5855,8 @@
     "Values": {
       "Standard": {
         "GUID": 115462,
-        "Name": "Arctic Generic Worker Male Normal 02"
+        "Name": "Arctic Generic Worker Male Normal 02",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/general_workers/worker_normal_m_02.cfg"
@@ -5595,7 +5869,8 @@
     "Values": {
       "Standard": {
         "GUID": 115463,
-        "Name": "Arctic Generic Worker Male Normal 03"
+        "Name": "Arctic Generic Worker Male Normal 03",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/general_workers/worker_normal_m_03.cfg"
@@ -5608,7 +5883,8 @@
     "Values": {
       "Standard": {
         "GUID": 115464,
-        "Name": "Arctic Generic Worker Male Normal 04"
+        "Name": "Arctic Generic Worker Male Normal 04",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/general_workers/worker_normal_m_04.cfg"
@@ -5621,7 +5897,8 @@
     "Values": {
       "Standard": {
         "GUID": 115465,
-        "Name": "Arctic Generic Worker Male Muscular 01"
+        "Name": "Arctic Generic Worker Male Muscular 01",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/general_workers/worker_muscular_m_05.cfg"
@@ -5634,7 +5911,8 @@
     "Values": {
       "Standard": {
         "GUID": 115466,
-        "Name": "Arctic Generic Worker Male Muscular 02"
+        "Name": "Arctic Generic Worker Male Muscular 02",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/general_workers/worker_muscular_m_06.cfg"
@@ -5647,7 +5925,8 @@
     "Values": {
       "Standard": {
         "GUID": 115467,
-        "Name": "Arctic Generic Worker Male Muscular 03"
+        "Name": "Arctic Generic Worker Male Muscular 03",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/general_workers/worker_muscular_m_07.cfg"
@@ -5660,7 +5939,8 @@
     "Values": {
       "Standard": {
         "GUID": 115437,
-        "Name": "Arctic Object Mover 01"
+        "Name": "Arctic Object Mover 01",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/object_movers/object_movers_01.cfg"
@@ -5673,7 +5953,8 @@
     "Values": {
       "Standard": {
         "GUID": 115438,
-        "Name": "Arctic Object Mover 02"
+        "Name": "Arctic Object Mover 02",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/object_movers/object_movers_02.cfg"
@@ -5686,7 +5967,8 @@
     "Values": {
       "Standard": {
         "GUID": 115439,
-        "Name": "Arctic Object Mover 03"
+        "Name": "Arctic Object Mover 03",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/object_movers/object_movers_03.cfg"
@@ -5699,7 +5981,8 @@
     "Values": {
       "Standard": {
         "GUID": 115440,
-        "Name": "Arctic Object Mover 04"
+        "Name": "Arctic Object Mover 04",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/object_movers/object_movers_04.cfg"
@@ -5712,7 +5995,8 @@
     "Values": {
       "Standard": {
         "GUID": 115441,
-        "Name": "Arctic Object Mover 05"
+        "Name": "Arctic Object Mover 05",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/object_movers/object_movers_05.cfg"
@@ -5725,7 +6009,8 @@
     "Values": {
       "Standard": {
         "GUID": 115442,
-        "Name": "Arctic Object Mover 06"
+        "Name": "Arctic Object Mover 06",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/object_movers/object_movers_06.cfg"
@@ -5738,7 +6023,8 @@
     "Values": {
       "Standard": {
         "GUID": 115443,
-        "Name": "Arctic Harbour Worker Boards 01"
+        "Name": "Arctic Harbour Worker Boards 01",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/harbor_workers/harbor_worker_boards_01.cfg"
@@ -5751,7 +6037,8 @@
     "Values": {
       "Standard": {
         "GUID": 115444,
-        "Name": "Arctic Harbour Worker Boards 02"
+        "Name": "Arctic Harbour Worker Boards 02",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/harbor_workers/harbor_worker_boards_01.cfg"
@@ -5764,7 +6051,8 @@
     "Values": {
       "Standard": {
         "GUID": 115445,
-        "Name": "Arctic Harbour Worker Boards 03"
+        "Name": "Arctic Harbour Worker Boards 03",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/harbor_workers/harbor_worker_boards_01.cfg"
@@ -5777,7 +6065,8 @@
     "Values": {
       "Standard": {
         "GUID": 115446,
-        "Name": "Arctic Harbour Worker Boards 04"
+        "Name": "Arctic Harbour Worker Boards 04",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/harbor_workers/harbor_worker_boards_01.cfg"
@@ -5790,7 +6079,8 @@
     "Values": {
       "Standard": {
         "GUID": 115447,
-        "Name": "Arctic Harbour Worker Boards 05"
+        "Name": "Arctic Harbour Worker Boards 05",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/harbor_workers/harbor_worker_boards_01.cfg"
@@ -5803,7 +6093,8 @@
     "Values": {
       "Standard": {
         "GUID": 115448,
-        "Name": "Arctic Harbour Worker Boards 06"
+        "Name": "Arctic Harbour Worker Boards 06",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/harbor_workers/harbor_worker_boards_01.cfg"
@@ -5816,7 +6107,8 @@
     "Values": {
       "Standard": {
         "GUID": 115449,
-        "Name": "Arctic Harbour Worker Boards 07"
+        "Name": "Arctic Harbour Worker Boards 07",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/harbor_workers/harbor_worker_boards_01.cfg"
@@ -5829,7 +6121,8 @@
     "Values": {
       "Standard": {
         "GUID": 115450,
-        "Name": "Arctic Harbour Worker Box 01"
+        "Name": "Arctic Harbour Worker Box 01",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/harbor_workers/harbor_worker_box_01.cfg"
@@ -5842,7 +6135,8 @@
     "Values": {
       "Standard": {
         "GUID": 115456,
-        "Name": "Arctic Harbour Worker Box 02"
+        "Name": "Arctic Harbour Worker Box 02",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/harbor_workers/harbor_worker_box_02.cfg"
@@ -5855,7 +6149,8 @@
     "Values": {
       "Standard": {
         "GUID": 115457,
-        "Name": "Arctic Harbour Worker Box 03"
+        "Name": "Arctic Harbour Worker Box 03",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/harbor_workers/harbor_worker_box_03.cfg"
@@ -5868,7 +6163,8 @@
     "Values": {
       "Standard": {
         "GUID": 115458,
-        "Name": "Arctic Harbour Worker Box 04"
+        "Name": "Arctic Harbour Worker Box 04",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/harbor_workers/harbor_worker_box_04.cfg"
@@ -5881,7 +6177,8 @@
     "Values": {
       "Standard": {
         "GUID": 115459,
-        "Name": "Arctic Harbour Worker Box 05"
+        "Name": "Arctic Harbour Worker Box 05",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/harbor_workers/harbor_worker_box_05.cfg"
@@ -5894,7 +6191,8 @@
     "Values": {
       "Standard": {
         "GUID": 115460,
-        "Name": "Arctic Harbour Worker Box 06"
+        "Name": "Arctic Harbour Worker Box 06",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc03/graphics/units/inhabitants/harbor_workers/harbor_worker_box_06.cfg"
@@ -5908,7 +6206,8 @@
       "Standard": {
         "GUID": 115488,
         "Name": "Dog Sled",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_sled.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_sled.png",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -5950,7 +6249,8 @@
     "Values": {
       "Standard": {
         "GUID": 115992,
-        "Name": "Whale Hunter Ship"
+        "Name": "Whale Hunter Ship",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Ship",
@@ -5964,7 +6264,8 @@
     "Values": {
       "Standard": {
         "GUID": 117266,
-        "Name": "Seal Hunter Boat"
+        "Name": "Seal Hunter Boat",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Ship",
@@ -5979,7 +6280,8 @@
       "Standard": {
         "GUID": 116009,
         "Name": "Arctic Logistic Transporter Warehouse",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -6001,7 +6303,8 @@
     "Values": {
       "Standard": {
         "GUID": 116109,
-        "Name": "Arctic Caribou"
+        "Name": "Arctic Caribou",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/graphics/units/wildlife/deer/Deer_02.cfg"
@@ -6014,7 +6317,8 @@
     "Values": {
       "Standard": {
         "GUID": 116267,
-        "Name": "Arctic Bear White"
+        "Name": "Arctic Bear White",
+        "Version": "dlc03"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/graphics/units/wildlife/bear_polar/bear_polar.cfg"
@@ -6028,7 +6332,8 @@
       "Standard": {
         "GUID": 269768,
         "Name": "Harvester",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc05"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -6052,7 +6357,8 @@
       "Standard": {
         "GUID": 269767,
         "Name": "Tractor (Generic) (no Trailer)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc05"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -6076,7 +6382,8 @@
       "Standard": {
         "GUID": 269766,
         "Name": "Tractor (Bell Pepper)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc05"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -6101,7 +6408,8 @@
       "Standard": {
         "GUID": 270091,
         "Name": "Tractor (Potatoe)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc05"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -6126,7 +6434,8 @@
       "Standard": {
         "GUID": 270092,
         "Name": "Tractor (Vineyard)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc05"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -6151,7 +6460,8 @@
       "Standard": {
         "GUID": 270083,
         "Name": "Logistic Transporter Fuel Moderate",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc05"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -6169,7 +6479,8 @@
       "Standard": {
         "GUID": 269971,
         "Name": "SA | Harvester",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc05"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -6193,7 +6504,8 @@
       "Standard": {
         "GUID": 269969,
         "Name": "SA | Tractor (Generic)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc05"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -6218,7 +6530,8 @@
       "Standard": {
         "GUID": 269970,
         "Name": "SA | Tractor (Generic) (no Trailer)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc05"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -6242,7 +6555,8 @@
       "Standard": {
         "GUID": 270093,
         "Name": "SA | Tractor (Tobacco)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc05"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -6267,7 +6581,8 @@
       "Standard": {
         "GUID": 270094,
         "Name": "SA | Tractor (Banana)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc05"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -6292,7 +6607,8 @@
       "Standard": {
         "GUID": 270085,
         "Name": "Logistic Transporter Fuel SouthAmerica",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc05"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -6310,7 +6626,8 @@
       "Standard": {
         "GUID": 142818,
         "Name": "AF Tier 01 Muscular Male 01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/residents/residence_colony_02_tier_01_muscular_m_01/residence_colony_02_tier_01_muscular_m_01.cfg"
@@ -6324,7 +6641,8 @@
       "Standard": {
         "GUID": 142819,
         "Name": "AF Tier 01 Muscular Male 02",
-        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/residents/residence_colony_02_tier_01_muscular_m_02/residence_colony_02_tier_01_muscular_m_02.cfg"
@@ -6338,7 +6656,8 @@
       "Standard": {
         "GUID": 142822,
         "Name": "AF Tier 01 Normal Male 01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/residents/residence_colony_02_tier_01_normal_m_01/residence_colony_02_tier01_normal_m_01.cfg"
@@ -6352,7 +6671,8 @@
       "Standard": {
         "GUID": 142823,
         "Name": "AF Tier 01 Normal Male 02",
-        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/residents/residence_colony_02_tier_01_normal_m_02/residence_colony_02_tier01_normal_m_02.cfg"
@@ -6366,7 +6686,8 @@
       "Standard": {
         "GUID": 142797,
         "Name": "AF Tier 01 Large Female 01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/residents/residence_colony_02_tier_01_large_f_01/residence_colony_02_tier_01_large_f_01.cfg"
@@ -6380,7 +6701,8 @@
       "Standard": {
         "GUID": 142817,
         "Name": "AF Tier 01 Large Female 02",
-        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/residents/residence_colony_02_tier_01_large_f_02/residence_colony_02_tier_01_large_f_02.cfg"
@@ -6394,7 +6716,8 @@
       "Standard": {
         "GUID": 142820,
         "Name": "AF Tier 01 Normal Female 01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/residents/residence_colony_02_tier_01_normal_f_01/residence_colony_02_tier01_normal_f_01.cfg"
@@ -6408,7 +6731,8 @@
       "Standard": {
         "GUID": 142821,
         "Name": "AF Tier 01 Normal Female 02",
-        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/residents/residence_colony_02_tier_01_normal_f_02/residence_colony_02_tier01_normal_f_02.cfg"
@@ -6422,7 +6746,8 @@
       "Standard": {
         "GUID": 118572,
         "Name": "AF Tier 01 Normal Female 01 transport",
-        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/residents/residence_colony_02_tier_01_normal_f_01/residence_colony_02_tier01_normal_f_01_with_pot.cfg"
@@ -6436,7 +6761,8 @@
       "Standard": {
         "GUID": 118573,
         "Name": "AF Tier 01 Normal Female 02 transport",
-        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/residents/residence_colony_02_tier_01_normal_f_02/residence_colony_02_tier01_normal_f_02_with_pot.cfg"
@@ -6450,7 +6776,8 @@
       "Standard": {
         "GUID": 142824,
         "Name": "AF Tier 01 Child Female 01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/residents/residence_colony_02_tier_01_small_f_01/residence_colony_02_tier_01_small_f_01.cfg"
@@ -6464,7 +6791,8 @@
       "Standard": {
         "GUID": 142825,
         "Name": "AF Tier 01 Child Male 01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/residents/residence_colony_02_tier_02_small_m_01/residence_colony_02_tier_02_small_m_01.cfg"
@@ -6478,7 +6806,8 @@
       "Standard": {
         "GUID": 142828,
         "Name": "AF Tier 02 Muscular Male 01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/residents/residence_colony_02_tier_02_muscular_m_01/residence_colony_02_tier_02_muscular_m_01.cfg"
@@ -6492,7 +6821,8 @@
       "Standard": {
         "GUID": 142829,
         "Name": "AF Tier 02 Muscular Male 02",
-        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/residents/residence_colony_02_tier_02_muscular_m_02/residence_colony_02_tier_02_muscular_m_02.cfg"
@@ -6506,7 +6836,8 @@
       "Standard": {
         "GUID": 142832,
         "Name": "AF Tier 02 Normal Male 01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/residents/residence_colony_02_tier_02_normal_m_01/residence_colony_02_tier02_normal_m_01.cfg"
@@ -6520,7 +6851,8 @@
       "Standard": {
         "GUID": 142833,
         "Name": "AF Tier 02 Normal Male 02",
-        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/residents/residence_colony_02_tier_02_normal_m_02/residence_colony_02_tier02_normal_m_02.cfg"
@@ -6534,7 +6866,8 @@
       "Standard": {
         "GUID": 142826,
         "Name": "AF Tier 02 Large Female 01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/residents/residence_colony_02_tier_02_large_f_01/residence_colony_02_tier_02_large_f_01.cfg"
@@ -6548,7 +6881,8 @@
       "Standard": {
         "GUID": 142827,
         "Name": "AF Tier 02 Large Female 02",
-        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/residents/residence_colony_02_tier_02_large_f_02/residence_colony_02_tier_02_large_f_02.cfg"
@@ -6562,7 +6896,8 @@
       "Standard": {
         "GUID": 142830,
         "Name": "AF Tier 02 Normal Female 01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/residents/residence_colony_02_tier_02_normal_f_01/residence_colony_02_tier02_normal_f_01.cfg"
@@ -6576,7 +6911,8 @@
       "Standard": {
         "GUID": 142831,
         "Name": "AF Tier 02 Normal Female 02",
-        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/residents/residence_colony_02_tier_02_normal_f_02/residence_colony_02_tier02_normal_f_02.cfg"
@@ -6590,7 +6926,8 @@
       "Standard": {
         "GUID": 142834,
         "Name": "AF Tier 02 Child Female 01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/residents/residence_colony_02_tier_02_small_f_01/residence_colony_02_tier_02_small_f_02.cfg"
@@ -6604,7 +6941,8 @@
       "Standard": {
         "GUID": 142835,
         "Name": "AF Tier 02 Child Male 01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/residents/residence_colony_02_tier_02_small_m_01/residence_colony_02_tier_02_small_m_01.cfg"
@@ -6618,7 +6956,8 @@
       "Standard": {
         "GUID": 123970,
         "Name": "AF | Tier 02 Traveling Vendor",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/special/traveling_vendor/colony_02_traveling_vendor.cfg"
@@ -6632,7 +6971,8 @@
       "Standard": {
         "GUID": 131379,
         "Name": "AF Tier Scholar Male 01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/special/scholar/scholar_m_01.cfg"
@@ -6646,7 +6986,8 @@
       "Standard": {
         "GUID": 131380,
         "Name": "AF Tier Scholar Male 02",
-        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/special/scholar/scholar_m_02.cfg"
@@ -6660,7 +7001,8 @@
       "Standard": {
         "GUID": 131381,
         "Name": "AF Tier Scholar Male 03",
-        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/special/scholar/scholar_m_03.cfg"
@@ -6674,7 +7016,8 @@
       "Standard": {
         "GUID": 131382,
         "Name": "AF Tier Scholar Male 04",
-        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/special/scholar/scholar_m_04.cfg"
@@ -6688,7 +7031,8 @@
       "Standard": {
         "GUID": 131383,
         "Name": "AF Tier Scholar Female 01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/special/scholar/scholar_f_01.cfg"
@@ -6702,7 +7046,8 @@
       "Standard": {
         "GUID": 131384,
         "Name": "AF Tier Scholar Female 02",
-        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_manager__202.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/special/scholar/scholar_f_02.cfg"
@@ -6716,7 +7061,8 @@
       "Standard": {
         "GUID": 142864,
         "Name": "AF | Forman",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/production/foreman_colony_02/foreman_colony_02.cfg"
@@ -6730,7 +7076,8 @@
       "Standard": {
         "GUID": 127428,
         "Name": "AF | Woodcutter",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_wood_log.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_wood_log.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/special/lumberjack/lumberjack.cfg"
@@ -6744,7 +7091,8 @@
       "Standard": {
         "GUID": 142845,
         "Name": "AF | Generic Worker 01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_rum_master.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_rum_master.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/production/production_generic_worker_colony_02_01/production_generic_worker_colony_02_01.cfg"
@@ -6758,7 +7106,8 @@
       "Standard": {
         "GUID": 142846,
         "Name": "AF | Generic Worker 02",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_rum_master.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_rum_master.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/production/production_generic_worker_colony_02_02/production_generic_worker_colony_02_02.cfg"
@@ -6772,7 +7121,8 @@
       "Standard": {
         "GUID": 142847,
         "Name": "AF | Generic Worker 03",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_rum_master.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_rum_master.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/production/production_generic_worker_colony_02_03/production_generic_worker_colony_02_03.cfg"
@@ -6786,7 +7136,8 @@
       "Standard": {
         "GUID": 142848,
         "Name": "AF | Generic Worker 04",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_rum_master.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_rum_master.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/production/production_generic_worker_colony_02_04/production_generic_worker_colony_02_04.cfg"
@@ -6800,7 +7151,8 @@
       "Standard": {
         "GUID": 142849,
         "Name": "AF | Generic Worker 05",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_rum_master.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_rum_master.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/production/production_generic_worker_colony_02_05/production_generic_worker_colony_02_05.cfg"
@@ -6814,7 +7166,8 @@
       "Standard": {
         "GUID": 142850,
         "Name": "AF | Generic Worker 06",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_rum_master.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_rum_master.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/production/production_generic_worker_colony_02_06/production_generic_worker_colony_02_06.cfg"
@@ -6828,7 +7181,8 @@
       "Standard": {
         "GUID": 142851,
         "Name": "AF | Generic Worker f large 01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_rum_master.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_rum_master.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/production/production_generic_worker_colony_f_large_02_01/production_generic_worker_colony_02_f_large_01_01.cfg"
@@ -6842,7 +7196,8 @@
       "Standard": {
         "GUID": 142852,
         "Name": "AF | Generic Worker f large 02",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_rum_master.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_rum_master.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/production/production_generic_worker_colony_f_large_02_02/production_generic_worker_colony_02_f_large_01_02.cfg"
@@ -6856,7 +7211,8 @@
       "Standard": {
         "GUID": 142853,
         "Name": "AF | Generic Worker f normal 01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_rum_master.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_rum_master.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/production/production_generic_worker_colony_f_normal_02_01/production_generic_worker_colony_02_f_normal_02_01.cfg"
@@ -6870,7 +7226,8 @@
       "Standard": {
         "GUID": 142854,
         "Name": "AF | Generic Worker f normal 02",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_rum_master.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_rum_master.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/production/production_generic_worker_colony_f_normal_02_02/production_generic_worker_colony_f_normal_02_02.cfg"
@@ -6884,7 +7241,8 @@
       "Standard": {
         "GUID": 142858,
         "Name": "AF | Harbour Worker Boards 01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/production/harbor_worker/harbor_worker_colony02_boards_01.cfg"
@@ -6898,7 +7256,8 @@
       "Standard": {
         "GUID": 142859,
         "Name": "AF | Harbour Worker Boards 02",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/production/harbor_worker/harbor_worker_colony02_boards_02.cfg"
@@ -6912,7 +7271,8 @@
       "Standard": {
         "GUID": 142860,
         "Name": "AF | Harbour Worker Boards 03",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/production/harbor_worker/harbor_worker_colony02_boards_03.cfg"
@@ -6926,7 +7286,8 @@
       "Standard": {
         "GUID": 142861,
         "Name": "AF | Harbour Worker Box 01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/production/harbor_worker/harbor_worker_colony02_box_01.cfg"
@@ -6940,7 +7301,8 @@
       "Standard": {
         "GUID": 142862,
         "Name": "AF | Harbour Worker Box 02",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/production/harbor_worker/harbor_worker_colony02_box_02.cfg"
@@ -6954,7 +7316,8 @@
       "Standard": {
         "GUID": 142863,
         "Name": "AF | Harbour Worker Box 03",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/production/harbor_worker/harbor_worker_colony02_box_03.cfg"
@@ -6968,7 +7331,8 @@
       "Standard": {
         "GUID": 142855,
         "Name": "AF | Object Mover 01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/production/object_movers_01/object_movers_colony_02_01.cfg"
@@ -6982,7 +7346,8 @@
       "Standard": {
         "GUID": 142856,
         "Name": "AF | Object Mover 02",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/production/object_movers_01/object_movers_colony_02_02.cfg"
@@ -6996,7 +7361,8 @@
       "Standard": {
         "GUID": 142857,
         "Name": "AF | Object Mover 03",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/production/object_movers_01/object_movers_colony_02_03.cfg"
@@ -7010,7 +7376,8 @@
       "Standard": {
         "GUID": 142839,
         "Name": "AF | Production Street 01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/production/street_feedback_worker/worker_normal_m_01.cfg"
@@ -7024,7 +7391,8 @@
       "Standard": {
         "GUID": 142840,
         "Name": "AF | Production Street 02",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/production/street_feedback_worker/worker_normal_m_02.cfg"
@@ -7038,7 +7406,8 @@
       "Standard": {
         "GUID": 142841,
         "Name": "AF | Production Street 03",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/production/street_feedback_worker/worker_normal_m_03.cfg"
@@ -7052,7 +7421,8 @@
       "Standard": {
         "GUID": 142842,
         "Name": "AF | Production Street 04",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/production/street_feedback_worker/worker_normal_m_04.cfg"
@@ -7066,7 +7436,8 @@
       "Standard": {
         "GUID": 142843,
         "Name": "AF | Production Street 05",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/inhabitants/production/street_feedback_worker/worker_normal_m_05.cfg"
@@ -7080,7 +7451,8 @@
       "Standard": {
         "GUID": 142836,
         "Name": "AF | Tier 01 Animal Handler 01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -7112,7 +7484,8 @@
       "Standard": {
         "GUID": 142837,
         "Name": "AF | Tier 01 Animal Handler 02",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -7153,7 +7526,8 @@
       "Standard": {
         "GUID": 142838,
         "Name": "AF | Tier 01 Animal Handler 03",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -7196,7 +7570,8 @@
       "Standard": {
         "GUID": 127438,
         "Name": "AF | Ridable Elephant",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -7222,7 +7597,8 @@
       "Standard": {
         "GUID": 127465,
         "Name": "AF | Goat Chain",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -7274,7 +7650,8 @@
       "Standard": {
         "GUID": 128101,
         "Name": "AF | Tier 01 Transport Wagon 01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -7309,7 +7686,8 @@
       "Standard": {
         "GUID": 128109,
         "Name": "AF | Tier 01 Transport Wagon 02",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -7348,7 +7726,8 @@
       "Standard": {
         "GUID": 123972,
         "Name": "AF | Logistic Transporter Fuel",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -7366,7 +7745,8 @@
       "Standard": {
         "GUID": 123973,
         "Name": "AF | Harvester",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -7390,7 +7770,8 @@
       "Standard": {
         "GUID": 123974,
         "Name": "AF | Tractor (Generic)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -7415,7 +7796,8 @@
       "Standard": {
         "GUID": 123975,
         "Name": "AF | Tractor (Generic) (no Trailer)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -7439,7 +7821,8 @@
       "Standard": {
         "GUID": 131241,
         "Name": "AF | Tractor (Hibiscus)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -7464,7 +7847,8 @@
       "Standard": {
         "GUID": 131242,
         "Name": "AF | Tractor (Indigo)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -7489,7 +7873,8 @@
       "Standard": {
         "GUID": 131243,
         "Name": "AF | Tractor (Spice)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -7512,9 +7897,85 @@
     "Template": "TrafficFeedbackUnit",
     "Values": {
       "Standard": {
+        "GUID": 132544,
+        "Name": "AF | SailingBoat 1",
+        "Version": "dlc06"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Ship",
+        "CfgPath": "data/dlc07/graphics/vehicle/small_feedback_boat_01/colony_02_small_feedback_boat_01.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 132547,
+        "Name": "AF | SailingBoat 2",
+        "Version": "dlc06"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Ship",
+        "CfgPath": "data/dlc07/graphics/vehicle/small_feedback_boat_01/colony_02_small_feedback_boat_02.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 132548,
+        "Name": "AF | SailingBoat 3",
+        "Version": "dlc06"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Ship",
+        "CfgPath": "data/dlc07/graphics/vehicle/small_feedback_boat_01/colony_02_small_feedback_boat_03.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 132545,
+        "Name": "AF | WorkerBoat 1",
+        "Version": "dlc06"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Ship",
+        "CfgPath": "data/dlc07/graphics/vehicle/small_feedback_boat_02/colony_02_worker_feedback_boat_01.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 132546,
+        "Name": "AF | WorkerBoat 2",
+        "Version": "dlc06"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Ship",
+        "CfgPath": "data/dlc07/graphics/vehicle/small_feedback_boat_02/colony_02_worker_feedback_boat_02.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
         "GUID": 142870,
         "Name": "AF | Logistic Transporter Factory",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -7531,7 +7992,8 @@
       "Standard": {
         "GUID": 142871,
         "Name": "AF | Logistic Transporter Warehouse",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_mineral_desposits.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "UnitType": "Vehicle",
@@ -7554,7 +8016,8 @@
       "Standard": {
         "GUID": 118719,
         "Name": "Goat 01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_elephant.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_elephant.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/wildlife/goat_african/goat_male_01.cfg"
@@ -7568,7 +8031,8 @@
       "Standard": {
         "GUID": 118720,
         "Name": "Goat 02",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_elephant.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_elephant.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/wildlife/goat_african/goat_male_02.cfg"
@@ -7582,10 +8046,547 @@
       "Standard": {
         "GUID": 118721,
         "Name": "Goat 03",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_elephant.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_elephant.png",
+        "Version": "dlc06"
       },
       "TrafficFeedbackUnit": {
         "CfgPath": "data/dlc06/graphics/units/wildlife/goat_african/goat_male_03.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 601453,
+        "Name": "Bus 01",
+        "IconFilename": "data/ui/2kimages/main/3dicons/busses/icon_bus_skin_01.png",
+        "ID": "DLC08Bus01",
+        "Version": "dlc08"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Bus",
+        "CfgPath": "data/dlc08/graphics/vehicles/bus_01/bus_01.cfg",
+        "SpeedSource": "TakeFromAsset",
+        "OverwriteSpeed": 0.4,
+        "ResidentCamInteraction": "Bus"
+      },
+      "Trailer": {
+        "TrailerEndPartCfgVariations": {
+          "Item": {
+            "CfgVariation": "data/graphics/vehicle/horse_drawn_carriage_05/horse_drawn_carriage_05_rear.cfg"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 370,
+        "Name": "Bus 02",
+        "IconFilename": "data/ui/2kimages/main/3dicons/busses/icon_bus_skin_02.png",
+        "ID": "DLC08Bus02",
+        "Version": "dlc08"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Bus",
+        "CfgPath": "data/dlc08/graphics/vehicles/bus_01/bus_02.cfg",
+        "SpeedSource": "TakeFromAsset",
+        "OverwriteSpeed": 0.4,
+        "ResidentCamInteraction": "Bus"
+      },
+      "Trailer": {
+        "TrailerEndPartCfgVariations": {
+          "Item": {
+            "CfgVariation": "data/graphics/vehicle/horse_drawn_carriage_05/horse_drawn_carriage_05_rear.cfg"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 400,
+        "Name": "Bus 03",
+        "IconFilename": "data/ui/2kimages/main/3dicons/busses/icon_bus_skin_03.png",
+        "ID": "DLC08Bus03",
+        "Version": "dlc08"
+      },
+      "TrafficFeedbackUnit": {
+        "UnitType": "Bus",
+        "CfgPath": "data/dlc08/graphics/vehicles/bus_01/bus_03.cfg",
+        "SpeedSource": "TakeFromAsset",
+        "OverwriteSpeed": 0.4,
+        "ResidentCamInteraction": "Bus"
+      },
+      "Trailer": {
+        "TrailerEndPartCfgVariations": {
+          "Item": {
+            "CfgVariation": "data/graphics/vehicle/horse_drawn_carriage_05/horse_drawn_carriage_05_rear.cfg"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134521,
+        "Name": "Tourist moderate"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourist_moderate_normal_m/tourist_moderate_01_normal_m.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134522,
+        "Name": "Tourist SA Male 01"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourism_colony01_01_normal_m/tourism_colony01_01_normal_m.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134523,
+        "Name": "Tourist SA Male 02"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourism_colony01_01_normal_m/tourism_colony01_02_normal_m.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134548,
+        "Name": "Tourist SA Female 01"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourism_colony01_01_normal_f/tourism_colony01_03_normal_f.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134549,
+        "Name": "Tourist SA Female 02"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourism_colony01_01_normal_f/tourism_colony01_04_normal_f.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134524,
+        "Name": "Tourist AF Male 01"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourism_colony02_01_normal_m/tourism_colony02_01_normal_m.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134525,
+        "Name": "Tourist AF Male 02"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourism_colony02_01_normal_m/tourism_colony02_02_normal_m.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134550,
+        "Name": "Tourist AF Male 03"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourism_colony02_01_normal_m/tourism_colony02_03_normal_m.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134551,
+        "Name": "Tourist AF Male 04"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourism_colony02_01_normal_m/tourism_colony02_04_normal_m.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134546,
+        "Name": "Tourist AF Female 01"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourism_colony02_01_normal_f/tourism_colony02_01_normal_f.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134547,
+        "Name": "Tourist AF Female 02"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourism_colony02_01_normal_f/tourism_colony02_02_normal_f.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134552,
+        "Name": "Tourist AF Female 03"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourism_colony02_01_normal_f/tourism_colony02_03_normal_f.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134553,
+        "Name": "Tourist AF Female 04"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourism_colony02_01_normal_f/tourism_colony02_04_normal_f.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134554,
+        "Name": "Tourist AF Female 05"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourism_colony02_01_normal_f/tourism_colony02_05_normal_f.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134520,
+        "Name": "Tourist moderate with luggage 01"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourists_with_luggage/tourism_with_luggage_large_01_m.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134529,
+        "Name": "Tourist moderate with luggage 02"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourists_with_luggage/tourism_with_luggage_large_02_m.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134530,
+        "Name": "Tourist moderate with luggage 03"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourists_with_luggage/tourism_with_luggage_normal_01_f.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134531,
+        "Name": "Tourist moderate with luggage 04"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourists_with_luggage/tourism_with_luggage_normal_01_m.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134532,
+        "Name": "Tourist moderate with luggage 05"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourists_with_luggage/tourism_with_luggage_normal_02_f.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134533,
+        "Name": "Tourist moderate with luggage 06"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourists_with_luggage/tourism_with_luggage_normal_02_m.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134534,
+        "Name": "Tourist moderate with luggage 07"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourists_with_luggage/tourism_with_luggage_normal_03_m.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134535,
+        "Name": "Tourist moderate with luggage 08"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourists_with_luggage/tourism_with_luggage_normal_col1_04_m.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134536,
+        "Name": "Tourist SA with luggage 01"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourists_with_luggage/tourism_with_luggage_normal_col1_01_f.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134537,
+        "Name": "Tourist SA with luggage 02"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourists_with_luggage/tourism_with_luggage_normal_col1_01_m.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134538,
+        "Name": "Tourist SA with luggage 03"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourists_with_luggage/tourism_with_luggage_normal_col1_02_f.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134539,
+        "Name": "Tourist SA with luggage 04"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourists_with_luggage/tourism_with_luggage_normal_col1_02_m.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134540,
+        "Name": "Tourist SA with luggage 05"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourists_with_luggage/tourism_with_luggage_normal_col1_03_m.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134541,
+        "Name": "Tourist SA with luggage 06"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourists_with_luggage/tourism_with_luggage_normal_col1_04_m.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134542,
+        "Name": "Tourist AF with luggage 01"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourists_with_luggage/tourism_with_luggage_normal_col2_01_f.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134543,
+        "Name": "Tourist AF with luggage 02"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourists_with_luggage/tourism_with_luggage_normal_col2_01_m.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134544,
+        "Name": "Tourist AF with luggage 03"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourists_with_luggage/tourism_with_luggage_normal_col2_02_f.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 134545,
+        "Name": "Tourist AF with luggage 04"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/dlc08/graphics/units/inhabitants/tourism/tourists_with_luggage/tourism_with_luggage_normal_col2_02_m.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 137786,
+        "Name": "Volunteer 1",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/graphics/units/inhabitants/residents/residence_tier_02_muscular_m_01/residence_tier_02_muscular_m_01.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 137787,
+        "Name": "Volunteer 2",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/graphics/units/inhabitants/residents/residence_tier_02_muscular_m_02/residence_tier_02_muscular_m_02.cfg"
+      },
+      "Trailer": ""
+    }
+  },
+  {
+    "Template": "TrafficFeedbackUnit",
+    "Values": {
+      "Standard": {
+        "GUID": 137788,
+        "Name": "Volunteer 3",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_module_workforce.png"
+      },
+      "TrafficFeedbackUnit": {
+        "CfgPath": "data/graphics/units/inhabitants/residents/residence_tier_02_muscular_m_03/residence_tier_02_muscular_m_03.cfg"
       },
       "Trailer": ""
     }

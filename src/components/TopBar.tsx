@@ -78,7 +78,7 @@ const TopBar = ({ headline }: { headline: string }) => {
           </Menu>
         </div>
         <Box display={{ xs: "none", sm: "block" }}>
-          <Chip label="Anno Version 9.1" color="primary" />
+          <Chip label="Anno Version 12.0" color="primary" />
           <IconButton
             color="inherit"
             href="https://github.com/jansepke/anno-toolkit"

@@ -7,7 +7,8 @@
         "Name": "Airship (Trade)",
         "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_airship.png",
         "ID": "TradeZeppelin",
-        "InfoDescription": 114288
+        "InfoDescription": 114288,
+        "Version": "dlc03"
       },
       "Object": {
         "Variations": {
@@ -21,6 +22,24 @@
               }
             },
             "Filename": "data/dlc03/graphics/vehicles/airships/airships.cfg"
+          }
+        },
+        "Skins": {
+          "SkinList": {
+            "Item": [
+              {
+                "SkinAssetGuid": 133406
+              },
+              {
+                "SkinAssetGuid": 133413
+              },
+              {
+                "SkinAssetGuid": 133414
+              },
+              {
+                "SkinAssetGuid": 133416
+              }
+            ]
           }
         }
       },
@@ -48,7 +67,219 @@
         },
         "LineID": 35130
       },
-      "CommandQueue": "",
+      "CommandQueue": {
+        "TradeShipPoints": 0
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 1,
+        "Length": 7,
+        "Width": 3.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 1200,
+        "DisableGettingAutoAttacked": 1,
+        "CanBeAttackedByPlayer": 0
+      },
+      "MinimapToken": {
+        "StrategicMapAsset": 117300
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 244872
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 244873
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SlotCount": 4
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 0
+                  }
+                }
+              },
+              "Amount": 25
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 1
+                  }
+                }
+              },
+              "Amount": 50
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 2
+                  }
+                }
+              },
+              "Ingredient": 1010224,
+              "Amount": 25
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 3
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Craftable": "",
+      "TradeRouteVehicle": {
+        "LoadingSpeedFactor": 0.5
+      },
+      "Locked": {
+        "DLCDependency": 410042
+      },
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": "",
+      "ShipMaintenance": {
+        "Maintenance": 1200,
+        "DisableEscort": 0
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "AirShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 700000
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 117310
+          },
+          "AttackCommand": {
+            "AudioPool": 117311
+          },
+          "MoveCommand": {
+            "AudioPool": 117312
+          },
+          "EscortCommand": {
+            "AudioPool": 117314
+          },
+          "PatrolCommand": {
+            "AudioPool": 117313
+          },
+          "SelectionDamaged": {
+            "AudioPool": 117309
+          }
+        }
+      },
+      "ItemReplacer": {
+        "ItemReplacementPools": 193855
+      }
+    }
+  },
+  {
+    "Template": "AirShip",
+    "Values": {
+      "Standard": {
+        "GUID": 133226,
+        "Name": "Airship (Queen)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_airship.png",
+        "InfoDescription": 114288,
+        "Version": "dlc08"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "VectorElement": {
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Filename": "data/dlc08/graphics/quest/queen_airship/airships.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": "",
+      "Walking": {
+        "TurnAroundRadius": 8,
+        "Deceleration": 2,
+        "TurnRadius": 8,
+        "TurnSpeed": 45,
+        "TurnSpeedInPlace": 20,
+        "LeaningMaxAngle": 0,
+        "ForwardSpeed": 11.7,
+        "WindMinSlowdownFactor": 0.4,
+        "WindSlowdownEffectOnTurningSpeed": 0.35,
+        "MinSlowdownFactor": 0.3
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Queen's Royal Airship",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 49848
+      },
+      "CommandQueue": {
+        "TradeShipPoints": 0
+      },
       "Drifting": {
         "OverrideAssetWidthAndLength": 1,
         "Length": 7,

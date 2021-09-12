@@ -14,7 +14,7 @@
               "DefaultKey": "Ctrl + S",
               "Command": "TextSources.TextSourceRoots.Game.SetSaveGameWithPopup()",
               "Text": 9655,
-              "Active": "Menu;Session;WorldMap;Pause"
+              "Active": "Menu;Session;WorldMap"
             },
             {
               "DefaultKey": "PrintScreen",
@@ -139,7 +139,7 @@
               "DefaultKey": "Ctrl + G",
               "Command": "TextSources.TextSourceRoots.Interface.ToggleUI()",
               "Text": 9630,
-              "Active": "Session;WorldMap"
+              "Active": "Session;WorldMap;Popup"
             },
             {
               "DefaultKey": "Delete",
@@ -163,19 +163,19 @@
               "Identifier": 1010035
             },
             {
-              "DefaultKey": "H",
-              "Command": "game.startBuild(1010343)",
-              "Text": 9615,
-              "Active": "Session",
-              "AudioEvent": 200634
-            },
-            {
               "DefaultKey": "W",
               "DefaultKeyLocalized": 22176,
               "Command": "game.startBuild(1010371)",
               "Text": 17380,
               "Active": "Session",
               "Identifier": 1010371,
+              "AudioEvent": 200634
+            },
+            {
+              "DefaultKey": "H",
+              "Command": "game.startBuild(1010343)",
+              "Text": 9615,
+              "Active": "Session",
               "AudioEvent": 200634
             },
             {
@@ -274,7 +274,7 @@
               "Command": "TextSources.TextSourceRoots.Interface.ToggleMetaUI()",
               "Text": 9623,
               "Active": "Session;WorldMap",
-              "Identifier": "WorldMap"
+              "Identifier": 180039
             },
             {
               "DefaultKey": "Shift + Space",
@@ -357,9 +357,9 @@
             },
             {
               "DefaultKey": "F9",
-              "Command": "game.restoreCameraViewAndRotate(4,10)",
+              "Command": "TextSources.TextSourceRoots.Interface.ToggleRotatingCameraView(4)",
               "Text": 9651,
-              "Active": "Session;Pause"
+              "Active": "Session;PostcardView"
             },
             {
               "DefaultKey": "Ctrl + F9",
@@ -369,9 +369,9 @@
             },
             {
               "DefaultKey": "F10",
-              "Command": "game.restoreCameraViewAndRotate(5,10)",
+              "Command": "TextSources.TextSourceRoots.Interface.ToggleRotatingCameraView(5)",
               "Text": 9652,
-              "Active": "Session;Pause"
+              "Active": "Session;PostcardView"
             },
             {
               "DefaultKey": "Ctrl + F10",
@@ -520,19 +520,21 @@
               "Command": "TextSources.TextSourceRoots.Interface.PopUI()",
               "Text": 9628,
               "Configurable": 0,
-              "Active": "Menu;Session;WorldMap;VideoCameraSequence;TextInput;PostcardView;Pause;Pausemenu"
+              "Active": "Menu;Session;WorldMap;VideoCameraSequence;TextInput;PostcardView;Pause;Pausemenu;None"
             },
             {
               "DefaultKey": "Shift + F2",
               "Text": 17381,
               "Configurable": 0,
-              "Active": "Menu;Session;WorldMap;VideoCameraSequence;TextInput;PostcardView"
+              "Active": "Menu;Session;WorldMap;VideoCameraSequence;TextInput;PostcardView",
+              "Identifier": "ToggleUplayOverlay"
             },
             {
               "DefaultKey": "Alt + F4",
               "Text": 11531,
               "Configurable": 0,
-              "Active": ""
+              "Active": "",
+              "Identifier": "QuitGame"
             },
             {
               "DefaultKey": "Alt + Return",
@@ -550,7 +552,7 @@
             },
             {
               "DefaultKey": "Down",
-              "Command": "TextSources.TextSourceRoots.GUI.SetChatInput(\"Down\")",
+              "Command": "TextSources.TextSourceRoots.Interface.ChatInput(\"Down\")",
               "Configurable": 0,
               "Active": "Chat",
               "HideInOptionMenu": 1,
@@ -559,7 +561,7 @@
             },
             {
               "DefaultKey": "Up",
-              "Command": "TextSources.TextSourceRoots.GUI.SetChatInput(\"Up\")",
+              "Command": "TextSources.TextSourceRoots.Interface.ChatInput(\"Up\")",
               "Configurable": 0,
               "Active": "Chat",
               "HideInOptionMenu": 1,
@@ -568,7 +570,7 @@
             },
             {
               "DefaultKey": "Left",
-              "Command": "TextSources.TextSourceRoots.GUI.SetChatInput(\"Left\")",
+              "Command": "TextSources.TextSourceRoots.Interface.ChatInput(\"Left\")",
               "Configurable": 0,
               "Active": "Chat",
               "HideInOptionMenu": 1,
@@ -578,7 +580,7 @@
             },
             {
               "DefaultKey": "Right",
-              "Command": "TextSources.TextSourceRoots.GUI.SetChatInput(\"Right\")",
+              "Command": "TextSources.TextSourceRoots.Interface.ChatInput(\"Right\")",
               "Configurable": 0,
               "Active": "Chat",
               "HideInOptionMenu": 1,
@@ -588,7 +590,7 @@
             },
             {
               "DefaultKey": "Return",
-              "Command": "TextSources.TextSourceRoots.GUI.SetChatInput(\"Return\")",
+              "Command": "TextSources.TextSourceRoots.Interface.ChatInput(\"Return\")",
               "Configurable": 0,
               "Active": "Chat",
               "HideInOptionMenu": 1,
@@ -597,7 +599,7 @@
             },
             {
               "DefaultKey": "Escape",
-              "Command": "TextSources.TextSourceRoots.GUI.SetChatInput(\"Escape\")",
+              "Command": "TextSources.TextSourceRoots.Interface.ChatInput(\"Escape\")",
               "Configurable": 0,
               "Active": "Chat",
               "HideInOptionMenu": 1,
@@ -613,7 +615,7 @@
             },
             {
               "DefaultKey": "O",
-              "Command": "TextSources.TextSourceRoots.GUI.SetChatInput(\"OptionsPopup\")",
+              "Command": "TextSources.TextSourceRoots.Interface.ChatInput(\"OptionsPopup\")",
               "Text": 22290,
               "Configurable": 0,
               "Active": "Chat",
@@ -624,7 +626,7 @@
             },
             {
               "DefaultKey": "Q",
-              "Command": "TextSources.TextSourceRoots.GUI.SetChatInput(\"SelectionChannel\")",
+              "Command": "TextSources.TextSourceRoots.Interface.ChatInput(\"SelectionChannel\")",
               "Text": 22673,
               "Configurable": 0,
               "Active": "Chat",
@@ -635,7 +637,7 @@
             },
             {
               "DefaultKey": "A",
-              "Command": "TextSources.TextSourceRoots.GUI.SetChatInput(\"FocusChatInput\")",
+              "Command": "TextSources.TextSourceRoots.Interface.ChatInput(\"FocusChatInput\")",
               "Text": 22814,
               "Configurable": 0,
               "Active": "Chat",
@@ -678,35 +680,35 @@
             },
             {
               "DefaultKey": "Keypad 1",
-              "Command": "TextSources.TextSourceRoots.GUI.SetJumpToSession(180023)",
+              "Command": "TextSources.TextSourceRoots.Interface.JumpToSession(180023)",
               "Text": 22695,
               "Active": "Session;WorldMap",
               "Identifier": 180023
             },
             {
               "DefaultKey": "Keypad 2",
-              "Command": "TextSources.TextSourceRoots.GUI.SetJumpToSession(180025)",
+              "Command": "TextSources.TextSourceRoots.Interface.JumpToSession(180025)",
               "Text": 22696,
               "Active": "Session;WorldMap",
               "Identifier": 180025
             },
             {
               "DefaultKey": "Keypad 3",
-              "Command": "TextSources.TextSourceRoots.GUI.SetJumpToSession(110934)",
+              "Command": "TextSources.TextSourceRoots.Interface.JumpToSession(110934)",
               "Text": 22697,
               "Active": "Session;WorldMap",
               "Identifier": 110934
             },
             {
               "DefaultKey": "Keypad 4",
-              "Command": "TextSources.TextSourceRoots.GUI.SetJumpToSession(180045)",
+              "Command": "TextSources.TextSourceRoots.Interface.JumpToSession(180045)",
               "Text": 22698,
               "Active": "Session;WorldMap",
               "Identifier": 180045
             },
             {
               "DefaultKey": "Keypad 5",
-              "Command": "TextSources.TextSourceRoots.GUI.SetJumpToSession(112132)",
+              "Command": "TextSources.TextSourceRoots.Interface.JumpToSession(112132)",
               "Text": 23427,
               "Active": "Session;WorldMap",
               "Identifier": 112132
@@ -790,6 +792,25 @@
               "Text": 23489,
               "Active": "Session",
               "Identifier": "jumptoruin"
+            },
+            {
+              "DefaultKey": "Shift + G",
+              "Command": "TextSources.TextSourceRoots.Selection.SetChangeAlternativeGrassColor()",
+              "Text": 23848,
+              "Active": "Session",
+              "Identifier": "changegrass"
+            },
+            {
+              "DefaultKey": "I",
+              "Command": "TextSources.TextSourceRoots.Selection.UpgradeSelectedFloor(0)",
+              "Text": 410,
+              "Active": "Session"
+            },
+            {
+              "DefaultKey": "Shift + I",
+              "Command": "TextSources.TextSourceRoots.Selection.UpgradeSelectedFloor(1)",
+              "Text": 411,
+              "Active": "Session"
             }
           ]
         },
@@ -967,6 +988,7 @@
             "Text": 17355
           }
         },
+        "SansSerifLanguage": "SansSerifLanguage",
         "ProfileVoices": {
           "IdleDelay": 30000
         },
@@ -1033,6 +1055,9 @@
             },
             {
               "PopulationLevel": 118745
+            },
+            {
+              "PopulationLevel": 601379
             }
           ]
         }

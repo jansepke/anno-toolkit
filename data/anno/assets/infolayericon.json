@@ -290,7 +290,7 @@
       "Standard": {
         "GUID": 501323,
         "Name": "HarbourSurrenderTemporaryCeasefire",
-        "ID": "Infolayer Harbour Surrender"
+        "ID": "InfolayerHarbourSurrender"
       },
       "InfoLayerIcon": {
         "Config": "data/graphics/ui/infolayer3d/infolayer_a7_surrender_harbor.cfg",
@@ -348,9 +348,10 @@
           "English": {
             "Text": "Repairing",
             "Status": "Exported",
-            "ExportCount": 2
+            "ExportCount": 3
           }
-        }
+        },
+        "LineID": 48816
       }
     }
   },
@@ -372,7 +373,8 @@
             "Status": "Exported",
             "ExportCount": 1
           }
-        }
+        },
+        "LineID": 48817
       }
     }
   },
@@ -397,6 +399,54 @@
           }
         },
         "LineID": 43446
+      }
+    }
+  },
+  {
+    "Template": "InfoLayerIcon",
+    "Values": {
+      "Standard": {
+        "GUID": 502402,
+        "Name": "UpgradableSkyscraper",
+        "ID": "InfolayerUpgradeSkyscraper"
+      },
+      "InfoLayerIcon": {
+        "Config": "data/dlc09/graphics/ui/infolayer3d/skyscraper_upgrade_arrow_long.cfg",
+        "PopupDelay": 0
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Ready to upgrade",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 52547
+      }
+    }
+  },
+  {
+    "Template": "InfoLayerIcon",
+    "Values": {
+      "Standard": {
+        "GUID": 502403,
+        "Name": "UpgradableSplitEngineer",
+        "ID": "InfolayerUpgradeSkyscraperSplit"
+      },
+      "InfoLayerIcon": {
+        "Config": "data/dlc09/graphics/ui/infolayer3d/skyscraper_upgrade_arrow_split_short.cfg",
+        "PopupDelay": 0
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Ready to upgrade",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 52548
       }
     }
   },
@@ -1734,10 +1784,11 @@
         "LocaText": {
           "English": {
             "Text": "Select",
-            "Status": "Edit",
-            "ExportCount": 1
+            "Status": "Exported",
+            "ExportCount": 2
           }
-        }
+        },
+        "LineID": 52549
       }
     }
   },
@@ -2000,6 +2051,51 @@
     "Template": "InfoLayerIcon",
     "Values": {
       "Standard": {
+        "GUID": 502311,
+        "Name": "LowWorkforceTourists"
+      },
+      "InfoLayerIcon": {
+        "Config": "data/graphics/ui/infolayer3d/workforce_low_new.cfg"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Insufficient Customers",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 50051
+      }
+    }
+  },
+  {
+    "Template": "InfoLayerIcon",
+    "Values": {
+      "Standard": {
+        "GUID": 502312,
+        "Name": "WorkforceTouristsCritical"
+      },
+      "InfoLayerIcon": {
+        "Config": "data/graphics/ui/infolayer3d/workforce_critical_new.cfg",
+        "PopupDelay": 0
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "No Customers",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 50052
+      }
+    }
+  },
+  {
+    "Template": "InfoLayerIcon",
+    "Values": {
+      "Standard": {
         "GUID": 25000124,
         "Name": "ResidentsUnhappy",
         "ID": "InfolayerResidentsUnhappy"
@@ -2109,6 +2205,30 @@
           }
         },
         "LineID": 4226
+      }
+    }
+  },
+  {
+    "Template": "InfoLayerIcon",
+    "Values": {
+      "Standard": {
+        "GUID": 502199,
+        "Name": "DowngradableResidence",
+        "ID": "InfolayerDowngradableResidence"
+      },
+      "InfoLayerIcon": {
+        "Config": "data/graphics/ui/3d_objects/infolayer/arrow_green_down.cfg",
+        "PopupDelay": 0
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Can be downgraded",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 48785
       }
     }
   },
@@ -2667,7 +2787,8 @@
             "Status": "Exported",
             "ExportCount": 3
           }
-        }
+        },
+        "LineID": 48818
       }
     }
   },
@@ -2689,7 +2810,8 @@
             "Status": "Exported",
             "ExportCount": 3
           }
-        }
+        },
+        "LineID": 48819
       }
     }
   },
@@ -2698,7 +2820,8 @@
     "Values": {
       "Standard": {
         "GUID": 110962,
-        "Name": "AnarchyPropaganda"
+        "Name": "AnarchyPropaganda",
+        "Version": "dm"
       },
       "InfoLayerIcon": {
         "Config": "data/graphics/ui/3d_objects/infolayer/arrow_green.cfg",
@@ -2721,7 +2844,8 @@
     "Values": {
       "Standard": {
         "GUID": 112944,
-        "Name": "QuestObject_DivingBell"
+        "Name": "QuestObject_DivingBell",
+        "Version": "dlc01"
       },
       "InfoLayerIcon": {
         "Config": "data/graphics/ui/infolayer3d/infolayer_a7_marker_quest_01.cfg",
@@ -2744,7 +2868,8 @@
     "Values": {
       "Standard": {
         "GUID": 114096,
-        "Name": "ShipInfolayer_DivingPossible"
+        "Name": "ShipInfolayer_DivingPossible",
+        "Version": "dlc01"
       },
       "InfoLayerIcon": {
         "Config": "data/dlc01/graphics/ui/infolayer3d/infolayer_a7_diving.cfg",
@@ -2757,7 +2882,8 @@
             "Status": "Exported",
             "ExportCount": 3
           }
-        }
+        },
+        "LineID": 32517
       }
     }
   },
@@ -2768,7 +2894,8 @@
         "GUID": 114664,
         "Name": "MissingHeat",
         "IconFilename": "data/ui/2kimages/main/icons/icon_heating_center_2d.png",
-        "ID": "InfolayerMissingHeat"
+        "ID": "InfolayerMissingHeat",
+        "Version": "dlc03"
       },
       "InfoLayerIcon": {
         "Config": "data/graphics/ui/infolayer3d/heat.cfg"
@@ -2791,7 +2918,8 @@
       "Standard": {
         "GUID": 116919,
         "Name": "MissingHeat - no delay",
-        "IconFilename": "data/ui/2kimages/main/icons/icon_heating_center_2d.png"
+        "IconFilename": "data/ui/2kimages/main/icons/icon_heating_center_2d.png",
+        "Version": "dlc03"
       },
       "InfoLayerIcon": {
         "Config": "data/graphics/ui/infolayer3d/heat.cfg",
@@ -2815,7 +2943,8 @@
       "Standard": {
         "GUID": 115345,
         "Name": "Missing Heat - Monument",
-        "IconFilename": "data/ui/2kimages/main/icons/icon_heating_center_2d.png"
+        "IconFilename": "data/ui/2kimages/main/icons/icon_heating_center_2d.png",
+        "Version": "dlc03"
       },
       "InfoLayerIcon": {
         "Config": "data/graphics/ui/infolayer3d/heat.cfg"
@@ -2839,7 +2968,8 @@
         "GUID": 115284,
         "Name": "LowHeat",
         "IconFilename": "data/ui/2kimages/main/icons/icon_heating_center_2d.png",
-        "ID": "InfolayerLowHeat"
+        "ID": "InfolayerLowHeat",
+        "Version": "dlc03"
       },
       "InfoLayerIcon": {
         "Config": "data/graphics/ui/infolayer3d/heat_blue.cfg"
@@ -2861,7 +2991,8 @@
     "Values": {
       "Standard": {
         "GUID": 116111,
-        "Name": "Arctic Illness - Active"
+        "Name": "Arctic Illness - Active",
+        "Version": "dlc03"
       },
       "InfoLayerIcon": {
         "Config": "data/dlc03/graphics/ui/3d_infolayer_icons/3d_info_arctic_flu.cfg",
@@ -2884,7 +3015,8 @@
     "Values": {
       "Standard": {
         "GUID": 116112,
-        "Name": "Arctic Illness - Healing"
+        "Name": "Arctic Illness - Healing",
+        "Version": "dlc03"
       },
       "InfoLayerIcon": {
         "Config": "data/dlc03/graphics/ui/3d_infolayer_icons/3d_info_arctic_flu_healing.cfg",
@@ -2907,7 +3039,8 @@
     "Values": {
       "Standard": {
         "GUID": 114291,
-        "Name": "GasSlot"
+        "Name": "GasSlot",
+        "Version": "dlc03"
       },
       "InfoLayerIcon": {
         "Config": "data/graphics/ui/infolayer3d/infolayer_a7_marker_mine_general.cfg",
@@ -2931,7 +3064,8 @@
       "Standard": {
         "GUID": 117606,
         "Name": "Infolayer Story Quest Corpse1",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png",
+        "Version": "dlc03"
       },
       "InfoLayerIcon": {
         "PopupDelay": 0
@@ -2954,7 +3088,8 @@
       "Standard": {
         "GUID": 117607,
         "Name": "Infolayer Story Quest Corpse2",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png",
+        "Version": "dlc03"
       },
       "InfoLayerIcon": {
         "PopupDelay": 0
@@ -2977,7 +3112,8 @@
       "Standard": {
         "GUID": 117608,
         "Name": "Infolayer Story Quest Corpse3",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png",
+        "Version": "dlc03"
       },
       "InfoLayerIcon": {
         "PopupDelay": 0
@@ -3000,7 +3136,8 @@
       "Standard": {
         "GUID": 117609,
         "Name": "Infolayer Story Quest Corpse4",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png",
+        "Version": "dlc03"
       },
       "InfoLayerIcon": {
         "PopupDelay": 0
@@ -3023,7 +3160,8 @@
       "Standard": {
         "GUID": 117610,
         "Name": "Infolayer Story Quest Corpse5",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png",
+        "Version": "dlc03"
       },
       "InfoLayerIcon": {
         "PopupDelay": 0
@@ -3046,7 +3184,8 @@
       "Standard": {
         "GUID": 117611,
         "Name": "Infolayer Story Quest Corpse6",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png",
+        "Version": "dlc03"
       },
       "InfoLayerIcon": {
         "PopupDelay": 0
@@ -3069,7 +3208,8 @@
       "Standard": {
         "GUID": 117612,
         "Name": "Infolayer Story Quest Corpse7",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png",
+        "Version": "dlc03"
       },
       "InfoLayerIcon": {
         "PopupDelay": 0
@@ -3092,7 +3232,8 @@
       "Standard": {
         "GUID": 117613,
         "Name": "Infolayer Story Quest Corpse8",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png",
+        "Version": "dlc03"
       },
       "InfoLayerIcon": {
         "PopupDelay": 0
@@ -3114,7 +3255,8 @@
     "Values": {
       "Standard": {
         "GUID": 249960,
-        "Name": "PalaceNewUnlockAvailable"
+        "Name": "PalaceNewUnlockAvailable",
+        "Version": "dlc04"
       },
       "InfoLayerIcon": {
         "Config": "data/graphics/ui/infolayer3d/infolayer_a7_palace_upgrade_2.cfg",
@@ -3138,7 +3280,8 @@
       "Standard": {
         "GUID": 269634,
         "Name": "PalaceMinistryNoPalace",
-        "ID": "InfolayerMissingPalace"
+        "ID": "InfolayerMissingPalace",
+        "Version": "dlc04"
       },
       "InfoLayerIcon": {
         "Config": "data/graphics/ui/infolayer3d/infolayer_a7_missing_palace.cfg",
@@ -3161,7 +3304,8 @@
     "Values": {
       "Standard": {
         "GUID": 270054,
-        "Name": "NoFuelStationInRange"
+        "Name": "NoFuelStationInRange",
+        "Version": "dlc05"
       },
       "InfoLayerIcon": {
         "Config": "data/dlc05/graphics/ui/infolayer_icons/infolayer_missing_fuel.cfg",
@@ -3184,7 +3328,8 @@
     "Values": {
       "Standard": {
         "GUID": 119857,
-        "Name": "MissingCanal"
+        "Name": "MissingCanal",
+        "Version": "dlc06"
       },
       "InfoLayerIcon": {
         "Config": "data/dlc06/graphics/ui/3dinfolayer_icons/infolayer_no_water.cfg",
@@ -3208,7 +3353,8 @@
       "Standard": {
         "GUID": 117781,
         "Name": "RiverSlot",
-        "IconFilename": "data/ui/2kimages/main/icons/icon_missing_riverslot.png"
+        "IconFilename": "data/ui/2kimages/main/icons/icon_missing_riverslot.png",
+        "Version": "dlc06"
       },
       "InfoLayerIcon": {
         "Config": "data/dlc06/graphics/ui/3dinfolayer_icons/infolayer_no_water_field.cfg",
@@ -3231,7 +3377,8 @@
     "Values": {
       "Standard": {
         "GUID": 125036,
-        "Name": "MissingFertileSoil"
+        "Name": "MissingFertileSoil",
+        "Version": "dlc06"
       },
       "InfoLayerIcon": {
         "Config": "data/dlc06/graphics/ui/3dinfolayer_icons/infolayer_no_water.cfg",
@@ -3254,7 +3401,8 @@
     "Values": {
       "Standard": {
         "GUID": 125037,
-        "Name": "TooManyCanals"
+        "Name": "TooManyCanals",
+        "Version": "dlc06"
       },
       "InfoLayerIcon": {
         "Config": "data/graphics/ui/infolayer3d/alert.cfg",
@@ -3276,8 +3424,33 @@
     "Template": "InfoLayerIcon",
     "Values": {
       "Standard": {
+        "GUID": 325,
+        "Name": "ResearchQueueBlocked",
+        "Version": "dlc06"
+      },
+      "InfoLayerIcon": {
+        "Config": "data/graphics/ui/infolayer3d/alert.cfg",
+        "PopupDelay": 0
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Research queue blocked",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 48941
+      }
+    }
+  },
+  {
+    "Template": "InfoLayerIcon",
+    "Values": {
+      "Standard": {
         "GUID": 124402,
-        "Name": "SessionStorytelling_NoInfolayer"
+        "Name": "SessionStorytelling_NoInfolayer",
+        "Version": "dlc06"
       },
       "InfoLayerIcon": {
         "PopupDelay": 0
@@ -3297,7 +3470,8 @@
     "Values": {
       "Standard": {
         "GUID": 124835,
-        "Name": "SessionStorytelling_WithInfolayerBlueExclamation"
+        "Name": "SessionStorytelling_WithInfolayerBlueExclamation",
+        "Version": "dlc06"
       },
       "InfoLayerIcon": {
         "Config": "data/graphics/ui/infolayer3d/exclamation_mark.cfg",
@@ -3318,7 +3492,8 @@
     "Values": {
       "Standard": {
         "GUID": 127241,
-        "Name": "SessionStorytelling_WithInfolayerRed"
+        "Name": "SessionStorytelling_WithInfolayerRed",
+        "Version": "dlc06"
       },
       "InfoLayerIcon": {
         "Config": "data/graphics/ui/infolayer3d/infolayer_a7_marker_quest_01.cfg",
@@ -3339,7 +3514,8 @@
     "Values": {
       "Standard": {
         "GUID": 128821,
-        "Name": "SessionStorytelling_Books"
+        "Name": "SessionStorytelling_Books",
+        "Version": "dlc06"
       },
       "InfoLayerIcon": {
         "Config": "data/graphics/ui/infolayer3d/quest_a7_01.cfg",
@@ -3362,7 +3538,8 @@
     "Values": {
       "Standard": {
         "GUID": 130645,
-        "Name": "SessionStorytelling_WithInfolayerMinor_RemoveToPlantTrees"
+        "Name": "SessionStorytelling_WithInfolayerMinor_RemoveToPlantTrees",
+        "Version": "dlc06"
       },
       "InfoLayerIcon": {
         "Config": "data/graphics/ui/infolayer3d/important_questobject.cfg",
@@ -3385,7 +3562,8 @@
     "Values": {
       "Standard": {
         "GUID": 130646,
-        "Name": "SessionStorytelling_WithInfolayerMinor_RemoveToPlantOrangeTrees"
+        "Name": "SessionStorytelling_WithInfolayerMinor_RemoveToPlantOrangeTrees",
+        "Version": "dlc06"
       },
       "InfoLayerIcon": {
         "Config": "data/graphics/ui/infolayer3d/important_questobject.cfg",
@@ -3408,7 +3586,8 @@
     "Values": {
       "Standard": {
         "GUID": 130647,
-        "Name": "SessionStorytelling_WithInfolayerMinor_Plant"
+        "Name": "SessionStorytelling_WithInfolayerMinor_Plant",
+        "Version": "dlc06"
       },
       "InfoLayerIcon": {
         "Config": "data/graphics/ui/infolayer3d/important_questobject.cfg",
@@ -3431,7 +3610,8 @@
     "Values": {
       "Standard": {
         "GUID": 130823,
-        "Name": "SessionStorytelling_WithInfolayerMinor_Remove"
+        "Name": "SessionStorytelling_WithInfolayerMinor_Remove",
+        "Version": "dlc06"
       },
       "InfoLayerIcon": {
         "Config": "data/graphics/ui/infolayer3d/important_questobject.cfg",
@@ -3454,7 +3634,8 @@
     "Values": {
       "Standard": {
         "GUID": 131465,
-        "Name": "SessionStorytelling_AskAbout"
+        "Name": "SessionStorytelling_AskAbout",
+        "Version": "dlc06"
       },
       "InfoLayerIcon": {
         "Config": "data/graphics/ui/infolayer3d/quest_a7_01.cfg",
@@ -3477,7 +3658,8 @@
     "Values": {
       "Standard": {
         "GUID": 131466,
-        "Name": "SessionStorytelling_WithInfolayerMinor"
+        "Name": "SessionStorytelling_WithInfolayerMinor",
+        "Version": "dlc06"
       },
       "InfoLayerIcon": {
         "Config": "data/graphics/ui/infolayer3d/important_questobject.cfg",
@@ -3497,7 +3679,8 @@
     "Values": {
       "Standard": {
         "GUID": 131470,
-        "Name": "SessionStorytelling_Question"
+        "Name": "SessionStorytelling_Question",
+        "Version": "dlc06"
       },
       "InfoLayerIcon": {
         "Config": "data/graphics/ui/infolayer3d/quest_a7_01.cfg",
@@ -3520,7 +3703,8 @@
     "Values": {
       "Standard": {
         "GUID": 131471,
-        "Name": "SessionStorytelling_TakePhoto"
+        "Name": "SessionStorytelling_TakePhoto",
+        "Version": "dlc06"
       },
       "InfoLayerIcon": {
         "Config": "data/graphics/ui/infolayer3d/important_questobject.cfg",
@@ -3543,7 +3727,8 @@
     "Values": {
       "Standard": {
         "GUID": 131508,
-        "Name": "SessionStorytelling_Investigate"
+        "Name": "SessionStorytelling_Investigate",
+        "Version": "dlc06"
       },
       "InfoLayerIcon": {
         "Config": "data/graphics/ui/infolayer3d/exclamation_mark.cfg",
@@ -3566,7 +3751,8 @@
     "Values": {
       "Standard": {
         "GUID": 131528,
-        "Name": "SessionStorytelling_Visit"
+        "Name": "SessionStorytelling_Visit",
+        "Version": "dlc06"
       },
       "InfoLayerIcon": {
         "Config": "data/graphics/ui/infolayer3d/exclamation_mark.cfg",
@@ -3589,7 +3775,8 @@
     "Values": {
       "Standard": {
         "GUID": 131537,
-        "Name": "SessionStorytelling_Extract"
+        "Name": "SessionStorytelling_Extract",
+        "Version": "dlc06"
       },
       "InfoLayerIcon": {
         "Config": "data/graphics/ui/infolayer3d/exclamation_mark.cfg",
@@ -3612,7 +3799,8 @@
     "Values": {
       "Standard": {
         "GUID": 131583,
-        "Name": "SessionStorytelling_TalkTo"
+        "Name": "SessionStorytelling_TalkTo",
+        "Version": "dlc06"
       },
       "InfoLayerIcon": {
         "Config": "data/graphics/ui/infolayer3d/exclamation_mark.cfg",
@@ -3627,6 +3815,431 @@
           }
         },
         "LineID": 46075
+      }
+    }
+  },
+  {
+    "Template": "InfoLayerIcon",
+    "Values": {
+      "Standard": {
+        "GUID": 137837,
+        "Name": "Quests_Escort",
+        "Version": "dlc09"
+      },
+      "InfoLayerIcon": {
+        "Config": "data/graphics/ui/infolayer3d/infolayer_a7_marker_quest_01.cfg",
+        "PopupDelay": 0
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Escort: [AssetData([RefGuid]) Text]"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "InfoLayerIcon",
+    "Values": {
+      "Standard": {
+        "GUID": 601386,
+        "Name": "NoBusConnection",
+        "ID": "InfolayerMissingBus",
+        "Version": "dlc08"
+      },
+      "InfoLayerIcon": {
+        "Config": "data/dlc08/graphics/ui/infolayer_icons/no_bus_connection.cfg",
+        "PopupDelay": 0
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "No Bus Connection To Tourist Mooring",
+            "Status": "Exported",
+            "ExportCount": 4
+          }
+        },
+        "LineID": 49852
+      }
+    }
+  },
+  {
+    "Template": "InfoLayerIcon",
+    "Values": {
+      "Standard": {
+        "GUID": 132852,
+        "Name": "Quests_TalkTo",
+        "Version": "dlc08"
+      },
+      "InfoLayerIcon": {
+        "Config": "data/graphics/ui/infolayer3d/exclamation_mark.cfg",
+        "PopupDelay": 0
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Talk to: [AssetData([RefGuid]) Text]",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 49853
+      }
+    }
+  },
+  {
+    "Template": "InfoLayerIcon",
+    "Values": {
+      "Standard": {
+        "GUID": 132853,
+        "Name": "Quests_NoInfolayer",
+        "Version": "dlc08"
+      },
+      "InfoLayerIcon": {
+        "PopupDelay": 0
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "[AssetData([RefGuid]) Text]",
+            "ExportCount": 1
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "InfoLayerIcon",
+    "Values": {
+      "Standard": {
+        "GUID": 133165,
+        "Name": "Quests_Interrogate",
+        "Version": "dlc08"
+      },
+      "InfoLayerIcon": {
+        "Config": "data/graphics/ui/infolayer3d/exclamation_mark.cfg",
+        "PopupDelay": 0
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Interrogate: [AssetData([RefGuid]) Text]",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 49854
+      }
+    }
+  },
+  {
+    "Template": "InfoLayerIcon",
+    "Values": {
+      "Standard": {
+        "GUID": 133893,
+        "Name": "NoBusStop",
+        "ID": "InfolayerNoBusStop",
+        "Version": "dlc08"
+      },
+      "InfoLayerIcon": {
+        "Config": "data/dlc08/graphics/ui/infolayer_icons/no_bus_connection.cfg",
+        "PopupDelay": 0
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "No Bus Stop nearby",
+            "Status": "Exported",
+            "ExportCount": 4
+          }
+        },
+        "LineID": 49855
+      }
+    }
+  },
+  {
+    "Template": "InfoLayerIcon",
+    "Values": {
+      "Standard": {
+        "GUID": 134970,
+        "Name": "OptionalNoBusStop",
+        "ID": "InfolayerNoBusStopOptional",
+        "Version": "dlc08"
+      },
+      "InfoLayerIcon": {
+        "Config": "data/dlc08/graphics/ui/infolayer_icons/no_bus_connection_var02.cfg",
+        "PopupDelay": 0
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "No Bus Stop nearby",
+            "Status": "Exported",
+            "ExportCount": 4
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "InfoLayerIcon",
+    "Values": {
+      "Standard": {
+        "GUID": 401,
+        "Name": "OptionalNoBusConnection",
+        "ID": "InfolayerMissingBusOptional",
+        "Version": "dlc08"
+      },
+      "InfoLayerIcon": {
+        "Config": "data/dlc08/graphics/ui/infolayer_icons/no_bus_connection_var02.cfg",
+        "PopupDelay": 0
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "No Bus Connection To Tourist Mooring",
+            "Status": "Exported",
+            "ExportCount": 4
+          }
+        },
+        "LineID": 51950
+      }
+    }
+  },
+  {
+    "Template": "InfoLayerIcon",
+    "Values": {
+      "Standard": {
+        "GUID": 135054,
+        "Name": "NoTouristPier",
+        "ID": "InfolayerMissingTouristPier",
+        "Version": "dlc08"
+      },
+      "InfoLayerIcon": {
+        "Config": "data/dlc08/graphics/ui/infolayer_icons/no_bus_connection.cfg",
+        "PopupDelay": 0
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "You need an upgraded Public Mooring to attract Tourists to your city",
+            "Status": "Exported",
+            "ExportCount": 5
+          }
+        },
+        "LineID": 50649
+      }
+    }
+  },
+  {
+    "Template": "InfoLayerIcon",
+    "Values": {
+      "Standard": {
+        "GUID": 136161,
+        "Name": "Quests_LookAt_NoInfolayer",
+        "Version": "dlc09"
+      },
+      "InfoLayerIcon": {
+        "PopupDelay": 0
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Look at: [AssetData([RefGuid]) Text]",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 52432
+      }
+    }
+  },
+  {
+    "Template": "InfoLayerIcon",
+    "Values": {
+      "Standard": {
+        "GUID": 136162,
+        "Name": "Quests_TalkTo_NoInfolayer",
+        "Version": "dlc09"
+      },
+      "InfoLayerIcon": {
+        "PopupDelay": 0
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Talk to: [AssetData([RefGuid]) Text]",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 52433
+      }
+    }
+  },
+  {
+    "Template": "InfoLayerIcon",
+    "Values": {
+      "Standard": {
+        "GUID": 136363,
+        "Name": "Quests_ListenTo",
+        "Version": "dlc09"
+      },
+      "InfoLayerIcon": {
+        "Config": "data/graphics/ui/infolayer3d/exclamation_mark.cfg",
+        "PopupDelay": 0
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Listen to: [AssetData([RefGuid]) Text]",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 52434
+      }
+    }
+  },
+  {
+    "Template": "InfoLayerIcon",
+    "Values": {
+      "Standard": {
+        "GUID": 136364,
+        "Name": "Quests_SpyOn_NoInfolayer",
+        "Version": "dlc09"
+      },
+      "InfoLayerIcon": {
+        "PopupDelay": 0
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Spy on: [AssetData([RefGuid]) Text]",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 52435
+      }
+    }
+  },
+  {
+    "Template": "InfoLayerIcon",
+    "Values": {
+      "Standard": {
+        "GUID": 137628,
+        "Name": "Quests_Build_NoInfolayer",
+        "Version": "dlc09"
+      },
+      "InfoLayerIcon": {
+        "PopupDelay": 0
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Build: [AssetData([RefGuid]) Text]",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 52436
+      }
+    }
+  },
+  {
+    "Template": "InfoLayerIcon",
+    "Values": {
+      "Standard": {
+        "GUID": 137792,
+        "Name": "Quests_Hire_NoInfolayer",
+        "Version": "dlc09"
+      },
+      "InfoLayerIcon": {
+        "PopupDelay": 0
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hire: [AssetData([RefGuid]) Text]",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 52470
+      }
+    }
+  },
+  {
+    "Template": "InfoLayerIcon",
+    "Values": {
+      "Standard": {
+        "GUID": 137804,
+        "Name": "Quests_DeliverTo",
+        "Version": "dlc09"
+      },
+      "InfoLayerIcon": {
+        "Config": "data/graphics/ui/infolayer3d/infolayer_a7_marker_quest_01.cfg",
+        "PopupDelay": 0
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Deliver to: [AssetData([RefGuid]) Text]",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 52471
+      }
+    }
+  },
+  {
+    "Template": "InfoLayerIcon",
+    "Values": {
+      "Standard": {
+        "GUID": 137838,
+        "Name": "Quests_LookAt",
+        "Version": "dlc09"
+      },
+      "InfoLayerIcon": {
+        "Config": "data/graphics/ui/infolayer3d/quest_a7_01.cfg",
+        "PopupDelay": 0
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Look at: [AssetData([RefGuid]) Text]",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 52522
+      }
+    }
+  },
+  {
+    "Template": "InfoLayerIcon",
+    "Values": {
+      "Standard": {
+        "GUID": 137846,
+        "Name": "Quests_TalkTo",
+        "Version": "dlc09"
+      },
+      "InfoLayerIcon": {
+        "Config": "data/graphics/ui/infolayer3d/quest_a7_01.cfg",
+        "PopupDelay": 0
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Talk to: [AssetData([RefGuid]) Text]",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 52523
       }
     }
   }

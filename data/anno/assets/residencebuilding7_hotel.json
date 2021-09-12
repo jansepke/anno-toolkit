@@ -1,0 +1,287 @@
+[
+  {
+    "Template": "ResidenceBuilding7_Hotel",
+    "Values": {
+      "Standard": {
+        "GUID": 601445,
+        "Name": "Hotel",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_hotel.png",
+        "InfoDescription": 134986,
+        "Version": "dlc08"
+      },
+      "Blocking": "",
+      "Building": {
+        "BuildingType": "Residence",
+        "BuildingCategoryName": 134987,
+        "AssociatedRegions": "Moderate",
+        "BuildingBlockPool": {
+          "DontCare": {
+            "Pool": {
+              "Item": [
+                "",
+                {
+                  "DirectionOffet": 1,
+                  "Variation": 1
+                },
+                {
+                  "DirectionOffet": 2,
+                  "Variation": 2
+                },
+                {
+                  "DirectionOffet": 1,
+                  "Variation": 3
+                },
+                {
+                  "DirectionOffet": 3,
+                  "Variation": 4
+                },
+                {
+                  "DirectionOffet": 1,
+                  "Variation": 5
+                },
+                {
+                  "DirectionOffet": 3,
+                  "Variation": 6
+                }
+              ]
+            }
+          },
+          "Corner": {
+            "Pool": {
+              "Item": [
+                {
+                  "Variation": 1
+                },
+                {
+                  "DirectionOffet": 3
+                },
+                {
+                  "DirectionOffet": 3,
+                  "Variation": 2
+                }
+              ]
+            }
+          },
+          "Mid": {
+            "Pool": {
+              "Item": [
+                {
+                  "Variation": 4
+                },
+                {
+                  "DirectionOffet": 1,
+                  "Variation": 3
+                },
+                {
+                  "DirectionOffet": 1,
+                  "Variation": 5
+                },
+                {
+                  "DirectionOffet": 3,
+                  "Variation": 3
+                },
+                {
+                  "DirectionOffet": 2,
+                  "Variation": 4
+                },
+                {
+                  "DirectionOffet": 3,
+                  "Variation": 5
+                }
+              ]
+            }
+          }
+        },
+        "SecondPartyRelevant": 0
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Hotel",
+                    "Index": 0
+                  }
+                }
+              },
+              "Amount": 30000
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 120
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 95
+            },
+            {
+              "Ingredient": 1010218,
+              "Amount": 80
+            },
+            {
+              "Ingredient": 1010207,
+              "Amount": 55
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc08/graphics/buildings/special/hotel/hotel_01.cfg"
+          }
+        }
+      },
+      "Selection": {
+        "StaticHelpEntryPoint": "TouristSeasonHotels1",
+        "ParticipantMessageArcheType": "Resident_Tourist"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hotel",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 49809
+      },
+      "Constructable": "",
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410084,
+        "VisibleWhenLocked": 1
+      },
+      "Upgradable": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 279519
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": [
+              {
+                "VectorElement": {
+                  "InheritanceMapV2": {
+                    "Entry": {
+                      "TemplateName": "ResidenceBuilding7",
+                      "Index": 0
+                    }
+                  }
+                },
+                "Sound": 200776
+              },
+              {
+                "Sound": 279596
+              }
+            ]
+          },
+          "BuildUpgradeFailed": {
+            "Item": {
+              "Sound": 9818387
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          },
+          "InfectedIllness": {
+            "Item": {
+              "Sound": 214756
+            }
+          },
+          "InfectedRiot": {
+            "Item": {
+              "Sound": 222229
+            }
+          },
+          "ExplosionOneShots": {
+            "Item": {
+              "Sound": 203849
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        },
+        "MaterialType": "Stone"
+      },
+      "Infolayer": "",
+      "FeedbackController": "",
+      "Residence7": {
+        "PopulationLevel7": 601379,
+        "ResidentMax": 500,
+        "ResidentsOccupancyThresholdMax": 0.15,
+        "MoveInMs": 900,
+        "MoveOutMs": 1000,
+        "MoveRandomMs": 200
+      },
+      "LogisticNode": {
+        "REMOVE_THIS_LATER_FeedbackUnitTier": "Level4"
+      },
+      "AmbientMoodProvider": {
+        "AmbientMood": "ResidenceTier5",
+        "Murmur": "Tourist_Cafe",
+        "DynamicEnvironmentType": "ResidenceT5",
+        "HappinessDependentMurmur": {
+          "Angry": {
+            "Murmur": "InvestorUnhappy"
+          },
+          "Unhappy": {
+            "Murmur": "InvestorContent"
+          },
+          "Neutral": {
+            "Murmur": "InvestorContent"
+          },
+          "Happy": {
+            "Murmur": "InvestorHappy"
+          },
+          "Euphoric": {
+            "Murmur": "InvestorHappy"
+          }
+        }
+      },
+      "UpgradeList": "",
+      "Attackable": "",
+      "IncidentInfectable": {
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "BaseChance": 3,
+            "DensityFactor": 0.025,
+            "DensityDistance": 15
+          },
+          "Illness": {
+            "BaseChance": 3,
+            "HitpointFactor": 0.1,
+            "DensityFactor": 0.025,
+            "DensityDistance": 15,
+            "DilapidatedFactor": 10,
+            "FactoryOvertimeFactor": 0.3,
+            "FactoryUndertimeFactor": 0.15,
+            "ResidenceFullOvertimeChance": 20,
+            "ResidenceFullUndertimeChance": -15
+          }
+        }
+      },
+      "Pausable": "",
+      "Culture": "",
+      "StreetActivation": "",
+      "InfluenceSource": "",
+      "BusActivation": ""
+    }
+  }
+]

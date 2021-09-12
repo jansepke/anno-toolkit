@@ -93,6 +93,13 @@
               "DiplomacyAction": "DemandQuest",
               "Tooltip": 500431,
               "FaceIcon": 501162
+            },
+            {
+              "Icon": 23803,
+              "DiplomacyAction": "PaymentIncreaseReputation",
+              "Tooltip": 502313,
+              "TooltipHuman": 502313,
+              "FaceIcon": 0
             }
           ]
         },
@@ -321,6 +328,17 @@
                 "Message": "DiplomacyOfferRejected"
               }
             }
+          },
+          "PaymentIncreaseReputation": {
+            "TriggerTypes": {
+              "OfferAction": {
+                "Disable": 1
+              },
+              "AcceptOfferAction": {
+                "Message": "DiplomacyOfferGiftAccepted",
+                "Initiator": "FirstActorInitiator"
+              }
+            }
           }
         },
         "GiftButtons": {
@@ -384,7 +402,9 @@
             "VisibleWithHumans": 1
           },
           "PaymentIncreaseReputation": {
-            "PossibleStates": "Alliance;Trade;Peace;War"
+            "PossibleStates": "Alliance;Trade;Peace;War",
+            "VisibleWithHumans": 1,
+            "VisibleWithAI": 0
           },
           "PaymentDecreaseReputation": {
             "PossibleStates": "Alliance;Trade;Peace;War"

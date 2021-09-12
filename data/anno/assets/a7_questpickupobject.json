@@ -1271,7 +1271,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 1010471
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -7893,7 +7894,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 1010344
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -10037,7 +10039,8 @@
                       "Condition": "",
                       "ConditionUnlocked": {
                         "UnlockNeeded": 1010288
-                      }
+                      },
+                      "ConditionPropsNegatable": ""
                     }
                   }
                 }
@@ -17576,7 +17579,8 @@
             "Condition": "",
             "ConditionUnlocked": {
               "UnlockNeeded": 1010193
-            }
+            },
+            "ConditionPropsNegatable": ""
           }
         },
         "SubConditions": {
@@ -17898,7 +17902,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 192414
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -18640,8 +18645,8 @@
         "LocaText": {
           "English": {
             "Text": "Old Fart of War",
-            "Status": "Edit",
-            "ExportCount": 1
+            "Status": "Exported",
+            "ExportCount": 2
           }
         },
         "LineID": 28809
@@ -21834,7 +21839,8 @@
                       "Condition": "",
                       "ConditionUnlocked": {
                         "UnlockNeeded": 192427
-                      }
+                      },
+                      "ConditionPropsNegatable": ""
                     }
                   }
                 }
@@ -24908,8 +24914,8 @@
         "LocaText": {
           "English": {
             "Text": "(TBC - Quest not yet written)",
-            "Status": "GameWriting",
-            "ExportCount": 1
+            "Status": "Exported",
+            "ExportCount": 2
           }
         },
         "LineID": 26201
@@ -25440,8 +25446,8 @@
         "LocaText": {
           "English": {
             "Text": "(TBC - Quest not yet written)",
-            "Status": "GameWriting",
-            "ExportCount": 1
+            "Status": "Exported",
+            "ExportCount": 2
           }
         },
         "LineID": 26204
@@ -25691,8 +25697,8 @@
         "LocaText": {
           "English": {
             "Text": "(TBC - Quest not yet written)",
-            "Status": "GameWriting",
-            "ExportCount": 1
+            "Status": "Exported",
+            "ExportCount": 2
           }
         },
         "LineID": 26205
@@ -25971,7 +25977,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 130187
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -26222,7 +26229,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 191769
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -28013,8 +28021,8 @@
         "LocaText": {
           "English": {
             "Text": "Break Out (TBC - Quest not yet written)",
-            "Status": "GameWriting",
-            "ExportCount": 1
+            "Status": "Exported",
+            "ExportCount": 2
           }
         }
       },
@@ -30608,6 +30616,88 @@
             }
           }
         },
+        "OnQuestDeclined": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "ExecutionDelay": 60000,
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionDeleteObjects",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionDeleteObjects": "",
+                                      "ObjectFilter": {
+                                        "ObjectGUID": 102577
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "OnQuestTimedOut": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "ExecutionDelay": 60000,
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionDeleteObjects",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionDeleteObjects": "",
+                                      "ObjectFilter": {
+                                        "ObjectGUID": 102577
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
         "OnQuestEnd": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
@@ -32908,6 +32998,47 @@
               "BaseNotification": "",
               "NotificationSubtitle": {
                 "SubtitleGroup": -1564022259
+              }
+            }
+          }
+        },
+        "OnQuestDeclined": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "ExecutionDelay": 60000,
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionDeleteObjects",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionDeleteObjects": "",
+                                      "ObjectFilter": {
+                                        "ObjectGUID": 102579
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
               }
             }
           }
@@ -39188,7 +39319,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 192356
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -39590,6 +39722,47 @@
             }
           }
         },
+        "OnQuestDeclined": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "ExecutionDelay": 60000,
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionDeleteObjects",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionDeleteObjects": "",
+                                      "ObjectFilter": {
+                                        "ObjectGUID": 102586
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
         "OnQuestTimedOut": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
@@ -39936,6 +40109,47 @@
               "BaseNotification": "",
               "NotificationSubtitle": {
                 "SubtitleGroup": 1712609295
+              }
+            }
+          }
+        },
+        "OnQuestDeclined": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "ExecutionDelay": 60000,
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionDeleteObjects",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionDeleteObjects": "",
+                                      "ObjectFilter": {
+                                        "ObjectGUID": 102586
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
               }
             }
           }
@@ -41329,8 +41543,8 @@
         "LocaText": {
           "English": {
             "Text": "Royal Inspection 2 — The Inspection (TBC - Quest not yet written)",
-            "Status": "GameWriting",
-            "ExportCount": 1
+            "Status": "Exported",
+            "ExportCount": 2
           }
         }
       },
@@ -42317,7 +42531,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 1010470
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -42335,7 +42550,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 191088
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -43397,7 +43613,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 192361
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -44278,6 +44495,47 @@
           }
         },
         "OnQuestAborted": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "ExecutionDelay": 60000,
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionDeleteObjects",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionDeleteObjects": "",
+                                      "ObjectFilter": {
+                                        "ObjectGUID": 102580
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "OnQuestTimedOut": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
             "ActionList": {
@@ -48110,7 +48368,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 192356
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -49914,7 +50173,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 192405
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -51398,7 +51658,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 192415
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -51871,7 +52132,8 @@
       "Standard": {
         "GUID": 110714,
         "Name": "Pickup - The Peacock - Hugo Mercier",
-        "ID": "Quest_DM_8"
+        "ID": "Quest_DM_8",
+        "Version": "dm"
       },
       "Quest": {
         "InvitationMessage": {
@@ -52006,33 +52268,6 @@
             }
           }
         },
-        "OnQuestSucceeded": {
-          "IsBaseAutoCreateAsset": 1,
-          "Values": {
-            "ActionList": {
-              "Actions": {
-                "Item": {
-                  "Action": {
-                    "Template": "ActionForceNewspaper",
-                    "Values": {
-                      "Action": "",
-                      "ActionForceNewspaper": {
-                        "Articles": {
-                          "Item": {
-                            "Article": 111950
-                          }
-                        },
-                        "OpenNewspaperUI": 1,
-                        "OpenNewspaperType": "SpecialEdition",
-                        "PamsyWelcomeRequiredAsset": 142374
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
         "OnQuestEnd": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
@@ -52093,6 +52328,22 @@
                   }
                 ]
               }
+            }
+          }
+        },
+        "OnPhotographySuccessNewspaperAction": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionForceNewspaper": {
+              "Articles": {
+                "Item": {
+                  "Article": 111950
+                }
+              },
+              "OpenNewspaperUI": 1,
+              "OpenNewspaperType": "SpecialEdition",
+              "PamsyWelcomeRequiredAsset": 142374
             }
           }
         },
@@ -52562,7 +52813,8 @@
     "Values": {
       "Standard": {
         "GUID": 110691,
-        "Name": "Gift - We can afford it - Hugo Mercier"
+        "Name": "Gift - We can afford it - Hugo Mercier",
+        "Version": "dm"
       },
       "Quest": {
         "InvitationMessage": {
@@ -52769,7 +53021,8 @@
       "Standard": {
         "GUID": 110817,
         "Name": "Pickup - Main arc Part 1 - Hugo Mercier",
-        "ID": "Quest_DM_1"
+        "ID": "Quest_DM_1",
+        "Version": "dm"
       },
       "Quest": {
         "InvitationMessage": {
@@ -53174,7 +53427,8 @@
     "Values": {
       "Standard": {
         "GUID": 110792,
-        "Name": "Pickup - Remember the 5th of November Part 3 - Hugo Mercier"
+        "Name": "Pickup - Remember the 5th of November Part 3 - Hugo Mercier",
+        "Version": "dm"
       },
       "Quest": {
         "StarterMessage": {
@@ -53414,7 +53668,8 @@
     "Values": {
       "Standard": {
         "GUID": 110818,
-        "Name": "Sail to - Main arc Part 2 Archie intervention - Hugo Mercier"
+        "Name": "Sail to - Main arc Part 2 Archie intervention - Hugo Mercier",
+        "Version": "dm"
       },
       "Quest": {
         "StarterMessage": {
@@ -53630,7 +53885,8 @@
     "Values": {
       "Standard": {
         "GUID": 110820,
-        "Name": "Sail to - Main arc Part 3 Archie intervention - Hugo Mercier"
+        "Name": "Sail to - Main arc Part 3 Archie intervention - Hugo Mercier",
+        "Version": "dm"
       },
       "Quest": {
         "StarterMessage": {
@@ -53846,7 +54102,8 @@
     "Values": {
       "Standard": {
         "GUID": 114177,
-        "Name": "ArcticQ111_IntoTheUnknown"
+        "Name": "ArcticQ111_IntoTheUnknown",
+        "Version": "dlc03"
       },
       "Quest": {
         "StarterMessage": {
@@ -55169,7 +55426,8 @@
       "Standard": {
         "GUID": 116804,
         "Name": "Inuit_PickUp_Umiak_Quest_22",
-        "IconFilename": "data/ui/2kimages/main/profiles/inuit_trader.png"
+        "IconFilename": "data/ui/2kimages/main/profiles/inuit_trader.png",
+        "Version": "dlc03"
       },
       "Quest": {
         "SuccessMessage": {
@@ -55364,7 +55622,8 @@
       "Standard": {
         "GUID": 116841,
         "Name": "Inuit_Explore_YoungHunters_Quest_23",
-        "IconFilename": "data/ui/2kimages/main/profiles/inuit_trader.png"
+        "IconFilename": "data/ui/2kimages/main/profiles/inuit_trader.png",
+        "Version": "dlc03"
       },
       "Quest": {
         "InvitationMessage": {
@@ -55981,7 +56240,8 @@
       "Standard": {
         "GUID": 116864,
         "Name": "Inuit_Explore_Shrine_Quest_24",
-        "IconFilename": "data/ui/2kimages/main/profiles/inuit_trader.png"
+        "IconFilename": "data/ui/2kimages/main/profiles/inuit_trader.png",
+        "Version": "dlc03"
       },
       "Quest": {
         "InvitationMessage": {
@@ -56599,7 +56859,8 @@
       "Standard": {
         "GUID": 116865,
         "Name": "Inuit_Explore_FollowSnowshoe_Quest_25",
-        "IconFilename": "data/ui/2kimages/main/profiles/inuit_trader.png"
+        "IconFilename": "data/ui/2kimages/main/profiles/inuit_trader.png",
+        "Version": "dlc03"
       },
       "Quest": {
         "InvitationMessage": {
@@ -57239,7 +57500,8 @@
       "Standard": {
         "GUID": 116866,
         "Name": "Inuit_Explore_Medicine_Quest_27",
-        "IconFilename": "data/ui/2kimages/main/profiles/inuit_trader.png"
+        "IconFilename": "data/ui/2kimages/main/profiles/inuit_trader.png",
+        "Version": "dlc03"
       },
       "Quest": {
         "InvitationMessage": {
@@ -58018,7 +58280,8 @@
     "Values": {
       "Standard": {
         "GUID": 114925,
-        "Name": "RQ_Explorer_FriendOfTheInuitMain"
+        "Name": "RQ_Explorer_FriendOfTheInuitMain",
+        "Version": "dlc03"
       },
       "Quest": {
         "SuccessMessage": {
@@ -58207,7 +58470,8 @@
     "Values": {
       "Standard": {
         "GUID": 117079,
-        "Name": "RQ_Explorer_FollowingWilliamParry"
+        "Name": "RQ_Explorer_FollowingWilliamParry",
+        "Version": "dlc03"
       },
       "Quest": {
         "StarterMessage": {
@@ -58614,7 +58878,8 @@
     "Values": {
       "Standard": {
         "GUID": 115166,
-        "Name": "RQ_Scientist_OtziMan"
+        "Name": "RQ_Scientist_OtziMan",
+        "Version": "dlc03"
       },
       "Quest": {
         "StarterMessage": {
@@ -58798,7 +59063,8 @@
     "Values": {
       "Standard": {
         "GUID": 119046,
-        "Name": "VQ_Ketema_WeAreOne2_KeepEnemiesCloser_Transport"
+        "Name": "VQ_Ketema_WeAreOne2_KeepEnemiesCloser_Transport",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -58943,8 +59209,9 @@
           "Values": {
             "Condition": "",
             "ConditionUnlocked": {
-              "UnlockNeeded": 114410
-            }
+              "UnlockNeeded": 114471
+            },
+            "ConditionPropsNegatable": ""
           }
         },
         "SubConditions": {
@@ -59157,7 +59424,8 @@
     "Values": {
       "Standard": {
         "GUID": 119049,
-        "Name": "VQ_Ketema_WeAreOne4_DayOfNationalUnity_Transport"
+        "Name": "VQ_Ketema_WeAreOne4_DayOfNationalUnity_Transport",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -59589,7 +59857,8 @@
     "Values": {
       "Standard": {
         "GUID": 119195,
-        "Name": "VQ_Ketema_OutThere1_OutOfThePalace_Smuggle"
+        "Name": "VQ_Ketema_OutThere1_OutOfThePalace_Smuggle",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -59901,7 +60170,8 @@
     "Values": {
       "Standard": {
         "GUID": 123599,
-        "Name": "VQ_Ketema_Memoires_ChooseWiselyAdvisors_SailAdvisor1"
+        "Name": "VQ_Ketema_Memoires_ChooseWiselyAdvisors_SailAdvisor1",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -60142,7 +60412,8 @@
     "Values": {
       "Standard": {
         "GUID": 119219,
-        "Name": "VQ_Ketema_Memoires_DistributionOfFavors_Delivey/Pickup"
+        "Name": "VQ_Ketema_Memoires_DistributionOfFavors_Delivey/Pickup",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -60480,7 +60751,8 @@
     "Values": {
       "Standard": {
         "GUID": 119227,
-        "Name": "VQ_Ketema_Memoires_BeMeasuredAndDiscrete_Smuggle"
+        "Name": "VQ_Ketema_Memoires_BeMeasuredAndDiscrete_Smuggle",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -60887,7 +61159,8 @@
     "Values": {
       "Standard": {
         "GUID": 119090,
-        "Name": "VQ_Ketema_MeaCulpaMaxima4_Bait_BringVehicle"
+        "Name": "VQ_Ketema_MeaCulpaMaxima4_Bait_BringVehicle",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -61145,7 +61418,8 @@
     "Values": {
       "Standard": {
         "GUID": 119207,
-        "Name": "VQ_Ketema_OutThere4_Escape_Smuggle"
+        "Name": "VQ_Ketema_OutThere4_Escape_Smuggle",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -61480,7 +61754,8 @@
     "Values": {
       "Standard": {
         "GUID": 119222,
-        "Name": "VQ_Ketema_Memoires_DistributionOfFavors2_UseItem"
+        "Name": "VQ_Ketema_Memoires_DistributionOfFavors2_UseItem",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -61536,6 +61811,30 @@
                     }
                   }
                 ]
+              }
+            }
+          }
+        },
+        "OnQuestAborted": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDeleteObjects",
+                    "Values": {
+                      "Action": "",
+                      "ActionDeleteObjects": {
+                        "ShipsLeaveMapFirst": 1
+                      },
+                      "ObjectFilter": {
+                        "ObjectGUID": 119232,
+                        "ObjectSession": 112132
+                      }
+                    }
+                  }
+                }
               }
             }
           }
@@ -61760,7 +62059,8 @@
     "Values": {
       "Standard": {
         "GUID": 119223,
-        "Name": "VQ_Ketema_Memoires_DistributionOfFavors2_Gift"
+        "Name": "VQ_Ketema_Memoires_DistributionOfFavors2_Gift",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -61797,6 +62097,30 @@
               },
               "NotificationSubtitle": {
                 "Subtitle": 122833
+              }
+            }
+          }
+        },
+        "OnQuestAborted": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDeleteObjects",
+                    "Values": {
+                      "Action": "",
+                      "ActionDeleteObjects": {
+                        "ShipsLeaveMapFirst": 1
+                      },
+                      "ObjectFilter": {
+                        "ObjectGUID": 119232,
+                        "ObjectSession": 112132
+                      }
+                    }
+                  }
+                }
               }
             }
           }
@@ -62022,7 +62346,8 @@
     "Values": {
       "Standard": {
         "GUID": 119246,
-        "Name": "VQ_Ketema_Memoires_DoNotFosterDivision2B_Transport"
+        "Name": "VQ_Ketema_Memoires_DoNotFosterDivision2B_Transport",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -62074,7 +62399,9 @@
                     "Template": "ActionDeleteObjects",
                     "Values": {
                       "Action": "",
-                      "ActionDeleteObjects": "",
+                      "ActionDeleteObjects": {
+                        "ShipsLeaveMapFirst": 1
+                      },
                       "ObjectFilter": {
                         "ObjectGUID": 119232,
                         "ObjectSession": 112132
@@ -62096,7 +62423,9 @@
                     "Template": "ActionDeleteObjects",
                     "Values": {
                       "Action": "",
-                      "ActionDeleteObjects": "",
+                      "ActionDeleteObjects": {
+                        "ShipsLeaveMapFirst": 1
+                      },
                       "ObjectFilter": {
                         "ObjectGUID": 119232,
                         "ObjectSession": 112132
@@ -62152,7 +62481,9 @@
                       "Template": "ActionDeleteObjects",
                       "Values": {
                         "Action": "",
-                        "ActionDeleteObjects": "",
+                        "ActionDeleteObjects": {
+                          "ShipsLeaveMapFirst": 1
+                        },
                         "ObjectFilter": {
                           "ObjectGUID": 119232,
                           "ObjectSession": 112132
@@ -62369,7 +62700,8 @@
     "Values": {
       "Standard": {
         "GUID": 119248,
-        "Name": "VQ_Ketema_Memoires_DoNotFosterDivision2BSuite_Escort"
+        "Name": "VQ_Ketema_Memoires_DoNotFosterDivision2BSuite_Escort",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -62414,7 +62746,33 @@
                     "Template": "ActionDeleteObjects",
                     "Values": {
                       "Action": "",
-                      "ActionDeleteObjects": "",
+                      "ActionDeleteObjects": {
+                        "ShipsLeaveMapFirst": 1
+                      },
+                      "ObjectFilter": {
+                        "ObjectGUID": 119232,
+                        "ObjectSession": 112132
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "OnQuestAborted": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDeleteObjects",
+                    "Values": {
+                      "Action": "",
+                      "ActionDeleteObjects": {
+                        "ShipsLeaveMapFirst": 1
+                      },
                       "ObjectFilter": {
                         "ObjectGUID": 119232,
                         "ObjectSession": 112132
@@ -62436,7 +62794,9 @@
                     "Template": "ActionDeleteObjects",
                     "Values": {
                       "Action": "",
-                      "ActionDeleteObjects": "",
+                      "ActionDeleteObjects": {
+                        "ShipsLeaveMapFirst": 1
+                      },
                       "ObjectFilter": {
                         "ObjectGUID": 119232,
                         "ObjectSession": 112132
@@ -62698,7 +63058,7 @@
                       "ConditionObjectiveSignsAndFeedback": ""
                     }
                   },
-                  "ExecutionPlaceText": 12972,
+                  "ExecutionPlaceText": 12763,
                   "ExecutionPlaceConfirmOnReached": 0
                 }
               }
@@ -62751,7 +63111,8 @@
     "Values": {
       "Standard": {
         "GUID": 123604,
-        "Name": "VQ_Ketema_Memoires_ChooseWiselyAdvisors_SailAdvisor2"
+        "Name": "VQ_Ketema_Memoires_ChooseWiselyAdvisors_SailAdvisor2",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -63018,7 +63379,8 @@
     "Values": {
       "Standard": {
         "GUID": 123603,
-        "Name": "VQ_Ketema_Memoires_ChooseWiselyAdvisors_SailAdvisor3"
+        "Name": "VQ_Ketema_Memoires_ChooseWiselyAdvisors_SailAdvisor3",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -63066,6 +63428,21 @@
             "ActionList": {
               "Actions": {
                 "Item": [
+                  {
+                    "Action": {
+                      "Template": "ActionDeleteObjects",
+                      "Values": {
+                        "Action": "",
+                        "ActionDeleteObjects": {
+                          "ShipsLeaveMapFirst": 1
+                        },
+                        "ObjectFilter": {
+                          "ObjectGUID": 119232,
+                          "ObjectSession": 112132
+                        }
+                      }
+                    }
+                  },
                   {
                     "Action": {
                       "Template": "ActionDeleteItem",
@@ -63311,7 +63688,8 @@
     "Values": {
       "Standard": {
         "GUID": 118976,
-        "Name": "RQ_Shepherd_SongOfDurin_Transport"
+        "Name": "RQ_Shepherd_SongOfDurin_Transport",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -63614,7 +63992,8 @@
     "Values": {
       "Standard": {
         "GUID": 124073,
-        "Name": "Angereb_21_ReturnWithSpear1"
+        "Name": "Angereb_21_ReturnWithSpear1",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -63861,7 +64240,8 @@
     "Values": {
       "Standard": {
         "GUID": 124354,
-        "Name": "SUB_Angereb_24a_TheLostHeirTrack_Kidusi"
+        "Name": "SUB_Angereb_24a_TheLostHeirTrack_Kidusi",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -64177,7 +64557,8 @@
     "Values": {
       "Standard": {
         "GUID": 124375,
-        "Name": "SUB_Angereb_24a_TheLostHeirTrack_Akdamot"
+        "Name": "SUB_Angereb_24a_TheLostHeirTrack_Akdamot",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -64382,7 +64763,8 @@
     "Values": {
       "Standard": {
         "GUID": 124382,
-        "Name": "SUB_Angereb_24a_TheLostHeirTrack_Archibald"
+        "Name": "SUB_Angereb_24a_TheLostHeirTrack_Archibald",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -64427,7 +64809,7 @@
                               "NotificationText": 124365
                             },
                             "NotificationSubtitle": {
-                              "Subtitle": 124359
+                              "Subtitle": 127502
                             }
                           }
                         }
@@ -64566,7 +64948,8 @@
     "Values": {
       "Standard": {
         "GUID": 124383,
-        "Name": "SUB_Angereb_24a_TheLostHeirTrack_WahaDesher"
+        "Name": "SUB_Angereb_24a_TheLostHeirTrack_WahaDesher",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -64822,7 +65205,8 @@
     "Values": {
       "Standard": {
         "GUID": 124385,
-        "Name": "SUB_Angereb_24a_TheLostHeirTrack_Kidusi2"
+        "Name": "SUB_Angereb_24a_TheLostHeirTrack_Kidusi2",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -65087,7 +65471,8 @@
     "Values": {
       "Standard": {
         "GUID": 124386,
-        "Name": "SUB_Angereb_24a_TheLostHeirTrack_WahaDesher2"
+        "Name": "SUB_Angereb_24a_TheLostHeirTrack_WahaDesher2",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -65320,7 +65705,8 @@
     "Values": {
       "Standard": {
         "GUID": 128657,
-        "Name": "Kidusi_06_DiggingThePast_Hidden_WahaDesher"
+        "Name": "Kidusi_06_DiggingThePast_Hidden_WahaDesher",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -65548,7 +65934,8 @@
     "Values": {
       "Standard": {
         "GUID": 128668,
-        "Name": "Kidusi_06_DiggingThePast_Hidden_Angereb"
+        "Name": "Kidusi_06_DiggingThePast_Hidden_Angereb",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -65708,7 +66095,8 @@
     "Values": {
       "Standard": {
         "GUID": 128670,
-        "Name": "Kidusi_06_DiggingThePast_Hidden_Ketema"
+        "Name": "Kidusi_06_DiggingThePast_Hidden_Ketema",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -65914,7 +66302,8 @@
     "Values": {
       "Standard": {
         "GUID": 128671,
-        "Name": "Kidusi_06_DiggingThePast_Hidden_Archi"
+        "Name": "Kidusi_06_DiggingThePast_Hidden_Archi",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -66074,7 +66463,8 @@
     "Values": {
       "Standard": {
         "GUID": 129443,
-        "Name": "Kidusi_25b_LegendaryGift"
+        "Name": "Kidusi_25b_LegendaryGift",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -66344,7 +66734,8 @@
     "Values": {
       "Standard": {
         "GUID": 122402,
-        "Name": "Gift Well Treasure - Angereb"
+        "Name": "Gift Well Treasure - Angereb",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -66566,7 +66957,8 @@
     "Values": {
       "Standard": {
         "GUID": 124996,
-        "Name": "LoL_NoStory_ReceiveConstructionMaterial"
+        "Name": "LoL_NoStory_ReceiveConstructionMaterial",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {

@@ -601,156 +601,6 @@
     "Template": "PublicServiceBuilding",
     "Values": {
       "Standard": {
-        "GUID": 1010361,
-        "Name": "service_05 (Cabaret)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_cabaret.png"
-      },
-      "Building": {
-        "BuildModeRandomRotation": 180,
-        "AssociatedRegions": "Moderate"
-      },
-      "Blocking": "",
-      "Cost": {
-        "Costs": {
-          "Item": [
-            {
-              "Ingredient": 1010017,
-              "Amount": 10000
-            },
-            {
-              "Ingredient": 1010196,
-              "Amount": 30
-            },
-            {
-              "Ingredient": 1010205,
-              "Amount": 50
-            },
-            {
-              "Ingredient": 1010218,
-              "Amount": 40
-            },
-            {
-              "Ingredient": 1010207,
-              "Amount": 40
-            },
-            {
-              "Ingredient": 1010202
-            }
-          ]
-        }
-      },
-      "Object": {
-        "Variations": {
-          "Item": {
-            "Filename": "data/graphics/buildings/public/service_05/service_05.cfg"
-          }
-        }
-      },
-      "Mesh": "",
-      "Selection": {
-        "GUIType": "PublicService"
-      },
-      "Text": {
-        "LocaText": {
-          "English": {
-            "Text": "Variety Theatre",
-            "Status": "Exported",
-            "ExportCount": 2
-          }
-        },
-        "LineID": 5294
-      },
-      "Constructable": "",
-      "Locked": "",
-      "SoundEmitter": {
-        "ActiveSounds": {
-          "Item": {
-            "Sound": 200853
-          }
-        },
-        "ConstructionSounds": {
-          "BuildSuccessful": {
-            "Item": {
-              "VectorElement": {
-                "InheritedIndex": 0,
-                "InheritanceMapV2": {
-                  "Entry": {
-                    "TemplateName": "PublicServiceBuilding",
-                    "Index": 0
-                  }
-                }
-              },
-              "Sound": 214786
-            }
-          }
-        },
-        "IncidentSounds": {
-          "InfectedFire": {
-            "Item": {
-              "Sound": 214659
-            }
-          }
-        },
-        "BuildingRepaired": {
-          "Item": {
-            "Sound": 203866
-          }
-        }
-      },
-      "FeedbackController": {
-        "NightBehavior": "HideNone"
-      },
-      "Infolayer": "",
-      "UpgradeList": "",
-      "LogisticNode": {
-        "REMOVE_THIS_LATER_FeedbackUnitTier": "Level3"
-      },
-      "PublicService": {
-        "FullSatisfactionDistance": 40,
-        "NoSatisfactionDistance": 80,
-        "PublicServiceOutputs": {
-          "Item": {
-            "Product": 1010352
-          }
-        }
-      },
-      "AmbientMoodProvider": {
-        "AmbientMood": "ResidenceTier1",
-        "DynamicEnvironmentType": "Building_Residence"
-      },
-      "Maintenance": {
-        "Maintenances": {
-          "Item": {
-            "Product": 1010017,
-            "Amount": 100,
-            "InactiveAmount": 50
-          }
-        }
-      },
-      "Attackable": {
-        "MaximumHitPoints": 3000,
-        "SelfHealPerHealTick": 4
-      },
-      "Pausable": "",
-      "IncidentInfectable": {
-        "Infectable": {
-          "Fire": {
-            "Base": 1
-          }
-        },
-        "IncidentInfectionChanceFactors": {
-          "Fire": {
-            "DensityDistance": 20
-          }
-        }
-      },
-      "Culture": ""
-    }
-  },
-  {
-    "Template": "PublicServiceBuilding",
-    "Values": {
-      "Standard": {
         "GUID": 1010362,
         "Name": "service_07 (University)",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_university.png"
@@ -907,7 +757,8 @@
       },
       "Building": {
         "BuildModeRandomRotation": 90,
-        "AssociatedRegions": "Moderate"
+        "AssociatedRegions": "Moderate",
+        "AllowChangeDirection": 1
       },
       "Blocking": "",
       "Cost": {
@@ -1152,7 +1003,8 @@
       "Standard": {
         "GUID": 112684,
         "Name": "service_arctic_02 (Post Office)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_post_office.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_post_office.png",
+        "Version": "dlc03"
       },
       "Building": {
         "BuildingType": "Logistic",
@@ -1324,7 +1176,8 @@
       "Standard": {
         "GUID": 114519,
         "Name": "service_colony02_02 (Music Plaza)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_music_plaza.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_music_plaza.png",
+        "Version": "dlc06"
       },
       "Building": {
         "AssociatedRegions": "Africa"
@@ -1473,7 +1326,8 @@
       "Standard": {
         "GUID": 114520,
         "Name": "service_colony02_03 (Monastery)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_monastery.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_monastery.png",
+        "Version": "dlc06"
       },
       "Building": {
         "AssociatedRegions": "Africa"
@@ -1626,10 +1480,12 @@
         "GUID": 118736,
         "Name": "service_moderate_LoL_01 (Radio Station)",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_radio_station.png",
-        "ID": "LOL_Radio"
+        "ID": "LOL_Radio",
+        "Version": "dlc06"
       },
       "Building": {
-        "AssociatedRegions": "Moderate"
+        "AssociatedRegions": "Moderate",
+        "AllowChangeDirection": 1
       },
       "Blocking": "",
       "Cost": {

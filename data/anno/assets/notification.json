@@ -2408,7 +2408,9 @@
                     "ActiveCallback": "[NotificationContext Value(Area) Area Visitors HasSpecialist]"
                   }
                 ]
-              }
+              },
+              "FilteredByEventSetting": "SpecialistArrived",
+              "IsFilteredByEventSetting": 1
             },
             "BaseNotification": {
               "NotificationText": 2435,
@@ -2437,7 +2439,9 @@
           "IsBaseAutoCreateAsset": 1,
           "Values": {
             "CharacterNotification": {
-              "Profile": 90
+              "Profile": 90,
+              "FilteredByEventSetting": "SpecialistArrived",
+              "IsFilteredByEventSetting": 1
             },
             "BaseNotification": {
               "NotificationText": 23466,
@@ -2467,7 +2471,8 @@
             "SideNotification": {
               "IconAsset": 501357,
               "NotificationSideTitle": 2442,
-              "FilterType": "VisitorsAndCulture"
+              "FilterType": "VisitorsAndCulture",
+              "EventNotificationSetting": "SpecialistArrived"
             },
             "BaseNotification": {
               "NotificationText": 2441,
@@ -2627,6 +2632,32 @@
             "NotificationSubtitle": {
               "Subtitle": 265370
             }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 502271,
+        "Name": "NotificationVisitorArrived"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 100429,
+              "IsEvent": 1,
+              "EventNotificationSetting": "SpecialistArrived"
+            },
+            "BaseNotification": {
+              "NotificationText": 23763,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": ""
           }
         }
       }
@@ -4918,6 +4949,54 @@
     "Template": "Notification",
     "Values": {
       "Standard": {
+        "GUID": 502331,
+        "Name": "ShipReachedTargetPosition"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501372
+            },
+            "BaseNotification": {
+              "NotificationText": 23839,
+              "NotificationAudioAsset": 280107
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 502332,
+        "Name": "FleetReachedTargetPosition"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 502165
+            },
+            "BaseNotification": {
+              "NotificationText": 23840,
+              "NotificationAudioAsset": 280107
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
         "GUID": 501307,
         "Name": "ParticipantLostGameAnnihilation"
       },
@@ -5150,6 +5229,32 @@
             "NotificationSubtitle": {
               "Subtitle": 265270
             }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 502270,
+        "Name": "NotificationMonumentExhibitionDone",
+        "ID": "NotificationMonumentExhibitionDone"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 1010492,
+              "IsEvent": 1
+            },
+            "BaseNotification": {
+              "NotificationText": 23764,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": ""
           }
         }
       }
@@ -5937,20 +6042,20 @@
     "Template": "Notification",
     "Values": {
       "Standard": {
-        "GUID": 111149,
-        "Name": "ArticleUnlocked"
+        "GUID": 502272,
+        "Name": "NotificationMajorDiscoveryDone"
       },
       "Notification": {
         "NotificationType": {
           "Template": "SideNotification",
           "Values": {
             "SideNotification": {
-              "IconAsset": 501379,
-              "FilterType": "Progress",
-              "HasJumpLocation": 0
+              "IconAsset": 118940,
+              "IsEvent": 1,
+              "EventNotificationSetting": "MajorDiscovery"
             },
             "BaseNotification": {
-              "NotificationText": 111150,
+              "NotificationText": 23765,
               "NotificationAudioAsset": 239732
             },
             "NotificationSubtitle": ""
@@ -5963,8 +6068,115 @@
     "Template": "Notification",
     "Values": {
       "Standard": {
+        "GUID": 502273,
+        "Name": "NotificationResidencePermitDone"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 118940,
+              "IsEvent": 1,
+              "EventNotificationSetting": "MajorDiscovery"
+            },
+            "BaseNotification": {
+              "NotificationText": 23766,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 502274,
+        "Name": "NotificationItemDevelopmentDone"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 118940,
+              "IsEvent": 1,
+              "EventNotificationSetting": "MajorDiscovery"
+            },
+            "BaseNotification": {
+              "NotificationText": 23767,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 502290,
+        "Name": "NotificationBonusGodlikeDrop"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 118940,
+              "IsEvent": 1,
+              "EventNotificationSetting": "MajorDiscovery"
+            },
+            "BaseNotification": {
+              "NotificationText": 23800,
+              "NotificationAudioAsset": 239732
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
+        "GUID": 111149,
+        "Name": "ArticleUnlocked",
+        "Version": "dm"
+      },
+      "Notification": {
+        "NotificationType": {
+          "Template": "SideNotification",
+          "Values": {
+            "SideNotification": {
+              "IconAsset": 501379,
+              "FilterType": "Progress",
+              "HasJumpLocation": 0
+            },
+            "BaseNotification": {
+              "NotificationText": 111150,
+              "NotificationAudioAsset": 239732,
+              "IsUnique": 1
+            },
+            "NotificationSubtitle": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Notification",
+    "Values": {
+      "Standard": {
         "GUID": 112114,
-        "Name": "MissingWorkforceInPool"
+        "Name": "MissingWorkforceInPool",
+        "Version": "dm"
       },
       "Notification": {
         "NotificationType": {
@@ -5991,7 +6203,8 @@
     "Values": {
       "Standard": {
         "GUID": 113810,
-        "Name": "BuyShipRequestNotification_OldNate"
+        "Name": "BuyShipRequestNotification_OldNate",
+        "Version": "dlc01"
       },
       "Notification": {
         "NotificationType": {
@@ -6036,7 +6249,8 @@
       "Standard": {
         "GUID": 115004,
         "Name": "Heating CoalTendencyNegative Notification",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_heating_center.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_heating_center.png",
+        "Version": "dlc03"
       },
       "Notification": {
         "NotificationType": {
@@ -6068,7 +6282,8 @@
       "Standard": {
         "GUID": 115008,
         "Name": "Heating HeaterNotWorking Notification",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_heating_center.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_heating_center.png",
+        "Version": "dlc03"
       },
       "Notification": {
         "NotificationType": {
@@ -6099,7 +6314,8 @@
     "Values": {
       "Standard": {
         "GUID": 116128,
-        "Name": "Incident_NewArcticIllness_NoNearbyInstitution"
+        "Name": "Incident_NewArcticIllness_NoNearbyInstitution",
+        "Version": "dlc03"
       },
       "Notification": {
         "NotificationType": {
@@ -6129,7 +6345,8 @@
     "Values": {
       "Standard": {
         "GUID": 116134,
-        "Name": "Incident_OngoingArcticIllness_ConsumedBuilding"
+        "Name": "Incident_OngoingArcticIllness_ConsumedBuilding",
+        "Version": "dlc03"
       },
       "Notification": {
         "NotificationType": {
@@ -6159,7 +6376,8 @@
     "Values": {
       "Standard": {
         "GUID": 116135,
-        "Name": "Incident_EscalatedArcticIllness"
+        "Name": "Incident_EscalatedArcticIllness",
+        "Version": "dlc03"
       },
       "Notification": {
         "NotificationType": {
@@ -6189,7 +6407,8 @@
     "Values": {
       "Standard": {
         "GUID": 116136,
-        "Name": "Incident_EndArcticIllness"
+        "Name": "Incident_EndArcticIllness",
+        "Version": "dlc03"
       },
       "Notification": {
         "NotificationType": {
@@ -6217,7 +6436,8 @@
     "Values": {
       "Standard": {
         "GUID": 116137,
-        "Name": "Incident_EndArcticIllness_Destruction"
+        "Name": "Incident_EndArcticIllness_Destruction",
+        "Version": "dlc03"
       },
       "Notification": {
         "NotificationType": {
@@ -6247,7 +6467,8 @@
     "Values": {
       "Standard": {
         "GUID": 116750,
-        "Name": "Incident_NewArcticFire_NoNearbyInstitution"
+        "Name": "Incident_NewArcticFire_NoNearbyInstitution",
+        "Version": "dlc03"
       },
       "Notification": {
         "NotificationType": {
@@ -6277,7 +6498,8 @@
     "Values": {
       "Standard": {
         "GUID": 116751,
-        "Name": "Incident_OngoingArcticFire_ConsumedBuilding"
+        "Name": "Incident_OngoingArcticFire_ConsumedBuilding",
+        "Version": "dlc03"
       },
       "Notification": {
         "NotificationType": {
@@ -6307,7 +6529,8 @@
     "Values": {
       "Standard": {
         "GUID": 116752,
-        "Name": "Incident_EscalatedArcticFire"
+        "Name": "Incident_EscalatedArcticFire",
+        "Version": "dlc03"
       },
       "Notification": {
         "NotificationType": {
@@ -6337,7 +6560,8 @@
     "Values": {
       "Standard": {
         "GUID": 116753,
-        "Name": "Incident_EndArcticFire"
+        "Name": "Incident_EndArcticFire",
+        "Version": "dlc03"
       },
       "Notification": {
         "NotificationType": {
@@ -6365,7 +6589,8 @@
     "Values": {
       "Standard": {
         "GUID": 116754,
-        "Name": "Incident_EndArcticFire_Destruction"
+        "Name": "Incident_EndArcticFire_Destruction",
+        "Version": "dlc03"
       },
       "Notification": {
         "NotificationType": {
@@ -6395,7 +6620,8 @@
     "Values": {
       "Standard": {
         "GUID": 269292,
-        "Name": "Noti Main Palace Unlocks"
+        "Name": "Noti Main Palace Unlocks",
+        "Version": "dlc04"
       },
       "Notification": {
         "NotificationType": {
@@ -6419,7 +6645,8 @@
       "Standard": {
         "GUID": 269309,
         "Name": "Noti Main Palace Overdrive Reached",
-        "ID": "NotificationParagonBanner"
+        "ID": "NotificationParagonBanner",
+        "Version": "dlc04"
       },
       "Notification": {
         "NotificationType": {
@@ -6443,7 +6670,8 @@
     "Values": {
       "Standard": {
         "GUID": 269583,
-        "Name": "Palace Unlock Banner"
+        "Name": "Palace Unlock Banner",
+        "Version": "dlc04"
       },
       "Notification": {
         "NotificationType": {
@@ -6472,7 +6700,8 @@
       "Standard": {
         "GUID": 269224,
         "Name": "Noti Lost Palace Effects",
-        "ID": "NotificationLostPalaceEffects"
+        "ID": "NotificationLostPalaceEffects",
+        "Version": "dlc04"
       },
       "Notification": {
         "NotificationType": {
@@ -6499,7 +6728,8 @@
       "Standard": {
         "GUID": 269227,
         "Name": "Noti Regained Palace Effects",
-        "ID": "NotificationUnlockedPalaceEffects"
+        "ID": "NotificationUnlockedPalaceEffects",
+        "Version": "dlc04"
       },
       "Notification": {
         "NotificationType": {
@@ -6526,7 +6756,8 @@
       "Standard": {
         "GUID": 269329,
         "Name": "Noti Lost Overdrive",
-        "ID": "NotificationParagonLost"
+        "ID": "NotificationParagonLost",
+        "Version": "dlc04"
       },
       "Notification": {
         "NotificationType": {
@@ -6552,7 +6783,8 @@
       "Standard": {
         "GUID": 269330,
         "Name": "Noti Regained Overdrive",
-        "ID": "NotificationParagonGained"
+        "ID": "NotificationParagonGained",
+        "Version": "dlc04"
       },
       "Notification": {
         "NotificationType": {
@@ -6577,7 +6809,8 @@
     "Values": {
       "Standard": {
         "GUID": 124218,
-        "Name": "Chapter Introduction"
+        "Name": "Chapter Introduction",
+        "Version": "dlc06"
       },
       "Notification": {
         "NotificationType": {
@@ -6600,7 +6833,8 @@
     "Values": {
       "Standard": {
         "GUID": 125533,
-        "Name": "NewCityState_AfricaSettlement_Notification"
+        "Name": "NewCityState_AfricaSettlement_Notification",
+        "Version": "dlc06"
       },
       "Notification": {
         "NotificationType": {
@@ -6630,7 +6864,8 @@
     "Values": {
       "Standard": {
         "GUID": 125534,
-        "Name": "NewCityState_AfricaTown_Notification"
+        "Name": "NewCityState_AfricaTown_Notification",
+        "Version": "dlc06"
       },
       "Notification": {
         "NotificationType": {

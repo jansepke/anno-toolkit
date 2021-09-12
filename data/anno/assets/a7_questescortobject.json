@@ -13631,8 +13631,8 @@
         "LocaText": {
           "English": {
             "Text": "(TBC - Quest not yet written)",
-            "Status": "GameWriting",
-            "ExportCount": 1
+            "Status": "Exported",
+            "ExportCount": 2
           }
         },
         "LineID": 26203
@@ -15361,8 +15361,8 @@
         "LocaText": {
           "English": {
             "Text": "Escort Room (TBC - Quest not yet written)",
-            "Status": "GameWriting",
-            "ExportCount": 1
+            "Status": "Exported",
+            "ExportCount": 2
           }
         },
         "LineID": 5497
@@ -16058,8 +16058,8 @@
         "LocaText": {
           "English": {
             "Text": "Juvenile Detention (TBC - Quest not yet written)",
-            "Status": "GameWriting",
-            "ExportCount": 1
+            "Status": "Exported",
+            "ExportCount": 2
           }
         }
       },
@@ -16278,8 +16278,8 @@
         "LocaText": {
           "English": {
             "Text": "Conflict of Interest (TBC - Quest not yet written)",
-            "Status": "GameWriting",
-            "ExportCount": 1
+            "Status": "Exported",
+            "ExportCount": 2
           }
         }
       },
@@ -16884,6 +16884,231 @@
     "Template": "A7_QuestEscortObject",
     "Values": {
       "Standard": {
+        "GUID": 150380,
+        "Name": "No Excuses - Kahina"
+      },
+      "Quest": {
+        "InvitationMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": {
+                "SubtitleGroup": 2034401664
+              }
+            }
+          }
+        },
+        "QuestGiver": 78,
+        "StoryText": 9820,
+        "PreActivationTimer": 1800000,
+        "NeededProgressLevel": "MidGame;LateMidGame;LateGame;EndGame",
+        "DelayTimer": 90000,
+        "ConfirmOnReached": 1,
+        "ReputationQuestFail": {
+          "ReputationFailList": ""
+        },
+        "StarterSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": {
+              "HintText": 17809,
+              "ObjectFilter": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "ObjectFilter": {
+                    "ObjectGUID": 102594
+                  }
+                }
+              },
+              "UseSpecificPortrait": 1,
+              "SpecificPortraitProfile": 78
+            }
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "No Excuses",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 23420
+      },
+      "Reward": {
+        "RewardAssets": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "A7_QuestEscortObject",
+                    "Index": 0
+                  }
+                }
+              },
+              "Amount": 2
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "A7_QuestEscortObject",
+                    "Index": 1
+                  }
+                }
+              },
+              "Reward": 190980
+            }
+          ]
+        },
+        "RewardReputation": ""
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestEscortObject",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestEscort": {
+                  "EscortObjects": {
+                    "Item": {
+                      "EscortObject": {
+                        "Template": "QuestObjectList",
+                        "Values": {
+                          "ObjectList": {
+                            "Object": 102371,
+                            "Amount": 1
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "MinSurvivors": 1,
+                  "SpawnArea": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "SpawnArea": {
+                        "DistanceToContext": 10,
+                        "MinObjectDistance": 5,
+                        "MaxObjectDistance": 10,
+                        "DistanceToBorder": "Near",
+                        "DistanceToIsland": "Near;Mid;Far"
+                      }
+                    }
+                  },
+                  "Destinations": {
+                    "Item": {
+                      "MoveDirection": "ClientKontor"
+                    }
+                  },
+                  "EscortObjectDespawnDelay": 10000,
+                  "AttackerList": {
+                    "Item": {
+                      "SpawnTime": 40000,
+                      "AttackerObjectList": {
+                        "Item": {
+                          "AttackerObject": {
+                            "Template": "QuestObjectList",
+                            "Values": {
+                              "ObjectList": {
+                                "Object": 102375,
+                                "Amount": 3,
+                                "DoSetOwner": 1,
+                                "Owner": "General_Enemy"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "MinDistAttackerToObject": 35,
+                  "MaxDistAttackerToObject": 50,
+                  "AttackerSpawnInterval": 120000
+                },
+                "ConditionQuestObjective": "",
+                "ConditionPropsSessionSettings": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ConditionObjectAnywhere",
+                    "Values": {
+                      "ConditionObjectAnywhere": ""
+                    }
+                  },
+                  "ExecutionPlaceConfirmOnReached": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": {
+        "HasStarterObject": "Specific",
+        "StarterObject": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionStarterObject": {
+              "StarterObjectObject": {
+                "Template": "ConditionObjectSpawnedObject",
+                "Values": {
+                  "ConditionObjectSpawnedObject": {
+                    "ExecutionObject": 102594,
+                    "ObjectSpawnArea": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "SpawnArea": {
+                          "SpawnContext": "ClientObject",
+                          "DistanceToContext": 20
+                        }
+                      }
+                    },
+                    "DoSetVisualObjectOwner": 1,
+                    "VisualObjectOwner": "Third_party_08_Kahina"
+                  },
+                  "ConditionScanner": "",
+                  "ConditionObjectiveSignsAndFeedback": {
+                    "Infolayer": 500173
+                  }
+                }
+              }
+            },
+            "ConditionQuestObjective": "",
+            "ConditionPropsSessionSettings": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "A7_QuestEscortObject",
+    "Values": {
+      "Standard": {
         "GUID": 150379,
         "Name": "Highly Valuable 1 (Fake Escort) - Kahina"
       },
@@ -17039,6 +17264,47 @@
                                       "ActionDeleteObjects": {
                                         "ShipsLeaveMapFirst": 1
                                       },
+                                      "ObjectFilter": {
+                                        "ObjectGUID": 102594
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "OnQuestTimedOut": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "ExecutionDelay": 60000,
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionDeleteObjects",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionDeleteObjects": "",
                                       "ObjectFilter": {
                                         "ObjectGUID": 102594
                                       }
@@ -17256,231 +17522,6 @@
                       }
                     },
                     "ObjectDespawn": "StayOnMap",
-                    "DoSetVisualObjectOwner": 1,
-                    "VisualObjectOwner": "Third_party_08_Kahina"
-                  },
-                  "ConditionScanner": "",
-                  "ConditionObjectiveSignsAndFeedback": {
-                    "Infolayer": 500173
-                  }
-                }
-              }
-            },
-            "ConditionQuestObjective": "",
-            "ConditionPropsSessionSettings": ""
-          }
-        }
-      }
-    }
-  },
-  {
-    "Template": "A7_QuestEscortObject",
-    "Values": {
-      "Standard": {
-        "GUID": 150380,
-        "Name": "No Excuses - Kahina"
-      },
-      "Quest": {
-        "InvitationMessage": {
-          "Notification": {
-            "IsBaseAutoCreateAsset": 1,
-            "Values": {
-              "CharacterNotification": "",
-              "BaseNotification": "",
-              "NotificationSubtitle": {
-                "SubtitleGroup": 2034401664
-              }
-            }
-          }
-        },
-        "QuestGiver": 78,
-        "StoryText": 9820,
-        "PreActivationTimer": 1800000,
-        "NeededProgressLevel": "MidGame;LateMidGame;LateGame;EndGame",
-        "DelayTimer": 90000,
-        "ConfirmOnReached": 1,
-        "ReputationQuestFail": {
-          "ReputationFailList": ""
-        },
-        "StarterSpeechBubble": {
-          "IsBaseAutoCreateAsset": 1,
-          "Values": {
-            "Condition": "",
-            "ConditionTutorialInteraction": {
-              "HintText": 17809,
-              "ObjectFilter": {
-                "IsBaseAutoCreateAsset": 1,
-                "Values": {
-                  "ObjectFilter": {
-                    "ObjectGUID": 102594
-                  }
-                }
-              },
-              "UseSpecificPortrait": 1,
-              "SpecificPortraitProfile": 78
-            }
-          }
-        }
-      },
-      "PreConditionList": {
-        "Condition": {
-          "IsBaseAutoCreateAsset": 1,
-          "Values": {
-            "Condition": "",
-            "ConditionAlwaysTrue": ""
-          }
-        }
-      },
-      "Text": {
-        "LocaText": {
-          "English": {
-            "Text": "No Excuses",
-            "Status": "Exported",
-            "ExportCount": 1
-          }
-        },
-        "LineID": 23420
-      },
-      "Reward": {
-        "RewardAssets": {
-          "Item": [
-            {
-              "VectorElement": {
-                "InheritedIndex": 0,
-                "InheritanceMapV2": {
-                  "Entry": {
-                    "TemplateName": "A7_QuestEscortObject",
-                    "Index": 0
-                  }
-                }
-              },
-              "Amount": 2
-            },
-            {
-              "VectorElement": {
-                "InheritedIndex": 1,
-                "InheritanceMapV2": {
-                  "Entry": {
-                    "TemplateName": "A7_QuestEscortObject",
-                    "Index": 1
-                  }
-                }
-              },
-              "Reward": 190980
-            }
-          ]
-        },
-        "RewardReputation": ""
-      },
-      "Objectives": {
-        "WinConditions": {
-          "Item": {
-            "VectorElement": {
-              "InheritedIndex": 0,
-              "InheritanceMapV2": {
-                "Entry": {
-                  "TemplateName": "A7_QuestEscortObject",
-                  "Index": 0
-                }
-              }
-            },
-            "Objective": {
-              "IsBaseAutoCreateAsset": 1,
-              "Values": {
-                "ConditionQuestEscort": {
-                  "EscortObjects": {
-                    "Item": {
-                      "EscortObject": {
-                        "Template": "QuestObjectList",
-                        "Values": {
-                          "ObjectList": {
-                            "Object": 102371,
-                            "Amount": 1
-                          }
-                        }
-                      }
-                    }
-                  },
-                  "MinSurvivors": 1,
-                  "SpawnArea": {
-                    "IsBaseAutoCreateAsset": 1,
-                    "Values": {
-                      "SpawnArea": {
-                        "DistanceToContext": 10,
-                        "MinObjectDistance": 5,
-                        "MaxObjectDistance": 10,
-                        "DistanceToBorder": "Near",
-                        "DistanceToIsland": "Near;Mid;Far"
-                      }
-                    }
-                  },
-                  "Destinations": {
-                    "Item": {
-                      "MoveDirection": "ClientKontor"
-                    }
-                  },
-                  "EscortObjectDespawnDelay": 10000,
-                  "AttackerList": {
-                    "Item": {
-                      "SpawnTime": 40000,
-                      "AttackerObjectList": {
-                        "Item": {
-                          "AttackerObject": {
-                            "Template": "QuestObjectList",
-                            "Values": {
-                              "ObjectList": {
-                                "Object": 102375,
-                                "Amount": 3,
-                                "DoSetOwner": 1,
-                                "Owner": "General_Enemy"
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  },
-                  "MinDistAttackerToObject": 35,
-                  "MaxDistAttackerToObject": 50,
-                  "AttackerSpawnInterval": 120000
-                },
-                "ConditionQuestObjective": "",
-                "ConditionPropsSessionSettings": "",
-                "ConditionPropsExecutionPlaceSettings": {
-                  "ExecutionPlace": {
-                    "Template": "ConditionObjectAnywhere",
-                    "Values": {
-                      "ConditionObjectAnywhere": ""
-                    }
-                  },
-                  "ExecutionPlaceConfirmOnReached": 0
-                }
-              }
-            }
-          }
-        }
-      },
-      "QuestOptional": {
-        "HasStarterObject": "Specific",
-        "StarterObject": {
-          "IsBaseAutoCreateAsset": 1,
-          "Values": {
-            "Condition": "",
-            "ConditionStarterObject": {
-              "StarterObjectObject": {
-                "Template": "ConditionObjectSpawnedObject",
-                "Values": {
-                  "ConditionObjectSpawnedObject": {
-                    "ExecutionObject": 102594,
-                    "ObjectSpawnArea": {
-                      "IsBaseAutoCreateAsset": 1,
-                      "Values": {
-                        "SpawnArea": {
-                          "SpawnContext": "ClientObject",
-                          "DistanceToContext": 20
-                        }
-                      }
-                    },
                     "DoSetVisualObjectOwner": 1,
                     "VisualObjectOwner": "Third_party_08_Kahina"
                   },
@@ -17859,6 +17900,47 @@
           }
         },
         "OnQuestAborted": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "ExecutionDelay": 60000,
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionDeleteObjects",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionDeleteObjects": "",
+                                      "ObjectFilter": {
+                                        "ObjectGUID": 102578
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "OnQuestTimedOut": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
             "ActionList": {
@@ -18354,6 +18436,47 @@
             }
           }
         },
+        "OnQuestDeclined": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "ExecutionDelay": 60000,
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionDeleteObjects",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionDeleteObjects": "",
+                                      "ObjectFilter": {
+                                        "ObjectGUID": 102578
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
         "OnQuestTimedOut": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
@@ -18507,7 +18630,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 190512
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -18525,7 +18649,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 190513
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -18909,6 +19034,47 @@
                                     }
                                   }
                                 ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "OnQuestTimedOut": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "ExecutionDelay": 60000,
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionDeleteObjects",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionDeleteObjects": "",
+                                      "ObjectFilter": {
+                                        "ObjectGUID": 102578
+                                      }
+                                    }
+                                  }
+                                }
                               }
                             }
                           }
@@ -20323,7 +20489,8 @@
                         "Template": "QuestObjectList",
                         "Values": {
                           "ObjectList": {
-                            "Object": 102371
+                            "Object": 102371,
+                            "Amount": 1
                           }
                         }
                       }
@@ -21040,6 +21207,47 @@
         },
         "InvitationMessage": {
           "SuppressMessage": 1
+        },
+        "OnQuestDeclined": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "ExecutionDelay": 60000,
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionDeleteObjects",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionDeleteObjects": "",
+                                      "ObjectFilter": {
+                                        "ObjectGUID": 102583
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         },
         "OnQuestTimedOut": {
           "IsBaseAutoCreateAsset": 1,
@@ -25654,7 +25862,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 1010232
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -25672,7 +25881,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 1010258
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -25690,7 +25900,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 192362
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -27448,7 +27659,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 1010249
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -27466,7 +27678,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 1010256
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -27649,7 +27862,8 @@
     "Values": {
       "Standard": {
         "GUID": 110692,
-        "Name": "Escort - We welcome all - Hugo Mercier"
+        "Name": "Escort - We welcome all - Hugo Mercier",
+        "Version": "dm"
       },
       "Quest": {
         "InvitationMessage": {
@@ -27962,7 +28176,8 @@
     "Values": {
       "Standard": {
         "GUID": 110717,
-        "Name": "Escort - Power of the multitude - Hugo Mercier"
+        "Name": "Escort - Power of the multitude - Hugo Mercier",
+        "Version": "dm"
       },
       "Quest": {
         "InvitationMessage": {
@@ -28391,7 +28606,8 @@
     "Values": {
       "Standard": {
         "GUID": 110791,
-        "Name": "Escort - Remember the 5th of November Part 2 - Hugo Mercier"
+        "Name": "Escort - Remember the 5th of November Part 2 - Hugo Mercier",
+        "Version": "dm"
       },
       "Quest": {
         "InvitationMessage": {
@@ -28945,7 +29161,8 @@
     "Values": {
       "Standard": {
         "GUID": 114066,
-        "Name": "SL209_TimeToGo"
+        "Name": "SL209_TimeToGo",
+        "Version": "dlc01"
       },
       "Quest": {
         "StarterMessage": {
@@ -29238,7 +29455,8 @@
     "Values": {
       "Standard": {
         "GUID": 112999,
-        "Name": "VQ Old Nate - Escort - Mixed Up"
+        "Name": "VQ Old Nate - Escort - Mixed Up",
+        "Version": "dlc01"
       },
       "Quest": {
         "InvitationMessage": {
@@ -29514,7 +29732,8 @@
       "Standard": {
         "GUID": 119898,
         "Name": "LoLStory_ToTheMeeting",
-        "IconFilename": "data/ui/2kimages/main/profiles/3rd_party_02.png"
+        "IconFilename": "data/ui/2kimages/main/profiles/3rd_party_02.png",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -29825,7 +30044,8 @@
       "Standard": {
         "GUID": 127792,
         "Name": "LoLStory_ToTheFinalNegotiation",
-        "IconFilename": "data/ui/2kimages/main/profiles/3rd_party_02.png"
+        "IconFilename": "data/ui/2kimages/main/profiles/3rd_party_02.png",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {

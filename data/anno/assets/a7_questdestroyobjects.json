@@ -1170,7 +1170,8 @@
                         "Template": "QuestObjectList",
                         "Values": {
                           "ObjectList": {
-                            "Object": 102371
+                            "Object": 102371,
+                            "Amount": 1
                           }
                         }
                       }
@@ -14228,8 +14229,8 @@
         "LocaText": {
           "English": {
             "Text": "(TBC - Quest not yet written)",
-            "Status": "GameWriting",
-            "ExportCount": 1
+            "Status": "Exported",
+            "ExportCount": 2
           }
         },
         "LineID": 26196
@@ -14474,8 +14475,8 @@
         "LocaText": {
           "English": {
             "Text": "(TBC - Quest not yet written)",
-            "Status": "GameWriting",
-            "ExportCount": 1
+            "Status": "Exported",
+            "ExportCount": 2
           }
         },
         "LineID": 26197
@@ -14720,8 +14721,8 @@
         "LocaText": {
           "English": {
             "Text": "(TBC - Quest not yet written)",
-            "Status": "GameWriting",
-            "ExportCount": 1
+            "Status": "Exported",
+            "ExportCount": 2
           }
         },
         "LineID": 26198
@@ -14966,8 +14967,8 @@
         "LocaText": {
           "English": {
             "Text": "(TBC - Quest not yet written)",
-            "Status": "GameWriting",
-            "ExportCount": 1
+            "Status": "Exported",
+            "ExportCount": 2
           }
         },
         "LineID": 26199
@@ -16236,8 +16237,8 @@
         "LocaText": {
           "English": {
             "Text": "Destroy Released Prisoner Ship (TBC - Quest not yet written)",
-            "Status": "GameWriting",
-            "ExportCount": 1
+            "Status": "Exported",
+            "ExportCount": 2
           }
         },
         "LineID": 5490
@@ -17051,7 +17052,8 @@
         "LocaText": {
           "English": {
             "Text": "Maintaining Contacts (TBC - Quest not yet written)",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -18069,6 +18071,148 @@
             }
           }
         },
+        "OnQuestDeclined": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "ExecutionDelay": 60000,
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionDeleteObjects",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionDeleteObjects": "",
+                                      "ObjectFilter": {
+                                        "ObjectGUID": 102578
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "OnQuestAborted": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": [
+                  {
+                    "Action": {
+                      "Template": "ActionDelayedActions",
+                      "Values": {
+                        "Action": "",
+                        "ActionDelayedActions": {
+                          "ExecutionDelay": 10000,
+                          "DelayedActions": {
+                            "IsBaseAutoCreateAsset": 1,
+                            "Values": {
+                              "ActionList": {
+                                "Actions": {
+                                  "Item": [
+                                    {
+                                      "Action": {
+                                        "Template": "ActionDeleteObjects",
+                                        "Values": {
+                                          "Action": "",
+                                          "ActionDeleteObjects": "",
+                                          "ObjectFilter": {
+                                            "ObjectGUID": 102556
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "Action": {
+                                        "Template": "ActionDeleteObjects",
+                                        "Values": {
+                                          "Action": "",
+                                          "ActionDeleteObjects": "",
+                                          "ObjectFilter": {
+                                            "ObjectGUID": 102881
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "Action": {
+                                        "Template": "ActionDeleteObjects",
+                                        "Values": {
+                                          "Action": "",
+                                          "ActionDeleteObjects": "",
+                                          "ObjectFilter": {
+                                            "ObjectGUID": 102298
+                                          }
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionDelayedActions",
+                      "Values": {
+                        "Action": "",
+                        "ActionDelayedActions": {
+                          "ExecutionDelay": 60000,
+                          "DelayedActions": {
+                            "IsBaseAutoCreateAsset": 1,
+                            "Values": {
+                              "ActionList": {
+                                "Actions": {
+                                  "Item": {
+                                    "Action": {
+                                      "Template": "ActionDeleteObjects",
+                                      "Values": {
+                                        "Action": "",
+                                        "ActionDeleteObjects": "",
+                                        "ObjectFilter": {
+                                          "ObjectGUID": 102578
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
         "OnQuestTimedOut": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
@@ -18635,6 +18779,47 @@
             }
           }
         },
+        "OnQuestDeclined": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "ExecutionDelay": 60000,
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionDeleteObjects",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionDeleteObjects": "",
+                                      "ObjectFilter": {
+                                        "ObjectGUID": 102578
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
         "OnQuestTimedOut": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
@@ -19043,6 +19228,47 @@
           }
         },
         "OnQuestAborted": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "ExecutionDelay": 60000,
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionDeleteObjects",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionDeleteObjects": "",
+                                      "ObjectFilter": {
+                                        "ObjectGUID": 102580
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "OnQuestTimedOut": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
             "ActionList": {
@@ -21740,7 +21966,8 @@
     "Values": {
       "Standard": {
         "GUID": 151155,
-        "Name": "Down with Anne Harlow 3 - Vicente"
+        "Name": "Down with Anne Harlow 3 - Vicente",
+        "ID": "DownWithHarlow3"
       },
       "Quest": {
         "InvitationMessage": {
@@ -21751,6 +21978,27 @@
               "BaseNotification": "",
               "NotificationSubtitle": {
                 "SubtitleGroup": -618046249
+              }
+            }
+          }
+        },
+        "OnQuestActive": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionRegisterTrigger",
+                    "Values": {
+                      "Action": "",
+                      "ActionRegisterTrigger": {
+                        "TriggerAsset": 137827,
+                        "UnregisterTrigger": 1
+                      }
+                    }
+                  }
+                }
               }
             }
           }
@@ -24101,6 +24349,47 @@
             }
           }
         },
+        "OnQuestDeclined": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "ExecutionDelay": 60000,
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionDeleteObjects",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionDeleteObjects": "",
+                                      "ObjectFilter": {
+                                        "ObjectGUID": 102585
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
         "OnQuestTimedOut": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
@@ -25053,7 +25342,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 180025
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -26743,8 +27033,8 @@
         "LocaText": {
           "English": {
             "Text": "Brekaout destory 3 (TBC - Quest not yet written)",
-            "Status": "GameWriting",
-            "ExportCount": 1
+            "Status": "Exported",
+            "ExportCount": 2
           }
         }
       },
@@ -27100,6 +27390,88 @@
               "BaseNotification": "",
               "NotificationSubtitle": {
                 "SubtitleGroup": 2034401664
+              }
+            }
+          }
+        },
+        "OnQuestDeclined": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "ExecutionDelay": 60000,
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionDeleteObjects",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionDeleteObjects": "",
+                                      "ObjectFilter": {
+                                        "ObjectGUID": 102594
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "OnQuestTimedOut": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "ExecutionDelay": 60000,
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionDeleteObjects",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionDeleteObjects": "",
+                                      "ObjectFilter": {
+                                        "ObjectGUID": 102594
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
               }
             }
           }
@@ -28229,7 +28601,8 @@
             "Condition": "",
             "ConditionUnlocked": {
               "UnlockNeeded": 120042
-            }
+            },
+            "ConditionPropsNegatable": ""
           }
         }
       },
@@ -29124,7 +29497,8 @@
     "Values": {
       "Standard": {
         "GUID": 151153,
-        "Name": "Down with Anne Harlow 1 - Vicente"
+        "Name": "Down with Anne Harlow 1 - Vicente",
+        "ID": "DownWithHarlow1"
       },
       "Quest": {
         "InvitationMessage": {
@@ -29135,6 +29509,26 @@
               "BaseNotification": "",
               "NotificationSubtitle": {
                 "SubtitleGroup": -618046249
+              }
+            }
+          }
+        },
+        "OnQuestStart": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionRegisterTrigger",
+                    "Values": {
+                      "Action": "",
+                      "ActionRegisterTrigger": {
+                        "TriggerAsset": 137827
+                      }
+                    }
+                  }
+                }
               }
             }
           }
@@ -29248,6 +29642,9 @@
             "Condition": "",
             "ConditionAlwaysTrue": ""
           }
+        },
+        "SubConditions": {
+          "Item": ""
         }
       },
       "Text": {
@@ -32600,7 +32997,8 @@
     "Values": {
       "Standard": {
         "GUID": 153262,
-        "Name": "Resettle Quest - Anne Harlow 2"
+        "Name": "Resettle Quest - Anne Harlow 2",
+        "Version": "dlc01"
       },
       "Quest": {
         "StarterMessage": {
@@ -32795,7 +33193,8 @@
     "Values": {
       "Standard": {
         "GUID": 153264,
-        "Name": "Resettle Quest - Anne Harlow 3"
+        "Name": "Resettle Quest - Anne Harlow 3",
+        "Version": "dlc01"
       },
       "Quest": {
         "StarterMessage": {
@@ -33030,7 +33429,8 @@
     "Values": {
       "Standard": {
         "GUID": 153279,
-        "Name": "Resettle Quest - Anne Harlow Kontor Infolayer"
+        "Name": "Resettle Quest - Anne Harlow Kontor Infolayer",
+        "Version": "dlc01"
       },
       "Quest": {
         "StarterMessage": {
@@ -33186,7 +33586,8 @@
     "Values": {
       "Standard": {
         "GUID": 153272,
-        "Name": "Resettle Quest - Jean La Fortune 2"
+        "Name": "Resettle Quest - Jean La Fortune 2",
+        "Version": "dlc01"
       },
       "Quest": {
         "StarterMessage": {
@@ -33381,7 +33782,8 @@
     "Values": {
       "Standard": {
         "GUID": 153273,
-        "Name": "Resettle Quest - Jean La Fortune 3"
+        "Name": "Resettle Quest - Jean La Fortune 3",
+        "Version": "dlc01"
       },
       "Quest": {
         "StarterMessage": {
@@ -33616,7 +34018,8 @@
     "Values": {
       "Standard": {
         "GUID": 153280,
-        "Name": "Resettle Quest - Jean La Fortune Kontor Infolayer"
+        "Name": "Resettle Quest - Jean La Fortune Kontor Infolayer",
+        "Version": "dlc01"
       },
       "Quest": {
         "StarterMessage": {
@@ -33772,7 +34175,8 @@
     "Values": {
       "Standard": {
         "GUID": 110700,
-        "Name": "Destroy - Close prison door - Hugo Mercier NEED DESTROY DESTINATION"
+        "Name": "Destroy - Close prison door - Hugo Mercier NEED DESTROY DESTINATION",
+        "Version": "dm"
       },
       "Quest": {
         "InvitationMessage": {
@@ -34026,7 +34430,8 @@
     "Values": {
       "Standard": {
         "GUID": 110746,
-        "Name": "Destroy - No report - Hugo Mercier NO WRITING"
+        "Name": "Destroy - No report - Hugo Mercier NO WRITING",
+        "Version": "dm"
       },
       "Quest": {
         "InvitationMessage": {
@@ -34284,7 +34689,8 @@
     "Values": {
       "Standard": {
         "GUID": 110719,
-        "Name": "Destroy - Property is theft - Hugo Mercier"
+        "Name": "Destroy - Property is theft - Hugo Mercier",
+        "Version": "dm"
       },
       "Quest": {
         "InvitationMessage": {
@@ -34588,7 +34994,8 @@
     "Values": {
       "Standard": {
         "GUID": 110774,
-        "Name": "Destroy - National traitors - Hugo Mercier"
+        "Name": "Destroy - National traitors - Hugo Mercier",
+        "Version": "dm"
       },
       "Quest": {
         "InvitationMessage": {
@@ -35003,7 +35410,8 @@
     "Values": {
       "Standard": {
         "GUID": 110819,
-        "Name": "Destroy - Main arc Part 2 - Hugo Mercier"
+        "Name": "Destroy - Main arc Part 2 - Hugo Mercier",
+        "Version": "dm"
       },
       "Quest": {
         "InvitationMessage": {
@@ -35331,7 +35739,8 @@
     "Values": {
       "Standard": {
         "GUID": 110803,
-        "Name": "Destroy - The Hunt Part 3 - Hugo Mercier"
+        "Name": "Destroy - The Hunt Part 3 - Hugo Mercier",
+        "Version": "dm"
       },
       "Quest": {
         "InvitationMessage": {
@@ -35623,7 +36032,8 @@
     "Values": {
       "Standard": {
         "GUID": 110825,
-        "Name": "Destroy - Main arc Part 5 Side with Mercier - Hugo Mercier"
+        "Name": "Destroy - Main arc Part 5 Side with Mercier - Hugo Mercier",
+        "Version": "dm"
       },
       "Quest": {
         "InvitationMessage": {
@@ -36412,7 +36822,8 @@
     "Values": {
       "Standard": {
         "GUID": 110826,
-        "Name": "Destroy - Main arc Part 5 Side with Blake - Hugo Mercier"
+        "Name": "Destroy - Main arc Part 5 Side with Blake - Hugo Mercier",
+        "Version": "dm"
       },
       "Quest": {
         "OnQuestActive": {
@@ -37189,7 +37600,8 @@
     "Values": {
       "Standard": {
         "GUID": 113741,
-        "Name": "HIDDENDestroy1_ForVascoPatrols"
+        "Name": "HIDDENDestroy1_ForVascoPatrols",
+        "Version": "dlc01"
       },
       "Quest": {
         "StarterMessage": {
@@ -37317,7 +37729,8 @@
     "Values": {
       "Standard": {
         "GUID": 113742,
-        "Name": "HIDDENDestroy2_ForVascoPatrols"
+        "Name": "HIDDENDestroy2_ForVascoPatrols",
+        "Version": "dlc01"
       },
       "Quest": {
         "StarterMessage": {
@@ -37445,7 +37858,8 @@
     "Values": {
       "Standard": {
         "GUID": 113743,
-        "Name": "HIDDENDestroy3_ForVascoPatrols"
+        "Name": "HIDDENDestroy3_ForVascoPatrols",
+        "Version": "dlc01"
       },
       "Quest": {
         "StarterMessage": {
@@ -37574,7 +37988,8 @@
       "Standard": {
         "GUID": 119993,
         "Name": "LoLStory_ClearingTheWay",
-        "IconFilename": "data/ui/2kimages/main/profiles/3rd_party_13.png"
+        "IconFilename": "data/ui/2kimages/main/profiles/3rd_party_13.png",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -37893,7 +38308,8 @@
     "Values": {
       "Standard": {
         "GUID": 119097,
-        "Name": "VQ_Ketema_MeaCulpaMaxima6_DeusVultRepeat1_Destroy"
+        "Name": "VQ_Ketema_MeaCulpaMaxima6_DeusVultRepeat1_Destroy",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -38126,7 +38542,8 @@
     "Values": {
       "Standard": {
         "GUID": 119099,
-        "Name": "VQ_Ketema_MeaCulpaMaxima6_DeusVultRepeat2_Destroy"
+        "Name": "VQ_Ketema_MeaCulpaMaxima6_DeusVultRepeat2_Destroy",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -38357,7 +38774,8 @@
     "Values": {
       "Standard": {
         "GUID": 119091,
-        "Name": "VQ_Ketema_MeaCulpaMaxima5_DeusVult_Destroy"
+        "Name": "VQ_Ketema_MeaCulpaMaxima5_DeusVult_Destroy",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -38828,7 +39246,8 @@
     "Values": {
       "Standard": {
         "GUID": 119233,
-        "Name": "VQ_Ketema_Memoires_DoNotFosterDivision2A_SailTo/Destroy"
+        "Name": "VQ_Ketema_Memoires_DoNotFosterDivision2A_SailTo/Destroy",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -38888,6 +39307,30 @@
             }
           }
         },
+        "OnQuestAborted": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDeleteObjects",
+                    "Values": {
+                      "Action": "",
+                      "ActionDeleteObjects": {
+                        "ShipsLeaveMapFirst": 1
+                      },
+                      "ObjectFilter": {
+                        "ObjectGUID": 119232,
+                        "ObjectSession": 112132
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
         "OnQuestFailed": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
@@ -38898,7 +39341,9 @@
                     "Template": "ActionDeleteObjects",
                     "Values": {
                       "Action": "",
-                      "ActionDeleteObjects": "",
+                      "ActionDeleteObjects": {
+                        "ShipsLeaveMapFirst": 1
+                      },
                       "ObjectFilter": {
                         "ObjectGUID": 119232,
                         "ObjectSession": 112132
@@ -39274,7 +39719,8 @@
     "Values": {
       "Standard": {
         "GUID": 119235,
-        "Name": "VQ_Ketema_Memoires_DoNotFosterDivision2ASuite_Deliver/Destroy"
+        "Name": "VQ_Ketema_Memoires_DoNotFosterDivision2ASuite_Deliver/Destroy",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -39295,6 +39741,30 @@
         },
         "SuccessMessage": {
           "SuppressMessage": 1
+        },
+        "OnQuestAborted": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDeleteObjects",
+                    "Values": {
+                      "Action": "",
+                      "ActionDeleteObjects": {
+                        "ShipsLeaveMapFirst": 1
+                      },
+                      "ObjectFilter": {
+                        "ObjectGUID": 119232,
+                        "ObjectSession": 112132
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         },
         "QuestGiver": 119051,
         "StoryText": 123338,
@@ -39592,7 +40062,8 @@
     "Values": {
       "Standard": {
         "GUID": 127555,
-        "Name": "Angereb_00_AggressiveAnnexion_Hidden"
+        "Name": "Angereb_00_AggressiveAnnexion_Hidden",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -40072,7 +40543,8 @@
     "Values": {
       "Standard": {
         "GUID": 124640,
-        "Name": "Angereb_036a_IndependenceWar"
+        "Name": "Angereb_036a_IndependenceWar",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -40814,7 +41286,8 @@
     "Values": {
       "Standard": {
         "GUID": 124755,
-        "Name": "Angereb_024b_IndependenceWar_HiddenTrigger"
+        "Name": "Angereb_024b_IndependenceWar_HiddenTrigger",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {

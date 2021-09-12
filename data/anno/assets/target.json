@@ -211,7 +211,8 @@
             "GameObjectState": "GameLogic;Blueprint"
           },
           "DisableMatch1": {
-            "Property": "Blocking"
+            "Property": "Blocking",
+            "GameObjectState": "GameLogic;Blueprint"
           }
         },
         "MouseCursorTarget": 2001777,
@@ -900,6 +901,122 @@
         "ID": "TargetCoopPing"
       },
       "Text": ""
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "DOWNGRADE",
+        "Matches": {
+          "DisableMatch1": {
+            "Property": "Blocking"
+          },
+          "SelectionMatch1": {
+            "Flags": "Never"
+          },
+          "TargetMatch1": {
+            "Flags": "OwnedByPlayer;CheckProperty;Downgradable",
+            "Property": "Blocking"
+          }
+        },
+        "MouseCursorTarget": 502195,
+        "MouseCursorDisable": 502196,
+        "MouseCursorMode": 502194,
+        "MouseCursorPosition": 502195,
+        "MouseCursorPositionDisable": 502196
+      },
+      "Standard": {
+        "GUID": 502193,
+        "Name": "Downgrade",
+        "ID": "TargetDowngrade"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Downgrade"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "UPGRADE_FLOOR",
+        "Matches": {
+          "SelectionMatch1": {
+            "Flags": "Never"
+          },
+          "TargetMatch1": {
+            "Flags": "OwnedByPlayer;CheckProperty;CanAddFloor",
+            "Property": "FloorStackOwner"
+          },
+          "DisableMatch1": {
+            "Property": "Blocking",
+            "GameObjectState": "GameLogic;Blueprint"
+          }
+        },
+        "MouseCursorTarget": 502405,
+        "MouseCursorDisable": 502406,
+        "MouseCursorMode": 502404,
+        "MouseCursorPosition": 502405,
+        "MouseCursorPositionDisable": 502406
+      },
+      "Standard": {
+        "GUID": 412,
+        "Name": "UpgradeFloor",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_skyscraper_upgrade.png",
+        "ID": "TargetUpgradeFloor"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Upgrade Skyscraper",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 52351
+      }
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "DOWNGRADE_FLOOR",
+        "Matches": {
+          "DisableMatch1": {
+            "Property": "Blocking"
+          },
+          "SelectionMatch1": {
+            "Flags": "Never"
+          },
+          "TargetMatch1": {
+            "Flags": "OwnedByPlayer;CheckProperty;DowngradableFloor",
+            "Property": "Blocking"
+          }
+        },
+        "MouseCursorTarget": 502195,
+        "MouseCursorDisable": 502196,
+        "MouseCursorMode": 502194,
+        "MouseCursorPosition": 502195,
+        "MouseCursorPositionDisable": 502196
+      },
+      "Standard": {
+        "GUID": 470,
+        "Name": "DowngradeFloor",
+        "ID": "TargetDowngradeFloor"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Downgrade"
+          }
+        }
+      }
     }
   }
 ]

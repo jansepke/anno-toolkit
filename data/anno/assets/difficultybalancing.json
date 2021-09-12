@@ -72,15 +72,20 @@
         },
         "Incidents": {
           "Easy": {
-            "ValueName": 11031
+            "ValueName": 11031,
+            "Enabled": 1
           },
           "Hard": {
             "Points": 20,
-            "ValueName": 11033
+            "ValueName": 11033,
+            "Enabled": 1
           },
           "Medium": {
             "Points": 15,
-            "ValueName": 11032
+            "ValueName": 11032,
+            "SelfHealChanceFactor": 1,
+            "IntensityIncreaseChanceFactor": 1,
+            "Enabled": 1
           }
         },
         "LossCondition": {
@@ -425,20 +430,124 @@
           "Plenty": {
             "ValueName": 16119,
             "InfluenceForInvestors": 3,
-            "InfluenceForCompanyLevels": 20
+            "InfluenceForCompanyLevels": 20,
+            "InfluenceForInvestorSkyscraper": {
+              "Item": [
+                "",
+                {
+                  "AmountForLevel": 4
+                },
+                {
+                  "AmountForLevel": 5
+                },
+                {
+                  "AmountForLevel": 6
+                },
+                {
+                  "AmountForLevel": 7
+                },
+                {
+                  "AmountForLevel": 8
+                }
+              ]
+            },
+            "InfluenceForEngineerSkyscraper": {
+              "Item": [
+                "",
+                {
+                  "AmountForFloor": 1
+                },
+                {
+                  "AmountForFloor": 2
+                },
+                {
+                  "AmountForFloor": 3
+                }
+              ]
+            }
           },
           "Medium": {
             "ValueName": 11035,
-            "Points": 10
+            "Points": 10,
+            "InfluenceForInvestors": 2,
+            "InfluenceForCompanyLevels": 15,
+            "InfluenceForInvestorSkyscraper": {
+              "Item": [
+                "",
+                {
+                  "AmountForLevel": 2
+                },
+                {
+                  "AmountForLevel": 3
+                },
+                {
+                  "AmountForLevel": 3
+                },
+                {
+                  "AmountForLevel": 4
+                },
+                {
+                  "AmountForLevel": 4
+                }
+              ]
+            },
+            "InfluenceForEngineerSkyscraper": {
+              "Item": [
+                "",
+                {
+                  "AmountForFloor": 1
+                },
+                {
+                  "AmountForFloor": 1
+                },
+                {
+                  "AmountForFloor": 2
+                }
+              ]
+            }
           },
           "Sparse": {
             "ValueName": 16120,
             "Points": 20,
             "InfluenceForInvestors": 1,
-            "InfluenceForCompanyLevels": 12
+            "InfluenceForCompanyLevels": 12,
+            "InfluenceForInvestorSkyscraper": {
+              "Item": [
+                "",
+                {
+                  "AmountForLevel": 1
+                },
+                {
+                  "AmountForLevel": 1
+                },
+                {
+                  "AmountForLevel": 2
+                },
+                {
+                  "AmountForLevel": 2
+                },
+                {
+                  "AmountForLevel": 2
+                }
+              ]
+            },
+            "InfluenceForEngineerSkyscraper": {
+              "Item": [
+                "",
+                "",
+                {
+                  "AmountForFloor": 1
+                },
+                {
+                  "AmountForFloor": 1
+                }
+              ]
+            }
           },
           "Unspecified": {
-            "Points": 10
+            "Points": 10,
+            "InfluenceForInvestors": 2,
+            "InfluenceForCompanyLevels": 15
           }
         },
         "AvailableSecondParties": {
@@ -723,6 +832,10 @@
           "Influence": {
             "Description": 1010190,
             "InfoTip": 502089
+          },
+          "SkyscraperMaintentance": {
+            "Description": 137756,
+            "InfoTip": 137848
           }
         },
         "PointsNeeded": {
@@ -922,6 +1035,29 @@
           "MapType": {
             "Fixed": 1
           }
+        },
+        "SkyscraperMaintenance": {
+          "SkyscraperMaintenanceDifficulty": {
+            "Unspecified": {
+              "DifficultyFactor": 1
+            },
+            "Low": {
+              "DifficultyFactor": 0.8,
+              "ValueName": 16120
+            },
+            "Medium": {
+              "Points": 5,
+              "DifficultyFactor": 0.9,
+              "ValueName": 11035
+            },
+            "High": {
+              "Points": 10,
+              "DifficultyFactor": 1,
+              "ValueName": 16119
+            }
+          },
+          "DLCDependency": 410085,
+          "DefaultDifficultyIfDLCIsInactive": "Unspecified"
         }
       }
     }

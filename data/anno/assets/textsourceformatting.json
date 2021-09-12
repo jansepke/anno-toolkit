@@ -68,7 +68,7 @@
             },
             {
               "Name": "newspaperTotalMood",
-              "Format": "sign &gt;&gt; color(0xFF111111)"
+              "Format": null
             },
             {
               "Name": "unsignedInt",
@@ -96,7 +96,7 @@
             },
             {
               "Name": "sellShipPrice",
-              "Format": "invert"
+              "Format": "invert &gt;&gt; decimals(0)"
             },
             {
               "Name": "incidentChance",
@@ -136,6 +136,18 @@
             },
             {
               "Name": "attractiveness",
+              "Format": "decimals(0) &gt;&gt; sign"
+            },
+            {
+              "Name": "loadingSpeed",
+              "Format": "decimals(1)"
+            },
+            {
+              "Name": "highscoreModifier",
+              "Format": "decimals(1)"
+            },
+            {
+              "Name": "repairAmountPerSecond",
               "Format": "decimals(0) &gt;&gt; sign"
             }
           ]

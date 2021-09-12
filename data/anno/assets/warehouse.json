@@ -26,7 +26,8 @@
         "BuildingCategoryName": 11151,
         "SkipUnlockMessage": 1,
         "BuildModeRandomRotation": 90,
-        "AssociatedRegions": "Moderate"
+        "AssociatedRegions": "Moderate",
+        "AllowChangeDirection": 1
       },
       "Cost": {
         "Costs": {
@@ -183,7 +184,8 @@
         "BuildingCategoryName": 11151,
         "PickingAsset": 1010371,
         "BuildModeRandomRotation": 180,
-        "AssociatedRegions": "Moderate"
+        "AssociatedRegions": "Moderate",
+        "AllowChangeDirection": 1
       },
       "Cost": {
         "Costs": {
@@ -347,7 +349,8 @@
         "BuildingCategoryName": 11151,
         "PickingAsset": 1010371,
         "BuildModeRandomRotation": 180,
-        "AssociatedRegions": "Moderate"
+        "AssociatedRegions": "Moderate",
+        "AllowChangeDirection": 1
       },
       "Cost": {
         "Costs": {
@@ -514,7 +517,8 @@
         "BuildingCategoryName": 11151,
         "PickingAsset": 1010371,
         "BuildModeRandomRotation": 180,
-        "AssociatedRegions": "Moderate"
+        "AssociatedRegions": "Moderate",
+        "AllowChangeDirection": 1
       },
       "Cost": {
         "Costs": {
@@ -622,6 +626,113 @@
       },
       "Upgradable": {
         "CurrentTier": 4
+      },
+      "Pausable": ""
+    }
+  },
+  {
+    "Template": "Warehouse",
+    "Values": {
+      "Standard": {
+        "GUID": 420006,
+        "Name": "logistic_04 (Warehouse III)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_warehouse.png",
+        "InfoDescription": 2975
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Large Warehouse",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 27147
+      },
+      "Blocking": {
+        "HasBuildingBaseTiles": 1
+      },
+      "Building": {
+        "BuildingType": "Logistic",
+        "BuildingCategoryName": 11151,
+        "PickingAsset": 1010371,
+        "AssociatedRegions": "Moderate"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 10000
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 30
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 50
+            },
+            {
+              "Ingredient": 1010218,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010207,
+              "Amount": 50
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "Selection": {
+        "GUIType": "Warehouse",
+        "ParticipantMessageTrigger": "ClickKontor"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/buildings/production/workshop_colony01_01/workshop_colony01_01.cfg"
+          }
+        }
+      },
+      "Constructable": "",
+      "Mesh": "",
+      "SoundEmitter": "",
+      "Locked": "",
+      "Infolayer": "",
+      "FeedbackController": "",
+      "Warehouse": {
+        "WarehouseStorage": {
+          "StorageMax": 0
+        }
+      },
+      "LogisticNode": {
+        "QueueConfiguration": {
+          "ProcessingQueueParallelCount": 4
+        }
+      },
+      "UpgradeList": "",
+      "AmbientMoodProvider": {
+        "AmbientMood": "ResidenceTier1"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": {
+            "Product": 1010017,
+            "Amount": 100,
+            "InactiveAmount": 100
+          }
+        }
+      },
+      "StorageBase": "",
+      "Attackable": {
+        "MaximumHitPoints": 500
+      },
+      "Upgradable": {
+        "CurrentTier": 3
       },
       "Pausable": ""
     }

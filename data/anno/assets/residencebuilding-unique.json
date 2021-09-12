@@ -1,0 +1,288 @@
+[
+  {
+    "Template": "ResidenceBuilding-Unique",
+    "Values": {
+      "Standard": {
+        "GUID": 406,
+        "Name": "HighLife_monument_03(residence)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_highlife_skyliner_monument.png",
+        "ID": "DLC09TowerMonument",
+        "InfoDescription": 137244,
+        "Version": "dlc09"
+      },
+      "Blocking": {
+        "AdditionalBlockRectSize": 3
+      },
+      "Building": {
+        "BuildingType": "Residence",
+        "PickingAsset": 403,
+        "DestructionConfirmation": 1,
+        "AssociatedRegions": "Moderate",
+        "AllowChangeVariation": 0,
+        "SecondPartyRelevant": 0,
+        "FadeOutInGhostMode": 1
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 1500000
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 240
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 630
+            },
+            {
+              "Ingredient": 1010218,
+              "Amount": 610
+            },
+            {
+              "Ingredient": 1010207,
+              "Amount": 320
+            },
+            {
+              "Ingredient": 1010202,
+              "Amount": 890
+            },
+            {
+              "Ingredient": 134623,
+              "Amount": 190
+            }
+          ]
+        }
+      },
+      "Mesh": {
+        "SkyDayListener": 1
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc09/graphics/buildings/public/monument_05/monument_05_04.cfg"
+          }
+        }
+      },
+      "Selection": {
+        "StaticHelpEntryPoint": "HighLifeSkylineTower",
+        "ParticipantMessageTrigger": "ClickSkyscraperMonument",
+        "ParticipantMessageArcheType": "Resident_tier05"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Skyline Tower",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 52187
+      },
+      "Constructable": "",
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 410085
+      },
+      "Upgradable": {
+        "UpgradeCost": ""
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 280046
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": [
+              {
+                "VectorElement": {
+                  "InheritedIndex": 0,
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "Monument",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "ResidenceBuilding-Unique",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "Sound": 200912
+              }
+            ]
+          },
+          "BuildUpgrade": {
+            "Item": {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "Monument",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "ResidenceBuilding-Unique",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "Sound": 280874
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          },
+          "InfectedIllness": {
+            "Item": {
+              "Sound": 214756
+            }
+          },
+          "InfectedRiot": {
+            "Item": {
+              "Sound": 222229
+            }
+          },
+          "ExplosionOneShots": {
+            "Item": {
+              "Sound": 203849
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        },
+        "MaterialType": "Stone"
+      },
+      "Infolayer": "",
+      "FeedbackController": "",
+      "Residence7": {
+        "ResidenceStorage": {
+          "InputStorageMax": 1
+        },
+        "PopulationLevel7": 15000004,
+        "ResidentMax": 2500,
+        "MoveInMs": 100,
+        "MoveOutMs": 100,
+        "MoveRandomMs": 10
+      },
+      "LogisticNode": {
+        "REMOVE_THIS_LATER_FeedbackUnitTier": "Level4"
+      },
+      "AmbientMoodProvider": {
+        "AmbientMood": "ResidenceTier5",
+        "Murmur": "HighLife_Monument",
+        "DynamicEnvironmentType": "ResidenceT5",
+        "HappinessDependentMurmur": {
+          "Angry": {
+            "Murmur": "InvestorUnhappy"
+          },
+          "Unhappy": {
+            "Murmur": "InvestorContent"
+          },
+          "Neutral": {
+            "Murmur": "InvestorContent"
+          },
+          "Happy": {
+            "Murmur": "InvestorHappy"
+          },
+          "Euphoric": {
+            "Murmur": "InvestorHappy"
+          }
+        }
+      },
+      "UpgradeList": {
+        "DefaultBuff": 136409
+      },
+      "Attackable": {
+        "MaximumHitPoints": 10000
+      },
+      "IncidentInfectable": {
+        "Infectable": {
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 1000
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "BaseChance": 3,
+            "DensityFactor": 0.025,
+            "DensityDistance": 15
+          },
+          "Illness": {
+            "BaseChance": 3,
+            "HitpointFactor": 0.1,
+            "DensityFactor": 0.025,
+            "DensityDistance": 15,
+            "DilapidatedFactor": 10,
+            "FactoryOvertimeFactor": 0.3,
+            "FactoryUndertimeFactor": 0.15,
+            "ResidenceFullOvertimeChance": 20,
+            "ResidenceFullUndertimeChance": -15
+          },
+          "Riot": {
+            "ResidenceHappinessFactor": 0.4,
+            "HappinessThreshold": 10
+          },
+          "Explosion": {
+            "ResidenceFullOvertimeChance": 20,
+            "ResidenceFullUndertimeChance": -15
+          }
+        }
+      },
+      "Pausable": "",
+      "Culture": {
+        "Attractiveness": 200,
+        "CultureSpawnGroup": 1,
+        "CultureType": "Monument"
+      },
+      "StreetActivation": "",
+      "InfluenceSource": {
+        "InfluenceSource": "Base",
+        "InfluenceAmount": 50
+      },
+      "FloorStackOwner": "",
+      "Maintenance": {
+        "Maintenances": {
+          "Item": {
+            "Product": 1010017,
+            "Amount": 55000,
+            "InactiveAmount": 27500
+          }
+        },
+        "IncomeCategory": "Skyscrapers"
+      },
+      "BuildingUnique": {
+        "Uniques": {
+          "Item": {
+            "UniqueType": "HighLifeMonument",
+            "UniqueScope": "Area"
+          }
+        }
+      },
+      "BusActivation": {
+        "BusNeed": 137757
+      }
+    }
+  }
+]

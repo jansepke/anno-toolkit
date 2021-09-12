@@ -407,7 +407,8 @@
                       "Condition": "",
                       "ConditionUnlocked": {
                         "UnlockNeeded": 1010470
-                      }
+                      },
+                      "ConditionPropsNegatable": ""
                     }
                   }
                 }
@@ -588,7 +589,8 @@
                       "Condition": "",
                       "ConditionUnlocked": {
                         "UnlockNeeded": 1010471
-                      }
+                      },
+                      "ConditionPropsNegatable": ""
                     }
                   }
                 }
@@ -811,7 +813,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 190489
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -3314,27 +3317,14 @@
             }
           }
         },
-        "OnQuestSucceeded": {
+        "OnPhotographySuccessNewspaperAction": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
-            "ActionList": {
-              "Actions": {
+            "Action": "",
+            "ActionForceNewspaper": {
+              "Articles": {
                 "Item": {
-                  "Action": {
-                    "Template": "ActionForceNewspaper",
-                    "Values": {
-                      "Action": "",
-                      "ActionForceNewspaper": {
-                        "Articles": {
-                          "Item": {
-                            "Article": 142494
-                          }
-                        },
-                        "OpenNewspaperUI": 1,
-                        "OpenNewspaperType": "SpecialEdition"
-                      }
-                    }
-                  }
+                  "Article": 142494
                 }
               }
             }
@@ -3811,7 +3801,8 @@
                       "Condition": "",
                       "ConditionUnlocked": {
                         "UnlockNeeded": 102107
-                      }
+                      },
+                      "ConditionPropsNegatable": ""
                     }
                   }
                 }
@@ -3989,7 +3980,8 @@
                       "Condition": "",
                       "ConditionUnlocked": {
                         "UnlockNeeded": 102481
-                      }
+                      },
+                      "ConditionPropsNegatable": ""
                     }
                   }
                 }
@@ -4192,7 +4184,8 @@
                       "Condition": "",
                       "ConditionUnlocked": {
                         "UnlockNeeded": 700051
-                      }
+                      },
+                      "ConditionPropsNegatable": ""
                     }
                   }
                 }
@@ -4243,217 +4236,6 @@
                   "CheckAnyPoolAsset": 1
                 },
                 "ConditionPropsExecutionPlaceSettings": ""
-              }
-            }
-          }
-        }
-      },
-      "QuestOptional": {
-        "HasStarterObject": "Specific",
-        "StarterObject": {
-          "IsBaseAutoCreateAsset": 1,
-          "Values": {
-            "Condition": "",
-            "ConditionStarterObject": {
-              "StarterObjectObject": {
-                "Template": "ConditionObjectSpawnedObject",
-                "Values": {
-                  "ConditionObjectSpawnedObject": {
-                    "ExecutionObject": 101594,
-                    "ObjectSpawnArea": {
-                      "IsBaseAutoCreateAsset": 1,
-                      "Values": {
-                        "SpawnArea": {
-                          "SpawnContext": "Area",
-                          "MatcherGUID": 150874,
-                          "LimitToQuestArea": 1,
-                          "DistanceToContext": 5,
-                          "DistanceToBorder": "Near",
-                          "DistanceToIsland": "Far"
-                        }
-                      }
-                    }
-                  },
-                  "ConditionScanner": "",
-                  "ConditionObjectiveSignsAndFeedback": ""
-                }
-              }
-            },
-            "ConditionQuestObjective": {
-              "ObjectiveSignsAndFeedback": {
-                "IsBaseAutoCreateAsset": 1,
-                "Values": {
-                  "ConditionObjectiveSignsAndFeedback": {
-                    "Infolayer": 501006
-                  }
-                }
-              }
-            },
-            "ConditionPropsSessionSettings": ""
-          }
-        }
-      }
-    }
-  },
-  {
-    "Template": "Quest",
-    "Values": {
-      "Standard": {
-        "GUID": 150881,
-        "Name": "RQ_Farmers_Banana"
-      },
-      "Quest": {
-        "InvitationMessage": {
-          "Notification": {
-            "IsBaseAutoCreateAsset": 1,
-            "Values": {
-              "CharacterNotification": "",
-              "BaseNotification": {
-                "NotificationText": 17217
-              },
-              "NotificationSubtitle": {
-                "Subtitle": 264946
-              }
-            }
-          }
-        },
-        "QuestGiver": 86,
-        "StoryText": 16220,
-        "QuestCategory": "RandomQuest",
-        "QuestActivation": "ManualActivation",
-        "IsAbortable": 1,
-        "ConfirmOnReached": 1,
-        "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_quest_rqfarmer.png",
-        "ReputationQuestFail": {
-          "ReputationFailList": ""
-        },
-        "QuestHints": {
-          "Item": [
-            {
-              "Text": 17670
-            },
-            {
-              "Text": 17689
-            }
-          ]
-        },
-        "StarterSpeechBubble": {
-          "IsBaseAutoCreateAsset": 1,
-          "Values": {
-            "Condition": "",
-            "ConditionTutorialInteraction": {
-              "HintText": 15454,
-              "ObjectFilter": {
-                "IsBaseAutoCreateAsset": 1,
-                "Values": {
-                  "ObjectFilter": {
-                    "ObjectGUID": 101594
-                  }
-                }
-              },
-              "UseSpecificPortrait": 1,
-              "SpecificPortraitProfile": 86
-            }
-          }
-        }
-      },
-      "PreConditionList": {
-        "Condition": {
-          "Template": "ConditionMutualAreaInSubconditions",
-          "Values": {
-            "Condition": "",
-            "ConditionMutualAreaInSubconditions": ""
-          }
-        },
-        "SubConditions": {
-          "Item": {
-            "SubCondition": {
-              "Template": "PreConditionList",
-              "Values": {
-                "PreConditionList": {
-                  "Condition": {
-                    "Template": "ConditionPlayerCounter",
-                    "Values": {
-                      "Condition": "",
-                      "ConditionPlayerCounter": {
-                        "PlayerCounter": "GoodsInStock",
-                        "Context": 120041,
-                        "CounterAmount": 1
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      "Text": {
-        "LocaText": {
-          "English": {
-            "Text": "Banana Oh Nana",
-            "Status": "Exported",
-            "ExportCount": 1
-          }
-        },
-        "LineID": 26263
-      },
-      "Reward": {
-        "RewardAssets": {
-          "Item": {
-            "Reward": 190981,
-            "Amount": 1,
-            "SentToQuestArea": 1,
-            "IsDisguised": 1
-          }
-        },
-        "RewardReputation": ""
-      },
-      "Objectives": {
-        "WinConditions": {
-          "Item": {
-            "Objective": {
-              "Template": "DeliveryObjective",
-              "Values": {
-                "ConditionQuestDelivery": {
-                  "DeliveryObject_cqd": {
-                    "Item": {
-                      "VectorElement": {
-                        "InheritedIndex": 0,
-                        "InheritanceMapV2": {
-                          "Entry": {
-                            "TemplateName": "DeliveryObjective",
-                            "Index": 0
-                          }
-                        }
-                      },
-                      "ObjectGUID": 120041,
-                      "Min": 5,
-                      "Max": 5
-                    }
-                  },
-                  "DeliveryType": "Area",
-                  "UseQuestArea": 1
-                },
-                "ConditionQuestObjective": {
-                  "TextCombinedContextValue": 13014,
-                  "FakeMinimapPings": {
-                    "Objects": {
-                      "Item": {
-                        "FakeMinimapObjects": {
-                          "Template": "ObjectFilter",
-                          "Values": {
-                            "ObjectFilter": {
-                              "ObjectGUID": 101594
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                },
-                "ObjectiveScaling": "",
-                "ConditionPropsSessionSettings": ""
               }
             }
           }
@@ -4644,6 +4426,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -4855,6 +4645,233 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
+                  "UseQuestArea": 1
+                },
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 13014,
+                  "FakeMinimapPings": {
+                    "Objects": {
+                      "Item": {
+                        "FakeMinimapObjects": {
+                          "Template": "ObjectFilter",
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectGUID": 101594
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "ObjectiveScaling": "",
+                "ConditionPropsSessionSettings": ""
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": {
+        "HasStarterObject": "Specific",
+        "StarterObject": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionStarterObject": {
+              "StarterObjectObject": {
+                "Template": "ConditionObjectSpawnedObject",
+                "Values": {
+                  "ConditionObjectSpawnedObject": {
+                    "ExecutionObject": 101594,
+                    "ObjectSpawnArea": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "SpawnArea": {
+                          "SpawnContext": "Area",
+                          "MatcherGUID": 150874,
+                          "LimitToQuestArea": 1,
+                          "DistanceToContext": 5,
+                          "DistanceToBorder": "Near",
+                          "DistanceToIsland": "Far"
+                        }
+                      }
+                    }
+                  },
+                  "ConditionScanner": "",
+                  "ConditionObjectiveSignsAndFeedback": ""
+                }
+              }
+            },
+            "ConditionQuestObjective": {
+              "ObjectiveSignsAndFeedback": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "ConditionObjectiveSignsAndFeedback": {
+                    "Infolayer": 501006
+                  }
+                }
+              }
+            },
+            "ConditionPropsSessionSettings": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Quest",
+    "Values": {
+      "Standard": {
+        "GUID": 150881,
+        "Name": "RQ_Farmers_Banana"
+      },
+      "Quest": {
+        "InvitationMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": {
+                "NotificationText": 17217
+              },
+              "NotificationSubtitle": {
+                "Subtitle": 264946
+              }
+            }
+          }
+        },
+        "QuestGiver": 86,
+        "StoryText": 16220,
+        "QuestCategory": "RandomQuest",
+        "QuestActivation": "ManualActivation",
+        "IsAbortable": 1,
+        "ConfirmOnReached": 1,
+        "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_quest_rqfarmer.png",
+        "ReputationQuestFail": {
+          "ReputationFailList": ""
+        },
+        "QuestHints": {
+          "Item": [
+            {
+              "Text": 17670
+            },
+            {
+              "Text": 17689
+            }
+          ]
+        },
+        "StarterSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": {
+              "HintText": 15454,
+              "ObjectFilter": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "ObjectFilter": {
+                    "ObjectGUID": 101594
+                  }
+                }
+              },
+              "UseSpecificPortrait": 1,
+              "SpecificPortraitProfile": 86
+            }
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionMutualAreaInSubconditions",
+          "Values": {
+            "Condition": "",
+            "ConditionMutualAreaInSubconditions": ""
+          }
+        },
+        "SubConditions": {
+          "Item": {
+            "SubCondition": {
+              "Template": "PreConditionList",
+              "Values": {
+                "PreConditionList": {
+                  "Condition": {
+                    "Template": "ConditionPlayerCounter",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionPlayerCounter": {
+                        "PlayerCounter": "GoodsInStock",
+                        "Context": 120041,
+                        "CounterAmount": 1
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Banana Oh Nana",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 26263
+      },
+      "Reward": {
+        "RewardAssets": {
+          "Item": {
+            "Reward": 190981,
+            "Amount": 1,
+            "SentToQuestArea": 1,
+            "IsDisguised": 1
+          }
+        },
+        "RewardReputation": ""
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "DeliveryObjective",
+              "Values": {
+                "ConditionQuestDelivery": {
+                  "DeliveryObject_cqd": {
+                    "Item": {
+                      "VectorElement": {
+                        "InheritedIndex": 0,
+                        "InheritanceMapV2": {
+                          "Entry": {
+                            "TemplateName": "DeliveryObjective",
+                            "Index": 0
+                          }
+                        }
+                      },
+                      "ObjectGUID": 120041,
+                      "Min": 5,
+                      "Max": 5
+                    }
+                  },
+                  "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -5951,27 +5968,14 @@
             }
           }
         },
-        "OnQuestSucceeded": {
+        "OnPhotographySuccessNewspaperAction": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
-            "ActionList": {
-              "Actions": {
+            "Action": "",
+            "ActionForceNewspaper": {
+              "Articles": {
                 "Item": {
-                  "Action": {
-                    "Template": "ActionForceNewspaper",
-                    "Values": {
-                      "Action": "",
-                      "ActionForceNewspaper": {
-                        "Articles": {
-                          "Item": {
-                            "Article": 142495
-                          }
-                        },
-                        "OpenNewspaperUI": 1,
-                        "OpenNewspaperType": "SpecialEdition"
-                      }
-                    }
-                  }
+                  "Article": 142495
                 }
               }
             }
@@ -6375,27 +6379,14 @@
             }
           }
         },
-        "OnQuestSucceeded": {
+        "OnPhotographySuccessNewspaperAction": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
-            "ActionList": {
-              "Actions": {
+            "Action": "",
+            "ActionForceNewspaper": {
+              "Articles": {
                 "Item": {
-                  "Action": {
-                    "Template": "ActionForceNewspaper",
-                    "Values": {
-                      "Action": "",
-                      "ActionForceNewspaper": {
-                        "Articles": {
-                          "Item": {
-                            "Article": 142496
-                          }
-                        },
-                        "OpenNewspaperUI": 1,
-                        "OpenNewspaperType": "SpecialEdition"
-                      }
-                    }
-                  }
+                  "Article": 142496
                 }
               }
             }
@@ -6673,7 +6664,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 1010464
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -8194,27 +8186,50 @@
           }
         },
         "SubConditions": {
-          "Item": {
-            "SubCondition": {
-              "Template": "PreConditionList",
-              "Values": {
-                "PreConditionList": {
-                  "Condition": {
-                    "Template": "ConditionPlayerCounter",
-                    "Values": {
-                      "Condition": "",
-                      "ConditionPlayerCounter": {
-                        "Context": 1010360,
-                        "CounterAmount": 1,
-                        "CounterScope": "Area",
-                        "CounterScopeUseCurrentContext": 0
+          "Item": [
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 1010360,
+                          "CounterAmount": 1,
+                          "CounterScope": "Area",
+                          "CounterScopeUseCurrentContext": 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubCondition": {
+                "Template": "PreConditionList",
+                "Values": {
+                  "PreConditionList": {
+                    "Condition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 1010359,
+                          "CounterAmount": 1,
+                          "CounterScope": "Area",
+                          "CounterScopeUseCurrentContext": 0
+                        }
                       }
                     }
                   }
                 }
               }
             }
-          }
+          ]
         }
       },
       "Text": {
@@ -9259,27 +9274,14 @@
             }
           }
         },
-        "OnQuestSucceeded": {
+        "OnPhotographySuccessNewspaperAction": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
-            "ActionList": {
-              "Actions": {
+            "Action": "",
+            "ActionForceNewspaper": {
+              "Articles": {
                 "Item": {
-                  "Action": {
-                    "Template": "ActionForceNewspaper",
-                    "Values": {
-                      "Action": "",
-                      "ActionForceNewspaper": {
-                        "Articles": {
-                          "Item": {
-                            "Article": 142497
-                          }
-                        },
-                        "OpenNewspaperUI": 1,
-                        "OpenNewspaperType": "SpecialEdition"
-                      }
-                    }
-                  }
+                  "Article": 142497
                 }
               }
             }
@@ -9346,7 +9348,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 180025
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -9510,27 +9513,14 @@
             }
           }
         },
-        "OnQuestSucceeded": {
+        "OnPhotographySuccessNewspaperAction": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
-            "ActionList": {
-              "Actions": {
+            "Action": "",
+            "ActionForceNewspaper": {
+              "Articles": {
                 "Item": {
-                  "Action": {
-                    "Template": "ActionForceNewspaper",
-                    "Values": {
-                      "Action": "",
-                      "ActionForceNewspaper": {
-                        "Articles": {
-                          "Item": {
-                            "Article": 142498
-                          }
-                        },
-                        "OpenNewspaperUI": 1,
-                        "OpenNewspaperType": "SpecialEdition"
-                      }
-                    }
-                  }
+                  "Article": 142498
                 }
               }
             }
@@ -9739,27 +9729,14 @@
             }
           }
         },
-        "OnQuestSucceeded": {
+        "OnPhotographySuccessNewspaperAction": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
-            "ActionList": {
-              "Actions": {
+            "Action": "",
+            "ActionForceNewspaper": {
+              "Articles": {
                 "Item": {
-                  "Action": {
-                    "Template": "ActionForceNewspaper",
-                    "Values": {
-                      "Action": "",
-                      "ActionForceNewspaper": {
-                        "Articles": {
-                          "Item": {
-                            "Article": 142499
-                          }
-                        },
-                        "OpenNewspaperUI": 1,
-                        "OpenNewspaperType": "SpecialEdition"
-                      }
-                    }
-                  }
+                  "Article": 142499
                 }
               }
             }
@@ -9975,27 +9952,14 @@
             }
           }
         },
-        "OnQuestSucceeded": {
+        "OnPhotographySuccessNewspaperAction": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
-            "ActionList": {
-              "Actions": {
+            "Action": "",
+            "ActionForceNewspaper": {
+              "Articles": {
                 "Item": {
-                  "Action": {
-                    "Template": "ActionForceNewspaper",
-                    "Values": {
-                      "Action": "",
-                      "ActionForceNewspaper": {
-                        "Articles": {
-                          "Item": {
-                            "Article": 142500
-                          }
-                        },
-                        "OpenNewspaperUI": 1,
-                        "OpenNewspaperType": "SpecialEdition"
-                      }
-                    }
-                  }
+                  "Article": 142500
                 }
               }
             }
@@ -10236,51 +10200,6 @@
             }
           }
         },
-        "OnQuestSucceeded": {
-          "IsBaseAutoCreateAsset": 1,
-          "Values": {
-            "ActionList": {
-              "Actions": {
-                "Item": {
-                  "Action": {
-                    "Template": "ActionDelayedActions",
-                    "Values": {
-                      "Action": "",
-                      "ActionDelayedActions": {
-                        "DelayedActions": {
-                          "IsBaseAutoCreateAsset": 1,
-                          "Values": {
-                            "ActionList": {
-                              "Actions": {
-                                "Item": {
-                                  "Action": {
-                                    "Template": "ActionForceNewspaper",
-                                    "Values": {
-                                      "Action": "",
-                                      "ActionForceNewspaper": {
-                                        "Articles": {
-                                          "Item": {
-                                            "Article": 142501
-                                          }
-                                        },
-                                        "OpenNewspaperUI": 1,
-                                        "OpenNewspaperType": "SpecialEdition"
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
         "OnQuestEnd": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
@@ -10317,6 +10236,19 @@
                       }
                     }
                   }
+                }
+              }
+            }
+          }
+        },
+        "OnPhotographySuccessNewspaperAction": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionForceNewspaper": {
+              "Articles": {
+                "Item": {
+                  "Article": 142501
                 }
               }
             }
@@ -10586,7 +10518,8 @@
                       "Condition": "",
                       "ConditionUnlocked": {
                         "UnlockNeeded": 1010471
-                      }
+                      },
+                      "ConditionPropsNegatable": ""
                     }
                   }
                 }
@@ -11505,6 +11438,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -11716,6 +11657,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -11929,6 +11878,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -13073,27 +13030,14 @@
             }
           }
         },
-        "OnQuestSucceeded": {
+        "OnPhotographySuccessNewspaperAction": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
-            "ActionList": {
-              "Actions": {
+            "Action": "",
+            "ActionForceNewspaper": {
+              "Articles": {
                 "Item": {
-                  "Action": {
-                    "Template": "ActionForceNewspaper",
-                    "Values": {
-                      "Action": "",
-                      "ActionForceNewspaper": {
-                        "Articles": {
-                          "Item": {
-                            "Article": 142502
-                          }
-                        },
-                        "OpenNewspaperUI": 1,
-                        "OpenNewspaperType": "SpecialEdition"
-                      }
-                    }
-                  }
+                  "Article": 142502
                 }
               }
             }
@@ -13302,27 +13246,14 @@
             }
           }
         },
-        "OnQuestSucceeded": {
+        "OnPhotographySuccessNewspaperAction": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
-            "ActionList": {
-              "Actions": {
+            "Action": "",
+            "ActionForceNewspaper": {
+              "Articles": {
                 "Item": {
-                  "Action": {
-                    "Template": "ActionForceNewspaper",
-                    "Values": {
-                      "Action": "",
-                      "ActionForceNewspaper": {
-                        "Articles": {
-                          "Item": {
-                            "Article": 142503
-                          }
-                        },
-                        "OpenNewspaperUI": 1,
-                        "OpenNewspaperType": "SpecialEdition"
-                      }
-                    }
-                  }
+                  "Article": 142503
                 }
               }
             }
@@ -13600,7 +13531,7 @@
           "English": {
             "Text": "Field Trip",
             "Status": "Exported",
-            "ExportCount": 1
+            "ExportCount": 3
           }
         },
         "LineID": 28937
@@ -15417,6 +15348,14 @@
                     ]
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -15628,6 +15567,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -15861,6 +15808,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -16085,6 +16040,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -16296,6 +16259,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -17366,6 +17337,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -18430,7 +18409,8 @@
                       "Condition": "",
                       "ConditionUnlocked": {
                         "UnlockNeeded": 102462
-                      }
+                      },
+                      "ConditionPropsNegatable": ""
                     }
                   }
                 }
@@ -18608,7 +18588,8 @@
                       "Condition": "",
                       "ConditionUnlocked": {
                         "UnlockNeeded": 1010364
-                      }
+                      },
+                      "ConditionPropsNegatable": ""
                     }
                   }
                 }
@@ -18946,27 +18927,14 @@
             }
           }
         },
-        "OnQuestSucceeded": {
+        "OnPhotographySuccessNewspaperAction": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
-            "ActionList": {
-              "Actions": {
+            "Action": "",
+            "ActionForceNewspaper": {
+              "Articles": {
                 "Item": {
-                  "Action": {
-                    "Template": "ActionForceNewspaper",
-                    "Values": {
-                      "Action": "",
-                      "ActionForceNewspaper": {
-                        "Articles": {
-                          "Item": {
-                            "Article": 142504
-                          }
-                        },
-                        "OpenNewspaperUI": 1,
-                        "OpenNewspaperType": "SpecialEdition"
-                      }
-                    }
-                  }
+                  "Article": 142504
                 }
               }
             }
@@ -19317,6 +19285,14 @@
                     ]
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -19528,6 +19504,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -20823,27 +20807,14 @@
             }
           }
         },
-        "OnQuestSucceeded": {
+        "OnPhotographySuccessNewspaperAction": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
-            "ActionList": {
-              "Actions": {
+            "Action": "",
+            "ActionForceNewspaper": {
+              "Articles": {
                 "Item": {
-                  "Action": {
-                    "Template": "ActionForceNewspaper",
-                    "Values": {
-                      "Action": "",
-                      "ActionForceNewspaper": {
-                        "Articles": {
-                          "Item": {
-                            "Article": 142588
-                          }
-                        },
-                        "OpenNewspaperUI": 1,
-                        "OpenNewspaperType": "SpecialEdition"
-                      }
-                    }
-                  }
+                  "Article": 142588
                 }
               }
             }
@@ -21486,7 +21457,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 101258
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -21924,6 +21896,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -22135,6 +22115,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -22375,6 +22363,14 @@
                     ]
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -23982,27 +23978,14 @@
             }
           }
         },
-        "OnQuestSucceeded": {
+        "OnPhotographySuccessNewspaperAction": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
-            "ActionList": {
-              "Actions": {
+            "Action": "",
+            "ActionForceNewspaper": {
+              "Articles": {
                 "Item": {
-                  "Action": {
-                    "Template": "ActionForceNewspaper",
-                    "Values": {
-                      "Action": "",
-                      "ActionForceNewspaper": {
-                        "Articles": {
-                          "Item": {
-                            "Article": 142508
-                          }
-                        },
-                        "OpenNewspaperUI": 1,
-                        "OpenNewspaperType": "SpecialEdition"
-                      }
-                    }
-                  }
+                  "Article": 142508
                 }
               }
             }
@@ -24207,27 +24190,14 @@
             }
           }
         },
-        "OnQuestSucceeded": {
+        "OnPhotographySuccessNewspaperAction": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
-            "ActionList": {
-              "Actions": {
+            "Action": "",
+            "ActionForceNewspaper": {
+              "Articles": {
                 "Item": {
-                  "Action": {
-                    "Template": "ActionForceNewspaper",
-                    "Values": {
-                      "Action": "",
-                      "ActionForceNewspaper": {
-                        "Articles": {
-                          "Item": {
-                            "Article": 142509
-                          }
-                        },
-                        "OpenNewspaperUI": 1,
-                        "OpenNewspaperType": "SpecialEdition"
-                      }
-                    }
-                  }
+                  "Article": 142509
                 }
               }
             }
@@ -24440,27 +24410,14 @@
             }
           }
         },
-        "OnQuestSucceeded": {
+        "OnPhotographySuccessNewspaperAction": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
-            "ActionList": {
-              "Actions": {
+            "Action": "",
+            "ActionForceNewspaper": {
+              "Articles": {
                 "Item": {
-                  "Action": {
-                    "Template": "ActionForceNewspaper",
-                    "Values": {
-                      "Action": "",
-                      "ActionForceNewspaper": {
-                        "Articles": {
-                          "Item": {
-                            "Article": 142510
-                          }
-                        },
-                        "OpenNewspaperUI": 1,
-                        "OpenNewspaperType": "SpecialEdition"
-                      }
-                    }
-                  }
+                  "Article": 142510
                 }
               }
             }
@@ -24798,6 +24755,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -25009,6 +24974,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -25220,6 +25193,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -25370,7 +25351,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 102283
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -25571,7 +25553,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 101285
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -25777,7 +25760,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 1010471
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -25842,6 +25826,14 @@
                   "ConditionPropsSessionSettings": "",
                   "ConditionQuestUseItemInArea": {
                     "ItemToUse": 190540,
+                    "StartPlace": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionObjectClientQuestObject": "",
+                        "ConditionScanner": "",
+                        "ConditionObjectiveSignsAndFeedback": ""
+                      }
+                    },
                     "TargetAmount": 1
                   },
                   "SpawnArea": {
@@ -25872,6 +25864,14 @@
                   "ConditionPropsSessionSettings": "",
                   "ConditionQuestUseItemInArea": {
                     "ItemToUse": 190484,
+                    "StartPlace": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionObjectClientQuestObject": "",
+                        "ConditionScanner": "",
+                        "ConditionObjectiveSignsAndFeedback": ""
+                      }
+                    },
                     "TargetAmount": 1
                   },
                   "SpawnArea": "",
@@ -25900,6 +25900,14 @@
                   "ConditionPropsSessionSettings": "",
                   "ConditionQuestUseItemInArea": {
                     "ItemToUse": 190485,
+                    "StartPlace": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionObjectClientQuestObject": "",
+                        "ConditionScanner": "",
+                        "ConditionObjectiveSignsAndFeedback": ""
+                      }
+                    },
                     "TargetAmount": 1
                   },
                   "SpawnArea": "",
@@ -26149,27 +26157,14 @@
             }
           }
         },
-        "OnQuestSucceeded": {
+        "OnPhotographySuccessNewspaperAction": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
-            "ActionList": {
-              "Actions": {
+            "Action": "",
+            "ActionForceNewspaper": {
+              "Articles": {
                 "Item": {
-                  "Action": {
-                    "Template": "ActionForceNewspaper",
-                    "Values": {
-                      "Action": "",
-                      "ActionForceNewspaper": {
-                        "Articles": {
-                          "Item": {
-                            "Article": 142507
-                          }
-                        },
-                        "OpenNewspaperUI": 1,
-                        "OpenNewspaperType": "SpecialEdition"
-                      }
-                    }
-                  }
+                  "Article": 142507
                 }
               }
             }
@@ -26246,7 +26241,8 @@
         "LocaText": {
           "English": {
             "Text": "Graduation Day",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -27420,7 +27416,8 @@
         "LocaText": {
           "English": {
             "Text": "The Matchmaker(TBC - Quest not yet written)",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -27529,7 +27526,8 @@
         "LocaText": {
           "English": {
             "Text": "The Matchmaker(TBC - Quest not yet written)",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -27661,7 +27659,8 @@
         "LocaText": {
           "English": {
             "Text": "The Matchmaker(TBC - Quest not yet written)",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -27793,7 +27792,8 @@
         "LocaText": {
           "English": {
             "Text": "The Matchmaker(TBC - Quest not yet written)",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -27925,7 +27925,8 @@
         "LocaText": {
           "English": {
             "Text": "The Matchmaker(TBC - Quest not yet written)",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -28078,7 +28079,8 @@
         "LocaText": {
           "English": {
             "Text": "The Matchmaker(TBC - Quest not yet written)",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -28234,7 +28236,8 @@
         "LocaText": {
           "English": {
             "Text": "The Matchmaker(TBC - Quest not yet written)",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -28383,7 +28386,8 @@
         "LocaText": {
           "English": {
             "Text": "The Matchmaker(TBC - Quest not yet written)",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -28606,7 +28610,8 @@
         "LocaText": {
           "English": {
             "Text": "The Matchmaker(TBC - Quest not yet written)",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -28692,46 +28697,27 @@
           "Values": {
             "ActionList": {
               "Actions": {
-                "Item": [
-                  {
-                    "Action": {
-                      "Template": "ActionForceNewspaper",
-                      "Values": {
-                        "Action": "",
-                        "ActionForceNewspaper": {
-                          "Articles": {
-                            "Item": {
-                              "Article": 142511
-                            }
-                          },
-                          "OpenNewspaperUI": 1,
-                          "OpenNewspaperType": "SpecialEdition"
-                        }
-                      }
-                    }
-                  },
-                  {
-                    "Action": {
-                      "Template": "ActionDelayedActions",
-                      "Values": {
-                        "Action": "",
-                        "ActionDelayedActions": {
-                          "ExecutionDelay": 15000,
-                          "DelayedActions": {
-                            "IsBaseAutoCreateAsset": 1,
-                            "Values": {
-                              "ActionList": {
-                                "Actions": {
-                                  "Item": {
-                                    "Action": {
-                                      "Template": "ActionStartQuest",
-                                      "Values": {
-                                        "Action": "",
-                                        "ActionStartQuest": {
-                                          "Quest": 152265,
-                                          "InheritQuestArea": 1,
-                                          "InheritQuestSession": 1
-                                        }
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "ExecutionDelay": 15000,
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionStartQuest",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionStartQuest": {
+                                        "Quest": 152265,
+                                        "InheritQuestArea": 1,
+                                        "InheritQuestSession": 1
                                       }
                                     }
                                   }
@@ -28743,7 +28729,20 @@
                       }
                     }
                   }
-                ]
+                }
+              }
+            }
+          }
+        },
+        "OnPhotographySuccessNewspaperAction": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionForceNewspaper": {
+              "Articles": {
+                "Item": {
+                  "Article": 142511
+                }
               }
             }
           }
@@ -29036,6 +29035,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -29398,6 +29405,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -29600,6 +29615,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -29798,6 +29821,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -29993,7 +30024,8 @@
         "LocaText": {
           "English": {
             "Text": "Once Upon A Dream",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -30281,7 +30313,8 @@
         "LocaText": {
           "English": {
             "Text": "Poetry Slam",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -30522,7 +30555,8 @@
         "LocaText": {
           "English": {
             "Text": "Classical Trivia",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -30733,7 +30767,8 @@
         "LocaText": {
           "English": {
             "Text": "Teaching to children",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -31075,7 +31110,8 @@
         "LocaText": {
           "English": {
             "Text": "La Casa de Papel",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -31290,7 +31326,8 @@
         "LocaText": {
           "English": {
             "Text": "Theory of Evolution",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -31598,7 +31635,8 @@
         "LocaText": {
           "English": {
             "Text": "A Christmas Carol",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -31793,7 +31831,8 @@
         "LocaText": {
           "English": {
             "Text": "Creme De La Creme",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -31999,7 +32038,8 @@
         "LocaText": {
           "English": {
             "Text": "Monopoly",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -32328,7 +32368,8 @@
         "LocaText": {
           "English": {
             "Text": "The Co-operative",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -32750,7 +32791,8 @@
         "LocaText": {
           "English": {
             "Text": "Boredom",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -32787,6 +32829,14 @@
                       }
                     },
                     "DeliveryType": "Area",
+                    "DeliveryExecutionPlace": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionObjectClientQuestObject": "",
+                        "ConditionScanner": "",
+                        "ConditionObjectiveSignsAndFeedback": ""
+                      }
+                    },
                     "UseQuestArea": 1
                   },
                   "ConditionQuestObjective": {
@@ -32819,6 +32869,14 @@
                       }
                     },
                     "DeliveryType": "Area",
+                    "DeliveryExecutionPlace": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionObjectClientQuestObject": "",
+                        "ConditionScanner": "",
+                        "ConditionObjectiveSignsAndFeedback": ""
+                      }
+                    },
                     "UseQuestArea": 1
                   },
                   "ConditionQuestObjective": "",
@@ -32849,6 +32907,14 @@
                       }
                     },
                     "DeliveryType": "Area",
+                    "DeliveryExecutionPlace": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionObjectClientQuestObject": "",
+                        "ConditionScanner": "",
+                        "ConditionObjectiveSignsAndFeedback": ""
+                      }
+                    },
                     "UseQuestArea": 1
                   },
                   "ConditionQuestObjective": {
@@ -33055,7 +33121,8 @@
         "LocaText": {
           "English": {
             "Text": "Charity",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -33091,6 +33158,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -33360,7 +33435,8 @@
         "LocaText": {
           "English": {
             "Text": "Grand Child birthday",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -33397,6 +33473,14 @@
                       }
                     },
                     "DeliveryType": "Area",
+                    "DeliveryExecutionPlace": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionObjectClientQuestObject": "",
+                        "ConditionScanner": "",
+                        "ConditionObjectiveSignsAndFeedback": ""
+                      }
+                    },
                     "UseQuestArea": 1
                   },
                   "ConditionQuestObjective": {
@@ -33429,6 +33513,14 @@
                       }
                     },
                     "DeliveryType": "Area",
+                    "DeliveryExecutionPlace": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionObjectClientQuestObject": "",
+                        "ConditionScanner": "",
+                        "ConditionObjectiveSignsAndFeedback": ""
+                      }
+                    },
                     "UseQuestArea": 1
                   },
                   "ConditionQuestObjective": {
@@ -33461,6 +33553,14 @@
                       }
                     },
                     "DeliveryType": "Area",
+                    "DeliveryExecutionPlace": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionObjectClientQuestObject": "",
+                        "ConditionScanner": "",
+                        "ConditionObjectiveSignsAndFeedback": ""
+                      }
+                    },
                     "UseQuestArea": 1
                   },
                   "ConditionQuestObjective": {
@@ -33493,6 +33593,14 @@
                       }
                     },
                     "DeliveryType": "Area",
+                    "DeliveryExecutionPlace": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionObjectClientQuestObject": "",
+                        "ConditionScanner": "",
+                        "ConditionObjectiveSignsAndFeedback": ""
+                      }
+                    },
                     "UseQuestArea": 1
                   },
                   "ConditionQuestObjective": {
@@ -33639,7 +33747,8 @@
         "LocaText": {
           "English": {
             "Text": "The Letter",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -33852,7 +33961,8 @@
         "LocaText": {
           "English": {
             "Text": "Transmission",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -34194,7 +34304,8 @@
         "LocaText": {
           "English": {
             "Text": "Captured Friend",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -34387,7 +34498,8 @@
         "LocaText": {
           "English": {
             "Text": "The Orphans",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -34648,7 +34760,8 @@
         "LocaText": {
           "English": {
             "Text": "Heigh Oh",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -34814,7 +34927,8 @@
         "LocaText": {
           "English": {
             "Text": "Artisan fair",
-            "Status": "GameWriting"
+            "Status": "Exported",
+            "ExportCount": 1
           }
         }
       },
@@ -34943,27 +35057,14 @@
             }
           }
         },
-        "OnQuestSucceeded": {
+        "OnPhotographySuccessNewspaperAction": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
-            "ActionList": {
-              "Actions": {
+            "Action": "",
+            "ActionForceNewspaper": {
+              "Articles": {
                 "Item": {
-                  "Action": {
-                    "Template": "ActionForceNewspaper",
-                    "Values": {
-                      "Action": "",
-                      "ActionForceNewspaper": {
-                        "Articles": {
-                          "Item": {
-                            "Article": 142506
-                          }
-                        },
-                        "OpenNewspaperUI": 1,
-                        "OpenNewspaperType": "SpecialEdition"
-                      }
-                    }
-                  }
+                  "Article": 142506
                 }
               }
             }
@@ -35389,6 +35490,14 @@
                       }
                     },
                     "DeliveryType": "Area",
+                    "DeliveryExecutionPlace": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionObjectClientQuestObject": "",
+                        "ConditionScanner": "",
+                        "ConditionObjectiveSignsAndFeedback": ""
+                      }
+                    },
                     "UseQuestArea": 1
                   },
                   "ConditionQuestObjective": {
@@ -35463,6 +35572,14 @@
                       }
                     },
                     "DeliveryType": "Area",
+                    "DeliveryExecutionPlace": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionObjectClientQuestObject": "",
+                        "ConditionScanner": "",
+                        "ConditionObjectiveSignsAndFeedback": ""
+                      }
+                    },
                     "UseQuestArea": 1
                   },
                   "ConditionQuestObjective": {
@@ -35537,6 +35654,14 @@
                       }
                     },
                     "DeliveryType": "Area",
+                    "DeliveryExecutionPlace": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionObjectClientQuestObject": "",
+                        "ConditionScanner": "",
+                        "ConditionObjectiveSignsAndFeedback": ""
+                      }
+                    },
                     "UseQuestArea": 1
                   },
                   "ConditionQuestObjective": {
@@ -35609,6 +35734,14 @@
                       }
                     },
                     "DeliveryType": "Area",
+                    "DeliveryExecutionPlace": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionObjectClientQuestObject": "",
+                        "ConditionScanner": "",
+                        "ConditionObjectiveSignsAndFeedback": ""
+                      }
+                    },
                     "UseQuestArea": 1
                   },
                   "ConditionQuestObjective": {
@@ -35972,7 +36105,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 1010471
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -36599,7 +36733,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 1010323
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -36786,7 +36921,8 @@
     "Values": {
       "Standard": {
         "GUID": 110878,
-        "Name": "RQ_Workers_RoleModel"
+        "Name": "RQ_Workers_RoleModel",
+        "Version": "dm"
       },
       "Quest": {
         "StarterMessage": {
@@ -36958,28 +37094,14 @@
             }
           }
         },
-        "OnQuestSucceeded": {
+        "OnPhotographySuccessNewspaperAction": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
-            "ActionList": {
-              "Actions": {
+            "Action": "",
+            "ActionForceNewspaper": {
+              "Articles": {
                 "Item": {
-                  "Action": {
-                    "Template": "ActionForceNewspaper",
-                    "Values": {
-                      "Action": "",
-                      "ActionForceNewspaper": {
-                        "Articles": {
-                          "Item": {
-                            "Article": 111948
-                          }
-                        },
-                        "OpenNewspaperUI": 1,
-                        "OpenNewspaperType": "SpecialEdition",
-                        "PamsyWelcomeRequiredAsset": 142374
-                      }
-                    }
-                  }
+                  "Article": 111948
                 }
               }
             }
@@ -37175,7 +37297,8 @@
     "Values": {
       "Standard": {
         "GUID": 110880,
-        "Name": "RQ_Workers_ReapingTheFruits"
+        "Name": "RQ_Workers_ReapingTheFruits",
+        "Version": "dm"
       },
       "Quest": {
         "StarterMessage": {
@@ -37406,7 +37529,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 1010218
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -37424,7 +37548,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 1010221
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -37599,7 +37724,8 @@
     "Values": {
       "Standard": {
         "GUID": 110881,
-        "Name": "RQ_Workers_RedressingTheBalance"
+        "Name": "RQ_Workers_RedressingTheBalance",
+        "Version": "dm"
       },
       "Quest": {
         "StarterMessage": {
@@ -37977,7 +38103,8 @@
     "Values": {
       "Standard": {
         "GUID": 110882,
-        "Name": "RQ_Workers_Brioche"
+        "Name": "RQ_Workers_Brioche",
+        "Version": "dm"
       },
       "Quest": {
         "StarterMessage": {
@@ -38207,7 +38334,8 @@
                       "Condition": "",
                       "ConditionUnlocked": {
                         "UnlockNeeded": 1010213
-                      }
+                      },
+                      "ConditionPropsNegatable": ""
                     }
                   }
                 }
@@ -38359,7 +38487,8 @@
     "Values": {
       "Standard": {
         "GUID": 110883,
-        "Name": "RQ_Workers_LivingBetter NEED DOWNGRADE"
+        "Name": "RQ_Workers_LivingBetter NEED DOWNGRADE",
+        "Version": "dm"
       },
       "Quest": {
         "StarterMessage": {
@@ -38680,7 +38809,8 @@
     "Values": {
       "Standard": {
         "GUID": 110884,
-        "Name": "RQ_Workers_DecentralizingPower"
+        "Name": "RQ_Workers_DecentralizingPower",
+        "Version": "dm"
       },
       "Quest": {
         "StarterMessage": {
@@ -38904,7 +39034,8 @@
                       "Condition": "",
                       "ConditionUnlocked": {
                         "UnlockNeeded": 1010516
-                      }
+                      },
+                      "ConditionPropsNegatable": ""
                     }
                   }
                 }
@@ -39054,7 +39185,8 @@
     "Values": {
       "Standard": {
         "GUID": 110885,
-        "Name": "RQ_Workers_BreakTheSpell"
+        "Name": "RQ_Workers_BreakTheSpell",
+        "Version": "dm"
       },
       "Quest": {
         "StarterMessage": {
@@ -39500,7 +39632,8 @@
     "Values": {
       "Standard": {
         "GUID": 110886,
-        "Name": "RQ_Workers_SelfManagement"
+        "Name": "RQ_Workers_SelfManagement",
+        "Version": "dm"
       },
       "Quest": {
         "StarterMessage": {
@@ -39861,7 +39994,8 @@
     "Values": {
       "Standard": {
         "GUID": 110887,
-        "Name": "RQ_Workers_SelfSufficient"
+        "Name": "RQ_Workers_SelfSufficient",
+        "Version": "dm"
       },
       "Quest": {
         "StarterMessage": {
@@ -40219,7 +40353,8 @@
     "Values": {
       "Standard": {
         "GUID": 110888,
-        "Name": "RQ_Workers_MoreThanEnoughFood_Bread"
+        "Name": "RQ_Workers_MoreThanEnoughFood_Bread",
+        "Version": "dm"
       },
       "Quest": {
         "StarterMessage": {
@@ -40613,7 +40748,8 @@
     "Values": {
       "Standard": {
         "GUID": 110889,
-        "Name": "RQ_Workers_MoreThanEnoughFood_CannedFood"
+        "Name": "RQ_Workers_MoreThanEnoughFood_CannedFood",
+        "Version": "dm"
       },
       "Quest": {
         "StarterMessage": {
@@ -41030,7 +41166,8 @@
     "Values": {
       "Standard": {
         "GUID": 110890,
-        "Name": "RQ_Workers_MoreThanEnoughFood_Sausages"
+        "Name": "RQ_Workers_MoreThanEnoughFood_Sausages",
+        "Version": "dm"
       },
       "Quest": {
         "StarterMessage": {
@@ -41411,7 +41548,8 @@
     "Values": {
       "Standard": {
         "GUID": 110891,
-        "Name": "RQ_Workers_MoreThanEnoughFood_Fish"
+        "Name": "RQ_Workers_MoreThanEnoughFood_Fish",
+        "Version": "dm"
       },
       "Quest": {
         "StarterMessage": {
@@ -41776,7 +41914,8 @@
     "Values": {
       "Standard": {
         "GUID": 110893,
-        "Name": "RQ_Workers_Powershift QUEST DISABLED"
+        "Name": "RQ_Workers_Powershift QUEST DISABLED",
+        "Version": "dm"
       },
       "Quest": {
         "StarterMessage": {
@@ -42143,7 +42282,8 @@
     "Values": {
       "Standard": {
         "GUID": 110894,
-        "Name": "RQ_Workers_OnTheWalls"
+        "Name": "RQ_Workers_OnTheWalls",
+        "Version": "dm"
       },
       "Quest": {
         "StarterMessage": {
@@ -42526,7 +42666,8 @@
     "Values": {
       "Standard": {
         "GUID": 110895,
-        "Name": "RQ_Workers_BraveNewWorld"
+        "Name": "RQ_Workers_BraveNewWorld",
+        "Version": "dm"
       },
       "Quest": {
         "StarterMessage": {
@@ -42921,7 +43062,8 @@
     "Values": {
       "Standard": {
         "GUID": 110896,
-        "Name": "RQ_Workers_PerfectDay"
+        "Name": "RQ_Workers_PerfectDay",
+        "Version": "dm"
       },
       "Quest": {
         "StarterMessage": {
@@ -43303,7 +43445,8 @@
     "Values": {
       "Standard": {
         "GUID": 110898,
-        "Name": "RQ_Workers_LoveForTheRuler"
+        "Name": "RQ_Workers_LoveForTheRuler",
+        "Version": "dm"
       },
       "Quest": {
         "StarterMessage": {
@@ -43680,7 +43823,8 @@
     "Values": {
       "Standard": {
         "GUID": 110852,
-        "Name": "RQ_Artisan_Saboteurs"
+        "Name": "RQ_Artisan_Saboteurs",
+        "Version": "dm"
       },
       "Quest": {
         "SuccessMessage": {
@@ -44075,7 +44219,8 @@
     "Values": {
       "Standard": {
         "GUID": 110899,
-        "Name": "RQ_Artisan_NoMorePreaching"
+        "Name": "RQ_Artisan_NoMorePreaching",
+        "Version": "dm"
       },
       "Quest": {
         "SuccessMessage": {
@@ -44468,7 +44613,8 @@
     "Values": {
       "Standard": {
         "GUID": 110902,
-        "Name": "RQ_Farmer_HelpThePolice"
+        "Name": "RQ_Farmer_HelpThePolice",
+        "Version": "dm"
       },
       "Quest": {
         "SuccessMessage": {
@@ -44833,7 +44979,8 @@
     "Values": {
       "Standard": {
         "GUID": 110907,
-        "Name": "RQ_Engineer_Fahrenheit451"
+        "Name": "RQ_Engineer_Fahrenheit451",
+        "Version": "dm"
       },
       "Quest": {
         "SuccessMessage": {
@@ -45236,7 +45383,8 @@
     "Values": {
       "Standard": {
         "GUID": 110908,
-        "Name": "RQ_Engineer_TheTruthHurts"
+        "Name": "RQ_Engineer_TheTruthHurts",
+        "Version": "dm"
       },
       "Quest": {
         "SuccessMessage": {
@@ -45585,7 +45733,8 @@
     "Values": {
       "Standard": {
         "GUID": 110909,
-        "Name": "RQ_Artisan_BlowingUpCapitalism"
+        "Name": "RQ_Artisan_BlowingUpCapitalism",
+        "Version": "dm"
       },
       "Quest": {
         "SuccessMessage": {
@@ -45964,7 +46113,8 @@
     "Values": {
       "Standard": {
         "GUID": 110910,
-        "Name": "RQ_Worker_Specialist"
+        "Name": "RQ_Worker_Specialist",
+        "Version": "dm"
       },
       "Quest": {
         "StarterMessage": {
@@ -46161,7 +46311,8 @@
     "Values": {
       "Standard": {
         "GUID": 110911,
-        "Name": "RQ_Worker_Machine"
+        "Name": "RQ_Worker_Machine",
+        "Version": "dm"
       },
       "Quest": {
         "StarterMessage": {
@@ -46358,7 +46509,8 @@
     "Values": {
       "Standard": {
         "GUID": 110912,
-        "Name": "RQ_Worker_Loudspeaker"
+        "Name": "RQ_Worker_Loudspeaker",
+        "Version": "dm"
       },
       "Quest": {
         "StarterMessage": {
@@ -46555,7 +46707,8 @@
     "Values": {
       "Standard": {
         "GUID": 111852,
-        "Name": "SL109_RestoreTheJournal2"
+        "Name": "SL109_RestoreTheJournal2",
+        "Version": "dlc01"
       },
       "Quest": {
         "StarterMessage": {
@@ -46802,7 +46955,8 @@
     "Values": {
       "Standard": {
         "GUID": 115180,
-        "Name": "RQ_Artisans_IMadeThisSheet"
+        "Name": "RQ_Artisans_IMadeThisSheet",
+        "Version": "dlc02"
       },
       "Quest": {
         "StarterMessage": {
@@ -47024,7 +47178,8 @@
     "Values": {
       "Standard": {
         "GUID": 114899,
-        "Name": "RQ_Explorer_Felt"
+        "Name": "RQ_Explorer_Felt",
+        "Version": "dlc03"
       },
       "Quest": {
         "InvitationMessage": {
@@ -47138,6 +47293,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -47216,7 +47379,8 @@
     "Values": {
       "Standard": {
         "GUID": 114900,
-        "Name": "RQ_Explorer_Ciment"
+        "Name": "RQ_Explorer_Ciment",
+        "Version": "dlc03"
       },
       "Quest": {
         "InvitationMessage": {
@@ -47330,6 +47494,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -47408,7 +47580,8 @@
     "Values": {
       "Standard": {
         "GUID": 114901,
-        "Name": "RQ_Explorer_Salpetre"
+        "Name": "RQ_Explorer_Salpetre",
+        "Version": "dlc03"
       },
       "Quest": {
         "InvitationMessage": {
@@ -47544,6 +47717,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -47623,7 +47804,8 @@
     "Values": {
       "Standard": {
         "GUID": 114921,
-        "Name": "RQ_Explorer_FriendOfTheInuitGift"
+        "Name": "RQ_Explorer_FriendOfTheInuitGift",
+        "Version": "dlc03"
       },
       "Quest": {
         "SuccessMessage": {
@@ -47846,7 +48028,8 @@
     "Values": {
       "Standard": {
         "GUID": 114924,
-        "Name": "RQ_Explorer_FriendOfTheInuitMuseum"
+        "Name": "RQ_Explorer_FriendOfTheInuitMuseum",
+        "Version": "dlc03"
       },
       "Quest": {
         "StarterMessage": {
@@ -48008,7 +48191,8 @@
     "Values": {
       "Standard": {
         "GUID": 119226,
-        "Name": "VQ_Ketema_Memoires_FatherToThePeople_Sustain"
+        "Name": "VQ_Ketema_Memoires_FatherToThePeople_Sustain",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -48200,7 +48384,8 @@
     "Values": {
       "Standard": {
         "GUID": 118954,
-        "Name": "RQ_Shepherd_TheLostSheep1_Grazing_Select"
+        "Name": "RQ_Shepherd_TheLostSheep1_Grazing_Select",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -48523,7 +48708,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 114520
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -48640,7 +48826,8 @@
     "Values": {
       "Standard": {
         "GUID": 118958,
-        "Name": "RQ_Shepherd_RightingTheWrongs1_HelpFamily_UseItemORSelect"
+        "Name": "RQ_Shepherd_RightingTheWrongs1_HelpFamily_UseItemORSelect",
+        "Version": "dlc06"
       },
       "Quest": {
         "FailureMessage": {
@@ -48797,7 +48984,7 @@
               "Text": 119105
             },
             {
-              "Text": 19106
+              "Text": 119106
             }
           ]
         },
@@ -49072,7 +49259,8 @@
     "Values": {
       "Standard": {
         "GUID": 118979,
-        "Name": "RQ_Shepherd_RoleOfaMan1_BeingIncluded_Select"
+        "Name": "RQ_Shepherd_RoleOfaMan1_BeingIncluded_Select",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -49270,7 +49458,8 @@
                       "Condition": "",
                       "ConditionUnlocked": {
                         "UnlockNeeded": 118734
-                      }
+                      },
+                      "ConditionPropsNegatable": ""
                     }
                   }
                 }
@@ -49386,7 +49575,8 @@
     "Values": {
       "Standard": {
         "GUID": 118982,
-        "Name": "RQ_Shepherd_RoleOfaMan4_SlayTheBeast_Picturepuzzle"
+        "Name": "RQ_Shepherd_RoleOfaMan4_SlayTheBeast_Picturepuzzle",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -49656,7 +49846,8 @@
     "Values": {
       "Standard": {
         "GUID": 118983,
-        "Name": "RQ_Shepherd_RoleOfaMan5_GoneGirl_Select"
+        "Name": "RQ_Shepherd_RoleOfaMan5_GoneGirl_Select",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -49997,7 +50188,8 @@
     "Values": {
       "Standard": {
         "GUID": 118987,
-        "Name": "RQ_Shepherd_RoleOfaMan9_Banquet_Deliver"
+        "Name": "RQ_Shepherd_RoleOfaMan9_Banquet_Deliver",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -50253,6 +50445,14 @@
                     ]
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -50331,7 +50531,8 @@
     "Values": {
       "Standard": {
         "GUID": 118966,
-        "Name": "RQ_Shepherd_MissingSibling_Picturepuzzle"
+        "Name": "RQ_Shepherd_MissingSibling_Picturepuzzle",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -50530,7 +50731,8 @@
     "Values": {
       "Standard": {
         "GUID": 118968,
-        "Name": "RQ_Shepherd_CaringForElderly_Deliver"
+        "Name": "RQ_Shepherd_CaringForElderly_Deliver",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -50656,6 +50858,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -50734,7 +50944,8 @@
     "Values": {
       "Standard": {
         "GUID": 118969,
-        "Name": "RQ_Shepherd_HelpingInTheField_Gift"
+        "Name": "RQ_Shepherd_HelpingInTheField_Gift",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -50742,9 +50953,11 @@
             "IsBaseAutoCreateAsset": 1,
             "Values": {
               "CharacterNotification": "",
-              "BaseNotification": "",
+              "BaseNotification": {
+                "NotificationText": 119296
+              },
               "NotificationSubtitle": {
-                "SubtitleGroup": 409410399
+                "Subtitle": 119295
               }
             }
           },
@@ -50966,7 +51179,8 @@
     "Values": {
       "Standard": {
         "GUID": 118971,
-        "Name": "RQ_Shepherd_ManBestFriend_Photo"
+        "Name": "RQ_Shepherd_ManBestFriend_Photo",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -51012,7 +51226,7 @@
           "Values": {
             "Condition": "",
             "ConditionTutorialInteraction": {
-              "HintText": 15502,
+              "HintText": 119310,
               "ObjectFilter": {
                 "IsBaseAutoCreateAsset": 1,
                 "Values": {
@@ -51195,7 +51409,8 @@
     "Values": {
       "Standard": {
         "GUID": 118972,
-        "Name": "RQ_Shepherd_GoatRun_Picturepuzzle"
+        "Name": "RQ_Shepherd_GoatRun_Picturepuzzle",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -51426,7 +51641,8 @@
     "Values": {
       "Standard": {
         "GUID": 118975,
-        "Name": "RQ_Shepherd_ExoticNature_Photo"
+        "Name": "RQ_Shepherd_ExoticNature_Photo",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -51668,7 +51884,8 @@
     "Values": {
       "Standard": {
         "GUID": 118956,
-        "Name": "RQ_Shepherd_TheLostSheep2_FindAmun_Select"
+        "Name": "RQ_Shepherd_TheLostSheep2_FindAmun_Select",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -51979,7 +52196,8 @@
     "Values": {
       "Standard": {
         "GUID": 118957,
-        "Name": "RQ_Elder_Thelostsheep_BurningBush_Build"
+        "Name": "RQ_Elder_Thelostsheep_BurningBush_Build",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -52201,7 +52419,8 @@
     "Values": {
       "Standard": {
         "GUID": 118960,
-        "Name": "RQ_Shepherd_RightingTheWrongs2A_TrickingLandOwner_Deliver"
+        "Name": "RQ_Shepherd_RightingTheWrongs2A_TrickingLandOwner_Deliver",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -52454,6 +52673,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -52532,7 +52759,8 @@
     "Values": {
       "Standard": {
         "GUID": 118962,
-        "Name": "RQ_Shepherd_RightingTheWrongs2BA_ArrestLandowner_SolveIncident"
+        "Name": "RQ_Shepherd_RightingTheWrongs2BA_ArrestLandowner_SolveIncident",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -52740,7 +52968,8 @@
     "Values": {
       "Standard": {
         "GUID": 118964,
-        "Name": "OPTIONAL_RQ_Shepherd_RightingTheWrongs2BB_PayLandOwner_Deliver"
+        "Name": "OPTIONAL_RQ_Shepherd_RightingTheWrongs2BB_PayLandOwner_Deliver",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -52890,6 +53119,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -52968,7 +53205,8 @@
     "Values": {
       "Standard": {
         "GUID": 118980,
-        "Name": "RQ_Shepherd_RoleOfaMan2_DressUp_Deliver"
+        "Name": "RQ_Shepherd_RoleOfaMan2_DressUp_Deliver",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -53152,6 +53390,14 @@
                     ]
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -53230,7 +53476,8 @@
     "Values": {
       "Standard": {
         "GUID": 118981,
-        "Name": "RQ_Shepherd_RoleOfaMan3_Humiliation_Photo"
+        "Name": "RQ_Shepherd_RoleOfaMan3_Humiliation_Photo",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -53286,27 +53533,14 @@
             }
           }
         },
-        "OnQuestSucceeded": {
+        "OnPhotographySuccessNewspaperAction": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
-            "ActionList": {
-              "Actions": {
+            "Action": "",
+            "ActionForceNewspaper": {
+              "Articles": {
                 "Item": {
-                  "Action": {
-                    "Template": "ActionForceNewspaper",
-                    "Values": {
-                      "Action": "",
-                      "ActionForceNewspaper": {
-                        "Articles": {
-                          "Item": {
-                            "Article": 119175
-                          }
-                        },
-                        "OpenNewspaperUI": 1,
-                        "OpenNewspaperType": "SpecialEdition"
-                      }
-                    }
-                  }
+                  "Article": 119175
                 }
               }
             }
@@ -53328,9 +53562,6 @@
             },
             {
               "Text": 119168
-            },
-            {
-              "Text": 119769
             }
           ]
         },
@@ -53505,7 +53736,8 @@
     "Values": {
       "Standard": {
         "GUID": 118985,
-        "Name": "RQ_Shepherd_RoleOfaMan7_GoneGirlBee_Select"
+        "Name": "RQ_Shepherd_RoleOfaMan7_GoneGirlBee_Select",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -53824,7 +54056,8 @@
     "Values": {
       "Standard": {
         "GUID": 118986,
-        "Name": "RQ_Shepherd_RoleOfaMan8_GoneGirlHarbor_Picturepuzzle"
+        "Name": "RQ_Shepherd_RoleOfaMan8_GoneGirlHarbor_Picturepuzzle",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -53995,16 +54228,12 @@
                           "Values": {
                             "SpawnArea": {
                               "SpawnContext": "PlayerKontor",
-                              "ContextMarkerName": "quest_spawn_0",
-                              "LimitToQuestArea": 1,
                               "DistanceToContext": 5,
-                              "MinObjectDistance": 2,
+                              "MinObjectDistance": 3,
                               "MaxObjectDistance": 5
                             }
                           }
-                        },
-                        "MobTargetUnitCount": 0,
-                        "MobForceSpawnUnitCount": 0
+                        }
                       }
                     }
                   }
@@ -54070,7 +54299,8 @@
     "Values": {
       "Standard": {
         "GUID": 118988,
-        "Name": "RQ_Shepherd_RoleOfaMan10_HelpingTheBully_Select"
+        "Name": "RQ_Shepherd_RoleOfaMan10_HelpingTheBully_Select",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -54367,7 +54597,8 @@
     "Values": {
       "Standard": {
         "GUID": 118989,
-        "Name": "RQ_Shepherd_RoleOfaMan10_HelpingTheBullyDecoyIsland_Pick"
+        "Name": "RQ_Shepherd_RoleOfaMan10_HelpingTheBullyDecoyIsland_Pick",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -54590,7 +54821,8 @@
     "Values": {
       "Standard": {
         "GUID": 118765,
-        "Name": "RQ_Elder_TraditionKeeper2_BullCeremony_Picturepuzzle"
+        "Name": "RQ_Elder_TraditionKeeper2_BullCeremony_Picturepuzzle",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -54834,7 +55066,8 @@
     "Values": {
       "Standard": {
         "GUID": 118772,
-        "Name": "RQ_Elder_TraditionKeeper5_Aida_Select"
+        "Name": "RQ_Elder_TraditionKeeper5_Aida_Select",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -55210,7 +55443,8 @@
     "Values": {
       "Standard": {
         "GUID": 118753,
-        "Name": "RQ_Elder_KidsNowadays1_TakeChristmasAway_Picturepuzzle"
+        "Name": "RQ_Elder_KidsNowadays1_TakeChristmasAway_Picturepuzzle",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -55482,7 +55716,8 @@
     "Values": {
       "Standard": {
         "GUID": 118758,
-        "Name": "RQ_Elder_KidsNowadays2_MakeThemWork_Picturepuzzle"
+        "Name": "RQ_Elder_KidsNowadays2_MakeThemWork_Picturepuzzle",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -55932,7 +56167,8 @@
     "Values": {
       "Standard": {
         "GUID": 118760,
-        "Name": "RQ_Elders_KidsNowadays3_PublicConfession_Photo"
+        "Name": "RQ_Elders_KidsNowadays3_PublicConfession_Photo",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -55945,7 +56181,9 @@
               "BaseNotification": {
                 "NotificationText": 118407
               },
-              "NotificationSubtitle": ""
+              "NotificationSubtitle": {
+                "Subtitle": 118405
+              }
             }
           }
         },
@@ -55968,46 +56206,27 @@
           "Values": {
             "ActionList": {
               "Actions": {
-                "Item": [
-                  {
-                    "Action": {
-                      "Template": "ActionForceNewspaper",
-                      "Values": {
-                        "Action": "",
-                        "ActionForceNewspaper": {
-                          "Articles": {
-                            "Item": {
-                              "Article": 118408
-                            }
-                          },
-                          "OpenNewspaperUI": 1,
-                          "OpenNewspaperType": "SpecialEdition"
-                        }
-                      }
-                    }
-                  },
-                  {
-                    "Action": {
-                      "Template": "ActionDelayedActions",
-                      "Values": {
-                        "Action": "",
-                        "ActionDelayedActions": {
-                          "ExecutionDelay": 10000,
-                          "DelayedActions": {
-                            "IsBaseAutoCreateAsset": 1,
-                            "Values": {
-                              "ActionList": {
-                                "Actions": {
-                                  "Item": {
-                                    "Action": {
-                                      "Template": "ActionStartQuest",
-                                      "Values": {
-                                        "Action": "",
-                                        "ActionStartQuest": {
-                                          "Quest": 118762,
-                                          "InheritQuestArea": 1,
-                                          "InheritQuestSession": 1
-                                        }
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "ExecutionDelay": 10000,
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionStartQuest",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionStartQuest": {
+                                        "Quest": 118762,
+                                        "InheritQuestArea": 1,
+                                        "InheritQuestSession": 1
                                       }
                                     }
                                   }
@@ -56019,7 +56238,20 @@
                       }
                     }
                   }
-                ]
+                }
+              }
+            }
+          }
+        },
+        "OnPhotographySuccessNewspaperAction": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionForceNewspaper": {
+              "Articles": {
+                "Item": {
+                  "Article": 118408
+                }
               }
             }
           }
@@ -56260,7 +56492,8 @@
     "Values": {
       "Standard": {
         "GUID": 118781,
-        "Name": "RQ_Elder_IamTheSenate2_StuffBallots_Select"
+        "Name": "RQ_Elder_IamTheSenate2_StuffBallots_Select",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -56487,7 +56720,8 @@
     "Values": {
       "Standard": {
         "GUID": 118775,
-        "Name": "RQ_Elder_IamTheSenate3_RuiningReputation_Select"
+        "Name": "RQ_Elder_IamTheSenate3_RuiningReputation_Select",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -56942,7 +57176,8 @@
     "Values": {
       "Standard": {
         "GUID": 118785,
-        "Name": "RQ_Elder_IamTheSenate5_DuraLexSedLex_StatusQuo"
+        "Name": "RQ_Elder_IamTheSenate5_DuraLexSedLex_StatusQuo",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -57157,7 +57392,7 @@
                   "ConditionQuestObjective": "",
                   "ConditionPlayerCounter": {
                     "PlayerCounter": "PopulationSatisfactionByGood",
-                    "Context": 114329,
+                    "Context": 114359,
                     "ComparisonOp": "AtMost",
                     "CounterAmount": 50,
                     "CounterScope": "Session",
@@ -57227,7 +57462,8 @@
     "Values": {
       "Standard": {
         "GUID": 118876,
-        "Name": "RQ_Elder_HigherByNature1_Gold_Deliver"
+        "Name": "RQ_Elder_HigherByNature1_Gold_Deliver",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -57398,6 +57634,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -57476,7 +57720,8 @@
     "Values": {
       "Standard": {
         "GUID": 118878,
-        "Name": "RQ_Elder_HigherByNature2_Beggars_Picturepuzzle"
+        "Name": "RQ_Elder_HigherByNature2_Beggars_Picturepuzzle",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -57756,7 +58001,8 @@
     "Values": {
       "Standard": {
         "GUID": 118879,
-        "Name": "RQ_Elder_HigherByNature3_HelpingIndigents_Deliver"
+        "Name": "RQ_Elder_HigherByNature3_HelpingIndigents_Deliver",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -57905,6 +58151,14 @@
                       }
                     },
                     "DeliveryType": "Area",
+                    "DeliveryExecutionPlace": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionObjectClientQuestObject": "",
+                        "ConditionScanner": "",
+                        "ConditionObjectiveSignsAndFeedback": ""
+                      }
+                    },
                     "UseQuestArea": 1
                   },
                   "ConditionQuestObjective": {
@@ -58034,7 +58288,8 @@
     "Values": {
       "Standard": {
         "GUID": 118880,
-        "Name": "RQ_Elder_HigherByNature4A_TimqetFestival_Deliver"
+        "Name": "RQ_Elder_HigherByNature4A_TimqetFestival_Deliver",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -58346,6 +58601,14 @@
                     ]
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -58424,7 +58687,8 @@
     "Values": {
       "Standard": {
         "GUID": 118883,
-        "Name": "RQ_Elder_HigherByNature5_FruitBasket_Select"
+        "Name": "RQ_Elder_HigherByNature5_FruitBasket_Select",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -58789,7 +59053,8 @@
     "Values": {
       "Standard": {
         "GUID": 118890,
-        "Name": "RQ_Elder_HigherByNature6_Fasting_Sustain"
+        "Name": "RQ_Elder_HigherByNature6_Fasting_Sustain",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -58950,7 +59215,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 114390
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -58968,7 +59234,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 114410
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -59100,7 +59367,8 @@
     "Values": {
       "Standard": {
         "GUID": 118858,
-        "Name": "RQ_Elder_LearningFromThose_Deliver"
+        "Name": "RQ_Elder_LearningFromThose_Deliver",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -59269,6 +59537,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -59347,7 +59623,8 @@
     "Values": {
       "Standard": {
         "GUID": 118859,
-        "Name": "RQ_Elder_CleanUpYourMess_Picturepuzzle"
+        "Name": "RQ_Elder_CleanUpYourMess_Picturepuzzle",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -59544,7 +59821,8 @@
     "Values": {
       "Standard": {
         "GUID": 118861,
-        "Name": "RQ_Elder_SetRightExemple_SolveIncident"
+        "Name": "RQ_Elder_SetRightExemple_SolveIncident",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -59583,7 +59861,8 @@
                               "Template": "ObjectFilter",
                               "Values": {
                                 "ObjectFilter": {
-                                  "ObjectGUID": 114436
+                                  "ObjectGUID": 114436,
+                                  "CheckQuestArea": 1
                                 }
                               }
                             }
@@ -59796,7 +60075,8 @@
     "Values": {
       "Standard": {
         "GUID": 118864,
-        "Name": "RQ_Elder_CupOfTea_Deliver"
+        "Name": "RQ_Elder_CupOfTea_Deliver",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -59965,6 +60245,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -60043,7 +60331,8 @@
     "Values": {
       "Standard": {
         "GUID": 118865,
-        "Name": "RQ_Elder_DayCare_Build"
+        "Name": "RQ_Elder_DayCare_Build",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -60128,7 +60417,8 @@
                       "Condition": "",
                       "ConditionUnlocked": {
                         "UnlockNeeded": 117668
-                      }
+                      },
+                      "ConditionPropsNegatable": ""
                     }
                   }
                 }
@@ -60255,7 +60545,8 @@
     "Values": {
       "Standard": {
         "GUID": 118867,
-        "Name": "RQ_Elder_VisitingRelatives_Transport"
+        "Name": "RQ_Elder_VisitingRelatives_Transport",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -60791,7 +61082,8 @@
     "Values": {
       "Standard": {
         "GUID": 118868,
-        "Name": "RQ_Elder_RealityCheck_Select"
+        "Name": "RQ_Elder_RealityCheck_Select",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -61469,7 +61761,8 @@
     "Values": {
       "Standard": {
         "GUID": 118767,
-        "Name": "RQ_Elder_TraditionKeeper3_BullCeremony2Coward_Picturepuzzle"
+        "Name": "RQ_Elder_TraditionKeeper3_BullCeremony2Coward_Picturepuzzle",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -61674,7 +61967,8 @@
     "Values": {
       "Standard": {
         "GUID": 118769,
-        "Name": "RQ_Elders_TraditionKeeper4_BullCeremony3_Photo"
+        "Name": "RQ_Elders_TraditionKeeper4_BullCeremony3_Photo",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -61719,32 +62013,6 @@
             }
           }
         },
-        "OnQuestSucceeded": {
-          "IsBaseAutoCreateAsset": 1,
-          "Values": {
-            "ActionList": {
-              "Actions": {
-                "Item": {
-                  "Action": {
-                    "Template": "ActionForceNewspaper",
-                    "Values": {
-                      "Action": "",
-                      "ActionForceNewspaper": {
-                        "Articles": {
-                          "Item": {
-                            "Article": 118365
-                          }
-                        },
-                        "OpenNewspaperUI": 1,
-                        "OpenNewspaperType": "SpecialEdition"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
         "OnQuestEnd": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
@@ -61764,6 +62032,19 @@
                       }
                     }
                   }
+                }
+              }
+            }
+          }
+        },
+        "OnPhotographySuccessNewspaperAction": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionForceNewspaper": {
+              "Articles": {
+                "Item": {
+                  "Article": 118365
                 }
               }
             }
@@ -61961,7 +62242,8 @@
     "Values": {
       "Standard": {
         "GUID": 118762,
-        "Name": "RQ_Shepherd_KidsNowadays4_Compensation_StatusQuo"
+        "Name": "RQ_Shepherd_KidsNowadays4_Compensation_StatusQuo",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -61975,7 +62257,7 @@
                 "NotificationText": 118424
               },
               "NotificationSubtitle": {
-                "Subtitle": 118422
+                "Subtitle": 122009
               }
             }
           }
@@ -62262,7 +62544,8 @@
     "Values": {
       "Standard": {
         "GUID": 118784,
-        "Name": "RQ_Elders_IamTheSenate4_RuiningReputation2_Photo"
+        "Name": "RQ_Elders_IamTheSenate4_RuiningReputation2_Photo",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -62295,27 +62578,14 @@
             }
           }
         },
-        "OnQuestSucceeded": {
+        "OnPhotographySuccessNewspaperAction": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
-            "ActionList": {
-              "Actions": {
+            "Action": "",
+            "ActionForceNewspaper": {
+              "Articles": {
                 "Item": {
-                  "Action": {
-                    "Template": "ActionForceNewspaper",
-                    "Values": {
-                      "Action": "",
-                      "ActionForceNewspaper": {
-                        "Articles": {
-                          "Item": {
-                            "Article": 118694
-                          }
-                        },
-                        "OpenNewspaperUI": 1,
-                        "OpenNewspaperType": "SpecialEdition"
-                      }
-                    }
-                  }
+                  "Article": 118694
                 }
               }
             }
@@ -62503,7 +62773,8 @@
     "Values": {
       "Standard": {
         "GUID": 118881,
-        "Name": "RQ_Elder_HigherByNature4B_BringJoy_Deliver"
+        "Name": "RQ_Elder_HigherByNature4B_BringJoy_Deliver",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -62795,6 +63066,14 @@
                     ]
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -62873,7 +63152,8 @@
     "Values": {
       "Standard": {
         "GUID": 118862,
-        "Name": "RQ_Elder_SetRightExemple2_Sustain"
+        "Name": "RQ_Elder_SetRightExemple2_Sustain",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -63055,7 +63335,8 @@
     "Values": {
       "Standard": {
         "GUID": 119010,
-        "Name": "RQ_Scholar_ANightToRemember1_Farmer_Select"
+        "Name": "RQ_Scholar_ANightToRemember1_Farmer_Select",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -63521,7 +63802,8 @@
     "Values": {
       "Standard": {
         "GUID": 119005,
-        "Name": "RQ_Scholar_HauteCouture1_FindPaulPoiret_Picturepuzzle"
+        "Name": "RQ_Scholar_HauteCouture1_FindPaulPoiret_Picturepuzzle",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -63616,7 +63898,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 1010243
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -63634,7 +63917,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 1010255
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -63897,7 +64181,8 @@
     "Values": {
       "Standard": {
         "GUID": 119006,
-        "Name": "RQ_Scholar_HauteCouture2_Inspiration_Deliver"
+        "Name": "RQ_Scholar_HauteCouture2_Inspiration_Deliver",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -64106,6 +64391,14 @@
                     ]
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -64184,7 +64477,8 @@
     "Values": {
       "Standard": {
         "GUID": 119007,
-        "Name": "RQ_Scholar_HauteCouture3_BuildingStage_Deliver"
+        "Name": "RQ_Scholar_HauteCouture3_BuildingStage_Deliver",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -64381,6 +64675,14 @@
                     ]
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -64459,7 +64761,8 @@
     "Values": {
       "Standard": {
         "GUID": 119002,
-        "Name": "RQ_Scholar_HatingYouDearly1_ALetter_Select"
+        "Name": "RQ_Scholar_HatingYouDearly1_ALetter_Select",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -64796,7 +65099,8 @@
     "Values": {
       "Standard": {
         "GUID": 118998,
-        "Name": "RQ_Scholar_SeekerKnowledge1_StartResearch_StatusQuo"
+        "Name": "RQ_Scholar_SeekerKnowledge1_StartResearch_StatusQuo",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -64908,7 +65212,8 @@
                         "Condition": "",
                         "ConditionUnlocked": {
                           "UnlockNeeded": 1010255
-                        }
+                        },
+                        "ConditionPropsNegatable": ""
                       }
                     }
                   }
@@ -65034,7 +65339,8 @@
     "Values": {
       "Standard": {
         "GUID": 119001,
-        "Name": "RQ_Scholar_SeekerKnowledge4_NobelPrize_Photo"
+        "Name": "RQ_Scholar_SeekerKnowledge4_NobelPrize_Photo",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -65097,32 +65403,6 @@
             }
           }
         },
-        "OnQuestSucceeded": {
-          "IsBaseAutoCreateAsset": 1,
-          "Values": {
-            "ActionList": {
-              "Actions": {
-                "Item": {
-                  "Action": {
-                    "Template": "ActionForceNewspaper",
-                    "Values": {
-                      "Action": "",
-                      "ActionForceNewspaper": {
-                        "Articles": {
-                          "Item": {
-                            "Article": 119911
-                          }
-                        },
-                        "OpenNewspaperUI": 1,
-                        "OpenNewspaperType": "SpecialEdition"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
         "OnQuestEnd": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
@@ -65143,6 +65423,19 @@
                       }
                     }
                   }
+                }
+              }
+            }
+          }
+        },
+        "OnPhotographySuccessNewspaperAction": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionForceNewspaper": {
+              "Articles": {
+                "Item": {
+                  "Article": 119911
                 }
               }
             }
@@ -65332,7 +65625,8 @@
     "Values": {
       "Standard": {
         "GUID": 118996,
-        "Name": "RQ_Scholar_Virus1_Deliver"
+        "Name": "RQ_Scholar_Virus1_Deliver",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -65473,6 +65767,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -65551,7 +65853,8 @@
     "Values": {
       "Standard": {
         "GUID": 118990,
-        "Name": "RQ_Scholar_ACleanShave_Select"
+        "Name": "RQ_Scholar_ACleanShave_Select",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -65914,7 +66217,8 @@
     "Values": {
       "Standard": {
         "GUID": 118994,
-        "Name": "RQ_Scholar_SizeMatters_Collect"
+        "Name": "RQ_Scholar_SizeMatters_Collect",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -66203,7 +66507,8 @@
     "Values": {
       "Standard": {
         "GUID": 118995,
-        "Name": "RQ_Scholar_EnergyDrink_Deliver"
+        "Name": "RQ_Scholar_EnergyDrink_Deliver",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -66363,6 +66668,14 @@
                     ]
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -66441,7 +66754,8 @@
     "Values": {
       "Standard": {
         "GUID": 119016,
-        "Name": "RQ_Scholar_ANightToRemember2_Engineer_Select"
+        "Name": "RQ_Scholar_ANightToRemember2_Engineer_Select",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -66874,7 +67188,8 @@
     "Values": {
       "Standard": {
         "GUID": 119017,
-        "Name": "RQ_Scholar_ANightToRemember3_Worker_Select"
+        "Name": "RQ_Scholar_ANightToRemember3_Worker_Select",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -67307,7 +67622,8 @@
     "Values": {
       "Standard": {
         "GUID": 119018,
-        "Name": "RQ_Scholar_ANightToRemember4_Investor_Select"
+        "Name": "RQ_Scholar_ANightToRemember4_Investor_Select",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -67704,7 +68020,8 @@
     "Values": {
       "Standard": {
         "GUID": 119008,
-        "Name": "RQ_Scholar_HauteCouture4_RecruitModel_Transport"
+        "Name": "RQ_Scholar_HauteCouture4_RecruitModel_Transport",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -67744,49 +68061,30 @@
           "Values": {
             "ActionList": {
               "Actions": {
-                "Item": [
-                  {
-                    "Action": {
-                      "Template": "ActionForceNewspaper",
-                      "Values": {
-                        "Action": "",
-                        "ActionForceNewspaper": {
-                          "Articles": {
-                            "Item": {
-                              "Article": 130838
-                            }
-                          },
-                          "OpenNewspaperUI": 1,
-                          "OpenNewspaperType": "SpecialEdition"
-                        }
-                      }
-                    }
-                  },
-                  {
-                    "Action": {
-                      "Template": "ActionDelayedActions",
-                      "Values": {
-                        "Action": "",
-                        "ActionDelayedActions": {
-                          "ExecutionDelay": 600000,
-                          "DelayedActions": {
-                            "IsBaseAutoCreateAsset": 1,
-                            "Values": {
-                              "ActionList": {
-                                "Actions": {
-                                  "Item": {
-                                    "Action": {
-                                      "Template": "ActionStartObjectSequence",
-                                      "Values": {
-                                        "Action": "",
-                                        "ActionStartObjectSequence": {
-                                          "SetLocalFeedbackSequence": 1
-                                        },
-                                        "ObjectFilter": {
-                                          "ObjectGUID": 118940,
-                                          "CheckParticipantID": 1,
-                                          "CheckProcessingParticipantID": 1
-                                        }
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "ExecutionDelay": 600000,
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionStartObjectSequence",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionStartObjectSequence": {
+                                        "SetLocalFeedbackSequence": 1
+                                      },
+                                      "ObjectFilter": {
+                                        "ObjectGUID": 118940,
+                                        "CheckParticipantID": 1,
+                                        "CheckProcessingParticipantID": 1
                                       }
                                     }
                                   }
@@ -67798,7 +68096,20 @@
                       }
                     }
                   }
-                ]
+                }
+              }
+            }
+          }
+        },
+        "OnPhotographySuccessNewspaperAction": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionForceNewspaper": {
+              "Articles": {
+                "Item": {
+                  "Article": 130838
+                }
               }
             }
           }
@@ -68130,7 +68441,8 @@
     "Values": {
       "Standard": {
         "GUID": 119003,
-        "Name": "RQ_Scholar_HatingYouDearly2_Flowers_PicturePuzzle"
+        "Name": "RQ_Scholar_HatingYouDearly2_Flowers_PicturePuzzle",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -68468,7 +68780,8 @@
     "Values": {
       "Standard": {
         "GUID": 119004,
-        "Name": "RQ_Scholar_HatingYouDearly3_Theater_Select"
+        "Name": "RQ_Scholar_HatingYouDearly3_Theater_Select",
+        "Version": "dlc06"
       },
       "Quest": {
         "InvitationMessage": {
@@ -68884,7 +69197,8 @@
     "Values": {
       "Standard": {
         "GUID": 118999,
-        "Name": "RQ_Scholar_SeekerKnowledge_Glass_Deliver"
+        "Name": "RQ_Scholar_SeekerKnowledge_Glass_Deliver",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -69048,6 +69362,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -69126,7 +69448,8 @@
     "Values": {
       "Standard": {
         "GUID": 119000,
-        "Name": "RQ_Scholar_SeekerKnowledge_Caoutchouc_Deliver"
+        "Name": "RQ_Scholar_SeekerKnowledge_Caoutchouc_Deliver",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -69276,6 +69599,14 @@
                     }
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -69354,7 +69685,8 @@
     "Values": {
       "Standard": {
         "GUID": 118997,
-        "Name": "RQ_Scholar_Virus2_Deliver"
+        "Name": "RQ_Scholar_Virus2_Deliver",
+        "Version": "dlc06"
       },
       "Quest": {
         "SuccessMessage": {
@@ -69511,6 +69843,14 @@
                     ]
                   },
                   "DeliveryType": "Area",
+                  "DeliveryExecutionPlace": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectClientQuestObject": "",
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
                   "UseQuestArea": 1
                 },
                 "ConditionQuestObjective": {
@@ -69582,6 +69922,508 @@
           }
         }
       }
+    }
+  },
+  {
+    "Template": "Quest",
+    "Values": {
+      "Standard": {
+        "GUID": 134983,
+        "Name": "Hidden_AgeofExplorationUnlock"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "SelectionReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "AbortedManuallyMessage": {
+          "SuppressMessage": 1
+        },
+        "AbortedAutomaticallyMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "EscortShipSelectedMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "ResolveConfirmationMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestGiver": 132724,
+        "MaxCallOut": 1,
+        "MaxSolveCount": 1,
+        "MaxAbortCount": 1,
+        "CountForQuestLimit": 0,
+        "QuestTimeLimit": 0,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "ReputationQuestFail": {
+          "ReputationFailList": ""
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Age of Exploration Trigger"
+          }
+        }
+      },
+      "Reward": {
+        "RewardAssets": "",
+        "RewardReputation": ""
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": [
+            {
+              "Objective": {
+                "Template": "ItemUsageObjective",
+                "Values": {
+                  "ConditionQuestObjective": {
+                    "IsVisibleInQuestTracker": 0,
+                    "ObjectiveSignsAndFeedback": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionObjectiveSignsAndFeedback": {
+                          "Infolayer": 0,
+                          "MinimapToken": 0,
+                          "ShowMinimapToken": 0
+                        }
+                      }
+                    },
+                    "JumpToVisibility": "Hide"
+                  },
+                  "ConditionQuestItemUsed": {
+                    "UseItems": {
+                      "Item": {
+                        "Item": 115469,
+                        "Amount": 1,
+                        "TargetObject": 100455
+                      }
+                    }
+                  },
+                  "ConditionPropsSessionSettings": "",
+                  "ConditionPropsExecutionPlaceSettings": ""
+                }
+              }
+            },
+            {
+              "Objective": {
+                "Template": "ItemUsageObjective",
+                "Values": {
+                  "ConditionQuestObjective": {
+                    "IsVisibleInQuestTracker": 0,
+                    "ObjectiveSignsAndFeedback": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionObjectiveSignsAndFeedback": {
+                          "Infolayer": 0,
+                          "MinimapToken": 0,
+                          "ShowMinimapToken": 0
+                        }
+                      }
+                    },
+                    "JumpToVisibility": "Hide"
+                  },
+                  "ConditionQuestItemUsed": {
+                    "UseItems": {
+                      "Item": {
+                        "Item": 191084,
+                        "Amount": 1,
+                        "TargetObject": 100455
+                      }
+                    }
+                  },
+                  "ConditionPropsSessionSettings": "",
+                  "ConditionPropsExecutionPlaceSettings": ""
+                }
+              }
+            },
+            {
+              "Objective": {
+                "Template": "ItemUsageObjective",
+                "Values": {
+                  "ConditionQuestObjective": {
+                    "IsVisibleInQuestTracker": 0,
+                    "ObjectiveSignsAndFeedback": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionObjectiveSignsAndFeedback": {
+                          "Infolayer": 0,
+                          "MinimapToken": 0,
+                          "ShowMinimapToken": 0
+                        }
+                      }
+                    },
+                    "JumpToVisibility": "Hide"
+                  },
+                  "ConditionQuestItemUsed": {
+                    "UseItems": {
+                      "Item": {
+                        "Item": 190448,
+                        "Amount": 1,
+                        "TargetObject": 100455
+                      }
+                    }
+                  },
+                  "ConditionPropsSessionSettings": "",
+                  "ConditionPropsExecutionPlaceSettings": ""
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "A7_QuestPhotography",
+                    "Index": 0
+                  }
+                }
+              },
+              "Objective": {
+                "Template": "ItemUsageObjective",
+                "Values": {
+                  "ConditionQuestObjective": {
+                    "IsVisibleInQuestTracker": 0,
+                    "ObjectiveSignsAndFeedback": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionObjectiveSignsAndFeedback": {
+                          "Infolayer": 0,
+                          "MinimapToken": 0,
+                          "ShowMinimapToken": 0
+                        }
+                      }
+                    },
+                    "JumpToVisibility": "Hide"
+                  },
+                  "ConditionQuestItemUsed": {
+                    "UseItems": {
+                      "Item": {
+                        "Item": 116040,
+                        "Amount": 1,
+                        "TargetObject": 100455
+                      }
+                    }
+                  },
+                  "ConditionPropsSessionSettings": "",
+                  "ConditionPropsExecutionPlaceSettings": ""
+                }
+              }
+            },
+            {
+              "Objective": {
+                "Template": "ItemUsageObjective",
+                "Values": {
+                  "ConditionQuestObjective": {
+                    "IsVisibleInQuestTracker": 0,
+                    "ObjectiveSignsAndFeedback": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionObjectiveSignsAndFeedback": {
+                          "Infolayer": 0,
+                          "MinimapToken": 0,
+                          "ShowMinimapToken": 0
+                        }
+                      }
+                    },
+                    "JumpToVisibility": "Hide"
+                  },
+                  "ConditionQuestItemUsed": {
+                    "UseItems": {
+                      "Item": {
+                        "Item": 115470,
+                        "Amount": 1,
+                        "TargetObject": 100455
+                      }
+                    }
+                  },
+                  "ConditionPropsSessionSettings": "",
+                  "ConditionPropsExecutionPlaceSettings": ""
+                }
+              }
+            },
+            {
+              "Objective": {
+                "Template": "ItemUsageObjective",
+                "Values": {
+                  "ConditionQuestObjective": {
+                    "IsVisibleInQuestTracker": 0,
+                    "ObjectiveSignsAndFeedback": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ConditionObjectiveSignsAndFeedback": {
+                          "Infolayer": 0,
+                          "MinimapToken": 0,
+                          "ShowMinimapToken": 0
+                        }
+                      }
+                    },
+                    "JumpToVisibility": "Hide"
+                  },
+                  "ConditionQuestItemUsed": {
+                    "UseItems": {
+                      "Item": {
+                        "Item": 115273,
+                        "Amount": 1,
+                        "TargetObject": 100455
+                      }
+                    }
+                  },
+                  "ConditionPropsSessionSettings": "",
+                  "ConditionPropsExecutionPlaceSettings": ""
+                }
+              }
+            }
+          ]
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "Quest",
+    "Values": {
+      "Standard": {
+        "GUID": 134984,
+        "Name": "Hidden_HommardLitTerroirUnlock"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "SelectionReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "AbortedManuallyMessage": {
+          "SuppressMessage": 1
+        },
+        "AbortedAutomaticallyMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "EscortShipSelectedMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "ResolveConfirmationMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestGiver": 132724,
+        "MaxCallOut": 1,
+        "MaxSolveCount": 1,
+        "MaxAbortCount": 1,
+        "CountForQuestLimit": 0,
+        "QuestTimeLimit": 0,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "ReputationQuestFail": {
+          "ReputationFailList": ""
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Age of Exploration Trigger"
+          }
+        }
+      },
+      "Reward": {
+        "RewardAssets": "",
+        "RewardReputation": ""
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "ItemUsageObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "IsVisibleInQuestTracker": 0,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  },
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestItemUsed": {
+                  "UseItems": {
+                    "Item": {
+                      "Item": 125136,
+                      "Amount": 1,
+                      "TargetObject": 117860
+                    }
+                  }
+                },
+                "ConditionPropsSessionSettings": "",
+                "ConditionPropsExecutionPlaceSettings": ""
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
+    }
+  },
+  {
+    "Template": "Quest",
+    "Values": {
+      "Standard": {
+        "GUID": 135736,
+        "Name": "HomeGoods_04_Quest_Refrigerator",
+        "Version": "dlc09"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "SuppressMessage": 1
+        },
+        "SelectionReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "AbortedManuallyMessage": {
+          "SuppressMessage": 1
+        },
+        "AbortedAutomaticallyMessage": {
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "EscortShipSelectedMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "ResolveConfirmationMessage": {
+          "SuppressMessage": 1
+        },
+        "QuestGiver": 135683,
+        "MaxCallOut": 1,
+        "MaxSolveCount": 1,
+        "MaxAbortCount": 1,
+        "CountForQuestLimit": 0,
+        "QuestTimeLimit": 0,
+        "QuestCategory": "RandomQuest",
+        "QuestTrackerVisibility": "Never",
+        "HasExclusiveQuestGiver": 0,
+        "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_quest_high_life.png",
+        "ReputationQuestFail": {
+          "ReputationFailList": ""
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Fridge Trigger"
+          }
+        }
+      },
+      "Reward": {
+        "RewardAssets": "",
+        "RewardReputation": ""
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "ItemUsageObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "IsVisibleInQuestTracker": 0,
+                  "ObjectiveSignsAndFeedback": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ConditionObjectiveSignsAndFeedback": {
+                        "Infolayer": 0,
+                        "MinimapToken": 0,
+                        "ShowMinimapToken": 0
+                      }
+                    }
+                  },
+                  "JumpToVisibility": "Hide"
+                },
+                "ConditionQuestItemUsed": {
+                  "UseItems": {
+                    "Item": {
+                      "Item": 116188,
+                      "Amount": 1,
+                      "TargetObject": 100415
+                    }
+                  }
+                },
+                "ConditionPropsSessionSettings": "",
+                "ConditionPropsExecutionPlaceSettings": ""
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": ""
     }
   }
 ]

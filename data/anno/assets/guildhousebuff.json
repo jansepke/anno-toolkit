@@ -464,17 +464,9 @@
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": [
-            {
-              "GUID": 190779
-            },
-            {
-              "GUID": 1010339
-            },
-            {
-              "GUID": 101262
-            }
-          ]
+          "Item": {
+            "GUID": 193400
+          }
         }
       },
       "Text": {
@@ -489,7 +481,7 @@
       },
       "FactoryUpgrade": {
         "ProductivityUpgrade": {
-          "Value": 5,
+          "Value": 10,
           "Percental": 1
         }
       },
@@ -499,7 +491,7 @@
           "Percental": 1
         },
         "WorkforceAmountUpgrade": {
-          "Value": -10,
+          "Value": -5,
           "Percental": 1
         }
       },
@@ -665,11 +657,15 @@
       },
       "FactoryUpgrade": {
         "ProductivityUpgrade": {
-          "Value": 5,
+          "Value": 10,
           "Percental": 1
         }
       },
       "BuildingUpgrade": {
+        "MaintenanceUpgrade": {
+          "Value": -5,
+          "Percental": 1
+        },
         "WorkforceAmountUpgrade": {
           "Value": -5,
           "Percental": 1
@@ -706,6 +702,9 @@
             },
             {
               "GUID": 190886
+            },
+            {
+              "GUID": 194008
             }
           ]
         }
@@ -720,12 +719,24 @@
         },
         "LineID": 21934
       },
-      "FactoryUpgrade": "",
+      "FactoryUpgrade": {
+        "ProductivityUpgrade": {
+          "Value": 5,
+          "Percental": 1
+        },
+        "AdditionalOutput": {
+          "Item": {
+            "ForceProductSameAsFactoryOutput": 1,
+            "AdditionalOutputCycle": 10,
+            "Amount": 1
+          }
+        }
+      },
       "BuildingUpgrade": "",
       "Buff": "",
       "CultureUpgrade": {
         "AttractivenessUpgrade": {
-          "Value": 2
+          "Value": 5
         }
       },
       "ModuleOwnerUpgrade": "",
@@ -1253,7 +1264,8 @@
       "Standard": {
         "GUID": 110980,
         "Name": "Anarchy Newspaper Debuff",
-        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_anarchist_newspaper_pack_1.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_anarchist_newspaper_pack_1.png",
+        "Version": "dm"
       },
       "ItemEffect": "",
       "Text": {
@@ -1291,7 +1303,8 @@
       "Standard": {
         "GUID": 110996,
         "Name": "Inflammable Kit Buff",
-        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_bomb_recipe_1.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_bomb_recipe_1.png",
+        "Version": "dm"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -1339,7 +1352,8 @@
       "Standard": {
         "GUID": 110997,
         "Name": "Phosphorus Dissolution Recipe Buff",
-        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_bomb_recipe_2.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_bomb_recipe_2.png",
+        "Version": "dm"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -1387,7 +1401,8 @@
       "Standard": {
         "GUID": 112913,
         "Name": "Small Oil powered Gold Panning Machine Buff",
-        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_gold_ore_finder_3.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_gold_ore_finder_3.png",
+        "Version": "dlc01"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -1401,9 +1416,10 @@
           "English": {
             "Text": "Mechanical Panner",
             "Status": "Exported",
-            "ExportCount": 1
+            "ExportCount": 2
           }
-        }
+        },
+        "LineID": 52550
       },
       "FactoryUpgrade": {
         "AdditionalOutput": {
@@ -1436,7 +1452,8 @@
       "Standard": {
         "GUID": 112914,
         "Name": "Medium Oil powered Gold Panning Machine Buff",
-        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_gold_ore_finder_2.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_gold_ore_finder_2.png",
+        "Version": "dlc01"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -1450,9 +1467,10 @@
           "English": {
             "Text": "Gyroscopic Gold Panner",
             "Status": "Exported",
-            "ExportCount": 1
+            "ExportCount": 2
           }
-        }
+        },
+        "LineID": 52551
       },
       "FactoryUpgrade": {
         "AdditionalOutput": {
@@ -1485,7 +1503,8 @@
       "Standard": {
         "GUID": 112915,
         "Name": "Big Medium Oil powered Gold Panning Machine Buff",
-        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_gold_ore_finder_1.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_gold_ore_finder_1.png",
+        "Version": "dlc01"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -1499,9 +1518,10 @@
           "English": {
             "Text": "Prospector Of Auspiciousness",
             "Status": "Exported",
-            "ExportCount": 1
+            "ExportCount": 2
           }
-        }
+        },
+        "LineID": 52552
       },
       "FactoryUpgrade": {
         "AdditionalOutput": {
@@ -1534,7 +1554,8 @@
       "Standard": {
         "GUID": 112916,
         "Name": "Small Ore Finder Buff",
-        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_ore_finder_3.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_ore_finder_3.png",
+        "Version": "dlc01"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -1548,9 +1569,10 @@
           "English": {
             "Text": "Ore Extractor",
             "Status": "Exported",
-            "ExportCount": 1
+            "ExportCount": 2
           }
-        }
+        },
+        "LineID": 52553
       },
       "FactoryUpgrade": {
         "AdditionalOutput": {
@@ -1590,7 +1612,8 @@
       "Standard": {
         "GUID": 112917,
         "Name": "Medium Ore Finder Buff",
-        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_ore_finder_2.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_ore_finder_2.png",
+        "Version": "dlc01"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -1604,9 +1627,10 @@
           "English": {
             "Text": "Extra Ore Extractor",
             "Status": "Exported",
-            "ExportCount": 1
+            "ExportCount": 2
           }
-        }
+        },
+        "LineID": 52554
       },
       "FactoryUpgrade": {
         "AdditionalOutput": {
@@ -1646,7 +1670,8 @@
       "Standard": {
         "GUID": 112918,
         "Name": "Big Ore Finder Buff",
-        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_ore_finder_1.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_ore_finder_1.png",
+        "Version": "dlc01"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -1660,9 +1685,10 @@
           "English": {
             "Text": "Extractor of Ore-someness",
             "Status": "Exported",
-            "ExportCount": 1
+            "ExportCount": 2
           }
-        }
+        },
+        "LineID": 52555
       },
       "FactoryUpgrade": {
         "AdditionalOutput": {
@@ -1702,7 +1728,8 @@
       "Standard": {
         "GUID": 112919,
         "Name": "Small Oil Extractor Buff",
-        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_oil_extractor_3.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_oil_extractor_3.png",
+        "Version": "dlc01"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -1718,7 +1745,8 @@
             "Status": "Exported",
             "ExportCount": 1
           }
-        }
+        },
+        "LineID": 32360
       },
       "FactoryUpgrade": {
         "AdditionalOutput": {
@@ -1751,7 +1779,8 @@
       "Standard": {
         "GUID": 112920,
         "Name": "Medium Oil Extractor Buff",
-        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_oil_extractor_2.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_oil_extractor_2.png",
+        "Version": "dlc01"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -1767,7 +1796,8 @@
             "Status": "Exported",
             "ExportCount": 1
           }
-        }
+        },
+        "LineID": 32361
       },
       "FactoryUpgrade": {
         "AdditionalOutput": {
@@ -1800,7 +1830,8 @@
       "Standard": {
         "GUID": 112921,
         "Name": "Big Oil Extractor Buff",
-        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_oil_extractor_1.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_oil_extractor_1.png",
+        "Version": "dlc01"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -1816,7 +1847,8 @@
             "Status": "Exported",
             "ExportCount": 1
           }
-        }
+        },
+        "LineID": 32362
       },
       "FactoryUpgrade": {
         "AdditionalOutput": {
@@ -1849,13 +1881,19 @@
       "Standard": {
         "GUID": 249967,
         "Name": "Ministry of Productivity - Base Buff",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": {
-            "GUID": 193856
-          }
+          "Item": [
+            {
+              "GUID": 193856
+            },
+            {
+              "GUID": 194027
+            }
+          ]
         }
       },
       "Text": {
@@ -1892,13 +1930,19 @@
       "Standard": {
         "GUID": 269482,
         "Name": "Ministry of Productivity - Paragon_01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": {
-            "GUID": 193856
-          }
+          "Item": [
+            {
+              "GUID": 193856
+            },
+            {
+              "GUID": 194027
+            }
+          ]
         }
       },
       "Text": {
@@ -1935,13 +1979,19 @@
       "Standard": {
         "GUID": 269483,
         "Name": "Ministry of Productivity - Paragon_02",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": {
-            "GUID": 193856
-          }
+          "Item": [
+            {
+              "GUID": 193856
+            },
+            {
+              "GUID": 194027
+            }
+          ]
         }
       },
       "Text": {
@@ -1978,13 +2028,19 @@
       "Standard": {
         "GUID": 269484,
         "Name": "Ministry of Productivity - Paragon_03",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": {
-            "GUID": 193856
-          }
+          "Item": [
+            {
+              "GUID": 193856
+            },
+            {
+              "GUID": 194027
+            }
+          ]
         }
       },
       "Text": {
@@ -2021,13 +2077,19 @@
       "Standard": {
         "GUID": 269485,
         "Name": "Ministry of Productivity - Paragon_04",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": {
-            "GUID": 193856
-          }
+          "Item": [
+            {
+              "GUID": 193856
+            },
+            {
+              "GUID": 194027
+            }
+          ]
         }
       },
       "Text": {
@@ -2064,13 +2126,19 @@
       "Standard": {
         "GUID": 269486,
         "Name": "Ministry of Productivity - Paragon_05",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": {
-            "GUID": 193856
-          }
+          "Item": [
+            {
+              "GUID": 193856
+            },
+            {
+              "GUID": 194027
+            }
+          ]
         }
       },
       "Text": {
@@ -2107,13 +2175,19 @@
       "Standard": {
         "GUID": 269487,
         "Name": "Ministry of Productivity - Paragon_06",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": {
-            "GUID": 193856
-          }
+          "Item": [
+            {
+              "GUID": 193856
+            },
+            {
+              "GUID": 194027
+            }
+          ]
         }
       },
       "Text": {
@@ -2150,13 +2224,19 @@
       "Standard": {
         "GUID": 269488,
         "Name": "Ministry of Productivity - Paragon_07",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": {
-            "GUID": 193856
-          }
+          "Item": [
+            {
+              "GUID": 193856
+            },
+            {
+              "GUID": 194027
+            }
+          ]
         }
       },
       "Text": {
@@ -2193,13 +2273,19 @@
       "Standard": {
         "GUID": 269489,
         "Name": "Ministry of Productivity - Paragon_08",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": {
-            "GUID": 193856
-          }
+          "Item": [
+            {
+              "GUID": 193856
+            },
+            {
+              "GUID": 194027
+            }
+          ]
         }
       },
       "Text": {
@@ -2236,13 +2322,19 @@
       "Standard": {
         "GUID": 269490,
         "Name": "Ministry of Productivity - Paragon_09",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": {
-            "GUID": 193856
-          }
+          "Item": [
+            {
+              "GUID": 193856
+            },
+            {
+              "GUID": 194027
+            }
+          ]
         }
       },
       "Text": {
@@ -2279,13 +2371,19 @@
       "Standard": {
         "GUID": 269491,
         "Name": "Ministry of Productivity - Paragon_10",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": {
-            "GUID": 193856
-          }
+          "Item": [
+            {
+              "GUID": 193856
+            },
+            {
+              "GUID": 194027
+            }
+          ]
         }
       },
       "Text": {
@@ -2322,13 +2420,19 @@
       "Standard": {
         "GUID": 269686,
         "Name": "Ministry of Productivity - Paragon_11",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": {
-            "GUID": 193856
-          }
+          "Item": [
+            {
+              "GUID": 193856
+            },
+            {
+              "GUID": 194027
+            }
+          ]
         }
       },
       "Text": {
@@ -2365,13 +2469,19 @@
       "Standard": {
         "GUID": 269687,
         "Name": "Ministry of Productivity - Paragon_12",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": {
-            "GUID": 193856
-          }
+          "Item": [
+            {
+              "GUID": 193856
+            },
+            {
+              "GUID": 194027
+            }
+          ]
         }
       },
       "Text": {
@@ -2408,13 +2518,19 @@
       "Standard": {
         "GUID": 269688,
         "Name": "Ministry of Productivity - Paragon_13",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": {
-            "GUID": 193856
-          }
+          "Item": [
+            {
+              "GUID": 193856
+            },
+            {
+              "GUID": 194027
+            }
+          ]
         }
       },
       "Text": {
@@ -2451,13 +2567,19 @@
       "Standard": {
         "GUID": 269689,
         "Name": "Ministry of Productivity - Paragon_14",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": {
-            "GUID": 193856
-          }
+          "Item": [
+            {
+              "GUID": 193856
+            },
+            {
+              "GUID": 194027
+            }
+          ]
         }
       },
       "Text": {
@@ -2494,13 +2616,19 @@
       "Standard": {
         "GUID": 269690,
         "Name": "Ministry of Productivity - Paragon_15",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": {
-            "GUID": 193856
-          }
+          "Item": [
+            {
+              "GUID": 193856
+            },
+            {
+              "GUID": 194027
+            }
+          ]
         }
       },
       "Text": {
@@ -2537,13 +2665,19 @@
       "Standard": {
         "GUID": 269691,
         "Name": "Ministry of Productivity - Paragon_16",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": {
-            "GUID": 193856
-          }
+          "Item": [
+            {
+              "GUID": 193856
+            },
+            {
+              "GUID": 194027
+            }
+          ]
         }
       },
       "Text": {
@@ -2580,13 +2714,19 @@
       "Standard": {
         "GUID": 269692,
         "Name": "Ministry of Productivity - Paragon_17",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": {
-            "GUID": 193856
-          }
+          "Item": [
+            {
+              "GUID": 193856
+            },
+            {
+              "GUID": 194027
+            }
+          ]
         }
       },
       "Text": {
@@ -2623,13 +2763,19 @@
       "Standard": {
         "GUID": 269693,
         "Name": "Ministry of Productivity - Paragon_18",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": {
-            "GUID": 193856
-          }
+          "Item": [
+            {
+              "GUID": 193856
+            },
+            {
+              "GUID": 194027
+            }
+          ]
         }
       },
       "Text": {
@@ -2666,13 +2812,19 @@
       "Standard": {
         "GUID": 269694,
         "Name": "Ministry of Productivity - Paragon_19",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": {
-            "GUID": 193856
-          }
+          "Item": [
+            {
+              "GUID": 193856
+            },
+            {
+              "GUID": 194027
+            }
+          ]
         }
       },
       "Text": {
@@ -2709,13 +2861,19 @@
       "Standard": {
         "GUID": 269695,
         "Name": "Ministry of Productivity - Paragon_20",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": {
-            "GUID": 193856
-          }
+          "Item": [
+            {
+              "GUID": 193856
+            },
+            {
+              "GUID": 194027
+            }
+          ]
         }
       },
       "Text": {
@@ -2752,13 +2910,19 @@
       "Standard": {
         "GUID": 269696,
         "Name": "Ministry of Productivity - Paragon_21",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": {
-            "GUID": 193856
-          }
+          "Item": [
+            {
+              "GUID": 193856
+            },
+            {
+              "GUID": 194027
+            }
+          ]
         }
       },
       "Text": {
@@ -2795,13 +2959,19 @@
       "Standard": {
         "GUID": 269697,
         "Name": "Ministry of Productivity - Paragon_22",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": {
-            "GUID": 193856
-          }
+          "Item": [
+            {
+              "GUID": 193856
+            },
+            {
+              "GUID": 194027
+            }
+          ]
         }
       },
       "Text": {
@@ -2838,13 +3008,19 @@
       "Standard": {
         "GUID": 269698,
         "Name": "Ministry of Productivity - Paragon_23",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": {
-            "GUID": 193856
-          }
+          "Item": [
+            {
+              "GUID": 193856
+            },
+            {
+              "GUID": 194027
+            }
+          ]
         }
       },
       "Text": {
@@ -2881,13 +3057,19 @@
       "Standard": {
         "GUID": 269699,
         "Name": "Ministry of Productivity - Paragon_24",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": {
-            "GUID": 193856
-          }
+          "Item": [
+            {
+              "GUID": 193856
+            },
+            {
+              "GUID": 194027
+            }
+          ]
         }
       },
       "Text": {
@@ -2924,13 +3106,19 @@
       "Standard": {
         "GUID": 269700,
         "Name": "Ministry of Productivity - Paragon_25",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_industry_technology.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": {
-            "GUID": 193856
-          }
+          "Item": [
+            {
+              "GUID": 193856
+            },
+            {
+              "GUID": 194027
+            }
+          ]
         }
       },
       "Text": {
@@ -2967,7 +3155,8 @@
       "Standard": {
         "GUID": 249968,
         "Name": "Ministry of Public Services - Base Buff",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -3016,7 +3205,8 @@
       "Standard": {
         "GUID": 269502,
         "Name": "Ministry of Public Services - Paragon_01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -3065,7 +3255,8 @@
       "Standard": {
         "GUID": 269511,
         "Name": "Ministry of Public Services - Paragon_02",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -3114,7 +3305,8 @@
       "Standard": {
         "GUID": 269512,
         "Name": "Ministry of Public Services - Paragon_03",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -3163,7 +3355,8 @@
       "Standard": {
         "GUID": 269513,
         "Name": "Ministry of Public Services - Paragon_04",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -3212,7 +3405,8 @@
       "Standard": {
         "GUID": 269514,
         "Name": "Ministry of Public Services - Paragon_05",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -3261,7 +3455,8 @@
       "Standard": {
         "GUID": 269515,
         "Name": "Ministry of Public Services - Paragon_06",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -3310,7 +3505,8 @@
       "Standard": {
         "GUID": 269516,
         "Name": "Ministry of Public Services - Paragon_07",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -3359,7 +3555,8 @@
       "Standard": {
         "GUID": 269517,
         "Name": "Ministry of Public Services - Paragon_08",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -3408,7 +3605,8 @@
       "Standard": {
         "GUID": 269518,
         "Name": "Ministry of Public Services - Paragon_09",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -3457,7 +3655,8 @@
       "Standard": {
         "GUID": 269519,
         "Name": "Ministry of Public Services - Paragon_10",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -3506,7 +3705,8 @@
       "Standard": {
         "GUID": 269716,
         "Name": "Ministry of Public Services - Paragon_11",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -3555,7 +3755,8 @@
       "Standard": {
         "GUID": 269717,
         "Name": "Ministry of Public Services - Paragon_12",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -3604,7 +3805,8 @@
       "Standard": {
         "GUID": 269718,
         "Name": "Ministry of Public Services - Paragon_13",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -3653,7 +3855,8 @@
       "Standard": {
         "GUID": 269719,
         "Name": "Ministry of Public Services - Paragon_14",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -3702,7 +3905,8 @@
       "Standard": {
         "GUID": 269720,
         "Name": "Ministry of Public Services - Paragon_15",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -3751,7 +3955,8 @@
       "Standard": {
         "GUID": 269721,
         "Name": "Ministry of Public Services - Paragon_16",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -3800,7 +4005,8 @@
       "Standard": {
         "GUID": 269722,
         "Name": "Ministry of Public Services - Paragon_17",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -3849,7 +4055,8 @@
       "Standard": {
         "GUID": 269723,
         "Name": "Ministry of Public Services - Paragon_18",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -3898,7 +4105,8 @@
       "Standard": {
         "GUID": 269724,
         "Name": "Ministry of Public Services - Paragon_19",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -3947,7 +4155,8 @@
       "Standard": {
         "GUID": 269725,
         "Name": "Ministry of Public Services - Paragon_20",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -3996,7 +4205,8 @@
       "Standard": {
         "GUID": 269726,
         "Name": "Ministry of Public Services - Paragon_21",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -4045,7 +4255,8 @@
       "Standard": {
         "GUID": 269727,
         "Name": "Ministry of Public Services - Paragon_22",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -4094,7 +4305,8 @@
       "Standard": {
         "GUID": 269728,
         "Name": "Ministry of Public Services - Paragon_23",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -4143,7 +4355,8 @@
       "Standard": {
         "GUID": 269729,
         "Name": "Ministry of Public Services - Paragon_24",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -4192,7 +4405,8 @@
       "Standard": {
         "GUID": 269730,
         "Name": "Ministry of Public Services - Paragon_25",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_department_domestic_affairs.png",
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -4241,13 +4455,20 @@
       "Standard": {
         "GUID": 269199,
         "Name": "Productivity - Decree 2 Buff",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_professional_development.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_professional_development.png",
+        "InfoDescription": 269436,
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": {
-            "GUID": 6000018
-          }
+          "Item": [
+            {
+              "GUID": 6000018
+            },
+            {
+              "GUID": 194027
+            }
+          ]
         }
       },
       "Text": {
@@ -4284,13 +4505,20 @@
       "Standard": {
         "GUID": 269201,
         "Name": "Productivity - Decree 4 Buff",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_efficiency_program.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_efficiency_program.png",
+        "InfoDescription": 269437,
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
-          "Item": {
-            "GUID": 193875
-          }
+          "Item": [
+            {
+              "GUID": 193875
+            },
+            {
+              "GUID": 194028
+            }
+          ]
         }
       },
       "Text": {
@@ -4328,7 +4556,8 @@
         "GUID": 269202,
         "Name": "Productivity - Decree 5 Buff",
         "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_union_impulse.png",
-        "InfoDescription": 269439
+        "InfoDescription": 269439,
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -4370,7 +4599,9 @@
       "Standard": {
         "GUID": 269191,
         "Name": "Productivity - Decree 1 Buff_01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_agricultural_subsidy.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_agricultural_subsidy.png",
+        "InfoDescription": 269415,
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -4416,7 +4647,9 @@
       "Standard": {
         "GUID": 269254,
         "Name": "Productivity - Decree 1 Buff_02",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_agricultural_subsidy.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_agricultural_subsidy.png",
+        "InfoDescription": 269415,
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -4462,7 +4695,9 @@
       "Standard": {
         "GUID": 269255,
         "Name": "Productivity - Decree 1 Buff_03",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_agricultural_subsidy.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_agricultural_subsidy.png",
+        "InfoDescription": 269415,
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -4508,7 +4743,9 @@
       "Standard": {
         "GUID": 269256,
         "Name": "Productivity - Decree 1 Buff_04",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_agricultural_subsidy.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_agricultural_subsidy.png",
+        "InfoDescription": 269415,
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -4554,7 +4791,9 @@
       "Standard": {
         "GUID": 269257,
         "Name": "Productivity - Decree 1 Buff_05",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_agricultural_subsidy.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_agricultural_subsidy.png",
+        "InfoDescription": 269415,
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -4600,7 +4839,9 @@
       "Standard": {
         "GUID": 269564,
         "Name": "Productivity - Decree 1 Buff_06",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_agricultural_subsidy.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_agricultural_subsidy.png",
+        "InfoDescription": 269415,
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -4646,7 +4887,9 @@
       "Standard": {
         "GUID": 269565,
         "Name": "Productivity - Decree 1 Buff_07",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_agricultural_subsidy.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_agricultural_subsidy.png",
+        "InfoDescription": 269415,
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -4692,7 +4935,9 @@
       "Standard": {
         "GUID": 269566,
         "Name": "Productivity - Decree 1 Buff_08",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_agricultural_subsidy.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_agricultural_subsidy.png",
+        "InfoDescription": 269415,
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -4738,7 +4983,9 @@
       "Standard": {
         "GUID": 269366,
         "Name": "Productivity - Decree 1 Buff Infotip",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_agricultural_subsidy.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_agricultural_subsidy.png",
+        "InfoDescription": 269415,
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -4821,7 +5068,9 @@
       "Standard": {
         "GUID": 269200,
         "Name": "Productivity - Decree 3 Buff_01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_manufacturing_reform.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_manufacturing_reform.png",
+        "InfoDescription": 269438,
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -4867,7 +5116,9 @@
       "Standard": {
         "GUID": 269275,
         "Name": "Productivity - Decree 3 Buff_02",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_manufacturing_reform.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_manufacturing_reform.png",
+        "InfoDescription": 269438,
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -4913,7 +5164,9 @@
       "Standard": {
         "GUID": 269276,
         "Name": "Productivity - Decree 3 Buff_03",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_manufacturing_reform.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_manufacturing_reform.png",
+        "InfoDescription": 269438,
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -4959,7 +5212,9 @@
       "Standard": {
         "GUID": 269277,
         "Name": "Productivity - Decree 3 Buff_04",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_manufacturing_reform.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_manufacturing_reform.png",
+        "InfoDescription": 269438,
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -5005,7 +5260,9 @@
       "Standard": {
         "GUID": 269278,
         "Name": "Productivity - Decree 3 Buff_05",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_manufacturing_reform.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_manufacturing_reform.png",
+        "InfoDescription": 269438,
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -5051,7 +5308,9 @@
       "Standard": {
         "GUID": 269279,
         "Name": "Productivity - Decree 3 Buff_06",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_manufacturing_reform.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_manufacturing_reform.png",
+        "InfoDescription": 269438,
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -5097,7 +5356,9 @@
       "Standard": {
         "GUID": 269280,
         "Name": "Productivity - Decree 3 Buff_07",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_manufacturing_reform.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_manufacturing_reform.png",
+        "InfoDescription": 269438,
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -5143,7 +5404,9 @@
       "Standard": {
         "GUID": 269281,
         "Name": "Productivity - Decree 3 Buff_08",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_manufacturing_reform.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_manufacturing_reform.png",
+        "InfoDescription": 269438,
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -5189,7 +5452,9 @@
       "Standard": {
         "GUID": 269282,
         "Name": "Productivity - Decree 3 Buff_09",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_manufacturing_reform.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_manufacturing_reform.png",
+        "InfoDescription": 269438,
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -5235,7 +5500,9 @@
       "Standard": {
         "GUID": 269399,
         "Name": "Productivity - Decree 3 Buff Infotip",
-        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_manufacturing_reform.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_manufacturing_reform.png",
+        "InfoDescription": 269438,
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -5301,8 +5568,379 @@
               "Product": 1010566,
               "AdditionalOutputCycle": 3,
               "Amount": 1
+            },
+            {
+              "Product": 134623,
+              "AdditionalOutputCycle": 3,
+              "Amount": 1
+            },
+            {
+              "Product": 135229,
+              "AdditionalOutputCycle": 3,
+              "Amount": 1
+            },
+            {
+              "Product": 135230,
+              "AdditionalOutputCycle": 3,
+              "Amount": 1
+            },
+            {
+              "Product": 133181,
+              "AdditionalOutputCycle": 3,
+              "Amount": 1
+            },
+            {
+              "Product": 133185,
+              "AdditionalOutputCycle": 3,
+              "Amount": 1
+            },
+            {
+              "Product": 133532,
+              "AdditionalOutputCycle": 3,
+              "Amount": 1
+            },
+            {
+              "Product": 135129,
+              "AdditionalOutputCycle": 3,
+              "Amount": 1
             }
           ]
+        }
+      },
+      "BuildingUpgrade": "",
+      "Buff": "",
+      "CultureUpgrade": "",
+      "ModuleOwnerUpgrade": "",
+      "IncidentInfectableUpgrade": "",
+      "PowerplantUpgrade": "",
+      "IndustrializableUpgrade": "",
+      "ItemContainerUpgrade": "",
+      "IncidentInfluencerUpgrade": "",
+      "IrrigationUpgrade": ""
+    }
+  },
+  {
+    "Template": "GuildhouseBuff",
+    "Values": {
+      "Standard": {
+        "GUID": 280087,
+        "Name": "Productivity - Decree 3 Buff_10 Elevators",
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_manufacturing_reform.png",
+        "InfoDescription": 269438,
+        "Version": "dlc04"
+      },
+      "ItemEffect": {
+        "EffectTargets": {
+          "Item": {
+            "GUID": 134622
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Skilled Labour Act",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 36522
+      },
+      "FactoryUpgrade": {
+        "AdditionalOutput": {
+          "Item": {
+            "Product": 134623,
+            "AdditionalOutputCycle": 3,
+            "Amount": 1
+          }
+        }
+      },
+      "BuildingUpgrade": "",
+      "Buff": "",
+      "CultureUpgrade": "",
+      "ModuleOwnerUpgrade": "",
+      "IncidentInfectableUpgrade": "",
+      "PowerplantUpgrade": "",
+      "IndustrializableUpgrade": "",
+      "ItemContainerUpgrade": "",
+      "IncidentInfluencerUpgrade": "",
+      "IrrigationUpgrade": ""
+    }
+  },
+  {
+    "Template": "GuildhouseBuff",
+    "Values": {
+      "Standard": {
+        "GUID": 280088,
+        "Name": "Productivity - Decree 3 Buff_11 Biscuits",
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_manufacturing_reform.png",
+        "InfoDescription": 269438,
+        "Version": "dlc04"
+      },
+      "ItemEffect": {
+        "EffectTargets": {
+          "Item": {
+            "GUID": 135361
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Skilled Labour Act",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 36522
+      },
+      "FactoryUpgrade": {
+        "AdditionalOutput": {
+          "Item": {
+            "Product": 135229,
+            "AdditionalOutputCycle": 3,
+            "Amount": 1
+          }
+        }
+      },
+      "BuildingUpgrade": "",
+      "Buff": "",
+      "CultureUpgrade": "",
+      "ModuleOwnerUpgrade": "",
+      "IncidentInfectableUpgrade": "",
+      "PowerplantUpgrade": "",
+      "IndustrializableUpgrade": "",
+      "ItemContainerUpgrade": "",
+      "IncidentInfluencerUpgrade": "",
+      "IrrigationUpgrade": ""
+    }
+  },
+  {
+    "Template": "GuildhouseBuff",
+    "Values": {
+      "Standard": {
+        "GUID": 280089,
+        "Name": "Productivity - Decree 3 Buff_12 Typewriter",
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_manufacturing_reform.png",
+        "InfoDescription": 269438,
+        "Version": "dlc04"
+      },
+      "ItemEffect": {
+        "EffectTargets": {
+          "Item": {
+            "GUID": 135148
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Skilled Labour Act",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 36522
+      },
+      "FactoryUpgrade": {
+        "AdditionalOutput": {
+          "Item": {
+            "Product": 135230,
+            "AdditionalOutputCycle": 3,
+            "Amount": 1
+          }
+        }
+      },
+      "BuildingUpgrade": "",
+      "Buff": "",
+      "CultureUpgrade": "",
+      "ModuleOwnerUpgrade": "",
+      "IncidentInfectableUpgrade": "",
+      "PowerplantUpgrade": "",
+      "IndustrializableUpgrade": "",
+      "ItemContainerUpgrade": "",
+      "IncidentInfluencerUpgrade": "",
+      "IrrigationUpgrade": ""
+    }
+  },
+  {
+    "Template": "GuildhouseBuff",
+    "Values": {
+      "Standard": {
+        "GUID": 280090,
+        "Name": "Productivity - Decree 3 Buff_13 Shampoo",
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_manufacturing_reform.png",
+        "InfoDescription": 269438,
+        "Version": "dlc04"
+      },
+      "ItemEffect": {
+        "EffectTargets": {
+          "Item": {
+            "GUID": 132786
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Skilled Labour Act",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 36522
+      },
+      "FactoryUpgrade": {
+        "AdditionalOutput": {
+          "Item": {
+            "Product": 133181,
+            "AdditionalOutputCycle": 3,
+            "Amount": 1
+          }
+        }
+      },
+      "BuildingUpgrade": "",
+      "Buff": "",
+      "CultureUpgrade": "",
+      "ModuleOwnerUpgrade": "",
+      "IncidentInfectableUpgrade": "",
+      "PowerplantUpgrade": "",
+      "IndustrializableUpgrade": "",
+      "ItemContainerUpgrade": "",
+      "IncidentInfluencerUpgrade": "",
+      "IrrigationUpgrade": ""
+    }
+  },
+  {
+    "Template": "GuildhouseBuff",
+    "Values": {
+      "Standard": {
+        "GUID": 280091,
+        "Name": "Productivity - Decree 3 Buff_14 Lemonade",
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_manufacturing_reform.png",
+        "InfoDescription": 269438,
+        "Version": "dlc04"
+      },
+      "ItemEffect": {
+        "EffectTargets": {
+          "Item": {
+            "GUID": 132777
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Skilled Labour Act",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 36522
+      },
+      "FactoryUpgrade": {
+        "AdditionalOutput": {
+          "Item": {
+            "Product": 133185,
+            "AdditionalOutputCycle": 3,
+            "Amount": 1
+          }
+        }
+      },
+      "BuildingUpgrade": "",
+      "Buff": "",
+      "CultureUpgrade": "",
+      "ModuleOwnerUpgrade": "",
+      "IncidentInfectableUpgrade": "",
+      "PowerplantUpgrade": "",
+      "IndustrializableUpgrade": "",
+      "ItemContainerUpgrade": "",
+      "IncidentInfluencerUpgrade": "",
+      "IrrigationUpgrade": ""
+    }
+  },
+  {
+    "Template": "GuildhouseBuff",
+    "Values": {
+      "Standard": {
+        "GUID": 280092,
+        "Name": "Productivity - Decree 3 Buff_15 Souvenirs",
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_manufacturing_reform.png",
+        "InfoDescription": 269438,
+        "Version": "dlc04"
+      },
+      "ItemEffect": {
+        "EffectTargets": {
+          "Item": {
+            "GUID": 133533
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Skilled Labour Act",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 36522
+      },
+      "FactoryUpgrade": {
+        "AdditionalOutput": {
+          "Item": {
+            "Product": 133532,
+            "AdditionalOutputCycle": 3,
+            "Amount": 1
+          }
+        }
+      },
+      "BuildingUpgrade": "",
+      "Buff": "",
+      "CultureUpgrade": "",
+      "ModuleOwnerUpgrade": "",
+      "IncidentInfectableUpgrade": "",
+      "PowerplantUpgrade": "",
+      "IndustrializableUpgrade": "",
+      "ItemContainerUpgrade": "",
+      "IncidentInfluencerUpgrade": "",
+      "IrrigationUpgrade": ""
+    }
+  },
+  {
+    "Template": "GuildhouseBuff",
+    "Values": {
+      "Standard": {
+        "GUID": 280093,
+        "Name": "Productivity - Decree 3 Buff_16 Lacquer",
+        "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_manufacturing_reform.png",
+        "InfoDescription": 269438,
+        "Version": "dlc04"
+      },
+      "ItemEffect": {
+        "EffectTargets": {
+          "Item": {
+            "GUID": 135133
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Skilled Labour Act",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 36522
+      },
+      "FactoryUpgrade": {
+        "AdditionalOutput": {
+          "Item": {
+            "Product": 135129,
+            "AdditionalOutputCycle": 3,
+            "Amount": 1
+          }
         }
       },
       "BuildingUpgrade": "",
@@ -5324,7 +5962,8 @@
         "GUID": 269231,
         "Name": "Public - Decree 3 Buff",
         "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_power_reform.png",
-        "InfoDescription": 269433
+        "InfoDescription": 269433,
+        "Version": "dlc04"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -5375,7 +6014,8 @@
         "GUID": 269978,
         "Name": "SiloBuff",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_silo.png",
-        "ID": "SiloBuff"
+        "ID": "SiloBuff",
+        "Version": "dlc05"
       },
       "ItemEffect": "",
       "Text": {
@@ -5420,7 +6060,8 @@
         "GUID": 269979,
         "Name": "TractorBuff_Normal",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_tractor.png",
-        "ID": "TractorBuffProduction"
+        "ID": "TractorBuffProduction",
+        "Version": "dlc05"
       },
       "ItemEffect": "",
       "Text": {
@@ -5470,7 +6111,8 @@
         "GUID": 269980,
         "Name": "TractorBuff_Fields",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_farmfield_module.png",
-        "ID": "TractorBuffBase"
+        "ID": "TractorBuffBase",
+        "Version": "dlc05"
       },
       "ItemEffect": "",
       "Text": {
@@ -5504,7 +6146,8 @@
       "Standard": {
         "GUID": 270043,
         "Name": "TractorBuff (GASOLINE TEST)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_dlc_bright_harvest_256.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_dlc_bright_harvest_256.png",
+        "Version": "dlc05"
       },
       "ItemEffect": "",
       "Text": {
@@ -5544,7 +6187,8 @@
         "GUID": 124206,
         "Name": "setbuff_Desert",
         "IconFilename": "data/ui/2kimages/main/3dicons/animals/icon_dromedary.png",
-        "InfoDescription": 124211
+        "InfoDescription": 124211,
+        "Version": "dlc06"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -5596,7 +6240,8 @@
         "GUID": 124209,
         "Name": "setbuff_Savanna",
         "IconFilename": "data/ui/2kimages/main/3dicons/animals/icon_lion.png",
-        "InfoDescription": 124214
+        "InfoDescription": 124214,
+        "Version": "dlc06"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -5642,7 +6287,8 @@
         "GUID": 124210,
         "Name": "setbuff_Woodlands",
         "IconFilename": "data/ui/2kimages/main/3dicons/animals/icon_elephant.png",
-        "InfoDescription": 124215
+        "InfoDescription": 124215,
+        "Version": "dlc06"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -5696,7 +6342,8 @@
       "Standard": {
         "GUID": 127865,
         "Name": "RewardBuff_WahaDesher",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_waha_desher_buff.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_waha_desher_buff.png",
+        "Version": "dlc06"
       },
       "ItemEffect": {
         "EffectTargets": {
@@ -5738,7 +6385,8 @@
       "Standard": {
         "GUID": 127867,
         "Name": "RewardBuff_Angereb",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_angareb_buff.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_angareb_buff.png",
+        "Version": "dlc06"
       },
       "ItemEffect": {
         "EffectTargets": {

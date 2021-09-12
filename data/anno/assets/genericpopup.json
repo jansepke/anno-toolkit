@@ -16,7 +16,7 @@
               "Item": [
                 {
                   "Text": 145003,
-                  "Command": "game.fastQuit(2)",
+                  "Command": "GameManager.fastQuit(2)",
                   "ShortcutIdentifier": "ConfirmPopup"
                 },
                 {
@@ -257,7 +257,7 @@
               "Item": [
                 {
                   "Text": 145003,
-                  "Command": "onlineManager.LeaveSession()",
+                  "Command": "GameManager.OnlineManager.leaveSession()",
                   "ShortcutIdentifier": "ConfirmPopup"
                 },
                 {
@@ -296,7 +296,7 @@
                 },
                 {
                   "Text": 16189,
-                  "Command": "onlineManager.OpenHelpPage()"
+                  "Command": "GameManager.OnlineManager.openHelpPage()"
                 }
               ]
             },
@@ -512,7 +512,7 @@
             "Buttons": {
               "Item": {
                 "Text": 145001,
-                "Command": "game.fastQuit(2)",
+                "Command": "GameManager.fastQuit(2)",
                 "ShortcutIdentifier": "ConfirmPopup;CancelPopup"
               }
             },
@@ -529,7 +529,7 @@
                 },
                 {
                   "Text": 16111,
-                  "Command": "onlineManager.LeaveSession()"
+                  "Command": "GameManager.OnlineManager.leaveSession()"
                 }
               ]
             },
@@ -541,7 +541,7 @@
             "Buttons": {
               "Item": {
                 "Text": 145002,
-                "Command": "net.cancelConnect()",
+                "Command": "GameManager.OnlineManager.cancelJoinSession()",
                 "ShortcutIdentifier": "ConfirmPopup;CancelPopup"
               }
             },
@@ -554,17 +554,18 @@
               "Item": [
                 {
                   "Text": 13433,
-                  "Command": "TextSources.TextSourceRoots.Online.AcceptInvite()",
+                  "Command": "GameManager.OnlineManager.acceptInvite()",
                   "ShortcutIdentifier": "ConfirmPopup"
                 },
                 {
                   "Text": 13432,
-                  "Command": "TextSources.TextSourceRoots.Online.DeclineInvite()",
+                  "Command": "GameManager.OnlineManager.declineInvite()",
                   "ShortcutIdentifier": "CancelPopup"
                 }
               ]
             },
-            "IsModal": 1
+            "IsModal": 1,
+            "PauseGame": 1
           },
           "GameVersionMismatch": {
             "HeaderText": 12794,
@@ -588,7 +589,7 @@
                 },
                 {
                   "Text": 16189,
-                  "Command": "onlineManager.OpenHelpPage()"
+                  "Command": "GameManager.OnlineManager.openHelpPage()"
                 }
               ]
             },
@@ -728,7 +729,7 @@
                 },
                 {
                   "Text": 16111,
-                  "Command": "onlineManager.LeaveSession()"
+                  "Command": "GameManager.OnlineManager.leaveSession()"
                 }
               ]
             },
@@ -768,7 +769,7 @@
               "Item": [
                 {
                   "Text": 145003,
-                  "Command": "onlineManager.LoadSavegameAndLeaveSession()",
+                  "Command": "GameManager.OnlineManager.loadSavegameAndLeaveSession()",
                   "ShortcutIdentifier": "ConfirmPopup"
                 },
                 {
@@ -907,7 +908,7 @@
               "Item": [
                 {
                   "Text": 145003,
-                  "Command": "TextSources.TextSourceRoots.Online.SetLoadMPSession()",
+                  "Command": "GameManager.OnlineManager.loadMultiplayerSession()",
                   "ShortcutIdentifier": "ConfirmPopup"
                 },
                 {
@@ -1038,7 +1039,7 @@
             "Buttons": {
               "Item": {
                 "Text": 145006,
-                "Command": "game.fastQuit(3)",
+                "Command": "GameManager.fastQuit(3)",
                 "ShortcutIdentifier": "ConfirmPopup;CancelPopup"
               }
             },
@@ -1047,6 +1048,40 @@
           "ConfirmIslandDestroyArctic": {
             "HeaderText": 17075,
             "MainText": 131682,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 4127,
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145002,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "ForceAlternativeGrassColor": {
+            "HeaderText": 23846,
+            "MainText": 23847,
+            "Buttons": {
+              "Item": [
+                {
+                  "Text": 145003,
+                  "ShortcutIdentifier": "ConfirmPopup"
+                },
+                {
+                  "Text": 145004,
+                  "ShortcutIdentifier": "CancelPopup"
+                }
+              ]
+            },
+            "IsModal": 1
+          },
+          "EnableAntiAlias": {
+            "HeaderText": 23872,
+            "MainText": 23873,
             "Buttons": {
               "Item": [
                 {

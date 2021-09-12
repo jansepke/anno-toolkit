@@ -1129,7 +1129,8 @@
       "Standard": {
         "GUID": 118935,
         "Name": "Fishing net - Seafood",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_ship.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_ship.png",
+        "Version": "dlc06"
       },
       "Object": {
         "Variations": {
@@ -1188,7 +1189,8 @@
       "Standard": {
         "GUID": 118936,
         "Name": "Fishing planks - Seafood",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_ship.png"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_ship.png",
+        "Version": "dlc06"
       },
       "Object": {
         "Variations": {
@@ -1251,7 +1253,8 @@
     "Values": {
       "Standard": {
         "GUID": 123966,
-        "Name": "AF | Agriculture Vehicle 01 Front"
+        "Name": "AF | Agriculture Vehicle 01 Front",
+        "Version": "dlc06"
       },
       "Object": {
         "Variations": {
@@ -1307,7 +1310,8 @@
     "Values": {
       "Standard": {
         "GUID": 123967,
-        "Name": "AF | Agriculture Vehicle 02 Front"
+        "Name": "AF | Agriculture Vehicle 02 Front",
+        "Version": "dlc06"
       },
       "Object": {
         "Variations": {
@@ -1363,7 +1367,8 @@
     "Values": {
       "Standard": {
         "GUID": 123968,
-        "Name": "AF | Harverster 01"
+        "Name": "AF | Harverster 01",
+        "Version": "dlc06"
       },
       "Object": {
         "Variations": {
@@ -1419,7 +1424,8 @@
     "Values": {
       "Standard": {
         "GUID": 123969,
-        "Name": "AF | Trailer 01"
+        "Name": "AF | Trailer 01",
+        "Version": "dlc06"
       },
       "Object": {
         "Variations": {
@@ -1475,7 +1481,8 @@
     "Values": {
       "Standard": {
         "GUID": 123964,
-        "Name": "AF | Market Cart 01"
+        "Name": "AF | Market Cart 01",
+        "Version": "dlc06"
       },
       "Object": {
         "Variations": {
@@ -1531,7 +1538,8 @@
     "Values": {
       "Standard": {
         "GUID": 123965,
-        "Name": "AF | Market Cart 02"
+        "Name": "AF | Market Cart 02",
+        "Version": "dlc06"
       },
       "Object": {
         "Variations": {
@@ -1587,7 +1595,8 @@
     "Values": {
       "Standard": {
         "GUID": 123993,
-        "Name": "AF | Agriculture Vehicle 01"
+        "Name": "AF | Agriculture Vehicle 01",
+        "Version": "dlc06"
       },
       "Object": {
         "Variations": {
@@ -1643,7 +1652,8 @@
     "Values": {
       "Standard": {
         "GUID": 123994,
-        "Name": "AF | Horse Carriage 01"
+        "Name": "AF | Horse Carriage 01",
+        "Version": "dlc06"
       },
       "Object": {
         "Variations": {
@@ -1699,7 +1709,8 @@
     "Values": {
       "Standard": {
         "GUID": 123995,
-        "Name": "AF | Horse Carriage 02"
+        "Name": "AF | Horse Carriage 02",
+        "Version": "dlc06"
       },
       "Object": {
         "Variations": {
@@ -1748,6 +1759,148 @@
       "QuestObject": "",
       "Infolayer": "",
       "FeedbackController": ""
+    }
+  },
+  {
+    "Template": "FeedbackVehicle",
+    "Values": {
+      "Standard": {
+        "GUID": 132902,
+        "Name": "Tourism Ship Tourist Questline",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_ship.png",
+        "Version": "dlc08"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/tourism_ship_03/tourism_ship_03.cfg"
+          }
+        },
+        "DefaultParticipant": "Human0"
+      },
+      "Mesh": "",
+      "Selection": {
+        "DestructSelectable": 0
+      },
+      "Walking": {
+        "ReservationLength": 16,
+        "ReservationWidth": 6,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 5,
+        "Acceleration": 1,
+        "Deceleration": 1,
+        "TurnSpeed": 30,
+        "TurnMovement": 50,
+        "LeaningMaxAngle": 10,
+        "ForwardSpeed": 1
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Silver Tower Liner",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 49837
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 9818383
+          }
+        }
+      },
+      "CommandQueue": {
+        "FollowRadius": 4,
+        "FormationPriority": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 9,
+        "Width": 2,
+        "FactorRotation": 0.8
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947
+      },
+      "QuestObject": "",
+      "Infolayer": "",
+      "FeedbackController": {
+        "DefaultFeedbackSequence": "Work"
+      }
+    }
+  },
+  {
+    "Template": "FeedbackVehicle",
+    "Values": {
+      "Standard": {
+        "GUID": 136332,
+        "Name": "Tourism Ship Brokeman",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_ship.png",
+        "Version": "dlc09"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/tourism_ship_03/tourism_ship_03.cfg"
+          }
+        },
+        "DefaultParticipant": "Human0"
+      },
+      "Mesh": "",
+      "Selection": {
+        "DestructSelectable": 0
+      },
+      "Walking": {
+        "ReservationLength": 16,
+        "ReservationWidth": 6,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 5,
+        "Acceleration": 1,
+        "Deceleration": 1,
+        "TurnSpeed": 30,
+        "TurnMovement": 50,
+        "LeaningMaxAngle": 10,
+        "ForwardSpeed": 1
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Sepia Dream Cruises &amp; Co.",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 52211
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 9818383
+          }
+        }
+      },
+      "CommandQueue": {
+        "FollowRadius": 4,
+        "FormationPriority": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 9,
+        "Width": 2,
+        "FactorRotation": 0.8
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947
+      },
+      "QuestObject": "",
+      "Infolayer": "",
+      "FeedbackController": {
+        "DefaultFeedbackSequence": "Work"
+      }
     }
   }
 ]

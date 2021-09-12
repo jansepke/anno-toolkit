@@ -589,6 +589,97 @@
             }
           }
         },
+        "OnQuestTimedOut": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": [
+                  {
+                    "Action": {
+                      "Template": "ActionDelayedActions",
+                      "Values": {
+                        "Action": "",
+                        "ActionDelayedActions": {
+                          "ExecutionDelay": 60000,
+                          "DelayedActions": {
+                            "IsBaseAutoCreateAsset": 1,
+                            "Values": {
+                              "ActionList": {
+                                "Actions": {
+                                  "Item": {
+                                    "Action": {
+                                      "Template": "ActionDeleteObjects",
+                                      "Values": {
+                                        "Action": "",
+                                        "ActionDeleteObjects": "",
+                                        "ObjectFilter": {
+                                          "ObjectGUID": 102577
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionDeleteObjects",
+                      "Values": {
+                        "Action": "",
+                        "ActionDeleteObjects": "",
+                        "ObjectFilter": {
+                          "ObjectGUID": 102649
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionDeleteObjects",
+                      "Values": {
+                        "Action": "",
+                        "ActionDeleteObjects": "",
+                        "ObjectFilter": {
+                          "ObjectGUID": 102653
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionDeleteObjects",
+                      "Values": {
+                        "Action": "",
+                        "ActionDeleteObjects": "",
+                        "ObjectFilter": {
+                          "ObjectGUID": 102658
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionDeleteObjects",
+                      "Values": {
+                        "Action": "",
+                        "ActionDeleteObjects": "",
+                        "ObjectFilter": {
+                          "ObjectGUID": 102657
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
         "OnQuestFailed": {
           "IsBaseAutoCreateAsset": 1,
           "Values": {
@@ -2502,7 +2593,8 @@
     "Values": {
       "Standard": {
         "GUID": 110710,
-        "Name": "Follow ship - Trader traitor - Hugo Mercier"
+        "Name": "Follow ship - Trader traitor - Hugo Mercier",
+        "Version": "dm"
       },
       "Quest": {
         "InvitationMessage": {
@@ -2790,7 +2882,8 @@
       "Standard": {
         "GUID": 110804,
         "Name": "Follow ship - Paranoia Part 1 - Hugo Mercier",
-        "ID": "Quest_DM_2"
+        "ID": "Quest_DM_2",
+        "Version": "dm"
       },
       "Quest": {
         "InvitationMessage": {
@@ -3267,7 +3360,8 @@
     "Values": {
       "Standard": {
         "GUID": 110800,
-        "Name": "Follow ship - The Hunt Part 2 Minister Culture - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION"
+        "Name": "Follow ship - The Hunt Part 2 Minister Culture - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION",
+        "Version": "dm"
       },
       "Quest": {
         "InvitationMessage": {
@@ -3672,7 +3766,8 @@
     "Values": {
       "Standard": {
         "GUID": 110801,
-        "Name": "Follow ship - The Hunt Part 2 Minister Productivity - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION"
+        "Name": "Follow ship - The Hunt Part 2 Minister Productivity - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION",
+        "Version": "dm"
       },
       "Quest": {
         "InvitationMessage": {

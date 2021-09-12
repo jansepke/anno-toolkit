@@ -14,6 +14,36 @@
           "Item": {
             "Filename": "data/graphics/vehicle/command_ship/command_ship.cfg"
           }
+        },
+        "Skins": {
+          "SkinList": {
+            "Item": [
+              {
+                "SkinAssetGuid": 80154
+              },
+              {
+                "SkinAssetGuid": 133415
+              },
+              {
+                "SkinAssetGuid": 133389
+              },
+              {
+                "SkinAssetGuid": 133396
+              },
+              {
+                "SkinAssetGuid": 133860
+              },
+              {
+                "SkinAssetGuid": 133398
+              },
+              {
+                "SkinAssetGuid": 133399
+              },
+              {
+                "SkinAssetGuid": 133861
+              }
+            ]
+          }
         }
       },
       "Mesh": {
@@ -90,6 +120,11 @@
         "StrategicMapAsset": 500433
       },
       "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 215870
+          }
+        },
         "VehicleSounds": {
           "MovementStart": {
             "Item": {
@@ -200,6 +235,18 @@
         "Variations": {
           "Item": {
             "Filename": "data/graphics/vehicle/gunboat/gunboat.cfg"
+          }
+        },
+        "Skins": {
+          "SkinList": {
+            "Item": [
+              {
+                "SkinAssetGuid": 133391
+              },
+              {
+                "SkinAssetGuid": 133401
+              }
+            ]
           }
         }
       },
@@ -430,6 +477,18 @@
         "Variations": {
           "Item": {
             "Filename": "data/graphics/vehicle/man_of_war/man_of_war.cfg"
+          }
+        },
+        "Skins": {
+          "SkinList": {
+            "Item": [
+              {
+                "SkinAssetGuid": 133392
+              },
+              {
+                "SkinAssetGuid": 133402
+              }
+            ]
           }
         }
       },
@@ -708,6 +767,18 @@
         "Variations": {
           "Item": {
             "Filename": "data/graphics/vehicle/frigate/frigate.cfg"
+          }
+        },
+        "Skins": {
+          "SkinList": {
+            "Item": [
+              {
+                "SkinAssetGuid": 133390
+              },
+              {
+                "SkinAssetGuid": 133400
+              }
+            ]
           }
         }
       },
@@ -991,6 +1062,21 @@
           "Item": {
             "Filename": "data/graphics/vehicle/battle_cruiser/battle_cruiser.cfg"
           }
+        },
+        "Skins": {
+          "SkinList": {
+            "Item": [
+              {
+                "SkinAssetGuid": 80142
+              },
+              {
+                "SkinAssetGuid": 133344
+              },
+              {
+                "SkinAssetGuid": 133376
+              }
+            ]
+          }
         }
       },
       "Mesh": {
@@ -1265,6 +1351,18 @@
         "Variations": {
           "Item": {
             "Filename": "data/graphics/vehicle/monitor/monitor.cfg"
+          }
+        },
+        "Skins": {
+          "SkinList": {
+            "Item": [
+              {
+                "SkinAssetGuid": 133394
+              },
+              {
+                "SkinAssetGuid": 133403
+              }
+            ]
           }
         }
       },
@@ -2509,10 +2607,1272 @@
     "Template": "WarShip",
     "Values": {
       "Standard": {
+        "GUID": 20000015,
+        "Name": "Command Ship Movie",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_ship.png"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "test_data/graphics/lp/vehicles/command_ship/command_ship.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "LeaningMaxAngle": 27,
+        "WindMinSlowdownFactor": 0.7273,
+        "WindMaxSpeedupFactor": 1.3
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Command Ship",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 27144
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FollowRadius": 4,
+        "FormationPriority": 1
+      },
+      "Drifting": {
+        "Length": 2.7,
+        "Width": 0.8
+      },
+      "Collector": "",
+      "Attackable": "",
+      "Attacker": "",
+      "MinimapToken": "",
+      "SoundEmitter": "",
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": {
+        "DefaultInfoLayer": 25000123
+      },
+      "ItemContainer": {
+        "SocketCount": 2,
+        "SlotCount": 3
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": "",
+      "Craftable": "",
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": "",
+      "ShipMaintenance": "",
+      "Sellable": "",
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": ""
+    }
+  },
+  {
+    "Template": "WarShip",
+    "Values": {
+      "Standard": {
+        "GUID": 20000016,
+        "Name": "Command Ship Movie02",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_ship.png"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "test_data/graphics/lp/vehicles/command_ship_02/command_ship_02.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "LeaningMaxAngle": 27,
+        "WindMinSlowdownFactor": 0.7273,
+        "WindMaxSpeedupFactor": 1.3
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Command Ship",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 27145
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FollowRadius": 4,
+        "FormationPriority": 1
+      },
+      "Drifting": {
+        "Length": 2.7,
+        "Width": 0.8
+      },
+      "Collector": "",
+      "Attackable": "",
+      "Attacker": "",
+      "MinimapToken": "",
+      "SoundEmitter": "",
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": {
+        "DefaultInfoLayer": 25000123
+      },
+      "ItemContainer": {
+        "SocketCount": 2,
+        "SlotCount": 3
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": "",
+      "Craftable": "",
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": "",
+      "ShipMaintenance": "",
+      "Sellable": "",
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": ""
+    }
+  },
+  {
+    "Template": "WarShip",
+    "Values": {
+      "Standard": {
+        "GUID": 20000019,
+        "Name": "Command Ship Movie03",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_ship.png"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "test_data/graphics/lp/vehicles/command_ship_03/command_ship_03.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "LeaningMaxAngle": 27,
+        "WindMinSlowdownFactor": 0.7273,
+        "WindMaxSpeedupFactor": 1.3
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Command Ship",
+            "Status": "Exported",
+            "ExportCount": 2
+          }
+        },
+        "LineID": 27146
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0,
+        "FollowRadius": 4,
+        "FormationPriority": 1
+      },
+      "Drifting": {
+        "Length": 2.7,
+        "Width": 0.8
+      },
+      "Collector": "",
+      "Attackable": "",
+      "Attacker": "",
+      "MinimapToken": "",
+      "SoundEmitter": "",
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": {
+        "DefaultInfoLayer": 25000123
+      },
+      "ItemContainer": {
+        "SocketCount": 2,
+        "SlotCount": 3
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": "",
+      "Craftable": "",
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": "",
+      "ShipMaintenance": "",
+      "Sellable": "",
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": ""
+    }
+  },
+  {
+    "Template": "WarShip",
+    "Values": {
+      "Standard": {
+        "GUID": 420028,
+        "Name": "pyro_battlecruiser_movie",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_monitor.png",
+        "InfoDescription": 1088
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/campaign/vehicle/pyro_ship_03/pyro_ship_03.cfg"
+          }
+        },
+        "DefaultParticipant": "Campaign_character_04_pyrophorian_gold"
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ShortenSailsAfter": 0,
+        "ReservationLength": 16,
+        "ReservationWidth": 6,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 8,
+        "Acceleration": 0.6,
+        "Deceleration": 0.5,
+        "TurnRadius": 8,
+        "TurnSpeed": 50,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 10,
+        "ForwardSpeed": 4.5,
+        "WindMinSlowdownFactor": 1,
+        "WindMaxSpeedupFactor": 1,
+        "CargoFullFactor": 0.7,
+        "DamageFullFactor": 0.5,
+        "MinSlowdownFactor": 0.5
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Monitor",
+            "ExportCount": 1
+          }
+        }
+      },
+      "CommandQueue": {
+        "FormationPriority": 2,
+        "MilitaryShipPoints": 6,
+        "PriorityShipList": 1,
+        "EnableVideoCaptureChanges": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 4.5,
+        "FactorMovement": 0.7,
+        "FactorRotation": 0.65
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 50000,
+        "HPBarOffset": 6.5,
+        "AccuracyWidth": 8,
+        "SelfHealPerHealTick": 0,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "Attacker": {
+        "AttackRange": 55,
+        "LineOfSightRange": 100,
+        "ReloadTime": 23,
+        "ProjectileAsset": 102405,
+        "ProjectileCount": 6,
+        "BaseDamage": 100,
+        "Turrets": {
+          "Item": [
+            {
+              "TurnSpan": 300,
+              "TurretCfg": "data/graphics/campaign/vehicle/pyro_ship_02/pyro_ship_02_turret_front.cfg"
+            },
+            {
+              "TurnSpan": 300,
+              "TurretCfg": "data/graphics/campaign/vehicle/pyro_ship_02/pyro_ship_02_turret_front.cfg"
+            },
+            {
+              "TurnSpan": 300,
+              "TurretCfg": "data/graphics/campaign/vehicle/pyro_ship_02/pyro_ship_02_turret_front.cfg"
+            }
+          ]
+        },
+        "AccuracyBase": 1.5,
+        "AccuracyIncreaseOverDistance": 60,
+        "AccuracySpeedDecay": 20,
+        "ShootingTracking": "TurretFixed",
+        "FullVolleyTimeMin": 1,
+        "MuzzleEffectAssets": {
+          "Item": [
+            {
+              "MuzzleEffectAsset": 102404
+            },
+            {
+              "MuzzleEffectAsset": 102404
+            }
+          ]
+        },
+        "FullVolleyTimeMax": 2
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 501018
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 238318
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 216019
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 4,
+        "SocketAllocation": "Ship;SteamShip;Warship",
+        "SlotCount": 3,
+        "InitSlotItems": {
+          "Item": [
+            {
+              "Item": 191481,
+              "StackSize": 1
+            },
+            {
+              "Item": 191474,
+              "StackSize": 10
+            }
+          ]
+        }
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010218,
+              "Amount": 60
+            },
+            {
+              "Ingredient": 1010224,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 1010223,
+              "Amount": 25
+            }
+          ]
+        },
+        "InfluenceCostType": "WarShip",
+        "InfluenceCostPoints": 24
+      },
+      "Craftable": {
+        "CraftingTime": 720000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 50,
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might",
+              "Amount": 30
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkMilitaryShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSteamShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 600
+      },
+      "Sellable": "",
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700087
+          },
+          "AttackCommand": {
+            "AudioPool": 700088
+          },
+          "MoveCommand": {
+            "AudioPool": 700089
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700116
+          },
+          "EscortCommand": {
+            "AudioPool": 700118
+          },
+          "PatrolCommand": {
+            "AudioPool": 700117
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "WarShip",
+    "Values": {
+      "Standard": {
+        "GUID": 420030,
+        "Name": "pyro_monitor_movie",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png",
+        "InfoDescription": 1087
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/campaign/vehicle/pyro_ship_01/pyro_ship_01.cfg"
+          }
+        },
+        "DefaultParticipant": "Campaign_character_02_pyrophorian_red"
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ShortenSailsAfter": 0,
+        "ReservationLength": 16,
+        "ReservationWidth": 6,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1,
+        "Deceleration": 2,
+        "TurnRadius": 6,
+        "TurnSpeed": 60,
+        "TurnDeceleration": 0,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 10,
+        "ForwardSpeed": 5.3,
+        "WindMinSlowdownFactor": 1,
+        "WindMaxSpeedupFactor": 1,
+        "CargoFullFactor": 0.7,
+        "DamageFullFactor": 0.5,
+        "MinSlowdownFactor": 0.5
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Pyrphorian Warship",
+            "Status": "Exported",
+            "ExportCount": 3
+          }
+        },
+        "LineID": 20721
+      },
+      "CommandQueue": {
+        "FormationPriority": 3,
+        "MilitaryShipPoints": 3,
+        "PriorityShipList": 1,
+        "EnableVideoCaptureChanges": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 10,
+        "Width": 1.75,
+        "FactorMovement": 0.7,
+        "FactorRotation": 0.65
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 24000,
+        "HPBarOffset": 3.5,
+        "AccuracyWidth": 2.5,
+        "SelfHealPerHealTick": 0,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "Attacker": {
+        "AttackRange": 35,
+        "LineOfSightRange": 100,
+        "ProjectileAsset": 102405,
+        "ProjectileCount": 2,
+        "BaseDamage": 25,
+        "Turrets": {
+          "Item": {
+            "TurnSpan": 300,
+            "TurretCfg": "data/graphics/campaign/vehicle/pyro_ship_01/pyro_ship_01_turret.cfg"
+          }
+        },
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 60,
+        "AccuracySpeedDecay": 20,
+        "ShootingTracking": "TurretFixed",
+        "MuzzleEffectAssets": {
+          "Item": {
+            "MuzzleEffectAsset": 102404
+          }
+        }
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 501018
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": ""
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 2,
+        "SocketAllocation": "Ship;SteamShip;Warship",
+        "SlotCount": 2,
+        "InitSlotItems": {
+          "Item": [
+            {
+              "Item": 191481,
+              "StackSize": 1
+            },
+            {
+              "Item": 1010221,
+              "StackSize": 30
+            }
+          ]
+        }
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "InfluenceCostType": "WarShip",
+        "InfluenceCostPoints": 12
+      },
+      "Craftable": {
+        "CraftingTime": 720000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 50
+      },
+      "ShipMaintenance": {
+        "Maintenance": 0
+      },
+      "Sellable": "",
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": ""
+    }
+  },
+  {
+    "Template": "WarShip",
+    "Values": {
+      "Standard": {
+        "GUID": 420031,
+        "Name": "pyro_commando_movie",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png",
+        "InfoDescription": 1087
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/campaign/vehicle/pyro_ship_02/pyro_ship_02.cfg"
+          }
+        },
+        "DefaultParticipant": "Campaign_character_02_pyrophorian_red"
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ShortenSailsAfter": 0,
+        "ReservationLength": 16,
+        "ReservationWidth": 6,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1,
+        "Deceleration": 2,
+        "TurnRadius": 6,
+        "TurnSpeed": 60,
+        "TurnDeceleration": 0,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 10,
+        "ForwardSpeed": 5.3,
+        "WindMinSlowdownFactor": 1,
+        "WindMaxSpeedupFactor": 1,
+        "CargoFullFactor": 0.7,
+        "DamageFullFactor": 0.5,
+        "MinSlowdownFactor": 0.5
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Pyrphorian Command Ship",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 25839
+      },
+      "CommandQueue": {
+        "FormationPriority": 3,
+        "MilitaryShipPoints": 3,
+        "PriorityShipList": 1,
+        "EnableVideoCaptureChanges": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 10,
+        "Width": 1.75,
+        "FactorMovement": 0.7,
+        "FactorRotation": 0.65
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 35000,
+        "HPBarOffset": 3.5,
+        "AccuracyWidth": 2.5,
+        "SelfHealPerHealTick": 0,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "Attacker": {
+        "AttackRange": 40,
+        "LineOfSightRange": 100,
+        "ReloadTime": 15,
+        "ProjectileAsset": 102405,
+        "ProjectileCount": 2,
+        "BaseDamage": 50,
+        "Turrets": {
+          "Item": [
+            {
+              "TurnSpan": 320,
+              "TurretCfg": "data/graphics/campaign/vehicle/pyro_ship_02/pyro_ship_02_turret_front.cfg"
+            },
+            {
+              "TurnSpan": 300,
+              "TurretCfg": "data/graphics/campaign/vehicle/pyro_ship_02/pyro_ship_02_turret_back.cfg"
+            }
+          ]
+        },
+        "AccuracyBase": 1.5,
+        "AccuracyIncreaseOverDistance": 60,
+        "AccuracySpeedDecay": 20,
+        "ShootingTracking": "TurretFixed",
+        "MuzzleEffectAssets": {
+          "Item": {
+            "MuzzleEffectAsset": 102404
+          }
+        }
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 501018
+      },
+      "SoundEmitter": "",
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 2,
+        "SocketAllocation": "Ship;SteamShip;Warship",
+        "SlotCount": 2,
+        "InitSlotItems": {
+          "Item": [
+            {
+              "Item": 191481,
+              "StackSize": 1
+            },
+            {
+              "Item": 1010221,
+              "StackSize": 30
+            }
+          ]
+        }
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "InfluenceCostType": "WarShip",
+        "InfluenceCostPoints": 12
+      },
+      "Craftable": {
+        "CraftingTime": 720000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 50
+      },
+      "ShipMaintenance": {
+        "Maintenance": 0
+      },
+      "Sellable": "",
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": ""
+    }
+  },
+  {
+    "Template": "WarShip",
+    "Values": {
+      "Standard": {
+        "GUID": 420032,
+        "Name": "edvard_weak_frigate_movie",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png",
+        "InfoDescription": 1085
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/frigate/frigate.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ShortenSailsAfter": 1805000,
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1,
+        "Deceleration": 1,
+        "TurnRadius": 6,
+        "TurnSpeed": 50,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 5.2,
+        "WindMinSlowdownFactor": 0.4,
+        "WindMaxSpeedupFactor": 1.8
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Frigate",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        }
+      },
+      "CommandQueue": {
+        "FormationPriority": 4,
+        "MilitaryShipPoints": 1.5,
+        "PriorityShipList": 1,
+        "EnableVideoCaptureChanges": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 6.5,
+        "FactorRotation": 0.9
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 150,
+        "HPBarOffset": 9,
+        "AccuracyWidth": 3.75,
+        "SelfHealPerHealTick": 1.389,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "Attacker": {
+        "AttackRange": 55,
+        "LineOfSightRange": 100,
+        "ReloadTime": 50,
+        "ProjectileAsset": 102032,
+        "ProjectileCount": 14,
+        "BaseDamage": 1,
+        "AccuracyBase": 3,
+        "AccuracyIncreaseOverDistance": 90,
+        "AccuracySpeedDecay": 20,
+        "TargetAngleVariation": 50,
+        "FullVolleyTimeMin": 0.4,
+        "MuzzleEffectAssets": {
+          "Item": [
+            {
+              "MuzzleEffectAsset": 101958
+            },
+            {
+              "MuzzleEffectAsset": 102183
+            },
+            {
+              "MuzzleEffectAsset": 102184
+            }
+          ]
+        },
+        "FullVolleyTimeMax": 1.2,
+        "VolleyMaxPerBulletRandomOffset": 0.2,
+        "AccuracyByDistance": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "WarShip",
+                    "Index": 0
+                  }
+                }
+              },
+              "AccuracyByDistancePair": {
+                "CorrespondingAccuracy": 50
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "WarShip",
+                    "Index": 1
+                  }
+                }
+              },
+              "AccuracyByDistancePair": {
+                "EnemyDistanceRelToAttackRange": 20
+              }
+            },
+            {
+              "AccuracyByDistancePair": {
+                "EnemyDistanceRelToAttackRange": 40,
+                "CorrespondingAccuracy": 70
+              }
+            },
+            {
+              "AccuracyByDistancePair": {
+                "EnemyDistanceRelToAttackRange": 70,
+                "CorrespondingAccuracy": 85
+              }
+            },
+            {
+              "AccuracyByDistancePair": {
+                "EnemyDistanceRelToAttackRange": 100,
+                "CorrespondingAccuracy": 100
+              }
+            }
+          ]
+        }
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 238315
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 236628
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 2,
+        "SlotCount": 3
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "InfluenceCostType": "WarShip",
+        "InfluenceCostPoints": 8
+      },
+      "Craftable": {
+        "CraftingTime": 360000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 0
+      },
+      "ShipMaintenance": {
+        "Maintenance": 100
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "WarShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 21500
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700077
+          },
+          "AttackCommand": {
+            "AudioPool": 700076
+          },
+          "MoveCommand": {
+            "AudioPool": 700075
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700108
+          },
+          "EscortCommand": {
+            "AudioPool": 700104
+          },
+          "PatrolCommand": {
+            "AudioPool": 700105
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "WarShip",
+    "Values": {
+      "Standard": {
+        "GUID": 420033,
+        "Name": "edvard_commandship",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png",
+        "InfoDescription": 1085
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/frigate/frigate.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1
+      },
+      "Walking": {
+        "ShortenSailsAfter": 1805000,
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1,
+        "Deceleration": 1,
+        "TurnRadius": 6,
+        "TurnSpeed": 50,
+        "TurnDeceleration": 0.3,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": 27,
+        "ForwardSpeed": 5.2,
+        "WindMinSlowdownFactor": 0.4,
+        "WindMaxSpeedupFactor": 1.8
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Frigate",
+            "ExportCount": 1
+          }
+        }
+      },
+      "CommandQueue": {
+        "FormationPriority": 4,
+        "MilitaryShipPoints": 1.5,
+        "PriorityShipList": 1,
+        "EnableVideoCaptureChanges": 1
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 6.5,
+        "FactorRotation": 0.9
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 150,
+        "HPBarOffset": 9,
+        "AccuracyWidth": 3.75,
+        "SelfHealPerHealTick": 1.389,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "Attacker": {
+        "AttackRange": 55,
+        "LineOfSightRange": 100,
+        "ReloadTime": 50,
+        "ProjectileAsset": 102032,
+        "ProjectileCount": 14,
+        "BaseDamage": 1,
+        "AccuracyBase": 3,
+        "AccuracyIncreaseOverDistance": 90,
+        "AccuracySpeedDecay": 20,
+        "TargetAngleVariation": 50,
+        "FullVolleyTimeMin": 0.4,
+        "MuzzleEffectAssets": {
+          "Item": [
+            {
+              "MuzzleEffectAsset": 101958
+            },
+            {
+              "MuzzleEffectAsset": 102183
+            },
+            {
+              "MuzzleEffectAsset": 102184
+            }
+          ]
+        },
+        "FullVolleyTimeMax": 1.2,
+        "VolleyMaxPerBulletRandomOffset": 0.2,
+        "AccuracyByDistance": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "WarShip",
+                    "Index": 0
+                  }
+                }
+              },
+              "AccuracyByDistancePair": {
+                "CorrespondingAccuracy": 50
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "WarShip",
+                    "Index": 1
+                  }
+                }
+              },
+              "AccuracyByDistancePair": {
+                "EnemyDistanceRelToAttackRange": 20
+              }
+            },
+            {
+              "AccuracyByDistancePair": {
+                "EnemyDistanceRelToAttackRange": 40,
+                "CorrespondingAccuracy": 70
+              }
+            },
+            {
+              "AccuracyByDistancePair": {
+                "EnemyDistanceRelToAttackRange": 70,
+                "CorrespondingAccuracy": 85
+              }
+            },
+            {
+              "AccuracyByDistancePair": {
+                "EnemyDistanceRelToAttackRange": 100,
+                "CorrespondingAccuracy": 100
+              }
+            }
+          ]
+        }
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 500433
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 238315
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 236628
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 2,
+        "SlotCount": 3
+      },
+      "FeedbackController": "",
+      "Draggable": "",
+      "Cost": {
+        "InfluenceCostType": "WarShip",
+        "InfluenceCostPoints": 8
+      },
+      "Craftable": {
+        "CraftingTime": 360000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 0
+      },
+      "ShipMaintenance": {
+        "Maintenance": 100
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "WarShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 21500
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700077
+          },
+          "AttackCommand": {
+            "AudioPool": 700076
+          },
+          "MoveCommand": {
+            "AudioPool": 700075
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700108
+          },
+          "EscortCommand": {
+            "AudioPool": 700104
+          },
+          "PatrolCommand": {
+            "AudioPool": 700105
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "WarShip",
+    "Values": {
+      "Standard": {
         "GUID": 119093,
         "Name": "Liner (Military) Ketema",
         "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png",
-        "InfoDescription": 1086
+        "InfoDescription": 1086,
+        "Version": "dlc06"
       },
       "Object": {
         "Variations": {
@@ -2794,7 +4154,8 @@
         "GUID": 119094,
         "Name": "Frigate (Military) Ketema",
         "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png",
-        "InfoDescription": 1085
+        "InfoDescription": 1085,
+        "Version": "dlc06"
       },
       "Object": {
         "Variations": {
@@ -3078,7 +4439,8 @@
         "GUID": 119095,
         "Name": "Monitor (Military) Ketema",
         "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_monitor.png",
-        "InfoDescription": 1088
+        "InfoDescription": 1088,
+        "Version": "dlc06"
       },
       "Object": {
         "Variations": {
@@ -3342,7 +4704,8 @@
         "GUID": 119232,
         "Name": "Do not foster division - Frigate (Military) Mister Abate Ship",
         "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png",
-        "InfoDescription": 1085
+        "InfoDescription": 1085,
+        "Version": "dlc06"
       },
       "Object": {
         "Variations": {
@@ -3626,7 +4989,8 @@
         "GUID": 131012,
         "Name": "Distribution of Favor - Noble ship",
         "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png",
-        "InfoDescription": 1085
+        "InfoDescription": 1085,
+        "Version": "dlc06"
       },
       "Object": {
         "Variations": {

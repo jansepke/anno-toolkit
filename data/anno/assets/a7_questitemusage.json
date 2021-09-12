@@ -415,7 +415,8 @@
     "Values": {
       "Standard": {
         "GUID": 120246,
-        "Name": "LoLStory_DiggyDiggyHole_OpenJournal"
+        "Name": "LoLStory_DiggyDiggyHole_OpenJournal",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -582,7 +583,8 @@
     "Values": {
       "Standard": {
         "GUID": 120307,
-        "Name": "LoLStory_MilitaryAccounts_OpenAccounts"
+        "Name": "LoLStory_MilitaryAccounts_OpenAccounts",
+        "Version": "dlc06"
       },
       "Quest": {
         "StarterMessage": {
@@ -808,6 +810,987 @@
       },
       "QuestOptional": {
         "HasStarterObject": "None"
+      }
+    }
+  },
+  {
+    "Template": "A7_QuestItemUsage",
+    "Values": {
+      "Standard": {
+        "GUID": 132100,
+        "Name": "The Great White 1 - Get item",
+        "ID": "SharkQuestFirstQuestHotfix"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "SuppressMessage": 1
+        },
+        "AbortedManuallyMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": {
+                "Profile": 132102
+              },
+              "BaseNotification": {
+                "NotificationText": 132300
+              },
+              "NotificationSubtitle": {
+                "Subtitle": 132105
+              }
+            }
+          }
+        },
+        "InvitationMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "StartInvitationGiveItemMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": {
+                "Profile": 132102
+              },
+              "BaseNotification": {
+                "NotificationText": 132301
+              },
+              "NotificationSubtitle": {
+                "Subtitle": 132106
+              }
+            }
+          }
+        },
+        "OnQuestStart": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": [
+                  {
+                    "Action": {
+                      "Template": "ActionRegisterTrigger",
+                      "Values": {
+                        "Action": "",
+                        "ActionRegisterTrigger": {
+                          "TriggerAsset": 132719,
+                          "UnregisterTrigger": 1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionRegisterTrigger",
+                      "Values": {
+                        "Action": "",
+                        "ActionRegisterTrigger": {
+                          "TriggerAsset": 132718,
+                          "UnregisterTrigger": 1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionNotification",
+                      "Values": {
+                        "Action": "",
+                        "ActionNotification": {
+                          "Notification": {
+                            "Template": "CharacterNotification",
+                            "Values": {
+                              "CharacterNotification": {
+                                "Profile": 132102
+                              },
+                              "BaseNotification": {
+                                "NotificationText": 132290
+                              },
+                              "NotificationSubtitle": {
+                                "Subtitle": 132011
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "OnQuestDeclined": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDeleteObjects",
+                    "Values": {
+                      "Action": "",
+                      "ActionDeleteObjects": {
+                        "ShipsLeaveMapFirst": 1
+                      },
+                      "ObjectFilter": {
+                        "ObjectGUID": 132094,
+                        "CheckQuestStarterSession": 1,
+                        "ObjectRestrictToQuestObjects": 1
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "OnQuestSucceeded": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": [
+                  {
+                    "Action": {
+                      "Template": "ActionNotification",
+                      "Values": {
+                        "Action": "",
+                        "ActionNotification": {
+                          "Notification": {
+                            "Template": "CharacterNotification",
+                            "Values": {
+                              "CharacterNotification": {
+                                "Profile": 132102
+                              },
+                              "BaseNotification": {
+                                "NotificationText": 132291
+                              },
+                              "NotificationSubtitle": {
+                                "Subtitle": 132012
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionDelayedActions",
+                      "Values": {
+                        "Action": "",
+                        "ActionDelayedActions": {
+                          "ExecutionDelay": 10000,
+                          "DelayedActions": {
+                            "IsBaseAutoCreateAsset": 1,
+                            "Values": {
+                              "ActionList": {
+                                "Actions": {
+                                  "Item": {
+                                    "Action": {
+                                      "Template": "ActionStartQuest",
+                                      "Values": {
+                                        "Action": "",
+                                        "ActionStartQuest": {
+                                          "Quest": 132093,
+                                          "InheritQuestSession": 1,
+                                          "InheritQuestObjects": 1
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "QuestGiver": 132102,
+        "StoryText": 132302,
+        "MaxCallOut": 1,
+        "MaxSolveCount": 1,
+        "CountForQuestLimit": 0,
+        "QuestTimeLimit": 0,
+        "QuestActivation": "QuestStart",
+        "IsAbortable": 0,
+        "ReputationQuestFail": {
+          "ReputationFailList": ""
+        },
+        "QuestHints": {
+          "Item": [
+            {
+              "Text": 17676
+            },
+            {
+              "Text": 17701
+            }
+          ]
+        },
+        "HasStarterSpeechBubble": 0,
+        "StarterSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": {
+              "HintText": 18468,
+              "ObjectFilter": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "ObjectFilter": {
+                    "ObjectGUID": 102580
+                  }
+                }
+              },
+              "UseSpecificPortrait": 1,
+              "SpecificPortraitProfile": 81
+            }
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Deep Blue - Stirrings from the Deep",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 48547
+      },
+      "Reward": {
+        "RewardAssets": {
+          "Item": {
+            "Reward": 132092,
+            "Amount": 1,
+            "IsHidden": 1
+          }
+        },
+        "RewardReputation": ""
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "BringVehicleToObjectObjective",
+              "Values": {
+                "ConditionQuestBringVehicleToObject": {
+                  "BringToObject": {
+                    "Template": "ConditionObjectPrebuiltObject",
+                    "Values": {
+                      "ConditionObjectPrebuiltObject": {
+                        "PrebuiltObject": 132094
+                      },
+                      "ConditionScanner": "",
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  }
+                },
+                "ConditionQuestObjective": "",
+                "ConditionPropsExecutionPlaceSettings": ""
+              }
+            }
+          }
+        },
+        "WinConditionCompletionOrder": "Linear"
+      },
+      "QuestOptional": {
+        "HasStarterObject": "Specific",
+        "StarterObject": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionStarterObject": {
+              "StarterObjectObject": {
+                "Template": "ConditionObjectSpawnedObject",
+                "Values": {
+                  "ConditionObjectSpawnedObject": {
+                    "ExecutionObject": 132094,
+                    "ObjectSpawnArea": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "SpawnArea": {
+                          "SpawnContext": "Object",
+                          "MatcherGUID": 132726,
+                          "ContextGUID": 601470,
+                          "DistanceToContext": 35,
+                          "MinObjectDistance": 30,
+                          "MaxObjectDistance": 40
+                        }
+                      }
+                    },
+                    "ObjectDespawn": "StayOnMap",
+                    "DoSetVisualObjectOwner": 1,
+                    "VisualObjectOwner": "Void_Trader"
+                  },
+                  "ConditionScanner": "",
+                  "ConditionObjectiveSignsAndFeedback": {
+                    "Infolayer": 500173
+                  }
+                }
+              }
+            },
+            "ConditionQuestObjective": "",
+            "ConditionPropsSessionSettings": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "A7_QuestItemUsage",
+    "Values": {
+      "Standard": {
+        "GUID": 132093,
+        "Name": "The Great White 1 - Use item"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": {
+                "Profile": 132102
+              },
+              "BaseNotification": {
+                "NotificationText": 132292
+              },
+              "NotificationSubtitle": {
+                "Subtitle": 132013
+              }
+            }
+          }
+        },
+        "SuccessMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": {
+                "Profile": 132102
+              },
+              "BaseNotification": {
+                "NotificationText": 132293
+              },
+              "NotificationSubtitle": {
+                "Subtitle": 132014
+              }
+            }
+          }
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "OnQuestSucceeded": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": [
+                  {
+                    "Action": {
+                      "Template": "ActionPlaySound",
+                      "Values": {
+                        "Action": "",
+                        "ActionPlaySound": {
+                          "Sound": 235846
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionSpawnObjects",
+                      "Values": {
+                        "Action": "",
+                        "ActionSpawnObjects": {
+                          "SpawnGUID": 132091,
+                          "Amount": 1,
+                          "Owner": "Neutral"
+                        },
+                        "SpawnArea": {
+                          "SpawnContext": "Object",
+                          "ContextGUID": 132094,
+                          "DistanceToContext": 100,
+                          "MinObjectDistance": 100,
+                          "MaxObjectDistance": 150
+                        },
+                        "SessionFilter": {
+                          "AllowProcessingSession": 1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionDelayedActions",
+                      "Values": {
+                        "Action": "",
+                        "ActionDelayedActions": {
+                          "ExecutionDelay": 1000,
+                          "DelayedActions": {
+                            "IsBaseAutoCreateAsset": 1,
+                            "Values": {
+                              "ActionList": {
+                                "Actions": {
+                                  "Item": {
+                                    "Action": {
+                                      "Template": "ActionMoveObject",
+                                      "Values": {
+                                        "Action": "",
+                                        "ObjectFilter": {
+                                          "ObjectGUID": 132091,
+                                          "ObjectRestrictToQuestObjects": 1
+                                        },
+                                        "ObjectTargetFilter": {
+                                          "TargetGUID": 132094,
+                                          "TargetObjectRestrictToQuestObjects": 1
+                                        },
+                                        "ActionMoveObject": {
+                                          "IgnoreEveryDistractionDuringMove": 1
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionDelayedActions",
+                      "Values": {
+                        "Action": "",
+                        "ActionDelayedActions": {
+                          "ExecutionDelay": 18000,
+                          "DelayedActions": {
+                            "IsBaseAutoCreateAsset": 1,
+                            "Values": {
+                              "ActionList": {
+                                "Actions": {
+                                  "Item": {
+                                    "Action": {
+                                      "Template": "ActionStartQuest",
+                                      "Values": {
+                                        "Action": "",
+                                        "ActionStartQuest": {
+                                          "Quest": 132095,
+                                          "InheritQuestSession": 1,
+                                          "InheritQuestObjects": 1
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "QuestGiver": 132102,
+        "StoryText": 132302,
+        "IsEnabled": 0,
+        "QuestTimeLimit": 0,
+        "QuestActivation": "QuestStart",
+        "IsAbortable": 0,
+        "ReputationQuestFail": {
+          "ReputationFailList": ""
+        },
+        "QuestHints": {
+          "Item": {
+            "Text": 132402
+          }
+        },
+        "HasStarterSpeechBubble": 0,
+        "StarterSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": {
+              "HintText": 18468,
+              "ObjectFilter": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "ObjectFilter": {
+                    "ObjectGUID": 102580
+                  }
+                }
+              },
+              "UseSpecificPortrait": 1,
+              "SpecificPortraitProfile": 81
+            }
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Deep Blue - Stirrings from the Deep",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 48548
+      },
+      "Reward": {
+        "RewardAssets": "",
+        "RewardReputation": ""
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "ItemUsageObjective",
+              "Values": {
+                "ConditionQuestObjective": {
+                  "TextCombinedContextValue": 132428,
+                  "QuestTrackerIcon": "data/ui/2kimages/main/3dicons/consumables/icon_loudspeaker_3.png",
+                  "OnSuccessActions": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ActionList": {
+                        "Actions": {
+                          "Item": {
+                            "Action": {
+                              "Template": "ActionPlaySound",
+                              "Values": {
+                                "Action": "",
+                                "ActionPlaySound": {
+                                  "Sound": 279249
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestItemUsed": {
+                  "UseItems": {
+                    "Item": {
+                      "Item": 132092,
+                      "Amount": 1,
+                      "TargetObject": 601470
+                    }
+                  }
+                },
+                "ConditionPropsSessionSettings": "",
+                "ConditionPropsExecutionPlaceSettings": ""
+              }
+            }
+          }
+        },
+        "WinConditionCompletionOrder": "Linear"
+      },
+      "QuestOptional": {
+        "HasStarterObject": "Specific",
+        "StarterObject": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionStarterObject": {
+              "StarterObjectObject": {
+                "Template": "ConditionObjectPrebuiltObject",
+                "Values": {
+                  "ConditionObjectPrebuiltObject": {
+                    "PrebuiltObject": 132094
+                  },
+                  "ConditionScanner": "",
+                  "ConditionObjectiveSignsAndFeedback": {
+                    "Infolayer": 500173
+                  }
+                }
+              }
+            },
+            "ConditionQuestObjective": "",
+            "ConditionPropsSessionSettings": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "A7_QuestItemUsage",
+    "Values": {
+      "Standard": {
+        "GUID": 132099,
+        "Name": "The Great White 3 - Escort",
+        "ID": "SharkQuestLastQuestHotfix"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": {
+                "Profile": 132102
+              },
+              "BaseNotification": {
+                "NotificationText": 132296
+              },
+              "NotificationSubtitle": {
+                "Subtitle": 132017
+              }
+            }
+          }
+        },
+        "SuccessMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": {
+                "Profile": 132102
+              },
+              "BaseNotification": {
+                "NotificationText": 132297
+              },
+              "NotificationSubtitle": {
+                "Subtitle": 132018
+              }
+            }
+          }
+        },
+        "FailureMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": {
+                "Profile": 132102
+              },
+              "BaseNotification": {
+                "NotificationText": 132298
+              },
+              "NotificationSubtitle": {
+                "Subtitle": 132019
+              }
+            }
+          }
+        },
+        "SelectionReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "EscortShipSelectedMessage": {
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "SuppressMessage": 1
+        },
+        "ResolveConfirmationMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": {
+                "Profile": 132102
+              },
+              "BaseNotification": {
+                "NotificationText": 10550
+              },
+              "NotificationSubtitle": {
+                "Subtitle": 131931
+              }
+            }
+          }
+        },
+        "StartFollowShipMessage": {
+          "SuppressMessage": 1
+        },
+        "OnQuestActive": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDelayedActions",
+                    "Values": {
+                      "Action": "",
+                      "ActionDelayedActions": {
+                        "ExecutionDelay": 30000,
+                        "DelayedActions": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ActionList": {
+                              "Actions": {
+                                "Item": {
+                                  "Action": {
+                                    "Template": "ActionNotification",
+                                    "Values": {
+                                      "Action": "",
+                                      "ActionNotification": {
+                                        "Notification": {
+                                          "Template": "CharacterNotification",
+                                          "Values": {
+                                            "CharacterNotification": {
+                                              "Profile": 132102
+                                            },
+                                            "BaseNotification": {
+                                              "NotificationText": 132299
+                                            },
+                                            "NotificationSubtitle": {
+                                              "Subtitle": 132020
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "OnQuestEnd": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionDeleteObjects",
+                    "Values": {
+                      "Action": "",
+                      "ActionDeleteObjects": {
+                        "ShipsLeaveMapFirst": 1
+                      },
+                      "ObjectFilter": {
+                        "ObjectGUID": 132094,
+                        "CheckQuestStarterSession": 1,
+                        "ObjectRestrictToQuestObjects": 1
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "QuestGiver": 132102,
+        "StoryText": 132304,
+        "IsEnabled": 0,
+        "QuestTimeLimit": 0,
+        "QuestActivation": "QuestStart",
+        "IsAbortable": 0,
+        "ReputationQuestFail": {
+          "ReputationFailList": ""
+        },
+        "QuestHints": {
+          "Item": [
+            {
+              "Text": 21962
+            },
+            {
+              "Text": 17695
+            }
+          ]
+        },
+        "HasStarterSpeechBubble": 0,
+        "StarterSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": {
+              "HintText": 18468,
+              "ObjectFilter": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "ObjectFilter": {
+                    "ObjectGUID": 102580
+                  }
+                }
+              },
+              "UseSpecificPortrait": 1,
+              "SpecificPortraitProfile": 81
+            }
+          }
+        }
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Deep Blue - The Last Leviathan",
+            "Status": "Exported",
+            "ExportCount": 1
+          }
+        },
+        "LineID": 48550
+      },
+      "Reward": {
+        "RewardAssets": {
+          "Item": {
+            "Reward": 132401,
+            "Amount": 1
+          }
+        },
+        "RewardReputation": "",
+        "GenerateIgnoreUnlocks": 1
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "Objective": {
+              "Template": "EscortObjective",
+              "Values": {
+                "ConditionQuestEscort": {
+                  "EscortObjectsPrebuilt": {
+                    "Item": {
+                      "EscortObject": {
+                        "Template": "ObjectFilterWithSignsAndFeedback",
+                        "Values": {
+                          "ObjectFilter": {
+                            "ObjectGUID": 132091,
+                            "ObjectRestrictToQuestObjects": 1
+                          },
+                          "ConditionObjectiveSignsAndFeedback": {
+                            "Infolayer": 137837
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "MinSurvivors": 1,
+                  "Destinations": {
+                    "Item": ""
+                  },
+                  "HasEndlessAttacker": 1,
+                  "AttackerEndlessSpawn": {
+                    "Item": [
+                      {
+                        "AttackerObject": {
+                          "Template": "QuestObjectList",
+                          "Values": {
+                            "ObjectList": {
+                              "Object": 102375,
+                              "MinAmount": 1,
+                              "MaxAmount": 3
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "AttackerObject": {
+                          "Template": "QuestObjectList",
+                          "Values": {
+                            "ObjectList": {
+                              "Object": 102377,
+                              "MaxAmount": 1
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "AttackerEndlessInterval": 330000,
+                  "MinDistAttackerToObject": 5,
+                  "MaxDistAttackerToObject": 10,
+                  "AttackerSpawnInterval": 150000,
+                  "NeedsShipInRange": 0,
+                  "TargetMapBorderText": 132403,
+                  "StartImmediately": 1,
+                  "DespawnPrebuiltEscortObjects": 1
+                },
+                "ConditionQuestObjective": {
+                  "QuestTrackerIcon": "data/ui/2kimages/main/3dicons/animals/icon_shark.png"
+                },
+                "ConditionPropsSessionSettings": "",
+                "ConditionPropsExecutionPlaceSettings": {
+                  "ExecutionPlace": {
+                    "Template": "ObjectFilterWithSignsAndFeedback",
+                    "Values": {
+                      "ObjectFilter": {
+                        "ObjectGUID": 132094
+                      },
+                      "ConditionObjectiveSignsAndFeedback": ""
+                    }
+                  },
+                  "ExecutionPlaceText": 12763
+                }
+              }
+            }
+          }
+        },
+        "WinConditionCompletionOrder": "Linear"
+      },
+      "QuestOptional": {
+        "HasStarterObject": "Specific",
+        "StarterObject": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionStarterObject": {
+              "StarterObjectObject": {
+                "Template": "ObjectFilterWithSignsAndFeedback",
+                "Values": {
+                  "ObjectFilter": {
+                    "ObjectGUID": 132094
+                  },
+                  "ConditionObjectiveSignsAndFeedback": {
+                    "Infolayer": 500173
+                  }
+                }
+              }
+            },
+            "ConditionQuestObjective": "",
+            "ConditionPropsSessionSettings": ""
+          }
+        }
       }
     }
   }
