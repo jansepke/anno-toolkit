@@ -48,41 +48,43 @@ const Index = () => {
           <Grid item xs={12}>
             <Typography variant="h4">{t("heading.items")}</Typography>
             <Grid container spacing={3}>
-              {itemTypes.map((itemType) => (
-                <Grid
-                  key={itemType.key}
-                  item
-                  xs={12}
-                  sm={6}
-                  md={3}
-                  className={classes.gridItem}
-                >
-                  <Card className={classes.card}>
-                    <Link href={`/items/${itemType.key}`}>
-                      <CardActionArea
-                        className={classes.cardActionArea}
-                        disabled={itemType.hidden}
-                      >
-                        <CardContent>
-                          <Image
-                            src={`/img/main/3dicons/${itemType.icon}.png`}
-                            width={75}
-                            height={75}
-                            priority={true}
-                            loading="eager"
-                          />
-                          <Typography variant="h5">
-                            {t("itemTypes." + itemType.key)}
-                          </Typography>
-                          {itemType.hidden ? (
-                            <Typography>{t("comingSoon")}</Typography>
-                          ) : null}
-                        </CardContent>
-                      </CardActionArea>
-                    </Link>
-                  </Card>
-                </Grid>
-              ))}
+              {itemTypes
+                .filter((itemType) => !itemType.hidden)
+                .map((itemType) => (
+                  <Grid
+                    key={itemType.key}
+                    item
+                    xs={12}
+                    sm={6}
+                    md={3}
+                    className={classes.gridItem}
+                  >
+                    <Card className={classes.card}>
+                      <Link href={`/items/${itemType.key}`}>
+                        <CardActionArea
+                          className={classes.cardActionArea}
+                          disabled={itemType.hidden}
+                        >
+                          <CardContent>
+                            <Image
+                              src={`/img/main/3dicons/${itemType.icon}.png`}
+                              width={75}
+                              height={75}
+                              priority={true}
+                              loading="eager"
+                            />
+                            <Typography variant="h5">
+                              {t("itemTypes." + itemType.key)}
+                            </Typography>
+                            {itemType.hidden ? (
+                              <Typography>{t("comingSoon")}</Typography>
+                            ) : null}
+                          </CardContent>
+                        </CardActionArea>
+                      </Link>
+                    </Card>
+                  </Grid>
+                ))}
             </Grid>
           </Grid>
 
