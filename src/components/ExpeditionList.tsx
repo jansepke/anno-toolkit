@@ -52,7 +52,7 @@ const ExpeditionList = ({ items }: { items: AnnoItem[] }) => {
           )}
           loadingIndicator={(ref, visible) => (
             <Grid item xs={12} ref={ref}>
-              <Grid container justify="center">
+              <Grid container justifyContent="center">
                 {visible ? <CircularProgress /> : null}
               </Grid>
             </Grid>
