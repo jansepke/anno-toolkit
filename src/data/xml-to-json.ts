@@ -1,6 +1,8 @@
-import parser from "fast-xml-parser";
+import { XMLParser } from "fast-xml-parser";
 import { promises as fs } from "fs";
 import { languages } from "../anno-config.json";
+
+const parser = new XMLParser();
 
 main();
 
@@ -87,7 +89,7 @@ async function parseXMLDataFile(file: string) {
   const xml = await fs.readFile(`./import-data/${file}.xml`, "utf8");
 
   try {
-    return parser.parse(xml, {}, true);
+    return parser.parse(xml, true);
   } catch (error) {
     throw new Error("Invalid XML");
   }
