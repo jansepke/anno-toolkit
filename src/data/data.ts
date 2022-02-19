@@ -1,5 +1,5 @@
 import { promises as fs } from "fs";
-import { itemTypes } from "../anno-config.json";
+import { itemTypes } from "../anno-config";
 import { AnnoItem } from "./AnnoItem";
 
 export async function getEffectItems(

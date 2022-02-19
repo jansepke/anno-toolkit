@@ -1,4 +1,4 @@
-import { rarities } from "../anno-config.json";
+import { rarities } from "../anno-config";
 import { AnnoItem, EffectTarget } from "./AnnoItem";
 
 export default class AnnoItemFactory {

@@ -1,7 +1,6 @@
 const nextTranslate = require("next-translate");
 
 module.exports = nextTranslate({
-  webpack5: false,
   async redirects() {
     return [
       {

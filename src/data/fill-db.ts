@@ -1,5 +1,5 @@
 import { promises as fs } from "fs";
-import { itemTypes, languages } from "../anno-config.json";
+import { itemTypes, languages } from "../anno-config";
 import { AnnoItem } from "./AnnoItem";
 import AnnoItemFactory from "./AnnoItemFactory";
 

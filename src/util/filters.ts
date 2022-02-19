@@ -1,4 +1,4 @@
-import { upgrades } from "../anno-config.json";
+import { upgrades } from "../anno-config";
 import { AnnoItem, Upgrade } from "../data/AnnoItem";
 
 export function byItemName(filterValue: string) {

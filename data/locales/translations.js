@@ -1,4 +1,4 @@
-const config = require("../../src/anno-config.json");
+const config = require("../../src/anno-config");
 
 function getTranslationFromConfig(translations, group) {
   return config[group].reduce(

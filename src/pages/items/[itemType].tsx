@@ -1,7 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
-import { itemTypes, languages } from "../../anno-config.json";
+import { itemTypes, languages } from "../../anno-config";
 import ItemList from "../../components/ItemList";
 import Page from "../../components/Page";
 import { AnnoItem } from "../../data/AnnoItem";

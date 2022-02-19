@@ -5,7 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
-import { expeditionThreats } from "../anno-config.json";
+import { expeditionThreats } from "../anno-config";
 import { AnnoItem } from "../data/AnnoItem";
 import ExpeditionAttributes from "./ExpeditionAttributes";
 import ItemCard from "./ItemCard";

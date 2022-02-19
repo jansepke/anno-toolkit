@@ -1,6 +1,6 @@
 import { XMLParser } from "fast-xml-parser";
 import { promises as fs } from "fs";
-import { languages } from "../anno-config.json";
+import { languages } from "../anno-config";
 
 const parser = new XMLParser();
 

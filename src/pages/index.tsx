@@ -11,7 +11,7 @@ import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { expeditionThreats, itemTypes } from "../anno-config.json";
+import { expeditionThreats, itemTypes } from "../anno-config";
 import Page from "../components/Page";
 
 const useStyles = makeStyles((theme) => ({

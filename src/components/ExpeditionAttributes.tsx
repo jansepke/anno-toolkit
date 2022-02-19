@@ -1,7 +1,7 @@
 import Typography from "@material-ui/core/Typography";
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
-import { expeditionThreats } from "../anno-config.json";
+import { expeditionThreats } from "../anno-config";
 import { AnnoItem } from "../data/AnnoItem";
 
 const ExpeditionAttributes = ({ item }: { item: AnnoItem }) => {
