@@ -12,6 +12,11 @@ export function byEffectTarget(filterValue: string) {
     filterValue === "all" ||
     item.effectTargets.some((et) => et.label === filterValue);
 }
+export function byItemWorld(filterValue: string) {
+  return (item: AnnoItem) =>
+    filterValue === "all" ||
+    item.worlds.includes(filterValue);
+}
 
 export function byUpgrade(filterValue: string) {
   const upgrade = upgrades.find((u) => u.key === filterValue);
