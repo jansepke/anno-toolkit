@@ -18,6 +18,7 @@ module.exports = {
     onlyFavourites: "Meine Favoriten",
   },
   target: "Beeinflusst",
+  trader: "Händler",
   comingSoon: "Demnächst...",
   index: {
     intro:

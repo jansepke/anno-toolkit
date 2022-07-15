@@ -5,15 +5,24 @@ export default class AnnoItemFactory {
   private translations: { [key: number]: string };
   private effectTargetPoolById: { [key: number]: any };
   private rewardPoolById: { [key: number]: any };
+  private traderProfiles: { [key: number]: any };
+  private rewardItemPools: { [key: number]: any };
+
+  private traderItems: { [key: number]: any };
 
   constructor(
     translations: { [key: number]: string },
     effectTargetPoolById: { [key: number]: any },
-    rewardPoolById: { [key: number]: any }
+    rewardPoolById: { [key: number]: any },
+    traderProfiles: Array<any>,
+    rewardItemPools: { [key: number]: any }
   ) {
     this.translations = translations;
     this.effectTargetPoolById = effectTargetPoolById;
     this.rewardPoolById = rewardPoolById;
+    this.traderProfiles = traderProfiles;
+    this.rewardItemPools = rewardItemPools;
+    this.traderItems = this.resolveTraderItems();
   }
 
   public newAnnoItem(asset: any): AnnoItem {
@@ -45,6 +54,7 @@ export default class AnnoItemFactory {
           rarities.find((r) => r.key === rarity)?.labelId as number
         ],
       upgrades: this.getUpgrades(values),
+      trader: this.resolveTrader(values)
     };
   }
 
@@ -89,6 +99,72 @@ export default class AnnoItemFactory {
         ];
       })
       .filter((target: EffectTarget) => target.label);
+  }
+
+
+private resolveTrader(values: any) {
+  let o:Array<any> = []
+  Object.entries(this.traderItems).forEach(keyval => {
+    if(keyval[1].includes(values.Standard.GUID)){
+      o.push(keyval[0])
+    }
+  })
+  return o
+}
+  
+  private resolveTraderItems():{ [key: string]: any } {
+    let o:{ [key: string]: Array<number> } = {}
+    this.traderProfiles.forEach((profile: {[key:string]: any}) => {
+      try{
+        //console.log(profile.Values.Standard.Name)
+        let rewardItemPoolGuid = profile.Values.Trader.Progression.EarlyGame.OfferingItems
+        if(rewardItemPoolGuid != undefined){
+          let rewardItemPoolGuids = this.rewardItemPools[rewardItemPoolGuid].Values.RewardPool.ItemsPool.Item.map((i: {[key:string]: number}) => {return i.ItemLink})
+  
+          let rewardPoolGuids = rewardItemPoolGuids.map((rig: any) => {
+            // some guids are rewardpool and not rewarditempool guids
+            if(Object.keys(this.rewardItemPools).includes(`${rig}`)){
+              if(this.rewardItemPools[rig].Values.RewardPool != ""){
+                // extract one/multiple rewardpool guid from rewarditempool 
+                if(Array.isArray(this.rewardItemPools[rig].Values.RewardPool.ItemsPool.Item)){
+                  let o = this.rewardItemPools[rig].Values.RewardPool.ItemsPool.Item.map((i: {[key:string]: number}) => {return i.ItemLink})
+                  return o
+                }else{
+                   return this.rewardItemPools[rig].Values.RewardPool.ItemsPool.Item.ItemLink
+                }
+              }
+            }else{
+              return rig
+            }
+          })
+          .filter((a: undefined) => a != undefined)
+          .flat()
+  
+          let itemGuids = rewardPoolGuids.map((rg: any) => {
+            if(Object.keys(this.rewardPoolById).includes(`${rg}`)){
+              if(this.rewardPoolById[rg].Values.RewardPool != ""){
+                // extract one/multiple rewardpool guid from rewarditempool 
+                if(Array.isArray(this.rewardPoolById[rg].Values.RewardPool.ItemsPool.Item)){
+                  let o = this.rewardPoolById[rg].Values.RewardPool.ItemsPool.Item.map((i: {[key:string]: number}) => {return i.ItemLink})
+                  return o
+                }else{
+                   return this.rewardPoolById[rg].Values.RewardPool.ItemsPool.Item.ItemLink
+                }
+              }
+            }else{
+              return rg
+            }
+          })
+          .filter((a: number) => a != undefined)
+          .flat()
+          let name = profile.Values.Standard.Name.split("(")[1].replace(")","")
+          o[name] = itemGuids
+        }
+      }catch(e){
+        //console.log(e.toString())
+      }
+    });
+    return o
   }
 
   private resolveExpeditionAttributes(values: any) {

@@ -104,6 +104,10 @@ const ItemEffects = ({ item }: { item: AnnoItem }) => {
             <br />
           </span>
         ))}
+        <strong>{t("trader")}: </strong>
+        <span>
+        {item.trader.join(", ")}
+        </span>
       </Typography>
     </>
   );
