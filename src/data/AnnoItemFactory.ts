@@ -1,23 +1,28 @@
 import { rarities } from "../anno-config";
-import { AnnoItem, EffectTarget } from "./AnnoItem";
+import { AnnoItem, AssetPool, EffectTarget } from "./AnnoItem";
 
 export default class AnnoItemFactory {
   private translations: { [key: number]: string };
   private effectTargetPoolById: { [key: number]: any };
   private rewardPoolById: { [key: number]: any };
+  private assetPoolById: { [key: number]: any };
 
   constructor(
     translations: { [key: number]: string },
     effectTargetPoolById: { [key: number]: any },
-    rewardPoolById: { [key: number]: any }
+    rewardPoolById: { [key: number]: any },
+    assetPoolById: { [key: number]: any },
   ) {
     this.translations = translations;
     this.effectTargetPoolById = effectTargetPoolById;
     this.rewardPoolById = rewardPoolById;
+    this.assetPoolById = assetPoolById;
   }
 
   public newAnnoItem(asset: any): AnnoItem {
     const values = asset.Values;
+
+    const assetPools = this.resolveAssetPools(values)
 
     const rarity = values.Item.Rarity?.toLowerCase() || rarities[0].key;
     const iconPath = values.Standard.IconFilename.replace(
@@ -45,7 +50,63 @@ export default class AnnoItemFactory {
           rarities.find((r) => r.key === rarity)?.labelId as number
         ],
       upgrades: this.getUpgrades(values),
+      assetPools: assetPools,
+      worlds: this.resolveWorldFromAssetPools(assetPools)
     };
+  }
+
+  private resolveAssetPools(values: any): AssetPool[] {
+    let o: AssetPool[] = []
+
+    Object.values(this.assetPoolById).forEach(assetpool => {
+      try{
+        if(!Array.isArray(assetpool.Values.AssetPool.AssetList.Item)) {
+          if(assetpool.Values.AssetPool.AssetList.Item.Asset == values.Standard.GUID){
+            o.push({
+              label: assetpool.Values.Standard.Name,
+              id: assetpool.Values.Standard.GUID
+            })
+          }
+        }else{
+          if(assetpool.Values.AssetPool.AssetList.Item.filter((obj: { Asset: any; }) => obj.Asset == values.Standard.GUID).length >= 1){
+            o.push({
+              label: assetpool.Values.Standard.Name,
+              id: assetpool.Values.Standard.GUID
+            })
+          }
+        }
+      }catch(e){
+      }
+    })
+
+    if(o.length == 0){
+      o.push({
+        label:"",
+        id: 0
+      })
+    }
+
+    return o
+  }
+
+  
+  private resolveWorldFromAssetPools(assetPools: AssetPool[]): Array<string> {
+    let o: string[] = []
+    assetPools.forEach(assetPool => {
+      let mapping = {
+        "Old World": ["Worker", "Farmer", "Artisans", "Engineers", "Investors", "Scholars"],
+        "New World": ["Jornalero", "Obreros"],
+        "Arctic": ["Arctic", "Technicians"],
+        "Enbesa": ["Shepherds", "Elders"]
+      }
+      Object.entries(mapping).forEach(keyval => {
+        if(keyval[1].filter(needle => assetPool.label.includes(needle)).length >= 1){
+          o.push(keyval[0])
+        }
+      })
+    })
+
+    return o
   }
 
   private resolveEffectTarget(values: any): EffectTarget[] {

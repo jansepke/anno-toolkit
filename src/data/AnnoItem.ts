@@ -3,6 +3,11 @@ export interface EffectTarget {
   visible: boolean;
 }
 
+export interface AssetPool {
+  label: string,
+  id: number
+}
+
 export interface Upgrade {
   key: string;
   label?: string;
@@ -27,4 +32,6 @@ export interface AnnoItem {
   expeditionAttributes: ExpeditionAttribute[];
   upgrades: Upgrade[];
   favourite?: boolean;
+  assetPools: AssetPool[];
+  worlds: Array<string>;
 }

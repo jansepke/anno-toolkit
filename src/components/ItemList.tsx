@@ -10,6 +10,7 @@ import {
   byEffectTarget,
   byFavourite,
   byItemName,
+  byItemWorld,
   byRarity,
   byUpgrade,
 } from "../util/filters";
@@ -27,6 +28,7 @@ const ItemList = ({ items }: { items: AnnoItem[] }) => {
     upgrade: "all",
     rarity: "all",
     itemName: "",
+    itemWorld: "all",
     onlyFavourites: false,
   });
   const [favourites, setFavourites] = useStateWithLocalStorage<number[]>(
@@ -57,7 +59,8 @@ const ItemList = ({ items }: { items: AnnoItem[] }) => {
     .filter(byEffectTarget(filters.effectTarget))
     .filter(byUpgrade(filters.upgrade))
     .filter(byRarity(filters.rarity))
-    .filter(byFavourite(filters.onlyFavourites));
+    .filter(byFavourite(filters.onlyFavourites))
+    .filter(byItemWorld(filters.itemWorld));
 
   const tabs = itemTypes
     .filter((itemType) => !itemType.hidden)

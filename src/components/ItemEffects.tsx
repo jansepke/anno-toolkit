@@ -104,6 +104,15 @@ const ItemEffects = ({ item }: { item: AnnoItem }) => {
             <br />
           </span>
         ))}
+        <strong>{t("categorie")}: </strong>
+        {item.assetPools.map((assetPool) => (
+          <span>
+            {assetPool.label}
+            <br />
+          </span>
+        ))}
+        <strong>{t("world")}: </strong>
+        {item.worlds.join(", ")}
       </Typography>
     </>
   );

@@ -27,16 +27,19 @@ export async function getData(
   const translations = await loadTranslations(language);
   const rewardPoolById = await loadRewardPools();
   const effectTargetPoolById = await loadEffectTargetPools();
+  const assetPoolById = await loadAssetPools();
   const assets = (
     await Promise.all(
       fileNames.map((fileName) => readFromCache("assets", fileName))
     )
   ).flat();
 
+
   const factory = new AnnoItemFactory(
     translations,
     effectTargetPoolById,
-    rewardPoolById
+    rewardPoolById,
+    assetPoolById
   );
 
   return assets.filter(filter).map((asset: any) => factory.newAnnoItem(asset));
@@ -56,6 +59,18 @@ async function loadRewardPools() {
   }
 
   return rewardPoolById;
+}
+
+async function loadAssetPools() {
+  const assetpools = await readFromCache("assets", "assetpool");
+
+  const assetPoolById: { [key: number]: any } = {};
+
+  for (const assetpool of assetpools) {
+    assetPoolById[assetpool.Values.Standard.GUID] = assetpool;
+  }
+
+  return assetPoolById;
 }
 
 async function loadEffectTargetPools() {

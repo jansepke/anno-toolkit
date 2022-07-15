@@ -18,6 +18,8 @@ module.exports = {
     onlyFavourites: "My Favourites",
   },
   target: "Targets",
+  categorie: "Categorie",
+  world: "World",
   comingSoon: "Coming soon...",
   index: {
     intro:

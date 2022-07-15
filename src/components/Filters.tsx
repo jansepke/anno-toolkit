@@ -13,6 +13,7 @@ import {
   byEffectTarget,
   byFavourite,
   byItemName,
+  byItemWorld,
   byRarity,
   byUpgrade,
 } from "../util/filters";
@@ -22,6 +23,7 @@ export interface FilterData {
   effectTarget: string;
   upgrade: string;
   rarity: string;
+  itemWorld: string;
   onlyFavourites: boolean;
 }
 
@@ -75,6 +77,16 @@ const Filters = ({
     .filter((v, i, a) => a.indexOf(v) === i)
     .sort();
 
+  const itemWorldOptions = items
+    .filter(byItemName(filters.itemName))
+    .filter(byUpgrade(filters.upgrade))
+    .filter(byRarity(filters.rarity))
+    .filter(byFavourite(filters.onlyFavourites))
+    .filter(byItemWorld(filters.itemWorld))
+    .flatMap((asset) => asset.worlds)
+    .filter((v, i, a) => a.indexOf(v) === i)
+    .sort();
+
   const upgradeOptions = items
     .filter(byItemName(filters.itemName))
     .filter(byEffectTarget(filters.effectTarget))
@@ -107,6 +119,17 @@ const Filters = ({
                 value={filters.itemName}
                 onChange={(event) =>
                   setFilters({ ...filters, itemName: event.target.value })
+                }
+              />
+            </FormControl>
+          </Grid>
+          <Grid item xs={12} sm={6} md={3}>
+            <FormControl fullWidth={true}>
+              <CustomAutocomplete
+                label={t("filter.itemWorld")}
+                items={itemWorldOptions}
+                onChange={(value) =>
+                  setFilters({ ...filters, itemWorld: value })
                 }
               />
             </FormControl>
