@@ -1,6 +1,6 @@
 # Anno 1800 items
 
-View and filter all Items of Anno 1800. Access it here: [anno-toolkit.one](https://anno-toolkit.one/)
+View and filter all Items of Anno 1800. Access it here: [anno-toolkit.jansepke.de](https://anno-toolkit.jansepke.de/)
 
 ## Contributing
 
