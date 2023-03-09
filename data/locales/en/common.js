@@ -18,6 +18,7 @@ module.exports = {
     onlyFavourites: "My Favourites",
   },
   target: "Targets",
+  trader: "Trader",
   comingSoon: "Coming soon...",
   index: {
     intro:

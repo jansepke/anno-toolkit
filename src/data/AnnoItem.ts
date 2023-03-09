@@ -27,4 +27,5 @@ export interface AnnoItem {
   expeditionAttributes: ExpeditionAttribute[];
   upgrades: Upgrade[];
   favourite?: boolean;
+  trader: Array<string>;
 }

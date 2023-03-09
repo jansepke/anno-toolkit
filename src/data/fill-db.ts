@@ -6,7 +6,7 @@ import AnnoItemFactory from "./AnnoItemFactory";
 async function main() {
   for (const language of languages) {
     await generateDBForLanguage(language.fileName);
-  }
+  }  
 }
 
 async function generateDBForLanguage(language: string) {
@@ -27,6 +27,10 @@ export async function getData(
   const translations = await loadTranslations(language);
   const rewardPoolById = await loadRewardPools();
   const effectTargetPoolById = await loadEffectTargetPools();
+
+  const traderProfiles = await readFromCache("assets", "profile_3rdparty");
+  const rewardItemPools = await loadRewardItemPools()
+
   const assets = (
     await Promise.all(
       fileNames.map((fileName) => readFromCache("assets", fileName))
@@ -36,7 +40,9 @@ export async function getData(
   const factory = new AnnoItemFactory(
     translations,
     effectTargetPoolById,
-    rewardPoolById
+    rewardPoolById,
+    traderProfiles,
+    rewardItemPools
   );
 
   return assets.filter(filter).map((asset: any) => factory.newAnnoItem(asset));
@@ -58,6 +64,17 @@ async function loadRewardPools() {
   return rewardPoolById;
 }
 
+async function loadRewardItemPools() {
+  const rewardItemPools = await readFromCache("assets", "rewarditempool");
+
+  const rewardItemPoolById: { [key: number]: any } = {};
+
+  for (const rewardItemPool of rewardItemPools) {
+    rewardItemPoolById[rewardItemPool.Values.Standard.GUID] = rewardItemPool;
+  }
+
+  return rewardItemPoolById;
+}
 async function loadEffectTargetPools() {
   const effectTargetPools = await readFromCache(
     "assets",
