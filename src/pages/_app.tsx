@@ -1,10 +1,11 @@
 import { ThemeProvider } from "@material-ui/core";
 import CssBaseline from "@material-ui/core/CssBaseline";
+import { Analytics } from "@vercel/analytics/react";
 import { AppProps } from "next/app";
 import Head from "next/head";
 import Router from "next/router";
 import NProgress from "nprogress";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import "../nprogress.css";
 import theme from "../theme";
 
@@ -37,6 +38,8 @@ const App = ({ Component, pageProps }: AppProps) => {
         <CssBaseline />
         <Component {...pageProps} />
       </ThemeProvider>
+
+      <Analytics />
     </>
   );
 };
