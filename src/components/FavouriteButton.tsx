@@ -1,9 +1,8 @@
-import yellow from "@material-ui/core/colors/yellow";
-import IconButton from "@material-ui/core/IconButton";
-import { makeStyles } from "@material-ui/core/styles";
-import Star from "@material-ui/icons/Star";
-import StarBorder from "@material-ui/icons/StarBorder";
-import React from "react";
+import Star from "@mui/icons-material/Star";
+import StarBorder from "@mui/icons-material/StarBorder";
+import IconButton from "@mui/material/IconButton";
+import { yellow } from "@mui/material/colors";
+import makeStyles from "@mui/styles/makeStyles";
 
 const useStyles = makeStyles({
   unchecked: {

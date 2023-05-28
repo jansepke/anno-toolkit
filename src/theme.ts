@@ -1,4 +1,9 @@
-import { createTheme } from "@material-ui/core";
+import { Theme, createTheme } from "@mui/material/styles";
+import "@mui/styles";
+
+declare module "@mui/styles" {
+  interface DefaultTheme extends Theme {}
+}
 
 export default createTheme({
   palette: {
@@ -6,12 +11,23 @@ export default createTheme({
       main: "rgb(214, 180, 127)",
     },
   },
-  overrides: {
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 960,
+      lg: 1280,
+      xl: 1920,
+    },
+  },
+  components: {
     MuiCardContent: {
-      root: {
-        "&:last-child": {
-          paddingBottom: -1,
-        },
+      styleOverrides: {
+        root: ({ theme }) => ({
+          "&:last-child": {
+            paddingBottom: theme.spacing(2),
+          },
+        }),
       },
     },
   },

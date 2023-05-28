@@ -1,16 +1,15 @@
-import { Grid } from "@material-ui/core";
-import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
-import CardContent from "@material-ui/core/CardContent";
-import Container from "@material-ui/core/Container";
-import MuiLink from "@material-ui/core/Link";
-import { makeStyles } from "@material-ui/core/styles";
-import Typography from "@material-ui/core/Typography";
+import { Grid } from "@mui/material";
+import Card from "@mui/material/Card";
+import CardActionArea from "@mui/material/CardActionArea";
+import CardContent from "@mui/material/CardContent";
+import Container from "@mui/material/Container";
+import MuiLink from "@mui/material/Link";
+import Typography from "@mui/material/Typography";
+import makeStyles from "@mui/styles/makeStyles";
 import Trans from "next-translate/Trans";
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import { expeditionThreats, itemTypes } from "../anno-config";
 import Page from "../components/Page";
 

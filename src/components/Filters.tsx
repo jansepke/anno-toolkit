@@ -1,13 +1,12 @@
-import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
-import FormControl from "@material-ui/core/FormControl";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import Grid from "@material-ui/core/Grid";
-import Switch from "@material-ui/core/Switch";
-import TextField from "@material-ui/core/TextField";
-import Autocomplete from "@material-ui/lab/Autocomplete";
+import Autocomplete from "@mui/material/Autocomplete";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import FormControl from "@mui/material/FormControl";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Grid from "@mui/material/Grid";
+import Switch from "@mui/material/Switch";
+import TextField from "@mui/material/TextField";
 import useTranslation from "next-translate/useTranslation";
-import React from "react";
 import { AnnoItem } from "../data/AnnoItem";
 import {
   byEffectTarget,
@@ -127,7 +126,7 @@ const Filters = ({
               <Autocomplete
                 options={upgradeOptions}
                 getOptionLabel={(option) => option.label as string}
-                getOptionSelected={(a, b) => a.key === b.key}
+                isOptionEqualToValue={(a, b) => a.key === b.key}
                 autoComplete={true}
                 clearOnEscape={true}
                 blurOnSelect={true}

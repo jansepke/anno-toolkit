@@ -1,10 +1,9 @@
-import CircularProgress from "@material-ui/core/CircularProgress";
-import Container from "@material-ui/core/Container";
-import Grid from "@material-ui/core/Grid";
-import { makeStyles } from "@material-ui/core/styles";
-import Typography from "@material-ui/core/Typography";
+import CircularProgress from "@mui/material/CircularProgress";
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
+import makeStyles from "@mui/styles/makeStyles";
 import useTranslation from "next-translate/useTranslation";
-import React from "react";
 import { expeditionThreats } from "../anno-config";
 import { AnnoItem } from "../data/AnnoItem";
 import ExpeditionAttributes from "./ExpeditionAttributes";

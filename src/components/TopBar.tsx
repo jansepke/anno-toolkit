@@ -1,15 +1,16 @@
-import AppBar from "@material-ui/core/AppBar";
-import Box from "@material-ui/core/Box";
-import Button from "@material-ui/core/Button";
-import Chip from "@material-ui/core/Chip";
-import IconButton from "@material-ui/core/IconButton";
-import Menu from "@material-ui/core/Menu";
-import MenuItem from "@material-ui/core/MenuItem";
-import { makeStyles, Theme } from "@material-ui/core/styles";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import HomeIcon from "@material-ui/icons/Home";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import HomeIcon from "@mui/icons-material/Home";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Chip from "@mui/material/Chip";
+import IconButton from "@mui/material/IconButton";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import { Theme } from "@mui/material/styles";
+import makeStyles from "@mui/styles/makeStyles";
 import useTranslation from "next-translate/useTranslation";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -42,7 +43,7 @@ const TopBar = ({ headline }: { headline: string }) => {
     <AppBar position="sticky">
       <Toolbar>
         <Link href="/">
-          <IconButton color="inherit">
+          <IconButton color="inherit" size="large">
             <HomeIcon />
           </IconButton>
         </Link>
@@ -55,7 +56,6 @@ const TopBar = ({ headline }: { headline: string }) => {
           </Button>
           <Menu
             anchorEl={anchorEl}
-            getContentAnchorEl={null}
             anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
             transformOrigin={{ vertical: "top", horizontal: "center" }}
             keepMounted
@@ -84,6 +84,7 @@ const TopBar = ({ headline }: { headline: string }) => {
             href="https://github.com/jansepke/anno-toolkit"
             target="_blank"
             rel="noopener"
+            size="large"
           >
             <GitHubIcon />
           </IconButton>

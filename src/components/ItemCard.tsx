@@ -1,43 +1,17 @@
-import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
-import CardHeader from "@material-ui/core/CardHeader";
-import Grid from "@material-ui/core/Grid";
-import { makeStyles } from "@material-ui/core/styles";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardHeader from "@mui/material/CardHeader";
+import Grid from "@mui/material/Grid";
+import { useTheme } from "@mui/material/styles";
 import Image from "next/image";
 import React from "react";
 import { rarities } from "../anno-config";
 import { AnnoItem } from "../data/AnnoItem";
 import FavouriteButton from "./FavouriteButton";
 
-const useStyles: (props?: any) => Record<string, string> = makeStyles(
-  (theme) => ({
-    gridItem: {
-      display: "flex",
-    },
-    card: {
-      width: "100%",
-      display: "flex",
-      flexDirection: "column",
-      borderWidth: 2,
-      borderStyle: "solid",
-    },
-    content: {
-      maxHeight: "12rem",
-      overflow: "auto",
-      paddingTop: "0",
-      marginBottom: "auto",
-    },
-    ...rarities.reduce(
-      (all, r, i) => ({
-        ...all,
-        [r.key + "Card"]: { borderColor: r.color },
-        [r.key + "Text"]: {
-          color: i === 0 ? theme.palette.text.secondary : r.color,
-        },
-      }),
-      {}
-    ),
-  })
+const raritiesByKey = rarities.reduce(
+  (all: any, r) => ({ ...all, [r.key]: r.color }),
+  {}
 );
 
 const ItemCard = ({
@@ -49,12 +23,26 @@ const ItemCard = ({
   handleFavouriteChange?: (itemId: number) => void;
   children: React.ReactNode;
 }) => {
-  const classes = useStyles();
-  const cardClasses = [classes.card, classes[item.rarity + "Card"]];
+  const theme = useTheme();
+
+  const textColor =
+    item.rarity === "common"
+      ? theme.palette.text.secondary
+      : raritiesByKey[item.rarity];
 
   return (
-    <Grid item xs={12} sm={6} md={4} lg={3} xl={2} className={classes.gridItem}>
-      <Card elevation={3} className={cardClasses.join(" ")}>
+    <Grid item xs={12} sm={6} md={4} lg={3} xl={2} sx={{ display: "flex" }}>
+      <Card
+        elevation={3}
+        sx={{
+          width: "100%",
+          display: "flex",
+          flexDirection: "column",
+          borderWidth: 2,
+          borderColor: raritiesByKey[item.rarity],
+          borderStyle: "solid",
+        }}
+      >
         <CardHeader
           avatar={<Image src={item.icon} width={35} height={35} unoptimized />}
           title={
@@ -71,14 +59,21 @@ const ItemCard = ({
           titleTypographyProps={{ variant: "body1" }}
           subheader={
             <>
-              <span className={classes[item.rarity + "Text"]}>
-                {item.rarityLabel}&nbsp;
-              </span>
+              <span style={{ color: textColor }}>{item.rarityLabel}&nbsp;</span>
               (ID: {item.id})
             </>
           }
         />
-        <CardContent className={classes.content}>{children}</CardContent>
+        <CardContent
+          sx={{
+            maxHeight: "12rem",
+            overflow: "auto",
+            paddingTop: "0",
+            marginBottom: "auto",
+          }}
+        >
+          {children}
+        </CardContent>
       </Card>
     </Grid>
   );

@@ -1,6 +1,5 @@
-import Typography from "@material-ui/core/Typography";
+import Typography from "@mui/material/Typography";
 import useTranslation from "next-translate/useTranslation";
-import React from "react";
 import { expeditionThreats } from "../anno-config";
 import { AnnoItem } from "../data/AnnoItem";
 
