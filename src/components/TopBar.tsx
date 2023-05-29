@@ -9,24 +9,15 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import { Theme } from "@mui/material/styles";
-import makeStyles from "@mui/styles/makeStyles";
 import useTranslation from "next-translate/useTranslation";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { locales } from "../../i18n";
 
-const useStyles = makeStyles((theme: Theme) => ({
-  title: {
-    flexGrow: 1,
-  },
-}));
-
 const TopBar = ({ headline }: { headline: string }) => {
   const { asPath } = useRouter();
   const { lang } = useTranslation();
-  const classes = useStyles();
 
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
@@ -47,7 +38,7 @@ const TopBar = ({ headline }: { headline: string }) => {
             <HomeIcon />
           </IconButton>
         </Link>
-        <Typography variant="h4" className={classes.title}>
+        <Typography variant="h4" sx={{ flexGrow: 1 }}>
           {headline}
         </Typography>
         <div>
