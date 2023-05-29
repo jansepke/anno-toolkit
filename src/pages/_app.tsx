@@ -4,22 +4,11 @@ import { ThemeProvider } from "@mui/material/styles";
 import { Analytics } from "@vercel/analytics/react";
 import { AppProps } from "next/app";
 import Head from "next/head";
-import Router, { useRouter } from "next/router";
+import { useRouter } from "next/router";
 import Script from "next/script";
-import NProgress from "nprogress";
 import { useEffect } from "react";
 import createEmotionCache from "../createEmotionCache";
-import "../nprogress.css";
 import theme from "../theme";
-
-// loading indicator
-NProgress.configure({
-  showSpinner: false,
-  trickleSpeed: 200,
-});
-Router.events.on("routeChangeStart", () => NProgress.start());
-Router.events.on("routeChangeComplete", () => NProgress.done());
-Router.events.on("routeChangeError", () => NProgress.done());
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
