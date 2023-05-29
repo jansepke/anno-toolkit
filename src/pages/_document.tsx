@@ -9,23 +9,19 @@ import Document, {
   NextScript,
 } from "next/document";
 import createEmotionCache from "../createEmotionCache";
+import { roboto } from "../theme";
 import { MyAppProps } from "./_app";
 
 interface MyDocumentProps extends DocumentProps {
   emotionStyleTags: JSX.Element[];
 }
 
-// TODO: use next/font
 export default function MyDocument({ emotionStyleTags }: MyDocumentProps) {
   return (
-    <Html lang="en">
+    <Html lang="en" className={roboto.className}>
       <Head>
         <meta name="emotion-insertion-point" content="" />
         {emotionStyleTags}
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-        />
       </Head>
       <body>
         <Main />
