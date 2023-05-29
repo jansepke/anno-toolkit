@@ -5,7 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import Container from "@mui/material/Container";
 import MuiLink from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
-import makeStyles from "@mui/styles/makeStyles";
+import { useTheme } from "@mui/styles";
 import Trans from "next-translate/Trans";
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
@@ -13,32 +13,13 @@ import Link from "next/link";
 import { expeditionThreats, itemTypes } from "../anno-config";
 import Page from "../components/Page";
 
-const useStyles = makeStyles((theme) => ({
-  container: {
-    marginTop: theme.spacing(3),
-  },
-  gridItem: {
-    display: "flex",
-  },
-  card: {
-    width: "100%",
-    textAlign: "center",
-  },
-  cardActionArea: {
-    height: "100%",
-  },
-  grayscale: {
-    filter: "saturate(2) brightness(0.7)",
-  },
-}));
-
 const Index = () => {
-  const classes = useStyles();
   const { t } = useTranslation("common");
+  const theme = useTheme();
 
   return (
     <Page headline={t("title.index")}>
-      <Container maxWidth="md" className={classes.container}>
+      <Container maxWidth="md" sx={{ marginTop: theme.spacing(3) }}>
         <Grid container spacing={3}>
           <Grid item xs={12}>
             <Typography align="justify">{t("index.intro")}</Typography>
@@ -56,12 +37,12 @@ const Index = () => {
                     xs={12}
                     sm={6}
                     md={3}
-                    className={classes.gridItem}
+                    sx={{ display: "flex" }}
                   >
-                    <Card className={classes.card}>
+                    <Card sx={{ width: "100%", textAlign: "center" }}>
                       <Link href={`/items/${itemType.key}`}>
                         <CardActionArea
-                          className={classes.cardActionArea}
+                          sx={{ height: "100%" }}
                           disabled={itemType.hidden}
                         >
                           <CardContent>
@@ -99,11 +80,11 @@ const Index = () => {
                     xs={12}
                     sm={6}
                     md={3}
-                    className={classes.gridItem}
+                    sx={{ display: "flex" }}
                   >
-                    <Card className={classes.card}>
+                    <Card sx={{ width: "100%", textAlign: "center" }}>
                       <Link href={`/expedition/${threat.key}`}>
-                        <CardActionArea className={classes.cardActionArea}>
+                        <CardActionArea sx={{ height: "100%" }}>
                           <CardContent>
                             <Image
                               src={`/img/main/icons/${threat.icon}_0.png`}
@@ -111,7 +92,7 @@ const Index = () => {
                               height={75}
                               priority={true}
                               loading="eager"
-                              className={classes.grayscale}
+                              style={{ filter: "saturate(2) brightness(0.7)" }}
                             />
                             <Typography variant="h5">
                               {t("expeditionThreats." + threat.key)}
