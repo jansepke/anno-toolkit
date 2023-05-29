@@ -11,7 +11,7 @@ const Error404 = () => {
     }, 1500);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, [router]);
 
   return (
     <Error

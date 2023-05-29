@@ -6,8 +6,7 @@
     "start": "next start",
     "xml-to-json": "ts-node --transpile-only --script-mode ./src/data/xml-to-json.ts",
     "fill-db": "ts-node --transpile-only --script-mode ./src/data/fill-db.ts",
-    "lint": "prettier --check .",
-    "lint:fix": "prettier --write .",
+    "lint": "prettier --check . && next lint",
     "postinstall": "husky install"
   },
   "browserslist": [
@@ -35,6 +34,11 @@
     "@types/node": "^20.2.5",
     "@types/nprogress": "0.2.0",
     "@types/react": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
+    "eslint": "8.41.0",
+    "eslint-config-next": "13.4.4",
+    "eslint-config-prettier": "^8.8.0",
     "husky": "8.0.3",
     "next-translate-plugin": "^2.0.5",
     "prettier": "^2.8.8",

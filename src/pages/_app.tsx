@@ -38,9 +38,11 @@ export default function MyApp({
   const router = useRouter();
 
   useEffect(() => {
-    const handleRouteChange = (url: string) => {
+    const handleRouteChange = () => {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       if (!window.goatcounter) return;
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       window.goatcounter.count({ path: router.asPath });
     };
@@ -48,6 +50,7 @@ export default function MyApp({
     return () => {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router.events]);
 
   return (

@@ -10,7 +10,7 @@ import { AnnoItem } from "../data/AnnoItem";
 import FavouriteButton from "./FavouriteButton";
 
 const raritiesByKey = rarities.reduce(
-  (all: any, r) => ({ ...all, [r.key]: r.color }),
+  (all: Record<string, string>, r) => ({ ...all, [r.key]: r.color }),
   {}
 );
 

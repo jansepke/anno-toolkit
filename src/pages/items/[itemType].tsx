@@ -1,6 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import useTranslation from "next-translate/useTranslation";
-import React from "react";
 import { itemTypes, languages } from "../../anno-config";
 import ItemList from "../../components/ItemList";
 import Page from "../../components/Page";
@@ -23,7 +22,7 @@ export default ItemPage;
 export const getStaticProps: GetStaticProps = async ({ locale, params }) => {
   const items = await getEffectItems(
     languages.find((l) => l.key === locale)?.fileName || languages[0].fileName,
-    params!.itemType as string
+    params?.itemType as string
   );
 
   return {

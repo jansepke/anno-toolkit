@@ -6,6 +6,7 @@ export interface EffectTarget {
 export interface Upgrade {
   key: string;
   label?: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   value: any;
 }
 

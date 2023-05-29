@@ -116,11 +116,13 @@ const Index = () => {
                 i18nKey="common:index.about"
                 components={[
                   <MuiLink
+                    key="issues"
                     href="https://github.com/jansepke/anno-toolkit/issues"
                     target="_blank"
                     rel="noopener"
                   />,
                   <MuiLink
+                    key="license"
                     href="https://github.com/jansepke/anno-toolkit/blob/main/LICENSE"
                     target="_blank"
                     rel="noopener"

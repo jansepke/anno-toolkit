@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { rarities } from "../anno-config";
 import { AnnoItem, EffectTarget } from "./AnnoItem";
 

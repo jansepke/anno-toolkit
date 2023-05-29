@@ -15,7 +15,7 @@ export function byEffectTarget(filterValue: string) {
 
 export function byUpgrade(filterValue: string) {
   const upgrade = upgrades.find((u) => u.key === filterValue);
-  let additionalCheck = (u: Upgrade) => true;
+  let additionalCheck: (u: Upgrade) => boolean = () => true;
   if (upgrade?.valueIs === "negative") {
     additionalCheck = (u) => getValue(u.value) < 0;
   }

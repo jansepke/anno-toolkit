@@ -1,6 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import useTranslation from "next-translate/useTranslation";
-import React from "react";
 import { expeditionThreats, languages } from "../../anno-config";
 import ExpeditionList from "../../components/ExpeditionList";
 import Page from "../../components/Page";
@@ -21,7 +20,7 @@ const ExpeditionPage = ({ items }: { items: AnnoItem[] }) => {
 export default ExpeditionPage;
 
 export const getStaticProps: GetStaticProps = async ({ locale, params }) => {
-  const threat = params!.threat as string;
+  const threat = params?.threat as string;
 
   const items = await getExpeditionItems(
     languages.find((l) => l.key === locale)?.fileName || languages[0].fileName,
@@ -29,6 +28,7 @@ export const getStaticProps: GetStaticProps = async ({ locale, params }) => {
   );
 
   const filteredAndSortedItems = items.sort(
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     (a, b) => getAttribute(b, threat)!.value - getAttribute(a, threat)!.value
   );
 

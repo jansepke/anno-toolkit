@@ -21,6 +21,15 @@ function VirtualizedList<T>({
   useEffect(() => {
     setVisibleItems(items.slice(0, pageSize));
 
+    const handleObserver = (entities: IntersectionObserverEntry[]) => {
+      const target = entities[0];
+      if (target.isIntersecting) {
+        setVisibleItems((visibleItems) =>
+          items.slice(0, visibleItems.length + pageSize)
+        );
+      }
+    };
+
     const observer = new IntersectionObserver(handleObserver, {
       rootMargin: rootMargin,
     });
@@ -31,15 +40,6 @@ function VirtualizedList<T>({
 
     return () => observer.disconnect();
   }, [items]);
-
-  const handleObserver = (entities: IntersectionObserverEntry[]) => {
-    const target = entities[0];
-    if (target.isIntersecting) {
-      setVisibleItems((visibleItems) =>
-        items.slice(0, visibleItems.length + pageSize)
-      );
-    }
-  };
 
   return (
     <>
