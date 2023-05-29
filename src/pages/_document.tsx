@@ -1,4 +1,5 @@
 import createEmotionServer from "@emotion/server/create-instance";
+import { AppType } from "next/app";
 import Document, {
   DocumentContext,
   DocumentProps,
@@ -66,11 +67,9 @@ MyDocument.getInitialProps = async (ctx: DocumentContext) => {
   const cache = createEmotionCache();
   const { extractCriticalToChunks } = createEmotionServer(cache);
 
-  // TODO: remove ts-ignore
   ctx.renderPage = () =>
     originalRenderPage({
       enhanceApp: (
-        // @ts-ignore
         App: React.ComponentType<React.ComponentProps<AppType> & MyAppProps>
       ) =>
         function EnhanceApp(props) {
