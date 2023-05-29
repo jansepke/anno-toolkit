@@ -12,6 +12,7 @@ import Link from "next/link";
 import { expeditionThreats, itemTypes } from "../anno-config";
 import Page from "../components/Page";
 
+// TODO: extract components https://mui.com/material-ui/customization/how-to-customize/#2-reusable-component
 const Index = () => {
   const { t } = useTranslation("common");
 
