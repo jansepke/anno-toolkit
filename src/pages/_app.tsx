@@ -28,6 +28,7 @@ export interface MyAppProps extends AppProps {
   emotionCache?: EmotionCache;
 }
 
+// TODO: use env var
 // TODO: use custom hooks
 export default function MyApp({
   Component,
@@ -62,7 +63,7 @@ export default function MyApp({
 
       <Analytics />
       <Script
-        data-goatcounter="https://jansepke.goatcounter.com/count"
+        data-goatcounter="https://anno-toolkit.goatcounter.com/count"
         src="/scripts/goatcounter.js"
         strategy="afterInteractive"
       />
