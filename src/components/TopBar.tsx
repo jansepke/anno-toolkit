@@ -33,7 +33,7 @@ const TopBar = ({ headline }: { headline: string }) => {
   return (
     <AppBar position="sticky">
       <Toolbar>
-        <Link href="/">
+        <Link href="/" legacyBehavior>
           <IconButton color="inherit" size="large">
             <HomeIcon />
           </IconButton>
@@ -55,7 +55,7 @@ const TopBar = ({ headline }: { headline: string }) => {
           >
             {locales.map((lng) => (
               <MenuItem key={lng} disabled={lng === lang}>
-                <Link href={asPath} locale={lng}>
+                <Link href={asPath} locale={lng} legacyBehavior>
                   <Typography
                     variant="button"
                     display="block"

@@ -39,7 +39,7 @@ const Index = () => {
                     sx={{ display: "flex" }}
                   >
                     <Card sx={{ width: "100%", textAlign: "center" }}>
-                      <Link href={`/items/${itemType.key}`}>
+                      <Link href={`/items/${itemType.key}`} legacyBehavior>
                         <CardActionArea
                           sx={{ height: "100%" }}
                           disabled={itemType.hidden}
@@ -51,6 +51,7 @@ const Index = () => {
                               height={75}
                               priority={true}
                               loading="eager"
+                              alt=""
                             />
                             <Typography variant="h5">
                               {t("itemTypes." + itemType.key)}
@@ -82,7 +83,7 @@ const Index = () => {
                     sx={{ display: "flex" }}
                   >
                     <Card sx={{ width: "100%", textAlign: "center" }}>
-                      <Link href={`/expedition/${threat.key}`}>
+                      <Link href={`/expedition/${threat.key}`} legacyBehavior>
                         <CardActionArea sx={{ height: "100%" }}>
                           <CardContent>
                             <Image
@@ -92,6 +93,7 @@ const Index = () => {
                               priority={true}
                               loading="eager"
                               style={{ filter: "saturate(2) brightness(0.7)" }}
+                              alt=""
                             />
                             <Typography variant="h5">
                               {t("expeditionThreats." + threat.key)}

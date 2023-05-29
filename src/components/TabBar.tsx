@@ -34,7 +34,7 @@ const TabBar = ({ queryKey, path, tabs, type, imageStyles }: TabBarProps) => {
       centered={type === "centered"}
     >
       {tabs.map((tab) => (
-        <Link key={tab.key} href={`/${path}/${tab.key}`}>
+        <Link key={tab.key} href={`/${path}/${tab.key}`} legacyBehavior>
           <Tab
             label={tab.label}
             icon={
@@ -45,6 +45,7 @@ const TabBar = ({ queryKey, path, tabs, type, imageStyles }: TabBarProps) => {
                 priority={true}
                 loading="eager"
                 style={imageStyles}
+                alt=""
               />
             }
           />

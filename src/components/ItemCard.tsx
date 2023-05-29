@@ -37,7 +37,9 @@ const ItemCard = ({
       }}
     >
       <CardHeader
-        avatar={<Image src={item.icon} width={35} height={35} unoptimized />}
+        avatar={
+          <Image src={item.icon} width={35} height={35} unoptimized alt="" />
+        }
         title={
           <>
             <strong>{item.name}</strong>
