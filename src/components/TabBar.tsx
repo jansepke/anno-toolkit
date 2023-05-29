@@ -3,6 +3,7 @@ import Tabs from "@mui/material/Tabs";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { CSSProperties } from "react";
 
 interface TabProps {
   key: string;
@@ -15,16 +16,10 @@ interface TabBarProps {
   path: string;
   type: "centered" | "scrollable";
   tabs: TabProps[];
-  imageClassName?: string;
+  imageStyles?: CSSProperties;
 }
 
-const TabBar = ({
-  queryKey,
-  path,
-  tabs,
-  type,
-  imageClassName,
-}: TabBarProps) => {
+const TabBar = ({ queryKey, path, tabs, type, imageStyles }: TabBarProps) => {
   const router = useRouter();
   const queryValue = router.query[queryKey] as string;
   const tabKeys = tabs.map((tab) => tab.key);
@@ -49,7 +44,7 @@ const TabBar = ({
                 height={30}
                 priority={true}
                 loading="eager"
-                className={imageClassName}
+                style={imageStyles}
               />
             }
           />

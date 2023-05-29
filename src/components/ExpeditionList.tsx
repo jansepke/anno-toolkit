@@ -2,7 +2,6 @@ import CircularProgress from "@mui/material/CircularProgress";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import makeStyles from "@mui/styles/makeStyles";
 import useTranslation from "next-translate/useTranslation";
 import { expeditionThreats } from "../anno-config";
 import { AnnoItem } from "../data/AnnoItem";
@@ -11,14 +10,7 @@ import ItemCard from "./ItemCard";
 import TabBar from "./TabBar";
 import VirtualizedList from "./VirtualizedList";
 
-const useStyles = makeStyles((theme) => ({
-  grayscale: {
-    filter: "saturate(2) brightness(0.7)",
-  },
-}));
-
 const ExpeditionList = ({ items }: { items: AnnoItem[] }) => {
-  const classes = useStyles();
   const { t } = useTranslation("common");
 
   const tabs = expeditionThreats
@@ -35,7 +27,7 @@ const ExpeditionList = ({ items }: { items: AnnoItem[] }) => {
         type="scrollable"
         queryKey="threat"
         path="expedition"
-        imageClassName={classes.grayscale}
+        imageStyles={{ filter: "saturate(2) brightness(0.7)" }}
         tabs={tabs}
       />
       <br />
