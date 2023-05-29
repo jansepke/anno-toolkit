@@ -13,7 +13,7 @@ import {
   byRarity,
   byUpgrade,
 } from "../util/filters";
-import { useStateWithLocalStorage } from "../util/hooks";
+import { useStateWithLocalStorage } from "../util/useStateWithLocalStorage";
 import Filters, { FilterData } from "./Filters";
 import ItemCard from "./ItemCard";
 import ItemEffects from "./ItemEffects";
