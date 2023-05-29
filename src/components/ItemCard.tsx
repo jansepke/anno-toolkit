@@ -23,6 +23,7 @@ const ItemCard = ({
   handleFavouriteChange?: (itemId: number) => void;
   children: React.ReactNode;
 }) => {
+  // TODO: use sx: (theme)=> with Typography
   const theme = useTheme();
 
   const textColor =

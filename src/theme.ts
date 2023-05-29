@@ -1,9 +1,4 @@
-import { Theme, createTheme } from "@mui/material/styles";
-import "@mui/styles";
-
-declare module "@mui/styles" {
-  interface DefaultTheme extends Theme {}
-}
+import { createTheme } from "@mui/material/styles";
 
 export default createTheme({
   palette: {

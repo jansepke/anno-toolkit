@@ -28,6 +28,7 @@ export interface MyAppProps extends AppProps {
   emotionCache?: EmotionCache;
 }
 
+// TODO: use custom hooks
 export default function MyApp({
   Component,
   emotionCache = clientSideEmotionCache,

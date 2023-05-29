@@ -5,7 +5,6 @@ import CardContent from "@mui/material/CardContent";
 import Container from "@mui/material/Container";
 import MuiLink from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
-import { useTheme } from "@mui/styles";
 import Trans from "next-translate/Trans";
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
@@ -15,11 +14,10 @@ import Page from "../components/Page";
 
 const Index = () => {
   const { t } = useTranslation("common");
-  const theme = useTheme();
 
   return (
     <Page headline={t("title.index")}>
-      <Container maxWidth="md" sx={{ marginTop: theme.spacing(3) }}>
+      <Container maxWidth="md" sx={{ marginTop: 3 }}>
         <Grid container spacing={3}>
           <Grid item xs={12}>
             <Typography align="justify">{t("index.intro")}</Typography>

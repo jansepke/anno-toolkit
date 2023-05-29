@@ -14,6 +14,7 @@ interface MyDocumentProps extends DocumentProps {
   emotionStyleTags: JSX.Element[];
 }
 
+// TODO: use next/font
 export default function MyDocument({ emotionStyleTags }: MyDocumentProps) {
   return (
     <Html lang="en">
@@ -65,6 +66,7 @@ MyDocument.getInitialProps = async (ctx: DocumentContext) => {
   const cache = createEmotionCache();
   const { extractCriticalToChunks } = createEmotionServer(cache);
 
+  // TODO: remove ts-ignore
   ctx.renderPage = () =>
     originalRenderPage({
       enhanceApp: (
