@@ -38,15 +38,7 @@ const TabBar = ({ queryKey, path, tabs, type, imageStyles }: TabBarProps) => {
           <Tab
             label={tab.label}
             icon={
-              <Image
-                src={tab.icon}
-                width={30}
-                height={30}
-                priority={true}
-                loading="eager"
-                style={imageStyles}
-                alt=""
-              />
+              <Image src={tab.icon} width={30} height={30} priority={true} loading="eager" style={imageStyles} alt="" />
             }
           />
         </Link>

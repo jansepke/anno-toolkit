@@ -13,11 +13,7 @@ const FavouriteButton = ({
   handleFavouriteChange: () => void;
 }) => (
   <IconButton size="small" onClick={handleFavouriteChange}>
-    {favourite ? (
-      <Star sx={colorYellow} />
-    ) : (
-      <StarBorder sx={{ ":hover": colorYellow }} />
-    )}
+    {favourite ? <Star sx={colorYellow} /> : <StarBorder sx={{ ":hover": colorYellow }} />}
   </IconButton>
 );
 

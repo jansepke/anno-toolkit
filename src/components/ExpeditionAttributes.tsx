@@ -13,9 +13,7 @@ const ExpeditionAttributes = ({ item }: { item: AnnoItem }) => {
         .map((attribute) => (
           <span key={attribute.key}>
             {t("expeditionThreats." + attribute.key)}
-            {expeditionThreats.find((et) => et.key === attribute.key)?.icon
-              ? ": " + attribute.value
-              : ""}
+            {expeditionThreats.find((et) => et.key === attribute.key)?.icon ? ": " + attribute.value : ""}
             <br />
           </span>
         ))}

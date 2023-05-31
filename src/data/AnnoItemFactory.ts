@@ -21,10 +21,7 @@ export default class AnnoItemFactory {
     const values = asset.Values;
 
     const rarity = values.Item.Rarity?.toLowerCase() || rarities[0].key;
-    const iconPath = values.Standard.IconFilename.replace(
-      "data/ui/2kimages/",
-      "/img/"
-    ).replace(".png", "_0.png");
+    const iconPath = values.Standard.IconFilename.replace("data/ui/2kimages/", "/img/").replace(".png", "_0.png");
 
     return {
       id: values.Standard.GUID,
@@ -41,10 +38,7 @@ export default class AnnoItemFactory {
         values.ItemAction?.ActionTarget !== undefined,
       expeditionAttributes: this.resolveExpeditionAttributes(values),
       rarity: rarity,
-      rarityLabel:
-        this.translations[
-          rarities.find((r) => r.key === rarity)?.labelId as number
-        ],
+      rarityLabel: this.translations[rarities.find((r) => r.key === rarity)?.labelId as number],
       upgrades: this.getUpgrades(values),
     };
   }
@@ -72,8 +66,7 @@ export default class AnnoItemFactory {
           ];
         }
 
-        let effectTargets =
-          effectTargetPool.Values.ItemEffectTargetPool.EffectTargetGUIDs.Item;
+        let effectTargets = effectTargetPool.Values.ItemEffectTargetPool.EffectTargetGUIDs.Item;
         if (!Array.isArray(effectTargets)) {
           effectTargets = [effectTargets];
         }
@@ -93,8 +86,7 @@ export default class AnnoItemFactory {
   }
 
   private resolveExpeditionAttributes(values: any) {
-    let attributes =
-      values.ExpeditionAttribute?.ExpeditionAttributes?.Item || [];
+    let attributes = values.ExpeditionAttribute?.ExpeditionAttributes?.Item || [];
     if (!Array.isArray(attributes)) {
       attributes = [attributes];
     }
@@ -116,9 +108,7 @@ export default class AnnoItemFactory {
           value: this.translateValue(upgradeKey, v),
         }))
       )
-      .filter(
-        (upgrade) => upgrade.key !== "PublicServiceNoSatisfactionDistance"
-      );
+      .filter((upgrade) => upgrade.key !== "PublicServiceNoSatisfactionDistance");
   }
 
   private translateValue(upgradeKey: string, value: any): any {
@@ -135,19 +125,11 @@ export default class AnnoItemFactory {
       return products.map((p: any) => this.translations[p.ItemLink]);
     }
 
-    if (
-      typeof value === "number" &&
-      value >= 10000 &&
-      this.translations[value]
-    ) {
+    if (typeof value === "number" && value >= 10000 && this.translations[value]) {
       return this.translations[value];
     }
 
-    if (
-      typeof value === "object" &&
-      typeof value.Item === "object" &&
-      !Array.isArray(value.Item)
-    ) {
+    if (typeof value === "object" && typeof value.Item === "object" && !Array.isArray(value.Item)) {
       value.Item = [value.Item];
     }
 
@@ -156,11 +138,7 @@ export default class AnnoItemFactory {
         for (const property in item) {
           const value = item[property];
 
-          if (
-            typeof value === "number" &&
-            value >= 10000 &&
-            this.translations[value]
-          ) {
+          if (typeof value === "number" && value >= 10000 && this.translations[value]) {
             item[`${property}_label`] = this.translations[value];
           }
         }

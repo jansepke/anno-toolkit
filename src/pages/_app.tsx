@@ -16,11 +16,7 @@ export interface MyAppProps extends AppProps {
 }
 
 // TODO: use env var
-export default function MyApp({
-  Component,
-  emotionCache = clientSideEmotionCache,
-  pageProps,
-}: MyAppProps) {
+export default function MyApp({ Component, emotionCache = clientSideEmotionCache, pageProps }: MyAppProps) {
   return (
     <CacheProvider value={emotionCache}>
       <Head>

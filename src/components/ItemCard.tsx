@@ -9,10 +9,7 @@ import { rarities } from "../anno-config";
 import { AnnoItem } from "../data/AnnoItem";
 import FavouriteButton from "./FavouriteButton";
 
-const raritiesByKey = rarities.reduce(
-  (all: Record<string, string>, r) => ({ ...all, [r.key]: r.color }),
-  {}
-);
+const raritiesByKey = rarities.reduce((all: Record<string, string>, r) => ({ ...all, [r.key]: r.color }), {});
 
 // TODO: use styled components
 const ItemCard = ({
@@ -37,9 +34,7 @@ const ItemCard = ({
       }}
     >
       <CardHeader
-        avatar={
-          <Image src={item.icon} width={35} height={35} unoptimized alt="" />
-        }
+        avatar={<Image src={item.icon} width={35} height={35} unoptimized alt="" />}
         title={
           <>
             <strong>{item.name}</strong>
@@ -58,9 +53,7 @@ const ItemCard = ({
               component="span"
               sx={{
                 color: (theme) =>
-                  item.rarity === "common"
-                    ? theme.palette.text.secondary
-                    : raritiesByKey[item.rarity],
+                  item.rarity === "common" ? theme.palette.text.secondary : raritiesByKey[item.rarity],
               }}
             >
               {item.rarityLabel}&nbsp;

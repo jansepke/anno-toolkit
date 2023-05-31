@@ -16,9 +16,6 @@ module.exports.getTranslations = function (language) {
   return {
     itemTypes: getTranslationFromConfig(translations, "itemTypes"),
     upgrades: getTranslationFromConfig(translations, "upgrades"),
-    expeditionThreats: getTranslationFromConfig(
-      translations,
-      "expeditionThreats"
-    ),
+    expeditionThreats: getTranslationFromConfig(translations, "expeditionThreats"),
   };
 };

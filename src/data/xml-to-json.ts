@@ -8,10 +8,7 @@ const parser = new XMLParser();
 main();
 
 async function main() {
-  await Promise.all([
-    loadAssets(),
-    ...languages.map((l) => loadTranslations(l.fileName)),
-  ]);
+  await Promise.all([loadAssets(), ...languages.map((l) => loadTranslations(l.fileName))]);
 }
 
 async function loadTranslations(language: string) {
@@ -73,9 +70,7 @@ function processAssets(assets: any) {
     }
 
     const assetType = (
-      asset.Values.Item && asset.Values.Item.Allocation
-        ? asset.Values.Item.Allocation + "item"
-        : asset.Template
+      asset.Values.Item && asset.Values.Item.Allocation ? asset.Values.Item.Allocation + "item" : asset.Template
     ).toLowerCase();
 
     if (!assetsByType[assetType]) {

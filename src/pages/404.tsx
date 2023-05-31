@@ -13,12 +13,7 @@ const Error404 = () => {
     return () => clearTimeout(timer);
   }, [router]);
 
-  return (
-    <Error
-      statusCode={404}
-      title="This page could not be found. Redirecting..."
-    />
-  );
+  return <Error statusCode={404} title="This page could not be found. Redirecting..." />;
 };
 
 export default Error404;

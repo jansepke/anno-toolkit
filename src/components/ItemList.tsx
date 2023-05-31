@@ -6,13 +6,7 @@ import useTranslation from "next-translate/useTranslation";
 import { useState } from "react";
 import { itemTypes } from "../anno-config";
 import { AnnoItem } from "../data/AnnoItem";
-import {
-  byEffectTarget,
-  byFavourite,
-  byItemName,
-  byRarity,
-  byUpgrade,
-} from "../util/filters";
+import { byEffectTarget, byFavourite, byItemName, byRarity, byUpgrade } from "../util/filters";
 import { useStateWithLocalStorage } from "../util/useStateWithLocalStorage";
 import Filters, { FilterData } from "./Filters";
 import ItemCard from "./ItemCard";
@@ -29,17 +23,10 @@ const ItemList = ({ items }: { items: AnnoItem[] }) => {
     itemName: "",
     onlyFavourites: false,
   });
-  const [favourites, setFavourites] = useStateWithLocalStorage<number[]>(
-    "items.favourites",
-    []
-  );
+  const [favourites, setFavourites] = useStateWithLocalStorage<number[]>("items.favourites", []);
 
   const handleFavouriteChange = (itemId: number) => {
-    setFavourites(
-      favourites.includes(itemId)
-        ? favourites.filter((f) => f !== itemId)
-        : [...favourites, itemId]
-    );
+    setFavourites(favourites.includes(itemId) ? favourites.filter((f) => f !== itemId) : [...favourites, itemId]);
   };
 
   items.forEach((item) => {
@@ -73,9 +60,7 @@ const ItemList = ({ items }: { items: AnnoItem[] }) => {
       <Filters items={items} filters={filters} setFilters={setFilters} />
       <br />
       <Typography align="right">
-        {filteredItems.length !== items.length
-          ? `${filteredItems.length}/`
-          : ""}
+        {filteredItems.length !== items.length ? `${filteredItems.length}/` : ""}
         {items.length} Items
       </Typography>
       <br />
@@ -83,11 +68,7 @@ const ItemList = ({ items }: { items: AnnoItem[] }) => {
         <VirtualizedList
           items={filteredItems}
           renderItem={(item) => (
-            <ItemCard
-              key={item.id}
-              item={item}
-              handleFavouriteChange={handleFavouriteChange}
-            >
+            <ItemCard key={item.id} item={item} handleFavouriteChange={handleFavouriteChange}>
               <ItemEffects item={item} />
             </ItemCard>
           )}

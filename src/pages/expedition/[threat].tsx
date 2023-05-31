@@ -55,7 +55,5 @@ export const getStaticPaths: GetStaticPaths = async ({ locales }) => ({
 });
 
 function getAttribute(item: AnnoItem, threat: string) {
-  return item.expeditionAttributes.find(
-    (attribute) => attribute.key === threat
-  );
+  return item.expeditionAttributes.find((attribute) => attribute.key === threat);
 }

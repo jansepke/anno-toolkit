@@ -8,13 +8,7 @@ import Switch from "@mui/material/Switch";
 import TextField from "@mui/material/TextField";
 import useTranslation from "next-translate/useTranslation";
 import { AnnoItem } from "../data/AnnoItem";
-import {
-  byEffectTarget,
-  byFavourite,
-  byItemName,
-  byRarity,
-  byUpgrade,
-} from "../util/filters";
+import { byEffectTarget, byFavourite, byItemName, byRarity, byUpgrade } from "../util/filters";
 
 export interface FilterData {
   itemName: string;
@@ -42,13 +36,9 @@ const CustomAutocomplete = ({
       clearOnEscape={true}
       blurOnSelect={true}
       onChange={(event, value, reason) => {
-        reason === "clear" || value === "" || value === null
-          ? onChange("all")
-          : onChange(value);
+        reason === "clear" || value === "" || value === null ? onChange("all") : onChange(value);
       }}
-      renderInput={(params) => (
-        <TextField {...params} label={label} variant="outlined" />
-      )}
+      renderInput={(params) => <TextField {...params} label={label} variant="outlined" />}
     />
   );
 };
@@ -80,10 +70,7 @@ const Filters = ({
     .filter(byRarity(filters.rarity))
     .filter(byFavourite(filters.onlyFavourites))
     .flatMap((asset) => asset.upgrades)
-    .filter(
-      (upgrade, index, self) =>
-        self.findIndex((u) => u.key === upgrade.key) === index
-    )
+    .filter((upgrade, index, self) => self.findIndex((u) => u.key === upgrade.key) === index)
     .sort((a, b) => (a?.label as string).localeCompare(b?.label as string));
 
   const rarityOptions = items
@@ -104,9 +91,7 @@ const Filters = ({
                 label={t("filter.itemName")}
                 variant="outlined"
                 value={filters.itemName}
-                onChange={(event) =>
-                  setFilters({ ...filters, itemName: event.target.value })
-                }
+                onChange={(event) => setFilters({ ...filters, itemName: event.target.value })}
               />
             </FormControl>
           </Grid>
@@ -115,9 +100,7 @@ const Filters = ({
               <CustomAutocomplete
                 label={t("filter.effectTarget")}
                 items={effectTargetOptions}
-                onChange={(value) =>
-                  setFilters({ ...filters, effectTarget: value })
-                }
+                onChange={(value) => setFilters({ ...filters, effectTarget: value })}
               />
             </FormControl>
           </Grid>
@@ -135,13 +118,7 @@ const Filters = ({
                     ? setFilters({ ...filters, upgrade: "all" })
                     : setFilters({ ...filters, upgrade: value.key });
                 }}
-                renderInput={(params) => (
-                  <TextField
-                    {...params}
-                    label={t("filter.upgrades")}
-                    variant="outlined"
-                  />
-                )}
+                renderInput={(params) => <TextField {...params} label={t("filter.upgrades")} variant="outlined" />}
               />
             </FormControl>
           </Grid>

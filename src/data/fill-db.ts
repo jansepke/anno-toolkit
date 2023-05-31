@@ -14,10 +14,7 @@ async function generateDBForLanguage(language: string) {
   const fileNames = itemTypes.flatMap((it) => it.fileNames);
   const data = await getData(language, fileNames);
 
-  await fs.writeFile(
-    `./data/db/${language}.json`,
-    JSON.stringify(data, null, 2)
-  );
+  await fs.writeFile(`./data/db/${language}.json`, JSON.stringify(data, null, 2));
 }
 
 export async function getData(
@@ -28,17 +25,9 @@ export async function getData(
   const translations = await loadTranslations(language);
   const rewardPoolById = await loadRewardPools();
   const effectTargetPoolById = await loadEffectTargetPools();
-  const assets = (
-    await Promise.all(
-      fileNames.map((fileName) => readFromCache("assets", fileName))
-    )
-  ).flat();
+  const assets = (await Promise.all(fileNames.map((fileName) => readFromCache("assets", fileName)))).flat();
 
-  const factory = new AnnoItemFactory(
-    translations,
-    effectTargetPoolById,
-    rewardPoolById
-  );
+  const factory = new AnnoItemFactory(translations, effectTargetPoolById, rewardPoolById);
 
   return assets.filter(filter).map((asset: any) => factory.newAnnoItem(asset));
 }
@@ -60,10 +49,7 @@ async function loadRewardPools() {
 }
 
 async function loadEffectTargetPools() {
-  const effectTargetPools = await readFromCache(
-    "assets",
-    "itemeffecttargetpool"
-  );
+  const effectTargetPools = await readFromCache("assets", "itemeffecttargetpool");
 
   const effectTargetPoolById: { [key: number]: any } = {};
 

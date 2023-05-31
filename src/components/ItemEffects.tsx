@@ -11,12 +11,7 @@ const renderPercentage = [
   "ModuleLimitPercent",
 ];
 
-const renderBoolean = [
-  "BlockHostileTakeover",
-  "BlockBuyShare",
-  "HappinessIgnoresMorale",
-  "ProvideIndustrialization",
-];
+const renderBoolean = ["BlockHostileTakeover", "BlockBuyShare", "HappinessIgnoresMorale", "ProvideIndustrialization"];
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const renderUpgradeItem = (key: string, item: any) => {
@@ -50,9 +45,7 @@ const renderUpgradeItem = (key: string, item: any) => {
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const renderUpgrade = (upgrade: any) => {
   if (upgrade.value.Value) {
-    return `${upgrade.label}: ${upgrade.value.Value}${
-      upgrade.value.Percental === 1 ? "%" : ""
-    }`;
+    return `${upgrade.label}: ${upgrade.value.Value}${upgrade.value.Percental === 1 ? "%" : ""}`;
   }
 
   if (renderBoolean.includes(upgrade.key)) {
@@ -80,9 +73,9 @@ const renderUpgrade = (upgrade: any) => {
 
   if (upgrade.value.Item) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    return `${upgrade.label}: ${upgrade.value.Item.map((item: any) =>
-      renderUpgradeItem(upgrade.key, item)
-    ).join(", ")}`;
+    return `${upgrade.label}: ${upgrade.value.Item.map((item: any) => renderUpgradeItem(upgrade.key, item)).join(
+      ", "
+    )}`;
   }
 
   return JSON.stringify(upgrade);

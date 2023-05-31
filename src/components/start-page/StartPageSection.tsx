@@ -6,10 +6,7 @@ interface StartPageSectionProps extends React.PropsWithChildren {
   heading?: string;
 }
 
-export const StartPageSection: React.FC<StartPageSectionProps> = ({
-  heading,
-  children,
-}) => (
+export const StartPageSection: React.FC<StartPageSectionProps> = ({ heading, children }) => (
   <Grid item xs={12}>
     {heading ? <Typography variant="h4">{heading}</Typography> : null}
     {children}

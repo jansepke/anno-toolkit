@@ -56,11 +56,7 @@ const TopBar = ({ headline }: { headline: string }) => {
             {locales.map((lng) => (
               <MenuItem key={lng} disabled={lng === lang}>
                 <Link href={asPath} locale={lng} legacyBehavior>
-                  <Typography
-                    variant="button"
-                    display="block"
-                    onClick={handleClose}
-                  >
+                  <Typography variant="button" display="block" onClick={handleClose}>
                     {lng}
                   </Typography>
                 </Link>

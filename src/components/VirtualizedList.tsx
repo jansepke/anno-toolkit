@@ -10,10 +10,7 @@ function VirtualizedList<T>({
 }: {
   items: T[];
   renderItem: (item: T) => React.ReactElement;
-  loadingIndicator: (
-    ref: React.Ref<HTMLDivElement>,
-    visible: boolean
-  ) => React.ReactElement;
+  loadingIndicator: (ref: React.Ref<HTMLDivElement>, visible: boolean) => React.ReactElement;
 }) {
   const [visibleItems, setVisibleItems] = useState(items.slice(0, pageSize));
   const loader = useRef<HTMLDivElement>(null);
@@ -24,9 +21,7 @@ function VirtualizedList<T>({
     const handleObserver = (entities: IntersectionObserverEntry[]) => {
       const target = entities[0];
       if (target.isIntersecting) {
-        setVisibleItems((visibleItems) =>
-          items.slice(0, visibleItems.length + pageSize)
-        );
+        setVisibleItems((visibleItems) => items.slice(0, visibleItems.length + pageSize));
       }
     };
 
