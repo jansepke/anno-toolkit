@@ -8,7 +8,6 @@ declare global {
   }
 }
 
-// TODO: use env var
 export const GoatCounter: React.FC = () => {
   const router = useRouter();
 
@@ -26,7 +25,7 @@ export const GoatCounter: React.FC = () => {
 
   return (
     <Script
-      data-goatcounter="https://anno-toolkit.goatcounter.com/count"
+      data-goatcounter={process.env.NEXT_PUBLIC_ANALYTICS_URL}
       src="/scripts/goatcounter.js"
       strategy="afterInteractive"
     />
