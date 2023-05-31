@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 
 const pageSize = 24;
 const rootMargin = "500px";
@@ -15,16 +15,17 @@ function VirtualizedList<T>({
   const [visibleItems, setVisibleItems] = useState(items.slice(0, pageSize));
   const loader = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    setVisibleItems(items.slice(0, pageSize));
-
-    const handleObserver = (entities: IntersectionObserverEntry[]) => {
+  const handleObserver = useCallback<IntersectionObserverCallback>(
+    (entities) => {
       const target = entities[0];
       if (target.isIntersecting) {
         setVisibleItems((visibleItems) => items.slice(0, visibleItems.length + pageSize));
       }
-    };
+    },
+    [items]
+  );
 
+  useEffect(() => {
     const observer = new IntersectionObserver(handleObserver, {
       rootMargin: rootMargin,
     });
@@ -34,7 +35,7 @@ function VirtualizedList<T>({
     }
 
     return () => observer.disconnect();
-  }, [items]);
+  }, [handleObserver]);
 
   return (
     <>
