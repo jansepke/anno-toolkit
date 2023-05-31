@@ -9,6 +9,7 @@ import { AnnoItem } from "../../data/AnnoItem";
 import ItemCard from "../shared/ItemCard";
 import TabBar from "../shared/TabBar";
 import VirtualizedList from "../shared/VirtualizedList";
+import FavouriteButton from "./FavouriteButton";
 import Filters, { FilterData } from "./Filters";
 import ItemEffects from "./ItemEffects";
 import { byEffectTarget, byFavourite, byItemName, byRarity, byUpgrade } from "./filters";
@@ -68,7 +69,16 @@ const ItemList = ({ items }: { items: AnnoItem[] }) => {
         <VirtualizedList
           items={filteredItems}
           renderItem={(item) => (
-            <ItemCard key={item.id} item={item} handleFavouriteChange={handleFavouriteChange}>
+            <ItemCard
+              key={item.id}
+              item={item}
+              titleSuffix={
+                <FavouriteButton
+                  favourite={item.favourite || false}
+                  handleFavouriteChange={() => handleFavouriteChange(item.id)}
+                />
+              }
+            >
               <ItemEffects item={item} />
             </ItemCard>
           )}

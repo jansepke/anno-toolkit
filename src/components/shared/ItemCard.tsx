@@ -7,18 +7,17 @@ import Image from "next/image";
 import React from "react";
 import { rarities } from "../../anno-config";
 import { AnnoItem } from "../../data/AnnoItem";
-import FavouriteButton from "./FavouriteButton";
 
 const raritiesByKey = rarities.reduce((all: Record<string, string>, r) => ({ ...all, [r.key]: r.color }), {});
 
 // TODO: use styled components
 const ItemCard = ({
   item,
-  handleFavouriteChange,
+  titleSuffix,
   children,
 }: {
   item: AnnoItem;
-  handleFavouriteChange?: (itemId: number) => void;
+  titleSuffix?: React.ReactNode;
   children: React.ReactNode;
 }) => (
   <Grid item xs={12} sm={6} md={4} lg={3} xl={2} sx={{ display: "flex" }}>
@@ -38,12 +37,7 @@ const ItemCard = ({
         title={
           <>
             <strong>{item.name}</strong>
-            {handleFavouriteChange ? (
-              <FavouriteButton
-                favourite={item.favourite || false}
-                handleFavouriteChange={() => handleFavouriteChange(item.id)}
-              />
-            ) : undefined}
+            {titleSuffix || null}
           </>
         }
         titleTypographyProps={{ variant: "body1" }}
