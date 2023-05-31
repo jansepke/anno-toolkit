@@ -3,12 +3,12 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import useTranslation from "next-translate/useTranslation";
-import { expeditionThreats } from "../anno-config";
-import { AnnoItem } from "../data/AnnoItem";
+import { expeditionThreats } from "../../anno-config";
+import { AnnoItem } from "../../data/AnnoItem";
+import ItemCard from "../ItemCard";
+import TabBar from "../TabBar";
+import VirtualizedList from "../VirtualizedList";
 import ExpeditionAttributes from "./ExpeditionAttributes";
-import ItemCard from "./ItemCard";
-import TabBar from "./TabBar";
-import VirtualizedList from "./VirtualizedList";
 
 const ExpeditionList = ({ items }: { items: AnnoItem[] }) => {
   const { t } = useTranslation("common");

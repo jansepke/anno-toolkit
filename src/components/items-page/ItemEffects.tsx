@@ -1,6 +1,6 @@
 import Typography from "@mui/material/Typography";
 import useTranslation from "next-translate/useTranslation";
-import { AnnoItem } from "../data/AnnoItem";
+import { AnnoItem } from "../../data/AnnoItem";
 
 const renderPercentage = [
   "ConstructionCostInPercent",

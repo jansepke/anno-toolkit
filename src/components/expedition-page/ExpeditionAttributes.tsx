@@ -1,7 +1,7 @@
 import Typography from "@mui/material/Typography";
 import useTranslation from "next-translate/useTranslation";
-import { expeditionThreats } from "../anno-config";
-import { AnnoItem } from "../data/AnnoItem";
+import { expeditionThreats } from "../../anno-config";
+import { AnnoItem } from "../../data/AnnoItem";
 
 const ExpeditionAttributes = ({ item }: { item: AnnoItem }) => {
   const { t } = useTranslation("common");

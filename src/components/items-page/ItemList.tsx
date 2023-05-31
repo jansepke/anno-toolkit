@@ -4,15 +4,15 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import useTranslation from "next-translate/useTranslation";
 import { useState } from "react";
-import { itemTypes } from "../anno-config";
-import { AnnoItem } from "../data/AnnoItem";
-import { byEffectTarget, byFavourite, byItemName, byRarity, byUpgrade } from "../util/filters";
-import { useStateWithLocalStorage } from "../util/useStateWithLocalStorage";
+import { itemTypes } from "../../anno-config";
+import { AnnoItem } from "../../data/AnnoItem";
+import { byEffectTarget, byFavourite, byItemName, byRarity, byUpgrade } from "../../util/filters";
+import { useStateWithLocalStorage } from "../../util/useStateWithLocalStorage";
+import ItemCard from "../ItemCard";
+import TabBar from "../TabBar";
+import VirtualizedList from "../VirtualizedList";
 import Filters, { FilterData } from "./Filters";
-import ItemCard from "./ItemCard";
 import ItemEffects from "./ItemEffects";
-import TabBar from "./TabBar";
-import VirtualizedList from "./VirtualizedList";
 
 const ItemList = ({ items }: { items: AnnoItem[] }) => {
   const { t } = useTranslation("common");

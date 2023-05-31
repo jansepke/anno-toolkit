@@ -7,8 +7,8 @@ import Grid from "@mui/material/Grid";
 import Switch from "@mui/material/Switch";
 import TextField from "@mui/material/TextField";
 import useTranslation from "next-translate/useTranslation";
-import { AnnoItem } from "../data/AnnoItem";
-import { byEffectTarget, byFavourite, byItemName, byRarity, byUpgrade } from "../util/filters";
+import { AnnoItem } from "../../data/AnnoItem";
+import { byEffectTarget, byFavourite, byItemName, byRarity, byUpgrade } from "../../util/filters";
 
 export interface FilterData {
   itemName: string;
