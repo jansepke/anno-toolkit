@@ -8,9 +8,9 @@ import { itemTypes } from "../../anno-config";
 import { AnnoItem } from "../../data/AnnoItem";
 import { byEffectTarget, byFavourite, byItemName, byRarity, byUpgrade } from "../../util/filters";
 import { useStateWithLocalStorage } from "../../util/useStateWithLocalStorage";
-import ItemCard from "../ItemCard";
-import TabBar from "../TabBar";
-import VirtualizedList from "../VirtualizedList";
+import ItemCard from "../shared/ItemCard";
+import TabBar from "../shared/TabBar";
+import VirtualizedList from "../shared/VirtualizedList";
 import Filters, { FilterData } from "./Filters";
 import ItemEffects from "./ItemEffects";
 

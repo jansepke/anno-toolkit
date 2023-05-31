@@ -1,8 +1,8 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import useTranslation from "next-translate/useTranslation";
 import { expeditionThreats, languages } from "../../anno-config";
-import Page from "../../components/Page";
 import ExpeditionList from "../../components/expedition-page/ExpeditionList";
+import Page from "../../components/shared/Page";
 import { AnnoItem } from "../../data/AnnoItem";
 import { getExpeditionItems } from "../../data/data";
 import { cartesianProduct } from "../../util/functions";

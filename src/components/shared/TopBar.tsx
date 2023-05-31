@@ -13,7 +13,7 @@ import useTranslation from "next-translate/useTranslation";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import { locales } from "../../i18n";
+import { locales } from "../../../i18n";
 
 const TopBar = ({ headline }: { headline: string }) => {
   const { asPath } = useRouter();

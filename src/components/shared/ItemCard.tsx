@@ -5,8 +5,8 @@ import CardHeader from "@mui/material/CardHeader";
 import Grid from "@mui/material/Grid";
 import Image from "next/image";
 import React from "react";
-import { rarities } from "../anno-config";
-import { AnnoItem } from "../data/AnnoItem";
+import { rarities } from "../../anno-config";
+import { AnnoItem } from "../../data/AnnoItem";
 import FavouriteButton from "./FavouriteButton";
 
 const raritiesByKey = rarities.reduce((all: Record<string, string>, r) => ({ ...all, [r.key]: r.color }), {});

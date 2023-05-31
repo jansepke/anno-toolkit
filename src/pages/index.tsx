@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import Trans from "next-translate/Trans";
 import useTranslation from "next-translate/useTranslation";
 import { expeditionThreats, itemTypes } from "../anno-config";
-import Page from "../components/Page";
+import Page from "../components/shared/Page";
 import { StartPageEntry } from "../components/start-page/StartPageEntry";
 import { StartPageSection } from "../components/start-page/StartPageSection";
 

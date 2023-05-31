@@ -5,9 +5,9 @@ import Typography from "@mui/material/Typography";
 import useTranslation from "next-translate/useTranslation";
 import { expeditionThreats } from "../../anno-config";
 import { AnnoItem } from "../../data/AnnoItem";
-import ItemCard from "../ItemCard";
-import TabBar from "../TabBar";
-import VirtualizedList from "../VirtualizedList";
+import ItemCard from "../shared/ItemCard";
+import TabBar from "../shared/TabBar";
+import VirtualizedList from "../shared/VirtualizedList";
 import ExpeditionAttributes from "./ExpeditionAttributes";
 
 const ExpeditionList = ({ items }: { items: AnnoItem[] }) => {
