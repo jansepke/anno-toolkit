@@ -5,13 +5,12 @@ import { yellow } from "@mui/material/colors";
 
 const colorYellow = { color: yellow[400] };
 
-const FavouriteButton = ({
-  favourite,
-  handleFavouriteChange,
-}: {
+interface FavouriteButtonProps {
   favourite: boolean;
   handleFavouriteChange: () => void;
-}) => (
+}
+
+const FavouriteButton: React.FC<FavouriteButtonProps> = ({ favourite, handleFavouriteChange }) => (
   <IconButton size="small" onClick={handleFavouriteChange}>
     {favourite ? <Star sx={colorYellow} /> : <StarBorder sx={{ ":hover": colorYellow }} />}
   </IconButton>

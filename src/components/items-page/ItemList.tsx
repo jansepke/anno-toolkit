@@ -15,7 +15,11 @@ import ItemEffects from "./ItemEffects";
 import { byEffectTarget, byFavourite, byItemName, byRarity, byUpgrade } from "./filters";
 import { useStateWithLocalStorage } from "./useStateWithLocalStorage";
 
-const ItemList = ({ items }: { items: AnnoItem[] }) => {
+interface ItemListProps {
+  items: AnnoItem[];
+}
+
+const ItemList: React.FC<ItemListProps> = ({ items }) => {
   const { t } = useTranslation("common");
   const [filters, setFilters] = useState<FilterData>({
     effectTarget: "all",

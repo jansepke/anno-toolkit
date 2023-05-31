@@ -43,15 +43,13 @@ const CustomAutocomplete = ({
   );
 };
 
-const Filters = ({
-  items,
-  filters,
-  setFilters,
-}: {
+interface FiltersProps {
   items: AnnoItem[];
   filters: FilterData;
   setFilters: (filters: FilterData) => void;
-}) => {
+}
+
+const Filters: React.FC<FiltersProps> = ({ items, filters, setFilters }) => {
   const { t } = useTranslation("common");
 
   const effectTargetOptions = items

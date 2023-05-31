@@ -19,7 +19,7 @@ interface TabBarProps {
   imageStyles?: CSSProperties;
 }
 
-const TabBar = ({ queryKey, path, tabs, type, imageStyles }: TabBarProps) => {
+const TabBar: React.FC<TabBarProps> = ({ queryKey, path, tabs, type, imageStyles }) => {
   const router = useRouter();
   const queryValue = router.query[queryKey] as string;
   const tabKeys = tabs.map((tab) => tab.key);

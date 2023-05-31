@@ -10,7 +10,11 @@ import TabBar from "../shared/TabBar";
 import VirtualizedList from "../shared/VirtualizedList";
 import ExpeditionAttributes from "./ExpeditionAttributes";
 
-const ExpeditionList = ({ items }: { items: AnnoItem[] }) => {
+interface ExpeditionListProps {
+  items: AnnoItem[];
+}
+
+const ExpeditionList: React.FC<ExpeditionListProps> = ({ items }) => {
   const { t } = useTranslation("common");
 
   const tabs = expeditionThreats

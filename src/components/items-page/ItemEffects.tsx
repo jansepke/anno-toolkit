@@ -81,7 +81,11 @@ const renderUpgrade = (upgrade: any) => {
   return JSON.stringify(upgrade);
 };
 
-const ItemEffects = ({ item }: { item: AnnoItem }) => {
+interface ItemEffectProps {
+  item: AnnoItem;
+}
+
+const ItemEffects: React.FC<ItemEffectProps> = ({ item }) => {
   const { t } = useTranslation("common");
 
   return (

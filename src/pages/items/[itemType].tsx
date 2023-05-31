@@ -7,7 +7,11 @@ import { AnnoItem } from "../../data/AnnoItem";
 import { getEffectItems } from "../../data/data";
 import { cartesianProduct } from "../../next/cartesianProduct";
 
-const ItemPage = ({ items }: { items: AnnoItem[] }) => {
+interface ItemPageProps {
+  items: AnnoItem[];
+}
+
+const ItemPage: React.FC<ItemPageProps> = ({ items }) => {
   const { t } = useTranslation("common");
 
   return (

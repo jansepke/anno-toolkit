@@ -3,7 +3,11 @@ import useTranslation from "next-translate/useTranslation";
 import { expeditionThreats } from "../../anno-config";
 import { AnnoItem } from "../../data/AnnoItem";
 
-const ExpeditionAttributes = ({ item }: { item: AnnoItem }) => {
+interface ExpeditionAttributesProps {
+  item: AnnoItem;
+}
+
+const ExpeditionAttributes: React.FC<ExpeditionAttributesProps> = ({ item }) => {
   const { t } = useTranslation("common");
 
   return (

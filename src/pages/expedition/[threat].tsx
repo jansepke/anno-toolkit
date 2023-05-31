@@ -7,7 +7,11 @@ import { AnnoItem } from "../../data/AnnoItem";
 import { getExpeditionItems } from "../../data/data";
 import { cartesianProduct } from "../../next/cartesianProduct";
 
-const ExpeditionPage = ({ items }: { items: AnnoItem[] }) => {
+interface ExpeditionPageProps {
+  items: AnnoItem[];
+}
+
+const ExpeditionPage: React.FC<ExpeditionPageProps> = ({ items }) => {
   const { t } = useTranslation("common");
 
   return (

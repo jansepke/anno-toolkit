@@ -15,7 +15,11 @@ import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { locales } from "../../../i18n";
 
-const TopBar = ({ headline }: { headline: string }) => {
+interface TopBarProps {
+  headline: string;
+}
+
+const TopBar: React.FC<TopBarProps> = ({ headline }) => {
   const { asPath } = useRouter();
   const { lang } = useTranslation();
 
