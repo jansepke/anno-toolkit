@@ -1,8 +1,8 @@
 import createEmotionServer from "@emotion/server/create-instance";
 import { AppType } from "next/app";
 import Document, { DocumentContext, DocumentProps, Head, Html, Main, NextScript } from "next/document";
-import createEmotionCache from "../createEmotionCache";
-import { roboto } from "../theme";
+import createEmotionCache from "../next/createEmotionCache";
+import { roboto } from "../next/theme";
 import { MyAppProps } from "./_app";
 
 interface MyDocumentProps extends DocumentProps {

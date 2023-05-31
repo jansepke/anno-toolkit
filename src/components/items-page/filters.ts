@@ -1,5 +1,5 @@
-import { upgrades } from "../anno-config";
-import { AnnoItem, Upgrade } from "../data/AnnoItem";
+import { upgrades } from "../../anno-config";
+import { AnnoItem, Upgrade } from "../../data/AnnoItem";
 
 export function byItemName(filterValue: string) {
   return (item: AnnoItem) => filterValue === "" || item.name.toLowerCase().includes(filterValue.toLowerCase());

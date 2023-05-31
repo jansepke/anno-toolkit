@@ -4,8 +4,8 @@ import { ThemeProvider } from "@mui/material/styles";
 import { AppProps } from "next/app";
 import Head from "next/head";
 import { GoatCounter } from "../components/shared/GoatCounter";
-import createEmotionCache from "../createEmotionCache";
-import theme from "../theme";
+import createEmotionCache from "../next/createEmotionCache";
+import theme from "../next/theme";
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();

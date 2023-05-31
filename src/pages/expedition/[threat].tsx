@@ -5,7 +5,7 @@ import ExpeditionList from "../../components/expedition-page/ExpeditionList";
 import Page from "../../components/shared/Page";
 import { AnnoItem } from "../../data/AnnoItem";
 import { getExpeditionItems } from "../../data/data";
-import { cartesianProduct } from "../../util/functions";
+import { cartesianProduct } from "../../next/cartesianProduct";
 
 const ExpeditionPage = ({ items }: { items: AnnoItem[] }) => {
   const { t } = useTranslation("common");

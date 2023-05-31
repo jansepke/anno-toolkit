@@ -5,7 +5,7 @@ import ItemList from "../../components/items-page/ItemList";
 import Page from "../../components/shared/Page";
 import { AnnoItem } from "../../data/AnnoItem";
 import { getEffectItems } from "../../data/data";
-import { cartesianProduct } from "../../util/functions";
+import { cartesianProduct } from "../../next/cartesianProduct";
 
 const ItemPage = ({ items }: { items: AnnoItem[] }) => {
   const { t } = useTranslation("common");
