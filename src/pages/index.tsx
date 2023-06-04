@@ -52,23 +52,33 @@ const Index = () => {
           </StartPageSection>
 
           <StartPageSection heading="About">
-            <Trans
-              i18nKey="common:index.about"
-              components={[
-                <MuiLink
-                  key="issues"
-                  href="https://github.com/jansepke/anno-toolkit/issues"
-                  target="_blank"
-                  rel="noopener"
-                />,
-                <MuiLink
-                  key="license"
-                  href="https://github.com/jansepke/anno-toolkit/blob/main/LICENSE"
-                  target="_blank"
-                  rel="noopener"
-                />,
-              ]}
-            />
+            <Typography align="justify">
+              <Trans
+                i18nKey="common:index.about"
+                components={[
+                  <MuiLink
+                    key="issues"
+                    href="https://github.com/jansepke/anno-toolkit/issues"
+                    target="_blank"
+                    rel="noopener"
+                  />,
+                  <MuiLink
+                    key="license"
+                    href="https://github.com/jansepke/anno-toolkit/blob/main/LICENSE"
+                    target="_blank"
+                    rel="noopener"
+                  />,
+                ]}
+              />
+            </Typography>
+            <Typography align="justify" sx={{ pt: 1 }}>
+              <Trans
+                i18nKey="common:index.support"
+                components={[
+                  <MuiLink key="issues" href={process.env.NEXT_PUBLIC_SUPPORT_URL} target="_blank" rel="noopener" />,
+                ]}
+              />
+            </Typography>
           </StartPageSection>
         </Grid>
       </Container>
