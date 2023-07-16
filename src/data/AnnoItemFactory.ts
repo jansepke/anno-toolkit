@@ -3,14 +3,14 @@ import { rarities } from "../anno-config";
 import { AnnoItem, EffectTarget } from "./AnnoItem";
 
 export default class AnnoItemFactory {
-  private translations: { [key: number]: string };
-  private effectTargetPoolById: { [key: number]: any };
-  private rewardPoolById: { [key: number]: any };
+  private translations: Record<number, string>;
+  private effectTargetPoolById: Record<number, any>;
+  private rewardPoolById: Record<number, any>;
 
   constructor(
-    translations: { [key: number]: string },
-    effectTargetPoolById: { [key: number]: any },
-    rewardPoolById: { [key: number]: any }
+    translations: Record<number, string>,
+    effectTargetPoolById: Record<number, any>,
+    rewardPoolById: Record<number, any>
   ) {
     this.translations = translations;
     this.effectTargetPoolById = effectTargetPoolById;

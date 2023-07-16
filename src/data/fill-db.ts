@@ -39,7 +39,7 @@ async function loadTranslations(language: string) {
 async function loadRewardPools() {
   const rewardPools = await readFromCache("assets", "rewardpool");
 
-  const rewardPoolById: { [key: number]: any } = {};
+  const rewardPoolById: Record<number, any> = {};
 
   for (const rewardPool of rewardPools) {
     rewardPoolById[rewardPool.Values.Standard.GUID] = rewardPool;
@@ -51,7 +51,7 @@ async function loadRewardPools() {
 async function loadEffectTargetPools() {
   const effectTargetPools = await readFromCache("assets", "itemeffecttargetpool");
 
-  const effectTargetPoolById: { [key: number]: any } = {};
+  const effectTargetPoolById: Record<number, any> = {};
 
   for (const effectPool of effectTargetPools) {
     effectTargetPoolById[effectPool.Values.Standard.GUID] = effectPool;
@@ -60,7 +60,7 @@ async function loadEffectTargetPools() {
   return effectTargetPoolById;
 }
 
-const fileCache: { [key: string]: Promise<any> } = {};
+const fileCache: Record<string, Promise<any>> = {};
 
 async function readFromCache(folder: string, file: string) {
   const fileName = `./data/anno/${folder}/${file.replace("/", "-")}.json`;
