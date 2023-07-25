@@ -6,7 +6,7 @@ function getTranslationFromConfig(translations, group) {
       ...all,
       [item.key]: translations[item.labelId],
     }),
-    {}
+    {},
   );
 }
 

@@ -26,7 +26,7 @@ export default ItemPage;
 export const getStaticProps: GetStaticProps = async ({ locale, params }) => {
   const items = await getEffectItems(
     languages.find((l) => l.key === locale)?.fileName || languages[0].fileName,
-    params?.itemType as string
+    params?.itemType as string,
   );
 
   return {
@@ -41,7 +41,7 @@ export const getStaticProps: GetStaticProps = async ({ locale, params }) => {
 export const getStaticPaths: GetStaticPaths = async ({ locales }) => ({
   paths: cartesianProduct(
     locales as string[],
-    itemTypes.map((t) => t.key)
+    itemTypes.map((t) => t.key),
   ).map((params) => ({
     locale: params[0],
     params: {

@@ -20,7 +20,7 @@ async function generateDBForLanguage(language: string) {
 export async function getData(
   language: string,
   fileNames: string[],
-  filter: (asset: any) => boolean = () => true
+  filter: (asset: any) => boolean = () => true,
 ): Promise<AnnoItem[]> {
   const translations = await loadTranslations(language);
   const rewardPoolById = await loadRewardPools();

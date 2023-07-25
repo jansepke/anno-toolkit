@@ -28,12 +28,12 @@ export const getStaticProps: GetStaticProps = async ({ locale, params }) => {
 
   const items = await getExpeditionItems(
     languages.find((l) => l.key === locale)?.fileName || languages[0].fileName,
-    threat
+    threat,
   );
 
   const filteredAndSortedItems = items.sort(
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-    (a, b) => getAttribute(b, threat)!.value - getAttribute(a, threat)!.value
+    (a, b) => getAttribute(b, threat)!.value - getAttribute(a, threat)!.value,
   );
 
   return {
@@ -48,7 +48,7 @@ export const getStaticProps: GetStaticProps = async ({ locale, params }) => {
 export const getStaticPaths: GetStaticPaths = async ({ locales }) => ({
   paths: cartesianProduct(
     locales as string[],
-    expeditionThreats.filter((et) => et.icon).map((et) => et.key)
+    expeditionThreats.filter((et) => et.icon).map((et) => et.key),
   ).map((params) => ({
     locale: params[0],
     params: {

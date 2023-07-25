@@ -22,7 +22,7 @@ function VirtualizedList<T>({
         setVisibleItems((visibleItems) => items.slice(0, visibleItems.length + pageSize));
       }
     },
-    [items]
+    [items],
   );
 
   useEffect(() => {

@@ -59,7 +59,7 @@ const renderUpgrade = (upgrade: any) => {
   if (upgrade.key === "DamageReceiveFactor") {
     return `${upgrade.label}: ${Math.round(
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (1 - Object.values<any>(upgrade.value)[0].Factor) * 100
+      (1 - Object.values<any>(upgrade.value)[0].Factor) * 100,
     )}%`;
   }
 
@@ -74,7 +74,7 @@ const renderUpgrade = (upgrade: any) => {
   if (upgrade.value.Item) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     return `${upgrade.label}: ${upgrade.value.Item.map((item: any) => renderUpgradeItem(upgrade.key, item)).join(
-      ", "
+      ", ",
     )}`;
   }
 

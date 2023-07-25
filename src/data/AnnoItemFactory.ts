@@ -10,7 +10,7 @@ export default class AnnoItemFactory {
   constructor(
     translations: Record<number, string>,
     effectTargetPoolById: Record<number, any>,
-    rewardPoolById: Record<number, any>
+    rewardPoolById: Record<number, any>,
   ) {
     this.translations = translations;
     this.effectTargetPoolById = effectTargetPoolById;
@@ -106,7 +106,7 @@ export default class AnnoItemFactory {
         Object.entries(value).map(([upgradeKey, v]: [string, any]) => ({
           key: upgradeKey,
           value: this.translateValue(upgradeKey, v),
-        }))
+        })),
       )
       .filter((upgrade) => upgrade.key !== "PublicServiceNoSatisfactionDistance");
   }
