@@ -1,22 +1,14 @@
-import { CacheProvider, EmotionCache } from "@emotion/react";
+import { AppCacheProvider } from "@mui/material-nextjs/v14-pagesRouter";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@mui/material/styles";
 import { AppProps } from "next/app";
 import Head from "next/head";
 import { GoatCounter } from "../components/shared/GoatCounter";
-import createEmotionCache from "../next/createEmotionCache";
 import theme from "../next/theme";
 
-// Client-side cache, shared for the whole session of the user in the browser.
-const clientSideEmotionCache = createEmotionCache();
-
-export interface MyAppProps extends AppProps {
-  emotionCache?: EmotionCache;
-}
-
-export default function MyApp({ Component, emotionCache = clientSideEmotionCache, pageProps }: MyAppProps) {
+export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <CacheProvider value={emotionCache}>
+    <AppCacheProvider>
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
@@ -27,6 +19,6 @@ export default function MyApp({ Component, emotionCache = clientSideEmotionCache
       </ThemeProvider>
 
       <GoatCounter />
-    </CacheProvider>
+    </AppCacheProvider>
   );
 }
