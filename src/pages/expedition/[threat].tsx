@@ -8,14 +8,15 @@ import { getExpeditionItems } from "../../data/data";
 import { cartesianProduct } from "../../next/cartesianProduct";
 
 interface ExpeditionPageProps {
+  threat: string;
   items: AnnoItem[];
 }
 
-const ExpeditionPage: React.FC<ExpeditionPageProps> = ({ items }) => {
+const ExpeditionPage: React.FC<ExpeditionPageProps> = ({ threat, items }) => {
   const { t } = useTranslation("common");
 
   return (
-    <Page headline={t("title.expedition")}>
+    <Page headline={t("title.expedition")} key={threat}>
       <ExpeditionList items={items} />
     </Page>
   );
@@ -23,7 +24,7 @@ const ExpeditionPage: React.FC<ExpeditionPageProps> = ({ items }) => {
 
 export default ExpeditionPage;
 
-export const getStaticProps: GetStaticProps = async ({ locale, params }) => {
+export const getStaticProps: GetStaticProps<ExpeditionPageProps> = async ({ locale, params }) => {
   const threat = params?.threat as string;
 
   const items = await getExpeditionItems(
@@ -38,8 +39,8 @@ export const getStaticProps: GetStaticProps = async ({ locale, params }) => {
 
   return {
     props: {
+      threat: threat,
       items: filteredAndSortedItems,
-      key: Number(new Date()), // solves https://github.com/vercel/next.js/issues/9992
     },
   };
 };

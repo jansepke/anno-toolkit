@@ -8,14 +8,15 @@ import { getEffectItems } from "../../data/data";
 import { cartesianProduct } from "../../next/cartesianProduct";
 
 interface ItemPageProps {
+  itemType: string;
   items: AnnoItem[];
 }
 
-const ItemPage: React.FC<ItemPageProps> = ({ items }) => {
+const ItemPage: React.FC<ItemPageProps> = ({ itemType, items }) => {
   const { t } = useTranslation("common");
 
   return (
-    <Page headline={t("title.items")}>
+    <Page headline={t("title.items")} key={itemType}>
       <ItemList items={items} />
     </Page>
   );
@@ -23,7 +24,7 @@ const ItemPage: React.FC<ItemPageProps> = ({ items }) => {
 
 export default ItemPage;
 
-export const getStaticProps: GetStaticProps = async ({ locale, params }) => {
+export const getStaticProps: GetStaticProps<ItemPageProps> = async ({ locale, params }) => {
   const items = await getEffectItems(
     languages.find((l) => l.key === locale)?.fileName || languages[0].fileName,
     params?.itemType as string,
@@ -31,8 +32,8 @@ export const getStaticProps: GetStaticProps = async ({ locale, params }) => {
 
   return {
     props: {
+      itemType: params?.itemType as string,
       items: items,
-      key: Number(new Date()), // solves https://github.com/vercel/next.js/issues/9992
     },
   };
 };
