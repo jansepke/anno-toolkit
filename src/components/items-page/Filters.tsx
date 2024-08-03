@@ -8,12 +8,12 @@ import Switch from "@mui/material/Switch";
 import TextField from "@mui/material/TextField";
 import useTranslation from "next-translate/useTranslation";
 import { AnnoItem } from "../../data/AnnoItem";
-import { byEffectTarget, byFavourite, byItemName, byRarity, byUpgrade } from "./filters";
+import { byEffectTarget, byFavourite, byItemName, byRarity, byUpgrades } from "./filters";
 
 export interface FilterData {
   itemName: string;
   effectTarget: string;
-  upgrade: string;
+  upgrades: string[];
   rarity: string;
   onlyFavourites: boolean;
 }
@@ -54,7 +54,7 @@ const Filters: React.FC<FiltersProps> = ({ items, filters, setFilters }) => {
 
   const effectTargetOptions = items
     .filter(byItemName(filters.itemName))
-    .filter(byUpgrade(filters.upgrade))
+    .filter(byUpgrades(filters.upgrades))
     .filter(byRarity(filters.rarity))
     .filter(byFavourite(filters.onlyFavourites))
     .flatMap((asset) => asset.effectTargets)
@@ -74,7 +74,7 @@ const Filters: React.FC<FiltersProps> = ({ items, filters, setFilters }) => {
   const rarityOptions = items
     .filter(byItemName(filters.itemName))
     .filter(byEffectTarget(filters.effectTarget))
-    .filter(byUpgrade(filters.upgrade))
+    .filter(byUpgrades(filters.upgrades))
     .filter(byFavourite(filters.onlyFavourites))
     .map((asset) => asset.rarityLabel)
     .filter((v, i, a) => a.indexOf(v) === i);
@@ -110,11 +110,12 @@ const Filters: React.FC<FiltersProps> = ({ items, filters, setFilters }) => {
                 isOptionEqualToValue={(a, b) => a.key === b.key}
                 autoComplete={true}
                 clearOnEscape={true}
+                multiple
                 blurOnSelect={true}
-                onChange={(event, value, reason) => {
-                  reason === "clear" || value === null
-                    ? setFilters({ ...filters, upgrade: "all" })
-                    : setFilters({ ...filters, upgrade: value.key });
+                onChange={(event, values, reason) => {
+                  reason === "clear" || values === null
+                    ? setFilters({ ...filters, upgrades: ["all"] })
+                    : setFilters({ ...filters, upgrades: values.map((v) => v.key) });
                 }}
                 renderInput={(params) => <TextField {...params} label={t("filter.upgrades")} variant="outlined" />}
               />

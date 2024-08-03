@@ -9,18 +9,25 @@ export function byEffectTarget(filterValue: string) {
   return (item: AnnoItem) => filterValue === "all" || item.effectTargets.some((et) => et.label === filterValue);
 }
 
-export function byUpgrade(filterValue: string) {
-  const upgrade = upgrades.find((u) => u.key === filterValue);
-  let additionalCheck: (u: Upgrade) => boolean = () => true;
-  if (upgrade?.valueIs === "negative") {
-    additionalCheck = (u) => getValue(u.value) < 0;
-  }
-  if (upgrade?.valueIs === "positive") {
-    additionalCheck = (u) => getValue(u.value) > 0 || getValue(u.value) === -100;
-  }
+export function byUpgrades(filterValues: string[]) {
+  return (item: AnnoItem) => {
+    if (filterValues.includes("all")) {
+      return true;
+    }
 
-  return (item: AnnoItem) =>
-    filterValue === "all" || item.upgrades.some((u) => u.key === filterValue && additionalCheck(u));
+    return filterValues.every((filterValue) => {
+      const upgrade = upgrades.find((u) => u.key === filterValue);
+      let additionalCheck: (u: Upgrade) => boolean = () => true;
+      if (upgrade?.valueIs === "negative") {
+        additionalCheck = (u) => getValue(u.value) < 0;
+      }
+      if (upgrade?.valueIs === "positive") {
+        additionalCheck = (u) => getValue(u.value) > 0 || getValue(u.value) === -100;
+      }
+
+      return item.upgrades.some((u) => u.key === filterValue && additionalCheck(u));
+    });
+  };
 }
 
 export function byRarity(filterValue: string) {

@@ -12,7 +12,7 @@ import VirtualizedList from "../shared/VirtualizedList";
 import FavouriteButton from "./FavouriteButton";
 import Filters, { FilterData } from "./Filters";
 import ItemEffects from "./ItemEffects";
-import { byEffectTarget, byFavourite, byItemName, byRarity, byUpgrade } from "./filters";
+import { byEffectTarget, byFavourite, byItemName, byRarity, byUpgrades } from "./filters";
 import { useStateWithLocalStorage } from "./useStateWithLocalStorage";
 
 interface ItemListProps {
@@ -23,7 +23,7 @@ const ItemList: React.FC<ItemListProps> = ({ items }) => {
   const { t } = useTranslation("common");
   const [filters, setFilters] = useState<FilterData>({
     effectTarget: "all",
-    upgrade: "all",
+    upgrades: ["all"],
     rarity: "all",
     itemName: "",
     onlyFavourites: false,
@@ -47,7 +47,7 @@ const ItemList: React.FC<ItemListProps> = ({ items }) => {
   const filteredItems = items
     .filter(byItemName(filters.itemName))
     .filter(byEffectTarget(filters.effectTarget))
-    .filter(byUpgrade(filters.upgrade))
+    .filter(byUpgrades(filters.upgrades))
     .filter(byRarity(filters.rarity))
     .filter(byFavourite(filters.onlyFavourites));
 
