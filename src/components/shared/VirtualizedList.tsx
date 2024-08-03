@@ -12,17 +12,19 @@ function VirtualizedList<T>({
   renderItem: (item: T) => React.ReactElement;
   loadingIndicator: (ref: React.Ref<HTMLDivElement>, visible: boolean) => React.ReactElement;
 }) {
-  const [visibleItems, setVisibleItems] = useState(items.slice(0, pageSize));
+  const [visibleItemCount, setVisibleItemCount] = useState(pageSize);
   const loader = useRef<HTMLDivElement>(null);
+
+  const visibleItems = items.slice(0, visibleItemCount);
 
   const handleObserver = useCallback<IntersectionObserverCallback>(
     (entities) => {
       const target = entities[0];
       if (target.isIntersecting) {
-        setVisibleItems((visibleItems) => items.slice(0, visibleItems.length + pageSize));
+        setVisibleItemCount(visibleItems.length + pageSize);
       }
     },
-    [items],
+    [visibleItems.length],
   );
 
   useEffect(() => {
