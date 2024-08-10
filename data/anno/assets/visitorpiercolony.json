@@ -27,19 +27,28 @@
           "Item": {
             "Filename": "data/graphics/buildings/special/harbor_09_colony01/harbor_09_colony01_01.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 102284,
+          "DefaultSkinDescription": 23853
         }
       },
       "AmbientMoodProvider": "",
       "Constructable": "",
       "Selection": {
-        "GUIType": "VisitorHarbor"
+        "GUIType": "VisitorHarbor",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Public Mooring",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 20114
@@ -83,15 +92,15 @@
       },
       "Locked": "",
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 2000,
-        "HPBarOffset": 6.5,
         "PausedTimeIfAttacked": 0,
-        "SelfHealPerHealTick": 10,
-        "TakeOverEffect": "OnHit",
+        "HPBarOffset": 6.5,
         "MoralePower": 25,
         "IslandWarFlag": 102303,
         "ExplosionEffectsMin": 1,
-        "ExplosionEffectsMax": 1
+        "ExplosionEffectsMax": 1,
+        "SelfHealPerHealTick": 10
       },
       "Maintenance": {
         "Maintenances": {

@@ -46,6 +46,10 @@
             "SubCategoryName": 12006,
             "SubCategoryInfotip": 501669
           },
+          "Propaganda": {
+            "InfluenceCosts": 1,
+            "SubCategoryName": 12007
+          },
           "ZooModule": {
             "FreeAmount": 10,
             "InfluenceCosts": 10,
@@ -57,10 +61,6 @@
             "InfluenceCosts": 10,
             "SubCategoryName": 12072,
             "SubCategoryInfotip": 501674
-          },
-          "Propaganda": {
-            "InfluenceCosts": 1,
-            "SubCategoryName": 12007
           },
           "Kontor": {
             "FreeAmount": 60000,
@@ -91,11 +91,17 @@
             "SubCategoryName": 114324,
             "SubCategoryInfotip": 114325
           },
-          "AirShip": {
-            "FreeAmount": 2,
-            "InfluenceCosts": 4,
+          "AirshipTrade": {
+            "FreeAmount": 30,
+            "InfluenceCosts": 0.5,
             "SubCategoryName": 115182,
             "SubCategoryInfotip": 115183
+          },
+          "AirshipCombat": {
+            "FreeAmount": 20,
+            "InfluenceCosts": 0.5,
+            "SubCategoryName": 4095,
+            "SubCategoryInfotip": 4100
           }
         },
         "InfluenceCategories": {
@@ -126,6 +132,41 @@
             },
             "CategoryIcon": "data/ui/2kimages/main/3dicons/influence/icon_buff_propaganda_placeholder.png"
           },
+          "Trade": {
+            "CategoryName": 11998,
+            "UsageTypes": {
+              "Item": [
+                {
+                  "Type": "TradeShip"
+                },
+                {
+                  "Type": "CharterRoutes"
+                },
+                {
+                  "Type": "AirshipTrade"
+                }
+              ]
+            },
+            "CategoryBuffs": {
+              "Item": [
+                {
+                  "Buff": 7090,
+                  "MinSpentInfluence": 300
+                },
+                {
+                  "Buff": 7089,
+                  "MinSpentInfluence": 150,
+                  "MaxSpentInfluence": 299
+                },
+                {
+                  "Buff": 7088,
+                  "MinSpentInfluence": 50,
+                  "MaxSpentInfluence": 149
+                }
+              ]
+            },
+            "CategoryIcon": "data/ui/2kimages/main/3dicons/influence/icon_buff_trade_placeholder.png"
+          },
           "Military": {
             "CategoryName": 11997,
             "UsageTypes": {
@@ -135,6 +176,9 @@
                 },
                 {
                   "Type": "DefenseBuilding"
+                },
+                {
+                  "Type": "AirshipCombat"
                 }
               ]
             },
@@ -158,40 +202,40 @@
             },
             "CategoryIcon": "data/ui/2kimages/main/3dicons/influence/icon_buff_military_placeholder.png"
           },
-          "Trade": {
-            "CategoryName": 11998,
+          "Optimisation": {
+            "CategoryName": 11996,
             "UsageTypes": {
               "Item": [
                 {
-                  "Type": "TradeShip"
+                  "Type": "GuildHouse"
                 },
                 {
-                  "Type": "CharterRoutes"
+                  "Type": "Townhall"
                 },
                 {
-                  "Type": "AirShip"
+                  "Type": "HarborOffice"
                 }
               ]
             },
             "CategoryBuffs": {
               "Item": [
                 {
-                  "Buff": 194031,
+                  "Buff": 374,
                   "MinSpentInfluence": 300
                 },
                 {
-                  "Buff": 194030,
+                  "Buff": 372,
                   "MinSpentInfluence": 150,
                   "MaxSpentInfluence": 299
                 },
                 {
-                  "Buff": 194029,
+                  "Buff": 369,
                   "MinSpentInfluence": 50,
                   "MaxSpentInfluence": 149
                 }
               ]
             },
-            "CategoryIcon": "data/ui/2kimages/main/3dicons/influence/icon_buff_trade_placeholder.png"
+            "CategoryIcon": "data/ui/2kimages/main/3dicons/influence/icon_buff_optimisation_placeholder.png"
           },
           "Culture": {
             "CategoryName": 12000,
@@ -227,41 +271,6 @@
               ]
             },
             "CategoryIcon": "data/ui/2kimages/main/3dicons/influence/icon_buff_culture_placeholder.png"
-          },
-          "Optimisation": {
-            "CategoryName": 11996,
-            "UsageTypes": {
-              "Item": [
-                {
-                  "Type": "GuildHouse"
-                },
-                {
-                  "Type": "Townhall"
-                },
-                {
-                  "Type": "HarborOffice"
-                }
-              ]
-            },
-            "CategoryBuffs": {
-              "Item": [
-                {
-                  "Buff": 194034,
-                  "MinSpentInfluence": 300
-                },
-                {
-                  "Buff": 194033,
-                  "MinSpentInfluence": 150,
-                  "MaxSpentInfluence": 299
-                },
-                {
-                  "Buff": 194032,
-                  "MinSpentInfluence": 50,
-                  "MaxSpentInfluence": 149
-                }
-              ]
-            },
-            "CategoryIcon": "data/ui/2kimages/main/3dicons/influence/icon_buff_optimisation_placeholder.png"
           },
           "Expansion": {
             "CategoryName": 14794,
@@ -327,7 +336,8 @@
             "CategoryIcon": "data/ui/2kimages/main/3dicons/influence/icon_buff_expansion_placeholder.png"
           }
         },
-        "BaseSharePrice": 10
+        "BaseSharePrice": 10,
+        "PropagandaInfotip": 25956
       }
     }
   }

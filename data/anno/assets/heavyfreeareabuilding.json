@@ -47,10 +47,21 @@
           "Item": {
             "Filename": "data/graphics/buildings/production/heavy_03/heavy_03.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 1010298,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier02_atWork",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -60,8 +71,7 @@
         "LocaText": {
           "English": {
             "Text": "Charcoal Kiln",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 5266
@@ -149,6 +159,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 1750,
         "SelfHealPerHealTick": 6
       },
@@ -169,17 +180,17 @@
             "FactoryProductivityFactor": 0.1,
             "FactoryUndertimeFactor": 0.05
           },
-          "Explosion": {
-            "BaseChance": 4,
-            "FactoryProductivityFactor": 0.1,
-            "FactoryOvertimeFactor": 0.1,
-            "FactoryUndertimeFactor": 0.05
-          },
           "Riot": {
             "FactoryOvertimeFactor": 0.4,
             "FactoryUndertimeFactor": 0.2,
             "FactoryHappinessFactor": 0.2,
             "HappinessThreshold": 20
+          },
+          "Explosion": {
+            "BaseChance": 4,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryOvertimeFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
           }
         }
       },
@@ -196,10 +207,12 @@
       "FreeAreaProductivity": {
         "InfluenceRadius": 11,
         "MaxWorkerAmount": 3,
+        "AdditionalWorkerForForestation": 9,
         "WorkerPause": 10000
       },
       "Industrializable": "",
-      "Electrifiable": ""
+      "Electrifiable": "",
+      "EcoSystemProvider": ""
     }
   },
   {
@@ -250,13 +263,19 @@
         }
       },
       "Mesh": "",
-      "Selection": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Edvard's Charcoal Burner",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 13070
@@ -304,6 +323,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 500
       },
       "Pausable": "",
@@ -320,11 +340,895 @@
         }
       },
       "FreeAreaProductivity": {
+        "InfluenceRadius": 3,
         "MaxWorkerAmount": 3,
+        "AdditionalWorkerForForestation": 3,
         "WorkerPause": 10000
       },
       "Industrializable": "",
-      "Electrifiable": ""
+      "Electrifiable": "",
+      "EcoSystemProvider": ""
+    }
+  },
+  {
+    "Template": "HeavyFreeAreaBuilding",
+    "Values": {
+      "Standard": {
+        "GUID": 24860,
+        "Name": "Scenario02 heavy_03 (Coal Heavy Industry)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_coal_burn.png"
+      },
+      "Building": {
+        "BuildModeRandomRotation": 90,
+        "AssociatedRegions": "Colony01",
+        "SecondPartyRelevant": 0
+      },
+      "Blocking": {
+        "DeletePropsRadius": 1
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 200
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 10
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 5
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/eoy21/graphics/buildings/production/heavy_03/heavy_03.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "StaticHelpEntryPoint": "SeasonsOfSilver_Silver",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "SA_Resident_tier01_atWork",
+        "Colors": {
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Charcoal Kiln",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 54580
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": [
+            {
+              "Sound": 200802
+            },
+            {
+              "Sound": 206294
+            }
+          ]
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FarmBuilding",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "HeavyFreeAreaBuilding",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "Sound": 203830
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        },
+        "MaterialType": "Soil"
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 1010226,
+            "Amount": 1,
+            "StorageAmount": 4
+          }
+        },
+        "CycleTime": 60
+      },
+      "LogisticNode": "",
+      "AmbientMoodProvider": {
+        "Murmur": "Factory"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 20,
+              "InactiveAmount": 10
+            },
+            {
+              "Product": 1010366,
+              "Amount": 10,
+              "ShutdownThreshold": 0.2
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "AttackableType": "IslandBuilding",
+        "MaximumHitPoints": 1750,
+        "SelfHealPerHealTick": 6
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Illness": {
+            "Escalated": 0
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 2000
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "BaseChance": 10,
+            "DensityDistance": 20,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          },
+          "Riot": {
+            "FactoryOvertimeFactor": 0.4,
+            "FactoryUndertimeFactor": 0.2,
+            "FactoryHappinessFactor": 0.2,
+            "HappinessThreshold": 20
+          },
+          "Explosion": {
+            "BaseChance": 4,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryOvertimeFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          }
+        }
+      },
+      "Culture": {
+        "HasPollution": 1
+      },
+      "IncidentInfluencer": {
+        "Influence": {
+          "Illness": {
+            "Distance": 10
+          }
+        }
+      },
+      "FreeAreaProductivity": {
+        "InfluenceRadius": 11,
+        "MaxWorkerAmount": 3,
+        "AdditionalWorkerForForestation": 9,
+        "WorkerPause": 10000
+      },
+      "Industrializable": {
+        "BoostedByIndustrialization": 0
+      },
+      "Electrifiable": "",
+      "EcoSystemProvider": ""
+    }
+  },
+  {
+    "Template": "HeavyFreeAreaBuilding",
+    "Values": {
+      "Standard": {
+        "GUID": 1345,
+        "Name": "heavy_03 (Coal Heavy Industry) Colony01",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_coal_burn.png"
+      },
+      "Building": {
+        "BuildModeRandomRotation": 90,
+        "AssociatedRegions": "Colony01"
+      },
+      "Blocking": {
+        "DeletePropsRadius": 1
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 500
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 4
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 5
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/eoy21/graphics/buildings/production/heavy_03/heavy_03.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 1345,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "SA_Resident_tier01_atWork",
+        "Colors": {
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Charcoal Kiln",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 55841
+      },
+      "Constructable": "",
+      "Locked": {
+        "DLCDependency": 24962
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": [
+            {
+              "Sound": 214813
+            },
+            {
+              "Sound": 201055
+            }
+          ]
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FarmBuilding",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "HeavyFreeAreaBuilding",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "Sound": 203830
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        },
+        "MaterialType": "Soil"
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 1010226,
+            "Amount": 1,
+            "StorageAmount": 4
+          }
+        }
+      },
+      "LogisticNode": "",
+      "AmbientMoodProvider": {
+        "Murmur": "Factory"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 20,
+              "InactiveAmount": 10
+            },
+            {
+              "Product": 1010366,
+              "Amount": 15,
+              "ShutdownThreshold": 0.2
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "AttackableType": "IslandBuilding",
+        "MaximumHitPoints": 1750,
+        "SelfHealPerHealTick": 6
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Illness": {
+            "Escalated": 0
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 2000
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "BaseChance": 10,
+            "DensityDistance": 20,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          },
+          "Riot": {
+            "FactoryOvertimeFactor": 0.4,
+            "FactoryUndertimeFactor": 0.2,
+            "FactoryHappinessFactor": 0.2,
+            "HappinessThreshold": 20
+          },
+          "Explosion": {
+            "BaseChance": 4,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryOvertimeFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          }
+        }
+      },
+      "Culture": {
+        "HasPollution": 1
+      },
+      "IncidentInfluencer": {
+        "Influence": {
+          "Illness": {
+            "Distance": 10
+          }
+        }
+      },
+      "FreeAreaProductivity": {
+        "InfluenceRadius": 11,
+        "MaxWorkerAmount": 3,
+        "AdditionalWorkerForForestation": 9,
+        "WorkerPause": 10000
+      },
+      "Industrializable": "",
+      "Electrifiable": "",
+      "EcoSystemProvider": ""
+    }
+  },
+  {
+    "Template": "HeavyFreeAreaBuilding",
+    "Values": {
+      "Standard": {
+        "GUID": 1418,
+        "Name": "heavy_04 (PalmOil) Colony01",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_industrial_lubricant_a.png"
+      },
+      "Building": {
+        "BuildModeRandomRotation": 90,
+        "AssociatedRegions": "Colony01"
+      },
+      "Blocking": {
+        "DeletePropsRadius": 1
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 850
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 15
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 25
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/eoy21/graphics/buildings/production/forestation/forestation_colony01_01.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 1418,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "SA_Resident_tier01_atWork",
+        "Colors": {
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Industrial Oil Press",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 55842
+      },
+      "Constructable": "",
+      "Locked": {
+        "DLCDependency": 24962
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": [
+            {
+              "Sound": 200802
+            },
+            {
+              "Sound": 200551
+            }
+          ]
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FarmBuilding",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "HeavyFreeAreaBuilding",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "Sound": 203830
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        },
+        "MaterialType": "Soil"
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryInputs": {
+          "Item": [
+            {
+              "Product": 120042,
+              "Amount": 1,
+              "StorageAmount": 9
+            },
+            {
+              "Product": 1010232,
+              "Amount": 1,
+              "StorageAmount": 9
+            }
+          ]
+        },
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 1414,
+            "Amount": 1,
+            "StorageAmount": 9
+          }
+        },
+        "IsMainFactory": 1
+      },
+      "LogisticNode": "",
+      "AmbientMoodProvider": {
+        "Murmur": "Factory"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 250,
+              "InactiveAmount": 125
+            },
+            {
+              "Product": 1010366,
+              "Amount": 65,
+              "ShutdownThreshold": 0.2
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "AttackableType": "IslandBuilding",
+        "MaximumHitPoints": 1750,
+        "SelfHealPerHealTick": 6
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Illness": {
+            "Escalated": 0
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 1000
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "BaseChance": 10,
+            "DensityDistance": 20,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          },
+          "Riot": {
+            "FactoryOvertimeFactor": 0.4,
+            "FactoryUndertimeFactor": 0.2,
+            "FactoryHappinessFactor": 0.2,
+            "HappinessThreshold": 20
+          },
+          "Explosion": {
+            "BaseChance": 4,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryOvertimeFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          }
+        }
+      },
+      "Culture": {
+        "Attractiveness": 0,
+        "HasPollution": 1
+      },
+      "IncidentInfluencer": {
+        "Influence": {
+          "Illness": {
+            "Distance": 10
+          }
+        }
+      },
+      "FreeAreaProductivity": {
+        "InfluenceRadius": 11,
+        "FreeAreaType": "Coconut",
+        "MaxWorkerAmount": 3,
+        "AdditionalWorkerForForestation": 9,
+        "WorkerPause": 10000,
+        "CutTree": 0
+      },
+      "Industrializable": {
+        "BoostedByIndustrialization": 0
+      },
+      "Electrifiable": "",
+      "EcoSystemProvider": ""
+    }
+  },
+  {
+    "Template": "HeavyFreeAreaBuilding",
+    "Values": {
+      "Standard": {
+        "GUID": 2396,
+        "Name": "Scenario03 Charcoal Kiln",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_coal_burn.png"
+      },
+      "Building": {
+        "BuildModeRandomRotation": 90,
+        "AssociatedRegions": "Colony01"
+      },
+      "Blocking": {
+        "DeletePropsRadius": 1
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 500
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 4
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 5
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/eoy21/graphics/buildings/production/heavy_03/heavy_03.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "Resident_tier02_atWork",
+        "Colors": {
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Charcoal Kiln",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 55853
+      },
+      "Constructable": "",
+      "Locked": {
+        "DLCDependency": 24962
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": [
+            {
+              "Sound": 214813
+            },
+            {
+              "Sound": 206294
+            }
+          ]
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FarmBuilding",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "HeavyFreeAreaBuilding",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "Sound": 203830
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        },
+        "MaterialType": "Soil"
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 1010226,
+            "Amount": 1,
+            "StorageAmount": 4
+          }
+        }
+      },
+      "LogisticNode": "",
+      "AmbientMoodProvider": {
+        "Murmur": "Factory"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 20,
+              "InactiveAmount": 10
+            },
+            {
+              "Product": 1010115,
+              "Amount": 10,
+              "ShutdownThreshold": 0.2
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "AttackableType": "IslandBuilding",
+        "MaximumHitPoints": 1750,
+        "SelfHealPerHealTick": 6
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Illness": {
+            "Escalated": 0
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 2000
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "BaseChance": 10,
+            "DensityDistance": 20,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          },
+          "Riot": {
+            "FactoryOvertimeFactor": 0.4,
+            "FactoryUndertimeFactor": 0.2,
+            "FactoryHappinessFactor": 0.2,
+            "HappinessThreshold": 20
+          },
+          "Explosion": {
+            "BaseChance": 4,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryOvertimeFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          }
+        }
+      },
+      "Culture": {
+        "HasPollution": 1
+      },
+      "IncidentInfluencer": {
+        "Influence": {
+          "Illness": {
+            "Distance": 10
+          }
+        }
+      },
+      "FreeAreaProductivity": {
+        "InfluenceRadius": 11,
+        "MaxWorkerAmount": 3,
+        "AdditionalWorkerForForestation": 9,
+        "WorkerPause": 10000
+      },
+      "Industrializable": "",
+      "Electrifiable": "",
+      "EcoSystemProvider": ""
     }
   }
 ]

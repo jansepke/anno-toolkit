@@ -7,8 +7,7 @@
         "Name": "residence_tier05b",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_residence_scholars.png",
         "ID": "LOL_Scholars",
-        "InfoDescription": 125307,
-        "Version": "dlc06"
+        "InfoDescription": 125307
       },
       "Blocking": "",
       "Building": {
@@ -65,17 +64,27 @@
             }
           ]
         },
+        "Skins": {
+          "DefaultSkinName": 23852,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        },
         "DefaultParticipant": "Africa_Resident_tier03"
       },
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Africa_Resident_tier03"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Scholar Residence",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 36598
@@ -143,6 +152,7 @@
         },
         "PopulationLevel7": 118745,
         "ResidentMax": 120,
+        "ResidentsRequiredForUpgrade": 120,
         "MoveInMs": 8000
       },
       "LogisticNode": {
@@ -171,6 +181,7 @@
       },
       "UpgradeList": "",
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 3500
       },
       "IncidentInfectable": {
@@ -186,6 +197,10 @@
             "DensityFactor": 0.025,
             "DensityDistance": 15
           },
+          "Riot": {
+            "ResidenceHappinessFactor": 0.4,
+            "HappinessThreshold": 10
+          },
           "Illness": {
             "BaseChance": 3,
             "HitpointFactor": 0.1,
@@ -196,10 +211,6 @@
             "FactoryUndertimeFactor": 0.15,
             "ResidenceFullOvertimeChance": 20,
             "ResidenceFullUndertimeChance": -15
-          },
-          "Riot": {
-            "ResidenceHappinessFactor": 0.4,
-            "HappinessThreshold": 10
           },
           "Explosion": {
             "ResidenceFullOvertimeChance": 20,
@@ -212,7 +223,8 @@
       "StreetActivation": "",
       "InfluenceSource": "",
       "BuildPermit": {
-        "VisibleWithoutPermits": 1
+        "VisibleWithoutPermits": 1,
+        "PermitSource": 125310
       }
     }
   }

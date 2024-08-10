@@ -5,8 +5,7 @@
       "Standard": {
         "GUID": 116029,
         "Name": "mining_arctic_02 (Gold Mine)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_gold_ore.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_gold_ore.png"
       },
       "Building": {
         "BuildModeRandomRotation": 90,
@@ -149,18 +148,28 @@
           "Item": {
             "Filename": "data/dlc03/graphics/buildings/production/mining_colony03_01/mining_colony03_01.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 116029,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Arctic_Resident_tier02_atWork"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Deep Gold Mine",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 35086
@@ -186,6 +195,12 @@
       "UpgradeList": "",
       "Factory7": "",
       "FactoryBase": {
+        "FactoryInputs": {
+          "Item": {
+            "Product": 1591,
+            "StorageAmount": 7
+          }
+        },
         "FactoryOutputs": {
           "Item": {
             "Product": 1010233,
@@ -222,16 +237,17 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 1500
       },
       "Pausable": "",
       "IncidentInfectable": {
         "Infectable": {
-          "Illness": {
-            "Escalated": 0
-          },
           "Riot": {
             "Base": 0,
+            "Escalated": 0
+          },
+          "Illness": {
             "Escalated": 0
           }
         },
@@ -245,13 +261,6 @@
             "DensityFactor": 0.1,
             "DensityDistance": 20
           },
-          "Explosion": {
-            "BaseChance": 0,
-            "FactoryProductivityFactor": 0.025,
-            "HappinessMin": 0,
-            "HappinessMax": 0,
-            "SatisfactionThreshold": 0
-          },
           "Riot": {
             "FactoryOvertimeFactor": 0,
             "FactoryUndertimeFactor": 0,
@@ -262,6 +271,13 @@
           },
           "Illness": {
             "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Explosion": {
+            "BaseChance": 0,
+            "FactoryProductivityFactor": 0.025,
             "HappinessMin": 0,
             "HappinessMax": 0,
             "SatisfactionThreshold": 0

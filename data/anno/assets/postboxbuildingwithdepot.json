@@ -1,0 +1,1836 @@
+[
+  {
+    "Template": "PostBoxBuildingWithDepot",
+    "Values": {
+      "Standard": {
+        "GUID": 3741,
+        "Name": "post office",
+        "IconFilename": "data/ui/2kimages/main/3dicons/mail/icon_post_office_dlc11.png"
+      },
+      "Building": {
+        "AssociatedRegions": "Moderate",
+        "SecondPartyRelevant": 0
+      },
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PostBoxBuildingWithDepot",
+                    "Index": 0
+                  }
+                }
+              },
+              "Amount": 10000
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PostBoxBuildingWithDepot",
+                    "Index": 1
+                  }
+                }
+              },
+              "Amount": 40
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PostBoxBuildingWithDepot",
+                    "Index": 2
+                  }
+                }
+              },
+              "Amount": 30
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PostBoxBuildingWithDepot",
+                    "Index": 3
+                  }
+                }
+              },
+              "Ingredient": 838,
+              "Amount": 15
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PostBoxBuildingWithDepot",
+                    "Index": 4
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PostBoxBuildingWithDepot",
+                    "Index": 5
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc11/graphics/buildings/public/postoffice/postoffice_01.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 3741,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "StaticHelpEntryPoint": "EmpireOfTheSkies_Post_GatherMail",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Post Office",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 56558
+      },
+      "Constructable": "",
+      "Locked": {
+        "DLCDependency": 24962
+      },
+      "SoundEmitter": "",
+      "Infolayer": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 535,
+            "Amount": 1,
+            "StorageAmount": 3
+          }
+        },
+        "CycleTime": 45,
+        "WarehouseTransporterAsset": 829,
+        "MissingConnectionInfolayer": 0,
+        "IsMainFactory": 1
+      },
+      "LogisticNode": {
+        "TransporterCountMax": 0,
+        "NeedsTransporterQueue": 0
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 400,
+              "InactiveAmount": 200
+            },
+            {
+              "Product": 1010115,
+              "Amount": 50
+            }
+          ]
+        }
+      },
+      "Pausable": {
+        "CanPauseManually": 1
+      },
+      "UpgradeList": "",
+      "ItemContainer": {
+        "SocketScopeRadius": 24,
+        "SocketScopeRadiusOverlapCategory": "Postbox"
+      },
+      "Postbox": {
+        "ProductivityFactorByResidents": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PostBoxBuildingWithDepot",
+                    "Index": 0
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PostBoxBuildingWithDepot",
+                    "Index": 1
+                  }
+                }
+              },
+              "ResidentAmount": 500
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PostBoxBuildingWithDepot",
+                    "Index": 2
+                  }
+                }
+              },
+              "ResidentAmount": 1000
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PostBoxBuildingWithDepot",
+                    "Index": 3
+                  }
+                }
+              },
+              "ResidentAmount": 1500
+            },
+            {
+              "ResidentAmount": 2000,
+              "ProductivityFactor": 4
+            },
+            {
+              "ResidentAmount": 2500,
+              "ProductivityFactor": 5
+            },
+            {
+              "ResidentAmount": 3000,
+              "ProductivityFactor": 6
+            },
+            {
+              "ResidentAmount": 3500,
+              "ProductivityFactor": 7
+            },
+            {
+              "ResidentAmount": 4000,
+              "ProductivityFactor": 8
+            },
+            {
+              "ResidentAmount": 4500,
+              "ProductivityFactor": 9
+            },
+            {
+              "ResidentAmount": 5000,
+              "ProductivityFactor": 10
+            },
+            {
+              "ResidentAmount": 5500,
+              "ProductivityFactor": 11
+            },
+            {
+              "ResidentAmount": 6000,
+              "ProductivityFactor": 12
+            },
+            {
+              "ResidentAmount": 6500,
+              "ProductivityFactor": 13
+            },
+            {
+              "ResidentAmount": 7000,
+              "ProductivityFactor": 14
+            },
+            {
+              "ResidentAmount": 7500,
+              "ProductivityFactor": 15
+            },
+            {
+              "ResidentAmount": 8000,
+              "ProductivityFactor": 16
+            },
+            {
+              "ResidentAmount": 8500,
+              "ProductivityFactor": 17
+            },
+            {
+              "ResidentAmount": 9000,
+              "ProductivityFactor": 18
+            },
+            {
+              "ResidentAmount": 9500,
+              "ProductivityFactor": 19
+            },
+            {
+              "ResidentAmount": 10000,
+              "ProductivityFactor": 20
+            },
+            {
+              "ResidentAmount": 10500,
+              "ProductivityFactor": 21
+            },
+            {
+              "ResidentAmount": 11000,
+              "ProductivityFactor": 22
+            },
+            {
+              "ResidentAmount": 11500,
+              "ProductivityFactor": 23
+            },
+            {
+              "ResidentAmount": 12000,
+              "ProductivityFactor": 24
+            },
+            {
+              "ResidentAmount": 12500,
+              "ProductivityFactor": 25
+            },
+            {
+              "ResidentAmount": 13000,
+              "ProductivityFactor": 26
+            },
+            {
+              "ResidentAmount": 13500,
+              "ProductivityFactor": 27
+            },
+            {
+              "ResidentAmount": 14000,
+              "ProductivityFactor": 28
+            },
+            {
+              "ResidentAmount": 14500,
+              "ProductivityFactor": 29
+            },
+            {
+              "ResidentAmount": 15000,
+              "ProductivityFactor": 30
+            },
+            {
+              "ResidentAmount": 15500,
+              "ProductivityFactor": 31
+            }
+          ]
+        },
+        "HasMailmanFeedback": 1
+      },
+      "StorageBase": {
+        "ProductStorageList": 745
+      },
+      "Warehouse": {
+        "WarehouseStorage": {
+          "StorageMax": 65
+        }
+      },
+      "FeedbackController": ""
+    }
+  },
+  {
+    "Template": "PostBoxBuildingWithDepot",
+    "Values": {
+      "Standard": {
+        "GUID": 538,
+        "Name": "post box",
+        "IconFilename": "data/ui/2kimages/main/3dicons/mail/icon_postbox_b.png"
+      },
+      "Building": {
+        "BuildModeRandomRotation": 90,
+        "AssociatedRegions": "Moderate",
+        "SecondPartyRelevant": 0
+      },
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 1000
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 5
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 5
+            },
+            {
+              "Ingredient": 838,
+              "Amount": 5
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc11/graphics/buildings/special/mailbox/mailbox_01.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 538,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "StaticHelpEntryPoint": "EmpireOfTheSkies_Post_GatherMail",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "Resident_tier02_atWork",
+        "Colors": {
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Post Box",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 56050
+      },
+      "Constructable": "",
+      "Locked": {
+        "DLCDependency": 24962
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 201010
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "MaterialType": "Soil"
+      },
+      "Infolayer": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 535,
+            "Amount": 1,
+            "StorageAmount": 9
+          }
+        },
+        "CycleTime": 45,
+        "WarehouseTransporterAsset": 829,
+        "MissingConnectionInfolayer": 0,
+        "ClampedMaxTransporterLogisticCost": 45
+      },
+      "LogisticNode": {
+        "TransporterCountMax": 0,
+        "NeedsTransporterQueue": 0
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 120
+            },
+            {
+              "Product": 1010115,
+              "Amount": 15
+            }
+          ]
+        }
+      },
+      "Pausable": {
+        "CanPauseManually": 1
+      },
+      "UpgradeList": "",
+      "ItemContainer": {
+        "SocketScopeRadius": 12,
+        "SocketScopeRadiusOverlapCategory": "Postbox"
+      },
+      "Postbox": {
+        "ProductivityFactorByResidents": {
+          "Item": [
+            "",
+            {
+              "ResidentAmount": 500,
+              "ProductivityFactor": 1
+            },
+            {
+              "ResidentAmount": 1000,
+              "ProductivityFactor": 2
+            },
+            {
+              "ResidentAmount": 1500,
+              "ProductivityFactor": 3
+            },
+            {
+              "ResidentAmount": 2000,
+              "ProductivityFactor": 4
+            },
+            {
+              "ResidentAmount": 2500,
+              "ProductivityFactor": 5
+            },
+            {
+              "ResidentAmount": 3000,
+              "ProductivityFactor": 6
+            },
+            {
+              "ResidentAmount": 3500,
+              "ProductivityFactor": 7
+            },
+            {
+              "ResidentAmount": 4000,
+              "ProductivityFactor": 8
+            },
+            {
+              "ResidentAmount": 4500,
+              "ProductivityFactor": 9
+            },
+            {
+              "ResidentAmount": 5000,
+              "ProductivityFactor": 10
+            },
+            {
+              "ResidentAmount": 5500,
+              "ProductivityFactor": 11
+            },
+            {
+              "ResidentAmount": 6000,
+              "ProductivityFactor": 12
+            },
+            {
+              "ResidentAmount": 6500,
+              "ProductivityFactor": 13
+            },
+            {
+              "ResidentAmount": 7000,
+              "ProductivityFactor": 14
+            },
+            {
+              "ResidentAmount": 7500,
+              "ProductivityFactor": 15
+            },
+            {
+              "ResidentAmount": 8000,
+              "ProductivityFactor": 16
+            },
+            {
+              "ResidentAmount": 8500,
+              "ProductivityFactor": 17
+            },
+            {
+              "ResidentAmount": 9000,
+              "ProductivityFactor": 18
+            },
+            {
+              "ResidentAmount": 9500,
+              "ProductivityFactor": 19
+            },
+            {
+              "ResidentAmount": 10000,
+              "ProductivityFactor": 20
+            },
+            {
+              "ResidentAmount": 10500,
+              "ProductivityFactor": 21
+            },
+            {
+              "ResidentAmount": 11000,
+              "ProductivityFactor": 22
+            },
+            {
+              "ResidentAmount": 11500,
+              "ProductivityFactor": 23
+            },
+            {
+              "ResidentAmount": 12000,
+              "ProductivityFactor": 24
+            },
+            {
+              "ResidentAmount": 12500,
+              "ProductivityFactor": 25
+            },
+            {
+              "ResidentAmount": 13000,
+              "ProductivityFactor": 26
+            },
+            {
+              "ResidentAmount": 13500,
+              "ProductivityFactor": 27
+            },
+            {
+              "ResidentAmount": 14000,
+              "ProductivityFactor": 28
+            },
+            {
+              "ResidentAmount": 14500,
+              "ProductivityFactor": 29
+            },
+            {
+              "ResidentAmount": 15000,
+              "ProductivityFactor": 30
+            },
+            {
+              "ResidentAmount": 15500,
+              "ProductivityFactor": 31
+            }
+          ]
+        }
+      },
+      "StorageBase": {
+        "ProductStorageList": 745
+      },
+      "Warehouse": {
+        "WarehouseStorage": {
+          "StorageMax": 15
+        }
+      },
+      "FeedbackController": ""
+    }
+  },
+  {
+    "Template": "PostBoxBuildingWithDepot",
+    "Values": {
+      "Standard": {
+        "GUID": 3761,
+        "Name": "post office standalone Colony01",
+        "IconFilename": "data/ui/2kimages/main/3dicons/mail/icon_post_office_dlc11.png"
+      },
+      "Building": {
+        "AssociatedRegions": "Colony01",
+        "SecondPartyRelevant": 0
+      },
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PostBoxBuildingWithDepot",
+                    "Index": 0
+                  }
+                }
+              },
+              "Amount": 10000
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PostBoxBuildingWithDepot",
+                    "Index": 1
+                  }
+                }
+              },
+              "Amount": 40
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PostBoxBuildingWithDepot",
+                    "Index": 2
+                  }
+                }
+              },
+              "Amount": 30
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PostBoxBuildingWithDepot",
+                    "Index": 3
+                  }
+                }
+              },
+              "Ingredient": 838,
+              "Amount": 15
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PostBoxBuildingWithDepot",
+                    "Index": 4
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PostBoxBuildingWithDepot",
+                    "Index": 5
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc11/graphics/buildings/public/postoffice/postoffice_colony_01.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 3761,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        },
+        "IgnoreForMinimapGeneration": 0
+      },
+      "Mesh": "",
+      "Selection": {
+        "StaticHelpEntryPoint": "EmpireOfTheSkies_Post_GatherMail",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Post Office",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 56560
+      },
+      "Constructable": "",
+      "Locked": {
+        "DLCDependency": 24962
+      },
+      "SoundEmitter": "",
+      "Infolayer": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 535,
+            "Amount": 1,
+            "StorageAmount": 3
+          }
+        },
+        "CycleTime": 45,
+        "WarehouseTransporterAsset": 829,
+        "MissingConnectionInfolayer": 0
+      },
+      "LogisticNode": {
+        "TransporterCountMax": 0
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 400,
+              "InactiveAmount": 200
+            },
+            {
+              "Product": 1010367,
+              "Amount": 50
+            }
+          ]
+        }
+      },
+      "Pausable": {
+        "CanPauseManually": 1
+      },
+      "UpgradeList": "",
+      "ItemContainer": {
+        "SocketScopeRadius": 24,
+        "SocketScopeRadiusOverlapCategory": "Postbox"
+      },
+      "Postbox": {
+        "ProductivityFactorByResidents": {
+          "Item": [
+            "",
+            {
+              "ResidentAmount": 500,
+              "ProductivityFactor": 1
+            },
+            {
+              "ResidentAmount": 1000,
+              "ProductivityFactor": 2
+            },
+            {
+              "ResidentAmount": 1500,
+              "ProductivityFactor": 3
+            },
+            {
+              "ResidentAmount": 2000,
+              "ProductivityFactor": 4
+            },
+            {
+              "ResidentAmount": 2500,
+              "ProductivityFactor": 5
+            },
+            {
+              "ResidentAmount": 3000,
+              "ProductivityFactor": 6
+            },
+            {
+              "ResidentAmount": 3500,
+              "ProductivityFactor": 7
+            },
+            {
+              "ResidentAmount": 4000,
+              "ProductivityFactor": 8
+            },
+            {
+              "ResidentAmount": 4500,
+              "ProductivityFactor": 9
+            },
+            {
+              "ResidentAmount": 5000,
+              "ProductivityFactor": 10
+            },
+            {
+              "ResidentAmount": 5500,
+              "ProductivityFactor": 11
+            },
+            {
+              "ResidentAmount": 6000,
+              "ProductivityFactor": 12
+            },
+            {
+              "ResidentAmount": 6500,
+              "ProductivityFactor": 13
+            },
+            {
+              "ResidentAmount": 7000,
+              "ProductivityFactor": 14
+            },
+            {
+              "ResidentAmount": 7500,
+              "ProductivityFactor": 15
+            },
+            {
+              "ResidentAmount": 8000,
+              "ProductivityFactor": 16
+            },
+            {
+              "ResidentAmount": 8500,
+              "ProductivityFactor": 17
+            },
+            {
+              "ResidentAmount": 9000,
+              "ProductivityFactor": 18
+            },
+            {
+              "ResidentAmount": 9500,
+              "ProductivityFactor": 19
+            },
+            {
+              "ResidentAmount": 10000,
+              "ProductivityFactor": 20
+            },
+            {
+              "ResidentAmount": 10500,
+              "ProductivityFactor": 21
+            },
+            {
+              "ResidentAmount": 11000,
+              "ProductivityFactor": 22
+            },
+            {
+              "ResidentAmount": 11500,
+              "ProductivityFactor": 23
+            },
+            {
+              "ResidentAmount": 12000,
+              "ProductivityFactor": 24
+            },
+            {
+              "ResidentAmount": 12500,
+              "ProductivityFactor": 25
+            },
+            {
+              "ResidentAmount": 13000,
+              "ProductivityFactor": 26
+            },
+            {
+              "ResidentAmount": 13500,
+              "ProductivityFactor": 27
+            },
+            {
+              "ResidentAmount": 14000,
+              "ProductivityFactor": 28
+            },
+            {
+              "ResidentAmount": 14500,
+              "ProductivityFactor": 29
+            },
+            {
+              "ResidentAmount": 15000,
+              "ProductivityFactor": 30
+            },
+            {
+              "ResidentAmount": 15500,
+              "ProductivityFactor": 31
+            }
+          ]
+        },
+        "HasMailmanFeedback": 1
+      },
+      "StorageBase": {
+        "ProductStorageList": 4254
+      },
+      "Warehouse": {
+        "WarehouseStorage": {
+          "StorageMax": 50
+        }
+      },
+      "FeedbackController": ""
+    }
+  },
+  {
+    "Template": "PostBoxBuildingWithDepot",
+    "Values": {
+      "Standard": {
+        "GUID": 3661,
+        "Name": "post box colony01",
+        "IconFilename": "data/ui/2kimages/main/3dicons/mail/icon_postbox_b.png"
+      },
+      "Building": {
+        "BuildModeRandomRotation": 90,
+        "AssociatedRegions": "Colony01",
+        "SecondPartyRelevant": 0
+      },
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 1000
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 5
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 5
+            },
+            {
+              "Ingredient": 838,
+              "Amount": 5
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc11/graphics/buildings/special/mailbox/mailbox_01.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 3661,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "StaticHelpEntryPoint": "EmpireOfTheSkies_Post_GatherMail",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "SA_Resident_tier02_atWork",
+        "Colors": {
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Post Box",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 56378
+      },
+      "Constructable": "",
+      "Locked": {
+        "DLCDependency": 24962
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 201010
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "MaterialType": "Soil"
+      },
+      "Infolayer": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 535,
+            "Amount": 1,
+            "StorageAmount": 3
+          }
+        },
+        "CycleTime": 45,
+        "WarehouseTransporterAsset": 829,
+        "MissingConnectionInfolayer": 0,
+        "ClampMaxTransporterLogisticCost": 1
+      },
+      "LogisticNode": {
+        "TransporterCountMax": 0
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 120
+            },
+            {
+              "Product": 1010367,
+              "Amount": 15
+            }
+          ]
+        }
+      },
+      "Pausable": {
+        "CanPauseManually": 1
+      },
+      "UpgradeList": "",
+      "ItemContainer": {
+        "SocketScopeRadius": 12,
+        "SocketScopeRadiusOverlapCategory": "Postbox"
+      },
+      "Postbox": {
+        "ProductivityFactorByResidents": {
+          "Item": [
+            "",
+            {
+              "ResidentAmount": 500,
+              "ProductivityFactor": 1
+            },
+            {
+              "ResidentAmount": 1000,
+              "ProductivityFactor": 2
+            },
+            {
+              "ResidentAmount": 1500,
+              "ProductivityFactor": 3
+            },
+            {
+              "ResidentAmount": 2000,
+              "ProductivityFactor": 4
+            },
+            {
+              "ResidentAmount": 2500,
+              "ProductivityFactor": 5
+            },
+            {
+              "ResidentAmount": 3000,
+              "ProductivityFactor": 6
+            },
+            {
+              "ResidentAmount": 3500,
+              "ProductivityFactor": 7
+            },
+            {
+              "ResidentAmount": 4000,
+              "ProductivityFactor": 8
+            },
+            {
+              "ResidentAmount": 4500,
+              "ProductivityFactor": 9
+            },
+            {
+              "ResidentAmount": 5000,
+              "ProductivityFactor": 10
+            },
+            {
+              "ResidentAmount": 5500,
+              "ProductivityFactor": 11
+            },
+            {
+              "ResidentAmount": 6000,
+              "ProductivityFactor": 12
+            },
+            {
+              "ResidentAmount": 6500,
+              "ProductivityFactor": 13
+            },
+            {
+              "ResidentAmount": 7000,
+              "ProductivityFactor": 14
+            },
+            {
+              "ResidentAmount": 7500,
+              "ProductivityFactor": 15
+            },
+            {
+              "ResidentAmount": 8000,
+              "ProductivityFactor": 16
+            },
+            {
+              "ResidentAmount": 8500,
+              "ProductivityFactor": 17
+            },
+            {
+              "ResidentAmount": 9000,
+              "ProductivityFactor": 18
+            },
+            {
+              "ResidentAmount": 9500,
+              "ProductivityFactor": 19
+            },
+            {
+              "ResidentAmount": 10000,
+              "ProductivityFactor": 20
+            },
+            {
+              "ResidentAmount": 10500,
+              "ProductivityFactor": 21
+            },
+            {
+              "ResidentAmount": 11000,
+              "ProductivityFactor": 22
+            },
+            {
+              "ResidentAmount": 11500,
+              "ProductivityFactor": 23
+            },
+            {
+              "ResidentAmount": 12000,
+              "ProductivityFactor": 24
+            },
+            {
+              "ResidentAmount": 12500,
+              "ProductivityFactor": 25
+            },
+            {
+              "ResidentAmount": 13000,
+              "ProductivityFactor": 26
+            },
+            {
+              "ResidentAmount": 13500,
+              "ProductivityFactor": 27
+            },
+            {
+              "ResidentAmount": 14000,
+              "ProductivityFactor": 28
+            },
+            {
+              "ResidentAmount": 14500,
+              "ProductivityFactor": 29
+            },
+            {
+              "ResidentAmount": 15000,
+              "ProductivityFactor": 30
+            },
+            {
+              "ResidentAmount": 15500,
+              "ProductivityFactor": 31
+            }
+          ]
+        }
+      },
+      "StorageBase": {
+        "ProductStorageList": 4254
+      },
+      "Warehouse": {
+        "WarehouseStorage": {
+          "StorageMax": 15
+        }
+      },
+      "FeedbackController": ""
+    }
+  },
+  {
+    "Template": "PostBoxBuildingWithDepot",
+    "Values": {
+      "Standard": {
+        "GUID": 7413,
+        "Name": "WaterTreatmentPlant",
+        "IconFilename": "data/ui/2kimages/main/3dicons/scenario/icon_water_filter.png"
+      },
+      "Building": {
+        "TerrainType": "Coast",
+        "AssociatedRegions": "Colony01",
+        "SecondPartyRelevant": 0
+      },
+      "Blocking": {
+        "GroundDecalAsset": 102460,
+        "GroundDecalInvisible": 102459,
+        "HasBuildingBaseTiles": 1
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PostBoxBuildingWithDepot",
+                    "Index": 0
+                  }
+                }
+              },
+              "Amount": 6000
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PostBoxBuildingWithDepot",
+                    "Index": 1
+                  }
+                }
+              },
+              "Amount": 23
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PostBoxBuildingWithDepot",
+                    "Index": 2
+                  }
+                }
+              },
+              "Amount": 17
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PostBoxBuildingWithDepot",
+                    "Index": 3
+                  }
+                }
+              },
+              "Ingredient": 838
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PostBoxBuildingWithDepot",
+                    "Index": 4
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PostBoxBuildingWithDepot",
+                    "Index": 5
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/eoy21/graphics/buildings/production/coastal_02/coastal_02_01.cfg"
+          }
+        },
+        "IgnoreForMinimapGeneration": 0
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "SA_Resident_tier02_atWork"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Water Treatment Plant",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 60570
+      },
+      "Constructable": {
+        "DestructionCategory": "Other"
+      },
+      "Locked": "",
+      "SoundEmitter": "",
+      "Infolayer": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 24808,
+            "Amount": 1,
+            "StorageAmount": 12
+          }
+        },
+        "CycleTime": 150,
+        "WarehouseTransporterAsset": 0,
+        "MissingConnectionInfolayer": 0,
+        "ClampMaxTransporterLogisticCost": 1,
+        "ClampedMaxTransporterLogisticCost": 0.1
+      },
+      "LogisticNode": {
+        "TransporterCountMax": 0,
+        "TransporterAsset": 120062,
+        "NeedsTransporterQueue": 0
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 320,
+              "InactiveAmount": 160
+            },
+            {
+              "Product": 1010367,
+              "Amount": 55
+            }
+          ]
+        },
+        "IncomeCategory": "HarbourBuildings"
+      },
+      "Pausable": {
+        "CanPauseManually": 1
+      },
+      "UpgradeList": "",
+      "ItemContainer": {
+        "SocketScopeRadius": 26,
+        "SocketScopeRadiusOverlapCategory": "Postbox"
+      },
+      "Postbox": {
+        "ProductivityFactorByResidents": {
+          "Item": [
+            "",
+            {
+              "ResidentAmount": 50,
+              "ProductivityFactor": 1
+            },
+            {
+              "ResidentAmount": 100,
+              "ProductivityFactor": 2
+            },
+            {
+              "ResidentAmount": 200,
+              "ProductivityFactor": 3
+            },
+            {
+              "ResidentAmount": 300,
+              "ProductivityFactor": 4
+            },
+            {
+              "ResidentAmount": 400,
+              "ProductivityFactor": 5
+            },
+            {
+              "ResidentAmount": 500,
+              "ProductivityFactor": 6
+            },
+            {
+              "ResidentAmount": 750,
+              "ProductivityFactor": 7
+            },
+            {
+              "ResidentAmount": 1000,
+              "ProductivityFactor": 8
+            },
+            {
+              "ResidentAmount": 1500,
+              "ProductivityFactor": 9
+            },
+            {
+              "ResidentAmount": 2000,
+              "ProductivityFactor": 10
+            },
+            {
+              "ResidentAmount": 3000,
+              "ProductivityFactor": 11
+            },
+            {
+              "ResidentAmount": 4500,
+              "ProductivityFactor": 12
+            },
+            {
+              "ResidentAmount": 6500,
+              "ProductivityFactor": 13
+            },
+            {
+              "ResidentAmount": 7000,
+              "ProductivityFactor": 14
+            },
+            {
+              "ResidentAmount": 7500,
+              "ProductivityFactor": 15
+            },
+            {
+              "ResidentAmount": 8000,
+              "ProductivityFactor": 16
+            },
+            {
+              "ResidentAmount": 8500,
+              "ProductivityFactor": 17
+            },
+            {
+              "ResidentAmount": 9000,
+              "ProductivityFactor": 18
+            },
+            {
+              "ResidentAmount": 9500,
+              "ProductivityFactor": 19
+            },
+            {
+              "ResidentAmount": 10000,
+              "ProductivityFactor": 20
+            },
+            {
+              "ResidentAmount": 10500,
+              "ProductivityFactor": 21
+            },
+            {
+              "ResidentAmount": 11000,
+              "ProductivityFactor": 22
+            },
+            {
+              "ResidentAmount": 11500,
+              "ProductivityFactor": 23
+            },
+            {
+              "ResidentAmount": 12000,
+              "ProductivityFactor": 24
+            },
+            {
+              "ResidentAmount": 12500,
+              "ProductivityFactor": 25
+            },
+            {
+              "ResidentAmount": 13000,
+              "ProductivityFactor": 26
+            },
+            {
+              "ResidentAmount": 13500,
+              "ProductivityFactor": 27
+            },
+            {
+              "ResidentAmount": 14000,
+              "ProductivityFactor": 28
+            },
+            {
+              "ResidentAmount": 14500,
+              "ProductivityFactor": 29
+            },
+            {
+              "ResidentAmount": 15000,
+              "ProductivityFactor": 30
+            },
+            {
+              "ResidentAmount": 15500,
+              "ProductivityFactor": 31
+            }
+          ]
+        },
+        "HasMailmanFeedback": 1
+      },
+      "StorageBase": {
+        "ProductStorageList": 120055
+      },
+      "Warehouse": {
+        "WarehouseStorage": {
+          "StorageMax": 0
+        }
+      },
+      "FeedbackController": ""
+    }
+  },
+  {
+    "Template": "PostBoxBuildingWithDepot",
+    "Values": {
+      "Standard": {
+        "GUID": 7438,
+        "Name": "Outhouse",
+        "IconFilename": "data/ui/2kimages/main/3dicons/scenario/goods/icon_fertilizer_good.png"
+      },
+      "Building": {
+        "AssociatedRegions": "Colony01",
+        "SecondPartyRelevant": 0
+      },
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PostBoxBuildingWithDepot",
+                    "Index": 0
+                  }
+                }
+              },
+              "Amount": 300
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PostBoxBuildingWithDepot",
+                    "Index": 1
+                  }
+                }
+              },
+              "Amount": 4
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PostBoxBuildingWithDepot",
+                    "Index": 2
+                  }
+                }
+              },
+              "Amount": 2
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PostBoxBuildingWithDepot",
+                    "Index": 3
+                  }
+                }
+              },
+              "Ingredient": 838
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PostBoxBuildingWithDepot",
+                    "Index": 4
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "PostBoxBuildingWithDepot",
+                    "Index": 5
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc05/graphics/buildings/ornamental/agriculture/agriculture_props_system_1x1_outhouse_01.cfg"
+          }
+        },
+        "IgnoreForMinimapGeneration": 0
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "SA_Resident_tier01_atWork"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Outhouse",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 60571
+      },
+      "Constructable": {
+        "DestructionCategory": "Other"
+      },
+      "Locked": "",
+      "SoundEmitter": "",
+      "Infolayer": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 24808,
+            "Amount": 1,
+            "StorageAmount": 12
+          }
+        },
+        "CycleTime": 200,
+        "WarehouseTransporterAsset": 0,
+        "MissingConnectionInfolayer": 0,
+        "ClampMaxTransporterLogisticCost": 1,
+        "ClampedMaxTransporterLogisticCost": 0.1
+      },
+      "LogisticNode": {
+        "TransporterCountMax": 0,
+        "TransporterAsset": 120062,
+        "NeedsTransporterQueue": 0
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 32,
+              "InactiveAmount": 16
+            },
+            {
+              "Product": 1010366,
+              "Amount": 2
+            }
+          ]
+        }
+      },
+      "Pausable": {
+        "CanPauseManually": 1
+      },
+      "UpgradeList": "",
+      "ItemContainer": {
+        "SocketScopeRadius": 5,
+        "SocketScopeRadiusOverlapCategory": "Postbox"
+      },
+      "Postbox": {
+        "ProductivityFactorByResidents": {
+          "Item": [
+            "",
+            {
+              "ResidentAmount": 25,
+              "ProductivityFactor": 1
+            },
+            {
+              "ResidentAmount": 50,
+              "ProductivityFactor": 2
+            },
+            {
+              "ResidentAmount": 75,
+              "ProductivityFactor": 3
+            },
+            {
+              "ResidentAmount": 100,
+              "ProductivityFactor": 4
+            },
+            {
+              "ResidentAmount": 200,
+              "ProductivityFactor": 5
+            },
+            {
+              "ResidentAmount": 300,
+              "ProductivityFactor": 6
+            },
+            {
+              "ResidentAmount": 400,
+              "ProductivityFactor": 7
+            },
+            {
+              "ResidentAmount": 1000,
+              "ProductivityFactor": 8
+            },
+            {
+              "ResidentAmount": 1500,
+              "ProductivityFactor": 9
+            },
+            {
+              "ResidentAmount": 2000,
+              "ProductivityFactor": 10
+            },
+            {
+              "ResidentAmount": 3000,
+              "ProductivityFactor": 11
+            },
+            {
+              "ResidentAmount": 4500,
+              "ProductivityFactor": 12
+            },
+            {
+              "ResidentAmount": 6500,
+              "ProductivityFactor": 13
+            },
+            {
+              "ResidentAmount": 7000,
+              "ProductivityFactor": 14
+            },
+            {
+              "ResidentAmount": 7500,
+              "ProductivityFactor": 15
+            },
+            {
+              "ResidentAmount": 8000,
+              "ProductivityFactor": 16
+            },
+            {
+              "ResidentAmount": 8500,
+              "ProductivityFactor": 17
+            },
+            {
+              "ResidentAmount": 9000,
+              "ProductivityFactor": 18
+            },
+            {
+              "ResidentAmount": 9500,
+              "ProductivityFactor": 19
+            },
+            {
+              "ResidentAmount": 10000,
+              "ProductivityFactor": 20
+            },
+            {
+              "ResidentAmount": 10500,
+              "ProductivityFactor": 21
+            },
+            {
+              "ResidentAmount": 11000,
+              "ProductivityFactor": 22
+            },
+            {
+              "ResidentAmount": 11500,
+              "ProductivityFactor": 23
+            },
+            {
+              "ResidentAmount": 12000,
+              "ProductivityFactor": 24
+            },
+            {
+              "ResidentAmount": 12500,
+              "ProductivityFactor": 25
+            },
+            {
+              "ResidentAmount": 13000,
+              "ProductivityFactor": 26
+            },
+            {
+              "ResidentAmount": 13500,
+              "ProductivityFactor": 27
+            },
+            {
+              "ResidentAmount": 14000,
+              "ProductivityFactor": 28
+            },
+            {
+              "ResidentAmount": 14500,
+              "ProductivityFactor": 29
+            },
+            {
+              "ResidentAmount": 15000,
+              "ProductivityFactor": 30
+            },
+            {
+              "ResidentAmount": 15500,
+              "ProductivityFactor": 31
+            }
+          ]
+        },
+        "HasMailmanFeedback": 1
+      },
+      "StorageBase": {
+        "ProductStorageList": 120055
+      },
+      "Warehouse": {
+        "WarehouseStorage": {
+          "StorageMax": 0
+        }
+      },
+      "FeedbackController": ""
+    }
+  }
+]

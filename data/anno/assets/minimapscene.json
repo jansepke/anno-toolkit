@@ -26,20 +26,6 @@
           }
         },
         "SkipDayTimeFactor": 2,
-        "ZoomSteps": {
-          "Item": [
-            {
-              "Scale": 1
-            },
-            {
-              "Scale": 1.8
-            },
-            {
-              "Scale": 3
-            }
-          ]
-        },
-        "DefaultZoomStepIndex": 2,
         "Filters": {
           "ImperialKontor": {
             "Text": 2731,
@@ -65,6 +51,18 @@
             "Icon": 500224,
             "DefaultValue": 1
           },
+          "Mine": {
+            "Text": 114021,
+            "Icon": 501789,
+            "DefaultValue": 1,
+            "DlcDependency": 410040
+          },
+          "Treasure": {
+            "Text": 114022,
+            "Icon": 501788,
+            "DefaultValue": 1,
+            "DlcDependency": 410040
+          },
           "WindDirection": {
             "Text": 2737,
             "Icon": 500229,
@@ -73,16 +71,6 @@
           "Transparency": {
             "Text": 2738,
             "Icon": 500228,
-            "DefaultValue": 1
-          },
-          "Mine": {
-            "Text": 114021,
-            "Icon": 501789,
-            "DefaultValue": 1
-          },
-          "Treasure": {
-            "Text": 114022,
-            "Icon": 501788,
             "DefaultValue": 1
           }
         },
@@ -208,6 +196,14 @@
             },
             {
               "GUID": 120013
+            },
+            {
+              "GUID": 6250,
+              "NeedsDLC": 24963
+            },
+            {
+              "GUID": 6251,
+              "NeedsDLC": 24963
             }
           ]
         },
@@ -242,6 +238,18 @@
             },
             {
               "SlotType": "River"
+            },
+            {
+              "SlotType": "Bauxite"
+            },
+            {
+              "SlotType": "SAGas"
+            },
+            {
+              "SlotType": "DLC12Ore1"
+            },
+            {
+              "SlotType": "DLC12Ore2"
             }
           ]
         },
@@ -254,9 +262,11 @@
         "FogOfWarTexture": "data/ui/runtimepng/bgr_minimap_undiscovered.png",
         "StrategicMapFogOfWar": "data/ui/runtimepng/bgr_strategic_map_undiscovered.png",
         "UnsettledIslandText": 11507,
+        "OceanText": 25554,
         "LodesInfotip": 501559,
         "FertilitiesInfotip": 25000061,
-        "SwappableFertilityInfotip": 125475
+        "SwappableFertilityInfotip": 125475,
+        "MinViewFrustrumSize": 8
       }
     }
   }

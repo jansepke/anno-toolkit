@@ -1,0 +1,665 @@
+[
+  {
+    "Template": "FactoryModuleElectric",
+    "Values": {
+      "Standard": {
+        "GUID": 8027,
+        "Name": "DLC12 industrialized_pasture_01 (Alpaca)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_general_module_01.png",
+        "InfoDescription": 15222
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Powered Pasture",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 60681
+      },
+      "Building": {
+        "BuildingType": "BuildingModule",
+        "BuildingCategoryName": 11175,
+        "BuildModeRandomRotation": 90,
+        "AssociatedRegions": "Colony01",
+        "AllowChangeVariation": 1,
+        "SecondPartyRelevant": 0
+      },
+      "Blocking": {
+        "GroundDecalAsset": 102508,
+        "HasBuildingBaseTiles": 1,
+        "DisableDefaultTrafficFeedback": 1
+      },
+      "Mesh": {
+        "InitialVisibility": 0
+      },
+      "FactoryBase": {
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 1010232,
+            "Amount": 1,
+            "StorageAmount": 1
+          }
+        },
+        "CycleTime": 240,
+        "WarehouseTransporterAsset": 0,
+        "OutputAmountFactor": 0,
+        "ClampedMaxTransporterLogisticCost": 0.1
+      },
+      "FeedbackController": {
+        "StopOldSequenceWhenStartingNewOne": 1
+      },
+      "Pausable": "",
+      "Selection": {
+        "RuinGUIType": "PhyrophiansRuins",
+        "StaticHelpEntryPoint": "NewWorldRising_Electricity",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InfoCorner": 0
+      },
+      "Attackable": {
+        "AttackableType": "IslandBuilding"
+      },
+      "Maintenance": {
+        "MaintenanceAmountFactor": 0,
+        "WorkforceAmountFactor": 0
+      },
+      "AmbientMoodProvider": {
+        "AmbientMood": "AgricultureBuildingsSouthAmerica",
+        "DynamicEnvironmentType": "None"
+      },
+      "LogisticNode": {
+        "TransporterCountMax": 0,
+        "QueueConfiguration": {
+          "ProcessingQueueParallelCount": 0,
+          "LoadingTimeModifier": 0,
+          "UnloadingTimeModifier": 0
+        },
+        "NeedsTransporterQueue": 0
+      },
+      "Constructable": {
+        "DestructionCategory": "Production"
+      },
+      "Locked": {
+        "DefaultLockedState": 0,
+        "DLCDependency": 24963
+      },
+      "IncidentInfectable": {
+        "Infectable": {
+          "Riot": {
+            "Communication": "FireDefault"
+          },
+          "Illness": {
+            "Escalated": 0,
+            "Communication": "FireDefault"
+          },
+          "Explosion": {
+            "Communication": "FireDefault"
+          },
+          "ArcticIllness": {
+            "Escalated": 1,
+            "Communication": "FireDefault"
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 0,
+          "ExplosionOuterRadius": 0,
+          "ExplosionOuterDamagePercentage": 0,
+          "DamageExplosionCheckMin": 1,
+          "DamageExplosionCheckMax": 1
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "BaseChance": 0,
+            "HitpointFactor": 0,
+            "DilapidatedFactor": 0,
+            "FactoryOvertimeFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0
+          },
+          "Riot": {
+            "FactoryOvertimeFactor": 0,
+            "FactoryUndertimeFactor": 0,
+            "FactoryHappinessFactor": 0,
+            "ResidenceHappinessFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0
+          },
+          "Illness": {
+            "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Explosion": {
+            "HitpointFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          }
+        },
+        "PerIncidentProximityEffect": {
+          "Fire": {
+            "ProximityEffect": ""
+          },
+          "Riot": {
+            "ProximityEffect": ""
+          },
+          "Illness": {
+            "ProximityEffect": ""
+          }
+        },
+        "IncidentFireIncreaseBase": 0,
+        "IncidentIllnessIncreaseBase": 0,
+        "IncidentRiotIncreaseBase": 0,
+        "IncidentExplosionIncreaseBase": 0,
+        "IncidentArcticIllnessIncreaseBase": 0
+      },
+      "Object": {
+        "Variations": {
+          "Item": [
+            {
+              "Filename": "data/graphics/buildings/production/agriculture_colony01_11/agriculture_colony01_11_field_01.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/production/agriculture_colony01_11/agriculture_colony01_11_field_02.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/production/agriculture_colony01_11/agriculture_colony01_11_field_03.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/production/agriculture_colony01_11/agriculture_colony01_11_field_04.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/production/agriculture_colony01_11/agriculture_colony01_11_field_05.cfg"
+            }
+          ]
+        },
+        "Skins": {
+          "DefaultSkinName": 8027,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        },
+        "IgnoreForMinimapGeneration": 1
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 278974
+          }
+        },
+        "SelectionSounds": "",
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 202402
+            }
+          },
+          "BuildFailed": {
+            "Item": {
+              "Sound": 9818387
+            }
+          },
+          "BuildMoveStart": {
+            "Item": {
+              "Sound": 9818755
+            }
+          },
+          "BuildMoveSuccess": {
+            "Item": {
+              "Sound": 202402
+            }
+          },
+          "BuildMoveEnd": {
+            "Item": {
+              "Sound": 200141
+            }
+          }
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 15
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        },
+        "InfluenceCostPoints": 0
+      },
+      "BuildingModule": {
+        "PlazaSize": 20
+      },
+      "Infolayer": {
+        "AdditionalYOffset": 0
+      },
+      "UpgradeList": "",
+      "Electrifiable": {
+        "ElectricityBoost": 0
+      },
+      "Industrializable": {
+        "MandatoryIndustrialization": 1,
+        "BoostedByIndustrialization": 0
+      },
+      "Factory7": {
+        "IsAgriculture": 1
+      }
+    }
+  },
+  {
+    "Template": "FactoryModuleElectric",
+    "Values": {
+      "Standard": {
+        "GUID": 8002,
+        "Name": "DLC12 industrialized_pasture_02 (Cattle)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_general_module_01.png",
+        "InfoDescription": 8005
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Powered Pasture",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 5241,
+        "TextOverride": 8026
+      },
+      "Building": {
+        "BuildingType": "BuildingModule",
+        "BuildingCategoryName": 11175,
+        "BuildModeRandomRotation": 180,
+        "AssociatedRegions": "Colony01",
+        "AllowChangeVariation": 1
+      },
+      "Blocking": {
+        "GroundDecalAsset": 101201,
+        "HasBuildingBaseTiles": 1,
+        "DisableDefaultTrafficFeedback": 1
+      },
+      "Mesh": "",
+      "FactoryBase": {
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 5385,
+            "Amount": 1,
+            "StorageAmount": 1
+          }
+        },
+        "CycleTime": 60,
+        "WarehouseTransporterAsset": 0,
+        "ClampedMaxTransporterLogisticCost": 0.1
+      },
+      "FeedbackController": {
+        "StopOldSequenceWhenStartingNewOne": 1
+      },
+      "Pausable": "",
+      "Selection": {
+        "StaticHelpEntryPoint": "NewWorldRising_Electricity",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Attackable": {
+        "AttackableType": "IslandBuilding"
+      },
+      "Maintenance": "",
+      "AmbientMoodProvider": {
+        "AmbientMood": "AgricultureBuildingsSouthAmerica",
+        "DynamicEnvironmentType": "None"
+      },
+      "LogisticNode": {
+        "TransporterCountMax": 0,
+        "NeedsTransporterQueue": 0
+      },
+      "Constructable": {
+        "DestructionCategory": "Production"
+      },
+      "Locked": {
+        "DefaultLockedState": 0,
+        "DLCDependency": 24963
+      },
+      "IncidentInfectable": "",
+      "Object": {
+        "Variations": {
+          "Item": [
+            {
+              "Filename": "data/graphics/buildings/production/agriculture_colony01_09_module/agriculture_colony01_09_module_01.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/production/agriculture_colony01_09_module/agriculture_colony01_09_module_02.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/production/agriculture_02/agriculture_02_field_02.cfg"
+            },
+            {
+              "Filename": "data/graphics/buildings/production/agriculture_02/agriculture_02_field_03.cfg"
+            }
+          ]
+        },
+        "Skins": {
+          "DefaultSkinName": 8002,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        },
+        "IgnoreForMinimapGeneration": 1
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 278974
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 202402
+            }
+          },
+          "BuildFailed": {
+            "Item": {
+              "Sound": 9818387
+            }
+          },
+          "BuildMoveStart": {
+            "Item": {
+              "Sound": 9818755
+            }
+          },
+          "BuildMoveSuccess": {
+            "Item": {
+              "Sound": 202402
+            }
+          },
+          "BuildMoveEnd": {
+            "Item": {
+              "Sound": 200141
+            }
+          }
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 50
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "BuildingModule": {
+        "PlazaSize": 20
+      },
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Electrifiable": {
+        "ElectricityBoost": 0,
+        "ElectrifiedEffect": 0
+      },
+      "Industrializable": {
+        "MandatoryIndustrialization": 1,
+        "BoostedByIndustrialization": 0
+      },
+      "Factory7": {
+        "IsAgriculture": 1
+      }
+    }
+  },
+  {
+    "Template": "FactoryModuleElectric",
+    "Values": {
+      "Standard": {
+        "GUID": 8026,
+        "Name": "DLC12 industrialized_pasture_03 (Nandu)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_general_module_01.png",
+        "InfoDescription": 15222
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Powered Pasture",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 60682
+      },
+      "Building": {
+        "BuildingType": "BuildingModule",
+        "BuildingCategoryName": 11175,
+        "BuildModeRandomRotation": 90,
+        "AssociatedRegions": "Colony01",
+        "AllowChangeVariation": 1,
+        "SecondPartyRelevant": 0,
+        "AllowCodeToControlRotation": 0
+      },
+      "Blocking": {
+        "GroundDecalAsset": 102508,
+        "HasBuildingBaseTiles": 1,
+        "DisableDefaultTrafficFeedback": 1
+      },
+      "Mesh": "",
+      "FactoryBase": {
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 5401,
+            "Amount": 1,
+            "StorageAmount": 1
+          }
+        },
+        "CycleTime": 120,
+        "WarehouseTransporterAsset": 0,
+        "OutputAmountFactor": 0,
+        "ClampedMaxTransporterLogisticCost": 0.1
+      },
+      "FeedbackController": {
+        "StopOldSequenceWhenStartingNewOne": 1
+      },
+      "Pausable": "",
+      "Selection": {
+        "RuinGUIType": "PhyrophiansRuins",
+        "StaticHelpEntryPoint": "NewWorldRising_Electricity",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InfoCorner": 0
+      },
+      "Attackable": {
+        "AttackableType": "IslandBuilding"
+      },
+      "Maintenance": {
+        "MaintenanceAmountFactor": 0,
+        "WorkforceAmountFactor": 0
+      },
+      "AmbientMoodProvider": {
+        "AmbientMood": "AgricultureBuildingsSouthAmerica",
+        "DynamicEnvironmentType": "None"
+      },
+      "LogisticNode": {
+        "TransporterCountMax": 0,
+        "NeedsTransporterQueue": 0
+      },
+      "Constructable": {
+        "DestructionCategory": "Production"
+      },
+      "Locked": {
+        "DefaultLockedState": 0,
+        "DLCDependency": 24963
+      },
+      "IncidentInfectable": {
+        "PerIncidentProximityEffect": {
+          "Fire": {
+            "ProximityEffect": ""
+          },
+          "Riot": {
+            "ProximityEffect": ""
+          },
+          "Illness": {
+            "ProximityEffect": ""
+          }
+        },
+        "IncidentFireIncreaseBase": 0,
+        "IncidentIllnessIncreaseBase": 0,
+        "IncidentRiotIncreaseBase": 0,
+        "IncidentExplosionIncreaseBase": 0,
+        "IncidentArcticIllnessIncreaseBase": 0
+      },
+      "Object": {
+        "Variations": {
+          "Item": [
+            {
+              "Filename": "data/dlc12/graphics/buildings/production/animal_farm_01/animal_farm_field_01.cfg"
+            },
+            {
+              "Filename": "data/dlc12/graphics/buildings/production/animal_farm_01/animal_farm_field_02.cfg"
+            },
+            {
+              "Filename": "data/dlc12/graphics/buildings/production/animal_farm_01/animal_farm_field_03.cfg"
+            },
+            {
+              "Filename": "data/dlc12/graphics/buildings/production/animal_farm_01/animal_farm_field_04.cfg"
+            },
+            {
+              "Filename": "data/dlc12/graphics/buildings/production/animal_farm_01/animal_farm_field_05.cfg"
+            }
+          ]
+        },
+        "Skins": {
+          "DefaultSkinName": 8026,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        },
+        "IgnoreForMinimapGeneration": 1
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": [
+            {
+              "Sound": 200795
+            },
+            {
+              "Sound": 201609
+            }
+          ]
+        },
+        "DestroySounds": {
+          "Item": {
+            "Sound": 278974
+          }
+        },
+        "SelectionSounds": "",
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 202402
+            }
+          },
+          "BuildFailed": {
+            "Item": {
+              "Sound": 9818387
+            }
+          },
+          "BuildMoveStart": {
+            "Item": {
+              "Sound": 9818755
+            }
+          },
+          "BuildMoveSuccess": {
+            "Item": {
+              "Sound": 202402
+            }
+          },
+          "BuildMoveEnd": {
+            "Item": {
+              "Sound": 200141
+            }
+          }
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 15
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        },
+        "InfluenceCostPoints": 0
+      },
+      "BuildingModule": {
+        "PlazaSize": 20
+      },
+      "Infolayer": {
+        "AdditionalYOffset": 0
+      },
+      "UpgradeList": "",
+      "Electrifiable": {
+        "ElectricityBoost": 0
+      },
+      "Industrializable": {
+        "MandatoryIndustrialization": 1,
+        "BoostedByIndustrialization": 0
+      },
+      "Factory7": {
+        "IsAgriculture": 1
+      }
+    }
+  }
+]

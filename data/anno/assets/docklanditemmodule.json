@@ -6,8 +6,7 @@
         "GUID": 601461,
         "Name": "Dockland_Module_Item",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_docklands_module_item.png",
-        "InfoDescription": 132238,
-        "Version": "dlc07"
+        "InfoDescription": 132238
       },
       "Building": {
         "BuildingCategoryName": 11150,
@@ -129,6 +128,7 @@
             }
           }
         },
+        "SecondPartyRelevant": 0,
         "BuildModeStartVariation": 0,
         "VariationIcons": {
           "Item": [
@@ -145,7 +145,8 @@
               "IconFilename": "data/ui/2kimages/main/3dicons/docklands/harbor_module_02_item_cross.png"
             }
           ]
-        }
+        },
+        "ModuleParentType": "Dockland"
       },
       "Blocking": {
         "GroundDecalAsset": 601492,
@@ -246,18 +247,29 @@
               "Filename": "data/dlc07/graphics/buildings/special/harbor_module_02/harbor_module_02_item_cross.cfg"
             }
           ]
+        },
+        "Skins": {
+          "DefaultSkinName": 601461,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": {
         "ChangeGUIDEffectDuration": 0
       },
-      "Selection": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Harbourmaster",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 48684
@@ -293,11 +305,9 @@
         "ModuleType": "DocklandModuleItem"
       },
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 3000,
-        "SelfHealPerHealTick": 4,
-        "CanBeAttackedByPlayer": 1,
         "DefenseByAIFactor": 332,
-        "TakeOverEffect": "OnDeath",
         "MoralePower": 50,
         "IslandWarFlag": 102303,
         "RuinSmokeParticles": {
@@ -319,7 +329,8 @@
           }
         },
         "ExplosionEffectsMin": 1,
-        "ExplosionEffectsMax": 2
+        "ExplosionEffectsMax": 2,
+        "SelfHealPerHealTick": 4
       },
       "AmbientMoodProvider": "",
       "Culture": "",

@@ -16,14 +16,62 @@
       },
       "Trigger": {
         "TriggerCondition": {
-          "Template": "ConditionPlayerCounter",
+          "Template": "ConditionAlwaysTrue",
           "Values": {
-            "Condition": "",
-            "ConditionPlayerCounter": {
-              "PlayerCounter": "QuestSolved",
-              "Context": 150810,
-              "CounterAmount": 1
+            "ConditionAlwaysTrue": "",
+            "Condition": {
+              "SubConditionCompletionOrder": "MutuallyExclusive"
             }
+          }
+        },
+        "SubTriggers": {
+          "Item": [
+            {
+              "SubTrigger": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 150810,
+                          "PlayerCounter": "QuestSolved",
+                          "CounterAmount": 1
+                        }
+                      },
+                      "Template": "ConditionPlayerCounter"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "QuestSolved",
+                          "CounterAmount": 1,
+                          "Context": 8452
+                        }
+                      },
+                      "Template": "ConditionPlayerCounter"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
           }
         }
       },
@@ -32,7 +80,8 @@
         "UplayActionID": 100,
         "UplayXP": 50
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -63,6 +112,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -71,7 +126,8 @@
         "UplayActionPoints": 10,
         "UplayXP": 50
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -117,6 +173,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -125,7 +187,8 @@
         "UplayActionPoints": 10,
         "UplayXP": 50
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -171,6 +234,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -179,7 +248,8 @@
         "UplayActionPoints": 20,
         "UplayXP": 200
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -216,6 +286,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -224,7 +300,8 @@
         "UplayActionPoints": 20,
         "UplayXP": 100
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -271,6 +348,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -278,7 +361,8 @@
         "UplayActionID": 503,
         "BadgeID": 1000
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -308,6 +392,12 @@
               "CounterAmount": 1
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -315,7 +405,8 @@
         "UplayActionID": 102,
         "UplayXP": 300
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -345,6 +436,12 @@
               "CounterAmount": 1
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -353,7 +450,8 @@
         "UplayActionPoints": 20,
         "UplayXP": 250
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -423,6 +521,12 @@
               }
             }
           ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -430,7 +534,8 @@
         "UplayActionID": 103,
         "UplayXP": 500
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -500,6 +605,12 @@
               }
             }
           ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -507,7 +618,8 @@
         "UplayActionID": 104,
         "UplayXP": 500
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -574,6 +686,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -582,7 +700,8 @@
         "UplayActionPoints": 5,
         "UplayXP": 100
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -649,6 +768,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -657,7 +782,8 @@
         "UplayActionPoints": 10,
         "UplayXP": 200
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -724,6 +850,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -732,7 +864,8 @@
         "UplayActionPoints": 15,
         "UplayXP": 300
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -776,6 +909,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -783,7 +922,8 @@
         "UplayActionID": 109,
         "UplayXP": 100
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -810,6 +950,12 @@
               "HumanPlayerCount": 4
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -818,7 +964,8 @@
         "UplayActionPoints": 20,
         "UplayXP": 100
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -869,6 +1016,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -876,7 +1029,8 @@
         "UplayActionID": 501,
         "BadgeID": 1002
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -941,6 +1095,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -950,7 +1110,8 @@
       },
       "TriggerSetup": {
         "AutoSelfUnlock": 0
-      }
+      },
+      "TriggerProgress": ""
     }
   },
   {
@@ -977,6 +1138,12 @@
               "CounterAmount": 100000
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -985,7 +1152,10 @@
         "UplayActionPoints": 10,
         "UplayXP": 100
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": {
+        "ProgressStep": 1000
+      }
     }
   },
   {
@@ -1006,15 +1176,15 @@
       },
       "Trigger": {
         "TriggerCondition": {
-          "Template": "ConditionPlayerCounter",
           "Values": {
             "Condition": "",
-            "ConditionPlayerCounter": {
-              "PlayerCounter": "PopulationHappinessByLevel",
-              "Context": 15000004,
-              "CounterAmount": 1
+            "ConditionTradeRouteCount": {
+              "TradeRouteCount": 1,
+              "FilterTradeRouteTransportationType": "Normal",
+              "CountComparisonOp": "LessThan"
             }
-          }
+          },
+          "Template": "ConditionTradeRouteCount"
         },
         "TriggerActions": {
           "Item": {
@@ -1034,26 +1204,52 @@
           }
         },
         "SubTriggers": {
-          "Item": {
-            "SubTrigger": {
-              "Template": "AutoCreateTrigger",
-              "Values": {
-                "Trigger": {
-                  "TriggerCondition": {
-                    "Template": "ConditionTradeRouteCount",
-                    "Values": {
-                      "Condition": "",
-                      "ConditionTradeRouteCount": {
-                        "TradeRouteCount": 1
-                      },
-                      "ConditionPropsNegatable": {
-                        "NegateCondition": 1
+          "Item": [
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionTradeRouteCount",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionTradeRouteCount": {
+                          "FilterTradeRouteTransportationType": "Charter",
+                          "TradeRouteCount": 1
+                        }
                       }
                     }
                   }
                 }
               }
+            },
+            {
+              "SubTrigger": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "PopulationByLevel",
+                          "Context": 15000004,
+                          "CounterAmount": 1
+                        }
+                      },
+                      "Template": "ConditionPlayerCounter"
+                    }
+                  }
+                }
+              }
             }
+          ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
           }
         }
       },
@@ -1061,7 +1257,8 @@
       "UplayAction": {
         "UplayActionID": 12
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -1087,6 +1284,12 @@
               "BuildingCount": 10
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -1094,7 +1297,10 @@
         "UplayActionID": 105,
         "UplayXP": 50
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": {
+        "ProgressStep": 1
+      }
     }
   },
   {
@@ -1125,6 +1331,12 @@
             },
             "ConditionPropsNegatable": ""
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -1132,7 +1344,8 @@
         "UplayActionID": 106,
         "UplayXP": 50
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -1220,6 +1433,12 @@
               }
             }
           ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -1227,7 +1446,10 @@
         "UplayActionID": 110,
         "UplayXP": 100
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": {
+        "ProgressStep": 1
+      }
     }
   },
   {
@@ -1256,6 +1478,12 @@
               "CounterAmount": 1
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -1263,7 +1491,8 @@
         "UplayActionID": 107,
         "UplayXP": 250
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -1294,6 +1523,12 @@
             },
             "ConditionPropsNegatable": ""
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -1301,7 +1536,8 @@
         "UplayActionID": 505,
         "BadgeID": 1005
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -1330,13 +1566,20 @@
               "CounterAmount": 1
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
       "UplayAction": {
         "BadgeID": 1001
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -1376,6 +1619,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -1383,7 +1632,8 @@
         "UplayActionID": 504,
         "BadgeID": 1004
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -1458,6 +1708,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -1466,7 +1722,8 @@
         "UplayActionPoints": 20,
         "UplayXP": 500
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -1486,13 +1743,19 @@
       },
       "Trigger": {
         "TriggerCondition": {
-          "Template": "ConditionExpeditionFinished",
           "Values": {
             "Condition": "",
             "ConditionExpeditionFinished": {
               "Morale": 15,
               "MoraleComparisonOperator": "LessThan"
             }
+          },
+          "Template": "ConditionExpeditionFinished"
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
           }
         }
       },
@@ -1501,7 +1764,8 @@
         "UplayActionID": 108,
         "UplayXP": 250
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -1558,6 +1822,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -1565,7 +1835,8 @@
         "UplayActionID": 112,
         "UplayXP": 100
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -1616,6 +1887,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -1623,7 +1900,8 @@
         "UplayActionID": 113,
         "UplayXP": 50
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -1649,6 +1927,12 @@
             "Condition": "",
             "ConditionAlwaysFalse": ""
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -1656,7 +1940,8 @@
         "UplayActionID": 114,
         "UplayXP": 250
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -1682,6 +1967,12 @@
             "Condition": "",
             "ConditionAlwaysFalse": ""
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -1689,7 +1980,8 @@
         "UplayActionID": 115,
         "UplayXP": 250
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -1717,6 +2009,12 @@
               "AllianceCount": 5
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -1724,7 +2022,8 @@
         "UplayActionID": 116,
         "UplayXP": 250
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -1732,8 +2031,7 @@
     "Values": {
       "Standard": {
         "GUID": 111200,
-        "Name": "DM01 - Spread the Anarchy",
-        "Version": "dm"
+        "Name": "DM01 - Spread the Anarchy"
       },
       "Achievement": {
         "AchievementCategory": "DM",
@@ -1754,6 +2052,12 @@
               "CounterAmount": 1
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -1761,7 +2065,8 @@
         "UplayActionID": 13,
         "UplayXP": 100
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -1769,8 +2074,7 @@
     "Values": {
       "Standard": {
         "GUID": 111816,
-        "Name": "DM01 - Propaganda of the Deed",
-        "Version": "dm"
+        "Name": "DM01 - Propaganda of the Deed"
       },
       "Achievement": {
         "AchievementCategory": "DM",
@@ -1791,6 +2095,12 @@
               "CounterAmount": 20
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -1798,7 +2108,8 @@
         "UplayActionID": 14,
         "UplayXP": 500
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -1806,8 +2117,7 @@
     "Values": {
       "Standard": {
         "GUID": 111817,
-        "Name": "DM01 - Labor Syndicates",
-        "Version": "dm"
+        "Name": "DM01 - Labor Syndicates"
       },
       "Achievement": {
         "AchievementCategory": "DM",
@@ -1831,6 +2141,12 @@
             },
             "ConditionPropsNegatable": ""
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -1838,7 +2154,8 @@
         "UplayActionID": 15,
         "UplayXP": 300
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -1846,8 +2163,7 @@
     "Values": {
       "Standard": {
         "GUID": 111818,
-        "Name": "DM01 - Neither God nor Master",
-        "Version": "dm"
+        "Name": "DM01 - Neither God nor Master"
       },
       "Achievement": {
         "AchievementCategory": "DM",
@@ -1909,6 +2225,12 @@
               }
             }
           ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -1916,7 +2238,8 @@
         "UplayActionID": 16,
         "UplayXP": 100
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -1924,8 +2247,7 @@
     "Values": {
       "Standard": {
         "GUID": 111080,
-        "Name": "DM01 - Anarchy is dead",
-        "Version": "dm"
+        "Name": "DM01 - Anarchy is dead"
       },
       "Achievement": {
         "AchievementCategory": "DM",
@@ -1947,6 +2269,12 @@
               "CounterAmount": 1
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -1954,7 +2282,8 @@
         "UplayActionID": 17,
         "UplayXP": 500
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -1962,8 +2291,7 @@
     "Values": {
       "Standard": {
         "GUID": 111199,
-        "Name": "DM01 - The Better Anarchist",
-        "Version": "dm"
+        "Name": "DM01 - The Better Anarchist"
       },
       "Achievement": {
         "AchievementCategory": "DM",
@@ -2007,6 +2335,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -2014,7 +2348,8 @@
         "UplayActionID": 506,
         "BadgeID": 1006
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -2023,8 +2358,7 @@
       "Standard": {
         "GUID": 112099,
         "Name": "DLC01 - Achievement01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_sunken_treasure_bronce.png",
-        "Version": "dlc01"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_sunken_treasure_bronce.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC01",
@@ -2044,6 +2378,12 @@
               "CounterAmount": 1
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -2051,7 +2391,8 @@
         "UplayActionID": 23,
         "UplayXP": 100
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -2060,8 +2401,7 @@
       "Standard": {
         "GUID": 112100,
         "Name": "DLC01 - Achievement02",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_sunken_treasure_bronce.png",
-        "Version": "dlc01"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_sunken_treasure_bronce.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC01",
@@ -2103,6 +2443,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -2110,7 +2456,8 @@
         "UplayActionID": 19,
         "UplayXP": 100
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -2119,8 +2466,7 @@
       "Standard": {
         "GUID": 112101,
         "Name": "DLC01 - Achievement03",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_sunken_treasure_silver.png",
-        "Version": "dlc01"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_sunken_treasure_silver.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC01",
@@ -2210,6 +2556,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -2217,7 +2569,8 @@
         "UplayActionID": 20,
         "UplayXP": 300
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -2226,8 +2579,7 @@
       "Standard": {
         "GUID": 112102,
         "Name": "DLC01 - Achievement04",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_sunken_treasure_gold.png",
-        "Version": "dlc01"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_sunken_treasure_gold.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC01",
@@ -2250,6 +2602,12 @@
               "CounterScopeContext": 112140
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -2257,7 +2615,8 @@
         "UplayActionID": 21,
         "UplayXP": 500
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -2266,8 +2625,7 @@
       "Standard": {
         "GUID": 112103,
         "Name": "DLC01 - Achievement05",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_sunken_treasure_gold.png",
-        "Version": "dlc01"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_sunken_treasure_gold.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC01",
@@ -2292,6 +2650,12 @@
               "CounterScopeContext": 112140
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -2299,7 +2663,8 @@
         "UplayActionID": 22,
         "UplayXP": 500
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -2308,8 +2673,7 @@
       "Standard": {
         "GUID": 112104,
         "Name": "DLC01 - Achievement06 - Import",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_sunken_treasure_gold.png",
-        "Version": "dlc01"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_sunken_treasure_gold.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC01",
@@ -2380,6 +2744,12 @@
               }
             }
           ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -2387,7 +2757,8 @@
         "UplayActionID": 508,
         "BadgeID": 1007
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -2395,8 +2766,7 @@
     "Values": {
       "Standard": {
         "GUID": 114557,
-        "Name": "DLC02 - Achievement01",
-        "Version": "dlc02"
+        "Name": "DLC02 - Achievement01"
       },
       "Achievement": {
         "AchievementCategory": "DLC02",
@@ -2719,6 +3089,12 @@
               }
             }
           ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -2726,7 +3102,8 @@
         "UplayActionID": 25,
         "UplayXP": 100
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -2734,8 +3111,7 @@
     "Values": {
       "Standard": {
         "GUID": 114558,
-        "Name": "DLC02 - Achievement02",
-        "Version": "dlc02"
+        "Name": "DLC02 - Achievement02"
       },
       "Achievement": {
         "AchievementCategory": "DLC02",
@@ -2854,6 +3230,12 @@
               }
             }
           ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -2861,7 +3243,8 @@
         "UplayActionID": 26,
         "UplayXP": 200
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -2869,8 +3252,7 @@
     "Values": {
       "Standard": {
         "GUID": 114559,
-        "Name": "DLC02 - Achievement03",
-        "Version": "dlc02"
+        "Name": "DLC02 - Achievement03"
       },
       "Achievement": {
         "AchievementCategory": "DLC02",
@@ -3103,6 +3485,12 @@
               }
             }
           ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -3110,7 +3498,8 @@
         "UplayActionID": 27,
         "UplayXP": 200
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -3118,8 +3507,7 @@
     "Values": {
       "Standard": {
         "GUID": 114560,
-        "Name": "DLC02 - Achievement04",
-        "Version": "dlc02"
+        "Name": "DLC02 - Achievement04"
       },
       "Achievement": {
         "AchievementCategory": "DLC02",
@@ -3321,6 +3709,12 @@
               }
             }
           ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -3328,7 +3722,8 @@
         "UplayActionID": 28,
         "UplayXP": 500
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -3336,8 +3731,7 @@
     "Values": {
       "Standard": {
         "GUID": 114561,
-        "Name": "DLC02 - Achievement05",
-        "Version": "dlc02"
+        "Name": "DLC02 - Achievement05"
       },
       "Achievement": {
         "AchievementCategory": "DLC02",
@@ -3568,6 +3962,12 @@
               }
             }
           ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -3575,7 +3975,8 @@
         "UplayActionID": 29,
         "UplayXP": 500
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -3583,8 +3984,7 @@
     "Values": {
       "Standard": {
         "GUID": 114562,
-        "Name": "DLC02 - Achievement06",
-        "Version": "dlc02"
+        "Name": "DLC02 - Achievement06"
       },
       "Achievement": {
         "AchievementCategory": "DLC02",
@@ -3650,6 +4050,12 @@
               }
             }
           ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -3657,7 +4063,8 @@
         "UplayActionID": 510,
         "BadgeID": 1008
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -3665,8 +4072,7 @@
     "Values": {
       "Standard": {
         "GUID": 116967,
-        "Name": "DLC03 Achievement01",
-        "Version": "dlc03"
+        "Name": "DLC03 Achievement01"
       },
       "Achievement": {
         "AchievementCategory": "DLC03",
@@ -3686,6 +4092,12 @@
               "ConditionQuestStateQuestGUID": 116876
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -3693,7 +4105,8 @@
         "UplayActionID": 101,
         "UplayXP": 100
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -3701,8 +4114,7 @@
     "Values": {
       "Standard": {
         "GUID": 116968,
-        "Name": "DLC03 Achievement02",
-        "Version": "dlc03"
+        "Name": "DLC03 Achievement02"
       },
       "Achievement": {
         "AchievementCategory": "DLC03",
@@ -3744,6 +4156,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -3751,7 +4169,8 @@
         "UplayActionID": 18,
         "UplayXP": 200
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -3759,8 +4178,7 @@
     "Values": {
       "Standard": {
         "GUID": 116969,
-        "Name": "DLC03 Achievement03",
-        "Version": "dlc03"
+        "Name": "DLC03 Achievement03"
       },
       "Achievement": {
         "AchievementCategory": "DLC03",
@@ -3848,6 +4266,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -3855,7 +4279,8 @@
         "UplayActionID": 24,
         "UplayXP": 300
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -3863,8 +4288,7 @@
     "Values": {
       "Standard": {
         "GUID": 116970,
-        "Name": "DLC03 Achievement04",
-        "Version": "dlc03"
+        "Name": "DLC03 Achievement04"
       },
       "Achievement": {
         "AchievementCategory": "DLC03",
@@ -3908,6 +4332,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -3915,7 +4345,8 @@
         "UplayActionID": 30,
         "UplayXP": 400
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -3924,8 +4355,7 @@
       "Standard": {
         "GUID": 116971,
         "Name": "DLC03 Achievement05",
-        "ID": "DLC03Achievement05",
-        "Version": "dlc03"
+        "ID": "DLC03Achievement05"
       },
       "Achievement": {
         "AchievementCategory": "DLC03",
@@ -3991,6 +4421,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -3998,7 +4434,8 @@
         "UplayActionID": 31,
         "UplayXP": 500
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -4006,8 +4443,7 @@
     "Values": {
       "Standard": {
         "GUID": 116972,
-        "Name": "DLC03 Achievement06",
-        "Version": "dlc03"
+        "Name": "DLC03 Achievement06"
       },
       "Achievement": {
         "AchievementCategory": "DLC03",
@@ -4120,13 +4556,20 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
       "UplayAction": {
         "BadgeID": 1009
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -4135,8 +4578,7 @@
       "Standard": {
         "GUID": 269321,
         "Name": "DLC04 Achievement01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_palace_bronce.png",
-        "Version": "dlc04"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_palace_bronce.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC04",
@@ -4155,6 +4597,12 @@
               "CheckMinistryUnlocks": "City;Culture;Productivity;Service;Harbor"
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -4162,7 +4610,8 @@
         "UplayActionID": 117,
         "UplayXP": 100
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -4171,8 +4620,7 @@
       "Standard": {
         "GUID": 269322,
         "Name": "DLC04 Achievement02",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_palace_bronce.png",
-        "Version": "dlc04"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_palace_bronce.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC04",
@@ -4226,6 +4674,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -4233,7 +4687,8 @@
         "UplayActionID": 32,
         "UplayXP": 200
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -4242,8 +4697,7 @@
       "Standard": {
         "GUID": 269323,
         "Name": "DLC04 Achievement03",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_palace_silver.png",
-        "Version": "dlc04"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_palace_silver.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC04",
@@ -4280,6 +4734,12 @@
               "AmountItemsEquipped": 4
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -4287,7 +4747,8 @@
         "UplayActionID": 33,
         "UplayXP": 300
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -4296,8 +4757,7 @@
       "Standard": {
         "GUID": 269324,
         "Name": "DLC04 Achievement04",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_palace_gold.png",
-        "Version": "dlc04"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_palace_gold.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC04",
@@ -4333,6 +4793,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -4340,7 +4806,8 @@
         "UplayActionID": 34,
         "UplayXP": 400
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -4349,8 +4816,7 @@
       "Standard": {
         "GUID": 269325,
         "Name": "DLC04 Achievement05",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_palace_gold.png",
-        "Version": "dlc04"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_palace_gold.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC04",
@@ -4370,13 +4836,20 @@
               "CounterAmount": 40
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
       "UplayAction": {
         "BadgeID": 1010
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -4385,8 +4858,7 @@
       "Standard": {
         "GUID": 270052,
         "Name": "DLC05 Achievement01",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_tractor_copper.png",
-        "Version": "dlc05"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_tractor_copper.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC05",
@@ -4409,6 +4881,12 @@
             },
             "ConditionPropsNegatable": ""
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -4416,7 +4894,8 @@
         "UplayActionID": 118,
         "UplayXP": 100
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -4425,8 +4904,7 @@
       "Standard": {
         "GUID": 270143,
         "Name": "DLC05 Achievement02",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_tractor_silver.png",
-        "Version": "dlc05"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_tractor_silver.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC05",
@@ -4472,6 +4950,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -4479,7 +4963,8 @@
         "UplayActionID": 35,
         "UplayXP": 300
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -4488,8 +4973,7 @@
       "Standard": {
         "GUID": 270144,
         "Name": "DLC05 Achievement03",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_tractor_copper.png",
-        "Version": "dlc05"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_tractor_copper.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC05",
@@ -4510,6 +4994,12 @@
             },
             "ConditionPropsNegatable": ""
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -4517,7 +5007,8 @@
         "UplayActionID": 36,
         "UplayXP": 200
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -4526,8 +5017,7 @@
       "Standard": {
         "GUID": 270145,
         "Name": "DLC05 Achievement04",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_tractor_silver.png",
-        "Version": "dlc05"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_tractor_silver.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC05",
@@ -4959,6 +5449,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -4966,7 +5462,8 @@
         "UplayActionID": 37,
         "UplayXP": 400
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -4975,8 +5472,7 @@
       "Standard": {
         "GUID": 270146,
         "Name": "DLC05 Achievement05",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_tractor_gold.png",
-        "Version": "dlc05"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_tractor_gold.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC05",
@@ -5000,6 +5496,12 @@
               "RestrictToMandatoryModules": 1
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -5007,7 +5509,8 @@
         "UplayActionID": 38,
         "UplayXP": 500
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -5016,8 +5519,7 @@
       "Standard": {
         "GUID": 270147,
         "Name": "DLC05 Achievement06",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_tractor_gold.png",
-        "Version": "dlc05"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_tractor_gold.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC05",
@@ -5038,13 +5540,20 @@
               "ProductionRequired": 100
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
       "UplayAction": {
         "BadgeID": 1011
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -5053,8 +5562,7 @@
       "Standard": {
         "GUID": 129688,
         "Name": "DLC06 Achievement01 (BuildMonument)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_africa_copper.png",
-        "Version": "dlc06"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_africa_copper.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC06",
@@ -5091,6 +5599,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -5098,7 +5612,8 @@
         "UplayActionID": 161,
         "UplayXP": 100
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -5107,8 +5622,7 @@
       "Standard": {
         "GUID": 129702,
         "Name": "DLC06 Achievement02 (GoatSong)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_africa_copper.png",
-        "Version": "dlc06"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_africa_copper.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC06",
@@ -5120,10 +5634,10 @@
       },
       "Trigger": {
         "TriggerCondition": {
-          "Template": "ConditionAlwaysFalse",
+          "IsBaseAutoCreateAsset": 1,
           "Values": {
             "Condition": "",
-            "ConditionAlwaysFalse": ""
+            "ConditionAlwaysTrue": ""
           }
         },
         "TriggerActions": {
@@ -5142,6 +5656,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -5151,7 +5671,8 @@
       },
       "TriggerSetup": {
         "AutoRegisterTrigger": 0
-      }
+      },
+      "TriggerProgress": ""
     }
   },
   {
@@ -5160,8 +5681,7 @@
       "Standard": {
         "GUID": 129701,
         "Name": "DLC06 Achievement03 (CreateAllGodlikes)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_africa_silver.png",
-        "Version": "dlc06"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_africa_silver.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC06",
@@ -5178,7 +5698,7 @@
           "Values": {
             "Condition": "",
             "ConditionPlayerCounter": {
-              "PlayerCounter": "MajorDiscoveryCrafted",
+              "PlayerCounter": "MajorDiscoveryResearched",
               "Context": 124839,
               "CounterAmount": 1
             }
@@ -5212,7 +5732,7 @@
                     "Values": {
                       "Condition": "",
                       "ConditionPlayerCounter": {
-                        "PlayerCounter": "MajorDiscoveryCrafted",
+                        "PlayerCounter": "MajorDiscoveryResearched",
                         "Context": 124840,
                         "CounterAmount": 1
                       }
@@ -5229,7 +5749,7 @@
                               "Values": {
                                 "Condition": "",
                                 "ConditionPlayerCounter": {
-                                  "PlayerCounter": "MajorDiscoveryCrafted",
+                                  "PlayerCounter": "MajorDiscoveryResearched",
                                   "Context": 124841,
                                   "CounterAmount": 1
                                 }
@@ -5246,7 +5766,7 @@
                                         "Values": {
                                           "Condition": "",
                                           "ConditionPlayerCounter": {
-                                            "PlayerCounter": "MajorDiscoveryCrafted",
+                                            "PlayerCounter": "MajorDiscoveryResearched",
                                             "Context": 125340,
                                             "CounterAmount": 1
                                           }
@@ -5263,7 +5783,7 @@
                                                   "Values": {
                                                     "Condition": "",
                                                     "ConditionPlayerCounter": {
-                                                      "PlayerCounter": "MajorDiscoveryCrafted",
+                                                      "PlayerCounter": "MajorDiscoveryResearched",
                                                       "Context": 124842,
                                                       "CounterAmount": 1
                                                     }
@@ -5280,7 +5800,7 @@
                                                             "Values": {
                                                               "Condition": "",
                                                               "ConditionPlayerCounter": {
-                                                                "PlayerCounter": "MajorDiscoveryCrafted",
+                                                                "PlayerCounter": "MajorDiscoveryResearched",
                                                                 "Context": 124843,
                                                                 "CounterAmount": 1
                                                               }
@@ -5297,7 +5817,7 @@
                                                                       "Values": {
                                                                         "Condition": "",
                                                                         "ConditionPlayerCounter": {
-                                                                          "PlayerCounter": "MajorDiscoveryCrafted",
+                                                                          "PlayerCounter": "MajorDiscoveryResearched",
                                                                           "Context": 124844,
                                                                           "CounterAmount": 1
                                                                         }
@@ -5314,7 +5834,7 @@
                                                                                 "Values": {
                                                                                   "Condition": "",
                                                                                   "ConditionPlayerCounter": {
-                                                                                    "PlayerCounter": "MajorDiscoveryCrafted",
+                                                                                    "PlayerCounter": "MajorDiscoveryResearched",
                                                                                     "Context": 124846,
                                                                                     "CounterAmount": 1
                                                                                   }
@@ -5331,7 +5851,7 @@
                                                                                           "Values": {
                                                                                             "Condition": "",
                                                                                             "ConditionPlayerCounter": {
-                                                                                              "PlayerCounter": "MajorDiscoveryCrafted",
+                                                                                              "PlayerCounter": "MajorDiscoveryResearched",
                                                                                               "Context": 124845,
                                                                                               "CounterAmount": 1
                                                                                             }
@@ -5348,7 +5868,7 @@
                                                                                                     "Values": {
                                                                                                       "Condition": "",
                                                                                                       "ConditionPlayerCounter": {
-                                                                                                        "PlayerCounter": "MajorDiscoveryCrafted",
+                                                                                                        "PlayerCounter": "MajorDiscoveryResearched",
                                                                                                         "Context": 124849,
                                                                                                         "CounterAmount": 1
                                                                                                       }
@@ -5365,7 +5885,7 @@
                                                                                                               "Values": {
                                                                                                                 "Condition": "",
                                                                                                                 "ConditionPlayerCounter": {
-                                                                                                                  "PlayerCounter": "MajorDiscoveryCrafted",
+                                                                                                                  "PlayerCounter": "MajorDiscoveryResearched",
                                                                                                                   "Context": 124850,
                                                                                                                   "CounterAmount": 1
                                                                                                                 }
@@ -5420,6 +5940,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -5427,7 +5953,8 @@
         "UplayActionID": 163,
         "UplayXP": 300
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -5436,8 +5963,7 @@
       "Standard": {
         "GUID": 129692,
         "Name": "DLC06 Achievement04 (StewProduction)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_africa_silver.png",
-        "Version": "dlc06"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_africa_silver.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC06",
@@ -5476,6 +6002,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -5483,7 +6015,8 @@
         "UplayActionID": 164,
         "UplayXP": 400
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -5492,8 +6025,7 @@
       "Standard": {
         "GUID": 129699,
         "Name": "DLC06 Achievement05 (IslandQuests)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_africa_gold.png",
-        "Version": "dlc06"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_africa_gold.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC06",
@@ -5581,6 +6113,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
@@ -5588,7 +6126,8 @@
         "UplayActionID": 165,
         "UplayXP": 500
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -5597,8 +6136,7 @@
       "Standard": {
         "GUID": 129693,
         "Name": "DLC06 Achievement06 (ScholarPopulation)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_africa_gold.png",
-        "Version": "dlc06"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_africa_gold.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC06",
@@ -5636,13 +6174,20 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
       "UplayAction": {
         "BadgeID": 1012
       },
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -5651,8 +6196,7 @@
       "Standard": {
         "GUID": 132194,
         "Name": "DLC07 Achievement01 (TradeContract)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_docklands_bronce.png",
-        "Version": "dlc07"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_docklands_bronce.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC07",
@@ -5697,11 +6241,18 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
       "UplayAction": "",
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -5710,8 +6261,7 @@
       "Standard": {
         "GUID": 132195,
         "Name": "DLC07 Achievement02 (TraderUnlock)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_docklands_bronce.png",
-        "Version": "dlc07"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_docklands_bronce.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC07",
@@ -6397,11 +6947,18 @@
               }
             }
           ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
       "UplayAction": "",
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -6410,8 +6967,7 @@
       "Standard": {
         "GUID": 132196,
         "Name": "DLC07 Achievement03 (GoodPyramid)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_docklands_silver.png",
-        "Version": "dlc07"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_docklands_silver.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC07",
@@ -6454,11 +7010,18 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
       "UplayAction": "",
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -6467,8 +7030,7 @@
       "Standard": {
         "GUID": 132197,
         "Name": "DLC07 Achievement04 (DocklandMaximum)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_docklands_silver.png",
-        "Version": "dlc07"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_docklands_silver.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC07",
@@ -6513,11 +7075,18 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
       "UplayAction": "",
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -6526,8 +7095,7 @@
       "Standard": {
         "GUID": 132198,
         "Name": "DLC07 Achievement05 (XPLevel)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_docklands_gold.png",
-        "Version": "dlc07"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_docklands_gold.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC07",
@@ -6589,11 +7157,18 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
       "UplayAction": "",
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -6602,8 +7177,7 @@
       "Standard": {
         "GUID": 132199,
         "Name": "DLC07 Achievement06 (TradeVolume)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_docklands_gold.png",
-        "Version": "dlc07"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_docklands_gold.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC07",
@@ -6648,11 +7222,18 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
       "UplayAction": "",
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -6661,8 +7242,7 @@
       "Standard": {
         "GUID": 133760,
         "Name": "DLC08 Achievement01 (TouristPopulation)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_dlc_tourist_season_128.png",
-        "Version": "dlc08"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_dlc_tourist_season_128.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC08",
@@ -6708,11 +7288,18 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
       "UplayAction": "",
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -6721,8 +7308,7 @@
       "Standard": {
         "GUID": 133761,
         "Name": "DLC08 Achievement02 (UnlockRecipe)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_dlc_tourist_season_128.png",
-        "Version": "dlc08"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_dlc_tourist_season_128.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC08",
@@ -6806,11 +7392,18 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
       "UplayAction": "",
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -6819,8 +7412,7 @@
       "Standard": {
         "GUID": 133762,
         "Name": "DLC08 Achievement03 (PickyNeeds)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_dlc_tourist_season_128.png",
-        "Version": "dlc08"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_dlc_tourist_season_128.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC08",
@@ -6879,11 +7471,18 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
       "UplayAction": "",
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -6892,8 +7491,7 @@
       "Standard": {
         "GUID": 133763,
         "Name": "DLC08 Achievement04 (BarCafeGourmet)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_dlc_tourist_season_128.png",
-        "Version": "dlc08"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_dlc_tourist_season_128.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC08",
@@ -6977,11 +7575,18 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
       "UplayAction": "",
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -6990,8 +7595,7 @@
       "Standard": {
         "GUID": 133764,
         "Name": "DLC08 Achievement05 (Productivity)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_dlc_tourist_season_128.png",
-        "Version": "dlc08"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_dlc_tourist_season_128.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC08",
@@ -7056,11 +7660,18 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
       "UplayAction": "",
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -7069,8 +7680,7 @@
       "Standard": {
         "GUID": 133765,
         "Name": "DLC08 Achievement06 (TouristMonument)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_dlc_tourist_season_128.png",
-        "Version": "dlc08"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_dlc_tourist_season_128.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC08",
@@ -7116,11 +7726,18 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
       "UplayAction": "",
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -7129,8 +7746,7 @@
       "Standard": {
         "GUID": 136208,
         "Name": "DLC09 Achievement01 (3 Skyscrapers)",
-        "IconFilename": "data/data/ui/2kimages/main/3dicons/achievement/icon_achievement_high_life_bronce.pngui/2kimages/main/3dicons/icon_dlc_high_life_128.png",
-        "Version": "dlc09"
+        "IconFilename": "data/data/ui/2kimages/main/3dicons/achievement/icon_achievement_high_life_bronce.pngui/2kimages/main/3dicons/icon_dlc_high_life_128.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC09",
@@ -7196,11 +7812,18 @@
               }
             }
           ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
       "UplayAction": "",
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -7209,8 +7832,7 @@
       "Standard": {
         "GUID": 136209,
         "Name": "DLC09 Achievement02 (3 DeptStore Buffs)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_high_life_bronce.png",
-        "Version": "dlc09"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_high_life_bronce.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC09",
@@ -7312,11 +7934,18 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
       "UplayAction": "",
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -7325,8 +7954,7 @@
       "Standard": {
         "GUID": 136210,
         "Name": "DLC09 Achievement03 (SkylineTower)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_high_life_silver.png",
-        "Version": "dlc09"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_high_life_silver.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC09",
@@ -7372,11 +8000,18 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
       "UplayAction": "",
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -7385,8 +8020,7 @@
       "Standard": {
         "GUID": 136211,
         "Name": "DLC09 Achievement04 (Quest)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_high_life_silver.png",
-        "Version": "dlc09"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_high_life_silver.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC09",
@@ -7490,11 +8124,18 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
       "UplayAction": "",
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -7503,8 +8144,7 @@
       "Standard": {
         "GUID": 136212,
         "Name": "DLC09 Achievement05 (PanoramaEffect)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_high_life_gold.png",
-        "Version": "dlc09"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_high_life_gold.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC09",
@@ -7554,11 +8194,18 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
       "UplayAction": "",
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   },
   {
@@ -7567,8 +8214,7 @@
       "Standard": {
         "GUID": 136213,
         "Name": "DLC09 Achievement06 (PopulationSkylineTower)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_high_life_gold.png",
-        "Version": "dlc09"
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_achievement_high_life_gold.png"
       },
       "Achievement": {
         "AchievementCategory": "DLC09",
@@ -7634,11 +8280,1992 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "Locked": "",
       "UplayAction": "",
-      "TriggerSetup": ""
+      "TriggerSetup": "",
+      "TriggerProgress": ""
+    }
+  },
+  {
+    "Template": "UplayAction",
+    "Values": {
+      "Standard": {
+        "GUID": 25839,
+        "Name": "DLC10Achievement01 (Hacienda)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/scenario/icon_achievement_seeds_of_change_bronze.png"
+      },
+      "Achievement": {
+        "AchievementCategory": "DLC10",
+        "AchievementTitle": 25852,
+        "AchievementDescription": 25853,
+        "AchievementUPlayID": 197,
+        "AchievementPoints": 5,
+        "HideProgressBar": 1
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubTriggers": {
+          "Item": [
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 24768,
+                          "CounterAmount": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 24792,
+                          "CounterAmount": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 24793,
+                          "CounterAmount": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 24794,
+                          "CounterAmount": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 24800,
+                          "CounterAmount": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 24805,
+                          "CounterAmount": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 24775,
+                          "CounterAmount": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "Locked": "",
+      "UplayAction": "",
+      "TriggerSetup": "",
+      "TriggerProgress": ""
+    }
+  },
+  {
+    "Template": "UplayAction",
+    "Values": {
+      "Standard": {
+        "GUID": 25840,
+        "Name": "DLC10Achievement02",
+        "IconFilename": "data/ui/2kimages/main/3dicons/scenario/icon_achievement_seeds_of_change_bronze.png"
+      },
+      "Achievement": {
+        "AchievementCategory": "DLC10",
+        "AchievementTitle": 25854,
+        "AchievementDescription": 25855,
+        "AchievementUPlayID": 198,
+        "AchievementPoints": 5,
+        "HideProgressBar": 1
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Template": "ConditionIsBuffed",
+                    "Values": {
+                      "Condition": "",
+                      "ObjectFilter": {
+                        "ObjectGUID": 25846
+                      },
+                      "ConditionIsBuffed": {
+                        "Buff": 25713
+                      },
+                      "ConditionPropsNegatable": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "Locked": "",
+      "UplayAction": "",
+      "TriggerSetup": "",
+      "TriggerProgress": ""
+    }
+  },
+  {
+    "Template": "UplayAction",
+    "Values": {
+      "Standard": {
+        "GUID": 25847,
+        "Name": "DLC10Achievement03",
+        "IconFilename": "data/ui/2kimages/main/3dicons/scenario/icon_achievement_seeds_of_change_silver.png"
+      },
+      "Achievement": {
+        "AchievementCategory": "DLC10",
+        "AchievementTitle": 25856,
+        "AchievementDescription": 25857,
+        "AchievementUPlayID": 199,
+        "AchievementDifficulty": "Common",
+        "HideProgressBar": 1
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionMutualAreaInSubconditions",
+          "Values": {
+            "Condition": "",
+            "ConditionMutualAreaInSubconditions": ""
+          }
+        },
+        "SubTriggers": {
+          "Item": [
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 24798,
+                          "CounterAmount": 1,
+                          "CounterScope": "Area",
+                          "CounterScopeUseCurrentContext": 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 25003,
+                          "CounterAmount": 1,
+                          "CounterScope": "Area",
+                          "CounterScopeUseCurrentContext": 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 25005,
+                          "CounterAmount": 1,
+                          "CounterScope": "Area",
+                          "CounterScopeUseCurrentContext": 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 25006,
+                          "CounterAmount": 1,
+                          "CounterScope": "Area",
+                          "CounterScopeUseCurrentContext": 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 25009,
+                          "CounterAmount": 1,
+                          "CounterScope": "Area",
+                          "CounterScopeUseCurrentContext": 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 25019,
+                          "CounterAmount": 1,
+                          "CounterScope": "Area",
+                          "CounterScopeUseCurrentContext": 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 25020,
+                          "CounterAmount": 1,
+                          "CounterScope": "Area",
+                          "CounterScopeUseCurrentContext": 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 25128,
+                          "CounterAmount": 1,
+                          "CounterScope": "Area",
+                          "CounterScopeUseCurrentContext": 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "Locked": "",
+      "UplayAction": "",
+      "TriggerSetup": "",
+      "TriggerProgress": ""
+    }
+  },
+  {
+    "Template": "UplayAction",
+    "Values": {
+      "Standard": {
+        "GUID": 26028,
+        "Name": "DLC10Achievement04",
+        "IconFilename": "data/ui/2kimages/main/3dicons/scenario/icon_achievement_seeds_of_change_silver.png"
+      },
+      "Achievement": {
+        "AchievementCategory": "DLC10",
+        "AchievementTitle": 25858,
+        "AchievementDescription": 25859,
+        "AchievementUPlayID": 200,
+        "AchievementDifficulty": "Common",
+        "HideProgressBar": 1
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionHaciendaDecreesActive",
+          "Values": {
+            "Condition": "",
+            "ConditionHaciendaDecreesActive": {
+              "ActiveDecrees": "Tier1Decree;Tier2Decree;Tier3Decree;Tier4Decree;Tier5Decree",
+              "DecreesRangeOp": "All"
+            },
+            "ObjectFilter": {
+              "ObjectGUID": 24768,
+              "CheckParticipantID": 1,
+              "CheckProcessingParticipantID": 1,
+              "ObjectSession": 180025
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "Locked": "",
+      "UplayAction": "",
+      "TriggerSetup": "",
+      "TriggerProgress": ""
+    }
+  },
+  {
+    "Template": "UplayAction",
+    "Values": {
+      "Standard": {
+        "GUID": 25851,
+        "Name": "DLC10Achievement05",
+        "IconFilename": "data/ui/2kimages/main/3dicons/scenario/icon_achievement_seeds_of_change_gold.png"
+      },
+      "Achievement": {
+        "AchievementCategory": "DLC10",
+        "AchievementTitle": 25860,
+        "AchievementDescription": 25861,
+        "AchievementUPlayID": 201,
+        "AchievementPoints": 15,
+        "AchievementDifficulty": "Expert",
+        "HideProgressBar": 1
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Template": "ConditionHaciendaModuleCount",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionHaciendaModuleCount": {
+                        "HaciendaModuleCount": 20
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "Locked": "",
+      "UplayAction": "",
+      "TriggerSetup": "",
+      "TriggerProgress": ""
+    }
+  },
+  {
+    "Template": "UplayAction",
+    "Values": {
+      "Standard": {
+        "GUID": 25850,
+        "Name": "DLC10Achievement06 (Residents)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/scenario/icon_achievement_seeds_of_change_gold.png"
+      },
+      "Achievement": {
+        "AchievementCategory": "DLC10",
+        "AchievementTitle": 25862,
+        "AchievementDescription": 25863,
+        "AchievementUPlayID": 202,
+        "AchievementPoints": 15,
+        "AchievementDifficulty": "Expert",
+        "HideProgressBar": 1
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionMutualAreaInSubconditions",
+          "Values": {
+            "Condition": "",
+            "ConditionMutualAreaInSubconditions": {
+              "SpecifySession": 1,
+              "SessionAsset": 180025
+            }
+          }
+        },
+        "SubTriggers": {
+          "Item": [
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "PopulationTotal",
+                          "CounterAmount": 2000,
+                          "CounterScope": "Area",
+                          "CounterScopeUseCurrentContext": 0,
+                          "CounterScopeKeepFirstFound": 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 101254,
+                          "ComparisonOp": "Equals",
+                          "CounterScope": "Area",
+                          "CounterScopeUseCurrentContext": 0,
+                          "CounterScopeKeepFirstFound": 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 101255,
+                          "ComparisonOp": "Equals",
+                          "CounterScope": "Area",
+                          "CounterScopeUseCurrentContext": 0,
+                          "CounterScopeKeepFirstFound": 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "Locked": "",
+      "UplayAction": "",
+      "TriggerSetup": "",
+      "TriggerProgress": ""
+    }
+  },
+  {
+    "Template": "UplayAction",
+    "Values": {
+      "Standard": {
+        "GUID": 2655,
+        "Name": "DLC11Achievement01",
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_dlc_empire_of_skies_bronze.png"
+      },
+      "Achievement": {
+        "AchievementCategory": "DLC11",
+        "AchievementTitle": 3378,
+        "AchievementDescription": 3379,
+        "AchievementUPlayID": 203,
+        "AchievementPoints": 5,
+        "HideProgressBar": 1
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "MutuallyExclusive"
+            },
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubTriggers": {
+          "Item": [
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 963,
+                          "CounterAmount": 1
+                        }
+                      }
+                    },
+                    "SubTriggers": {
+                      "Item": [
+                        {
+                          "SubTrigger": {
+                            "Template": "AutoCreateTrigger",
+                            "Values": {
+                              "Trigger": {
+                                "TriggerCondition": {
+                                  "Template": "ConditionPlayerCounter",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionPlayerCounter": {
+                                      "Context": 2274,
+                                      "CounterAmount": 1
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubTrigger": {
+                            "Template": "AutoCreateTrigger",
+                            "Values": {
+                              "Trigger": {
+                                "TriggerCondition": {
+                                  "Template": "ConditionPlayerCounter",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionPlayerCounter": {
+                                      "Context": 2275,
+                                      "CounterAmount": 1
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubTrigger": {
+                            "Template": "AutoCreateTrigger",
+                            "Values": {
+                              "Trigger": {
+                                "TriggerCondition": {
+                                  "Template": "ConditionPlayerCounter",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionPlayerCounter": {
+                                      "Context": 2276,
+                                      "CounterAmount": 1
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubTrigger": {
+                            "Template": "AutoCreateTrigger",
+                            "Values": {
+                              "Trigger": {
+                                "TriggerCondition": {
+                                  "Template": "ConditionPlayerCounter",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionPlayerCounter": {
+                                      "Context": 967,
+                                      "CounterAmount": 1
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 962,
+                          "CounterAmount": 1
+                        }
+                      }
+                    },
+                    "SubTriggers": {
+                      "Item": [
+                        {
+                          "SubTrigger": {
+                            "Template": "AutoCreateTrigger",
+                            "Values": {
+                              "Trigger": {
+                                "TriggerCondition": {
+                                  "Template": "ConditionPlayerCounter",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionPlayerCounter": {
+                                      "Context": 964,
+                                      "CounterAmount": 1
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubTrigger": {
+                            "Template": "AutoCreateTrigger",
+                            "Values": {
+                              "Trigger": {
+                                "TriggerCondition": {
+                                  "Template": "ConditionPlayerCounter",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionPlayerCounter": {
+                                      "Context": 966,
+                                      "CounterAmount": 1
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "Locked": "",
+      "UplayAction": "",
+      "TriggerSetup": "",
+      "TriggerProgress": ""
+    }
+  },
+  {
+    "Template": "UplayAction",
+    "Values": {
+      "Standard": {
+        "GUID": 2656,
+        "Name": "DLC11Achievement02",
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_dlc_empire_of_skies_bronze.png"
+      },
+      "Achievement": {
+        "AchievementCategory": "DLC11",
+        "AchievementTitle": 3380,
+        "AchievementDescription": 3381,
+        "AchievementUPlayID": 204,
+        "AchievementPoints": 5,
+        "HideProgressBar": 1
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubTriggers": {
+          "Item": [
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "Condition": {
+                          "SubConditionCompletionOrder": "MutuallyExclusive"
+                        },
+                        "ConditionAlwaysTrue": ""
+                      }
+                    },
+                    "SubTriggers": {
+                      "Item": [
+                        {
+                          "SubTrigger": {
+                            "Template": "AutoCreateTrigger",
+                            "Values": {
+                              "Trigger": {
+                                "TriggerCondition": {
+                                  "Template": "ConditionPlayerCounter",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionPlayerCounter": {
+                                      "Context": 636,
+                                      "CounterAmount": 1
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubTrigger": {
+                            "Template": "AutoCreateTrigger",
+                            "Values": {
+                              "Trigger": {
+                                "TriggerCondition": {
+                                  "Template": "ConditionPlayerCounter",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionPlayerCounter": {
+                                      "Context": 635,
+                                      "CounterAmount": 1
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "Condition": {
+                          "SubConditionCompletionOrder": "MutuallyExclusive"
+                        },
+                        "ConditionAlwaysTrue": ""
+                      }
+                    },
+                    "SubTriggers": {
+                      "Item": [
+                        {
+                          "SubTrigger": {
+                            "Template": "AutoCreateTrigger",
+                            "Values": {
+                              "Trigger": {
+                                "TriggerCondition": {
+                                  "Template": "ConditionPlayerCounter",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionPlayerCounter": {
+                                      "Context": 1054,
+                                      "CounterAmount": 1
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubTrigger": {
+                            "Template": "AutoCreateTrigger",
+                            "Values": {
+                              "Trigger": {
+                                "TriggerCondition": {
+                                  "Template": "ConditionPlayerCounter",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionPlayerCounter": {
+                                      "Context": 1056,
+                                      "CounterAmount": 1
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubTrigger": {
+                            "Template": "AutoCreateTrigger",
+                            "Values": {
+                              "Trigger": {
+                                "TriggerCondition": {
+                                  "Template": "ConditionPlayerCounter",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionPlayerCounter": {
+                                      "Context": 1654,
+                                      "CounterAmount": 1
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubTrigger": {
+                            "Template": "AutoCreateTrigger",
+                            "Values": {
+                              "Trigger": {
+                                "TriggerCondition": {
+                                  "Template": "ConditionPlayerCounter",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionPlayerCounter": {
+                                      "Context": 1058,
+                                      "CounterAmount": 1
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubTrigger": {
+                            "Template": "AutoCreateTrigger",
+                            "Values": {
+                              "Trigger": {
+                                "TriggerCondition": {
+                                  "Template": "ConditionPlayerCounter",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionPlayerCounter": {
+                                      "Context": 1655,
+                                      "CounterAmount": 1
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubTrigger": {
+                            "Template": "AutoCreateTrigger",
+                            "Values": {
+                              "Trigger": {
+                                "TriggerCondition": {
+                                  "Template": "ConditionPlayerCounter",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionPlayerCounter": {
+                                      "Context": 1059,
+                                      "CounterAmount": 1
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubTrigger": {
+                            "Template": "AutoCreateTrigger",
+                            "Values": {
+                              "Trigger": {
+                                "TriggerCondition": {
+                                  "Template": "ConditionPlayerCounter",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionPlayerCounter": {
+                                      "Context": 1060,
+                                      "CounterAmount": 1
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "Locked": "",
+      "UplayAction": "",
+      "TriggerSetup": "",
+      "TriggerProgress": ""
+    }
+  },
+  {
+    "Template": "UplayAction",
+    "Values": {
+      "Standard": {
+        "GUID": 2657,
+        "Name": "DLC11Achievement03",
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_dlc_empire_of_skies_silver.png"
+      },
+      "Achievement": {
+        "AchievementCategory": "DLC11",
+        "AchievementTitle": 3384,
+        "AchievementDescription": 3385,
+        "AchievementUPlayID": 205,
+        "AchievementDifficulty": "Common",
+        "HideProgressBar": 1
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionTradeRouteCount",
+          "Values": {
+            "Condition": "",
+            "ConditionTradeRouteCount": {
+              "TradeRouteCount": 15,
+              "FilterTradeRouteTransportationType": "Normal;Mail",
+              "FilterAssignedTradeRouteObjectOrPool": 104750,
+              "FilterTradeRoutesWithoutWarnings": 1
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "Locked": "",
+      "UplayAction": "",
+      "TriggerSetup": "",
+      "TriggerProgress": ""
+    }
+  },
+  {
+    "Template": "UplayAction",
+    "Values": {
+      "Standard": {
+        "GUID": 2658,
+        "Name": "DLC11Achievement04",
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_dlc_empire_of_skies_silver.png"
+      },
+      "Achievement": {
+        "AchievementCategory": "DLC11",
+        "AchievementTitle": 3386,
+        "AchievementDescription": 3387,
+        "AchievementUPlayID": 206,
+        "AchievementDifficulty": "Common",
+        "HideProgressBar": 1
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubTriggers": {
+          "Item": [
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 720,
+                          "CounterAmount": 20
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "Condition": {
+                          "SubConditionCompletionOrder": "MutuallyExclusive"
+                        },
+                        "ConditionAlwaysTrue": ""
+                      }
+                    },
+                    "SubTriggers": {
+                      "Item": [
+                        {
+                          "SubTrigger": {
+                            "Template": "AutoCreateTrigger",
+                            "Values": {
+                              "Trigger": {
+                                "TriggerCondition": {
+                                  "Template": "ConditionPlayerCounter",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionPlayerCounter": {
+                                      "Context": 736,
+                                      "CounterAmount": 20,
+                                      "CounterScopeUseCurrentContext": 0
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubTrigger": {
+                            "Template": "AutoCreateTrigger",
+                            "Values": {
+                              "Trigger": {
+                                "TriggerCondition": {
+                                  "Template": "ConditionPlayerCounter",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionPlayerCounter": {
+                                      "Context": 742,
+                                      "CounterAmount": 20,
+                                      "CounterScopeUseCurrentContext": 0
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubTrigger": {
+                            "Template": "AutoCreateTrigger",
+                            "Values": {
+                              "Trigger": {
+                                "TriggerCondition": {
+                                  "Template": "ConditionPlayerCounter",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionPlayerCounter": {
+                                      "Context": 743,
+                                      "CounterAmount": 20,
+                                      "CounterScopeUseCurrentContext": 0
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "SubTrigger": {
+                            "Template": "AutoCreateTrigger",
+                            "Values": {
+                              "Trigger": {
+                                "TriggerCondition": {
+                                  "Template": "ConditionPlayerCounter",
+                                  "Values": {
+                                    "Condition": "",
+                                    "ConditionPlayerCounter": {
+                                      "Context": 822,
+                                      "CounterAmount": 20,
+                                      "CounterScopeUseCurrentContext": 0
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "Locked": "",
+      "UplayAction": "",
+      "TriggerSetup": "",
+      "TriggerProgress": ""
+    }
+  },
+  {
+    "Template": "UplayAction",
+    "Values": {
+      "Standard": {
+        "GUID": 2659,
+        "Name": "DLC11Achievement05",
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_dlc_empire_of_skies_gold.png"
+      },
+      "Achievement": {
+        "AchievementCategory": "DLC11",
+        "AchievementTitle": 3388,
+        "AchievementDescription": 3389,
+        "AchievementUPlayID": 207,
+        "AchievementPoints": 15,
+        "AchievementDifficulty": "Expert",
+        "HideProgressBar": 1
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "DropActionsPerformed",
+              "CounterAmount": 50,
+              "CheckSpecificParticipant": 1
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "Locked": "",
+      "UplayAction": "",
+      "TriggerSetup": "",
+      "TriggerProgress": ""
+    }
+  },
+  {
+    "Template": "UplayAction",
+    "Values": {
+      "Standard": {
+        "GUID": 2660,
+        "Name": "DLC11Achievement06 Fleet",
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_dlc_empire_of_skies_gold.png"
+      },
+      "Achievement": {
+        "AchievementCategory": "DLC11",
+        "AchievementTitle": 3392,
+        "AchievementDescription": 3393,
+        "AchievementUPlayID": 209,
+        "AchievementPoints": 15,
+        "AchievementDifficulty": "Expert",
+        "HideProgressBar": 1
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        },
+        "SubTriggers": {
+          "Item": [
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 1054,
+                          "CounterAmount": 5
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 1056,
+                          "CounterAmount": 5
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 1654,
+                          "CounterAmount": 5
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 1655,
+                          "CounterAmount": 5
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 1058,
+                          "CounterAmount": 5
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 1059,
+                          "CounterAmount": 5
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "Context": 1060,
+                          "CounterAmount": 5
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "Locked": "",
+      "UplayAction": "",
+      "TriggerSetup": "",
+      "TriggerProgress": ""
+    }
+  },
+  {
+    "Template": "UplayAction",
+    "Values": {
+      "Standard": {
+        "GUID": 7736,
+        "Name": "DLC12Achievement01",
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_dlc_new_world_rising_bronze.png"
+      },
+      "Achievement": {
+        "AchievementCategory": "DLC12",
+        "AchievementTitle": 7747,
+        "AchievementDescription": 7748,
+        "AchievementUPlayID": 210,
+        "AchievementPoints": 5
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionIsDLCActive",
+          "Values": {
+            "Condition": "",
+            "ConditionIsDLCActive": {
+              "DLCAssetList": {
+                "Item": {
+                  "DLCAsset": 24963
+                }
+              }
+            },
+            "ConditionPropsNegatable": ""
+          }
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Template": "ConditionPlayerCounter",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionPlayerCounter": {
+                        "PlayerCounter": "PopulationByLevel",
+                        "Context": 5403,
+                        "CounterAmount": 100
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "Locked": "",
+      "UplayAction": "",
+      "TriggerSetup": "",
+      "TriggerProgress": ""
+    }
+  },
+  {
+    "Template": "UplayAction",
+    "Values": {
+      "Standard": {
+        "GUID": 7737,
+        "Name": "DLC12Achievement02",
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_dlc_new_world_rising_bronze.png"
+      },
+      "Achievement": {
+        "AchievementCategory": "DLC12",
+        "AchievementTitle": 7749,
+        "AchievementDescription": 7750,
+        "AchievementUPlayID": 211,
+        "AchievementPoints": 5,
+        "HideProgressBar": 1
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionIsDLCActive",
+          "Values": {
+            "Condition": "",
+            "ConditionIsDLCActive": {
+              "DLCAssetList": {
+                "Item": {
+                  "DLCAsset": 24963
+                }
+              }
+            },
+            "ConditionPropsNegatable": ""
+          }
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Values": {
+                      "Condition": "",
+                      "ConditionPlayerCounter": {
+                        "CounterScope": "Area",
+                        "CounterScopeUseCurrentContext": 0,
+                        "CounterAmount": 1,
+                        "Context": 101290,
+                        "CounterScopeContext": 6377
+                      }
+                    },
+                    "Template": "ConditionPlayerCounter"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "Locked": "",
+      "UplayAction": "",
+      "TriggerSetup": "",
+      "TriggerProgress": ""
+    }
+  },
+  {
+    "Template": "UplayAction",
+    "Values": {
+      "Standard": {
+        "GUID": 7738,
+        "Name": "DLC12Achievement03",
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_dlc_new_world_rising_silver.png"
+      },
+      "Achievement": {
+        "AchievementCategory": "DLC12",
+        "AchievementTitle": 7751,
+        "AchievementDescription": 7752,
+        "AchievementUPlayID": 212,
+        "AchievementDifficulty": "Common"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionIsDLCActive",
+          "Values": {
+            "Condition": "",
+            "ConditionIsDLCActive": {
+              "DLCAssetList": {
+                "Item": {
+                  "DLCAsset": 24963
+                }
+              }
+            },
+            "ConditionPropsNegatable": ""
+          }
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Template": "ConditionIsIndustrialized",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionIsIndustrialized": {
+                        "IndustrializationDesiredValue": 20,
+                        "CheckIndustrializationTypeInsteadOfObjectFilter": 1
+                      },
+                      "ObjectFilter": {
+                        "ObjectSession": 180025,
+                        "MaxObjectCount": 20
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "Locked": "",
+      "UplayAction": "",
+      "TriggerSetup": "",
+      "TriggerProgress": ""
+    }
+  },
+  {
+    "Template": "UplayAction",
+    "Values": {
+      "Standard": {
+        "GUID": 7740,
+        "Name": "DLC12Achievement04",
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_dlc_new_world_rising_silver.png"
+      },
+      "Achievement": {
+        "AchievementCategory": "DLC12",
+        "AchievementTitle": 7753,
+        "AchievementDescription": 7754,
+        "AchievementUPlayID": 213,
+        "AchievementDifficulty": "Common",
+        "HideProgressBar": 1
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionIsDLCActive",
+          "Values": {
+            "Condition": "",
+            "ConditionIsDLCActive": {
+              "DLCAssetList": {
+                "Item": {
+                  "DLCAsset": 24963
+                }
+              }
+            },
+            "ConditionPropsNegatable": ""
+          }
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Template": "ConditionPlayerCounter",
+                    "Values": {
+                      "Condition": {
+                        "SubConditionCompletionOrder": "MutuallyExclusive"
+                      },
+                      "ConditionPlayerCounter": {
+                        "Context": 6121,
+                        "CounterAmount": 1
+                      }
+                    }
+                  },
+                  "SubTriggers": {
+                    "Item": {
+                      "SubTrigger": {
+                        "Template": "AutoCreateTrigger",
+                        "Values": {
+                          "Trigger": {
+                            "TriggerCondition": {
+                              "Template": "ConditionMonumentEventActive",
+                              "Values": {
+                                "Condition": "",
+                                "ConditionMonumentEventsActive": {
+                                  "MonumentEventsActive": {
+                                    "Item": [
+                                      {
+                                        "MonumentEventGUID": 6495
+                                      },
+                                      {
+                                        "MonumentEventGUID": 6496
+                                      },
+                                      {
+                                        "MonumentEventGUID": 6497
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "Locked": "",
+      "UplayAction": "",
+      "TriggerSetup": "",
+      "TriggerProgress": ""
+    }
+  },
+  {
+    "Template": "UplayAction",
+    "Values": {
+      "Standard": {
+        "GUID": 7741,
+        "Name": "DLC12Achievement05",
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_dlc_new_world_rising_gold.png"
+      },
+      "Achievement": {
+        "AchievementCategory": "DLC12",
+        "AchievementTitle": 7755,
+        "AchievementDescription": 7756,
+        "AchievementUPlayID": 214,
+        "AchievementPoints": 15,
+        "AchievementDifficulty": "Expert",
+        "HideProgressBar": 1
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionIsDLCActive",
+          "Values": {
+            "Condition": "",
+            "ConditionIsDLCActive": {
+              "DLCAssetList": {
+                "Item": {
+                  "DLCAsset": 24963
+                }
+              }
+            },
+            "ConditionPropsNegatable": ""
+          }
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Template": "ConditionPlayerCounter",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionPlayerCounter": {
+                        "Context": 6006,
+                        "CounterAmount": 1
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "Locked": "",
+      "UplayAction": "",
+      "TriggerSetup": "",
+      "TriggerProgress": ""
+    }
+  },
+  {
+    "Template": "UplayAction",
+    "Values": {
+      "Standard": {
+        "GUID": 7742,
+        "Name": "DLC12Achievement06",
+        "IconFilename": "data/ui/2kimages/main/3dicons/achievement/icon_dlc_new_world_rising_gold.png"
+      },
+      "Achievement": {
+        "AchievementCategory": "DLC12",
+        "AchievementTitle": 7757,
+        "AchievementDescription": 7758,
+        "AchievementUPlayID": 215,
+        "AchievementPoints": 15,
+        "AchievementDifficulty": "Expert"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionIsDLCActive",
+          "Values": {
+            "Condition": "",
+            "ConditionIsDLCActive": {
+              "DLCAssetList": {
+                "Item": {
+                  "DLCAsset": 24963
+                }
+              }
+            },
+            "ConditionPropsNegatable": ""
+          }
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Template": "ConditionPlayerCounter",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionPlayerCounter": {
+                        "PlayerCounter": "PopulationByLevel",
+                        "Context": 5403,
+                        "CounterAmount": 50000,
+                        "CounterScope": "Area",
+                        "CounterScopeUseCurrentContext": 0,
+                        "CounterScopeContext": 6377
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "Locked": "",
+      "UplayAction": "",
+      "TriggerSetup": "",
+      "TriggerProgress": ""
     }
   }
 ]

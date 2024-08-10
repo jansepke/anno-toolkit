@@ -1,0 +1,1822 @@
+[
+  {
+    "Template": "Profile_3rdParty_ItemCrafter-NoTrader",
+    "Values": {
+      "Standard": {
+        "GUID": 137935,
+        "Name": "Third_party_06 (Old Nate)",
+        "IconFilename": "data/ui/2kimages/main/profiles/3rd_party_06.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Old Nate",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 53465
+      },
+      "Profile": {
+        "ProfilePicture": "data/ui/2kimages/main/profiles/3rd_party_06.png",
+        "Portrait": 100672,
+        "CompanyIcon": 501297,
+        "InfoCornerInfoTip": 25000162,
+        "InfoCornerDescription": 4079,
+        "ParticipantID": "GGJ_OldNate",
+        "NotificationBackground": "data/ui/2kimages/main/assets/character_bg/bgr_character_03.png",
+        "QuestStarterObject": 100710,
+        "QuestPoolList": {
+          "Item": {
+            "QuestPool": 112953
+          }
+        },
+        "DefaultColor": "Color11",
+        "MoodImage": "data/ui/2kimages/main/assets/thirdparty_islandbar/bg_islandbar_nate.png"
+      },
+      "Diplomacy": {
+        "DiplomacyActionBalancing": {
+          "CancelTraderights": {
+            "AgreementThreshold": -999,
+            "PartialAgreementThreshold": -999
+          },
+          "RequestCeaseFire": {
+            "ActionWeight": 120,
+            "AgreementThreshold": 80
+          }
+        }
+      },
+      "ParticipantMessages": {
+        "MessageTriggers": {
+          "ClickKontor": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "QuestInvitation": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "QuestStarted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_EventTrader",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_EventTrader",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationPriority": 699
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "QuestSuccessful": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "QuestFailed": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "QuestAborted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "QuestEscortShipSelected": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "QuestResolveConfirmation": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationText": 10550
+                    },
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "ShipTradeConfirmation": {
+            "Reactions": {
+              "Item": [
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 0
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 1
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "SettlePermissionRequest": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "SettlePermissionAccepted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "SettlePermissionDeclined": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "SettlementRightsSeizeIsland": {
+            "Reactions": {
+              "Item": [
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 0
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 1
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "DiplomacyOffer": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyOfferThreat": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyOfferAccept": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyOfferRejected": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyOfferThreatAccepted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyOfferThreatRejected": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyDeclareWar": {
+            "Reactions": {
+              "Item": [
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 0
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 1
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "DiplomacyOfferPeaceAccepted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyOfferTraderightsAccepted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyCancelTraderights": {
+            "Reactions": {
+              "Item": [
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 0
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 1
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "DiplomacyOfferAllianceAccepted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyCancelAlliance": {
+            "Reactions": {
+              "Item": [
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 0
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 1
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "DiplomacyOfferGiftAccepted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyOfferGiftRejected": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyAskForQuestRejected": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyRequestSupportFleetAccepted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyRequestSupportFleetRejected": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyAcceptFlatter": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyDeclineFlatter": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyAcceptInsult": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyDeclineInsult": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "ParticipantDiscovered": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritanceMapV2": {
+                    "Entry": [
+                      {
+                        "TemplateName": "3rdParty_EventTrader",
+                        "Index": 0
+                      },
+                      {
+                        "TemplateName": "Profile_3rdParty_EventTrader",
+                        "Index": 0
+                      }
+                    ]
+                  }
+                },
+                "Notification": {
+                  "Template": "CharacterNotification",
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 1429709091
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Object": {
+        "DefaultParticipant": "GGJ_OldNate"
+      },
+      "ThirdParty": {
+        "AllowedRegions": "Colony01",
+        "IslandPlacement": "Optional"
+      },
+      "ParticipantMessageObject": {
+        "ParticipantMessages": 137923
+      },
+      "Interaction": {
+        "PaMSyTrade": {
+          "ActiveTrade": {
+            "ReputationGain": 0
+          },
+          "PassiveTrade": {
+            "ReputationGain": 0
+          }
+        }
+      },
+      "ItemCrafter": {
+        "CraftableItemsInRegion": {
+          "Moderate": {
+            "CraftableItems": {
+              "Item": [
+                {
+                  "Item": 112548
+                },
+                {
+                  "Item": 112549
+                },
+                {
+                  "Item": 112550
+                },
+                {
+                  "Item": 112551
+                },
+                {
+                  "Item": 112552
+                },
+                {
+                  "Item": 112553
+                },
+                {
+                  "Item": 112554
+                },
+                {
+                  "Item": 112555
+                },
+                {
+                  "Item": 112556
+                },
+                {
+                  "Item": 112558
+                },
+                {
+                  "Item": 112559
+                },
+                {
+                  "Item": 112560
+                },
+                {
+                  "Item": 112561
+                },
+                {
+                  "Item": 112562
+                },
+                {
+                  "Item": 112563
+                },
+                {
+                  "Item": 112564
+                },
+                {
+                  "Item": 112565
+                },
+                {
+                  "Item": 112566
+                },
+                {
+                  "Item": 112567
+                },
+                {
+                  "Item": 112568
+                },
+                {
+                  "Item": 112569
+                },
+                {
+                  "Item": 112365
+                },
+                {
+                  "Item": 112366
+                },
+                {
+                  "Item": 112367
+                },
+                {
+                  "Item": 112371
+                },
+                {
+                  "Item": 112372
+                },
+                {
+                  "Item": 112373
+                },
+                {
+                  "Item": 112374
+                },
+                {
+                  "Item": 112375
+                },
+                {
+                  "Item": 112376
+                },
+                {
+                  "Item": 112386
+                },
+                {
+                  "Item": 112387
+                },
+                {
+                  "Item": 112388
+                },
+                {
+                  "Item": 112380
+                },
+                {
+                  "Item": 112381
+                },
+                {
+                  "Item": 112382
+                },
+                {
+                  "Item": 112383
+                },
+                {
+                  "Item": 112384
+                },
+                {
+                  "Item": 112385
+                },
+                {
+                  "Item": 112879
+                },
+                {
+                  "Item": 112880
+                },
+                {
+                  "Item": 112881
+                },
+                {
+                  "Item": 112882
+                },
+                {
+                  "Item": 112883
+                },
+                {
+                  "Item": 112884
+                },
+                {
+                  "Item": 112885
+                },
+                {
+                  "Item": 112886
+                },
+                {
+                  "Item": 112887
+                },
+                {
+                  "Item": 112368
+                },
+                {
+                  "Item": 112369
+                },
+                {
+                  "Item": 112370
+                },
+                {
+                  "Item": 112377
+                },
+                {
+                  "Item": 112378
+                },
+                {
+                  "Item": 112379
+                },
+                {
+                  "Item": 112574
+                },
+                {
+                  "Item": 112576
+                },
+                {
+                  "Item": 112578
+                },
+                {
+                  "Item": 112389
+                },
+                {
+                  "Item": 112390
+                },
+                {
+                  "Item": 112391
+                },
+                {
+                  "Item": 112392
+                },
+                {
+                  "Item": 112393
+                },
+                {
+                  "Item": 112394
+                }
+              ]
+            }
+          }
+        }
+      },
+      "Locked": {
+        "DLCDependency": 410040
+      }
+    }
+  },
+  {
+    "Template": "Profile_3rdParty_ItemCrafter-NoTrader",
+    "Values": {
+      "Standard": {
+        "GUID": 137928,
+        "Name": "Yaosca_Rodriguez",
+        "IconFilename": "data/ui/2kimages/main/profiles/yaosca.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Yaosca Rodriguez",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 53761
+      },
+      "Profile": {
+        "ProfilePicture": "data/ui/2kimages/main/profiles/yaosca.png",
+        "Portrait": 137936,
+        "CompanyIcon": 501259,
+        "ParticipantID": "GGJ_Yaosca",
+        "NotificationBackground": "data/ui/2kimages/main/assets/character_bg/bgr_character_02.png",
+        "DefaultColor": "Color4",
+        "MoodImage": "data/ui/2kimages/main/assets/thirdparty_islandbar/bg_islandbar_isabel.png",
+        "CreateModeMeta": "AutoCreate_Always"
+      },
+      "Diplomacy": "",
+      "ParticipantMessages": {
+        "MessageTriggers": {
+          "ClickKontor": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "QuestInvitation": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "QuestStarted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "QuestSuccessful": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "QuestFailed": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "QuestAborted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "QuestEscortShipSelected": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "ShipTradeConfirmation": {
+            "Reactions": {
+              "Item": [
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 0
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 1
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "SettlePermissionRequest": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "SettlePermissionAccepted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "SettlePermissionDeclined": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "SettlementRightsSeizeIsland": {
+            "Reactions": {
+              "Item": [
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 0
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 1
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "DiplomacyOffer": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyOfferThreat": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyOfferAccept": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyOfferRejected": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyOfferThreatAccepted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyOfferThreatRejected": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyDeclareWar": {
+            "Reactions": {
+              "Item": [
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 0
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 1
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "DiplomacyOfferPeaceAccepted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyOfferTraderightsAccepted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyCancelTraderights": {
+            "Reactions": {
+              "Item": [
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 0
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 1
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "DiplomacyOfferAllianceAccepted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyCancelAlliance": {
+            "Reactions": {
+              "Item": [
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 0
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                },
+                {
+                  "VectorElement": {
+                    "InheritedIndex": 1
+                  },
+                  "Notification": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": "",
+                      "NotificationSubtitle": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "DiplomacyOfferGiftAccepted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyOfferGiftRejected": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyAskForQuestRejected": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyRequestSupportFleetAccepted": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyRequestSupportFleetRejected": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyAcceptFlatter": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyDeclineFlatter": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyAcceptInsult": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "DiplomacyDeclineInsult": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          },
+          "ParticipantDiscovered": {
+            "Reactions": {
+              "Item": {
+                "VectorElement": {
+                  "InheritedIndex": 0
+                },
+                "Notification": {
+                  "IsBaseAutoCreateAsset": 1,
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Object": {
+        "DefaultParticipant": "GGJ_Yaosca"
+      },
+      "ThirdParty": "",
+      "ParticipantMessageObject": {
+        "ParticipantMessages": 137929
+      },
+      "Interaction": "",
+      "ItemCrafter": {
+        "CraftableItemsInRegion": {
+          "Colony01": {
+            "CraftableItems": {
+              "Item": [
+                {
+                  "Item": 24109
+                },
+                {
+                  "Item": 24113
+                },
+                {
+                  "Item": 24107
+                },
+                {
+                  "Item": 24108
+                },
+                {
+                  "Item": 24114
+                },
+                {
+                  "Item": 24151
+                },
+                {
+                  "Item": 24153
+                },
+                {
+                  "Item": 24154
+                },
+                {
+                  "Item": 24155
+                },
+                {
+                  "Item": 24162
+                },
+                {
+                  "Item": 24163
+                },
+                {
+                  "Item": 24159
+                },
+                {
+                  "Item": 24160
+                },
+                {
+                  "Item": 24016
+                },
+                {
+                  "Item": 24043
+                },
+                {
+                  "Item": 24034
+                },
+                {
+                  "Item": 24061
+                },
+                {
+                  "Item": 24012
+                },
+                {
+                  "Item": 24100
+                },
+                {
+                  "Item": 24152
+                },
+                {
+                  "Item": 24019
+                },
+                {
+                  "Item": 24248
+                },
+                {
+                  "Item": 24286
+                },
+                {
+                  "Item": 24044
+                },
+                {
+                  "Item": 24064
+                },
+                {
+                  "Item": 24065
+                },
+                {
+                  "Item": 24081
+                },
+                {
+                  "Item": 24014
+                },
+                {
+                  "Item": 24079
+                },
+                {
+                  "Item": 24023
+                },
+                {
+                  "Item": 24068
+                },
+                {
+                  "Item": 24077
+                },
+                {
+                  "Item": 24078
+                },
+                {
+                  "Item": 24054
+                },
+                {
+                  "Item": 24082
+                },
+                {
+                  "Item": 24656
+                },
+                {
+                  "Item": 24655
+                },
+                {
+                  "Item": 24654
+                },
+                {
+                  "Item": 24018
+                },
+                {
+                  "Item": 24036
+                },
+                {
+                  "Item": 24164
+                },
+                {
+                  "Item": 24033
+                },
+                {
+                  "Item": 24048
+                },
+                {
+                  "Item": 24086
+                },
+                {
+                  "Item": 24087
+                },
+                {
+                  "Item": 24368
+                },
+                {
+                  "Item": 24372
+                },
+                {
+                  "Item": 24373
+                }
+              ]
+            }
+          }
+        }
+      },
+      "Locked": ""
+    }
+  }
+]

@@ -27,6 +27,11 @@
           "Item": {
             "Filename": "data/graphics/buildings/special/harbor_02/harbor_02.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 1010520,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "AmbientMoodProvider": {
@@ -34,14 +39,19 @@
       },
       "Constructable": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier02_atWork"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Sailing Shipyard",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 7016
@@ -54,6 +64,9 @@
             },
             {
               "Vehicle": 100437
+            },
+            {
+              "Vehicle": 7080
             },
             {
               "Vehicle": 100439
@@ -113,12 +126,11 @@
       },
       "Infolayer": "",
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 4000,
-        "HPBarOffset": 4.5,
         "PausedTimeIfAttacked": 0,
-        "SelfHealPerHealTick": 5,
+        "HPBarOffset": 4.5,
         "DefenseByAIFactor": 700,
-        "TakeOverEffect": "OnDeath",
         "MoralePower": 50,
         "IslandWarFlag": 102303,
         "ExplosionEffects": {
@@ -141,7 +153,8 @@
           ]
         },
         "ExplosionEffectsMin": 1,
-        "ExplosionEffectsMax": 2
+        "ExplosionEffectsMax": 2,
+        "SelfHealPerHealTick": 5
       },
       "Pausable": "",
       "SoundEmitter": {
@@ -205,6 +218,11 @@
           "Item": {
             "Filename": "data/graphics/buildings/special/harbor_03/harbor_03.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 1010521,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "AmbientMoodProvider": {
@@ -212,14 +230,19 @@
       },
       "Constructable": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier04_atWork"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Steam Shipyard",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 7017
@@ -234,13 +257,34 @@
               "Vehicle": 100442
             },
             {
+              "Vehicle": 7076
+            },
+            {
               "Vehicle": 100443
+            },
+            {
+              "Vehicle": 968
+            },
+            {
+              "Vehicle": 1537
             },
             {
               "Vehicle": 100853
             },
             {
               "Vehicle": 118718
+            },
+            {
+              "Vehicle": 720
+            },
+            {
+              "Vehicle": 15831
+            },
+            {
+              "Vehicle": 15835
+            },
+            {
+              "Vehicle": 15836
             }
           ]
         }
@@ -294,11 +338,10 @@
       },
       "Infolayer": "",
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 6000,
         "PausedTimeIfAttacked": 0,
-        "SelfHealPerHealTick": 5,
         "DefenseByAIFactor": 500,
-        "TakeOverEffect": "OnDeath",
         "MoralePower": 100,
         "IslandWarFlag": 102303,
         "ExplosionEffects": {
@@ -320,7 +363,8 @@
           ]
         },
         "ExplosionEffectsMin": 3,
-        "ExplosionEffectsMax": 3
+        "ExplosionEffectsMax": 3,
+        "SelfHealPerHealTick": 5
       },
       "Pausable": "",
       "SoundEmitter": {

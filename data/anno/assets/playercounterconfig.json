@@ -14,149 +14,68 @@
             "ObjectBuilt": {
               "Scope": "Area;Session;Region;Global",
               "ValueType": "Current;Min;Max",
-              "MinValue": 0
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
             },
             "TradeProductBought": {
               "Scope": "Session;Region;Global",
               "ValueType": "Current",
-              "MinValue": 0
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
             },
             "TradeProductSold": {
               "Scope": "Session;Region;Global",
               "ValueType": "Current",
-              "MinValue": 0
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
             },
             "PopulationByLevel": {
               "Scope": "Area;Session;Region;Global",
               "ValueType": "Current",
-              "MinValue": 0
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
             },
             "PopulationByGroup": {
               "Scope": "Area;Session;Region;Global",
               "ValueType": "Current",
-              "MinValue": 0
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
             },
             "PopulationTotal": {
               "Scope": "Area;Session;Region;Global",
               "ValueType": "Current",
-              "MinValue": 0
+              "MinValue": 0,
+              "ContextNeedsToBeZero": 1
             },
             "GoodsInStock": {
               "Scope": "Area;Session;Region;Global",
               "ValueType": "Current",
-              "MinValue": 0
-            },
-            "StreetConnection": {
-              "Scope": "Area;Session;Region;Global",
-              "ValueType": "Current",
-              "MinValue": 0
-            },
-            "NoStreetConnection": {
-              "Scope": "Area;Session;Region;Global",
-              "ValueType": "Current",
-              "MinValue": 0
-            },
-            "BuildingsMoved": {
-              "Scope": "Area;Session;Region;Global",
-              "ValueType": "Current",
-              "MinValue": 0
-            },
-            "IslandSettled": {
-              "Scope": "Session;Region;Global",
-              "ValueType": "Current;Min;Max",
-              "MinValue": 0
-            },
-            "BuildingsDemolished": {
-              "Scope": "Area;Session;Region;Global",
-              "ValueType": "Current",
-              "MinValue": 0
-            },
-            "MaxCityStatus": {
-              "Scope": "Global",
-              "ValueType": "Current;Max",
-              "MinValue": 0
-            },
-            "QuestSolved": {
-              "Scope": "Global",
-              "ValueType": "Current",
-              "MinValue": 0
-            },
-            "QuestCalled": {
-              "Scope": "Global",
-              "ValueType": "Current",
-              "MinValue": 0
-            },
-            "QuestEnded": {
-              "Scope": "Global",
-              "ValueType": "Current",
-              "MinValue": 0
-            },
-            "QuestAbortedManually": {
-              "Scope": "Global",
-              "ValueType": "Current",
-              "MinValue": 0
-            },
-            "BankruptCounter": {
-              "Scope": "Global",
-              "ValueType": "Current",
-              "MinValue": 0
-            },
-            "ObjectLost": {
-              "Scope": "Session;Region;Global",
-              "ValueType": "Current",
-              "MinValue": 0
-            },
-            "PopulationHappinessByLevel": {
-              "Scope": "Area;Session;Region;Global",
-              "ValueType": "Current",
-              "MinValue": 0
-            },
-            "PopulationHappinessByGroup": {
-              "Scope": "Area;Session;Region;Global",
-              "ValueType": "Current",
-              "MinValue": 0
-            },
-            "PopulationHappinessTotal": {
-              "Scope": "Area;Session;Region;Global",
-              "ValueType": "Current",
-              "MinValue": 0
-            },
-            "InfectedObjects": {
-              "Scope": "Area;Session;Region;Global",
-              "ValueType": "Current;Min;Max",
-              "MinValue": 0
-            },
-            "PopulationSatisfactionByGood": {
-              "Scope": "Area;Session;Region;Global",
-              "ValueType": "Current",
-              "MinValue": 0
-            },
-            "WorkingConditions": {
-              "Scope": "Area;Session;Region;Global",
-              "ValueType": "Current"
-            },
-            "IncidentChance": {
-              "Scope": "Area;Session;Region;Global",
-              "ValueType": "Current"
-            },
-            "MoneyBalance": {
-              "Scope": "Area;Session;Region;Global",
-              "ValueType": "Current"
-            },
-            "ExpeditionSolved": {
-              "Scope": "Global",
-              "ValueType": "Current",
-              "MinValue": 0
-            },
-            "ExpeditionFailed": {
-              "Scope": "Global",
-              "ValueType": "Current",
-              "MinValue": 0
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
             },
             "ObjectDestroyed": {
               "Scope": "Session;Region;Global",
               "ValueType": "Current",
-              "MinValue": 0
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
+            },
+            "ObjectLost": {
+              "Scope": "Session;Region;Global",
+              "ValueType": "Current",
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
+            },
+            "StreetConnection": {
+              "Scope": "Area;Session;Region;Global",
+              "ValueType": "Current",
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
+            },
+            "NoStreetConnection": {
+              "Scope": "Area;Session;Region;Global",
+              "ValueType": "Current",
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
             },
             "AchievementPoints": {
               "Scope": "Account",
@@ -166,122 +85,257 @@
             "CorporationLevel": {
               "Scope": "Global;Account",
               "ValueType": "Current;Max",
-              "MinValue": 0
+              "MinValue": 0,
+              "ContextNeedsToBeZero": 1
+            },
+            "BuildingsMoved": {
+              "Scope": "Area;Session;Region;Global",
+              "ValueType": "Current",
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
+            },
+            "IslandSettled": {
+              "Scope": "Session;Region;Global;Account",
+              "ValueType": "Current;Min;Max",
+              "MinValue": 0,
+              "ContextNeedsToBeZero": 1
+            },
+            "BuildingsDemolished": {
+              "Scope": "Area;Session;Region;Global",
+              "ValueType": "Current",
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
             },
             "MaxAchievementPoints": {
               "Scope": "Account",
               "ValueType": "Current",
               "MinValue": 0
             },
-            "CollectablesCollected": {
-              "Scope": "Area;Session;Region;Global",
-              "ValueType": "Current",
-              "MinValue": 0
-            },
-            "PassiveTradeBalance": {
+            "MaxCityStatus": {
               "Scope": "Global",
-              "ValueType": "Current"
+              "ValueType": "Current;Max",
+              "MinValue": 0,
+              "ContextNeedsToBeZero": 1
             },
-            "CampaignRuinRemoved": {
+            "QuestCalled": {
+              "Scope": "Global",
+              "ValueType": "Current",
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
+            },
+            "QuestEnded": {
+              "Scope": "Global",
+              "ValueType": "Current",
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
+            },
+            "QuestSolved": {
+              "Scope": "Global",
+              "ValueType": "Current",
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
+            },
+            "QuestAbortedManually": {
+              "Scope": "Global",
+              "ValueType": "Current",
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
+            },
+            "BankruptCounter": {
+              "Scope": "Global",
+              "ValueType": "Current",
+              "MinValue": 0,
+              "ContextNeedsToBeZero": 1
+            },
+            "PopulationHappinessByLevel": {
               "Scope": "Area;Session;Region;Global",
               "ValueType": "Current",
-              "MinValue": 0
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
             },
-            "ShipsSoldToParticipant": {
-              "Scope": "Session;Region;Global",
+            "PopulationHappinessByGroup": {
+              "Scope": "Area;Session;Region;Global",
               "ValueType": "Current",
-              "MinValue": 0
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
+            },
+            "PopulationHappinessTotal": {
+              "Scope": "Area;Session;Region;Global",
+              "ValueType": "Current",
+              "MinValue": 0,
+              "ContextNeedsToBeZero": 1
+            },
+            "PopulationSatisfactionByGood": {
+              "Scope": "Area;Session;Region;Global",
+              "ValueType": "Current",
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
+            },
+            "InfectedObjects": {
+              "Scope": "Area;Session;Region;Global",
+              "ValueType": "Current;Min;Max",
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
+            },
+            "IncidentChance": {
+              "Scope": "Area;Session;Region;Global",
+              "ValueType": "Current",
+              "ContextNeedsToBeNonZero": 1
+            },
+            "WorkingConditions": {
+              "Scope": "Area;Session;Region;Global",
+              "ValueType": "Current",
+              "ContextNeedsToBeNonZero": 1
+            },
+            "MoneyBalance": {
+              "Scope": "Area;Session;Region;Global",
+              "ValueType": "Current",
+              "ContextNeedsToBeZero": 1
+            },
+            "ExpeditionSolved": {
+              "Scope": "Global;Account",
+              "ValueType": "Current",
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
+            },
+            "ExpeditionFailed": {
+              "Scope": "Global",
+              "ValueType": "Current",
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
             },
             "ExpeditionReturnedEarly": {
               "Scope": "Global",
               "ValueType": "Current",
-              "MinValue": 0
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
+            },
+            "CollectablesCollected": {
+              "Scope": "Area;Session;Region;Global",
+              "ValueType": "Current",
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
+            },
+            "PassiveTradeBalance": {
+              "Scope": "Global",
+              "ValueType": "Current",
+              "ContextNeedsToBeZero": 1
+            },
+            "CampaignRuinRemoved": {
+              "Scope": "Area;Session;Region;Global",
+              "ValueType": "Current",
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
+            },
+            "ShipsSoldToParticipant": {
+              "Scope": "Session;Region;Global",
+              "ValueType": "Current",
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
             },
             "ParticipantDefeated": {
               "Scope": "Global;Account",
               "ValueType": "Current",
-              "MinValue": 0
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
             },
             "NewspaperArticlePublished": {
               "Scope": "Global",
               "ValueType": "Current",
-              "MinValue": 0
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
             },
             "QuestPoolQuestsSolved": {
               "Scope": "Global",
               "ValueType": "Current",
-              "MinValue": 0
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
             },
             "ReputationWithParticipant": {
               "Scope": "Global",
-              "ValueType": "Current"
+              "ValueType": "Current",
+              "ContextNeedsToBeNonZero": 1
             },
             "DivingBellUsed": {
               "Scope": "Session;Region;Global",
               "ValueType": "Current",
-              "MinValue": 0
+              "MinValue": 0,
+              "ContextNeedsToBeZero": 1
             },
             "ItemSetsActive": {
               "Scope": "Area;Session;Region;Global",
               "ValueType": "Current;Min;Max",
-              "MinValue": 0
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
             },
             "Attractiveness": {
-              "Scope": "Area;Session;Region;Global",
-              "ValueType": "Current;Min;Max"
+              "Scope": "Area;Session;Region;Global;Account",
+              "ValueType": "Current;Min;Max",
+              "ContextNeedsToBeZero": 1
             },
             "IncidentActive": {
               "Scope": "Area;Session;Region;Global",
               "ValueType": "Current;Min;Max",
-              "MinValue": 0
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
             },
             "CanalTilesFilled": {
               "Scope": "Area;Session;Region;Global",
               "ValueType": "Current;Min;Max",
-              "MinValue": 0
+              "MinValue": 0,
+              "ContextNeedsToBeZero": 1
             },
             "ObjectWatered": {
               "Scope": "Area;Session;Region;Global",
               "ValueType": "Current;Min;Max",
-              "MinValue": 0
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
             },
-            "MajorDiscoveryCrafted": {
+            "MajorDiscoveryResearched": {
               "Scope": "Global",
               "ValueType": "Current",
-              "MinValue": 0
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
             },
-            "ItemsCrafted": {
+            "ItemsResearched": {
               "Scope": "Global",
               "ValueType": "Current",
-              "MinValue": 0
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
             },
             "ObjectWateredInclFutureIrrigation": {
               "Scope": "Area;Session;Region;Global",
               "ValueType": "Current;Min;Max",
-              "MinValue": 0
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
             },
             "CanalTilesNotConnected": {
               "Scope": "Area;Session;Region;Global",
               "ValueType": "Current;Min;Max",
-              "MinValue": 0
+              "MinValue": 0,
+              "ContextNeedsToBeZero": 1
             },
             "ItemsDonated": {
               "Scope": "Global",
               "ValueType": "Current",
-              "MinValue": 0
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
             },
             "MilitaryStrength": {
               "Scope": "Global",
-              "ValueType": "Current;Min;Max"
+              "ValueType": "Current;Min;Max",
+              "ContextNeedsToBeZero": 1
             },
             "QuestFailed": {
               "Scope": "Global",
-              "ValueType": "Current"
+              "ValueType": "Current",
+              "ContextNeedsToBeNonZero": 1
             },
             "ActiveTradeContracts": {
               "Scope": "Area;Session;Region;Global",
               "ValueType": "Current;Max",
-              "MinValue": 0
+              "MinValue": 0,
+              "ContextNeedsToBeZero": 1
             },
             "ExportedGoodAmount": {
               "Scope": "Area;Session;Region;Global",
@@ -291,12 +345,132 @@
             "ImportedGoodAmount": {
               "Scope": "Area;Session;Region;Global",
               "ValueType": "Current;Max",
-              "MinValue": 0
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
             },
             "ResidencesWithHighestGoodView": {
               "Scope": "Session;Global",
               "ValueType": "Current;Max",
+              "MinValue": 0,
+              "ContextNeedsToBeZero": 1
+            },
+            "EcoQualityWater": {
+              "Scope": "Area;Session;Region;Global",
+              "ValueType": "Current",
+              "MinValue": 0,
+              "ContextNeedsToBeZero": 1
+            },
+            "EcoQualitySoil": {
+              "Scope": "Area;Session;Region;Global",
+              "ValueType": "Current",
+              "MinValue": 0,
+              "ContextNeedsToBeZero": 1
+            },
+            "EcoQualityAir": {
+              "Scope": "Area;Session;Region;Global",
+              "ValueType": "Current",
+              "MinValue": 0,
+              "ContextNeedsToBeZero": 1
+            },
+            "Forestation": {
+              "Scope": "Area;Session;Region;Global",
+              "ValueType": "Current",
+              "MinValue": 0,
+              "MaxValue": 100,
+              "ContextNeedsToBeZero": 1
+            },
+            "EcoQualityDeltaWater": {
+              "Scope": "Area;Session;Region;Global",
+              "ValueType": "Current",
+              "MinValue": -10000,
+              "MaxValue": 10000,
+              "ContextNeedsToBeZero": 1
+            },
+            "EcoQualityDeltaSoil": {
+              "Scope": "Area;Session;Region;Global",
+              "ValueType": "Current",
+              "MinValue": -10000,
+              "MaxValue": 10000,
+              "ContextNeedsToBeZero": 1
+            },
+            "EcoQualityDeltaAir": {
+              "Scope": "Area;Session;Region;Global",
+              "ValueType": "Current",
+              "MinValue": -10000,
+              "MaxValue": 10000,
+              "ContextNeedsToBeZero": 1
+            },
+            "RuinCount": {
+              "Scope": "Area;Session;Region;Global",
+              "ValueType": "Current;Min;Max",
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
+            },
+            "ItemCrafted": {
+              "Scope": "Session;Region;Global",
+              "ValueType": "Current",
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
+            },
+            "IslandHealth": {
+              "Scope": "Area;Session;Region;Global",
+              "ValueType": "Current;Min",
+              "MinValue": 0,
+              "MaxValue": 100,
+              "ContextNeedsToBeZero": 1
+            },
+            "ProducedSilver": {
+              "Scope": "Session;Global;Region;Area",
+              "ValueType": "Current",
+              "MinValue": 0,
+              "ContextNeedsToBeZero": 1
+            },
+            "IrrigatedTiles": {
+              "Scope": "Session;Area;Region;Global",
+              "ValueType": "Current",
+              "MinValue": 0,
+              "ContextNeedsToBeZero": 1
+            },
+            "PopulationTotalAccount": {
+              "Scope": "Account",
+              "ValueType": "Current;Max",
+              "MinValue": 0,
+              "ContextNeedsToBeZero": 1
+            },
+            "InvestorResidences": {
+              "Scope": "Area;Session;Region;Global;Account",
+              "ValueType": "Current;Max",
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
+            },
+            "MonumentEventsFinished": {
+              "Scope": "Area;Session;Region;Global;Account",
+              "ValueType": "Current",
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
+            },
+            "GamepadActionsConsumed": {
+              "Scope": "Global",
+              "ValueType": "Current",
               "MinValue": 0
+            },
+            "DropActionsPerformed": {
+              "Scope": "Session;Region;Global;Account",
+              "ValueType": "Current",
+              "MinValue": 0,
+              "ContextNeedsToBeZero": 1
+            },
+            "TradeMoneyEarned": {
+              "Scope": "Session;Region;Global",
+              "ValueType": "Current",
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
+            },
+            "TradeMoneyPayed": {
+              "Scope": "Session;Region;Global",
+              "ValueType": "Current",
+              "MinValue": 0,
+              "ContextNeedsToBeNonZero": 1
             }
           },
           "FunFactsCounter": {
@@ -515,6 +689,51 @@
                 }
               }
             ]
+          },
+          "TrackedCounters": {
+            "StadiaGamerStat": {
+              "Counters": {
+                "Item": [
+                  {
+                    "ID": "max_global_population",
+                    "CounterType": "PopulationTotalAccount",
+                    "CounterValueType": "Max",
+                    "CounterScope": "Account"
+                  },
+                  {
+                    "ID": "total_expeditions_completed",
+                    "CounterType": "ExpeditionSolved",
+                    "AllowAnyContext": 1,
+                    "CounterScope": "Account"
+                  },
+                  {
+                    "ID": "max_attractiveness",
+                    "CounterType": "Attractiveness",
+                    "CounterValueType": "Max",
+                    "CounterScope": "Account"
+                  },
+                  {
+                    "ID": "max_investor_residences",
+                    "CounterType": "InvestorResidences",
+                    "AllowAnyContext": 1,
+                    "CounterValueType": "Max",
+                    "CounterScope": "Account"
+                  },
+                  {
+                    "ID": "max_settled_islands",
+                    "CounterType": "IslandSettled",
+                    "CounterValueType": "Max",
+                    "CounterScope": "Account"
+                  },
+                  {
+                    "ID": "total_world_fair_exhibitions",
+                    "CounterType": "MonumentEventsFinished",
+                    "AllowAnyContext": 1,
+                    "CounterScope": "Account"
+                  }
+                ]
+              }
+            }
           }
         }
       }

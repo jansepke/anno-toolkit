@@ -5,41 +5,39 @@
       "Standard": {
         "GUID": 501838,
         "Name": "StatisticsMenu",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_statistic_access.png",
         "ID": "StatisticsMenu"
       },
       "StatisticMenu": {
         "CategoryNames": {
-          "Population": {
-            "Name": 22363
-          },
-          "Income": {
-            "Name": 22361
-          },
           "Production": {
             "Name": 22362
           },
           "Warehouse": {
             "Name": 22364
           },
+          "Income": {
+            "Name": 22361
+          },
+          "Population": {
+            "Name": 22363
+          },
           "Item": {
             "Name": 23363
           }
         },
         "IncomeCategoryNames": {
-          "ProductionBuildings": {
-            "Name": 22365
+          "AdministrationBuildings": {
+            "Name": 22369
           },
-          "InfrastructureBuildings": {
-            "Name": 22366
+          "BoughtShares": {
+            "Name": 22375
           },
-          "PublicServiceBuildings": {
-            "Name": 22367
+          "CharterShips": {
+            "Name": 22378
           },
           "CityInstitutionBuildings": {
             "Name": 22368
-          },
-          "AdministrationBuildings": {
-            "Name": 22369
           },
           "CultureBuildings": {
             "Name": 22370
@@ -47,32 +45,35 @@
           "HarbourBuildings": {
             "Name": 22371
           },
-          "Newspaper": {
-            "Name": 22372
-          },
-          "Visitors": {
-            "Name": 22373
-          },
-          "RoyalTaxes": {
-            "Name": 22374
+          "InfrastructureBuildings": {
+            "Name": 22366
           },
           "LostShares": {
             "Name": 22375
           },
-          "BoughtShares": {
-            "Name": 22375
+          "Newspaper": {
+            "Name": 22372
+          },
+          "ProductionBuildings": {
+            "Name": 22365
+          },
+          "PublicServiceBuildings": {
+            "Name": 22367
+          },
+          "RoyalTaxes": {
+            "Name": 22374
+          },
+          "Residences": {
+            "Name": 22379
           },
           "TradeShips": {
             "Name": 22376
           },
+          "Visitors": {
+            "Name": 22373
+          },
           "WarShips": {
             "Name": 22377
-          },
-          "CharterShips": {
-            "Name": 22378
-          },
-          "Residences": {
-            "Name": 22379
           },
           "Skyscrapers": {
             "Name": 423
@@ -82,6 +83,9 @@
           },
           "Malls": {
             "Name": 137720
+          },
+          "Trade": {
+            "Name": 7761
           }
         },
         "IslandSelectionGlobal": 22381,
@@ -89,56 +93,6 @@
         "GraphStepsX": 4,
         "GraphStepsY": 4,
         "GraphStyles": {
-          "Income": {
-            "Colors": {
-              "Item": [
-                {
-                  "Color": -11890346
-                },
-                {
-                  "Color": -10857156
-                },
-                {
-                  "Color": -5555922
-                },
-                {
-                  "Color": -13413763
-                },
-                {
-                  "Color": -13600648
-                },
-                {
-                  "Color": -11062403
-                },
-                {
-                  "Color": -5544402
-                },
-                {
-                  "Color": -14855071
-                },
-                {
-                  "Color": -7066015
-                }
-              ]
-            },
-            "Textures": {
-              "Item": [
-                "",
-                {
-                  "Texture": "Dots"
-                },
-                {
-                  "Texture": "RectBigger"
-                },
-                {
-                  "Texture": "RectLarge"
-                },
-                {
-                  "Texture": "RectSmall"
-                }
-              ]
-            }
-          },
           "Production": {
             "Colors": {
               "Item": [
@@ -189,50 +143,6 @@
                 },
                 {
                   "Texture": "Dots"
-                },
-                {
-                  "Texture": "Dots"
-                }
-              ]
-            }
-          },
-          "Population": {
-            "Colors": {
-              "Item": [
-                {
-                  "Color": -11890346
-                },
-                {
-                  "Color": -13413763
-                },
-                {
-                  "Color": -5555922
-                },
-                {
-                  "Color": -11062403
-                },
-                {
-                  "Color": -13725809
-                },
-                {
-                  "Color": -10857156
-                },
-                {
-                  "Color": -7066015
-                },
-                {
-                  "Color": -5544402
-                },
-                {
-                  "Color": -14855071
-                }
-              ]
-            },
-            "Textures": {
-              "Item": [
-                "",
-                {
-                  "Texture": "RectBigger"
                 },
                 {
                   "Texture": "Dots"
@@ -286,6 +196,100 @@
                 },
                 {
                   "Texture": "RectSmall"
+                }
+              ]
+            }
+          },
+          "Income": {
+            "Colors": {
+              "Item": [
+                {
+                  "Color": -11890346
+                },
+                {
+                  "Color": -10857156
+                },
+                {
+                  "Color": -5555922
+                },
+                {
+                  "Color": -13413763
+                },
+                {
+                  "Color": -13600648
+                },
+                {
+                  "Color": -11062403
+                },
+                {
+                  "Color": -5544402
+                },
+                {
+                  "Color": -14855071
+                },
+                {
+                  "Color": -7066015
+                }
+              ]
+            },
+            "Textures": {
+              "Item": [
+                "",
+                {
+                  "Texture": "Dots"
+                },
+                {
+                  "Texture": "RectBigger"
+                },
+                {
+                  "Texture": "RectLarge"
+                },
+                {
+                  "Texture": "RectSmall"
+                }
+              ]
+            }
+          },
+          "Population": {
+            "Colors": {
+              "Item": [
+                {
+                  "Color": -11890346
+                },
+                {
+                  "Color": -13413763
+                },
+                {
+                  "Color": -5555922
+                },
+                {
+                  "Color": -11062403
+                },
+                {
+                  "Color": -13725809
+                },
+                {
+                  "Color": -10857156
+                },
+                {
+                  "Color": -7066015
+                },
+                {
+                  "Color": -5544402
+                },
+                {
+                  "Color": -14855071
+                }
+              ]
+            },
+            "Textures": {
+              "Item": [
+                "",
+                {
+                  "Texture": "RectBigger"
+                },
+                {
+                  "Texture": "Dots"
                 }
               ]
             }
@@ -362,20 +366,20 @@
             "Icon": "data/ui/2kimages/main/icons/icon_visitor_harbour_2d.png"
           },
           "Monument": {
-            "Name": 23395,
-            "Icon": "data/ui/2kimages/main/icons/icon_promo_ministries_2d.png"
+            "Name": 1010492,
+            "Icon": "data/ui/2kimages/main/icons/icon_exhibition_2d.png"
           },
           "ItemCrafting": {
             "Name": 23396,
             "Icon": "data/ui/2kimages/main/icons/icon_threat_crafting_tint_2.png"
           },
-          "DivingBell": {
-            "Name": 23399,
-            "Icon": "data/ui/2kimages/main/icons/icon_diving_bell.png"
-          },
           "MilitaryDrops": {
             "Name": 23397,
             "Icon": "data/ui/2kimages/main/icons/icon_expedition_pirate.png"
+          },
+          "DivingBell": {
+            "Name": 23399,
+            "Icon": "data/ui/2kimages/main/icons/icon_diving_bell.png"
           },
           "ArcticCrate": {
             "Name": 23410,
@@ -384,6 +388,10 @@
           "ResearchCrafting": {
             "Name": 23507,
             "Icon": "data/ui/2kimages/main/icons/icon_research_01.png"
+          },
+          "GGJPlants": {
+            "Name": 7433,
+            "Icon": "data/ui/2kimages/main/icons/icon_lootoverboard.png"
           }
         },
         "ItemSourceDropTypeData": {
@@ -420,7 +428,19 @@
         "TextDivingBellOpenWater": 23420,
         "IconDivingBellOpenWater": "data/ui/2kimages/main/icons/icon_diving_bell.png",
         "NoItemsAvailable": 23388,
-        "NoItemsFound": 23431
+        "NoItemsFound": 23431,
+        "WarehouseTabPurchaseIcon": "data/ui/2kimages/main/icons/icon_statistics_buy.png",
+        "WarehouseTabSellIcon": "data/ui/2kimages/main/icons/icon_statistics_sell.png",
+        "SharedStorageText": 1276,
+        "SharedStorageIcon": 964,
+        "TextCompareItems": 1176,
+        "TextCancelCompareItems": 1177,
+        "ProductionStatisticButtonPromptLabels": {
+          "ButtonPromptLabelShowPotential": 4536,
+          "ButtonPromptLabelShowPerMinute": 4537,
+          "ButtonPromptLabelMoreInformation": 4538
+        },
+        "ProductionPerMinuteUnitLabel": 4572
       }
     }
   }

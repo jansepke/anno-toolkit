@@ -5,47 +5,72 @@
       "FeedbackParametersGlobal": {
         "UnitScaleFactor": 0.5,
         "ClippingInfos": {
+          "SmallAnimal": {
+            "FadeRange": 2,
+            "ClipDistances": {
+              "Low": {
+                "ClipDistanceMin": 15,
+                "ClipDistanceMax": 20
+              },
+              "Medium": {
+                "ClipDistanceMin": 15,
+                "ClipDistanceMax": 20
+              },
+              "High": {
+                "ClipDistanceMin": 25,
+                "ClipDistanceMax": 30
+              },
+              "VeryHigh": {
+                "ClipDistanceMin": 25,
+                "ClipDistanceMax": 30
+              },
+              "UltraHigh": {
+                "ClipDistanceMin": 25,
+                "ClipDistanceMax": 30
+              }
+            }
+          },
           "Person": {
             "FadeRange": 3,
             "ClipDistances": {
+              "Medium": {
+                "ClipDistanceMax": 40
+              },
               "High": {
                 "ClipDistanceMin": 50,
                 "ClipDistanceMax": 60
               },
-              "Medium": {
-                "ClipDistanceMax": 40
+              "VeryHigh": {
+                "ClipDistanceMin": 80,
+                "ClipDistanceMax": 90
               },
               "UltraHigh": {
                 "ClipDistanceMin": 100,
                 "ClipDistanceMax": 110
-              },
-              "VeryHigh": {
-                "ClipDistanceMin": 80,
-                "ClipDistanceMax": 90
               }
             }
           },
           "Vehicle": {
             "FadeRange": 10,
             "ClipDistances": {
-              "High": {
-                "ClipDistanceMin": 100,
-                "ClipDistanceMax": 130
+              "Low": {
+                "ClipDistanceMin": 45,
+                "ClipDistanceMax": 55
               },
               "Medium": {
                 "ClipDistanceMax": 80
               },
-              "UltraHigh": {
-                "ClipDistanceMin": 120,
-                "ClipDistanceMax": 150
+              "High": {
+                "ClipDistanceMin": 100,
+                "ClipDistanceMax": 130
               },
               "VeryHigh": {
                 "ClipDistanceMin": 110,
                 "ClipDistanceMax": 140
               },
-              "Low": {
-                "ClipDistanceMin": 45,
-                "ClipDistanceMax": 55
+              "UltraHigh": {
+                "ClipDistanceMin": 120,
+                "ClipDistanceMax": 150
               }
             }
           }
@@ -156,7 +181,44 @@
               "UnitCountFactor": 1.5
             }
           ]
-        }
+        },
+        "MemoryLimitsConfig": {
+          "NoLimit": {
+            "SpawnFactor": 1
+          },
+          "Tourists": {
+            "Limit": 40,
+            "Category": "SpawnGroupInstance",
+            "DespawnFactor": 1,
+            "KeepUnitsCount": -1,
+            "SpawnFactor": 1
+          },
+          "Productions": {
+            "Limit": 2000,
+            "DespawnUnitsOnLimitPercent": 75,
+            "DespawnFactor": 5,
+            "KeepUnitsCount": -1,
+            "SpawnFactor": 3
+          },
+          "Inhabitants": {
+            "Limit": 2750,
+            "DespawnUnitsOnLimitPercent": 75,
+            "DespawnFactor": 5,
+            "KeepUnitsCount": -1,
+            "SpawnFactor": 3
+          },
+          "Vehicles": {
+            "Limit": 750,
+            "DespawnUnitsOnLimitPercent": 80,
+            "DespawnFactor": 2,
+            "KeepUnitsCount": -1,
+            "SpawnFactor": 2
+          }
+        },
+        "UseMemoryLimits": 1,
+        "MaxUnitSpawnPerAreaPerTick": 75,
+        "DeleteInactiveSessionUnitsAfter": 60000,
+        "TargetUnitCountFactor_OutOfFrustum": 1
       },
       "Standard": {
         "GUID": 2002022,

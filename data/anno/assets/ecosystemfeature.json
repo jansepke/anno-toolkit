@@ -1,0 +1,130 @@
+[
+  {
+    "Template": "EcoSystemFeature",
+    "Values": {
+      "Standard": {
+        "GUID": 667,
+        "Name": "EcoSystemBalancing",
+        "ID": "EcoSystemBalancing"
+      },
+      "EcoSystemFeature": {
+        "QualityConfiguration": {
+          "Water": {
+            "BaseValue": 850,
+            "BaseRegeneration": 25
+          },
+          "Soil": {
+            "BaseValue": 850,
+            "BaseRegeneration": 25
+          },
+          "Air": {
+            "BaseValue": 850,
+            "BaseRegeneration": 25,
+            "ForestationImpact": 1
+          }
+        },
+        "EventConfiguration": {
+          "IllnessChanceFactorZeroAt": 800,
+          "IllnessChanceFactorOneAt": 400
+        },
+        "Forestation": {
+          "DeltaIs0AtForestationPercentage": 70,
+          "ForestationPercentageThatCauses1Delta": 1,
+          "MaximumPositiveForestationDeltaCaused": 50,
+          "MaximumNegativeForestationDeltaCaused": -50
+        },
+        "Algae": {
+          "MaxAmount": 8,
+          "WaterQualityMax": 0.5,
+          "StandardHarborSize": 2000
+        },
+        "AnimalConfiguration": {
+          "AllAnimalGroupsVisibleAtIslandHealthPercentage": 80,
+          "NoAnimalGroupsVisibleAtIslandHealthPercentage": 20
+        },
+        "EffectConfiguration": {
+          "Qualities": {
+            "Water": {
+              "ImpactOnLUTBlending": 0.2
+            },
+            "Soil": {
+              "ImpactOnLUTBlending": 0.65
+            },
+            "Air": {
+              "ImpactOnLUTBlending": 0.6
+            }
+          }
+        },
+        "AudioConfiguration": {
+          "IslandHealthAudioStateGroup": 281606,
+          "IslandHealthAudioState": {
+            "None": {
+              "State": 281603
+            },
+            "Healthy": {
+              "State": 281603,
+              "ThresholdUp": 75,
+              "ThresholdDown": 100
+            },
+            "Impacted": {
+              "State": 281604,
+              "ThresholdUp": 40,
+              "ThresholdDown": 70
+            },
+            "Harsh": {
+              "State": 281605,
+              "ThresholdDown": 35
+            }
+          },
+          "IslandHealthRTPC": 281599,
+          "HarshIslandHealthEvents": {
+            "AirEvent": {
+              "AirEventAudioStateGroup": 281609,
+              "AirEventAudioState": {
+                "Inactive": {
+                  "State": 281608
+                },
+                "Active": {
+                  "State": 281607
+                }
+              }
+            },
+            "SoilEvent": {
+              "SoilEventAudioStateGroup": 281612,
+              "SoilEventAudioState": {
+                "Inactive": {
+                  "State": 281611
+                },
+                "Active": {
+                  "State": 281610
+                }
+              }
+            },
+            "WaterEvent": {
+              "WaterEventAudioStateGroup": 281615,
+              "WaterEventAudioState": {
+                "Inactive": {
+                  "State": 281614
+                },
+                "Active": {
+                  "State": 281613
+                }
+              }
+            },
+            "ForestEvent": {
+              "ForestEventAudioStateGroup": 281618,
+              "ForestEventAudioState": {
+                "Inactive": {
+                  "State": 281617
+                },
+                "Active": {
+                  "State": 281616
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]

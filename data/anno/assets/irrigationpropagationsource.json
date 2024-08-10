@@ -6,8 +6,7 @@
         "GUID": 114544,
         "Name": "river_colony02_03 (Water Pump)",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_water_pump.png",
-        "InfoDescription": 124828,
-        "Version": "dlc06"
+        "InfoDescription": 124828
       },
       "Building": {
         "AssociatedRegions": "Africa"
@@ -105,6 +104,11 @@
               "Filename": "data/dlc06/graphics/buildings/special/river_mine_colony_02/riverslot_waterpump_main_01.cfg"
             }
           ]
+        },
+        "Skins": {
+          "DefaultSkinName": 114544,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": {
@@ -112,6 +116,12 @@
       },
       "Selection": {
         "GUIType": "Pump",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Africa_Resident_tier01",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -121,8 +131,7 @@
         "LocaText": {
           "English": {
             "Text": "Water Pump",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 44437
@@ -173,24 +182,24 @@
         "ConsumerPriority": 3
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 1500,
-        "HasRuinState": 0,
         "SelfHealPerHealTick": 4
       },
       "IncidentInfectable": {
         "Infectable": {
-          "Illness": {
-            "Escalated": 0
-          },
-          "Explosion": {
-            "Base": 0,
-            "Escalated": 0
-          },
           "Fire": {
             "Base": 0,
             "Escalated": 0
           },
           "Riot": {
+            "Base": 0,
+            "Escalated": 0
+          },
+          "Illness": {
+            "Escalated": 0
+          },
+          "Explosion": {
             "Base": 0,
             "Escalated": 0
           }
@@ -236,8 +245,7 @@
       "Standard": {
         "GUID": 119958,
         "Name": "QO Water Pump1 (Blake)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_water_pump.png",
-        "Version": "dlc06"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_water_pump.png"
       },
       "Building": {
         "BuildModeRandomRotation": 180,
@@ -255,6 +263,12 @@
       "Mesh": "",
       "Selection": {
         "GUIType": "Pump",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Africa_Resident_tier01",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -264,8 +278,7 @@
         "LocaText": {
           "English": {
             "Text": "First Water Pump",
-            "Status": "Exported",
-            "ExportCount": 3
+            "Status": "Exported"
           }
         },
         "LineID": 44575
@@ -306,7 +319,9 @@
         "AmbientMood": "AgricultureBuildingsEurope"
       },
       "Maintenance": "",
-      "Attackable": "",
+      "Attackable": {
+        "AttackableType": "IslandBuilding"
+      },
       "IncidentInfectable": "",
       "Pausable": "",
       "Culture": {
@@ -331,8 +346,7 @@
       "Standard": {
         "GUID": 119959,
         "Name": "QO Water Pump2 (Blake)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_water_pump.png",
-        "Version": "dlc06"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_water_pump.png"
       },
       "Building": {
         "BuildModeRandomRotation": 180,
@@ -350,6 +364,12 @@
       "Mesh": "",
       "Selection": {
         "GUIType": "Pump",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Africa_Resident_tier01",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -359,8 +379,7 @@
         "LocaText": {
           "English": {
             "Text": "Second Water Pump",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 44576
@@ -401,7 +420,9 @@
         "AmbientMood": "AgricultureBuildingsEurope"
       },
       "Maintenance": "",
-      "Attackable": "",
+      "Attackable": {
+        "AttackableType": "IslandBuilding"
+      },
       "IncidentInfectable": "",
       "Pausable": "",
       "Culture": {

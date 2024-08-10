@@ -62,12 +62,12 @@
           }
         },
         "InactiveCosts": {
-          "Off": {
-            "ValueName": 11055
-          },
           "On": {
             "ValueName": 11054,
             "Points": 5
+          },
+          "Off": {
+            "ValueName": 11055
           }
         },
         "Incidents": {
@@ -75,16 +75,16 @@
             "ValueName": 11031,
             "Enabled": 1
           },
-          "Hard": {
-            "Points": 20,
-            "ValueName": 11033,
-            "Enabled": 1
-          },
           "Medium": {
             "Points": 15,
             "ValueName": 11032,
             "SelfHealChanceFactor": 1,
             "IntensityIncreaseChanceFactor": 1,
+            "Enabled": 1
+          },
+          "Hard": {
+            "Points": 20,
+            "ValueName": 11033,
             "Enabled": 1
           }
         },
@@ -168,10 +168,6 @@
             "MaxSteps": 15,
             "Percentage": 100
           },
-          "Off": {
-            "ValueName": 11055,
-            "Points": 20
-          },
           "PayCredits": {
             "ValueName": 11043,
             "Points": 10,
@@ -179,6 +175,10 @@
             "FlatValue": 250,
             "MaxSteps": 20,
             "Percentage": 5
+          },
+          "Off": {
+            "ValueName": 11055,
+            "Points": 20
           }
         },
         "RevealedMap": {
@@ -237,16 +237,16 @@
           }
         },
         "StartSession": {
-          "Large": {
-            "ValueName": 11063
+          "Small": {
+            "ValueName": 11065,
+            "Points": 15
           },
           "Medium": {
             "ValueName": 11064,
             "Points": 10
           },
-          "Small": {
-            "ValueName": 11065,
-            "Points": 15
+          "Large": {
+            "ValueName": 11063
           }
         },
         "StartSessionIslandDifficulty": {
@@ -400,14 +400,14 @@
           }
         },
         "ThirdParty": {
+          "Off": {
+            "ValueName": 11055
+          },
           "Normal": {
             "ValueName": 11798
           },
           "Hard": {
             "ValueName": 11799
-          },
-          "Off": {
-            "ValueName": 11055
           }
         },
         "TraderRefillRate": {
@@ -675,6 +675,9 @@
           }
         },
         "Presets": {
+          "Easy": {
+            "DefaultSetting": 141148
+          },
           "Normal": {
             "DefaultSetting": 141149
           },
@@ -683,9 +686,6 @@
           },
           "Classic": {
             "DefaultSetting": 141151
-          },
-          "Easy": {
-            "DefaultSetting": 141148
           },
           "EasyMultiplayer": {
             "DefaultSetting": 142754
@@ -707,21 +707,30 @@
           },
           "HardQuickMP": {
             "DefaultSetting": 141472
+          },
+          "ScenarioSelection": {
+            "DefaultSetting": 24778
+          },
+          "ScenarioGGJ": {
+            "DefaultSetting": 687
+          },
+          "Scenario02": {
+            "DefaultSetting": 24777
+          },
+          "Scenario03": {
+            "DefaultSetting": 1946
+          },
+          "Scenario04": {
+            "DefaultSetting": 5886
+          },
+          "CreativeMode": {
+            "DefaultSetting": 9107
+          },
+          "CreativeModeMultiplayer": {
+            "DefaultSetting": 9107
           }
         },
         "Descriptions": {
-          "LossCondition": {
-            "Description": 11020,
-            "InfoTip": 500783
-          },
-          "Revenue": {
-            "Description": 11025,
-            "InfoTip": 500791
-          },
-          "StartCredits": {
-            "Description": 11026,
-            "InfoTip": 500792
-          },
           "ConstructionCostRefund": {
             "Description": 11016,
             "InfoTip": 500777
@@ -729,6 +738,26 @@
           "DistributionWorkforce": {
             "Description": 11017,
             "InfoTip": 500778
+          },
+          "Fertility": {
+            "Description": 11061,
+            "InfoTip": 500779
+          },
+          "HostileTakeover": {
+            "Description": 11056,
+            "InfoTip": 500780
+          },
+          "InactiveCosts": {
+            "Description": 11018,
+            "InfoTip": 500781
+          },
+          "Incidents": {
+            "Description": 11019,
+            "InfoTip": 500782
+          },
+          "LossCondition": {
+            "Description": 11020,
+            "InfoTip": 500783
           },
           "OptionalQuestFrequency": {
             "Description": 11021,
@@ -738,41 +767,33 @@
             "Description": 11022,
             "InfoTip": 500785
           },
-          "RelocateBuildings": {
-            "Description": 11024,
-            "InfoTip": 500789
-          },
-          "TraderRefillRate": {
-            "Description": 11028,
-            "InfoTip": 500798
-          },
-          "InactiveCosts": {
-            "Description": 11018,
-            "InfoTip": 500781
-          },
           "OptionalQuestTimeout": {
             "Description": 11023,
             "InfoTip": 500786
           },
-          "Incidents": {
-            "Description": 11019,
-            "InfoTip": 500782
+          "RawMaterial": {
+            "Description": 11062,
+            "InfoTip": 500788
           },
-          "StartShips": {
-            "Description": 11141,
-            "InfoTip": 500796
-          },
-          "HostileTakeover": {
-            "Description": 11056,
-            "InfoTip": 500780
+          "RelocateBuildings": {
+            "Description": 11024,
+            "InfoTip": 500789
           },
           "RevealedMap": {
             "Description": 11057,
             "InfoTip": 500790
           },
-          "Fertility": {
-            "Description": 11061,
-            "InfoTip": 500779
+          "Revenue": {
+            "Description": 11025,
+            "InfoTip": 500791
+          },
+          "StartCredits": {
+            "Description": 11026,
+            "InfoTip": 500792
+          },
+          "StartSession": {
+            "Description": 11058,
+            "InfoTip": 500793
           },
           "StartSessionIslandDifficulty": {
             "Description": 11059,
@@ -782,17 +803,17 @@
             "Description": 11060,
             "InfoTip": 500795
           },
-          "RawMaterial": {
-            "Description": 11062,
-            "InfoTip": 500788
-          },
-          "StartSession": {
-            "Description": 11058,
-            "InfoTip": 500793
+          "StartShips": {
+            "Description": 11141,
+            "InfoTip": 500796
           },
           "StartWithKontor": {
             "Description": 11027,
             "InfoTip": 500797
+          },
+          "TraderRefillRate": {
+            "Description": 11028,
+            "InfoTip": 500798
           },
           "VictoryConditionMonuments": {
             "Description": 15702,
@@ -961,15 +982,15 @@
           }
         },
         "VictoryConditionAllOrOne": {
+          "Off": {
+            "ValueName": 11055
+          },
           "One": {
             "ValueName": 15775
           },
           "All": {
             "ValueName": 15776,
             "NeedAll": 1
-          },
-          "Off": {
-            "ValueName": 11055
           }
         },
         "VictoryConditionDiplomacy": {
@@ -1038,9 +1059,6 @@
         },
         "SkyscraperMaintenance": {
           "SkyscraperMaintenanceDifficulty": {
-            "Unspecified": {
-              "DifficultyFactor": 1
-            },
             "Low": {
               "DifficultyFactor": 0.8,
               "ValueName": 16120
@@ -1054,10 +1072,75 @@
               "Points": 10,
               "DifficultyFactor": 1,
               "ValueName": 16119
+            },
+            "Unspecified": {
+              "DifficultyFactor": 1
             }
           },
           "DLCDependency": 410085,
           "DefaultDifficultyIfDLCIsInactive": "Unspecified"
+        },
+        "FixedForCreativeMode": {
+          "ConstructionCostRefund": {
+            "Fixed": 1
+          },
+          "DistributionWorkforce": {
+            "Fixed": 1
+          },
+          "Fertility": {
+            "Fixed": 1
+          },
+          "HostileTakeover": {
+            "Fixed": 1
+          },
+          "InactiveCosts": {
+            "Fixed": 1
+          },
+          "Incidents": {
+            "Fixed": 1
+          },
+          "OptionalQuestFrequency": {
+            "Fixed": 1
+          },
+          "RelocateBuildings": {
+            "Fixed": 1
+          },
+          "Revenue": {
+            "Fixed": 1
+          },
+          "TraderRefillRate": {
+            "Fixed": 1
+          },
+          "VictoryConditionMonuments": {
+            "Fixed": 1
+          },
+          "VictoryConditionInvestors": {
+            "Fixed": 1
+          },
+          "VictoryConditionPopulation": {
+            "Fixed": 1
+          },
+          "VictoryConditionWealth": {
+            "Fixed": 1
+          },
+          "VictoryConditionIncome": {
+            "Fixed": 1
+          },
+          "VictoryConditionAllOrOne": {
+            "Fixed": 1
+          },
+          "VictoryConditionDiplomacy": {
+            "Fixed": 1
+          },
+          "DifficultyPreset": {
+            "Fixed": 1
+          },
+          "Influence": {
+            "Fixed": 1
+          },
+          "SkyscraperMaintentance": {
+            "Fixed": 1
+          }
         }
       }
     }

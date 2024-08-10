@@ -5,10 +5,19 @@
       "Standard": {
         "GUID": 111800,
         "Name": "Propaganda Quest",
-        "ID": "Quest_DM_0",
-        "Version": "dm"
+        "ID": "Quest_DM_0"
       },
       "Quest": {
+        "StarterMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
         "SuccessMessage": {
           "Notification": {
             "IsBaseAutoCreateAsset": 1,
@@ -22,6 +31,46 @@
               "NotificationSubtitle": {
                 "Subtitle": 111617
               }
+            }
+          }
+        },
+        "FailureMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "SelectionReminderMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "AbortedManuallyMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "AbortedAutomaticallyMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
             }
           }
         },
@@ -39,6 +88,130 @@
                 "Subtitle": 111616
               }
             }
+          }
+        },
+        "EscortShipSelectedMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "ReminderMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "ResolveConfirmationMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "InvitationSmugglerQuestMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "SmugglerQuestTradingStationReached": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "StartInvitationGiveItemMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "StartFollowShipMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "OnQuestStart": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestDeclined": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestActive": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestAborted": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestTimedOut": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnActiveQuestTimedOut": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestFailed": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestDiscarded": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestSucceeded": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
           }
         },
         "OnQuestEnd": {
@@ -74,25 +247,61 @@
             }
           }
         },
+        "OnPhotographySuccessNewspaperAction": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionForceNewspaper": ""
+          }
+        },
         "QuestGiver": 220,
         "StoryText": 111802,
         "QuestActivation": "ConfirmationDialog",
         "IsAbortable": 1,
+        "ConfirmOnReachedCondition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ConditionQuestResolveConfirmation": "",
+            "Condition": "",
+            "ConditionQuestObjective": ""
+          }
+        },
         "HasExclusiveQuestGiver": 0,
         "QuestBookBackground": "data/ui/2kimages/main/assets16/questbackground/bg_quest_anarchist.png",
         "QuestHints": {
           "Item": {
             "Text": 111803
           }
+        },
+        "StarterSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": ""
+          }
+        },
+        "SuccessSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": ""
+          }
         }
       },
-      "PreConditionList": "",
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionActiveRegion": ""
+          }
+        }
+      },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "The Anarchist Truth",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 31384
@@ -146,7 +355,17 @@
         },
         "WinConditionCompletionOrder": "MutuallyExclusive"
       },
-      "QuestOptional": ""
+      "QuestOptional": {
+        "StarterObject": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionStarterObject": "",
+            "ConditionQuestObjective": "",
+            "ConditionPropsSessionSettings": ""
+          }
+        }
+      }
     }
   }
 ]

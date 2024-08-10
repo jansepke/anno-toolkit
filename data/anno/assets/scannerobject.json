@@ -31,6 +31,12 @@
         "GUIType": "Vehicle",
         "MultiSelectable": 1,
         "SelectionPriority": 5,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 2
       },
       "Walking": {
@@ -73,37 +79,35 @@
         "LocaText": {
           "English": {
             "Text": "Pyrphorian Patrol Ship",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 20125
       },
       "Attacker": {
+        "ShootingTracking": "TurretFixed",
+        "BaseDamage": 80,
+        "ReloadTime": 30,
+        "TargetAngleVariation": 30,
         "AttackRange": 30,
         "AttackRangeApproachPercentage": 0.9,
         "LineOfSightRange": 70,
-        "ReloadTime": 30,
-        "ProjectileAsset": 102405,
-        "ProjectileCount": 2,
-        "BaseDamage": 80,
         "Turrets": {
           "Item": {
             "TurnSpan": 320,
             "TurretCfg": "data/graphics/campaign/vehicle/pyro_ship_01/pyro_ship_01_turret.cfg"
           }
         },
-        "AccuracyBase": 1.5,
-        "AccuracyIncreaseOverDistance": 60,
-        "AccuracySpeedDecay": 20,
-        "TargetAngleVariation": 30,
-        "ShootingTracking": "TurretFixed",
+        "ProjectileAsset": 102405,
         "TurretExplosionEffectAsset": 101994,
         "MuzzleEffectAssets": {
           "Item": {
             "MuzzleEffectAsset": 102404
           }
-        }
+        },
+        "AccuracyBase": 1.5,
+        "AccuracyIncreaseOverDistance": 60,
+        "AccuracySpeedDecay": 20
       },
       "Attackable": {
         "MaximumHitPoints": 1500,
@@ -149,6 +153,12 @@
         "GUIType": "Vehicle",
         "MultiSelectable": 1,
         "SelectionPriority": 5,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 2
       },
       "Walking": {
@@ -191,37 +201,35 @@
         "LocaText": {
           "English": {
             "Text": "Pyrphorian Patrol Ship",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 20126
       },
       "Attacker": {
+        "ShootingTracking": "TurretFixed",
+        "BaseDamage": 80,
+        "ReloadTime": 30,
+        "TargetAngleVariation": 30,
         "AttackRange": 30,
         "AttackRangeApproachPercentage": 0.9,
         "LineOfSightRange": 70,
-        "ReloadTime": 30,
-        "ProjectileAsset": 102405,
-        "ProjectileCount": 2,
-        "BaseDamage": 80,
         "Turrets": {
           "Item": {
             "TurnSpan": 320,
             "TurretCfg": "data/graphics/campaign/vehicle/pyro_ship_01/pyro_ship_01_turret.cfg"
           }
         },
-        "AccuracyBase": 1.5,
-        "AccuracyIncreaseOverDistance": 60,
-        "AccuracySpeedDecay": 20,
-        "TargetAngleVariation": 30,
-        "ShootingTracking": "TurretFixed",
+        "ProjectileAsset": 102405,
         "TurretExplosionEffectAsset": 101994,
         "MuzzleEffectAssets": {
           "Item": {
             "MuzzleEffectAsset": 102404
           }
-        }
+        },
+        "AccuracyBase": 1.5,
+        "AccuracyIncreaseOverDistance": 60,
+        "AccuracySpeedDecay": 20
       },
       "Attackable": {
         "MaximumHitPoints": 1500,
@@ -266,6 +274,12 @@
         "GUIType": "Vehicle",
         "MultiSelectable": 1,
         "SelectionPriority": 5,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 2,
         "AllowedDragType": "ItemSocket;CargoProductStack;CargoItemStack;StorageProductStack;StorageItemStack"
       },
@@ -308,31 +322,29 @@
         "LocaText": {
           "English": {
             "Text": "Gunboat",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 28579
       },
       "Attacker": {
+        "ShootingTracking": "Front",
+        "BaseDamage": 80,
+        "ReloadTime": 50,
+        "TargetAngleVariation": 30,
         "AttackRange": 40,
         "AttackRangeApproachPercentage": 0.85,
         "LineOfSightRange": 100,
-        "ReloadTime": 50,
         "ProjectileAsset": 102277,
-        "ProjectileCount": 2,
-        "BaseDamage": 80,
-        "AccuracyBase": 1,
-        "AccuracyIncreaseOverDistance": 80,
-        "AccuracySpeedDecay": 20,
-        "TargetAngleVariation": 30,
-        "ShootingTracking": "Front",
         "TurretExplosionEffectAsset": 101994,
         "MuzzleEffectAssets": {
           "Item": {
             "MuzzleEffectAsset": 100563
           }
-        }
+        },
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 80,
+        "AccuracySpeedDecay": 20
       },
       "Attackable": {
         "MaximumHitPoints": 750,
@@ -373,7 +385,13 @@
         "MeshPlacement": "OnWaterSlope"
       },
       "Selection": {
-        "MultiSelectable": 1
+        "MultiSelectable": 1,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Walking": {
         "ReservationLength": 9,
@@ -417,23 +435,18 @@
         "LocaText": {
           "English": {
             "Text": "Gunboat",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 29446
       },
       "Attacker": {
+        "ShootingTracking": "Front",
+        "BaseDamage": 105,
+        "ReloadTime": 50,
         "AttackRange": 40,
         "LineOfSightRange": 100,
-        "ReloadTime": 50,
         "ProjectileAsset": 102277,
-        "ProjectileCount": 2,
-        "BaseDamage": 105,
-        "AccuracyBase": 1,
-        "AccuracyIncreaseOverDistance": 80,
-        "AccuracySpeedDecay": 20,
-        "ShootingTracking": "Front",
         "MuzzleEffectAssets": {
           "Item": {
             "VectorElement": {
@@ -447,6 +460,9 @@
             "MuzzleEffectAsset": 102278
           }
         },
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 80,
+        "AccuracySpeedDecay": 20,
         "AccuracyByDistance": {
           "Item": [
             {
@@ -521,7 +537,13 @@
         "MeshPlacement": "OnWaterSlope"
       },
       "Selection": {
-        "MultiSelectable": 1
+        "MultiSelectable": 1,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Walking": {
         "ReservationLength": 9,
@@ -565,24 +587,18 @@
         "LocaText": {
           "English": {
             "Text": "Frigate",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 29449
       },
       "Attacker": {
+        "BaseDamage": 140,
+        "ReloadTime": 50,
+        "TargetAngleVariation": 50,
         "AttackRange": 55,
         "LineOfSightRange": 100,
-        "ReloadTime": 50,
         "ProjectileAsset": 102032,
-        "ProjectileCount": 14,
-        "BaseDamage": 140,
-        "AccuracyBase": 3,
-        "AccuracyIncreaseOverDistance": 90,
-        "AccuracySpeedDecay": 20,
-        "TargetAngleVariation": 50,
-        "FullVolleyTimeMin": 0.4,
         "MuzzleEffectAssets": {
           "Item": [
             {
@@ -603,8 +619,12 @@
             }
           ]
         },
+        "FullVolleyTimeMin": 0.4,
         "FullVolleyTimeMax": 1.2,
         "VolleyMaxPerBulletRandomOffset": 0.2,
+        "AccuracyBase": 3,
+        "AccuracyIncreaseOverDistance": 90,
+        "AccuracySpeedDecay": 20,
         "AccuracyByDistance": {
           "Item": [
             {
@@ -647,8 +667,7 @@
             },
             {
               "AccuracyByDistancePair": {
-                "EnemyDistanceRelToAttackRange": 100,
-                "CorrespondingAccuracy": 100
+                "EnemyDistanceRelToAttackRange": 100
               }
             }
           ]
@@ -696,7 +715,13 @@
         "MeshPlacement": "OnWaterSlope"
       },
       "Selection": {
-        "MultiSelectable": 1
+        "MultiSelectable": 1,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Walking": {
         "ReservationLength": 9,
@@ -740,23 +765,18 @@
         "LocaText": {
           "English": {
             "Text": "Ship-of-the-line",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 29452
       },
       "Attacker": {
+        "BaseDamage": 525,
+        "ReloadTime": 100,
+        "TargetAngleVariation": 50,
         "AttackRange": 68,
         "LineOfSightRange": 100,
-        "ReloadTime": 100,
         "ProjectileAsset": 102285,
-        "ProjectileCount": 32,
-        "BaseDamage": 525,
-        "AccuracyIncreaseOverDistance": 100,
-        "AccuracySpeedDecay": 20,
-        "TargetAngleVariation": 50,
-        "FullVolleyTimeMin": 0.8,
         "MuzzleEffectAssets": {
           "Item": [
             {
@@ -778,8 +798,11 @@
             }
           ]
         },
+        "FullVolleyTimeMin": 0.8,
         "FullVolleyTimeMax": 1.8,
         "VolleyMaxPerBulletRandomOffset": 0.2,
+        "AccuracyIncreaseOverDistance": 100,
+        "AccuracySpeedDecay": 20,
         "AccuracyByDistance": {
           "Item": [
             {
@@ -822,8 +845,7 @@
             },
             {
               "AccuracyByDistancePair": {
-                "EnemyDistanceRelToAttackRange": 100,
-                "CorrespondingAccuracy": 100
+                "EnemyDistanceRelToAttackRange": 100
               }
             }
           ]
@@ -871,7 +893,13 @@
         "MeshPlacement": "OnWaterSlope"
       },
       "Selection": {
-        "MultiSelectable": 1
+        "MultiSelectable": 1,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Walking": {
         "ShortenSailsAfter": 0,
@@ -917,29 +945,24 @@
         "LocaText": {
           "English": {
             "Text": "Monitor",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 29455
       },
       "Attacker": {
+        "ShootingTracking": "TurretFixed",
+        "BaseDamage": 93,
+        "ReloadTime": 30,
         "AttackRange": 48,
         "LineOfSightRange": 100,
-        "ReloadTime": 30,
-        "ProjectileAsset": 102267,
-        "ProjectileCount": 2,
-        "BaseDamage": 93,
         "Turrets": {
           "Item": {
             "TurnSpan": 320,
             "TurretCfg": "data/graphics/vehicle/monitor/monitor_turret.cfg"
           }
         },
-        "AccuracyBase": 1,
-        "AccuracyIncreaseOverDistance": 60,
-        "AccuracySpeedDecay": 20,
-        "ShootingTracking": "TurretFixed",
+        "ProjectileAsset": 102267,
         "MuzzleEffectAssets": {
           "Item": {
             "VectorElement": {
@@ -953,6 +976,9 @@
             "MuzzleEffectAsset": 101971
           }
         },
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 60,
+        "AccuracySpeedDecay": 20,
         "AccuracyByDistance": {
           "Item": [
             {
@@ -1028,7 +1054,13 @@
         "MeshPlacement": "OnWaterSlope"
       },
       "Selection": {
-        "MultiSelectable": 1
+        "MultiSelectable": 1,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Walking": {
         "ShortenSailsAfter": 0,
@@ -1074,19 +1106,17 @@
         "LocaText": {
           "English": {
             "Text": "Battle Cruiser",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 29458
       },
       "Attacker": {
+        "ShootingTracking": "TurretFixed",
+        "BaseDamage": 245,
+        "ReloadTime": 70,
         "AttackRange": 84,
         "LineOfSightRange": 100,
-        "ReloadTime": 70,
-        "ProjectileAsset": 102033,
-        "ProjectileCount": 6,
-        "BaseDamage": 245,
         "Turrets": {
           "Item": [
             {
@@ -1103,11 +1133,7 @@
             }
           ]
         },
-        "AccuracyBase": 1,
-        "AccuracyIncreaseOverDistance": 60,
-        "AccuracySpeedDecay": 20,
-        "ShootingTracking": "TurretFixed",
-        "FullVolleyTimeMin": 1,
+        "ProjectileAsset": 102033,
         "MuzzleEffectAssets": {
           "Item": [
             {
@@ -1126,7 +1152,11 @@
             }
           ]
         },
+        "FullVolleyTimeMin": 1,
         "FullVolleyTimeMax": 2,
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 60,
+        "AccuracySpeedDecay": 20,
         "AccuracyByDistance": {
           "Item": [
             {
@@ -1202,7 +1232,13 @@
         "MeshPlacement": "OnWaterSlope"
       },
       "Selection": {
-        "MultiSelectable": 1
+        "MultiSelectable": 1,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Walking": {
         "ReservationLength": 9,
@@ -1246,23 +1282,18 @@
         "LocaText": {
           "English": {
             "Text": "Gunboat",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 29461
       },
       "Attacker": {
+        "ShootingTracking": "Front",
+        "BaseDamage": 105,
+        "ReloadTime": 50,
         "AttackRange": 40,
         "LineOfSightRange": 100,
-        "ReloadTime": 50,
         "ProjectileAsset": 102277,
-        "ProjectileCount": 2,
-        "BaseDamage": 105,
-        "AccuracyBase": 1,
-        "AccuracyIncreaseOverDistance": 80,
-        "AccuracySpeedDecay": 20,
-        "ShootingTracking": "Front",
         "MuzzleEffectAssets": {
           "Item": {
             "VectorElement": {
@@ -1276,6 +1307,9 @@
             "MuzzleEffectAsset": 102278
           }
         },
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 80,
+        "AccuracySpeedDecay": 20,
         "AccuracyByDistance": {
           "Item": [
             {
@@ -1357,6 +1391,12 @@
         "GUIType": "Vehicle",
         "MultiSelectable": 1,
         "SelectionPriority": 5,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 2,
         "AllowedDragType": "ItemSocket;CargoProductStack;CargoItemStack;StorageProductStack;StorageItemStack"
       },
@@ -1404,8 +1444,7 @@
         "LocaText": {
           "English": {
             "Text": "Her Majesty's Flagship",
-            "Status": "Exported",
-            "ExportCount": 4
+            "Status": "Exported"
           }
         },
         "LineID": 29866
@@ -1451,6 +1490,12 @@
         "GUIType": "Vehicle",
         "MultiSelectable": 1,
         "SelectionPriority": 5,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 2,
         "AllowedDragType": "ItemSocket;CargoProductStack;CargoItemStack;StorageProductStack;StorageItemStack"
       },
@@ -1498,8 +1543,7 @@
         "LocaText": {
           "English": {
             "Text": "Her Majesty's Flagship",
-            "Status": "Exported",
-            "ExportCount": 4
+            "Status": "Exported"
           }
         },
         "LineID": 21914
@@ -1545,6 +1589,12 @@
         "GUIType": "Vehicle",
         "MultiSelectable": 1,
         "SelectionPriority": 5,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 2,
         "AllowedDragType": "ItemSocket;CargoProductStack;CargoItemStack;StorageProductStack;StorageItemStack"
       },
@@ -1592,8 +1642,7 @@
         "LocaText": {
           "English": {
             "Text": "Her Majesty's Flagship",
-            "Status": "Exported",
-            "ExportCount": 4
+            "Status": "Exported"
           }
         },
         "LineID": 29867
@@ -1639,6 +1688,12 @@
         "GUIType": "Vehicle",
         "MultiSelectable": 1,
         "SelectionPriority": 5,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 2,
         "AllowedDragType": "ItemSocket;CargoProductStack;CargoItemStack;StorageProductStack;StorageItemStack"
       },
@@ -1686,8 +1741,7 @@
         "LocaText": {
           "English": {
             "Text": "Her Majesty's Flagship",
-            "Status": "Exported",
-            "ExportCount": 4
+            "Status": "Exported"
           }
         },
         "LineID": 29868
@@ -1725,7 +1779,13 @@
         "MeshPlacement": "OnWaterSlope"
       },
       "Selection": {
-        "MultiSelectable": 1
+        "MultiSelectable": 1,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Walking": {
         "ReservationLength": 9,
@@ -1750,23 +1810,22 @@
       "CommandQueue": "",
       "Text": "",
       "Attacker": {
+        "ShootingTracking": "Front",
+        "BaseDamage": 105,
+        "ReloadTime": 50,
+        "TargetAngleVariation": 30,
         "AttackRange": 30,
         "AttackRangeApproachPercentage": 0.85,
         "LineOfSightRange": 70,
-        "ReloadTime": 50,
         "ProjectileAsset": 102277,
-        "ProjectileCount": 2,
-        "BaseDamage": 105,
-        "AccuracyBase": 1,
-        "AccuracyIncreaseOverDistance": 80,
-        "AccuracySpeedDecay": 20,
-        "TargetAngleVariation": 30,
-        "ShootingTracking": "Front",
         "MuzzleEffectAssets": {
           "Item": {
             "MuzzleEffectAsset": 102278
           }
-        }
+        },
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 80,
+        "AccuracySpeedDecay": 20
       },
       "Attackable": {
         "MaximumHitPoints": 850,
@@ -1804,7 +1863,13 @@
         "MeshPlacement": "OnWaterSlope"
       },
       "Selection": {
-        "MultiSelectable": 1
+        "MultiSelectable": 1,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Walking": {
         "ReservationLength": 9,

@@ -1,0 +1,272 @@
+[
+  {
+    "Template": "Hacienda",
+    "Values": {
+      "Standard": {
+        "GUID": 24768,
+        "Name": "Hacienda",
+        "IconFilename": "data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_main.png",
+        "ID": "Hacienda",
+        "InfoDescription": 2975
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hacienda",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 55193
+      },
+      "Blocking": {
+        "HasBuildingBaseTiles": 1
+      },
+      "Building": {
+        "BuildingType": "Logistic",
+        "BuildingCategoryName": 11151,
+        "BuildModeRandomRotation": 180,
+        "AssociatedRegions": "Colony01",
+        "SecondPartyRelevant": 0
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 13000
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 60
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 50
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "Selection": {
+        "GUIType": "Hacienda",
+        "StaticHelpEntryPoint": "SeedsOfChangeHacienda",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageTrigger": "ClickKontor",
+        "Colors": {
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc10/graphics/buildings/special/hacienda/hacienda_main/hacienda_main_01.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 24768,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        }
+      },
+      "Constructable": "",
+      "Mesh": {
+        "LogoMode": "CorporationLogoFromPlayer",
+        "SetCompanyLogo": 1
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 282235
+          }
+        },
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        }
+      },
+      "Locked": {
+        "DLCDependency": 24961
+      },
+      "Infolayer": "",
+      "FeedbackController": "",
+      "Warehouse": {
+        "WarehouseStorage": {
+          "StorageMax": 0
+        }
+      },
+      "LogisticNode": {
+        "QueueConfiguration": {
+          "ProcessingQueueParallelCount": 4
+        }
+      },
+      "UpgradeList": "",
+      "AmbientMoodProvider": {
+        "AmbientMood": "ResidenceTier1"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": {
+            "Product": 1010017,
+            "Amount": 100,
+            "InactiveAmount": 100
+          }
+        }
+      },
+      "StorageBase": "",
+      "Attackable": {
+        "AttackableType": "IslandBuilding",
+        "MaximumHitPoints": 3500,
+        "SelfHealPerHealTick": 4
+      },
+      "Pausable": "",
+      "BuildingUnique": {
+        "Uniques": {
+          "Item": {
+            "UniqueType": "Hacienda",
+            "UniqueScope": "Area"
+          }
+        }
+      },
+      "ModuleOwner": {
+        "ModuleLimits": {
+          "Main": {
+            "Limit": 999
+          }
+        },
+        "ConstructionOptions": {
+          "Item": [
+            {
+              "ModuleGUID": 24770
+            },
+            {
+              "ModuleGUID": 25224
+            },
+            {
+              "ModuleGUID": 24792
+            },
+            {
+              "ModuleGUID": 24793
+            },
+            {
+              "ModuleGUID": 6086
+            },
+            {
+              "ModuleGUID": 24775
+            },
+            {
+              "ModuleGUID": 24794
+            },
+            {
+              "ModuleGUID": 24800
+            },
+            {
+              "ModuleGUID": 24805
+            }
+          ]
+        },
+        "AddModuleLimit": 0,
+        "BlueprintModuleOption": {
+          "ModuleButtonIcon": 20831,
+          "ModulePopupDescription": 25236,
+          "ModulePopupHeader": 25235,
+          "ModuleButtonInfotip": 25239,
+          "ShowRemainingModuleCount": 1
+        }
+      },
+      "Hacienda": {
+        "AdditionalRadiusThresholds": {
+          "Item": [
+            {
+              "ResidentThreshold": 200,
+              "AdditionalHaciendaRadius": 10
+            },
+            {
+              "ResidentThreshold": 400,
+              "AdditionalHaciendaRadius": 10
+            },
+            {
+              "ResidentThreshold": 600,
+              "AdditionalHaciendaRadius": 10
+            },
+            {
+              "ResidentThreshold": 800,
+              "AdditionalHaciendaRadius": 10
+            },
+            {
+              "ResidentThreshold": 1000,
+              "AdditionalHaciendaRadius": 10
+            },
+            {
+              "ResidentThreshold": 1200,
+              "AdditionalHaciendaRadius": 10
+            }
+          ]
+        },
+        "Policies": {
+          "Tier1Decree": {
+            "Policy": 25622,
+            "Description": 144162
+          },
+          "Tier2Decree": {
+            "Policy": 25735,
+            "AttractivenessThreshold": "Fair",
+            "Description": 144163
+          },
+          "Tier3Decree": {
+            "Policy": 25686,
+            "AttractivenessThreshold": "Curious",
+            "Description": 144164
+          },
+          "Tier4Decree": {
+            "Policy": 25659,
+            "AttractivenessThreshold": "Pleasant",
+            "Description": 144165
+          },
+          "Tier5Decree": {
+            "Policy": 25663,
+            "AttractivenessThreshold": "Appealing",
+            "Description": 144166
+          }
+        }
+      },
+      "IncidentInfectable": "",
+      "PublicService": {
+        "PublicServiceOutputs": {
+          "Item": {
+            "Product": 25546
+          }
+        },
+        "FunctionDescription": 100364
+      },
+      "Culture": {
+        "Attractiveness": 100
+      }
+    }
+  }
+]

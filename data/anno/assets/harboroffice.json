@@ -11,8 +11,7 @@
       "Building": {
         "BuildingCategoryName": 11152,
         "BuildModeRandomRotation": 90,
-        "AssociatedRegions": "Moderate",
-        "AllowChangeDirection": 1
+        "AssociatedRegions": "Moderate"
       },
       "Blocking": {
         "GroundDecalAsset": 100446,
@@ -51,10 +50,21 @@
           "Item": {
             "Filename": "data/graphics/buildings/special/harbor_office/harbor_office.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 100586,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "WeakSelectionColorType": "NoColor"
         }
@@ -63,8 +73,7 @@
         "LocaText": {
           "English": {
             "Text": "Harbourmaster's Office",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 7008
@@ -104,11 +113,10 @@
       },
       "UpgradeList": "",
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 5000,
         "PausedTimeIfAttacked": 0,
-        "SelfHealPerHealTick": 5,
         "DefenseByAIFactor": 333,
-        "TakeOverEffect": "OnDeath",
         "MoralePower": 100,
         "IslandWarFlag": 102303,
         "RuinSmokeParticles": {
@@ -139,7 +147,8 @@
           }
         },
         "ExplosionEffectsMin": 2,
-        "ExplosionEffectsMax": 2
+        "ExplosionEffectsMax": 2,
+        "SelfHealPerHealTick": 5
       },
       "Pausable": "",
       "Maintenance": {

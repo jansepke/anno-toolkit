@@ -7,8 +7,7 @@
         "Name": "Palace",
         "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_palace.png",
         "ID": "Palace_Main",
-        "InfoDescription": 269133,
-        "Version": "dlc04"
+        "InfoDescription": 269133
       },
       "Building": {
         "BuildingCategoryName": 11152
@@ -19,6 +18,11 @@
           "Item": {
             "Filename": "data/dlc04/graphics/buildings/special/palace/palace_main_building/palace_main_building.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 249947,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Constructable": "",
@@ -44,6 +48,12 @@
               "ModuleGUID": 269085
             }
           ]
+        },
+        "BlueprintModuleOption": {
+          "ModuleButtonIcon": 279230,
+          "ModulePopupDescription": 269071,
+          "ModulePopupHeader": 249979,
+          "ModuleButtonInfotip": 269087
         }
       },
       "BuildingUnique": {
@@ -65,7 +75,13 @@
         "SetCompanyLogo": 1
       },
       "Selection": {
-        "GUIType": "Palace"
+        "GUIType": "Palace",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Infolayer": "",
       "SoundEmitter": {
@@ -196,6 +212,90 @@
         "BaseStreetRange": 50,
         "AdditionalStreetRangePerModule": 2,
         "BaseMinistryEffect": {
+          "City": {
+            "AttractivenessThreshold": "Ordinary",
+            "BaseEffect": 249961,
+            "MinistryName": 249971,
+            "ParagonEffects": {
+              "Item": [
+                {
+                  "Effect": 269373
+                },
+                {
+                  "Effect": 269374
+                },
+                {
+                  "Effect": 269385
+                },
+                {
+                  "Effect": 269386
+                },
+                {
+                  "Effect": 269465
+                },
+                {
+                  "Effect": 269466
+                },
+                {
+                  "Effect": 269467
+                },
+                {
+                  "Effect": 269468
+                },
+                {
+                  "Effect": 269469
+                },
+                {
+                  "Effect": 269470
+                },
+                {
+                  "Effect": 269652
+                },
+                {
+                  "Effect": 269653
+                },
+                {
+                  "Effect": 269654
+                },
+                {
+                  "Effect": 269655
+                },
+                {
+                  "Effect": 269656
+                },
+                {
+                  "Effect": 269657
+                },
+                {
+                  "Effect": 269658
+                },
+                {
+                  "Effect": 269659
+                },
+                {
+                  "Effect": 269660
+                },
+                {
+                  "Effect": 269661
+                },
+                {
+                  "Effect": 269662
+                },
+                {
+                  "Effect": 269663
+                },
+                {
+                  "Effect": 269664
+                },
+                {
+                  "Effect": 269665
+                },
+                {
+                  "Effect": 269666
+                }
+              ]
+            }
+          },
           "Culture": {
             "AttractivenessThreshold": "Curious",
             "BaseEffect": 249963,
@@ -531,90 +631,6 @@
                 }
               ]
             }
-          },
-          "City": {
-            "AttractivenessThreshold": "Ordinary",
-            "BaseEffect": 249961,
-            "MinistryName": 249971,
-            "ParagonEffects": {
-              "Item": [
-                {
-                  "Effect": 269373
-                },
-                {
-                  "Effect": 269374
-                },
-                {
-                  "Effect": 269385
-                },
-                {
-                  "Effect": 269386
-                },
-                {
-                  "Effect": 269465
-                },
-                {
-                  "Effect": 269466
-                },
-                {
-                  "Effect": 269467
-                },
-                {
-                  "Effect": 269468
-                },
-                {
-                  "Effect": 269469
-                },
-                {
-                  "Effect": 269470
-                },
-                {
-                  "Effect": 269652
-                },
-                {
-                  "Effect": 269653
-                },
-                {
-                  "Effect": 269654
-                },
-                {
-                  "Effect": 269655
-                },
-                {
-                  "Effect": 269656
-                },
-                {
-                  "Effect": 269657
-                },
-                {
-                  "Effect": 269658
-                },
-                {
-                  "Effect": 269659
-                },
-                {
-                  "Effect": 269660
-                },
-                {
-                  "Effect": 269661
-                },
-                {
-                  "Effect": 269662
-                },
-                {
-                  "Effect": 269663
-                },
-                {
-                  "Effect": 269664
-                },
-                {
-                  "Effect": 269665
-                },
-                {
-                  "Effect": 269666
-                }
-              ]
-            }
           }
         },
         "MinistryDecree": {
@@ -740,14 +756,14 @@
           }
         },
         "AttractivenessRequiredForFirstParagonLevel": 9000,
-        "AttractivenessRequiredForAnyAdditionalParagonLevel": 1000
+        "AttractivenessRequiredForAnyAdditionalParagonLevel": 1000,
+        "ParagonUpdateInterval": 15000
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Palace",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 36396

@@ -30,6 +30,11 @@
           "Item": {
             "Filename": "data/graphics/buildings/special/harbor_09/harbor_09_03.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 100429,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "AmbientMoodProvider": {
@@ -52,14 +57,19 @@
       },
       "Constructable": "",
       "Selection": {
-        "GUIType": "VisitorHarbor"
+        "GUIType": "VisitorHarbor",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Public Mooring",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 7023
@@ -105,15 +115,15 @@
       },
       "Locked": "",
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 5000,
-        "HPBarOffset": 5,
         "PausedTimeIfAttacked": 0,
-        "SelfHealPerHealTick": 5,
-        "TakeOverEffect": "OnDeath",
+        "HPBarOffset": 5,
         "MoralePower": 25,
         "IslandWarFlag": 102303,
         "ExplosionEffectsMin": 2,
-        "ExplosionEffectsMax": 2
+        "ExplosionEffectsMax": 2,
+        "SelfHealPerHealTick": 5
       },
       "Maintenance": {
         "Maintenances": {
@@ -126,9 +136,14 @@
       },
       "SoundEmitter": {
         "ActiveSounds": {
-          "Item": {
-            "Sound": 200896
-          }
+          "Item": [
+            {
+              "Sound": 200896
+            },
+            {
+              "Sound": 200260
+            }
+          ]
         },
         "ConstructionSounds": {
           "BuildSuccessful": {

@@ -1,0 +1,752 @@
+[
+  {
+    "Template": "TriggerScenarioBadge",
+    "Values": {
+      "Standard": {
+        "GUID": 25688,
+        "Name": "Scenario02_Badge_001_HappyAndPlenty_Trigger"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionIsDLCActive",
+          "Values": {
+            "Condition": "",
+            "ConditionIsDLCActive": {
+              "DLCAssetList": {
+                "Item": {
+                  "DLCAsset": 24961
+                }
+              }
+            },
+            "ConditionPropsNegatable": ""
+          }
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Template": "ConditionPlayerCounter",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionPlayerCounter": {
+                        "PlayerCounter": "PopulationByLevel",
+                        "Context": 15000006,
+                        "CounterAmount": 1000,
+                        "CounterScope": "Session"
+                      }
+                    }
+                  },
+                  "SubTriggers": {
+                    "Item": {
+                      "SubTrigger": {
+                        "Template": "AutoCreateTrigger",
+                        "Values": {
+                          "Trigger": {
+                            "TriggerCondition": {
+                              "Template": "ConditionPlayerCounter",
+                              "Values": {
+                                "Condition": "",
+                                "ConditionPlayerCounter": {
+                                  "PlayerCounter": "PopulationHappinessByLevel",
+                                  "Context": 15000006,
+                                  "CounterAmount": 30,
+                                  "CounterScope": "Session"
+                                }
+                              }
+                            },
+                            "SubTriggers": {
+                              "Item": {
+                                "SubTrigger": {
+                                  "Template": "AutoCreateTrigger",
+                                  "Values": {
+                                    "Trigger": {
+                                      "TriggerCondition": {
+                                        "Template": "ConditionTimer",
+                                        "Values": {
+                                          "Condition": "",
+                                          "ConditionTimer": {
+                                            "TimeLimit": 600000
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": "",
+      "Locked": ""
+    }
+  },
+  {
+    "Template": "TriggerScenarioBadge",
+    "Values": {
+      "Standard": {
+        "GUID": 25689,
+        "Name": "Scenario02_Badge_002_AllorNothing_Trigger"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionIsDLCActive",
+          "Values": {
+            "Condition": "",
+            "ConditionIsDLCActive": {
+              "DLCAssetList": {
+                "Item": {
+                  "DLCAsset": 24961
+                }
+              }
+            },
+            "ConditionPropsNegatable": ""
+          }
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Template": "ConditionQuestState",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionQuestState": {
+                        "ConditionQuestStateStates": "Reached",
+                        "ConditionQuestStateQuestGUID": 143598
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": "",
+      "Locked": ""
+    }
+  },
+  {
+    "Template": "TriggerScenarioBadge",
+    "Values": {
+      "Standard": {
+        "GUID": 25690,
+        "Name": "Scenario02_Badge_003_Irrigation_Trigger"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionIsDLCActive",
+          "Values": {
+            "Condition": "",
+            "ConditionIsDLCActive": {
+              "DLCAssetList": {
+                "Item": {
+                  "DLCAsset": 24961
+                }
+              }
+            },
+            "ConditionPropsNegatable": ""
+          }
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Template": "ConditionPlayerCounter",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionPlayerCounter": {
+                        "PlayerCounter": "IrrigatedTiles",
+                        "CounterAmount": 5022,
+                        "CounterScope": "Session",
+                        "CounterScopeUseCurrentContext": 0,
+                        "CounterScopeUseActiveSession": 1,
+                        "CounterScopeContext": 24734
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": "",
+      "Locked": ""
+    }
+  },
+  {
+    "Template": "TriggerScenarioBadge",
+    "Values": {
+      "Standard": {
+        "GUID": 3797,
+        "Name": "Scenario03 Badge 1 Trigger",
+        "IconFilename": "data/ui/2kimages/main/3dicons/scenario/scenario_badges/icon_scenario_badge_postman_1.png"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionIsDLCActive",
+          "Values": {
+            "Condition": "",
+            "ConditionIsDLCActive": {
+              "DLCAssetList": {
+                "Item": {
+                  "DLCAsset": 24962
+                }
+              }
+            },
+            "ConditionPropsNegatable": ""
+          }
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Template": "ConditionPlayerCounter",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionPlayerCounter": {
+                        "Context": 3761,
+                        "CounterAmount": 10,
+                        "CounterScope": "Session",
+                        "CounterScopeUseCurrentContext": 0,
+                        "CounterScopeContext": 100811,
+                        "CheckSpecificParticipant": 1
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": "",
+      "Locked": ""
+    }
+  },
+  {
+    "Template": "TriggerScenarioBadge",
+    "Values": {
+      "Standard": {
+        "GUID": 3798,
+        "Name": "Scenario03 Badge 2 Trigger",
+        "IconFilename": "data/ui/2kimages/main/3dicons/scenario/scenario_badges/icon_scenario_badge_postman_2.png"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionIsDLCActive",
+          "Values": {
+            "Condition": "",
+            "ConditionIsDLCActive": {
+              "DLCAssetList": {
+                "Item": {
+                  "DLCAsset": 24962
+                }
+              }
+            },
+            "ConditionPropsNegatable": ""
+          }
+        },
+        "SubTriggers": {
+          "Item": [
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "PopulationSatisfactionByGood",
+                          "Context": 535,
+                          "CounterAmount": 100,
+                          "CounterScope": "Session",
+                          "CheckSpecificParticipant": 1,
+                          "CounterScopeUseCurrentContext": 0,
+                          "CounterScopeContext": 100811
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "PopulationSatisfactionByGood",
+                          "CounterAmount": 100,
+                          "CounterScope": "Session",
+                          "CounterScopeUseCurrentContext": 0,
+                          "CounterScopeContext": 100811,
+                          "CheckSpecificParticipant": 1,
+                          "Context": 536
+                        }
+                      },
+                      "Template": "ConditionPlayerCounter"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": "",
+      "Locked": ""
+    }
+  },
+  {
+    "Template": "TriggerScenarioBadge",
+    "Values": {
+      "Standard": {
+        "GUID": 3800,
+        "Name": "Scenario03 Badge 3 Trigger",
+        "IconFilename": "data/ui/2kimages/main/3dicons/scenario/scenario_badges/icon_scenario_badge_postman_3.png"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionIsDLCActive",
+          "Values": {
+            "Condition": "",
+            "ConditionIsDLCActive": {
+              "DLCAssetList": {
+                "Item": {
+                  "DLCAsset": 24962
+                }
+              }
+            },
+            "ConditionPropsNegatable": ""
+          }
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Values": {
+                      "Condition": "",
+                      "ConditionPlayerCounter": {
+                        "PlayerCounter": "DropActionsPerformed",
+                        "ComparisonOp": "AtMost",
+                        "CounterScope": "Session",
+                        "CounterScopeUseCurrentContext": 0,
+                        "CounterScopeContext": 100811,
+                        "CheckSpecificParticipant": 1
+                      }
+                    },
+                    "Template": "ConditionPlayerCounter"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": "",
+      "Locked": ""
+    }
+  },
+  {
+    "Template": "TriggerScenarioBadge",
+    "Values": {
+      "Standard": {
+        "GUID": 6927,
+        "Name": "Scenario04 Badge 1 Trigger",
+        "IconFilename": "data/ui/2kimages/main/3dicons/scenario/scenario_badges/icon_scenario_badge_exportmaster_1.png"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionIsDLCActive",
+          "Values": {
+            "Condition": "",
+            "ConditionIsDLCActive": {
+              "DLCAssetList": {
+                "Item": {
+                  "DLCAsset": 24963
+                }
+              }
+            },
+            "ConditionPropsNegatable": ""
+          }
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Template": "ConditionPlayerCounter",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionPlayerCounter": {
+                        "PlayerCounter": "GoodsInStock",
+                        "Context": 5391,
+                        "CounterAmount": 180,
+                        "CounterScope": "Session",
+                        "CounterScopeUseCurrentContext": 0,
+                        "CounterScopeContext": 5864,
+                        "CheckSpecificParticipant": 1
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": "",
+      "Locked": ""
+    }
+  },
+  {
+    "Template": "TriggerScenarioBadge",
+    "Values": {
+      "Standard": {
+        "GUID": 6928,
+        "Name": "Scenario04 Badge 2 Trigger",
+        "IconFilename": "data/ui/2kimages/main/3dicons/scenario/scenario_badges/icon_scenario_badge_exportmaster_2.png"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionIsDLCActive",
+          "Values": {
+            "Condition": "",
+            "ConditionIsDLCActive": {
+              "DLCAssetList": {
+                "Item": {
+                  "DLCAsset": 24963
+                }
+              }
+            },
+            "ConditionPropsNegatable": ""
+          }
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Template": "ConditionPlayerCounter",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionPlayerCounter": {
+                        "PlayerCounter": "GoodsInStock",
+                        "CounterAmount": 100000,
+                        "CounterScope": "Session",
+                        "CounterScopeUseCurrentContext": 0,
+                        "CounterScopeContext": 5864,
+                        "CheckSpecificParticipant": 1,
+                        "Context": 1010017
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": "",
+      "Locked": ""
+    }
+  },
+  {
+    "Template": "TriggerScenarioBadge",
+    "Values": {
+      "Standard": {
+        "GUID": 6929,
+        "Name": "Scenario04 Badge 3 Trigger",
+        "IconFilename": "data/ui/2kimages/main/3dicons/scenario/scenario_badges/icon_scenario_badge_exportmaster_3.png"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionIsDLCActive",
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Linear"
+            },
+            "ConditionIsDLCActive": {
+              "DLCAssetList": {
+                "Item": {
+                  "DLCAsset": 24963
+                }
+              }
+            },
+            "ConditionPropsNegatable": ""
+          }
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Template": "ConditionPlayerCounter",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionPlayerCounter": {
+                        "PlayerCounter": "PopulationByLevel",
+                        "CounterAmount": 3000,
+                        "Context": 15000006
+                      }
+                    }
+                  },
+                  "SubTriggers": {
+                    "Item": {
+                      "SubTrigger": {
+                        "IsBaseAutoCreateAsset": 1,
+                        "Values": {
+                          "Trigger": {
+                            "TriggerCondition": {
+                              "Values": {
+                                "Condition": "",
+                                "ConditionTimer": {
+                                  "TimeLimit": 3600000
+                                }
+                              },
+                              "Template": "ConditionTimer"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": "",
+      "Locked": ""
+    }
+  },
+  {
+    "Template": "TriggerScenarioBadge",
+    "Values": {
+      "Standard": {
+        "GUID": 24490,
+        "Name": "GGJ_Badge_001_Trigger_Forestation50",
+        "IconFilename": "data/ui/2kimages/main/3dicons/scenario/scenario_badges/icon_scenario_badge_better_then_before.png"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 686,
+              "CounterAmount": 1
+            }
+          }
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Template": "ConditionPlayerCounter",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionPlayerCounter": {
+                        "PlayerCounter": "Forestation",
+                        "CounterAmount": 50
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": "",
+      "Locked": ""
+    }
+  },
+  {
+    "Template": "TriggerScenarioBadge",
+    "Values": {
+      "Standard": {
+        "GUID": 24492,
+        "Name": "GGJ_Badge_002_Trigger_PopulationTime",
+        "IconFilename": "data/ui/2kimages/main/3dicons/scenario/scenario_badges/icon_scenario_badge_green_metropolis.png"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "Linear"
+            },
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "PopulationByLevel",
+              "Context": 15000006,
+              "CounterAmount": 4000
+            }
+          }
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Template": "ConditionTimer",
+                    "Values": {
+                      "Condition": {
+                        "SubConditionCompletionOrder": "Linear"
+                      },
+                      "ConditionTimer": {
+                        "TimeLimit": 600000
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": "",
+      "Locked": ""
+    }
+  },
+  {
+    "Template": "TriggerScenarioBadge",
+    "Values": {
+      "Standard": {
+        "GUID": 24493,
+        "Name": "GGJ_Badge_003_Trigger_HerbariumTotal",
+        "IconFilename": "data/ui/2kimages/main/3dicons/scenario/scenario_badges/icon_scenario_badge_herbarium.png"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionPlayerCounter",
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "GoodsInStock",
+              "Context": 24320,
+              "CounterAmount": 20
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": "",
+      "Locked": ""
+    }
+  }
+]

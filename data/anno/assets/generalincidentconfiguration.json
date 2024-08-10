@@ -7,11 +7,11 @@
           "Fire": {
             "Config": 2001025
           },
-          "Illness": {
-            "Config": 140585
-          },
           "Riot": {
             "Config": 2001040
+          },
+          "Illness": {
+            "Config": 140585
           },
           "Explosion": {
             "Config": 141655
@@ -24,14 +24,6 @@
         "ProgressConfig": {
           "EarlyGame": {
             "TotalIncidentLimit": 2
-          },
-          "LateMidGame": {
-            "TotalIslandIncidentLimit": 3,
-            "PerIncidentConfig": {
-              "Illness": {
-                "TargetInfectionFactor_DEPRECATED": 90
-              }
-            }
           },
           "EarlyMidGame": {
             "TotalIslandIncidentLimit": 1,
@@ -46,6 +38,14 @@
             "PerIncidentConfig": {
               "Illness": {
                 "TargetInfectionFactor_DEPRECATED": 100
+              }
+            }
+          },
+          "LateMidGame": {
+            "TotalIslandIncidentLimit": 3,
+            "PerIncidentConfig": {
+              "Illness": {
+                "TargetInfectionFactor_DEPRECATED": 90
               }
             }
           },
@@ -94,13 +94,13 @@
           "Test_Doedel": {
             "allowIncidents": 1
           },
-          "Second_ai_03_Wibblesock": {
-            "allowIncidents": 1
-          },
           "Second_ai_01_Jorgensen": {
             "allowIncidents": 1
           },
           "Second_ai_02_Qing": {
+            "allowIncidents": 1
+          },
+          "Second_ai_03_Wibblesock": {
             "allowIncidents": 1
           },
           "Second_ai_04_Smith": {
@@ -109,10 +109,10 @@
           "Second_ai_05_OMara": {
             "allowIncidents": 1
           },
-          "Second_ai_07_von_Malching": {
+          "Second_ai_06_Gasparov": {
             "allowIncidents": 1
           },
-          "Second_ai_06_Gasparov": {
+          "Second_ai_07_von_Malching": {
             "allowIncidents": 1
           },
           "Second_ai_08_Gravez": {
@@ -307,15 +307,6 @@
           },
           "Africa": {
             "IncidentUnlocks": {
-              "ArcticIllness": {
-                "RegionIncidentUnlock": 116039,
-                "AreaPopulationUnlocks": {
-                  "Item": {
-                    "Population": 112642,
-                    "Amount": 1
-                  }
-                }
-              },
               "Fire": {
                 "RegionIncidentUnlock": 117659,
                 "AreaPopulationUnlocks": {
@@ -351,6 +342,15 @@
                     "Amount": 400
                   }
                 }
+              },
+              "ArcticIllness": {
+                "RegionIncidentUnlock": 116039,
+                "AreaPopulationUnlocks": {
+                  "Item": {
+                    "Population": 112642,
+                    "Amount": 1
+                  }
+                }
               }
             }
           }
@@ -365,6 +365,28 @@
           "Illness": {
             "Text": 13033
           }
+        },
+        "AdditionalShipFireIncidentEffects": {
+          "Item": [
+            {
+              "GUID": 1401
+            },
+            {
+              "GUID": 1402
+            },
+            {
+              "GUID": 1403
+            },
+            {
+              "GUID": 1407
+            },
+            {
+              "GUID": 1408
+            },
+            {
+              "GUID": 1409
+            }
+          ]
         },
         "IncidentCommunication": {
           "Moderate": {
@@ -530,12 +552,6 @@
               "FireCheat": {
                 "CommunicationDefinition": 142774
               },
-              "IllnessArcticDefault": {
-                "CommunicationDefinition": 142760
-              },
-              "IllnessArcticCheat": {
-                "CommunicationDefinition": 142760
-              },
               "ExplosionDefault": {
                 "CommunicationDefinition": 141669
               },
@@ -550,6 +566,12 @@
               },
               "ExplosionFromDamage": {
                 "CommunicationDefinition": 141669
+              },
+              "IllnessArcticDefault": {
+                "CommunicationDefinition": 142760
+              },
+              "IllnessArcticCheat": {
+                "CommunicationDefinition": 142760
               }
             }
           },
@@ -616,7 +638,24 @@
           }
         },
         "SubRiskFactor": 0.25,
-        "NewspaperEffectFactor": 0.2
+        "NewspaperEffectFactor": 0.2,
+        "IncidentRiskThresholds": {
+          "VeryLow": {
+            "RiskChanceThreshold": 0.01
+          },
+          "Low": {
+            "RiskChanceThreshold": 5
+          },
+          "Medium": {
+            "RiskChanceThreshold": 10
+          },
+          "High": {
+            "RiskChanceThreshold": 15
+          },
+          "VeryHigh": {
+            "RiskChanceThreshold": 20
+          }
+        }
       },
       "Standard": {
         "GUID": 2001023,

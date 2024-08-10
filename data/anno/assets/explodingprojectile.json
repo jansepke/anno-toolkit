@@ -3,37 +3,83 @@
     "Template": "ExplodingProjectile",
     "Values": {
       "Standard": {
+        "GUID": 7081,
+        "Name": "RocketShipProjectile"
+      },
+      "Projectile": {
+        "ProjectileType": "Arc",
+        "ProjectileSpeed": 15,
+        "Effectivities": {
+          "Item": {
+            "GUID": 191508,
+            "Factor": 4.5
+          }
+        }
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/effects/military/projectiles/projectile_rocket_01.cfg"
+          }
+        }
+      },
+      "Exploder": {
+        "InnerDamageRadius": 1,
+        "InnerDamage": 38,
+        "DebrisForceY": 0,
+        "DebrisCount": 0,
+        "OuterDamageRadius": 8,
+        "MinimumDamage": 18,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
+      },
+      "SoundEmitter": {
+        "ProjectileSounds": {
+          "ProjectileLaunch": {
+            "Item": {
+              "Sound": 200977
+            }
+          },
+          "ProjectileImpact": {
+            "Item": {
+              "Sound": 200976
+            }
+          },
+          "ProjectileVolley": {
+            "Item": {
+              "Sound": 200977
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "ProjectileIncident": ""
+    }
+  },
+  {
+    "Template": "ExplodingProjectile",
+    "Values": {
+      "Standard": {
         "GUID": 100444,
         "Name": "SmallMortarProjectile"
       },
       "Projectile": {
         "ProjectileType": "Arc",
         "ShotHeight": 5,
-        "ProjectileSpeed": 4,
-        "Effectivities": {
-          "Item": [
-            {
-              "GUID": 1010343,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010344,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010345,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010346,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010347,
-              "Factor": 2
-            }
-          ]
-        }
+        "ProjectileSpeed": 4
       },
       "Mesh": "",
       "Object": {
@@ -49,7 +95,21 @@
         "DebrisForceY": 0,
         "DebrisCount": 0,
         "OuterDamageRadius": 3,
-        "MinimumDamage": 1
+        "MinimumDamage": 1,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": {
         "ProjectileSounds": {
@@ -79,31 +139,7 @@
       "Projectile": {
         "ProjectileType": "Arc",
         "ShotHeight": 5,
-        "ProjectileSpeed": 4,
-        "Effectivities": {
-          "Item": [
-            {
-              "GUID": 1010343,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010344,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010345,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010346,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010347,
-              "Factor": 2
-            }
-          ]
-        }
+        "ProjectileSpeed": 4
       },
       "Mesh": "",
       "Object": {
@@ -119,7 +155,21 @@
         "DebrisForceY": 0,
         "DebrisCount": 0,
         "OuterDamageRadius": 4,
-        "MinimumDamage": 1
+        "MinimumDamage": 1,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": {
         "ProjectileSounds": {
@@ -149,31 +199,7 @@
       "Projectile": {
         "ProjectileType": "Arc",
         "ShotHeight": 5,
-        "ProjectileSpeed": 4,
-        "Effectivities": {
-          "Item": [
-            {
-              "GUID": 1010343,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010344,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010345,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010346,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010347,
-              "Factor": 2
-            }
-          ]
-        }
+        "ProjectileSpeed": 4
       },
       "Mesh": "",
       "Object": {
@@ -188,7 +214,21 @@
         "DebrisForceY": 0,
         "DebrisCount": 0,
         "OuterDamageRadius": 5,
-        "MinimumDamage": 1
+        "MinimumDamage": 1,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": {
         "ProjectileSounds": {
@@ -219,32 +259,7 @@
         "ProjectileType": "Arc",
         "ShotHeight": 2,
         "ShotAngle": 35,
-        "ProjectileSpeed": 10,
-        "Effectivities": {
-          "Item": [
-            {
-              "GUID": 1010343,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010344,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010345,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010346,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010347,
-              "Factor": 2
-            }
-          ]
-        },
-        "TargetWhiteList": "Neutral"
+        "ProjectileSpeed": 10
       },
       "Mesh": "",
       "Object": {
@@ -336,32 +351,7 @@
       "Projectile": {
         "ProjectileType": "Arc",
         "ShotHeight": 1,
-        "ProjectileSpeed": 15,
-        "Effectivities": {
-          "Item": [
-            {
-              "GUID": 1010343,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010344,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010345,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010346,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010347,
-              "Factor": 2
-            }
-          ]
-        },
-        "TargetWhiteList": "Neutral"
+        "ProjectileSpeed": 15
       },
       "Mesh": "",
       "Object": {
@@ -376,7 +366,21 @@
         "InnerDamage": 500,
         "DebrisCount": 0,
         "OuterDamageRadius": 8,
-        "MinimumDamage": 200
+        "MinimumDamage": 200,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": {
         "ProjectileSounds": {
@@ -400,107 +404,13 @@
     "Template": "ExplodingProjectile",
     "Values": {
       "Standard": {
-        "GUID": 102342,
-        "Name": "ChainProjectile"
-      },
-      "Projectile": {
-        "ProjectileType": "Arc",
-        "ShotHeight": 5,
-        "ShotAngle": 35,
-        "ProjectileSpeed": 10,
-        "Effectivities": {
-          "Item": [
-            {
-              "GUID": 1010343,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010344,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010345,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010346,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010347,
-              "Factor": 2
-            }
-          ]
-        },
-        "TargetWhiteList": "Neutral"
-      },
-      "Mesh": "",
-      "Object": {
-        "Variations": {
-          "Item": {
-            "Filename": "data/graphics/effects/military/projectiles/projectile_dynamite_01.cfg"
-          }
-        }
-      },
-      "Exploder": {
-        "InnerDamageRadius": 4,
-        "InnerDamage": 500,
-        "DebrisCount": 0,
-        "OuterDamageRadius": 8,
-        "MinimumDamage": 200,
-        "FriendlyFireFactor": 1
-      },
-      "SoundEmitter": {
-        "ProjectileSounds": {
-          "ProjectileLaunch": {
-            "Item": ""
-          },
-          "ProjectileImpact": {
-            "Item": ""
-          }
-        }
-      },
-      "UpgradeList": "",
-      "ProjectileIncident": {
-        "CausedIncidentBuff": 192003
-      }
-    }
-  },
-  {
-    "Template": "ExplodingProjectile",
-    "Values": {
-      "Standard": {
         "GUID": 102494,
         "Name": "MortarProjectile_A"
       },
       "Projectile": {
         "ProjectileType": "Arc",
         "ShotHeight": 1,
-        "ProjectileSpeed": 15,
-        "Effectivities": {
-          "Item": [
-            {
-              "GUID": 1010343,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010344,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010345,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010346,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010347,
-              "Factor": 2
-            }
-          ]
-        }
+        "ProjectileSpeed": 15
       },
       "Mesh": "",
       "Object": {
@@ -516,7 +426,21 @@
         "DebrisForceY": 0,
         "DebrisCount": 0,
         "OuterDamageRadius": 8,
-        "MinimumDamage": 200
+        "MinimumDamage": 200,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": {
         "ProjectileSounds": {
@@ -546,31 +470,7 @@
       "Projectile": {
         "ProjectileType": "Arc",
         "ShotHeight": 1,
-        "ProjectileSpeed": 22,
-        "Effectivities": {
-          "Item": [
-            {
-              "GUID": 1010343,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010344,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010345,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010346,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010347,
-              "Factor": 2
-            }
-          ]
-        }
+        "ProjectileSpeed": 22
       },
       "Mesh": "",
       "Object": {
@@ -586,7 +486,21 @@
         "DebrisForceY": 0,
         "DebrisCount": 0,
         "OuterDamageRadius": 8,
-        "MinimumDamage": 300
+        "MinimumDamage": 300,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": {
         "ProjectileSounds": {
@@ -616,31 +530,7 @@
       "Projectile": {
         "ProjectileType": "Arc",
         "ShotHeight": 1,
-        "ProjectileSpeed": 30,
-        "Effectivities": {
-          "Item": [
-            {
-              "GUID": 1010343,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010344,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010345,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010346,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010347,
-              "Factor": 2
-            }
-          ]
-        }
+        "ProjectileSpeed": 30
       },
       "Mesh": "",
       "Object": {
@@ -656,7 +546,21 @@
         "DebrisForceY": 0,
         "DebrisCount": 0,
         "OuterDamageRadius": 8,
-        "MinimumDamage": 400
+        "MinimumDamage": 400,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": {
         "ProjectileSounds": {
@@ -686,32 +590,7 @@
       "Projectile": {
         "ProjectileType": "Arc",
         "ShotHeight": 1,
-        "ProjectileSpeed": 15,
-        "Effectivities": {
-          "Item": [
-            {
-              "GUID": 1010343,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010344,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010345,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010346,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010347,
-              "Factor": 2
-            }
-          ]
-        },
-        "TargetWhiteList": "Neutral"
+        "ProjectileSpeed": 15
       },
       "Mesh": "",
       "Object": {
@@ -726,7 +605,21 @@
         "InnerDamage": 800,
         "DebrisCount": 0,
         "OuterDamageRadius": 8,
-        "MinimumDamage": 200
+        "MinimumDamage": 200,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": {
         "ProjectileSounds": {
@@ -757,32 +650,7 @@
       "Projectile": {
         "ProjectileType": "Arc",
         "ShotHeight": 1,
-        "ProjectileSpeed": 15,
-        "Effectivities": {
-          "Item": [
-            {
-              "GUID": 1010343,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010344,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010345,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010346,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010347,
-              "Factor": 2
-            }
-          ]
-        },
-        "TargetWhiteList": "Neutral"
+        "ProjectileSpeed": 15
       },
       "Mesh": "",
       "Object": {
@@ -797,7 +665,21 @@
         "InnerDamage": 800,
         "DebrisCount": 0,
         "OuterDamageRadius": 8,
-        "MinimumDamage": 200
+        "MinimumDamage": 200,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": {
         "ProjectileSounds": {
@@ -828,31 +710,7 @@
       "Projectile": {
         "ProjectileType": "Arc",
         "ShotHeight": 1,
-        "ProjectileSpeed": 30,
-        "Effectivities": {
-          "Item": [
-            {
-              "GUID": 1010343,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010344,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010345,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010346,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010347,
-              "Factor": 2
-            }
-          ]
-        }
+        "ProjectileSpeed": 30
       },
       "Mesh": "",
       "Object": {
@@ -868,7 +726,21 @@
         "DebrisForceY": 0,
         "DebrisCount": 0,
         "OuterDamageRadius": 8,
-        "MinimumDamage": 400
+        "MinimumDamage": 400,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": {
         "ProjectileSounds": {
@@ -899,31 +771,7 @@
       "Projectile": {
         "ProjectileType": "Arc",
         "ShotHeight": 1,
-        "ProjectileSpeed": 30,
-        "Effectivities": {
-          "Item": [
-            {
-              "GUID": 1010343,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010344,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010345,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010346,
-              "Factor": 2
-            },
-            {
-              "GUID": 1010347,
-              "Factor": 2
-            }
-          ]
-        }
+        "ProjectileSpeed": 30
       },
       "Mesh": "",
       "Object": {
@@ -939,7 +787,21 @@
         "DebrisForceY": 0,
         "DebrisCount": 0,
         "OuterDamageRadius": 8,
-        "MinimumDamage": 400
+        "MinimumDamage": 400,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": {
         "ProjectileSounds": {
@@ -964,7 +826,7 @@
     "Values": {
       "Standard": {
         "GUID": 100445,
-        "Name": "SmallTorpedoProjectile"
+        "Name": "SmallTorpedoProjectile(TBD)"
       },
       "Projectile": {
         "ShotHeight": 0.5,
@@ -985,7 +847,21 @@
         "DebrisForceY": 0,
         "DebrisCount": 0,
         "OuterDamageRadius": 8,
-        "MinimumDamage": 200
+        "MinimumDamage": 200,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": {
         "ProjectileSounds": {
@@ -1010,7 +886,7 @@
     "Values": {
       "Standard": {
         "GUID": 100458,
-        "Name": "MediumTorpedoProjectile"
+        "Name": "MediumTorpedoProjectile(TBD)"
       },
       "Projectile": {
         "ShotHeight": 0.5,
@@ -1031,7 +907,21 @@
         "DebrisForceY": 0,
         "DebrisCount": 0,
         "OuterDamageRadius": 8,
-        "MinimumDamage": 400
+        "MinimumDamage": 400,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": {
         "ProjectileSounds": {
@@ -1062,7 +952,7 @@
     "Values": {
       "Standard": {
         "GUID": 100459,
-        "Name": "BigTorpedoProjectile"
+        "Name": "BigTorpedoProjectile(TBD)"
       },
       "Projectile": {
         "ShotHeight": 0.5,
@@ -1083,7 +973,21 @@
         "DebrisForceY": 0,
         "DebrisCount": 0,
         "OuterDamageRadius": 8,
-        "MinimumDamage": 800
+        "MinimumDamage": 800,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": {
         "ProjectileSounds": {
@@ -1119,6 +1023,27 @@
       "Projectile": {
         "ShotHeight": 0.5,
         "ProjectileSpeed": 1.5,
+        "StatusEffects": {
+          "Item": {
+            "StatusEffectChain": {
+              "Item": [
+                {
+                  "StatusEffect": 1511,
+                  "StatusDuration": 60000
+                },
+                {
+                  "StatusEffect": 1513,
+                  "StatusDuration": 300000
+                },
+                {
+                  "StatusEffect": 1514,
+                  "StatusDuration": 900000
+                }
+              ]
+            }
+          }
+        },
+        "StatusEffectChainDescription": 4417,
         "DamageType": "Torpedo"
       },
       "Mesh": "",
@@ -1135,7 +1060,21 @@
         "DebrisForceY": 0,
         "DebrisCount": 0,
         "OuterDamageRadius": 4,
-        "MinimumDamage": 500
+        "MinimumDamage": 500,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": {
         "ProjectileSounds": {
@@ -1165,6 +1104,27 @@
       "Projectile": {
         "ShotHeight": 0.5,
         "ProjectileSpeed": 2.5,
+        "StatusEffects": {
+          "Item": {
+            "StatusEffectChain": {
+              "Item": [
+                {
+                  "StatusEffect": 1511,
+                  "StatusDuration": 60000
+                },
+                {
+                  "StatusEffect": 1513,
+                  "StatusDuration": 300000
+                },
+                {
+                  "StatusEffect": 1514,
+                  "StatusDuration": 900000
+                }
+              ]
+            }
+          }
+        },
+        "StatusEffectChainDescription": 4417,
         "DamageType": "Torpedo"
       },
       "Mesh": "",
@@ -1181,7 +1141,21 @@
         "DebrisForceY": 0,
         "DebrisCount": 0,
         "OuterDamageRadius": 4,
-        "MinimumDamage": 750
+        "MinimumDamage": 750,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": {
         "ProjectileSounds": {
@@ -1211,6 +1185,27 @@
       "Projectile": {
         "ShotHeight": 0.5,
         "ProjectileSpeed": 3.5,
+        "StatusEffects": {
+          "Item": {
+            "StatusEffectChain": {
+              "Item": [
+                {
+                  "StatusEffect": 1511,
+                  "StatusDuration": 60000
+                },
+                {
+                  "StatusEffect": 1513,
+                  "StatusDuration": 300000
+                },
+                {
+                  "StatusEffect": 1514,
+                  "StatusDuration": 900000
+                }
+              ]
+            }
+          }
+        },
+        "StatusEffectChainDescription": 4417,
         "DamageType": "Torpedo"
       },
       "Mesh": "",
@@ -1227,7 +1222,21 @@
         "DebrisForceY": 0,
         "DebrisCount": 0,
         "OuterDamageRadius": 4,
-        "MinimumDamage": 1000
+        "MinimumDamage": 1000,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": {
         "ProjectileSounds": {
@@ -1274,7 +1283,21 @@
         "DebrisForceY": 0,
         "DebrisCount": 0,
         "OuterDamageRadius": 4,
-        "MinimumDamage": 500
+        "MinimumDamage": 500,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": {
         "ProjectileSounds": {
@@ -1321,7 +1344,21 @@
         "InnerDamage": 850,
         "DebrisCount": 0,
         "OuterDamageRadius": 8,
-        "MinimumDamage": 1
+        "MinimumDamage": 1,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": {
         "ProjectileSounds": {
@@ -1369,7 +1406,21 @@
         "DebrisForceY": 0,
         "DebrisCount": 0,
         "OuterDamageRadius": 1,
-        "MinimumDamage": 900
+        "MinimumDamage": 900,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": {
         "ProjectileSounds": {
@@ -1417,7 +1468,21 @@
         "DebrisForceY": 0,
         "DebrisCount": 0,
         "OuterDamageRadius": 1,
-        "MinimumDamage": 1300
+        "MinimumDamage": 1300,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": {
         "ProjectileSounds": {
@@ -1465,7 +1530,21 @@
         "DebrisForceY": 0,
         "DebrisCount": 0,
         "OuterDamageRadius": 1,
-        "MinimumDamage": 1800
+        "MinimumDamage": 1800,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": {
         "ProjectileSounds": {
@@ -1514,7 +1593,21 @@
         "DebrisForceY": 0,
         "DebrisCount": 0,
         "OuterDamageRadius": 1,
-        "MinimumDamage": 1300
+        "MinimumDamage": 1300,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": {
         "ProjectileSounds": {
@@ -1554,6 +1647,20 @@
         "InnerDamage": 1,
         "OuterDamageRadius": 10,
         "MinimumDamage": 0.5,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
         "KamikazeRadiusDecal": 501554
       },
       "SoundEmitter": {
@@ -1594,6 +1701,20 @@
         "InnerDamage": 1.2,
         "OuterDamageRadius": 10,
         "MinimumDamage": 0.5,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
         "KamikazeRadiusDecal": 501554
       },
       "SoundEmitter": {
@@ -1619,8 +1740,7 @@
     "Values": {
       "Standard": {
         "GUID": 110968,
-        "Name": "AnarchyBombProjectile",
-        "Version": "dm"
+        "Name": "AnarchyBombProjectile"
       },
       "Projectile": {
         "ProjectileType": "Arc",
@@ -1647,7 +1767,21 @@
         "InnerDamage": 1500,
         "DebrisCount": 0,
         "OuterDamageRadius": 3,
-        "MinimumDamage": 1000
+        "MinimumDamage": 1000,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": {
         "ProjectileSounds": {
@@ -1675,8 +1809,7 @@
     "Values": {
       "Standard": {
         "GUID": 110972,
-        "Name": "AnarchyBombBigProjectile",
-        "Version": "dm"
+        "Name": "AnarchyBombBigProjectile"
       },
       "Projectile": {
         "ProjectileType": "Arc",
@@ -1703,7 +1836,21 @@
         "InnerDamage": 2000,
         "DebrisCount": 0,
         "OuterDamageRadius": 3,
-        "MinimumDamage": 1500
+        "MinimumDamage": 1500,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": {
         "ProjectileSounds": {
@@ -1731,8 +1878,7 @@
     "Values": {
       "Standard": {
         "GUID": 110978,
-        "Name": "AnarchyNewspaperProjectile",
-        "Version": "dm"
+        "Name": "AnarchyNewspaperProjectile"
       },
       "Projectile": {
         "ProjectileType": "Arc",
@@ -1757,7 +1903,21 @@
       "Exploder": {
         "InnerDamageRadius": 0,
         "InnerDamage": 0,
-        "DebrisCount": 0
+        "DebrisCount": 0,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": "",
       "UpgradeList": "",
@@ -1773,8 +1933,7 @@
     "Values": {
       "Standard": {
         "GUID": 110981,
-        "Name": "AnarchyNewspaperBigProjectile",
-        "Version": "dm"
+        "Name": "AnarchyNewspaperBigProjectile"
       },
       "Projectile": {
         "ProjectileType": "Arc",
@@ -1799,7 +1958,21 @@
       "Exploder": {
         "InnerDamageRadius": 0,
         "InnerDamage": 0,
-        "DebrisCount": 0
+        "DebrisCount": 0,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": "",
       "UpgradeList": "",
@@ -1816,8 +1989,7 @@
       "Standard": {
         "GUID": 111146,
         "Name": "AnarchyBombProjectile_FakeInfo",
-        "InfoDescription": 110967,
-        "Version": "dm"
+        "InfoDescription": 110967
       },
       "Projectile": {
         "ProjectileType": "Arc",
@@ -1844,7 +2016,21 @@
         "InnerDamage": 1000,
         "DebrisCount": 0,
         "OuterDamageRadius": 2.5,
-        "MinimumDamage": 1000
+        "MinimumDamage": 1000,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": {
         "ProjectileSounds": {
@@ -1873,8 +2059,7 @@
       "Standard": {
         "GUID": 111147,
         "Name": "AnarchyNewspaperProjectile_FakeInfo",
-        "InfoDescription": 110975,
-        "Version": "dm"
+        "InfoDescription": 110975
       },
       "Projectile": {
         "ProjectileType": "Arc",
@@ -1899,7 +2084,21 @@
       "Exploder": {
         "InnerDamageRadius": 0,
         "InnerDamage": 0,
-        "DebrisCount": 0
+        "DebrisCount": 0,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": "",
       "UpgradeList": "",
@@ -1916,8 +2115,7 @@
       "Standard": {
         "GUID": 112201,
         "Name": "SeaMineProjectile_FakeInfo",
-        "InfoDescription": 112197,
-        "Version": "dm"
+        "InfoDescription": 112197
       },
       "Projectile": {
         "ShotHeight": 0.5,
@@ -1938,7 +2136,21 @@
         "DebrisForceY": 0,
         "DebrisCount": 0,
         "OuterDamageRadius": 4,
-        "MinimumDamage": 500
+        "MinimumDamage": 500,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": {
         "ProjectileSounds": {
@@ -1964,8 +2176,7 @@
       "Standard": {
         "GUID": 112927,
         "Name": "SeaMineProjectile_FakeInfo",
-        "InfoDescription": 112926,
-        "Version": "dlc01"
+        "InfoDescription": 112926
       },
       "Projectile": {
         "ShotHeight": 0.5,
@@ -1986,7 +2197,21 @@
         "DebrisForceY": 0,
         "DebrisCount": 0,
         "OuterDamageRadius": 4,
-        "MinimumDamage": 500
+        "MinimumDamage": 500,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "SoundEmitter": {
         "ProjectileSounds": {
@@ -2012,15 +2237,29 @@
       "Standard": {
         "GUID": 113313,
         "Name": "TreasureMapProjectile_FakeInfo",
-        "InfoDescription": 113312,
-        "Version": "dlc01"
+        "InfoDescription": 113312
       },
       "Projectile": {
         "ShotHeight": 0.5
       },
       "Mesh": "",
       "Object": "",
-      "Exploder": "",
+      "Exploder": {
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
+      },
       "SoundEmitter": "",
       "UpgradeList": "",
       "ProjectileIncident": ""
@@ -2032,8 +2271,7 @@
       "Standard": {
         "GUID": 113402,
         "Name": "RadarProjectile_A",
-        "InfoDescription": 113404,
-        "Version": "dlc01"
+        "InfoDescription": 113404
       },
       "Projectile": "",
       "Mesh": "",
@@ -2046,6 +2284,20 @@
       },
       "Exploder": {
         "InnerDamage": 0,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
         "KamikazeRadiusDecal": 501554
       },
       "SoundEmitter": {
@@ -2072,8 +2324,7 @@
       "Standard": {
         "GUID": 113405,
         "Name": "RadarProjectile_B",
-        "InfoDescription": 113408,
-        "Version": "dlc01"
+        "InfoDescription": 113408
       },
       "Projectile": "",
       "Mesh": "",
@@ -2086,6 +2337,20 @@
       },
       "Exploder": {
         "InnerDamage": 0,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
         "KamikazeRadiusDecal": 501554
       },
       "SoundEmitter": {
@@ -2112,8 +2377,7 @@
       "Standard": {
         "GUID": 113406,
         "Name": "RadarProjectile_C",
-        "InfoDescription": 113410,
-        "Version": "dlc01"
+        "InfoDescription": 113410
       },
       "Projectile": "",
       "Mesh": "",
@@ -2126,6 +2390,20 @@
       },
       "Exploder": {
         "InnerDamage": 0,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
         "KamikazeRadiusDecal": 501554
       },
       "SoundEmitter": {
@@ -2152,15 +2430,29 @@
       "Standard": {
         "GUID": 114892,
         "Name": "BuildPermitProjectile_FakeInfo",
-        "InfoDescription": 22399,
-        "Version": "dlc02"
+        "InfoDescription": 22399
       },
       "Projectile": {
         "ShotHeight": 0.5
       },
       "Mesh": "",
       "Object": "",
-      "Exploder": "",
+      "Exploder": {
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
+      },
       "SoundEmitter": "",
       "UpgradeList": "",
       "ProjectileIncident": ""
@@ -2172,16 +2464,780 @@
       "Standard": {
         "GUID": 120316,
         "Name": "ScholarPermitProjectile_FakeInfo",
-        "InfoDescription": 120318,
-        "Version": "dlc06"
+        "InfoDescription": 120318
       },
       "Projectile": {
         "ShotHeight": 0.5
       },
       "Mesh": "",
       "Object": "",
-      "Exploder": "",
+      "Exploder": {
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
+      },
       "SoundEmitter": "",
+      "UpgradeList": "",
+      "ProjectileIncident": ""
+    }
+  },
+  {
+    "Template": "ExplodingProjectile",
+    "Values": {
+      "Standard": {
+        "GUID": 1518,
+        "Name": "RocketProjectile"
+      },
+      "Projectile": {
+        "ProjectileType": "Arc",
+        "ProjectileSpeed": 20,
+        "Effectivities": {
+          "Item": {
+            "GUID": 191508,
+            "Factor": 9.99
+          }
+        }
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/effects/military/projectiles/projectile_rocket_01.cfg"
+          }
+        }
+      },
+      "Exploder": {
+        "InnerDamageRadius": 1,
+        "InnerDamage": 38,
+        "DebrisForceY": 0,
+        "DebrisCount": 0,
+        "OuterDamageRadius": 8,
+        "MinimumDamage": 18,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
+      },
+      "SoundEmitter": {
+        "ProjectileSounds": {
+          "ProjectileLaunch": {
+            "Item": {
+              "Sound": 200977
+            }
+          },
+          "ProjectileImpact": {
+            "Item": {
+              "Sound": 200976
+            }
+          },
+          "ProjectileVolley": {
+            "Item": {
+              "Sound": 200977
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "ProjectileIncident": ""
+    }
+  },
+  {
+    "Template": "ExplodingProjectile",
+    "Values": {
+      "Standard": {
+        "GUID": 1547,
+        "Name": "RadarProjectile_DLC11",
+        "InfoDescription": 1549
+      },
+      "Projectile": "",
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc01/graphics/effects/particles/sonar_radar/diving_spot_detected_01.cfg"
+          }
+        }
+      },
+      "Exploder": {
+        "InnerDamage": 0,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "KamikazeRadiusDecal": 501554
+      },
+      "SoundEmitter": {
+        "ProjectileSounds": {
+          "ProjectileLaunch": {
+            "Item": {
+              "Sound": 238322
+            }
+          },
+          "ProjectileImpact": {
+            "Item": {
+              "Sound": 238321
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "ProjectileIncident": ""
+    }
+  },
+  {
+    "Template": "ExplodingProjectile",
+    "Values": {
+      "Standard": {
+        "GUID": 2272,
+        "Name": "IgniteProjectile_Airship"
+      },
+      "Projectile": {
+        "ProjectileType": "Arc",
+        "ShotAngle": 35,
+        "ProjectileSpeed": 7,
+        "StatusEffects": {
+          "Item": [
+            {
+              "StatusEffectChain": {
+                "Item": [
+                  {
+                    "StatusEffect": 1401,
+                    "StatusDuration": 15000
+                  },
+                  {
+                    "StatusEffect": 1402,
+                    "StatusDuration": 120000
+                  },
+                  {
+                    "StatusEffect": 1403,
+                    "StatusDuration": 900000
+                  }
+                ]
+              },
+              "StatusEffectExclusiveGroup": 1410
+            },
+            {
+              "StatusEffectChain": {
+                "Item": [
+                  {
+                    "StatusEffect": 1407,
+                    "StatusDuration": 15000
+                  },
+                  {
+                    "StatusEffect": 1408,
+                    "StatusDuration": 300000
+                  },
+                  {
+                    "StatusEffect": 1409,
+                    "StatusDuration": 600000
+                  }
+                ]
+              },
+              "StatusEffectExclusiveGroup": 1411
+            }
+          ]
+        }
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/effects/military/projectiles/projectile_firebomb.cfg"
+          }
+        }
+      },
+      "Exploder": {
+        "InnerDamageRadius": 1,
+        "InnerDamage": 600,
+        "DebrisCount": 0,
+        "OuterDamageRadius": 8,
+        "MinimumDamage": 350,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
+      },
+      "SoundEmitter": {
+        "ProjectileSounds": {
+          "ProjectileLaunch": {
+            "Item": {
+              "Sound": 200973
+            }
+          },
+          "ProjectileImpact": {
+            "Item": {
+              "Sound": 200972
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "ProjectileIncident": {
+        "CausedIncidentDuration": 0
+      }
+    }
+  },
+  {
+    "Template": "ExplodingProjectile",
+    "Values": {
+      "Standard": {
+        "GUID": 1047,
+        "Name": "Bombs Drop Projectile"
+      },
+      "Projectile": {
+        "ProjectileType": "ArcStaticRotation",
+        "ShotAngle": 15,
+        "ProjectileSpeed": 3.5
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/effects/military/projectiles/projectile_bomb_01.cfg"
+          }
+        }
+      },
+      "Exploder": {
+        "InnerDamageRadius": 3,
+        "InnerDamage": 200,
+        "DebrisForceY": 2,
+        "DebrisCount": 3,
+        "OuterDamageRadius": 8,
+        "MinimumDamage": 110,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
+      },
+      "SoundEmitter": {
+        "ProjectileSounds": {
+          "ProjectileLaunch": {
+            "Item": {
+              "Sound": 200968
+            }
+          },
+          "ProjectileImpact": {
+            "Item": {
+              "Sound": 200967
+            }
+          },
+          "ProjectileVolley": {
+            "Item": {
+              "Sound": 200968
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "ProjectileIncident": ""
+    }
+  },
+  {
+    "Template": "ExplodingProjectile",
+    "Values": {
+      "Standard": {
+        "GUID": 1048,
+        "Name": "Sea Mines Drop Projectile"
+      },
+      "Projectile": {
+        "ProjectileType": "ArcStaticRotation",
+        "ShotAngle": 15,
+        "SpawnImpactObject": 1889
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/effects/military/projectiles/dropgood_parachute_watermine.cfg"
+          }
+        }
+      },
+      "Exploder": {
+        "InnerDamageRadius": 5,
+        "InnerDamage": 0,
+        "DebrisForceY": 3,
+        "DebrisCount": 0,
+        "OuterDamageRadius": 5,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
+      },
+      "SoundEmitter": {
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": ""
+          },
+          "BuildUpgrade": {
+            "Item": ""
+          }
+        },
+        "ProjectileSounds": {
+          "ProjectileLaunch": {
+            "Item": {
+              "Sound": 200979
+            }
+          },
+          "ProjectileImpact": {
+            "Item": {
+              "Sound": 200978
+            }
+          },
+          "ProjectileVolley": {
+            "Item": {
+              "Sound": 200979
+            }
+          }
+        },
+        "ProductionSounds": {
+          "UI": {
+            "Item": ""
+          }
+        }
+      },
+      "UpgradeList": "",
+      "ProjectileIncident": ""
+    }
+  },
+  {
+    "Template": "ExplodingProjectile",
+    "Values": {
+      "Standard": {
+        "GUID": 1049,
+        "Name": "Flyers Projectile"
+      },
+      "Projectile": {
+        "ProjectileType": "ArcStaticRotation",
+        "StatusEffects": {
+          "Item": [
+            {
+              "StatusEffectChain": {
+                "Item": [
+                  {
+                    "StatusEffect": 1284,
+                    "StatusDuration": 330000
+                  },
+                  {
+                    "StatusEffect": 1285,
+                    "StatusDuration": 900000
+                  },
+                  {
+                    "StatusEffect": 1286,
+                    "StatusDuration": 3600000
+                  }
+                ]
+              },
+              "StatusEffectExclusiveGroup": 1290
+            },
+            {
+              "StatusEffectChain": {
+                "Item": [
+                  {
+                    "StatusEffect": 1287,
+                    "StatusDuration": 330000
+                  },
+                  {
+                    "StatusEffect": 1288,
+                    "StatusDuration": 900000
+                  },
+                  {
+                    "StatusEffect": 1289,
+                    "StatusDuration": 3600000
+                  }
+                ]
+              },
+              "StatusEffectExclusiveGroup": 1291
+            }
+          ]
+        },
+        "ApplyStatusEffectsWithoutDamageCheck": 1,
+        "StatusEffectChainDescription": 4411
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/effects/military/projectiles/dropgood_parachute_propaganda.cfg"
+          }
+        }
+      },
+      "Exploder": {
+        "InnerDamageRadius": 5,
+        "InnerDamage": 0,
+        "DebrisForceY": 3,
+        "DebrisCount": 0,
+        "OuterDamageRadius": 5,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
+      },
+      "SoundEmitter": {
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": ""
+          },
+          "BuildUpgrade": {
+            "Item": ""
+          }
+        },
+        "ProjectileSounds": {
+          "ProjectileLaunch": {
+            "Item": {
+              "Sound": 200971
+            }
+          },
+          "ProjectileVolley": {
+            "Item": {
+              "Sound": 200971
+            }
+          }
+        },
+        "ProductionSounds": {
+          "UI": {
+            "Item": ""
+          }
+        }
+      },
+      "UpgradeList": "",
+      "ProjectileIncident": ""
+    }
+  },
+  {
+    "Template": "ExplodingProjectile",
+    "Values": {
+      "Standard": {
+        "GUID": 1050,
+        "Name": "Care Packages Projectile"
+      },
+      "Projectile": {
+        "ProjectileType": "ArcStaticRotation",
+        "ShotAngle": 15,
+        "StatusEffects": {
+          "Item": [
+            {
+              "StatusEffectChain": {
+                "Item": [
+                  {
+                    "StatusEffect": 1292,
+                    "StatusDuration": 330000
+                  },
+                  {
+                    "StatusEffect": 1293,
+                    "StatusDuration": 600000
+                  },
+                  {
+                    "StatusEffect": 1294,
+                    "StatusDuration": 2700000
+                  }
+                ]
+              },
+              "StatusEffectExclusiveGroup": 1295
+            },
+            {
+              "StatusEffectChain": {
+                "Item": [
+                  {
+                    "StatusEffect": 1297,
+                    "StatusDuration": 330000
+                  },
+                  {
+                    "StatusEffect": 1298,
+                    "StatusDuration": 600000
+                  },
+                  {
+                    "StatusEffect": 1299,
+                    "StatusDuration": 2700000
+                  }
+                ]
+              },
+              "StatusEffectExclusiveGroup": 1300
+            }
+          ]
+        },
+        "ApplyStatusEffectsWithoutDamageCheck": 1,
+        "StatusEffectChainDescription": 4410
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/effects/military/projectiles/dropgood_parachute_supplies.cfg"
+          }
+        }
+      },
+      "Exploder": {
+        "InnerDamageRadius": 5,
+        "InnerDamage": 0,
+        "DebrisForceY": 3,
+        "DebrisCount": 0,
+        "OuterDamageRadius": 5,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
+      },
+      "SoundEmitter": {
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": ""
+          },
+          "BuildUpgrade": {
+            "Item": ""
+          }
+        },
+        "ProjectileSounds": {
+          "ProjectileLaunch": {
+            "Item": {
+              "Sound": 200975
+            }
+          },
+          "ProjectileImpact": {
+            "Item": {
+              "Sound": 200974
+            }
+          },
+          "ProjectileVolley": {
+            "Item": {
+              "Sound": 200975
+            }
+          }
+        },
+        "ProductionSounds": {
+          "UI": {
+            "Item": ""
+          }
+        }
+      },
+      "UpgradeList": "",
+      "ProjectileIncident": ""
+    }
+  },
+  {
+    "Template": "ExplodingProjectile",
+    "Values": {
+      "Standard": {
+        "GUID": 1051,
+        "Name": "Water Drop Projectile"
+      },
+      "Projectile": {
+        "ProjectileType": "ArcStaticRotation",
+        "ShotHeight": 5,
+        "ShotAngle": 0,
+        "ApplyStatusEffectsWithoutDamageCheck": 1
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/effects/military/projectiles/dropgood_parachute_water.cfg"
+          }
+        }
+      },
+      "Exploder": {
+        "InnerDamageRadius": 5,
+        "InnerDamage": 0,
+        "DebrisForceY": 0,
+        "DebrisCount": 0,
+        "OuterDamageRadius": 5,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
+      },
+      "SoundEmitter": {
+        "SelectionSounds": {
+          "Item": ""
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": ""
+          },
+          "BuildUpgrade": {
+            "Item": ""
+          }
+        },
+        "ProjectileSounds": {
+          "ProjectileLaunch": {
+            "Item": {
+              "Sound": 201026
+            }
+          },
+          "ProjectileImpact": {
+            "Item": {
+              "Sound": 201025
+            }
+          },
+          "ProjectileVolley": {
+            "Item": {
+              "Sound": 201026
+            }
+          }
+        },
+        "ProductionSounds": {
+          "UI": {
+            "Item": ""
+          }
+        }
+      },
+      "UpgradeList": "",
+      "ProjectileIncident": {
+        "HealedIncident": "Fire"
+      }
+    }
+  },
+  {
+    "Template": "ExplodingProjectile",
+    "Values": {
+      "Standard": {
+        "GUID": 105525,
+        "Name": "SmallFishingProjectile"
+      },
+      "Projectile": {
+        "ProjectileType": "Arc",
+        "ShotHeight": 2,
+        "ProjectileSpeed": 3,
+        "SpawnImpactObject": 105528
+      },
+      "Mesh": {
+        "ConstructionEffectDuration": 0,
+        "DeconstructionEffectDuration": 0,
+        "MoveEffectDuration": 0,
+        "ChangeGUIDEffectDuration": 0,
+        "ForbidCollapseEffect": 1
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/effects/military/projectiles/projectile_fishing_net_01.cfg"
+          }
+        }
+      },
+      "Exploder": {
+        "InnerDamageRadius": 1,
+        "InnerDamage": 0,
+        "DebrisCount": 0,
+        "OuterDamageRadius": 2,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
+      },
+      "SoundEmitter": {
+        "ProjectileSounds": {
+          "ProjectileLaunch": {
+            "Item": {
+              "Sound": 239626
+            }
+          },
+          "ProjectileImpact": {
+            "Item": {
+              "Sound": 239737
+            }
+          }
+        }
+      },
       "UpgradeList": "",
       "ProjectileIncident": ""
     }

@@ -23,9 +23,20 @@
           "MaxLookDuration": 30,
           "MinVisitorsCultural": 15,
           "MaxVisitorsCultural": 200,
-          "VisitorsMonument_NoEvent": 50,
-          "MinVisitorsMonument_EventRunning": 200,
-          "MaxVisitorsMonument_EventRunning": 500,
+          "MonumentConfigs": {
+            "Item": {
+              "MonumentBuilding": 1010492,
+              "VisitorsNoEvent": 50,
+              "MinVisitorsEventPreparation": 50,
+              "MaxVisitorsEventPreparation": 50,
+              "MinVisitorsEventRunning": 200,
+              "MaxVisitorsEventRunning": 500,
+              "MinVisitorsEventOver": 200,
+              "MaxVisitorsEventOver": 500,
+              "AllowSpawnAtEntranceWhenLeaving": 1,
+              "ConsiderIslandVisitorFactor": 1
+            }
+          },
           "BaseSpawnRange": 20,
           "MaxSpawnRange": 50,
           "MinSpawnBuildingsToExpand": 10,
@@ -39,14 +50,14 @@
         },
         "InteractionConfig": {
           "ReactionsPerMood": {
+            "Bad": {
+              "MinHappiness": -1000
+            },
             "Neutral": {
               "MinHappiness": -5
             },
             "Good": {
               "MinHappiness": 6
-            },
-            "Bad": {
-              "MinHappiness": -1000
             }
           },
           "ReactionPairs": {
@@ -411,6 +422,12 @@
             },
             "FuelTransporter": {
               "TransporterClass": 270081
+            },
+            "MailTransporter": {
+              "TransporterClass": 831
+            },
+            "FactoryTransporterScooter": {
+              "TransporterClass": 9522
             }
           }
         },
@@ -425,7 +442,8 @@
             "MaxBusPassengers": 5,
             "MaxPeoplePerBusStop": 10,
             "IslandTourismPopulationCountConsideredFull": 1000
-          }
+          },
+          "MemoryLimitGroup": "Tourists"
         },
         "MineLorryConfig": {
           "LorryVariants": {
@@ -524,70 +542,98 @@
                   }
                 },
                 "VehicleSpawners": {
-                  "Item": {
-                    "UnitClass": 269771,
-                    "ShrinksFieldsOnTouch": 1
-                  }
+                  "Item": [
+                    {
+                      "UnitClass": 269771,
+                      "ShrinksFieldsOnTouch": 1,
+                      "VehicleType": "Harvester"
+                    },
+                    {
+                      "UnitClass": 25272,
+                      "VehicleType": "Fertilizer"
+                    }
+                  ]
                 }
               },
               {
                 "Building": 1010264,
                 "PersonSpawners": {
                   "Item": {
-                    "UnitClass": 141674,
-                    "Amount_Motorized": 4
+                    "UnitClass": 141674
                   }
                 },
                 "VehicleSpawners": {
-                  "Item": {
-                    "UnitClass": 269770
-                  }
+                  "Item": [
+                    {
+                      "UnitClass": 269770
+                    },
+                    {
+                      "UnitClass": 25272,
+                      "VehicleType": "Fertilizer"
+                    }
+                  ]
                 }
               },
               {
                 "Building": 100654,
                 "PersonSpawners": {
                   "Item": {
-                    "UnitClass": 141674,
-                    "Amount_Motorized": 4
+                    "UnitClass": 141674
                   }
                 },
                 "VehicleSpawners": {
-                  "Item": {
-                    "UnitClass": 269769
-                  }
+                  "Item": [
+                    {
+                      "UnitClass": 269769
+                    },
+                    {
+                      "UnitClass": 25272,
+                      "VehicleType": "Fertilizer"
+                    }
+                  ]
                 }
               },
               {
                 "Building": 1010265,
                 "PersonSpawners": {
                   "Item": {
-                    "UnitClass": 141674,
-                    "Amount_Motorized": 4
+                    "UnitClass": 141674
                   }
                 },
                 "VehicleSpawners": {
-                  "Item": {
-                    "UnitClass": 270095
-                  }
+                  "Item": [
+                    {
+                      "UnitClass": 270095
+                    },
+                    {
+                      "UnitClass": 25272,
+                      "VehicleType": "Fertilizer"
+                    }
+                  ]
                 }
               },
               {
                 "Building": 100655,
                 "PersonSpawners": {
                   "Item": {
-                    "UnitClass": 141674,
-                    "Amount_Motorized": 4
+                    "UnitClass": 141674
                   }
                 },
                 "VehicleSpawners": {
-                  "Item": {
-                    "UnitClass": 270096
-                  }
+                  "Item": [
+                    {
+                      "UnitClass": 270096
+                    },
+                    {
+                      "UnitClass": 25272,
+                      "VehicleType": "Fertilizer"
+                    }
+                  ]
                 }
               }
             ]
-          }
+          },
+          "MemoryLimitGroup": "Productions"
         },
         "ParadeTrainConfig": {
           "ParadeTrainClass": 141900
@@ -671,38 +717,6 @@
               ]
             }
           },
-          "ParadeQueen": {
-            "TrailerCfgs": {
-              "Item": {
-                "RelativeProbability": 100,
-                "TrailerCfg": "data/dlc08/graphics/effects/city_incidents/queens_parade/queens_coach_01.cfg"
-              }
-            }
-          },
-          "MountedSingleGuard": {
-            "TrailerCfgs": {
-              "Item": {
-                "RelativeProbability": 100,
-                "TrailerCfg": "data/dlc08/graphics/effects/city_incidents/queens_parade/mounted_single_guard_01.cfg"
-              }
-            }
-          },
-          "MountedGuards": {
-            "TrailerCfgs": {
-              "Item": {
-                "RelativeProbability": 100,
-                "TrailerCfg": "data/dlc08/graphics/effects/city_incidents/queens_parade/mounted_guards_01.cfg"
-              }
-            }
-          },
-          "WalkingGuards": {
-            "TrailerCfgs": {
-              "Item": {
-                "RelativeProbability": 100,
-                "TrailerCfg": "data/dlc08/graphics/effects/city_incidents/queens_parade/walking_guards_01.cfg"
-              }
-            }
-          },
           "AnarchyParadeWalker": {
             "TrailerCfgs": {
               "Item": [
@@ -750,6 +764,38 @@
                 }
               ]
             }
+          },
+          "ParadeQueen": {
+            "TrailerCfgs": {
+              "Item": {
+                "RelativeProbability": 100,
+                "TrailerCfg": "data/dlc08/graphics/effects/city_incidents/queens_parade/queens_coach_01.cfg"
+              }
+            }
+          },
+          "MountedSingleGuard": {
+            "TrailerCfgs": {
+              "Item": {
+                "RelativeProbability": 100,
+                "TrailerCfg": "data/dlc08/graphics/effects/city_incidents/queens_parade/mounted_single_guard_01.cfg"
+              }
+            }
+          },
+          "MountedGuards": {
+            "TrailerCfgs": {
+              "Item": {
+                "RelativeProbability": 100,
+                "TrailerCfg": "data/dlc08/graphics/effects/city_incidents/queens_parade/mounted_guards_01.cfg"
+              }
+            }
+          },
+          "WalkingGuards": {
+            "TrailerCfgs": {
+              "Item": {
+                "RelativeProbability": 100,
+                "TrailerCfg": "data/dlc08/graphics/effects/city_incidents/queens_parade/walking_guards_01.cfg"
+              }
+            }
           }
         },
         "ParadeSpectatorConfig": {
@@ -778,11 +824,15 @@
           "VehicleAsset": 2001019,
           "TrainAsset": 141997
         },
+        "MailmanConfig": {
+          "MaxMailmansPerBuilding": 5,
+          "MailmanPerSurroundingResidence": 0.15,
+          "MailmanFeedbackClass": 4150
+        },
         "WorkforceTransferConfig": {
-          "MaxPierWorkers": 50,
-          "WorkerPierFeedbackFactor": 1,
           "WorkerPierSpawnBuilding": 101642,
-          "WorkerFeedbackClass": 142326
+          "WorkerFeedbackClass": 142326,
+          "MemoryLimitGroup": "Productions"
         },
         "OverwritablePart": {
           "Default_NoOverwrite": {
@@ -791,6 +841,10 @@
           "Mercier": {
             "OverwritableBalancing": 142616
           }
+        },
+        "CanalConfig": {
+          "BoatsPerCanalTile": 0.08,
+          "AnimalsPerCanalTile": 0.15
         }
       }
     }

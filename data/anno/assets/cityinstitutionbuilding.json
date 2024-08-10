@@ -5,7 +5,7 @@
       "Standard": {
         "GUID": 1010462,
         "Name": "institution_01 (Police)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_police.png",
+        "IconFilename": "data/ui/2kimages/main/3dicons/city_institution/icon_police.png",
         "InfoDescription": 3788
       },
       "Building": {
@@ -45,18 +45,34 @@
           "Item": {
             "Filename": "data/graphics/buildings/public/institution_01/institution_01.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 1010462,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312,
+          "OverrideDefaultIcon": "data/ui/2kimages/main/3dicons/ornaments/cosmetic_dlc09/icon_policestation_default.png",
+          "SkinList": {
+            "Item": {
+              "SkinAssetGuid": 5230
+            }
+          }
         }
       },
       "Mesh": "",
       "Selection": {
-        "GUIType": "CityInstitution"
+        "GUIType": "CityInstitution",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Police Station",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 3735
@@ -104,6 +120,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 4500,
         "SelfHealPerHealTick": 4
       },
@@ -121,7 +138,27 @@
         "AmbientMood": "ResidenceTier1"
       },
       "Culture": "",
-      "QuestObject": ""
+      "QuestObject": "",
+      "Upgradable": {
+        "NextGUID": 6353,
+        "UpgradeCost": {
+          "Item": [
+            {
+              "Amount": 1200,
+              "Ingredient": 1010017
+            },
+            {
+              "Amount": 5,
+              "Ingredient": 1010196
+            },
+            {
+              "Amount": 5,
+              "Ingredient": 1010205
+            }
+          ]
+        },
+        "UpgradeMode": "AdvancedIncidentBuilding"
+      }
     }
   },
   {
@@ -130,7 +167,7 @@
       "Standard": {
         "GUID": 1010463,
         "Name": "institution_02 (Fire Department)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_fire_house.png",
+        "IconFilename": "data/ui/2kimages/main/3dicons/city_institution/icon_fire_brigade.png",
         "InfoDescription": 118032
       },
       "Building": {
@@ -169,18 +206,34 @@
           "Item": {
             "Filename": "data/graphics/buildings/public/institution_02/institution_02.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 1010463,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312,
+          "OverrideDefaultIcon": "data/ui/2kimages/main/3dicons/ornaments/cosmetic_dlc09/icon_firestation_default.png",
+          "SkinList": {
+            "Item": {
+              "SkinAssetGuid": 5229
+            }
+          }
         }
       },
       "Mesh": "",
       "Selection": {
-        "GUIType": "CityInstitution"
+        "GUIType": "CityInstitution",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Fire Station",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 3736
@@ -228,6 +281,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 3500,
         "SelfHealPerHealTick": 4
       },
@@ -249,7 +303,23 @@
         "AmbientMood": "ResidenceTier1"
       },
       "Culture": "",
-      "QuestObject": ""
+      "QuestObject": "",
+      "Upgradable": {
+        "NextGUID": 6354,
+        "UpgradeCost": {
+          "Item": [
+            {
+              "Amount": 1000,
+              "Ingredient": 1010017
+            },
+            {
+              "Amount": 2,
+              "Ingredient": 1010196
+            }
+          ]
+        },
+        "UpgradeMode": "AdvancedIncidentBuilding"
+      }
     }
   },
   {
@@ -258,13 +328,12 @@
       "Standard": {
         "GUID": 1010464,
         "Name": "institution_03 (Hospital)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_hospital.png",
+        "IconFilename": "data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png",
         "InfoDescription": 3789
       },
       "Building": {
         "BuildModeRandomRotation": 90,
-        "AssociatedRegions": "Moderate",
-        "AllowChangeDirection": 1
+        "AssociatedRegions": "Moderate"
       },
       "Blocking": "",
       "Cost": {
@@ -301,18 +370,34 @@
           "Item": {
             "Filename": "data/graphics/buildings/public/institution_03/institution_03.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 1010464,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312,
+          "OverrideDefaultIcon": "data/ui/2kimages/main/3dicons/ornaments/cosmetic_dlc13/icon_hospital_default.png",
+          "SkinList": {
+            "Item": {
+              "SkinAssetGuid": 30477
+            }
+          }
         }
       },
       "Mesh": "",
       "Selection": {
-        "GUIType": "CityInstitution"
+        "GUIType": "CityInstitution",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Hospital",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 3737
@@ -363,6 +448,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 5500,
         "SelfHealPerHealTick": 4
       },
@@ -380,7 +466,31 @@
         "AmbientMood": "ResidenceTier1"
       },
       "Culture": "",
-      "QuestObject": ""
+      "QuestObject": "",
+      "Upgradable": {
+        "NextGUID": 6355,
+        "UpgradeCost": {
+          "Item": [
+            {
+              "Amount": 2000,
+              "Ingredient": 1010017
+            },
+            {
+              "Amount": 6,
+              "Ingredient": 1010196
+            },
+            {
+              "Amount": 5,
+              "Ingredient": 1010205
+            },
+            {
+              "Amount": 4,
+              "Ingredient": 1010218
+            }
+          ]
+        },
+        "UpgradeMode": "AdvancedIncidentBuilding"
+      }
     }
   }
 ]

@@ -74,20 +74,32 @@
             "Property": "Constructable",
             "GameObjectState": "GameLogic;Blueprint;Visible"
           },
-          "DisableMatch1": {
-            "Property": "Blocking"
-          },
           "TargetMatch2": {
             "Flags": "CheckProperty;Movable;IsOnPlayerArea",
             "Property": "Slot",
             "GameObjectState": "GameLogic;Blueprint;Visible"
+          },
+          "DisableMatch1": {
+            "Flags": "AndNextMatch;CheckProperty",
+            "Property": "Blocking"
+          },
+          "DisableMatch2": {
+            "Flags": "CheckNotProperty",
+            "Property": "Bridge"
           }
         },
         "MouseCursorTarget": 2001035,
         "MouseCursorDisable": 2001208,
         "MouseCursorMode": 2001029,
         "MouseCursorPosition": 2001029,
-        "MouseCursorPositionDisable": 2001208
+        "MouseCursorPositionDisable": 2001208,
+        "Secondary": {
+          "SecondaryCursorTarget": 24699,
+          "SecondaryCursorDisable": 24699,
+          "SecondaryCursorMode": 24699,
+          "SecondaryCursorPosition": 24699,
+          "SecondaryCursorPositionDisable": 24699
+        }
       },
       "Standard": {
         "GUID": 2001042,
@@ -99,8 +111,7 @@
         "LocaText": {
           "English": {
             "Text": "Relocate",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 5317
@@ -131,7 +142,14 @@
         "MouseCursorDisable": 2001207,
         "MouseCursorMode": 2001031,
         "MouseCursorPosition": 2001037,
-        "MouseCursorPositionDisable": 2001207
+        "MouseCursorPositionDisable": 2001207,
+        "Secondary": {
+          "SecondaryCursorTarget": 24700,
+          "SecondaryCursorDisable": 24700,
+          "SecondaryCursorMode": 24700,
+          "SecondaryCursorPosition": 24700,
+          "SecondaryCursorPositionDisable": 24700
+        }
       },
       "Standard": {
         "GUID": 2001043,
@@ -143,8 +161,7 @@
         "LocaText": {
           "English": {
             "Text": "Copy",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 5318
@@ -175,7 +192,14 @@
         "MouseCursorDisable": 2001206,
         "MouseCursorMode": 2001030,
         "MouseCursorPosition": 2001036,
-        "MouseCursorPositionDisable": 2001026
+        "MouseCursorPositionDisable": 2001026,
+        "Secondary": {
+          "SecondaryCursorTarget": 24703,
+          "SecondaryCursorDisable": 24703,
+          "SecondaryCursorMode": 24703,
+          "SecondaryCursorPosition": 24703,
+          "SecondaryCursorPositionDisable": 24703
+        }
       },
       "Standard": {
         "GUID": 2001044,
@@ -187,8 +211,7 @@
         "LocaText": {
           "English": {
             "Text": "Demolish",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 5319
@@ -200,6 +223,8 @@
     "Values": {
       "Target": {
         "ActionID": "UPGRADE",
+        "PositionCheck": "UpgradableStreet",
+        "PositionCheckDisable": "NonUpgradableStreet",
         "Matches": {
           "SelectionMatch1": {
             "Flags": "Never",
@@ -219,7 +244,14 @@
         "MouseCursorDisable": 2001778,
         "MouseCursorMode": 2001776,
         "MouseCursorPosition": 2001777,
-        "MouseCursorPositionDisable": 2001778
+        "MouseCursorPositionDisable": 2001778,
+        "Secondary": {
+          "SecondaryCursorTarget": 24701,
+          "SecondaryCursorDisable": 24701,
+          "SecondaryCursorMode": 24701,
+          "SecondaryCursorPosition": 24701,
+          "SecondaryCursorPositionDisable": 24701
+        }
       },
       "Standard": {
         "GUID": 2001775,
@@ -231,8 +263,7 @@
         "LocaText": {
           "English": {
             "Text": "Upgrade",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 5320
@@ -289,7 +320,12 @@
         },
         "MouseCursorTarget": 2001385,
         "MouseCursorDisable": 2001207,
-        "MouseCursorMode": 2001372
+        "MouseCursorMode": 2001372,
+        "Secondary": {
+          "SecondaryCursorTarget": 24712,
+          "SecondaryCursorDisable": 24712,
+          "SecondaryCursorMode": 24712
+        }
       },
       "Standard": {
         "GUID": 2001294,
@@ -338,20 +374,27 @@
             "Flags": "AndNextMatch;OwnedByPlayer;CheckProperty",
             "Property": "Attacker"
           },
-          "TargetMatch1": {
-            "Flags": "CheckProperty;NotSelf;OwnedByEnemy;Attackable",
-            "Property": "Attackable"
-          },
           "SelectionMatch2": {
             "Flags": "CheckProperty",
             "Property": "CommandQueue"
+          },
+          "TargetMatch1": {
+            "Flags": "CheckProperty;NotSelf;Attackable",
+            "Property": "Attackable"
           }
         },
         "MouseCursorTarget": 2001298,
         "MouseCursorDisable": 2001299,
         "MouseCursorMode": 2001297,
         "MouseCursorPosition": 2001297,
-        "MouseCursorPositionDisable": 2001299
+        "MouseCursorPositionDisable": 2001299,
+        "Secondary": {
+          "SecondaryCursorTarget": 24704,
+          "SecondaryCursorDisable": 24704,
+          "SecondaryCursorMode": 24704,
+          "SecondaryCursorPosition": 24704,
+          "SecondaryCursorPositionDisable": 24704
+        }
       },
       "Standard": {
         "GUID": 2001296,
@@ -394,12 +437,12 @@
             "Flags": "AndNextMatch;OwnedByPlayer;CheckProperty",
             "Property": "CommandQueue"
           },
-          "TargetMatch1": {
-            "Flags": "AndNextMatch;CheckProperty;NotSelfIgnoreMultiselection;Guardable",
-            "Property": "Walking"
-          },
           "SelectionMatch2": {
             "Flags": "CheckProperty",
+            "Property": "Walking"
+          },
+          "TargetMatch1": {
+            "Flags": "AndNextMatch;CheckProperty;NotSelfIgnoreMultiselection;Guardable",
             "Property": "Walking"
           },
           "TargetMatch2": {
@@ -411,7 +454,14 @@
         "MouseCursorDisable": 2001370,
         "MouseCursorMode": 2001383,
         "MouseCursorPosition": 2001370,
-        "MouseCursorPositionDisable": 2001212
+        "MouseCursorPositionDisable": 2001212,
+        "Secondary": {
+          "SecondaryCursorTarget": 24711,
+          "SecondaryCursorDisable": 24711,
+          "SecondaryCursorMode": 24711,
+          "SecondaryCursorPosition": 24711,
+          "SecondaryCursorPositionDisable": 24711
+        }
       },
       "Standard": {
         "GUID": 2001352,
@@ -430,18 +480,21 @@
             "Flags": "AndNextMatch;OwnedByPlayer;CheckProperty",
             "Property": "CommandQueue"
           },
+          "SelectionMatch2": {
+            "Flags": "CheckProperty",
+            "Property": "Walking"
+          },
           "TargetMatch1": {
             "Flags": "NotSelf;IsInteractable"
           },
           "DisableMatch1": {
             "Flags": "Never"
-          },
-          "SelectionMatch2": {
-            "Flags": "CheckProperty",
-            "Property": "Walking"
           }
         },
-        "MouseCursorTarget": 2001385
+        "MouseCursorTarget": 2001385,
+        "Secondary": {
+          "SecondaryCursorTarget": 24712
+        }
       },
       "Standard": {
         "GUID": 2001781,
@@ -472,7 +525,14 @@
         "MouseCursorDisable": 2001299,
         "MouseCursorMode": 501558,
         "MouseCursorPosition": 501558,
-        "MouseCursorPositionDisable": 2001299
+        "MouseCursorPositionDisable": 2001299,
+        "Secondary": {
+          "SecondaryCursorTarget": 24715,
+          "SecondaryCursorDisable": 24715,
+          "SecondaryCursorMode": 24715,
+          "SecondaryCursorPosition": 24715,
+          "SecondaryCursorPositionDisable": 24715
+        }
       },
       "Standard": {
         "GUID": 2001244,
@@ -497,7 +557,11 @@
           }
         },
         "MouseCursorMode": 2001299,
-        "MouseCursorPosition": 2001297
+        "MouseCursorPosition": 2001297,
+        "Secondary": {
+          "SecondaryCursorMode": 24704,
+          "SecondaryCursorPosition": 24704
+        }
       },
       "Standard": {
         "GUID": 2001744,
@@ -516,16 +580,21 @@
           "TargetMatch1": {
             "Flags": "OrNextMatch;IsCoastalBuilding"
           },
-          "DisableMatch1": {
-            "Flags": "Never"
-          },
           "TargetMatch2": {
             "Flags": "OwnedByPirate"
+          },
+          "DisableMatch1": {
+            "Flags": "Never"
           }
         },
         "MouseCursorTarget": 2001297,
         "MouseCursorMode": 2001299,
-        "MouseCursorPosition": 2001297
+        "MouseCursorPosition": 2001297,
+        "Secondary": {
+          "SecondaryCursorTarget": 24704,
+          "SecondaryCursorMode": 24704,
+          "SecondaryCursorPosition": 24704
+        }
       },
       "Standard": {
         "GUID": 2001747,
@@ -608,7 +677,14 @@
         "MouseCursorDisable": 501850,
         "MouseCursorMode": 501851,
         "MouseCursorPosition": 501851,
-        "MouseCursorPositionDisable": 501850
+        "MouseCursorPositionDisable": 501850,
+        "Secondary": {
+          "SecondaryCursorTarget": 24705,
+          "SecondaryCursorDisable": 24705,
+          "SecondaryCursorMode": 24705,
+          "SecondaryCursorPosition": 24705,
+          "SecondaryCursorPositionDisable": 24705
+        }
       },
       "Standard": {
         "GUID": 140561,
@@ -640,7 +716,14 @@
         "MouseCursorDisable": 501850,
         "MouseCursorMode": 501851,
         "MouseCursorPosition": 501851,
-        "MouseCursorPositionDisable": 501850
+        "MouseCursorPositionDisable": 501850,
+        "Secondary": {
+          "SecondaryCursorTarget": 24705,
+          "SecondaryCursorDisable": 24705,
+          "SecondaryCursorMode": 24705,
+          "SecondaryCursorPosition": 24705,
+          "SecondaryCursorPositionDisable": 24705
+        }
       },
       "Standard": {
         "GUID": 140562,
@@ -656,17 +739,22 @@
       "Target": {
         "ActionID": "ITEM",
         "Matches": {
+          "SelectionMatch1": {
+            "Flags": "OwnedByPlayer"
+          },
           "TargetMatch1": {
             "Flags": "CheckProperty;NotSelf;NotActionBlocked",
             "Property": "ChannelTarget"
-          },
-          "SelectionMatch1": {
-            "Flags": "OwnedByPlayer"
           }
         },
         "MouseCursorTarget": 2001297,
         "MouseCursorDisable": 2001202,
-        "MouseCursorMode": 501558
+        "MouseCursorMode": 501558,
+        "Secondary": {
+          "SecondaryCursorTarget": 24704,
+          "SecondaryCursorDisable": 24704,
+          "SecondaryCursorMode": 24704
+        }
       },
       "Standard": {
         "GUID": 500659,
@@ -681,15 +769,15 @@
       "Target": {
         "ActionID": "ITEM",
         "Matches": {
+          "SelectionMatch1": {
+            "Flags": "OwnedByPlayer"
+          },
           "TargetMatch1": {
             "Flags": "CheckProperty;NotSelf;Damaged;NotActionBlocked",
             "Property": "Walking"
           },
           "DisableMatch1": {
             "Flags": "Damaged"
-          },
-          "SelectionMatch1": {
-            "Flags": "OwnedByPlayer"
           }
         },
         "MouseCursorTarget": 2001867,
@@ -707,98 +795,23 @@
     "Template": "Target",
     "Values": {
       "Target": {
-        "ActionID": "ITEM",
-        "Matches": {
-          "SelectionMatch1": {
-            "Flags": "OwnedByPlayer;NotSelf;Guardable"
-          },
-          "TargetMatch1": {
-            "Flags": "CheckProperty;NotSelf;NotActionBlocked",
-            "Property": "Draggable"
-          }
-        },
-        "MouseCursorTarget": 2001298,
-        "MouseCursorDisable": 2001207,
-        "MouseCursorMode": 2001038
-      },
-      "Standard": {
-        "GUID": 500955,
-        "Name": "ExternalBuffAllies"
-      },
-      "Text": ""
-    }
-  },
-  {
-    "Template": "Target",
-    "Values": {
-      "Target": {
-        "ActionID": "ITEM",
-        "Matches": {
-          "SelectionMatch1": {
-            "Flags": "OwnedByEnemy"
-          },
-          "TargetMatch1": {
-            "Flags": "CheckProperty;NotSelf;IsDraggableBySelection;NotActionBlocked",
-            "Property": "Draggable"
-          }
-        },
-        "MouseCursorTarget": 2001298,
-        "MouseCursorDisable": 2001207,
-        "MouseCursorMode": 2001038
-      },
-      "Standard": {
-        "GUID": 500956,
-        "Name": "ExternalBuffEnemies"
-      },
-      "Text": ""
-    }
-  },
-  {
-    "Template": "Target",
-    "Values": {
-      "Target": {
-        "ActionID": "ITEM",
-        "Matches": {
-          "SelectionMatch1": {
-            "Flags": "OwnedByPlayer;OwnedByEnemy;Guardable"
-          },
-          "TargetMatch1": {
-            "Flags": "CheckProperty;NotSelf;IsDraggableBySelection;NotActionBlocked",
-            "Property": "Draggable"
-          }
-        },
-        "MouseCursorTarget": 2001298,
-        "MouseCursorDisable": 2001207,
-        "MouseCursorMode": 2001038
-      },
-      "Standard": {
-        "GUID": 500957,
-        "Name": "ExternalBuffAny"
-      },
-      "Text": ""
-    }
-  },
-  {
-    "Template": "Target",
-    "Values": {
-      "Target": {
         "ActionID": "HEAL_INCIDENT",
         "Matches": {
-          "TargetMatch1": {
-            "Flags": "OrNextMatch;NotActionBlocked;IsInfectedByFire"
-          },
-          "DisableMatch1": {
-            "Flags": "CheckProperty",
-            "Property": "IncidentInfectable"
-          },
           "SelectionMatch1": {
             "Flags": "OwnedByPlayer"
+          },
+          "TargetMatch1": {
+            "Flags": "OrNextMatch;NotActionBlocked;IsInfectedByFire"
           },
           "TargetMatch2": {
             "Flags": "OrNextMatch;NotActionBlocked;IsInfectedByIllness"
           },
           "TargetMatch3": {
             "Flags": "OrNextMatch;NotActionBlocked;IsInfectedByRiot"
+          },
+          "DisableMatch1": {
+            "Flags": "CheckProperty",
+            "Property": "IncidentInfectable"
           }
         },
         "MouseCursorTarget": 2001298,
@@ -822,16 +835,21 @@
           "TargetMatch1": {
             "Flags": "AndNotNextMatch;IsCoastalBuilding"
           },
-          "DisableMatch1": {
-            "Flags": "Never"
-          },
           "TargetMatch2": {
             "Flags": "OwnedByPirate"
+          },
+          "DisableMatch1": {
+            "Flags": "Never"
           }
         },
         "MouseCursorTarget": 2001298,
         "MouseCursorMode": 2001299,
-        "MouseCursorPosition": 2001298
+        "MouseCursorPosition": 2001298,
+        "Secondary": {
+          "SecondaryCursorTarget": 24704,
+          "SecondaryCursorMode": 24704,
+          "SecondaryCursorPosition": 24704
+        }
       },
       "Standard": {
         "GUID": 501575,
@@ -850,12 +868,12 @@
             "Flags": "AndNextMatch;OwnedByPlayer;CheckProperty",
             "Property": "Attacker"
           },
-          "TargetMatch1": {
-            "Flags": "AndNextMatch;CheckProperty;NotSelfIgnoreMultiselection;Guardable",
-            "Property": "Walking"
-          },
           "SelectionMatch2": {
             "Flags": "CheckProperty",
+            "Property": "Walking"
+          },
+          "TargetMatch1": {
+            "Flags": "AndNextMatch;CheckProperty;NotSelfIgnoreMultiselection;Guardable",
             "Property": "Walking"
           },
           "TargetMatch2": {
@@ -867,7 +885,14 @@
         "MouseCursorDisable": 501628,
         "MouseCursorMode": 501629,
         "MouseCursorPosition": 501628,
-        "MouseCursorPositionDisable": 2001212
+        "MouseCursorPositionDisable": 2001212,
+        "Secondary": {
+          "SecondaryCursorTarget": 24713,
+          "SecondaryCursorDisable": 24713,
+          "SecondaryCursorMode": 24713,
+          "SecondaryCursorPosition": 24713,
+          "SecondaryCursorPositionDisable": 24713
+        }
       },
       "Standard": {
         "GUID": 501735,
@@ -908,15 +933,17 @@
     "Values": {
       "Target": {
         "ActionID": "DOWNGRADE",
+        "PositionCheck": "DowngradableStreet",
+        "PositionCheckDisable": "NonDowngradableStreet",
         "Matches": {
-          "DisableMatch1": {
-            "Property": "Blocking"
-          },
           "SelectionMatch1": {
             "Flags": "Never"
           },
           "TargetMatch1": {
             "Flags": "OwnedByPlayer;CheckProperty;Downgradable",
+            "Property": "Blocking"
+          },
+          "DisableMatch1": {
             "Property": "Blocking"
           }
         },
@@ -924,17 +951,26 @@
         "MouseCursorDisable": 502196,
         "MouseCursorMode": 502194,
         "MouseCursorPosition": 502195,
-        "MouseCursorPositionDisable": 502196
+        "MouseCursorPositionDisable": 502196,
+        "Secondary": {
+          "SecondaryCursorTarget": 24702,
+          "SecondaryCursorDisable": 24702,
+          "SecondaryCursorMode": 24702,
+          "SecondaryCursorPosition": 24702,
+          "SecondaryCursorPositionDisable": 24702
+        }
       },
       "Standard": {
         "GUID": 502193,
         "Name": "Downgrade",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_downgrade.png",
         "ID": "TargetDowngrade"
       },
       "Text": {
         "LocaText": {
           "English": {
-            "Text": "Downgrade"
+            "Text": "Downgrade",
+            "Status": "Localization"
           }
         }
       }
@@ -962,7 +998,14 @@
         "MouseCursorDisable": 502406,
         "MouseCursorMode": 502404,
         "MouseCursorPosition": 502405,
-        "MouseCursorPositionDisable": 502406
+        "MouseCursorPositionDisable": 502406,
+        "Secondary": {
+          "SecondaryCursorTarget": 24714,
+          "SecondaryCursorDisable": 24714,
+          "SecondaryCursorMode": 24714,
+          "SecondaryCursorPosition": 24714,
+          "SecondaryCursorPositionDisable": 24714
+        }
       },
       "Standard": {
         "GUID": 412,
@@ -974,8 +1017,7 @@
         "LocaText": {
           "English": {
             "Text": "Upgrade Skyscraper",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 52351
@@ -988,14 +1030,14 @@
       "Target": {
         "ActionID": "DOWNGRADE_FLOOR",
         "Matches": {
-          "DisableMatch1": {
-            "Property": "Blocking"
-          },
           "SelectionMatch1": {
             "Flags": "Never"
           },
           "TargetMatch1": {
             "Flags": "OwnedByPlayer;CheckProperty;DowngradableFloor",
+            "Property": "Blocking"
+          },
+          "DisableMatch1": {
             "Property": "Blocking"
           }
         },
@@ -1013,9 +1055,180 @@
       "Text": {
         "LocaText": {
           "English": {
-            "Text": "Downgrade"
+            "Text": "Downgrade",
+            "Status": "Localization"
           }
         }
+      }
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "SKIN",
+        "Matches": {
+          "SelectionMatch1": {
+            "Flags": "Never"
+          },
+          "TargetMatch1": {
+            "Flags": "OwnedByPlayer;CheckProperty;Skinable",
+            "Property": "Blocking"
+          },
+          "DisableMatch1": {
+            "Property": "Blocking"
+          }
+        },
+        "MouseCursorTarget": 24509,
+        "MouseCursorDisable": 24510,
+        "MouseCursorMode": 24508,
+        "MouseCursorPosition": 24509,
+        "MouseCursorPositionDisable": 24510
+      },
+      "Standard": {
+        "GUID": 24507,
+        "Name": "Skin",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_paintbrush_tint.png",
+        "ID": "TargetSkin"
+      },
+      "Text": {
+        "TextOverride": 24478
+      }
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "BOMBARDEMENT",
+        "PositionCheck": "EnemyTerritory",
+        "PositionCheckDisable": "Always",
+        "Matches": {
+          "SelectionMatch1": {
+            "Flags": "CheckProperty",
+            "Property": "Walking",
+            "GameObjectState": ""
+          },
+          "TargetMatch1": {
+            "Flags": "Never"
+          },
+          "DisableMatch1": {
+            "Flags": "CheckNotGUID"
+          }
+        },
+        "MouseCursorTarget": 2001297,
+        "MouseCursorDisable": 2001299,
+        "MouseCursorMode": 2001297,
+        "MouseCursorPosition": 2001297,
+        "MouseCursorPositionDisable": 2001299,
+        "Secondary": {
+          "SecondaryCursorTarget": 24704,
+          "SecondaryCursorDisable": 24704,
+          "SecondaryCursorMode": 24704,
+          "SecondaryCursorPosition": 24704,
+          "SecondaryCursorPositionDisable": 24704
+        }
+      },
+      "Standard": {
+        "GUID": 1014,
+        "Name": "Bombardement BaseAsset",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_attractiveness_group.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Bombardment Enemy"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "MouseCursorTarget": 24509,
+        "MouseCursorDisable": 24510,
+        "MouseCursorMode": 24508,
+        "MouseCursorPosition": 24509,
+        "MouseCursorPositionDisable": 24510,
+        "Secondary": {
+          "SecondaryCursorTarget": 4255,
+          "SecondaryCursorMode": 4255,
+          "SecondaryCursorPosition": 4255
+        }
+      },
+      "Standard": {
+        "GUID": 4195,
+        "Name": "Customize",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_paintbrush_tint.png",
+        "ID": "TargetCustomize"
+      },
+      "Text": ""
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "BRUSH_MODE",
+        "PositionCheck": "Always"
+      },
+      "Standard": {
+        "GUID": 7735,
+        "Name": "BrushMode",
+        "ID": "TargetBrushMode"
+      },
+      "Text": ""
+    }
+  },
+  {
+    "Template": "Target",
+    "Values": {
+      "Target": {
+        "ActionID": "PIPETTE",
+        "PositionCheck": "CloneableStreet",
+        "Matches": {
+          "SelectionMatch1": {
+            "Flags": "Never",
+            "GameObjectState": "GameLogic;Blueprint"
+          },
+          "TargetMatch1": {
+            "Flags": "OwnedByPlayer;CheckProperty;Buildable",
+            "Property": "Blocking",
+            "GameObjectState": "GameLogic;Blueprint"
+          },
+          "DisableMatch1": {
+            "Property": "Blocking"
+          }
+        },
+        "MouseCursorTarget": 20642,
+        "MouseCursorDisable": 20643,
+        "MouseCursorMode": 20641,
+        "MouseCursorPosition": 20642,
+        "MouseCursorPositionDisable": 20643,
+        "Secondary": {
+          "SecondaryCursorTarget": 24700,
+          "SecondaryCursorDisable": 24700,
+          "SecondaryCursorMode": 24700,
+          "SecondaryCursorPosition": 24700,
+          "SecondaryCursorPositionDisable": 24700
+        }
+      },
+      "Standard": {
+        "GUID": 11465,
+        "Name": "Stamp",
+        "IconFilename": "data/ui/2kimages/main/icons/icon_stamp_light.png",
+        "ID": "TargetStamp"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Stamp",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 61878
       }
     }
   }

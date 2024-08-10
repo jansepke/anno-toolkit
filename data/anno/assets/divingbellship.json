@@ -18,7 +18,13 @@
         "MeshPlacement": "OnWaterSlope"
       },
       "Selection": {
-        "MultiSelectable": 1
+        "MultiSelectable": 1,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Walking": {
         "ReservationLength": 9,
@@ -45,8 +51,7 @@
         "LocaText": {
           "English": {
             "Text": "Salvager",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 32194
@@ -96,7 +101,20 @@
         "SlotCount": 6
       },
       "FeedbackController": "",
-      "Draggable": "",
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Cost": {
         "Costs": {
           "Item": [
@@ -159,6 +177,9 @@
           "Selection": {
             "AudioPool": 700147
           },
+          "SelectionDamaged": {
+            "AudioPool": 700125
+          },
           "MoveCommand": {
             "AudioPool": 700095
           },
@@ -167,9 +188,209 @@
           },
           "PatrolCommand": {
             "AudioPool": 700126
+          }
+        }
+      },
+      "DivingBell": {
+        "MaxPickupDistance": 8
+      },
+      "ItemReplacer": {
+        "ItemReplacementPools": 193854
+      }
+    }
+  },
+  {
+    "Template": "DivingBellShip",
+    "Values": {
+      "Standard": {
+        "GUID": 15831,
+        "Name": "Free Diving Vessel",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_diving_vessel.png",
+        "InfoDescription": 112084
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc01/graphics/vehicle/diving_vessel/diving_vessel.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Walking": {
+        "ReservationLength": 9,
+        "ReservationWidth": 5,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 6,
+        "Acceleration": 1.5,
+        "Deceleration": 2,
+        "TurnRadius": 6,
+        "TurnSpeed": 60,
+        "TurnDeceleration": 0,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": -10,
+        "ForwardSpeed": 6,
+        "WindMinSlowdownFactor": 1,
+        "WindMaxSpeedupFactor": 1,
+        "CargoFullFactor": 0.8,
+        "DamageFullFactor": 0.5,
+        "MinSlowdownFactor": 0.5,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Creative Salvager",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 61777
+      },
+      "CommandQueue": {
+        "FollowRadius": 4,
+        "FormationPriority": 1,
+        "ShipUniqueType": "DivingBellShip"
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 3.5,
+        "Width": 0.8
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 4000,
+        "AlertRange": 150,
+        "AccuracyWidth": 3,
+        "SelfHealPerHealTick": 1,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 501018
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 201829
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 201830
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 3,
+        "SocketAllocation": "Ship;SteamShip;Tradeship;DivingVessel",
+        "SlotCount": 6
+      },
+      "FeedbackController": "",
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010196,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 25
+            },
+            {
+              "Ingredient": 1010221,
+              "Amount": 25
+            }
+          ]
+        }
+      },
+      "Craftable": {
+        "CraftingTime": 150000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": {
+        "DLCDependency": 410040
+      },
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might"
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 10
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSteamShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 0
+      },
+      "Sellable": {
+        "CanBeSoldToTrader": 0
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700147
           },
           "SelectionDamaged": {
             "AudioPool": 700125
+          },
+          "MoveCommand": {
+            "AudioPool": 700095
+          },
+          "EscortCommand": {
+            "AudioPool": 700127
+          },
+          "PatrolCommand": {
+            "AudioPool": 700126
           }
         }
       },

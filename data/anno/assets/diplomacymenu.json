@@ -12,6 +12,7 @@
           "Item": [
             {
               "Icon": 3876,
+              "GamepadIcon": 8759,
               "DiplomacyAction": "RequestAlliance",
               "Tooltip": 500392,
               "TooltipHuman": 501221,
@@ -20,6 +21,7 @@
             },
             {
               "Icon": 3882,
+              "GamepadIcon": 8837,
               "DiplomacyAction": "CancelAlliance",
               "Tooltip": 500394,
               "ActionType": 1,
@@ -27,6 +29,7 @@
             },
             {
               "Icon": 3825,
+              "GamepadIcon": 8766,
               "DiplomacyAction": "RequestTraderights",
               "Tooltip": 500389,
               "TooltipHuman": 501222,
@@ -35,6 +38,7 @@
             },
             {
               "Icon": 3839,
+              "GamepadIcon": 8836,
               "DiplomacyAction": "CancelTraderights",
               "Tooltip": 500390,
               "ActionType": 1,
@@ -42,6 +46,7 @@
             },
             {
               "Icon": 3819,
+              "GamepadIcon": 8763,
               "DiplomacyAction": "RequestPeace",
               "Tooltip": 500387,
               "TooltipHuman": 501223,
@@ -50,6 +55,7 @@
             },
             {
               "Icon": 14920,
+              "GamepadIcon": 8834,
               "DiplomacyAction": "RequestNonAttack",
               "Tooltip": 501186,
               "TooltipHuman": 501225,
@@ -58,6 +64,7 @@
             },
             {
               "Icon": 3605,
+              "GamepadIcon": 8765,
               "DiplomacyAction": "RequestCeaseFire",
               "Tooltip": 501168,
               "TooltipHuman": 501224,
@@ -66,36 +73,42 @@
             },
             {
               "Icon": 3822,
+              "GamepadIcon": 8835,
               "Tooltip": 500388,
               "ActionType": 1,
               "FaceIcon": 501160
             },
             {
               "Icon": 3849,
+              "GamepadIcon": 8761,
               "DiplomacyAction": "Flatter",
               "Tooltip": 500393,
               "FaceIcon": 501162
             },
             {
               "Icon": 3883,
+              "GamepadIcon": 8762,
               "DiplomacyAction": "Insult",
               "Tooltip": 500395,
               "FaceIcon": 501160
             },
             {
               "Icon": 3840,
+              "GamepadIcon": 8760,
               "DiplomacyAction": "GiftMoneyOneTimeSmall",
               "Tooltip": 500391,
               "FaceIcon": 501162
             },
             {
               "Icon": 4058,
+              "GamepadIcon": 8764,
               "DiplomacyAction": "DemandQuest",
               "Tooltip": 500431,
               "FaceIcon": 501162
             },
             {
               "Icon": 23803,
+              "GamepadIcon": 8760,
               "DiplomacyAction": "PaymentIncreaseReputation",
               "Tooltip": 502313,
               "TooltipHuman": 502313,
@@ -112,6 +125,20 @@
               "AcceptOfferAction": {
                 "Message": "DiplomacyDeclareWar",
                 "Initiator": "FirstActorInitiator"
+              }
+            }
+          },
+          "ThreatWar": {
+            "TriggerTypes": {
+              "ThreatAction": {
+                "Message": "DiplomacyOfferThreat",
+                "TriggeredInCompound": 1
+              },
+              "ThreatAcceptAction": {
+                "Message": "DiplomacyOfferThreatAccepted"
+              },
+              "ThreatIgnoreAction": {
+                "Message": "DiplomacyOfferThreatRejected"
               }
             }
           },
@@ -198,15 +225,36 @@
               }
             }
           },
+          "PaymentIncreaseReputation": {
+            "TriggerTypes": {
+              "OfferAction": {
+                "Disable": 1
+              },
+              "AcceptOfferAction": {
+                "Message": "DiplomacyOfferGiftAccepted",
+                "Initiator": "FirstActorInitiator"
+              }
+            }
+          },
+          "Flatter": {
+            "TriggerTypes": {
+              "AcceptOfferAction": {
+                "Message": "DiplomacyAcceptFlatter"
+              },
+              "DeclineOfferAction": {
+                "Message": "DiplomacyDeclineFlatter"
+              }
+            }
+          },
           "DemandQuest": {
             "TriggerTypes": {
+              "OfferAction": {
+                "Disable": 1
+              },
               "AcceptOfferAction": {
                 "Disable": 1
               },
               "DeclineOfferAction": {
-                "Disable": 1
-              },
-              "OfferAction": {
                 "Disable": 1
               }
             }
@@ -237,16 +285,6 @@
               }
             }
           },
-          "Flatter": {
-            "TriggerTypes": {
-              "AcceptOfferAction": {
-                "Message": "DiplomacyAcceptFlatter"
-              },
-              "DeclineOfferAction": {
-                "Message": "DiplomacyDeclineFlatter"
-              }
-            }
-          },
           "Insult": {
             "TriggerTypes": {
               "AcceptOfferAction": {
@@ -254,20 +292,6 @@
               },
               "DeclineOfferAction": {
                 "Message": "DiplomacyDeclineInsult"
-              }
-            }
-          },
-          "ThreatWar": {
-            "TriggerTypes": {
-              "ThreatAction": {
-                "Message": "DiplomacyOfferThreat",
-                "TriggeredInCompound": 1
-              },
-              "ThreatAcceptAction": {
-                "Message": "DiplomacyOfferThreatAccepted"
-              },
-              "ThreatIgnoreAction": {
-                "Message": "DiplomacyOfferThreatRejected"
               }
             }
           },
@@ -326,17 +350,6 @@
               },
               "DeclineOfferAction": {
                 "Message": "DiplomacyOfferRejected"
-              }
-            }
-          },
-          "PaymentIncreaseReputation": {
-            "TriggerTypes": {
-              "OfferAction": {
-                "Disable": 1
-              },
-              "AcceptOfferAction": {
-                "Message": "DiplomacyOfferGiftAccepted",
-                "Initiator": "FirstActorInitiator"
               }
             }
           }
@@ -441,6 +454,47 @@
             "VisibleWithHumans": 1
           }
         },
+        "AlternativeDiplomacyButtonPrecheck": {
+          "DeclareWar": {
+            "PossibleStates": "Alliance;Trade;Peace"
+          },
+          "RequestPeace": {
+            "PossibleStates": "War"
+          },
+          "GiftMoneyOneTimeSmall": {
+            "PossibleStates": "Alliance;Trade;Peace;War"
+          },
+          "CancelTraderights": {
+            "PossibleStates": "Alliance;Trade"
+          },
+          "RequestTraderights": {
+            "PossibleStates": "Peace;War"
+          },
+          "PaymentIncreaseReputation": {
+            "PossibleStates": "Alliance;Trade;Peace;War"
+          },
+          "Flatter": {
+            "PossibleStates": "Alliance;Trade;Peace;War"
+          },
+          "DemandQuest": {
+            "PossibleStates": "Alliance;Trade;Peace;War"
+          },
+          "CancelAlliance": {
+            "PossibleStates": "Alliance"
+          },
+          "RequestAlliance": {
+            "PossibleStates": "Trade;Peace;War"
+          },
+          "Insult": {
+            "PossibleStates": "Alliance;Trade;Peace;War"
+          },
+          "RequestCeaseFire": {
+            "PossibleStates": "War"
+          },
+          "RequestNonAttack": {
+            "PossibleStates": "Alliance;Trade;Peace"
+          }
+        },
         "TimeIcons": {
           "CeaseFire": {
             "Icons": 14924
@@ -454,7 +508,17 @@
           "Balance": 14533
         },
         "IdleMessageMinPause": 40000,
-        "IdleMessageMaxPause": 60000
+        "IdleMessageMaxPause": 60000,
+        "AlternativeHistoryLogMaxEntries": 10,
+        "AlternativeDiplomacyActionsMaxEntries": 4,
+        "AlternativeDiplomacyMPActionsMaxEntries": 1,
+        "DiplomacyButtonPrompTexts": {
+          "ButtonPromptCloseText": 1196,
+          "ButtonPromptBackText": 25739,
+          "ButtonPromptOpenInfoText": 1110,
+          "ButtonPromptConfirmText": 6143,
+          "ButtonPromptCancelText": 6428
+        }
       }
     }
   }

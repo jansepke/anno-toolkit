@@ -8,48 +8,52 @@
         "ID": "MilitaryBalancing"
       },
       "MilitaryFeature": {
-        "AttackEfficiency": {
-          "Default": {
-            "TargetArmor": {
-              "Default": {
-                "Factor": 100
-              },
-              "HeavyArmor": {
-                "Factor": 60
-              },
-              "Explosive": {
-                "Factor": 100
-              }
-            },
-            "HealthBarColor": -11012825
+        "CanAttackTable": {
+          "Warship": {
+            "CanDamageTargetedAttack": "Ship;HarbourBuilding",
+            "CanDamageTargetedAutoAttack": "Ship",
+            "CanDamageUntargeted": "Seamine;HarbourBuilding;Ship"
           },
-          "HeavyArmor": {
-            "TargetArmor": {
-              "Default": {
-                "Factor": 100
-              },
-              "HeavyArmor": {
-                "Factor": 100
-              },
-              "Explosive": {
-                "Factor": 100
-              }
-            },
-            "HealthBarColor": -16394249
+          "HunterAirship": {
+            "CanDamageTargetedAttack": "Airship",
+            "CanDamageTargetedAutoAttack": "Airship"
           },
-          "Explosive": {
-            "TargetArmor": {
-              "Default": {
-                "Factor": 250
-              },
-              "Explosive": {
-                "Factor": 100
-              },
-              "HeavyArmor": {
-                "Factor": 60
-              }
+          "BombardierAirship": {
+            "CanDamageUntargeted": "Seamine;Ship;HarbourBuilding"
+          },
+          "HarbourTower": {
+            "CanDamageTargetedAttack": "Ship",
+            "CanDamageTargetedAutoAttack": "Ship",
+            "CanDamageUntargeted": "Ship;HarbourBuilding;Seamine"
+          },
+          "Flak": {
+            "CanDamageTargetedAttack": "Airship",
+            "CanDamageTargetedAutoAttack": "Airship",
+            "CanDamageUntargeted": "Ship;HarbourBuilding;Seamine"
+          },
+          "Seamine": {
+            "CanDamageUntargeted": "Ship;HarbourBuilding;IslandBuilding"
+          }
+        },
+        "DangerTable": {
+          "InfluencedDangerLayer": {
+            "HunterAirship": {
+              "InfluencedLayer": "Air"
             },
-            "HealthBarColor": -1566964
+            "BombardierAirship": {
+              "InfluencedLayer": "[NONE]"
+            },
+            "Flak": {
+              "InfluencedLayer": "Air"
+            },
+            "Seamine": {
+              "InfluencedLayer": "[NONE]"
+            }
+          },
+          "RespectedDangerLayer": {
+            "Airship": {
+              "RespectedLayer": "Air"
+            }
           }
         },
         "TakeoverWarningPercentage": 40,
@@ -57,8 +61,6 @@
         "TakeoverChanceEnd": 20,
         "TakeoverEndWarning": 180000,
         "TakeoverEnd": 300000,
-        "TakeOverUpdateCurrentWarMorale": 1,
-        "TakeOverUpdateMaxWarMorale": 1,
         "TakeOverBannerFlashFast": 0.2,
         "TakeOverNotification_Start_IslandOwner": 501050,
         "TakeOverNotification_Start_InnocentBystander": 501597,
@@ -67,7 +69,6 @@
         "TakeOverNotification_MoraleLow_IslandOwner": 501648,
         "TakeOverNotification_MoraleLow_Attacker": 501649,
         "TakeOverNotification_TimerRunsOutOnAttackedIsland_Attacker": 501650,
-        "HealthbarScale": 0.3,
         "TakeoverCooldown": 1800000,
         "HealthbarMinSize": 0.8,
         "HealthbarMaxSize": 0.3,
@@ -76,7 +77,53 @@
         "ShowDamageFlyouts": "",
         "LowHealthThreshold": 0.25,
         "LowHealthAnimationSpeed": 1,
-        "TakeOverResultCooldown": 60000
+        "TakeOverResultCooldown": 60000,
+        "BombardementTargetModes": {
+          "Item": [
+            {
+              "TargetMode": 25557
+            },
+            {
+              "TargetMode": 25559
+            },
+            {
+              "TargetMode": 25560
+            },
+            {
+              "TargetMode": 25561
+            },
+            {
+              "TargetMode": 456
+            },
+            {
+              "TargetMode": 997
+            },
+            {
+              "TargetMode": 998
+            },
+            {
+              "TargetMode": 999
+            },
+            {
+              "TargetMode": 1013
+            }
+          ]
+        },
+        "BombardementProjectiles": {
+          "Military": {
+            "AmmoGUID": 846
+          },
+          "Propaganda": {
+            "AmmoGUID": 848
+          },
+          "CarePackages": {
+            "AmmoGUID": 849
+          }
+        },
+        "CombatMarkers": {
+          "AttackMarkerColorOnWater": 1355284480,
+          "AttackMarkerColorOnTerrain": 2026321152
+        }
       }
     }
   }

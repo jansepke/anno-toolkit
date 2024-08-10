@@ -10,8 +10,7 @@
       },
       "Building": {
         "BuildingCategoryName": 11150,
-        "AssociatedRegions": "Moderate",
-        "AllowChangeDirection": 1
+        "AssociatedRegions": "Moderate"
       },
       "Blocking": {
         "GroundDecalAsset": 100446,
@@ -24,17 +23,28 @@
           "Item": {
             "Filename": "data/graphics/buildings/special/harbor_07/harbor_07.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 1010525,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "AmbientMoodProvider": "",
       "Constructable": "",
-      "Selection": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Repair Crane",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 7021
@@ -70,15 +80,16 @@
         "InfluenceCostPoints": 3
       },
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 4000,
-        "HPBarOffset": 6.5,
-        "HasRuinState": 1,
         "PausedTimeIfAttacked": 0,
-        "SelfHealPerHealTick": 5,
+        "HPBarOffset": 6.5,
         "DefenseByAIFactor": 201,
-        "TakeOverEffect": "OnDeath",
+        "MilitaryDefensePoints": 1.5,
+        "MilitaryAirDefensePoints": 1.25,
         "MoralePower": 50,
         "IslandWarFlag": 102308,
+        "HasRuinState": 1,
         "ExplosionEffects": {
           "Item": {
             "VectorElement": {
@@ -95,7 +106,7 @@
         },
         "ExplosionEffectsMin": 1,
         "ExplosionEffectsMax": 1,
-        "MilitaryDefensePoints": 1.5
+        "SelfHealPerHealTick": 5
       },
       "Infolayer": "",
       "Maintenance": {

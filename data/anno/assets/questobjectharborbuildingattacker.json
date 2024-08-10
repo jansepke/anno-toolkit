@@ -5,8 +5,7 @@
       "Standard": {
         "GUID": 120986,
         "Name": "Canon",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_defense_tower_cannon.png",
-        "Version": "dlc06"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_defense_tower_cannon.png"
       },
       "Building": {
         "BuildingCategoryName": 11150,
@@ -32,6 +31,12 @@
       "AmbientMoodProvider": "",
       "Constructable": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "SelectionColorType": "PropertySelectionColor",
           "SelectionColor": -337045,
@@ -42,8 +47,7 @@
         "LocaText": {
           "English": {
             "Text": "Cannon Tower",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 45396
@@ -99,10 +103,10 @@
         "InfluenceCostPoints": 7
       },
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 4800,
-        "SelfHealPerHealTick": 5,
         "DefenseByAIFactor": 9991,
-        "TakeOverEffect": "OnDeath",
+        "MilitaryDefensePoints": 3.5,
         "MoralePower": 50,
         "IslandWarFlag": 102307,
         "ExplosionEffects": {
@@ -112,30 +116,29 @@
         },
         "ExplosionEffectsMin": 1,
         "ExplosionEffectsMax": 1,
-        "MilitaryDefensePoints": 3.5
+        "SelfHealPerHealTick": 5
       },
       "Attacker": {
+        "BaseDamage": 150,
+        "ReloadTime": 50,
         "AttackRange": 92,
         "LineOfSightRange": 92,
-        "ReloadTime": 50,
-        "ProjectileAsset": 101974,
-        "WeaponActivationTime": 2000,
-        "ProjectileCount": 1,
-        "BaseDamage": 150,
         "Turrets": {
           "Item": {
             "TurnSpan": 360,
             "TurretCfg": "data/graphics/buildings/special/harbor_05/harbor_05_turret.cfg"
           }
         },
-        "AccuracyBase": 1,
-        "AccuracyIncreaseOverDistance": 100,
+        "ProjectileAsset": 101974,
         "MuzzleEffectAssets": {
           "Item": {
             "MuzzleEffectAsset": 102220
           }
         },
         "EmitProjectileTimeAfterStartAnimation": 0.3,
+        "AfricaOnlyWeaponActivationTime": 2000,
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 100,
         "AccuracyByDistance": {
           "Item": [
             {

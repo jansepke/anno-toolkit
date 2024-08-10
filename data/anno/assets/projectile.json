@@ -39,8 +39,7 @@
         "ProjectileType": "Arc",
         "ShotHeight": 2,
         "ShotAngle": 0,
-        "ProjectileSpeed": 22.5,
-        "DamageType": "Cannon"
+        "ProjectileSpeed": 22.5
       },
       "Standard": {
         "GUID": 100501,
@@ -79,8 +78,7 @@
         "ProjectileType": "Arc",
         "ShotHeight": 2,
         "ShotAngle": 0,
-        "ProjectileSpeed": 30,
-        "DamageType": "Cannon"
+        "ProjectileSpeed": 30
       },
       "Standard": {
         "GUID": 101973,
@@ -158,9 +156,47 @@
       "Projectile": {
         "ProjectileType": "Arc",
         "ShotHeight": 2,
+        "ShotAngle": 15,
+        "ProjectileSpeed": 30
+      },
+      "Standard": {
+        "GUID": 11478,
+        "Name": "Medium_Single_Shot_Ship"
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/effects/military/projectiles/projectile_cannon_medium_line_ship_01.cfg"
+          }
+        }
+      },
+      "Text": "",
+      "SoundEmitter": {
+        "ProjectileSounds": {
+          "ProjectileLaunch": {
+            "Item": {
+              "Sound": 235853
+            }
+          },
+          "ProjectileImpact": {
+            "Item": {
+              "Sound": 235852
+            }
+          }
+        }
+      },
+      "ProjectileIncident": ""
+    }
+  },
+  {
+    "Template": "Projectile",
+    "Values": {
+      "Projectile": {
+        "ProjectileType": "Arc",
+        "ShotHeight": 2,
         "ShotAngle": 10,
-        "ProjectileSpeed": 22.5,
-        "DamageType": "Cannon"
+        "ProjectileSpeed": 22.5
       },
       "Standard": {
         "GUID": 102032,
@@ -200,11 +236,16 @@
         "ShotHeight": 2,
         "ShotAngle": 0,
         "ProjectileSpeed": 60,
-        "DamageType": "Cannon"
+        "Effectivities": {
+          "Item": {
+            "GUID": 1508,
+            "Factor": 1.6
+          }
+        }
       },
       "Standard": {
         "GUID": 102033,
-        "Name": "Large_Single_Shot"
+        "Name": "Large_Single_Shot_BattleCruiser"
       },
       "Mesh": "",
       "Object": {
@@ -239,8 +280,7 @@
         "ProjectileType": "Arc",
         "ShotHeight": 2,
         "ShotAngle": 5,
-        "ProjectileSpeed": 22.5,
-        "DamageType": "Cannon"
+        "ProjectileSpeed": 22.5
       },
       "Standard": {
         "GUID": 102034,
@@ -282,8 +322,13 @@
         "ProjectileSpeed": 30,
         "StatusEffects": {
           "Item": {
-            "StatusEffect": 191305,
-            "StatusDuration": 5000
+            "StatusEffectChain": {
+              "Item": {
+                "StatusEffect": 191305,
+                "StatusDuration": 5000
+              }
+            },
+            "StatusEffectExclusiveGroup": 25998
           }
         },
         "DamageType": "Cannon"
@@ -327,11 +372,17 @@
         "ShotHeight": 2,
         "ShotAngle": 0,
         "ProjectileSpeed": 60,
+        "Effectivities": {
+          "Item": {
+            "GUID": 1404,
+            "Factor": 1.2
+          }
+        },
         "DamageType": "Cannon"
       },
       "Standard": {
         "GUID": 102267,
-        "Name": "Modern_Gun_Small_Shot"
+        "Name": "Modern_Gun_Small_Shot_Monitor"
       },
       "Mesh": "",
       "Object": {
@@ -366,8 +417,7 @@
         "ProjectileType": "Arc",
         "ShotHeight": 2,
         "ShotAngle": 0,
-        "ProjectileSpeed": 22.5,
-        "DamageType": "Cannon"
+        "ProjectileSpeed": 22.5
       },
       "Standard": {
         "GUID": 102277,
@@ -406,8 +456,7 @@
         "ProjectileType": "Arc",
         "ShotHeight": 2,
         "ShotAngle": 5,
-        "ProjectileSpeed": 22.5,
-        "DamageType": "Cannon"
+        "ProjectileSpeed": 22.5
       },
       "Standard": {
         "GUID": 102285,
@@ -489,8 +538,13 @@
         "ProjectileSpeed": 22.5,
         "StatusEffects": {
           "Item": {
-            "StatusEffect": 192003,
-            "StatusDuration": 10000
+            "StatusEffectChain": {
+              "Item": {
+                "StatusEffect": 192003,
+                "StatusDuration": 10000
+              }
+            },
+            "StatusEffectExclusiveGroup": 25999
           }
         },
         "DamageType": "Cannon"
@@ -531,6 +585,90 @@
     "Values": {
       "Projectile": {
         "ProjectileType": "Arc",
+        "ShotAngle": 0,
+        "ProjectileSpeed": 30,
+        "DamageType": "Cannon"
+      },
+      "Standard": {
+        "GUID": 2037,
+        "Name": "Flak_Gun_Shot",
+        "InfoDescription": 14033
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/effects/military/projectiles/flak_cannon_01.cfg"
+          }
+        }
+      },
+      "Text": "",
+      "SoundEmitter": {
+        "ProjectileSounds": {
+          "ProjectileLaunch": {
+            "Item": {
+              "Sound": 200969
+            }
+          },
+          "ProjectileImpact": {
+            "Item": {
+              "Sound": 235858
+            }
+          },
+          "ProjectileVolley": {
+            "Item": {
+              "Sound": 235857
+            }
+          }
+        }
+      },
+      "ProjectileIncident": ""
+    }
+  },
+  {
+    "Template": "Projectile",
+    "Values": {
+      "Projectile": {
+        "ShotAngle": 0,
+        "ProjectileSpeed": 200,
+        "StatusEffects": {
+          "Item": {
+            "StatusEffectChain": {
+              "Item": {
+                "StatusEffect": 4144,
+                "StatusDuration": 20000
+              }
+            },
+            "StatusEffectExclusiveGroup": 4145
+          }
+        },
+        "ApplyStatusEffectsWithoutDamageCheck": 1,
+        "StatusEffectChainDescription": 4424,
+        "DamageType": "Cannon"
+      },
+      "Standard": {
+        "GUID": 4143,
+        "Name": "Search_Light_Shot",
+        "InfoDescription": 14033
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/effects/military/shots/shot_flak_cannon_01.cfg"
+          }
+        }
+      },
+      "Text": "",
+      "SoundEmitter": "",
+      "ProjectileIncident": ""
+    }
+  },
+  {
+    "Template": "Projectile",
+    "Values": {
+      "Projectile": {
+        "ProjectileType": "Arc",
         "ShotHeight": 2,
         "ShotAngle": 0,
         "ProjectileSpeed": 15,
@@ -538,7 +676,7 @@
       },
       "Standard": {
         "GUID": 102405,
-        "Name": "Flamethrower_Small_Shot",
+        "Name": "Flamethrower_Small_Shot_Py",
         "InfoDescription": 22110
       },
       "Mesh": {
@@ -562,9 +700,342 @@
         }
       },
       "ProjectileIncident": {
-        "CausedIncident": "Fire",
-        "CausedIncidentBuff": 192004,
-        "CausedIncidentDuration": 20000
+        "CausedIncidentDuration": 0
+      }
+    }
+  },
+  {
+    "Template": "Projectile",
+    "Values": {
+      "Projectile": {
+        "ProjectileType": "Arc",
+        "ShotHeight": 2,
+        "ShotAngle": 35,
+        "ProjectileSpeed": 15,
+        "Effectivities": {
+          "Item": [
+            {
+              "GUID": 1398,
+              "Factor": 5.75
+            },
+            {
+              "GUID": 1404,
+              "Factor": 0.75
+            }
+          ]
+        },
+        "StatusEffects": {
+          "Item": [
+            {
+              "StatusEffectChain": {
+                "Item": [
+                  {
+                    "StatusEffect": 1401,
+                    "StatusDuration": 15000
+                  },
+                  {
+                    "StatusEffect": 1402,
+                    "StatusDuration": 120000
+                  },
+                  {
+                    "StatusEffect": 1403,
+                    "StatusDuration": 900000
+                  }
+                ]
+              },
+              "StatusEffectExclusiveGroup": 1410
+            },
+            {
+              "StatusEffectChain": {
+                "Item": [
+                  {
+                    "StatusEffect": 1407,
+                    "StatusDuration": 15000
+                  },
+                  {
+                    "StatusEffect": 1408,
+                    "StatusDuration": 300000
+                  },
+                  {
+                    "StatusEffect": 1409,
+                    "StatusDuration": 600000
+                  }
+                ]
+              },
+              "StatusEffectExclusiveGroup": 1411
+            }
+          ]
+        },
+        "StatusEffectChainDescription": 4416,
+        "DamageType": "Cannon"
+      },
+      "Standard": {
+        "GUID": 628,
+        "Name": "Flamethrower_Tower_Shot",
+        "InfoDescription": 22110
+      },
+      "Mesh": {
+        "DefaultSequence": "default"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/effects/military/projectiles/projectile_flamethrower_01.cfg"
+          }
+        }
+      },
+      "Text": "",
+      "SoundEmitter": {
+        "ProjectileSounds": {
+          "ProjectileLaunch": {
+            "Item": {
+              "Sound": 203892
+            }
+          }
+        }
+      },
+      "ProjectileIncident": {
+        "CausedIncidentDuration": 0
+      }
+    }
+  },
+  {
+    "Template": "Projectile",
+    "Values": {
+      "Projectile": {
+        "ProjectileType": "Arc",
+        "ShotHeight": 2,
+        "ShotAngle": 0,
+        "ProjectileSpeed": 15,
+        "Effectivities": {
+          "Item": [
+            {
+              "GUID": 1398,
+              "Factor": 5.1
+            },
+            {
+              "GUID": 1404,
+              "Factor": 0.7
+            }
+          ]
+        },
+        "StatusEffects": {
+          "Item": [
+            {
+              "StatusEffectChain": {
+                "Item": [
+                  {
+                    "StatusEffect": 1401,
+                    "StatusDuration": 135000
+                  },
+                  {
+                    "StatusEffect": 1402,
+                    "StatusDuration": 300000
+                  },
+                  {
+                    "StatusEffect": 1403,
+                    "StatusDuration": 1200000
+                  }
+                ]
+              },
+              "StatusEffectExclusiveGroup": 1410
+            },
+            {
+              "StatusEffectChain": {
+                "Item": [
+                  {
+                    "StatusEffect": 1407,
+                    "StatusDuration": 135000
+                  },
+                  {
+                    "StatusEffect": 1408,
+                    "StatusDuration": 300000
+                  },
+                  {
+                    "StatusEffect": 1409,
+                    "StatusDuration": 1200000
+                  }
+                ]
+              },
+              "StatusEffectExclusiveGroup": 1411
+            }
+          ]
+        },
+        "StatusEffectChainDescription": 4416,
+        "DamageType": "Cannon"
+      },
+      "Standard": {
+        "GUID": 1892,
+        "Name": "Flamethrower_Small_Shot_Monitor",
+        "InfoDescription": 22110
+      },
+      "Mesh": {
+        "DefaultSequence": "default"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/effects/military/projectiles/projectile_flamethrower_01.cfg"
+          }
+        }
+      },
+      "Text": "",
+      "SoundEmitter": {
+        "ProjectileSounds": {
+          "ProjectileLaunch": {
+            "Item": {
+              "Sound": 203892
+            }
+          }
+        }
+      },
+      "ProjectileIncident": {
+        "CausedIncidentDuration": 0
+      }
+    }
+  },
+  {
+    "Template": "Projectile",
+    "Values": {
+      "Projectile": {
+        "ProjectileType": "Arc",
+        "ShotHeight": 2,
+        "ShotAngle": 0,
+        "ProjectileSpeed": 80,
+        "Effectivities": {
+          "Item": [
+            {
+              "GUID": 1404,
+              "Factor": 3.55
+            },
+            {
+              "GUID": 1398,
+              "Factor": 0.4
+            }
+          ]
+        },
+        "StatusEffects": {
+          "Item": [
+            {
+              "StatusEffectChain": {
+                "Item": [
+                  {
+                    "StatusEffect": 3713,
+                    "StatusDuration": 135000
+                  },
+                  {
+                    "StatusEffect": 3712,
+                    "StatusDuration": 600000
+                  },
+                  {
+                    "StatusEffect": 3711,
+                    "StatusDuration": 1200000
+                  }
+                ]
+              },
+              "StatusEffectExclusiveGroup": 3714
+            },
+            {
+              "StatusEffectChain": {
+                "Item": [
+                  {
+                    "StatusEffect": 3705,
+                    "StatusDuration": 135000
+                  },
+                  {
+                    "StatusEffect": 3704,
+                    "StatusDuration": 600000
+                  },
+                  {
+                    "StatusEffect": 3703,
+                    "StatusDuration": 1200000
+                  }
+                ]
+              },
+              "StatusEffectExclusiveGroup": 3706
+            }
+          ]
+        },
+        "DamageType": "Cannon"
+      },
+      "Standard": {
+        "GUID": 3702,
+        "Name": "ArmorPiercing_Tower_Shot",
+        "InfoDescription": 3723
+      },
+      "Mesh": {
+        "DefaultSequence": "default"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/effects/military/projectiles/puckle_gun_02.cfg"
+          }
+        }
+      },
+      "Text": "",
+      "SoundEmitter": {
+        "ProjectileSounds": {
+          "ProjectileLaunch": {
+            "Item": {
+              "Sound": 203892
+            }
+          }
+        }
+      },
+      "ProjectileIncident": {
+        "CausedIncidentDuration": 0
+      }
+    }
+  },
+  {
+    "Template": "Projectile",
+    "Values": {
+      "Projectile": {
+        "ProjectileType": "Arc",
+        "ShotAngle": 0,
+        "ProjectileSpeed": 75,
+        "Effectivities": {
+          "Item": [
+            {
+              "GUID": 191454,
+              "Factor": 0.6
+            },
+            {
+              "GUID": 191443,
+              "Factor": 2.65
+            }
+          ]
+        },
+        "DamageType": "Cannon"
+      },
+      "Standard": {
+        "GUID": 7077,
+        "Name": "ArmorPiercing_Battleship_Shot",
+        "InfoDescription": 7078
+      },
+      "Mesh": {
+        "DefaultSequence": "default"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/effects/military/projectiles/projectile_cannon_modern_01.cfg"
+          }
+        }
+      },
+      "Text": "",
+      "SoundEmitter": {
+        "ProjectileSounds": {
+          "ProjectileLaunch": {
+            "Item": {
+              "Sound": 235855
+            }
+          }
+        }
+      },
+      "ProjectileIncident": {
+        "CausedIncidentDuration": 0
       }
     }
   },
@@ -578,8 +1049,13 @@
         "ProjectileSpeed": 22.5,
         "StatusEffects": {
           "Item": {
-            "StatusEffect": 110957,
-            "StatusDuration": 10000
+            "StatusEffectChain": {
+              "Item": {
+                "StatusEffect": 110957,
+                "StatusDuration": 10000
+              }
+            },
+            "StatusEffectExclusiveGroup": 25997
           }
         },
         "DamageType": "Cannon"
@@ -587,8 +1063,7 @@
       "Standard": {
         "GUID": 110961,
         "Name": "Anarchy_RiotSpread",
-        "InfoDescription": 110959,
-        "Version": "dm"
+        "InfoDescription": 110959
       },
       "Mesh": "",
       "Object": {
@@ -632,8 +1107,7 @@
       "Standard": {
         "GUID": 111134,
         "Name": "Flamethrower_Small_Shot",
-        "InfoDescription": 22110,
-        "Version": "dm"
+        "InfoDescription": 22110
       },
       "Mesh": {
         "DefaultSequence": "default"
@@ -659,6 +1133,138 @@
         "CausedIncidentBuff": 192004,
         "CausedIncidentDuration": 20000
       }
+    }
+  },
+  {
+    "Template": "Projectile",
+    "Values": {
+      "Projectile": {
+        "ProjectileType": "Arc",
+        "ShotHeight": 2,
+        "ShotAngle": 0,
+        "ProjectileSpeed": 15,
+        "Effectivities": {
+          "Item": [
+            {
+              "GUID": 1398,
+              "Factor": 6
+            },
+            {
+              "GUID": 1404,
+              "Factor": 0.75
+            }
+          ]
+        },
+        "StatusEffects": {
+          "Item": [
+            {
+              "StatusEffectChain": {
+                "Item": [
+                  {
+                    "StatusEffect": 1401,
+                    "StatusDuration": 15000
+                  },
+                  {
+                    "StatusEffect": 1402,
+                    "StatusDuration": 120000
+                  },
+                  {
+                    "StatusEffect": 1403,
+                    "StatusDuration": 900000
+                  }
+                ]
+              },
+              "StatusEffectExclusiveGroup": 1410
+            },
+            {
+              "StatusEffectChain": {
+                "Item": [
+                  {
+                    "StatusEffect": 1407,
+                    "StatusDuration": 15000
+                  },
+                  {
+                    "StatusEffect": 1408,
+                    "StatusDuration": 300000
+                  },
+                  {
+                    "StatusEffect": 1409,
+                    "StatusDuration": 600000
+                  }
+                ]
+              },
+              "StatusEffectExclusiveGroup": 1411
+            }
+          ]
+        },
+        "DamageType": "Cannon"
+      },
+      "Standard": {
+        "GUID": 1538,
+        "Name": "Flamethrower_Small_Blue_Shot",
+        "InfoDescription": 22110
+      },
+      "Mesh": {
+        "DefaultSequence": "default"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/effects/military/projectiles/projectile_flamethrower_blue_01.cfg"
+          }
+        }
+      },
+      "Text": "",
+      "SoundEmitter": {
+        "ProjectileSounds": {
+          "ProjectileLaunch": {
+            "Item": {
+              "Sound": 203892
+            }
+          }
+        }
+      },
+      "ProjectileIncident": {
+        "CausedIncidentDuration": 0
+      }
+    }
+  },
+  {
+    "Template": "Projectile",
+    "Values": {
+      "Projectile": {
+        "ProjectileType": "Arc",
+        "ShotAngle": 0,
+        "ProjectileSpeed": 55
+      },
+      "Standard": {
+        "GUID": 2295,
+        "Name": "Medium_Single_Shot_Airship"
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/effects/military/projectiles/projectile_cannon_modern_01.cfg"
+          }
+        }
+      },
+      "Text": "",
+      "SoundEmitter": {
+        "ProjectileSounds": {
+          "ProjectileLaunch": {
+            "Item": {
+              "Sound": 200966
+            }
+          },
+          "ProjectileImpact": {
+            "Item": {
+              "Sound": 200965
+            }
+          }
+        }
+      },
+      "ProjectileIncident": ""
     }
   }
 ]

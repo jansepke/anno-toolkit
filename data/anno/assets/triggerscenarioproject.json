@@ -1,0 +1,643 @@
+[
+  {
+    "Template": "TriggerScenarioProject",
+    "Values": {
+      "Standard": {
+        "GUID": 100088,
+        "Name": "S02_Milestone_RewardShipSpawner"
+      },
+      "Locked": {
+        "Scope": "Account"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionAlwaysFalse",
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysFalse": ""
+          }
+        },
+        "TriggerActions": {
+          "Item": [
+            {
+              "TriggerAction": {
+                "Template": "ActionSpawnObjects",
+                "Values": {
+                  "Action": "",
+                  "ActionSpawnObjects": {
+                    "SpawnGUID": 143875,
+                    "Amount": 1
+                  },
+                  "SpawnArea": {
+                    "SpawnContext": "ForceContextPosition",
+                    "ContextGUID": 25865,
+                    "DistanceToContext": 10,
+                    "MinObjectDistance": 1,
+                    "MaxObjectDistance": 1
+                  },
+                  "SessionFilter": {
+                    "AllowProcessingSession": 1,
+                    "Sessions": {
+                      "Item": {
+                        "Session": 24734
+                      }
+                    },
+                    "AllowQuestSession": 1,
+                    "AllowQuestArea": 1
+                  }
+                }
+              }
+            },
+            {
+              "TriggerAction": {
+                "Template": "ActionDelayedActions",
+                "Values": {
+                  "Action": "",
+                  "ActionDelayedActions": {
+                    "ExecutionDelay": 2000,
+                    "DelayedActions": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ActionList": {
+                          "Actions": {
+                            "Item": {
+                              "Action": {
+                                "Template": "ActionMoveObject",
+                                "Values": {
+                                  "Action": "",
+                                  "ObjectFilter": {
+                                    "ObjectGUID": 143875,
+                                    "ObjectSession": 24734,
+                                    "MaxObjectCount": 1
+                                  },
+                                  "ObjectTargetFilter": {
+                                    "TargetGUID": 144023,
+                                    "TargetCheckParticipantID": 1,
+                                    "TargetObjectIslands": {
+                                      "Item": {
+                                        "Island": 25521
+                                      }
+                                    },
+                                    "TargetObjectSession": 24734
+                                  },
+                                  "ActionMoveObject": ""
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Template": "ConditionEvent",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionEvent": {
+                        "ConditionEvent": "CameraSequenceEnd",
+                        "ContextAsset": 143930
+                      },
+                      "ConditionPropsNegatable": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": {
+        "AutoSelfUnlock": 0
+      }
+    }
+  },
+  {
+    "Template": "TriggerScenarioProject",
+    "Values": {
+      "Standard": {
+        "GUID": 105188,
+        "Name": "SC04_Milestone_Money"
+      },
+      "Locked": {
+        "Scope": "Account"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionAlwaysFalse",
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysFalse": ""
+          }
+        },
+        "TriggerActions": {
+          "Item": {
+            "TriggerAction": {
+              "Template": "ActionAddGoodsToItemContainer",
+              "Values": {
+                "Action": "",
+                "ActionAddGoodsToItemContainer": {
+                  "Goods": {
+                    "Item": {
+                      "Good": 1010017,
+                      "Amount": 70000
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": {
+        "AutoSelfUnlock": 0
+      }
+    }
+  },
+  {
+    "Template": "TriggerScenarioProject",
+    "Values": {
+      "Standard": {
+        "GUID": 105189,
+        "Name": "SC04_Milestone_Airship"
+      },
+      "Locked": {
+        "Scope": "Account"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionAlwaysFalse",
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysFalse": ""
+          }
+        },
+        "TriggerActions": {
+          "Item": {
+            "TriggerAction": {
+              "Template": "ActionSpawnObjects",
+              "Values": {
+                "Action": "",
+                "ActionSpawnObjects": {
+                  "SpawnGUID": 1734,
+                  "Amount": 1,
+                  "Owner": "Neutral"
+                },
+                "SpawnArea": {
+                  "SpawnContext": "ForceContextPosition",
+                  "ContextGUID": 105536,
+                  "DistanceToContext": 5
+                },
+                "SessionFilter": {
+                  "AllowProcessingSession": 1,
+                  "Sessions": {
+                    "Item": {
+                      "Session": 5864
+                    }
+                  },
+                  "AllowQuestSession": 1,
+                  "AllowQuestArea": 1
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": {
+        "AutoSelfUnlock": 0
+      }
+    }
+  },
+  {
+    "Template": "TriggerScenarioProject",
+    "Values": {
+      "Standard": {
+        "GUID": 105190,
+        "Name": "SC04_Milestone_Item1"
+      },
+      "Locked": {
+        "Scope": "Account"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionAlwaysFalse",
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysFalse": ""
+          }
+        },
+        "TriggerActions": {
+          "Item": {
+            "TriggerAction": {
+              "Template": "ActionDelayedActions",
+              "Values": {
+                "Action": "",
+                "ActionDelayedActions": {
+                  "ExecutionDelay": 3000,
+                  "DelayedActions": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ActionList": {
+                        "Actions": {
+                          "Item": {
+                            "Action": {
+                              "Template": "ActionAddGoodsToItemContainer",
+                              "Values": {
+                                "Action": "",
+                                "ActionAddGoodsToItemContainer": {
+                                  "Goods": {
+                                    "Item": {
+                                      "Good": 105214,
+                                      "Amount": 1,
+                                      "SetGoodPoolLimitToAmount": 1
+                                    }
+                                  },
+                                  "ItemContainerObjects": {
+                                    "IsBaseAutoCreateAsset": 1,
+                                    "Values": {
+                                      "ObjectFilter": {
+                                        "ObjectGUID": 105538,
+                                        "ObjectSession": 5864,
+                                        "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": {
+        "AutoSelfUnlock": 0
+      }
+    }
+  },
+  {
+    "Template": "TriggerScenarioProject",
+    "Values": {
+      "Standard": {
+        "GUID": 105197,
+        "Name": "SC04_Milestone_Item2"
+      },
+      "Locked": {
+        "Scope": "Account"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionAlwaysFalse",
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysFalse": ""
+          }
+        },
+        "TriggerActions": {
+          "Item": {
+            "TriggerAction": {
+              "Template": "ActionDelayedActions",
+              "Values": {
+                "Action": "",
+                "ActionDelayedActions": {
+                  "ExecutionDelay": 3000,
+                  "DelayedActions": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ActionList": {
+                        "Actions": {
+                          "Item": {
+                            "Action": {
+                              "Template": "ActionAddGoodsToItemContainer",
+                              "Values": {
+                                "Action": "",
+                                "ActionAddGoodsToItemContainer": {
+                                  "Goods": {
+                                    "Item": {
+                                      "Good": 105215,
+                                      "Amount": 1,
+                                      "SetGoodPoolLimitToAmount": 1
+                                    }
+                                  },
+                                  "ItemContainerObjects": {
+                                    "IsBaseAutoCreateAsset": 1,
+                                    "Values": {
+                                      "ObjectFilter": {
+                                        "ObjectGUID": 105538,
+                                        "CheckProcessingParticipantID": 1,
+                                        "ObjectSession": 5864,
+                                        "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": {
+        "AutoSelfUnlock": 0
+      }
+    }
+  },
+  {
+    "Template": "TriggerScenarioProject",
+    "Values": {
+      "Standard": {
+        "GUID": 105213,
+        "Name": "SC04_Milestone_Item3"
+      },
+      "Locked": {
+        "Scope": "Account"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionAlwaysFalse",
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysFalse": ""
+          }
+        },
+        "TriggerActions": {
+          "Item": {
+            "TriggerAction": {
+              "Template": "ActionDelayedActions",
+              "Values": {
+                "Action": "",
+                "ActionDelayedActions": {
+                  "ExecutionDelay": 3000,
+                  "DelayedActions": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ActionList": {
+                        "Actions": {
+                          "Item": {
+                            "Action": {
+                              "Template": "ActionAddGoodsToItemContainer",
+                              "Values": {
+                                "Action": "",
+                                "ActionAddGoodsToItemContainer": {
+                                  "Goods": {
+                                    "Item": {
+                                      "Good": 105216,
+                                      "Amount": 1,
+                                      "SetGoodPoolLimitToAmount": 1
+                                    }
+                                  },
+                                  "ItemContainerObjects": {
+                                    "IsBaseAutoCreateAsset": 1,
+                                    "Values": {
+                                      "ObjectFilter": {
+                                        "ObjectGUID": 105538,
+                                        "CheckProcessingParticipantID": 1,
+                                        "ObjectSession": 5864,
+                                        "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": {
+        "AutoSelfUnlock": 0
+      }
+    }
+  },
+  {
+    "Template": "TriggerScenarioProject",
+    "Values": {
+      "Standard": {
+        "GUID": 105535,
+        "Name": "SC04_Milestone_Item_Ship"
+      },
+      "Locked": {
+        "Scope": "Account"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionAlwaysFalse",
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysFalse": ""
+          }
+        },
+        "TriggerActions": {
+          "Item": {
+            "TriggerAction": {
+              "Template": "ActionDelayedActions",
+              "Values": {
+                "Action": "",
+                "ActionDelayedActions": {
+                  "DelayedActions": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ActionList": {
+                        "Actions": {
+                          "Item": {
+                            "Action": {
+                              "Template": "ActionSpawnObjects",
+                              "Values": {
+                                "Action": "",
+                                "ActionSpawnObjects": {
+                                  "SpawnGUID": 105538,
+                                  "Amount": 1,
+                                  "Owner": "Neutral"
+                                },
+                                "SpawnArea": {
+                                  "SpawnContext": "ForceContextPosition",
+                                  "ContextGUID": 105537,
+                                  "DistanceToContext": 5
+                                },
+                                "SessionFilter": {
+                                  "AllowProcessingSession": 1,
+                                  "Sessions": {
+                                    "Item": {
+                                      "Session": 5864
+                                    }
+                                  },
+                                  "AllowQuestSession": 1,
+                                  "AllowQuestArea": 1
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": {
+        "AutoSelfUnlock": 0
+      }
+    }
+  },
+  {
+    "Template": "TriggerScenarioProject",
+    "Values": {
+      "Standard": {
+        "GUID": 105217,
+        "Name": "SC04_Milestone_PalomaReveal"
+      },
+      "Locked": {
+        "Scope": "Account"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionAlwaysFalse",
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysFalse": ""
+          }
+        },
+        "TriggerActions": {
+          "Item": {
+            "TriggerAction": {
+              "Template": "ActionDiscoverIsland",
+              "Values": {
+                "Action": "",
+                "ActionDiscoverIsland": {
+                  "TargetIsland": 7034
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": {
+        "AutoSelfUnlock": 0
+      }
+    }
+  },
+  {
+    "Template": "TriggerScenarioProject",
+    "Values": {
+      "Standard": {
+        "GUID": 105219,
+        "Name": "SC04_Milestone_IsabelReveal"
+      },
+      "Locked": {
+        "Scope": "Account"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionAlwaysFalse",
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysFalse": ""
+          }
+        },
+        "TriggerActions": {
+          "Item": {
+            "TriggerAction": {
+              "Template": "ActionDiscoverIsland",
+              "Values": {
+                "Action": "",
+                "ActionDiscoverIsland": {
+                  "TargetIsland": 7186
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": {
+        "AutoSelfUnlock": 0
+      }
+    }
+  }
+]

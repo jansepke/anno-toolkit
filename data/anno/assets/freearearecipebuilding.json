@@ -90,11 +90,22 @@
           "Item": {
             "Filename": "data/dlc08/graphics/buildings/production/tree_planter/tree_planter_moderate_unslotted.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 132933,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
         "StaticHelpEntryPoint": "TouristSeasonOrchards",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier01_atWork",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -104,8 +115,7 @@
         "LocaText": {
           "English": {
             "Text": "Orchard",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 50464
@@ -178,12 +188,13 @@
           ]
         }
       },
-      "Attackable": "",
+      "Attackable": {
+        "AttackableType": "IslandBuilding"
+      },
       "FreeAreaProductivity": {
         "InfluenceRadius": 9,
         "NeededAreaPercent": 80,
         "FreeAreaType": "None",
-        "InitializeForestMaxDuration": 0,
         "InitializeForestMinTreeAreaPercent": 0
       },
       "Pausable": {
@@ -290,11 +301,22 @@
           "Item": {
             "Filename": "data/dlc08/graphics/buildings/production/tree_planter/tree_planter_cherry.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 132933,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
         "StaticHelpEntryPoint": "TouristSeasonOrchards",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier01_atWork",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -304,8 +326,7 @@
         "LocaText": {
           "English": {
             "Text": "Orchard: Jam",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 50465
@@ -364,6 +385,12 @@
       "UpgradeList": "",
       "Factory7": "",
       "FactoryBase": {
+        "FactoryInputs": {
+          "Item": {
+            "Product": 1955,
+            "StorageAmount": 10
+          }
+        },
         "FactoryOutputs": {
           "Item": {
             "Product": 133183,
@@ -395,12 +422,15 @@
           ]
         }
       },
-      "Attackable": "",
+      "Attackable": {
+        "AttackableType": "IslandBuilding"
+      },
       "FreeAreaProductivity": {
         "InfluenceRadius": 9,
         "NeededAreaPercent": 80,
         "FreeAreaType": "Citrus",
         "MaxWorkerAmount": 3,
+        "AdditionalWorkerForForestation": 9,
         "WorkerPause": 10000,
         "CutTree": 0,
         "ShowCollectFeedback": 1,
@@ -508,11 +538,22 @@
           "Item": {
             "Filename": "data/dlc08/graphics/buildings/production/tree_planter/tree_planter_unslotted.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 133010,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
         "StaticHelpEntryPoint": "TouristSeasonOrchards",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "SA_Resident_tier01_atWork",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -522,8 +563,7 @@
         "LocaText": {
           "English": {
             "Text": "Orchard (New World)",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 50466
@@ -596,12 +636,13 @@
           ]
         }
       },
-      "Attackable": "",
+      "Attackable": {
+        "AttackableType": "IslandBuilding"
+      },
       "FreeAreaProductivity": {
         "InfluenceRadius": 9,
         "NeededAreaPercent": 80,
         "FreeAreaType": "None",
-        "InitializeForestMaxDuration": 0,
         "InitializeForestMinTreeAreaPercent": 0
       },
       "Pausable": {
@@ -708,11 +749,22 @@
           "Item": {
             "Filename": "data/dlc08/graphics/buildings/production/tree_planter/tree_planter_coconut.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 133010,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
         "StaticHelpEntryPoint": "TouristSeasonOrchards",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "SA_Resident_tier01_atWork",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -722,8 +774,7 @@
         "LocaText": {
           "English": {
             "Text": "Orchard: Coconut Oil",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 50467
@@ -782,6 +833,12 @@
       "UpgradeList": "",
       "Factory7": "",
       "FactoryBase": {
+        "FactoryInputs": {
+          "Item": {
+            "Product": 1955,
+            "StorageAmount": 10
+          }
+        },
         "FactoryOutputs": {
           "Item": {
             "Product": 133095,
@@ -813,12 +870,15 @@
           ]
         }
       },
-      "Attackable": "",
+      "Attackable": {
+        "AttackableType": "IslandBuilding"
+      },
       "FreeAreaProductivity": {
         "InfluenceRadius": 9,
         "NeededAreaPercent": 80,
         "FreeAreaType": "Coconut",
         "MaxWorkerAmount": 3,
+        "AdditionalWorkerForForestation": 9,
         "WorkerPause": 10000,
         "CutTree": 0,
         "ShowCollectFeedback": 1,
@@ -926,11 +986,22 @@
           "Item": {
             "Filename": "data/dlc08/graphics/buildings/production/tree_planter/tree_planter_comfort.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 133010,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
         "StaticHelpEntryPoint": "TouristSeasonOrchards",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "SA_Resident_tier01_atWork",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -940,8 +1011,7 @@
         "LocaText": {
           "English": {
             "Text": "Orchard: Cinnamon",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 50468
@@ -1000,6 +1070,12 @@
       "UpgradeList": "",
       "Factory7": "",
       "FactoryBase": {
+        "FactoryInputs": {
+          "Item": {
+            "Product": 1955,
+            "StorageAmount": 10
+          }
+        },
         "FactoryOutputs": {
           "Item": {
             "Product": 133093,
@@ -1031,12 +1107,15 @@
           ]
         }
       },
-      "Attackable": "",
+      "Attackable": {
+        "AttackableType": "IslandBuilding"
+      },
       "FreeAreaProductivity": {
         "InfluenceRadius": 9,
         "NeededAreaPercent": 80,
         "FreeAreaType": "Camphor",
         "MaxWorkerAmount": 3,
+        "AdditionalWorkerForForestation": 9,
         "WorkerPause": 10000
       },
       "Pausable": "",
@@ -1140,11 +1219,22 @@
           "Item": {
             "Filename": "data/dlc08/graphics/buildings/production/tree_planter/tree_planter_citrus.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 133010,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
         "StaticHelpEntryPoint": "TouristSeasonOrchards",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "SA_Resident_tier01_atWork",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -1154,8 +1244,7 @@
         "LocaText": {
           "English": {
             "Text": "Orchard: Citrus",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 50469
@@ -1214,6 +1303,12 @@
       "UpgradeList": "",
       "Factory7": "",
       "FactoryBase": {
+        "FactoryInputs": {
+          "Item": {
+            "Product": 1955,
+            "StorageAmount": 10
+          }
+        },
         "FactoryOutputs": {
           "Item": {
             "Product": 133097,
@@ -1245,12 +1340,15 @@
           ]
         }
       },
-      "Attackable": "",
+      "Attackable": {
+        "AttackableType": "IslandBuilding"
+      },
       "FreeAreaProductivity": {
         "InfluenceRadius": 9,
         "NeededAreaPercent": 80,
         "FreeAreaType": "Citrus",
         "MaxWorkerAmount": 3,
+        "AdditionalWorkerForForestation": 9,
         "WorkerPause": 10000,
         "CutTree": 0,
         "ShowCollectFeedback": 1,
@@ -1358,11 +1456,22 @@
           "Item": {
             "Filename": "data/dlc08/graphics/buildings/production/tree_planter/tree_planter_comfort_plastic.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 133010,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
         "StaticHelpEntryPoint": "TouristSeasonOrchards",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "SA_Resident_tier01_atWork",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -1372,8 +1481,7 @@
         "LocaText": {
           "English": {
             "Text": "Orchard: Camphor Wax",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 50470
@@ -1432,6 +1540,12 @@
       "UpgradeList": "",
       "Factory7": "",
       "FactoryBase": {
+        "FactoryInputs": {
+          "Item": {
+            "Product": 1955,
+            "StorageAmount": 10
+          }
+        },
         "FactoryOutputs": {
           "Item": {
             "Product": 134616,
@@ -1463,12 +1577,15 @@
           ]
         }
       },
-      "Attackable": "",
+      "Attackable": {
+        "AttackableType": "IslandBuilding"
+      },
       "FreeAreaProductivity": {
         "InfluenceRadius": 9,
         "NeededAreaPercent": 80,
         "FreeAreaType": "Camphor",
         "MaxWorkerAmount": 3,
+        "AdditionalWorkerForForestation": 9,
         "WorkerPause": 10000
       },
       "Pausable": "",
@@ -1572,11 +1689,22 @@
           "Item": {
             "Filename": "data/dlc09/graphics/buildings/production/tree_planter/tree_planter_cherry_wood.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 132933,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
         "StaticHelpEntryPoint": "HighLifeOrchards",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier01_atWork",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -1586,8 +1714,7 @@
         "LocaText": {
           "English": {
             "Text": "Orchard: Cherry Wood",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 52150
@@ -1648,13 +1775,20 @@
       "UpgradeList": "",
       "Factory7": "",
       "FactoryBase": {
+        "FactoryInputs": {
+          "Item": {
+            "Product": 1955,
+            "StorageAmount": 10
+          }
+        },
         "FactoryOutputs": {
           "Item": {
             "Product": 135087,
             "Amount": 1,
             "StorageAmount": 10
           }
-        }
+        },
+        "IsMainFactory": 1
       },
       "LogisticNode": "",
       "AmbientMoodProvider": {
@@ -1678,12 +1812,15 @@
           ]
         }
       },
-      "Attackable": "",
+      "Attackable": {
+        "AttackableType": "IslandBuilding"
+      },
       "FreeAreaProductivity": {
         "InfluenceRadius": 9,
         "NeededAreaPercent": 80,
         "FreeAreaType": "Camphor",
         "MaxWorkerAmount": 3,
+        "AdditionalWorkerForForestation": 9,
         "WorkerPause": 10000,
         "CutTree": 0,
         "AdditionalTreeProp": "data/graphics/props/storage/basket_pile_v1.prp"
@@ -1789,11 +1926,22 @@
           "Item": {
             "Filename": "data/dlc09/graphics/buildings/production/tree_planter/tree_planter_terpentine.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 132933,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
         "StaticHelpEntryPoint": "HighLifeOrchards",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier01_atWork",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -1803,8 +1951,7 @@
         "LocaText": {
           "English": {
             "Text": "Orchard: Resin",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 52151
@@ -1865,13 +2012,20 @@
       "UpgradeList": "",
       "Factory7": "",
       "FactoryBase": {
+        "FactoryInputs": {
+          "Item": {
+            "Product": 1955,
+            "StorageAmount": 10
+          }
+        },
         "FactoryOutputs": {
           "Item": {
             "Product": 135086,
             "Amount": 1,
             "StorageAmount": 10
           }
-        }
+        },
+        "IsMainFactory": 1
       },
       "LogisticNode": "",
       "AmbientMoodProvider": {
@@ -1895,12 +2049,15 @@
           ]
         }
       },
-      "Attackable": "",
+      "Attackable": {
+        "AttackableType": "IslandBuilding"
+      },
       "FreeAreaProductivity": {
         "InfluenceRadius": 9,
         "NeededAreaPercent": 80,
         "FreeAreaType": "Coconut",
         "MaxWorkerAmount": 3,
+        "AdditionalWorkerForForestation": 9,
         "WorkerPause": 10000,
         "CutTree": 0,
         "ShowCollectFeedback": 1,

@@ -10,8 +10,7 @@
       },
       "Building": {
         "BuildingCategoryName": 11150,
-        "AssociatedRegions": "Moderate",
-        "AllowChangeDirection": 1
+        "AssociatedRegions": "Moderate"
       },
       "Blocking": {
         "GroundDecalAsset": 100446,
@@ -25,17 +24,28 @@
           "Item": {
             "Filename": "data/graphics/buildings/special/harbor_04/harbor_04.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 1010522,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "AmbientMoodProvider": "",
       "Constructable": "",
-      "Selection": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Mounted Guns",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 7018
@@ -74,10 +84,10 @@
         "InfluenceCostPoints": 3
       },
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 3200,
-        "SelfHealPerHealTick": 5,
         "DefenseByAIFactor": 200,
-        "TakeOverEffect": "OnDeath",
+        "MilitaryDefensePoints": 2,
         "MoralePower": 50,
         "IslandWarFlag": 102307,
         "ExplosionEffects": {
@@ -87,27 +97,27 @@
         },
         "ExplosionEffectsMin": 1,
         "ExplosionEffectsMax": 1,
-        "MilitaryDefensePoints": 2
+        "SelfHealPerHealTick": 5
       },
       "Attacker": {
+        "BasicAttackType": "HarbourTower",
+        "BaseDamage": 23,
         "AttackRange": 72,
         "LineOfSightRange": 72,
-        "ProjectileAsset": 102217,
-        "ProjectileCount": 1,
-        "BaseDamage": 23,
         "Turrets": {
           "Item": {
             "TurnSpan": 360,
             "TurretCfg": "data/graphics/buildings/special/harbor_04/harbor_04_turret.cfg"
           }
         },
-        "AccuracyBase": 21,
-        "AccuracyIncreaseOverDistance": 20,
+        "ProjectileAsset": 102217,
         "MuzzleEffectAssets": {
           "Item": {
             "MuzzleEffectAsset": 101975
           }
         },
+        "AccuracyBase": 21,
+        "AccuracyIncreaseOverDistance": 20,
         "AccuracyByDistance": {
           "Item": [
             {
@@ -153,8 +163,7 @@
             },
             {
               "AccuracyByDistancePair": {
-                "EnemyDistanceRelToAttackRange": 100,
-                "CorrespondingAccuracy": 100
+                "EnemyDistanceRelToAttackRange": 100
               }
             }
           ]
@@ -238,8 +247,7 @@
       },
       "Building": {
         "BuildingCategoryName": 11150,
-        "AssociatedRegions": "Moderate",
-        "AllowChangeDirection": 1
+        "AssociatedRegions": "Moderate"
       },
       "Blocking": {
         "GroundDecalAsset": 100446,
@@ -253,17 +261,28 @@
           "Item": {
             "Filename": "data/graphics/buildings/special/harbor_05/harbor_05.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 1010523,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "AmbientMoodProvider": "",
       "Constructable": "",
-      "Selection": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Cannon Tower",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 7019
@@ -303,10 +322,10 @@
         "InfluenceCostPoints": 7
       },
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 4800,
-        "SelfHealPerHealTick": 5,
         "DefenseByAIFactor": 301,
-        "TakeOverEffect": "OnDeath",
+        "MilitaryDefensePoints": 3.5,
         "MoralePower": 50,
         "IslandWarFlag": 102307,
         "ExplosionEffects": {
@@ -316,29 +335,29 @@
         },
         "ExplosionEffectsMin": 1,
         "ExplosionEffectsMax": 1,
-        "MilitaryDefensePoints": 3.5
+        "SelfHealPerHealTick": 5
       },
       "Attacker": {
+        "BasicAttackType": "HarbourTower",
+        "BaseDamage": 150,
+        "ReloadTime": 50,
         "AttackRange": 92,
         "LineOfSightRange": 92,
-        "ReloadTime": 50,
-        "ProjectileAsset": 101974,
-        "ProjectileCount": 1,
-        "BaseDamage": 150,
         "Turrets": {
           "Item": {
             "TurnSpan": 360,
             "TurretCfg": "data/graphics/buildings/special/harbor_05/harbor_05_turret.cfg"
           }
         },
-        "AccuracyBase": 1,
-        "AccuracyIncreaseOverDistance": 100,
+        "ProjectileAsset": 101974,
         "MuzzleEffectAssets": {
           "Item": {
             "MuzzleEffectAsset": 102220
           }
         },
         "EmitProjectileTimeAfterStartAnimation": 0.3,
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 100,
         "AccuracyByDistance": {
           "Item": [
             {
@@ -440,6 +459,412 @@
     "Template": "HarborBuildingAttacker",
     "Values": {
       "Standard": {
+        "GUID": 625,
+        "Name": "harbor_17 (Tower 04, Fire Tower)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/military_building/icon_flame_tower.png",
+        "InfoDescription": 630
+      },
+      "Building": {
+        "BuildingCategoryName": 11150,
+        "AssociatedRegions": "Moderate"
+      },
+      "Blocking": {
+        "GroundDecalAsset": 100446,
+        "GroundDecalInvisible": 101008,
+        "HasBuildingBaseTiles": 1,
+        "RemoveGrass": 0
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/buildings/special/harbor_05/harbor_05.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 625,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        }
+      },
+      "AmbientMoodProvider": "",
+      "Constructable": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Flame Tower",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 56105
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 6000
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 5
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 1010218,
+              "Amount": 15
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            },
+            {
+              "Ingredient": 1010221,
+              "Amount": 25
+            }
+          ]
+        },
+        "InfluenceCostType": "DefenseBuilding",
+        "InfluenceCostPoints": 15
+      },
+      "Attackable": {
+        "AttackableType": "HarbourBuilding",
+        "MaximumHitPoints": 1701,
+        "DefenseByAIFactor": 301,
+        "MilitaryDefensePoints": 3.5,
+        "MoralePower": 45,
+        "IslandWarFlag": 102307,
+        "ExplosionEffects": {
+          "Item": {
+            "ExplosionEffectFilePath": "data/graphics/effects/military/explosions/harbor_generic_xpl_02.cfg"
+          }
+        },
+        "ExplosionEffectsMin": 1,
+        "ExplosionEffectsMax": 1,
+        "SelfHealPerHealTick": 5
+      },
+      "Attacker": {
+        "BasicAttackType": "HarbourTower",
+        "BaseDamage": 19,
+        "ReloadTime": 3,
+        "AttackRange": 70,
+        "LineOfSightRange": 100,
+        "Turrets": {
+          "Item": {
+            "TurnSpan": 360,
+            "TurretCfg": "data/dlc11/graphics/buildings/special/flame_thrower_tower/flame_thrower_tower.cfg"
+          }
+        },
+        "ProjectileAsset": 628,
+        "EmitProjectileTimeAfterStartAnimation": 0.3,
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 100,
+        "AccuracyByDistance": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "HarborBuildingAttacker",
+                    "Index": 0
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "HarborBuildingAttacker",
+                    "Index": 1
+                  }
+                }
+              },
+              "AccuracyByDistancePair": {
+                "CorrespondingAccuracy": 100
+              }
+            }
+          ]
+        }
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": {
+            "Product": 1010017,
+            "Amount": 120,
+            "InactiveAmount": 60
+          }
+        },
+        "ConsumerPriority": 1
+      },
+      "Locked": "",
+      "DelayedConstruction": "",
+      "Pausable": "",
+      "Infolayer": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 206544
+            }
+          },
+          "BuildFailed": {
+            "Item": {
+              "Sound": 9818387
+            }
+          },
+          "BuildMoveStart": {
+            "Item": {
+              "Sound": 9818755
+            }
+          },
+          "BuildMoveEnd": {
+            "Item": {
+              "Sound": 200141
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRuined": {
+          "Item": {
+            "Sound": 203848
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        }
+      },
+      "CommandQueue": "",
+      "Culture": {
+        "Attractiveness": 0
+      },
+      "UpgradeList": ""
+    }
+  },
+  {
+    "Template": "HarborBuildingAttacker",
+    "Values": {
+      "Standard": {
+        "GUID": 3700,
+        "Name": "harbor_18 (Tower 06, Armor Pierce Tower)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/military_building/icon_he_guntower.png",
+        "InfoDescription": 3724
+      },
+      "Building": {
+        "BuildingCategoryName": 11150,
+        "AssociatedRegions": "Moderate"
+      },
+      "Blocking": {
+        "GroundDecalAsset": 100446,
+        "GroundDecalInvisible": 101008,
+        "HasBuildingBaseTiles": 1,
+        "RemoveGrass": 0
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/buildings/special/harbor_05/harbor_05.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 3700,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        }
+      },
+      "AmbientMoodProvider": "",
+      "Constructable": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Anti-Armour Gun",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 56795
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 7500
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 5
+            },
+            {
+              "Ingredient": 1010218,
+              "Amount": 15
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202,
+              "Amount": 45
+            },
+            {
+              "Ingredient": 1010223,
+              "Amount": 20
+            }
+          ]
+        },
+        "InfluenceCostType": "DefenseBuilding",
+        "InfluenceCostPoints": 11
+      },
+      "Attackable": {
+        "AttackableType": "HarbourBuilding",
+        "MaximumHitPoints": 3750,
+        "DefenseByAIFactor": 190,
+        "MilitaryDefensePoints": 4,
+        "MoralePower": 60,
+        "IslandWarFlag": 102307,
+        "ExplosionEffects": {
+          "Item": {
+            "ExplosionEffectFilePath": "data/graphics/effects/military/explosions/harbor_generic_xpl_02.cfg"
+          }
+        },
+        "ExplosionEffectsMin": 1,
+        "ExplosionEffectsMax": 1,
+        "SelfHealPerHealTick": 5
+      },
+      "Attacker": {
+        "BasicAttackType": "HarbourTower",
+        "BaseDamage": 500,
+        "ReloadTime": 93,
+        "AttackRange": 65,
+        "LineOfSightRange": 108,
+        "Turrets": {
+          "Item": {
+            "TurnSpan": 360,
+            "TurretCfg": "data/dlc11/graphics/buildings/special/armor_piercing_cannon/armor_piercing_cannon.cfg"
+          }
+        },
+        "ProjectileAsset": 3702,
+        "TurretExplosionEffectAsset": 102183,
+        "MuzzleEffectAssets": {
+          "Item": {
+            "MuzzleEffectAsset": 102183
+          }
+        },
+        "EmitProjectileTimeAfterStartAnimation": 0.3,
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 100,
+        "AccuracyByDistance": ""
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": {
+            "Product": 1010017,
+            "Amount": 320,
+            "InactiveAmount": 160
+          }
+        },
+        "ConsumerPriority": 1
+      },
+      "Locked": "",
+      "DelayedConstruction": "",
+      "Pausable": "",
+      "Infolayer": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 206544
+            }
+          },
+          "BuildFailed": {
+            "Item": {
+              "Sound": 9818387
+            }
+          },
+          "BuildMoveStart": {
+            "Item": {
+              "Sound": 9818755
+            }
+          },
+          "BuildMoveEnd": {
+            "Item": {
+              "Sound": 200141
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRuined": {
+          "Item": {
+            "Sound": 203848
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        }
+      },
+      "CommandQueue": "",
+      "Culture": {
+        "Attractiveness": 0
+      },
+      "UpgradeList": ""
+    }
+  },
+  {
+    "Template": "HarborBuildingAttacker",
+    "Values": {
+      "Standard": {
         "GUID": 1010524,
         "Name": "harbor_06 (Tower 03, Monster Gun)",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_defense_tower_monstergun.png",
@@ -463,17 +888,28 @@
           "Item": {
             "Filename": "data/graphics/buildings/special/harbor_06/harbor_06.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 1010524,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "AmbientMoodProvider": "",
       "Constructable": "",
-      "Selection": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Big Betty",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 7020
@@ -515,10 +951,10 @@
         "InfluenceCostPoints": 14
       },
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 7000,
-        "SelfHealPerHealTick": 5,
         "DefenseByAIFactor": 401,
-        "TakeOverEffect": "OnDeath",
+        "MilitaryDefensePoints": 10,
         "MoralePower": 100,
         "IslandWarFlag": 102307,
         "ExplosionEffects": {
@@ -528,29 +964,29 @@
         },
         "ExplosionEffectsMin": 1,
         "ExplosionEffectsMax": 1,
-        "MilitaryDefensePoints": 10
+        "SelfHealPerHealTick": 5
       },
       "Attacker": {
+        "BasicAttackType": "HarbourTower",
+        "BaseDamage": 850,
+        "ReloadTime": 150,
         "AttackRange": 108,
         "LineOfSightRange": 108,
-        "ReloadTime": 150,
-        "ProjectileAsset": 101955,
-        "ProjectileCount": 1,
-        "BaseDamage": 850,
         "Turrets": {
           "Item": {
             "TurnSpan": 360,
             "TurretCfg": "data/graphics/buildings/special/harbor_06/harbor_06_turret.cfg"
           }
         },
-        "AccuracyBase": 1,
-        "AccuracyIncreaseOverDistance": 100,
+        "ProjectileAsset": 101955,
         "MuzzleEffectAssets": {
           "Item": {
             "MuzzleEffectAsset": 101972
           }
         },
         "EmitProjectileTimeAfterStartAnimation": 0.35,
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 100,
         "AccuracyByDistance": {
           "Item": [
             {
@@ -652,6 +1088,411 @@
     "Template": "HarborBuildingAttacker",
     "Values": {
       "Standard": {
+        "GUID": 632,
+        "Name": "harbor_colony01_17 (Tower 03, Fire Tower)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/military_building/icon_flame_tower.png",
+        "InfoDescription": 630
+      },
+      "Building": {
+        "BuildingCategoryName": 11150,
+        "AssociatedRegions": "Colony01"
+      },
+      "Blocking": {
+        "GroundDecalAsset": 102460,
+        "GroundDecalInvisible": 102459,
+        "HasBuildingBaseTiles": 1,
+        "RemoveGrass": 0
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/buildings/special/harbor_05_colony01/harbor_05_colony01.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 632,
+          "DefaultSkinDescription": 23853
+        }
+      },
+      "AmbientMoodProvider": "",
+      "Constructable": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Flame Tower",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 56106
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 6000
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 10
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 30
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            },
+            {
+              "Ingredient": 1010221,
+              "Amount": 25
+            }
+          ]
+        },
+        "InfluenceCostType": "DefenseBuilding",
+        "InfluenceCostPoints": 15
+      },
+      "Attackable": {
+        "AttackableType": "HarbourBuilding",
+        "MaximumHitPoints": 1701,
+        "DefenseByAIFactor": 301,
+        "MilitaryDefensePoints": 3.5,
+        "MoralePower": 45,
+        "IslandWarFlag": 102307,
+        "ExplosionEffects": {
+          "Item": {
+            "ExplosionEffectFilePath": "data/graphics/effects/military/explosions/harbor_generic_xpl_02.cfg"
+          }
+        },
+        "ExplosionEffectsMin": 1,
+        "ExplosionEffectsMax": 1,
+        "SelfHealPerHealTick": 5
+      },
+      "Attacker": {
+        "BasicAttackType": "HarbourTower",
+        "BaseDamage": 19,
+        "ReloadTime": 3,
+        "AttackRange": 70,
+        "LineOfSightRange": 100,
+        "Turrets": {
+          "Item": {
+            "TurnSpan": 360,
+            "TurretCfg": "data/dlc11/graphics/buildings/special/flame_thrower_tower/flame_thrower_tower.cfg"
+          }
+        },
+        "ProjectileAsset": 628,
+        "MuzzleEffectAssets": {
+          "Item": ""
+        },
+        "EmitProjectileTimeAfterStartAnimation": 0.3,
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 100,
+        "AccuracyByDistance": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "HarborBuildingAttacker",
+                    "Index": 0
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "HarborBuildingAttacker",
+                    "Index": 1
+                  }
+                }
+              },
+              "AccuracyByDistancePair": {
+                "CorrespondingAccuracy": 100
+              }
+            }
+          ]
+        }
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": {
+            "Product": 1010017,
+            "Amount": 120,
+            "InactiveAmount": 60
+          }
+        },
+        "ConsumerPriority": 1
+      },
+      "Locked": "",
+      "DelayedConstruction": "",
+      "Pausable": "",
+      "Infolayer": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 206544
+            }
+          },
+          "BuildFailed": {
+            "Item": {
+              "Sound": 9818387
+            }
+          },
+          "BuildMoveStart": {
+            "Item": {
+              "Sound": 9818755
+            }
+          },
+          "BuildMoveEnd": {
+            "Item": {
+              "Sound": 200141
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRuined": {
+          "Item": {
+            "Sound": 203848
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        }
+      },
+      "CommandQueue": "",
+      "Culture": {
+        "Attractiveness": 0
+      },
+      "UpgradeList": ""
+    }
+  },
+  {
+    "Template": "HarborBuildingAttacker",
+    "Values": {
+      "Standard": {
+        "GUID": 4797,
+        "Name": "harbor_colony01_18 (Tower 06, Armor Pierce Tower)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/military_building/icon_he_guntower.png",
+        "InfoDescription": 3724
+      },
+      "Building": {
+        "BuildingCategoryName": 11150,
+        "AssociatedRegions": "Colony01"
+      },
+      "Blocking": {
+        "GroundDecalAsset": 102460,
+        "GroundDecalInvisible": 102459,
+        "HasBuildingBaseTiles": 1,
+        "RemoveGrass": 0
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/buildings/special/harbor_05_colony01/harbor_05_colony01.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 4797,
+          "DefaultSkinDescription": 23853
+        }
+      },
+      "AmbientMoodProvider": "",
+      "Constructable": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Anti-Armour Gun",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 56795
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 7500
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 45
+            },
+            {
+              "Ingredient": 1010218,
+              "Amount": 15
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            },
+            {
+              "Ingredient": 1010223,
+              "Amount": 20
+            }
+          ]
+        },
+        "InfluenceCostType": "DefenseBuilding",
+        "InfluenceCostPoints": 11
+      },
+      "Attackable": {
+        "AttackableType": "HarbourBuilding",
+        "MaximumHitPoints": 3750,
+        "DefenseByAIFactor": 190,
+        "MilitaryDefensePoints": 4,
+        "MoralePower": 60,
+        "IslandWarFlag": 102307,
+        "ExplosionEffects": {
+          "Item": {
+            "ExplosionEffectFilePath": "data/graphics/effects/military/explosions/harbor_generic_xpl_02.cfg"
+          }
+        },
+        "ExplosionEffectsMin": 1,
+        "ExplosionEffectsMax": 1,
+        "SelfHealPerHealTick": 5
+      },
+      "Attacker": {
+        "BasicAttackType": "HarbourTower",
+        "BaseDamage": 500,
+        "ReloadTime": 93,
+        "AttackRange": 65,
+        "LineOfSightRange": 108,
+        "Turrets": {
+          "Item": {
+            "TurnSpan": 360,
+            "TurretCfg": "data/dlc11/graphics/buildings/special/armor_piercing_cannon/armor_piercing_cannon.cfg"
+          }
+        },
+        "ProjectileAsset": 3702,
+        "TurretExplosionEffectAsset": 102183,
+        "MuzzleEffectAssets": {
+          "Item": {
+            "MuzzleEffectAsset": 102183
+          }
+        },
+        "EmitProjectileTimeAfterStartAnimation": 0.3,
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 100,
+        "AccuracyByDistance": ""
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": {
+            "Product": 1010017,
+            "Amount": 320,
+            "InactiveAmount": 160
+          }
+        },
+        "ConsumerPriority": 1
+      },
+      "Locked": "",
+      "DelayedConstruction": "",
+      "Pausable": "",
+      "Infolayer": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 206544
+            }
+          },
+          "BuildFailed": {
+            "Item": {
+              "Sound": 9818387
+            }
+          },
+          "BuildMoveStart": {
+            "Item": {
+              "Sound": 9818755
+            }
+          },
+          "BuildMoveEnd": {
+            "Item": {
+              "Sound": 200141
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRuined": {
+          "Item": {
+            "Sound": 203848
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        }
+      },
+      "CommandQueue": "",
+      "Culture": {
+        "Attractiveness": 0
+      },
+      "UpgradeList": ""
+    }
+  },
+  {
+    "Template": "HarborBuildingAttacker",
+    "Values": {
+      "Standard": {
         "GUID": 102449,
         "Name": "harbor_05 (Cannon Tower) - Pirates",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_defense_tower_cannon.png",
@@ -681,6 +1522,12 @@
       "AmbientMoodProvider": "",
       "Constructable": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "SelectionColorType": "PropertySelectionColor",
           "SelectionColor": -337045,
@@ -691,8 +1538,7 @@
         "LocaText": {
           "English": {
             "Text": "Cannon Tower",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 23404
@@ -732,10 +1578,10 @@
         "InfluenceCostPoints": 7
       },
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 4800,
-        "SelfHealPerHealTick": 5,
         "DefenseByAIFactor": 9991,
-        "TakeOverEffect": "OnDeath",
+        "MilitaryDefensePoints": 3.5,
         "MoralePower": 50,
         "IslandWarFlag": 102307,
         "ExplosionEffects": {
@@ -745,29 +1591,28 @@
         },
         "ExplosionEffectsMin": 1,
         "ExplosionEffectsMax": 1,
-        "MilitaryDefensePoints": 3.5
+        "SelfHealPerHealTick": 5
       },
       "Attacker": {
+        "BaseDamage": 150,
+        "ReloadTime": 50,
         "AttackRange": 92,
         "LineOfSightRange": 92,
-        "ReloadTime": 50,
-        "ProjectileAsset": 101974,
-        "ProjectileCount": 1,
-        "BaseDamage": 150,
         "Turrets": {
           "Item": {
             "TurnSpan": 360,
             "TurretCfg": "data/graphics/buildings/special/harbor_05/harbor_05_turret.cfg"
           }
         },
-        "AccuracyBase": 1,
-        "AccuracyIncreaseOverDistance": 100,
+        "ProjectileAsset": 101974,
         "MuzzleEffectAssets": {
           "Item": {
             "MuzzleEffectAsset": 102220
           }
         },
         "EmitProjectileTimeAfterStartAnimation": 0.3,
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 100,
         "AccuracyByDistance": {
           "Item": [
             {
@@ -890,6 +1735,12 @@
       "AmbientMoodProvider": "",
       "Constructable": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "SelectionColorType": "PropertySelectionColor",
           "SelectionColor": -337045,
@@ -900,8 +1751,7 @@
         "LocaText": {
           "English": {
             "Text": "Big Betty",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 23405
@@ -943,10 +1793,10 @@
         "InfluenceCostPoints": 14
       },
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 7000,
-        "SelfHealPerHealTick": 5,
         "DefenseByAIFactor": 9992,
-        "TakeOverEffect": "OnDeath",
+        "MilitaryDefensePoints": 10,
         "MoralePower": 100,
         "IslandWarFlag": 102307,
         "ExplosionEffects": {
@@ -956,29 +1806,28 @@
         },
         "ExplosionEffectsMin": 1,
         "ExplosionEffectsMax": 1,
-        "MilitaryDefensePoints": 10
+        "SelfHealPerHealTick": 5
       },
       "Attacker": {
+        "BaseDamage": 850,
+        "ReloadTime": 150,
         "AttackRange": 108,
         "LineOfSightRange": 108,
-        "ReloadTime": 150,
-        "ProjectileAsset": 101955,
-        "ProjectileCount": 1,
-        "BaseDamage": 850,
         "Turrets": {
           "Item": {
             "TurnSpan": 360,
             "TurretCfg": "data/graphics/buildings/special/harbor_06/harbor_06_turret.cfg"
           }
         },
-        "AccuracyBase": 1,
-        "AccuracyIncreaseOverDistance": 100,
+        "ProjectileAsset": 101955,
         "MuzzleEffectAssets": {
           "Item": {
             "MuzzleEffectAsset": 101972
           }
         },
         "EmitProjectileTimeAfterStartAnimation": 0.35,
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 100,
         "AccuracyByDistance": {
           "Item": [
             {
@@ -1099,6 +1948,12 @@
       "AmbientMoodProvider": "",
       "Constructable": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "SelectionColorType": "PropertySelectionColor",
           "SelectionColor": -337045,
@@ -1109,8 +1964,7 @@
         "LocaText": {
           "English": {
             "Text": "Mounted Guns",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 23403
@@ -1149,10 +2003,10 @@
         "InfluenceCostPoints": 3
       },
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 3200,
-        "SelfHealPerHealTick": 5,
         "DefenseByAIFactor": 9990,
-        "TakeOverEffect": "OnDeath",
+        "MilitaryDefensePoints": 2,
         "MoralePower": 50,
         "IslandWarFlag": 102307,
         "ExplosionEffects": {
@@ -1162,27 +2016,26 @@
         },
         "ExplosionEffectsMin": 1,
         "ExplosionEffectsMax": 1,
-        "MilitaryDefensePoints": 2
+        "SelfHealPerHealTick": 5
       },
       "Attacker": {
+        "BaseDamage": 23,
         "AttackRange": 72,
         "LineOfSightRange": 72,
-        "ProjectileAsset": 102217,
-        "ProjectileCount": 1,
-        "BaseDamage": 23,
         "Turrets": {
           "Item": {
             "TurnSpan": 360,
             "TurretCfg": "data/graphics/buildings/special/harbor_04/harbor_04_turret.cfg"
           }
         },
-        "AccuracyBase": 21,
-        "AccuracyIncreaseOverDistance": 20,
+        "ProjectileAsset": 102217,
         "MuzzleEffectAssets": {
           "Item": {
             "MuzzleEffectAsset": 101975
           }
         },
+        "AccuracyBase": 21,
+        "AccuracyIncreaseOverDistance": 20,
         "AccuracyByDistance": {
           "Item": [
             {
@@ -1228,8 +2081,7 @@
             },
             {
               "AccuracyByDistancePair": {
-                "EnemyDistanceRelToAttackRange": 100,
-                "CorrespondingAccuracy": 100
+                "EnemyDistanceRelToAttackRange": 100
               }
             }
           ]
@@ -1294,11 +2146,822 @@
     "Template": "HarborBuildingAttacker",
     "Values": {
       "Standard": {
+        "GUID": 824,
+        "Name": "harbor_arctic_17 (Tower 03, Fire Tower)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/military_building/icon_flame_tower.png",
+        "InfoDescription": 630
+      },
+      "Building": {
+        "BuildingCategoryName": 11150,
+        "AssociatedRegions": "Arctic"
+      },
+      "Blocking": {
+        "GroundDecalAsset": 114826,
+        "GroundDecalInvisible": 113478,
+        "HasBuildingBaseTiles": 1,
+        "RemoveGrass": 0
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc03/graphics/buildings/special/harbor_colony03_02/harbor_colony03_02.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 824,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        }
+      },
+      "AmbientMoodProvider": "",
+      "Constructable": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Flame Tower",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 56100
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 6000
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 10
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 30
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            },
+            {
+              "Ingredient": 1010221,
+              "Amount": 25
+            }
+          ]
+        },
+        "InfluenceCostType": "DefenseBuilding",
+        "InfluenceCostPoints": 9
+      },
+      "Attackable": {
+        "AttackableType": "HarbourBuilding",
+        "MaximumHitPoints": 1701,
+        "DefenseByAIFactor": 301,
+        "MilitaryDefensePoints": 3.5,
+        "MoralePower": 45,
+        "IslandWarFlag": 102307,
+        "ExplosionEffects": {
+          "Item": {
+            "ExplosionEffectFilePath": "data/graphics/effects/military/explosions/harbor_generic_xpl_02.cfg"
+          }
+        },
+        "ExplosionEffectsMin": 1,
+        "ExplosionEffectsMax": 1,
+        "SelfHealPerHealTick": 5
+      },
+      "Attacker": {
+        "BasicAttackType": "HarbourTower",
+        "BaseDamage": 19,
+        "ReloadTime": 3,
+        "AttackRange": 70,
+        "LineOfSightRange": 100,
+        "Turrets": {
+          "Item": {
+            "TurnSpan": 360,
+            "TurretCfg": "data/dlc11/graphics/buildings/special/flame_thrower_tower/flame_thrower_tower.cfg"
+          }
+        },
+        "ProjectileAsset": 628,
+        "MuzzleEffectAssets": {
+          "Item": ""
+        },
+        "EmitProjectileTimeAfterStartAnimation": 0.3,
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 100,
+        "AccuracyByDistance": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "HarborBuildingAttacker",
+                    "Index": 0
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "HarborBuildingAttacker",
+                    "Index": 1
+                  }
+                }
+              },
+              "AccuracyByDistancePair": {
+                "CorrespondingAccuracy": 100
+              }
+            }
+          ]
+        }
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": {
+            "Product": 1010017,
+            "Amount": 120,
+            "InactiveAmount": 60
+          }
+        },
+        "ConsumerPriority": 1
+      },
+      "Locked": "",
+      "DelayedConstruction": "",
+      "Pausable": "",
+      "Infolayer": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 206544
+            }
+          },
+          "BuildFailed": {
+            "Item": {
+              "Sound": 9818387
+            }
+          },
+          "BuildMoveStart": {
+            "Item": {
+              "Sound": 9818755
+            }
+          },
+          "BuildMoveEnd": {
+            "Item": {
+              "Sound": 200141
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRuined": {
+          "Item": {
+            "Sound": 203848
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        }
+      },
+      "CommandQueue": "",
+      "Culture": {
+        "Attractiveness": 0
+      },
+      "UpgradeList": ""
+    }
+  },
+  {
+    "Template": "HarborBuildingAttacker",
+    "Values": {
+      "Standard": {
+        "GUID": 4798,
+        "Name": "harbor_arctic18 (Tower 06, Armor Pierce Tower)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/military_building/icon_he_guntower.png",
+        "InfoDescription": 3724
+      },
+      "Building": {
+        "BuildingCategoryName": 11150,
+        "AssociatedRegions": "Arctic"
+      },
+      "Blocking": {
+        "GroundDecalAsset": 114826,
+        "GroundDecalInvisible": 113478,
+        "HasBuildingBaseTiles": 1,
+        "RemoveGrass": 0
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc03/graphics/buildings/special/harbor_colony03_02/harbor_colony03_02.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 4798,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        }
+      },
+      "AmbientMoodProvider": "",
+      "Constructable": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Anti-Armour Gun",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 56795
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 7500
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 45
+            },
+            {
+              "Ingredient": 1010218,
+              "Amount": 15
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            },
+            {
+              "Ingredient": 1010223,
+              "Amount": 20
+            }
+          ]
+        },
+        "InfluenceCostType": "DefenseBuilding",
+        "InfluenceCostPoints": 11
+      },
+      "Attackable": {
+        "AttackableType": "HarbourBuilding",
+        "MaximumHitPoints": 3750,
+        "DefenseByAIFactor": 190,
+        "MilitaryDefensePoints": 4,
+        "MoralePower": 60,
+        "IslandWarFlag": 102307,
+        "ExplosionEffects": {
+          "Item": {
+            "ExplosionEffectFilePath": "data/graphics/effects/military/explosions/harbor_generic_xpl_02.cfg"
+          }
+        },
+        "ExplosionEffectsMin": 1,
+        "ExplosionEffectsMax": 1,
+        "SelfHealPerHealTick": 5
+      },
+      "Attacker": {
+        "BasicAttackType": "HarbourTower",
+        "BaseDamage": 500,
+        "ReloadTime": 93,
+        "AttackRange": 65,
+        "LineOfSightRange": 108,
+        "Turrets": {
+          "Item": {
+            "TurnSpan": 360,
+            "TurretCfg": "data/dlc11/graphics/buildings/special/armor_piercing_cannon/armor_piercing_cannon.cfg"
+          }
+        },
+        "ProjectileAsset": 3702,
+        "TurretExplosionEffectAsset": 102183,
+        "MuzzleEffectAssets": {
+          "Item": {
+            "MuzzleEffectAsset": 102183
+          }
+        },
+        "EmitProjectileTimeAfterStartAnimation": 0.3,
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 100,
+        "AccuracyByDistance": ""
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": {
+            "Product": 1010017,
+            "Amount": 320,
+            "InactiveAmount": 160
+          }
+        },
+        "ConsumerPriority": 1
+      },
+      "Locked": "",
+      "DelayedConstruction": "",
+      "Pausable": "",
+      "Infolayer": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 206544
+            }
+          },
+          "BuildFailed": {
+            "Item": {
+              "Sound": 9818387
+            }
+          },
+          "BuildMoveStart": {
+            "Item": {
+              "Sound": 9818755
+            }
+          },
+          "BuildMoveEnd": {
+            "Item": {
+              "Sound": 200141
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRuined": {
+          "Item": {
+            "Sound": 203848
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        }
+      },
+      "CommandQueue": "",
+      "Culture": {
+        "Attractiveness": 0
+      },
+      "UpgradeList": ""
+    }
+  },
+  {
+    "Template": "HarborBuildingAttacker",
+    "Values": {
+      "Standard": {
+        "GUID": 823,
+        "Name": "harbor_colony02_17 (Tower 03, Fire Tower)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/military_building/icon_flame_tower.png",
+        "InfoDescription": 630
+      },
+      "Building": {
+        "BuildingCategoryName": 11150,
+        "AssociatedRegions": "Africa"
+      },
+      "Blocking": {
+        "GroundDecalAsset": 117730,
+        "GroundDecalInvisible": 117731,
+        "HasBuildingBaseTiles": 1,
+        "RemoveGrass": 0
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc06/graphics/buildings/special/harbor_05_colony02/harbor_05_colony02.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 823,
+          "DefaultSkinCategoryName": 7312
+        }
+      },
+      "AmbientMoodProvider": "",
+      "Constructable": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Flame Tower",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 56101
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 6000
+            },
+            {
+              "Ingredient": 114356,
+              "Amount": 10
+            },
+            {
+              "Ingredient": 114402,
+              "Amount": 30
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            },
+            {
+              "Ingredient": 1010221,
+              "Amount": 25
+            }
+          ]
+        },
+        "InfluenceCostType": "DefenseBuilding",
+        "InfluenceCostPoints": 15
+      },
+      "Attackable": {
+        "AttackableType": "HarbourBuilding",
+        "MaximumHitPoints": 1701,
+        "DefenseByAIFactor": 301,
+        "MilitaryDefensePoints": 3.5,
+        "MoralePower": 45,
+        "IslandWarFlag": 102307,
+        "ExplosionEffects": {
+          "Item": {
+            "ExplosionEffectFilePath": "data/graphics/effects/military/explosions/harbor_generic_xpl_02.cfg"
+          }
+        },
+        "ExplosionEffectsMin": 1,
+        "ExplosionEffectsMax": 1,
+        "SelfHealPerHealTick": 5
+      },
+      "Attacker": {
+        "BasicAttackType": "HarbourTower",
+        "BaseDamage": 19,
+        "ReloadTime": 3,
+        "AttackRange": 70,
+        "LineOfSightRange": 100,
+        "Turrets": {
+          "Item": {
+            "TurnSpan": 360,
+            "TurretCfg": "data/dlc11/graphics/buildings/special/flame_thrower_tower/flame_thrower_tower.cfg"
+          }
+        },
+        "ProjectileAsset": 628,
+        "MuzzleEffectAssets": {
+          "Item": ""
+        },
+        "EmitProjectileTimeAfterStartAnimation": 0.3,
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 100,
+        "AccuracyByDistance": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "HarborBuildingAttacker",
+                    "Index": 0
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "HarborBuildingAttacker",
+                    "Index": 1
+                  }
+                }
+              },
+              "AccuracyByDistancePair": {
+                "CorrespondingAccuracy": 100
+              }
+            }
+          ]
+        }
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": {
+            "Product": 1010017,
+            "Amount": 120,
+            "InactiveAmount": 60
+          }
+        },
+        "ConsumerPriority": 1
+      },
+      "Locked": "",
+      "DelayedConstruction": "",
+      "Pausable": "",
+      "Infolayer": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 206544
+            }
+          },
+          "BuildFailed": {
+            "Item": {
+              "Sound": 9818387
+            }
+          },
+          "BuildMoveStart": {
+            "Item": {
+              "Sound": 9818755
+            }
+          },
+          "BuildMoveEnd": {
+            "Item": {
+              "Sound": 200141
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRuined": {
+          "Item": {
+            "Sound": 203848
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        }
+      },
+      "CommandQueue": "",
+      "Culture": {
+        "Attractiveness": 0
+      },
+      "UpgradeList": ""
+    }
+  },
+  {
+    "Template": "HarborBuildingAttacker",
+    "Values": {
+      "Standard": {
+        "GUID": 4799,
+        "Name": "harbor_colony02_18 (Tower 06, Armor Pierce Tower)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/military_building/icon_he_guntower.png",
+        "InfoDescription": 3724
+      },
+      "Building": {
+        "BuildingCategoryName": 11150,
+        "AssociatedRegions": "Africa"
+      },
+      "Blocking": {
+        "GroundDecalAsset": 117730,
+        "GroundDecalInvisible": 117731,
+        "HasBuildingBaseTiles": 1,
+        "RemoveGrass": 0
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc06/graphics/buildings/special/harbor_05_colony02/harbor_05_colony02.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 4799,
+          "DefaultSkinCategoryName": 7312
+        }
+      },
+      "AmbientMoodProvider": "",
+      "Constructable": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Anti-Armour Gun",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 56795
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 7500
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 114402,
+              "Amount": 45
+            },
+            {
+              "Ingredient": 1010218,
+              "Amount": 15
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            },
+            {
+              "Ingredient": 1010223,
+              "Amount": 20
+            }
+          ]
+        },
+        "InfluenceCostType": "DefenseBuilding",
+        "InfluenceCostPoints": 11
+      },
+      "Attackable": {
+        "AttackableType": "HarbourBuilding",
+        "MaximumHitPoints": 3750,
+        "DefenseByAIFactor": 190,
+        "MilitaryDefensePoints": 4,
+        "MoralePower": 60,
+        "IslandWarFlag": 102307,
+        "ExplosionEffects": {
+          "Item": {
+            "ExplosionEffectFilePath": "data/graphics/effects/military/explosions/harbor_generic_xpl_02.cfg"
+          }
+        },
+        "ExplosionEffectsMin": 1,
+        "ExplosionEffectsMax": 1,
+        "SelfHealPerHealTick": 5
+      },
+      "Attacker": {
+        "BasicAttackType": "HarbourTower",
+        "BaseDamage": 500,
+        "ReloadTime": 93,
+        "AttackRange": 65,
+        "LineOfSightRange": 108,
+        "Turrets": {
+          "Item": {
+            "TurnSpan": 360,
+            "TurretCfg": "data/dlc11/graphics/buildings/special/armor_piercing_cannon/armor_piercing_cannon.cfg"
+          }
+        },
+        "ProjectileAsset": 3702,
+        "TurretExplosionEffectAsset": 102183,
+        "MuzzleEffectAssets": {
+          "Item": {
+            "MuzzleEffectAsset": 102183
+          }
+        },
+        "EmitProjectileTimeAfterStartAnimation": 0.3,
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 100,
+        "AccuracyByDistance": ""
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": {
+            "Product": 1010017,
+            "Amount": 320,
+            "InactiveAmount": 160
+          }
+        },
+        "ConsumerPriority": 1
+      },
+      "Locked": "",
+      "DelayedConstruction": "",
+      "Pausable": "",
+      "Infolayer": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 206544
+            }
+          },
+          "BuildFailed": {
+            "Item": {
+              "Sound": 9818387
+            }
+          },
+          "BuildMoveStart": {
+            "Item": {
+              "Sound": 9818755
+            }
+          },
+          "BuildMoveEnd": {
+            "Item": {
+              "Sound": 200141
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRuined": {
+          "Item": {
+            "Sound": 203848
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        }
+      },
+      "CommandQueue": "",
+      "Culture": {
+        "Attractiveness": 0
+      },
+      "UpgradeList": ""
+    }
+  },
+  {
+    "Template": "HarborBuildingAttacker",
+    "Values": {
+      "Standard": {
         "GUID": 123074,
         "Name": "NewCanon1",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_defense_tower_cannon.png",
-        "InfoDescription": 3062,
-        "Version": "dlc06"
+        "InfoDescription": 3062
       },
       "Building": {
         "BuildingCategoryName": 11150,
@@ -1323,6 +2986,12 @@
       "AmbientMoodProvider": "",
       "Constructable": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "SelectionColorType": "PropertySelectionColor",
           "SelectionColor": -337045,
@@ -1333,8 +3002,7 @@
         "LocaText": {
           "English": {
             "Text": "Impressive Canon",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 45414
@@ -1374,10 +3042,10 @@
         "InfluenceCostPoints": 7
       },
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 4800,
-        "SelfHealPerHealTick": 5,
         "DefenseByAIFactor": 9991,
-        "TakeOverEffect": "OnDeath",
+        "MilitaryDefensePoints": 3.5,
         "MoralePower": 50,
         "IslandWarFlag": 102307,
         "ExplosionEffects": {
@@ -1387,29 +3055,28 @@
         },
         "ExplosionEffectsMin": 1,
         "ExplosionEffectsMax": 1,
-        "MilitaryDefensePoints": 3.5
+        "SelfHealPerHealTick": 5
       },
       "Attacker": {
+        "BaseDamage": 150,
+        "ReloadTime": 50,
         "AttackRange": 92,
         "LineOfSightRange": 92,
-        "ReloadTime": 50,
-        "ProjectileAsset": 101974,
-        "ProjectileCount": 1,
-        "BaseDamage": 150,
         "Turrets": {
           "Item": {
             "TurnSpan": 360,
             "TurretCfg": "data/graphics/buildings/special/harbor_05/harbor_05_turret.cfg"
           }
         },
-        "AccuracyBase": 1,
-        "AccuracyIncreaseOverDistance": 100,
+        "ProjectileAsset": 101974,
         "MuzzleEffectAssets": {
           "Item": {
             "MuzzleEffectAsset": 102220
           }
         },
         "EmitProjectileTimeAfterStartAnimation": 0.3,
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 100,
         "AccuracyByDistance": {
           "Item": [
             {
@@ -1509,8 +3176,7 @@
         "GUID": 123075,
         "Name": "NewCanon2",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_defense_tower_cannon.png",
-        "InfoDescription": 3062,
-        "Version": "dlc06"
+        "InfoDescription": 3062
       },
       "Building": {
         "BuildingCategoryName": 11150,
@@ -1535,6 +3201,12 @@
       "AmbientMoodProvider": "",
       "Constructable": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "SelectionColorType": "PropertySelectionColor",
           "SelectionColor": -337045,
@@ -1545,8 +3217,7 @@
         "LocaText": {
           "English": {
             "Text": "Threatening Canon",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 45415
@@ -1586,10 +3257,10 @@
         "InfluenceCostPoints": 7
       },
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 4800,
-        "SelfHealPerHealTick": 5,
         "DefenseByAIFactor": 9991,
-        "TakeOverEffect": "OnDeath",
+        "MilitaryDefensePoints": 3.5,
         "MoralePower": 50,
         "IslandWarFlag": 102307,
         "ExplosionEffects": {
@@ -1599,29 +3270,28 @@
         },
         "ExplosionEffectsMin": 1,
         "ExplosionEffectsMax": 1,
-        "MilitaryDefensePoints": 3.5
+        "SelfHealPerHealTick": 5
       },
       "Attacker": {
+        "BaseDamage": 150,
+        "ReloadTime": 50,
         "AttackRange": 92,
         "LineOfSightRange": 92,
-        "ReloadTime": 50,
-        "ProjectileAsset": 101974,
-        "ProjectileCount": 1,
-        "BaseDamage": 150,
         "Turrets": {
           "Item": {
             "TurnSpan": 360,
             "TurretCfg": "data/graphics/buildings/special/harbor_05/harbor_05_turret.cfg"
           }
         },
-        "AccuracyBase": 1,
-        "AccuracyIncreaseOverDistance": 100,
+        "ProjectileAsset": 101974,
         "MuzzleEffectAssets": {
           "Item": {
             "MuzzleEffectAsset": 102220
           }
         },
         "EmitProjectileTimeAfterStartAnimation": 0.3,
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 100,
         "AccuracyByDistance": {
           "Item": [
             {
@@ -1721,8 +3391,7 @@
         "GUID": 123076,
         "Name": "NewCanon3",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_defense_tower_pucklegun.png",
-        "InfoDescription": 3063,
-        "Version": "dlc06"
+        "InfoDescription": 3063
       },
       "Building": {
         "BuildingCategoryName": 11150,
@@ -1747,6 +3416,12 @@
       "AmbientMoodProvider": "",
       "Constructable": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "SelectionColorType": "PropertySelectionColor",
           "SelectionColor": -337045,
@@ -1757,8 +3432,7 @@
         "LocaText": {
           "English": {
             "Text": "Polished Canon",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 45416
@@ -1797,10 +3471,10 @@
         "InfluenceCostPoints": 3
       },
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 3200,
-        "SelfHealPerHealTick": 5,
         "DefenseByAIFactor": 9990,
-        "TakeOverEffect": "OnDeath",
+        "MilitaryDefensePoints": 2,
         "MoralePower": 50,
         "IslandWarFlag": 102307,
         "ExplosionEffects": {
@@ -1810,27 +3484,26 @@
         },
         "ExplosionEffectsMin": 1,
         "ExplosionEffectsMax": 1,
-        "MilitaryDefensePoints": 2
+        "SelfHealPerHealTick": 5
       },
       "Attacker": {
+        "BaseDamage": 23,
         "AttackRange": 72,
         "LineOfSightRange": 72,
-        "ProjectileAsset": 102217,
-        "ProjectileCount": 1,
-        "BaseDamage": 23,
         "Turrets": {
           "Item": {
             "TurnSpan": 360,
             "TurretCfg": "data/graphics/buildings/special/harbor_04/harbor_04_turret.cfg"
           }
         },
-        "AccuracyBase": 21,
-        "AccuracyIncreaseOverDistance": 20,
+        "ProjectileAsset": 102217,
         "MuzzleEffectAssets": {
           "Item": {
             "MuzzleEffectAsset": 101975
           }
         },
+        "AccuracyBase": 21,
+        "AccuracyIncreaseOverDistance": 20,
         "AccuracyByDistance": {
           "Item": [
             {
@@ -1876,8 +3549,7 @@
             },
             {
               "AccuracyByDistancePair": {
-                "EnemyDistanceRelToAttackRange": 100,
-                "CorrespondingAccuracy": 100
+                "EnemyDistanceRelToAttackRange": 100
               }
             }
           ]
@@ -1950,8 +3622,7 @@
         "GUID": 124528,
         "Name": "NewCanon4",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_defense_tower_pucklegun.png",
-        "InfoDescription": 3063,
-        "Version": "dlc06"
+        "InfoDescription": 3063
       },
       "Building": {
         "BuildingCategoryName": 11150,
@@ -1976,6 +3647,12 @@
       "AmbientMoodProvider": "",
       "Constructable": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "SelectionColorType": "PropertySelectionColor",
           "SelectionColor": -337045,
@@ -1986,8 +3663,7 @@
         "LocaText": {
           "English": {
             "Text": "Strong Canon",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 45434
@@ -2026,10 +3702,10 @@
         "InfluenceCostPoints": 3
       },
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 3200,
-        "SelfHealPerHealTick": 5,
         "DefenseByAIFactor": 9990,
-        "TakeOverEffect": "OnDeath",
+        "MilitaryDefensePoints": 2,
         "MoralePower": 50,
         "IslandWarFlag": 102307,
         "ExplosionEffects": {
@@ -2039,27 +3715,26 @@
         },
         "ExplosionEffectsMin": 1,
         "ExplosionEffectsMax": 1,
-        "MilitaryDefensePoints": 2
+        "SelfHealPerHealTick": 5
       },
       "Attacker": {
+        "BaseDamage": 23,
         "AttackRange": 72,
         "LineOfSightRange": 72,
-        "ProjectileAsset": 102217,
-        "ProjectileCount": 1,
-        "BaseDamage": 23,
         "Turrets": {
           "Item": {
             "TurnSpan": 360,
             "TurretCfg": "data/graphics/buildings/special/harbor_04/harbor_04_turret.cfg"
           }
         },
-        "AccuracyBase": 21,
-        "AccuracyIncreaseOverDistance": 20,
+        "ProjectileAsset": 102217,
         "MuzzleEffectAssets": {
           "Item": {
             "MuzzleEffectAsset": 101975
           }
         },
+        "AccuracyBase": 21,
+        "AccuracyIncreaseOverDistance": 20,
         "AccuracyByDistance": {
           "Item": [
             {
@@ -2105,8 +3780,7 @@
             },
             {
               "AccuracyByDistancePair": {
-                "EnemyDistanceRelToAttackRange": 100,
-                "CorrespondingAccuracy": 100
+                "EnemyDistanceRelToAttackRange": 100
               }
             }
           ]
@@ -2179,8 +3853,7 @@
         "GUID": 124529,
         "Name": "NewCanon5",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_defense_tower_pucklegun.png",
-        "InfoDescription": 3063,
-        "Version": "dlc06"
+        "InfoDescription": 3063
       },
       "Building": {
         "BuildingCategoryName": 11150,
@@ -2205,6 +3878,12 @@
       "AmbientMoodProvider": "",
       "Constructable": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "SelectionColorType": "PropertySelectionColor",
           "SelectionColor": -337045,
@@ -2215,8 +3894,7 @@
         "LocaText": {
           "English": {
             "Text": "High End Canon",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 45435
@@ -2255,10 +3933,10 @@
         "InfluenceCostPoints": 3
       },
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 3200,
-        "SelfHealPerHealTick": 5,
         "DefenseByAIFactor": 9990,
-        "TakeOverEffect": "OnDeath",
+        "MilitaryDefensePoints": 2,
         "MoralePower": 50,
         "IslandWarFlag": 102307,
         "ExplosionEffects": {
@@ -2268,27 +3946,26 @@
         },
         "ExplosionEffectsMin": 1,
         "ExplosionEffectsMax": 1,
-        "MilitaryDefensePoints": 2
+        "SelfHealPerHealTick": 5
       },
       "Attacker": {
+        "BaseDamage": 23,
         "AttackRange": 72,
         "LineOfSightRange": 72,
-        "ProjectileAsset": 102217,
-        "ProjectileCount": 1,
-        "BaseDamage": 23,
         "Turrets": {
           "Item": {
             "TurnSpan": 360,
             "TurretCfg": "data/graphics/buildings/special/harbor_04/harbor_04_turret.cfg"
           }
         },
-        "AccuracyBase": 21,
-        "AccuracyIncreaseOverDistance": 20,
+        "ProjectileAsset": 102217,
         "MuzzleEffectAssets": {
           "Item": {
             "MuzzleEffectAsset": 101975
           }
         },
+        "AccuracyBase": 21,
+        "AccuracyIncreaseOverDistance": 20,
         "AccuracyByDistance": {
           "Item": [
             {
@@ -2334,8 +4011,7 @@
             },
             {
               "AccuracyByDistancePair": {
-                "EnemyDistanceRelToAttackRange": 100,
-                "CorrespondingAccuracy": 100
+                "EnemyDistanceRelToAttackRange": 100
               }
             }
           ]
@@ -2398,6 +4074,869 @@
       },
       "CommandQueue": "",
       "Culture": "",
+      "UpgradeList": ""
+    }
+  },
+  {
+    "Template": "HarborBuildingAttacker",
+    "Values": {
+      "Standard": {
+        "GUID": 736,
+        "Name": "harbor_18 (Tower 05, FlaK)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/military_building/icon_flack_tower.png",
+        "InfoDescription": 740
+      },
+      "Building": {
+        "BuildingCategoryName": 11150,
+        "AssociatedRegions": "Moderate"
+      },
+      "Blocking": {
+        "GroundDecalAsset": 100446,
+        "GroundDecalInvisible": 101008,
+        "HasBuildingBaseTiles": 1,
+        "RemoveGrass": 0
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc11/graphics/buildings/special/flak_cannon_tower/flak_cannon_tower_platform_moderate.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 736,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        }
+      },
+      "AmbientMoodProvider": "",
+      "Constructable": "",
+      "Selection": {
+        "StaticHelpEntryPoint": "EmpireOfTheSkies_War_Defense",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Flak Emplacement",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 56045
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 4500
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 15
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            },
+            {
+              "Ingredient": 1010221,
+              "Amount": 10
+            }
+          ]
+        },
+        "InfluenceCostType": "DefenseBuilding",
+        "InfluenceCostPoints": 5
+      },
+      "Attackable": {
+        "AttackableType": "HarbourBuilding",
+        "MaximumHitPoints": 2800,
+        "DefenseByAIFactor": 200,
+        "MilitaryDefensePoints": 2,
+        "MilitaryAirDefensePoints": 3,
+        "MoralePower": 50,
+        "IslandWarFlag": 102307,
+        "ExplosionEffects": {
+          "Item": {
+            "ExplosionEffectFilePath": "data/graphics/effects/military/explosions/harbor_generic_xpl_03.cfg"
+          }
+        },
+        "ExplosionEffectsMin": 1,
+        "ExplosionEffectsMax": 1,
+        "SelfHealPerHealTick": 5
+      },
+      "Attacker": {
+        "BasicAttackType": "Flak",
+        "BaseDamage": 22,
+        "ReloadTime": 3,
+        "AttackRange": 52,
+        "LineOfSightRange": 100,
+        "Turrets": {
+          "Item": {
+            "TurnSpan": 360,
+            "TurretCfg": "data/dlc11/graphics/buildings/special/flak_cannon_tower/flak_cannon_tower.cfg"
+          }
+        },
+        "ProjectileAsset": 2037,
+        "TurretExplosionEffectAsset": 101975,
+        "MuzzleEffectAssets": {
+          "Item": {
+            "MuzzleEffectAsset": 2581
+          }
+        },
+        "AccuracyBase": 27,
+        "AccuracyIncreaseOverDistance": 0,
+        "AccuracySpeedDecay": 0,
+        "AccuracyByDistance": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "HarborBuildingAttacker",
+                    "Index": 0
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "HarborBuildingAttacker",
+                    "Index": 1
+                  }
+                }
+              },
+              "AccuracyByDistancePair": {
+                "EnemyDistanceRelToAttackRange": 16,
+                "CorrespondingAccuracy": 40
+              }
+            },
+            {
+              "AccuracyByDistancePair": {
+                "EnemyDistanceRelToAttackRange": 100,
+                "CorrespondingAccuracy": 10
+              }
+            }
+          ]
+        }
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": {
+            "Product": 1010017,
+            "Amount": 60,
+            "InactiveAmount": 30
+          }
+        },
+        "ConsumerPriority": 1
+      },
+      "Locked": {
+        "DLCDependency": 24962
+      },
+      "DelayedConstruction": "",
+      "Pausable": "",
+      "Infolayer": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 206544
+            }
+          },
+          "BuildFailed": {
+            "Item": {
+              "Sound": 9818387
+            }
+          },
+          "BuildMoveStart": {
+            "Item": {
+              "Sound": 9818755
+            }
+          },
+          "BuildMoveEnd": {
+            "Item": {
+              "Sound": 200141
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRuined": {
+          "Item": {
+            "Sound": 203848
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        }
+      },
+      "CommandQueue": "",
+      "Culture": {
+        "Attractiveness": 0
+      },
+      "UpgradeList": ""
+    }
+  },
+  {
+    "Template": "HarborBuildingAttacker",
+    "Values": {
+      "Standard": {
+        "GUID": 742,
+        "Name": "harbor_18 Colony01 (Tower 05, FlaK)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/military_building/icon_flack_tower.png",
+        "InfoDescription": 740
+      },
+      "Building": {
+        "BuildingCategoryName": 11150,
+        "AssociatedRegions": "Colony01"
+      },
+      "Blocking": {
+        "GroundDecalAsset": 102460,
+        "GroundDecalInvisible": 102459,
+        "HasBuildingBaseTiles": 1,
+        "RemoveGrass": 0
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc11/graphics/buildings/special/flak_cannon_tower/flak_cannon_tower_platform_south_america.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 742,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        }
+      },
+      "AmbientMoodProvider": "",
+      "Constructable": "",
+      "Selection": {
+        "StaticHelpEntryPoint": "EmpireOfTheSkies_War_Defense",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Flak Emplacement",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 56063
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 4500
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 15
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            },
+            {
+              "Ingredient": 1010221,
+              "Amount": 10
+            }
+          ]
+        },
+        "InfluenceCostType": "DefenseBuilding",
+        "InfluenceCostPoints": 5
+      },
+      "Attackable": {
+        "AttackableType": "HarbourBuilding",
+        "MaximumHitPoints": 2800,
+        "DefenseByAIFactor": 200,
+        "MilitaryDefensePoints": 2,
+        "MilitaryAirDefensePoints": 3,
+        "MoralePower": 50,
+        "IslandWarFlag": 102307,
+        "ExplosionEffects": {
+          "Item": {
+            "ExplosionEffectFilePath": "data/graphics/effects/military/explosions/harbor_generic_xpl_03.cfg"
+          }
+        },
+        "ExplosionEffectsMin": 1,
+        "ExplosionEffectsMax": 1,
+        "SelfHealPerHealTick": 5
+      },
+      "Attacker": {
+        "BasicAttackType": "Flak",
+        "BaseDamage": 22,
+        "ReloadTime": 3,
+        "AttackRange": 52,
+        "LineOfSightRange": 100,
+        "Turrets": {
+          "Item": {
+            "TurnSpan": 360,
+            "TurretCfg": "data/dlc11/graphics/buildings/special/flak_cannon_tower/flak_cannon_tower.cfg"
+          }
+        },
+        "ProjectileAsset": 2037,
+        "TurretExplosionEffectAsset": 101975,
+        "MuzzleEffectAssets": {
+          "Item": {
+            "MuzzleEffectAsset": 2581
+          }
+        },
+        "AccuracyBase": 27,
+        "AccuracyIncreaseOverDistance": 0,
+        "AccuracySpeedDecay": 0,
+        "AccuracyByDistance": {
+          "Item": [
+            "",
+            {
+              "AccuracyByDistancePair": {
+                "EnemyDistanceRelToAttackRange": 16,
+                "CorrespondingAccuracy": 40
+              }
+            },
+            {
+              "AccuracyByDistancePair": {
+                "EnemyDistanceRelToAttackRange": 100,
+                "CorrespondingAccuracy": 10
+              }
+            }
+          ]
+        }
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": {
+            "Product": 1010017,
+            "Amount": 60,
+            "InactiveAmount": 30
+          }
+        },
+        "ConsumerPriority": 1
+      },
+      "Locked": {
+        "DLCDependency": 24962
+      },
+      "DelayedConstruction": "",
+      "Pausable": "",
+      "Infolayer": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 206544
+            }
+          },
+          "BuildFailed": {
+            "Item": {
+              "Sound": 9818387
+            }
+          },
+          "BuildMoveStart": {
+            "Item": {
+              "Sound": 9818755
+            }
+          },
+          "BuildMoveEnd": {
+            "Item": {
+              "Sound": 200141
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRuined": {
+          "Item": {
+            "Sound": 203848
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        }
+      },
+      "CommandQueue": "",
+      "Culture": {
+        "Attractiveness": 0
+      },
+      "UpgradeList": ""
+    }
+  },
+  {
+    "Template": "HarborBuildingAttacker",
+    "Values": {
+      "Standard": {
+        "GUID": 743,
+        "Name": "harbor_03 Colony02 (Tower 05, FlaK)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/military_building/icon_flack_tower.png",
+        "InfoDescription": 740
+      },
+      "Building": {
+        "BuildingCategoryName": 11150,
+        "AssociatedRegions": "Africa"
+      },
+      "Blocking": {
+        "GroundDecalAsset": 117730,
+        "GroundDecalInvisible": 117731,
+        "HasBuildingBaseTiles": 1,
+        "RemoveGrass": 0
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc11/graphics/buildings/special/flak_cannon_tower/flak_cannon_tower_platform_africa.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 743,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        }
+      },
+      "AmbientMoodProvider": "",
+      "Constructable": "",
+      "Selection": {
+        "StaticHelpEntryPoint": "EmpireOfTheSkies_War_Defense",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Flak Emplacement",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 56079
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 4500
+            },
+            {
+              "Ingredient": 114356,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 114402,
+              "Amount": 15
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            },
+            {
+              "Ingredient": 1010221,
+              "Amount": 10
+            }
+          ]
+        },
+        "InfluenceCostType": "DefenseBuilding",
+        "InfluenceCostPoints": 5
+      },
+      "Attackable": {
+        "AttackableType": "HarbourBuilding",
+        "MaximumHitPoints": 2800,
+        "DefenseByAIFactor": 200,
+        "MilitaryDefensePoints": 2,
+        "MilitaryAirDefensePoints": 3,
+        "MoralePower": 50,
+        "IslandWarFlag": 102307,
+        "ExplosionEffects": {
+          "Item": {
+            "ExplosionEffectFilePath": "data/graphics/effects/military/explosions/harbor_generic_xpl_03.cfg"
+          }
+        },
+        "ExplosionEffectsMin": 1,
+        "ExplosionEffectsMax": 1,
+        "SelfHealPerHealTick": 5
+      },
+      "Attacker": {
+        "BasicAttackType": "Flak",
+        "BaseDamage": 22,
+        "ReloadTime": 3,
+        "AttackRange": 52,
+        "LineOfSightRange": 100,
+        "Turrets": {
+          "Item": {
+            "TurnSpan": 360,
+            "TurretCfg": "data/dlc11/graphics/buildings/special/flak_cannon_tower/flak_cannon_tower_africa.cfg"
+          }
+        },
+        "ProjectileAsset": 2037,
+        "TurretExplosionEffectAsset": 101975,
+        "MuzzleEffectAssets": {
+          "Item": {
+            "MuzzleEffectAsset": 101958
+          }
+        },
+        "AccuracyBase": 27,
+        "AccuracyIncreaseOverDistance": 0,
+        "AccuracySpeedDecay": 0,
+        "AccuracyByDistance": {
+          "Item": [
+            "",
+            {
+              "AccuracyByDistancePair": {
+                "EnemyDistanceRelToAttackRange": 16,
+                "CorrespondingAccuracy": 40
+              }
+            },
+            {
+              "AccuracyByDistancePair": {
+                "EnemyDistanceRelToAttackRange": 100,
+                "CorrespondingAccuracy": 10
+              }
+            }
+          ]
+        }
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": {
+            "Product": 1010017,
+            "Amount": 60,
+            "InactiveAmount": 30
+          }
+        },
+        "ConsumerPriority": 1
+      },
+      "Locked": {
+        "DLCDependency": 24962
+      },
+      "DelayedConstruction": "",
+      "Pausable": "",
+      "Infolayer": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 206544
+            }
+          },
+          "BuildFailed": {
+            "Item": {
+              "Sound": 9818387
+            }
+          },
+          "BuildMoveStart": {
+            "Item": {
+              "Sound": 9818755
+            }
+          },
+          "BuildMoveEnd": {
+            "Item": {
+              "Sound": 200141
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRuined": {
+          "Item": {
+            "Sound": 203848
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        }
+      },
+      "CommandQueue": "",
+      "Culture": {
+        "Attractiveness": 0
+      },
+      "UpgradeList": ""
+    }
+  },
+  {
+    "Template": "HarborBuildingAttacker",
+    "Values": {
+      "Standard": {
+        "GUID": 822,
+        "Name": "harbor_03 arctic (Tower 05, FlaK)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/military_building/icon_flack_tower.png",
+        "InfoDescription": 740
+      },
+      "Building": {
+        "BuildingCategoryName": 11150,
+        "AssociatedRegions": "Arctic"
+      },
+      "Blocking": {
+        "GroundDecalAsset": 114826,
+        "GroundDecalInvisible": 113478,
+        "HasBuildingBaseTiles": 1,
+        "RemoveGrass": 0
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc11/graphics/buildings/special/flak_cannon_tower/flak_cannon_tower_platform_arctic.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 822,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        }
+      },
+      "AmbientMoodProvider": "",
+      "Constructable": "",
+      "Selection": {
+        "StaticHelpEntryPoint": "EmpireOfTheSkies_War_Defense",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Flak Emplacement",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 56080
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 4500
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 15
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            },
+            {
+              "Ingredient": 1010221,
+              "Amount": 10
+            }
+          ]
+        },
+        "InfluenceCostType": "DefenseBuilding",
+        "InfluenceCostPoints": 5
+      },
+      "Attackable": {
+        "AttackableType": "HarbourBuilding",
+        "MaximumHitPoints": 2800,
+        "DefenseByAIFactor": 200,
+        "MilitaryDefensePoints": 2,
+        "MilitaryAirDefensePoints": 3,
+        "MoralePower": 50,
+        "IslandWarFlag": 102307,
+        "ExplosionEffects": {
+          "Item": {
+            "ExplosionEffectFilePath": "data/graphics/effects/military/explosions/harbor_generic_xpl_03.cfg"
+          }
+        },
+        "ExplosionEffectsMin": 1,
+        "ExplosionEffectsMax": 1,
+        "SelfHealPerHealTick": 5
+      },
+      "Attacker": {
+        "BasicAttackType": "Flak",
+        "BaseDamage": 22,
+        "ReloadTime": 3,
+        "AttackRange": 52,
+        "LineOfSightRange": 100,
+        "Turrets": {
+          "Item": {
+            "TurnSpan": 360,
+            "TurretCfg": "data/dlc11/graphics/buildings/special/flak_cannon_tower/flak_cannon_tower.cfg"
+          }
+        },
+        "ProjectileAsset": 2037,
+        "TurretExplosionEffectAsset": 101975,
+        "MuzzleEffectAssets": {
+          "Item": {
+            "MuzzleEffectAsset": 101958
+          }
+        },
+        "AccuracyBase": 27,
+        "AccuracyIncreaseOverDistance": 0,
+        "AccuracySpeedDecay": 0,
+        "AccuracyByDistance": {
+          "Item": [
+            "",
+            {
+              "AccuracyByDistancePair": {
+                "EnemyDistanceRelToAttackRange": 16,
+                "CorrespondingAccuracy": 40
+              }
+            },
+            {
+              "AccuracyByDistancePair": {
+                "EnemyDistanceRelToAttackRange": 100,
+                "CorrespondingAccuracy": 10
+              }
+            }
+          ]
+        }
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": {
+            "Product": 1010017,
+            "Amount": 60,
+            "InactiveAmount": 30
+          }
+        },
+        "ConsumerPriority": 1
+      },
+      "Locked": {
+        "DLCDependency": 24962
+      },
+      "DelayedConstruction": "",
+      "Pausable": "",
+      "Infolayer": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 206544
+            }
+          },
+          "BuildFailed": {
+            "Item": {
+              "Sound": 9818387
+            }
+          },
+          "BuildMoveStart": {
+            "Item": {
+              "Sound": 9818755
+            }
+          },
+          "BuildMoveEnd": {
+            "Item": {
+              "Sound": 200141
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRuined": {
+          "Item": {
+            "Sound": 203848
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        }
+      },
+      "CommandQueue": "",
+      "Culture": {
+        "Attractiveness": 0
+      },
       "UpgradeList": ""
     }
   }

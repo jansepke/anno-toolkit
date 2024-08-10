@@ -12,8 +12,7 @@
         "LocaText": {
           "English": {
             "Text": "Pier",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 7022
@@ -62,6 +61,12 @@
       },
       "Selection": {
         "GUIType": "Pier",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "WeakSelectionColorType": "NoColor"
         }
@@ -71,6 +76,11 @@
           "Item": {
             "Filename": "data/graphics/buildings/special/harbor_08/harbor_08.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 100519,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Constructable": "",
@@ -117,14 +127,13 @@
         "MinLoadingTime": 5
       },
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 4000,
-        "HPBarOffset": 5.5,
-        "HasRuinState": 1,
         "PausedTimeIfAttacked": 0,
-        "SelfHealPerHealTick": 5,
-        "TakeOverEffect": "OnDeath",
+        "HPBarOffset": 5.5,
         "MoralePower": 50,
         "IslandWarFlag": 102303,
+        "HasRuinState": 1,
         "ExplosionEffects": {
           "Item": {
             "VectorElement": {
@@ -140,7 +149,8 @@
           }
         },
         "ExplosionEffectsMin": 2,
-        "ExplosionEffectsMax": 2
+        "ExplosionEffectsMax": 2,
+        "SelfHealPerHealTick": 5
       },
       "StorageBase": {
         "ProductStorageList": 120060

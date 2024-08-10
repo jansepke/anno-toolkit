@@ -311,76 +311,10 @@
     "Template": "VisualQuestObject",
     "Values": {
       "Standard": {
-        "GUID": 420005,
-        "Name": "fish_swarm"
-      },
-      "Mesh": {
-        "ObjectPosition": "Dynamic"
-      },
-      "Object": {
-        "Variations": {
-          "Item": {
-            "Filename": "test_data/graphics/dummy_bjoern/sequences/gamescom/fish_group.cfg"
-          }
-        }
-      },
-      "QuestObject": "",
-      "FeedbackController": "",
-      "SoundEmitter": "",
-      "Walking": {
-        "Acceleration": 1,
-        "TurnRadius": 0.15,
-        "TurnSpeed": 130,
-        "TurnDeceleration": 0
-      },
-      "Infolayer": "",
-      "Text": ""
-    }
-  },
-  {
-    "Template": "VisualQuestObject",
-    "Values": {
-      "Standard": {
-        "GUID": 420007,
-        "Name": "parrot_group"
-      },
-      "Mesh": {
-        "ObjectPosition": "Dynamic"
-      },
-      "Object": {
-        "Variations": {
-          "Item": [
-            {
-              "Filename": "test_data/graphics/dummy_bjoern/sequences/gamescom/parrot_group_01.cfg"
-            },
-            {
-              "Filename": "test_data/graphics/dummy_bjoern/sequences/gamescom/parrot_group_02.cfg"
-            }
-          ]
-        }
-      },
-      "QuestObject": "",
-      "FeedbackController": "",
-      "SoundEmitter": "",
-      "Walking": {
-        "Acceleration": 1,
-        "TurnRadius": 0.15,
-        "TurnSpeed": 130,
-        "TurnDeceleration": 0
-      },
-      "Infolayer": "",
-      "Text": ""
-    }
-  },
-  {
-    "Template": "VisualQuestObject",
-    "Values": {
-      "Standard": {
         "GUID": 110775,
         "Name": "National Traitors - Wreckage 03 - Visual Quest Object Mercier",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_ship.png",
-        "InfoDescription": 1082,
-        "Version": "dm"
+        "InfoDescription": 1082
       },
       "Mesh": {
         "MeshPlacement": "OnWaterSlope",
@@ -412,8 +346,7 @@
         "LocaText": {
           "English": {
             "Text": "Shipwrecked traitors",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 31300
@@ -426,8 +359,7 @@
       "Standard": {
         "GUID": 112283,
         "Name": "SL203 - Wreckage La Corona Flagship - Visual Quest Object Sunken Treasure Rear",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_ship.png",
-        "Version": "dlc01"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_ship.png"
       },
       "Mesh": "",
       "Object": {
@@ -456,12 +388,79 @@
         "LocaText": {
           "English": {
             "Text": "Santíssima Vitória",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 32505
       }
+    }
+  },
+  {
+    "Template": "VisualQuestObject",
+    "Values": {
+      "Standard": {
+        "GUID": 1738,
+        "Name": "Q1-unique-Wreckage 03 - Visual Quest Object",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_ship.png",
+        "InfoDescription": 1082
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/wreckage/wreckage_visual.cfg"
+          }
+        }
+      },
+      "QuestObject": "",
+      "FeedbackController": "",
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 9818371
+            }
+          }
+        }
+      },
+      "Walking": {
+        "PathPlannerLayer": "Water"
+      },
+      "Infolayer": "",
+      "Text": ""
+    }
+  },
+  {
+    "Template": "VisualQuestObject",
+    "Values": {
+      "Standard": {
+        "GUID": 143026,
+        "Name": "Dolphins"
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWater"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/units/wildlife/dolphin/dolphin.cfg"
+          }
+        }
+      },
+      "QuestObject": "",
+      "FeedbackController": "",
+      "SoundEmitter": "",
+      "Walking": {
+        "PathPlannerLayer": "Animal",
+        "Acceleration": 1,
+        "TurnRadius": 0.15,
+        "TurnSpeed": 130,
+        "TurnDeceleration": 0
+      },
+      "Infolayer": "",
+      "Text": ""
     }
   }
 ]

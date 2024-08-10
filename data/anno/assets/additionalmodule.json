@@ -5,8 +5,7 @@
       "Standard": {
         "GUID": 270040,
         "Name": "colony01_tractor_module_01 (GASOLINE TEST)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_farmfield_module.png",
-        "Version": "dlc05"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_farmfield_module.png"
       },
       "Building": {
         "BuildModeRandomRotation": 90,
@@ -93,13 +92,19 @@
         }
       },
       "Mesh": "",
-      "Selection": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Tractor Barn",
-            "Status": "GameWriting",
-            "ExportCount": 1
+            "Status": "GameWriting"
           }
         }
       },
@@ -110,6 +115,450 @@
       "Infolayer": "",
       "BuildingModule": "",
       "AmbientMoodProvider": ""
+    }
+  },
+  {
+    "Template": "AdditionalModule",
+    "Values": {
+      "Standard": {
+        "GUID": 24770,
+        "Name": "Courtyard module",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ornaments/hacienda/icon_hacienda_courtyard_1.png",
+        "InfoDescription": 12750
+      },
+      "Building": {
+        "BuildingCategoryName": 11153,
+        "BuildModeRandomRotation": 90,
+        "SecondPartyRelevant": 0,
+        "VariationIcons": {
+          "Item": [
+            {
+              "IconFilename": "data/ui/2kimages/main/3dicons/ornaments/hacienda/icon_hacienda_courtyard_1.png"
+            },
+            {
+              "IconFilename": "data/ui/2kimages/main/3dicons/ornaments/hacienda/icon_hacienda_courtyard_2.png"
+            }
+          ]
+        },
+        "ModuleParentType": "Hacienda"
+      },
+      "Blocking": {
+        "HidePropsRadius": 0,
+        "DeletePropsRadius": 0,
+        "GroundDecalAsset": 24774,
+        "HasBuildingBaseTiles": 1,
+        "DisableDefaultTrafficFeedback": 0
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AdditionalModule",
+                    "Index": 0
+                  }
+                }
+              },
+              "Amount": 50
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AdditionalModule",
+                    "Index": 1
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AdditionalModule",
+                    "Index": 2
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AdditionalModule",
+                    "Index": 3
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AdditionalModule",
+                    "Index": 4
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AdditionalModule",
+                    "Index": 5
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": [
+            {
+              "Filename": "data/dlc10/graphics/buildings/ornaments/hacienda/hacienda_ornaments_floor_1x1_01.cfg"
+            },
+            {
+              "Filename": "data/dlc10/graphics/buildings/ornaments/hacienda/hacienda_ornaments_floor_1x1_02.cfg"
+            }
+          ]
+        },
+        "Skins": {
+          "DefaultSkinName": 24770,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hacienda Paving",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 55194
+      },
+      "Constructable": "",
+      "Locked": {
+        "DLCDependency": 24961
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 209211
+          }
+        }
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "BuildingModule": {
+        "PlazaSize": 20,
+        "ModuleType": "Main"
+      },
+      "AmbientMoodProvider": {
+        "Murmur": "Hacienda"
+      }
+    }
+  },
+  {
+    "Template": "AdditionalModule",
+    "Values": {
+      "Standard": {
+        "GUID": 25224,
+        "Name": "Pathway module",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ornaments/hacienda/icon_hacienda_street_1.png",
+        "InfoDescription": 12750
+      },
+      "Building": {
+        "BuildingCategoryName": 11153,
+        "InfluencedByNeighbors": {
+          "Item": {
+            "Building": 25224
+          }
+        },
+        "InfluencedVariationDirection": {
+          "Item": [
+            "",
+            {
+              "Direction": 2,
+              "Type": "End"
+            },
+            {
+              "Direction": 3,
+              "Type": "End"
+            },
+            {
+              "Direction": 1,
+              "Type": "Corner"
+            },
+            {
+              "Type": "End"
+            },
+            {
+              "Type": "Mid"
+            },
+            {
+              "Direction": 2,
+              "Type": "Corner"
+            },
+            {
+              "Direction": 2,
+              "Type": "TCrossing"
+            },
+            {
+              "Direction": 1,
+              "Type": "End"
+            },
+            {
+              "Type": "Corner"
+            },
+            {
+              "Direction": 1,
+              "Type": "Mid"
+            },
+            {
+              "Direction": 1,
+              "Type": "TCrossing"
+            },
+            {
+              "Direction": 3,
+              "Type": "Corner"
+            },
+            {
+              "Type": "TCrossing"
+            },
+            {
+              "Direction": 3,
+              "Type": "TCrossing"
+            },
+            {
+              "Type": "Crossing"
+            }
+          ]
+        },
+        "BuildModeRandomRotation": 90,
+        "AssociatedRegions": "Colony01",
+        "BuildingBlockPool": {
+          "Corner": {
+            "Pool": {
+              "Item": {
+                "DirectionOffet": 1,
+                "Variation": 1
+              }
+            }
+          },
+          "Mid": {
+            "Pool": {
+              "Item": ""
+            }
+          },
+          "TCrossing": {
+            "Pool": {
+              "Item": {
+                "Variation": 2
+              }
+            }
+          },
+          "Crossing": {
+            "Pool": {
+              "Item": {
+                "Variation": 3
+              }
+            }
+          },
+          "End": {
+            "Pool": {
+              "Item": {
+                "Variation": 4
+              }
+            }
+          }
+        },
+        "SecondPartyRelevant": 0,
+        "VariationIcons": {
+          "Item": [
+            {
+              "IconFilename": "data/ui/2kimages/main/3dicons/ornaments/hacienda/icon_hacienda_street_1.png"
+            },
+            {
+              "IconFilename": "data/ui/2kimages/main/3dicons/ornaments/hacienda/icon_hacienda_street_2.png"
+            },
+            {
+              "IconFilename": "data/ui/2kimages/main/3dicons/ornaments/hacienda/icon_hacienda_street_3.png"
+            },
+            {
+              "IconFilename": "data/ui/2kimages/main/3dicons/ornaments/hacienda/icon_hacienda_street_4.png"
+            },
+            {
+              "IconFilename": "data/ui/2kimages/main/3dicons/ornaments/hacienda/icon_hacienda_street_5.png"
+            }
+          ]
+        },
+        "ModuleParentType": "Hacienda"
+      },
+      "Blocking": {
+        "HidePropsRadius": 0,
+        "DeletePropsRadius": 0,
+        "GroundDecalAsset": 24774,
+        "HasBuildingBaseTiles": 1,
+        "DisableDefaultTrafficFeedback": 0
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AdditionalModule",
+                    "Index": 0
+                  }
+                }
+              },
+              "Amount": 50
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AdditionalModule",
+                    "Index": 1
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AdditionalModule",
+                    "Index": 2
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AdditionalModule",
+                    "Index": 3
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AdditionalModule",
+                    "Index": 4
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AdditionalModule",
+                    "Index": 5
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": [
+            {
+              "Filename": "data/dlc10/graphics/buildings/ornaments/hacienda/hacienda_ornaments_floor_1x1_street_01_straight.cfg"
+            },
+            {
+              "Filename": "data/dlc10/graphics/buildings/ornaments/hacienda/hacienda_ornaments_floor_1x1_street_01_corner.cfg"
+            },
+            {
+              "Filename": "data/dlc10/graphics/buildings/ornaments/hacienda/hacienda_ornaments_floor_1x1_street_01_tcross.cfg"
+            },
+            {
+              "Filename": "data/dlc10/graphics/buildings/ornaments/hacienda/hacienda_ornaments_floor_1x1_street_01_cross.cfg"
+            },
+            {
+              "Filename": "data/dlc10/graphics/buildings/ornaments/hacienda/hacienda_ornaments_floor_1x1_street_01_end.cfg"
+            }
+          ]
+        },
+        "Skins": {
+          "DefaultSkinName": 25224,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hacienda Pathway",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 55195
+      },
+      "Constructable": "",
+      "Locked": {
+        "DLCDependency": 24961
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 209211
+          }
+        }
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "BuildingModule": {
+        "PlazaSize": 20,
+        "ModuleType": "Main"
+      },
+      "AmbientMoodProvider": {
+        "Murmur": "Hacienda"
+      }
     }
   }
 ]

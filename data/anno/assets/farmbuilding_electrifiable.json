@@ -1,0 +1,832 @@
+[
+  {
+    "Template": "FarmBuilding_Electrifiable",
+    "Values": {
+      "Standard": {
+        "GUID": 101269,
+        "Name": "agriculture_colony01_09 (Cattle Farm)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_meat_raw.png"
+      },
+      "Building": {
+        "BuildModeRandomRotation": 180,
+        "AssociatedRegions": "Colony01"
+      },
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 2500
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 6
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/buildings/production/agriculture_colony01_09/agriculture_colony01_09.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 101269,
+          "DefaultSkinDescription": 23853
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "Values": {
+            "ActionList": ""
+          },
+          "Template": "Actions"
+        },
+        "ParticipantMessageArcheType": "SA_Resident_tier01_atWork",
+        "Colors": {
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Cattle Farm",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 5233
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": [
+            {
+              "Sound": 200795
+            },
+            {
+              "Sound": 200567
+            }
+          ]
+        },
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "SelectionSounds": {
+          "Item": {
+            "Sound": 9818389
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 214783
+            }
+          },
+          "BuildFailed": {
+            "Item": {
+              "Sound": 9818387
+            }
+          },
+          "BuildMoveStart": {
+            "Item": {
+              "Sound": 9818755
+            }
+          },
+          "BuildMoveSuccess": {
+            "Item": {
+              "Sound": 214783
+            }
+          },
+          "BuildMoveEnd": {
+            "Item": {
+              "Sound": 200141
+            }
+          },
+          "BuildUpgrade": {
+            "Item": {
+              "Sound": 9818760
+            }
+          }
+        },
+        "ProductionSounds": {
+          "UI": {
+            "Item": {
+              "Sound": 9818752
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          },
+          "ExplosionOneShots": {
+            "Item": {
+              "Sound": 203849
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        },
+        "MaterialType": "Wood"
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": {
+        "IsAgriculture": 0
+      },
+      "FactoryBase": {
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 1010193,
+            "Amount": 1,
+            "StorageAmount": 2
+          }
+        },
+        "CycleTime": 60
+      },
+      "LogisticNode": "",
+      "ModuleOwner": {
+        "ModuleLimits": {
+          "Main": {
+            "Limit": 6
+          }
+        },
+        "ConstructionOptions": {
+          "Item": {
+            "ModuleGUID": 101281
+          }
+        },
+        "AdditionalModule": 269958,
+        "AddModuleLimit": 0,
+        "FarmType": "AnimalFarm"
+      },
+      "AmbientMoodProvider": {
+        "AmbientMood": "AgricultureBuildingsSouthAmerica"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 25,
+              "InactiveAmount": 13
+            },
+            {
+              "Product": 1010366,
+              "Amount": 20
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "AttackableType": "IslandBuilding",
+        "MaximumHitPoints": 1500,
+        "SelfHealPerHealTick": 4
+      },
+      "IncidentInfectable": {
+        "Infectable": {
+          "Illness": {
+            "Escalated": 0
+          },
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 1000
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "DensityFactor": 0.025,
+            "DensityDistance": 20,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          },
+          "Riot": {
+            "FactoryOvertimeFactor": 0.4,
+            "FactoryUndertimeFactor": 0.2,
+            "FactoryHappinessFactor": 0.2,
+            "HappinessThreshold": 20
+          }
+        },
+        "PerIncidentProximityEffect": {
+          "Fire": {
+            "ProximityEffect": {
+              "Item": [
+                {
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 2.5
+                },
+                {
+                  "IntensityThreshold": 30,
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 5
+                },
+                {
+                  "IntensityThreshold": 60,
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 7.5
+                },
+                {
+                  "IntensityThreshold": 90,
+                  "Distance": 2
+                }
+              ]
+            }
+          },
+          "Riot": {
+            "ProximityEffect": {
+              "Item": [
+                {
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 2.5
+                },
+                {
+                  "IntensityThreshold": 30,
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 5
+                },
+                {
+                  "IntensityThreshold": 60,
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 7.5
+                },
+                {
+                  "IntensityThreshold": 90,
+                  "Distance": 2
+                }
+              ]
+            }
+          },
+          "Illness": {
+            "ProximityEffect": {
+              "Item": [
+                {
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 2.5
+                },
+                {
+                  "IntensityThreshold": 30,
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 5
+                },
+                {
+                  "IntensityThreshold": 60,
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 7.5
+                },
+                {
+                  "IntensityThreshold": 90,
+                  "Distance": 2
+                }
+              ]
+            }
+          }
+        }
+      },
+      "Pausable": "",
+      "Culture": {
+        "CultureType": "Military"
+      },
+      "QuestObject": "",
+      "Industrializable": {
+        "TransporterIndustrializationFactory": 1010104,
+        "TransporterIndustrializationWarehouse": 1010104
+      },
+      "Motorizable": {
+        "MotorizableType": "Silo"
+      },
+      "EcoSystemProvider": "",
+      "MonoCulture": "",
+      "Electrifiable": {
+        "ElectricityBoost": 0,
+        "ShowPowerInObjectMenu": 0
+      }
+    }
+  },
+  {
+    "Template": "FarmBuilding_Electrifiable",
+    "Values": {
+      "Standard": {
+        "GUID": 101272,
+        "Name": "agriculture_colony01_11 (Alpaca Farm)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_alpaca_wool.png"
+      },
+      "Building": {
+        "BuildModeRandomRotation": 90,
+        "AssociatedRegions": "Colony01"
+      },
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 500
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 6
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/buildings/production/agriculture_colony01_11/agriculture_colony01_11.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 101272,
+          "DefaultSkinDescription": 23853
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "Values": {
+            "ActionList": ""
+          },
+          "Template": "Actions"
+        },
+        "ParticipantMessageArcheType": "SA_Resident_tier01_atWork",
+        "Colors": {
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Alpaca Farm",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 8486
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": [
+            {
+              "Sound": 200795
+            },
+            {
+              "Sound": 200575
+            }
+          ]
+        },
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "SelectionSounds": {
+          "Item": {
+            "Sound": 9818389
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 214783
+            }
+          },
+          "BuildFailed": {
+            "Item": {
+              "Sound": 9818387
+            }
+          },
+          "BuildMoveStart": {
+            "Item": {
+              "Sound": 9818755
+            }
+          },
+          "BuildMoveSuccess": {
+            "Item": {
+              "Sound": 203996
+            }
+          },
+          "BuildMoveEnd": {
+            "Item": {
+              "Sound": 200141
+            }
+          },
+          "BuildUpgrade": {
+            "Item": {
+              "Sound": 9818760
+            }
+          }
+        },
+        "ProductionSounds": {
+          "UI": {
+            "Item": {
+              "Sound": 9818752
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          },
+          "ExplosionOneShots": {
+            "Item": {
+              "Sound": 203849
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        }
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 120036,
+            "Amount": 1,
+            "StorageAmount": 4
+          }
+        },
+        "IsMainFactory": 1
+      },
+      "LogisticNode": "",
+      "ModuleOwner": {
+        "ModuleLimits": {
+          "Main": {
+            "Limit": 4
+          }
+        },
+        "ConstructionOptions": {
+          "Item": {
+            "ModuleGUID": 101283
+          }
+        },
+        "AdditionalModule": 269958,
+        "ModuleBuildRadius": 7,
+        "AddModuleLimit": 0,
+        "FarmType": "AnimalFarm"
+      },
+      "AmbientMoodProvider": {
+        "AmbientMood": "AgricultureBuildingsSouthAmerica"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 5,
+              "InactiveAmount": 3
+            },
+            {
+              "Product": 1010366,
+              "Amount": 10
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "AttackableType": "IslandBuilding",
+        "MaximumHitPoints": 1750,
+        "SelfHealPerHealTick": 4
+      },
+      "IncidentInfectable": {
+        "Infectable": {
+          "Illness": {
+            "Escalated": 0
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 1000
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "DensityDistance": 20,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          }
+        },
+        "PerIncidentProximityEffect": {
+          "Fire": {
+            "ProximityEffect": {
+              "Item": [
+                {
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 2.5
+                },
+                {
+                  "IntensityThreshold": 30,
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 5
+                },
+                {
+                  "IntensityThreshold": 60,
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 7.5
+                },
+                {
+                  "IntensityThreshold": 90,
+                  "Distance": 2
+                }
+              ]
+            }
+          },
+          "Riot": {
+            "ProximityEffect": {
+              "Item": [
+                {
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 2.5
+                },
+                {
+                  "IntensityThreshold": 30,
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 5
+                },
+                {
+                  "IntensityThreshold": 60,
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 7.5
+                },
+                {
+                  "IntensityThreshold": 90,
+                  "Distance": 2
+                }
+              ]
+            }
+          },
+          "Illness": {
+            "ProximityEffect": {
+              "Item": [
+                {
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 2.5
+                },
+                {
+                  "IntensityThreshold": 30,
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 5
+                },
+                {
+                  "IntensityThreshold": 60,
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 7.5
+                },
+                {
+                  "IntensityThreshold": 90,
+                  "Distance": 2
+                }
+              ]
+            }
+          }
+        }
+      },
+      "Pausable": "",
+      "Culture": {
+        "CultureType": "Military"
+      },
+      "QuestObject": "",
+      "Industrializable": {
+        "TransporterIndustrializationFactory": 1010104,
+        "TransporterIndustrializationWarehouse": 1010104
+      },
+      "Motorizable": {
+        "MotorizableType": "Silo"
+      },
+      "EcoSystemProvider": "",
+      "MonoCulture": "",
+      "Electrifiable": {
+        "ElectricityBoost": 0,
+        "ElectrifiedEffect": 0,
+        "ShowPowerInObjectMenu": 0
+      }
+    }
+  },
+  {
+    "Template": "FarmBuilding_Electrifiable",
+    "Values": {
+      "Standard": {
+        "GUID": 5457,
+        "Name": "DLC12 agriculture_colony01_12 (Nandu Farm)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/production_goods/icon_nandu_leather.png"
+      },
+      "Building": {
+        "BuildModeRandomRotation": 90,
+        "AssociatedRegions": "Colony01",
+        "SecondPartyRelevant": 0
+      },
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 500
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 6
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc12/graphics/buildings/production/animal_farm_01/animal_farm_01.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 5457,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "SA_Resident_tier01_atWork",
+        "Colors": {
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Nandu Farm",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 60128
+      },
+      "Constructable": "",
+      "Locked": {
+        "DLCDependency": 24963
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 200795
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        }
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 5384,
+            "Amount": 1,
+            "StorageAmount": 4
+          }
+        },
+        "IsMainFactory": 1
+      },
+      "LogisticNode": "",
+      "ModuleOwner": {
+        "ModuleLimits": {
+          "Main": {
+            "Limit": 4
+          }
+        },
+        "ConstructionOptions": {
+          "Item": {
+            "ModuleGUID": 8026
+          }
+        },
+        "AdditionalModule": 269958,
+        "AddModuleLimit": 0,
+        "FarmType": "AnimalFarm"
+      },
+      "AmbientMoodProvider": {
+        "AmbientMood": "AgricultureBuildingsSouthAmerica"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 5,
+              "InactiveAmount": 3
+            },
+            {
+              "Product": 1010366,
+              "Amount": 10
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "AttackableType": "IslandBuilding",
+        "MaximumHitPoints": 1750,
+        "SelfHealPerHealTick": 4
+      },
+      "IncidentInfectable": {
+        "Infectable": {
+          "Illness": {
+            "Escalated": 0
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 1000
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "DensityDistance": 20,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          }
+        }
+      },
+      "Pausable": "",
+      "Culture": {
+        "CultureType": "Military"
+      },
+      "QuestObject": "",
+      "Industrializable": {
+        "TransporterIndustrializationFactory": 1010104,
+        "TransporterIndustrializationWarehouse": 1010104
+      },
+      "Motorizable": {
+        "MotorizableType": "Silo"
+      },
+      "EcoSystemProvider": "",
+      "MonoCulture": "",
+      "Electrifiable": {
+        "ElectricityBoost": 0,
+        "ShowPowerInObjectMenu": 0
+      }
+    }
+  }
+]

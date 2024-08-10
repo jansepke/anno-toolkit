@@ -28,6 +28,9 @@
           "Harbor": {
             "Priority": 40
           },
+          "Fog": {
+            "Priority": 20
+          },
           "ResidenceT1": {
             "Priority": 20
           },
@@ -43,29 +46,11 @@
           "ResidenceT5": {
             "Priority": 20
           },
-          "Fog": {
-            "Priority": 20
-          },
           "ResidenceScholars": {
             "Priority": 30
           }
         },
         "MurmurTypeMapping": {
-          "Market": {
-            "MurmurEvent": 200080
-          },
-          "Factory": {
-            "MurmurEvent": 239772
-          },
-          "Mine": {
-            "MurmurEvent": 200081
-          },
-          "Farm": {
-            "MurmurEvent": 200077
-          },
-          "Harbor": {
-            "MurmurEvent": 200078
-          },
           "IncidentRiot": {
             "MurmurEvent": 239958,
             "Priority": 10,
@@ -81,6 +66,18 @@
             "Priority": 10,
             "WeightFactor": 3
           },
+          "ResidenceSatisfied": {
+            "MurmurEvent": 200910
+          },
+          "ZooHighAttractiveness": {
+            "MurmurEvent": 239986
+          },
+          "ZooMedAttractiveness": {
+            "MurmurEvent": 239988
+          },
+          "ZooLowAttractiveness": {
+            "MurmurEvent": 239987
+          },
           "MuseumHighAttractiveness": {
             "MurmurEvent": 239968
           },
@@ -89,39 +86,6 @@
           },
           "MuseumLowAttractiveness": {
             "MurmurEvent": 239969
-          },
-          "Festival": {
-            "MurmurEvent": 239955,
-            "Priority": 10
-          },
-          "MonumentConstruction": {
-            "MurmurEvent": 239966,
-            "Priority": 8,
-            "WeightFactor": 10
-          },
-          "MonumentEvent": {
-            "MurmurEvent": 239967,
-            "Priority": 8,
-            "WeightFactor": 10
-          },
-          "WarAction": {
-            "MurmurEvent": 239978,
-            "Priority": 10
-          },
-          "WarDeclared": {
-            "MurmurEvent": 239979,
-            "Priority": 10
-          },
-          "WarSurrenderLikely": {
-            "MurmurEvent": 239980,
-            "Priority": 10
-          },
-          "WarSurrenderUnlikely": {
-            "MurmurEvent": 239981,
-            "Priority": 10
-          },
-          "Warehouse": {
-            "MurmurEvent": 239982
           },
           "FarmerContent": {
             "MurmurEvent": 239952,
@@ -207,6 +171,24 @@
             "MurmurEvent": 239973,
             "Priority": 1
           },
+          "Market": {
+            "MurmurEvent": 200080
+          },
+          "Factory": {
+            "MurmurEvent": 239772
+          },
+          "Mine": {
+            "MurmurEvent": 200081
+          },
+          "Farm": {
+            "MurmurEvent": 200077
+          },
+          "Warehouse": {
+            "MurmurEvent": 239982
+          },
+          "Harbor": {
+            "MurmurEvent": 200078
+          },
           "TouristsLowAttractiveness": {
             "MurmurEvent": 239992,
             "Priority": 25
@@ -218,6 +200,20 @@
           "TouristsHighAttractiveness": {
             "MurmurEvent": 239976,
             "Priority": 25
+          },
+          "Festival": {
+            "MurmurEvent": 239955,
+            "Priority": 10
+          },
+          "MonumentConstruction": {
+            "MurmurEvent": 239966,
+            "Priority": 8,
+            "WeightFactor": 10
+          },
+          "MonumentEvent": {
+            "MurmurEvent": 239967,
+            "Priority": 8,
+            "WeightFactor": 10
           },
           "ThirdPartyEdvard": {
             "MurmurEvent": 239947
@@ -237,22 +233,26 @@
           "ThirdPartyJailor": {
             "MurmurEvent": 200900
           },
-          "ResidenceSatisfied": {
-            "MurmurEvent": 200910
+          "WarAction": {
+            "MurmurEvent": 239978,
+            "Priority": 10
+          },
+          "WarDeclared": {
+            "MurmurEvent": 239979,
+            "Priority": 10
+          },
+          "WarSurrenderLikely": {
+            "MurmurEvent": 239980,
+            "Priority": 10
+          },
+          "WarSurrenderUnlikely": {
+            "MurmurEvent": 239981,
+            "Priority": 10
           },
           "DM_SecondPartyMercier": {
             "MurmurEvent": 204851,
             "Priority": 8,
             "WeightFactor": 3
-          },
-          "ZooHighAttractiveness": {
-            "MurmurEvent": 239986
-          },
-          "ZooMedAttractiveness": {
-            "MurmurEvent": 239988
-          },
-          "ZooLowAttractiveness": {
-            "MurmurEvent": 239987
           },
           "Arctic_BasicTundra": {
             "MurmurEvent": 246911
@@ -395,6 +395,57 @@
           "HighLife_Monument_Phase_Conversation_03": {
             "MurmurEvent": 280905,
             "Priority": 2
+          },
+          "GGJ_Dam_01": {
+            "MurmurEvent": 282161
+          },
+          "GGJ_Buildings": {
+            "MurmurEvent": 282129
+          },
+          "GGJ_YaoscaVillage": {
+            "MurmurEvent": 282131
+          },
+          "GGJ_Dam_02": {
+            "MurmurEvent": 282162
+          },
+          "GGJ_Dam_03": {
+            "MurmurEvent": 282130
+          },
+          "Hacienda": {
+            "MurmurEvent": 282508
+          },
+          "SoS_Residence": {
+            "MurmurEvent": 282509
+          },
+          "DLC11_PostOffice": {
+            "MurmurEvent": 201015
+          },
+          "DLC11_BauxiteMine": {
+            "MurmurEvent": 201033
+          },
+          "DLC11_AluminiumSmelter": {
+            "MurmurEvent": 201032
+          },
+          "DLC11_AirshipPlatform": {
+            "MurmurEvent": 201031
+          },
+          "DLC11_RigidAirshipHangar": {
+            "MurmurEvent": 201034
+          },
+          "DLC12_Beach": {
+            "MurmurEvent": 201753
+          },
+          "DLC12_Cinema": {
+            "MurmurEvent": 201754
+          },
+          "DLC12_SambaSchool": {
+            "MurmurEvent": 201755
+          },
+          "DLC12_Artistas": {
+            "MurmurEvent": 201752
+          },
+          "DLC12_Stadium_Football": {
+            "MurmurEvent": 201756
           }
         },
         "AmbientMoodMapping": {
@@ -593,6 +644,13 @@
             "AssociatedGameParameterSector2": 279062,
             "AssociatedGameParameterSector3": 279064,
             "AssociatedGameParameterSector4": 279065
+          },
+          "LakeCosmetic": {
+            "MoodGridColor": -12292446,
+            "AssociatedGameParameterSector1": 201832,
+            "AssociatedGameParameterSector2": 201825,
+            "AssociatedGameParameterSector3": 201848,
+            "AssociatedGameParameterSector4": 201835
           }
         },
         "EnvironmentTypeMapping": {
@@ -741,6 +799,12 @@
             "AssociatedGameParameterSector2": 279058,
             "AssociatedGameParameterSector3": 279060,
             "AssociatedGameParameterSector4": 279061
+          },
+          "LakeCosmetic": {
+            "AssociatedGameParameterSector1": 201863,
+            "AssociatedGameParameterSector2": 201862,
+            "AssociatedGameParameterSector3": 201864,
+            "AssociatedGameParameterSector4": 201861
           }
         },
         "ListenerPositionInterpolationValue": 0.2,
@@ -756,6 +820,7 @@
         "MoodSectorSizeMin": 2,
         "MoodSectorSizeToFrustumRatio": 0.6,
         "EnvironmentForestTreeFactor": 0.4,
+        "EnvironmentLakeFactor": 0.5,
         "MoodFilter": {
           "None": {
             "overridesFiltered": 0
@@ -867,6 +932,9 @@
           },
           "Street_Snow": {
             "SwitchChoice": 244850
+          },
+          "Ice": {
+            "SwitchChoice": 282191
           }
         },
         "BlueprintSwitchGroup": 200783,
@@ -910,7 +978,10 @@
         "CanalEmptyingSound": 273696,
         "TreeFallSound": 276940,
         "RainRtpc": 9818744,
-        "SnowRtpc": 279488
+        "SnowRtpc": 279488,
+        "VisitorArrivalSwitchGroup": 200259,
+        "VisitorArrivalSwitchOn": 200257,
+        "VisitorArrivalSwitchOff": 200258
       }
     }
   }

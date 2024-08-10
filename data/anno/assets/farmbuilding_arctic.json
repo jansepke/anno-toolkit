@@ -5,8 +5,7 @@
       "Standard": {
         "GUID": 112676,
         "Name": "agriculture_arctic_03 (Goose Farm)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_goose_feathers.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_goose_feathers.png"
       },
       "Building": {
         "BuildingCategoryName": 11175
@@ -121,18 +120,28 @@
           "Item": {
             "Filename": "data/dlc03/graphics/buildings/production/production_colony03_02/production_colony03_02.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 112676,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Arctic_Resident_tier01_atWork"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Goose Farm",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 35074
@@ -209,15 +218,16 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 1500
       },
       "IncidentInfectable": {
         "Infectable": {
-          "Illness": {
-            "Escalated": 0
-          },
           "Riot": {
             "Base": 0,
+            "Escalated": 0
+          },
+          "Illness": {
             "Escalated": 0
           },
           "Explosion": {
@@ -226,11 +236,6 @@
           }
         },
         "IncidentInfectionChanceFactors": {
-          "Explosion": {
-            "HappinessMin": 0,
-            "HappinessMax": 0,
-            "SatisfactionThreshold": 0
-          },
           "Riot": {
             "FactoryOvertimeFactor": 0,
             "FactoryUndertimeFactor": 0,
@@ -241,6 +246,11 @@
           },
           "Illness": {
             "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Explosion": {
             "HappinessMin": 0,
             "HappinessMax": 0,
             "SatisfactionThreshold": 0
@@ -259,8 +269,7 @@
       "Standard": {
         "GUID": 112682,
         "Name": "agriculture_arctic_05 (Husky Farm)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/animals/icon_husky.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/animals/icon_husky.png"
       },
       "Building": {
         "BuildingCategoryName": 11175
@@ -381,18 +390,28 @@
           "Item": {
             "Filename": "data/dlc03/graphics/buildings/production/production_colony03_09/production_colony_03_09.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 112682,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Arctic_Resident_tier02_atWork"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Husky Farm",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 35076
@@ -469,15 +488,16 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 1750
       },
       "IncidentInfectable": {
         "Infectable": {
-          "Illness": {
-            "Escalated": 0
-          },
           "Riot": {
             "Base": 0,
+            "Escalated": 0
+          },
+          "Illness": {
             "Escalated": 0
           },
           "Explosion": {
@@ -486,11 +506,6 @@
           }
         },
         "IncidentInfectionChanceFactors": {
-          "Explosion": {
-            "HappinessMin": 0,
-            "HappinessMax": 0,
-            "SatisfactionThreshold": 0
-          },
           "Riot": {
             "FactoryOvertimeFactor": 0,
             "FactoryUndertimeFactor": 0,
@@ -501,6 +516,11 @@
           },
           "Illness": {
             "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Explosion": {
             "HappinessMin": 0,
             "HappinessMax": 0,
             "SatisfactionThreshold": 0
@@ -519,8 +539,7 @@
       "Standard": {
         "GUID": 112690,
         "Name": "mining_arctic_01 (Gas Mine)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_gas_red.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_gas_red.png"
       },
       "Building": {
         "BuildModeRandomRotation": 90
@@ -638,18 +657,28 @@
           "Item": {
             "Filename": "data/dlc03/graphics/buildings/production/production_colony03_06/production_colony03_06.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 112690,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Arctic_Resident_tier02_atWork"
       },
       "Text": {
         "LocaText": {
           "English": {
-            "Text": "Gas Mine",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Text": "Arctic Gas Mine",
+            "Status": "Exported"
           }
         },
         "LineID": 35085
@@ -732,15 +761,16 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 2500
       },
       "IncidentInfectable": {
         "Infectable": {
-          "Illness": {
-            "Escalated": 0
-          },
           "Riot": {
             "Base": 0,
+            "Escalated": 0
+          },
+          "Illness": {
             "Escalated": 0
           }
         },
@@ -755,13 +785,6 @@
             "DensityFactor": 0.1,
             "DensityDistance": 20
           },
-          "Explosion": {
-            "BaseChance": 16,
-            "FactoryProductivityFactor": 0.025,
-            "HappinessMin": 0,
-            "HappinessMax": 0,
-            "SatisfactionThreshold": 0
-          },
           "Riot": {
             "FactoryOvertimeFactor": 0,
             "FactoryUndertimeFactor": 0,
@@ -772,6 +795,13 @@
           },
           "Illness": {
             "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Explosion": {
+            "BaseChance": 16,
+            "FactoryProductivityFactor": 0.025,
             "HappinessMin": 0,
             "HappinessMax": 0,
             "SatisfactionThreshold": 0

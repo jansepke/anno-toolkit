@@ -1,0 +1,186 @@
+[
+  {
+    "Template": "BuffFactoryCulture",
+    "Values": {
+      "Standard": {
+        "GUID": 24805,
+        "Name": "Hacienda fertilizer module",
+        "IconFilename": "data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_fertiliser.png",
+        "InfoDescription": 11143
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hacienda"
+          }
+        },
+        "LineID": 55227
+      },
+      "Building": {
+        "BuildingCategoryName": 100000,
+        "SkipUnlockMessage": 1,
+        "BuildModeRandomRotation": 90,
+        "AssociatedRegions": "Colony01",
+        "SecondPartyRelevant": 0
+      },
+      "Blocking": {
+        "HasBuildingBaseTiles": 1
+      },
+      "Mesh": "",
+      "BuffFactory": {
+        "ProductionBuffScope": "Radius",
+        "BaseBuff": 24806,
+        "BaseBuffScope": "Radius",
+        "BaseBuffDistance": 20
+      },
+      "FactoryBase": {
+        "FactoryInputs": {
+          "Item": {
+            "Product": 24807,
+            "Amount": 1,
+            "StorageAmount": 5
+          }
+        },
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 24808,
+            "Amount": 1,
+            "StorageAmount": 5
+          }
+        },
+        "IsMainFactory": 1
+      },
+      "FeedbackController": "",
+      "Pausable": {
+        "IsHaciendaDependent": 1
+      },
+      "Selection": {
+        "StaticHelpEntryPoint": "SeedsOfChangeFertilizer",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "SA_Resident_tier01_atWork",
+        "Colors": {
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Attackable": {
+        "AttackableType": "IslandBuilding",
+        "MaximumHitPoints": 3000,
+        "HasRuinState": 1
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 50,
+              "InactiveAmount": 25
+            },
+            {
+              "Product": 1010366,
+              "Amount": 30
+            }
+          ]
+        }
+      },
+      "AmbientMoodProvider": "",
+      "LogisticNode": "",
+      "Constructable": "",
+      "Locked": {
+        "DLCDependency": 24961
+      },
+      "IncidentInfectable": {
+        "Infectable": {
+          "Fire": {
+            "Base": 1
+          },
+          "Riot": {
+            "Base": 1
+          },
+          "Illness": {
+            "Base": 1,
+            "Communication": "FireDefault"
+          },
+          "Explosion": {
+            "Base": 1
+          }
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "DensityFactor": 0.0025,
+            "DensityDistance": 20,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          }
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc10/graphics/buildings/special/hacienda/fertilizer_module/fertilizer_module_01.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 24805,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        }
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 282231
+          }
+        },
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "ProductionSounds": {
+          "UI": ""
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 5000
+            },
+            {
+              "Ingredient": 1010196
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            },
+            {
+              "Ingredient": 1010224,
+              "Amount": 5
+            }
+          ]
+        }
+      },
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Culture": {
+        "Attractiveness": -15,
+        "CultureType": "Military"
+      }
+    }
+  }
+]

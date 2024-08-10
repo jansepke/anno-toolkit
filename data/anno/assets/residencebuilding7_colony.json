@@ -103,17 +103,27 @@
             }
           ]
         },
+        "Skins": {
+          "DefaultSkinName": 101254,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        },
         "DefaultParticipant": "SA_Resident_tier01"
       },
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "SA_Resident_tier01"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Jornalero Residence",
-            "Status": "Exported",
-            "ExportCount": 3
+            "Status": "Exported"
           }
         },
         "LineID": 8481
@@ -208,11 +218,13 @@
       "FeedbackController": "",
       "Residence7": {
         "PopulationLevel7": 15000005,
-        "ResidentMax": 10
+        "ResidentMax": 10,
+        "ResidentsRequiredForUpgrade": 10,
+        "IsBaseResidence": 1
       },
       "LogisticNode": "",
       "AmbientMoodProvider": {
-        "DynamicEnvironmentType": "ResidenceT1",
+        "DynamicEnvironmentType": "None",
         "HappinessDependentMurmur": {
           "Angry": {
             "Murmur": "JornaleroUnhappy"
@@ -233,9 +245,46 @@
       },
       "UpgradeList": "",
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 1500
       },
-      "IncidentInfectable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 1000
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "DensityFactor": 0.025,
+            "DensityDistance": 15
+          },
+          "Riot": {
+            "ResidenceHappinessFactor": 0.4,
+            "HappinessThreshold": 10
+          },
+          "Illness": {
+            "BaseChance": 4,
+            "HitpointFactor": 0.1,
+            "DensityFactor": 0.025,
+            "DensityDistance": 15,
+            "DilapidatedFactor": 10,
+            "FactoryOvertimeFactor": 0.3,
+            "FactoryUndertimeFactor": 0.15,
+            "ResidenceFullOvertimeChance": 20,
+            "ResidenceFullUndertimeChance": -15,
+            "EcoSystemFactor": 50
+          },
+          "Explosion": {
+            "ResidenceFullOvertimeChance": 20,
+            "ResidenceFullUndertimeChance": -15
+          }
+        }
+      },
       "Pausable": "",
       "Culture": "",
       "StreetActivation": "",
@@ -351,27 +400,51 @@
             }
           ]
         },
+        "Skins": {
+          "DefaultSkinName": 101255,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        },
         "DefaultParticipant": "SA_Resident_tier02"
       },
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "SA_Resident_tier02"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Obrero Residence",
-            "Status": "Exported",
-            "ExportCount": 3
+            "Status": "Exported"
           }
         },
         "LineID": 8482
       },
-      "Constructable": "",
+      "Constructable": {
+        "ConstructionMenuIcon": 15000006
+      },
       "Locked": {
         "DefaultLockedState": 1
       },
       "Upgradable": {
-        "UpgradeCost": ""
+        "NextGUID": 5405,
+        "UpgradeCost": {
+          "Item": [
+            {
+              "Amount": 3,
+              "Ingredient": 1010196
+            },
+            {
+              "Amount": 2,
+              "Ingredient": 1010205
+            }
+          ]
+        }
       },
       "SoundEmitter": {
         "BuildingRepaired": {
@@ -385,12 +458,15 @@
       "FeedbackController": "",
       "Residence7": {
         "PopulationLevel7": 15000006,
-        "ResidentMax": 20
+        "ResidentMax": 20,
+        "ResidentsRequiredForUpgrade": 20,
+        "IsBaseResidence": 1
       },
       "LogisticNode": {
         "REMOVE_THIS_LATER_FeedbackUnitTier": "Level2"
       },
       "AmbientMoodProvider": {
+        "Murmur": "Hacienda",
         "DynamicEnvironmentType": "ResidenceT1",
         "HappinessDependentMurmur": {
           "Angry": {
@@ -412,9 +488,46 @@
       },
       "UpgradeList": "",
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 2000
       },
-      "IncidentInfectable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 1000
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "BaseChance": 4.5,
+            "DensityFactor": 0.025,
+            "DensityDistance": 15
+          },
+          "Riot": {
+            "ResidenceHappinessFactor": 0.4,
+            "HappinessThreshold": 10
+          },
+          "Illness": {
+            "BaseChance": 4.5,
+            "HitpointFactor": 0.1,
+            "DensityFactor": 0.025,
+            "DensityDistance": 15,
+            "DilapidatedFactor": 10,
+            "FactoryOvertimeFactor": 0.3,
+            "FactoryUndertimeFactor": 0.15,
+            "ResidenceFullOvertimeChance": 20,
+            "ResidenceFullUndertimeChance": -15
+          },
+          "Explosion": {
+            "ResidenceFullOvertimeChance": 20,
+            "ResidenceFullUndertimeChance": -15
+          }
+        }
+      },
       "Pausable": "",
       "Culture": "",
       "StreetActivation": "",
@@ -428,8 +541,7 @@
         "GUID": 114436,
         "Name": "residence_colony02_tier01",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_resident.png",
-        "InfoDescription": 163059,
-        "Version": "dlc06"
+        "InfoDescription": 163059
       },
       "Blocking": "",
       "Building": {
@@ -531,17 +643,26 @@
             }
           ]
         },
+        "Skins": {
+          "DefaultSkinName": 114436,
+          "DefaultSkinDescription": 23853
+        },
         "DefaultParticipant": "Africa_Resident_tier01"
       },
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Africa_Resident_tier01"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Shepherd Residence",
-            "Status": "Exported",
-            "ExportCount": 5
+            "Status": "Exported"
           }
         },
         "LineID": 43376
@@ -639,7 +760,8 @@
       "FeedbackController": "",
       "Residence7": {
         "PopulationLevel7": 114329,
-        "ResidentMax": 10
+        "ResidentMax": 10,
+        "ResidentsRequiredForUpgrade": 10
       },
       "LogisticNode": "",
       "AmbientMoodProvider": {
@@ -664,6 +786,7 @@
       },
       "UpgradeList": "",
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 1500
       },
       "IncidentInfectable": "",
@@ -680,8 +803,7 @@
         "GUID": 114437,
         "Name": "residence_colony02_tier02",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_resident.png",
-        "InfoDescription": 163059,
-        "Version": "dlc06"
+        "InfoDescription": 163059
       },
       "Blocking": "",
       "Building": {
@@ -782,23 +904,33 @@
             }
           ]
         },
+        "Skins": {
+          "DefaultSkinName": 114437,
+          "DefaultSkinDescription": 23853
+        },
         "DefaultParticipant": "Africa_Resident_tier02"
       },
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Africa_Resident_tier02"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Elder Residence",
-            "Status": "Exported",
-            "ExportCount": 5
+            "Status": "Exported"
           }
         },
         "LineID": 43377
       },
       "Constructable": {
-        "DestructionCategory": "Residents"
+        "DestructionCategory": "Residents",
+        "ConstructionMenuIcon": 114330
       },
       "Locked": {
         "DefaultLockedState": 1
@@ -818,7 +950,8 @@
       "FeedbackController": "",
       "Residence7": {
         "PopulationLevel7": 114330,
-        "ResidentMax": 20
+        "ResidentMax": 20,
+        "ResidentsRequiredForUpgrade": 20
       },
       "LogisticNode": {
         "REMOVE_THIS_LATER_FeedbackUnitTier": "Level2"
@@ -845,6 +978,7 @@
       },
       "UpgradeList": "",
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 2000
       },
       "IncidentInfectable": "",
@@ -852,6 +986,994 @@
       "Culture": "",
       "StreetActivation": "",
       "InfluenceSource": ""
+    }
+  },
+  {
+    "Template": "ResidenceBuilding7_Colony",
+    "Values": {
+      "Standard": {
+        "GUID": 24792,
+        "Name": "Hacienda residence module tier01",
+        "IconFilename": "data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_jornalero.png",
+        "InfoDescription": 163059
+      },
+      "Blocking": "",
+      "Building": {
+        "BuildingType": "Residence",
+        "SkipUnlockMessage": 1,
+        "BuildModeRandomRotation": 90,
+        "AssociatedRegions": "Colony01",
+        "SecondPartyRelevant": 0
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 0
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 1
+                  }
+                }
+              },
+              "Amount": 1
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 2
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 3
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 4
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 5
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": [
+            {
+              "Filename": "data/dlc10/graphics/buildings/special/hacienda/living_space_module/living_space_module_tier01_estate01.cfg"
+            },
+            {
+              "Filename": "data/dlc10/graphics/buildings/special/hacienda/living_space_module/living_space_module_tier01_estate02.cfg"
+            },
+            {
+              "Filename": "data/dlc10/graphics/buildings/special/hacienda/living_space_module/living_space_module_tier01_estate03.cfg"
+            }
+          ]
+        },
+        "Skins": {
+          "DefaultSkinName": 24792,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        },
+        "DefaultParticipant": "SA_Resident_tier01"
+      },
+      "Selection": {
+        "StaticHelpEntryPoint": "SeedsOfChangeHacienda",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "SA_Resident_tier01"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hacienda Jornalero Quarters",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 55197
+      },
+      "Constructable": "",
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 24961
+      },
+      "Upgradable": {
+        "UpgradeCost": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 0
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 1
+                  }
+                }
+              },
+              "Amount": 2
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 2
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 3
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 4
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 5
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "SoundEmitter": {
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        },
+        "MaterialType": "Wood"
+      },
+      "Infolayer": "",
+      "FeedbackController": "",
+      "Residence7": {
+        "PopulationLevel7": 15000005,
+        "ResidentMax": 20,
+        "ResidentsRequiredForUpgrade": 20
+      },
+      "LogisticNode": "",
+      "AmbientMoodProvider": {
+        "Murmur": "Hacienda",
+        "DynamicEnvironmentType": "ResidenceT1",
+        "HappinessDependentMurmur": {
+          "Angry": {
+            "Murmur": "JornaleroUnhappy"
+          },
+          "Unhappy": {
+            "Murmur": "JornaleroContent"
+          },
+          "Neutral": {
+            "Murmur": "JornaleroContent"
+          },
+          "Happy": {
+            "Murmur": "JornaleroHappy"
+          },
+          "Euphoric": {
+            "Murmur": "JornaleroHappy"
+          }
+        }
+      },
+      "UpgradeList": {
+        "DefaultBuff": 25742
+      },
+      "Attackable": {
+        "AttackableType": "IslandBuilding",
+        "MaximumHitPoints": 1500
+      },
+      "IncidentInfectable": {
+        "Infectable": {
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 1000
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "DensityFactor": 0.025,
+            "DensityDistance": 15
+          },
+          "Riot": {
+            "ResidenceHappinessFactor": 0.4,
+            "HappinessThreshold": 10
+          },
+          "Illness": {
+            "BaseChance": 4,
+            "HitpointFactor": 0.1,
+            "DensityFactor": 0.025,
+            "DensityDistance": 15,
+            "DilapidatedFactor": 10,
+            "FactoryOvertimeFactor": 0.3,
+            "FactoryUndertimeFactor": 0.15,
+            "ResidenceFullOvertimeChance": 20,
+            "ResidenceFullUndertimeChance": -15,
+            "EcoSystemFactor": 50
+          },
+          "Explosion": {
+            "ResidenceFullOvertimeChance": 20,
+            "ResidenceFullUndertimeChance": -15
+          }
+        }
+      },
+      "Pausable": {
+        "IsHaciendaDependent": 1
+      },
+      "Culture": "",
+      "StreetActivation": "",
+      "InfluenceSource": ""
+    }
+  },
+  {
+    "Template": "ResidenceBuilding7_Colony",
+    "Values": {
+      "Standard": {
+        "GUID": 24793,
+        "Name": "Hacienda residence module tier02",
+        "IconFilename": "data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_obrera.png",
+        "InfoDescription": 163059
+      },
+      "Blocking": "",
+      "Building": {
+        "BuildingType": "Residence",
+        "AssociatedRegions": "Colony01",
+        "SecondPartyRelevant": 0
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 0
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 1
+                  }
+                }
+              },
+              "Amount": 3
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 2
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 3
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 4
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 5
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": [
+            {
+              "Filename": "data/dlc10/graphics/buildings/special/hacienda/living_space_module/living_space_module_tier02_estate01.cfg"
+            },
+            {
+              "Filename": "data/dlc10/graphics/buildings/special/hacienda/living_space_module/living_space_module_tier02_estate02.cfg"
+            },
+            {
+              "Filename": "data/dlc10/graphics/buildings/special/hacienda/living_space_module/living_space_module_tier02_estate03.cfg"
+            }
+          ]
+        },
+        "Skins": {
+          "DefaultSkinName": 24793,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        },
+        "DefaultParticipant": "SA_Resident_tier02"
+      },
+      "Selection": {
+        "StaticHelpEntryPoint": "SeedsOfChangeHacienda",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "SA_Resident_tier02"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hacienda Obrera Quarters",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 55198
+      },
+      "Constructable": "",
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 24961
+      },
+      "Upgradable": {
+        "UpgradeCost": ""
+      },
+      "SoundEmitter": {
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        },
+        "MaterialType": "Wood"
+      },
+      "Infolayer": "",
+      "FeedbackController": "",
+      "Residence7": {
+        "PopulationLevel7": 15000006,
+        "ResidentMax": 30,
+        "ResidentsRequiredForUpgrade": 30
+      },
+      "LogisticNode": {
+        "REMOVE_THIS_LATER_FeedbackUnitTier": "Level2"
+      },
+      "AmbientMoodProvider": {
+        "Murmur": "Hacienda",
+        "DynamicEnvironmentType": "ResidenceT1",
+        "HappinessDependentMurmur": {
+          "Angry": {
+            "Murmur": "OberaUnhappy"
+          },
+          "Unhappy": {
+            "Murmur": "OberaContent"
+          },
+          "Neutral": {
+            "Murmur": "OberaContent"
+          },
+          "Happy": {
+            "Murmur": "OberaHappy"
+          },
+          "Euphoric": {
+            "Murmur": "OberaHappy"
+          }
+        }
+      },
+      "UpgradeList": {
+        "DefaultBuff": 25743
+      },
+      "Attackable": {
+        "AttackableType": "IslandBuilding",
+        "MaximumHitPoints": 2000
+      },
+      "IncidentInfectable": {
+        "Infectable": {
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 1000
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "BaseChance": 4.5,
+            "DensityFactor": 0.025,
+            "DensityDistance": 15
+          },
+          "Riot": {
+            "ResidenceHappinessFactor": 0.4,
+            "HappinessThreshold": 10
+          },
+          "Illness": {
+            "BaseChance": 4.5,
+            "HitpointFactor": 0.1,
+            "DensityFactor": 0.025,
+            "DensityDistance": 15,
+            "DilapidatedFactor": 10,
+            "FactoryOvertimeFactor": 0.3,
+            "FactoryUndertimeFactor": 0.15,
+            "ResidenceFullOvertimeChance": 20,
+            "ResidenceFullUndertimeChance": -15
+          },
+          "Explosion": {
+            "ResidenceFullOvertimeChance": 20,
+            "ResidenceFullUndertimeChance": -15
+          }
+        }
+      },
+      "Pausable": {
+        "IsHaciendaDependent": 1
+      },
+      "Culture": "",
+      "StreetActivation": "",
+      "InfluenceSource": {
+        "InfluenceSource": "Hacienda"
+      }
+    }
+  },
+  {
+    "Template": "ResidenceBuilding7_Colony",
+    "Values": {
+      "Standard": {
+        "GUID": 5405,
+        "Name": "residence_colony01_tier03",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_resident.png",
+        "InfoDescription": 163059
+      },
+      "Blocking": "",
+      "Building": {
+        "BuildingType": "Residence",
+        "PickingAsset": 101254,
+        "AssociatedRegions": "Colony01"
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 0
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 1
+                  }
+                }
+              },
+              "Amount": 6
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 2
+                  }
+                }
+              },
+              "Amount": 2
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 3
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 4
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 5
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": [
+            {
+              "Filename": "data/dlc12/graphics/buildings/residence/residence_colony01_tier03_estate01/residence_colony01_tier03_estate01.cfg"
+            },
+            {
+              "Filename": "data/dlc12/graphics/buildings/residence/residence_colony01_tier03_estate02/residence_colony01_tier03_estate02.cfg"
+            },
+            {
+              "Filename": "data/dlc12/graphics/buildings/residence/residence_colony01_tier03_estate03/residence_colony01_tier03_estate03.cfg"
+            },
+            {
+              "Filename": "data/dlc12/graphics/buildings/residence/residence_colony01_tier03_estate04/residence_colony01_tier03_estate04.cfg"
+            }
+          ]
+        },
+        "Skins": {
+          "DefaultSkinName": 5405,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        },
+        "DefaultParticipant": "SA_Resident_tier03"
+      },
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "SA_Resident_tier03"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Artista Residence",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 60126
+      },
+      "Constructable": {
+        "ConstructionMenuIcon": 5403
+      },
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 24963
+      },
+      "Upgradable": {
+        "UpgradeCost": ""
+      },
+      "SoundEmitter": {
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        },
+        "MaterialType": "Wood"
+      },
+      "Infolayer": "",
+      "FeedbackController": "",
+      "Residence7": {
+        "PopulationLevel7": 5403,
+        "ResidentMax": 40,
+        "ResidentsRequiredForUpgrade": 40,
+        "ResidentsOccupancyThresholdMax": 0.5,
+        "IsBaseResidence": 1
+      },
+      "LogisticNode": {
+        "REMOVE_THIS_LATER_FeedbackUnitTier": "Level2"
+      },
+      "AmbientMoodProvider": {
+        "Murmur": "DLC12_Artistas",
+        "DynamicEnvironmentType": "ResidenceT1",
+        "HappinessDependentMurmur": {
+          "Angry": {
+            "Murmur": "OberaUnhappy"
+          },
+          "Unhappy": {
+            "Murmur": "OberaContent"
+          },
+          "Neutral": {
+            "Murmur": "OberaContent"
+          },
+          "Happy": {
+            "Murmur": "OberaHappy"
+          },
+          "Euphoric": {
+            "Murmur": "OberaHappy"
+          }
+        }
+      },
+      "UpgradeList": "",
+      "Attackable": {
+        "AttackableType": "IslandBuilding",
+        "MaximumHitPoints": 2000
+      },
+      "IncidentInfectable": {
+        "Infectable": {
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 1000
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "BaseChance": 4.5,
+            "DensityFactor": 0.025,
+            "DensityDistance": 15
+          },
+          "Riot": {
+            "ResidenceHappinessFactor": 0.4,
+            "HappinessThreshold": 10
+          },
+          "Illness": {
+            "BaseChance": 4.5,
+            "HitpointFactor": 0.1,
+            "DensityFactor": 0.025,
+            "DensityDistance": 15,
+            "DilapidatedFactor": 10,
+            "FactoryOvertimeFactor": 0.3,
+            "FactoryUndertimeFactor": 0.15,
+            "ResidenceFullOvertimeChance": 20,
+            "ResidenceFullUndertimeChance": -15
+          },
+          "Explosion": {
+            "ResidenceFullOvertimeChance": 20,
+            "ResidenceFullUndertimeChance": -15
+          }
+        }
+      },
+      "Pausable": "",
+      "Culture": "",
+      "StreetActivation": "",
+      "InfluenceSource": ""
+    }
+  },
+  {
+    "Template": "ResidenceBuilding7_Colony",
+    "Values": {
+      "Standard": {
+        "GUID": 6086,
+        "Name": "Hacienda residence module tier03",
+        "IconFilename": "data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_artista.png",
+        "InfoDescription": 163059
+      },
+      "Blocking": "",
+      "Building": {
+        "BuildingType": "Residence",
+        "AssociatedRegions": "Colony01",
+        "SecondPartyRelevant": 0
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 0
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 1
+                  }
+                }
+              },
+              "Amount": 6
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 2
+                  }
+                }
+              },
+              "Amount": 2
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 3
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 4
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "ResidenceBuilding7_Colony",
+                    "Index": 5
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": [
+            {
+              "Filename": "data/dlc12/graphics/buildings/special/hacienda/living_space_module/living_space_module_tier03_estate01.cfg"
+            },
+            {
+              "Filename": "data/dlc12/graphics/buildings/special/hacienda/living_space_module/living_space_module_tier03_estate02.cfg"
+            }
+          ]
+        },
+        "Skins": {
+          "DefaultSkinName": 6086,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        },
+        "DefaultParticipant": "SA_Resident_tier03"
+      },
+      "Selection": {
+        "StaticHelpEntryPoint": "SeedsOfChangeHacienda",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "SA_Resident_tier03"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hacienda Artista Quarters",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 60127
+      },
+      "Constructable": "",
+      "Locked": {
+        "DefaultLockedState": 1,
+        "DLCDependency": 24961
+      },
+      "Upgradable": {
+        "UpgradeCost": ""
+      },
+      "SoundEmitter": {
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        },
+        "MaterialType": "Wood"
+      },
+      "Infolayer": "",
+      "FeedbackController": "",
+      "Residence7": {
+        "PopulationLevel7": 5403,
+        "ResidentMax": 30,
+        "ResidentsRequiredForUpgrade": 30,
+        "ResidentsOccupancyThresholdMax": 0.5
+      },
+      "LogisticNode": {
+        "REMOVE_THIS_LATER_FeedbackUnitTier": "Level2"
+      },
+      "AmbientMoodProvider": {
+        "Murmur": "Hacienda",
+        "DynamicEnvironmentType": "ResidenceT1",
+        "HappinessDependentMurmur": {
+          "Angry": {
+            "Murmur": "OberaUnhappy"
+          },
+          "Unhappy": {
+            "Murmur": "OberaContent"
+          },
+          "Neutral": {
+            "Murmur": "OberaContent"
+          },
+          "Happy": {
+            "Murmur": "OberaHappy"
+          },
+          "Euphoric": {
+            "Murmur": "OberaHappy"
+          }
+        }
+      },
+      "UpgradeList": {
+        "DefaultBuff": 25743
+      },
+      "Attackable": {
+        "AttackableType": "IslandBuilding",
+        "MaximumHitPoints": 2000
+      },
+      "IncidentInfectable": {
+        "Infectable": {
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 1000
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "BaseChance": 4.5,
+            "DensityFactor": 0.025,
+            "DensityDistance": 15
+          },
+          "Riot": {
+            "ResidenceHappinessFactor": 0.4,
+            "HappinessThreshold": 10
+          },
+          "Illness": {
+            "BaseChance": 4.5,
+            "HitpointFactor": 0.1,
+            "DensityFactor": 0.025,
+            "DensityDistance": 15,
+            "DilapidatedFactor": 10,
+            "FactoryOvertimeFactor": 0.3,
+            "FactoryUndertimeFactor": 0.15,
+            "ResidenceFullOvertimeChance": 20,
+            "ResidenceFullUndertimeChance": -15
+          },
+          "Explosion": {
+            "ResidenceFullOvertimeChance": 20,
+            "ResidenceFullUndertimeChance": -15
+          }
+        }
+      },
+      "Pausable": {
+        "IsHaciendaDependent": 1
+      },
+      "Culture": "",
+      "StreetActivation": "",
+      "InfluenceSource": {
+        "InfluenceSource": "Hacienda"
+      }
     }
   }
 ]

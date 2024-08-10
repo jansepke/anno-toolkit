@@ -19,7 +19,13 @@
         "MeshPlacement": "OnWaterSlope"
       },
       "Selection": {
-        "MultiSelectable": 1
+        "MultiSelectable": 1,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Walking": {
         "ReservationLength": 9,
@@ -33,8 +39,7 @@
         "LocaText": {
           "English": {
             "Text": "Flagship",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 13085
@@ -54,14 +59,13 @@
         "SelfHealPausedTimeIfAttacked": 60000
       },
       "Attacker": {
+        "BaseDamage": 80,
+        "ReloadTime": 50,
         "AttackRange": 36,
         "AttackRangeApproachPercentage": 0.2,
         "LineOfSightRange": 70,
-        "ReloadTime": 50,
-        "ProjectileCount": 18,
-        "BaseDamage": 80,
-        "AccuracyBase": 4,
-        "TurretExplosionEffectAsset": 101994
+        "TurretExplosionEffectAsset": 101994,
+        "AccuracyBase": 4
       },
       "MinimapToken": {
         "TokenAsset": 2001947,
@@ -84,7 +88,20 @@
         "SlotCount": 3
       },
       "FeedbackController": "",
-      "Draggable": "",
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Cost": {
         "Costs": {
           "Item": [
@@ -148,6 +165,7 @@
           }
         },
         "Skins": {
+          "DefaultSkinCategoryName": 7312,
           "SkinList": {
             "Item": [
               {
@@ -173,6 +191,9 @@
               },
               {
                 "SkinAssetGuid": 133861
+              },
+              {
+                "SkinAssetGuid": 33024
               }
             ]
           }
@@ -185,6 +206,12 @@
       },
       "Selection": {
         "MultiSelectable": 1,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "SelectionColorType": "ParticipantColor",
           "SelectionColor": 0,
@@ -215,8 +242,7 @@
         "LocaText": {
           "English": {
             "Text": "Flagship",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 20115
@@ -241,21 +267,20 @@
         "SelfHealPausedTimeIfAttacked": 60000
       },
       "Attacker": {
+        "BaseDamage": 175,
+        "ReloadTime": 40,
+        "TargetAngleVariation": 50,
         "AttackRange": 55,
         "AttackRangeApproachPercentage": 0.85,
         "LineOfSightRange": 100,
-        "ReloadTime": 40,
         "ProjectileAsset": 101974,
-        "ProjectileCount": 6,
-        "BaseDamage": 175,
+        "TurretExplosionEffectAsset": 101994,
+        "FullVolleyTimeMin": 0.2,
+        "FullVolleyTimeMax": 0.8,
+        "VolleyMaxPerBulletRandomOffset": 0.2,
         "AccuracyBase": 2,
         "AccuracyIncreaseOverDistance": 60,
-        "AccuracySpeedDecay": 20,
-        "TargetAngleVariation": 50,
-        "FullVolleyTimeMin": 0.2,
-        "TurretExplosionEffectAsset": 101994,
-        "FullVolleyTimeMax": 0.8,
-        "VolleyMaxPerBulletRandomOffset": 0.2
+        "AccuracySpeedDecay": 20
       },
       "MinimapToken": {
         "TokenAsset": 2001947,
@@ -279,7 +304,20 @@
         "SlotCount": 3
       },
       "FeedbackController": "",
-      "Draggable": "",
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Cost": {
         "Costs": {
           "Item": [
@@ -372,7 +410,13 @@
         "SetCompanyLogo": 1
       },
       "Selection": {
-        "MultiSelectable": 1
+        "MultiSelectable": 1,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Walking": {
         "ReservationLength": 9,
@@ -395,8 +439,7 @@
         "LocaText": {
           "English": {
             "Text": "Flagship",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 20116
@@ -414,28 +457,27 @@
       "Collector": "",
       "Attackable": {
         "MaximumHitPoints": 2000,
-        "HPBarOffset": 7.5,
         "AlertRange": 150,
+        "HPBarOffset": 7.5,
         "AccuracyWidth": 3,
         "SelfHealPerHealTick": 5,
         "SelfHealPausedTimeIfAttacked": 60000
       },
       "Attacker": {
+        "BaseDamage": 175,
+        "ReloadTime": 40,
+        "TargetAngleVariation": 50,
         "AttackRange": 55,
         "AttackRangeApproachPercentage": 0.85,
         "LineOfSightRange": 100,
-        "ReloadTime": 40,
         "ProjectileAsset": 101974,
-        "ProjectileCount": 6,
-        "BaseDamage": 175,
+        "TurretExplosionEffectAsset": 101994,
+        "FullVolleyTimeMin": 0.2,
+        "FullVolleyTimeMax": 0.8,
+        "VolleyMaxPerBulletRandomOffset": 0.2,
         "AccuracyBase": 2,
         "AccuracyIncreaseOverDistance": 60,
-        "AccuracySpeedDecay": 20,
-        "TargetAngleVariation": 50,
-        "FullVolleyTimeMin": 0.2,
-        "TurretExplosionEffectAsset": 101994,
-        "FullVolleyTimeMax": 0.8,
-        "VolleyMaxPerBulletRandomOffset": 0.2
+        "AccuracySpeedDecay": 20
       },
       "MinimapToken": {
         "TokenAsset": 2001947,
@@ -458,7 +500,20 @@
         "SlotCount": 3
       },
       "FeedbackController": "",
-      "Draggable": "",
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Cost": {
         "Costs": {
           "Item": [

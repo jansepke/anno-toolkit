@@ -5,8 +5,7 @@
       "Standard": {
         "GUID": 112130,
         "Name": "Sea Mine Big",
-        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_seamine_2.png",
-        "Version": "dm"
+        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_seamine_2.png"
       },
       "Object": {
         "Variations": {
@@ -23,25 +22,64 @@
         "ExplodeOnLethalDamage": 1,
         "InnerDamageRadius": 5,
         "InnerDamage": 1500,
-        "OuterDamageRadius": 5
+        "OuterDamageRadius": 5,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "Projectile": {
-        "ProjectileSpeed": 2
+        "ProjectileSpeed": 2,
+        "StatusEffects": {
+          "Item": {
+            "StatusEffectChain": {
+              "Item": [
+                {
+                  "StatusEffect": 1903,
+                  "StatusDuration": 30000
+                },
+                {
+                  "StatusEffect": 1905,
+                  "StatusDuration": 120000
+                }
+              ]
+            },
+            "StatusEffectExclusiveGroup": 1906
+          }
+        },
+        "StatusEffectChainDescription": 4423
       },
       "Selection": {
-        "GUIType": "Generic"
+        "GUIType": "Generic",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Limpet Mine",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 30903
       },
-      "Attackable": ""
+      "Attackable": {
+        "AttackableType": "Seamine"
+      }
     }
   },
   {
@@ -50,8 +88,7 @@
       "Standard": {
         "GUID": 112048,
         "Name": "Sea Mine",
-        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_seamine_1.png",
-        "Version": "dm"
+        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_seamine_1.png"
       },
       "Object": {
         "Variations": {
@@ -68,25 +105,64 @@
         "ExplodeOnLethalDamage": 1,
         "InnerDamageRadius": 5,
         "InnerDamage": 1000,
-        "OuterDamageRadius": 5
+        "OuterDamageRadius": 5,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "Projectile": {
-        "ProjectileSpeed": 2
+        "ProjectileSpeed": 2,
+        "StatusEffects": {
+          "Item": {
+            "StatusEffectChain": {
+              "Item": [
+                {
+                  "StatusEffect": 1903,
+                  "StatusDuration": 25000
+                },
+                {
+                  "StatusEffect": 1905,
+                  "StatusDuration": 90000
+                }
+              ]
+            },
+            "StatusEffectExclusiveGroup": 1906
+          }
+        },
+        "StatusEffectChainDescription": 4423
       },
       "Selection": {
-        "GUIType": "Generic"
+        "GUIType": "Generic",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Naval Mine",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 30902
       },
-      "Attackable": ""
+      "Attackable": {
+        "AttackableType": "Seamine"
+      }
     }
   },
   {
@@ -95,8 +171,7 @@
       "Standard": {
         "GUID": 113694,
         "Name": "Sea Mine Quest",
-        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_seamine_1.png",
-        "Version": "dlc01"
+        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_seamine_1.png"
       },
       "Object": {
         "Variations": {
@@ -113,25 +188,46 @@
         "ExplodeOnLethalDamage": 1,
         "InnerDamageRadius": 5,
         "InnerDamage": 1000,
-        "OuterDamageRadius": 5
+        "OuterDamageRadius": 5,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "Projectile": {
         "ProjectileSpeed": 2
       },
       "Selection": {
-        "GUIType": "Generic"
+        "GUIType": "Generic",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Naval Mine",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 48060
       },
-      "Attackable": ""
+      "Attackable": {
+        "AttackableType": "Seamine"
+      }
     }
   },
   {
@@ -140,8 +236,7 @@
       "Standard": {
         "GUID": 112930,
         "Name": "Bomb NATE-shell",
-        "IconFilename": "data/ui/2kimages/main/3dicons/ship_military/icon_seamine_4.png",
-        "Version": "dlc01"
+        "IconFilename": "data/ui/2kimages/main/3dicons/ship_military/icon_seamine_4.png"
       },
       "Object": {
         "Variations": {
@@ -158,24 +253,46 @@
         "ExplodeOnLethalDamage": 1,
         "InnerDamageRadius": 5,
         "InnerDamage": 1000,
-        "OuterDamageRadius": 5
+        "OuterDamageRadius": 5,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "Projectile": {
         "ProjectileSpeed": 2
       },
       "Selection": {
-        "GUIType": "Generic"
+        "GUIType": "Generic",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "DeciN8r",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
-        }
+        },
+        "LineID": 53982
       },
-      "Attackable": ""
+      "Attackable": {
+        "AttackableType": "Seamine"
+      }
     }
   },
   {
@@ -184,8 +301,7 @@
       "Standard": {
         "GUID": 112928,
         "Name": "DeciNATE-ing mine",
-        "IconFilename": "data/ui/2kimages/main/3dicons/ship_military/icon_seamine_5.png",
-        "Version": "dlc01"
+        "IconFilename": "data/ui/2kimages/main/3dicons/ship_military/icon_seamine_5.png"
       },
       "Object": {
         "Variations": {
@@ -201,25 +317,47 @@
       "Exploder": {
         "ExplodeOnLethalDamage": 1,
         "InnerDamageRadius": 5,
-        "InnerDamage": 1000,
-        "OuterDamageRadius": 5
+        "InnerDamage": 1250,
+        "OuterDamageRadius": 5,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "Projectile": {
         "ProjectileSpeed": 2
       },
       "Selection": {
-        "GUIType": "Generic"
+        "GUIType": "Generic",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "CarboN8r",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
-        }
+        },
+        "LineID": 53983
       },
-      "Attackable": ""
+      "Attackable": {
+        "AttackableType": "Seamine"
+      }
     }
   },
   {
@@ -228,8 +366,7 @@
       "Standard": {
         "GUID": 112929,
         "Name": "UltiNATE Bomb",
-        "IconFilename": "data/ui/2kimages/main/3dicons/ship_military/icon_seamine_6.png",
-        "Version": "dlc01"
+        "IconFilename": "data/ui/2kimages/main/3dicons/ship_military/icon_seamine_6.png"
       },
       "Object": {
         "Variations": {
@@ -246,24 +383,130 @@
         "ExplodeOnLethalDamage": 1,
         "InnerDamageRadius": 5,
         "InnerDamage": 1500,
-        "OuterDamageRadius": 5
+        "OuterDamageRadius": 5,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
       },
       "Projectile": {
         "ProjectileSpeed": 2
       },
       "Selection": {
-        "GUIType": "Generic"
+        "GUIType": "Generic",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "The Mine-o-taur",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
+          }
+        },
+        "LineID": 53984
+      },
+      "Attackable": {
+        "AttackableType": "Seamine"
+      }
+    }
+  },
+  {
+    "Template": "Seamine",
+    "Values": {
+      "Standard": {
+        "GUID": 1889,
+        "Name": "Drop Sea Mine",
+        "IconFilename": "data/ui/2kimages/main/3dicons/consumables/icon_seamine_2.png"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dm/graphics/quest/quest_objects/naval_mines/dm_naval_mine_02.cfg"
           }
         }
       },
-      "Attackable": ""
+      "Mesh": "",
+      "Seamine": {
+        "TriggerRadius": 7
+      },
+      "Exploder": {
+        "ExplodeOnLethalDamage": 1,
+        "InnerDamageRadius": 2,
+        "InnerDamage": 300,
+        "OuterDamageRadius": 12,
+        "MinimumDamage": 30,
+        "HitSuccessNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        },
+        "HitFailNotification": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionNotification": ""
+          }
+        }
+      },
+      "Projectile": {
+        "ProjectileSpeed": 2,
+        "StatusEffects": {
+          "Item": {
+            "StatusEffectChain": {
+              "Item": [
+                {
+                  "StatusEffect": 1903,
+                  "StatusDuration": 15000
+                },
+                {
+                  "StatusEffect": 1905,
+                  "StatusDuration": 60000
+                }
+              ]
+            },
+            "StatusEffectExclusiveGroup": 1906
+          }
+        }
+      },
+      "Selection": {
+        "GUIType": "Generic",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Sea Mine",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 56082
+      },
+      "Attackable": {
+        "AttackableType": "Seamine",
+        "MaximumHitPoints": 25
+      }
     }
   }
 ]

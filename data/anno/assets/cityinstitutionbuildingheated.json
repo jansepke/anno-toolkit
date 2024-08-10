@@ -1,0 +1,208 @@
+[
+  {
+    "Template": "CityInstitutionBuildingHeated",
+    "Values": {
+      "Standard": {
+        "GUID": 112669,
+        "Name": "institution_arctic_01 (Ranger Station)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/city_institution/icon_ranger_station.png",
+        "InfoDescription": 116247
+      },
+      "Building": {
+        "BuildModeRandomRotation": 90,
+        "AssociatedRegions": "Arctic"
+      },
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 4000
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 10
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218,
+              "Amount": 5
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc03/graphics/buildings/public/institution_colony03_01/institution_colony03_01.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 112669,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        }
+      },
+      "Mesh": {
+        "DefaultSequence": "default"
+      },
+      "Selection": {
+        "GUIType": "CityInstitution",
+        "OnSelection": {
+          "Values": {
+            "ActionList": ""
+          },
+          "Template": "Actions"
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Ranger Station",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 35093
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 242789
+          }
+        },
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "SelectionSounds": {
+          "Item": {
+            "Sound": 9818389
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 9818759
+            }
+          },
+          "BuildFailed": {
+            "Item": {
+              "Sound": 9818387
+            }
+          },
+          "BuildMoveStart": {
+            "Item": {
+              "Sound": 9818755
+            }
+          },
+          "BuildMoveSuccess": {
+            "Item": {
+              "Sound": 203995
+            }
+          },
+          "BuildMoveEnd": {
+            "Item": {
+              "Sound": 200141
+            }
+          },
+          "BuildUpgrade": {
+            "Item": {
+              "Sound": 9818760
+            }
+          }
+        },
+        "ProductionSounds": {
+          "UI": {
+            "Item": {
+              "Sound": 9818752
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          },
+          "ExplosionOneShots": {
+            "Item": {
+              "Sound": 203849
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        }
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "IncidentResolver": {
+        "ResolverUnit": 114895,
+        "SpecialUnit": 114896,
+        "SpecialUnitThresholds": "",
+        "ResolvableIncidents": "Fire;ArcticIllness",
+        "DuringConstructionText": 116231,
+        "DuringIncidentHeadline": 116232,
+        "ActionButtonText": 3690,
+        "DuringIncidentHeadlineIcon": 501922
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": {
+            "Product": 1010017,
+            "Amount": 75,
+            "InactiveAmount": 25
+          }
+        }
+      },
+      "Attackable": {
+        "AttackableType": "IslandBuilding",
+        "MaximumHitPoints": 5500,
+        "SelfHealPerHealTick": 4
+      },
+      "Pausable": "",
+      "IncidentInfluencer": {
+        "Influence": {
+          "Fire": {
+            "Influence": -5,
+            "Distance": 10
+          },
+          "Explosion": {
+            "Influence": -8,
+            "Distance": 15
+          },
+          "ArcticIllness": {
+            "Influence": -4,
+            "Distance": 10
+          }
+        }
+      },
+      "DelayedConstruction": "",
+      "AmbientMoodProvider": {
+        "AmbientMood": "ResidenceTier1"
+      },
+      "Culture": "",
+      "QuestObject": "",
+      "Heated": {
+        "RequiresHeat": 1,
+        "MissingHeatInfolayer": 116919
+      },
+      "LogisticNode": ""
+    }
+  }
+]

@@ -1,0 +1,514 @@
+[
+  {
+    "Template": "TriggerVictoryCondition",
+    "Values": {
+      "Standard": {
+        "GUID": 2284,
+        "Name": "BronzeTrigger"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionQuestState",
+          "Values": {
+            "Condition": "",
+            "ConditionQuestState": {
+              "ConditionQuestStateStates": "Reached",
+              "ConditionQuestStateQuestGUID": 100230
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "TriggerVictoryCondition",
+    "Values": {
+      "Standard": {
+        "GUID": 2285,
+        "Name": "SilverTrigger"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionQuestState",
+          "Values": {
+            "Condition": "",
+            "ConditionQuestState": {
+              "ConditionQuestStateStates": "Reached",
+              "ConditionQuestStateQuestGUID": 100127
+            }
+          }
+        },
+        "SubTriggers": {
+          "Item": [
+            {
+              "SubTrigger": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Reached",
+                          "ConditionQuestStateQuestGUID": 100168
+                        }
+                      },
+                      "Template": "ConditionQuestState"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Reached",
+                          "ConditionQuestStateQuestGUID": 100170
+                        }
+                      },
+                      "Template": "ConditionQuestState"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Reached",
+                          "ConditionQuestStateQuestGUID": 100169
+                        }
+                      },
+                      "Template": "ConditionQuestState"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Reached",
+                          "ConditionQuestStateQuestGUID": 100171
+                        }
+                      },
+                      "Template": "ConditionQuestState"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Reached",
+                          "ConditionQuestStateQuestGUID": 100172
+                        }
+                      },
+                      "Template": "ConditionQuestState"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Reached",
+                          "ConditionQuestStateQuestGUID": 100174
+                        }
+                      },
+                      "Template": "ConditionQuestState"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Reached",
+                          "ConditionQuestStateQuestGUID": 100175
+                        }
+                      },
+                      "Template": "ConditionQuestState"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Reached",
+                          "ConditionQuestStateQuestGUID": 100176
+                        }
+                      },
+                      "Template": "ConditionQuestState"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "TriggerVictoryCondition",
+    "Values": {
+      "Standard": {
+        "GUID": 2287,
+        "Name": "GoldTrigger"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionTimePassed",
+          "Values": {
+            "Condition": "",
+            "ConditionTimePassed": {
+              "TimePassedComp": "AtMost",
+              "TimePassed": 10800000
+            }
+          }
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Template": "ConditionQuestState",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionQuestState": {
+                        "ConditionQuestStateStates": "Reached",
+                        "ConditionQuestStateQuestGUID": 100135
+                      }
+                    }
+                  },
+                  "SubTriggers": {
+                    "Item": {
+                      "SubTrigger": {
+                        "Template": "AutoCreateTrigger",
+                        "Values": {
+                          "Trigger": {
+                            "TriggerCondition": {
+                              "Template": "ConditionQuestState",
+                              "Values": {
+                                "Condition": "",
+                                "ConditionQuestState": {
+                                  "ConditionQuestStateStates": "Reached",
+                                  "ConditionQuestStateQuestGUID": 100154
+                                }
+                              }
+                            },
+                            "SubTriggers": {
+                              "Item": {
+                                "SubTrigger": {
+                                  "Template": "AutoCreateTrigger",
+                                  "Values": {
+                                    "Trigger": {
+                                      "TriggerCondition": {
+                                        "Template": "ConditionQuestState",
+                                        "Values": {
+                                          "Condition": "",
+                                          "ConditionQuestState": {
+                                            "ConditionQuestStateStates": "Reached",
+                                            "ConditionQuestStateQuestGUID": 100155
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "TriggerVictoryCondition",
+    "Values": {
+      "Standard": {
+        "GUID": 6378,
+        "Name": "BronzeTrigger"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionActiveSession",
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "MutuallyExclusive"
+            },
+            "ConditionActiveSession": {
+              "ActiveSession": 5864
+            }
+          }
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "Template": "AutoCreateTrigger",
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Values": {
+                      "Condition": "",
+                      "ConditionQuestState": {
+                        "ConditionQuestStateStates": "Reached",
+                        "ConditionQuestStateQuestGUID": 105770
+                      }
+                    },
+                    "Template": "ConditionQuestState"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "TriggerVictoryCondition",
+    "Values": {
+      "Standard": {
+        "GUID": 6384,
+        "Name": "SilverTrigger"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionActiveSession",
+          "Values": {
+            "Condition": "",
+            "ConditionActiveSession": {
+              "ActiveSession": 5864
+            }
+          }
+        },
+        "SubTriggers": {
+          "Item": [
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateQuestGUID": 105770,
+                          "ConditionQuestStateStates": "Reached"
+                        }
+                      },
+                      "Template": "ConditionQuestState"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "GoodsInStock",
+                          "Context": 1010017,
+                          "CounterAmount": 1000000
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "TriggerVictoryCondition",
+    "Values": {
+      "Standard": {
+        "GUID": 6385,
+        "Name": "GoldTrigger"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Template": "ConditionActiveSession",
+          "Values": {
+            "Condition": "",
+            "ConditionActiveSession": {
+              "ActiveSession": 5864
+            }
+          }
+        },
+        "SubTriggers": {
+          "Item": [
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Values": {
+                        "Condition": "",
+                        "ConditionQuestState": {
+                          "ConditionQuestStateStates": "Reached",
+                          "ConditionQuestStateQuestGUID": 105770
+                        }
+                      },
+                      "Template": "ConditionQuestState"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionPlayerCounter",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "GoodsInStock",
+                          "Context": 1010017,
+                          "CounterAmount": 1000000
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "Template": "AutoCreateTrigger",
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Template": "ConditionUnlocked",
+                      "Values": {
+                        "Condition": "",
+                        "ConditionUnlocked": {
+                          "UnlockNeeded": 105552
+                        },
+                        "ConditionPropsNegatable": ""
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": ""
+    }
+  }
+]

@@ -23,17 +23,17 @@
           "ThirdParty": {
             "MusicChoice": 203534
           },
-          "CampaignPrologue": {
-            "MusicChoice": 239770
-          },
-          "CampaignEnd": {
-            "MusicChoice": 239771
-          },
           "GameWon": {
             "MusicChoice": 239901
           },
           "GameLost": {
             "MusicChoice": 239902
+          },
+          "CampaignPrologue": {
+            "MusicChoice": 239770
+          },
+          "CampaignEnd": {
+            "MusicChoice": 239771
           }
         },
         "MusicStage_StateGroup": 203362,
@@ -75,17 +75,14 @@
         },
         "ThirdPartyMusic": {
           "ThirdPartyStateMapping": {
+            "Third_party_02_Blake": {
+              "ThirdParty_StateChoice": 200928
+            },
             "Third_party_03_Pirate_Harlow": {
               "ThirdParty_StateChoice": 200927
             },
-            "Third_party_07_Jailor_Bleakworth": {
-              "ThirdParty_StateChoice": 206492
-            },
             "Third_party_04_Pirate_LaFortune": {
               "ThirdParty_StateChoice": 200926
-            },
-            "Third_party_02_Blake": {
-              "ThirdParty_StateChoice": 200928
             },
             "Third_party_05_Sarmento": {
               "ThirdParty_StateChoice": 200925
@@ -96,11 +93,14 @@
             "Third_party_05c_Sarmento_Attackable_Campaign": {
               "ThirdParty_StateChoice": 200925
             },
-            "Third_party_08_Kahina": {
-              "ThirdParty_StateChoice": 200929
-            },
             "Third_party_06_Nate": {
               "ThirdParty_StateChoice": 205057
+            },
+            "Third_party_07_Jailor_Bleakworth": {
+              "ThirdParty_StateChoice": 206492
+            },
+            "Third_party_08_Kahina": {
+              "ThirdParty_StateChoice": 200929
             },
             "Africa_Blake": {
               "ThirdParty_StateChoice": 276941
@@ -116,6 +116,8 @@
             }
           },
           "ThirdParty_StateGroup": 203511,
+          "TimeoutAfterThirdPartyMusicPlay": 120000,
+          "CurrentAreaFactorBonus": 600,
           "FirstEncounter_StateGroup": 203689,
           "FirstEncounter_True_StateChoice": 203687,
           "FirstEncounter_False_StateChoice": 203688,
@@ -189,15 +191,41 @@
               "DlcStateGroup": 279223,
               "DlcState_ON": 279221,
               "DlcState_OFF": 279222
+            },
+            {
+              "DlcAsset": 24961,
+              "DlcStateGroup": 282206,
+              "DlcState_ON": 282204,
+              "DlcState_OFF": 282205
+            },
+            {
+              "DlcAsset": 24962,
+              "DlcStateGroup": 282209,
+              "DlcState_ON": 282207,
+              "DlcState_OFF": 282208
+            },
+            {
+              "DlcAsset": 24963,
+              "DlcStateGroup": 282212,
+              "DlcState_ON": 282210,
+              "DlcState_OFF": 282211
             }
           ]
         },
         "AudioSessionMapping": {
-          "SunkenTreasure": {
-            "StateChoice": 205080
-          },
           "Default": {
             "StateChoice": 205079
+          },
+          "SunkenTreasure": {
+            "StateChoice": 205080
+          }
+        },
+        "MusicInfluencers": {
+          "Item": {
+            "InfluencerObject": 1010359,
+            "MusicStateGroup": 201088,
+            "ActiveMusicState": 201087,
+            "InactiveMusicState": 201130
           }
         }
       }

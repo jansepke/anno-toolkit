@@ -56,6 +56,77 @@
             "DefaultGoodTransferAmount": 400,
             "MaxTradeActionsPerStation": 1,
             "Unlock": 141416
+          },
+          "Mail": {
+            "RestrictedGood": {
+              "Item": [
+                {
+                  "Good": 535
+                },
+                {
+                  "Good": 4267
+                },
+                {
+                  "Good": 4268
+                }
+              ]
+            },
+            "MinGoodTransferAmount": 1,
+            "MaxGoodTransferAmount": 50,
+            "DefaultGoodTransferAmount": 50,
+            "MaxTradeActionsPerStation": 8,
+            "Unlock": 962,
+            "DumpEverythingAtStation": 1,
+            "RouteAlchemy": {
+              "DeliverGood": {
+                "Item": {
+                  "LoadedGood": 535,
+                  "UnloadedGood": 536
+                }
+              },
+              "SessionSwitch": {
+                "Item": [
+                  {
+                    "LeavingSession": 110934,
+                    "LoadedGood": 535,
+                    "UpgradedGood": 2524
+                  },
+                  {
+                    "LeavingSession": 180023,
+                    "LoadedGood": 535,
+                    "UpgradedGood": 2524
+                  },
+                  {
+                    "LeavingSession": 180025,
+                    "LoadedGood": 535,
+                    "UpgradedGood": 2524
+                  },
+                  {
+                    "LeavingSession": 180045,
+                    "LoadedGood": 535,
+                    "UpgradedGood": 2524
+                  }
+                ]
+              },
+              "RouteChange": {
+                "Item": [
+                  {
+                    "LoadedGood": 535
+                  },
+                  {
+                    "LoadedGood": 2524
+                  },
+                  {
+                    "LoadedGood": 4267
+                  },
+                  {
+                    "LoadedGood": 4268
+                  }
+                ]
+              }
+            },
+            "IgnoreMinimumLoadingTimes": 1,
+            "LoadingTimeGoodFactor": 0.1
           }
         },
         "SessionLines": {
@@ -126,7 +197,9 @@
         "TravelTimeMultiplier": 1.2,
         "EstimatedTimeForNpcTrades": 20000,
         "EstimatedTimeForDocking": 5000,
-        "FolderDefaultName": 132477
+        "FolderDefaultName": 132477,
+        "EnableCharterRoutes": 1,
+        "EstimatedTimeForDockingAirships": 150000
       }
     }
   }

@@ -97,17 +97,41 @@
               "Filename": "data/graphics/buildings/residence/residence_tier01_estate04/residence_tier01_estate04.cfg"
             }
           ]
+        },
+        "Skins": {
+          "DefaultSkinName": 1010343,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312,
+          "OverrideDefaultIcon": "data/ui/2kimages/main/3dicons/ornaments/cosmetic_dlc06/icon_tier01_default.png",
+          "SkinList": {
+            "Item": [
+              {
+                "SkinAssetGuid": 694
+              },
+              {
+                "SkinAssetGuid": 702
+              },
+              {
+                "SkinAssetGuid": 716
+              }
+            ]
+          }
         }
       },
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier01"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Farmer Residence",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 5227
@@ -239,7 +263,9 @@
           "InputStorageMax": 1
         },
         "PopulationLevel7": 15000000,
-        "ResidentMax": 10
+        "ResidentMax": 10,
+        "ResidentsRequiredForUpgrade": 10,
+        "IsBaseResidence": 1
       },
       "LogisticNode": "",
       "AmbientMoodProvider": {
@@ -264,6 +290,7 @@
       },
       "UpgradeList": "",
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 1500
       },
       "IncidentInfectable": {
@@ -277,6 +304,14 @@
           "ExplosionCoreDamage": 1000
         },
         "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "DensityFactor": 0.025,
+            "DensityDistance": 15
+          },
+          "Riot": {
+            "ResidenceHappinessFactor": 0.4,
+            "HappinessThreshold": 10
+          },
           "Illness": {
             "BaseChance": 4,
             "HitpointFactor": 0.1,
@@ -287,14 +322,6 @@
             "FactoryUndertimeFactor": 0.15,
             "ResidenceFullOvertimeChance": 20,
             "ResidenceFullUndertimeChance": -15
-          },
-          "Fire": {
-            "DensityFactor": 0.025,
-            "DensityDistance": 15
-          },
-          "Riot": {
-            "ResidenceHappinessFactor": 0.4,
-            "HappinessThreshold": 10
           },
           "Explosion": {
             "ResidenceFullOvertimeChance": 20,
@@ -309,6 +336,14 @@
       "FloorStackOwner": "",
       "Maintenance": {
         "IncomeCategory": "Skyscrapers"
+      },
+      "Audio": {
+        "ClusterEvent": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "AudioLink": ""
+          }
+        }
       }
     }
   },
@@ -412,22 +447,54 @@
               "Filename": "data/graphics/buildings/residence/residence_tier02_estate05/residence_tier02_estate05.cfg"
             }
           ]
+        },
+        "Skins": {
+          "DefaultSkinName": 1010344,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312,
+          "OverrideDefaultIcon": "data/ui/2kimages/main/3dicons/ornaments/cosmetic_dlc06/icon_tier02_default.png",
+          "SkinList": {
+            "Item": [
+              {
+                "SkinAssetGuid": 698
+              },
+              {
+                "SkinAssetGuid": 709
+              },
+              {
+                "SkinAssetGuid": 717
+              },
+              {
+                "SkinAssetGuid": 5244
+              },
+              {
+                "SkinAssetGuid": 30488
+              }
+            ]
+          }
         }
       },
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier02"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Worker Residence",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 5228
       },
-      "Constructable": "",
+      "Constructable": {
+        "ConstructionMenuIcon": 15000001
+      },
       "Locked": {
         "DefaultLockedState": 1
       },
@@ -540,7 +607,9 @@
           "InputStorageMax": 1
         },
         "PopulationLevel7": 15000001,
-        "ResidentMax": 20
+        "ResidentMax": 20,
+        "ResidentsRequiredForUpgrade": 20,
+        "IsBaseResidence": 1
       },
       "LogisticNode": {
         "REMOVE_THIS_LATER_FeedbackUnitTier": "Level2"
@@ -567,6 +636,7 @@
       },
       "UpgradeList": "",
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 2000
       },
       "IncidentInfectable": {
@@ -585,6 +655,10 @@
             "DensityFactor": 0.025,
             "DensityDistance": 15
           },
+          "Riot": {
+            "ResidenceHappinessFactor": 0.4,
+            "HappinessThreshold": 10
+          },
           "Illness": {
             "BaseChance": 4.5,
             "HitpointFactor": 0.1,
@@ -595,10 +669,6 @@
             "FactoryUndertimeFactor": 0.15,
             "ResidenceFullOvertimeChance": 20,
             "ResidenceFullUndertimeChance": -15
-          },
-          "Riot": {
-            "ResidenceHappinessFactor": 0.4,
-            "HappinessThreshold": 10
           },
           "Explosion": {
             "ResidenceFullOvertimeChance": 20,
@@ -613,6 +683,14 @@
       "FloorStackOwner": "",
       "Maintenance": {
         "IncomeCategory": "Skyscrapers"
+      },
+      "Audio": {
+        "ClusterEvent": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "AudioLink": ""
+          }
+        }
       }
     }
   },
@@ -699,22 +777,54 @@
               "Filename": "data/graphics/buildings/residence/residence_tier03_estate04/residence_tier03_estate04.cfg"
             }
           ]
+        },
+        "Skins": {
+          "DefaultSkinName": 1010345,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312,
+          "OverrideDefaultIcon": "data/ui/2kimages/main/3dicons/ornaments/cosmetic_dlc06/icon_tier03_default.png",
+          "SkinList": {
+            "Item": [
+              {
+                "SkinAssetGuid": 699
+              },
+              {
+                "SkinAssetGuid": 710
+              },
+              {
+                "SkinAssetGuid": 718
+              },
+              {
+                "SkinAssetGuid": 5248
+              },
+              {
+                "SkinAssetGuid": 30493
+              }
+            ]
+          }
         }
       },
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier03"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Artisan Residence",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 5229
       },
-      "Constructable": "",
+      "Constructable": {
+        "ConstructionMenuIcon": 15000002
+      },
       "Locked": {
         "DefaultLockedState": 1
       },
@@ -820,7 +930,10 @@
           "InputStorageMax": 1
         },
         "PopulationLevel7": 15000002,
-        "ResidentMax": 30
+        "ResidentMax": 30,
+        "ResidentsRequiredForUpgrade": 30,
+        "ResidentsOccupancyThresholdMax": 0.25,
+        "IsBaseResidence": 1
       },
       "LogisticNode": {
         "REMOVE_THIS_LATER_FeedbackUnitTier": "Level3"
@@ -848,6 +961,7 @@
       },
       "UpgradeList": "",
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 2500
       },
       "IncidentInfectable": {
@@ -861,6 +975,15 @@
           "ExplosionCoreDamage": 1000
         },
         "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "BaseChance": 4,
+            "DensityFactor": 0.025,
+            "DensityDistance": 15
+          },
+          "Riot": {
+            "ResidenceHappinessFactor": 0.4,
+            "HappinessThreshold": 10
+          },
           "Illness": {
             "BaseChance": 5,
             "HitpointFactor": 0.1,
@@ -871,15 +994,6 @@
             "FactoryUndertimeFactor": 0.15,
             "ResidenceFullOvertimeChance": 20,
             "ResidenceFullUndertimeChance": -15
-          },
-          "Fire": {
-            "BaseChance": 4,
-            "DensityFactor": 0.025,
-            "DensityDistance": 15
-          },
-          "Riot": {
-            "ResidenceHappinessFactor": 0.4,
-            "HappinessThreshold": 10
           },
           "Explosion": {
             "ResidenceFullOvertimeChance": 20,
@@ -894,6 +1008,14 @@
       "FloorStackOwner": "",
       "Maintenance": {
         "IncomeCategory": "Skyscrapers"
+      },
+      "Audio": {
+        "ClusterEvent": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "AudioLink": ""
+          }
+        }
       }
     }
   },
@@ -1115,22 +1237,48 @@
               "Filename": "data/graphics/buildings/residence/residence_tier04_08/residence_tier04_08.cfg"
             }
           ]
+        },
+        "Skins": {
+          "DefaultSkinName": 1010346,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312,
+          "OverrideDefaultIcon": "data/ui/2kimages/main/3dicons/ornaments/cosmetic_dlc06/icon_tier04_default.png",
+          "SkinList": {
+            "Item": [
+              {
+                "SkinAssetGuid": 700
+              },
+              {
+                "SkinAssetGuid": 722
+              },
+              {
+                "SkinAssetGuid": 711
+              }
+            ]
+          }
         }
       },
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier04"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Engineer Residence",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 5230
       },
-      "Constructable": "",
+      "Constructable": {
+        "ConstructionMenuIcon": 15000003
+      },
       "Locked": {
         "DefaultLockedState": 1
       },
@@ -1229,7 +1377,9 @@
           "InputStorageMax": 1
         },
         "PopulationLevel7": 15000003,
-        "ResidentMax": 40
+        "ResidentMax": 40,
+        "ResidentsRequiredForUpgrade": 40,
+        "IsBaseResidence": 1
       },
       "LogisticNode": {
         "REMOVE_THIS_LATER_FeedbackUnitTier": "Level4"
@@ -1257,6 +1407,7 @@
       },
       "UpgradeList": "",
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 3000
       },
       "IncidentInfectable": {
@@ -1275,6 +1426,10 @@
             "DensityFactor": 0.025,
             "DensityDistance": 15
           },
+          "Riot": {
+            "ResidenceHappinessFactor": 0.4,
+            "HappinessThreshold": 10
+          },
           "Illness": {
             "BaseChance": 3.5,
             "HitpointFactor": 0.1,
@@ -1285,10 +1440,6 @@
             "FactoryUndertimeFactor": 0.15,
             "ResidenceFullOvertimeChance": 20,
             "ResidenceFullUndertimeChance": -15
-          },
-          "Riot": {
-            "ResidenceHappinessFactor": 0.4,
-            "HappinessThreshold": 10
           },
           "Explosion": {
             "ResidenceFullOvertimeChance": 20,
@@ -1339,6 +1490,14 @@
       },
       "Maintenance": {
         "IncomeCategory": "Skyscrapers"
+      },
+      "Audio": {
+        "ClusterEvent": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "AudioLink": ""
+          }
+        }
       }
     }
   },
@@ -1349,6 +1508,7 @@
         "GUID": 1010347,
         "Name": "residence_tier05",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_resident.png",
+        "ID": "ResidenceTier5",
         "InfoDescription": 163059
       },
       "Blocking": "",
@@ -1543,22 +1703,51 @@
               "Filename": "data/graphics/buildings/residence/residence_tier05_07/residence_tier05_07.cfg"
             }
           ]
+        },
+        "Skins": {
+          "DefaultSkinName": 1010347,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312,
+          "OverrideDefaultIcon": "data/ui/2kimages/main/3dicons/ornaments/cosmetic_dlc06/icon_tier05_default.png",
+          "SkinList": {
+            "Item": [
+              {
+                "SkinAssetGuid": 701
+              },
+              {
+                "SkinAssetGuid": 723
+              },
+              {
+                "SkinAssetGuid": 712
+              },
+              {
+                "SkinAssetGuid": 33022
+              }
+            ]
+          }
         }
       },
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier05"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Investor Residence",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 5231
       },
-      "Constructable": "",
+      "Constructable": {
+        "ConstructionMenuIcon": 15000004
+      },
       "Locked": {
         "DefaultLockedState": 1
       },
@@ -1622,7 +1811,9 @@
           "InputStorageMax": 1
         },
         "PopulationLevel7": 15000004,
-        "ResidentMax": 50
+        "ResidentMax": 50,
+        "ResidentsRequiredForUpgrade": 50,
+        "IsBaseResidence": 1
       },
       "LogisticNode": {
         "REMOVE_THIS_LATER_FeedbackUnitTier": "Level4"
@@ -1650,6 +1841,7 @@
       },
       "UpgradeList": "",
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 3500
       },
       "IncidentInfectable": {
@@ -1668,6 +1860,10 @@
             "DensityFactor": 0.025,
             "DensityDistance": 15
           },
+          "Riot": {
+            "ResidenceHappinessFactor": 0.4,
+            "HappinessThreshold": 10
+          },
           "Illness": {
             "BaseChance": 3,
             "HitpointFactor": 0.1,
@@ -1678,10 +1874,6 @@
             "FactoryUndertimeFactor": 0.15,
             "ResidenceFullOvertimeChance": 20,
             "ResidenceFullUndertimeChance": -15
-          },
-          "Riot": {
-            "ResidenceHappinessFactor": 0.4,
-            "HappinessThreshold": 10
           },
           "Explosion": {
             "ResidenceFullOvertimeChance": 20,
@@ -1733,6 +1925,14 @@
       },
       "Maintenance": {
         "IncomeCategory": "Skyscrapers"
+      },
+      "Audio": {
+        "ClusterEvent": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "AudioLink": ""
+          }
+        }
       }
     }
   },
@@ -2048,10 +2248,21 @@
               "Filename": "data/dlc09/graphics/buildings/residence/residence_tier04_08/residence_tier04_08_01.cfg"
             }
           ]
+        },
+        "Skins": {
+          "DefaultSkinName": 601888,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Selection": {
         "StaticHelpEntryPoint": "HighLifeSkyscrapers",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageTrigger": "ClickSkyscraper",
         "ParticipantMessageArcheType": "Resident_tier04"
       },
@@ -2059,8 +2270,7 @@
         "LocaText": {
           "English": {
             "Text": "Engineer Skyscraper: Level 1",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 52142
@@ -2144,6 +2354,7 @@
         },
         "PopulationLevel7": 15000003,
         "ResidentMax": 60,
+        "ResidentsRequiredForUpgrade": 60,
         "CanHaveGoodViewBuff": 1,
         "GoodViewStartValue": 1,
         "GoodViewRadius": 4,
@@ -2200,6 +2411,7 @@
         "DefaultBuff": 136398
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 3000
       },
       "IncidentInfectable": {
@@ -2218,6 +2430,10 @@
             "DensityFactor": 0.025,
             "DensityDistance": 15
           },
+          "Riot": {
+            "ResidenceHappinessFactor": 0.4,
+            "HappinessThreshold": 10
+          },
           "Illness": {
             "BaseChance": 3.5,
             "HitpointFactor": 0.1,
@@ -2228,10 +2444,6 @@
             "FactoryUndertimeFactor": 0.15,
             "ResidenceFullOvertimeChance": 20,
             "ResidenceFullUndertimeChance": -15
-          },
-          "Riot": {
-            "ResidenceHappinessFactor": 0.4,
-            "HappinessThreshold": 10
           },
           "Explosion": {
             "ResidenceFullOvertimeChance": 20,
@@ -2410,6 +2622,14 @@
           }
         },
         "IncomeCategory": "Skyscrapers"
+      },
+      "Audio": {
+        "ClusterEvent": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "AudioLink": ""
+          }
+        }
       }
     }
   },
@@ -2725,10 +2945,21 @@
               "Filename": "data/dlc09/graphics/buildings/residence/residence_tier04_08/residence_tier04_08_01.cfg"
             }
           ]
+        },
+        "Skins": {
+          "DefaultSkinName": 601889,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Selection": {
         "StaticHelpEntryPoint": "HighLifeSkyscrapers",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageTrigger": "ClickSkyscraper",
         "ParticipantMessageArcheType": "Resident_tier04"
       },
@@ -2736,8 +2967,7 @@
         "LocaText": {
           "English": {
             "Text": "Engineer Skyscraper: Level 2",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 52143
@@ -2821,6 +3051,7 @@
         },
         "PopulationLevel7": 15000003,
         "ResidentMax": 80,
+        "ResidentsRequiredForUpgrade": 80,
         "CanHaveGoodViewBuff": 1,
         "GoodViewStartValue": 2,
         "GoodViewRadius": 4.25,
@@ -2877,6 +3108,7 @@
         "DefaultBuff": 136399
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 3000
       },
       "IncidentInfectable": {
@@ -2895,6 +3127,10 @@
             "DensityFactor": 0.025,
             "DensityDistance": 15
           },
+          "Riot": {
+            "ResidenceHappinessFactor": 0.4,
+            "HappinessThreshold": 10
+          },
           "Illness": {
             "BaseChance": 3.5,
             "HitpointFactor": 0.1,
@@ -2905,10 +3141,6 @@
             "FactoryUndertimeFactor": 0.15,
             "ResidenceFullOvertimeChance": 20,
             "ResidenceFullUndertimeChance": -15
-          },
-          "Riot": {
-            "ResidenceHappinessFactor": 0.4,
-            "HappinessThreshold": 10
           },
           "Explosion": {
             "ResidenceFullOvertimeChance": 20,
@@ -3087,6 +3319,14 @@
           }
         },
         "IncomeCategory": "Skyscrapers"
+      },
+      "Audio": {
+        "ClusterEvent": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "AudioLink": ""
+          }
+        }
       }
     }
   },
@@ -3402,10 +3642,21 @@
               "Filename": "data/dlc09/graphics/buildings/residence/residence_tier04_08/residence_tier04_08_01.cfg"
             }
           ]
+        },
+        "Skins": {
+          "DefaultSkinName": 601890,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Selection": {
         "StaticHelpEntryPoint": "HighLifeSkyscrapers",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageTrigger": "ClickSkyscraper",
         "ParticipantMessageArcheType": "Resident_tier04"
       },
@@ -3413,8 +3664,7 @@
         "LocaText": {
           "English": {
             "Text": "Engineer Skyscraper: Level 3",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 52144
@@ -3498,6 +3748,7 @@
         },
         "PopulationLevel7": 15000003,
         "ResidentMax": 100,
+        "ResidentsRequiredForUpgrade": 100,
         "CanHaveGoodViewBuff": 1,
         "GoodViewStartValue": 3,
         "GoodViewRadius": 5,
@@ -3554,6 +3805,7 @@
         "DefaultBuff": 136400
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 3000
       },
       "IncidentInfectable": {
@@ -3572,6 +3824,10 @@
             "DensityFactor": 0.025,
             "DensityDistance": 15
           },
+          "Riot": {
+            "ResidenceHappinessFactor": 0.4,
+            "HappinessThreshold": 10
+          },
           "Illness": {
             "BaseChance": 3.5,
             "HitpointFactor": 0.1,
@@ -3582,10 +3838,6 @@
             "FactoryUndertimeFactor": 0.15,
             "ResidenceFullOvertimeChance": 20,
             "ResidenceFullUndertimeChance": -15
-          },
-          "Riot": {
-            "ResidenceHappinessFactor": 0.4,
-            "HappinessThreshold": 10
           },
           "Explosion": {
             "ResidenceFullOvertimeChance": 20,
@@ -3731,6 +3983,14 @@
           }
         },
         "IncomeCategory": "Skyscrapers"
+      },
+      "Audio": {
+        "ClusterEvent": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "AudioLink": ""
+          }
+        }
       }
     }
   },
@@ -4035,10 +4295,21 @@
               "Filename": "data/dlc09/graphics/buildings/residence/residence_tier05_07/residence_tier05_07_01.cfg"
             }
           ]
+        },
+        "Skins": {
+          "DefaultSkinName": 601882,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Selection": {
         "StaticHelpEntryPoint": "HighLifeSkyscrapers",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageTrigger": "ClickSkyscraper",
         "ParticipantMessageArcheType": "Resident_tier05"
       },
@@ -4046,8 +4317,7 @@
         "LocaText": {
           "English": {
             "Text": "Investor Skyscraper: Level 1",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 52145
@@ -4131,6 +4401,7 @@
         },
         "PopulationLevel7": 15000004,
         "ResidentMax": 75,
+        "ResidentsRequiredForUpgrade": 75,
         "CanHaveGoodViewBuff": 1,
         "GoodViewStartValue": 1,
         "GoodViewRadius": 4,
@@ -4187,6 +4458,7 @@
         "DefaultBuff": 136401
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 3500
       },
       "IncidentInfectable": {
@@ -4205,6 +4477,10 @@
             "DensityFactor": 0.025,
             "DensityDistance": 15
           },
+          "Riot": {
+            "ResidenceHappinessFactor": 0.4,
+            "HappinessThreshold": 10
+          },
           "Illness": {
             "BaseChance": 3,
             "HitpointFactor": 0.1,
@@ -4215,10 +4491,6 @@
             "FactoryUndertimeFactor": 0.15,
             "ResidenceFullOvertimeChance": 20,
             "ResidenceFullUndertimeChance": -15
-          },
-          "Riot": {
-            "ResidenceHappinessFactor": 0.4,
-            "HappinessThreshold": 10
           },
           "Explosion": {
             "ResidenceFullOvertimeChance": 20,
@@ -4385,6 +4657,14 @@
           }
         },
         "IncomeCategory": "Skyscrapers"
+      },
+      "Audio": {
+        "ClusterEvent": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "AudioLink": ""
+          }
+        }
       }
     }
   },
@@ -4395,6 +4675,7 @@
         "GUID": 601883,
         "Name": "residence_tier05_level02",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_dlc_high_life_128.png",
+        "ID": "InvestorLevel2Skyscraper",
         "InfoDescription": 163059
       },
       "Blocking": {
@@ -4688,10 +4969,21 @@
               "Filename": "data/dlc09/graphics/buildings/residence/residence_tier05_07/residence_tier05_07_01.cfg"
             }
           ]
+        },
+        "Skins": {
+          "DefaultSkinName": 601883,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Selection": {
         "StaticHelpEntryPoint": "HighLifeSkyscrapers",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageTrigger": "ClickSkyscraper",
         "ParticipantMessageArcheType": "Resident_tier05"
       },
@@ -4699,8 +4991,7 @@
         "LocaText": {
           "English": {
             "Text": "Investor Skyscraper: Level 2",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 52146
@@ -4784,6 +5075,7 @@
         },
         "PopulationLevel7": 15000004,
         "ResidentMax": 100,
+        "ResidentsRequiredForUpgrade": 100,
         "CanHaveGoodViewBuff": 1,
         "GoodViewStartValue": 2,
         "GoodViewRadius": 4.25,
@@ -4840,6 +5132,7 @@
         "DefaultBuff": 136405
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 3500
       },
       "IncidentInfectable": {
@@ -4858,6 +5151,10 @@
             "DensityFactor": 0.025,
             "DensityDistance": 15
           },
+          "Riot": {
+            "ResidenceHappinessFactor": 0.4,
+            "HappinessThreshold": 10
+          },
           "Illness": {
             "BaseChance": 3,
             "HitpointFactor": 0.1,
@@ -4868,10 +5165,6 @@
             "FactoryUndertimeFactor": 0.15,
             "ResidenceFullOvertimeChance": 20,
             "ResidenceFullUndertimeChance": -15
-          },
-          "Riot": {
-            "ResidenceHappinessFactor": 0.4,
-            "HappinessThreshold": 10
           },
           "Explosion": {
             "ResidenceFullOvertimeChance": 20,
@@ -5038,6 +5331,14 @@
           }
         },
         "IncomeCategory": "Skyscrapers"
+      },
+      "Audio": {
+        "ClusterEvent": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "AudioLink": ""
+          }
+        }
       }
     }
   },
@@ -5048,6 +5349,7 @@
         "GUID": 601884,
         "Name": "residence_tier05_level03",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_dlc_high_life_128.png",
+        "ID": "InvestorLevel3Skyscraper",
         "InfoDescription": 163059
       },
       "Blocking": {
@@ -5341,10 +5643,21 @@
               "Filename": "data/dlc09/graphics/buildings/residence/residence_tier05_07/residence_tier05_07_01.cfg"
             }
           ]
+        },
+        "Skins": {
+          "DefaultSkinName": 601884,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Selection": {
         "StaticHelpEntryPoint": "HighLifeSkyscrapers",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageTrigger": "ClickSkyscraper",
         "ParticipantMessageArcheType": "Resident_tier05"
       },
@@ -5352,8 +5665,7 @@
         "LocaText": {
           "English": {
             "Text": "Investor Skyscraper: Level 3",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 52147
@@ -5437,6 +5749,7 @@
         },
         "PopulationLevel7": 15000004,
         "ResidentMax": 125,
+        "ResidentsRequiredForUpgrade": 125,
         "CanHaveGoodViewBuff": 1,
         "GoodViewStartValue": 3,
         "GoodViewRadius": 5,
@@ -5493,6 +5806,7 @@
         "DefaultBuff": 136406
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 3500
       },
       "IncidentInfectable": {
@@ -5511,6 +5825,10 @@
             "DensityFactor": 0.025,
             "DensityDistance": 15
           },
+          "Riot": {
+            "ResidenceHappinessFactor": 0.4,
+            "HappinessThreshold": 10
+          },
           "Illness": {
             "BaseChance": 3,
             "HitpointFactor": 0.1,
@@ -5521,10 +5839,6 @@
             "FactoryUndertimeFactor": 0.15,
             "ResidenceFullOvertimeChance": 20,
             "ResidenceFullUndertimeChance": -15
-          },
-          "Riot": {
-            "ResidenceHappinessFactor": 0.4,
-            "HappinessThreshold": 10
           },
           "Explosion": {
             "ResidenceFullOvertimeChance": 20,
@@ -5691,6 +6005,14 @@
           }
         },
         "IncomeCategory": "Skyscrapers"
+      },
+      "Audio": {
+        "ClusterEvent": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "AudioLink": ""
+          }
+        }
       }
     }
   },
@@ -5701,6 +6023,7 @@
         "GUID": 601886,
         "Name": "residence_tier05_level04",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_dlc_high_life_128.png",
+        "ID": "InvestorLevel4Skyscraper",
         "InfoDescription": 163059
       },
       "Blocking": {
@@ -5994,10 +6317,21 @@
               "Filename": "data/dlc09/graphics/buildings/residence/residence_tier05_07/residence_tier05_07_01.cfg"
             }
           ]
+        },
+        "Skins": {
+          "DefaultSkinName": 601886,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Selection": {
         "StaticHelpEntryPoint": "HighLifeSkyscrapers",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageTrigger": "ClickSkyscraper",
         "ParticipantMessageArcheType": "Resident_tier05"
       },
@@ -6005,8 +6339,7 @@
         "LocaText": {
           "English": {
             "Text": "Investor Skyscraper: Level 4",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 52148
@@ -6090,6 +6423,7 @@
         },
         "PopulationLevel7": 15000004,
         "ResidentMax": 150,
+        "ResidentsRequiredForUpgrade": 150,
         "CanHaveGoodViewBuff": 1,
         "GoodViewStartValue": 4,
         "GoodViewRadius": 6,
@@ -6146,6 +6480,7 @@
         "DefaultBuff": 136407
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 3500
       },
       "IncidentInfectable": {
@@ -6164,6 +6499,10 @@
             "DensityFactor": 0.025,
             "DensityDistance": 15
           },
+          "Riot": {
+            "ResidenceHappinessFactor": 0.4,
+            "HappinessThreshold": 10
+          },
           "Illness": {
             "BaseChance": 3,
             "HitpointFactor": 0.1,
@@ -6174,10 +6513,6 @@
             "FactoryUndertimeFactor": 0.15,
             "ResidenceFullOvertimeChance": 20,
             "ResidenceFullUndertimeChance": -15
-          },
-          "Riot": {
-            "ResidenceHappinessFactor": 0.4,
-            "HappinessThreshold": 10
           },
           "Explosion": {
             "ResidenceFullOvertimeChance": 20,
@@ -6344,6 +6679,14 @@
           }
         },
         "IncomeCategory": "Skyscrapers"
+      },
+      "Audio": {
+        "ClusterEvent": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "AudioLink": ""
+          }
+        }
       }
     }
   },
@@ -6354,6 +6697,7 @@
         "GUID": 601891,
         "Name": "residence_tier05_level05",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_dlc_high_life_128.png",
+        "ID": "InvestorLevel5Skyscraper",
         "InfoDescription": 163059
       },
       "Blocking": {
@@ -6647,10 +6991,21 @@
               "Filename": "data/dlc09/graphics/buildings/residence/residence_tier05_07/residence_tier05_07_01.cfg"
             }
           ]
+        },
+        "Skins": {
+          "DefaultSkinName": 601891,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Selection": {
         "StaticHelpEntryPoint": "HighLifeSkyscrapers",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageTrigger": "ClickSkyscraper",
         "ParticipantMessageArcheType": "Resident_tier05"
       },
@@ -6658,8 +7013,7 @@
         "LocaText": {
           "English": {
             "Text": "Investor Skyscraper: Level 5",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 52149
@@ -6743,6 +7097,7 @@
         },
         "PopulationLevel7": 15000004,
         "ResidentMax": 175,
+        "ResidentsRequiredForUpgrade": 175,
         "CanHaveGoodViewBuff": 1,
         "GoodViewStartValue": 5,
         "GoodViewRadius": 6.75,
@@ -6799,6 +7154,7 @@
         "DefaultBuff": 136408
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 3500
       },
       "IncidentInfectable": {
@@ -6817,6 +7173,10 @@
             "DensityFactor": 0.025,
             "DensityDistance": 15
           },
+          "Riot": {
+            "ResidenceHappinessFactor": 0.4,
+            "HappinessThreshold": 10
+          },
           "Illness": {
             "BaseChance": 3,
             "HitpointFactor": 0.1,
@@ -6827,10 +7187,6 @@
             "FactoryUndertimeFactor": 0.15,
             "ResidenceFullOvertimeChance": 20,
             "ResidenceFullUndertimeChance": -15
-          },
-          "Riot": {
-            "ResidenceHappinessFactor": 0.4,
-            "HappinessThreshold": 10
           },
           "Explosion": {
             "ResidenceFullOvertimeChance": 20,
@@ -6964,6 +7320,14 @@
           }
         },
         "IncomeCategory": "Skyscrapers"
+      },
+      "Audio": {
+        "ClusterEvent": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "AudioLink": ""
+          }
+        }
       }
     }
   }

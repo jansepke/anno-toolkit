@@ -52,17 +52,29 @@
         },
         "BasicTarget": 2001041,
         "SequenceMetaInfos": {
-          "idleLoaded01": {
-            "CompatibleIdleSequence": "default"
+          "lookat01": {
+            "ShouldBeMimickedByGroupFollowers": 1
           },
-          "walkingLoaded01": {
-            "CompatibleIdleSequence": "idleLoaded01"
+          "lookat02": {
+            "ShouldBeMimickedByGroupFollowers": 1
           },
-          "fishing02": {
-            "AllowRandomizeStartOffset": 0
+          "protest01": {
+            "CompatibleIdleSequence": "protest01"
           },
-          "pray01": {
-            "AllowRandomizeStartOffset": 0
+          "protest02": {
+            "CompatibleIdleSequence": "protest02"
+          },
+          "protest03": {
+            "CompatibleIdleSequence": "protest03"
+          },
+          "protest04": {
+            "CompatibleIdleSequence": "protest04"
+          },
+          "protest05": {
+            "CompatibleIdleSequence": "protest05"
+          },
+          "protest06": {
+            "CompatibleIdleSequence": "protest06"
           },
           "laydown01": {
             "AllowRandomizeStartOffset": 0
@@ -71,6 +83,9 @@
             "AllowRandomizeStartOffset": 0
           },
           "laydown03": {
+            "AllowRandomizeStartOffset": 0
+          },
+          "fishing02": {
             "AllowRandomizeStartOffset": 0
           },
           "fight01": {
@@ -88,14 +103,11 @@
           "fight05": {
             "AllowRandomizeStartOffset": 0
           },
+          "run01": {
+            "CompatibleRunSequence": "run01"
+          },
           "donate01": {
             "AllowRandomizeStartOffset": 0
-          },
-          "lookat01": {
-            "ShouldBeMimickedByGroupFollowers": 1
-          },
-          "lookat02": {
-            "ShouldBeMimickedByGroupFollowers": 1
           },
           "work01": {
             "ShouldBeMimickedByGroupFollowers": 1
@@ -124,6 +136,9 @@
           "work09": {
             "ShouldBeMimickedByGroupFollowers": 1
           },
+          "pray01": {
+            "AllowRandomizeStartOffset": 0
+          },
           "work_staged01": {
             "ShouldBeMimickedByGroupFollowers": 1
           },
@@ -133,26 +148,11 @@
           "work_staged03": {
             "ShouldBeMimickedByGroupFollowers": 1
           },
-          "run01": {
-            "CompatibleRunSequence": "run01"
+          "idleLoaded01": {
+            "CompatibleIdleSequence": "default"
           },
-          "protest01": {
-            "CompatibleIdleSequence": "protest01"
-          },
-          "protest02": {
-            "CompatibleIdleSequence": "protest02"
-          },
-          "protest03": {
-            "CompatibleIdleSequence": "protest03"
-          },
-          "protest04": {
-            "CompatibleIdleSequence": "protest04"
-          },
-          "protest05": {
-            "CompatibleIdleSequence": "protest05"
-          },
-          "protest06": {
-            "CompatibleIdleSequence": "protest06"
+          "walkingLoaded01": {
+            "CompatibleIdleSequence": "idleLoaded01"
           }
         },
         "Languages": {
@@ -161,11 +161,23 @@
             "AdditionalInteractionTime": 500,
             "SteamLanguageId": "english"
           },
+          "French": {
+            "AudioLanguage": "fr_fr",
+            "AudioBinkTrackID": 1,
+            "AdditionalInteractionTime": 2000,
+            "SteamLanguageId": "french"
+          },
           "Polish": {
             "AudioLanguage": "en_us",
             "AudioBinkTrackID": 1,
             "AdditionalInteractionTime": 2000,
             "SteamLanguageId": "polish"
+          },
+          "Russian": {
+            "AudioLanguage": "ru_ru",
+            "AudioBinkTrackID": 1,
+            "AdditionalInteractionTime": 2000,
+            "SteamLanguageId": "russian"
           },
           "Spanish": {
             "AudioLanguage": "en_us",
@@ -185,11 +197,11 @@
             "AdditionalInteractionTime": 2000,
             "SteamLanguageId": "schinese"
           },
-          "Italian": {
+          "Taiwanese": {
             "AudioLanguage": "en_us",
-            "LanguagePack": 410002,
+            "LanguagePack": 4100034,
             "AdditionalInteractionTime": 2000,
-            "SteamLanguageId": "italian"
+            "SteamLanguageId": "tchinese"
           },
           "Japanese": {
             "AudioLanguage": "en_us",
@@ -204,55 +216,12 @@
             "AdditionalInteractionTime": 2000,
             "SteamLanguageId": "koreana"
           },
-          "Taiwanese": {
+          "Italian": {
             "AudioLanguage": "en_us",
-            "LanguagePack": 4100034,
+            "LanguagePack": 410002,
             "AdditionalInteractionTime": 2000,
-            "SteamLanguageId": "tchinese"
-          },
-          "French": {
-            "AudioLanguage": "fr_fr",
-            "AudioBinkTrackID": 1,
-            "AdditionalInteractionTime": 2000,
-            "SteamLanguageId": "french"
-          },
-          "Russian": {
-            "AudioLanguage": "ru_ru",
-            "AudioBinkTrackID": 1,
-            "AdditionalInteractionTime": 2000,
-            "SteamLanguageId": "russian"
+            "SteamLanguageId": "italian"
           }
-        },
-        "RenderConditionIDs": {
-          "ColorTransform": 1,
-          "PhysicsTransform": 2,
-          "DestructionTransform": 3,
-          "Selected": 4,
-          "Unselected": 5,
-          "Common01": 6,
-          "Common02": 7,
-          "Common03": 8,
-          "Common04": 9,
-          "Common05": 10,
-          "Common06": 11,
-          "Common07": 12,
-          "Common08": 13,
-          "Common09": 14,
-          "Common10": 15,
-          "Common11": 16,
-          "SkyDay": 17,
-          "EffectShield": 18,
-          "EffectRepair": 19,
-          "EffectStun": 20,
-          "EffectBurn": 21,
-          "ShowWarningLights": 22,
-          "Riot": 23,
-          "RiotSpecial01": 24,
-          "NoInhabitants": 25,
-          "Ruin": 26,
-          "Irrigated": 27,
-          "GroundDecalDefault": 28,
-          "GroundDecalVariation": 29
         },
         "GlobalPreloads": {
           "Item": [
@@ -265,6 +234,15 @@
           ]
         },
         "ParticipantMessageCategories": {
+          "ClickKontor": {
+            "Category": "Click"
+          },
+          "ClickWorldFair": {
+            "Category": "Click"
+          },
+          "QuestInvitation": {
+            "Category": "Quest"
+          },
           "QuestStarted": {
             "Category": "Quest"
           },
@@ -280,14 +258,20 @@
             "Category": "Quest",
             "ReputationLogTextGuid": 15162
           },
-          "ClickKontor": {
-            "Category": "Click"
+          "ShipTradeConfirmation": {
+            "ReputationLogTextGuid": 12193
           },
-          "ClickWorldFair": {
-            "Category": "Click"
+          "ActiveTradeConfirmation": {
+            "ReputationLogTextGuid": 13100
           },
-          "QuestInvitation": {
-            "Category": "Quest"
+          "PassiveTradeConfirmation": {
+            "ReputationLogTextGuid": 13101
+          },
+          "SettlePermissionAccepted": {
+            "ReputationLogTextGuid": 13137
+          },
+          "SettlePermissionDeclined": {
+            "ReputationLogTextGuid": 13138
           },
           "DiplomacyOffer": {
             "ReputationLogTextGuid": 12193
@@ -346,6 +330,9 @@
           "DiplomacyOfferAllianceAccepted": {
             "ReputationLogTextGuid": 12190
           },
+          "DiplomacyCancelAlliance": {
+            "ReputationLogTextGuid": 12191
+          },
           "DiplomacyOfferOpenborders": {
             "ReputationLogTextGuid": 12193
           },
@@ -397,56 +384,11 @@
           "DiplomacyMemoryCorrectionNegative": {
             "ReputationLogTextGuid": 12169
           },
-          "DiplomacyCancelAlliance": {
-            "ReputationLogTextGuid": 12191
-          },
-          "IncidentStart": {
-            "ReputationLogTextGuid": 12486
-          },
-          "IncidentEnd": {
-            "ReputationLogTextGuid": 12492
-          },
-          "IncidentSendSpecialForces": {
-            "ReputationLogTextGuid": 12487
-          },
-          "ExpansionHigherThanNPC": {
-            "ReputationLogTextGuid": 12490
-          },
-          "ExpansionLowerThanNPC": {
-            "ReputationLogTextGuid": 12491
-          },
-          "ProgressLevelHigherThanNPC": {
-            "ReputationLogTextGuid": 12488
-          },
-          "ProgressLevelLowerThanNPC": {
-            "ReputationLogTextGuid": 12489
-          },
-          "ActiveTradeConfirmation": {
-            "ReputationLogTextGuid": 13100
-          },
-          "PassiveTradeConfirmation": {
-            "ReputationLogTextGuid": 13101
-          },
-          "SettlePermissionAccepted": {
-            "ReputationLogTextGuid": 13137
-          },
-          "SettlePermissionDeclined": {
-            "ReputationLogTextGuid": 13138
-          },
-          "BuyIslandShare": {
-            "ReputationLogTextGuid": 13198
-          },
-          "MilitaryTakeoverSucceeded": {
-            "ReputationLogTextGuid": 14004
-          },
-          "MilitaryTakeoverFailed": {
-            "ReputationLogTextGuid": 14005
-          },
-          "BuildingBuilt": {
-            "ReputationLogTextGuid": 14003
-          },
-          "ShipTradeConfirmation": {
+          "DiplomacyOfferNonAggressionPact": {
             "ReputationLogTextGuid": 12193
+          },
+          "DiplomacyOfferNonAggressionPactAccepted": {
+            "ReputationLogTextGuid": 14927
           },
           "NewspaperPublishedWithPropaganda": {
             "ReputationLogTextGuid": 21542
@@ -472,8 +414,26 @@
           "ExpeditionFailed": {
             "ReputationLogTextGuid": 14748
           },
+          "BuyIslandShare": {
+            "ReputationLogTextGuid": 13198
+          },
+          "SellIslandShare": {
+            "ReputationLogTextGuid": 12193
+          },
+          "TakeOverIslandPossible": {
+            "ReputationLogTextGuid": 15114
+          },
           "TakeOverIsland": {
             "ReputationLogTextGuid": 15115
+          },
+          "IncidentStart": {
+            "ReputationLogTextGuid": 12486
+          },
+          "IncidentEnd": {
+            "ReputationLogTextGuid": 12492
+          },
+          "IncidentSendSpecialForces": {
+            "ReputationLogTextGuid": 12487
           },
           "MilitaryShipDestroyed": {
             "ReputationLogTextGuid": 14734
@@ -484,11 +444,32 @@
           "MilitaryParticipantDefeated": {
             "ReputationLogTextGuid": 12193
           },
+          "MilitaryTakeoverSucceeded": {
+            "ReputationLogTextGuid": 14004
+          },
+          "MilitaryTakeoverFailed": {
+            "ReputationLogTextGuid": 14005
+          },
+          "MilitaryStrength": {
+            "ReputationLogTextGuid": 15113
+          },
+          "ExpansionHigherThanNPC": {
+            "ReputationLogTextGuid": 12490
+          },
+          "ExpansionLowerThanNPC": {
+            "ReputationLogTextGuid": 12491
+          },
           "ExpansionEqualNPC": {
             "ReputationLogTextGuid": 12193
           },
           "ExpansionExpanded": {
             "ReputationLogTextGuid": 12193
+          },
+          "ProgressLevelHigherThanNPC": {
+            "ReputationLogTextGuid": 12488
+          },
+          "ProgressLevelLowerThanNPC": {
+            "ReputationLogTextGuid": 12489
           },
           "ProgressLevelEqualNPC": {
             "ReputationLogTextGuid": 12193
@@ -496,20 +477,8 @@
           "ProgressLevelLevelUp": {
             "ReputationLogTextGuid": 12193
           },
-          "DiplomacyOfferNonAggressionPact": {
-            "ReputationLogTextGuid": 12193
-          },
-          "DiplomacyOfferNonAggressionPactAccepted": {
-            "ReputationLogTextGuid": 14927
-          },
-          "SellIslandShare": {
-            "ReputationLogTextGuid": 12193
-          },
-          "TakeOverIslandPossible": {
-            "ReputationLogTextGuid": 15114
-          },
-          "MilitaryStrength": {
-            "ReputationLogTextGuid": 15113
+          "BuildingBuilt": {
+            "ReputationLogTextGuid": 14003
           },
           "MonumentFinished": {
             "ReputationLogTextGuid": 15155
@@ -528,6 +497,22 @@
           },
           "WorkingConditionsLow": {
             "ReputationLogTextGuid": 22148
+          },
+          "AirshipDropDamageMessage": {
+            "Category": "Diplomacy",
+            "ReputationLogTextGuid": 4607
+          },
+          "AirshipDropIncidentResolvedMessage": {
+            "Category": "Diplomacy",
+            "ReputationLogTextGuid": 4608
+          },
+          "AirshipDropPositiveEffectMessage": {
+            "Category": "Diplomacy",
+            "ReputationLogTextGuid": 4609
+          },
+          "AirshipDropNegativeEffectMessage": {
+            "Category": "Diplomacy",
+            "ReputationLogTextGuid": 4610
           }
         },
         "ShipItemDropCalculation": {
@@ -535,6 +520,7 @@
           "MaxDropPercent": 75
         },
         "SequenceIDs": {
+          "default": 0,
           "idle01": 1000,
           "idle02": 1001,
           "idle03": 1002,
@@ -552,6 +538,10 @@
           "lookat02": 1041,
           "protest01": 1050,
           "protest02": 1051,
+          "protest03": 1052,
+          "protest04": 1053,
+          "protest05": 1054,
+          "protest06": 1055,
           "laydown01": 1060,
           "laydown02": 1061,
           "laydown03": 1062,
@@ -564,6 +554,9 @@
           "dance04": 1083,
           "fight01": 1090,
           "fight02": 1091,
+          "fight03": 1092,
+          "fight04": 1093,
+          "fight05": 1094,
           "walk01": 2000,
           "walk02": 2001,
           "walk03": 2002,
@@ -576,6 +569,9 @@
           "run01": 2100,
           "panicrun01": 2101,
           "panicrun02": 2102,
+          "riotspecial01": 5350,
+          "riotspecial02": 5351,
+          "riotspecial03": 5352,
           "donate01": 2200,
           "buy01": 2201,
           "buy02": 2202,
@@ -585,8 +581,30 @@
           "work04": 3003,
           "work05": 3004,
           "work06": 3005,
+          "work07": 3006,
+          "work08": 3007,
+          "work09": 3008,
+          "work10": 3009,
+          "work11": 3020,
+          "work12": 3021,
+          "work13": 3022,
+          "work14": 3023,
+          "work15": 3024,
+          "work16": 3025,
+          "work17": 3026,
+          "work18": 3027,
+          "work19": 3028,
           "stand01": 4000,
           "build01": 5000,
+          "extFire01": 5100,
+          "extFire02": 5101,
+          "extFire03": 5102,
+          "pray01": 5200,
+          "protestwalk01": 5300,
+          "protestwalk02": 5301,
+          "protestwalk03": 5302,
+          "takeoff01": 5400,
+          "land01": 5410,
           "portrait_neutral_idle": 10000,
           "portrait_neutral_talk": 10001,
           "portrait_friendly_idle": 10010,
@@ -596,29 +614,10 @@
           "portrait_neutral_talk_idle": 10030,
           "portrait_friendly_talk_idle": 10031,
           "portrait_angry_talk_idle": 10040,
-          "extFire01": 5100,
-          "extFire02": 5101,
-          "extFire03": 5102,
-          "pray01": 5200,
-          "protestwalk01": 5300,
-          "protestwalk02": 5301,
-          "protest03": 1052,
-          "protest04": 1053,
-          "protest05": 1054,
-          "protest06": 1055,
-          "fight03": 1092,
-          "protestwalk03": 5302,
-          "fight04": 1093,
-          "fight05": 1094,
           "work_staged01": 3010,
           "work_staged02": 3011,
           "work_staged03": 3012,
-          "takeoff01": 5400,
-          "land01": 5410,
-          "riotspecial01": 5350,
-          "riotspecial02": 5351,
           "boosted": 3050,
-          "riotspecial03": 5352,
           "sitdown01": 5500,
           "sitdown02": 5501,
           "sitdown03": 5502,
@@ -633,23 +632,9 @@
           "hitsteel": 2402,
           "hitconcrete": 2403,
           "misswater": 2410,
-          "missland": 2411,
-          "work07": 3006,
-          "work08": 3007,
-          "work09": 3008,
-          "work10": 3009,
-          "work11": 3020,
-          "work12": 3021,
-          "work13": 3022,
-          "work14": 3023,
-          "work15": 3024,
-          "work16": 3025,
-          "work17": 3026,
-          "work18": 3027,
-          "work19": 3028
+          "missland": 2411
         },
-        "SpawnAreaConfig": "",
-        "AttackIndicatorDecal": "data/graphics/effects/military/decals/ship_target_decal_01.cfg",
+        "AttackIndicatorDecal": "data/graphics/effects/military/airship_3d_target_marker/airship_3d_target_marker_01.cfg",
         "TimeNotifications": {
           "Item": [
             {
@@ -754,6 +739,22 @@
                   "AssetGUID": 1010561
                 }
               }
+            },
+            {
+              "GUIDGroup": {
+                "Moderate": {
+                  "AssetGUID": 1010372
+                },
+                "Colony01": {
+                  "AssetGUID": 101257
+                },
+                "Arctic": {
+                  "AssetGUID": 114889
+                },
+                "Africa": {
+                  "AssetGUID": 114518
+                }
+              }
             }
           ]
         },
@@ -794,12 +795,6 @@
           "Source_Canal": {
             "WaterLevelColor": -7238406
           },
-          "Source_Condition1": {
-            "WaterLevelColor": -16398611
-          },
-          "Source_Condition2": {
-            "WaterLevelColor": -8528400
-          },
           "Source_Lake_Small": {
             "WaterLevelColor": -9459009
           },
@@ -811,6 +806,12 @@
           },
           "Source_LevelArt": {
             "WaterLevelColor": -6509253
+          },
+          "Source_Condition1": {
+            "WaterLevelColor": -16398611
+          },
+          "Source_Condition2": {
+            "WaterLevelColor": -8528400
           },
           "Source_Condition3": {
             "WaterLevelColor": -5182987
@@ -864,7 +865,174 @@
               ]
             }
           }
-        }
+        },
+        "UnlockAssetsOnAccountLoaded": {
+          "Item": [
+            {
+              "GUIDToUnlock": 101823
+            },
+            {
+              "GUIDToUnlock": 101301
+            },
+            {
+              "GUIDToUnlock": 134561
+            },
+            {
+              "GUIDToUnlock": 24589
+            },
+            {
+              "GUIDToUnlock": 643
+            },
+            {
+              "GUIDToUnlock": 642
+            },
+            {
+              "GUIDToUnlock": 112133
+            },
+            {
+              "GUIDToUnlock": 111929
+            },
+            {
+              "GUIDToUnlock": 500979
+            },
+            {
+              "GUIDToUnlock": 500972
+            },
+            {
+              "GUIDToUnlock": 114776
+            },
+            {
+              "GUIDToUnlock": 113326
+            },
+            {
+              "GUIDToUnlock": 80142
+            },
+            {
+              "GUIDToUnlock": 113325
+            },
+            {
+              "GUIDToUnlock": 80152
+            },
+            {
+              "GUIDToUnlock": 80147
+            },
+            {
+              "GUIDToUnlock": 80149
+            },
+            {
+              "GUIDToUnlock": 114777
+            },
+            {
+              "GUIDToUnlock": 102383
+            },
+            {
+              "GUIDToUnlock": 103048
+            },
+            {
+              "GUIDToUnlock": 114778
+            },
+            {
+              "GUIDToUnlock": 113324
+            },
+            {
+              "GUIDToUnlock": 102229
+            },
+            {
+              "GUIDToUnlock": 103047
+            },
+            {
+              "GUIDToUnlock": 501563
+            },
+            {
+              "GUIDToUnlock": 501550
+            },
+            {
+              "GUIDToUnlock": 501552
+            },
+            {
+              "GUIDToUnlock": 501519
+            },
+            {
+              "GUIDToUnlock": 501518
+            },
+            {
+              "GUIDToUnlock": 100460
+            },
+            {
+              "GUIDToUnlock": 500964
+            },
+            {
+              "GUIDToUnlock": 100675
+            },
+            {
+              "GUIDToUnlock": 500963
+            },
+            {
+              "GUIDToUnlock": 100676
+            },
+            {
+              "GUIDToUnlock": 500981
+            },
+            {
+              "GUIDToUnlock": 102892
+            },
+            {
+              "GUIDToUnlock": 103049
+            },
+            {
+              "GUIDToUnlock": 500962
+            },
+            {
+              "GUIDToUnlock": 269303
+            },
+            {
+              "GUIDToUnlock": 269293
+            },
+            {
+              "GUIDToUnlock": 269294
+            },
+            {
+              "GUIDToUnlock": 269295
+            },
+            {
+              "GUIDToUnlock": 269296
+            },
+            {
+              "GUIDToUnlock": 269297
+            },
+            {
+              "GUIDToUnlock": 269298
+            },
+            {
+              "GUIDToUnlock": 110670
+            },
+            {
+              "GUIDToUnlock": 111838
+            },
+            {
+              "GUIDToUnlock": 114213
+            },
+            {
+              "GUIDToUnlock": 114205
+            },
+            {
+              "GUIDToUnlock": 101019
+            },
+            {
+              "GUIDToUnlock": 114206
+            },
+            {
+              "GUIDToUnlock": 100672
+            },
+            {
+              "GUIDToUnlock": 501297
+            },
+            {
+              "GUIDToUnlock": 501765
+            }
+          ]
+        },
+        "TestItemFolder": 1128078935
       }
     }
   }

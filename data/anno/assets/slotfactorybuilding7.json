@@ -43,10 +43,21 @@
           "Item": {
             "Filename": "data/graphics/buildings/production/factory_11/factory_11.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 100416,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier02_atWork",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -56,8 +67,7 @@
         "LocaText": {
           "English": {
             "Text": "Clay Pit",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 3725
@@ -127,6 +137,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 2750,
         "SelfHealPerHealTick": 6
       },
@@ -166,7 +177,9 @@
         "CultureType": "Culture"
       },
       "Industrializable": "",
-      "Electrifiable": ""
+      "Electrifiable": {
+        "ElectrifiedEffect": 0
+      }
     }
   },
   {
@@ -222,10 +235,21 @@
               "Filename": "data/graphics/buildings/production/mining_01/mining_01_right.cfg"
             }
           ]
+        },
+        "Skins": {
+          "DefaultSkinName": 1010304,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier02_atWork",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -235,8 +259,7 @@
         "LocaText": {
           "English": {
             "Text": "Coal Mine",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 3723
@@ -263,6 +286,12 @@
       "UpgradeList": "",
       "Factory7": "",
       "FactoryBase": {
+        "FactoryInputs": {
+          "Item": {
+            "Product": 1591,
+            "StorageAmount": 12
+          }
+        },
         "FactoryOutputs": {
           "Item": {
             "Product": 1010226,
@@ -297,6 +326,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 1500,
         "SelfHealPerHealTick": 4
       },
@@ -311,23 +341,23 @@
           "ExplosionCoreDamage": 1000
         },
         "IncidentInfectionChanceFactors": {
-          "Explosion": {
-            "BaseChance": 4,
-            "FactoryUndertimeFactor": 0.05
-          },
           "Fire": {
             "DensityDistance": 20,
             "FactoryProductivityFactor": 0.1,
             "FactoryUndertimeFactor": 0.05
-          },
-          "Illness": {
-            "BaseChance": 1
           },
           "Riot": {
             "FactoryOvertimeFactor": 0.4,
             "FactoryUndertimeFactor": 0.2,
             "FactoryHappinessFactor": 0.2,
             "HappinessThreshold": 20
+          },
+          "Illness": {
+            "BaseChance": 1
+          },
+          "Explosion": {
+            "BaseChance": 4,
+            "FactoryUndertimeFactor": 0.05
           }
         }
       },
@@ -390,10 +420,21 @@
               "Filename": "data/graphics/buildings/production/mining_02/mining_02.cfg"
             }
           ]
+        },
+        "Skins": {
+          "DefaultSkinName": 1010305,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier02_atWork",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -403,8 +444,7 @@
         "LocaText": {
           "English": {
             "Text": "Iron Mine",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 3724
@@ -436,6 +476,12 @@
       "UpgradeList": "",
       "Factory7": "",
       "FactoryBase": {
+        "FactoryInputs": {
+          "Item": {
+            "Product": 1591,
+            "StorageAmount": 12
+          }
+        },
         "FactoryOutputs": {
           "Item": {
             "Product": 1010227,
@@ -470,6 +516,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 1500,
         "SelfHealPerHealTick": 4
       },
@@ -484,23 +531,23 @@
           "ExplosionCoreDamage": 1000
         },
         "IncidentInfectionChanceFactors": {
-          "Explosion": {
-            "BaseChance": 4,
-            "FactoryUndertimeFactor": 0.05
-          },
           "Fire": {
             "DensityDistance": 20,
             "FactoryProductivityFactor": 0.1,
             "FactoryUndertimeFactor": 0.05
-          },
-          "Illness": {
-            "BaseChance": 1
           },
           "Riot": {
             "FactoryOvertimeFactor": 0.4,
             "FactoryUndertimeFactor": 0.2,
             "FactoryHappinessFactor": 0.2,
             "HappinessThreshold": 20
+          },
+          "Illness": {
+            "BaseChance": 1
+          },
+          "Explosion": {
+            "BaseChance": 4,
+            "FactoryUndertimeFactor": 0.05
           }
         }
       },
@@ -566,10 +613,21 @@
               "Filename": "data/graphics/buildings/production/mining_04/mining_04.cfg"
             }
           ]
+        },
+        "Skins": {
+          "DefaultSkinName": 1010307,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier02_atWork",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -579,8 +637,7 @@
         "LocaText": {
           "English": {
             "Text": "Zinc Mine",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 3726
@@ -607,6 +664,12 @@
       "UpgradeList": "",
       "Factory7": "",
       "FactoryBase": {
+        "FactoryInputs": {
+          "Item": {
+            "Product": 1591,
+            "StorageAmount": 12
+          }
+        },
         "FactoryOutputs": {
           "Item": {
             "Product": 1010229,
@@ -640,6 +703,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 1500,
         "SelfHealPerHealTick": 4
       },
@@ -654,23 +718,23 @@
           "ExplosionCoreDamage": 1000
         },
         "IncidentInfectionChanceFactors": {
-          "Explosion": {
-            "BaseChance": 4,
-            "FactoryUndertimeFactor": 0.05
-          },
           "Fire": {
             "DensityDistance": 20,
             "FactoryProductivityFactor": 0.1,
             "FactoryUndertimeFactor": 0.05
-          },
-          "Illness": {
-            "BaseChance": 1
           },
           "Riot": {
             "FactoryOvertimeFactor": 0.4,
             "FactoryUndertimeFactor": 0.2,
             "FactoryHappinessFactor": 0.2,
             "HappinessThreshold": 20
+          },
+          "Illness": {
+            "BaseChance": 1
+          },
+          "Explosion": {
+            "BaseChance": 4,
+            "FactoryUndertimeFactor": 0.05
           }
         }
       },
@@ -736,10 +800,21 @@
               "Filename": "data/graphics/buildings/production/mining_05/mining_05.cfg"
             }
           ]
+        },
+        "Skins": {
+          "DefaultSkinName": 1010308,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier02_atWork",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -749,8 +824,7 @@
         "LocaText": {
           "English": {
             "Text": "Copper Mine",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 3727
@@ -777,6 +851,12 @@
       "UpgradeList": "",
       "Factory7": "",
       "FactoryBase": {
+        "FactoryInputs": {
+          "Item": {
+            "Product": 1591,
+            "StorageAmount": 12
+          }
+        },
         "FactoryOutputs": {
           "Item": {
             "Product": 1010230,
@@ -810,6 +890,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 1500,
         "SelfHealPerHealTick": 4
       },
@@ -824,23 +905,23 @@
           "ExplosionCoreDamage": 1000
         },
         "IncidentInfectionChanceFactors": {
-          "Explosion": {
-            "BaseChance": 4,
-            "FactoryUndertimeFactor": 0.05
-          },
           "Fire": {
             "DensityDistance": 20,
             "FactoryProductivityFactor": 0.1,
             "FactoryUndertimeFactor": 0.05
-          },
-          "Illness": {
-            "BaseChance": 1
           },
           "Riot": {
             "FactoryOvertimeFactor": 0.4,
             "FactoryUndertimeFactor": 0.2,
             "FactoryHappinessFactor": 0.2,
             "HappinessThreshold": 20
+          },
+          "Illness": {
+            "BaseChance": 1
+          },
+          "Explosion": {
+            "BaseChance": 4,
+            "FactoryUndertimeFactor": 0.05
           }
         }
       },
@@ -905,10 +986,21 @@
               "Filename": "data/graphics/buildings/production/mining_06/mining_06_right.cfg"
             }
           ]
+        },
+        "Skins": {
+          "DefaultSkinName": 1010309,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier02_atWork",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -918,8 +1010,7 @@
         "LocaText": {
           "English": {
             "Text": "Limestone Quarry",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 5272
@@ -946,6 +1037,12 @@
       "UpgradeList": "",
       "Factory7": "",
       "FactoryBase": {
+        "FactoryInputs": {
+          "Item": {
+            "Product": 1591,
+            "StorageAmount": 12
+          }
+        },
         "FactoryOutputs": {
           "Item": {
             "Product": 1010231,
@@ -979,6 +1076,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 1500,
         "SelfHealPerHealTick": 4
       },
@@ -993,23 +1091,23 @@
           "ExplosionCoreDamage": 1000
         },
         "IncidentInfectionChanceFactors": {
-          "Explosion": {
-            "BaseChance": 4,
-            "FactoryUndertimeFactor": 0.05
-          },
           "Fire": {
             "DensityDistance": 20,
             "FactoryProductivityFactor": 0.1,
             "FactoryUndertimeFactor": 0.05
-          },
-          "Illness": {
-            "BaseChance": 1
           },
           "Riot": {
             "FactoryOvertimeFactor": 0.4,
             "FactoryUndertimeFactor": 0.2,
             "FactoryHappinessFactor": 0.2,
             "HappinessThreshold": 20
+          },
+          "Illness": {
+            "BaseChance": 1
+          },
+          "Explosion": {
+            "BaseChance": 4,
+            "FactoryUndertimeFactor": 0.05
           }
         }
       },
@@ -1075,10 +1173,21 @@
               "Filename": "data/graphics/buildings/production/mining_08/mining_08.cfg"
             }
           ]
+        },
+        "Skins": {
+          "DefaultSkinName": 1010311,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier02_atWork",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -1088,8 +1197,7 @@
         "LocaText": {
           "English": {
             "Text": "Gold Mine",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 3728
@@ -1123,8 +1231,7 @@
             "StorageAmount": 1
           }
         },
-        "CycleTime": 150,
-        "IsMainFactory": 1
+        "CycleTime": 150
       },
       "LogisticNode": "",
       "Slot": {
@@ -1150,6 +1257,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 1500,
         "SelfHealPerHealTick": 4
       },
@@ -1164,23 +1272,23 @@
           "ExplosionCoreDamage": 1000
         },
         "IncidentInfectionChanceFactors": {
-          "Explosion": {
-            "BaseChance": 4,
-            "FactoryUndertimeFactor": 0.05
-          },
           "Fire": {
             "DensityDistance": 20,
             "FactoryProductivityFactor": 0.1,
             "FactoryUndertimeFactor": 0.05
-          },
-          "Illness": {
-            "BaseChance": 1
           },
           "Riot": {
             "FactoryOvertimeFactor": 0.4,
             "FactoryUndertimeFactor": 0.2,
             "FactoryHappinessFactor": 0.2,
             "HappinessThreshold": 20
+          },
+          "Illness": {
+            "BaseChance": 1
+          },
+          "Explosion": {
+            "BaseChance": 4,
+            "FactoryUndertimeFactor": 0.05
           }
         }
       },
@@ -1197,8 +1305,7 @@
       "Standard": {
         "GUID": 117743,
         "Name": "river_colony02_01 (Clay Harvester)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_clay.png",
-        "Version": "dlc06"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_clay.png"
       },
       "Building": {
         "AssociatedRegions": "Africa"
@@ -1242,10 +1349,21 @@
               "Filename": "data/dlc06/graphics/buildings/production/production_colony02_23/production_colony02_23_main_01.cfg"
             }
           ]
+        },
+        "Skins": {
+          "DefaultSkinName": 117743,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Africa_Resident_tier01",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -1255,8 +1373,7 @@
         "LocaText": {
           "English": {
             "Text": "Clay Collector",
-            "Status": "Exported",
-            "ExportCount": 3
+            "Status": "Exported"
           }
         },
         "LineID": 44435
@@ -1339,6 +1456,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 2750,
         "SelfHealPerHealTick": 6
       },
@@ -1389,8 +1507,7 @@
       "Standard": {
         "GUID": 117744,
         "Name": "river_colony02_02 (Paper Mill)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/goods_africa/icon_paper.png",
-        "Version": "dlc06"
+        "IconFilename": "data/ui/2kimages/main/3dicons/goods_africa/icon_paper.png"
       },
       "Building": {
         "AssociatedRegions": "Africa"
@@ -1435,10 +1552,21 @@
               "Filename": "data/dlc06/graphics/buildings/production/production_colony02_15/production_colony02_15_main_01_right.cfg"
             }
           ]
+        },
+        "Skins": {
+          "DefaultSkinName": 117744,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Africa_Resident_tier02",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -1448,8 +1576,7 @@
         "LocaText": {
           "English": {
             "Text": "Paper Mill",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 44436
@@ -1541,6 +1668,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 2750,
         "SelfHealPerHealTick": 6
       },
@@ -1582,6 +1710,561 @@
       "Industrializable": {
         "BoostedByIndustrialization": 0
       },
+      "Electrifiable": ""
+    }
+  },
+  {
+    "Template": "SlotFactoryBuilding7",
+    "Values": {
+      "Standard": {
+        "GUID": 2399,
+        "Name": "Scenario03 Coal Mine",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_coal_2.png"
+      },
+      "Building": {
+        "AssociatedRegions": "Colony01"
+      },
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 600
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 4
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 5
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": [
+            {
+              "Filename": "data/eoy21/graphics/buildings/production/mining_colony01_02/mining_colony01_02_middle.cfg"
+            },
+            {
+              "Filename": "data/eoy21/graphics/buildings/production/mining_colony01_02/mining_colony01_02_left.cfg"
+            },
+            {
+              "Filename": "data/eoy21/graphics/buildings/production/mining_colony01_02/mining_colony01_02_right.cfg"
+            }
+          ]
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "Resident_tier02_atWork",
+        "Colors": {
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Coal Mine",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 55855
+      },
+      "Constructable": "",
+      "Locked": {
+        "DLCDependency": 24962
+      },
+      "SoundEmitter": {
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        },
+        "MaterialType": "Wood"
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryInputs": {
+          "Item": {
+            "Product": 1591,
+            "StorageAmount": 6
+          }
+        },
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 1010226,
+            "Amount": 1,
+            "StorageAmount": 8
+          }
+        },
+        "CycleTime": 15
+      },
+      "LogisticNode": "",
+      "Slot": {
+        "SlotType": "Coal",
+        "WorkArea": 1010542
+      },
+      "AmbientMoodProvider": {
+        "Murmur": "Mine"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 50,
+              "InactiveAmount": 25
+            },
+            {
+              "Product": 1010115,
+              "Amount": 50
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "AttackableType": "IslandBuilding",
+        "MaximumHitPoints": 1500,
+        "SelfHealPerHealTick": 4
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Illness": {
+            "Escalated": 0
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 1000
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "DensityDistance": 20,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          },
+          "Riot": {
+            "FactoryOvertimeFactor": 0.4,
+            "FactoryUndertimeFactor": 0.2,
+            "FactoryHappinessFactor": 0.2,
+            "HappinessThreshold": 20
+          },
+          "Illness": {
+            "BaseChance": 1
+          },
+          "Explosion": {
+            "BaseChance": 4,
+            "FactoryUndertimeFactor": 0.05
+          }
+        }
+      },
+      "Culture": {
+        "CultureType": "Culture"
+      },
+      "Industrializable": "",
+      "Electrifiable": ""
+    }
+  },
+  {
+    "Template": "SlotFactoryBuilding7",
+    "Values": {
+      "Standard": {
+        "GUID": 2400,
+        "Name": "Scenario03 Iron Mine",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_iron.png"
+      },
+      "Building": {
+        "AssociatedRegions": "Colony01"
+      },
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 800
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 4
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 5
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": [
+            {
+              "Filename": "data/eoy21/graphics/buildings/production/mining_colony01_03/mining_colony01_03.cfg"
+            },
+            {
+              "Filename": "data/eoy21/graphics/buildings/production/mining_colony01_03/mining_colony01_03.cfg"
+            },
+            {
+              "Filename": "data/eoy21/graphics/buildings/production/mining_colony01_03/mining_colony01_03.cfg"
+            }
+          ]
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "Resident_tier02_atWork",
+        "Colors": {
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Iron Mine",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 55856
+      },
+      "Constructable": "",
+      "Locked": {
+        "DLCDependency": 24962
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 202274
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        },
+        "MaterialType": "Wood"
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryInputs": {
+          "Item": {
+            "Product": 1591,
+            "StorageAmount": 6
+          }
+        },
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 1010227,
+            "Amount": 1,
+            "StorageAmount": 8
+          }
+        },
+        "CycleTime": 15
+      },
+      "LogisticNode": "",
+      "Slot": {
+        "SlotType": "Iron",
+        "WorkArea": 1010543
+      },
+      "AmbientMoodProvider": {
+        "Murmur": "Mine"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 50,
+              "InactiveAmount": 25
+            },
+            {
+              "Product": 1010115,
+              "Amount": 50
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "AttackableType": "IslandBuilding",
+        "MaximumHitPoints": 1500,
+        "SelfHealPerHealTick": 4
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Illness": {
+            "Escalated": 0
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 1000
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "DensityDistance": 20,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          },
+          "Riot": {
+            "FactoryOvertimeFactor": 0.4,
+            "FactoryUndertimeFactor": 0.2,
+            "FactoryHappinessFactor": 0.2,
+            "HappinessThreshold": 20
+          },
+          "Illness": {
+            "BaseChance": 1
+          },
+          "Explosion": {
+            "BaseChance": 4,
+            "FactoryUndertimeFactor": 0.05
+          }
+        }
+      },
+      "Culture": {
+        "CultureType": "Culture"
+      },
+      "Industrializable": "",
+      "Electrifiable": ""
+    }
+  },
+  {
+    "Template": "SlotFactoryBuilding7",
+    "Values": {
+      "Standard": {
+        "GUID": 5989,
+        "Name": "Scenario04 Cement",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_cement.png"
+      },
+      "Building": {
+        "AssociatedRegions": "Colony01"
+      },
+      "Blocking": {
+        "HasBuildingBaseTiles": 1
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 800
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 4
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 5
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": [
+            {
+              "Filename": "data/eoy21/graphics/buildings/production/mining_colony01_03/mining_colony01_03.cfg"
+            },
+            {
+              "Filename": "data/eoy21/graphics/buildings/production/mining_colony01_03/mining_colony01_03.cfg"
+            },
+            {
+              "Filename": "data/eoy21/graphics/buildings/production/mining_colony01_03/mining_colony01_03.cfg"
+            }
+          ]
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "SA_Resident_tier01_atWork",
+        "Colors": {
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Cement Mine",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 60475
+      },
+      "Constructable": "",
+      "Locked": {
+        "DLCDependency": 24963
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 202274
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        },
+        "MaterialType": "Wood"
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryInputs": {
+          "Item": {
+            "Product": 1591,
+            "StorageAmount": 6
+          }
+        },
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 1010231,
+            "Amount": 1,
+            "StorageAmount": 8
+          }
+        },
+        "CycleTime": 15
+      },
+      "LogisticNode": "",
+      "Slot": {
+        "SlotType": "Cement",
+        "WorkArea": 1010547
+      },
+      "AmbientMoodProvider": {
+        "Murmur": "Mine"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 50,
+              "InactiveAmount": 25
+            },
+            {
+              "Product": 1010366,
+              "Amount": 45
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "AttackableType": "IslandBuilding",
+        "MaximumHitPoints": 1500,
+        "SelfHealPerHealTick": 4
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Illness": {
+            "Escalated": 0
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 1000
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "DensityDistance": 20,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          },
+          "Riot": {
+            "FactoryOvertimeFactor": 0.4,
+            "FactoryUndertimeFactor": 0.2,
+            "FactoryHappinessFactor": 0.2,
+            "HappinessThreshold": 20
+          },
+          "Illness": {
+            "BaseChance": 1
+          },
+          "Explosion": {
+            "BaseChance": 4,
+            "FactoryUndertimeFactor": 0.05
+          }
+        }
+      },
+      "Culture": {
+        "CultureType": "Culture"
+      },
+      "Industrializable": "",
       "Electrifiable": ""
     }
   }

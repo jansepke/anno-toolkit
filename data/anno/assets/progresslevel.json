@@ -17,6 +17,12 @@
               "CounterAmount": 35
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "ProgressLevel": {
@@ -43,6 +49,12 @@
               "Context": 15000002,
               "CounterAmount": 1
             }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
           }
         }
       },
@@ -71,6 +83,12 @@
               "CounterAmount": 1
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "ProgressLevel": {
@@ -98,6 +116,12 @@
               "CounterAmount": 1
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "ProgressLevel": {
@@ -123,6 +147,12 @@
               "PlayerCounter": "PopulationTotal",
               "CounterAmount": 20000
             }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
           }
         }
       },
@@ -170,6 +200,12 @@
               }
             }
           }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
         }
       },
       "ProgressLevel": {
@@ -184,8 +220,7 @@
     "Values": {
       "Standard": {
         "GUID": 119419,
-        "Name": "EarlyMidGame",
-        "Version": "dlc06"
+        "Name": "EarlyMidGame"
       },
       "Trigger": {
         "TriggerCondition": {
@@ -197,6 +232,12 @@
               "Context": 114329,
               "CounterAmount": 1
             }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
           }
         }
       },
@@ -213,8 +254,7 @@
     "Values": {
       "Standard": {
         "GUID": 119420,
-        "Name": "MidGame",
-        "Version": "dlc06"
+        "Name": "MidGame"
       },
       "Trigger": {
         "TriggerCondition": {
@@ -226,6 +266,12 @@
               "Context": 114329,
               "CounterAmount": 300
             }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
           }
         }
       },
@@ -242,8 +288,7 @@
     "Values": {
       "Standard": {
         "GUID": 119421,
-        "Name": "LateMidGame",
-        "Version": "dlc06"
+        "Name": "LateMidGame"
       },
       "Trigger": {
         "TriggerCondition": {
@@ -255,6 +300,12 @@
               "Context": 114330,
               "CounterAmount": 300
             }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
           }
         }
       },
@@ -271,8 +322,7 @@
     "Values": {
       "Standard": {
         "GUID": 119422,
-        "Name": "LateGame",
-        "Version": "dlc06"
+        "Name": "LateGame"
       },
       "Trigger": {
         "TriggerCondition": {
@@ -284,6 +334,12 @@
               "Context": 118745,
               "CounterAmount": 1
             }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
           }
         }
       },
@@ -300,8 +356,7 @@
     "Values": {
       "Standard": {
         "GUID": 119423,
-        "Name": "EndGame",
-        "Version": "dlc06"
+        "Name": "EndGame"
       },
       "Trigger": {
         "TriggerCondition": {
@@ -313,6 +368,98 @@
               "Context": 118745,
               "CounterAmount": 2500
             }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "ProgressLevel": {
+        "Level": "EndGame",
+        "SessionContext": 112132
+      },
+      "Locked": "",
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "ProgressLevel",
+    "Values": {
+      "Standard": {
+        "GUID": 13131,
+        "Name": "EndGameTriggerCretiveMode"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Values": {
+            "ConditionPropsNegatable": "",
+            "Condition": "",
+            "ConditionIsCreativeMode": ""
+          },
+          "Template": "ConditionIsCreativeMode"
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "ProgressLevel": {
+        "Level": "EndGame"
+      },
+      "Locked": "",
+      "TriggerSetup": ""
+    }
+  },
+  {
+    "Template": "ProgressLevel",
+    "Values": {
+      "Standard": {
+        "GUID": 15809,
+        "Name": "EndGameTriggerCretiveModeLoL"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Values": {
+            "ConditionPropsNegatable": "",
+            "Condition": "",
+            "ConditionIsCreativeMode": ""
+          },
+          "Template": "ConditionIsCreativeMode"
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Values": {
+                      "Condition": "",
+                      "ConditionIsDLCActive": {
+                        "DLCAssetList": {
+                          "Item": {
+                            "DLCAsset": 410071
+                          }
+                        }
+                      },
+                      "ConditionPropsNegatable": ""
+                    },
+                    "Template": "ConditionIsDLCActive"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
           }
         }
       },

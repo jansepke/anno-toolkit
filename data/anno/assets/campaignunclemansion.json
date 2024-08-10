@@ -11,8 +11,7 @@
         "LocaText": {
           "English": {
             "Text": "Mansion",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 25850
@@ -21,6 +20,12 @@
       "Building": "",
       "Cost": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "WeakSelectionColorType": "NoColor"
         }
@@ -43,7 +48,9 @@
       "AmbientMoodProvider": "",
       "Pausable": "",
       "Infolayer": "",
-      "Attackable": ""
+      "Attackable": {
+        "AttackableType": "IslandBuilding"
+      }
     }
   },
   {
@@ -58,8 +65,7 @@
         "LocaText": {
           "English": {
             "Text": "World's Fair: Glazing",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 20109
@@ -68,12 +74,20 @@
       "Building": {
         "PickingAsset": 1010489,
         "AssociatedRegions": "Moderate",
-        "DeactivateHideWhenClippingIntoCamera": 1
+        "DeactivateHideWhenClippingIntoCamera": 1,
+        "AllowCodeToControlRotation": 0
       },
       "Cost": {
         "Costs": ""
       },
-      "Selection": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Object": {
         "Variations": {
           "Item": [
@@ -104,6 +118,7 @@
       "Pausable": "",
       "Infolayer": "",
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 10000,
         "SelfHealPerHealTick": 6
       }

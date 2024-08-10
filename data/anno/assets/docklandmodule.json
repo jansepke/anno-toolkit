@@ -6,8 +6,7 @@
         "GUID": 601462,
         "Name": "Dockland_Module_Export",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_docklands_module_export.png",
-        "InfoDescription": 132239,
-        "Version": "dlc07"
+        "InfoDescription": 132239
       },
       "Building": {
         "BuildingCategoryName": 11150,
@@ -114,21 +113,22 @@
               "Item": ""
             }
           },
-          "Crossing": {
-            "Pool": {
-              "Item": {
-                "Variation": 3
-              }
-            }
-          },
           "TCrossing": {
             "Pool": {
               "Item": {
                 "Variation": 2
               }
             }
+          },
+          "Crossing": {
+            "Pool": {
+              "Item": {
+                "Variation": 3
+              }
+            }
           }
         },
+        "SecondPartyRelevant": 0,
         "BuildModeStartVariation": 0,
         "VariationIcons": {
           "Item": [
@@ -145,7 +145,8 @@
               "IconFilename": "data/ui/2kimages/main/3dicons/docklands/harbor_module_01_export_cross.png"
             }
           ]
-        }
+        },
+        "ModuleParentType": "Dockland"
       },
       "Blocking": {
         "GroundDecalAsset": 601492,
@@ -246,18 +247,29 @@
               "Filename": "data/dlc07/graphics/buildings/special/harbor_module_01/harbor_module_01_export_cross.cfg"
             }
           ]
+        },
+        "Skins": {
+          "DefaultSkinName": 601462,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": {
         "ChangeGUIDEffectDuration": 0
       },
-      "Selection": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Exports Office",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 48685
@@ -292,11 +304,9 @@
         "PlazaSize": 1
       },
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 3000,
-        "SelfHealPerHealTick": 4,
-        "CanBeAttackedByPlayer": 1,
         "DefenseByAIFactor": 332,
-        "TakeOverEffect": "OnDeath",
         "MoralePower": 50,
         "IslandWarFlag": 102303,
         "RuinSmokeParticles": {
@@ -318,7 +328,8 @@
           }
         },
         "ExplosionEffectsMin": 1,
-        "ExplosionEffectsMax": 2
+        "ExplosionEffectsMax": 2,
+        "SelfHealPerHealTick": 4
       },
       "AmbientMoodProvider": "",
       "Culture": "",
@@ -343,8 +354,7 @@
         "GUID": 131778,
         "Name": "Dockland_Module_SpeedUp",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_docklands_module_speed.png",
-        "InfoDescription": 132242,
-        "Version": "dlc07"
+        "InfoDescription": 132242
       },
       "Building": {
         "BuildingCategoryName": 11150,
@@ -423,21 +433,22 @@
               "Item": ""
             }
           },
-          "Crossing": {
-            "Pool": {
-              "Item": {
-                "Variation": 3
-              }
-            }
-          },
           "TCrossing": {
             "Pool": {
               "Item": {
                 "Variation": 2
               }
             }
+          },
+          "Crossing": {
+            "Pool": {
+              "Item": {
+                "Variation": 3
+              }
+            }
           }
         },
+        "SecondPartyRelevant": 0,
         "BuildModeStartVariation": 0,
         "BuildModeStartDirectionOffset": -90,
         "KeepRotationInBlock": 1,
@@ -456,7 +467,8 @@
               "IconFilename": "data/ui/2kimages/main/3dicons/docklands/harbor_module_05_speedup_corner_01.png"
             }
           ]
-        }
+        },
+        "ModuleParentType": "Dockland"
       },
       "Blocking": {
         "GroundDecalAsset": 601492,
@@ -557,18 +569,29 @@
               "Filename": "data/dlc07/graphics/buildings/special/harbor_module_05/harbor_module_05_speedup_corner_01.cfg"
             }
           ]
+        },
+        "Skins": {
+          "DefaultSkinName": 131778,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": {
         "ChangeGUIDEffectDuration": 0
       },
-      "Selection": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Loading Wharf",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 48688
@@ -604,11 +627,9 @@
         "ModuleType": "DocklandModuleSpeed"
       },
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 3000,
-        "SelfHealPerHealTick": 4,
-        "CanBeAttackedByPlayer": 1,
         "DefenseByAIFactor": 332,
-        "TakeOverEffect": "OnDeath",
         "MoralePower": 50,
         "IslandWarFlag": 102303,
         "RuinSmokeParticles": {
@@ -630,7 +651,8 @@
           }
         },
         "ExplosionEffectsMin": 1,
-        "ExplosionEffectsMax": 2
+        "ExplosionEffectsMax": 2,
+        "SelfHealPerHealTick": 4
       },
       "AmbientMoodProvider": "",
       "Culture": "",

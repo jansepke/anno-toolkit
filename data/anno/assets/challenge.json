@@ -1,0 +1,785 @@
+[
+  {
+    "Template": "Challenge",
+    "Values": {
+      "Standard": {
+        "GUID": 5887,
+        "Name": "Console Challenge01 (Zoo)"
+      },
+      "UbisoftChallenge": {
+        "StatEvent": "Challenges_Zoo"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "MutuallyExclusive"
+            },
+            "ConditionAlwaysTrue": ""
+          },
+          "Template": "ConditionAlwaysTrue"
+        },
+        "SubTriggers": {
+          "Item": [
+            {
+              "SubTrigger": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "ItemSetsActive",
+                          "CounterAmount": 1,
+                          "Context": 191114
+                        }
+                      },
+                      "Template": "ConditionPlayerCounter"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "ItemSetsActive",
+                          "Context": 191115,
+                          "CounterAmount": 1
+                        }
+                      },
+                      "Template": "ConditionPlayerCounter"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "ItemSetsActive",
+                          "Context": 191116,
+                          "CounterAmount": 1
+                        }
+                      },
+                      "Template": "ConditionPlayerCounter"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "ItemSetsActive",
+                          "Context": 191122,
+                          "CounterAmount": 1
+                        }
+                      },
+                      "Template": "ConditionPlayerCounter"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": "",
+      "TriggerProgress": ""
+    }
+  },
+  {
+    "Template": "Challenge",
+    "Values": {
+      "Standard": {
+        "GUID": 5696,
+        "Name": "Console Challenge02 (DefenseTowers)"
+      },
+      "UbisoftChallenge": {
+        "StatEvent": "Challenges_DefenseTowers",
+        "ProgressField": "amount"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "Context": 700067,
+              "CounterAmount": 3
+            }
+          },
+          "Template": "ConditionPlayerCounter"
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": "",
+      "TriggerProgress": {
+        "ProgressStep": 1
+      }
+    }
+  },
+  {
+    "Template": "Challenge",
+    "Values": {
+      "Standard": {
+        "GUID": 5888,
+        "Name": "Console Challenge03 (Pier)"
+      },
+      "UbisoftChallenge": {
+        "StatEvent": "Challenges_Pier"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Values": [
+            {
+              "Condition": {
+                "SubConditionCompletionOrder": "MutuallyExclusive"
+              },
+              "ConditionAlwaysTrue": ""
+            },
+            {
+              "Condition": {
+                "SubConditionCompletionOrder": "MutuallyExclusive"
+              }
+            },
+            {
+              "Condition": {
+                "SubConditionCompletionOrder": "MutuallyExclusive"
+              }
+            }
+          ],
+          "Template": "ConditionAlwaysTrue"
+        },
+        "SubTriggers": {
+          "Item": [
+            {
+              "SubTrigger": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "CounterAmount": 1,
+                          "Context": 101344
+                        }
+                      },
+                      "Template": "ConditionPlayerCounter"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "CounterAmount": 1,
+                          "Context": 100519
+                        }
+                      },
+                      "Template": "ConditionPlayerCounter"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": "",
+      "TriggerProgress": ""
+    }
+  },
+  {
+    "Template": "Challenge",
+    "Values": {
+      "Standard": {
+        "GUID": 5889,
+        "Name": "Console Challenge04 (Electricity)"
+      },
+      "UbisoftChallenge": {
+        "StatEvent": "Challenges_Electricity"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "PopulationSatisfactionByGood",
+              "CounterAmount": 1,
+              "Context": 1010354
+            }
+          },
+          "Template": "ConditionPlayerCounter"
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": "",
+      "TriggerProgress": ""
+    }
+  },
+  {
+    "Template": "Challenge",
+    "Values": {
+      "Standard": {
+        "GUID": 5891,
+        "Name": "Console Challenge05 (MuseumSet)"
+      },
+      "UbisoftChallenge": {
+        "StatEvent": "Challenges_MuseumSet"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Values": {
+            "Condition": {
+              "SubConditionCompletionOrder": "MutuallyExclusive"
+            },
+            "ConditionAlwaysTrue": ""
+          },
+          "Template": "ConditionAlwaysTrue"
+        },
+        "SubTriggers": {
+          "Item": [
+            {
+              "SubTrigger": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "ItemSetsActive",
+                          "Context": 191124,
+                          "CounterAmount": 1
+                        }
+                      },
+                      "Template": "ConditionPlayerCounter"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "ItemSetsActive",
+                          "Context": 191126,
+                          "CounterAmount": 1
+                        }
+                      },
+                      "Template": "ConditionPlayerCounter"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "ItemSetsActive",
+                          "CounterAmount": 1,
+                          "Context": 191131
+                        }
+                      },
+                      "Template": "ConditionPlayerCounter"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "PlayerCounter": "ItemSetsActive",
+                          "CounterAmount": 1,
+                          "Context": 191125
+                        }
+                      },
+                      "Template": "ConditionPlayerCounter"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "SubTrigger": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "Trigger": {
+                    "TriggerCondition": {
+                      "Values": {
+                        "Condition": "",
+                        "ConditionPlayerCounter": {
+                          "CounterAmount": 1,
+                          "PlayerCounter": "ItemSetsActive",
+                          "Context": 191123
+                        }
+                      },
+                      "Template": "ConditionPlayerCounter"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": "",
+      "TriggerProgress": ""
+    }
+  },
+  {
+    "Template": "Challenge",
+    "Values": {
+      "Standard": {
+        "GUID": 5890,
+        "Name": "Console Challenge06 (FurCoats)"
+      },
+      "UbisoftChallenge": {
+        "StatEvent": "Challenges_FurCoats"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Values": {
+            "Condition": "",
+            "ConditionFactoryProductivity": {
+              "ProductivityThreshold": 10
+            },
+            "ObjectFilter": {
+              "ObjectGUID": 1010325,
+              "CheckParticipantID": 1,
+              "CheckProcessingParticipantID": 1
+            }
+          },
+          "Template": "ConditionFactoryProductivity"
+        },
+        "SubTriggers": {
+          "Item": {
+            "SubTrigger": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "Trigger": {
+                  "TriggerCondition": {
+                    "Values": {
+                      "Condition": "",
+                      "ConditionPlayerCounter": {
+                        "PlayerCounter": "GoodsInStock",
+                        "CounterAmount": 1,
+                        "Context": 1010247
+                      }
+                    },
+                    "Template": "ConditionPlayerCounter"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": "",
+      "TriggerProgress": ""
+    }
+  },
+  {
+    "Template": "Challenge",
+    "Values": {
+      "Standard": {
+        "GUID": 5892,
+        "Name": "Console Challenge07 (Obreros)"
+      },
+      "UbisoftChallenge": {
+        "StatEvent": "Challenges_Obreros",
+        "ProgressField": "amount"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "CounterAmount": 600,
+              "PlayerCounter": "PopulationByLevel",
+              "Context": 15000006
+            }
+          },
+          "Template": "ConditionPlayerCounter"
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": "",
+      "TriggerProgress": {
+        "ProgressStep": 1
+      }
+    }
+  },
+  {
+    "Template": "Challenge",
+    "Values": {
+      "Standard": {
+        "GUID": 5893,
+        "Name": "Console Challenge08 (OptionalQuests)"
+      },
+      "UbisoftChallenge": {
+        "StatEvent": "Challenges_OptionalQuests",
+        "ProgressField": "amount"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "QuestPoolQuestsSolved",
+              "Context": 4253,
+              "CounterAmount": 25
+            }
+          },
+          "Template": "ConditionPlayerCounter"
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": "",
+      "TriggerProgress": {
+        "ProgressStep": 1
+      }
+    }
+  },
+  {
+    "Template": "Challenge",
+    "Values": {
+      "Standard": {
+        "GUID": 5894,
+        "Name": "Console Challenge09 (Expeditions)"
+      },
+      "UbisoftChallenge": {
+        "StatEvent": "Challenges_Expeditions",
+        "ProgressField": "amount"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "PlayerCounter": "ExpeditionSolved",
+              "CounterAmount": 10,
+              "Context": 4252
+            }
+          },
+          "Template": "ConditionPlayerCounter"
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": "",
+      "TriggerProgress": {
+        "ProgressStep": 1
+      }
+    }
+  },
+  {
+    "Template": "Challenge",
+    "Values": {
+      "Standard": {
+        "GUID": 5895,
+        "Name": "Console Challenge10 (Investor)"
+      },
+      "UbisoftChallenge": {
+        "StatEvent": "Challenges_Investor",
+        "ProgressField": "amount"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "CounterAmount": 100,
+              "PlayerCounter": "PopulationByLevel",
+              "Context": 15000004
+            }
+          },
+          "Template": "ConditionPlayerCounter"
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": "",
+      "TriggerProgress": {
+        "ProgressStep": 1
+      }
+    }
+  },
+  {
+    "Template": "Challenge",
+    "Values": {
+      "Standard": {
+        "GUID": 5896,
+        "Name": "Console Challenge11 (Attractiveness)"
+      },
+      "UbisoftChallenge": {
+        "StatEvent": "Challenges_Attractivness",
+        "ProgressField": "amount"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "CounterAmount": 3000,
+              "PlayerCounter": "Attractiveness"
+            }
+          },
+          "Template": "ConditionPlayerCounter"
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": "",
+      "TriggerProgress": {
+        "ProgressStep": 100
+      }
+    }
+  },
+  {
+    "Template": "Challenge",
+    "Values": {
+      "Standard": {
+        "GUID": 5905,
+        "Name": "Console Challenge12 (SellSchooners)"
+      },
+      "UbisoftChallenge": {
+        "StatEvent": "Challenges_Schooners",
+        "ProgressField": "amount"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "CounterAmount": 5,
+              "PlayerCounter": "TradeProductSold",
+              "Context": 100438
+            }
+          },
+          "Template": "ConditionPlayerCounter"
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": "",
+      "TriggerProgress": {
+        "ProgressStep": 1
+      }
+    }
+  },
+  {
+    "Template": "Challenge",
+    "Values": {
+      "Standard": {
+        "GUID": 5906,
+        "Name": "Console Challenge13 (GreatEastern)"
+      },
+      "UbisoftChallenge": {
+        "StatEvent": "Challenges_GreatEastern"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "CounterAmount": 1,
+              "Context": 118718
+            }
+          },
+          "Template": "ConditionPlayerCounter"
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": "",
+      "TriggerProgress": ""
+    }
+  },
+  {
+    "Template": "Challenge",
+    "Values": {
+      "Standard": {
+        "GUID": 5907,
+        "Name": "Console Challenge14 (Leviathan)"
+      },
+      "UbisoftChallenge": {
+        "StatEvent": "Challenges_BattleCruiser"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Values": {
+            "Condition": "",
+            "ConditionPlayerCounter": {
+              "CounterAmount": 1,
+              "Context": 100442
+            }
+          },
+          "Template": "ConditionPlayerCounter"
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": "",
+      "TriggerProgress": ""
+    }
+  },
+  {
+    "Template": "Challenge",
+    "Values": {
+      "Standard": {
+        "GUID": 5908,
+        "Name": "Console Challenge15 (Exhibition)"
+      },
+      "UbisoftChallenge": {
+        "StatEvent": "Challenges_Party"
+      },
+      "Trigger": {
+        "TriggerCondition": {
+          "Values": {
+            "Condition": "",
+            "ConditionMonumentEventsActive": {
+              "MonumentEventsActive": {
+                "Item": [
+                  {
+                    "MonumentEventGUID": 17008
+                  },
+                  {
+                    "MonumentEventGUID": 17011
+                  },
+                  {
+                    "MonumentEventGUID": 17014
+                  }
+                ]
+              }
+            }
+          },
+          "Template": "ConditionMonumentEventActive"
+        },
+        "ResetTrigger": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "EmptyAutoCreateValue": ""
+          }
+        }
+      },
+      "TriggerSetup": "",
+      "TriggerProgress": ""
+    }
+  }
+]

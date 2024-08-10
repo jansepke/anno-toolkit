@@ -12,8 +12,7 @@
         "LocaText": {
           "English": {
             "Text": "Small Trading Post",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 7009
@@ -58,13 +57,24 @@
         }
       },
       "Selection": {
-        "GUIType": "Kontor"
+        "GUIType": "Kontor",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Object": {
         "Variations": {
           "Item": {
             "Filename": "data/graphics/buildings/special/kontor_01/kontor_01.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 1010517,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Constructable": "",
@@ -151,15 +161,15 @@
       },
       "StorageBase": "",
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 9000,
-        "HPBarOffset": 7,
-        "HasRuinState": 1,
         "PausedTimeIfAttacked": 0,
-        "SelfHealPerHealTick": 5,
+        "HPBarOffset": 7,
         "DefenseByAIFactor": 9994,
-        "TakeOverEffect": "OnHit",
+        "MilitaryDefensePoints": 5,
         "MoralePower": 200,
         "IslandWarFlag": 102303,
+        "HasRuinState": 1,
         "ExplosionEffects": {
           "Item": [
             {
@@ -180,7 +190,7 @@
         },
         "ExplosionEffectsMin": 2,
         "ExplosionEffectsMax": 3,
-        "MilitaryDefensePoints": 5
+        "SelfHealPerHealTick": 5
       },
       "Upgradable": {
         "NextGUID": 100510,
@@ -218,27 +228,29 @@
       "Culture": "",
       "QuestObject": "",
       "Attacker": {
+        "BasicAttackType": "HarbourTower",
+        "BaseDamage": 150,
+        "ReloadTime": 50,
         "AttackRange": 92,
         "LineOfSightRange": 92,
-        "ReloadTime": 50,
-        "ProjectileAsset": 101974,
-        "BaseDamage": 150,
         "Turrets": {
           "Item": {
             "TurnSpan": 360,
             "TurretCfg": "data/graphics/buildings/special/harbor_05/harbor_05_turret.cfg"
           }
         },
-        "AccuracyBase": 1,
-        "AccuracyIncreaseOverDistance": 100,
+        "ProjectileAsset": 101974,
         "MuzzleEffectAssets": {
           "Item": {
             "MuzzleEffectAsset": 102220
           }
         },
-        "EmitProjectileTimeAfterStartAnimation": 0.3
+        "EmitProjectileTimeAfterStartAnimation": 0.3,
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 100
       },
-      "CommandQueue": ""
+      "CommandQueue": "",
+      "BuildingUnique": ""
     }
   },
   {
@@ -254,8 +266,7 @@
         "LocaText": {
           "English": {
             "Text": "Medium Trading Post",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 7010
@@ -301,13 +312,24 @@
         }
       },
       "Selection": {
-        "GUIType": "Kontor"
+        "GUIType": "Kontor",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Object": {
         "Variations": {
           "Item": {
             "Filename": "data/graphics/buildings/special/kontor_02/kontor_02.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 100510,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Constructable": "",
@@ -380,15 +402,15 @@
       },
       "StorageBase": "",
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 9000,
-        "HPBarOffset": 7,
-        "HasRuinState": 1,
         "PausedTimeIfAttacked": 0,
-        "SelfHealPerHealTick": 5,
+        "HPBarOffset": 7,
         "DefenseByAIFactor": 9995,
-        "TakeOverEffect": "OnHit",
+        "MilitaryDefensePoints": 5,
         "MoralePower": 200,
         "IslandWarFlag": 102303,
+        "HasRuinState": 1,
         "ExplosionEffects": {
           "Item": [
             {
@@ -409,7 +431,7 @@
         },
         "ExplosionEffectsMin": 3,
         "ExplosionEffectsMax": 3,
-        "MilitaryDefensePoints": 5
+        "SelfHealPerHealTick": 5
       },
       "Upgradable": {
         "NextGUID": 100511,
@@ -449,27 +471,29 @@
       "Culture": "",
       "QuestObject": "",
       "Attacker": {
+        "BasicAttackType": "HarbourTower",
+        "BaseDamage": 150,
+        "ReloadTime": 50,
         "AttackRange": 92,
         "LineOfSightRange": 92,
-        "ReloadTime": 50,
-        "ProjectileAsset": 101974,
-        "BaseDamage": 150,
         "Turrets": {
           "Item": {
             "TurnSpan": 360,
             "TurretCfg": "data/graphics/buildings/special/harbor_05/harbor_05_turret.cfg"
           }
         },
-        "AccuracyBase": 1,
-        "AccuracyIncreaseOverDistance": 100,
+        "ProjectileAsset": 101974,
         "MuzzleEffectAssets": {
           "Item": {
             "MuzzleEffectAsset": 102220
           }
         },
-        "EmitProjectileTimeAfterStartAnimation": 0.3
+        "EmitProjectileTimeAfterStartAnimation": 0.3,
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 100
       },
-      "CommandQueue": ""
+      "CommandQueue": "",
+      "BuildingUnique": ""
     }
   },
   {
@@ -485,8 +509,7 @@
         "LocaText": {
           "English": {
             "Text": "Large Trading Post",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 7011
@@ -533,13 +556,24 @@
         }
       },
       "Selection": {
-        "GUIType": "Kontor"
+        "GUIType": "Kontor",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Object": {
         "Variations": {
           "Item": {
             "Filename": "data/graphics/buildings/special/kontor_03/kontor_03.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 100511,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Constructable": "",
@@ -612,15 +646,15 @@
       },
       "StorageBase": "",
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 9000,
-        "HPBarOffset": 7.5,
-        "HasRuinState": 1,
         "PausedTimeIfAttacked": 0,
-        "SelfHealPerHealTick": 5,
+        "HPBarOffset": 7.5,
         "DefenseByAIFactor": 9996,
-        "TakeOverEffect": "OnHit",
+        "MilitaryDefensePoints": 5,
         "MoralePower": 200,
         "IslandWarFlag": 102303,
+        "HasRuinState": 1,
         "ExplosionEffects": {
           "Item": [
             {
@@ -642,7 +676,7 @@
         },
         "ExplosionEffectsMin": 3,
         "ExplosionEffectsMax": 3,
-        "MilitaryDefensePoints": 5
+        "SelfHealPerHealTick": 5
       },
       "Upgradable": {
         "NextGUID": 269867,
@@ -683,27 +717,29 @@
       "Culture": "",
       "QuestObject": "",
       "Attacker": {
+        "BasicAttackType": "HarbourTower",
+        "BaseDamage": 150,
+        "ReloadTime": 50,
         "AttackRange": 92,
         "LineOfSightRange": 92,
-        "ReloadTime": 50,
-        "ProjectileAsset": 101974,
-        "BaseDamage": 150,
         "Turrets": {
           "Item": {
             "TurnSpan": 360,
             "TurretCfg": "data/graphics/buildings/special/harbor_05/harbor_05_turret.cfg"
           }
         },
-        "AccuracyBase": 1,
-        "AccuracyIncreaseOverDistance": 100,
+        "ProjectileAsset": 101974,
         "MuzzleEffectAssets": {
           "Item": {
             "MuzzleEffectAsset": 102220
           }
         },
-        "EmitProjectileTimeAfterStartAnimation": 0.3
+        "EmitProjectileTimeAfterStartAnimation": 0.3,
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 100
       },
-      "CommandQueue": ""
+      "CommandQueue": "",
+      "BuildingUnique": ""
     }
   },
   {
@@ -719,8 +755,7 @@
         "LocaText": {
           "English": {
             "Text": "Grand Trading Post",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 36758
@@ -768,13 +803,24 @@
         }
       },
       "Selection": {
-        "GUIType": "Kontor"
+        "GUIType": "Kontor",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Object": {
         "Variations": {
           "Item": {
             "Filename": "data/graphics/buildings/special/kontor_04/kontor_04.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 269867,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Constructable": "",
@@ -847,15 +893,15 @@
       },
       "StorageBase": "",
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 9000,
-        "HPBarOffset": 7.5,
-        "HasRuinState": 1,
         "PausedTimeIfAttacked": 0,
-        "SelfHealPerHealTick": 5,
+        "HPBarOffset": 7.5,
         "DefenseByAIFactor": 9996,
-        "TakeOverEffect": "OnHit",
+        "MilitaryDefensePoints": 5,
         "MoralePower": 200,
         "IslandWarFlag": 102303,
+        "HasRuinState": 1,
         "ExplosionEffects": {
           "Item": [
             {
@@ -877,7 +923,7 @@
         },
         "ExplosionEffectsMin": 3,
         "ExplosionEffectsMax": 3,
-        "MilitaryDefensePoints": 5
+        "SelfHealPerHealTick": 5
       },
       "Upgradable": {
         "CurrentTier": 4
@@ -889,27 +935,29 @@
       "Culture": "",
       "QuestObject": "",
       "Attacker": {
+        "BasicAttackType": "HarbourTower",
+        "BaseDamage": 150,
+        "ReloadTime": 50,
         "AttackRange": 92,
         "LineOfSightRange": 92,
-        "ReloadTime": 50,
-        "ProjectileAsset": 101974,
-        "BaseDamage": 150,
         "Turrets": {
           "Item": {
             "TurnSpan": 360,
             "TurretCfg": "data/graphics/buildings/special/harbor_05/harbor_05_turret.cfg"
           }
         },
-        "AccuracyBase": 1,
-        "AccuracyIncreaseOverDistance": 100,
+        "ProjectileAsset": 101974,
         "MuzzleEffectAssets": {
           "Item": {
             "MuzzleEffectAsset": 102220
           }
         },
-        "EmitProjectileTimeAfterStartAnimation": 0.3
+        "EmitProjectileTimeAfterStartAnimation": 0.3,
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 100
       },
-      "CommandQueue": ""
+      "CommandQueue": "",
+      "BuildingUnique": ""
     }
   },
   {
@@ -925,8 +973,7 @@
         "LocaText": {
           "English": {
             "Text": "Small Trading Post",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 7012
@@ -971,13 +1018,24 @@
         }
       },
       "Selection": {
-        "GUIType": "Kontor"
+        "GUIType": "Kontor",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Object": {
         "Variations": {
           "Item": {
             "Filename": "data/graphics/buildings/special/kontor_01/kontor_01.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 1010540,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Constructable": "",
@@ -1049,15 +1107,15 @@
       },
       "StorageBase": "",
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 9000,
-        "HPBarOffset": 7,
-        "HasRuinState": 1,
         "PausedTimeIfAttacked": 0,
-        "SelfHealPerHealTick": 5,
+        "HPBarOffset": 7,
         "DefenseByAIFactor": 9997,
-        "TakeOverEffect": "OnHit",
+        "MilitaryDefensePoints": 5,
         "MoralePower": 200,
         "IslandWarFlag": 102303,
+        "HasRuinState": 1,
         "ExplosionEffects": {
           "Item": {
             "VectorElement": {
@@ -1074,7 +1132,7 @@
         },
         "ExplosionEffectsMin": 2,
         "ExplosionEffectsMax": 3,
-        "MilitaryDefensePoints": 5
+        "SelfHealPerHealTick": 5
       },
       "Upgradable": {
         "NextGUID": 100514,
@@ -1112,27 +1170,29 @@
       "Culture": "",
       "QuestObject": "",
       "Attacker": {
+        "BasicAttackType": "HarbourTower",
+        "BaseDamage": 150,
+        "ReloadTime": 50,
         "AttackRange": 92,
         "LineOfSightRange": 92,
-        "ReloadTime": 50,
-        "ProjectileAsset": 101974,
-        "BaseDamage": 150,
         "Turrets": {
           "Item": {
             "TurnSpan": 360,
             "TurretCfg": "data/graphics/buildings/special/harbor_05/harbor_05_turret.cfg"
           }
         },
-        "AccuracyBase": 1,
-        "AccuracyIncreaseOverDistance": 100,
+        "ProjectileAsset": 101974,
         "MuzzleEffectAssets": {
           "Item": {
             "MuzzleEffectAsset": 102220
           }
         },
-        "EmitProjectileTimeAfterStartAnimation": 0.3
+        "EmitProjectileTimeAfterStartAnimation": 0.3,
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 100
       },
-      "CommandQueue": ""
+      "CommandQueue": "",
+      "BuildingUnique": ""
     }
   },
   {
@@ -1148,8 +1208,7 @@
         "LocaText": {
           "English": {
             "Text": "Medium Trading Post",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 7013
@@ -1195,13 +1254,24 @@
         }
       },
       "Selection": {
-        "GUIType": "Kontor"
+        "GUIType": "Kontor",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Object": {
         "Variations": {
           "Item": {
             "Filename": "data/graphics/buildings/special/kontor_02/kontor_02.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 100514,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Constructable": "",
@@ -1275,15 +1345,15 @@
       },
       "StorageBase": "",
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 9000,
-        "HPBarOffset": 7,
-        "HasRuinState": 1,
         "PausedTimeIfAttacked": 0,
-        "SelfHealPerHealTick": 5,
+        "HPBarOffset": 7,
         "DefenseByAIFactor": 9998,
-        "TakeOverEffect": "OnHit",
+        "MilitaryDefensePoints": 5,
         "MoralePower": 200,
         "IslandWarFlag": 102303,
+        "HasRuinState": 1,
         "ExplosionEffects": {
           "Item": {
             "VectorElement": {
@@ -1300,7 +1370,7 @@
         },
         "ExplosionEffectsMin": 2,
         "ExplosionEffectsMax": 3,
-        "MilitaryDefensePoints": 5
+        "SelfHealPerHealTick": 5
       },
       "Upgradable": {
         "NextGUID": 100515,
@@ -1340,27 +1410,29 @@
       "Culture": "",
       "QuestObject": "",
       "Attacker": {
+        "BasicAttackType": "HarbourTower",
+        "BaseDamage": 150,
+        "ReloadTime": 50,
         "AttackRange": 92,
         "LineOfSightRange": 92,
-        "ReloadTime": 50,
-        "ProjectileAsset": 101974,
-        "BaseDamage": 150,
         "Turrets": {
           "Item": {
             "TurnSpan": 360,
             "TurretCfg": "data/graphics/buildings/special/harbor_05/harbor_05_turret.cfg"
           }
         },
-        "AccuracyBase": 1,
-        "AccuracyIncreaseOverDistance": 100,
+        "ProjectileAsset": 101974,
         "MuzzleEffectAssets": {
           "Item": {
             "MuzzleEffectAsset": 102220
           }
         },
-        "EmitProjectileTimeAfterStartAnimation": 0.3
+        "EmitProjectileTimeAfterStartAnimation": 0.3,
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 100
       },
-      "CommandQueue": ""
+      "CommandQueue": "",
+      "BuildingUnique": ""
     }
   },
   {
@@ -1376,8 +1448,7 @@
         "LocaText": {
           "English": {
             "Text": "Large Trading Post",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 7014
@@ -1424,13 +1495,24 @@
         }
       },
       "Selection": {
-        "GUIType": "Kontor"
+        "GUIType": "Kontor",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Object": {
         "Variations": {
           "Item": {
             "Filename": "data/graphics/buildings/special/kontor_03/kontor_03.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 100515,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Constructable": "",
@@ -1504,15 +1586,15 @@
       },
       "StorageBase": "",
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 9000,
-        "HPBarOffset": 7.5,
-        "HasRuinState": 1,
         "PausedTimeIfAttacked": 0,
-        "SelfHealPerHealTick": 5,
+        "HPBarOffset": 7.5,
         "DefenseByAIFactor": 9999,
-        "TakeOverEffect": "OnHit",
+        "MilitaryDefensePoints": 5,
         "MoralePower": 200,
         "IslandWarFlag": 102303,
+        "HasRuinState": 1,
         "ExplosionEffects": {
           "Item": {
             "VectorElement": {
@@ -1529,7 +1611,7 @@
         },
         "ExplosionEffectsMin": 2,
         "ExplosionEffectsMax": 3,
-        "MilitaryDefensePoints": 5
+        "SelfHealPerHealTick": 5
       },
       "Upgradable": {
         "NextGUID": 269879,
@@ -1570,27 +1652,29 @@
       "Culture": "",
       "QuestObject": "",
       "Attacker": {
+        "BasicAttackType": "HarbourTower",
+        "BaseDamage": 150,
+        "ReloadTime": 50,
         "AttackRange": 92,
         "LineOfSightRange": 92,
-        "ReloadTime": 50,
-        "ProjectileAsset": 101974,
-        "BaseDamage": 150,
         "Turrets": {
           "Item": {
             "TurnSpan": 360,
             "TurretCfg": "data/graphics/buildings/special/harbor_05/harbor_05_turret.cfg"
           }
         },
-        "AccuracyBase": 1,
-        "AccuracyIncreaseOverDistance": 100,
+        "ProjectileAsset": 101974,
         "MuzzleEffectAssets": {
           "Item": {
             "MuzzleEffectAsset": 102220
           }
         },
-        "EmitProjectileTimeAfterStartAnimation": 0.3
+        "EmitProjectileTimeAfterStartAnimation": 0.3,
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 100
       },
-      "CommandQueue": ""
+      "CommandQueue": "",
+      "BuildingUnique": ""
     }
   },
   {
@@ -1606,8 +1690,7 @@
         "LocaText": {
           "English": {
             "Text": "Grand Trading Post",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 36758
@@ -1655,13 +1738,24 @@
         }
       },
       "Selection": {
-        "GUIType": "Kontor"
+        "GUIType": "Kontor",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Object": {
         "Variations": {
           "Item": {
             "Filename": "data/graphics/buildings/special/kontor_04/kontor_04.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 269879,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Constructable": "",
@@ -1734,15 +1828,15 @@
       },
       "StorageBase": "",
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 9000,
-        "HPBarOffset": 7.5,
-        "HasRuinState": 1,
         "PausedTimeIfAttacked": 0,
-        "SelfHealPerHealTick": 5,
+        "HPBarOffset": 7.5,
         "DefenseByAIFactor": 9996,
-        "TakeOverEffect": "OnHit",
+        "MilitaryDefensePoints": 5,
         "MoralePower": 200,
         "IslandWarFlag": 102303,
+        "HasRuinState": 1,
         "ExplosionEffects": {
           "Item": [
             {
@@ -1764,7 +1858,7 @@
         },
         "ExplosionEffectsMin": 3,
         "ExplosionEffectsMax": 3,
-        "MilitaryDefensePoints": 5
+        "SelfHealPerHealTick": 5
       },
       "Upgradable": {
         "CurrentTier": 4
@@ -1776,27 +1870,29 @@
       "Culture": "",
       "QuestObject": "",
       "Attacker": {
+        "BasicAttackType": "HarbourTower",
+        "BaseDamage": 150,
+        "ReloadTime": 50,
         "AttackRange": 92,
         "LineOfSightRange": 92,
-        "ReloadTime": 50,
-        "ProjectileAsset": 101974,
-        "BaseDamage": 150,
         "Turrets": {
           "Item": {
             "TurnSpan": 360,
             "TurretCfg": "data/graphics/buildings/special/harbor_05/harbor_05_turret.cfg"
           }
         },
-        "AccuracyBase": 1,
-        "AccuracyIncreaseOverDistance": 100,
+        "ProjectileAsset": 101974,
         "MuzzleEffectAssets": {
           "Item": {
             "MuzzleEffectAsset": 102220
           }
         },
-        "EmitProjectileTimeAfterStartAnimation": 0.3
+        "EmitProjectileTimeAfterStartAnimation": 0.3,
+        "AccuracyBase": 1,
+        "AccuracyIncreaseOverDistance": 100
       },
-      "CommandQueue": ""
+      "CommandQueue": "",
+      "BuildingUnique": ""
     }
   },
   {
@@ -1812,8 +1908,7 @@
         "LocaText": {
           "English": {
             "Text": "Archibald Blake's Harbour",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 7053
@@ -1832,6 +1927,12 @@
       "Cost": "",
       "Selection": {
         "GUIType": "Kontor",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "SelectionColorType": "PropertySelectionColor",
           "SelectionColor": -337045,
@@ -1880,6 +1981,7 @@
       },
       "StorageBase": "",
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 5000,
         "HasRuinState": 1,
         "ExplosionEffectsMin": 1,
@@ -1897,7 +1999,8 @@
       "Attacker": {
         "Turrets": ""
       },
-      "CommandQueue": ""
+      "CommandQueue": "",
+      "BuildingUnique": ""
     }
   },
   {
@@ -1913,8 +2016,7 @@
         "LocaText": {
           "English": {
             "Text": "Anne Harlow's Harbour",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 7054
@@ -1933,6 +2035,12 @@
       "Cost": "",
       "Selection": {
         "GUIType": "Kontor",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "SelectionColorType": "PropertySelectionColor",
           "SelectionColor": -337045,
@@ -1981,13 +2089,13 @@
       },
       "StorageBase": "",
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 8000,
         "HPBarOffset": 15,
-        "HasRuinState": 1,
         "DefenseByAIFactor": 9993,
-        "TakeOverEffect": "OnHit",
         "MoralePower": 200,
         "IslandWarFlag": 102303,
+        "HasRuinState": 1,
         "ExplosionEffectsMin": 1,
         "ExplosionEffectsMax": 1
       },
@@ -2003,7 +2111,8 @@
       "Attacker": {
         "Turrets": ""
       },
-      "CommandQueue": ""
+      "CommandQueue": "",
+      "BuildingUnique": ""
     }
   },
   {
@@ -2019,8 +2128,7 @@
         "LocaText": {
           "English": {
             "Text": "Jean La Fortune' Harbour",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 7055
@@ -2040,6 +2148,12 @@
       "Cost": "",
       "Selection": {
         "GUIType": "Kontor",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "SelectionColorType": "PropertySelectionColor",
           "SelectionColor": -337045,
@@ -2088,13 +2202,13 @@
       },
       "StorageBase": "",
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 8000,
         "HPBarOffset": 8,
-        "HasRuinState": 1,
         "DefenseByAIFactor": 9993,
-        "TakeOverEffect": "OnHit",
         "MoralePower": 200,
         "IslandWarFlag": 102303,
+        "HasRuinState": 1,
         "ExplosionEffectsMin": 1,
         "ExplosionEffectsMax": 1
       },
@@ -2110,7 +2224,8 @@
       "Attacker": {
         "Turrets": ""
       },
-      "CommandQueue": ""
+      "CommandQueue": "",
+      "BuildingUnique": ""
     }
   },
   {
@@ -2126,8 +2241,7 @@
         "LocaText": {
           "English": {
             "Text": "Isabel Sarmento's Harbour",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 7056
@@ -2146,6 +2260,12 @@
       "Cost": "",
       "Selection": {
         "GUIType": "Kontor",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "SelectionColorType": "PropertySelectionColor",
           "SelectionColor": -337045,
@@ -2199,6 +2319,7 @@
       },
       "StorageBase": "",
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 5000,
         "HasRuinState": 1,
         "ExplosionEffectsMin": 1,
@@ -2216,7 +2337,8 @@
       "Attacker": {
         "Turrets": ""
       },
-      "CommandQueue": ""
+      "CommandQueue": "",
+      "BuildingUnique": ""
     }
   },
   {
@@ -2232,8 +2354,7 @@
         "LocaText": {
           "English": {
             "Text": "Eli Bleakworth's Harbour",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 7058
@@ -2252,6 +2373,12 @@
       "Cost": "",
       "Selection": {
         "GUIType": "Kontor",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "SelectionColorType": "PropertySelectionColor",
           "SelectionColor": -337045,
@@ -2300,6 +2427,7 @@
       },
       "StorageBase": "",
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 5000,
         "HasRuinState": 1,
         "ExplosionEffectsMin": 1,
@@ -2317,7 +2445,8 @@
       "Attacker": {
         "Turrets": ""
       },
-      "CommandQueue": ""
+      "CommandQueue": "",
+      "BuildingUnique": ""
     }
   },
   {
@@ -2333,8 +2462,7 @@
         "LocaText": {
           "English": {
             "Text": "Madame Kahina's Harbour",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 7059
@@ -2353,6 +2481,12 @@
       "Cost": "",
       "Selection": {
         "GUIType": "Kontor",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "SelectionColorType": "PropertySelectionColor",
           "SelectionColor": -337045,
@@ -2401,6 +2535,7 @@
       },
       "StorageBase": "",
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 5000,
         "HasRuinState": 1,
         "ExplosionEffectsMin": 1,
@@ -2418,7 +2553,8 @@
       "Attacker": {
         "Turrets": ""
       },
-      "CommandQueue": ""
+      "CommandQueue": "",
+      "BuildingUnique": ""
     }
   },
   {
@@ -2433,8 +2569,7 @@
         "LocaText": {
           "English": {
             "Text": "Packet Steamer Office",
-            "Status": "Exported",
-            "ExportCount": 3
+            "Status": "Exported"
           }
         },
         "LineID": 21460
@@ -2512,7 +2647,9 @@
         "LoadingSpeed": 1
       },
       "StorageBase": "",
-      "Attackable": "",
+      "Attackable": {
+        "AttackableType": "IslandBuilding"
+      },
       "Upgradable": "",
       "Maintenance": "",
       "Pausable": "",
@@ -2524,7 +2661,8 @@
         "AttackRange": 0,
         "Turrets": ""
       },
-      "CommandQueue": ""
+      "CommandQueue": "",
+      "BuildingUnique": ""
     }
   },
   {
@@ -2533,15 +2671,13 @@
       "Standard": {
         "GUID": 101117,
         "Name": "Third_party_06",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_kontor.png",
-        "Version": "dlc01"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_kontor.png"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Old Nate's Harbour",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 32947
@@ -2560,6 +2696,12 @@
       "Cost": "",
       "Selection": {
         "GUIType": "Kontor",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "SelectionColorType": "PropertySelectionColor",
           "SelectionColor": -337045,
@@ -2602,6 +2744,7 @@
       },
       "StorageBase": "",
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 5000,
         "HasRuinState": 1,
         "ExplosionEffectsMin": 1,
@@ -2617,7 +2760,8 @@
       "Attacker": {
         "Turrets": ""
       },
-      "CommandQueue": ""
+      "CommandQueue": "",
+      "BuildingUnique": ""
     }
   },
   {
@@ -2626,15 +2770,13 @@
       "Standard": {
         "GUID": 116035,
         "Name": "Third_party_09",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_kontor.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_kontor.png"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Inuit Trading Post",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 35113
@@ -2653,6 +2795,12 @@
       "Cost": "",
       "Selection": {
         "GUIType": "Kontor",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "SelectionColorType": "PropertySelectionColor",
           "SelectionColor": -337045,
@@ -2701,6 +2849,7 @@
       },
       "StorageBase": "",
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 5000,
         "HasRuinState": 1,
         "ExplosionEffectsMin": 1,
@@ -2716,7 +2865,8 @@
       "Attacker": {
         "Turrets": ""
       },
-      "CommandQueue": ""
+      "CommandQueue": "",
+      "BuildingUnique": ""
     }
   },
   {
@@ -2726,15 +2876,13 @@
         "GUID": 119404,
         "Name": "StoryIsland01 Monastery Kontor",
         "IconFilename": "data/ui/2kimages/main/profiles/storry_island_portrait_01.png",
-        "InfoDescription": 2676,
-        "Version": "dlc06"
+        "InfoDescription": 2676
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Kidusi Anitoni Trading Post",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 44529
@@ -2750,6 +2898,12 @@
       },
       "Cost": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "SelectionColorType": "PropertySelectionColor",
           "SelectionColor": -337045,
@@ -2798,10 +2952,11 @@
       },
       "StorageBase": "",
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 8000,
         "HPBarOffset": 15,
-        "HasRuinState": 1,
         "DefenseByAIFactor": 9993,
+        "HasRuinState": 1,
         "ExplosionEffectsMin": 1,
         "ExplosionEffectsMax": 1
       },
@@ -2817,7 +2972,8 @@
       "Attacker": {
         "Turrets": ""
       },
-      "CommandQueue": ""
+      "CommandQueue": "",
+      "BuildingUnique": ""
     }
   },
   {
@@ -2827,15 +2983,13 @@
         "GUID": 123720,
         "Name": "StoryIsland02 Military Kontor",
         "IconFilename": "data/ui/2kimages/main/profiles/storry_island_portrait_02.png",
-        "InfoDescription": 2979,
-        "Version": "dlc06"
+        "InfoDescription": 2979
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Angereb Trading Post",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 44530
@@ -2851,6 +3005,12 @@
       },
       "Cost": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "SelectionColorType": "PropertySelectionColor",
           "SelectionColor": -337045,
@@ -2899,11 +3059,12 @@
       },
       "StorageBase": "",
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 8000,
         "HPBarOffset": 15,
-        "HasRuinState": 1,
         "DefenseByAIFactor": 9993,
         "IslandWarFlag": 102303,
+        "HasRuinState": 1,
         "ExplosionEffectsMin": 1,
         "ExplosionEffectsMax": 1
       },
@@ -2919,7 +3080,8 @@
       "Attacker": {
         "Turrets": ""
       },
-      "CommandQueue": ""
+      "CommandQueue": "",
+      "BuildingUnique": ""
     }
   },
   {
@@ -2929,15 +3091,13 @@
         "GUID": 119408,
         "Name": "StoryIsland03 Economy Kontor",
         "IconFilename": "data/ui/2kimages/main/profiles/storry_island_portrait_03.png",
-        "InfoDescription": 2676,
-        "Version": "dlc06"
+        "InfoDescription": 2676
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Waha Desher Trading Post",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 44531
@@ -2953,6 +3113,12 @@
       },
       "Cost": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "SelectionColorType": "PropertySelectionColor",
           "SelectionColor": -337045,
@@ -2997,10 +3163,11 @@
       },
       "StorageBase": "",
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 8000,
         "HPBarOffset": 15,
-        "HasRuinState": 1,
         "DefenseByAIFactor": 9993,
+        "HasRuinState": 1,
         "ExplosionEffectsMin": 1,
         "ExplosionEffectsMax": 1
       },
@@ -3014,7 +3181,8 @@
       "Attacker": {
         "Turrets": ""
       },
-      "CommandQueue": ""
+      "CommandQueue": "",
+      "BuildingUnique": ""
     }
   },
   {
@@ -3024,15 +3192,13 @@
         "GUID": 119409,
         "Name": "Third_party_10 Kontor (Ketema)",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_kontor_main.png",
-        "InfoDescription": 2979,
-        "Version": "dlc06"
+        "InfoDescription": 2979
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Ketema's Harbour",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 44049
@@ -3051,6 +3217,12 @@
       "Cost": "",
       "Selection": {
         "GUIType": "Kontor",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "SelectionColorType": "PropertySelectionColor",
           "SelectionColor": -337045,
@@ -3099,6 +3271,7 @@
       },
       "StorageBase": "",
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 5000,
         "HasRuinState": 1,
         "ExplosionEffectsMin": 1,
@@ -3116,7 +3289,8 @@
       "Attacker": {
         "Turrets": ""
       },
-      "CommandQueue": ""
+      "CommandQueue": "",
+      "BuildingUnique": ""
     }
   },
   {
@@ -3126,15 +3300,13 @@
         "GUID": 119425,
         "Name": "Third_party_02 Kontor (Blake)",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_kontor_main.png",
-        "InfoDescription": 2979,
-        "Version": "dlc06"
+        "InfoDescription": 2979
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Blake's Enbesan Harbor",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 44050
@@ -3153,6 +3325,12 @@
       },
       "Cost": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "SelectionColorType": "PropertySelectionColor",
           "SelectionColor": -337045,
@@ -3201,6 +3379,7 @@
       },
       "StorageBase": "",
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 5000,
         "HasRuinState": 1,
         "ExplosionEffectsMin": 1,
@@ -3216,16 +3395,17 @@
       "Culture": "",
       "QuestObject": "",
       "Attacker": {
+        "BaseDamage": 150,
+        "ReloadTime": 50,
         "AttackRange": 92,
         "LineOfSightRange": 92,
-        "ReloadTime": 50,
         "ProjectileAsset": 101974,
-        "BaseDamage": 150,
+        "EmitProjectileTimeAfterStartAnimation": 0.3,
         "AccuracyBase": 1,
-        "AccuracyIncreaseOverDistance": 100,
-        "EmitProjectileTimeAfterStartAnimation": 0.3
+        "AccuracyIncreaseOverDistance": 100
       },
-      "CommandQueue": ""
+      "CommandQueue": "",
+      "BuildingUnique": ""
     }
   },
   {
@@ -3235,15 +3415,13 @@
         "GUID": 131065,
         "Name": "Third_party_14 Kontor (Nomads on Blake's island)",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_kontor_main.png",
-        "InfoDescription": 2979,
-        "Version": "dlc06"
+        "InfoDescription": 2979
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Nomad Harbour",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 44533
@@ -3260,6 +3438,12 @@
       },
       "Cost": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "SelectionColorType": "PropertySelectionColor",
           "SelectionColor": -337045,
@@ -3307,6 +3491,7 @@
       },
       "StorageBase": "",
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 5000,
         "HasRuinState": 1,
         "ExplosionEffectsMin": 1,
@@ -3322,17 +3507,684 @@
       "Culture": "",
       "QuestObject": "",
       "Attacker": {
+        "BaseDamage": 150,
+        "ReloadTime": 50,
         "AttackRange": 92,
         "LineOfSightRange": 92,
-        "ReloadTime": 50,
-        "ProjectileAsset": 101974,
-        "BaseDamage": 150,
         "Turrets": "",
+        "ProjectileAsset": 101974,
+        "EmitProjectileTimeAfterStartAnimation": 0.3,
         "AccuracyBase": 1,
-        "AccuracyIncreaseOverDistance": 100,
-        "EmitProjectileTimeAfterStartAnimation": 0.3
+        "AccuracyIncreaseOverDistance": 100
       },
-      "CommandQueue": ""
+      "CommandQueue": "",
+      "BuildingUnique": ""
+    }
+  },
+  {
+    "Template": "HarborWarehouse7",
+    "Values": {
+      "Standard": {
+        "GUID": 2533,
+        "Name": "dlc11_scenario03_airship_nate_kontor",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_kontor.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Old Nate's Harbour",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 55848
+      },
+      "Blocking": {
+        "HidePropsRadius": -20,
+        "DeletePropsRadius": -20,
+        "BlockHarborFeedback": 1,
+        "HasBuildingBaseTiles": 1,
+        "HarbourAreaExpand": 1
+      },
+      "Building": {
+        "BuildingType": "Warehouse",
+        "SnapRadius": 10
+      },
+      "Cost": "",
+      "Selection": {
+        "GUIType": "Kontor",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "Colors": {
+          "SelectionColorType": "PropertySelectionColor",
+          "SelectionColor": -337045,
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc01/graphics/buildings/3rd_party/3rd_party_06_kontor_01/3rd_party_06_kontor_01.cfg"
+          }
+        },
+        "AssignDefaultParticipant": 1,
+        "DefaultParticipant": "Scenario3_Nate"
+      },
+      "Constructable": "",
+      "Mesh": "",
+      "SoundEmitter": "",
+      "Locked": "",
+      "Infolayer": "",
+      "FeedbackController": "",
+      "Warehouse": {
+        "WarehouseStorage": {
+          "StorageMax": 10
+        }
+      },
+      "LogisticNode": {
+        "QueueConfiguration": {
+          "ProcessingQueueParallelCount": 4
+        }
+      },
+      "DistributionCenter": "",
+      "MinimapToken": {
+        "TokenAsset": 500495
+      },
+      "AmbientMoodProvider": "",
+      "LoadingPier": {
+        "NumOfPiers": 1,
+        "LoadingSpeed": 10
+      },
+      "StorageBase": "",
+      "Attackable": {
+        "AttackableType": "HarbourBuilding",
+        "MaximumHitPoints": 5000,
+        "HasRuinState": 1,
+        "ExplosionEffectsMin": 1,
+        "ExplosionEffectsMax": 1
+      },
+      "Upgradable": "",
+      "Maintenance": "",
+      "Pausable": "",
+      "Distribution": "",
+      "UpgradeList": "",
+      "Culture": "",
+      "QuestObject": "",
+      "Attacker": {
+        "Turrets": ""
+      },
+      "CommandQueue": "",
+      "BuildingUnique": ""
+    }
+  },
+  {
+    "Template": "HarborWarehouse7",
+    "Values": {
+      "Standard": {
+        "GUID": 5920,
+        "Name": "Sceanrio04_Kontor_Hunt",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_kontor.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Margaret Hunt's Harbour",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 60449
+      },
+      "Blocking": {
+        "HidePropsRadius": -20,
+        "DeletePropsRadius": -20,
+        "BlockHarborFeedback": 1,
+        "HasBuildingBaseTiles": 1,
+        "HarbourAreaExpand": 1
+      },
+      "Building": {
+        "BuildingType": "Warehouse",
+        "SnapRadius": 10,
+        "AssociatedRegions": "Colony01"
+      },
+      "Cost": "",
+      "Selection": {
+        "GUIType": "Kontor",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "Colors": {
+          "SelectionColorType": "PropertySelectionColor",
+          "SelectionColor": -337045,
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/buildings/3rd_party/3rd_party_02_kontor/3rd_party_02_kontor.cfg"
+          }
+        },
+        "AssignDefaultParticipant": 1,
+        "DefaultParticipant": "Scenario4_Trader_Hunt"
+      },
+      "Constructable": "",
+      "Mesh": "",
+      "SoundEmitter": {
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        }
+      },
+      "Locked": "",
+      "Infolayer": "",
+      "FeedbackController": "",
+      "Warehouse": {
+        "WarehouseStorage": {
+          "StorageMax": 150
+        }
+      },
+      "LogisticNode": {
+        "QueueConfiguration": {
+          "ProcessingQueueParallelCount": 4
+        }
+      },
+      "DistributionCenter": "",
+      "MinimapToken": {
+        "TokenAsset": 500491
+      },
+      "AmbientMoodProvider": "",
+      "LoadingPier": {
+        "NumOfPiers": 2,
+        "LoadingSpeed": 10
+      },
+      "StorageBase": "",
+      "Attackable": {
+        "AttackableType": "HarbourBuilding",
+        "MaximumHitPoints": 5000,
+        "HasRuinState": 1,
+        "ExplosionEffectsMin": 1,
+        "ExplosionEffectsMax": 1
+      },
+      "Upgradable": {
+        "CurrentTier": 3
+      },
+      "Maintenance": "",
+      "Pausable": "",
+      "Distribution": "",
+      "UpgradeList": "",
+      "Culture": "",
+      "QuestObject": "",
+      "Attacker": {
+        "Turrets": ""
+      },
+      "CommandQueue": "",
+      "BuildingUnique": ""
+    }
+  },
+  {
+    "Template": "HarborWarehouse7",
+    "Values": {
+      "Standard": {
+        "GUID": 5921,
+        "Name": "Sceanrio04_Kontor_Yaosca",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_kontor.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Yaosca's Harbour",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 60450
+      },
+      "Blocking": {
+        "HidePropsRadius": -20,
+        "DeletePropsRadius": -20,
+        "BlockHarborFeedback": 1,
+        "HasBuildingBaseTiles": 1,
+        "HarbourAreaExpand": 1
+      },
+      "Building": {
+        "BuildingType": "Warehouse",
+        "SnapRadius": 10,
+        "AssociatedRegions": "Colony01"
+      },
+      "Cost": "",
+      "Selection": {
+        "GUIType": "Kontor",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "Colors": {
+          "SelectionColorType": "PropertySelectionColor",
+          "SelectionColor": -337045,
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/eoy21/graphics/buildings/3rdparty/kontor/3rdparty_ggj_kontor.cfg"
+          }
+        },
+        "AssignDefaultParticipant": 1,
+        "DefaultParticipant": "Scenario4_Trader_Yaosca"
+      },
+      "Constructable": "",
+      "Mesh": "",
+      "SoundEmitter": {
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        }
+      },
+      "Locked": "",
+      "Infolayer": "",
+      "FeedbackController": "",
+      "Warehouse": {
+        "WarehouseStorage": {
+          "StorageMax": 150
+        }
+      },
+      "LogisticNode": {
+        "QueueConfiguration": {
+          "ProcessingQueueParallelCount": 4
+        }
+      },
+      "DistributionCenter": "",
+      "MinimapToken": {
+        "TokenAsset": 500496
+      },
+      "AmbientMoodProvider": "",
+      "LoadingPier": {
+        "NumOfPiers": 2,
+        "LoadingSpeed": 10
+      },
+      "StorageBase": "",
+      "Attackable": {
+        "AttackableType": "HarbourBuilding",
+        "MaximumHitPoints": 5000,
+        "HasRuinState": 1,
+        "ExplosionEffectsMin": 1,
+        "ExplosionEffectsMax": 1
+      },
+      "Upgradable": {
+        "CurrentTier": 3
+      },
+      "Maintenance": "",
+      "Pausable": "",
+      "Distribution": "",
+      "UpgradeList": "",
+      "Culture": "",
+      "QuestObject": "",
+      "Attacker": {
+        "Turrets": ""
+      },
+      "CommandQueue": "",
+      "BuildingUnique": ""
+    }
+  },
+  {
+    "Template": "HarborWarehouse7",
+    "Values": {
+      "Standard": {
+        "GUID": 5922,
+        "Name": "Sceanrio04_Kontor_Malching",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_kontor.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Malching's Harbour",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 60451
+      },
+      "Blocking": {
+        "HidePropsRadius": -20,
+        "DeletePropsRadius": -20,
+        "GroundDecalAsset": 102460,
+        "GroundDecalInvisible": 102459,
+        "BlockHarborFeedback": 1,
+        "HasBuildingBaseTiles": 1,
+        "HarbourAreaExpand": 1
+      },
+      "Building": {
+        "BuildingType": "Warehouse",
+        "SnapRadius": 10,
+        "AssociatedRegions": "Colony01"
+      },
+      "Cost": "",
+      "Selection": {
+        "GUIType": "Kontor",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "Colors": {
+          "SelectionColorType": "PropertySelectionColor",
+          "SelectionColor": -337045,
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/buildings/special/kontor_04/kontor_04.cfg"
+          }
+        },
+        "AssignDefaultParticipant": 1,
+        "DefaultParticipant": "Scenario4_Trader_Malching"
+      },
+      "Constructable": "",
+      "Mesh": "",
+      "SoundEmitter": {
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        }
+      },
+      "Locked": "",
+      "Infolayer": "",
+      "FeedbackController": "",
+      "Warehouse": {
+        "WarehouseStorage": {
+          "StorageMax": 150
+        }
+      },
+      "LogisticNode": {
+        "QueueConfiguration": {
+          "ProcessingQueueParallelCount": 4
+        }
+      },
+      "DistributionCenter": "",
+      "MinimapToken": {
+        "TokenAsset": 500491
+      },
+      "AmbientMoodProvider": "",
+      "LoadingPier": {
+        "NumOfPiers": 2,
+        "LoadingSpeed": 10
+      },
+      "StorageBase": "",
+      "Attackable": {
+        "AttackableType": "HarbourBuilding",
+        "MaximumHitPoints": 5000,
+        "HasRuinState": 1,
+        "ExplosionEffectsMin": 1,
+        "ExplosionEffectsMax": 1
+      },
+      "Upgradable": {
+        "CurrentTier": 3
+      },
+      "Maintenance": "",
+      "Pausable": "",
+      "Distribution": "",
+      "UpgradeList": "",
+      "Culture": "",
+      "QuestObject": "",
+      "Attacker": {
+        "Turrets": {
+          "Item": {
+            "TurnSpan": 360,
+            "TurretCfg": "data/graphics/buildings/special/harbor_05/harbor_05_turret.cfg"
+          }
+        }
+      },
+      "CommandQueue": "",
+      "BuildingUnique": ""
+    }
+  },
+  {
+    "Template": "HarborWarehouse7",
+    "Values": {
+      "Standard": {
+        "GUID": 5923,
+        "Name": "Sceanrio04_Kontor_DaSilva",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_kontor.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "DaSilva's Harbour",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 60452
+      },
+      "Blocking": {
+        "HidePropsRadius": -20,
+        "DeletePropsRadius": -20,
+        "GroundDecalAsset": 102460,
+        "GroundDecalInvisible": 102459,
+        "BlockHarborFeedback": 1,
+        "HasBuildingBaseTiles": 1,
+        "HarbourAreaExpand": 1
+      },
+      "Building": {
+        "BuildingType": "Warehouse",
+        "SnapRadius": 10,
+        "AssociatedRegions": "Colony01"
+      },
+      "Cost": "",
+      "Selection": {
+        "GUIType": "Kontor",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "Colors": {
+          "SelectionColorType": "PropertySelectionColor",
+          "SelectionColor": -337045,
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/buildings/special/kontor_colony01_03/kontor_colony01_03.cfg"
+          }
+        },
+        "AssignDefaultParticipant": 1,
+        "DefaultParticipant": "Scenario4_Trader_DaSilva"
+      },
+      "Constructable": "",
+      "Mesh": "",
+      "SoundEmitter": {
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        }
+      },
+      "Locked": "",
+      "Infolayer": "",
+      "FeedbackController": "",
+      "Warehouse": {
+        "WarehouseStorage": {
+          "StorageMax": 150
+        }
+      },
+      "LogisticNode": {
+        "QueueConfiguration": {
+          "ProcessingQueueParallelCount": 4
+        }
+      },
+      "DistributionCenter": "",
+      "MinimapToken": {
+        "TokenAsset": 500491
+      },
+      "AmbientMoodProvider": "",
+      "LoadingPier": {
+        "NumOfPiers": 2,
+        "LoadingSpeed": 10
+      },
+      "StorageBase": "",
+      "Attackable": {
+        "AttackableType": "HarbourBuilding",
+        "MaximumHitPoints": 5000,
+        "HasRuinState": 1,
+        "ExplosionEffectsMin": 1,
+        "ExplosionEffectsMax": 1
+      },
+      "Upgradable": {
+        "CurrentTier": 3
+      },
+      "Maintenance": "",
+      "Pausable": "",
+      "Distribution": "",
+      "UpgradeList": "",
+      "Culture": "",
+      "QuestObject": "",
+      "Attacker": {
+        "Turrets": {
+          "Item": {
+            "TurnSpan": 360,
+            "TurretCfg": "data/graphics/buildings/special/harbor_05_colony01/harbor_05_colony01_turret.cfg"
+          }
+        }
+      },
+      "CommandQueue": "",
+      "BuildingUnique": ""
+    }
+  },
+  {
+    "Template": "HarborWarehouse7",
+    "Values": {
+      "Standard": {
+        "GUID": 5924,
+        "Name": "Sceanrio04_Kontor_Paloma",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_kontor.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Palomas's Airfield",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 60453
+      },
+      "Blocking": {
+        "HidePropsRadius": -20,
+        "DeletePropsRadius": -20,
+        "BlockHarborFeedback": 1,
+        "HasBuildingBaseTiles": 1,
+        "HarbourAreaExpand": 1
+      },
+      "Building": {
+        "BuildingType": "Warehouse",
+        "SnapRadius": 10,
+        "AssociatedRegions": "Colony01"
+      },
+      "Cost": "",
+      "Selection": {
+        "GUIType": "Kontor",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "Colors": {
+          "SelectionColorType": "PropertySelectionColor",
+          "SelectionColor": -337045,
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc12/scenario04/graphics/vehicle/airships/airship_agile_medium/airship_agile_medium_skin_02.cfg"
+          }
+        },
+        "AssignDefaultParticipant": 1,
+        "DefaultParticipant": "Scenario4_Trader_Paloma"
+      },
+      "Constructable": "",
+      "Mesh": "",
+      "SoundEmitter": {
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        }
+      },
+      "Locked": "",
+      "Infolayer": "",
+      "FeedbackController": "",
+      "Warehouse": {
+        "WarehouseStorage": {
+          "StorageMax": 150
+        }
+      },
+      "LogisticNode": {
+        "QueueConfiguration": {
+          "ProcessingQueueParallelCount": 4
+        }
+      },
+      "DistributionCenter": "",
+      "MinimapToken": {
+        "TokenAsset": 500496
+      },
+      "AmbientMoodProvider": "",
+      "LoadingPier": {
+        "NumOfPiers": 2,
+        "LoadingSpeed": 10
+      },
+      "StorageBase": "",
+      "Attackable": {
+        "AttackableType": "HarbourBuilding",
+        "MaximumHitPoints": 5000,
+        "HasRuinState": 1,
+        "ExplosionEffectsMin": 1,
+        "ExplosionEffectsMax": 1
+      },
+      "Upgradable": {
+        "CurrentTier": 3
+      },
+      "Maintenance": "",
+      "Pausable": "",
+      "Distribution": "",
+      "UpgradeList": "",
+      "Culture": "",
+      "QuestObject": "",
+      "Attacker": {
+        "Turrets": {
+          "Item": [
+            {
+              "TurnSpan": 360,
+              "TurretCfg": "data/dlc11/graphics/vehicle/airships/airship_gun_turret/airship_gun_turret_01_rotated.cfg"
+            },
+            {
+              "TurnSpan": 360,
+              "TurretCfg": "data/dlc11/graphics/vehicle/airships/airship_gun_turret/airship_gun_turret_01.cfg"
+            }
+          ]
+        },
+        "ProjectileAsset": 2295,
+        "TurretExplosionEffectAsset": 2296
+      },
+      "CommandQueue": "",
+      "BuildingUnique": ""
     }
   }
 ]

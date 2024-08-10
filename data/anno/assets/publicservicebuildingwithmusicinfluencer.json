@@ -1,0 +1,304 @@
+[
+  {
+    "Template": "PublicServiceBuildingWithMusicInfluencer",
+    "Values": {
+      "Standard": {
+        "GUID": 1010359,
+        "Name": "service_04 (Church)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_church.png"
+      },
+      "Building": {
+        "BuildModeRandomRotation": 180,
+        "AssociatedRegions": "Moderate"
+      },
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 2500
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 25
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/buildings/public/service_04/service_04.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 1010359,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312,
+          "OverrideDefaultIcon": "data/ui/2kimages/main/3dicons/ornaments/church/icon_church_yellow.png",
+          "SkinList": {
+            "Item": [
+              {
+                "SkinAssetGuid": 6857
+              },
+              {
+                "SkinAssetGuid": 5231
+              },
+              {
+                "SkinAssetGuid": 33023
+              }
+            ]
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "GUIType": "PublicService",
+        "OnSelection": {
+          "Values": {
+            "ActionList": ""
+          },
+          "Template": "Actions"
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Church",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 3732
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": [
+            {
+              "Sound": 227033
+            },
+            {
+              "Sound": 200851
+            }
+          ]
+        },
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "SelectionSounds": {
+          "Item": {
+            "Sound": 9818389
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 214786
+            }
+          },
+          "BuildFailed": {
+            "Item": {
+              "Sound": 9818387
+            }
+          },
+          "BuildMoveStart": {
+            "Item": {
+              "Sound": 9818755
+            }
+          },
+          "BuildMoveSuccess": {
+            "Item": {
+              "Sound": 203994
+            }
+          },
+          "BuildMoveEnd": {
+            "Item": {
+              "Sound": 200141
+            }
+          },
+          "BuildUpgrade": {
+            "Item": {
+              "Sound": 9818760
+            }
+          }
+        },
+        "ProductionSounds": {
+          "UI": {
+            "Item": {
+              "Sound": 9818752
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          },
+          "ExplosionOneShots": {
+            "Item": {
+              "Sound": 203849
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        }
+      },
+      "FeedbackController": {
+        "NightBehavior": "HideAll"
+      },
+      "Infolayer": "",
+      "UpgradeList": "",
+      "LogisticNode": {
+        "REMOVE_THIS_LATER_FeedbackUnitTier": "Level2"
+      },
+      "PublicService": {
+        "FullSatisfactionDistance": 40,
+        "NoSatisfactionDistance": 80,
+        "PublicServiceOutputs": {
+          "Item": {
+            "Product": 1010350
+          }
+        }
+      },
+      "AmbientMoodProvider": {
+        "AmbientMood": "ResidenceTier1",
+        "DynamicEnvironmentType": "Building_Residence"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": {
+            "Product": 1010017,
+            "Amount": 50,
+            "InactiveAmount": 25
+          }
+        }
+      },
+      "Attackable": {
+        "AttackableType": "IslandBuilding",
+        "MaximumHitPoints": 4750,
+        "SelfHealPerHealTick": 4
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Fire": {
+            "Base": 1
+          }
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "DensityDistance": 20
+          }
+        },
+        "PerIncidentProximityEffect": {
+          "Fire": {
+            "ProximityEffect": {
+              "Item": [
+                {
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 2.5
+                },
+                {
+                  "IntensityThreshold": 30,
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 5
+                },
+                {
+                  "IntensityThreshold": 60,
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 7.5
+                },
+                {
+                  "IntensityThreshold": 90,
+                  "Distance": 2
+                }
+              ]
+            }
+          },
+          "Riot": {
+            "ProximityEffect": {
+              "Item": [
+                {
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 2.5
+                },
+                {
+                  "IntensityThreshold": 30,
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 5
+                },
+                {
+                  "IntensityThreshold": 60,
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 7.5
+                },
+                {
+                  "IntensityThreshold": 90,
+                  "Distance": 2
+                }
+              ]
+            }
+          },
+          "Illness": {
+            "ProximityEffect": {
+              "Item": [
+                {
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 2.5
+                },
+                {
+                  "IntensityThreshold": 30,
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 5
+                },
+                {
+                  "IntensityThreshold": 60,
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 7.5
+                },
+                {
+                  "IntensityThreshold": 90,
+                  "Distance": 2
+                }
+              ]
+            }
+          }
+        }
+      },
+      "Culture": "",
+      "MusicInfluencer": {
+        "RelevantSkinGUIDs": {
+          "Item": [
+            {
+              "Skin": 5231
+            },
+            {
+              "Skin": 6857
+            }
+          ]
+        }
+      }
+    }
+  }
+]

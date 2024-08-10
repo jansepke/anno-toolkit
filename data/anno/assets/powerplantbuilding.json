@@ -52,18 +52,28 @@
           "Item": {
             "Filename": "data/graphics/buildings/public/electricity_01/electricity_01.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 100780,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier04_atWork"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Oil Power Plant",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 7000
@@ -106,6 +116,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 3500,
         "SelfHealPerHealTick": 4
       },
@@ -158,8 +169,7 @@
         "Name": "electricity_03 (Gas Power Plant)",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_electric_works_gas.png",
         "ID": "GasPowerPlant",
-        "InfoDescription": 117550,
-        "Version": "dlc03"
+        "InfoDescription": 117550
       },
       "Building": {
         "BuildingCategoryName": 11169,
@@ -202,18 +212,28 @@
           "Item": {
             "Filename": "data/dlc03/graphics/buildings/special/electricity_02/electricity_02.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 117547,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier04_atWork"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Gas-Fired Power Plant",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 35861
@@ -264,6 +284,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 3500,
         "SelfHealPerHealTick": 4
       },
@@ -305,6 +326,487 @@
       "PublicService": {
         "FullSatisfactionDistance": 42,
         "NoSatisfactionDistance": 42
+      }
+    }
+  },
+  {
+    "Template": "PowerplantBuilding",
+    "Values": {
+      "Standard": {
+        "GUID": 7399,
+        "Name": "electricity_04 Fuel Power",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_electric_works_coal.png",
+        "InfoDescription": 11395
+      },
+      "Building": {
+        "BuildingCategoryName": 11169,
+        "BuildModeRandomRotation": 90,
+        "AssociatedRegions": "Colony01"
+      },
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 55000
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 55
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 65
+            },
+            {
+              "Ingredient": 838,
+              "Amount": 60
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/buildings/public/electricity_01/electricity_01.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "StaticHelpEntryPoint": "NewWorldRising_Electricity",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "SA_Resident_tier02_atWork"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Fuel Power Plant",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 60477
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 200832
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        }
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "LogisticNode": {
+        "TransporterCountMax": 1,
+        "TransporterAsset": 120062,
+        "PathLayers": "Street"
+      },
+      "AmbientMoodProvider": "",
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 1200,
+              "InactiveAmount": 600
+            },
+            {
+              "Product": 1010367,
+              "Amount": 190,
+              "ShutdownThreshold": 0.5
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "AttackableType": "IslandBuilding",
+        "MaximumHitPoints": 3500,
+        "SelfHealPerHealTick": 4
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Fire": {
+            "Base": 1
+          }
+        },
+        "Explosion": {
+          "DamageExplosionChance": 40
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "DensityDistance": 15,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          },
+          "Explosion": {
+            "BaseChance": 5
+          }
+        }
+      },
+      "Powerplant": {
+        "IndustrializationDistance": 42
+      },
+      "FactoryBase": {
+        "FactoryInputs": {
+          "Item": {
+            "Product": 1010234,
+            "Amount": 1,
+            "StorageAmount": 10
+          }
+        }
+      },
+      "Culture": "",
+      "PublicService": {
+        "FullSatisfactionDistance": 42,
+        "NoSatisfactionDistance": 42
+      }
+    }
+  },
+  {
+    "Template": "PowerplantBuilding",
+    "Values": {
+      "Standard": {
+        "GUID": 5164,
+        "Name": "Colony01 electricity_02 (Oil Power Plant)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_electric_works_coal.png",
+        "InfoDescription": 10946
+      },
+      "Building": {
+        "BuildingCategoryName": 11169,
+        "BuildModeRandomRotation": 90,
+        "AssociatedRegions": "Colony01",
+        "SecondPartyRelevant": 0
+      },
+      "Blocking": {
+        "HasBuildingBaseTiles": 1
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 25000
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 30
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 50
+            },
+            {
+              "Ingredient": 1010218,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010207,
+              "Amount": 30
+            },
+            {
+              "Ingredient": 1010202,
+              "Amount": 25
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc12/graphics/buildings/public/electricity/electricity_01_colony_01.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 5164,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "StaticHelpEntryPoint": "NewWorldRising_Electricity",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "SA_Resident_tier02_atWork"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Power Station",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 59421
+      },
+      "Constructable": "",
+      "Locked": {
+        "DLCDependency": 24963
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 200832
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        }
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "LogisticNode": "",
+      "AmbientMoodProvider": "",
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 400,
+              "InactiveAmount": 200
+            },
+            {
+              "Product": 1010367,
+              "Amount": 150,
+              "ShutdownThreshold": 0.5
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "AttackableType": "IslandBuilding",
+        "MaximumHitPoints": 3500,
+        "SelfHealPerHealTick": 4
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Fire": {
+            "Base": 1
+          }
+        },
+        "Explosion": {
+          "DamageExplosionChance": 40
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "DensityDistance": 15,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          },
+          "Explosion": {
+            "BaseChance": 4
+          }
+        }
+      },
+      "Powerplant": {
+        "IndustrializationDistance": 50
+      },
+      "FactoryBase": {
+        "FactoryInputs": {
+          "Item": {
+            "Product": 1010566,
+            "Amount": 1,
+            "StorageAmount": 100
+          }
+        },
+        "CycleTime": 5,
+        "ProductivityTimeMultiplier": 30,
+        "ProductivityPoints": 1,
+        "WarehouseTransporterAsset": 120025
+      },
+      "Culture": "",
+      "PublicService": {
+        "FullSatisfactionDistance": 50,
+        "NoSatisfactionDistance": 50
+      }
+    }
+  },
+  {
+    "Template": "PowerplantBuilding",
+    "Values": {
+      "Standard": {
+        "GUID": 6006,
+        "Name": "DLC12Dam_01_03",
+        "IconFilename": "data/ui/2kimages/main/3dicons/scenario/icon_dam_a.png",
+        "InfoDescription": 8145
+      },
+      "Building": {
+        "Destructable": 0,
+        "Movable": 0,
+        "DestructionConfirmation": 1,
+        "AssociatedRegions": "Colony01",
+        "DeactivateHideWhenClippingIntoCamera": 1,
+        "SecondPartyRelevant": 0,
+        "OwnerChangeTarget": 6006
+      },
+      "Blocking": {
+        "HidePropsRadius": -20,
+        "DeletePropsRadius": -20,
+        "RemovePropsRadius": -20,
+        "RemoveGrass": 0
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 50000
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 100
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 80
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc12/graphics/buildings/monument/dam/dam_construction_state_03.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 6006,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        }
+      },
+      "Mesh": {
+        "LogoMode": "CorporationLogoFromPlayer",
+        "SetCompanyLogo": 1
+      },
+      "Selection": {
+        "StaticHelpEntryPoint": "NewWorldRising_Electricity",
+        "DestructSelectable": 0,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "SA_Resident_tier02_atWork",
+        "Colors": {
+          "SelectionColorType": "PropertySelectionColor",
+          "SelectionColor": -337045,
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Dam",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 60167
+      },
+      "Constructable": "",
+      "Locked": {
+        "DefaultLockedState": 0,
+        "VisibleWhenLocked": 1
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 201661
+          }
+        }
+      },
+      "FeedbackController": {
+        "NightBehavior": "HideNone"
+      },
+      "Infolayer": "",
+      "UpgradeList": "",
+      "LogisticNode": {
+        "TransporterCountMax": 2,
+        "PathLayers": "Street"
+      },
+      "AmbientMoodProvider": {
+        "Murmur": "GGJ_Dam_03"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 1000
+            },
+            {
+              "Product": 1010367,
+              "Amount": 500,
+              "ShutdownThreshold": 0.5
+            }
+          ]
+        },
+        "ConsumerPriority": 0,
+        "ConsumerPriorityAlarmed": 2,
+        "IncomeCategory": "CultureBuildings"
+      },
+      "Attackable": {
+        "AttackableType": "IslandBuilding",
+        "MaximumHitPoints": 20000,
+        "HasRuinState": 0
+      },
+      "Pausable": "",
+      "IncidentInfectable": "",
+      "Powerplant": {
+        "IndustrializationDistance": 500
+      },
+      "FactoryBase": {
+        "CycleTime": 5
+      },
+      "Culture": {
+        "CultureType": "Monument"
+      },
+      "PublicService": {
+        "FullSatisfactionDistance": 500,
+        "NoSatisfactionDistance": 500
       }
     }
   }

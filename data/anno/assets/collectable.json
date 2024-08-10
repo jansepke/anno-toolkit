@@ -3,7 +3,13 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "ObjectPosition": "Dynamic"
@@ -28,6 +34,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -39,8 +51,7 @@
         "LocaText": {
           "English": {
             "Text": "Castaway",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 3742
@@ -68,7 +79,13 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "ObjectPosition": "Dynamic"
@@ -89,11 +106,16 @@
         "GUID": 1000212,
         "Name": "COLLECTABLE Flotsam (Generic)",
         "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_crates.png",
-        "ID": "Flotsam",
         "InfoDescription": 1029
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -104,8 +126,7 @@
         "LocaText": {
           "English": {
             "Text": "Flotsam",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 3741
@@ -125,7 +146,8 @@
       "Locked": "",
       "ItemContainer": "",
       "Lifetime": {
-        "Time": 300000
+        "Time": 300000,
+        "FlyDuration": 2500
       }
     }
   },
@@ -133,7 +155,85 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "CollectableType": "LandCollectable"
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic",
+        "MeshPlacement": "Default"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc11/props/land_floatsam_01/land_floatsam_01.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 4764,
+        "Name": "COLLECTABLE Flotsam (Terrain)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_crates.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 1,
+        "InfoCorner": 0
+      },
+      "Walking": {
+        "CreatePathPlannerUnit": 0
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Flotsam",
+            "Status": "Exported"
+          }
+        }
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 500484
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": {
+        "Time": 300000,
+        "FlyDuration": 4000
+      }
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "ObjectPosition": "Dynamic"
@@ -158,6 +258,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -168,8 +274,7 @@
         "LocaText": {
           "English": {
             "Text": "Flotsam",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 14139
@@ -197,7 +302,13 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "ObjectPosition": "Dynamic"
@@ -222,6 +333,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -232,8 +349,7 @@
         "LocaText": {
           "English": {
             "Text": "Flotsam",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 13053
@@ -257,7 +373,13 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "ObjectPosition": "Dynamic"
@@ -277,6 +399,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -287,8 +415,7 @@
         "LocaText": {
           "English": {
             "Text": "Castaway",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 13054
@@ -312,7 +439,13 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "ObjectPosition": "Dynamic"
@@ -332,6 +465,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -342,8 +481,7 @@
         "LocaText": {
           "English": {
             "Text": "Castaways",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 13055
@@ -367,7 +505,13 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "ObjectPosition": "Dynamic"
@@ -387,6 +531,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -397,8 +547,7 @@
         "LocaText": {
           "English": {
             "Text": "Wreckage",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 13056
@@ -422,7 +571,13 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "ObjectPosition": "Dynamic"
@@ -442,6 +597,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -452,8 +613,7 @@
         "LocaText": {
           "English": {
             "Text": "Naval Mine",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 13057
@@ -477,7 +637,13 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "ObjectPosition": "Dynamic",
@@ -498,6 +664,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -508,8 +680,7 @@
         "LocaText": {
           "English": {
             "Text": "Dead Fish",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 13058
@@ -535,7 +706,13 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "ObjectPosition": "Dynamic"
@@ -555,6 +732,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -565,8 +748,7 @@
         "LocaText": {
           "English": {
             "Text": "Proof",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 13059
@@ -590,7 +772,13 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "ObjectPosition": "Dynamic"
@@ -610,6 +798,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -620,8 +814,7 @@
         "LocaText": {
           "English": {
             "Text": "Ship",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 25844
@@ -645,7 +838,13 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "ObjectPosition": "Dynamic"
@@ -665,6 +864,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -675,8 +880,7 @@
         "LocaText": {
           "English": {
             "Text": "Prisoners",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 25845
@@ -699,7 +903,14 @@
   {
     "Template": "Collectable",
     "Values": {
-      "Collectable": "",
+      "Collectable": {
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Mesh": {
         "ObjectPosition": "Dynamic"
       },
@@ -723,6 +934,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -733,8 +950,7 @@
         "LocaText": {
           "English": {
             "Text": "Flotsam",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 28370
@@ -758,7 +974,13 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "ObjectPosition": "Dynamic"
@@ -778,6 +1000,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -788,8 +1016,7 @@
         "LocaText": {
           "English": {
             "Text": "Proof",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 29115
@@ -812,7 +1039,14 @@
   {
     "Template": "Collectable",
     "Values": {
-      "Collectable": "",
+      "Collectable": {
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Mesh": {
         "ObjectPosition": "Dynamic"
       },
@@ -836,6 +1070,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -846,8 +1086,7 @@
         "LocaText": {
           "English": {
             "Text": "Position 1",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 30072
@@ -870,7 +1109,14 @@
   {
     "Template": "Collectable",
     "Values": {
-      "Collectable": "",
+      "Collectable": {
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Mesh": {
         "ObjectPosition": "Dynamic"
       },
@@ -894,6 +1140,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -904,8 +1156,7 @@
         "LocaText": {
           "English": {
             "Text": "Position 2",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 30073
@@ -928,7 +1179,14 @@
   {
     "Template": "Collectable",
     "Values": {
-      "Collectable": "",
+      "Collectable": {
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Mesh": {
         "ObjectPosition": "Dynamic"
       },
@@ -952,6 +1210,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -962,8 +1226,7 @@
         "LocaText": {
           "English": {
             "Text": "Position 3",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 30074
@@ -1028,6 +1291,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -1038,8 +1307,7 @@
         "LocaText": {
           "English": {
             "Text": "Priest",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 29527
@@ -1104,6 +1372,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -1114,8 +1388,7 @@
         "LocaText": {
           "English": {
             "Text": "Prisoners",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 29528
@@ -1138,7 +1411,14 @@
   {
     "Template": "Collectable",
     "Values": {
-      "Collectable": "",
+      "Collectable": {
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Mesh": {
         "ObjectPosition": "Dynamic",
         "DefaultSequence": "default"
@@ -1156,6 +1436,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -1166,8 +1452,7 @@
         "LocaText": {
           "English": {
             "Text": "Flotsam",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         }
       },
@@ -1190,7 +1475,13 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "ObjectPosition": "Dynamic"
@@ -1210,6 +1501,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -1220,8 +1517,7 @@
         "LocaText": {
           "English": {
             "Text": "Diving Spot",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 32458
@@ -1245,7 +1541,13 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "ObjectPosition": "Dynamic"
@@ -1270,6 +1572,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -1280,8 +1588,7 @@
         "LocaText": {
           "English": {
             "Text": "Sealed Document",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 13078
@@ -1307,7 +1614,13 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "ObjectPosition": "Dynamic"
@@ -1327,6 +1640,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -1337,8 +1656,7 @@
         "LocaText": {
           "English": {
             "Text": "Group of Castaways",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 25877
@@ -1364,7 +1682,13 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "ObjectPosition": "Dynamic"
@@ -1389,6 +1713,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -1399,8 +1729,7 @@
         "LocaText": {
           "English": {
             "Text": "Flotsam",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 25878
@@ -1426,7 +1755,13 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "ObjectPosition": "Dynamic"
@@ -1451,6 +1786,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -1461,8 +1802,7 @@
         "LocaText": {
           "English": {
             "Text": "Flotsam",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 25896
@@ -1488,7 +1828,13 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "ObjectPosition": "Dynamic"
@@ -1513,6 +1859,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -1523,8 +1875,7 @@
         "LocaText": {
           "English": {
             "Text": "Flotsam",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 25901
@@ -1550,7 +1901,13 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "ObjectPosition": "Dynamic"
@@ -1570,6 +1927,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -1580,8 +1943,7 @@
         "LocaText": {
           "English": {
             "Text": "Kidnapped Farmer",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 25902
@@ -1607,7 +1969,13 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "ObjectPosition": "Dynamic"
@@ -1627,6 +1995,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -1637,8 +2011,7 @@
         "LocaText": {
           "English": {
             "Text": "Prosperity Refugees",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 25904
@@ -1664,7 +2037,13 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "ObjectPosition": "Dynamic"
@@ -1684,6 +2063,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -1694,8 +2079,7 @@
         "LocaText": {
           "English": {
             "Text": "Hostages",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 25905
@@ -1721,7 +2105,13 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "ObjectPosition": "Dynamic"
@@ -1741,6 +2131,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -1751,8 +2147,7 @@
         "LocaText": {
           "English": {
             "Text": "Bright Sands Refugees",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 25906
@@ -1777,7 +2172,14 @@
   {
     "Template": "Collectable",
     "Values": {
-      "Collectable": "",
+      "Collectable": {
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Mesh": {
         "ObjectPosition": "Dynamic"
       },
@@ -1792,11 +2194,16 @@
         "GUID": 110788,
         "Name": "Remember 5th of November - QO Flotsam Special Mine 1",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_flotsam.png",
-        "InfoDescription": 1029,
-        "Version": "dm"
+        "InfoDescription": 1029
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -1807,8 +2214,7 @@
         "LocaText": {
           "English": {
             "Text": "First Location",
-            "Status": "Exported",
-            "ExportCount": 3
+            "Status": "Exported"
           }
         },
         "LineID": 31301
@@ -1831,7 +2237,14 @@
   {
     "Template": "Collectable",
     "Values": {
-      "Collectable": "",
+      "Collectable": {
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Mesh": {
         "ObjectPosition": "Dynamic"
       },
@@ -1846,11 +2259,16 @@
         "GUID": 110789,
         "Name": "Remember 5th of November - QO Flotsam Special Mine 2",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_flotsam.png",
-        "InfoDescription": 1029,
-        "Version": "dm"
+        "InfoDescription": 1029
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -1861,8 +2279,7 @@
         "LocaText": {
           "English": {
             "Text": "Second Location",
-            "Status": "Exported",
-            "ExportCount": 3
+            "Status": "Exported"
           }
         },
         "LineID": 31302
@@ -1885,7 +2302,14 @@
   {
     "Template": "Collectable",
     "Values": {
-      "Collectable": "",
+      "Collectable": {
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Mesh": {
         "ObjectPosition": "Dynamic"
       },
@@ -1900,11 +2324,16 @@
         "GUID": 110790,
         "Name": "Remember 5th of November - QO Flotsam Special Mine 3",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_flotsam.png",
-        "InfoDescription": 1029,
-        "Version": "dm"
+        "InfoDescription": 1029
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -1915,8 +2344,7 @@
         "LocaText": {
           "English": {
             "Text": "Third Location",
-            "Status": "Exported",
-            "ExportCount": 3
+            "Status": "Exported"
           }
         },
         "LineID": 31303
@@ -1940,6 +2368,12 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "PickupCursor": 2001028
       },
       "Mesh": {
@@ -1956,11 +2390,16 @@
       "Standard": {
         "GUID": 111924,
         "Name": "SL203 - Wreckage La Corona Flagship - Visual Quest Object Sunken Treasure",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_ship.png",
-        "Version": "dlc01"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_ship.png"
       },
       "Selection": {
-        "GUIType": "Quest"
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Walking": {
         "PathPlannerLayer": "Water"
@@ -1969,8 +2408,7 @@
         "LocaText": {
           "English": {
             "Text": "Santíssima Vitória",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 32504
@@ -1996,7 +2434,13 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "ObjectPosition": "Dynamic"
@@ -2012,11 +2456,16 @@
         "GUID": 112257,
         "Name": "QO Richardson account",
         "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_ship_construction_plan.png",
-        "InfoDescription": 1029,
-        "Version": "dlc01"
+        "InfoDescription": 1029
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -2027,8 +2476,7 @@
         "LocaText": {
           "English": {
             "Text": "Proof",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 31580
@@ -2052,6 +2500,12 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "PickupCursor": 2001028
       },
       "Mesh": {
@@ -2068,11 +2522,16 @@
       "Standard": {
         "GUID": 113365,
         "Name": "SL202 - Wreckage Richardsons Ship",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_wreckage.png",
-        "Version": "dlc01"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_wreckage.png"
       },
       "Selection": {
-        "GUIType": "Quest"
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Walking": {
         "PathPlannerLayer": "Water"
@@ -2081,8 +2540,7 @@
         "LocaText": {
           "English": {
             "Text": "Wreckage of the HMS Ajax",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 32506
@@ -2108,6 +2566,12 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "CollectableType": "LandCollectable"
       },
       "Mesh": {
@@ -2125,11 +2589,16 @@
       "Standard": {
         "GUID": 117428,
         "Name": "IntoTheUnknown_SirJohn_PositionMarker",
-        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_cairn.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_cairn.png"
       },
       "Selection": {
-        "GUIType": "Quest"
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Walking": "",
       "Text": {
@@ -2152,6 +2621,12 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "PickupCursor": 2001028
       },
       "Mesh": {
@@ -2168,17 +2643,22 @@
       "Standard": {
         "GUID": 114421,
         "Name": "ArcticQ106_NextClue_IceBlocker_Interaction",
-        "IconFilename": "data/ui/2kimages/main/3dicons/campaign/icon_iceberg.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/campaign/icon_iceberg.png"
       },
-      "Selection": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Walking": "",
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Ice Blockade",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 35121
@@ -2196,6 +2676,12 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "PickupCursor": 2001028
       },
       "Mesh": {
@@ -2219,19 +2705,23 @@
       "Standard": {
         "GUID": 117615,
         "Name": "ArcticQ111_Corpse1",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png"
       },
       "Selection": {
-        "Selectable": 0
+        "Selectable": 0,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Walking": "",
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Lt. Cdr. Edgar Couch",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 35864
@@ -2251,6 +2741,12 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "PickupCursor": 2001028
       },
       "Mesh": {
@@ -2274,19 +2770,23 @@
       "Standard": {
         "GUID": 117616,
         "Name": "ArcticQ111_Corpse2",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png"
       },
       "Selection": {
-        "Selectable": 0
+        "Selectable": 0,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Walking": "",
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Cdr. Hamish Sturgeon",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 35865
@@ -2306,6 +2806,12 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "PickupCursor": 2001028
       },
       "Mesh": {
@@ -2329,19 +2835,23 @@
       "Standard": {
         "GUID": 117617,
         "Name": "ArcticQ111_Corpse3",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png"
       },
       "Selection": {
-        "Selectable": 0
+        "Selectable": 0,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Walking": "",
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Cf M Joseph Sargent",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 35866
@@ -2361,6 +2871,12 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "PickupCursor": 2001028
       },
       "Mesh": {
@@ -2384,19 +2900,23 @@
       "Standard": {
         "GUID": 117618,
         "Name": "ArcticQ111_Corpse4",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png"
       },
       "Selection": {
-        "Selectable": 0
+        "Selectable": 0,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Walking": "",
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Eng. Ranulph Little",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 35867
@@ -2416,6 +2936,12 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "PickupCursor": 2001028
       },
       "Mesh": {
@@ -2439,19 +2965,23 @@
       "Standard": {
         "GUID": 117619,
         "Name": "ArcticQ111_Corpse5",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png"
       },
       "Selection": {
-        "Selectable": 0
+        "Selectable": 0,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Walking": "",
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Srgn. Daniel Hodgson",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 35868
@@ -2471,6 +3001,12 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "PickupCursor": 2001028
       },
       "Mesh": {
@@ -2494,19 +3030,23 @@
       "Standard": {
         "GUID": 117620,
         "Name": "ArcticQ111_Corpse6",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png"
       },
       "Selection": {
-        "Selectable": 0
+        "Selectable": 0,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Walking": "",
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Francis Pocock",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 35869
@@ -2526,6 +3066,12 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "PickupCursor": 2001028
       },
       "Mesh": {
@@ -2549,19 +3095,23 @@
       "Standard": {
         "GUID": 117621,
         "Name": "ArcticQ111_Corpse7",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png"
       },
       "Selection": {
-        "Selectable": 0
+        "Selectable": 0,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Walking": "",
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Charles Coombs",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 35870
@@ -2581,6 +3131,12 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "PickupCursor": 2001028
       },
       "Mesh": {
@@ -2604,11 +3160,16 @@
       "Standard": {
         "GUID": 117622,
         "Name": "ArcticQ111_Corpse8",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_skull.png"
       },
       "Selection": {
-        "Selectable": 0
+        "Selectable": 0,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Walking": "",
       "Text": {
@@ -2633,6 +3194,12 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "PickupCursor": 2001028
       },
       "Mesh": {
@@ -2649,10 +3216,16 @@
       "Standard": {
         "GUID": 115162,
         "Name": "Mamoth bones",
-        "IconFilename": "data/ui/2kimages/main/3dicons/museum/icon_museum_sauropodon.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/museum/icon_museum_sauropodon.png"
       },
-      "Selection": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Walking": "",
       "Text": {
         "LocaText": {
@@ -2674,6 +3247,12 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "PickupCursor": 2001028
       },
       "Mesh": {
@@ -2690,17 +3269,22 @@
       "Standard": {
         "GUID": 115163,
         "Name": "Ice mamoth",
-        "IconFilename": "data/ui/2kimages/main/3dicons/museum/icon_museum_mammoth.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/museum/icon_museum_mammoth.png"
       },
-      "Selection": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Walking": "",
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Icebound Mammoth",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 36189
@@ -2718,7 +3302,13 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "MeshPlacement": "OnTerrain"
@@ -2733,17 +3323,22 @@
       "Standard": {
         "GUID": 114600,
         "Name": "ArcticQ111_IntoTheUnknown_Cairn",
-        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_cairn.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_cairn.png"
       },
-      "Selection": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Walking": "",
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Cairn",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 35126
@@ -2769,7 +3364,13 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "ObjectPosition": "Dynamic"
@@ -2785,11 +3386,16 @@
         "GUID": 123699,
         "Name": "COLLECTABLE Castaway Angereb",
         "IconFilename": "data/ui/2kimages/main/3dicons/resident/icon_resident_sheperd.png",
-        "InfoDescription": 1029,
-        "Version": "dlc06"
+        "InfoDescription": 1029
       },
       "Selection": {
-        "GUIType": "Quest"
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Walking": {
         "PathPlannerLayer": "Water"
@@ -2798,8 +3404,7 @@
         "LocaText": {
           "English": {
             "Text": "Shipwrecked Sailor",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 45618
@@ -2823,7 +3428,13 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "ObjectPosition": "Dynamic"
@@ -2847,6 +3458,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -2858,14 +3475,13 @@
         "LocaText": {
           "English": {
             "Text": "Emma, the Tourist",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 50471
       },
       "Infolayer": {
-        "DefaultInfoLayer": 500484
+        "DefaultInfoLayer": 101224
       },
       "MinimapToken": "",
       "SoundEmitter": {
@@ -2885,7 +3501,13 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "ObjectPosition": "Dynamic"
@@ -2909,6 +3531,12 @@
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -2920,8 +3548,7 @@
         "LocaText": {
           "English": {
             "Text": "Troublemaker",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 50472
@@ -2947,7 +3574,13 @@
     "Template": "Collectable",
     "Values": {
       "Collectable": {
-        "DestroyOnCollect": 1
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Mesh": {
         "ObjectPosition": "Dynamic"
@@ -2967,11 +3600,16 @@
       "Standard": {
         "GUID": 136338,
         "Name": "COLLECTABLE Brokeman",
-        "IconFilename": "data/ui/2kimages/main/3dicons/resident/icon_resident_worker.png",
-        "Version": "dlc09"
+        "IconFilename": "data/ui/2kimages/main/3dicons/resident/icon_resident_worker.png"
       },
       "Selection": {
         "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "InteractionDistance": 1,
         "InfoCorner": 0
       },
@@ -2983,14 +3621,3226 @@
         "LocaText": {
           "English": {
             "Text": "William Brokeman, the Lawyer",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 52214
       },
       "Infolayer": {
         "DefaultInfoLayer": 500484
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/floatsam/floatsam_01.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 143793,
+        "Name": "Overboard Quest Object Flotsam",
+        "IconFilename": "data/ui/2kimages/main/3dicons/books/icon_knighthood_edict.png"
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 1
+      },
+      "Walking": {
+        "PathPlannerLayer": "Water"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Royal Pardon (soaked)",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 54986
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 500334
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/floatsam/floatsam_01.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 143807,
+        "Name": "Overboard Quest Object Flotsam 2",
+        "IconFilename": "data/ui/2kimages/main/3dicons/books/icon_knighthood_edict.png"
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 1
+      },
+      "Walking": {
+        "PathPlannerLayer": "Water"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Soaked Pardon",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 54987
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 500334
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionAddGoodsToItemContainer",
+                    "Values": {
+                      "Action": "",
+                      "ActionAddGoodsToItemContainer": {
+                        "Goods": {
+                          "Item": {
+                            "Good": 104000,
+                            "Amount": 1
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NotCollactableIfTargetStoragePartiallyFull": 1
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic"
+      },
+      "Object": {
+        "Variations": {
+          "Item": [
+            {
+              "Filename": "data/graphics/quest/objects/floatsam/floatsam_01.cfg"
+            },
+            {
+              "Filename": "data/graphics/quest/objects/floatsam/floatsam_02.cfg"
+            }
+          ]
+        }
+      },
+      "Standard": {
+        "GUID": 1739,
+        "Name": "Q1-QO LostLetters",
+        "IconFilename": "data/ui/2kimages/main/3dicons/mail/icon_letter_lost.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 1,
+        "InfoCorner": 0
+      },
+      "Walking": {
+        "PathPlannerLayer": "Water"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Lost Mail",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 56695
+      },
+      "Infolayer": "",
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic"
+      },
+      "Object": {
+        "Variations": {
+          "Item": [
+            {
+              "Filename": "data/graphics/quest/objects/floatsam/floatsam_01.cfg"
+            },
+            {
+              "Filename": "data/graphics/quest/objects/floatsam/floatsam_02.cfg"
+            }
+          ]
+        }
+      },
+      "Standard": {
+        "GUID": 104792,
+        "Name": "QO Flotsam (SC03)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_crates.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 1,
+        "InfoCorner": 0
+      },
+      "Walking": {
+        "PathPlannerLayer": "Water"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Flotsam",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 3741
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 500334
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionAddGoodsToItemContainer",
+                    "Values": {
+                      "Action": "",
+                      "ActionAddGoodsToItemContainer": {
+                        "Goods": {
+                          "Item": {
+                            "Good": 101506,
+                            "Amount": 1
+                          }
+                        },
+                        "ItemContainerObjects": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NotCollactableIfTargetStoragePartiallyFull": 1
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic",
+        "MeshPlacement": "OnTerrain"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/box_stack_large/large_wooden_boxes_04.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 101503,
+        "Name": "S03_Letter1_Collectable",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_crates.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 2,
+        "InfoCorner": 0
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Lost Mail Shipment",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57242
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 138793
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionAddGoodsToItemContainer",
+                    "Values": {
+                      "Action": "",
+                      "ActionAddGoodsToItemContainer": {
+                        "Goods": {
+                          "Item": {
+                            "Good": 101693,
+                            "Amount": 1
+                          }
+                        },
+                        "ItemContainerObjects": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NotCollactableIfTargetStoragePartiallyFull": 1
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic",
+        "MeshPlacement": "OnTerrain"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/box_stack_large/large_wooden_boxes_03.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 101692,
+        "Name": "S03_Letter2_Collectable",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_crates.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 2,
+        "InfoCorner": 0
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Lost Mail Shipment",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57243
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 138793
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionAddGoodsToItemContainer",
+                    "Values": {
+                      "Action": "",
+                      "ActionAddGoodsToItemContainer": {
+                        "Goods": {
+                          "Item": {
+                            "Good": 101702,
+                            "Amount": 1
+                          }
+                        },
+                        "ItemContainerObjects": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NotCollactableIfTargetStoragePartiallyFull": 1
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic",
+        "MeshPlacement": "OnTerrain"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/box_stack/box_stack.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 102030,
+        "Name": "S03_Letter3_Collectable",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_crates.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 2,
+        "InfoCorner": 0
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Lost Mail Shipment",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57244
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 138793
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionAddGoodsToItemContainer",
+                    "Values": {
+                      "Action": "",
+                      "ActionAddGoodsToItemContainer": {
+                        "Goods": {
+                          "Item": {
+                            "Good": 101714,
+                            "Amount": 1
+                          }
+                        },
+                        "ItemContainerObjects": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NotCollactableIfTargetStoragePartiallyFull": 1
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic",
+        "MeshPlacement": "OnTerrain"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/wreckage/wreckage_01.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 102036,
+        "Name": "S03_Letter4_Collectable",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_crates.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 2,
+        "InfoCorner": 0
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Lost Mail Shipment",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57245
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 138793
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionAddGoodsToItemContainer",
+                    "Values": {
+                      "Action": "",
+                      "ActionAddGoodsToItemContainer": {
+                        "Goods": {
+                          "Item": {
+                            "Good": 101715,
+                            "Amount": 1
+                          }
+                        },
+                        "ItemContainerObjects": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NotCollactableIfTargetStoragePartiallyFull": 1
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic",
+        "MeshPlacement": "OnTerrain"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/wreckage/wreckage_02.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 102031,
+        "Name": "S03_Letter5_Collectable",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_crates.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 2,
+        "InfoCorner": 0
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Lost Mail Shipment",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57246
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 138793
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionAddGoodsToItemContainer",
+                    "Values": {
+                      "Action": "",
+                      "ActionAddGoodsToItemContainer": {
+                        "Goods": {
+                          "Item": {
+                            "Good": 101716,
+                            "Amount": 1
+                          }
+                        },
+                        "ItemContainerObjects": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NotCollactableIfTargetStoragePartiallyFull": 1
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic",
+        "MeshPlacement": "OnTerrain"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/box_stack_large/large_wooden_boxes_03.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 102037,
+        "Name": "S03_Seal1_Collectable",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_crates.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 2,
+        "InfoCorner": 0
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Lost Mail Shipment",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57247
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 138793
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionAddGoodsToItemContainer",
+                    "Values": {
+                      "Action": "",
+                      "ActionAddGoodsToItemContainer": {
+                        "Goods": {
+                          "Item": {
+                            "Good": 101905,
+                            "Amount": 1
+                          }
+                        },
+                        "ItemContainerObjects": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NotCollactableIfTargetStoragePartiallyFull": 1
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic",
+        "MeshPlacement": "OnTerrain"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/box_stack_large/large_wooden_boxes_04.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 102038,
+        "Name": "S03_Seal2_Collectable",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_crates.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 2,
+        "InfoCorner": 0
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Lost Mail Shipment",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57248
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 138793
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionAddGoodsToItemContainer",
+                    "Values": {
+                      "Action": "",
+                      "ActionAddGoodsToItemContainer": {
+                        "Goods": {
+                          "Item": {
+                            "Good": 101907,
+                            "Amount": 1
+                          }
+                        },
+                        "ItemContainerObjects": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NotCollactableIfTargetStoragePartiallyFull": 1
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic",
+        "MeshPlacement": "OnTerrain"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/wreckage/wreckage_02.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 102039,
+        "Name": "S03_Seal3_Collectable",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_crates.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 2,
+        "InfoCorner": 0
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Lost Mail Shipment",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57249
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 138793
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionAddGoodsToItemContainer",
+                    "Values": {
+                      "Action": "",
+                      "ActionAddGoodsToItemContainer": {
+                        "Goods": {
+                          "Item": {
+                            "Good": 101904,
+                            "Amount": 1
+                          }
+                        },
+                        "ItemContainerObjects": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NotCollactableIfTargetStoragePartiallyFull": 1
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic",
+        "MeshPlacement": "OnTerrain"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/box_stack/box_stack.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 102040,
+        "Name": "S03_Seal4_Collectable",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_crates.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 2,
+        "InfoCorner": 0
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Lost Mail Shipment",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57250
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 138793
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionAddGoodsToItemContainer",
+                    "Values": {
+                      "Action": "",
+                      "ActionAddGoodsToItemContainer": {
+                        "Goods": {
+                          "Item": {
+                            "Good": 101727,
+                            "Amount": 1
+                          }
+                        },
+                        "ItemContainerObjects": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NotCollactableIfTargetStoragePartiallyFull": 1
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/floatsam/floatsam_01.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 102041,
+        "Name": "S03_Bottle1_Collectable",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_crates.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 2,
+        "InfoCorner": 0
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Castaway Bottle",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57251
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 138793
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionAddGoodsToItemContainer",
+                    "Values": {
+                      "Action": "",
+                      "ActionAddGoodsToItemContainer": {
+                        "Goods": {
+                          "Item": {
+                            "Good": 101728,
+                            "Amount": 1
+                          }
+                        },
+                        "ItemContainerObjects": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NotCollactableIfTargetStoragePartiallyFull": 1
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/floatsam/floatsam_02.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 102042,
+        "Name": "S03_Bottle2_Collectable",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_crates.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 2,
+        "InfoCorner": 0
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Marooned Bottle",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57252
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 138793
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionAddGoodsToItemContainer",
+                    "Values": {
+                      "Action": "",
+                      "ActionAddGoodsToItemContainer": {
+                        "Goods": {
+                          "Item": {
+                            "Good": 101739,
+                            "Amount": 1
+                          }
+                        },
+                        "ItemContainerObjects": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NotCollactableIfTargetStoragePartiallyFull": 1
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/floatsam/floatsam_01.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 102043,
+        "Name": "S03_Bottle3_Collectable",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_crates.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 2,
+        "InfoCorner": 0
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Jettisoned Bottle",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57253
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 138793
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionAddGoodsToItemContainer",
+                    "Values": {
+                      "Action": "",
+                      "ActionAddGoodsToItemContainer": {
+                        "Goods": {
+                          "Item": {
+                            "Good": 101740,
+                            "Amount": 1
+                          }
+                        },
+                        "ItemContainerObjects": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NotCollactableIfTargetStoragePartiallyFull": 1
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/floatsam/floatsam_02.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 102044,
+        "Name": "S03_Bottle4_Collectable",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_crates.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 2,
+        "InfoCorner": 0
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Stranded Bottle",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57254
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 138793
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionAddGoodsToItemContainer",
+                    "Values": {
+                      "Action": "",
+                      "ActionAddGoodsToItemContainer": {
+                        "Goods": {
+                          "Item": {
+                            "Good": 101779,
+                            "Amount": 1
+                          }
+                        },
+                        "ItemContainerObjects": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NotCollactableIfTargetStoragePartiallyFull": 1
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic",
+        "MeshPlacement": "Default"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/box_stack_large/large_wooden_boxes_03.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 102045,
+        "Name": "S03_Bottle5_Collectable",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_crates.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 2,
+        "InfoCorner": 0
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Lost Message",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57255
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 138793
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionAddGoodsToItemContainer",
+                    "Values": {
+                      "Action": "",
+                      "ActionAddGoodsToItemContainer": {
+                        "Goods": {
+                          "Item": {
+                            "Good": 101898,
+                            "Amount": 1
+                          }
+                        },
+                        "ItemContainerObjects": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NotCollactableIfTargetStoragePartiallyFull": 1
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic",
+        "MeshPlacement": "OnTerrain"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/box_stack_large/large_wooden_boxes_03.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 102046,
+        "Name": "S03_Dilemmail1_Collectable",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_crates.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 2,
+        "InfoCorner": 0
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Lost Mail Shipment",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57533
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 138793
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionAddGoodsToItemContainer",
+                    "Values": {
+                      "Action": "",
+                      "ActionAddGoodsToItemContainer": {
+                        "Goods": {
+                          "Item": {
+                            "Good": 101899,
+                            "Amount": 1
+                          }
+                        },
+                        "ItemContainerObjects": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NotCollactableIfTargetStoragePartiallyFull": 1
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic",
+        "MeshPlacement": "OnTerrain"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/box_stack_large/large_wooden_boxes_03.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 102047,
+        "Name": "S03_Dilemmail2_Collectable",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_crates.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 2,
+        "InfoCorner": 0
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Lost Mail Shipment",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57534
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 138793
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionAddGoodsToItemContainer",
+                    "Values": {
+                      "Action": "",
+                      "ActionAddGoodsToItemContainer": {
+                        "Goods": {
+                          "Item": {
+                            "Good": 101900,
+                            "Amount": 1
+                          }
+                        },
+                        "ItemContainerObjects": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NotCollactableIfTargetStoragePartiallyFull": 1
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic",
+        "MeshPlacement": "OnTerrain"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/box_stack_large/large_wooden_boxes_03.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 102048,
+        "Name": "S03_Dilemmail3_Collectable",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_crates.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 2,
+        "InfoCorner": 0
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Lost Mail Shipment",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57535
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 138793
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionAddGoodsToItemContainer",
+                    "Values": {
+                      "Action": "",
+                      "ActionAddGoodsToItemContainer": {
+                        "Goods": {
+                          "Item": {
+                            "Good": 101903,
+                            "Amount": 1
+                          }
+                        },
+                        "ItemContainerObjects": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NotCollactableIfTargetStoragePartiallyFull": 1
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic",
+        "MeshPlacement": "OnTerrain"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/box_stack_large/large_wooden_boxes_03.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 102049,
+        "Name": "S03_Dilemmail4_Collectable",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_crates.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 2,
+        "InfoCorner": 0
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Lost Mail Shipment",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57536
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 138793
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionAddGoodsToItemContainer",
+                    "Values": {
+                      "Action": "",
+                      "ActionAddGoodsToItemContainer": {
+                        "Goods": {
+                          "Item": {
+                            "Good": 101891,
+                            "Amount": 1
+                          }
+                        },
+                        "ItemContainerObjects": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NotCollactableIfTargetStoragePartiallyFull": 1
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic",
+        "MeshPlacement": "OnTerrain"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/box_stack_large/large_wooden_boxes_03.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 102050,
+        "Name": "S03_Wallet1_Collectable",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_crates.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 2,
+        "InfoCorner": 0
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Abandoned Cargo",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57256
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 138793
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionAddGoodsToItemContainer",
+                    "Values": {
+                      "Action": "",
+                      "ActionAddGoodsToItemContainer": {
+                        "Goods": {
+                          "Item": {
+                            "Good": 102158,
+                            "Amount": 1
+                          }
+                        },
+                        "ItemContainerObjects": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NotCollactableIfTargetStoragePartiallyFull": 1
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic",
+        "MeshPlacement": "OnTerrain"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/box_stack_large/large_wooden_boxes_03.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 102063,
+        "Name": "S03_Wallet2_Collectable",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_crates.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 2,
+        "InfoCorner": 0
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Dangerous-Looking Crate",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57257
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 138793
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionAddGoodsToItemContainer",
+                    "Values": {
+                      "Action": "",
+                      "ActionAddGoodsToItemContainer": {
+                        "Goods": {
+                          "Item": {
+                            "Good": 102177,
+                            "Amount": 1
+                          }
+                        },
+                        "ItemContainerObjects": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NotCollactableIfTargetStoragePartiallyFull": 1
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic",
+        "MeshPlacement": "OnTerrain"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/box_stack_large/large_wooden_boxes_03.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 102065,
+        "Name": "S03_Wallet3_Collectable",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_crates.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 2,
+        "InfoCorner": 0
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Jettisoned Junk",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57258
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 138793
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionAddGoodsToItemContainer",
+                    "Values": {
+                      "Action": "",
+                      "ActionAddGoodsToItemContainer": {
+                        "Goods": {
+                          "Item": {
+                            "Good": 102178,
+                            "Amount": 1
+                          }
+                        },
+                        "ItemContainerObjects": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NotCollactableIfTargetStoragePartiallyFull": 1
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic",
+        "MeshPlacement": "OnTerrain"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/box_stack_large/large_wooden_boxes_03.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 102066,
+        "Name": "S03_Wallet4_Collectable",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_crates.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 2,
+        "InfoCorner": 0
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Lost Luggage",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57259
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 138793
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionAddGoodsToItemContainer",
+                    "Values": {
+                      "Action": "",
+                      "ActionAddGoodsToItemContainer": {
+                        "Goods": {
+                          "Item": {
+                            "Good": 102179,
+                            "Amount": 1
+                          }
+                        },
+                        "ItemContainerObjects": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NotCollactableIfTargetStoragePartiallyFull": 1
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic",
+        "MeshPlacement": "OnTerrain"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/box_stack_large/large_wooden_boxes_03.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 102067,
+        "Name": "S03_Wallet5_Collectable",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_crates.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 2,
+        "InfoCorner": 0
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Misplaced Package",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57260
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 138793
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionAddGoodsToItemContainer",
+                    "Values": {
+                      "Action": "",
+                      "ActionAddGoodsToItemContainer": {
+                        "Goods": {
+                          "Item": {
+                            "Good": 101897,
+                            "Amount": 1
+                          }
+                        },
+                        "ItemContainerObjects": {
+                          "IsBaseAutoCreateAsset": 1,
+                          "Values": {
+                            "ObjectFilter": {
+                              "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NotCollactableIfTargetStoragePartiallyFull": 1
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic",
+        "MeshPlacement": "OnTerrain"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/box_stack_large/large_wooden_boxes_03.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 102084,
+        "Name": "S03_ChainMail_Collectable",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_crates.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 2,
+        "InfoCorner": 0
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Lost Mail",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57261
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 138793
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic",
+        "ConstructionEffectDuration": 0,
+        "DeconstructionEffectDuration": 0,
+        "MoveEffectDuration": 0,
+        "ChangeGUIDEffectDuration": 0
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc12/graphics/quest/quest_objects/net/quest_net_01.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 105526,
+        "Name": "COLLECTABLE FishingNet",
+        "IconFilename": "data/ui/2kimages/main/3dicons/narative_item/icon_crates.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 1,
+        "InfoCorner": 0
+      },
+      "Walking": {
+        "PathPlannerLayer": "Water"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Fishing Net",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 60177
+      },
+      "Infolayer": "",
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": {
+        "FlyDuration": 2500
+      }
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": [
+                  {
+                    "Action": {
+                      "Template": "ActionAddGoodsToItemContainer",
+                      "Values": {
+                        "Action": "",
+                        "ActionAddGoodsToItemContainer": {
+                          "Goods": {
+                            "Item": [
+                              {
+                                "Good": 139553,
+                                "Amount": 1
+                              },
+                              {
+                                "Good": 139892,
+                                "Amount": 8
+                              }
+                            ]
+                          },
+                          "ItemContainerObjects": {
+                            "IsBaseAutoCreateAsset": 1,
+                            "Values": {
+                              "ObjectFilter": {
+                                "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionNotification",
+                      "Values": {
+                        "Action": "",
+                        "ActionNotification": {
+                          "Notification": {
+                            "Template": "AudioNotification",
+                            "Values": {
+                              "BaseNotification": {
+                                "DisplayTimeout": 5000
+                              },
+                              "AudioNotification": {
+                                "AudioNotificationPortrait": 100671
+                              },
+                              "NotificationSubtitle": {
+                                "SubtitleGroup": 1472659338
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "NotCollactableIfTargetStoragePartiallyFull": 1
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic",
+        "MeshPlacement": "Default"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/eoy21/graphics/quest/quest_objects/decoislands/scrap/scrap_01.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 139544,
+        "Name": "DI_08_Scrap",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_junk_inferior.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 2,
+        "InfoCorner": 0
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Pile of Debris",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 53742
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 138793
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic",
+        "MeshPlacement": "Default"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/eoy21/graphics/quest/quest_objects/decoislands/cage/cage.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 139584,
+        "Name": "DI09_Cage",
+        "IconFilename": "data/ui/2kimages/main/3dicons/machine_items/icon_elevator_1.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InfoCorner": 0
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Caged Monkey",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 53745
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 138793
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": [
+                  {
+                    "Action": {
+                      "Template": "ActionAddGoodsToItemContainer",
+                      "Values": {
+                        "Action": "",
+                        "ActionAddGoodsToItemContainer": {
+                          "Goods": {
+                            "Item": {
+                              "Good": 120041,
+                              "Amount": 25
+                            }
+                          },
+                          "ItemContainerObjects": {
+                            "IsBaseAutoCreateAsset": 1,
+                            "Values": {
+                              "ObjectFilter": {
+                                "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionNotification",
+                      "Values": {
+                        "Action": "",
+                        "ActionNotification": {
+                          "Notification": {
+                            "Template": "AudioNotification",
+                            "Values": {
+                              "BaseNotification": {
+                                "DisplayTimeout": 5000
+                              },
+                              "AudioNotification": {
+                                "AudioNotificationPortrait": 100671
+                              },
+                              "NotificationSubtitle": {
+                                "SubtitleGroup": 1689238665
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "NotCollactableIfTargetStoragePartiallyFull": 1
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic",
+        "MeshPlacement": "Default"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/eoy21/graphics/quest/quest_objects/banana_reward/banana_reward.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 139594,
+        "Name": "DI09_BananaPile",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_banana.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InfoCorner": 0
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Pile of Bananas",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 53746
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 138793
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": [
+                  {
+                    "Action": {
+                      "Template": "ActionAddGoodsToItemContainer",
+                      "Values": {
+                        "Action": "",
+                        "ActionAddGoodsToItemContainer": {
+                          "Goods": {
+                            "Item": {
+                              "Good": 139817,
+                              "Amount": 1
+                            }
+                          },
+                          "ItemContainerObjects": {
+                            "IsBaseAutoCreateAsset": 1,
+                            "Values": {
+                              "ObjectFilter": {
+                                "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionNotification",
+                      "Values": {
+                        "Action": "",
+                        "ActionNotification": {
+                          "Notification": {
+                            "Template": "AudioNotification",
+                            "Values": {
+                              "BaseNotification": {
+                                "DisplayTimeout": 5000
+                              },
+                              "AudioNotification": {
+                                "AudioNotificationPortrait": 100671
+                              },
+                              "NotificationSubtitle": {
+                                "SubtitleGroup": -16190287
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "NotCollactableIfTargetStoragePartiallyFull": 1
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic",
+        "MeshPlacement": "Default"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/eoy21/graphics/quest/quest_objects/decoislands/fishernets/fishernet_comp.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 139816,
+        "Name": "DI_11_TurtleInNet",
+        "IconFilename": "data/ui/2kimages/main/3dicons/animals/icon_turtle.png",
+        "InfoDescription": 1029
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 2,
+        "InfoCorner": 0
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Fishing Nets",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 53749
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 138793
+      },
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "CollectedSounds": {
+          "Item": {
+            "Sound": 214111
+          }
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "PickupCursor": 2001385
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/units/wildlife/dolphin/spotted_dolphin.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 143025,
+        "Name": "Dolphins",
+        "IconFilename": "data/ui/2kimages/main/3dicons/animals/icon_spotted_dolphin.png"
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 1
+      },
+      "Walking": "",
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Dolphin Pod",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 53758
+      },
+      "Infolayer": "",
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "SelectionSounds": "",
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 279250
+            }
+          }
+        },
+        "ProductionSounds": {
+          "UI": ""
+        }
+      },
+      "QuestObject": "",
+      "Locked": "",
+      "ItemContainer": "",
+      "Lifetime": ""
+    }
+  },
+  {
+    "Template": "Collectable",
+    "Values": {
+      "Collectable": {
+        "DestroyOnCollect": 1,
+        "OnCollect": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Mesh": {
+        "ObjectPosition": "Dynamic"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/quest/objects/floatsam/floatsam_01.cfg"
+          }
+        }
+      },
+      "Standard": {
+        "GUID": 143038,
+        "Name": "COLLECTABLE Primed Water Sampler",
+        "IconFilename": "data/ui/2kimages/main/3dicons/machine_items/icon_thermometer_2.png"
+      },
+      "Selection": {
+        "GUIType": "Quest",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 1
+      },
+      "Walking": {
+        "PathPlannerLayer": "Water"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Filled Water Sampler",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 54243
+      },
+      "Infolayer": {
+        "DefaultInfoLayer": 500334
       },
       "MinimapToken": "",
       "SoundEmitter": {

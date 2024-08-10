@@ -23,6 +23,11 @@
           "Item": {
             "Filename": "data/graphics/buildings/special/workforce_transfer_building/workforce_transfer_building.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 101642,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "AmbientMoodProvider": {
@@ -30,14 +35,19 @@
       },
       "Constructable": "",
       "Selection": {
-        "GUIType": "WorkforceConnector"
+        "GUIType": "WorkforceConnector",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Commuter Pier",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 21447
@@ -112,11 +122,10 @@
       },
       "Infolayer": "",
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 5000,
-        "HPBarOffset": 5,
         "PausedTimeIfAttacked": 0,
-        "SelfHealPerHealTick": 5,
-        "TakeOverEffect": "OnDeath",
+        "HPBarOffset": 5,
         "MoralePower": 100,
         "IslandWarFlag": 102303,
         "ExplosionEffects": {
@@ -138,7 +147,8 @@
           ]
         },
         "ExplosionEffectsMin": 2,
-        "ExplosionEffectsMax": 3
+        "ExplosionEffectsMax": 3,
+        "SelfHealPerHealTick": 5
       },
       "Pausable": {
         "CanPauseManually": 1
@@ -175,7 +185,9 @@
         }
       },
       "StreetActivation": "",
-      "LogisticNode": ""
+      "LogisticNode": {
+        "TransporterCountMax": 0
+      }
     }
   }
 ]

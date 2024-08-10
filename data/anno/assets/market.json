@@ -13,8 +13,7 @@
         "LocaText": {
           "English": {
             "Text": "Marketplace",
-            "Status": "Exported",
-            "ExportCount": 3
+            "Status": "Exported"
           }
         },
         "LineID": 5296
@@ -112,7 +111,13 @@
         }
       },
       "Selection": {
-        "GUIType": "Market"
+        "GUIType": "Market",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Object": {
         "Variations": {
@@ -121,10 +126,31 @@
           }
         },
         "Skins": {
+          "DefaultSkinName": 1010372,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312,
+          "OverrideDefaultIcon": "data/ui/2kimages/main/3dicons/ornaments/cosmetic_dlc06/icon_market_default.png",
           "SkinList": {
-            "Item": {
-              "SkinAssetGuid": 80160
-            }
+            "Item": [
+              {
+                "SkinAssetGuid": 80160
+              },
+              {
+                "SkinAssetGuid": 753
+              },
+              {
+                "SkinAssetGuid": 754
+              },
+              {
+                "SkinAssetGuid": 755
+              },
+              {
+                "SkinAssetGuid": 20921
+              },
+              {
+                "SkinAssetGuid": 21096
+              }
+            ]
           }
         }
       },
@@ -176,6 +202,7 @@
         "ProductStorageList": 120057
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 2500,
         "SelfHealPerHealTick": 4
       },
@@ -210,7 +237,8 @@
           "Item": {
             "Product": 120020
           }
-        }
+        },
+        "FunctionDescription": 100364
       },
       "Culture": "",
       "StreetActivation": ""
@@ -223,15 +251,13 @@
         "GUID": 114889,
         "Name": "service_arctic_01 (Canteen)",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_canteen.png",
-        "InfoDescription": 11144,
-        "Version": "dlc03"
+        "InfoDescription": 11144
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Canteen",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 35091
@@ -317,13 +343,24 @@
         }
       },
       "Selection": {
-        "GUIType": "Market"
+        "GUIType": "Market",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Object": {
         "Variations": {
           "Item": {
             "Filename": "data/dlc03/graphics/buildings/public/service_colony03_02/service_colony03_02.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 114889,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Constructable": "",
@@ -361,6 +398,7 @@
         "ProductStorageList": 120059
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 3000
       },
       "Pausable": "",
@@ -404,15 +442,13 @@
         "Name": "service_colony02_01 (Bazaar)",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_bazaar.png",
         "ID": "MarketAfrica",
-        "InfoDescription": 2976,
-        "Version": "dlc06"
+        "InfoDescription": 2976
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Marketplace",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 44459
@@ -515,13 +551,24 @@
         }
       },
       "Selection": {
-        "GUIType": "Market"
+        "GUIType": "Market",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Object": {
         "Variations": {
           "Item": {
             "Filename": "data/dlc06/graphics/buildings/public/service_colony02_01/service_colony02_01.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 114518,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Constructable": "",
@@ -552,6 +599,7 @@
         "ProductStorageList": 122362
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 1500
       },
       "Pausable": "",
@@ -564,7 +612,8 @@
           "Item": {
             "Product": 120020
           }
-        }
+        },
+        "FunctionDescription": 100364
       },
       "Culture": "",
       "StreetActivation": ""

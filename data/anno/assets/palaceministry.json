@@ -7,8 +7,7 @@
         "Name": "Palace Ministry",
         "IconFilename": "data/ui/2kimages/main/3dicons/palace/icon_local_department.png",
         "ID": "PalaceDepartment",
-        "InfoDescription": 269607,
-        "Version": "dlc04"
+        "InfoDescription": 269607
       },
       "Building": {
         "BuildingCategoryName": 11152,
@@ -20,6 +19,11 @@
           "Item": {
             "Filename": "data/dlc04/graphics/buildings/special/localdpt/local_department.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 269602,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Constructable": "",
@@ -33,7 +37,13 @@
       },
       "Mesh": "",
       "Selection": {
-        "GUIType": "Department"
+        "GUIType": "Department",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Infolayer": "",
       "SoundEmitter": {
@@ -97,8 +107,7 @@
         "LocaText": {
           "English": {
             "Text": "Local Department",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 36593

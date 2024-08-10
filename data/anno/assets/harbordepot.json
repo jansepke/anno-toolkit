@@ -29,6 +29,11 @@
               "Filename": "data/graphics/buildings/special/harbor_01/harbor_01_var02.cfg"
             }
           ]
+        },
+        "Skins": {
+          "DefaultSkinName": 1010519,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "AmbientMoodProvider": {
@@ -36,6 +41,12 @@
       },
       "Constructable": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "WeakSelectionColorType": "NoColor"
         }
@@ -44,8 +55,7 @@
         "LocaText": {
           "English": {
             "Text": "Depot",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 7015
@@ -78,12 +88,11 @@
         }
       },
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 3000,
-        "HPBarOffset": 8,
         "PausedTimeIfAttacked": 0,
-        "SelfHealPerHealTick": 5,
+        "HPBarOffset": 8,
         "DefenseByAIFactor": 151,
-        "TakeOverEffect": "OnDeath",
         "MoralePower": 25,
         "IslandWarFlag": 102303,
         "ExplosionEffects": {
@@ -101,7 +110,8 @@
           }
         },
         "ExplosionEffectsMin": 1,
-        "ExplosionEffectsMax": 2
+        "ExplosionEffectsMax": 2,
+        "SelfHealPerHealTick": 5
       },
       "Warehouse": {
         "WarehouseStorage": {
@@ -187,6 +197,11 @@
           "Item": {
             "Filename": "data/graphics/buildings/special/harbor_13/harbor_13.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 100782,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "AmbientMoodProvider": {
@@ -194,6 +209,12 @@
       },
       "Constructable": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "WeakSelectionColorType": "NoColor"
         }
@@ -202,8 +223,7 @@
         "LocaText": {
           "English": {
             "Text": "Coal Storage",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 7027
@@ -239,15 +259,15 @@
         }
       },
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 2000,
-        "HPBarOffset": 8,
         "PausedTimeIfAttacked": 0,
-        "SelfHealPerHealTick": 5,
-        "TakeOverEffect": "OnDeath",
+        "HPBarOffset": 8,
         "MoralePower": 25,
         "IslandWarFlag": 102303,
         "ExplosionEffectsMin": 1,
-        "ExplosionEffectsMax": 1
+        "ExplosionEffectsMax": 1,
+        "SelfHealPerHealTick": 5
       },
       "Warehouse": {
         "WarehouseStorage": {
@@ -330,6 +350,11 @@
           "Item": {
             "Filename": "data/graphics/buildings/special/harbor_15/harbor_15.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 100784,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "AmbientMoodProvider": {
@@ -337,6 +362,12 @@
       },
       "Constructable": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "Colors": {
           "WeakSelectionColorType": "NoColor"
         }
@@ -345,8 +376,7 @@
         "LocaText": {
           "English": {
             "Text": "Oil Store",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 7029
@@ -382,15 +412,15 @@
         }
       },
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 4000,
         "PausedTimeIfAttacked": 0,
-        "SelfHealPerHealTick": 5,
         "DefenseByAIFactor": 310,
-        "TakeOverEffect": "OnDeath",
         "MoralePower": 50,
         "IslandWarFlag": 102303,
         "ExplosionEffectsMin": 2,
-        "ExplosionEffectsMax": 2
+        "ExplosionEffectsMax": 2,
+        "SelfHealPerHealTick": 5
       },
       "Warehouse": {
         "WarehouseStorage": {
@@ -437,6 +467,219 @@
         "BuildingRuined": {
           "Item": {
             "Sound": 203848
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        }
+      },
+      "Infolayer": "",
+      "UpgradeList": "",
+      "LogisticNode": {
+        "TransporterCountMax": 0
+      },
+      "FeedbackController": ""
+    }
+  },
+  {
+    "Template": "HarborDepot",
+    "Values": {
+      "Standard": {
+        "GUID": 24775,
+        "Name": "Hacienda storage module",
+        "IconFilename": "data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_storage.png",
+        "InfoDescription": 2981
+      },
+      "Building": {
+        "BuildingCategoryName": 11151,
+        "TerrainType": "Terrain",
+        "BuildModeRandomRotation": 180,
+        "AssociatedRegions": "Colony01",
+        "SecondPartyRelevant": 0
+      },
+      "Blocking": "",
+      "Mesh": "",
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc10/graphics/buildings/special/hacienda/storage_module/storage_module_01.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 24775,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        }
+      },
+      "AmbientMoodProvider": {
+        "Murmur": "Hacienda"
+      },
+      "Constructable": "",
+      "Selection": {
+        "StaticHelpEntryPoint": "SeedsOfChangeHacienda",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 16,
+        "Colors": {
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hacienda Storeroom",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 55196
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "HarborDepot",
+                    "Index": 0
+                  }
+                }
+              },
+              "Amount": 3000
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "HarborDepot",
+                    "Index": 1
+                  }
+                }
+              },
+              "Amount": 10
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "HarborDepot",
+                    "Index": 2
+                  }
+                }
+              },
+              "Amount": 5
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "HarborDepot",
+                    "Index": 3
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "HarborDepot",
+                    "Index": 4
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "HarborDepot",
+                    "Index": 5
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "AttackableType": "IslandBuilding",
+        "MaximumHitPoints": 3000,
+        "PausedTimeIfAttacked": 0,
+        "HPBarOffset": 8,
+        "ExplosionEffects": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "HarborDepot",
+                  "Index": 0
+                }
+              }
+            },
+            "ExplosionEffectFilePath": "data/graphics/effects/military/explosions/harbor_generic_xpl_02.cfg"
+          }
+        },
+        "ExplosionEffectsMin": 1,
+        "ExplosionEffectsMax": 2,
+        "SelfHealPerHealTick": 5
+      },
+      "Warehouse": {
+        "WarehouseStorage": {
+          "StorageMax": 50
+        }
+      },
+      "StorageBase": "",
+      "Locked": {
+        "DefaultLockedState": 0,
+        "DLCDependency": 24961
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": {
+            "Product": 1010017,
+            "Amount": 20,
+            "InactiveAmount": 20
+          }
+        }
+      },
+      "Pausable": {
+        "IsHaciendaDependent": 1
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": [
+            {
+              "Sound": 200896
+            },
+            {
+              "Sound": 200892
+            }
+          ]
+        },
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
           }
         },
         "BuildingRepaired": {

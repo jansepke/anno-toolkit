@@ -6,8 +6,7 @@
         "GUID": 112091,
         "Name": "residence_arctic_tier01",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_resident.png",
-        "InfoDescription": 163059,
-        "Version": "dlc03"
+        "InfoDescription": 163059
       },
       "Blocking": "",
       "Building": {
@@ -104,17 +103,27 @@
               "Filename": "data/dlc03/graphics/buildings/residence/residence_colony03_tier01_estate06/residence_colony03_tier01_estate06.cfg"
             }
           ]
+        },
+        "Skins": {
+          "DefaultSkinName": 112091,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Arctic_Resident_tier01"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Explorer Shelter",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 35071
@@ -247,7 +256,8 @@
           "InputStorageMax": 1
         },
         "PopulationLevel7": 112642,
-        "ResidentMax": 10
+        "ResidentMax": 10,
+        "ResidentsRequiredForUpgrade": 10
       },
       "LogisticNode": "",
       "AmbientMoodProvider": {
@@ -257,19 +267,11 @@
       },
       "UpgradeList": "",
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 1500
       },
       "IncidentInfectable": {
         "Infectable": {
-          "Explosion": {
-            "Base": 0,
-            "Escalated": 0
-          },
-          "ArcticIllness": {
-            "Base": 1,
-            "Escalated": 1,
-            "Communication": "IllnessArcticDefault"
-          },
           "Riot": {
             "Base": 0,
             "Escalated": 0
@@ -277,18 +279,21 @@
           "Illness": {
             "Base": 0,
             "Escalated": 0
+          },
+          "Explosion": {
+            "Base": 0,
+            "Escalated": 0
+          },
+          "ArcticIllness": {
+            "Base": 1,
+            "Escalated": 1,
+            "Communication": "IllnessArcticCheat"
           }
         },
         "Explosion": {
           "ExplosionCoreDamage": 1000
         },
         "IncidentInfectionChanceFactors": {
-          "Illness": {
-            "ResidenceSatisfactionFactor": 0,
-            "HappinessMin": 0,
-            "HappinessMax": 0,
-            "SatisfactionThreshold": 0
-          },
           "Fire": {
             "BaseChance": 4,
             "DensityFactor": 0.025,
@@ -301,6 +306,12 @@
             "ResidenceHappinessFactor": 0,
             "HappinessMin": 0,
             "HappinessMax": 0
+          },
+          "Illness": {
+            "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
           },
           "Explosion": {
             "HitpointFactor": 0,
@@ -327,8 +338,7 @@
         "GUID": 112652,
         "Name": "residence_arctic_tier02",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_resident.png",
-        "InfoDescription": 163059,
-        "Version": "dlc03"
+        "InfoDescription": 163059
       },
       "Blocking": "",
       "Building": {
@@ -419,22 +429,34 @@
               "Filename": "data/dlc03/graphics/buildings/residence/residence_colony03_tier02_estate04/residence_colony03_tier02_estate04.cfg"
             }
           ]
+        },
+        "Skins": {
+          "DefaultSkinName": 112652,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Arctic_Resident_tier02"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Technician Shelter",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 35072
       },
-      "Constructable": "",
+      "Constructable": {
+        "ConstructionMenuIcon": 112643
+      },
       "Locked": {
         "DefaultLockedState": 1
       },
@@ -499,7 +521,8 @@
           "InputStorageMax": 1
         },
         "PopulationLevel7": 112643,
-        "ResidentMax": 20
+        "ResidentMax": 20,
+        "ResidentsRequiredForUpgrade": 20
       },
       "LogisticNode": "",
       "AmbientMoodProvider": {
@@ -509,19 +532,20 @@
       },
       "UpgradeList": "",
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 1500
       },
       "IncidentInfectable": {
         "Infectable": {
-          "Explosion": {
-            "Base": 0,
-            "Escalated": 0
-          },
           "Riot": {
             "Base": 0,
             "Escalated": 0
           },
           "Illness": {
+            "Base": 0,
+            "Escalated": 0
+          },
+          "Explosion": {
             "Base": 0,
             "Escalated": 0
           },
@@ -535,12 +559,6 @@
           "ExplosionCoreDamage": 1000
         },
         "IncidentInfectionChanceFactors": {
-          "Illness": {
-            "ResidenceSatisfactionFactor": 0,
-            "HappinessMin": 0,
-            "HappinessMax": 0,
-            "SatisfactionThreshold": 0
-          },
           "Fire": {
             "BaseChance": 4,
             "DensityFactor": 0.025,
@@ -553,6 +571,12 @@
             "ResidenceHappinessFactor": 0,
             "HappinessMin": 0,
             "HappinessMax": 0
+          },
+          "Illness": {
+            "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
           },
           "Explosion": {
             "HitpointFactor": 0,

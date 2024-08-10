@@ -5,9 +5,8 @@
       "Standard": {
         "GUID": 119892,
         "Name": "institution_colony02_01 (Fire Station)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_fire_house.png",
-        "InfoDescription": 118032,
-        "Version": "dlc06"
+        "IconFilename": "data/ui/2kimages/main/3dicons/city_institution/icon_fire_brigade.png",
+        "InfoDescription": 118032
       },
       "Building": "",
       "Blocking": "",
@@ -30,18 +29,28 @@
           "Item": {
             "Filename": "data/dlc06/graphics/buildings/public/institution_colony02_02/institution_colony02_02.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 119892,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
-        "GUIType": "CityInstitution"
+        "GUIType": "CityInstitution",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Fire Station",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 44462
@@ -82,6 +91,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 3500,
         "SelfHealPerHealTick": 4
       },

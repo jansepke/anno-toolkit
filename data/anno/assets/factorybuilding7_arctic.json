@@ -5,8 +5,7 @@
       "Standard": {
         "GUID": 112666,
         "Name": "coastal_arctic_01 (Whale Coast Building)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_whale_oil_2.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_whale_oil_2.png"
       },
       "Building": {
         "TerrainType": "Coast"
@@ -125,18 +124,28 @@
           "Item": {
             "Filename": "data/dlc03/graphics/buildings/production/production_colony03_16/production_colony03_16.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 112666,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Arctic_Resident_tier01_atWork"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Whale Hunter",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 35077
@@ -201,9 +210,8 @@
         }
       },
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 2500,
-        "CanBeAttackedByPlayer": 1,
-        "TakeOverEffect": "OnDeath",
         "MoralePower": 25,
         "IslandWarFlag": 102303,
         "RuinSmokeParticles": {
@@ -235,11 +243,6 @@
           }
         },
         "IncidentInfectionChanceFactors": {
-          "Explosion": {
-            "HappinessMin": 0,
-            "HappinessMax": 0,
-            "SatisfactionThreshold": 0
-          },
           "Riot": {
             "FactoryOvertimeFactor": 0,
             "FactoryUndertimeFactor": 0,
@@ -250,6 +253,11 @@
           },
           "Illness": {
             "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Explosion": {
             "HappinessMin": 0,
             "HappinessMax": 0,
             "SatisfactionThreshold": 0
@@ -267,8 +275,7 @@
       "Standard": {
         "GUID": 112674,
         "Name": "coastal_arctic_02 (Seal Hunter)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_seal_skin.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_seal_skin.png"
       },
       "Building": {
         "TerrainType": "Coast"
@@ -387,18 +394,28 @@
           "Item": {
             "Filename": "data/dlc03/graphics/buildings/production/production_colony03_01/production_colony03_01.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 112674,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Arctic_Resident_tier01_atWork"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Seal Hunter",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 35078
@@ -462,9 +479,8 @@
         }
       },
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 1500,
-        "CanBeAttackedByPlayer": 1,
-        "TakeOverEffect": "OnDeath",
         "MoralePower": 25,
         "IslandWarFlag": 102303,
         "RuinSmokeParticles": {
@@ -496,11 +512,6 @@
           }
         },
         "IncidentInfectionChanceFactors": {
-          "Explosion": {
-            "HappinessMin": 0,
-            "HappinessMax": 0,
-            "SatisfactionThreshold": 0
-          },
           "Riot": {
             "FactoryOvertimeFactor": 0,
             "FactoryUndertimeFactor": 0,
@@ -511,6 +522,11 @@
           },
           "Illness": {
             "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Explosion": {
             "HappinessMin": 0,
             "HappinessMax": 0,
             "SatisfactionThreshold": 0
@@ -528,8 +544,7 @@
       "Standard": {
         "GUID": 114704,
         "Name": "factory_arctic_01 (Timber Factory)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_wooden_planks.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_wooden_planks.png"
       },
       "Building": {
         "SkipUnlockMessage": 1,
@@ -644,10 +659,21 @@
           "Item": {
             "Filename": "data/dlc03/graphics/buildings/production/production_colony03_13/production_colony03_13.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 114704,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Arctic_Resident_tier01_atWork",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -657,8 +683,7 @@
         "LocaText": {
           "English": {
             "Text": "Sawmill",
-            "Status": "Exported",
-            "ExportCount": 3
+            "Status": "Exported"
           }
         },
         "LineID": 35491
@@ -729,17 +754,18 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 1500,
         "SelfHealPerHealTick": 6
       },
       "Pausable": "",
       "IncidentInfectable": {
         "Infectable": {
-          "Explosion": {
+          "Riot": {
             "Base": 0,
             "Escalated": 0
           },
-          "Riot": {
+          "Explosion": {
             "Base": 0,
             "Escalated": 0
           }
@@ -789,8 +815,7 @@
       "Standard": {
         "GUID": 112675,
         "Name": "factory_arctic_02 (Sleeping Bags Factory)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_sleeping_bags.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_sleeping_bags.png"
       },
       "Building": "",
       "Blocking": "",
@@ -903,18 +928,28 @@
           "Item": {
             "Filename": "data/dlc03/graphics/buildings/production/production_colony03_03/production_colony03_03.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 112675,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Arctic_Resident_tier01_atWork"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Sleeping Bag Factory",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 35079
@@ -991,6 +1026,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 2000
       },
       "Pausable": "",
@@ -1009,11 +1045,6 @@
           "Fire": {
             "FactoryProductivityFactor": 0.1
           },
-          "Explosion": {
-            "HappinessMin": 0,
-            "HappinessMax": 0,
-            "SatisfactionThreshold": 0
-          },
           "Riot": {
             "FactoryOvertimeFactor": 0,
             "FactoryUndertimeFactor": 0,
@@ -1024,6 +1055,11 @@
           },
           "Illness": {
             "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Explosion": {
             "HappinessMin": 0,
             "HappinessMax": 0,
             "SatisfactionThreshold": 0
@@ -1041,8 +1077,7 @@
       "Standard": {
         "GUID": 112679,
         "Name": "factory_arctic_03 (Oil Lamp Factory)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_oil_lamps.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_oil_lamps.png"
       },
       "Building": "",
       "Blocking": "",
@@ -1155,18 +1190,28 @@
           "Item": {
             "Filename": "data/dlc03/graphics/buildings/production/production_colony03_08/production_colony03_08.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 112679,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Arctic_Resident_tier01_atWork"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Oil Lamp Factory",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 35080
@@ -1243,6 +1288,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 2500
       },
       "Pausable": "",
@@ -1258,11 +1304,6 @@
           }
         },
         "IncidentInfectionChanceFactors": {
-          "Explosion": {
-            "HappinessMin": 0,
-            "HappinessMax": 0,
-            "SatisfactionThreshold": 0
-          },
           "Riot": {
             "FactoryOvertimeFactor": 0,
             "FactoryUndertimeFactor": 0,
@@ -1273,6 +1314,11 @@
           },
           "Illness": {
             "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Explosion": {
             "HappinessMin": 0,
             "HappinessMax": 0,
             "SatisfactionThreshold": 0
@@ -1290,8 +1336,7 @@
       "Standard": {
         "GUID": 112672,
         "Name": "factory_arctic_04 (Parka Factory)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_fur_parka.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_fur_parka.png"
       },
       "Building": "",
       "Blocking": "",
@@ -1405,18 +1450,28 @@
           "Item": {
             "Filename": "data/dlc03/graphics/buildings/production/production_colony03_04/production_colony03_04.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 112672,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Arctic_Resident_tier02_atWork"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Parka Factory",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 35081
@@ -1493,6 +1548,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 3000
       },
       "Pausable": "",
@@ -1508,11 +1564,6 @@
           }
         },
         "IncidentInfectionChanceFactors": {
-          "Explosion": {
-            "HappinessMin": 0,
-            "HappinessMax": 0,
-            "SatisfactionThreshold": 0
-          },
           "Riot": {
             "FactoryOvertimeFactor": 0,
             "FactoryUndertimeFactor": 0,
@@ -1523,6 +1574,11 @@
           },
           "Illness": {
             "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Explosion": {
             "HappinessMin": 0,
             "HappinessMax": 0,
             "SatisfactionThreshold": 0
@@ -1540,8 +1596,7 @@
       "Standard": {
         "GUID": 112681,
         "Name": "factory_arctic_05 (Sled Frame Factory)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_sled_frame.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_sled_frame.png"
       },
       "Building": "",
       "Blocking": "",
@@ -1655,18 +1710,28 @@
           "Item": {
             "Filename": "data/dlc03/graphics/buildings/production/production_colony03_10/production_colony03_10.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 112681,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Arctic_Resident_tier02_atWork"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Sled Frame Factory",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 35082
@@ -1743,6 +1808,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 3500
       },
       "Pausable": "",
@@ -1762,11 +1828,6 @@
             "DensityFactor": 0.1,
             "DensityDistance": 20
           },
-          "Explosion": {
-            "HappinessMin": 0,
-            "HappinessMax": 0,
-            "SatisfactionThreshold": 0
-          },
           "Riot": {
             "FactoryOvertimeFactor": 0,
             "FactoryUndertimeFactor": 0,
@@ -1777,6 +1838,11 @@
           },
           "Illness": {
             "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Explosion": {
             "HappinessMin": 0,
             "HappinessMax": 0,
             "SatisfactionThreshold": 0
@@ -1794,8 +1860,7 @@
       "Standard": {
         "GUID": 112680,
         "Name": "factory_arctic_06 (Husky Sled Factory)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_sled.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_sled.png"
       },
       "Building": "",
       "Blocking": "",
@@ -1909,18 +1974,28 @@
           "Item": {
             "Filename": "data/dlc03/graphics/buildings/production/production_colony03_11/production_colony03_11.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 112680,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Arctic_Resident_tier02_atWork"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Husky Sled Factory",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 35083
@@ -1997,6 +2072,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 3500
       },
       "Pausable": "",
@@ -2012,11 +2088,6 @@
           }
         },
         "IncidentInfectionChanceFactors": {
-          "Explosion": {
-            "HappinessMin": 0,
-            "HappinessMax": 0,
-            "SatisfactionThreshold": 0
-          },
           "Riot": {
             "FactoryOvertimeFactor": 0,
             "FactoryUndertimeFactor": 0,
@@ -2027,6 +2098,11 @@
           },
           "Illness": {
             "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Explosion": {
             "HappinessMin": 0,
             "HappinessMax": 0,
             "SatisfactionThreshold": 0
@@ -2044,8 +2120,7 @@
       "Standard": {
         "GUID": 112668,
         "Name": "food_arctic_01 (Pemmican)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_pemmican.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_pemmican.png"
       },
       "Building": "",
       "Blocking": "",
@@ -2158,18 +2233,28 @@
           "Item": {
             "Filename": "data/dlc03/graphics/buildings/production/production_colony03_05/production_colony03_05.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 112668,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Arctic_Resident_tier01_atWork"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Pemmican Factory",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 35084
@@ -2246,6 +2331,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 2000
       },
       "Pausable": "",
@@ -2261,11 +2347,6 @@
           }
         },
         "IncidentInfectionChanceFactors": {
-          "Explosion": {
-            "HappinessMin": 0,
-            "HappinessMax": 0,
-            "SatisfactionThreshold": 0
-          },
           "Riot": {
             "FactoryOvertimeFactor": 0,
             "FactoryUndertimeFactor": 0,
@@ -2276,6 +2357,11 @@
           },
           "Illness": {
             "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Explosion": {
             "HappinessMin": 0,
             "HappinessMax": 0,
             "SatisfactionThreshold": 0

@@ -5,8 +5,7 @@
       "Standard": {
         "GUID": 114703,
         "Name": "agriculture_arctic_01 (Timber Yard)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_wood_log.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_wood_log.png"
       },
       "Building": {
         "SkipUnlockMessage": 1,
@@ -85,10 +84,21 @@
           "Item": {
             "Filename": "data/dlc03/graphics/buildings/production/production_colony03_14/production_colony03_14.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 114703,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Arctic_Resident_tier01_atWork",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -98,8 +108,7 @@
         "LocaText": {
           "English": {
             "Text": "Lumberjack's Hut",
-            "Status": "Exported",
-            "ExportCount": 5
+            "Status": "Exported"
           }
         },
         "LineID": 35488
@@ -188,6 +197,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 1500,
         "SelfHealPerHealTick": 4
       },
@@ -195,19 +205,20 @@
         "InfluenceRadius": 9,
         "NeededAreaPercent": 80,
         "MaxWorkerAmount": 3,
+        "AdditionalWorkerForForestation": 3,
         "WorkerPause": 10000
       },
       "Pausable": "",
       "IncidentInfectable": {
         "Infectable": {
+          "Riot": {
+            "Base": 0,
+            "Escalated": 0
+          },
           "Illness": {
             "Escalated": 0
           },
           "Explosion": {
-            "Base": 0,
-            "Escalated": 0
-          },
-          "Riot": {
             "Base": 0,
             "Escalated": 0
           }
@@ -256,8 +267,7 @@
       "Standard": {
         "GUID": 112667,
         "Name": "agriculture_arctic_02 (Caribou Hunter)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_reindeer_meat.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_reindeer_meat.png"
       },
       "Building": "",
       "Blocking": "",
@@ -370,18 +380,28 @@
           "Item": {
             "Filename": "data/dlc03/graphics/buildings/production/production_colony03_15/production_colony03_15.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 112667,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Arctic_Resident_tier01_atWork"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Caribou Hunter",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 35073
@@ -419,6 +439,12 @@
         "NeededFertility": 112858
       },
       "FactoryBase": {
+        "FactoryInputs": {
+          "Item": {
+            "Product": 1955,
+            "StorageAmount": 5
+          }
+        },
         "FactoryOutputs": {
           "Item": {
             "Product": 112694,
@@ -451,23 +477,26 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 1500
       },
       "FreeAreaProductivity": {
         "InfluenceRadius": 11,
         "FreeAreaType": "Hunter",
         "MaxWorkerAmount": 2,
+        "AdditionalWorkerForForestation": 6,
         "WorkerPause": 10000,
+        "InitializeForestMinTreeAreaPercent": 5,
         "CutTree": 0
       },
       "Pausable": "",
       "IncidentInfectable": {
         "Infectable": {
-          "Illness": {
-            "Escalated": 0
-          },
           "Riot": {
             "Base": 0,
+            "Escalated": 0
+          },
+          "Illness": {
             "Escalated": 0
           },
           "Explosion": {
@@ -476,11 +505,6 @@
           }
         },
         "IncidentInfectionChanceFactors": {
-          "Explosion": {
-            "HappinessMin": 0,
-            "HappinessMax": 0,
-            "SatisfactionThreshold": 0
-          },
           "Riot": {
             "FactoryOvertimeFactor": 0,
             "FactoryUndertimeFactor": 0,
@@ -491,6 +515,11 @@
           },
           "Illness": {
             "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Explosion": {
             "HappinessMin": 0,
             "HappinessMax": 0,
             "SatisfactionThreshold": 0
@@ -507,8 +536,7 @@
       "Standard": {
         "GUID": 112673,
         "Name": "agriculture_arctic_04 (Bear Hunter)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_bear_fur.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_bear_fur.png"
       },
       "Building": "",
       "Blocking": "",
@@ -621,18 +649,28 @@
           "Item": {
             "Filename": "data/dlc03/graphics/buildings/production/production_colony03_17/production_colony03_17.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 112673,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Arctic_Resident_tier01_atWork"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Bear Hunter",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 35075
@@ -670,6 +708,12 @@
         "NeededFertility": 112859
       },
       "FactoryBase": {
+        "FactoryInputs": {
+          "Item": {
+            "Product": 1955,
+            "StorageAmount": 5
+          }
+        },
         "FactoryOutputs": {
           "Item": {
             "Product": 112695,
@@ -702,23 +746,26 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 2000
       },
       "FreeAreaProductivity": {
         "InfluenceRadius": 13,
         "FreeAreaType": "Hunter2",
         "MaxWorkerAmount": 2,
+        "AdditionalWorkerForForestation": 6,
         "WorkerPause": 10000,
+        "InitializeForestMinTreeAreaPercent": 5,
         "CutTree": 0
       },
       "Pausable": "",
       "IncidentInfectable": {
         "Infectable": {
-          "Illness": {
-            "Escalated": 0
-          },
           "Riot": {
             "Base": 0,
+            "Escalated": 0
+          },
+          "Illness": {
             "Escalated": 0
           },
           "Explosion": {
@@ -727,11 +774,6 @@
           }
         },
         "IncidentInfectionChanceFactors": {
-          "Explosion": {
-            "HappinessMin": 0,
-            "HappinessMax": 0,
-            "SatisfactionThreshold": 0
-          },
           "Riot": {
             "FactoryOvertimeFactor": 0,
             "FactoryUndertimeFactor": 0,
@@ -742,6 +784,11 @@
           },
           "Illness": {
             "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Explosion": {
             "HappinessMin": 0,
             "HappinessMax": 0,
             "SatisfactionThreshold": 0
@@ -758,8 +805,7 @@
       "Standard": {
         "GUID": 116034,
         "Name": "agriculture_arctic_06 (Normal Fur Hunter)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_fur.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_fur.png"
       },
       "Building": "",
       "Blocking": "",
@@ -872,18 +918,28 @@
           "Item": {
             "Filename": "data/dlc03/graphics/buildings/production/production_colony03_18/production_colony03_18.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 116034,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Arctic_Resident_tier01_atWork"
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Prime Hunting Cabin",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 35489
@@ -921,6 +977,12 @@
         "NeededFertility": 1010581
       },
       "FactoryBase": {
+        "FactoryInputs": {
+          "Item": {
+            "Product": 1955,
+            "StorageAmount": 5
+          }
+        },
         "FactoryOutputs": {
           "Item": {
             "Product": 1010209,
@@ -952,23 +1014,26 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 2000
       },
       "FreeAreaProductivity": {
         "InfluenceRadius": 11,
         "FreeAreaType": "Hunter",
         "MaxWorkerAmount": 2,
+        "AdditionalWorkerForForestation": 6,
         "WorkerPause": 10000,
+        "InitializeForestMinTreeAreaPercent": 5,
         "CutTree": 0
       },
       "Pausable": "",
       "IncidentInfectable": {
         "Infectable": {
-          "Illness": {
-            "Escalated": 0
-          },
           "Riot": {
             "Base": 0,
+            "Escalated": 0
+          },
+          "Illness": {
             "Escalated": 0
           },
           "Explosion": {
@@ -977,11 +1042,6 @@
           }
         },
         "IncidentInfectionChanceFactors": {
-          "Explosion": {
-            "HappinessMin": 0,
-            "HappinessMax": 0,
-            "SatisfactionThreshold": 0
-          },
           "Riot": {
             "FactoryOvertimeFactor": 0,
             "FactoryUndertimeFactor": 0,
@@ -992,6 +1052,11 @@
           },
           "Illness": {
             "ResidenceSatisfactionFactor": 0,
+            "HappinessMin": 0,
+            "HappinessMax": 0,
+            "SatisfactionThreshold": 0
+          },
+          "Explosion": {
             "HappinessMin": 0,
             "HappinessMax": 0,
             "SatisfactionThreshold": 0

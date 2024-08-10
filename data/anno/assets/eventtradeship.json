@@ -20,7 +20,13 @@
         "MeshPlacement": "OnWaterSlope"
       },
       "Selection": {
-        "MultiSelectable": 1
+        "MultiSelectable": 1,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Walking": {
         "ReservationLength": 9,
@@ -35,8 +41,7 @@
         "LocaText": {
           "English": {
             "Text": "Schooner",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 13086
@@ -78,7 +83,20 @@
         "SlotCount": 3
       },
       "FeedbackController": "",
-      "Draggable": "",
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Cost": {
         "Costs": {
           "Item": [

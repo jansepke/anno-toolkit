@@ -1,0 +1,1491 @@
+[
+  {
+    "Template": "Profile_3rdParty-PlayerCounter",
+    "Values": {
+      "Standard": {
+        "GUID": 29,
+        "Name": "Third_party_05 (Isabel Sarmento)",
+        "IconFilename": "data/ui/2kimages/main/profiles/3rd_party_05.png"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Isabel Sarmento",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 4280
+      },
+      "Profile": {
+        "ProfilePicture": "data/ui/2kimages/main/profiles/3rd_party_05.png",
+        "Portrait": 100671,
+        "CompanyIcon": 501259,
+        "InfoCornerInfoTip": 25000162,
+        "InfoCornerDescription": 4078,
+        "ParticipantID": "Third_party_05_Sarmento",
+        "NotificationBackground": "data/ui/2kimages/main/assets/character_bg/bgr_character_07.png",
+        "QuestStarterObject": 100709,
+        "QuestPoolList": {
+          "Item": [
+            {
+              "QuestPool": 150308
+            },
+            {
+              "QuestPool": 151110
+            }
+          ]
+        },
+        "DefaultColor": "Color11",
+        "BackgroundText": 18113,
+        "MoodImage": "data/ui/2kimages/main/assets/thirdparty_islandbar/bg_islandbar_isabel.png"
+      },
+      "Diplomacy": {
+        "DiplomacyActionBalancing": {
+          "ThreatWar": {
+            "AgreementThreshold": -20,
+            "PartialAgreementThreshold": -20
+          },
+          "RequestPeace": {
+            "AgreementThreshold": 45,
+            "PartialAgreementThreshold": 15
+          },
+          "CancelTraderights": {
+            "AgreementThreshold": -999,
+            "PartialAgreementThreshold": -999
+          },
+          "RequestTraderights": {
+            "AgreementThreshold": 90,
+            "PartialAgreementThreshold": 60
+          },
+          "RequestAlliance": {
+            "AgreementThreshold": 80,
+            "PartialAgreementThreshold": 50
+          },
+          "RequestCeaseFire": {
+            "ActionWeight": 120,
+            "AgreementThreshold": 80
+          }
+        },
+        "ReputationChangeCalculation": {
+          "PaymentGivingMoney": {
+            "MaxPossibleReputation": 100
+          },
+          "PaymentReceivingMoney": {
+            "ReputationAddedLimit": 40
+          },
+          "Treaties": {
+            "ReputationValues": {
+              "Peace": {
+                "AddingTreaty": 20
+              },
+              "TradeRights": {
+                "AddingTreaty": 10,
+                "RemovingTreaty": -25
+              },
+              "Alliance": {
+                "AddingTreaty": 20,
+                "RemovingTreaty": -30
+              },
+              "CeaseFire": {
+                "AddingTreaty": 7,
+                "RemovingTreaty": -10
+              }
+            }
+          }
+        },
+        "GiftBalancing": {
+          "receiveSmall": {
+            "BaseValue": 3000
+          },
+          "receiveOrdinary": {
+            "BaseValue": 5500
+          },
+          "receiveGenerous": {
+            "BaseValue": 10000
+          },
+          "giveSmall": {
+            "BaseValue": 500
+          },
+          "giveOrdinary": {
+            "BaseValue": 1000
+          },
+          "giveGenerous": {
+            "BaseValue": 2000
+          }
+        },
+        "RepeatableActionBalancing": {
+          "Actions": {
+            "Flatter": {
+              "Subdivisions": {
+                "Item": [
+                  {
+                    "SuccessChance": 60
+                  },
+                  {
+                    "ReputationLoss": -3
+                  },
+                  ""
+                ]
+              }
+            },
+            "Insult": {
+              "Subdivisions": {
+                "Item": [
+                  {
+                    "SuccessChance": 75,
+                    "ReputationGain": -5
+                  },
+                  ""
+                ]
+              }
+            },
+            "Gift": {
+              "Subdivisions": {
+                "Item": {
+                  "SuccessChance": 50,
+                  "ReputationGain": 2
+                }
+              }
+            }
+          }
+        },
+        "Memory": {
+          "UpdateTable": {
+            "Item": [
+              {
+                "Difference": 20,
+                "Change": 10
+              },
+              {
+                "Difference": 30,
+                "Change": 20
+              },
+              {
+                "Difference": 50,
+                "Change": 40
+              }
+            ]
+          }
+        },
+        "InitialRelation": {
+          "Exceptions": {
+            "Item": [
+              {
+                "Participant": "Campaign_character_02_pyrophorian_red_blinded",
+                "Treaties": "War"
+              },
+              {
+                "Participant": "Second_ai_09_Silva",
+                "Treaties": "Peace"
+              }
+            ]
+          }
+        }
+      },
+      "ParticipantMessages": {
+        "MessageTriggers": {
+          "ClickKontor": {
+            "Reactions": {
+              "Item": {
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 91574379
+                    }
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "QuestInvitation": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": -607220429
+                    },
+                    "NotificationSubtitle": ""
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "QuestStarted": {
+            "Reactions": {
+              "Item": {
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationPriority": 699
+                    },
+                    "NotificationSubtitle": ""
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "QuestSuccessful": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": 1380477898
+                    },
+                    "NotificationSubtitle": ""
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "QuestFailed": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": -1928161372
+                    },
+                    "NotificationSubtitle": ""
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "QuestAborted": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": -999474322
+                    },
+                    "NotificationSubtitle": ""
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "QuestEscortShipSelected": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": 674720140
+                    },
+                    "NotificationSubtitle": ""
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "QuestResolveConfirmation": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationText": 10549
+                    },
+                    "NotificationSubtitle": ""
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "ShipTradeConfirmation": {
+            "Reactions": {
+              "Item": [
+                {
+                  "SideEffect": "AddReputation",
+                  "SideEffectValue": 2,
+                  "Notification": {
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationTextGroup": -1807749032
+                      },
+                      "NotificationSubtitle": ""
+                    },
+                    "Template": "CharacterNotification"
+                  }
+                },
+                {
+                  "MyRole": "Initiator",
+                  "SideEffect": "AddReputation",
+                  "SideEffectValue": 2,
+                  "Notification": {
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationTextGroup": -1807749032
+                      },
+                      "NotificationSubtitle": ""
+                    },
+                    "Template": "CharacterNotification"
+                  }
+                }
+              ]
+            }
+          },
+          "SettlePermissionRequest": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": 899995330
+                    },
+                    "NotificationSubtitle": ""
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "SettlePermissionAccepted": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": -1827240673
+                    },
+                    "NotificationSubtitle": ""
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "SettlePermissionDeclined": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": 221577917
+                    },
+                    "NotificationSubtitle": ""
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "SettlementRightsSeizeIsland": {
+            "Reactions": {
+              "Item": [
+                {
+                  "MyRole": "Initiator",
+                  "Notification": {
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationTextGroup": 2066088125
+                      },
+                      "NotificationSubtitle": ""
+                    },
+                    "Template": "CharacterNotification"
+                  }
+                },
+                {
+                  "Notification": {
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationTextGroup": -1783512920
+                      },
+                      "NotificationSubtitle": ""
+                    },
+                    "Template": "CharacterNotification"
+                  }
+                }
+              ]
+            }
+          },
+          "DiplomacyOffer": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": 151127921
+                    },
+                    "NotificationSubtitle": ""
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "DiplomacyOfferThreat": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": 284129818
+                    },
+                    "NotificationSubtitle": ""
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "DiplomacyOfferAccept": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": 754486854
+                    },
+                    "NotificationSubtitle": ""
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "DiplomacyOfferRejected": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": 645868267
+                    },
+                    "NotificationSubtitle": ""
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "DiplomacyOfferThreatAccepted": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": -284323475
+                    },
+                    "NotificationSubtitle": ""
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "DiplomacyOfferThreatRejected": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": -1939792076
+                    },
+                    "NotificationSubtitle": ""
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "DiplomacyDeclareWar": {
+            "Reactions": {
+              "Item": [
+                {
+                  "MyRole": "Initiator",
+                  "Notification": {
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationTextGroup": -218808192
+                      },
+                      "NotificationSubtitle": ""
+                    },
+                    "Template": "CharacterNotification"
+                  }
+                },
+                {
+                  "Notification": {
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationTextGroup": -632830325
+                      },
+                      "NotificationSubtitle": ""
+                    },
+                    "Template": "CharacterNotification"
+                  }
+                }
+              ]
+            }
+          },
+          "DiplomacyOfferPeaceAccepted": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": 1353937510
+                    },
+                    "NotificationSubtitle": ""
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "DiplomacyOfferTraderightsAccepted": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": -1995946385
+                    },
+                    "NotificationSubtitle": ""
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "DiplomacyCancelTraderights": {
+            "Reactions": {
+              "Item": [
+                {
+                  "MyRole": "Initiator",
+                  "Notification": {
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationTextGroup": -623597739
+                      },
+                      "NotificationSubtitle": ""
+                    },
+                    "Template": "CharacterNotification"
+                  }
+                },
+                {
+                  "Notification": {
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationTextGroup": 1144458106
+                      },
+                      "NotificationSubtitle": ""
+                    },
+                    "Template": "CharacterNotification"
+                  }
+                }
+              ]
+            }
+          },
+          "DiplomacyOfferAllianceAccepted": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": -1957572021
+                    },
+                    "NotificationSubtitle": ""
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "DiplomacyCancelAlliance": {
+            "Reactions": {
+              "Item": [
+                {
+                  "MyRole": "Initiator",
+                  "Notification": {
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationTextGroup": 1239738472
+                      },
+                      "NotificationSubtitle": ""
+                    },
+                    "Template": "CharacterNotification"
+                  }
+                },
+                {
+                  "Notification": {
+                    "Values": {
+                      "CharacterNotification": "",
+                      "BaseNotification": {
+                        "NotificationTextGroup": -2070662333
+                      },
+                      "NotificationSubtitle": ""
+                    },
+                    "Template": "CharacterNotification"
+                  }
+                }
+              ]
+            }
+          },
+          "DiplomacyOfferGiftAccepted": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": -649618500
+                    },
+                    "NotificationSubtitle": ""
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "DiplomacyOfferGiftRejected": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": -1552193238
+                    },
+                    "NotificationSubtitle": ""
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "DiplomacyAskForQuestRejected": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": -225827922
+                    },
+                    "NotificationSubtitle": ""
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "DiplomacyRequestSupportFleetAccepted": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": 834970647
+                    },
+                    "NotificationSubtitle": ""
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "DiplomacyRequestSupportFleetRejected": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": 1170493352
+                    },
+                    "NotificationSubtitle": ""
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "DiplomacyAcceptFlatter": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": 677632030
+                    },
+                    "NotificationSubtitle": ""
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "DiplomacyDeclineFlatter": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": 391245361
+                    },
+                    "NotificationSubtitle": ""
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "DiplomacyAcceptInsult": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": 73657461
+                    },
+                    "NotificationSubtitle": ""
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "DiplomacyDeclineInsult": {
+            "Reactions": {
+              "Item": {
+                "MyRole": "Initiator",
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": {
+                      "NotificationTextGroup": -1987606274
+                    },
+                    "NotificationSubtitle": ""
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          },
+          "ParticipantDiscovered": {
+            "Reactions": {
+              "Item": {
+                "Notification": {
+                  "Values": {
+                    "CharacterNotification": "",
+                    "BaseNotification": "",
+                    "NotificationSubtitle": {
+                      "SubtitleGroup": 2050856370
+                    }
+                  },
+                  "Template": "CharacterNotification"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Object": {
+        "DefaultParticipant": "Third_party_05_Sarmento"
+      },
+      "Trader": {
+        "ShipTrader": 1,
+        "SellShipRequestNotification": 500685,
+        "BuyShipRequestNotification": 500686,
+        "Progression": {
+          "EarlyGame": {
+            "TradeFleet": {
+              "Item": {
+                "ShipAsset": 100438,
+                "Amount": 1
+              }
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010251,
+                  "ProductionPerMinute": 1
+                },
+                {
+                  "Good": 1010254,
+                  "ProductionPerMinute": 1
+                },
+                {
+                  "Good": 1010239,
+                  "ProductionPerMinute": 1
+                },
+                {
+                  "Good": 1010221,
+                  "ProductionPerMinute": 1
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010251
+                    },
+                    {
+                      "Good": 1010254
+                    },
+                    {
+                      "Good": 1010239
+                    },
+                    {
+                      "Good": 1010221
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": {
+                "Product": 120033,
+                "PriceMultiplier": 4,
+                "ReputationMultiplier": 2
+              }
+            },
+            "OfferingItems": 190362,
+            "MaxItemsToOffer": 6,
+            "ShipsForSale": {
+              "Item": {
+                "ShipAsset": 100438,
+                "Weight": 1
+              }
+            },
+            "ShipsForSaleAmount": 1
+          },
+          "EarlyMidGame": {
+            "TradeFleet": {
+              "Item": {
+                "ShipAsset": 100438,
+                "Amount": 1
+              }
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010251,
+                  "ProductionPerMinute": 1
+                },
+                {
+                  "Good": 1010254,
+                  "ProductionPerMinute": 1
+                },
+                {
+                  "Good": 1010239,
+                  "ProductionPerMinute": 1
+                },
+                {
+                  "Good": 1010221,
+                  "ProductionPerMinute": 1
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010251
+                    },
+                    {
+                      "Good": 1010254
+                    },
+                    {
+                      "Good": 1010239
+                    },
+                    {
+                      "Good": 1010221
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010221,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 120033,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "OfferingItems": 190362,
+            "MaxItemsToOffer": 4,
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 100438,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 100437,
+                  "Weight": 1
+                }
+              ]
+            },
+            "ShipsForSaleAmount": 1
+          },
+          "MidGame": {
+            "TradeFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 100438,
+                  "Amount": 1
+                },
+                {
+                  "ShipAsset": 100441,
+                  "Amount": 1
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010251,
+                  "ProductionPerMinute": 1
+                },
+                {
+                  "Good": 1010254,
+                  "ProductionPerMinute": 1
+                },
+                {
+                  "Good": 1010239,
+                  "ProductionPerMinute": 1
+                },
+                {
+                  "Good": 1010221,
+                  "ProductionPerMinute": 1
+                },
+                {
+                  "Good": 838,
+                  "ProductionPerMinute": 2
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010251
+                    },
+                    {
+                      "Good": 1010254
+                    },
+                    {
+                      "Good": 1010239
+                    },
+                    {
+                      "Good": 1010221
+                    },
+                    {
+                      "Good": 838
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010221,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 120033,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "OfferingItems": 190362,
+            "MaxItemsToOffer": 5,
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 100441,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 100439,
+                  "Weight": 1
+                }
+              ]
+            },
+            "ShipsForSaleAmount": 2
+          },
+          "LateMidGame": {
+            "TradeFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 100438,
+                  "Amount": 1
+                },
+                {
+                  "ShipAsset": 100441,
+                  "Amount": 1
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010251,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010254,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010239,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 1010221,
+                  "ProductionPerMinute": 5
+                },
+                {
+                  "Good": 838,
+                  "ProductionPerMinute": 4
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010251
+                    },
+                    {
+                      "Good": 1010254
+                    },
+                    {
+                      "Good": 1010239
+                    },
+                    {
+                      "Good": 1010221
+                    },
+                    {
+                      "Good": 838
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010221,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 120033,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "OfferingItems": 190363,
+            "MaxItemsToOffer": 6,
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 100441,
+                  "Weight": 2
+                },
+                {
+                  "ShipAsset": 100439,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 100440,
+                  "Weight": 1
+                }
+              ]
+            },
+            "ShipsForSaleAmount": 2
+          },
+          "LateGame": {
+            "TradeFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 100438,
+                  "Amount": 1
+                },
+                {
+                  "ShipAsset": 100441,
+                  "Amount": 1
+                },
+                {
+                  "ShipAsset": 1010062,
+                  "Amount": 1
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010251,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010254,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010239,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010240,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010252,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010256,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 1010221,
+                  "ProductionPerMinute": 6
+                },
+                {
+                  "Good": 838,
+                  "ProductionPerMinute": 4
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010251
+                    },
+                    {
+                      "Good": 1010254
+                    },
+                    {
+                      "Good": 1010239
+                    },
+                    {
+                      "Good": 1010240
+                    },
+                    {
+                      "Good": 1010252
+                    },
+                    {
+                      "Good": 1010256
+                    },
+                    {
+                      "Good": 1010221
+                    },
+                    {
+                      "Good": 838
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010221,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 120033,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "OfferingItems": 192072,
+            "MaxItemsToOffer": 8,
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 1010062,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 100443,
+                  "Weight": 1
+                }
+              ]
+            },
+            "ShipsForSaleAmount": 3
+          },
+          "EndGame": {
+            "TradeFleet": {
+              "Item": [
+                {
+                  "ShipAsset": 100438,
+                  "Amount": 1
+                },
+                {
+                  "ShipAsset": 100441,
+                  "Amount": 1
+                },
+                {
+                  "ShipAsset": 1010062,
+                  "Amount": 1
+                }
+              ]
+            },
+            "GoodsProduction": {
+              "Item": [
+                {
+                  "Good": 1010251,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010254,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010239,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010240,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010252,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010256,
+                  "ProductionPerMinute": 7
+                },
+                {
+                  "Good": 1010221,
+                  "ProductionPerMinute": 7
+                }
+              ]
+            },
+            "OfferingGoods": {
+              "Item": {
+                "GoodSets": {
+                  "Item": [
+                    {
+                      "Good": 1010251
+                    },
+                    {
+                      "Good": 1010254
+                    },
+                    {
+                      "Good": 1010239
+                    },
+                    {
+                      "Good": 1010240
+                    },
+                    {
+                      "Good": 1010252
+                    },
+                    {
+                      "Good": 1010256
+                    },
+                    {
+                      "Good": 1010221
+                    }
+                  ]
+                }
+              }
+            },
+            "PreferedGoods": {
+              "Item": [
+                {
+                  "Product": 1010221,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                },
+                {
+                  "Product": 120033,
+                  "PriceMultiplier": 4,
+                  "ReputationMultiplier": 2
+                }
+              ]
+            },
+            "OfferingItems": 192073,
+            "MaxItemsToOffer": 12,
+            "ShipsForSale": {
+              "Item": [
+                {
+                  "ShipAsset": 1010062,
+                  "Weight": 2
+                },
+                {
+                  "ShipAsset": 100443,
+                  "Weight": 1
+                },
+                {
+                  "ShipAsset": 100442,
+                  "Weight": 1
+                }
+              ]
+            },
+            "ShipsForSaleAmount": 3
+          }
+        },
+        "ProvidesShipReplacements": "Flagship"
+      },
+      "ThirdParty": {
+        "AllowedRegions": "Colony01",
+        "IslandPlacement": "Optional",
+        "DecoBuildings": {
+          "Item": [
+            {
+              "Asset": 100689
+            },
+            {
+              "Asset": 100690
+            },
+            {
+              "Asset": 100720
+            },
+            {
+              "Asset": 100723
+            },
+            {
+              "Asset": 100724
+            },
+            {
+              "Asset": 100725
+            },
+            {
+              "Asset": 100726
+            },
+            {
+              "Asset": 100731
+            },
+            {
+              "Asset": 100733
+            },
+            {
+              "Asset": 100734
+            },
+            {
+              "Asset": 100735
+            },
+            {
+              "Asset": 100736
+            },
+            {
+              "Asset": 1000101
+            },
+            {
+              "Asset": 1000103
+            },
+            {
+              "Asset": 1000110
+            },
+            {
+              "Asset": 1000156
+            },
+            {
+              "Asset": 1000222
+            },
+            {
+              "Asset": 1000226
+            },
+            {
+              "Asset": 1000228
+            }
+          ]
+        }
+      },
+      "ParticipantMessageObject": {
+        "ParticipantMessages": 145
+      },
+      "Interaction": "",
+      "Locked": "",
+      "ProfileCounter": ""
+    }
+  }
+]

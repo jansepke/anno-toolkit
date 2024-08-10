@@ -54,18 +54,28 @@
           "Item": {
             "Filename": "data/graphics/buildings/public/service_05/service_05.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 1010361,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
-        "GUIType": "PublicService"
+        "GUIType": "PublicService",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Variety Theatre",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 5294
@@ -137,6 +147,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 3000,
         "SelfHealPerHealTick": 4
       },

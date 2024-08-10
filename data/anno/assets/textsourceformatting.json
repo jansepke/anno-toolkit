@@ -12,15 +12,15 @@
           "Item": [
             {
               "Name": "tradegood",
-              "Format": "unit >> sign >> abscolor >> decimals(0)"
+              "Format": "unit &gt;&gt; sign &gt;&gt; abscolor &gt;&gt; decimals(0)"
             },
             {
               "Name": "storagegood",
-              "Format": "unit >> decimals(0)"
+              "Format": "unit &gt;&gt; decimals(0)"
             },
             {
               "Name": "storagegoodM",
-              "Format": "unit >> decimals(0) >> formatM"
+              "Format": "unit &gt;&gt; decimals(0) &gt;&gt; formatM"
             },
             {
               "Name": "time",
@@ -28,19 +28,19 @@
             },
             {
               "Name": "percentage",
-              "Format": "percentage >> decimals(0)"
+              "Format": "percentage &gt;&gt; decimals(0)"
             },
             {
               "Name": "percentageSigned",
-              "Format": "percentage >> sign >> decimals(0)"
+              "Format": "percentage &gt;&gt; sign &gt;&gt; decimals(0)"
             },
             {
               "Name": "percentageRounded",
-              "Format": "percentage >> decimals(-1)"
+              "Format": "percentage &gt;&gt; decimals(0) &gt;&gt; decimals_round_default"
             },
             {
               "Name": "workforce",
-              "Format": "decimals(0) >> sign"
+              "Format": "decimals(0) &gt;&gt; sign"
             },
             {
               "Name": "workforce_no_sign",
@@ -48,19 +48,23 @@
             },
             {
               "Name": "balance",
-              "Format": "decimals(0) >> sign"
+              "Format": "decimals(0) &gt;&gt; sign"
             },
             {
               "Name": "balance10K",
-              "Format": "decimals(0) >> sign >> format10K"
+              "Format": "decimals(0) &gt;&gt; sign &gt;&gt; format10K"
+            },
+            {
+              "Name": "balanceRounded",
+              "Format": "decimals(0) &gt;&gt; sign &gt;&gt; decimals_round_default"
             },
             {
               "Name": "dps",
-              "Format": "unit >> decimals(0)"
+              "Format": "unit &gt;&gt; decimals(0)"
             },
             {
               "Name": "newspaperMoodPreview",
-              "Format": "sign >> abscolor"
+              "Format": "sign &gt;&gt; abscolor"
             },
             {
               "Name": "newspaperMood",
@@ -68,7 +72,7 @@
             },
             {
               "Name": "newspaperTotalMood",
-              "Format": "sign >> color(0xFF111111)"
+              "Format": "sign &gt;&gt; color(0xFF111111)"
             },
             {
               "Name": "unsignedInt",
@@ -80,23 +84,23 @@
             },
             {
               "Name": "maintenance",
-              "Format": "sign >> decimals(0) >> invert"
+              "Format": "sign &gt;&gt; decimals(0) &gt;&gt; invert"
             },
             {
               "Name": "stress",
-              "Format": "sign >> percentage >> decimals(0) >> invert"
+              "Format": "sign &gt;&gt; percentage &gt;&gt; decimals(0) &gt;&gt; invert"
             },
             {
               "Name": "happiness",
-              "Format": "decimals(0) >> sign"
+              "Format": "decimals(0) &gt;&gt; sign"
             },
             {
               "Name": "moneyValue",
-              "Format": "sign >> decimals(0)"
+              "Format": "sign &gt;&gt; decimals(0)"
             },
             {
               "Name": "sellShipPrice",
-              "Format": "invert >> decimals(0)"
+              "Format": "invert &gt;&gt; decimals(0)"
             },
             {
               "Name": "incidentChance",
@@ -108,15 +112,15 @@
             },
             {
               "Name": "productDelta",
-              "Format": "sign >> decimals(0)"
+              "Format": "sign &gt;&gt; decimals(0)"
             },
             {
               "Name": "knots",
-              "Format": "multiply(2) >> decimals(1)"
+              "Format": "multiply(2) &gt;&gt; decimals(1)"
             },
             {
               "Name": "reputation",
-              "Format": "sign >> decimals(0)"
+              "Format": "sign &gt;&gt; decimals(0)"
             },
             {
               "Name": "expeditionSuccessChance",
@@ -124,11 +128,11 @@
             },
             {
               "Name": "constrTimeNewspaper",
-              "Format": "sign >> invert"
+              "Format": "sign &gt;&gt; invert"
             },
             {
               "Name": "percentageInvert",
-              "Format": "percentage >> decimals(0) >> invert >> sign"
+              "Format": "percentage &gt;&gt; decimals(0) &gt;&gt; invert &gt;&gt; sign"
             },
             {
               "Name": "commonUnit",
@@ -136,7 +140,7 @@
             },
             {
               "Name": "attractiveness",
-              "Format": "decimals(0) >> sign"
+              "Format": "decimals(0) &gt;&gt; sign"
             },
             {
               "Name": "loadingSpeed",
@@ -148,7 +152,31 @@
             },
             {
               "Name": "repairAmountPerSecond",
-              "Format": "decimals(0) >> sign"
+              "Format": "decimals(0) &gt;&gt; sign"
+            },
+            {
+              "Name": "visitorCount",
+              "Format": "decimals(0)"
+            },
+            {
+              "Name": "moneyValueK",
+              "Format": "unit &gt;&gt; decimals(0)"
+            },
+            {
+              "Name": "optionValue",
+              "Format": "decimals(1)"
+            },
+            {
+              "Name": "storagegood10K",
+              "Format": "unit &gt;&gt; decimals(0) &gt;&gt; format10K &gt;&gt; decimals10K(1)"
+            },
+            {
+              "Name": "maintenance1K",
+              "Format": "sign &gt;&gt; decimals(0) &gt;&gt; invert &gt;&gt; format1K"
+            },
+            {
+              "Name": "balance1K",
+              "Format": "decimals(0) &gt;&gt; sign &gt;&gt; format1K"
             }
           ]
         }

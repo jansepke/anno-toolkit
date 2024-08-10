@@ -44,10 +44,21 @@
           "Item": {
             "Filename": "data/graphics/buildings/production/heavy_01/heavy_01.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 1010296,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier02_atWork",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -57,8 +68,7 @@
         "LocaText": {
           "English": {
             "Text": "Steelworks",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 5264
@@ -148,6 +158,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 4750,
         "SelfHealPerHealTick": 6
       },
@@ -167,17 +178,17 @@
             "FactoryProductivityFactor": 0.1,
             "FactoryUndertimeFactor": 0.05
           },
-          "Explosion": {
-            "BaseChance": 4,
-            "FactoryProductivityFactor": 0.1,
-            "FactoryOvertimeFactor": 0.1,
-            "FactoryUndertimeFactor": 0.05
-          },
           "Riot": {
             "FactoryOvertimeFactor": 0.4,
             "FactoryUndertimeFactor": 0.2,
             "FactoryHappinessFactor": 0.2,
             "HappinessThreshold": 20
+          },
+          "Explosion": {
+            "BaseChance": 4,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryOvertimeFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
           }
         }
       },
@@ -194,7 +205,8 @@
       },
       "Industrializable": "",
       "QuestObject": "",
-      "Electrifiable": ""
+      "Electrifiable": "",
+      "EcoSystemProvider": ""
     }
   },
   {
@@ -242,10 +254,21 @@
           "Item": {
             "Filename": "data/graphics/buildings/production/heavy_02/heavy_02.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 1010297,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier02_atWork",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -255,8 +278,7 @@
         "LocaText": {
           "English": {
             "Text": "Furnace",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 5265
@@ -361,6 +383,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 3500,
         "SelfHealPerHealTick": 6
       },
@@ -380,17 +403,17 @@
             "FactoryProductivityFactor": 0.1,
             "FactoryUndertimeFactor": 0.05
           },
-          "Explosion": {
-            "BaseChance": 4,
-            "FactoryProductivityFactor": 0.1,
-            "FactoryOvertimeFactor": 0.1,
-            "FactoryUndertimeFactor": 0.05
-          },
           "Riot": {
             "FactoryOvertimeFactor": 0.4,
             "FactoryUndertimeFactor": 0.2,
             "FactoryHappinessFactor": 0.2,
             "HappinessThreshold": 20
+          },
+          "Explosion": {
+            "BaseChance": 4,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryOvertimeFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
           }
         }
       },
@@ -406,7 +429,8 @@
       },
       "Industrializable": "",
       "QuestObject": "",
-      "Electrifiable": ""
+      "Electrifiable": "",
+      "EcoSystemProvider": ""
     }
   },
   {
@@ -455,10 +479,21 @@
           "Item": {
             "Filename": "data/graphics/buildings/production/heavy_04/heavy_04.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 1010299,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier02_atWork",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -468,8 +503,7 @@
         "LocaText": {
           "English": {
             "Text": "Weapon Factory",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 5267
@@ -565,6 +599,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 3500,
         "SelfHealPerHealTick": 6
       },
@@ -581,12 +616,6 @@
           "DamageExplosionCheckMax": 50
         },
         "IncidentInfectionChanceFactors": {
-          "Explosion": {
-            "BaseChance": 8,
-            "FactoryProductivityFactor": 0.1,
-            "FactoryOvertimeFactor": 0.1,
-            "FactoryUndertimeFactor": 0.05
-          },
           "Fire": {
             "BaseChance": 10,
             "DensityDistance": 20,
@@ -598,6 +627,12 @@
             "FactoryUndertimeFactor": 0.2,
             "FactoryHappinessFactor": 0.2,
             "HappinessThreshold": 20
+          },
+          "Explosion": {
+            "BaseChance": 8,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryOvertimeFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
           }
         }
       },
@@ -613,7 +648,8 @@
       },
       "Industrializable": "",
       "QuestObject": "",
-      "Electrifiable": ""
+      "Electrifiable": "",
+      "EcoSystemProvider": ""
     }
   },
   {
@@ -664,10 +700,21 @@
           "Item": {
             "Filename": "data/graphics/buildings/production/heavy_06/heavy_06.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 1010301,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier04_atWork",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -677,8 +724,7 @@
         "LocaText": {
           "English": {
             "Text": "Heavy Weapons Factory",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 5268
@@ -781,6 +827,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 7500,
         "SelfHealPerHealTick": 6
       },
@@ -797,12 +844,6 @@
           "DamageExplosionCheckMax": 50
         },
         "IncidentInfectionChanceFactors": {
-          "Explosion": {
-            "BaseChance": 12,
-            "FactoryProductivityFactor": 0.1,
-            "FactoryOvertimeFactor": 0.1,
-            "FactoryUndertimeFactor": 0.05
-          },
           "Fire": {
             "BaseChance": 10,
             "DensityDistance": 20,
@@ -814,6 +855,12 @@
             "FactoryUndertimeFactor": 0.2,
             "FactoryHappinessFactor": 0.2,
             "HappinessThreshold": 20
+          },
+          "Explosion": {
+            "BaseChance": 12,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryOvertimeFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
           }
         }
       },
@@ -832,7 +879,8 @@
         "MandatoryIndustrialization": 1
       },
       "QuestObject": "",
-      "Electrifiable": ""
+      "Electrifiable": "",
+      "EcoSystemProvider": ""
     }
   },
   {
@@ -883,10 +931,21 @@
           "Item": {
             "Filename": "data/graphics/buildings/production/heavy_07/heavy_07.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 1010302,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier04_atWork",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -896,8 +955,7 @@
         "LocaText": {
           "English": {
             "Text": "Motor Assembly Line",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 5269
@@ -1000,6 +1058,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 5750,
         "SelfHealPerHealTick": 6
       },
@@ -1015,12 +1074,6 @@
           "DamageExplosionChance": 20
         },
         "IncidentInfectionChanceFactors": {
-          "Explosion": {
-            "BaseChance": 4,
-            "FactoryProductivityFactor": 0.1,
-            "FactoryOvertimeFactor": 0.1,
-            "FactoryUndertimeFactor": 0.05
-          },
           "Fire": {
             "BaseChance": 10,
             "DensityDistance": 20,
@@ -1032,6 +1085,12 @@
             "FactoryUndertimeFactor": 0.2,
             "FactoryHappinessFactor": 0.2,
             "HappinessThreshold": 20
+          },
+          "Explosion": {
+            "BaseChance": 4,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryOvertimeFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
           }
         }
       },
@@ -1050,7 +1109,8 @@
         "MandatoryIndustrialization": 1
       },
       "QuestObject": "",
-      "Electrifiable": ""
+      "Electrifiable": "",
+      "EcoSystemProvider": ""
     }
   },
   {
@@ -1101,10 +1161,21 @@
           "Item": {
             "Filename": "data/graphics/buildings/production/heavy_08/heavy_08.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 1010303,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier04_atWork",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -1114,8 +1185,7 @@
         "LocaText": {
           "English": {
             "Text": "Cab Assembly Line",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 5270
@@ -1218,6 +1288,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 7500,
         "SelfHealPerHealTick": 6
       },
@@ -1233,12 +1304,6 @@
           "DamageExplosionChance": 20
         },
         "IncidentInfectionChanceFactors": {
-          "Explosion": {
-            "BaseChance": 4,
-            "FactoryProductivityFactor": 0.1,
-            "FactoryOvertimeFactor": 0.1,
-            "FactoryUndertimeFactor": 0.05
-          },
           "Fire": {
             "BaseChance": 10,
             "DensityDistance": 20,
@@ -1250,6 +1315,12 @@
             "FactoryUndertimeFactor": 0.2,
             "FactoryHappinessFactor": 0.2,
             "HappinessThreshold": 20
+          },
+          "Explosion": {
+            "BaseChance": 4,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryOvertimeFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
           }
         }
       },
@@ -1268,7 +1339,8 @@
         "MandatoryIndustrialization": 1
       },
       "QuestObject": "",
-      "Electrifiable": ""
+      "Electrifiable": "",
+      "EcoSystemProvider": ""
     }
   },
   {
@@ -1319,10 +1391,21 @@
           "Item": {
             "Filename": "data/graphics/buildings/production/heavy_09/heavy_09.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 1010282,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier02_atWork",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -1332,8 +1415,7 @@
         "LocaText": {
           "English": {
             "Text": "Brass Smeltery",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 5271
@@ -1436,6 +1518,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 2750,
         "SelfHealPerHealTick": 6
       },
@@ -1456,17 +1539,17 @@
             "FactoryProductivityFactor": 0.1,
             "FactoryUndertimeFactor": 0.05
           },
-          "Explosion": {
-            "BaseChance": 4,
-            "FactoryProductivityFactor": 0.1,
-            "FactoryOvertimeFactor": 0.1,
-            "FactoryUndertimeFactor": 0.05
-          },
           "Riot": {
             "FactoryOvertimeFactor": 0.4,
             "FactoryUndertimeFactor": 0.2,
             "FactoryHappinessFactor": 0.2,
             "HappinessThreshold": 20
+          },
+          "Explosion": {
+            "BaseChance": 4,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryOvertimeFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
           }
         }
       },
@@ -1483,7 +1566,680 @@
       },
       "Industrializable": "",
       "QuestObject": "",
-      "Electrifiable": ""
+      "Electrifiable": "",
+      "EcoSystemProvider": ""
+    }
+  },
+  {
+    "Template": "HeavyFactoryBuilding",
+    "Values": {
+      "Standard": {
+        "GUID": 2397,
+        "Name": "Scenario03 Steelworks",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_steel.png"
+      },
+      "Building": {
+        "BuildModeRandomRotation": 180,
+        "AssociatedRegions": "Colony01"
+      },
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 500
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 4
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 5
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/eoy21/graphics/buildings/production/heavy_02/heavy_02.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "Resident_tier02_atWork",
+        "Colors": {
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Furnace",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 55854
+      },
+      "Constructable": "",
+      "Locked": {
+        "DLCDependency": 24962
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": [
+            {
+              "Sound": 214813
+            },
+            {
+              "Sound": 202247
+            }
+          ]
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FarmBuilding",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "HeavyFactoryBuilding",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "Sound": 203830
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        },
+        "MaterialType": "Metal"
+      },
+      "FeedbackController": {
+        "UpdateMeshSequence": 0
+      },
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryInputs": {
+          "Item": [
+            {
+              "Product": 1010227,
+              "Amount": 1,
+              "StorageAmount": 8
+            },
+            {
+              "Product": 1010226,
+              "Amount": 1,
+              "StorageAmount": 6
+            }
+          ]
+        },
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 1010219,
+            "Amount": 1,
+            "StorageAmount": 4
+          }
+        }
+      },
+      "LogisticNode": "",
+      "AmbientMoodProvider": {
+        "AmbientMood": "IndustryHeavy",
+        "Murmur": "Factory"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 100,
+              "InactiveAmount": 50
+            },
+            {
+              "Product": 1010115,
+              "Amount": 100
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "AttackableType": "IslandBuilding",
+        "MaximumHitPoints": 3500,
+        "SelfHealPerHealTick": 6
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Illness": {
+            "Escalated": 0
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 2000
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "DensityDistance": 20,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          },
+          "Riot": {
+            "FactoryOvertimeFactor": 0.4,
+            "FactoryUndertimeFactor": 0.2,
+            "FactoryHappinessFactor": 0.2,
+            "HappinessThreshold": 20
+          },
+          "Explosion": {
+            "BaseChance": 4,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryOvertimeFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          }
+        }
+      },
+      "Culture": {
+        "HasPollution": 1
+      },
+      "IncidentInfluencer": {
+        "Influence": {
+          "Illness": {
+            "Distance": 10
+          }
+        }
+      },
+      "Industrializable": "",
+      "QuestObject": "",
+      "Electrifiable": "",
+      "EcoSystemProvider": ""
+    }
+  },
+  {
+    "Template": "HeavyFactoryBuilding",
+    "Values": {
+      "Standard": {
+        "GUID": 5988,
+        "Name": "Scenario04 Concret Works",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png"
+      },
+      "Building": {
+        "BuildModeRandomRotation": 180,
+        "AssociatedRegions": "Colony01"
+      },
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 500
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 4
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 5
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/eoy21/graphics/buildings/production/factory_01/factory_01.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "SA_Resident_tier01_atWork",
+        "Colors": {
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Concrete Works",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 60711
+      },
+      "Constructable": "",
+      "Locked": {
+        "DLCDependency": 24963
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": [
+            {
+              "Sound": 214813
+            },
+            {
+              "Sound": 202247
+            }
+          ]
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FarmBuilding",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "HeavyFactoryBuilding",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "Sound": 203830
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        },
+        "MaterialType": "Metal"
+      },
+      "FeedbackController": {
+        "UpdateMeshSequence": 0
+      },
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryInputs": {
+          "Item": [
+            {
+              "Product": 1010231,
+              "Amount": 1,
+              "StorageAmount": 6
+            },
+            {
+              "Product": 1010234,
+              "Amount": 1,
+              "StorageAmount": 6
+            },
+            {
+              "Product": 1010219,
+              "Amount": 1,
+              "StorageAmount": 6
+            }
+          ]
+        },
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 1010202,
+            "Amount": 1,
+            "StorageAmount": 6
+          }
+        },
+        "CycleTime": 45
+      },
+      "LogisticNode": "",
+      "AmbientMoodProvider": {
+        "AmbientMood": "IndustryHeavy",
+        "Murmur": "Factory"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 100,
+              "InactiveAmount": 50
+            },
+            {
+              "Product": 1010366,
+              "Amount": 100
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "AttackableType": "IslandBuilding",
+        "MaximumHitPoints": 3500,
+        "SelfHealPerHealTick": 6
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Illness": {
+            "Escalated": 0
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 2000
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "DensityDistance": 20,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          },
+          "Riot": {
+            "FactoryOvertimeFactor": 0.4,
+            "FactoryUndertimeFactor": 0.2,
+            "FactoryHappinessFactor": 0.2,
+            "HappinessThreshold": 20
+          },
+          "Explosion": {
+            "BaseChance": 4,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryOvertimeFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          }
+        }
+      },
+      "Culture": {
+        "HasPollution": 1
+      },
+      "IncidentInfluencer": {
+        "Influence": {
+          "Illness": {
+            "Distance": 10
+          }
+        }
+      },
+      "Industrializable": "",
+      "QuestObject": "",
+      "Electrifiable": "",
+      "EcoSystemProvider": ""
+    }
+  },
+  {
+    "Template": "HeavyFactoryBuilding",
+    "Values": {
+      "Standard": {
+        "GUID": 6080,
+        "Name": "DLC12 Colony01 Steelworks",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_steel.png"
+      },
+      "Building": {
+        "BuildModeRandomRotation": 180,
+        "AssociatedRegions": "Colony01",
+        "SecondPartyRelevant": 0
+      },
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 500
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 4
+            },
+            {
+              "Ingredient": 1010205,
+              "Amount": 5
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/eoy21/graphics/buildings/production/heavy_02/heavy_02.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 6080,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "SA_Resident_tier02_atWork",
+        "Colors": {
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Furnace",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 60131
+      },
+      "Constructable": "",
+      "Locked": {
+        "DLCDependency": 24963
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": [
+            {
+              "Sound": 200802
+            },
+            {
+              "Sound": 201629
+            }
+          ]
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FarmBuilding",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "HeavyFactoryBuilding",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "Sound": 203830
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        },
+        "MaterialType": "Metal"
+      },
+      "FeedbackController": {
+        "UpdateMeshSequence": 0
+      },
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryInputs": {
+          "Item": [
+            {
+              "Product": 1010227,
+              "Amount": 1,
+              "StorageAmount": 8
+            },
+            {
+              "Product": 1010226,
+              "Amount": 1,
+              "StorageAmount": 6
+            }
+          ]
+        },
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 1010219,
+            "Amount": 1,
+            "StorageAmount": 4
+          }
+        }
+      },
+      "LogisticNode": "",
+      "AmbientMoodProvider": {
+        "AmbientMood": "IndustryHeavy",
+        "Murmur": "Factory"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 100,
+              "InactiveAmount": 50
+            },
+            {
+              "Product": 1010367,
+              "Amount": 100
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "AttackableType": "IslandBuilding",
+        "MaximumHitPoints": 3500,
+        "SelfHealPerHealTick": 6
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Illness": {
+            "Escalated": 0
+          }
+        },
+        "Explosion": {
+          "ExplosionCoreDamage": 2000
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "DensityDistance": 20,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          },
+          "Riot": {
+            "FactoryOvertimeFactor": 0.4,
+            "FactoryUndertimeFactor": 0.2,
+            "FactoryHappinessFactor": 0.2,
+            "HappinessThreshold": 20
+          },
+          "Explosion": {
+            "BaseChance": 4,
+            "FactoryProductivityFactor": 0.1,
+            "FactoryOvertimeFactor": 0.1,
+            "FactoryUndertimeFactor": 0.05
+          }
+        }
+      },
+      "Culture": {
+        "HasPollution": 1
+      },
+      "IncidentInfluencer": {
+        "Influence": {
+          "Illness": {
+            "Distance": 10
+          }
+        }
+      },
+      "Industrializable": "",
+      "QuestObject": "",
+      "Electrifiable": "",
+      "EcoSystemProvider": ""
     }
   }
 ]

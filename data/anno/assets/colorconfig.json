@@ -9,17 +9,8 @@
       },
       "ColorConfig": {
         "TextColors": {
-          "GreyLight5": {
-            "Color": -1644826
-          },
           "OrangeHighlight": {
             "Color": -2393311
-          },
-          "GreyBase": {
-            "Color": -11974327
-          },
-          "GreyDark3": {
-            "Color": -16512243
           },
           "Red": {
             "Color": -4901351
@@ -27,8 +18,14 @@
           "Green": {
             "Color": -16218805
           },
-          "GreyLight4": {
-            "Color": -4408132
+          "GreenLight1": {
+            "Color": -16731553
+          },
+          "GreenLight2": {
+            "Color": -5455065
+          },
+          "GreyBase": {
+            "Color": -11974327
           },
           "GreyLight1": {
             "Color": -11119018
@@ -39,17 +36,20 @@
           "GreyLight3": {
             "Color": -6974059
           },
+          "GreyLight4": {
+            "Color": -4408132
+          },
+          "GreyLight5": {
+            "Color": -1644826
+          },
           "GreyDark1": {
             "Color": -13421773
           },
           "GreyDark2": {
             "Color": -16048348
           },
-          "GreenLight1": {
-            "Color": -16731553
-          },
-          "GreenLight2": {
-            "Color": -5455065
+          "GreyDark3": {
+            "Color": -16512243
           },
           "TorquoiseComplementaryOverlay": {
             "Color": -13999504
@@ -65,6 +65,9 @@
           },
           "TorquoiseComplementaryLight5": {
             "Color": -3813423
+          },
+          "TorquoiseComplementaryLight6": {
+            "Color": -15484705
           },
           "TorquoiseComplementaryDark1": {
             "Color": -16102565
@@ -90,19 +93,19 @@
           "TorquoiseGreen": {
             "Color": -16151421
           },
-          "TorquoiseComplementaryLight6": {
-            "Color": -15484705
-          },
           "Violet": {
             "Color": -11582862
-          },
-          "BlueLight": {
-            "Color": -15484705
           },
           "Yellow": {
             "Color": -256
           },
+          "BlueLight": {
+            "Color": -15484705
+          },
           "White": {
+            "Color": -1
+          },
+          "None": {
             "Color": -1
           },
           "TorquoiseIbarra": {
@@ -110,9 +113,6 @@
           },
           "BlueLeiSheng": {
             "Color": -13468201
-          },
-          "None": {
-            "Color": -1
           },
           "CorporationColorPlayer": {
             "Color": -756456
@@ -189,22 +189,22 @@
             "FreeAreaProductivity": {
               "FadeOutBorder": 0
             },
+            "Default": {
+              "BuildingRadiusLinesThickness": 0,
+              "BuildingRadiusSizeModifier": 8
+            },
             "Module_Radius": {
               "FadeOutBorder": 0,
               "BrightnessOutsideOfRadius": 0.4
+            },
+            "Module_IrrigationNeeder": {
+              "BuildingRadiusSizeModifier": 8
             },
             "ModuleOwner_Radius": {
               "FadeOutBorder": 0
             },
             "ModuleOwner_IrrigationNeeder": {
               "BuildingRadiusLinesThickness": 0,
-              "BuildingRadiusSizeModifier": 8
-            },
-            "Default": {
-              "BuildingRadiusLinesThickness": 0,
-              "BuildingRadiusSizeModifier": 8
-            },
-            "Module_IrrigationNeeder": {
               "BuildingRadiusSizeModifier": 8
             },
             "Canal": {
@@ -216,66 +216,168 @@
             }
           },
           "GridTileDescription": {
-            "Default": {
-              "FillColor": 16777215,
-              "LineColor": -8355712
-            },
             "Blocked_Invisible": {
               "FillColor": 0,
-              "LineColor": 0
+              "LineColor": 0,
+              "SecondaryFillColor": 0,
+              "SecondaryLineColor": 0
+            },
+            "Default": {
+              "FillColor": 16777215,
+              "LineColor": -8355712,
+              "SecondaryFillColor": 16777215,
+              "SecondaryLineColor": -1261109250
             },
             "Irrigated_Land": {
               "FillColor": -1685734871,
-              "LineColor": -699626986
-            },
-            "IrrigationMissing": {
-              "FillColor": 1692937774,
-              "LineColor": -1936647911
-            },
-            "FreeAreaUsed": {
-              "FillColor": -2134917185,
-              "LineColor": -8355712
-            },
-            "Irrigated_Pipe": {
-              "FillColor": 1767944662,
-              "LineColor": -1438738238
+              "LineColor": -699626986,
+              "SecondaryFillColor": -1685734871,
+              "SecondaryLineColor": -699626986
             },
             "Irrigated_Land_Prediction": {
               "FillColor": 1518713385,
-              "LineColor": -1773368810
-            },
-            "FreeAreaUsed_Irrigated": {
-              "FillColor": -1766070669,
-              "LineColor": -1773368810
-            },
-            "FreeAreaUsed_IrrigationMissing": {
-              "FillColor": -1426090860,
-              "LineColor": -1433331431
+              "LineColor": -1773368810,
+              "SecondaryFillColor": 1518713385,
+              "SecondaryLineColor": -1773368810
             },
             "Irrigated_Land_Future": {
               "FillColor": -1685734871,
-              "LineColor": -699626986
+              "LineColor": -699626986,
+              "SecondaryFillColor": -1685734871,
+              "SecondaryLineColor": -699626986
+            },
+            "Irrigated_Pipe": {
+              "FillColor": 1767944662,
+              "LineColor": -1438738238,
+              "SecondaryFillColor": 1767944662,
+              "SecondaryLineColor": -1438738238
             },
             "Irrigated_Pipe_Prediction": {
               "FillColor": 1771692031,
-              "LineColor": -1438738238
+              "LineColor": -1438738238,
+              "SecondaryFillColor": 1771692031,
+              "SecondaryLineColor": -1438738238
             },
             "Irrigated_Pipe_Future": {
               "FillColor": 1767944662,
-              "LineColor": 4102338
+              "LineColor": 4102338,
+              "SecondaryFillColor": 1767944662,
+              "SecondaryLineColor": 4102338
+            },
+            "IrrigationMissing": {
+              "FillColor": 1692937774,
+              "LineColor": -1936647911,
+              "SecondaryFillColor": 1692937774,
+              "SecondaryLineColor": -1936647911
+            },
+            "FreeAreaUsed": {
+              "FillColor": -2134917185,
+              "LineColor": -8355712,
+              "SecondaryFillColor": -2134917185,
+              "SecondaryLineColor": -8355712
+            },
+            "FreeAreaUsed_Irrigated": {
+              "FillColor": -1766070669,
+              "LineColor": -1773368810,
+              "SecondaryFillColor": -1766070669,
+              "SecondaryLineColor": -1773368810
+            },
+            "FreeAreaUsed_IrrigationMissing": {
+              "FillColor": -1426090860,
+              "LineColor": -1433331431,
+              "SecondaryFillColor": -1426090860,
+              "SecondaryLineColor": -1433331431
             }
           },
           "ValidBorderRectColor": -1,
           "InvalidBorderRectColor": -1595180997
         },
+        "SkinColors": {
+          "SkinRectValidColor": 1677775360,
+          "SkinRectInvalidColor": 1691484160,
+          "SkinBorderColor": -1778331136,
+          "SkinHoverColor": -1778331136
+        },
         "BlueprintColorPerRegion": {
+          "Moderate": {
+            "ConsoleBlueprintColor": -1775976462,
+            "ConsoleDecalColor": 925155314
+          },
+          "Colony01": {
+            "ConsoleDecalColor": 1176403176
+          },
           "Arctic": {
-            "BlueprintColor": -937526040
+            "BlueprintColor": -937526040,
+            "ConsoleDecalColor": 1092517096
+          },
+          "Africa": {
+            "ConsoleDecalColor": 1092517096
           }
         },
         "UnderwaterOutlineColor": 1090519039,
         "WaterConnectionHint": -1,
-        "WaterConnectionHintBlocked": -1
+        "WaterConnectionHintBlocked": -1,
+        "SelectionCircleColors": {
+          "BorderColorDefault": -1,
+          "BorderColorCopyAdd": -11299872,
+          "BorderColorCopyRemove": -4173747,
+          "BorderColorDemolish": -4173747,
+          "BorderColorUpgrade": -6571175,
+          "BorderColorDowngrade": -551354,
+          "BorderColorMove": -108,
+          "BorderColorAttack": -4250593,
+          "DeleteColors": {
+            "DeleteRectColor": 1691484160,
+            "DeleteGhostColor": 1691484160,
+            "DeleteTintColor": -3054492,
+            "DeleteBorderColor": 13762571,
+            "DeleteCursorBeamColor": 1691484160
+          },
+          "UpgradeColors": {
+            "UpgradeRectColor": 1677775360,
+            "UpgradeGhostColor": -1778331136,
+            "UpgradeTintColor": -10170012,
+            "UpgradeBorderColor": 53760,
+            "UpgradeCursorBeamColor": 1677775360
+          },
+          "DowngradeColors": {
+            "DowngradeRectColor": 1691449856,
+            "DowngradeGhostColor": -1764656640,
+            "DowngradeTintColor": -3036828,
+            "DowngradeBorderColor": 13732608,
+            "DowngradeCursorBeamColor": 1691449856
+          },
+          "PipetteColors": {
+            "PipetteRectColor": 1677753041,
+            "PipetteGhostColor": -1778349103,
+            "PipetteTintColor": -12738351,
+            "PipetteBorderColor": 37585,
+            "PipetteCursorBeamColor": 1677753041
+          },
+          "MoveColors": {
+            "MoveRectColor": 0,
+            "MoveGhostColor": -1764635136,
+            "MoveTintColor": -3027612,
+            "MoveBorderColor": 13749760
+          },
+          "SelectionRectangleColors": {
+            "LineColorCopyAdd": -16747521,
+            "LineColorCopyRemove": -63488,
+            "LineColorDemolish": -63488,
+            "LineColorUpgrade": -5570816,
+            "LineColorDowngrade": -36096,
+            "LineColorMove": -1704192,
+            "LineColorDefault": -1,
+            "LineColorConflict": -63488
+          },
+          "PickingBorderColor": -1
+        },
+        "MultiMoveColors": {
+          "ValidRect": 1677775360,
+          "EmptyRect": 1691484160,
+          "MoveGhostColor": -1778331136,
+          "MoveBorderColor": -1778331136
+        }
       }
     }
   }

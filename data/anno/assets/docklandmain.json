@@ -6,12 +6,12 @@
         "GUID": 601470,
         "Name": "Dockland - Main",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_docklands_main.png",
-        "InfoDescription": 132101,
-        "Version": "dlc07"
+        "InfoDescription": 132101
       },
       "Building": {
         "BuildingCategoryName": 11152,
-        "TerrainType": "Water_Including_Coast"
+        "TerrainType": "Water_Including_Coast",
+        "SecondPartyRelevant": 0
       },
       "Blocking": {
         "GroundDecalAsset": 601492,
@@ -24,6 +24,11 @@
           "Item": {
             "Filename": "data/dlc07/graphics/buildings/special/harbor_main_01/harbor_main_01.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 601470,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Constructable": "",
@@ -70,7 +75,13 @@
             }
           ]
         },
-        "AllowModulesInSameHarbor": 1
+        "AllowModulesInSameHarbor": 1,
+        "BlueprintModuleOption": {
+          "ModuleButtonIcon": 132424,
+          "ModulePopupDescription": 132620,
+          "ModuleButtonInfotip": 132165,
+          "ShowRemainingModuleCount": 1
+        }
       },
       "BuildingUnique": {
         "Uniques": {
@@ -87,7 +98,13 @@
       "Selection": {
         "GUIType": "Dockland",
         "StaticHelpEntryPoint": "DocklandsExportContract",
-        "AllowedDragType": "ItemSocket;CargoItemStack;StorageItemStack",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "AllowedDragType": "ItemSocket;CargoItemStack;StorageItemStack;SharedTransferItem",
         "ParticipantMessageArcheType": "Void_Trader"
       },
       "Infolayer": "",
@@ -202,8 +219,7 @@
         "LocaText": {
           "English": {
             "Text": "Docklands Main Wharf",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 48689
@@ -221,13 +237,13 @@
         "AdditionalModuleLimitsPerExportLevel": {
           "Uncommon": {
             "ModuleType": {
-              "DocklandModuleExport": {
-                "AdditionalAmount": 1
-              },
               "DocklandModuleStorage": {
                 "AdditionalAmount": 2
               },
               "DocklandModulePier": {
+                "AdditionalAmount": 1
+              },
+              "DocklandModuleExport": {
                 "AdditionalAmount": 1
               },
               "DocklandModuleSpeed": {
@@ -237,16 +253,16 @@
           },
           "Rare": {
             "ModuleType": {
-              "DocklandModulePier": {
-                "AdditionalAmount": 1
-              },
-              "DocklandModuleExport": {
-                "AdditionalAmount": 1
-              },
               "DocklandModuleStorage": {
                 "AdditionalAmount": 2
               },
               "DocklandModuleItem": {
+                "AdditionalAmount": 1
+              },
+              "DocklandModulePier": {
+                "AdditionalAmount": 1
+              },
+              "DocklandModuleExport": {
                 "AdditionalAmount": 1
               },
               "DocklandModuleRepair": {
@@ -259,6 +275,9 @@
           },
           "Epic": {
             "ModuleType": {
+              "DocklandModuleStorage": {
+                "AdditionalAmount": 2
+              },
               "DocklandModuleItem": {
                 "AdditionalAmount": 1
               },
@@ -267,9 +286,6 @@
               },
               "DocklandModuleExport": {
                 "AdditionalAmount": 1
-              },
-              "DocklandModuleStorage": {
-                "AdditionalAmount": 2
               },
               "DocklandModuleRepair": {
                 "AdditionalAmount": 1
@@ -281,6 +297,9 @@
           },
           "Legendary": {
             "ModuleType": {
+              "DocklandModuleStorage": {
+                "AdditionalAmount": 2
+              },
               "DocklandModuleItem": {
                 "AdditionalAmount": 2
               },
@@ -288,9 +307,6 @@
                 "AdditionalAmount": 2
               },
               "DocklandModuleExport": {
-                "AdditionalAmount": 2
-              },
-              "DocklandModuleStorage": {
                 "AdditionalAmount": 2
               },
               "DocklandModuleRepair": {
@@ -318,11 +334,10 @@
         "MinLoadingTime": 5
       },
       "Attackable": {
+        "AttackableType": "HarbourBuilding",
         "MaximumHitPoints": 9000,
-        "SelfHealPerHealTick": 5,
-        "CanBeAttackedByPlayer": 1,
         "DefenseByAIFactor": 9990,
-        "TakeOverEffect": "OnHit",
+        "MilitaryDefensePoints": 5,
         "MoralePower": 200,
         "IslandWarFlag": 102303,
         "RuinSmokeParticles": {
@@ -345,7 +360,7 @@
         },
         "ExplosionEffectsMin": 3,
         "ExplosionEffectsMax": 3,
-        "MilitaryDefensePoints": 5
+        "SelfHealPerHealTick": 5
       },
       "StorageBase": "",
       "Warehouse": {

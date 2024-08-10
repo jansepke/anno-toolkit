@@ -15,6 +15,8 @@
           }
         },
         "Skins": {
+          "DefaultSkinName": 118718,
+          "DefaultSkinCategoryName": 7312,
           "SkinList": {
             "Item": {
               "SkinAssetGuid": 80149
@@ -26,7 +28,13 @@
         "MeshPlacement": "OnWaterSlope"
       },
       "Selection": {
-        "MultiSelectable": 1
+        "MultiSelectable": 1,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Walking": {
         "ShortenSailsAfter": 0,
@@ -54,8 +62,7 @@
         "LocaText": {
           "English": {
             "Text": "The Great Eastern",
-            "Status": "Exported",
-            "ExportCount": 3
+            "Status": "Exported"
           }
         },
         "LineID": 14872
@@ -76,8 +83,8 @@
       "Collector": "",
       "Attackable": {
         "MaximumHitPoints": 6500,
-        "HPBarOffset": 4,
         "AlertRange": 150,
+        "HPBarOffset": 4,
         "SelfHealPerHealTick": 2,
         "SelfHealPausedTimeIfAttacked": 60000
       },
@@ -106,7 +113,240 @@
         "SlotCount": 8
       },
       "FeedbackController": "",
-      "Draggable": "",
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010218,
+              "Amount": 60
+            },
+            {
+              "Ingredient": 1010224,
+              "Amount": 30
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 20
+      },
+      "Craftable": {
+        "CraftingTime": 1080000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 70,
+        "ExpeditionAttributes": {
+          "Item": [
+            {
+              "Attribute": "Might"
+            },
+            {
+              "Attribute": "Navigation",
+              "Amount": 20
+            },
+            {
+              "Attribute": "PerkTradeShip",
+              "Amount": 1
+            },
+            {
+              "Attribute": "PerkSteamShip",
+              "Amount": 1
+            }
+          ]
+        }
+      },
+      "ShipMaintenance": {
+        "Maintenance": 1000
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 750000,
+            "Resource": 1010017
+          }
+        },
+        "CanBeSoldToTrader": 0
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700094
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700125
+          },
+          "MoveCommand": {
+            "AudioPool": 700095
+          },
+          "EscortCommand": {
+            "AudioPool": 700127
+          },
+          "PatrolCommand": {
+            "AudioPool": 700126
+          }
+        }
+      },
+      "BuildPermit": ""
+    }
+  },
+  {
+    "Template": "TradeShipPermit",
+    "Values": {
+      "Standard": {
+        "GUID": 15836,
+        "Name": "Great Eatern (Trade-Creative-Mode)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_ship_real_great_eastern.png",
+        "InfoDescription": 23377
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/vehicle/big_colony01_01/big_colony01_01.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 118718,
+          "DefaultSkinCategoryName": 7312,
+          "SkinList": {
+            "Item": {
+              "SkinAssetGuid": 80149
+            }
+          }
+        }
+      },
+      "Mesh": {
+        "MeshPlacement": "OnWaterSlope"
+      },
+      "Selection": {
+        "MultiSelectable": 1,
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Walking": {
+        "ShortenSailsAfter": 0,
+        "ReservationLength": 16,
+        "ReservationWidth": 6,
+        "PathPlannerLayer": "Water",
+        "ExpensiveDirSmoothing": 1,
+        "TurnAroundRadius": 8,
+        "Acceleration": 0.75,
+        "Deceleration": 1,
+        "TurnRadius": 8,
+        "TurnSpeedInPlace": 20,
+        "TurnDeceleration": 0,
+        "TurnMovement": 0,
+        "LeaningMaxAngle": -10,
+        "ForwardSpeed": 5.5,
+        "WindMinSlowdownFactor": 1,
+        "WindMaxSpeedupFactor": 1,
+        "CargoFullFactor": 0.8,
+        "DamageFullFactor": 0.5,
+        "MinSlowdownFactor": 0.5,
+        "CurveSegmentDensity": "High"
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "The Creative Eastern",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 61778
+      },
+      "CommandQueue": {
+        "FormationPriority": 1,
+        "TradeShipPoints": 8,
+        "PriorityShipList": 2,
+        "ShipUniqueType": "GreatEastern"
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 0,
+        "Length": 7,
+        "Width": 1.5,
+        "FactorMovement": 0.7,
+        "FactorRotation": 0.65
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 6500,
+        "AlertRange": 150,
+        "HPBarOffset": 4,
+        "SelfHealPerHealTick": 2,
+        "SelfHealPausedTimeIfAttacked": 60000
+      },
+      "MinimapToken": {
+        "TokenAsset": 2001947,
+        "StrategicMapAsset": 501018
+      },
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": {
+            "Sound": 201827
+          }
+        },
+        "DestroySounds": {
+          "Item": {
+            "Sound": 238314
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 3,
+        "SocketAllocation": "Ship;SteamShip;Tradeship",
+        "SlotCount": 8
+      },
+      "FeedbackController": "",
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Cost": {
         "Costs": {
           "Item": [
@@ -181,11 +421,11 @@
           "Selection": {
             "AudioPool": 700094
           },
-          "MoveCommand": {
-            "AudioPool": 700095
-          },
           "SelectionDamaged": {
             "AudioPool": 700125
+          },
+          "MoveCommand": {
+            "AudioPool": 700095
           },
           "EscortCommand": {
             "AudioPool": 700127

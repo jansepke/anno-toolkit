@@ -1,0 +1,2151 @@
+[
+  {
+    "Template": "A7_QuestAirdrop",
+    "Values": {
+      "Standard": {
+        "GUID": 103095,
+        "Name": "Queen Q6.4 - CarepackageDrop"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": {
+                "Profile": 75
+              },
+              "BaseNotification": {
+                "NotificationText": 1699
+              },
+              "NotificationSubtitle": {
+                "Subtitle": 1687
+              }
+            }
+          }
+        },
+        "SuccessMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": {
+                "Profile": 75
+              },
+              "BaseNotification": {
+                "NotificationText": 1700
+              },
+              "NotificationSubtitle": {
+                "Subtitle": 1694
+              }
+            }
+          }
+        },
+        "FailureMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          },
+          "SuppressMessage": 1
+        },
+        "SelectionReminderMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          },
+          "SuppressMessage": 1
+        },
+        "AbortedManuallyMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          },
+          "SuppressMessage": 1
+        },
+        "AbortedAutomaticallyMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          },
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          },
+          "SuppressMessage": 1
+        },
+        "EscortShipSelectedMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "ReminderMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "ResolveConfirmationMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "InvitationSmugglerQuestMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "SmugglerQuestTradingStationReached": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "StartInvitationGiveItemMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "StartFollowShipMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "OnQuestStart": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestDeclined": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestActive": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionSetQuestPoolEnablement",
+                    "Values": {
+                      "Action": "",
+                      "ActionSetQuestPoolEnablement": {
+                        "QuestPoolListToChange": {
+                          "Item": {
+                            "QuestPool": 103932
+                          }
+                        },
+                        "ChangeForProcessingParticipant": 1
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "OnQuestAborted": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestTimedOut": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnActiveQuestTimedOut": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestFailed": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestDiscarded": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionRegisterTrigger",
+                    "Values": {
+                      "Action": "",
+                      "ActionRegisterTrigger": {
+                        "TriggerAsset": 104348
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "OnQuestSucceeded": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": [
+                  {
+                    "Action": {
+                      "Template": "ActionDelayedActions",
+                      "Values": {
+                        "Action": "",
+                        "ActionDelayedActions": {
+                          "DelayedActions": {
+                            "IsBaseAutoCreateAsset": 1,
+                            "Values": {
+                              "ActionList": {
+                                "Actions": {
+                                  "Item": {
+                                    "Action": {
+                                      "Template": "ActionDeleteObjects",
+                                      "Values": {
+                                        "Action": "",
+                                        "ActionDeleteObjects": {
+                                          "ShipsLeaveMapFirst": 1
+                                        },
+                                        "ObjectFilter": {
+                                          "ObjectGUID": 101139
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionUnlockAsset",
+                      "Values": {
+                        "Action": "",
+                        "ActionUnlockAsset": {
+                          "UnlockAssets": {
+                            "Item": {
+                              "Asset": 103830
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionUnlockAsset",
+                      "Values": {
+                        "Action": "",
+                        "ActionUnlockAsset": {
+                          "UnlockAssets": {
+                            "Item": {
+                              "Asset": 103833
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionDelayedActions",
+                      "Values": {
+                        "Action": "",
+                        "ActionDelayedActions": {
+                          "ExecutionDelay": 1000,
+                          "DelayedActions": {
+                            "IsBaseAutoCreateAsset": 1,
+                            "Values": {
+                              "ActionList": {
+                                "Actions": {
+                                  "Item": {
+                                    "Action": {
+                                      "Template": "ActionStartQuest",
+                                      "Values": {
+                                        "Action": "",
+                                        "ActionStartQuest": {
+                                          "Quest": 104756,
+                                          "QuestSession": 180023
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "OnQuestEnd": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnPhotographySuccessNewspaperAction": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionForceNewspaper": ""
+          }
+        },
+        "QuestGiver": 75,
+        "StoryText": 102905,
+        "CountForQuestLimit": 0,
+        "QuestTimeLimit": 0,
+        "QuestCategory": "DLC11Quest",
+        "QuestActivation": "QuestStart",
+        "IsAbortable": 0,
+        "QuestTrackerVisibility": "Global",
+        "ConfirmOnReachedCondition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ConditionQuestResolveConfirmation": "",
+            "Condition": "",
+            "ConditionQuestObjective": ""
+          }
+        },
+        "HasExclusiveQuestGiver": 0,
+        "ReputationQuestFail": {
+          "ReputationFailList": ""
+        },
+        "QuestHints": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "A7_QuestAirdrop",
+                    "Index": 0
+                  }
+                }
+              },
+              "Text": 103096
+            },
+            {
+              "Text": 103097
+            },
+            {
+              "Text": 103098
+            }
+          ]
+        },
+        "StarterSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": ""
+          }
+        },
+        "SuccessSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": ""
+          }
+        },
+        "HasReminderMessage": 0
+      },
+      "PreConditionList": {
+        "Condition": {
+          "Template": "ConditionMutualAreaInSubconditions",
+          "Values": {
+            "Condition": "",
+            "ConditionMutualAreaInSubconditions": {
+              "SpecifySession": 1,
+              "SessionAsset": 180025
+            }
+          }
+        },
+        "SubConditions": {
+          "Item": {
+            "SubCondition": {
+              "Template": "PreConditionList",
+              "Values": {
+                "PreConditionList": {
+                  "Condition": {
+                    "Template": "ConditionObjectPosition",
+                    "Values": {
+                      "Condition": "",
+                      "ConditionPropsSessionSettings": "",
+                      "ConditionObjectPosition": {
+                        "Radius": 120
+                      },
+                      "ObjectFilter": {
+                        "ObjectGUID": 101139,
+                        "ObjectSession": 180025,
+                        "MaxObjectCount": 1
+                      },
+                      "ObjectTargetFilter": {
+                        "TargetGUID": 700048,
+                        "TargetCheckProcessingParticipantID": 1,
+                        "TargetObjectSession": 180025
+                      },
+                      "ConditionPropsNegatable": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "A Royal Ransom",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 56654
+      },
+      "Reward": {
+        "RewardAssets": {
+          "Item": [
+            {
+              "Reward": 103830,
+              "Amount": 1,
+              "IsHidden": 1
+            },
+            {
+              "Reward": 103833,
+              "Amount": 1,
+              "IsHidden": 1
+            }
+          ]
+        },
+        "RewardReputation": ""
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": [
+            {
+              "Objective": {
+                "Template": "FakeQuestObjective",
+                "Values": {
+                  "ConditionQuestObjective": {
+                    "FakeMinimapPings": {
+                      "Objects": {
+                        "Item": {
+                          "FakeMinimapObjects": {
+                            "Template": "ObjectFilter",
+                            "Values": {
+                              "ObjectFilter": {
+                                "ObjectGUID": 101139,
+                                "ObjectSession": 180025,
+                                "MaxObjectCount": 1
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "ConditionQuestFakeObjective": {
+                    "QuestTrackerEntries": {
+                      "Item": {
+                        "CombinedText": 102909,
+                        "QuestTrackerIcon": "data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_care_packages.png"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "A7_QuestAirdrop",
+                    "Index": 0
+                  }
+                }
+              },
+              "Objective": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "ConditionQuestObjective": {
+                    "IsVisibleInQuestTracker": 0,
+                    "TextCombinedContextValue": 102909,
+                    "QuestTrackerIcon": "data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_care_packages.png"
+                  },
+                  "ConditionQuestAirdrop": {
+                    "DropOnObject": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ObjectFilter": {
+                          "ObjectGUID": 101254,
+                          "ObjectSession": 180025,
+                          "CheckQuestArea": 1,
+                          "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                        }
+                      }
+                    },
+                    "DropObjectRangeOp": "Any",
+                    "DroppedProjectile": 1050
+                  }
+                }
+              }
+            },
+            {
+              "Objective": {
+                "Template": "AirdropObjective",
+                "Values": {
+                  "ConditionQuestObjective": {
+                    "IsVisibleInQuestTracker": 0
+                  },
+                  "ConditionQuestAirdrop": {
+                    "DropOnObject": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ObjectFilter": {
+                          "ObjectGUID": 101255,
+                          "ObjectSession": 180025,
+                          "CheckQuestArea": 1,
+                          "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                        }
+                      }
+                    },
+                    "DropObjectRangeOp": "Any",
+                    "DroppedProjectile": 1050
+                  }
+                }
+              }
+            },
+            {
+              "Objective": {
+                "Template": "AirdropObjective",
+                "Values": {
+                  "ConditionQuestObjective": {
+                    "IsVisibleInQuestTracker": 0
+                  },
+                  "ConditionQuestAirdrop": {
+                    "DropOnObject": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ObjectFilter": {
+                          "ObjectGUID": 24792,
+                          "ObjectSession": 180025,
+                          "CheckQuestArea": 1,
+                          "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                        }
+                      }
+                    },
+                    "DropObjectRangeOp": "Any",
+                    "DroppedProjectile": 1050
+                  }
+                }
+              }
+            },
+            {
+              "Objective": {
+                "Template": "AirdropObjective",
+                "Values": {
+                  "ConditionQuestObjective": {
+                    "IsVisibleInQuestTracker": 0
+                  },
+                  "ConditionQuestAirdrop": {
+                    "DropOnObject": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ObjectFilter": {
+                          "ObjectGUID": 24793,
+                          "ObjectSession": 180025,
+                          "CheckQuestArea": 1,
+                          "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                        }
+                      }
+                    },
+                    "DropObjectRangeOp": "Any",
+                    "DroppedProjectile": 1050
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "WinConditionCompletionOrder": "MutuallyExclusive"
+      },
+      "QuestOptional": {
+        "HasStarterObject": "None",
+        "StarterObject": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionStarterObject": "",
+            "ConditionQuestObjective": "",
+            "ConditionPropsSessionSettings": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "A7_QuestAirdrop",
+    "Values": {
+      "Standard": {
+        "GUID": 103558,
+        "Name": "Editor Q7.4 - DropQuest"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          },
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": {
+                "Profile": 1362
+              },
+              "BaseNotification": {
+                "NotificationText": 104787
+              },
+              "NotificationSubtitle": {
+                "Subtitle": 103132
+              }
+            }
+          }
+        },
+        "FailureMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          },
+          "SuppressMessage": 1
+        },
+        "SelectionReminderMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "AbortedManuallyMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "AbortedAutomaticallyMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "InvitationMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "EscortShipSelectedMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "ReminderMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "ResolveConfirmationMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "InvitationSmugglerQuestMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "SmugglerQuestTradingStationReached": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "StartInvitationGiveItemMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "StartFollowShipMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "OnQuestStart": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": [
+                  {
+                    "Action": {
+                      "Template": "ActionSpawnObjects",
+                      "Values": {
+                        "Action": "",
+                        "ActionSpawnObjects": {
+                          "SpawnGUID": 133138,
+                          "Amount": 1,
+                          "Owner": "Neutral"
+                        },
+                        "SpawnArea": {
+                          "SpawnContext": "Object",
+                          "ContextGUID": 101257,
+                          "LimitToQuestArea": 1,
+                          "DistanceToContext": 5,
+                          "MinObjectDistance": 5,
+                          "MaxObjectDistance": 20
+                        },
+                        "SessionFilter": {
+                          "AllowProcessingSession": 1,
+                          "AllowQuestSession": 1,
+                          "AllowQuestArea": 1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionSpawnObjects",
+                      "Values": {
+                        "Action": "",
+                        "ActionSpawnObjects": {
+                          "SpawnGUID": 103404,
+                          "Amount": 1,
+                          "Owner": "Neutral"
+                        },
+                        "SpawnArea": {
+                          "SpawnContext": "Object",
+                          "ContextGUID": 101257,
+                          "LimitToQuestArea": 1,
+                          "DistanceToContext": 5,
+                          "MinObjectDistance": 5,
+                          "MaxObjectDistance": 15
+                        },
+                        "SessionFilter": {
+                          "AllowProcessingSession": 1,
+                          "AllowQuestSession": 1,
+                          "AllowQuestArea": 1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionEndQuest",
+                      "Values": {
+                        "Action": "",
+                        "ActionEndQuest": {
+                          "Quest": 103871
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionEndQuest",
+                      "Values": {
+                        "Action": "",
+                        "ActionEndQuest": {
+                          "Quest": 104695
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionRegisterTrigger",
+                      "Values": {
+                        "Action": "",
+                        "ActionRegisterTrigger": {
+                          "TriggerAsset": 103876,
+                          "UnregisterTrigger": 1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionRegisterTrigger",
+                      "Values": {
+                        "Action": "",
+                        "ActionRegisterTrigger": {
+                          "TriggerAsset": 104714,
+                          "UnregisterTrigger": 1
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "OnQuestDeclined": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestActive": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestAborted": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestTimedOut": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnActiveQuestTimedOut": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestFailed": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestDiscarded": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": {
+                  "Action": {
+                    "Template": "ActionRegisterTrigger",
+                    "Values": {
+                      "Action": "",
+                      "ActionRegisterTrigger": {
+                        "TriggerAsset": 104352
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "OnQuestSucceeded": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": {
+              "Actions": {
+                "Item": [
+                  {
+                    "Action": {
+                      "Template": "ActionRegisterTrigger",
+                      "Values": {
+                        "Action": "",
+                        "ActionRegisterTrigger": {
+                          "TriggerAsset": 103753,
+                          "InheritArea": 1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionSpawnObjects",
+                      "Values": {
+                        "Action": "",
+                        "ActionSpawnObjects": {
+                          "SpawnGUID": 110497,
+                          "Amount": 1,
+                          "Owner": "Neutral"
+                        },
+                        "SpawnArea": {
+                          "SpawnContext": "Object",
+                          "ContextGUID": 101257,
+                          "LimitToQuestArea": 1,
+                          "DistanceToContext": 15,
+                          "MinObjectDistance": 5,
+                          "MaxObjectDistance": 20
+                        },
+                        "SessionFilter": {
+                          "AllowProcessingSession": 1,
+                          "AllowQuestSession": 1,
+                          "AllowQuestArea": 1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionDelayedActions",
+                      "Values": {
+                        "Action": "",
+                        "ActionDelayedActions": {
+                          "ExecutionDelay": 120000,
+                          "DelayedActions": {
+                            "IsBaseAutoCreateAsset": 1,
+                            "Values": {
+                              "ActionList": {
+                                "Actions": {
+                                  "Item": [
+                                    {
+                                      "Action": {
+                                        "Template": "ActionDeleteObjects",
+                                        "Values": {
+                                          "Action": "",
+                                          "ActionDeleteObjects": "",
+                                          "ObjectFilter": {
+                                            "ObjectGUID": 110497
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "Action": {
+                                        "Template": "ActionDeleteObjects",
+                                        "Values": {
+                                          "Action": "",
+                                          "ActionDeleteObjects": "",
+                                          "ObjectFilter": {
+                                            "ObjectGUID": 103404
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "Action": {
+                                        "Template": "ActionDeleteObjects",
+                                        "Values": {
+                                          "Action": "",
+                                          "ActionDeleteObjects": "",
+                                          "ObjectFilter": {
+                                            "ObjectGUID": 133138,
+                                            "CheckQuestArea": 1
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "Action": {
+                                        "Template": "ActionDeleteObjects",
+                                        "Values": {
+                                          "Action": "",
+                                          "ActionDeleteObjects": {
+                                            "ShipsLeaveMapFirst": 1
+                                          },
+                                          "ObjectFilter": {
+                                            "ObjectGUID": 104104
+                                          }
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionRegisterTrigger",
+                      "Values": {
+                        "Action": "",
+                        "ActionRegisterTrigger": {
+                          "TriggerAsset": 103885,
+                          "UnregisterTrigger": 1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionDeleteObjects",
+                      "Values": {
+                        "Action": "",
+                        "ActionDeleteObjects": "",
+                        "ObjectFilter": {
+                          "ObjectGUID": 103543,
+                          "ObjectSession": 180025
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionEndQuest",
+                      "Values": {
+                        "Action": "",
+                        "ActionEndQuest": {
+                          "Quest": 103936,
+                          "AbortQuestExceptionally": 1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "Action": {
+                      "Template": "ActionEndQuest",
+                      "Values": {
+                        "Action": "",
+                        "ActionEndQuest": {
+                          "Quest": 103852,
+                          "AbortQuestExceptionally": 1
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "OnQuestEnd": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnPhotographySuccessNewspaperAction": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionForceNewspaper": ""
+          }
+        },
+        "QuestGiver": 91,
+        "StoryText": 103148,
+        "QuestTimeLimit": 0,
+        "QuestCategory": "DLC11Quest",
+        "QuestActivation": "QuestStart",
+        "IsAbortable": 0,
+        "ConfirmOnReachedCondition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ConditionQuestResolveConfirmation": "",
+            "Condition": "",
+            "ConditionQuestObjective": ""
+          }
+        },
+        "ReputationQuestFail": {
+          "ReputationFailList": ""
+        },
+        "QuestHints": {
+          "Item": [
+            {
+              "Text": 103096
+            },
+            {
+              "Text": 103097
+            },
+            {
+              "Text": 103098
+            }
+          ]
+        },
+        "StarterSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": ""
+          }
+        },
+        "SuccessSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": ""
+          }
+        },
+        "HasReminderMessage": 0
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Breadcrumbs",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57731
+      },
+      "Reward": {
+        "RewardAssets": "",
+        "RewardReputation": "",
+        "GenerateIgnoreUnlocks": 1
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "A7_QuestAirdrop",
+                    "Index": 0
+                  }
+                }
+              },
+              "Objective": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "ConditionQuestObjective": {
+                    "IsVisibleInQuestTracker": 0,
+                    "TextCombinedContextValue": 103842,
+                    "OnSuccessActions": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ActionList": {
+                          "Actions": {
+                            "Item": [
+                              {
+                                "Action": {
+                                  "Template": "ActionEndQuest",
+                                  "Values": {
+                                    "Action": "",
+                                    "ActionEndQuest": {
+                                      "Quest": 103558,
+                                      "WinQuest": 1
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "Action": {
+                                  "Template": "ActionUnlockAsset",
+                                  "Values": {
+                                    "Action": "",
+                                    "ActionUnlockAsset": {
+                                      "UnlockAssets": {
+                                        "Item": {
+                                          "Asset": 103886
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "ConditionQuestAirdrop": {
+                    "DropOnObject": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ObjectFilter": {
+                          "ObjectGUID": 101257,
+                          "CheckParticipantID": 1,
+                          "CheckProcessingParticipantID": 1,
+                          "ObjectSession": 180025,
+                          "CheckQuestStarterSession": 1,
+                          "CheckQuestArea": 1,
+                          "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                        }
+                      }
+                    },
+                    "DropObjectRangeOp": "Any",
+                    "DroppedProjectile": 103542
+                  }
+                }
+              }
+            },
+            {
+              "Objective": {
+                "Template": "FakeQuestObjective",
+                "Values": {
+                  "ConditionQuestObjective": {
+                    "FakeMinimapPings": {
+                      "Objects": {
+                        "Item": {
+                          "FakeMinimapObjects": {
+                            "Template": "ObjectFilter",
+                            "Values": {
+                              "ObjectFilter": {
+                                "ObjectGUID": 104104,
+                                "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                              }
+                            }
+                          },
+                          "SignsAndFeedback": {
+                            "Template": "ConditionObjectiveSignsAndFeedback",
+                            "Values": {
+                              "ConditionObjectiveSignsAndFeedback": {
+                                "Infolayer": 0
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "JumpToVisibility": "ShowOnlyFakePings"
+                  },
+                  "ConditionQuestFakeObjective": {
+                    "QuestTrackerEntries": {
+                      "Item": {
+                        "CombinedText": 103842,
+                        "QuestTrackerIcon": "data/ui/2kimages/main/3dicons/narative_item/empireofskies/icon_pile_of_letters.png"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "QuestOptional": {
+        "HasStarterObject": "None",
+        "StarterObject": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionStarterObject": "",
+            "ConditionQuestObjective": "",
+            "ConditionPropsSessionSettings": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "A7_QuestAirdrop",
+    "Values": {
+      "Standard": {
+        "GUID": 103936,
+        "Name": "Editor Q7.4 - DropQuest HIDDEN FALLBACK"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          },
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          },
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          },
+          "SuppressMessage": 1
+        },
+        "SelectionReminderMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "AbortedManuallyMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "AbortedAutomaticallyMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "InvitationMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "EscortShipSelectedMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "ReminderMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "ResolveConfirmationMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "InvitationSmugglerQuestMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "SmugglerQuestTradingStationReached": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "StartInvitationGiveItemMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "StartFollowShipMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          }
+        },
+        "OnQuestStart": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestDeclined": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestActive": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestAborted": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestTimedOut": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnActiveQuestTimedOut": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestFailed": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestDiscarded": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestSucceeded": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestEnd": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnPhotographySuccessNewspaperAction": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionForceNewspaper": ""
+          }
+        },
+        "QuestGiver": 91,
+        "StoryText": 103148,
+        "CountForQuestLimit": 0,
+        "QuestTimeLimit": 0,
+        "QuestCategory": "DLC11Quest",
+        "QuestActivation": "QuestStart",
+        "IsAbortable": 0,
+        "QuestTrackerVisibility": "Never",
+        "ConfirmOnReachedCondition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ConditionQuestResolveConfirmation": "",
+            "Condition": "",
+            "ConditionQuestObjective": ""
+          }
+        },
+        "ReputationQuestFail": {
+          "ReputationFailList": ""
+        },
+        "QuestHints": {
+          "Item": [
+            {
+              "Text": 103096
+            },
+            {
+              "Text": 103097
+            },
+            {
+              "Text": 103098
+            }
+          ]
+        },
+        "StarterSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": ""
+          }
+        },
+        "SuccessSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": ""
+          }
+        },
+        "HasReminderMessage": 0
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Breadcrumbs",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57734
+      },
+      "Reward": {
+        "RewardAssets": "",
+        "RewardReputation": ""
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "A7_QuestAirdrop",
+                  "Index": 0
+                }
+              }
+            },
+            "Objective": {
+              "IsBaseAutoCreateAsset": 1,
+              "Values": {
+                "ConditionQuestObjective": {
+                  "OnSuccessActions": {
+                    "IsBaseAutoCreateAsset": 1,
+                    "Values": {
+                      "ActionList": {
+                        "Actions": {
+                          "Item": {
+                            "Action": {
+                              "Template": "ActionDelayedActions",
+                              "Values": {
+                                "Action": "",
+                                "ActionDelayedActions": {
+                                  "ExecutionDelay": 3000,
+                                  "DelayedActions": {
+                                    "IsBaseAutoCreateAsset": 1,
+                                    "Values": {
+                                      "ActionList": {
+                                        "Actions": {
+                                          "Item": {
+                                            "Action": {
+                                              "Template": "ActionRegisterTrigger",
+                                              "Values": {
+                                                "Action": "",
+                                                "ActionRegisterTrigger": {
+                                                  "TriggerAsset": 103885,
+                                                  "InheritArea": 1
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "ConditionQuestAirdrop": {
+                  "DroppedProjectile": 103542
+                }
+              }
+            }
+          }
+        }
+      },
+      "QuestOptional": {
+        "HasStarterObject": "None",
+        "StarterObject": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionStarterObject": "",
+            "ConditionQuestObjective": "",
+            "ConditionPropsSessionSettings": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "Template": "A7_QuestAirdrop",
+    "Values": {
+      "Standard": {
+        "GUID": 104455,
+        "Name": "TQ8.3_DLC11_DropGoods_HIDDEN"
+      },
+      "Quest": {
+        "StarterMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          },
+          "SuppressMessage": 1
+        },
+        "SuccessMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          },
+          "SuppressMessage": 1
+        },
+        "FailureMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          },
+          "SuppressMessage": 1
+        },
+        "SelectionReminderMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          },
+          "SuppressMessage": 1
+        },
+        "AbortedManuallyMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          },
+          "SuppressMessage": 1
+        },
+        "AbortedAutomaticallyMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          },
+          "SuppressMessage": 1
+        },
+        "InvitationMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          },
+          "SuppressMessage": 1
+        },
+        "EscortShipSelectedMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          },
+          "SuppressMessage": 1
+        },
+        "ReminderMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          },
+          "SuppressMessage": 1
+        },
+        "ResolveConfirmationMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          },
+          "SuppressMessage": 1
+        },
+        "InvitationSmugglerQuestMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          },
+          "SuppressMessage": 1
+        },
+        "SmugglerQuestTradingStationReached": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          },
+          "SuppressMessage": 1
+        },
+        "StartInvitationGiveItemMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          },
+          "SuppressMessage": 1
+        },
+        "StartFollowShipMessage": {
+          "Notification": {
+            "IsBaseAutoCreateAsset": 1,
+            "Values": {
+              "CharacterNotification": "",
+              "BaseNotification": "",
+              "NotificationSubtitle": ""
+            }
+          },
+          "SuppressMessage": 1
+        },
+        "OnQuestStart": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestDeclined": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestActive": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestAborted": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestTimedOut": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnActiveQuestTimedOut": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestFailed": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestDiscarded": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestSucceeded": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnQuestEnd": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "OnPhotographySuccessNewspaperAction": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Action": "",
+            "ActionForceNewspaper": ""
+          }
+        },
+        "QuestGiver": 1362,
+        "StoryText": 103516,
+        "CountForQuestLimit": 0,
+        "QuestTimeLimit": 0,
+        "QuestActivation": "QuestStart",
+        "IsAbortable": 0,
+        "QuestTrackerVisibility": "Never",
+        "ConfirmOnReachedCondition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ConditionQuestResolveConfirmation": "",
+            "Condition": "",
+            "ConditionQuestObjective": ""
+          }
+        },
+        "HasExclusiveQuestGiver": 0,
+        "QuestSessionDependencies": {
+          "Item": {
+            "SessionOrRegion": 180025
+          }
+        },
+        "ReputationQuestFail": {
+          "ReputationFailList": ""
+        },
+        "QuestHints": "",
+        "HasStarterSpeechBubble": 0,
+        "StarterSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": ""
+          }
+        },
+        "SuccessSpeechBubble": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionTutorialInteraction": ""
+          }
+        },
+        "HasReminderMessage": 0
+      },
+      "PreConditionList": {
+        "Condition": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionAlwaysTrue": ""
+          }
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Drop Goods",
+            "Status": "Localization"
+          }
+        }
+      },
+      "Reward": {
+        "RewardAssets": "",
+        "RewardReputation": ""
+      },
+      "Objectives": {
+        "WinConditions": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "A7_QuestAirdrop",
+                    "Index": 0
+                  }
+                }
+              },
+              "Objective": {
+                "IsBaseAutoCreateAsset": 1,
+                "Values": {
+                  "ConditionQuestObjective": {
+                    "TextCombinedContextValue": 103842,
+                    "OnSuccessActions": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ActionList": {
+                          "Actions": {
+                            "Item": {
+                              "Action": {
+                                "Template": "ActionEndQuest",
+                                "Values": {
+                                  "Action": "",
+                                  "ActionEndQuest": {
+                                    "Quest": 104479,
+                                    "WinQuest": 1
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "ConditionQuestAirdrop": {
+                    "DropOnObject": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ObjectFilter": {
+                          "ObjectGUID": 101255,
+                          "ObjectSession": 180025,
+                          "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                        }
+                      }
+                    },
+                    "DropObjectRangeOp": "Any",
+                    "DroppedProjectile": 1050
+                  }
+                }
+              }
+            },
+            {
+              "Objective": {
+                "Template": "AirdropObjective",
+                "Values": {
+                  "ConditionQuestObjective": {
+                    "TextCombinedContextValue": 103842,
+                    "OnSuccessActions": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ActionList": {
+                          "Actions": {
+                            "Item": {
+                              "Action": {
+                                "Template": "ActionEndQuest",
+                                "Values": {
+                                  "Action": "",
+                                  "ActionEndQuest": {
+                                    "Quest": 104479,
+                                    "WinQuest": 1
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "ConditionQuestAirdrop": {
+                    "DropOnObject": {
+                      "IsBaseAutoCreateAsset": 1,
+                      "Values": {
+                        "ObjectFilter": {
+                          "ObjectGUID": 24793,
+                          "ObjectSession": 180025,
+                          "ObjectivePrebuiltObjectUseVisibilityAutomatism": 0
+                        }
+                      }
+                    },
+                    "DropObjectRangeOp": "Any",
+                    "DroppedProjectile": 1050
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "WinConditionCompletionOrder": "MutuallyExclusive"
+      },
+      "QuestOptional": {
+        "HasStarterObject": "None",
+        "StarterObject": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "Condition": "",
+            "ConditionStarterObject": "",
+            "ConditionQuestObjective": "",
+            "ConditionPropsSessionSettings": ""
+          }
+        }
+      }
+    }
+  }
+]

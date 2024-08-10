@@ -43,18 +43,34 @@
           "Item": {
             "Filename": "data/graphics/buildings/public/service_01/service_01.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 1010358,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312,
+          "OverrideDefaultIcon": "data/ui/2kimages/main/3dicons/ornaments/cosmetic_dlc13/icon_pub_default.png",
+          "SkinList": {
+            "Item": {
+              "SkinAssetGuid": 30485
+            }
+          }
         }
       },
       "Mesh": "",
       "Selection": {
-        "GUIType": "PublicService"
+        "GUIType": "PublicService",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Pub",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 3730
@@ -125,6 +141,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 3250,
         "SelfHealPerHealTick": 4
       },
@@ -190,18 +207,34 @@
           "Item": {
             "Filename": "data/graphics/buildings/public/service_02/service_02.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 1010360,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312,
+          "OverrideDefaultIcon": "data/ui/2kimages/main/3dicons/ornaments/cosmetic_dlc09/icon_school_default.png",
+          "SkinList": {
+            "Item": {
+              "SkinAssetGuid": 5228
+            }
+          }
         }
       },
       "Mesh": "",
       "Selection": {
-        "GUIType": "PublicService"
+        "GUIType": "PublicService",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "School",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 3731
@@ -274,6 +307,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 4000,
         "SelfHealPerHealTick": 4
       },
@@ -341,18 +375,28 @@
           "Item": {
             "Filename": "data/graphics/buildings/public/service_03/service_03.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 1010365,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
-        "GUIType": "PublicService"
+        "GUIType": "PublicService",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Bank",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 5293
@@ -425,160 +469,8 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 8000,
-        "SelfHealPerHealTick": 4
-      },
-      "Pausable": "",
-      "IncidentInfectable": {
-        "Infectable": {
-          "Fire": {
-            "Base": 1
-          }
-        },
-        "IncidentInfectionChanceFactors": {
-          "Fire": {
-            "DensityDistance": 20
-          }
-        }
-      },
-      "Culture": ""
-    }
-  },
-  {
-    "Template": "PublicServiceBuilding",
-    "Values": {
-      "Standard": {
-        "GUID": 1010359,
-        "Name": "service_04 (Church)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_church.png"
-      },
-      "Building": {
-        "BuildModeRandomRotation": 180,
-        "AssociatedRegions": "Moderate"
-      },
-      "Blocking": "",
-      "Cost": {
-        "Costs": {
-          "Item": [
-            {
-              "Ingredient": 1010017,
-              "Amount": 2500
-            },
-            {
-              "Ingredient": 1010196,
-              "Amount": 20
-            },
-            {
-              "Ingredient": 1010205,
-              "Amount": 25
-            },
-            {
-              "Ingredient": 1010218
-            },
-            {
-              "Ingredient": 1010207
-            },
-            {
-              "Ingredient": 1010202
-            }
-          ]
-        }
-      },
-      "Object": {
-        "Variations": {
-          "Item": {
-            "Filename": "data/graphics/buildings/public/service_04/service_04.cfg"
-          }
-        }
-      },
-      "Mesh": "",
-      "Selection": {
-        "GUIType": "PublicService"
-      },
-      "Text": {
-        "LocaText": {
-          "English": {
-            "Text": "Church",
-            "Status": "Exported",
-            "ExportCount": 1
-          }
-        },
-        "LineID": 3732
-      },
-      "Constructable": "",
-      "Locked": "",
-      "SoundEmitter": {
-        "ActiveSounds": {
-          "Item": [
-            {
-              "Sound": 227033
-            },
-            {
-              "Sound": 200851
-            }
-          ]
-        },
-        "ConstructionSounds": {
-          "BuildSuccessful": {
-            "Item": {
-              "VectorElement": {
-                "InheritedIndex": 0,
-                "InheritanceMapV2": {
-                  "Entry": {
-                    "TemplateName": "PublicServiceBuilding",
-                    "Index": 0
-                  }
-                }
-              },
-              "Sound": 214786
-            }
-          }
-        },
-        "IncidentSounds": {
-          "InfectedFire": {
-            "Item": {
-              "Sound": 214659
-            }
-          }
-        },
-        "BuildingRepaired": {
-          "Item": {
-            "Sound": 203866
-          }
-        }
-      },
-      "FeedbackController": {
-        "NightBehavior": "HideAll"
-      },
-      "Infolayer": "",
-      "UpgradeList": "",
-      "LogisticNode": {
-        "REMOVE_THIS_LATER_FeedbackUnitTier": "Level2"
-      },
-      "PublicService": {
-        "FullSatisfactionDistance": 40,
-        "NoSatisfactionDistance": 80,
-        "PublicServiceOutputs": {
-          "Item": {
-            "Product": 1010350
-          }
-        }
-      },
-      "AmbientMoodProvider": {
-        "AmbientMood": "ResidenceTier1",
-        "DynamicEnvironmentType": "Building_Residence"
-      },
-      "Maintenance": {
-        "Maintenances": {
-          "Item": {
-            "Product": 1010017,
-            "Amount": 50,
-            "InactiveAmount": 25
-          }
-        }
-      },
-      "Attackable": {
-        "MaximumHitPoints": 4750,
         "SelfHealPerHealTick": 4
       },
       "Pausable": "",
@@ -644,18 +536,34 @@
           "Item": {
             "Filename": "data/graphics/buildings/public/service_07/service_07.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 1010362,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312,
+          "OverrideDefaultIcon": "data/ui/2kimages/main/3dicons/ornaments/cosmetic_dlc14/icon_university_default.png",
+          "SkinList": {
+            "Item": {
+              "SkinAssetGuid": 33049
+            }
+          }
         }
       },
       "Mesh": "",
       "Selection": {
-        "GUIType": "PublicService"
+        "GUIType": "PublicService",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "University",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 3734
@@ -728,6 +636,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 4750,
         "SelfHealPerHealTick": 4
       },
@@ -757,8 +666,7 @@
       },
       "Building": {
         "BuildModeRandomRotation": 90,
-        "AssociatedRegions": "Moderate",
-        "AllowChangeDirection": 1
+        "AssociatedRegions": "Moderate"
       },
       "Blocking": "",
       "Cost": {
@@ -796,18 +704,28 @@
           "Item": {
             "Filename": "data/graphics/buildings/public/service_09/service_09.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 1010364,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
-        "GUIType": "PublicService"
+        "GUIType": "PublicService",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Members Club",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 5295
@@ -880,6 +798,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 3500,
         "SelfHealPerHealTick": 4
       },
@@ -893,6 +812,292 @@
         "IncidentInfectionChanceFactors": {
           "Fire": {
             "DensityDistance": 20
+          }
+        }
+      },
+      "Culture": ""
+    }
+  },
+  {
+    "Template": "PublicServiceBuilding",
+    "Values": {
+      "Standard": {
+        "GUID": 101258,
+        "Name": "service_colony01_02 (Chapel)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_church.png"
+      },
+      "Building": {
+        "BuildModeRandomRotation": 180,
+        "AssociatedRegions": "Colony01"
+      },
+      "Blocking": "",
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 500
+            },
+            {
+              "Ingredient": 1010196,
+              "Amount": 10
+            },
+            {
+              "Ingredient": 1010205
+            },
+            {
+              "Ingredient": 1010218
+            },
+            {
+              "Ingredient": 1010207
+            },
+            {
+              "Ingredient": 1010202
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/graphics/buildings/public/service_colony01_02/service_colony01_02.cfg"
+          }
+        },
+        "Skins": {
+          "DefaultSkinName": 101258,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312,
+          "OverrideDefaultIcon": "data/ui/2kimages/main/3dicons/ornaments/cosmetic_dlc11/icon_church_default.png",
+          "SkinList": {
+            "Item": [
+              {
+                "SkinAssetGuid": 20922
+              },
+              {
+                "SkinAssetGuid": 21097
+              }
+            ]
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "GUIType": "PublicService",
+        "OnSelection": {
+          "Values": {
+            "ActionList": ""
+          },
+          "Template": "Actions"
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Chapel",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 8498
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": [
+            {
+              "Sound": 200869
+            },
+            {
+              "Sound": 227033
+            }
+          ]
+        },
+        "DestroySounds": {
+          "Item": {
+            "Sound": 9818756
+          }
+        },
+        "SelectionSounds": {
+          "Item": {
+            "Sound": 9818389
+          }
+        },
+        "ConstructionSounds": {
+          "BuildSuccessful": {
+            "Item": {
+              "Sound": 214786
+            }
+          },
+          "BuildFailed": {
+            "Item": {
+              "Sound": 9818387
+            }
+          },
+          "BuildMoveStart": {
+            "Item": {
+              "Sound": 9818755
+            }
+          },
+          "BuildMoveSuccess": {
+            "Item": {
+              "Sound": 203994
+            }
+          },
+          "BuildMoveEnd": {
+            "Item": {
+              "Sound": 200141
+            }
+          },
+          "BuildUpgrade": {
+            "Item": {
+              "Sound": 9818760
+            }
+          }
+        },
+        "ProductionSounds": {
+          "UI": {
+            "Item": {
+              "Sound": 9818752
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          },
+          "ExplosionOneShots": {
+            "Item": {
+              "Sound": 203849
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        }
+      },
+      "FeedbackController": {
+        "NightBehavior": "HideAll"
+      },
+      "Infolayer": "",
+      "UpgradeList": "",
+      "LogisticNode": {
+        "REMOVE_THIS_LATER_FeedbackUnitTier": "Level2"
+      },
+      "PublicService": {
+        "FullSatisfactionDistance": 30,
+        "NoSatisfactionDistance": 60,
+        "PublicServiceOutputs": {
+          "Item": {
+            "Product": 120050
+          }
+        }
+      },
+      "AmbientMoodProvider": {
+        "AmbientMood": "ResidenceTier1",
+        "DynamicEnvironmentType": "Building_Residence"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": {
+            "Product": 1010017,
+            "Amount": 10,
+            "InactiveAmount": 5
+          }
+        }
+      },
+      "Attackable": {
+        "AttackableType": "IslandBuilding",
+        "MaximumHitPoints": 1500,
+        "SelfHealPerHealTick": 4
+      },
+      "Pausable": "",
+      "IncidentInfectable": {
+        "Infectable": {
+          "Fire": {
+            "Base": 1
+          }
+        },
+        "IncidentInfectionChanceFactors": {
+          "Fire": {
+            "DensityDistance": 20
+          }
+        },
+        "PerIncidentProximityEffect": {
+          "Fire": {
+            "ProximityEffect": {
+              "Item": [
+                {
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 2.5
+                },
+                {
+                  "IntensityThreshold": 30,
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 5
+                },
+                {
+                  "IntensityThreshold": 60,
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 7.5
+                },
+                {
+                  "IntensityThreshold": 90,
+                  "Distance": 2
+                }
+              ]
+            }
+          },
+          "Riot": {
+            "ProximityEffect": {
+              "Item": [
+                {
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 2.5
+                },
+                {
+                  "IntensityThreshold": 30,
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 5
+                },
+                {
+                  "IntensityThreshold": 60,
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 7.5
+                },
+                {
+                  "IntensityThreshold": 90,
+                  "Distance": 2
+                }
+              ]
+            }
+          },
+          "Illness": {
+            "ProximityEffect": {
+              "Item": [
+                {
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 2.5
+                },
+                {
+                  "IntensityThreshold": 30,
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 5
+                },
+                {
+                  "IntensityThreshold": 60,
+                  "Distance": 2,
+                  "InfectionChanceDebuff": 7.5
+                },
+                {
+                  "IntensityThreshold": 90,
+                  "Distance": 2
+                }
+              ]
+            }
           }
         }
       },
@@ -945,14 +1150,19 @@
       },
       "Mesh": "",
       "Selection": {
-        "GUIType": "Generic"
+        "GUIType": "Generic",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Edvard's Church",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 13069
@@ -990,6 +1200,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 500
       },
       "Pausable": "",
@@ -1003,8 +1214,7 @@
       "Standard": {
         "GUID": 112684,
         "Name": "service_arctic_02 (Post Office)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_post_office.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_post_office.png"
       },
       "Building": {
         "BuildingType": "Logistic",
@@ -1091,18 +1301,28 @@
           "Item": {
             "Filename": "data/dlc03/graphics/buildings/public/service_colony03_01/service_colony03_01.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 112684,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
-        "GUIType": "PublicService"
+        "GUIType": "PublicService",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Post Office",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 35092
@@ -1128,8 +1348,8 @@
       "UpgradeList": "",
       "LogisticNode": "",
       "PublicService": {
-        "FullSatisfactionDistance": 25,
-        "NoSatisfactionDistance": 50,
+        "FullSatisfactionDistance": 32,
+        "NoSatisfactionDistance": 52,
         "PublicServiceOutputs": {
           "Item": {
             "Product": 112693
@@ -1147,6 +1367,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 3000
       },
       "Pausable": "",
@@ -1176,8 +1397,7 @@
       "Standard": {
         "GUID": 114519,
         "Name": "service_colony02_02 (Music Plaza)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_music_plaza.png",
-        "Version": "dlc06"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_music_plaza.png"
       },
       "Building": {
         "AssociatedRegions": "Africa"
@@ -1264,18 +1484,28 @@
           "Item": {
             "Filename": "data/dlc06/graphics/buildings/public/service_colony02_02/service_colony02_02.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 114519,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
-        "GUIType": "PublicService"
+        "GUIType": "PublicService",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Musicians' Court",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 44460
@@ -1313,6 +1543,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 1500
       },
       "Pausable": "",
@@ -1326,8 +1557,7 @@
       "Standard": {
         "GUID": 114520,
         "Name": "service_colony02_03 (Monastery)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/icon_monastery.png",
-        "Version": "dlc06"
+        "IconFilename": "data/ui/2kimages/main/3dicons/icon_monastery.png"
       },
       "Building": {
         "AssociatedRegions": "Africa"
@@ -1415,18 +1645,28 @@
           "Item": {
             "Filename": "data/dlc06/graphics/buildings/public/service_colony02_03/service_colony02_03.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 114520,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
-        "GUIType": "PublicService"
+        "GUIType": "PublicService",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Monastery",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 44461
@@ -1466,6 +1706,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 1500
       },
       "Pausable": "",
@@ -1480,12 +1721,10 @@
         "GUID": 118736,
         "Name": "service_moderate_LoL_01 (Radio Station)",
         "IconFilename": "data/ui/2kimages/main/3dicons/icon_radio_station.png",
-        "ID": "LOL_Radio",
-        "Version": "dlc06"
+        "ID": "LOL_Radio"
       },
       "Building": {
-        "AssociatedRegions": "Moderate",
-        "AllowChangeDirection": 1
+        "AssociatedRegions": "Moderate"
       },
       "Blocking": "",
       "Cost": {
@@ -1523,18 +1762,28 @@
           "Item": {
             "Filename": "data/dlc06/graphics/buildings/public/service_colony02_04/service_colony02_04.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 118736,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
-        "GUIType": "PublicService"
+        "GUIType": "PublicService",
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Radio Tower",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 44496
@@ -1572,6 +1821,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 1500
       },
       "Pausable": "",

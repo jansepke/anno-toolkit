@@ -421,6 +421,80 @@
     "Template": "PlacementScore",
     "Values": {
       "Standard": {
+        "GUID": 615,
+        "Name": "HarborWaterDefenseAirScore"
+      },
+      "PlacementScore": {
+        "SubScores": {
+          "Item": [
+            {
+              "Rating": {
+                "Template": "RatingHarborConnected",
+                "Values": {
+                  "RatingHarborConnected": ""
+                }
+              },
+              "RelativeWeight": 0,
+              "DiscardThresholdScore": 0.5
+            },
+            {
+              "Rating": {
+                "Template": "RatingHarborDefense",
+                "Values": {
+                  "RatingHarborDefense": ""
+                }
+              },
+              "RelativeWeight": 0.5,
+              "DiscardThresholdScore": 0
+            },
+            {
+              "Rating": {
+                "Template": "RatingSubRect",
+                "Values": {
+                  "RatingSubRect": {
+                    "SubRect": "This",
+                    "PlacementScore": 141025
+                  }
+                }
+              },
+              "RelativeWeight": 0.4
+            },
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "DistanceTo": "HarborDefenseAir",
+                    "OneFrom": 10,
+                    "DisableUpperBorders": 1
+                  }
+                }
+              },
+              "RelativeWeight": 0.2
+            },
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "DistanceTo": "Coast",
+                    "OneFrom": 21,
+                    "OneTo": 25,
+                    "DisableUpperBorders": 1
+                  }
+                }
+              },
+              "RelativeWeight": 0.06
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "PlacementScore",
+    "Values": {
+      "Standard": {
         "GUID": 141079,
         "Name": "CityBuildingScoreBase"
       },
@@ -1414,6 +1488,78 @@
               },
               "RelativeWeight": 15,
               "Comment": "Don't overwrite existing blocks if possible"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Template": "PlacementScore",
+    "Values": {
+      "Standard": {
+        "GUID": 646,
+        "Name": "BlockAirshipHangarColonyScore"
+      },
+      "PlacementScore": {
+        "SubScores": {
+          "Item": [
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "OneFrom": 60,
+                    "DisableUpperBorders": 1
+                  }
+                }
+              },
+              "RelativeWeight": 40,
+              "Comment": "Try to build it far away from the city center"
+            },
+            {
+              "Rating": {
+                "Template": "RatingOverwrittenBlocks",
+                "Values": {
+                  "RatingOverwrittenBlocks": ""
+                }
+              },
+              "RelativeWeight": 15,
+              "Comment": "Don't overwrite existing blocks if possible"
+            },
+            {
+              "Rating": {
+                "Template": "RatingNeighborTiles",
+                "Values": {
+                  "RatingNeighborTiles": {
+                    "NeighborCategories": {
+                      "Buildings": {
+                        "Score": 1
+                      },
+                      "StaticBlockedLand": {
+                        "Score": 1
+                      },
+                      "UnusedWithinBlock": {
+                        "Score": 1
+                      }
+                    }
+                  }
+                }
+              },
+              "RelativeWeight": 15
+            },
+            {
+              "Rating": {
+                "Template": "RatingDistance",
+                "Values": {
+                  "RatingDistance": {
+                    "DistanceTo": "StaticBlocker_Coarse",
+                    "OneTo": 7,
+                    "ZeroFrom": 23
+                  }
+                }
+              },
+              "RelativeWeight": 15
             }
           ]
         }

@@ -45,10 +45,21 @@
           "Item": {
             "Filename": "data/graphics/buildings/production/agriculture_05/agriculture_05.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 1010266,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier01_atWork",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -58,8 +69,7 @@
         "LocaText": {
           "English": {
             "Text": "Lumberjack's Hut",
-            "Status": "Exported",
-            "ExportCount": 3
+            "Status": "Exported"
           }
         },
         "LineID": 3716
@@ -141,6 +151,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 1500,
         "SelfHealPerHealTick": 4
       },
@@ -148,6 +159,7 @@
         "InfluenceRadius": 9,
         "NeededAreaPercent": 80,
         "MaxWorkerAmount": 3,
+        "AdditionalWorkerForForestation": 9,
         "WorkerPause": 10000
       },
       "Pausable": "",
@@ -181,7 +193,8 @@
       },
       "Culture": {
         "CultureType": "Landscaping"
-      }
+      },
+      "EcoSystemProvider": ""
     }
   },
   {
@@ -230,10 +243,21 @@
           "Item": {
             "Filename": "data/graphics/buildings/production/agriculture_09/agriculture_09.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 1010558,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Resident_tier01_atWork",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -243,8 +267,7 @@
         "LocaText": {
           "English": {
             "Text": "Hunting Cabin",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 5237
@@ -332,6 +355,7 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 1500,
         "SelfHealPerHealTick": 4
       },
@@ -339,6 +363,7 @@
         "InfluenceRadius": 11,
         "FreeAreaType": "Hunter",
         "MaxWorkerAmount": 2,
+        "AdditionalWorkerForForestation": 9,
         "WorkerPause": 10000,
         "CutTree": 0
       },
@@ -373,7 +398,8 @@
       },
       "Culture": {
         "CultureType": "Landscaping"
-      }
+      },
+      "EcoSystemProvider": ""
     }
   },
   {
@@ -422,13 +448,19 @@
         }
       },
       "Mesh": "",
-      "Selection": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Edvard's Timber Yard",
-            "Status": "Exported",
-            "ExportCount": 3
+            "Status": "Exported"
           }
         },
         "LineID": 4074
@@ -496,15 +528,19 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 500
       },
       "FreeAreaProductivity": {
+        "InfluenceRadius": 3,
         "MaxWorkerAmount": 3,
+        "AdditionalWorkerForForestation": 3,
         "WorkerPause": 10000
       },
       "Pausable": "",
       "IncidentInfectable": "",
-      "Culture": ""
+      "Culture": "",
+      "EcoSystemProvider": ""
     }
   },
   {
@@ -513,8 +549,7 @@
       "Standard": {
         "GUID": 122963,
         "Name": "agriculture_colony02_01 (Wanza Woodcutter)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png",
-        "Version": "dlc06"
+        "IconFilename": "data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png"
       },
       "Building": {
         "SkipUnlockMessage": 1,
@@ -664,10 +699,21 @@
           "Item": {
             "Filename": "data/dlc06/graphics/buildings/production/production_colony02_12/production_colony02_12.cfg"
           }
+        },
+        "Skins": {
+          "DefaultSkinName": 122963,
+          "DefaultSkinDescription": 23853,
+          "DefaultSkinCategoryName": 7312
         }
       },
       "Mesh": "",
       "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
         "ParticipantMessageArcheType": "Africa_Resident_tier01",
         "Colors": {
           "WeakSelectionColorType": "NoColor"
@@ -677,8 +723,7 @@
         "LocaText": {
           "English": {
             "Text": "Wanza Woodcutter",
-            "Status": "Exported",
-            "ExportCount": 4
+            "Status": "Exported"
           }
         },
         "LineID": 44424
@@ -762,16 +807,17 @@
         }
       },
       "Attackable": {
+        "AttackableType": "IslandBuilding",
         "MaximumHitPoints": 1500,
         "SelfHealPerHealTick": 4
       },
       "FreeAreaProductivity": {
         "InfluenceRadius": 9,
         "NeededAreaPercent": 80,
-        "MaxWorkerAmount": 3,
+        "MaxWorkerAmount": 2,
+        "AdditionalWorkerForForestation": 4,
         "WorkerPause": 10000,
-        "InitializeForestMaxDuration": 150000,
-        "InitializeForestMinTreeAreaPercent": 5
+        "InitializeForestMinTreeAreaPercent": 10
       },
       "Pausable": "",
       "IncidentInfectable": {
@@ -804,7 +850,260 @@
       },
       "Culture": {
         "CultureType": "Landscaping"
-      }
+      },
+      "EcoSystemProvider": ""
+    }
+  },
+  {
+    "Template": "FreeAreaBuilding",
+    "Values": {
+      "Standard": {
+        "GUID": 668,
+        "Name": "TreePlanter_GGJ_TEST",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ornaments/regrowing_trees/icon_jungle_trees.png",
+        "InfoDescription": 132783
+      },
+      "Building": {
+        "SkipUnlockMessage": 1,
+        "BuildModeRandomRotation": 90,
+        "AssociatedRegions": "Colony01",
+        "SecondPartyRelevant": 0
+      },
+      "Blocking": {
+        "DeletePropsRadius": 1
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 1010017,
+              "Amount": 550
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FreeAreaRecipeBuilding",
+                      "Index": 1
+                    },
+                    {
+                      "TemplateName": "FreeAreaBuilding",
+                      "Index": 1
+                    }
+                  ]
+                }
+              },
+              "Amount": 10
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FreeAreaRecipeBuilding",
+                      "Index": 2
+                    },
+                    {
+                      "TemplateName": "FreeAreaBuilding",
+                      "Index": 2
+                    }
+                  ]
+                }
+              },
+              "Amount": 10
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FreeAreaRecipeBuilding",
+                      "Index": 3
+                    },
+                    {
+                      "TemplateName": "FreeAreaBuilding",
+                      "Index": 3
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 4,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FreeAreaRecipeBuilding",
+                      "Index": 4
+                    },
+                    {
+                      "TemplateName": "FreeAreaBuilding",
+                      "Index": 4
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 5,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FreeAreaRecipeBuilding",
+                      "Index": 5
+                    },
+                    {
+                      "TemplateName": "FreeAreaBuilding",
+                      "Index": 5
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc08/graphics/buildings/production/tree_planter/tree_planter_comfort_plastic.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "SA_Resident_tier01_atWork",
+        "Colors": {
+          "WeakSelectionColorType": "NoColor"
+        }
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Tree Planter Testr",
+            "Status": "ToBeDeleted"
+          }
+        },
+        "LineID": 50470
+      },
+      "Constructable": "",
+      "Locked": "",
+      "SoundEmitter": {
+        "ActiveSounds": {
+          "Item": [
+            {
+              "Sound": 200795
+            },
+            {
+              "Sound": 279525
+            }
+          ]
+        },
+        "ConstructionSounds": {
+          "BuildMoveSuccess": {
+            "Item": {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": [
+                    {
+                      "TemplateName": "FarmBuilding",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "FreeAreaRecipeBuilding",
+                      "Index": 0
+                    },
+                    {
+                      "TemplateName": "FreeAreaBuilding",
+                      "Index": 0
+                    }
+                  ]
+                }
+              },
+              "Sound": 214783
+            }
+          }
+        },
+        "IncidentSounds": {
+          "InfectedFire": {
+            "Item": {
+              "Sound": 214659
+            }
+          }
+        },
+        "BuildingRepaired": {
+          "Item": {
+            "Sound": 203866
+          }
+        },
+        "MaterialType": "Wood"
+      },
+      "FeedbackController": "",
+      "Infolayer": "",
+      "UpgradeList": "",
+      "Factory7": "",
+      "FactoryBase": {
+        "FactoryOutputs": {
+          "Item": {
+            "Product": 120008,
+            "Amount": 1,
+            "StorageAmount": 10
+          }
+        },
+        "CycleTime": 240
+      },
+      "LogisticNode": "",
+      "AmbientMoodProvider": {
+        "AmbientMood": "AgricultureBuildingsSouthAmerica",
+        "Murmur": "Tourist_OrchardNewWorld",
+        "DynamicEnvironmentType": "None"
+      },
+      "Maintenance": {
+        "Maintenances": {
+          "Item": [
+            {
+              "Product": 1010017,
+              "Amount": 60,
+              "InactiveAmount": 30
+            },
+            {
+              "Product": 1010366,
+              "Amount": 35,
+              "ShutdownThreshold": 0.2
+            }
+          ]
+        }
+      },
+      "Attackable": {
+        "AttackableType": "IslandBuilding"
+      },
+      "FreeAreaProductivity": {
+        "InfluenceRadius": 15,
+        "NeededAreaPercent": 30,
+        "MaxWorkerAmount": 3,
+        "AdditionalWorkerForForestation": 3,
+        "WorkerPause": 10000,
+        "CutTree": 0
+      },
+      "Pausable": "",
+      "IncidentInfectable": "",
+      "Culture": {
+        "CultureType": "Landscaping"
+      },
+      "EcoSystemProvider": ""
     }
   }
 ]

@@ -3,12 +3,155 @@
     "Template": "AirShip",
     "Values": {
       "Standard": {
+        "GUID": 100237,
+        "Name": "QO_Paloma_AirshipCargo_Large_SA(Trade)"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "VectorElement": {
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Filename": "data/dlc03/graphics/vehicles/airships/airships.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Walking": {
+        "TurnAroundRadius": 8,
+        "Deceleration": 2,
+        "TurnRadius": 8,
+        "TurnSpeed": 45,
+        "TurnSpeedInPlace": 20,
+        "LeaningMaxAngle": 0,
+        "ForwardSpeed": 9,
+        "WindMinSlowdownFactor": 0.3,
+        "WindSlowdownEffectOnTurningSpeed": 0.7,
+        "MinSlowdownFactor": 0.3,
+        "SessionTransferSpeedFactor": 1.7
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Paloma's Airship",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57804
+      },
+      "CommandQueue": "",
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 1,
+        "Length": 7,
+        "Width": 3.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "AttackableType": "[NONE]",
+        "MaximumHitPoints": 1200
+      },
+      "MinimapToken": {
+        "StrategicMapAsset": 117300
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 244872
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 244873
+            }
+          }
+        }
+      },
+      "UpgradeList": {
+        "DefaultBuff": 721
+      },
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": "",
+      "FeedbackController": "",
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Cost": "",
+      "Craftable": "",
+      "TradeRouteVehicle": {
+        "LoadingSpeedFactor": 0.6
+      },
+      "Locked": "",
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": "",
+      "ShipMaintenance": "",
+      "Sellable": "",
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 117310
+          },
+          "SelectionDamaged": {
+            "AudioPool": 117309
+          },
+          "AttackCommand": {
+            "AudioPool": 117311
+          },
+          "MoveCommand": {
+            "AudioPool": 117312
+          },
+          "EscortCommand": {
+            "AudioPool": 117314
+          },
+          "PatrolCommand": {
+            "AudioPool": 117313
+          }
+        }
+      },
+      "ItemReplacer": "",
+      "Bombarder": ""
+    }
+  },
+  {
+    "Template": "AirShip",
+    "Values": {
+      "Standard": {
         "GUID": 114166,
-        "Name": "Airship (Trade)",
-        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_airship.png",
+        "Name": "Passage Airship (Trade)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_airship_artic.png",
         "ID": "TradeZeppelin",
-        "InfoDescription": 114288,
-        "Version": "dlc03"
+        "InfoDescription": 114288
       },
       "Object": {
         "Variations": {
@@ -38,13 +181,23 @@
               },
               {
                 "SkinAssetGuid": 133416
+              },
+              {
+                "SkinAssetGuid": 4589
               }
             ]
           }
         }
       },
       "Mesh": "",
-      "Selection": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Walking": {
         "TurnAroundRadius": 8,
         "Deceleration": 2,
@@ -60,9 +213,8 @@
       "Text": {
         "LocaText": {
           "English": {
-            "Text": "Airship",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Text": "Boreas",
+            "Status": "Exported"
           }
         },
         "LineID": 35130
@@ -77,9 +229,7 @@
       },
       "Collector": "",
       "Attackable": {
-        "MaximumHitPoints": 1200,
-        "DisableGettingAutoAttacked": 1,
-        "CanBeAttackedByPlayer": 0
+        "MaximumHitPoints": 2400
       },
       "MinimapToken": {
         "StrategicMapAsset": 117300
@@ -105,7 +255,20 @@
         "SlotCount": 4
       },
       "FeedbackController": "",
-      "Draggable": "",
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Cost": {
         "Costs": {
           "Item": [
@@ -158,7 +321,9 @@
               }
             }
           ]
-        }
+        },
+        "ItemsPerCost": 3,
+        "InfluenceCostPoints": 6
       },
       "Craftable": "",
       "TradeRouteVehicle": {
@@ -206,6 +371,9 @@
           "Selection": {
             "AudioPool": 117310
           },
+          "SelectionDamaged": {
+            "AudioPool": 117309
+          },
           "AttackCommand": {
             "AudioPool": 117311
           },
@@ -217,15 +385,13 @@
           },
           "PatrolCommand": {
             "AudioPool": 117313
-          },
-          "SelectionDamaged": {
-            "AudioPool": 117309
           }
         }
       },
       "ItemReplacer": {
         "ItemReplacementPools": 193855
-      }
+      },
+      "Bombarder": ""
     }
   },
   {
@@ -235,8 +401,7 @@
         "GUID": 133226,
         "Name": "Airship (Queen)",
         "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_airship.png",
-        "InfoDescription": 114288,
-        "Version": "dlc08"
+        "InfoDescription": 114288
       },
       "Object": {
         "Variations": {
@@ -254,7 +419,14 @@
         }
       },
       "Mesh": "",
-      "Selection": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Walking": {
         "TurnAroundRadius": 8,
         "Deceleration": 2,
@@ -271,8 +443,7 @@
         "LocaText": {
           "English": {
             "Text": "Queen's Royal Airship",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 49848
@@ -287,9 +458,8 @@
       },
       "Collector": "",
       "Attackable": {
-        "MaximumHitPoints": 1200,
-        "DisableGettingAutoAttacked": 1,
-        "CanBeAttackedByPlayer": 0
+        "AttackableType": "[NONE]",
+        "MaximumHitPoints": 1200
       },
       "MinimapToken": {
         "StrategicMapAsset": 117300
@@ -315,7 +485,20 @@
         "SlotCount": 4
       },
       "FeedbackController": "",
-      "Draggable": "",
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
       "Cost": {
         "Costs": {
           "Item": [
@@ -416,6 +599,1287 @@
           "Selection": {
             "AudioPool": 117310
           },
+          "SelectionDamaged": {
+            "AudioPool": 117309
+          },
+          "AttackCommand": {
+            "AudioPool": 117311
+          },
+          "MoveCommand": {
+            "AudioPool": 117312
+          },
+          "EscortCommand": {
+            "AudioPool": 117314
+          },
+          "PatrolCommand": {
+            "AudioPool": 117313
+          }
+        }
+      },
+      "ItemReplacer": {
+        "ItemReplacementPools": 193855
+      },
+      "Bombarder": ""
+    }
+  },
+  {
+    "Template": "AirShip",
+    "Values": {
+      "Standard": {
+        "GUID": 1654,
+        "Name": "AirshipAgileCargo_Small_SA(Trade)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_airship_hunter_light.png",
+        "InfoDescription": 1649
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "VectorElement": {
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Filename": "data/dlc11/graphics/vehicle/airships/airship_agile_small/airship_agile_small.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "LogoMode": "CorporationLogoFromPlayer"
+      },
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Walking": {
+        "Acceleration": 5,
+        "Deceleration": 5,
+        "TurnSpeed": 145,
+        "TurnSpeedInPlace": 95,
+        "LeaningMaxAngle": 0,
+        "ForwardSpeed": 15,
+        "WindMinSlowdownFactor": 0.9,
+        "WindSlowdownEffectOnTurningSpeed": 1,
+        "WindMaxSpeedupFactor": 1.7,
+        "CargoFullFactor": 0.4,
+        "MinSlowdownFactor": 0.3,
+        "SessionTransferSpeedFactor": 0.9
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Colibri",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57666
+      },
+      "CommandQueue": {
+        "AirShipPoints": 80
+      },
+      "Drifting": {
+        "Length": 7,
+        "Width": 3.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 1400
+      },
+      "MinimapToken": {
+        "StrategicMapAsset": 117300
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 200992
+            }
+          }
+        }
+      },
+      "UpgradeList": {
+        "DefaultBuff": 721
+      },
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 2
+      },
+      "FeedbackController": "",
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 838,
+              "Amount": 25
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 35
+            },
+            {
+              "Ingredient": 840,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 1010221
+            }
+          ]
+        },
+        "InfluenceCostPoints": 2
+      },
+      "Craftable": {
+        "CraftingTime": 720000
+      },
+      "TradeRouteVehicle": {
+        "LoadingSpeedFactor": 0.2
+      },
+      "Locked": {
+        "DLCDependency": 24962
+      },
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": "",
+      "ShipMaintenance": {
+        "Maintenance": 975,
+        "DisableEscort": 0
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "AirShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 1200000
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 4815
+          },
+          "SelectionDamaged": {
+            "AudioPool": 4817
+          },
+          "AttackCommand": {
+            "AudioPool": 4822
+          },
+          "MoveCommand": {
+            "AudioPool": 4816
+          },
+          "EscortCommand": {
+            "AudioPool": 4820
+          },
+          "PatrolCommand": {
+            "AudioPool": 4816
+          },
+          "DropCommand": {
+            "AudioPool": 4823
+          }
+        }
+      },
+      "ItemReplacer": {
+        "ItemReplacementPools": 193855
+      },
+      "Bombarder": ""
+    }
+  },
+  {
+    "Template": "AirShip",
+    "Values": {
+      "Standard": {
+        "GUID": 1655,
+        "Name": "AirshipAgileCargo_Medium_SA(Trade)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_airship_hunter.png",
+        "InfoDescription": 1650
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "VectorElement": {
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Filename": "data/dlc11/graphics/vehicle/airships/airship_agile_medium/airship_agile_medium.cfg"
+          }
+        },
+        "Skins": {
+          "SkinList": {
+            "Item": [
+              {
+                "SkinAssetGuid": 103830
+              },
+              {
+                "SkinAssetGuid": 103940
+              }
+            ]
+          }
+        }
+      },
+      "Mesh": {
+        "LogoMode": "CorporationLogoFromPlayer"
+      },
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Walking": {
+        "TurnAroundRadius": 6,
+        "Acceleration": 3.5,
+        "Deceleration": 3.5,
+        "TurnRadius": 6,
+        "TurnSpeed": 120,
+        "TurnSpeedInPlace": 110,
+        "LeaningMaxAngle": 0,
+        "ForwardSpeed": 13,
+        "WindMinSlowdownFactor": 0.8,
+        "WindSlowdownEffectOnTurningSpeed": 0.9,
+        "WindMaxSpeedupFactor": 1.6,
+        "MinSlowdownFactor": 0.3,
+        "SessionTransferSpeedFactor": 0.8
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Alicanto",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57667
+      },
+      "CommandQueue": "",
+      "Drifting": {
+        "Length": 7,
+        "Width": 3.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2300
+      },
+      "MinimapToken": {
+        "StrategicMapAsset": 117300
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 200990
+            }
+          }
+        }
+      },
+      "UpgradeList": {
+        "DefaultBuff": 721
+      },
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": "",
+      "FeedbackController": "",
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 838,
+              "Amount": 30
+            },
+            {
+              "Ingredient": 1010224,
+              "Amount": 10
+            },
+            {
+              "Ingredient": 840,
+              "Amount": 30
+            },
+            {
+              "Ingredient": 1010221
+            }
+          ]
+        },
+        "InfluenceCostPoints": 2
+      },
+      "Craftable": {
+        "CraftingTime": 840000
+      },
+      "TradeRouteVehicle": {
+        "LoadingSpeedFactor": 0.2
+      },
+      "Locked": {
+        "DLCDependency": 24962
+      },
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": "",
+      "ShipMaintenance": {
+        "Maintenance": 1300,
+        "DisableEscort": 0
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "AirShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 1200000
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 4815
+          },
+          "SelectionDamaged": {
+            "AudioPool": 4817
+          },
+          "AttackCommand": {
+            "AudioPool": 4822
+          },
+          "MoveCommand": {
+            "AudioPool": 4816
+          },
+          "EscortCommand": {
+            "AudioPool": 4820
+          },
+          "PatrolCommand": {
+            "AudioPool": 4816
+          },
+          "DropCommand": {
+            "AudioPool": 4823
+          }
+        }
+      },
+      "ItemReplacer": {
+        "ItemReplacementPools": 193855
+      },
+      "Bombarder": ""
+    }
+  },
+  {
+    "Template": "AirShip",
+    "Values": {
+      "Standard": {
+        "GUID": 1058,
+        "Name": "AirshipCargo_Small_SA(Trade)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_airship_cargo_small.png",
+        "InfoDescription": 1666
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "VectorElement": {
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Filename": "data/dlc11/graphics/vehicle/airships/airship_transport_small/airship_transport_small.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Walking": {
+        "TurnAroundRadius": 8,
+        "Acceleration": 1.5,
+        "Deceleration": 1,
+        "TurnRadius": 6,
+        "TurnSpeed": 100,
+        "TurnSpeedInPlace": 80,
+        "LeaningMaxAngle": 0,
+        "WindMinSlowdownFactor": 0.8,
+        "WindSlowdownEffectOnTurningSpeed": 0.8,
+        "WindMaxSpeedupFactor": 1.5,
+        "CargoFullFactor": 0.6,
+        "MinSlowdownFactor": 0.3
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Atotolin",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57668
+      },
+      "CommandQueue": {
+        "TradeShipPoints": 2,
+        "AirShipPoints": 120
+      },
+      "Drifting": {
+        "Length": 7,
+        "Width": 3.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 1600
+      },
+      "MinimapToken": {
+        "StrategicMapAsset": 117300
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 200990
+            }
+          }
+        }
+      },
+      "UpgradeList": {
+        "DefaultBuff": 721
+      },
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": "",
+      "FeedbackController": "",
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 838,
+              "Amount": 35
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 45
+            },
+            {
+              "Ingredient": 840,
+              "Amount": 35
+            },
+            {
+              "Ingredient": 1010221
+            }
+          ]
+        },
+        "InfluenceCostPoints": 5
+      },
+      "Craftable": {
+        "CraftingTime": 720000
+      },
+      "TradeRouteVehicle": {
+        "LoadingSpeedFactor": 1.2
+      },
+      "Locked": {
+        "DLCDependency": 24962
+      },
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": "",
+      "ShipMaintenance": {
+        "Maintenance": 900,
+        "DisableEscort": 0
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "AirShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 1200000
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 4806
+          },
+          "SelectionDamaged": {
+            "AudioPool": 4808
+          },
+          "AttackCommand": {
+            "AudioPool": 0
+          },
+          "MoveCommand": {
+            "AudioPool": 4807
+          },
+          "EscortCommand": {
+            "AudioPool": 4811
+          },
+          "PatrolCommand": {
+            "AudioPool": 4807
+          },
+          "DropCommand": {
+            "AudioPool": 4812
+          }
+        }
+      },
+      "ItemReplacer": {
+        "ItemReplacementPools": 193855
+      },
+      "Bombarder": ""
+    }
+  },
+  {
+    "Template": "AirShip",
+    "Values": {
+      "Standard": {
+        "GUID": 1059,
+        "Name": "AirshipCargo_Medium_SA(Trade)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_airship_cargo_medium_b.png",
+        "InfoDescription": 1664
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "VectorElement": {
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Filename": "data/dlc11/graphics/vehicle/airships/airship_transport_medium/airship_transport_medium.cfg"
+          }
+        },
+        "Skins": {
+          "SkinList": {
+            "Item": [
+              {
+                "SkinAssetGuid": 4711
+              },
+              {
+                "SkinAssetGuid": 4709
+              },
+              {
+                "SkinAssetGuid": 4710
+              }
+            ]
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Walking": {
+        "TurnAroundRadius": 6,
+        "Deceleration": 2,
+        "TurnRadius": 8,
+        "TurnSpeed": 100,
+        "TurnSpeedInPlace": 80,
+        "LeaningMaxAngle": 0,
+        "ForwardSpeed": 11,
+        "WindSlowdownEffectOnTurningSpeed": 0.8,
+        "CargoFullFactor": 0.7,
+        "MinSlowdownFactor": 0.3,
+        "SessionTransferSpeedFactor": 1.3
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Dtundtuncan",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57669
+      },
+      "CommandQueue": {
+        "TradeShipPoints": 5,
+        "AirShipPoints": 160
+      },
+      "Drifting": {
+        "Length": 7,
+        "Width": 3.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2800
+      },
+      "MinimapToken": {
+        "StrategicMapAsset": 117300
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 200990
+            }
+          }
+        }
+      },
+      "UpgradeList": {
+        "DefaultBuff": 721
+      },
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 3,
+        "SlotCount": 5
+      },
+      "FeedbackController": "",
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 838,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010224,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 840,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010221
+            }
+          ]
+        },
+        "InfluenceCostPoints": 10
+      },
+      "Craftable": "",
+      "TradeRouteVehicle": {
+        "LoadingSpeedFactor": 0.5
+      },
+      "Locked": {
+        "DLCDependency": 24962
+      },
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": "",
+      "ShipMaintenance": {
+        "Maintenance": 1500,
+        "DisableEscort": 0
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "AirShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 1550000
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 4806
+          },
+          "SelectionDamaged": {
+            "AudioPool": 4808
+          },
+          "AttackCommand": {
+            "AudioPool": 0
+          },
+          "MoveCommand": {
+            "AudioPool": 4807
+          },
+          "EscortCommand": {
+            "AudioPool": 4811
+          },
+          "PatrolCommand": {
+            "AudioPool": 4807
+          },
+          "DropCommand": {
+            "AudioPool": 4812
+          }
+        }
+      },
+      "ItemReplacer": {
+        "ItemReplacementPools": 193855
+      },
+      "Bombarder": {
+        "Shafts": 4
+      }
+    }
+  },
+  {
+    "Template": "AirShip",
+    "Values": {
+      "Standard": {
+        "GUID": 1060,
+        "Name": "AirshipCargo_Large_SA(Trade)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_airship_cargo_large_a.png",
+        "InfoDescription": 1667
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "VectorElement": {
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Filename": "data/dlc11/graphics/vehicle/airships/airship_transport_big/airship_transport_big.cfg"
+          }
+        },
+        "Skins": {
+          "SkinList": {
+            "Item": {
+              "SkinAssetGuid": 4699
+            }
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Walking": {
+        "TurnAroundRadius": 12,
+        "Acceleration": 0.3,
+        "Deceleration": 0.5,
+        "TurnRadius": 10,
+        "TurnSpeed": 100,
+        "TurnSpeedInPlace": 80,
+        "LeaningMaxAngle": 0,
+        "ForwardSpeed": 10,
+        "WindMinSlowdownFactor": 0.7,
+        "WindSlowdownEffectOnTurningSpeed": 0.75,
+        "WindMaxSpeedupFactor": 1.3,
+        "CargoFullFactor": 0.8,
+        "MinSlowdownFactor": 0.3,
+        "SessionTransferSpeedFactor": 1.7
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Quetzalcoatl",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57670
+      },
+      "CommandQueue": {
+        "TradeShipPoints": 8,
+        "AirShipPoints": 200
+      },
+      "Drifting": {
+        "Length": 7,
+        "Width": 3.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 3500
+      },
+      "MinimapToken": {
+        "StrategicMapAsset": 117300
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 200988
+            }
+          }
+        }
+      },
+      "UpgradeList": {
+        "DefaultBuff": 721
+      },
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SlotCount": 8
+      },
+      "FeedbackController": "",
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 838,
+              "Amount": 55
+            },
+            {
+              "Ingredient": 1010224,
+              "Amount": 35
+            },
+            {
+              "Ingredient": 840,
+              "Amount": 55
+            },
+            {
+              "Ingredient": 1010221
+            }
+          ]
+        },
+        "InfluenceCostPoints": 18
+      },
+      "Craftable": {
+        "CraftingTime": 1080000
+      },
+      "TradeRouteVehicle": {
+        "LoadingSpeedFactor": 0.9
+      },
+      "Locked": {
+        "DLCDependency": 24962
+      },
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": "",
+      "ShipMaintenance": {
+        "Maintenance": 1800,
+        "DisableEscort": 0
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "AirShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 1750000
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 4806
+          },
+          "SelectionDamaged": {
+            "AudioPool": 4808
+          },
+          "AttackCommand": {
+            "AudioPool": 0
+          },
+          "MoveCommand": {
+            "AudioPool": 4807
+          },
+          "EscortCommand": {
+            "AudioPool": 4811
+          },
+          "PatrolCommand": {
+            "AudioPool": 4807
+          },
+          "DropCommand": {
+            "AudioPool": 4812
+          }
+        }
+      },
+      "ItemReplacer": {
+        "ItemReplacementPools": 193855
+      },
+      "Bombarder": {
+        "Shafts": 5
+      }
+    }
+  },
+  {
+    "Template": "AirShip",
+    "Values": {
+      "Standard": {
+        "GUID": 1755,
+        "Name": "Passage Airship SA(Trade)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_airship_artic.png",
+        "InfoDescription": 114288
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "VectorElement": {
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Filename": "data/dlc03/graphics/vehicles/airships/airships.cfg"
+          }
+        },
+        "Skins": {
+          "SkinList": {
+            "Item": [
+              {
+                "SkinAssetGuid": 133406
+              },
+              {
+                "SkinAssetGuid": 133413
+              },
+              {
+                "SkinAssetGuid": 133414
+              },
+              {
+                "SkinAssetGuid": 133416
+              },
+              {
+                "SkinAssetGuid": 4589
+              }
+            ]
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Walking": {
+        "TurnAroundRadius": 8,
+        "Deceleration": 2,
+        "TurnRadius": 8,
+        "TurnSpeed": 45,
+        "TurnSpeedInPlace": 20,
+        "LeaningMaxAngle": 0,
+        "ForwardSpeed": 11.7,
+        "WindMinSlowdownFactor": 0.4,
+        "WindSlowdownEffectOnTurningSpeed": 0.35,
+        "MinSlowdownFactor": 0.3
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Mapinguari",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57671
+      },
+      "CommandQueue": {
+        "TradeShipPoints": 0
+      },
+      "Drifting": {
+        "Length": 7,
+        "Width": 3.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2400
+      },
+      "MinimapToken": {
+        "StrategicMapAsset": 117300
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 244873
+            }
+          }
+        }
+      },
+      "UpgradeList": {
+        "DefaultBuff": 1764
+      },
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SlotCount": 4
+      },
+      "FeedbackController": "",
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 0
+                  }
+                }
+              },
+              "Amount": 10
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 1
+                  }
+                }
+              },
+              "Amount": 20
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 2
+                  }
+                }
+              },
+              "Ingredient": 1010224,
+              "Amount": 8
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 3
+                  }
+                }
+              },
+              "Ingredient": 840,
+              "Amount": 25
+            }
+          ]
+        },
+        "InfluenceCostPoints": 6
+      },
+      "Craftable": "",
+      "TradeRouteVehicle": {
+        "LoadingSpeedFactor": 0.5
+      },
+      "Locked": {
+        "DLCDependency": 410042
+      },
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": "",
+      "ShipMaintenance": {
+        "Maintenance": 1200,
+        "DisableEscort": 0
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "AirShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 700000
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 117310
+          },
+          "SelectionDamaged": {
+            "AudioPool": 117309
+          },
           "AttackCommand": {
             "AudioPool": 117311
           },
@@ -428,14 +1892,2792 @@
           "PatrolCommand": {
             "AudioPool": 117313
           },
-          "SelectionDamaged": {
-            "AudioPool": 117309
+          "DropCommand": {
+            "AudioPool": 117311
           }
         }
       },
       "ItemReplacer": {
         "ItemReplacementPools": 193855
+      },
+      "Bombarder": ""
+    }
+  },
+  {
+    "Template": "AirShip",
+    "Values": {
+      "Standard": {
+        "GUID": 1733,
+        "Name": "AirshipAgileCargo_Small_Passage(Trade)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_airship_hunter_light.png",
+        "InfoDescription": 1649
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc11/graphics/vehicle/airships/airship_agile_small/airship_agile_small.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "LogoMode": "CorporationLogoFromPlayer"
+      },
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Walking": {
+        "Acceleration": 5,
+        "Deceleration": 5,
+        "TurnSpeed": 145,
+        "TurnSpeedInPlace": 95,
+        "LeaningMaxAngle": 0,
+        "ForwardSpeed": 15,
+        "WindMinSlowdownFactor": 0.9,
+        "WindSlowdownEffectOnTurningSpeed": 1,
+        "WindMaxSpeedupFactor": 1.7,
+        "CargoFullFactor": 0.4,
+        "MinSlowdownFactor": 0.3,
+        "SessionTransferSpeedFactor": 0.9
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Harpy",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57674
+      },
+      "CommandQueue": {
+        "AirShipPoints": 80
+      },
+      "Drifting": {
+        "Length": 7,
+        "Width": 3.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 1400
+      },
+      "MinimapToken": {
+        "StrategicMapAsset": 117300
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 200992
+            }
+          }
+        }
+      },
+      "UpgradeList": {
+        "DefaultBuff": 1748
+      },
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 2
+      },
+      "FeedbackController": "",
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 838,
+              "Amount": 25
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 35
+            },
+            {
+              "Ingredient": 112706,
+              "Amount": 10
+            },
+            {
+              "Ingredient": 1010221
+            }
+          ]
+        },
+        "InfluenceCostPoints": 2
+      },
+      "Craftable": {
+        "CraftingTime": 720000
+      },
+      "TradeRouteVehicle": {
+        "LoadingSpeedFactor": 0.2
+      },
+      "Locked": {
+        "DLCDependency": 24962
+      },
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": "",
+      "ShipMaintenance": {
+        "Maintenance": 975,
+        "DisableEscort": 0
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "AirShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 1200000
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 4815
+          },
+          "SelectionDamaged": {
+            "AudioPool": 4817
+          },
+          "AttackCommand": {
+            "AudioPool": 4822
+          },
+          "MoveCommand": {
+            "AudioPool": 4816
+          },
+          "EscortCommand": {
+            "AudioPool": 4820
+          },
+          "PatrolCommand": {
+            "AudioPool": 4816
+          },
+          "DropCommand": {
+            "AudioPool": 4823
+          }
+        }
+      },
+      "ItemReplacer": {
+        "ItemReplacementPools": 193855
+      },
+      "Bombarder": ""
+    }
+  },
+  {
+    "Template": "AirShip",
+    "Values": {
+      "Standard": {
+        "GUID": 1734,
+        "Name": "AirshipAgileCargo_Medium_Passage(Trade)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_airship_hunter.png",
+        "InfoDescription": 1650
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "VectorElement": {
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Filename": "data/dlc11/graphics/vehicle/airships/airship_agile_medium/airship_agile_medium.cfg"
+          }
+        },
+        "Skins": {
+          "SkinList": {
+            "Item": [
+              {
+                "SkinAssetGuid": 103830
+              },
+              {
+                "SkinAssetGuid": 103940
+              }
+            ]
+          }
+        }
+      },
+      "Mesh": {
+        "LogoMode": "CorporationLogoFromPlayer"
+      },
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Walking": {
+        "TurnAroundRadius": 6,
+        "Acceleration": 3.5,
+        "Deceleration": 3.5,
+        "TurnRadius": 6,
+        "TurnSpeed": 120,
+        "TurnSpeedInPlace": 110,
+        "LeaningMaxAngle": 0,
+        "ForwardSpeed": 13,
+        "WindMinSlowdownFactor": 0.8,
+        "WindSlowdownEffectOnTurningSpeed": 0.9,
+        "WindMaxSpeedupFactor": 1.6,
+        "MinSlowdownFactor": 0.3,
+        "SessionTransferSpeedFactor": 0.8
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Manticore",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57675
+      },
+      "CommandQueue": "",
+      "Drifting": {
+        "Length": 7,
+        "Width": 3.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2300
+      },
+      "MinimapToken": {
+        "StrategicMapAsset": 117300
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 200990
+            }
+          }
+        }
+      },
+      "UpgradeList": {
+        "DefaultBuff": 1746
+      },
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": "",
+      "FeedbackController": "",
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 838,
+              "Amount": 30
+            },
+            {
+              "Ingredient": 1010224,
+              "Amount": 10
+            },
+            {
+              "Ingredient": 112706,
+              "Amount": 15
+            },
+            {
+              "Ingredient": 1010221
+            }
+          ]
+        },
+        "InfluenceCostPoints": 2
+      },
+      "Craftable": {
+        "CraftingTime": 840000
+      },
+      "TradeRouteVehicle": {
+        "LoadingSpeedFactor": 0.2
+      },
+      "Locked": {
+        "DLCDependency": 24962
+      },
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": "",
+      "ShipMaintenance": {
+        "Maintenance": 1300,
+        "DisableEscort": 0
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "AirShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 1200000
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 4815
+          },
+          "SelectionDamaged": {
+            "AudioPool": 4817
+          },
+          "AttackCommand": {
+            "AudioPool": 4822
+          },
+          "MoveCommand": {
+            "AudioPool": 4816
+          },
+          "EscortCommand": {
+            "AudioPool": 4820
+          },
+          "PatrolCommand": {
+            "AudioPool": 4816
+          },
+          "DropCommand": {
+            "AudioPool": 4823
+          }
+        }
+      },
+      "ItemReplacer": {
+        "ItemReplacementPools": 193855
+      },
+      "Bombarder": ""
+    }
+  },
+  {
+    "Template": "AirShip",
+    "Values": {
+      "Standard": {
+        "GUID": 1735,
+        "Name": "AirshipCargo_Small_Passage(Trade)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_airship_cargo_small.png",
+        "InfoDescription": 1666
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "VectorElement": {
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Filename": "data/dlc11/graphics/vehicle/airships/airship_transport_small/airship_transport_small.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Walking": {
+        "TurnAroundRadius": 8,
+        "Acceleration": 1.5,
+        "Deceleration": 1,
+        "TurnRadius": 6,
+        "TurnSpeed": 100,
+        "TurnSpeedInPlace": 80,
+        "LeaningMaxAngle": 0,
+        "WindMinSlowdownFactor": 0.8,
+        "WindSlowdownEffectOnTurningSpeed": 0.8,
+        "WindMaxSpeedupFactor": 1.5,
+        "CargoFullFactor": 0.6,
+        "MinSlowdownFactor": 0.3
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Hermes",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57676
+      },
+      "CommandQueue": {
+        "TradeShipPoints": 2,
+        "AirShipPoints": 120
+      },
+      "Drifting": {
+        "Length": 7,
+        "Width": 3.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 1600
+      },
+      "MinimapToken": {
+        "StrategicMapAsset": 117300
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 200990
+            }
+          }
+        }
+      },
+      "UpgradeList": {
+        "DefaultBuff": 1749
+      },
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": "",
+      "FeedbackController": "",
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 838,
+              "Amount": 35
+            },
+            {
+              "Ingredient": 1010210,
+              "Amount": 45
+            },
+            {
+              "Ingredient": 112706,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 1010221
+            }
+          ]
+        },
+        "InfluenceCostPoints": 5
+      },
+      "Craftable": {
+        "CraftingTime": 720000
+      },
+      "TradeRouteVehicle": {
+        "LoadingSpeedFactor": 1.2
+      },
+      "Locked": {
+        "DLCDependency": 24962
+      },
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": "",
+      "ShipMaintenance": {
+        "Maintenance": 900,
+        "DisableEscort": 0
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "AirShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 1200000
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 4806
+          },
+          "SelectionDamaged": {
+            "AudioPool": 4808
+          },
+          "AttackCommand": {
+            "AudioPool": 0
+          },
+          "MoveCommand": {
+            "AudioPool": 4807
+          },
+          "EscortCommand": {
+            "AudioPool": 4811
+          },
+          "PatrolCommand": {
+            "AudioPool": 4807
+          },
+          "DropCommand": {
+            "AudioPool": 4812
+          }
+        }
+      },
+      "ItemReplacer": {
+        "ItemReplacementPools": 193855
+      },
+      "Bombarder": ""
+    }
+  },
+  {
+    "Template": "AirShip",
+    "Values": {
+      "Standard": {
+        "GUID": 1736,
+        "Name": "AirshipCargo_Medium_PassageTrade)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_airship_cargo_medium_b.png",
+        "InfoDescription": 1664
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "VectorElement": {
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Filename": "data/dlc11/graphics/vehicle/airships/airship_transport_medium/airship_transport_medium.cfg"
+          }
+        },
+        "Skins": {
+          "SkinList": {
+            "Item": [
+              {
+                "SkinAssetGuid": 4711
+              },
+              {
+                "SkinAssetGuid": 4709
+              },
+              {
+                "SkinAssetGuid": 4710
+              }
+            ]
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Walking": {
+        "TurnAroundRadius": 6,
+        "Deceleration": 2,
+        "TurnRadius": 8,
+        "TurnSpeed": 100,
+        "TurnSpeedInPlace": 80,
+        "LeaningMaxAngle": 0,
+        "ForwardSpeed": 11,
+        "WindSlowdownEffectOnTurningSpeed": 0.8,
+        "CargoFullFactor": 0.7,
+        "MinSlowdownFactor": 0.3,
+        "SessionTransferSpeedFactor": 1.3
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Pegasus",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57677
+      },
+      "CommandQueue": {
+        "TradeShipPoints": 5,
+        "AirShipPoints": 160
+      },
+      "Drifting": {
+        "Length": 7,
+        "Width": 3.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 2800
+      },
+      "MinimapToken": {
+        "StrategicMapAsset": 117300
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 200990
+            }
+          }
+        }
+      },
+      "UpgradeList": {
+        "DefaultBuff": 1750
+      },
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 3,
+        "SlotCount": 5
+      },
+      "FeedbackController": "",
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 838,
+              "Amount": 40
+            },
+            {
+              "Ingredient": 1010224,
+              "Amount": 20
+            },
+            {
+              "Ingredient": 112706,
+              "Amount": 25
+            },
+            {
+              "Ingredient": 1010221
+            }
+          ]
+        },
+        "InfluenceCostPoints": 10
+      },
+      "Craftable": "",
+      "TradeRouteVehicle": {
+        "LoadingSpeedFactor": 0.5
+      },
+      "Locked": {
+        "DLCDependency": 24962
+      },
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": "",
+      "ShipMaintenance": {
+        "Maintenance": 1500,
+        "DisableEscort": 0
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "AirShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 1550000
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 4806
+          },
+          "SelectionDamaged": {
+            "AudioPool": 4808
+          },
+          "AttackCommand": {
+            "AudioPool": 0
+          },
+          "MoveCommand": {
+            "AudioPool": 4807
+          },
+          "EscortCommand": {
+            "AudioPool": 4811
+          },
+          "PatrolCommand": {
+            "AudioPool": 4807
+          },
+          "DropCommand": {
+            "AudioPool": 4812
+          }
+        }
+      },
+      "ItemReplacer": {
+        "ItemReplacementPools": 193855
+      },
+      "Bombarder": {
+        "Shafts": 4
       }
+    }
+  },
+  {
+    "Template": "AirShip",
+    "Values": {
+      "Standard": {
+        "GUID": 1737,
+        "Name": "AirshipCargo_Large_Passage(Trade)",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_airship_cargo_large_a.png",
+        "InfoDescription": 1667
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "VectorElement": {
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Filename": "data/dlc11/graphics/vehicle/airships/airship_transport_big/airship_transport_big.cfg"
+          }
+        },
+        "Skins": {
+          "SkinList": {
+            "Item": {
+              "SkinAssetGuid": 4699
+            }
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Walking": {
+        "TurnAroundRadius": 12,
+        "Acceleration": 0.3,
+        "Deceleration": 0.5,
+        "TurnRadius": 10,
+        "TurnSpeed": 100,
+        "TurnSpeedInPlace": 80,
+        "LeaningMaxAngle": 0,
+        "ForwardSpeed": 10,
+        "WindMinSlowdownFactor": 0.7,
+        "WindSlowdownEffectOnTurningSpeed": 0.75,
+        "WindMaxSpeedupFactor": 1.3,
+        "CargoFullFactor": 0.8,
+        "MinSlowdownFactor": 0.3,
+        "SessionTransferSpeedFactor": 1.7
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Zephyr",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57678
+      },
+      "CommandQueue": {
+        "TradeShipPoints": 8,
+        "AirShipPoints": 200
+      },
+      "Drifting": {
+        "Length": 7,
+        "Width": 3.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 3500
+      },
+      "MinimapToken": {
+        "StrategicMapAsset": 117300
+      },
+      "SoundEmitter": {
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 200988
+            }
+          }
+        }
+      },
+      "UpgradeList": {
+        "DefaultBuff": 1751
+      },
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SlotCount": 8
+      },
+      "FeedbackController": "",
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "Ingredient": 838,
+              "Amount": 55
+            },
+            {
+              "Ingredient": 1010224,
+              "Amount": 35
+            },
+            {
+              "Ingredient": 112706,
+              "Amount": 35
+            },
+            {
+              "Ingredient": 1010221
+            }
+          ]
+        },
+        "InfluenceCostPoints": 18
+      },
+      "Craftable": {
+        "CraftingTime": 1080000
+      },
+      "TradeRouteVehicle": {
+        "LoadingSpeedFactor": 0.9
+      },
+      "Locked": {
+        "DLCDependency": 24962
+      },
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": "",
+      "ShipMaintenance": {
+        "Maintenance": 1800,
+        "DisableEscort": 0
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "AirShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 1750000
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 4806
+          },
+          "SelectionDamaged": {
+            "AudioPool": 4808
+          },
+          "AttackCommand": {
+            "AudioPool": 0
+          },
+          "MoveCommand": {
+            "AudioPool": 4807
+          },
+          "EscortCommand": {
+            "AudioPool": 4811
+          },
+          "PatrolCommand": {
+            "AudioPool": 4807
+          },
+          "DropCommand": {
+            "AudioPool": 4812
+          }
+        }
+      },
+      "ItemReplacer": {
+        "ItemReplacementPools": 193855
+      },
+      "Bombarder": {
+        "Shafts": 5
+      }
+    }
+  },
+  {
+    "Template": "AirShip",
+    "Values": {
+      "Standard": {
+        "GUID": 102875,
+        "Name": "Airship (Queen)_DLC11Version",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_airship.png",
+        "InfoDescription": 114288
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "VectorElement": {
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Filename": "data/dlc08/graphics/quest/queen_airship/airships.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "InteractionDistance": 4
+      },
+      "Walking": {
+        "TurnAroundRadius": 8,
+        "Deceleration": 2,
+        "TurnRadius": 8,
+        "TurnSpeed": 45,
+        "TurnSpeedInPlace": 20,
+        "LeaningMaxAngle": 0,
+        "ForwardSpeed": 13,
+        "WindMinSlowdownFactor": 0.4,
+        "WindSlowdownEffectOnTurningSpeed": 0.35,
+        "MinSlowdownFactor": 0.3
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Royal Airship",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57115
+      },
+      "CommandQueue": {
+        "TradeShipPoints": 0
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 1,
+        "Length": 7,
+        "Width": 3.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "AttackableType": "[NONE]",
+        "MaximumHitPoints": 1200
+      },
+      "MinimapToken": {
+        "StrategicMapAsset": 117300
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 244872
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 244873
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SlotCount": 4
+      },
+      "FeedbackController": "",
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 0
+                  }
+                }
+              },
+              "Amount": 25
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 1
+                  }
+                }
+              },
+              "Amount": 50
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 2
+                  }
+                }
+              },
+              "Ingredient": 1010224,
+              "Amount": 25
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 3
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Craftable": "",
+      "TradeRouteVehicle": {
+        "LoadingSpeedFactor": 0.5
+      },
+      "Locked": {
+        "DLCDependency": 410042
+      },
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": "",
+      "ShipMaintenance": {
+        "Maintenance": 1200,
+        "DisableEscort": 0
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "AirShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 700000
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 117310
+          },
+          "SelectionDamaged": {
+            "AudioPool": 117309
+          },
+          "AttackCommand": {
+            "AudioPool": 117311
+          },
+          "MoveCommand": {
+            "AudioPool": 117312
+          },
+          "EscortCommand": {
+            "AudioPool": 117314
+          },
+          "PatrolCommand": {
+            "AudioPool": 117313
+          }
+        }
+      },
+      "ItemReplacer": {
+        "ItemReplacementPools": 193855
+      },
+      "Bombarder": ""
+    }
+  },
+  {
+    "Template": "AirShip",
+    "Values": {
+      "Standard": {
+        "GUID": 103723,
+        "Name": "Airship (Queen)_DLC11VersionV2",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_airship.png",
+        "InfoDescription": 114288
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "VectorElement": {
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Filename": "data/dlc08/graphics/quest/queen_airship/airships.cfg"
+          }
+        }
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Walking": {
+        "TurnAroundRadius": 8,
+        "Deceleration": 2,
+        "TurnRadius": 8,
+        "TurnSpeed": 45,
+        "TurnSpeedInPlace": 20,
+        "LeaningMaxAngle": 0,
+        "ForwardSpeed": 13,
+        "WindMinSlowdownFactor": 0.4,
+        "WindSlowdownEffectOnTurningSpeed": 0.35,
+        "MinSlowdownFactor": 0.3
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Royal Airship",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57117
+      },
+      "CommandQueue": {
+        "TradeShipPoints": 0
+      },
+      "Drifting": {
+        "OverrideAssetWidthAndLength": 1,
+        "Length": 7,
+        "Width": 3.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "AttackableType": "[NONE]",
+        "MaximumHitPoints": 1200
+      },
+      "MinimapToken": {
+        "StrategicMapAsset": 117300
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 244872
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 244873
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SlotCount": 4
+      },
+      "FeedbackController": "",
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 0
+                  }
+                }
+              },
+              "Amount": 25
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 1
+                  }
+                }
+              },
+              "Amount": 50
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 2,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 2
+                  }
+                }
+              },
+              "Ingredient": 1010224,
+              "Amount": 25
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 3,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 3
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Craftable": "",
+      "TradeRouteVehicle": {
+        "LoadingSpeedFactor": 0.5
+      },
+      "Locked": {
+        "DLCDependency": 410042
+      },
+      "Nameable": "",
+      "MetaPersistent": "",
+      "ExpeditionAttribute": "",
+      "ShipMaintenance": {
+        "Maintenance": 1200,
+        "DisableEscort": 0
+      },
+      "Sellable": {
+        "Baseprice": {
+          "Item": {
+            "VectorElement": {
+              "InheritedIndex": 0,
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "AirShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Amount": 700000
+          }
+        }
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": {
+        "InfectableByIncident": {
+          "Illness": {
+            "Infectable": 0
+          }
+        }
+      },
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 117310
+          },
+          "SelectionDamaged": {
+            "AudioPool": 117309
+          },
+          "AttackCommand": {
+            "AudioPool": 117311
+          },
+          "MoveCommand": {
+            "AudioPool": 117312
+          },
+          "EscortCommand": {
+            "AudioPool": 117314
+          },
+          "PatrolCommand": {
+            "AudioPool": 117313
+          }
+        }
+      },
+      "ItemReplacer": {
+        "ItemReplacementPools": 193855
+      },
+      "Bombarder": ""
+    }
+  },
+  {
+    "Template": "AirShip",
+    "Values": {
+      "Standard": {
+        "GUID": 102319,
+        "Name": "Paloma Scenario Flagship",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_airship_paloma_quest_reward.png"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "VectorElement": {
+              "InheritanceMapV2": {
+                "Entry": {
+                  "TemplateName": "TradeShip",
+                  "Index": 0
+                }
+              }
+            },
+            "Filename": "data/dlc11/graphics/vehicle/airships/airship_agile_medium/airship_agile_medium_skin_02.cfg"
+          }
+        }
+      },
+      "Mesh": {
+        "LogoMode": "CorporationLogoFromPlayer"
+      },
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Walking": {
+        "ShortenSailsAfter": 0,
+        "TurnAroundRadius": 8,
+        "Acceleration": 5,
+        "Deceleration": 1,
+        "TurnRadius": 6,
+        "TurnSpeed": 145,
+        "TurnSpeedInPlace": 120,
+        "LeaningMaxAngle": 0,
+        "ForwardSpeed": 17,
+        "WindMinSlowdownFactor": 0.9,
+        "WindSlowdownEffectOnTurningSpeed": 1,
+        "WindMaxSpeedupFactor": 1.7,
+        "MinSlowdownFactor": 0.3,
+        "SessionTransferSpeedFactor": 1.7
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Paloma's Flagship",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57489
+      },
+      "CommandQueue": {
+        "IsFlagship": 1
+      },
+      "Drifting": {
+        "Length": 7,
+        "Width": 3.5
+      },
+      "Collector": "",
+      "Attackable": {
+        "MaximumHitPoints": 3000,
+        "SelfHealPerHealTick": 2.33
+      },
+      "MinimapToken": {
+        "StrategicMapAsset": 117300
+      },
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 244872
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 244873
+            }
+          }
+        }
+      },
+      "UpgradeList": {
+        "DefaultBuff": 721
+      },
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 3,
+        "SlotCount": 5
+      },
+      "FeedbackController": "",
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Cost": "",
+      "Craftable": "",
+      "TradeRouteVehicle": {
+        "LoadingSpeedFactor": 0.6
+      },
+      "Locked": "",
+      "Nameable": {
+        "OverwriteNameWithTextAsset": 102320
+      },
+      "MetaPersistent": "",
+      "ExpeditionAttribute": "",
+      "ShipMaintenance": {
+        "Maintenance": 0,
+        "DisableEscort": 0
+      },
+      "Sellable": {
+        "CanBeSoldToTrader": 0
+      },
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 104769
+          },
+          "SelectionDamaged": {
+            "AudioPool": 104769
+          },
+          "AttackCommand": {
+            "AudioPool": 104770
+          },
+          "MoveCommand": {
+            "AudioPool": 104770
+          },
+          "EscortCommand": {
+            "AudioPool": 104770
+          },
+          "PatrolCommand": {
+            "AudioPool": 104770
+          }
+        }
+      },
+      "ItemReplacer": {
+        "ItemReplacementPools": 193855
+      },
+      "Bombarder": ""
+    }
+  },
+  {
+    "Template": "AirShip",
+    "Values": {
+      "Standard": {
+        "GUID": 104571,
+        "Name": "S03 Challenger 11 Waiting Ship",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_airship.png"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc03/graphics/vehicles/airships/airships.cfg"
+          }
+        },
+        "DefaultParticipant": "Scenario3_Challenger11"
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "[NONE]"
+      },
+      "Walking": {
+        "ExpensiveDirSmoothing": 0,
+        "Acceleration": 5,
+        "ForwardSpeed": 13,
+        "WindMinSlowdownFactor": 0.5,
+        "WindSlowdownEffectOnTurningSpeed": 0.35,
+        "WindMaxSpeedupFactor": 1.8
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Challenger Ship",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57498
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0
+      },
+      "Drifting": {
+        "Length": 4.2
+      },
+      "Collector": "",
+      "Attackable": "",
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 238319
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 236630
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 2
+      },
+      "FeedbackController": {
+        "NightBehavior": "HideNone"
+      },
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 0
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 1
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 2
+      },
+      "Craftable": {
+        "CraftingTime": 180000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": {
+        "OverwriteNameWithTextAsset": 104580
+      },
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 10
+      },
+      "ShipMaintenance": "",
+      "Sellable": "",
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700090
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700119
+          },
+          "MoveCommand": {
+            "AudioPool": 700091
+          },
+          "EscortCommand": {
+            "AudioPool": 700121
+          },
+          "PatrolCommand": {
+            "AudioPool": 700120
+          }
+        }
+      },
+      "ItemReplacer": "",
+      "Bombarder": ""
+    }
+  },
+  {
+    "Template": "AirShip",
+    "Values": {
+      "Standard": {
+        "GUID": 103293,
+        "Name": "S03 Challenger 11 Ship1",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_airship.png"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc03/graphics/vehicles/airships/airships.cfg"
+          }
+        },
+        "DefaultParticipant": "Scenario3_Challenger11"
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "[NONE]"
+      },
+      "Walking": {
+        "ExpensiveDirSmoothing": 0,
+        "Acceleration": 5,
+        "ForwardSpeed": 13,
+        "WindMinSlowdownFactor": 0.5,
+        "WindSlowdownEffectOnTurningSpeed": 0.35,
+        "WindMaxSpeedupFactor": 1.8
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Challenger Ship",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57516
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0
+      },
+      "Drifting": {
+        "Length": 4.2
+      },
+      "Collector": "",
+      "Attackable": "",
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 238319
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 236630
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 2
+      },
+      "FeedbackController": {
+        "NightBehavior": "HideNone"
+      },
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 0
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 1
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 2
+      },
+      "Craftable": {
+        "CraftingTime": 180000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": {
+        "OverwriteNameWithTextAsset": 103279
+      },
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 10
+      },
+      "ShipMaintenance": "",
+      "Sellable": "",
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700090
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700119
+          },
+          "MoveCommand": {
+            "AudioPool": 700091
+          },
+          "EscortCommand": {
+            "AudioPool": 700121
+          },
+          "PatrolCommand": {
+            "AudioPool": 700120
+          }
+        }
+      },
+      "ItemReplacer": "",
+      "Bombarder": ""
+    }
+  },
+  {
+    "Template": "AirShip",
+    "Values": {
+      "Standard": {
+        "GUID": 103294,
+        "Name": "S03 Challenger 11 Ship2",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_airship.png"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc03/graphics/vehicles/airships/airships.cfg"
+          }
+        },
+        "DefaultParticipant": "Scenario3_Challenger11"
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "[NONE]"
+      },
+      "Walking": {
+        "ExpensiveDirSmoothing": 0,
+        "Acceleration": 5,
+        "ForwardSpeed": 13,
+        "WindMinSlowdownFactor": 0.5,
+        "WindSlowdownEffectOnTurningSpeed": 0.35,
+        "WindMaxSpeedupFactor": 1.8
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Challenger Ship",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57517
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0
+      },
+      "Drifting": {
+        "Length": 4.2
+      },
+      "Collector": "",
+      "Attackable": "",
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 238319
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 236630
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 2
+      },
+      "FeedbackController": {
+        "NightBehavior": "HideNone"
+      },
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 0
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 1
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 2
+      },
+      "Craftable": {
+        "CraftingTime": 180000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": {
+        "OverwriteNameWithTextAsset": 103280
+      },
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 10
+      },
+      "ShipMaintenance": "",
+      "Sellable": "",
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700090
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700119
+          },
+          "MoveCommand": {
+            "AudioPool": 700091
+          },
+          "EscortCommand": {
+            "AudioPool": 700121
+          },
+          "PatrolCommand": {
+            "AudioPool": 700120
+          }
+        }
+      },
+      "ItemReplacer": "",
+      "Bombarder": ""
+    }
+  },
+  {
+    "Template": "AirShip",
+    "Values": {
+      "Standard": {
+        "GUID": 103297,
+        "Name": "S03 Challenger Queen Ship1",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_airship_cargo_large_b.png"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc11/graphics/vehicle/airships/airship_agile_medium/airship_agile_medium_skin_01.cfg"
+          }
+        },
+        "DefaultParticipant": "Scenario3_Queen"
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "[NONE]"
+      },
+      "Walking": {
+        "ExpensiveDirSmoothing": 0,
+        "Acceleration": 5,
+        "ForwardSpeed": 11,
+        "WindMinSlowdownFactor": 0.5,
+        "WindSlowdownEffectOnTurningSpeed": 0.35,
+        "WindMaxSpeedupFactor": 1.8
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Challenger Ship",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57520
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0
+      },
+      "Drifting": {
+        "Length": 4.2
+      },
+      "Collector": "",
+      "Attackable": "",
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 238319
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 236630
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 2
+      },
+      "FeedbackController": {
+        "NightBehavior": "HideNone"
+      },
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 0
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 1
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 2
+      },
+      "Craftable": {
+        "CraftingTime": 180000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": {
+        "OverwriteNameWithTextAsset": 103283
+      },
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 10
+      },
+      "ShipMaintenance": "",
+      "Sellable": "",
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700090
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700119
+          },
+          "MoveCommand": {
+            "AudioPool": 700091
+          },
+          "EscortCommand": {
+            "AudioPool": 700121
+          },
+          "PatrolCommand": {
+            "AudioPool": 700120
+          }
+        }
+      },
+      "ItemReplacer": "",
+      "Bombarder": ""
+    }
+  },
+  {
+    "Template": "AirShip",
+    "Values": {
+      "Standard": {
+        "GUID": 103298,
+        "Name": "S03 Challenger Queen Ship2",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_airship_cargo_large_b.png"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc11/graphics/vehicle/airships/airship_transport_big/airship_transport_big_skin_01.cfg"
+          }
+        },
+        "DefaultParticipant": "Scenario3_Queen"
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "[NONE]"
+      },
+      "Walking": {
+        "ExpensiveDirSmoothing": 0,
+        "Acceleration": 5,
+        "ForwardSpeed": 11,
+        "WindMinSlowdownFactor": 0.5,
+        "WindSlowdownEffectOnTurningSpeed": 0.35,
+        "WindMaxSpeedupFactor": 1.8
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Challenger Ship",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57521
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0
+      },
+      "Drifting": {
+        "Length": 4.2
+      },
+      "Collector": "",
+      "Attackable": "",
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 238319
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 236630
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 2
+      },
+      "FeedbackController": {
+        "NightBehavior": "HideNone"
+      },
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 0
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 1
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 2
+      },
+      "Craftable": {
+        "CraftingTime": 180000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": {
+        "OverwriteNameWithTextAsset": 103284
+      },
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 10
+      },
+      "ShipMaintenance": "",
+      "Sellable": "",
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700090
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700119
+          },
+          "MoveCommand": {
+            "AudioPool": 700091
+          },
+          "EscortCommand": {
+            "AudioPool": 700121
+          },
+          "PatrolCommand": {
+            "AudioPool": 700120
+          }
+        }
+      },
+      "ItemReplacer": "",
+      "Bombarder": ""
+    }
+  },
+  {
+    "Template": "AirShip",
+    "Values": {
+      "Standard": {
+        "GUID": 103299,
+        "Name": "S03 Challenger Queen Ship3",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_airship_cargo_large_b.png"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc11/graphics/vehicle/airships/airship_transport_big/airship_transport_big_skin_01.cfg"
+          }
+        },
+        "DefaultParticipant": "Scenario3_Queen"
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "[NONE]"
+      },
+      "Walking": {
+        "ExpensiveDirSmoothing": 0,
+        "Acceleration": 5,
+        "ForwardSpeed": 11,
+        "WindMinSlowdownFactor": 0.5,
+        "WindSlowdownEffectOnTurningSpeed": 0.35,
+        "WindMaxSpeedupFactor": 1.8
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Challenger Ship",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57522
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0
+      },
+      "Drifting": {
+        "Length": 4.2
+      },
+      "Collector": "",
+      "Attackable": "",
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 238319
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 236630
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 2
+      },
+      "FeedbackController": {
+        "NightBehavior": "HideNone"
+      },
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 0
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 1
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 2
+      },
+      "Craftable": {
+        "CraftingTime": 180000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": {
+        "OverwriteNameWithTextAsset": 103285
+      },
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 10
+      },
+      "ShipMaintenance": "",
+      "Sellable": "",
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700090
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700119
+          },
+          "MoveCommand": {
+            "AudioPool": 700091
+          },
+          "EscortCommand": {
+            "AudioPool": 700121
+          },
+          "PatrolCommand": {
+            "AudioPool": 700120
+          }
+        }
+      },
+      "ItemReplacer": "",
+      "Bombarder": ""
+    }
+  },
+  {
+    "Template": "AirShip",
+    "Values": {
+      "Standard": {
+        "GUID": 103300,
+        "Name": "S03 Challenger Queen Ship4",
+        "IconFilename": "data/ui/2kimages/main/3dicons/ships/icon_airship_cargo_large_b.png"
+      },
+      "Object": {
+        "Variations": {
+          "Item": {
+            "Filename": "data/dlc11/graphics/vehicle/airships/airship_transport_big/airship_transport_big_skin_01.cfg"
+          }
+        },
+        "DefaultParticipant": "Scenario3_Queen"
+      },
+      "Mesh": "",
+      "Selection": {
+        "OnSelection": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "ParticipantMessageArcheType": "[NONE]"
+      },
+      "Walking": {
+        "ExpensiveDirSmoothing": 0,
+        "Acceleration": 5,
+        "ForwardSpeed": 11,
+        "WindMinSlowdownFactor": 0.5,
+        "WindSlowdownEffectOnTurningSpeed": 0.35,
+        "WindMaxSpeedupFactor": 1.8
+      },
+      "Text": {
+        "LocaText": {
+          "English": {
+            "Text": "Challenger Ship",
+            "Status": "Exported"
+          }
+        },
+        "LineID": 57523
+      },
+      "CommandQueue": {
+        "IsPlayerControllableVehicle": 0
+      },
+      "Drifting": {
+        "Length": 4.2
+      },
+      "Collector": "",
+      "Attackable": "",
+      "MinimapToken": "",
+      "SoundEmitter": {
+        "DestroySounds": {
+          "Item": {
+            "Sound": 238319
+          }
+        },
+        "VehicleSounds": {
+          "MovementStart": {
+            "Item": {
+              "Sound": 236630
+            }
+          }
+        }
+      },
+      "UpgradeList": "",
+      "QuestObject": "",
+      "Infolayer": "",
+      "ItemContainer": {
+        "SocketCount": 1,
+        "SlotCount": 2
+      },
+      "FeedbackController": {
+        "NightBehavior": "HideNone"
+      },
+      "Draggable": {
+        "DraggableOnDrag": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        },
+        "DraggableOnDrop": {
+          "IsBaseAutoCreateAsset": 1,
+          "Values": {
+            "ActionList": ""
+          }
+        }
+      },
+      "Cost": {
+        "Costs": {
+          "Item": [
+            {
+              "VectorElement": {
+                "InheritedIndex": 0,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 0
+                  }
+                }
+              }
+            },
+            {
+              "VectorElement": {
+                "InheritedIndex": 1,
+                "InheritanceMapV2": {
+                  "Entry": {
+                    "TemplateName": "AirShip",
+                    "Index": 1
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "InfluenceCostType": "TradeShip",
+        "InfluenceCostPoints": 2
+      },
+      "Craftable": {
+        "CraftingTime": 180000
+      },
+      "TradeRouteVehicle": "",
+      "Locked": "",
+      "Nameable": {
+        "OverwriteNameWithTextAsset": 103286
+      },
+      "MetaPersistent": "",
+      "ExpeditionAttribute": {
+        "BaseMorale": 10
+      },
+      "ShipMaintenance": "",
+      "Sellable": "",
+      "Stance": "",
+      "Rentable": "",
+      "WorldMapSound": "",
+      "Pausable": "",
+      "ShipIncident": "",
+      "SoundEmitterCommandBarks": {
+        "BarkMapping": {
+          "Selection": {
+            "AudioPool": 700090
+          },
+          "SelectionDamaged": {
+            "AudioPool": 700119
+          },
+          "MoveCommand": {
+            "AudioPool": 700091
+          },
+          "EscortCommand": {
+            "AudioPool": 700121
+          },
+          "PatrolCommand": {
+            "AudioPool": 700120
+          }
+        }
+      },
+      "ItemReplacer": "",
+      "Bombarder": ""
     }
   }
 ]

@@ -750,6 +750,36 @@
             },
             {
               "Name": 20320
+            },
+            {
+              "Name": 14085
+            },
+            {
+              "Name": 14086
+            },
+            {
+              "Name": 14095
+            },
+            {
+              "Name": 14096
+            },
+            {
+              "Name": 14099
+            },
+            {
+              "Name": 14098
+            },
+            {
+              "Name": 14097
+            },
+            {
+              "Name": 14102
+            },
+            {
+              "Name": 14104
+            },
+            {
+              "Name": 14111
             }
           ]
         },
@@ -1727,6 +1757,9 @@
           ]
         },
         "Trees": {
+          "None": {
+            "PlantPercent": 100
+          },
           "Lumberjack": {
             "GUID": 100721,
             "PlantPercent": 80
@@ -1754,15 +1787,16 @@
             "Prio": 3,
             "PlantPercent": 100
           },
-          "None": {
-            "PlantPercent": 100
-          },
           "LeafTrees": {
             "GUID": 80174,
             "PlantPercent": 60
           },
           "FirTrees": {
             "GUID": 80175,
+            "PlantPercent": 60
+          },
+          "CypressTrees": {
+            "GUID": 24301,
             "PlantPercent": 60
           }
         },
@@ -2104,14 +2138,15 @@
               "Name": 133991
             }
           ]
-        }
+        },
+        "Residence": 1010343,
+        "ElectricityUnlock": 141487
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "The Old World",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 4285
@@ -2196,6 +2231,18 @@
           },
           "GoldOre": {
             "Building": 101311
+          },
+          "Bauxite": {
+            "Building": 1308
+          },
+          "SAGas": {
+            "Building": 1353
+          },
+          "DLC12Ore1": {
+            "Building": 1388
+          },
+          "DLC12Ore2": {
+            "Building": 1390
           }
         },
         "ConstructionMaterialList": {
@@ -2232,6 +2279,9 @@
                   }
                 }
               }
+            },
+            {
+              "Asset": 838
             }
           ]
         },
@@ -2702,6 +2752,7 @@
           ]
         },
         "DistributionCenterGhost": 101629,
+        "CliffDistributionCenterGhost": 2632,
         "QuayGroundDecal": 102460,
         "QuayInvisibleGroundDecal": 102459,
         "PredefinedCityNames": {
@@ -3640,6 +3691,12 @@
             },
             {
               "Fertility": 1010575
+            },
+            {
+              "Fertility": 6250
+            },
+            {
+              "Fertility": 6251
             }
           ]
         },
@@ -3671,12 +3728,12 @@
             "Prio": 3,
             "PlantPercent": 100
           },
-          "FirTrees": {
-            "GUID": 133886,
-            "PlantPercent": 60
-          },
           "LeafTrees": {
             "GUID": 133885,
+            "PlantPercent": 60
+          },
+          "FirTrees": {
+            "GUID": 133886,
             "PlantPercent": 60
           }
         },
@@ -3699,14 +3756,15 @@
               "NewGUID": 80138
             }
           ]
-        }
+        },
+        "Residence": 101254,
+        "ElectricityUnlock": 5164
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "The New World",
-            "Status": "Exported",
-            "ExportCount": 1
+            "Status": "Exported"
           }
         },
         "LineID": 26268
@@ -3720,6 +3778,12 @@
             },
             {
               "Bank": 234869
+            },
+            {
+              "Bank": 204842
+            },
+            {
+              "Bank": 204848
             }
           ]
         }
@@ -3749,8 +3813,7 @@
       "Standard": {
         "GUID": 160001,
         "Name": "Arctic Region",
-        "IconFilename": "data/ui/2kimages/main/icons/icon_session_passage.png",
-        "Version": "dlc03"
+        "IconFilename": "data/ui/2kimages/main/icons/icon_session_passage.png"
       },
       "Region": {
         "Ambiente": "Region_map_global",
@@ -3949,13 +4012,6 @@
         "QuayGroundDecal": 114826,
         "QuayInvisibleGroundDecal": 113478,
         "PredefinedCityNames": {
-          "Arctic_Inuit": {
-            "Names": {
-              "Item": {
-                "Name": 117543
-              }
-            }
-          },
           "Test_Doedel": {
             "Names": {
               "Item": [
@@ -4861,6 +4917,13 @@
                 }
               ]
             }
+          },
+          "Arctic_Inuit": {
+            "Names": {
+              "Item": {
+                "Name": 117543
+              }
+            }
           }
         },
         "AllowedFertilities": {
@@ -4902,14 +4965,17 @@
             "GUID": 133889,
             "PlantPercent": 50
           }
-        }
+        },
+        "HasAttractiveness": 0,
+        "HasHappiness": 0,
+        "AttractivenessInfoTip": 116331,
+        "Residence": 112091
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "The Arctic",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 26267
@@ -4956,8 +5022,7 @@
       "Standard": {
         "GUID": 114327,
         "Name": "Region Colony02",
-        "IconFilename": "data/ui/2kimages/main/icons/icon_session_landoflions.png",
-        "Version": "dlc06"
+        "IconFilename": "data/ui/2kimages/main/icons/icon_session_landoflions.png"
       },
       "Region": {
         "Ambiente": "Region_map_global",
@@ -5555,22 +5620,24 @@
             "GUID": 122967,
             "PlantPercent": 40
           },
-          "FirTrees": {
-            "GUID": 133888,
-            "PlantPercent": 10
-          },
           "LeafTrees": {
             "GUID": 133887,
             "PlantPercent": 25
+          },
+          "FirTrees": {
+            "GUID": 133888,
+            "PlantPercent": 10
           }
-        }
+        },
+        "HasAttractiveness": 0,
+        "AttractivenessInfoTip": 125183,
+        "Residence": 114436
       },
       "Text": {
         "LocaText": {
           "English": {
             "Text": "Enbesa",
-            "Status": "Exported",
-            "ExportCount": 2
+            "Status": "Exported"
           }
         },
         "LineID": 44110
