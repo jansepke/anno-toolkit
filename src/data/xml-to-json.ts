@@ -3,12 +3,24 @@ import { XMLParser } from "fast-xml-parser";
 import { promises as fs } from "fs";
 import { languages } from "../anno-config";
 
-const parser = new XMLParser();
+const assetPath = "AssetList.Groups.Group";
+const assetParser = new XMLParser({
+  processEntities: false,
+  updateTag(tagName: string, jPath: string) {
+    if (jPath.startsWith(assetPath) || assetPath.startsWith(jPath)) {
+      return tagName;
+    }
+    return false;
+  },
+});
+
+const languageParser = new XMLParser();
 
 main();
 
 async function main() {
-  await Promise.all([loadAssets(), ...languages.map((l) => loadTranslations(l.fileName))]);
+  await loadAssets();
+  await Promise.all(languages.map((l) => loadTranslations(l.fileName)));
 }
 
 async function loadTranslations(language: string) {
@@ -16,7 +28,7 @@ async function loadTranslations(language: string) {
 
   const fileName = `texts_${language}`;
 
-  const json = await parseXMLDataFile(fileName);
+  const json = await parseXMLDataFile(fileName, languageParser);
   const translations: Record<string, string> = {};
   for (const item of json.TextExport.Texts.Text) {
     translations[item.GUID] = item.Text.replace
@@ -33,7 +45,7 @@ const assetsByType: Record<string, any> = {};
 async function loadAssets() {
   console.log("Loading Assets...");
 
-  const json = await parseXMLDataFile("assets");
+  const json = await parseXMLDataFile("assets", assetParser);
 
   processGroups(json.AssetList.Groups.Group);
 
@@ -81,8 +93,8 @@ function processAssets(assets: any) {
   }
 }
 
-async function parseXMLDataFile(file: string) {
-  const xml = await fs.readFile(`./import-data/${file}.xml`, "utf8");
+async function parseXMLDataFile(file: string, parser: XMLParser) {
+  const xml = await fs.readFile(`./import-data/${file}.xml`);
 
   try {
     return parser.parse(xml, true);

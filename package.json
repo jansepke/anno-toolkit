@@ -4,7 +4,7 @@
     "dev": "npm run fill-db && next dev",
     "build": "npm run fill-db && next build",
     "start": "next start",
-    "xml-to-json": "ts-node --transpile-only --script-mode ./src/data/xml-to-json.ts",
+    "xml-to-json": "NODE_OPTIONS=--max_old_space_size=4096 ts-node --transpile-only --script-mode ./src/data/xml-to-json.ts",
     "fill-db": "ts-node --transpile-only --script-mode ./src/data/fill-db.ts",
     "lint": "prettier --write --check . && next lint",
     "prepare": "husky"
