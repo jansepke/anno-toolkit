@@ -15,9 +15,11 @@ npm run start # run production build
 
 ## Update game data
 
-1. extract `assets.xml`, `texts_english.xml` and `texts_german.xml` from the last `.rda` file
-2. copy files to import-data folder
-3. run `npm run xml-to-json`
+1. download and start [RDA Explorer](https://github.com/lysannschlegel/RDAExplorer)
+1. open lastest `.rda` file (e.g. `C:\Program Files (x86)\Ubisoft\Ubisoft Game Launcher\games\Anno 1800\maindata\data31.rda`)
+1. extract `data/config/export/main/asset/assets.xml`, `data/config/gui/texts_english.xml` and `data/config/gui/texts_german.xml`
+1. copy files to the `./import-data` folder
+1. run `npm run xml-to-json`
 
 ## TODO
 
@@ -39,6 +41,7 @@ npm run start # run production build
 - automatically switch between centered and scrollable tabs
 - refactor data loading
 - Progressive Web App https://github.com/vercel/next.js/tree/master/examples/progressive-web-app
+- mark CraftableItem as non researchable
 
 ## License
 
