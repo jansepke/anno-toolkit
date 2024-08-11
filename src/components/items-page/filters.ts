@@ -2,7 +2,10 @@ import { upgrades } from "../../anno-config";
 import { AnnoItem, Upgrade } from "../../data/AnnoItem";
 
 export function byItemName(filterValue: string) {
-  return (item: AnnoItem) => filterValue === "" || item.name.toLowerCase().includes(filterValue.toLowerCase());
+  return (item: AnnoItem) =>
+    filterValue === "" ||
+    item.name.toLowerCase().includes(filterValue.toLowerCase()) ||
+    item.id === parseInt(filterValue);
 }
 
 export function byEffectTarget(filterValue: string) {
