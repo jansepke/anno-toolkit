@@ -35,9 +35,9 @@ const CustomAutocomplete = ({
       autoComplete={true}
       clearOnEscape={true}
       blurOnSelect={true}
-      onChange={(event, value, reason) => {
-        reason === "clear" || value === "" || value === null ? onChange("all") : onChange(value);
-      }}
+      onChange={(event, value, reason) =>
+        reason === "clear" || value === "" || value === null ? onChange("all") : onChange(value)
+      }
       renderInput={(params) => <TextField {...params} label={label} variant="outlined" />}
     />
   );
@@ -111,11 +111,11 @@ const Filters: React.FC<FiltersProps> = ({ items, filters, setFilters }) => {
                 autoComplete={true}
                 clearOnEscape={true}
                 blurOnSelect={true}
-                onChange={(event, value, reason) => {
+                onChange={(event, value, reason) =>
                   reason === "clear" || value === null
                     ? setFilters({ ...filters, upgrade: "all" })
-                    : setFilters({ ...filters, upgrade: value.key });
-                }}
+                    : setFilters({ ...filters, upgrade: value.key })
+                }
                 renderInput={(params) => <TextField {...params} label={t("filter.upgrades")} variant="outlined" />}
               />
             </FormControl>

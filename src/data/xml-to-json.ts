@@ -98,7 +98,7 @@ async function parseXMLDataFile(file: string, parser: XMLParser) {
 
   try {
     return parser.parse(xml, true);
-  } catch (error) {
+  } catch {
     throw new Error("Invalid XML");
   }
 }
