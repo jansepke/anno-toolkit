@@ -138,7 +138,7 @@ export default class AnnoItemFactory {
         for (const property in item) {
           const value = item[property];
 
-          if (typeof value === "number" && value >= 10000 && this.translations[value]) {
+          if (typeof value === "number" && value >= 100 && this.translations[value]) {
             item[`${property}_label`] = this.translations[value];
           }
         }

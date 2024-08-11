@@ -21,7 +21,7 @@ const renderUpgradeItem = (key: string, item: any) => {
     case "AdditionalOutput":
       return `1/${item.AdditionalOutputCycle} ${item.Product_label ?? ""}`;
     case "InputAmountUpgrade":
-      return `${item.Amount} ${item.Product_label}`;
+      return item.Amount < 0 ? `${item.Amount} ${item.Product_label}` : undefined;
     case "AddAssemblyOptions":
       return item.NewOption_label;
     case "InputBenefitModifier":
@@ -73,9 +73,11 @@ const renderUpgrade = (upgrade: any) => {
 
   if (upgrade.value.Item) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    return `${upgrade.label}: ${upgrade.value.Item.map((item: any) => renderUpgradeItem(upgrade.key, item)).join(
-      ", ",
-    )}`;
+    const upgrades = upgrade.value.Item.map((item: any) => renderUpgradeItem(upgrade.key, item)).filter(
+      (upgrade?: string) => upgrade !== undefined,
+    );
+
+    return upgrades.length > 0 ? `${upgrade.label}: ${upgrades.join(", ")}` : undefined;
   }
 
   return JSON.stringify(upgrade);
@@ -98,12 +100,17 @@ const ItemEffects: React.FC<ItemEffectProps> = ({ item }) => {
           .join(", ")}
       </Typography>
       <Typography variant="body2" component="p">
-        {item.upgrades.map((upgrade) => (
-          <span key={upgrade.key}>
-            {renderUpgrade(upgrade)}
-            <br />
-          </span>
-        ))}
+        {item.upgrades
+          .map((upgrade) => {
+            const result = renderUpgrade(upgrade);
+            return result ? (
+              <span key={upgrade.key}>
+                {result}
+                <br />
+              </span>
+            ) : undefined;
+          })
+          .filter((u) => u !== undefined)}
       </Typography>
     </>
   );
