@@ -125,7 +125,7 @@ export default class AnnoItemFactory {
       return products.map((p: any) => this.translations[p.ItemLink]);
     }
 
-    if (typeof value === "number" && value >= 10000 && this.translations[value]) {
+    if (typeof value === "number" && value >= 1000 && this.translations[value]) {
       return this.translations[value];
     }
 

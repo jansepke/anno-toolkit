@@ -19,7 +19,7 @@ const renderUpgradeItem = (key: string, item: any) => {
     case "ReplaceInputs":
       return `${item.OldInput_label} -> ${item.NewInput_label}`;
     case "AdditionalOutput":
-      return `1/${item.AdditionalOutputCycle} ${item.Product_label ?? ""}`;
+      return `${item.Amount}/${item.AdditionalOutputCycle} ${item.Product_label ?? ""}`;
     case "InputAmountUpgrade":
       return item.Amount < 0 ? `${item.Amount} ${item.Product_label}` : undefined;
     case "AddAssemblyOptions":
