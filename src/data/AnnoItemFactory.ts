@@ -2,6 +2,12 @@
 import { rarities } from "../anno-config";
 import { AnnoItem, EffectTarget } from "./AnnoItem";
 
+const ignoredUpdates = [
+  "PublicServiceNoSatisfactionDistance",
+  "PublicServiceFullSatisfactionDistance",
+  "OutputAmountFactorUpgrade",
+];
+
 export default class AnnoItemFactory {
   private translations: Record<number, string>;
   private effectTargetPoolById: Record<number, any>;
@@ -29,7 +35,7 @@ export default class AnnoItemFactory {
         ? asset.Values.Item.Allocation + "item"
         : asset.Template
       ).toLowerCase(),
-      name: this.translations[values.Standard.GUID],
+      name: this.translate(values.Standard.GUID),
       icon: iconPath,
       effectTargets: this.resolveEffectTarget(values),
       activeItem:
@@ -73,7 +79,7 @@ export default class AnnoItemFactory {
 
         return [
           {
-            label: this.translations[target.GUID],
+            label: this.translations[target.GUID] ?? this.translations[effectTargetPool.Values.Text.TextOverride],
             visible: true,
           },
           ...effectTargets.map((et: any) => ({
@@ -108,7 +114,7 @@ export default class AnnoItemFactory {
           value: this.translateValue(upgradeKey, v),
         })),
       )
-      .filter((upgrade) => upgrade.key !== "PublicServiceNoSatisfactionDistance");
+      .filter((upgrade) => !ignoredUpdates.includes(upgrade.key));
   }
 
   private translateValue(upgradeKey: string, value: any): any {
@@ -146,5 +152,9 @@ export default class AnnoItemFactory {
     }
 
     return value;
+  }
+
+  private translate(key: number) {
+    return this.translations[key]?.replace("<br/>", "");
   }
 }
