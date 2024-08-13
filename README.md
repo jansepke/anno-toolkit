@@ -41,7 +41,7 @@ npm run start # run production build
 - automatically switch between centered and scrollable tabs
 - refactor data loading
 - Progressive Web App https://github.com/vercel/next.js/tree/master/examples/progressive-web-app
-- mark CraftableItem as non researchable
+- mark CraftableItem as non researchable (researchsubcategory.json)
 
 ## License
 
