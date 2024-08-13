@@ -17,11 +17,7 @@ async function generateDBForLanguage(language: string) {
   await fs.writeFile(`./data/db/${language}.json`, JSON.stringify(data, null, 2));
 }
 
-export async function getData(
-  language: string,
-  fileNames: string[],
-  filter: (asset: any) => boolean = () => true,
-): Promise<AnnoItem[]> {
+export async function getData(language: string, fileNames: string[]): Promise<AnnoItem[]> {
   const translations = await loadTranslations(language);
   const rewardPoolById = await loadRewardPools();
   const effectTargetPoolById = await loadEffectTargetPools();
@@ -29,7 +25,7 @@ export async function getData(
 
   const factory = new AnnoItemFactory(translations, effectTargetPoolById, rewardPoolById);
 
-  return assets.filter(filter).map((asset: any) => factory.newAnnoItem(asset));
+  return assets.map((asset: any) => factory.newAnnoItem(asset)).filter((ai) => ai !== undefined);
 }
 
 async function loadTranslations(language: string) {

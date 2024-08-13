@@ -8,6 +8,14 @@ const ignoredUpdates = [
   "OutputAmountFactorUpgrade",
 ];
 
+// asset pool "GGJ Items"
+const ignoredItems = [
+  24012, 24014, 24016, 24018, 24019, 24023, 24033, 24034, 24036, 24043, 24044, 24054, 24048, 24061, 24064, 24065, 24068,
+  24077, 24078, 24079, 24081, 24082, 24086, 24087, 24100, 24107, 24108, 24109, 24113, 24114, 24151, 24152, 24153, 24154,
+  24155, 24159, 24160, 24162, 24163, 24164, 24179, 24191, 24192, 24195, 24196, 24197, 24201, 24199, 24198, 24248, 24286,
+  24368, 24372, 24373, 24656, 24655, 24654,
+];
+
 export default class AnnoItemFactory {
   private translations: Record<number, string>;
   private effectTargetPoolById: Record<number, any>;
@@ -23,11 +31,15 @@ export default class AnnoItemFactory {
     this.rewardPoolById = rewardPoolById;
   }
 
-  public newAnnoItem(asset: any): AnnoItem {
+  public newAnnoItem(asset: any): AnnoItem | undefined {
     const values = asset.Values;
 
     const rarity = values.Item.Rarity?.toLowerCase() || rarities[0].key;
     const iconPath = values.Standard.IconFilename.replace("data/ui/2kimages/", "/img/").replace(".png", "_0.png");
+
+    if (ignoredItems.includes(values.Standard.GUID)) {
+      return;
+    }
 
     return {
       id: values.Standard.GUID,
